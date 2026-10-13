@@ -22,7 +22,7 @@ namespace DeskPlusOTP
     public class WsOTP : System.Web.Services.WebService
     {
         //string con = "Data Source=ZEOSPACE-20;Initial Catalog=SiteDIEIP51;Persist Security Info=True;User ID=deskpluseip;Password=deskplus";
-        string con = "Data Source=newdbsvr,44733;Initial Catalog=DeskPlusEIP;Persist Security Info=True;User ID=deskpluseip;Password=desk+e1p_20220706";
+        string con = "Data Source=.;Initial Catalog=DeskPlusEIP;Persist Security Info=True;User ID=deskpluseip;Password=Desk+e1p_20261008";
 
          /// <summary>
          /// 

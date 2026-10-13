@@ -7,6 +7,14 @@ $(function () {
             e.preventDefault();
             OTP.UpdOTP();
         });
+
+        $("#tbRandom").keydown(function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                OTP.UpdOTP();
+            }
+        });
+
     });
 });
 
@@ -15,6 +23,11 @@ $(function () {
 OTP.UpdOTP = function () {
 
     var random = $("#tbRandom").val();
+
+    if (loginID == "") {
+        alert("아이디를 입력해주세요");
+        return;
+    }
 
     if (random != "") {
         var url = "WsOTP.asmx/UpdOTP";
