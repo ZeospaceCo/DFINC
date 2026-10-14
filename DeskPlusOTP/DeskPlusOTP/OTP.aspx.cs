@@ -52,7 +52,7 @@ namespace DeskPlusOTP
                 totp.InnerText = base32Secret;
 
                 // TOTP 생성
-                string issuer = "DIGW"; //회사이름
+                string issuer = "DFINCGW"; //회사이름
                 string totpUrl = $"otpauth://totp/{issuer}:{loginID}?secret={base32Secret}&issuer={issuer}&digits=6&period=30";
 
                 // QR 코드 생성
