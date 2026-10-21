@@ -1,0 +1,27 @@
+﻿<div>
+{#foreach $T as List} 
+    
+    <div class="ptl_type7">
+        <div class="tit">* { $T.List.Title }</div>
+        <div class="ptl_com_sec"></div>
+        <div class="more">
+            <span id="opiShow_{ $T.List.QuesID }"><a onclick="javascript:Opinion_ItemShow('{ $T.List.QuesID }')"><span class="jtOpinionR1"></span></a></span>
+            <span id="opiHide_{ $T.List.QuesID }" style="display:none;"><a onclick="Opinion_ItemHide('{ $T.List.QuesID }')"><span class="jtOpinionR2"></span></a></span>
+        </div>
+        <div id="divItem_{ $T.List.QuesID }"></div>
+        <div id="divMore_{ $T.List.QuesID }" class="more" style="display:none">
+            {#if $T.List.VoteCnt == 0}
+                <a onclick="javascript:Opinion_View('{ $T.List.QuesID }', '0')"><img class="IconAdd1" alt="" title="" /></a>
+            {#/if}
+                <a onclick="javascript:Opinion_View('{ $T.List.QuesID }', '1')"><img class="IconAdd2" alt="" title="" /></a>
+        </div>
+    </div>
+{#else}
+	<ul>
+    <li><span class="jtOpinionNoData"></span></li></ul>
+{#/for}
+</div>
+
+
+
+

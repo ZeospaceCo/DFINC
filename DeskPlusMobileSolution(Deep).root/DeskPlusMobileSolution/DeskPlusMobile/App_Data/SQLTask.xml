@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_PROC_CNT" Value="DPM_TAS_SelCnt" Content="업무협업 카운트 가져오기 " />
+
+  <Item ID="SEL_PROC_MENUCNT" Value="DPM_TAS_SelMenuCnt" Content="업무협업 카운트 가져오기(메뉴)" />
+  <Item ID="SEL_PROC_List_RECnt" Value="DPM_TAS_List_SelRequestCnt" Content="요청한 협업 갯수"></Item>
+  <Item ID="SEL_PROC_List_TOCnt" Value="DPM_TAS_List_SelReceiveCnt" Content="요청받은 협업 갯수"></Item>
+  <Item ID="SEL_PROC_List_CCCnt" Value="DPM_TAS_List_SelReferenceCnt" Content="참조받은 협업 갯수"></Item>
+  <Item ID="SEL_PROC_List_FOCnt" Value="DPM_TAS_List_SelForwardCnt" Content="전달받은 협업 갯수"></Item>
+  <Item ID="SEL_PROC_List_RCCnt" Value="DPM_TAS_List_SelRecentCnt" Content="최신순 업무 갯수"></Item>
+  <Item ID="SEL_PROC_List_DECnt" Value="DPM_TAS_List_SelDelayCnt" Content="지연된 업무 갯수"></Item>
+
+  <Item ID="SEL_PROC_List_RE" Value="DPM_TAS_List_SelRequest" Content="요청한 협업가져오기 " />
+  <Item ID="SEL_PROC_List_TO" Value="DPM_TAS_List_SelReceive" Content="요청 받은 협업가져오기 " />
+  <Item ID="SEL_PROC_List_CC" Value="DPM_TAS_List_SelReference" Content="참조 받은 협업가져오기 " />
+  <Item ID="SEL_PROC_List_FO" Value="DPM_TAS_List_SelForward" Content="전달 받은 협업가져오기 " />
+  <Item ID="SEL_PROC_List_RC" Value="DPM_TAS_List_SelRecent" Content="최신순 업무가져오기 " />
+  <Item ID="SEL_PROC_List_DE" Value="DPM_TAS_List_SelDelay" Content="지연된 업무가져오기 " />
+
+  <Item ID="SEL_PROC_List_TopDownRE" Value="DPM_TAS_List_TopDown_Request" Content="이전,이후(요청한 협업)" />
+  <Item ID="SEL_PROC_List_TopDownTO" Value="DPM_TAS_List_TopDown_Receive" Content="이전,이후(요청 받은 협업)" />
+  <Item ID="SEL_PROC_List_TopDownCC" Value="DPM_TAS_List_TopDown_Reference" Content="이전,이후(참조 받은 협업)" />
+  <Item ID="SEL_PROC_List_TopDownFO" Value="DPM_TAS_List_TopDown_Forward" Content="이전,이후(전달 받은 협업)" />
+  <Item ID="SEL_PROC_List_TopDownRC" Value="DPM_TAS_List_TopDown_Recent" Content="이전,이후(최신순 업무)" />
+  <Item ID="SEL_PROC_List_TopDownDE" Value="DPM_TAS_List_TopDown_Delay" Content="이전,이후(지연된 업무)" />
+
+  <Item ID="SEL_QRY_TaskInfo" Value="SELECT * FROM VW_TAS_List WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}'" Content="협업상세가져오기" />
+  <Item ID="SEL_QRY_Group" Value="SELECT * FROM VW_TAS_List WITH(NOLOCK) WHERE CompanyID = '{0}' AND GroupID = '{1}' ORDER BY CompanyID, ListOrder" Content="진행내역가져오기" />
+  <Item ID="SEL_QRY_Attach" Value="SELECT * FROM DP_TAS_Attach WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}'" Content="첨부파일 가져오기" />
+  <Item ID="SEL_QRY_BaseApp" Value="SELECT * FROM DP_TAS_BaseApp WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}' ORDER BY BaseOrder" Content="전자결재근거문서정보가져오기" />
+  <Item ID="SEL_QRY_BaseTask" Value="SELECT * FROM DP_TAS_BaseTask WITH(NOLOCK) WHERE CompanyID ='{0}' AND ListID = '{1}' ORDER BY BaseOrder" Content="업무협업 근거문서정보가져오기" />
+
+  <Item ID="SEL_QRY_TO" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,
+	DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,
+	DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+	FROM DP_TAS_ListTO List WITH(NOLOCK) LEFT OUTER JOIN  DP_COM_DeptCode AS DC WITH(NOLOCK) ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID
+	WHERE List.CompanyID = '{0}' AND List.ListID = '{1}'" Content="수신자 정보가져오기" />
+  <Item ID="SEL_QRY_CC" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,
+	DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,
+	DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+	FROM DP_TAS_ListCC List WITH(NOLOCK) LEFT OUTER JOIN  DP_COM_DeptCode AS DC WITH(NOLOCK) ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID
+	WHERE List.CompanyID = '{0}' AND List.ListID = '{1}'" Content="참조자 정보가져오기" />
+
+  <Item ID="SEL_PROC_CNTHISTORY" Value="DPM_TAS_SelHistoryCnt" Content="업무협업 히스토리 카운트 가져오기 " />
+
+  <Item ID="INS_PROC_TAS_List" Value="DP_TAS_List_Ins" Content="추가하기" />
+  <Item ID="INS_PROC_TAS_Accept" Value="DPM_TAS_List_InsAccept" Content="접수하기" />
+  <Item ID="INS_PROC_TAS_Complete" Value="DPM_TAS_List_InsComplete" Content="완료하기" />
+  <Item ID="INS_PROC_TAS_Cancel" Value="DPM_TAS_List_InsCancel" Content="완료취소하기" />
+  <Item ID="INS_PROC_TAS_Reject" Value="DPM_TAS_List_InsReject" Content="반려하기" />
+
+  <Item ID="SEL_QRY_AlarmEtc" Value="SELECT Distinct * FROM (
+	SELECT CompanyID, UserID  FROM VW_UserInfo WHERE CompanyID = '{0}' AND ActiveUser = 1
+	AND DeptID in ( SELECT s.DeptID FROM DP_TAS_ListCC  AS c  CROSS APPLY dbo.ufn_GetSubTree(c.DeptID, c.CompanyID) s WHERE c.CompanyID = '{0}' AND c.ListID = '{1}' AND c.IsGroup='G')
+	Union
+	SELECT CompanyID, UserID FROM DP_TAS_ListCC WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}' AND IsGroup='M'
+	Union
+	SELECT CompanyID, UserID FROM DP_TAS_ListTO WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}'
+	) x LEFT JOIN DP_ACC_UserEnv UE
+  ON x.CompanyID = UE.CompanyID AND x.UserID = UE.UserID" Content="알람 정보 가져오기 (수신,참조)" />
+
+  <Item ID="SEL_QRY_ListType" Value="SELECT Count(*) as RECnt,
+  (SELECT Count(*) FROM DP_TAS_ListTo WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}' AND UserID = '{2}') as TOCnt,
+  (SELECT Count(*) FROM DP_TAS_ListCC WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}'  AND ((UserID =  '{2}' AND IsGroup = 'M') OR (DeptID IN (SELECT DeptID FROM ufn_GetUserUpTree ('{0}' ,'{2}')) AND IsGroup = 'G' ))) as CCCnt
+  FROM DP_TAS_List WITH(NOLOCK) WHERE CompanyID = '{0}' AND ListID = '{1}' AND WriteUserID = '{2}'"
+        Content="요청자, 수신자, 참조 구분 가져오기" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

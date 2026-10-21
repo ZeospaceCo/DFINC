@@ -1,0 +1,1359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="AddMenu" xml:space="preserve">
+    <value>添加菜单</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>通讯录</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>添加帖子</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>添加用户</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="AdminDrop" xml:space="preserve">
+    <value>确定要强制退出吗？</value>
+  </data>
+  <data name="AdminMenu" xml:space="preserve">
+    <value>管理菜单</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="ApplyCommunityList" xml:space="preserve">
+    <value>开设申请中的目录</value>
+  </data>
+  <data name="ApplyDate" xml:space="preserve">
+    <value>申请日</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>要删除吗？</value>
+  </data>
+  <data name="ApplyGrade" xml:space="preserve">
+    <value>等级变更完了。</value>
+  </data>
+  <data name="ApplyJoinDate" xml:space="preserve">
+    <value>注册申请日</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请输入登记日期</value>
+  </data>
+  <data name="ApplyRegDate1" xml:space="preserve">
+    <value>请同时输入开始日期和结束日期。</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>请输入开始日期</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="AuthorityNot" xml:space="preserve">
+    <value>没有限制</value>
+  </data>
+  <data name="BaseName" xml:space="preserve">
+    <value>请输入大分类。</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="BasicMenu" xml:space="preserve">
+    <value>基本菜单</value>
+  </data>
+  <data name="Bcc" xml:space="preserve">
+    <value>秘密抄送</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>之前通知</value>
+  </data>
+  <data name="BoardCount" xml:space="preserve">
+    <value>帖子数</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>兼职</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>大分类</value>
+  </data>
+  <data name="CategoryGubun" xml:space="preserve">
+    <value>社区分类</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>分类名</value>
+  </data>
+  <data name="Cc" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="ChangeGrade" xml:space="preserve">
+    <value>等级变更。</value>
+  </data>
+  <data name="ChangeGradeNameManage" xml:space="preserve">
+    <value>修改会员等级名</value>
+  </data>
+  <data name="ChangeManager" xml:space="preserve">
+    <value>社区管理员变更</value>
+  </data>
+  <data name="ChangeManagerConfirm" xml:space="preserve">
+    <value>社区管理员变更申请</value>
+  </data>
+  <data name="ChangeUser" xml:space="preserve">
+    <value>变更对象</value>
+  </data>
+  <data name="CheckActive" xml:space="preserve">
+    <value>请选择要激活的列表。</value>
+  </data>
+  <data name="CheckActivelList" xml:space="preserve">
+    <value>请选择要恢复加入的列表。</value>
+  </data>
+  <data name="CheckAddMenu" xml:space="preserve">
+    <value>请选择要添加的菜单。</value>
+  </data>
+  <data name="CheckCategory" xml:space="preserve">
+    <value>请先选择大分类。</value>
+  </data>
+  <data name="CheckConfirm" xml:space="preserve">
+    <value>请选择批准处理的列表。</value>
+  </data>
+  <data name="CheckDelList" xml:space="preserve">
+    <value>请选择要删除的列表。</value>
+  </data>
+  <data name="CheckDelMenu" xml:space="preserve">
+    <value>请选择要删除的菜单。</value>
+  </data>
+  <data name="CheckDroplList" xml:space="preserve">
+    <value>请选择要强制退出的列表。</value>
+  </data>
+  <data name="CheckGrade" xml:space="preserve">
+    <value>请选择等级变更的列表。</value>
+  </data>
+  <data name="CheckManager" xml:space="preserve">
+    <value>请选择要变更的对象。</value>
+  </data>
+  <data name="CheckModList" xml:space="preserve">
+    <value>请选择要修改的列表。</value>
+  </data>
+  <data name="CheckNonActive" xml:space="preserve">
+    <value>请选择要停用的列表。</value>
+  </data>
+  <data name="CheckReject" xml:space="preserve">
+    <value>请选择不予批准的列表。</value>
+  </data>
+  <data name="CheckUser" xml:space="preserve">
+    <value>请选择对象。</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国语</value>
+  </data>
+  <data name="ClickBest" xml:space="preserve">
+    <value>最佳 查看</value>
+  </data>
+  <data name="ClipBoard" xml:space="preserve">
+    <value>当前社区的地址被存储在剪贴板上。\n 请利用CTRL+V 粘贴。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CMNJoin" xml:space="preserve">
+    <value>加入申请</value>
+  </data>
+  <data name="CMNPoint" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="CMNScript1" xml:space="preserve">
+    <value>变更对象在&lt;b&gt;社区会员内 &lt;/ b&gt;可能。</value>
+  </data>
+  <data name="CMNScript2" xml:space="preserve">
+    <value>变更申请时，给对象发送关联提醒。</value>
+  </data>
+  <data name="CMNScript3" xml:space="preserve">
+    <value>管理主画面上的模块列表。</value>
+  </data>
+  <data name="CMNScript4" xml:space="preserve">
+    <value>该社区会员变更为&lt;b&gt;优秀会员&lt;/b&gt;</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>调色板</value>
+  </data>
+  <data name="ComApplyDate" xml:space="preserve">
+    <value>社区 创建日</value>
+  </data>
+  <data name="ComConfirm" xml:space="preserve">
+    <value>申请 开设</value>
+  </data>
+  <data name="ComHost" xml:space="preserve">
+    <value>社区管理员</value>
+  </data>
+  <data name="ComInfo" xml:space="preserve">
+    <value>社区 信息</value>
+  </data>
+  <data name="ComList" xml:space="preserve">
+    <value>全体 社区</value>
+  </data>
+  <data name="ComManage" xml:space="preserve">
+    <value>* 管理已申请社区的批准、拒绝。</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>社区</value>
+  </data>
+  <data name="CommunityDel" xml:space="preserve">
+    <value>删除社区</value>
+  </data>
+  <data name="CommunityDes" xml:space="preserve">
+    <value>社区简介</value>
+  </data>
+  <data name="CommunityJoinType" xml:space="preserve">
+    <value>会员加入方式</value>
+  </data>
+  <data name="CommunityManage" xml:space="preserve">
+    <value>社区管理</value>
+  </data>
+  <data name="CommunityName" xml:space="preserve">
+    <value>社区名称</value>
+  </data>
+  <data name="CommunitySys" xml:space="preserve">
+    <value>社区管理员</value>
+  </data>
+  <data name="CommunityType" xml:space="preserve">
+    <value>社区性质</value>
+  </data>
+  <data name="ComName" xml:space="preserve">
+    <value>社区名称</value>
+  </data>
+  <data name="CompleteApply" xml:space="preserve">
+    <value>完成申请。</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="ComWriteName" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmActive" xml:space="preserve">
+    <value>要激活吗？</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>批准处理</value>
+  </data>
+  <data name="ConfirmChange" xml:space="preserve">
+    <value>要变更吗？</value>
+  </data>
+  <data name="ConfirmComplete" xml:space="preserve">
+    <value>要批准吗？</value>
+  </data>
+  <data name="ConfirmDrop" xml:space="preserve">
+    <value>要退出吗？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前创建的内容将消失。要选择吗？</value>
+  </data>
+  <data name="ConfirmGrade" xml:space="preserve">
+    <value>变更等级吗？</value>
+  </data>
+  <data name="ConfirmIssue" xml:space="preserve">
+    <value>已被指定为一个话题。</value>
+  </data>
+  <data name="ConfirmJoin" xml:space="preserve">
+    <value>已加入。</value>
+  </data>
+  <data name="ConfirmManager" xml:space="preserve">
+    <value>社区管理员已变更。</value>
+  </data>
+  <data name="ConfirmNonActive" xml:space="preserve">
+    <value>确定要禁用吗？</value>
+  </data>
+  <data name="ConfirmRecommend" xml:space="preserve">
+    <value>已推荐。</value>
+  </data>
+  <data name="ConfirmReject" xml:space="preserve">
+    <value>要拒绝批准吗？</value>
+  </data>
+  <data name="ConfirmWaiting" xml:space="preserve">
+    <value>已申请加入。正在等待管理员的批准。</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="CopyClipBoard" xml:space="preserve">
+    <value>快捷方式复制</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DefaultMenu" xml:space="preserve">
+    <value>适用于基本菜单</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelAdminCommunity" xml:space="preserve">
+    <value>要删除社区吗？</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>确定要删除文件吗？</value>
+  </data>
+  <data name="DelCommunity" xml:space="preserve">
+    <value>解除社区</value>
+  </data>
+  <data name="DelConfirmCommunity" xml:space="preserve">
+    <value>要解除社区吗？</value>
+  </data>
+  <data name="DelGubun" xml:space="preserve">
+    <value>要删除分类吗？</value>
+  </data>
+  <data name="DelIssue" xml:space="preserve">
+    <value>要删除话题指定吗？</value>
+  </data>
+  <data name="DelJoin" xml:space="preserve">
+    <value>要取消加入申请吗？</value>
+  </data>
+  <data name="DelMenu" xml:space="preserve">
+    <value>要删除菜单吗？</value>
+  </data>
+  <data name="DelNonAcitve" xml:space="preserve">
+    <value>删除，禁用，计划社区。</value>
+  </data>
+  <data name="DelSchedule" xml:space="preserve">
+    <value>要删除日程吗？</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>介绍</value>
+  </data>
+  <data name="DisDes" xml:space="preserve">
+    <value>解除社区后&lt;b&gt;不可重新开设 &lt;/ b&gt;.</value>
+  </data>
+  <data name="DisDes1" xml:space="preserve">
+    <value>解除社区后无法登录社区。</value>
+  </data>
+  <data name="DisplayMenu" xml:space="preserve">
+    <value>开设画面显示的菜单</value>
+  </data>
+  <data name="Dissolution" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="DissolutionReason" xml:space="preserve">
+    <value>解除事由</value>
+  </data>
+  <data name="Drop" xml:space="preserve">
+    <value>强制退出</value>
+  </data>
+  <data name="DropUser" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="EditorScript" xml:space="preserve">
+    <value>因正文含有脚本可疑文句，内容可能被更改。</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="ErrorMailType" xml:space="preserve">
+    <value>没有该用户或邮件地址形式错误。</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5个小时</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4个小时</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="GoAdmin" xml:space="preserve">
+    <value>以管理员模式登录</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到目录页面</value>
+  </data>
+  <data name="GoMain" xml:space="preserve">
+    <value>转到主页面</value>
+  </data>
+  <data name="GoMyCommunity" xml:space="preserve">
+    <value>社区快捷方式</value>
+  </data>
+  <data name="GoodMemberScript" xml:space="preserve">
+    <value>查看该社区活跃的用户。</value>
+  </data>
+  <data name="GoodMemberSearch" xml:space="preserve">
+    <value>查看优秀会员</value>
+  </data>
+  <data name="GoSiteMain" xml:space="preserve">
+    <value>转到门户管理页面。</value>
+  </data>
+  <data name="GoView" xml:space="preserve">
+    <value>转到查看页面。</value>
+  </data>
+  <data name="GradeName" xml:space="preserve">
+    <value>等级名</value>
+  </data>
+  <data name="GradeNameManage" xml:space="preserve">
+    <value>会员等级名管理</value>
+  </data>
+  <data name="GroupManage" xml:space="preserve">
+    <value>分类管理</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="InputAnswer" xml:space="preserve">
+    <value>请输入回答</value>
+  </data>
+  <data name="InputCommunityName" xml:space="preserve">
+    <value>请输入社区名</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>请输入正文内容。</value>
+  </data>
+  <data name="InputDes" xml:space="preserve">
+    <value>请输入自我介绍。</value>
+  </data>
+  <data name="InputDissolution" xml:space="preserve">
+    <value>请输入解除事由</value>
+  </data>
+  <data name="InputMenu" xml:space="preserve">
+    <value>请输入菜单名</value>
+  </data>
+  <data name="InputNumber" xml:space="preserve">
+    <value>请只输入数字</value>
+  </data>
+  <data name="InputQuestion" xml:space="preserve">
+    <value>请输入提问</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>请输入标题。</value>
+  </data>
+  <data name="InputTo" xml:space="preserve">
+    <value>请输入收件人</value>
+  </data>
+  <data name="Introduce" xml:space="preserve">
+    <value>自我介绍</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>问题指定</value>
+  </data>
+  <data name="IssueTitle" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本语</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>加入</value>
+  </data>
+  <data name="JoinActive1" xml:space="preserve">
+    <value>加入</value>
+  </data>
+  <data name="JoinActive2" xml:space="preserve">
+    <value>加入恢复</value>
+  </data>
+  <data name="JoinApply" xml:space="preserve">
+    <value>加入申请</value>
+  </data>
+  <data name="JoinComList" xml:space="preserve">
+    <value>申请加入的社区</value>
+  </data>
+  <data name="JoinDate" xml:space="preserve">
+    <value>加入日</value>
+  </data>
+  <data name="JoinDes" xml:space="preserve">
+    <value>申请理由</value>
+  </data>
+  <data name="JoinManage" xml:space="preserve">
+    <value>加入申请管理</value>
+  </data>
+  <data name="JoinName" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="JoinQuestion" xml:space="preserve">
+    <value>加入提问</value>
+  </data>
+  <data name="JoinType" xml:space="preserve">
+    <value>加入类型</value>
+  </data>
+  <data name="JoinType1" xml:space="preserve">
+    <value>加入申请时马上可以加入</value>
+  </data>
+  <data name="JoinType2" xml:space="preserve">
+    <value>加入申请时经过管理员的批准可以计入</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韩国语</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>帖子限于200字以内</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="MailAdmin" xml:space="preserve">
+    <value>给社区管理员</value>
+  </data>
+  <data name="MailDesc" xml:space="preserve">
+    <value>多位时请按 ; 区分</value>
+  </data>
+  <data name="MailSend" xml:space="preserve">
+    <value>邮件发送</value>
+  </data>
+  <data name="MainCommunity" xml:space="preserve">
+    <value>社区主页</value>
+  </data>
+  <data name="MainDisplay" xml:space="preserve">
+    <value>主页管理</value>
+  </data>
+  <data name="MainDisplayDes" xml:space="preserve">
+    <value>管理主画面上显示的门户领域。</value>
+  </data>
+  <data name="MainPageManage" xml:space="preserve">
+    <value>开始画面管理</value>
+  </data>
+  <data name="MainTitleDes" xml:space="preserve">
+    <value>管理主画面上显示的台头设计。</value>
+  </data>
+  <data name="MakeCommunity" xml:space="preserve">
+    <value>申请开设</value>
+  </data>
+  <data name="MakeCommunityDes" xml:space="preserve">
+    <value>申请开设。</value>
+  </data>
+  <data name="MemberManage" xml:space="preserve">
+    <value>会员管理</value>
+  </data>
+  <data name="MemberSearch" xml:space="preserve">
+    <value>搜索加入社区的会员情报。</value>
+  </data>
+  <data name="Membership" xml:space="preserve">
+    <value>会员数</value>
+  </data>
+  <data name="MemberType" xml:space="preserve">
+    <value>会员分类</value>
+  </data>
+  <data name="MemeberGrade" xml:space="preserve">
+    <value>会员等级</value>
+  </data>
+  <data name="MemeberGradeName" xml:space="preserve">
+    <value>会员等级名</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="MenuDetail" xml:space="preserve">
+    <value>详细情报设置</value>
+  </data>
+  <data name="MenuManager" xml:space="preserve">
+    <value>菜单管理</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>菜单名</value>
+  </data>
+  <data name="MenuSkinManage" xml:space="preserve">
+    <value>菜单/画面管理</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>即时通讯</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModCommunityInfo" xml:space="preserve">
+    <value>修改申请情报</value>
+  </data>
+  <data name="ModGradeNameManage" xml:space="preserve">
+    <value>变更会员等级名</value>
+  </data>
+  <data name="ModShortReply" xml:space="preserve">
+    <value>修改帖子</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="Month1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>多国语</value>
+  </data>
+  <data name="MultiLangSetting" xml:space="preserve">
+    <value>多国语设置</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多国语名</value>
+  </data>
+  <data name="MutiName" xml:space="preserve">
+    <value>多国名</value>
+  </data>
+  <data name="MyCommunityList" xml:space="preserve">
+    <value>我的社区目录</value>
+  </data>
+  <data name="NameAdvice" xml:space="preserve">
+    <value>请输入社区主题相关的名称。</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附件不存在。</value>
+  </data>
+  <data name="Noauth" xml:space="preserve">
+    <value>该用户不能访问。</value>
+  </data>
+  <data name="NoCategory" xml:space="preserve">
+    <value>如没有分类列表，请与管理员联系。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>该文件不存在。</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="NoReadAuth" xml:space="preserve">
+    <value>没有阅读权限</value>
+  </data>
+  <data name="NoRepeatDay" xml:space="preserve">
+    <value>该反复日程不存在</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>公告事项</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>不是图片形式</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>无标题</value>
+  </data>
+  <data name="NowManager" xml:space="preserve">
+    <value>现在社区管理员</value>
+  </data>
+  <data name="NoWriteAuth" xml:space="preserve">
+    <value>没有编写权限</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>公司电话</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1个小时</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1天</value>
+  </data>
+  <data name="OpenDate" xml:space="preserve">
+    <value>开设日</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>活动要点</value>
+  </data>
+  <data name="PointChange" xml:space="preserve">
+    <value>点数变更</value>
+  </data>
+  <data name="PointManage" xml:space="preserve">
+    <value>管理社区里使用的点数。</value>
+  </data>
+  <data name="PointManagement" xml:space="preserve">
+    <value>点数管理</value>
+  </data>
+  <data name="PointScore" xml:space="preserve">
+    <value>点数分数</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>正在处理中。请稍候。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时发生了错误。请与管理员联系。</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>提问</value>
+  </data>
+  <data name="ReadAuth" xml:space="preserve">
+    <value>阅读权限</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>接收人</value>
+  </data>
+  <data name="RecomCount" xml:space="preserve">
+    <value>推荐数</value>
+  </data>
+  <data name="RecomDate" xml:space="preserve">
+    <value>推荐日</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>推荐</value>
+  </data>
+  <data name="RecomStatus" xml:space="preserve">
+    <value>推荐状态</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登录日</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>登录人</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>不可承认</value>
+  </data>
+  <data name="RejectJoin" xml:space="preserve">
+    <value>是退出会员。不可申请加入。</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="Repeat1" xml:space="preserve">
+    <value>每</value>
+  </data>
+  <data name="Repeat10" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="Repeat11" xml:space="preserve">
+    <value>第三</value>
+  </data>
+  <data name="Repeat12" xml:space="preserve">
+    <value>第四</value>
+  </data>
+  <data name="Repeat13" xml:space="preserve">
+    <value>最后</value>
+  </data>
+  <data name="Repeat14" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Repeat15" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="Repeat16" xml:space="preserve">
+    <value>周末</value>
+  </data>
+  <data name="Repeat17" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="Repeat18" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="Repeat19" xml:space="preserve">
+    <value>在星期</value>
+  </data>
+  <data name="Repeat2" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="Repeat20" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Repeat21" xml:space="preserve">
+    <value>在</value>
+  </data>
+  <data name="Repeat22" xml:space="preserve">
+    <value>到 日重复</value>
+  </data>
+  <data name="Repeat23" xml:space="preserve">
+    <value>到 次重复</value>
+  </data>
+  <data name="Repeat3" xml:space="preserve">
+    <value>每日（平日）</value>
+  </data>
+  <data name="Repeat4" xml:space="preserve">
+    <value>每周下个星期重复</value>
+  </data>
+  <data name="Repeat5" xml:space="preserve">
+    <value>每  个月</value>
+  </data>
+  <data name="Repeat6" xml:space="preserve">
+    <value>在</value>
+  </data>
+  <data name="Repeat7" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Repeat8" xml:space="preserve">
+    <value>次 重复</value>
+  </data>
+  <data name="Repeat9" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="RepeatCount" xml:space="preserve">
+    <value>请输入重复范围的重复次数。</value>
+  </data>
+  <data name="RepeatDay" xml:space="preserve">
+    <value>每日重复</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>删除反复日程</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>照常维持反复日程中其他所有日程。</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>该日程及以后所有日程都将变更。</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>变更重复的所有日程。维持对其他日程的变更事项。</value>
+  </data>
+  <data name="RepeatEx4" xml:space="preserve">
+    <value>将删除该日程及以后所有日程。</value>
+  </data>
+  <data name="RepeatEx5" xml:space="preserve">
+    <value>删除重复的所有日程</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>只这个日程</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>以后所有日程</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>所有日程</value>
+  </data>
+  <data name="RepeatInput" xml:space="preserve">
+    <value>请输入重复周期值</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>修改重复日程</value>
+  </data>
+  <data name="RepeatMonth" xml:space="preserve">
+    <value>每月重复</value>
+  </data>
+  <data name="RepeatNumber" xml:space="preserve">
+    <value>重复周期值不正确</value>
+  </data>
+  <data name="RepeatRange" xml:space="preserve">
+    <value>重复范围</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="RepeatStartDateEndDate" xml:space="preserve">
+    <value>重复范围到期日不能小于开始日。</value>
+  </data>
+  <data name="RepeatWeek" xml:space="preserve">
+    <value>每周重复</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>请输入1以上的数字</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="ReplyBest" xml:space="preserve">
+    <value>帖子数 最佳</value>
+  </data>
+  <data name="ReplyCount" xml:space="preserve">
+    <value>帖子数</value>
+  </data>
+  <data name="ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>日程管理</value>
+  </data>
+  <data name="ScheduleAdd" xml:space="preserve">
+    <value>添加日程</value>
+  </data>
+  <data name="ScheduleAlarm" xml:space="preserve">
+    <value>日程提醒</value>
+  </data>
+  <data name="ScheduleMod" xml:space="preserve">
+    <value>日程修改</value>
+  </data>
+  <data name="ScheduleOne" xml:space="preserve">
+    <value>日程管理菜单只能添加一个。</value>
+  </data>
+  <data name="ScheduleView" xml:space="preserve">
+    <value>日程查看</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>截图</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchUserInfo" xml:space="preserve">
+    <value>会员情报搜索</value>
+  </data>
+  <data name="SearchUserList" xml:space="preserve">
+    <value>会员查看</value>
+  </data>
+  <data name="SelChildID" xml:space="preserve">
+    <value>请选择小分类</value>
+  </data>
+  <data name="SelectRepeatDay" xml:space="preserve">
+    <value>请选择重复范围的日期</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>选择对象</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>请选择星期</value>
+  </data>
+  <data name="SelGubun" xml:space="preserve">
+    <value>请先选择分类</value>
+  </data>
+  <data name="SelMenu" xml:space="preserve">
+    <value>请选择菜单</value>
+  </data>
+  <data name="SelParentID" xml:space="preserve">
+    <value>请选择大分类</value>
+  </data>
+  <data name="SelScreenShot" xml:space="preserve">
+    <value>必须指定一个截图文件。</value>
+  </data>
+  <data name="SelUser" xml:space="preserve">
+    <value>请选择用户</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>发送人</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="SendWholeMail" xml:space="preserve">
+    <value>发送全体邮件</value>
+  </data>
+  <data name="SetDetailInfo" xml:space="preserve">
+    <value>设置详细情报</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingAuth" xml:space="preserve">
+    <value>权限设置</value>
+  </data>
+  <data name="SettingMenu" xml:space="preserve">
+    <value>菜单构成</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>查看图像</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6个小时</value>
+  </data>
+  <data name="Skin1" xml:space="preserve">
+    <value>上下端菜单边框</value>
+  </data>
+  <data name="Skin2" xml:space="preserve">
+    <value>上端菜单背景</value>
+  </data>
+  <data name="Skin3" xml:space="preserve">
+    <value>下端菜单背景</value>
+  </data>
+  <data name="Skin4" xml:space="preserve">
+    <value>字体色反转</value>
+  </data>
+  <data name="Skin5" xml:space="preserve">
+    <value>XXX 欢迎您</value>
+  </data>
+  <data name="Skin6" xml:space="preserve">
+    <value>自2000-01-01</value>
+  </data>
+  <data name="Skin7" xml:space="preserve">
+    <value>会员数：100</value>
+  </data>
+  <data name="Skin8" xml:space="preserve">
+    <value>访问数：10</value>
+  </data>
+  <data name="Skin9" xml:space="preserve">
+    <value>被选择颜色：</value>
+  </data>
+  <data name="SkinDes" xml:space="preserve">
+    <value>管理社区菜单皮肤</value>
+  </data>
+  <data name="SkinManager" xml:space="preserve">
+    <value>皮肤管理</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="StandDown" xml:space="preserve">
+    <value>活动中止</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期必须小于终止日期。</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>结束日不能小于或等于开始日。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SubBaseName" xml:space="preserve">
+    <value>请输入小分类</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>小分类</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>超级管理员</value>
+  </data>
+  <data name="TabTitle" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾语</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3个小时</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3天</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TitleDisplay" xml:space="preserve">
+    <value>台头背景图片</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="TodayCount" xml:space="preserve">
+    <value>今天帖子数</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2个小时</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2天</value>
+  </data>
+  <data name="Type1" xml:space="preserve">
+    <value>公开</value>
+  </data>
+  <data name="Type1Des" xml:space="preserve">
+    <value>无需会员加入</value>
+  </data>
+  <data name="Type2" xml:space="preserve">
+    <value>非公开</value>
+  </data>
+  <data name="Type2Des" xml:space="preserve">
+    <value>只有社区会员才能访问</value>
+  </data>
+  <data name="Type3" xml:space="preserve">
+    <value>提问</value>
+  </data>
+  <data name="Type3Des" xml:space="preserve">
+    <value>给希望加入者提问题，限回答正确的人允许加入。</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>以上</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>会员情报</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="UsingMenu" xml:space="preserve">
+    <value>使用中的菜单</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>查看数</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>查看日</value>
+  </data>
+  <data name="ViewStatus" xml:space="preserve">
+    <value>查看现况</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>登录情报</value>
+  </data>
+  <data name="VisitCount" xml:space="preserve">
+    <value>访问数</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1个星期</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>重要度</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+  <data name="Welcome2" xml:space="preserve">
+    <value>会员数</value>
+  </data>
+  <data name="Welcome3" xml:space="preserve">
+    <value>访问数</value>
+  </data>
+  <data name="WholeMember" xml:space="preserve">
+    <value>全体会员</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="WriteAuth" xml:space="preserve">
+    <value>编写权限</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>写帖子</value>
+  </data>
+  <data name="WriteView" xml:space="preserve">
+    <value>查看帖子</value>
+  </data>
+  <data name="WrongAnswer" xml:space="preserve">
+    <value>回答错误。</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>节省</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>替补缺席</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+</root>

@@ -1,0 +1,1 @@
+function ComponentArt_TabStrip_SetKeyboardFocusedTabStrip(tabStrip){qqPa=tabStrip;};function ComponentArt_TabStrip_InitKeyboard(tabStrip){ComponentArt_TabStrip_SetKeyboardFocusedTabStrip(tabStrip);tabStrip.KeyboardEnabled=true;tabStrip.qzad=tabStrip.Tabs()[0];document.onkeydown=ComponentArt_HandleKeyPress;};var ComponentArt_TabStrip_Keyboard_Loaded=true;

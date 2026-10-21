@@ -1,0 +1,55 @@
+﻿<table class="table_typeA">
+<caption>리스트</caption>
+<colgroup>
+    <col />   
+    <col width="10%"  />
+    <col width="10%"  />    
+    <col width="10%" />
+    <col width="10%" />
+    <col width="10%" />
+    <col width="10%" />
+    <col width="10%" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="r_header0"></span></th>        
+        <th class="center"><span id="r_header1"></span></th>
+        <th class="center"><span id="r_header2"></span></th>
+        <th class="center"><span id="r_header3"></span></th>
+        <th class="center"><span id="r_header4"></span></th>
+        <th class="center"><span id="r_header5"></span></th>
+        <th class="center"><span id="r_header6"></span></th>
+        <th class="center"><span id="r_header7"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>        
+        <td class="center">
+        {#if $T.List.IsApproval == 1}
+        <a onclick="List.View('{ $T.List.ProjectID }');return false;" style="cursor:pointer">
+            { $T.List.SubjectBase }
+        </a>
+        {#else}
+            { $T.List.SubjectBase }
+        {#/if}
+        </td>
+        <td class="center">{ $T.List.DeptBase }</td>
+        <td class="center">
+        <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">
+        { $T.List.NameBase }
+        </a>
+        </td>
+        <td class="center">{ $T.List.PlanStartDateStr }</td>
+        <td class="center">{ $T.List.PlanEndDateStr }</td>
+        <td class="center">{ $T.List.StatusStr }</td>
+        <td class="center">{ $T.List.Process } %</td>    
+        <td class="center">{ $T.List.Apprval }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

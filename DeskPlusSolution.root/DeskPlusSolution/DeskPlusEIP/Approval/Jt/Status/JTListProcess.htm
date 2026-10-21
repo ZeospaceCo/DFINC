@@ -1,0 +1,61 @@
+﻿<table class="table_typeA">
+<caption>상신한 문서</caption>
+<colgroup>
+    <col width="150px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_nextUser"></th>
+        <th class="center" id="r_writeTime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Process}
+    <tr>
+        <td class="center">{ $T.Process.FormBase }</td>
+        <td class="center"><a href="" onclick="Process.State('{ $T.Process.DocumentID }','{ $T.Process.AccountTag }');return false;" style="cursor:pointer" >
+        {#if $T.Process.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Process.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Process.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Process.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Process.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Process.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Process.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>
+            {#if $T.Process.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Process.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <span action="subject" style="cursor:pointer" docID='{ $T.Process.DocumentID }' state='{ $T.Process.ApprovalState }' accountTag='{ $T.Process.AccountTag }' nextSeq='{ $T.Process.NextSequence }' groupID='{ $T.Process.GroupID }' myTurn='{ $T.Process.MyTurn }' approvalTag='{ $T.Process.ApprovalTag }' lastTag='{ $T.Process.LastTag }' isLegacy='{ $T.Process.IsLegacy }' fileName='{ $T.Process.CustomFileName }' >{ $T.Process.Subject }</span> 
+            {#if $T.Process.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Process.Filecount > 0}                
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Process.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Process.UserID }');return false;">{ $T.Process.NameBase }</a></td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Process.NextUserID }');return false;">{ $T.Process.NextUserInfo }</a></td>         
+        <td class="center">{ $T.Process.WriteTimeStr }</td>        
+    </tr>
+{#else}
+    <tr>
+        <td colspan="7" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

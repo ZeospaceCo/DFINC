@@ -1,0 +1,205 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper;
+
+namespace Zeospace.DeskPlus.Task.Web.Common
+{
+    public partial class BaseTaskList : Base.BasePageTask
+    {
+        #region 변수설정
+        public string BaseTasks { get; set; }
+        #endregion 
+
+        #region Page Process (페이지 처리)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            #region 다국어 리소스 로드/Title 정보
+
+            this.ResourceName = "Zeospace.DeskPlus.Task.Web.Resource.GlobalString.string";			//리소스 명 선언
+            this.AssemblyName = typeof(Zeospace.DeskPlus.Task.Web.Common.BaseTaskList).Assembly;	//어셈블리 선언
+
+            #endregion 다국어 리소스 로드/Title 정보
+
+            if (!IsPostBack)
+            {
+                SetLanguage();
+                LoadData();
+            }
+        }
+
+        #endregion Page Process (페이지 처리)
+
+        #region DataLoad (컨트롤에 데이터를 바인딩 하는 메소드)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void LoadData()
+        {
+            LoadParam();
+
+            // 분류 정보 가져오기 
+            LoadItem();
+
+            // 사용자 설정 상태 가져오기
+            DAL.Status dal = new DAL.Status();
+            List<BE.StatusInfo> al = dal.GetList(CurrentUserInfo.CompanyID, "BA", CurrentUserInfo.UserID);
+
+            foreach (BE.StatusInfo _Info in al)
+            {
+                SearchStatus = _Info.Status;
+            }
+
+            foreach (string list in SearchStatus.Split(','))
+            {
+                if (list == "1")
+                {
+                    cbxStatus.Items[0].Selected = true;
+                }
+
+                if (list == "2")
+                {
+                    cbxStatus.Items[1].Selected = true;
+                }
+
+                if (list == "4")
+                {
+                    cbxStatus.Items[2].Selected = true;
+                }
+
+                if (list == "6")
+                {
+                    cbxStatus.Items[3].Selected = true;
+                }
+            }
+
+            #region PageSize 설정하기
+
+            ListCount = GetEnvKeyValue(CurrentUserInfo.CompanyID, AppSettingType.TASK, "ListCount", "20");//페이지리스트수
+
+            DAL.ListUser dalUser = new DAL.ListUser();
+            List<BE.ListUserInfo> alUser = dalUser.GetList(CurrentUserInfo.CompanyID, "BA", CurrentUserInfo.UserID);
+
+            foreach (BE.ListUserInfo userInfo in alUser)
+            {
+                ListCount = userInfo.PageSize.ToString();
+            }
+
+            ddlListCount.SelectedValue = ListCount;
+
+            #endregion
+
+            // 기본 정보
+            ddlSearchField.SelectedValue = SearchField;
+            ctbSearch.Text = SearchValue;     
+
+        }
+
+        #endregion DataLoad (컨트롤에 데이터를 바인딩 하는 메소드)
+
+        #region (함수)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void SetLanguage()
+        {
+            this.GetResourceManager();
+            if (!this.resMng.Equals(null))
+            {
+                cbtnSave.Text = resMng.GetString("BtnConfirm");
+                cbtnSearch.Text = resMng.GetString("OrganBtnSearch");
+
+                ddlSearchField.Items[0].Text = resMng.GetString("Title");
+                ddlSearchField.Items[1].Text = resMng.GetString("DocNumber");
+                ddlSearchField.Items[2].Text = resMng.GetString("RequestDate");
+                ddlSearchField.Items[3].Text = resMng.GetString("StartDate");
+                ddlSearchField.Items[4].Text = resMng.GetString("EndDate");
+                ddlSearchField.Items[5].Text = resMng.GetString("Requester");
+
+                cbxStatus.Items.Clear();
+                cbxStatus.Items.Add(new ListItem("<p class=\"cw_r\">" + resMng.GetString("StandBy") + "</p>", "1"));       //대기             
+                cbxStatus.Items.Add(new ListItem("<p class=\"cw_i\">" + resMng.GetString("Progress") + "</p>", "2,3"));    //접수+처리중
+                cbxStatus.Items.Add(new ListItem("<p class=\"cw_e\">" + resMng.GetString("Complete") + "</p>", "4,5"));    //완료+재검토
+                cbxStatus.Items.Add(new ListItem("<p class=\"cw_re\">" + resMng.GetString("Delay") + "</p>", "6"));        //지연
+              
+            }
+        }
+
+        /// <summary>
+        /// 대분류, 소분류 가져오기
+        /// </summary>
+        private void LoadItem()
+        {
+            // 대분류 값 가져오기
+            DAL.Item itemDal = new DAL.Item();
+            var itemList = itemDal.GetItem(CurrentUserInfo.CompanyID, true);
+
+            ddlItem.Items.Clear();
+            ddlItem.Items.Add(new ListItem(resMng.GetString("Category"), "0"));
+
+            if (itemList != null)
+            {
+                foreach (var item in itemList)
+                {
+                    string tmpName = this.GetLangName(
+                                  item.NameBase, item.NameKo,
+                                  item.NameEn, item.NameJa,
+                                  item.NameFr, item.NameZhcn,
+                                  item.NameZhtw, PreLang);
+
+                    if (tmpName.Length > 6) tmpName = tmpName.Substring(0, 5) + "..";
+                    ddlItem.Items.Add(new ListItem(tmpName, item.ItemID.ToString()));
+                }
+
+                ddlItem.SelectedValue = ItemID.ToString();
+            }
+
+            // 소분류 값 가져오기
+            DAL.ItemSub itemSubDal = new DAL.ItemSub();
+            var itemSubList = itemSubDal.GetItemSub(CurrentUserInfo.CompanyID, ItemID, true);
+
+            ddlItemSub.Items.Clear();
+            ddlItemSub.Items.Add(new ListItem(resMng.GetString("SubCategory"), "0"));
+
+            if (itemSubList != null)
+            {
+                foreach (var item in itemSubList)
+                {
+                    string tmpName = this.GetLangName(
+                                  item.NameBase, item.NameKo,
+                                  item.NameEn, item.NameJa,
+                                  item.NameFr, item.NameZhcn,
+                                  item.NameZhtw, PreLang);
+
+                    if (tmpName.Length > 6) tmpName = tmpName.Substring(0, 5) + "..";
+                    ddlItemSub.Items.Add(new ListItem(tmpName, item.ItemSubID.ToString()));
+                }
+
+                ddlItemSub.SelectedValue = ItemSubID.ToString();
+            }
+        }
+
+        /// <summary>
+        /// 작성자 :
+        /// 작성일자 :
+        /// 작성목적 : 파라미터
+        /// </summary>
+        private void LoadParam()
+        {
+            BaseTasks = GetDecryptParam("baseTasks", "");
+        }        
+
+        #endregion (함수)
+    }
+}

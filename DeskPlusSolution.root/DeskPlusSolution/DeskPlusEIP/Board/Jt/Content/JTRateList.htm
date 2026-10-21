@@ -1,0 +1,32 @@
+﻿<table class="table_typeA" border="0"> 
+<caption></caption>
+<colgroup>
+    <col width="100px"/>
+    <col width="120px"/>
+    <col width="40px"/>
+    <col />
+    <col width="100px"/>    
+</colgroup>
+<thead>
+    <th id="j_DeptName"></th>
+    <th id="j_UserName"></th>    
+    <th id="j_Rating"></th>
+    <th id="j_Comments"></th>
+    <th id="j_WriteDateStr"></th>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.DeptName }</td>
+    <td class="center">{ $T.BoardList.UserName }</td>
+    <td class="center">{ $T.BoardList.Rating }</td>
+    <td><div class="boa_rate_nowrapText"><span style="" title="{ $T.BoardList.Comments }">{ $T.BoardList.Comments }</span></div></td>
+    <td class="center">{ $T.BoardList.WriteDateStr }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

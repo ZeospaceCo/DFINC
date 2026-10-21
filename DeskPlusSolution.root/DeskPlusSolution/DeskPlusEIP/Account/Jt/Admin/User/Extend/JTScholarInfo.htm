@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <colgroup>
+        <col width="180px" />
+        <col width="150px" />
+        <col width="120px" />
+        <col width="*" />
+        <col width="120px" />
+        <col width="150px" />
+        <col width="60px" />
+    </colgroup>
+    <tr>        
+        <th class="center" id="r_date"></th>
+        <th class="center" id="r_schoolname"></th>
+        <th class="center" id="r_degree"></th>
+        <th class="center" id="r_major"></th>                            
+        <th class="center" id="r_graduatetype"></th>
+        <th class="center" id="r_etc"></th>
+        <th class="center" id="r_del"></th>        
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>        
+        <td class="center">{ $T.AccountList.StartDate } - { $T.AccountList.EndDate }</td>
+        <td class="center">{ $T.AccountList.SchoolName }</td>
+        <td class="center">{ $T.AccountList.DegreeName }</td>
+        <td class="center">{ $T.AccountList.Major }</td>
+        <td class="center">{ $T.AccountList.GraduateTypeName }</td>
+        <td class="center">{ $T.AccountList.Etc }</td>
+        <td class="center"><a class="btn" href="#" onclick="ScholarInfo.Del('{ $T.AccountList.CompanyID }','{ $T.AccountList.ScholarshipID }')">{ $T.AccountList.BtnDel }</a></td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

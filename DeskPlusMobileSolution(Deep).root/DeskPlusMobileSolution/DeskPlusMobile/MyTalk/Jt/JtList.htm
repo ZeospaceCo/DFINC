@@ -1,0 +1,37 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    {#if $T.List.View == 'Y'} 
+    <div class="title linkDiv" onclick="javascript:List.ViewList('{ $T.List.GroupID }')">
+        <table class="blog_table">
+            <colgroup>
+                <col width="65px" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="blog_img" rowspan="2"> {$T.List.Depth}{$T.List.PhotoImage}</td>
+                    <td class="blog_cont">{$T.List.RUserName} {$T.List.Content} {$T.List.ShowNew}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="blog_subDate">{ $T.List.UserName } {$T.List.WriteDateYMD }</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {#else}
+    <div class="title">
+        <a class="mct">{$T.List.Depth}{$T.List.Content}<br />&nbsp;</a> 
+    </div>
+    {#/if}
+</li>
+{#else}   
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddPortletCheckedTab" xml:space="preserve">
+    <value>タブ選択したポートレットが追加されました。</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>登録日を入力してください。</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>분류</value>
+  </data>
+  <data name="CheckSearchSection" xml:space="preserve">
+    <value>検索分野を選択してください</value>
+  </data>
+  <data name="ConfirmExec" xml:space="preserve">
+    <value>색인 작업을 실행 하시겠습니까?</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>종료시간</value>
+  </data>
+  <data name="ExecTime" xml:space="preserve">
+    <value>실행시간</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FTRTextCount" xml:space="preserve">
+    <value>첨부파일색인수</value>
+  </data>
+  <data name="GoToDetail" xml:space="preserve">
+    <value>詳細ショートカット</value>
+  </data>
+  <data name="IndexCount" xml:space="preserve">
+    <value>총색인수</value>
+  </data>
+  <data name="InputOrderWay" xml:space="preserve">
+    <value>並べ替え方法を入力してください</value>
+  </data>
+  <data name="InputSearchEngine" xml:space="preserve">
+    <value>キーワードを入力してください</value>
+  </data>
+  <data name="InputSearchValue" xml:space="preserve">
+    <value>検索を入力してください</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>最近1ヶ月</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>最近1週間</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>内容がありません。</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>番号</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="PeriodDate" xml:space="preserve">
+    <value>期間の条件</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理中にエラーが発生しました。管理者にお問い合わせください。</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>投稿者</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchAutoSpecialNumber" xml:space="preserve">
+    <value>特定の番号を入力すると、アドレス帳から自動的に取得されます。</value>
+  </data>
+  <data name="SearchDateSelect" xml:space="preserve">
+    <value>選択した期間</value>
+  </data>
+  <data name="SearchFieldApproval" xml:space="preserve">
+    <value>電子承認</value>
+  </data>
+  <data name="SearchFieldBoard" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="SearchFieldMail" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="SearchFieldTotal" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchHelp2FirstAction" xml:space="preserve">
+    <value>2を最初に実行</value>
+  </data>
+  <data name="SearchHelpAllInclude" xml:space="preserve">
+    <value>1,2の両方を含む</value>
+  </data>
+  <data name="SearchHelpChoice" xml:space="preserve">
+    <value>1,2のいずれかが含まれて</value>
+  </data>
+  <data name="SearchHelpIf" xml:space="preserve">
+    <value>検索条件</value>
+  </data>
+  <data name="SearchHelpIncludeNot" xml:space="preserve">
+    <value>1は含まれて、2は除く</value>
+  </data>
+  <data name="SearchInResult" xml:space="preserve">
+    <value>結果内の検索</value>
+  </data>
+  <data name="SearchMoreResultData" xml:space="preserve">
+    <value>より多くの検索結果を表示</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>検索結果はありません。</value>
+  </data>
+  <data name="SearchOutput" xml:space="preserve">
+    <value>ソート方法</value>
+  </data>
+  <data name="SearchOutputCurrect" xml:space="preserve">
+    <value>精度</value>
+  </data>
+  <data name="SearchOutputDate" xml:space="preserve">
+    <value>投稿者</value>
+  </data>
+  <data name="SearchOutputTitle" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="SearchRequestSelect" xml:space="preserve">
+    <value>選択してください</value>
+  </data>
+  <data name="SearchResultCnt" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="SearchResultCntTitle" xml:space="preserve">
+    <value>結果数</value>
+  </data>
+  <data name="SearchResultTotal" xml:space="preserve">
+    <value>検索結果総</value>
+  </data>
+  <data name="SearchResultValue" xml:space="preserve">
+    <value>キーワード{0}の検索結果全{1}件見つかりました。</value>
+  </data>
+  <data name="SearchResultValueWithin" xml:space="preserve">
+    <value>{0}検索結果の{1}を含む検索結果​​全{2}件見つかりました。</value>
+  </data>
+  <data name="SearchSection" xml:space="preserve">
+    <value>検索分野</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>件見つかりました。</value>
+  </data>
+  <data name="SearchTimeFromTo" xml:space="preserve">
+    <value>直接入力</value>
+  </data>
+  <data name="SearchTimeMonth" xml:space="preserve">
+    <value>ヶ月</value>
+  </data>
+  <data name="SearchTimePeriod" xml:space="preserve">
+    <value>検索期間</value>
+  </data>
+  <data name="SearchTimeWeek" xml:space="preserve">
+    <value>週間</value>
+  </data>
+  <data name="SearchTimeYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="SearchWord1" xml:space="preserve">
+    <value>検索語1</value>
+  </data>
+  <data name="SearchWord1n2" xml:space="preserve">
+    <value>キーワード1,2を含む</value>
+  </data>
+  <data name="SearchWord1or2" xml:space="preserve">
+    <value>キーワード1,2のいずれかが含まれて</value>
+  </data>
+  <data name="SearchWord2" xml:space="preserve">
+    <value>検索2</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>리스트를 선택해주세요</value>
+  </data>
+  <data name="ShowSearch" xml:space="preserve">
+    <value>検索出力</value>
+  </data>
+  <data name="SortWay" xml:space="preserve">
+    <value>ソート方法</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>시작시간</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日が終了日よりも小さくします。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="TitleNFileName" xml:space="preserve">
+    <value>タイトル+ファイル名</value>
+  </data>
+  <data name="MSG_ATTACH" xml:space="preserve">
+    <value>첨부파일 색인</value>
+  </data>
+  <data name="MSG_COMPLETE" xml:space="preserve">
+    <value>색인 완료</value>
+  </data>
+  <data name="MSG_CONTENT" xml:space="preserve">
+    <value>내용 색인</value>
+  </data>
+  <data name="MSG_ERROR" xml:space="preserve">
+    <value>색인 오류</value>
+  </data>
+  <data name="MSG_START" xml:space="preserve">
+    <value>색인 생성시작</value>
+  </data>
+  <data name="MSG_TXT" xml:space="preserve">
+    <value>TXT 파일 변환</value>
+  </data>
+  <data name="StatusC" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="StatusE" xml:space="preserve">
+    <value>에러</value>
+  </data>
+  <data name="StatusP" xml:space="preserve">
+    <value>진행중</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>색인로그</value>
+  </data>
+  <data name="StatusN" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="IndexAdd" xml:space="preserve">
+    <value>색인실행</value>
+  </data>
+  <data name="IndexCancel" xml:space="preserve">
+    <value>색인중지</value>
+  </data>
+  <data name="IndexDel" xml:space="preserve">
+    <value>색인삭제</value>
+  </data>
+  <data name="IndexOptimize" xml:space="preserve">
+    <value>색인최적화</value>
+  </data>
+  <data name="IndexResult" xml:space="preserve">
+    <value>색인결과</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1달</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1주</value>
+  </data>
+  <data name="ComfirmComplete" xml:space="preserve">
+    <value>색인 상태가 완료가 아닙니다</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>색인을 삭제 하시겠습니까?</value>
+  </data>
+  <data name="ConfirmOpt" xml:space="preserve">
+    <value>색인을 최적화 하시겠습니까?</value>
+  </data>
+  <data name="MSG_DEL_COMPLETE" xml:space="preserve">
+    <value>색인 삭제 완료</value>
+  </data>
+  <data name="MSG_DEL_ERROR" xml:space="preserve">
+    <value>색인삭제 오류</value>
+  </data>
+  <data name="MSG_DEL_START" xml:space="preserve">
+    <value>색인 삭제시작</value>
+  </data>
+  <data name="MSG_OPT_COMPLETE" xml:space="preserve">
+    <value>색인 최적화 완료</value>
+  </data>
+  <data name="MSG_OPT_ERROR" xml:space="preserve">
+    <value>색인 최적화 오류</value>
+  </data>
+  <data name="MSG_OPT_START" xml:space="preserve">
+    <value>색인 최적화 시작</value>
+  </data>
+  <data name="StatusD" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="ConfirmCheckValue" xml:space="preserve">
+    <value>검색 조건인 대문자 AND, OR 는 단어 중간에 와야 합니다.</value>
+  </data>
+  <data name="SearchFieldEDM" xml:space="preserve">
+    <value>문서관리</value>
+  </data>
+  <data name="EDM" xml:space="preserve">
+    <value>문서관리</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>주소록</value>
+  </data>
+  <data name="COOP" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="PIM" xml:space="preserve">
+    <value>일정관리</value>
+  </data>
+  <data name="RM" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>마이톡</value>
+  </data>
+  <data name="WEBHARD" xml:space="preserve">
+    <value>웹하드</value>
+  </data>
+  <data name="SearchFieldAddress" xml:space="preserve">
+    <value>주소록</value>
+  </data>
+  <data name="SearchFieldWebHard" xml:space="preserve">
+    <value>웹폴더</value>
+  </data>
+  <data name="SearchFieldCoop" xml:space="preserve">
+    <value>업무협조</value>
+  </data>
+  <data name="SearchFieldPim" xml:space="preserve">
+    <value>일정관리</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>일정</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>할일</value>
+  </data>
+  <data name="SearchFieldRM" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="SearchFieldTask" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="TASK" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="SearchFieldAddressInfo" xml:space="preserve">
+    <value>(검색대상 : 이름/메일주소/부서명/회사명)</value>
+  </data>
+  <data name="SearchFieldApprovalInfo" xml:space="preserve">
+    <value>(검색대상 : 제목/내용/작성자명/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldBoardInfo" xml:space="preserve">
+    <value>(검색대상 : 제목/내용/작성자명/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldCoopInfo" xml:space="preserve">
+    <value>(검색대상 : 대분류/중분류/제목/내용/작성자명/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldEDMInfo" xml:space="preserve">
+    <value>(검색대상 : 제목/내용/작성자명/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldPimInfo" xml:space="preserve">
+    <value>(검색대상 : 나의일정 제목/내용/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldRMInfo" xml:space="preserve">
+    <value>(검색대상 : 자원명/제목/예약자/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldTaskInfo" xml:space="preserve">
+    <value>(검색대상 : 대분류/중분류/제목/내용/작성자명/첨부파일명/첨부파일내용)</value>
+  </data>
+  <data name="SearchFieldWebHardInfo" xml:space="preserve">
+    <value>(검색대상 : 파일명/파일내용)</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+</root>

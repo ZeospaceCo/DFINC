@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () { $(".accordion").accordion({ fillSpace: true }); $(".accordion").accordion({ animated: 'slide' }); });
+    $(function () { $("#accordionResizer").resizable({ minHeight: 0, resize: function () { $("#accordion").accordion("resize"); } }); });
+
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">커뮤니티 슈퍼관리자</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            
+            <div class="menu"><a href="#" onclick="" >카테고리 관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('../Content/분류관리.html')">분류관리</a></h2></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >커뮤니티 관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티승인.html')">커뮤니티 승인</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티해지신청.html')">커뮤니티 해지신청</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티폐쇄.html')">커뮤니티 폐쇄</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티시샵변경.html')">시샵변경</a></h2></li>
+                </ul>
+            </div>
+            
+            <!--<div class="menu"><a href="#" onclick="" >커뮤니티 통계</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a>사용자별...?</a></h2></li>
+                    <li><h2><a>포인트별...?</a></h2></li>
+                    <li><h2><a>커뮤니티별...?</a></h2></li>
+                </ul>
+            </div>-->
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+
+</div>
+
+</body>
+</html>

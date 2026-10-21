@@ -1,0 +1,191 @@
+
+<html>
+<head>
+<SCRIPT type="text/javascript" src="http://www.cs.rit.edu/~rjb6296/jquery_demo/js/jquery.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="http://www.cs.rit.edu/~rjb6296/jquery_demo/js/jquery.cookie.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="http://www.cs.rit.edu/~rjb6296/jquery_demo/js/jquery-ui-1.8.2.custom.min.js"></SCRIPT>
+<link type="text/css" href="http://www.cs.rit.edu/~rjb6296/jquery_demo/css/smoothness/jquery-ui-1.8.2.custom.css" rel="Stylesheet" />
+<style type="text/css" media="screen">
+    .column { width: 300px; float: left; padding-bottom: 200px; }
+    .portlet { margin: 0 1em 1em 0; }
+    .portlet-header {
+        font-size:13px; margin: 0.3em;
+        padding-bottom: 4px; padding-left: 0.2em; }
+    .portlet-header .ui-icon { float: right; }
+    .portlet-content { padding: 0.4em; }
+    .ui-sortable-placeholder {
+        border: 1px dotted black;
+        visibility: visible !important;
+        height: 200px !important; }
+    .ui-sortable-placeholder * { visibility: hidden; }
+
+    body { font: 62.5% "Trebuchet MS", sans-serif; }
+</style>
+
+<script type="text/javascript">
+
+//쿠키에 리스트 순서 저장하기
+function saveOrder() {
+    $(".column").each(function(index, value){
+        var colid = value.id;
+        var cookieName = "cookie-" + colid;
+        // Get the order for this column.
+        var order = $('#' + colid).sortable("toArray");
+
+        // 각 layout 에 대한 포틀릿들을 for 문으로 array 배열에 담는다.
+        for ( var i = 0, n = order.length; i < n; i++ ) {
+            // 본문 내용이 보이는지 감춰져 있는지 bool 형
+            var v = $('#' + order[i] ).find('.portlet-content').is(':visible');
+            
+			//box_feeds:true
+            order[i] = order[i] + ":" + v;
+        }
+
+		//box_feeds:true,box_news:true,box_shopping:true
+        $.cookie(cookieName, order, { path: "/", expiry: new Date(2012, 1, 1)});
+
+    });
+}
+
+//쿠키에서 리스트 순서 설정하기
+// function that restores the list order from a cookie
+function restoreOrder() {
+    $(".column").each(function(index, value) {
+        var colid = value.id;
+        var cookieName = "cookie-" + colid
+        var cookie = $.cookie(cookieName);
+        if ( cookie == null ) { return; }
+		//box_feeds:true,box_news:true,box_shopping:true
+		//layout 별로 portlets 을 comma 로 분리해서 넘겨준다.		
+        var IDs = cookie.split(",");
+
+        for (var i = 0, n = IDs.length; i < n; i++ ) {
+            var toks = IDs[i].split(":");
+            if ( toks.length != 2 ) {
+                continue;
+            }
+            var portletID = toks[0]; //포틀릿 아이디
+            var visible = toks[1] //포틀릿 접기,펴기값 (true, false)
+
+            //해당 layout 에 포틀릿 추가함
+			var portlet = $(".column")
+                .find('#' + portletID)
+                .appendTo($('#' + colid));
+
+			//포틀릿이 접혀 있다면, 내용을 감춘다.
+            if (visible === 'false') {
+                portlet.find(".ui-icon").toggleClass("ui-icon-minus");
+                portlet.find(".ui-icon").toggleClass("ui-icon-plus");
+                portlet.find(".portlet-content").hide();
+            }
+        }
+    });
+} 
+
+
+$(document).ready( function () {
+    $(".column").sortable({
+        connectWith: ['.column'],
+        stop: function() { saveOrder(); }
+    }); 
+
+	//포틀릿에 class 추가 및 header 에도 class 추가
+    $(".portlet")
+        .addClass("ui-widget ui-widget-content")
+        .addClass("ui-helper-clearfix ui-corner-all")
+        .find(".portlet-header")
+        .addClass("ui-widget-header ui-corner-all")
+        .prepend('<span class="ui-icon ui-icon-minus"></span>')
+        .end()
+        .find(".portlet-content");
+
+    restoreOrder();
+
+	//펼치고 접기 아이콘 클릭시
+    $(".portlet-header .ui-icon").click(function() {
+        $(this).toggleClass("ui-icon-minus");
+        $(this).toggleClass("ui-icon-plus");
+        $(this).parents(".portlet:first").find(".portlet-content").toggle();
+        saveOrder(); // This is important
+    });
+
+	//마우스 올릴 경우 class 추가 및 삭제
+    $(".portlet-header .ui-icon").hover(
+        function() {$(this).addClass("ui-icon-hover"); },
+        function() {$(this).removeClass('ui-icon-hover'); }
+    );
+
+	$("#content_jae").html("<b>재우니 만쇄이..ㅇㅇㅇ</b>");
+}); 
+
+</script>
+</head>
+
+<body>
+    <div class="ui-widget">
+        <div class="ui-widget-header">
+            Saving Multiple Portlet Columns and Portlet State with Cookies
+        </div>
+        <div class="ui-content">
+            Try moving the portlets around and minimizing them, then reload the page to test restoration-by-cookie.
+        </div>
+    </div>
+
+	<div class="column" id="col1">
+		<div class="portlet" id="box_feeds">
+			<div class="portlet-header">Feeds</div>
+			<div class="portlet-content">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+			</div>
+		</div>
+		<div class="portlet" id="box_news">
+			<div class="portlet-header">News</div>
+			<div class="portlet-content">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+			</div>
+		</div>
+	</div>
+
+	<div class="column" id="col2">
+		<div class="portlet" id="box_shopping">
+			<div class="portlet-header">Shopping</div>
+			<div class="portlet-content">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br/>
+			</div>
+		</div>
+	</div>
+
+	<div class="column" id="col3">
+		<div class="portlet" id="box_links">
+			<div class="portlet-header">Links</div>
+			<div class="portlet-content">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+			</div>
+		</div>
+		<div class="portlet" id="box_images">
+			<div class="portlet-header">Images</div>
+			<div class="portlet-content">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+			</div>
+		</div>
+	</div> 
+
+	<div class="column" id="col4">
+		<div class="portlet" id="box_jae">
+			<div class="portlet-header">제오스페이스</div>
+			<div class="portlet-content">
+				<div id="content_jae"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

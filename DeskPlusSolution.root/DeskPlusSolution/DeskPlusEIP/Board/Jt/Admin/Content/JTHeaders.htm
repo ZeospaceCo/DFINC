@@ -1,0 +1,30 @@
+﻿
+<div class="popup_layout_style3">
+        <table class="table_typeB">
+            <caption>
+            </caption>
+        <colgroup>
+            <col>
+            <col width="45px">                    
+            <col width="45px">                    
+		</colgroup>       
+        <tbody>                    
+                <tr>
+                    <td><input id="Newheader" style="width: 240px;" type="text" value=""></td>
+                    <td colspan="2" class="center"><a onclick="Headers.Add()" style="cursor: pointer" class="btn btn-sm btn-secondary">추가</a></td>
+                </tr>
+                {#foreach $T as BoardList}
+                <tr>
+                    <td><input id="headers{ $T.BoardList.HeaderID }" type="text" value="{ $T.BoardList.NameBase }" style="width: 240px;" /></td>
+                    <td class="center">
+                        <a onclick="Headers.Mod('headers{ $T.BoardList.HeaderID }','{ $T.BoardList.HeaderID }')" style="cursor: pointer" class="btn btn-sm">수정</a>
+                    </td>
+                    <td  class="center">
+                        <a onclick="Headers.Del('headers{ $T.BoardList.HeaderID }','{ $T.BoardList.HeaderID }')" style="cursor: pointer" class="btn btn-sm btn-danger">삭제</a>
+                    </td>
+                </tr>
+                {#else} 
+		        {#/for}                                 
+        </tbody>
+        </table>
+</div>

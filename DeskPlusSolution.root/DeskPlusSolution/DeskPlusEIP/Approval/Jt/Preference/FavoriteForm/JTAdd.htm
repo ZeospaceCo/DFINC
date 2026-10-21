@@ -1,0 +1,15 @@
+﻿{#foreach $T as List}
+<div class="item">
+    <span class="img" title="{ $T.List.PathNameBase }/{ $T.List.FormBase }">
+        <a href="#" onclick="javascript:Add.Submit('{ $T.List.FormID }')" style="cursor:pointer" title="{ $T.List.PathNameBase }/{ $T.List.FormBase }">
+            <img src="/DeskPlusEIP/Design/C/Img/Approval/doc.gif" />
+        </a>
+    </span>
+    <span class="txt" title="{ $T.List.PathNameBase }/{ $T.List.FormBase }">{ $T.List.FormBase }</span>
+</div>
+{#else}
+<div class="item" style="display:none">
+    <span class="jtNoData"></span>
+</div>
+{#/for}
+

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../Design/ko/base/Css/DeskPlusEIPBase.css" type="text/css" media="screen" rel="stylesheet" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_header">
+	<h1>주소록</h1>
+	<div class="list_add_style1">
+		<ul class="btn_left">
+			<li><a href="" title=""><span>폴더설정</span></a></li>
+		</ul>
+		<ul class="btn_right">
+			<li><a href="" title=""><span>폴더설정</span></a></li>
+			<li><a href="" title=""><span>외부주소</span></a></li>
+			<li><a href="" title=""><span>주소전달</span></a></li>
+			<li><a href="" title=""><span>복사</span></a></li>
+			<li><a href="" title=""><span>이동</span></a></li>
+			<li><a href="" title=""><span>삭제</span></a></li>
+			<li><a href="" title=""><span>인쇄</span></a></li>
+		</ul>
+	</div>
+</div>
+<div id="layout_info">
+    <div class="roundtable_l_b">
+        <!--라운드테이블입니다.-좌우,상하 유동적입니다.-->
+        <div class="roundtable_l_t">
+            <div class="roundtable_r_b">
+                <div class="roundtable_r_t">
+                    <ul class="listAtoZ">
+                        <li class="first-child"><a href="#"><strong>전체</strong></a></li>
+                        <li><a href="#">ㄱ</a></li>
+                        <li><a href="#">ㄴ</a></li>
+                        <li><a href="#">ㄷ</a></li>
+                        <li><a href="#">ㄹ</a></li>
+                        <li><a href="#">ㅁ</a></li>
+                        <li><a href="#">ㅂ</a></li>
+                        <li><a href="#">ㅅ</a></li>
+                        <li><a href="#">ㅇ</a></li>
+                        <li><a href="#">ㅈ</a></li>
+                        <li><a href="#">ㅊ</a></li>
+                        <li><a href="#">ㅋ</a></li>
+                        <li><a href="#">ㅌ</a></li>
+                        <li><a href="#">ㅍ</a></li>
+                        <li><a href="#">ㅎ</a></li>
+                        <li><a href="#">A~Z</a></li>
+                        <li><a href="#">0~9</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//roundtable-->
+    <div class="list_add_style1">        
+        <ul class="btn_searchbox">
+            <li>
+                <select class="searchselect">
+                    <option>이름</option>
+                    <option>이메일 </option>
+                    <option>휴대폰 </option>
+                </select>
+            </li>
+            <li>
+                <input type="text" class="searchtext" />
+            </li>
+            <li><a href="#" class="searchbtn">검색</a></li>
+        </ul>
+    </div>
+    <div class="list_add_style1 mg0"> 
+    	<h2><span id="pageInfo">1 / 9986</span></h2>
+        <ul class="btn_searchbox">
+            <li><input class="input_style2" type="text" size="20" value="이름"/></li>
+            <li><input class="input_style2" type="text" size="40" value="이메일"/></li>
+            <li><input class="input_style2" type="text" size="30" value="휴대폰"/></li>
+            <li>
+            <select class="input_style2">
+                <option>그룹선택</option>
+                <option> </option>
+                <option> </option>
+            </select>
+            </li>
+            <li> <a href="#" class="searchbtn">주소추가</a> </li>
+        </ul>
+    </div>
+    <!-- 테이블 시작 -->
+    <div class="table_typeAtop_left">
+        <p></p>
+    </div>
+    <table class="table_typeA">
+        <caption>
+        주소록 리스트
+        </caption>
+        <colgroup>
+        <col width="5%" />
+        <col width="8%" />
+        <col width="10%" />
+        <col width="7%" />
+        <col width="20%" />
+        <col width="17%" />
+        <col width="17%" />
+        <col />
+        </colgroup>
+        <thead>
+            <tr>
+                <th><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+                <th>사진</th>
+                <th><a href="#">이름</a></th>
+                <th><a href="#">즐겨찾기</a></th>
+                <th><a href="#">메일</a></th>
+                <th>연락처</th>
+                <th>일반전화</th>
+                <th><a href="#">소속</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td ><input type="checkbox" value="GM|7" id="cbxID1" /></td>
+                <td ><img src="../../Design/ko/Base/Img/Etc/pic.jpg" alt="사진" /></td>
+                <td><span class="orangeSquare">차장</span><strong><br />
+                    홍박사</strong></td>
+                <td ><input type="checkbox" onclick="List.Checked()"  /></td>
+                <td >test2@zeospace.com</td>
+                <td >01011112222</td>
+                <td >02-222-3333</td>
+                <td >제오스페이스 영업팀</td>
+            </tr>
+            <tr>
+                <td ><input type="checkbox" value="GM|7"  /></td>
+                <td ><img src="../../Design/ko/Base/Img/Etc/pic.jpg" alt="사진" /></td>
+                <td><span class="orangeSquare">차장</span><strong><br />
+                    홍박사</strong></td>
+                <td ><input type="checkbox" onclick="List.Checked()"  /></td>
+                <td >test2@zeospace.com</td>
+                <td >01011112222</td>
+                <td >02-222-3333</td>
+                <td >제오스페이스 영업팀</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="table_typeAbottom_left">
+        <p></p>
+    </div><!-- 테이블 끝 -->
+</div>
+<!-- //layout_info -->
+<div class="board_num_style2" id="Pager1"> 
+	<span id="pager">
+    	<span id="pager_prev10"><a href="#">이전</a></span>
+        <em> 1 </em>
+        <a href="#"> 2 </a>
+        <a href="#"> 3 </a>
+        <a href="#"> 4 </a>
+        <a href="#"> 5 </a>
+        <a href="#"> 6 </a>
+        <a href="#"> 7 </a>
+        <a href="#"> 8 </a>
+        <a href="#"> 9 </a>
+        <a href="#"> 0 </a>
+        <span id="pager_next10"><a href="#">다음</a></span></span> 
+</div>
+</body>
+</html>

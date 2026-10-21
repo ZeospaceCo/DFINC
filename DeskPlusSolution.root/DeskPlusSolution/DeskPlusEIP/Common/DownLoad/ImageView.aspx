@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ImageView.aspx.cs" Inherits="Zeospace.DeskPlus.Common.Web.DownLoad.ImageView" EnableViewState="false" %>

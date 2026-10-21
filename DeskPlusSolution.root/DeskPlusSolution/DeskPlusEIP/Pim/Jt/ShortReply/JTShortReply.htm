@@ -1,0 +1,38 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="120px" />
+    <col />
+    <col width="90px" />
+</colgroup>
+    <tr>
+        <th id="j_Name"></th>
+        <th id="j_Content"></th>
+        <th id="j_Del"></th>
+    </tr>
+    {#foreach $T as RepleList}
+    <tr>
+        <td>{ $T.RepleList.UserName }</td>
+        <td>
+            <span id="contentInfo{ $T.RepleList.ShortReplyID }">{$T.RepleList.Depth} 
+                <a onclick="javascript:ListDay.goUserList('{ $T.RepleList.RUserID }');return false;" style="cursor:pointer">
+				{$T.RepleList.RUserName}
+                </a>
+                <a onclick="javascript:ListDay.goGroup('{ $T.RepleList.GroupID }');return false;" style="cursor:pointer">
+                { $T.RepleList.Content } 
+                </a>
+				</span>
+        </td>
+        <td>
+            {#if $T.RepleList.IsAuth == 'Y'} 
+            <ul class="btn_smallL">
+                <li><a href="#" onclick="javascript:ListDay.DelReple('{ $T.RepleList.ShortReplyID}','{ $T.RepleList.GroupID }')")><span class="BtnDel"></span></a></li>
+            </ul>
+            {#/if}
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

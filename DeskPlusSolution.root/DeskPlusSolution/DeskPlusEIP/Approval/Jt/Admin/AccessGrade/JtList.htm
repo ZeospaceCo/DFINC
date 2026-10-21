@@ -1,0 +1,37 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="40px" />   
+    <col width="100px" />      
+    <col />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="center"><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+    <th class="center" id="r_accessgradeName" class="center"></th>
+    <th class="center" id="r_accessgradeDept" class="center"></th>
+    <th class="center" id="r_Isbase" class="center"></th>
+    <th class="center" id="r_isactive" class="center"></th>
+</tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.List.AccessID }" value="{ $T.List.AccessID }" />
+            <input type="text" id="tbAccessGrade_{ $T.List.AccessID }" style="display:none" value="{ $T.List.NameBase }" />
+            <input type="text" id="tbIsAccess_{ $T.List.AccessID }" style="display:none" value="{ $T.List.IsAccess }" />
+        </td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.List.AccessID }')" style="cursor:pointer" title="">{ $T.List.NameBase }</a></td>
+        <td><a href="#" onclick="javascript:List.Mod('{ $T.List.AccessID }')" style="cursor:pointer" title="">{ $T.List.AccessGradeUser }</a></td>        
+        <td class="center">{ $T.List.IsBaseStr }</td>
+        <td class="center">{ $T.List.IsAccess }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

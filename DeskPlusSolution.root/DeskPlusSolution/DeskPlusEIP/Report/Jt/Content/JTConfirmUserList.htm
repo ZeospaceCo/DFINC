@@ -1,0 +1,52 @@
+﻿<table class="table_typeA">
+    <caption>
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col />
+        <col width="80px" />
+        <col width="80px" />
+    </colgroup>
+    <tr>
+        <th><input id="cbxAll" type="checkbox" onclick="ConfirmUserList.Checked()" /></th>
+        <th id="j_Name"></th>
+        <th id="j_Flag"></th>
+        <th id="j_View"></th>
+    </tr>
+    {#foreach $T as BoardList}
+    <tr>
+        <td class="center">
+            {#if $T.BoardList.ListID != "0" }
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.BoardList.ListID }" value="{ $T.BoardList.ListID }" />
+            {#/if}
+        </td>
+        <td class="center">
+            { $T.BoardList.NameBase }
+        </td>
+        <td class="center">        
+        {#if $T.BoardList.Flag == "" }
+            <span class="flag"></span>
+        {#elseif $T.BoardList.Flag == "1" }
+            <span class="flag1"></span>
+        {#elseif $T.BoardList.Flag == "2" }
+            <span class="flag2"></span>
+        {#elseif $T.BoardList.Flag == "3" }
+            <span class="flag3"></span>
+        {#/if}
+        </td>
+        <td class="center">
+            {#if $T.BoardList.ListID != "0" }
+            <a onclick="ConfirmUserList.Viewer('{ $T.BoardList.ListID }')"><span class="orangeSquare"><span class="showlist" /></span></a>
+            {#else}
+            -
+            {#/if}
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}
+</table>

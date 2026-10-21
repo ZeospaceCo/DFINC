@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript">
+    function change(_val) {
+        if ($("#chkFav_" + _val).attr("checked") == true) $("#lbFav_" + _val).addClass("on");
+        else $("#lbFav_" + _val).removeClass("on");
+    }
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>결재 대상 문서</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="" title=""><span>관리자</span></a></li>
+                <li><a href="" title=""><span>초기메뉴로 설정</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li><a href="#"><span>일괄결재</span></a></li>
+                <li><a href="#"><span>일괄보류</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul class="btn_searchbox">
+                <li>
+                    <select name="ddlSearchField" id="ddlSearchField" class="searchselect">
+	                    <option value="ManyName">이름</option>
+	                    <option value="Mail">이메일</option>
+	                    <option value="DeptManyName">부서명</option>
+	                    <option value="MobilePhone">휴대폰</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 테이블 시작 //-->
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>결재 대상 문서</caption>
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+                    <th>문서양식</th>
+                    <th><a href="#">결재상황</a></th>
+                    <th><a href="#">제목</a></th>
+                    <th>첨부파일</th>
+                    <th><a href="#">상신자</a></th>
+                    <th><a href="#">다음결재자</a></th>
+                    <th><a href="#">상신일</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" onclick="List.Checked()" id="Checkbox1" /></td>
+                    <td>기안</td>
+                    <td><a href="#" title="클릭 시, 결재상황SEQ를 조회할 수 있는 페이지가 뜸.">반려</a></td>
+                    <td><a href="#" title="결재페이지">MS Certified Partner 재등록 사용료 지급.....</a></td>
+                    <td><img src="/DeskPlusEIP/Design/Blue/Img/Icon/attach.gif" /></td>
+                    <td>길동홍</td>
+                    <td>홍상사</td>
+                    <td>2012-01-01</td>
+                </tr>
+                <tr>
+                    <td colspan="8">내용이 없습니다</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

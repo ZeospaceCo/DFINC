@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAdministrator" xml:space="preserve">
+    <value>添加管理员</value>
+  </data>
+  <data name="AddTagert" xml:space="preserve">
+    <value>添加对象</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="BlogListType" xml:space="preserve">
+    <value>博客型列表</value>
+  </data>
+  <data name="BtnActive" xml:space="preserve">
+    <value>激活/停用</value>
+  </data>
+  <data name="BtnBoard" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="BtnCopy" xml:space="preserve">
+    <value>创建副本</value>
+  </data>
+  <data name="BtnDel" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="BtnExcel" xml:space="preserve">
+    <value>Excel报表</value>
+  </data>
+  <data name="BtnFileAdd" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="BtnPrint" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="BtnReply" xml:space="preserve">
+    <value>添加短回复</value>
+  </data>
+  <data name="BtnSeq" xml:space="preserve">
+    <value>提问顺序</value>
+  </data>
+  <data name="BtnSeqUnit" xml:space="preserve">
+    <value>项目顺序</value>
+  </data>
+  <data name="BtnSrh" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="BtnSuper" xml:space="preserve">
+    <value>变更主管部门</value>
+  </data>
+  <data name="BtnUnitAdd" xml:space="preserve">
+    <value>提问生成</value>
+  </data>
+  <data name="BtnVoteUser" xml:space="preserve">
+    <value>投票现况</value>
+  </data>
+  <data name="Btn_Vote" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>未公开</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>将删除以前创建的内容。要选择吗？</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>举例</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="GoToInfo" xml:space="preserve">
+    <value>转到详细查看页面。</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>转到详细信息输入页面。</value>
+  </data>
+  <data name="GoToListPage" xml:space="preserve">
+    <value>转到查看列表页面。</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>群组</value>
+  </data>
+  <data name="Header1" xml:space="preserve">
+    <value>页头1</value>
+  </data>
+  <data name="Header2" xml:space="preserve">
+    <value>页头2</value>
+  </data>
+  <data name="Header3" xml:space="preserve">
+    <value>页头3</value>
+  </data>
+  <data name="JTF1" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="JTF10" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="JTF11" xml:space="preserve">
+    <value>对象人情报</value>
+  </data>
+  <data name="JTF12" xml:space="preserve">
+    <value>管理员情报</value>
+  </data>
+  <data name="JTF13" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="JTF14" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="JTF15" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="JTF16" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="JTF17" xml:space="preserve">
+    <value>该问卷不公开结果。</value>
+  </data>
+  <data name="JTF18" xml:space="preserve">
+    <value>[查看结果▼]</value>
+  </data>
+  <data name="JTF19" xml:space="preserve">
+    <value>[关闭结果▲]</value>
+  </data>
+  <data name="JTF2" xml:space="preserve">
+    <value>参与人数</value>
+  </data>
+  <data name="JTF20" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="JTF21" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="JTF22" xml:space="preserve">
+    <value>问卷数</value>
+  </data>
+  <data name="JTF23" xml:space="preserve">
+    <value>结果未公开</value>
+  </data>
+  <data name="JTF24" xml:space="preserve">
+    <value>匿名与否</value>
+  </data>
+  <data name="JTF25" xml:space="preserve">
+    <value>结果公开与否</value>
+  </data>
+  <data name="JTF26" xml:space="preserve">
+    <value>回帖使用与否</value>
+  </data>
+  <data name="JTF27" xml:space="preserve">
+    <value>投票日</value>
+  </data>
+  <data name="JTF3" xml:space="preserve">
+    <value>提问数</value>
+  </data>
+  <data name="JTF4" xml:space="preserve">
+    <value>调查期间，</value>
+  </data>
+  <data name="JTF5" xml:space="preserve">
+    <value>激活与否</value>
+  </data>
+  <data name="JTF6" xml:space="preserve">
+    <value>进行状况</value>
+  </data>
+  <data name="JTF7" xml:space="preserve">
+    <value>提问名</value>
+  </data>
+  <data name="JTF8" xml:space="preserve">
+    <value>形式</value>
+  </data>
+  <data name="JTF9" xml:space="preserve">
+    <value>项目数</value>
+  </data>
+  <data name="JTNoData" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>一般列表</value>
+  </data>
+  <data name="MenuF1" xml:space="preserve">
+    <value>提问调查</value>
+  </data>
+  <data name="MenuF10" xml:space="preserve">
+    <value>按公司统计</value>
+  </data>
+  <data name="MenuF11" xml:space="preserve">
+    <value>按部门统计</value>
+  </data>
+  <data name="MenuF12" xml:space="preserve">
+    <value>按职位统计</value>
+  </data>
+  <data name="MenuF13" xml:space="preserve">
+    <value>按性别统计</value>
+  </data>
+  <data name="MenuF14" xml:space="preserve">
+    <value>参与名单</value>
+  </data>
+  <data name="MenuF15" xml:space="preserve">
+    <value>未参与名单</value>
+  </data>
+  <data name="MenuF16" xml:space="preserve">
+    <value>重要标识</value>
+  </data>
+  <data name="MenuF2" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="MenuF3" xml:space="preserve">
+    <value>举例管理</value>
+  </data>
+  <data name="MenuF4" xml:space="preserve">
+    <value>提问管理</value>
+  </data>
+  <data name="MenuF5" xml:space="preserve">
+    <value>调查管理</value>
+  </data>
+  <data name="MenuF6" xml:space="preserve">
+    <value>进行中的调查</value>
+  </data>
+  <data name="MenuF7" xml:space="preserve">
+    <value>结束的调查</value>
+  </data>
+  <data name="MenuF8" xml:space="preserve">
+    <value>调查统计</value>
+  </data>
+  <data name="MenuF9" xml:space="preserve">
+    <value>按用户统计</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Msg_Active" xml:space="preserve">
+    <value>要激活/关闭吗？</value>
+  </data>
+  <data name="Msg_Add" xml:space="preserve">
+    <value>要注册吗？</value>
+  </data>
+  <data name="Msg_Admin" xml:space="preserve">
+    <value>请与管理员联系。</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="Msg_Dept" xml:space="preserve">
+    <value>请选择部门。</value>
+  </data>
+  <data name="Msg_ErrActive" xml:space="preserve">
+    <value>请选择激活/停用项目。</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>因正文含有脚本可疑文句，内容可能被更改。</value>
+  </data>
+  <data name="Msg_ErrDate" xml:space="preserve">
+    <value>请正确输入日期。</value>
+  </data>
+  <data name="Msg_ErrDelItem" xml:space="preserve">
+    <value>请选择要删除的项目。</value>
+  </data>
+  <data name="Msg_ErrEDate" xml:space="preserve">
+    <value>请输入结束日。</value>
+  </data>
+  <data name="Msg_ErrItem" xml:space="preserve">
+    <value>请输入项目信息。</value>
+  </data>
+  <data name="Msg_ErrMaxNum" xml:space="preserve">
+    <value>计分型的情况下，请正确输入最大值。</value>
+  </data>
+  <data name="Msg_ErrNum" xml:space="preserve">
+    <value>请输入数字。</value>
+  </data>
+  <data name="Msg_ErrOpt" xml:space="preserve">
+    <value>调查项目必须要选择一个以上。</value>
+  </data>
+  <data name="Msg_ErrReq" xml:space="preserve">
+    <value>必填项目请都选择。</value>
+  </data>
+  <data name="Msg_ErrSDate" xml:space="preserve">
+    <value>请输入起始日期。</value>
+  </data>
+  <data name="Msg_ErrSEDate" xml:space="preserve">
+    <value>请输入起始日和结束日。</value>
+  </data>
+  <data name="Msg_ErrSupDept" xml:space="preserve">
+    <value>请输入主管部门。</value>
+  </data>
+  <data name="Msg_ErrTitle" xml:space="preserve">
+    <value>请输入标题。</value>
+  </data>
+  <data name="Msg_Fail" xml:space="preserve">
+    <value>处理时发生了错误。</value>
+  </data>
+  <data name="Msg_Sel" xml:space="preserve">
+    <value>请选择项目。</value>
+  </data>
+  <data name="Msg_Success" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="Msg_Unit" xml:space="preserve">
+    <value>请选择提问。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容。</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Opened" xml:space="preserve">
+    <value>公开</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>客观式</value>
+  </data>
+  <data name="OptionNon" xml:space="preserve">
+    <value>主观式</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>提问</value>
+  </data>
+  <data name="ReqItem" xml:space="preserve">
+    <value>必填项目</value>
+  </data>
+  <data name="ReqItemNon" xml:space="preserve">
+    <value>非必填项目</value>
+  </data>
+  <data name="Signed" xml:space="preserve">
+    <value>记名</value>
+  </data>
+  <data name="TitBig" xml:space="preserve">
+    <value>放大</value>
+  </data>
+  <data name="TitClose" xml:space="preserve">
+    <value>截至的问卷</value>
+  </data>
+  <data name="TitDay" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="TitEDate" xml:space="preserve">
+    <value>结束日</value>
+  </data>
+  <data name="TitF1" xml:space="preserve">
+    <value>问卷题目</value>
+  </data>
+  <data name="TitF10" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="TitF11" xml:space="preserve">
+    <value>详细内容</value>
+  </data>
+  <data name="TitF12" xml:space="preserve">
+    <value>提问内容</value>
+  </data>
+  <data name="TitF13" xml:space="preserve">
+    <value>文件列表</value>
+  </data>
+  <data name="TitF14" xml:space="preserve">
+    <value>提问顺序变更</value>
+  </data>
+  <data name="TitF15" xml:space="preserve">
+    <value>*对已登记的项目，将变更项目顺序。</value>
+  </data>
+  <data name="TitF16" xml:space="preserve">
+    <value>问卷结果</value>
+  </data>
+  <data name="TitF17" xml:space="preserve">
+    <value>简短回复</value>
+  </data>
+  <data name="TitF18" xml:space="preserve">
+    <value>：只有在问卷期间可以修改。</value>
+  </data>
+  <data name="TitF19" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="TitF2" xml:space="preserve">
+    <value>问卷期间</value>
+  </data>
+  <data name="TitF20" xml:space="preserve">
+    <value>问卷调查 &gt;</value>
+  </data>
+  <data name="TitF21" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="TitF22" xml:space="preserve">
+    <value>重要标识</value>
+  </data>
+  <data name="TitF23" xml:space="preserve">
+    <value>未参与名单</value>
+  </data>
+  <data name="TitF24" xml:space="preserve">
+    <value>参与名单</value>
+  </data>
+  <data name="TitF25" xml:space="preserve">
+    <value>问卷详细内容</value>
+  </data>
+  <data name="TitF26" xml:space="preserve">
+    <value>问卷投票</value>
+  </data>
+  <data name="TitF3" xml:space="preserve">
+    <value>主管部门</value>
+  </data>
+  <data name="TitF4" xml:space="preserve">
+    <value>可选事项</value>
+  </data>
+  <data name="TitF5" xml:space="preserve">
+    <value>选择时，在问卷列表上端查看。</value>
+  </data>
+  <data name="TitF6" xml:space="preserve">
+    <value>选择时，使用回帖功能。</value>
+  </data>
+  <data name="TitF7" xml:space="preserve">
+    <value>选择时，可查看结果。</value>
+  </data>
+  <data name="TitF8" xml:space="preserve">
+    <value>选择时，可查看参与人名单。</value>
+  </data>
+  <data name="TitF9" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="TitGetDept" xml:space="preserve">
+    <value>选择部门</value>
+  </data>
+  <data name="TitGetUD" xml:space="preserve">
+    <value>用户/部门 选择</value>
+  </data>
+  <data name="TitInfo" xml:space="preserve">
+    <value>问卷信息</value>
+  </data>
+  <data name="TitIng" xml:space="preserve">
+    <value>进行中的问卷</value>
+  </data>
+  <data name="TitIsMain" xml:space="preserve">
+    <value>指定主要</value>
+  </data>
+  <data name="TitIsOpen" xml:space="preserve">
+    <value>公开结果</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>问卷调查 </value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>举例管理</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>提问管理</value>
+  </data>
+  <data name="TitMonth" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="TitNoReq" xml:space="preserve">
+    <value>非必需</value>
+  </data>
+  <data name="TitQuesAdd" xml:space="preserve">
+    <value>问卷管理 &gt; 追加提问 &gt;</value>
+  </data>
+  <data name="TitQuesList" xml:space="preserve">
+    <value>问卷管理 &gt;</value>
+  </data>
+  <data name="TitQuesMod" xml:space="preserve">
+    <value>问卷管理 &gt; 问卷修改 &gt;</value>
+  </data>
+  <data name="TitQuesResult" xml:space="preserve">
+    <value>问卷管理 &gt; 问卷现况 &gt;</value>
+  </data>
+  <data name="TitQuesView" xml:space="preserve">
+    <value>问卷管理 &gt; 查看问卷 &gt;</value>
+  </data>
+  <data name="TitReply" xml:space="preserve">
+    <value>使用回帖</value>
+  </data>
+  <data name="TitReq" xml:space="preserve">
+    <value>必需</value>
+  </data>
+  <data name="TitSDate" xml:space="preserve">
+    <value>开始日</value>
+  </data>
+  <data name="TitSubM1" xml:space="preserve">
+    <value>（进行中的问卷）</value>
+  </data>
+  <data name="TitSubM2" xml:space="preserve">
+    <value>（到期的问卷）</value>
+  </data>
+  <data name="TitTitle" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TitTotal" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="TitUnitAddF1" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TitUnitAddF2" xml:space="preserve">
+    <value>项目信息</value>
+  </data>
+  <data name="TitUnitAddF3" xml:space="preserve">
+    <value>必需与否</value>
+  </data>
+  <data name="TitUnitAddF4" xml:space="preserve">
+    <value>激活与否</value>
+  </data>
+  <data name="TitUnitAddF5" xml:space="preserve">
+    <value>项目排列</value>
+  </data>
+  <data name="TitUnitAddSub1" xml:space="preserve">
+    <value>可计分型的情况下，请输入最大值。</value>
+  </data>
+  <data name="TitUnitAddSub10" xml:space="preserve">
+    <value>* 登记的提问只能适用于一个问卷。br /&gt;登记提问时，如利用已登记的举例列表将很便利。</value>
+  </data>
+  <data name="TitUnitAddSub11" xml:space="preserve">
+    <value>添加项目文件</value>
+  </data>
+  <data name="TitUnitAddSub12" xml:space="preserve">
+    <value>请输入项目题目。</value>
+  </data>
+  <data name="TitUnitAddSub13" xml:space="preserve">
+    <value>删除项目文件</value>
+  </data>
+  <data name="TitUnitAddSub14" xml:space="preserve">
+    <value>[查看图片]</value>
+  </data>
+  <data name="TitUnitAddSub2" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="TitUnitAddSub3" xml:space="preserve">
+    <value>项目输入</value>
+  </data>
+  <data name="TitUnitAddSub4" xml:space="preserve">
+    <value>*项目文件中，图片大小要符合大小（150×150像素）和类型（GIF，JPG，PNG）。</value>
+  </data>
+  <data name="TitUnitAddSub5" xml:space="preserve">
+    <value>查看项目文件</value>
+  </data>
+  <data name="TitUnitAddSub6" xml:space="preserve">
+    <value>删除项目</value>
+  </data>
+  <data name="TitUnitAddSub7" xml:space="preserve">
+    <value>添加项目</value>
+  </data>
+  <data name="TitUnitAddSub8" xml:space="preserve">
+    <value>选择必需时，该项目按必需项目处理。</value>
+  </data>
+  <data name="TitUnitAddSub9" xml:space="preserve">
+    <value>* 创建举例说明目录，在提问管理里可以重复使用。</value>
+  </data>
+  <data name="TitUnitList" xml:space="preserve">
+    <value>问卷调查 &gt; 项目管理 &gt;</value>
+  </data>
+  <data name="TitUnitListSub1" xml:space="preserve">
+    <value>提问管理</value>
+  </data>
+  <data name="TitUnitListSub2" xml:space="preserve">
+    <value>举例管理</value>
+  </data>
+  <data name="TitUnitSeq" xml:space="preserve">
+    <value>项目顺序变更</value>
+  </data>
+  <data name="TitUnitSeqSub" xml:space="preserve">
+    <value>* 对已登记的项目，变更项目顺序。</value>
+  </data>
+  <data name="TitVoteUser" xml:space="preserve">
+    <value>公开应答人</value>
+  </data>
+  <data name="TitWeek" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="Tit_Count" xml:space="preserve">
+    <value>参与人数</value>
+  </data>
+  <data name="Tit_CountTot" xml:space="preserve">
+    <value>总参与人数</value>
+  </data>
+  <data name="Tit_Person" xml:space="preserve">
+    <value>人</value>
+  </data>
+  <data name="Unit_Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Unit_ActiveNon" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Unit_Horizon" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="Unit_PointA" xml:space="preserve">
+    <value>单一计分</value>
+  </data>
+  <data name="Unit_PointB" xml:space="preserve">
+    <value>多重计分</value>
+  </data>
+  <data name="Unit_SelectA" xml:space="preserve">
+    <value>单项选择</value>
+  </data>
+  <data name="Unit_SelectB" xml:space="preserve">
+    <value>多重选择</value>
+  </data>
+  <data name="Unit_TypeA" xml:space="preserve">
+    <value>单项选择型</value>
+  </data>
+  <data name="Unit_TypeB" xml:space="preserve">
+    <value>多重选择型</value>
+  </data>
+  <data name="Unit_TypeC" xml:space="preserve">
+    <value>单一计分型</value>
+  </data>
+  <data name="Unit_TypeD" xml:space="preserve">
+    <value>多重计分型</value>
+  </data>
+  <data name="Unit_TypeE" xml:space="preserve">
+    <value>主观式</value>
+  </data>
+  <data name="Unit_Vertical" xml:space="preserve">
+    <value>竖</value>
+  </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>不记名</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>写短回复文</value>
+  </data>
+  <data name="BtnSubmit" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>匿名使用</value>
+  </data>
+  <data name="TitSecret" xml:space="preserve">
+    <value>选中后，用户和管理员都无法搜索参与者</value>
+  </data>
+  <data name="VoteUser" xml:space="preserve">
+    <value>公开参与者</value>
+  </data>
+</root>

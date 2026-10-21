@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GetDeptUserScript.aspx.cs" Inherits="Zeospace.DeskPlus.Approval.Web.Common.FormFlow.GetDeptUserScript" %>
+<% Response.ContentType = "text/xml"; %>

@@ -1,0 +1,37 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Community Member List
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="100px" />
+    <col width="70px" />
+    <col />
+    <col width="80px" />
+    
+
+</colgroup>
+<tr>
+    <th></th>
+    <th id="r_dept" class="center"></th>    
+    <th id="r_title" class="center"></th>
+    <th id="r_name" class="center"></th>
+    <th id="r_gradeName" class="center"></th>
+
+</tr>
+{#foreach $T as CmnList}
+<tr>
+    <td>
+        <input type="radio" class="radioID" name="radioUser" id="radioID{ $T.CmnList.UserID }" value="{ $T.CmnList.MyInfo }" />
+    </td>
+    <td class="center">{ $T.CmnList.Dept }</td>
+    <td class="center">{ $T.CmnList.Title }</td>
+    <td class="center">{ $T.CmnList.UserName }</td>
+    <td class="center">{ $T.CmnList.GubunName }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

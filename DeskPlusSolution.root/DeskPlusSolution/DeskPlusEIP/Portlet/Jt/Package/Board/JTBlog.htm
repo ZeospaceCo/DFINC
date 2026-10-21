@@ -1,0 +1,14 @@
+﻿<ul>
+    {#foreach $T as List} 
+    <li class="poboxlistset" style="height:100px;">
+        <img src="{ $T.List.ScreenShot }" width="100" height="100" alt="img" align="left" />&nbsp; 
+        <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');">
+        { $T.List.Title }
+        </a>
+        <br />
+        &nbsp; <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');">{ $T.List.WriteUserName }</a> 
+    </li>
+    {#else}
+        <li><span class="NoListData"></span></li>
+    {#/for} 
+</ul>

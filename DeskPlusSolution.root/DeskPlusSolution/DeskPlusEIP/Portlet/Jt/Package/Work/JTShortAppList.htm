@@ -1,0 +1,22 @@
+﻿<ul>  
+    {#foreach $T as List}
+        <li>
+            <span class="list-title">	   
+            <a onclick="TabWorkMain_PopupAppViewList('{ $T.List.ListID }');return false;" title="{ $T.List.StateStr }">
+            [{ $T.List.GubunTitle }]{ $T.List.Title }</a>        
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}       
+        
+            {#if $T.List.ReplyCount > 0}
+            <a onclick="TabWorkMain_PopupAppShort('{ $T.List.ListID }', '0');return false;" class="icon_Comment_view">({ $T.List.ReplyCount })</a>
+            {#/if}  
+                  
+            </span>
+            <span class="list-writer">
+               <a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.Name } { $T.List.ReplyUserStr }</a>
+            </span>
+            <span class="list-date">{ $T.List.RegDate }</span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

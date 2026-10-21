@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="AddImageFile" xml:space="preserve">
+    <value>要添加的图片文件</value>
+  </data>
+  <data name="AddResources" xml:space="preserve">
+    <value>资源 添加</value>
+  </data>
+  <data name="AddResourcesUser" xml:space="preserve">
+    <value>添加资源担当者</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>添加担当者</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>要删除吗?</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请同时输入开始日期和结束日期</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>请输入起始日期</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>担当者承认</value>
+  </data>
+  <data name="BeforResource" xml:space="preserve">
+    <value>该资源已被指定</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>资源代码</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已处理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>将删除以前创建的内容。要选择吗？</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>确定要删除文件吗？</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>要删除文件夹吗？</value>
+  </data>
+  <data name="DeleteNoFolder" xml:space="preserve">
+    <value>该文件夹中有资源，无法删除。</value>
+  </data>
+  <data name="DeleteSubFolder" xml:space="preserve">
+    <value>请首先删除下级文件夹</value>
+  </data>
+  <data name="DelList" xml:space="preserve">
+    <value>要删除资源吗？</value>
+  </data>
+  <data name="DelResources" xml:space="preserve">
+    <value>要删除预约资源吗？</value>
+  </data>
+  <data name="DelUserOne" xml:space="preserve">
+    <value>请在删除已经指定的用户后再添加</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="EditorScript" xml:space="preserve">
+    <value>因正文含有脚本可疑文句，内容可能被更改。</value>
+  </data>
+  <data name="ErrorDelFile" xml:space="preserve">
+    <value>删除文件过程中产生了错误。</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FolderAdd" xml:space="preserve">
+    <value>添加文件夹</value>
+  </data>
+  <data name="FolderMod" xml:space="preserve">
+    <value>修改文件夹</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夹名</value>
+  </data>
+  <data name="FolderRoot" xml:space="preserve">
+    <value>资源利用</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到目录页面</value>
+  </data>
+  <data name="GoView" xml:space="preserve">
+    <value>转到查看页面</value>
+  </data>
+  <data name="IconName" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>图像</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>图像文件</value>
+  </data>
+  <data name="InputCount" xml:space="preserve">
+    <value>请输入数量</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>请输入文件夹名</value>
+  </data>
+  <data name="InputNumber" xml:space="preserve">
+    <value>请只输入数字</value>
+  </data>
+  <data name="InputSubject" xml:space="preserve">
+    <value>请输入题目</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>请输入资源名</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="list" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ManagerGubun" xml:space="preserve">
+    <value>正/副</value>
+  </data>
+  <data name="ManagerGubun1" xml:space="preserve">
+    <value>正</value>
+  </data>
+  <data name="ManagerGubun2" xml:space="preserve">
+    <value>副</value>
+  </data>
+  <data name="MenuAdmin" xml:space="preserve">
+    <value>菜单管理</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月间</value>
+  </data>
+  <data name="Month1" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多国语名</value>
+  </data>
+  <data name="MultiNames" xml:space="preserve">
+    <value>多国语名称</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>不是</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="NoQRCode" xml:space="preserve">
+    <value>该资源已被删除。请与管理员联系。</value>
+  </data>
+  <data name="NoRepeatDay" xml:space="preserve">
+    <value>没有适合的重复日程</value>
+  </data>
+  <data name="NoResource" xml:space="preserve">
+    <value>没有预约</value>
+  </data>
+  <data name="ParentFolder" xml:space="preserve">
+    <value>上级文件夹名称</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>上级文件夹名</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>保管位置</value>
+  </data>
+  <data name="PresentFolder" xml:space="preserve">
+    <value>当前文件夹名称</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>正在处理中。请稍候。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时产生了错误。请与管理员联系。</value>
+  </data>
+  <data name="QRCodeTitle" xml:space="preserve">
+    <value>产生QRCode</value>
+  </data>
+  <data name="Qty" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="QtyZero" xml:space="preserve">
+    <value>没有可预约数量</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="Repeat1" xml:space="preserve">
+    <value>每</value>
+  </data>
+  <data name="Repeat10" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="Repeat11" xml:space="preserve">
+    <value>第三</value>
+  </data>
+  <data name="Repeat12" xml:space="preserve">
+    <value>第四</value>
+  </data>
+  <data name="Repeat13" xml:space="preserve">
+    <value>最后</value>
+  </data>
+  <data name="Repeat14" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Repeat15" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="Repeat16" xml:space="preserve">
+    <value>周末</value>
+  </data>
+  <data name="Repeat17" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="Repeat18" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="Repeat19" xml:space="preserve">
+    <value>在星期</value>
+  </data>
+  <data name="Repeat2" xml:space="preserve">
+    <value>每 天</value>
+  </data>
+  <data name="Repeat20" xml:space="preserve">
+    <value>在</value>
+  </data>
+  <data name="Repeat21" xml:space="preserve">
+    <value>里</value>
+  </data>
+  <data name="Repeat22" xml:space="preserve">
+    <value>日止重复</value>
+  </data>
+  <data name="Repeat23" xml:space="preserve">
+    <value>次止重复</value>
+  </data>
+  <data name="Repeat3" xml:space="preserve">
+    <value>每天（平日）</value>
+  </data>
+  <data name="Repeat4" xml:space="preserve">
+    <value>每周在下星期重复</value>
+  </data>
+  <data name="Repeat5" xml:space="preserve">
+    <value>每 个月</value>
+  </data>
+  <data name="Repeat6" xml:space="preserve">
+    <value>在 日</value>
+  </data>
+  <data name="Repeat7" xml:space="preserve">
+    <value>到 日</value>
+  </data>
+  <data name="Repeat8" xml:space="preserve">
+    <value>次 重复</value>
+  </data>
+  <data name="Repeat9" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="RepeatCount" xml:space="preserve">
+    <value>请输入重复范围的重复次数</value>
+  </data>
+  <data name="RepeatDay" xml:space="preserve">
+    <value>每日重复</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>删除重复日程</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>照样维持重复日程的其他一切日程</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>这个日程及以后全部日程将被更改。将损失对未来日程的变更事项。</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>变更重复的全部日程。将维持对其他日程的变更事项。</value>
+  </data>
+  <data name="RepeatEx4" xml:space="preserve">
+    <value>将删除该日程及以后全部日程。</value>
+  </data>
+  <data name="RepeatEx5" xml:space="preserve">
+    <value>删除重复的一切日程。</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>只有这个日程</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>以后全部日程</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>全部日程</value>
+  </data>
+  <data name="RepeatInput" xml:space="preserve">
+    <value>请输入重复的周期值</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>修改周期日程</value>
+  </data>
+  <data name="RepeatMonth" xml:space="preserve">
+    <value>每月重复</value>
+  </data>
+  <data name="RepeatNumber" xml:space="preserve">
+    <value>重复周期值是不正确</value>
+  </data>
+  <data name="RepeatRange" xml:space="preserve">
+    <value>重复范围</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="RepeatSettingResult" xml:space="preserve">
+    <value>重复设置结果</value>
+  </data>
+  <data name="RepeatStartDateEndDate" xml:space="preserve">
+    <value>重复范围结束日不能小于开始日</value>
+  </data>
+  <data name="RepeatWeek" xml:space="preserve">
+    <value>每周重复</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>请输入1以上的数字</value>
+  </data>
+  <data name="RequestQty" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>预约</value>
+  </data>
+  <data name="ReservationMod" xml:space="preserve">
+    <value>修改预约</value>
+  </data>
+  <data name="ReserveResource" xml:space="preserve">
+    <value>预约资源</value>
+  </data>
+  <data name="ResourceCount" xml:space="preserve">
+    <value>预约可能数量不能大于总数量</value>
+  </data>
+  <data name="ResourceOne" xml:space="preserve">
+    <value>请在删除已指定的资源后选择资源</value>
+  </data>
+  <data name="ResourcesAdd" xml:space="preserve">
+    <value>资源预约</value>
+  </data>
+  <data name="ResourcesChoice" xml:space="preserve">
+    <value>资源 选择</value>
+  </data>
+  <data name="ResourcesList" xml:space="preserve">
+    <value>资源 列表</value>
+  </data>
+  <data name="ResourcesMod" xml:space="preserve">
+    <value>资源修改</value>
+  </data>
+  <data name="ResourcesTitle" xml:space="preserve">
+    <value>资源名</value>
+  </data>
+  <data name="ResourcesUser" xml:space="preserve">
+    <value>资源担当者</value>
+  </data>
+  <data name="ResourcesView" xml:space="preserve">
+    <value>资源查看</value>
+  </data>
+  <data name="RM" xml:space="preserve">
+    <value>资源管理</value>
+  </data>
+  <data name="RMCategory" xml:space="preserve">
+    <value>资源文件夹</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>请选择资源担当者</value>
+  </data>
+  <data name="SelectDel" xml:space="preserve">
+    <value>请选择要删除的资源</value>
+  </data>
+  <data name="SelectRepeatDay" xml:space="preserve">
+    <value>请选择重复范围日期</value>
+  </data>
+  <data name="SelectResource" xml:space="preserve">
+    <value>资源选择</value>
+  </data>
+  <data name="SelectResources" xml:space="preserve">
+    <value>请选择资源</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>资源担当者：正必须指定一名</value>
+  </data>
+  <data name="SelectUserOne" xml:space="preserve">
+    <value>资源担当者请只选择一名</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>请选择星期</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期必须小于结束日期</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>结束日期不能小于或等于开始日期</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="Subscriber" xml:space="preserve">
+    <value>预约人</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Unapproved" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="UsableQty" xml:space="preserve">
+    <value>预约可能数量</value>
+  </data>
+  <data name="UsableResource" xml:space="preserve">
+    <value>在选择的日期里，资源已被预约。</value>
+  </data>
+  <data name="ViewContent" xml:space="preserve">
+    <value>查看内容</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="Week1" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="WriteUserName" xml:space="preserve">
+    <value>注册人</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>不同的价值观</value>
+  </data>
+  <data name="SelectGubun" xml:space="preserve">
+    <value>请选择不同的值</value>
+  </data>
+  <data name="AddAttendee" xml:space="preserve">
+    <value>入选者</value>
+  </data>
+  <data name="Attendee" xml:space="preserve">
+    <value>服务员</value>
+  </data>
+  <data name="AttendeeName" xml:space="preserve">
+    <value>参加者的名字</value>
+  </data>
+  <data name="SelectAddAtte" xml:space="preserve">
+    <value>请选择一个用户</value>
+  </data>
+  <data name="AttendeeType1" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="AttendeeType2" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="ModifyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>添加回复</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>修改回帖</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>发表评论</value>
+  </data>
+  <data name="AdminReserve" xml:space="preserve">
+    <value>负责资源管理</value>
+  </data>
+  <data name="MyReserve" xml:space="preserve">
+    <value>我的预约现状</value>
+  </data>
+  <data name="ReserveDate" xml:space="preserve">
+    <value>预订日历</value>
+  </data>
+  <data name="Usable" xml:space="preserve">
+    <value>赞同</value>
+  </data>
+  <data name="Usable0" xml:space="preserve">
+    <value>擅自</value>
+  </data>
+  <data name="Usable1" xml:space="preserve">
+    <value>承认</value>
+  </data>
+  <data name="Usable2" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="Usable0Reserve" xml:space="preserve">
+    <value>待审批</value>
+  </data>
+  <data name="Usable1Reserve" xml:space="preserve">
+    <value>完成审批</value>
+  </data>
+  <data name="Usable2Reserve" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="CancelApproved" xml:space="preserve">
+    <value>取消(拒绝)</value>
+  </data>
+  <data name="WeekReserve" xml:space="preserve">
+    <value>每月按时状态</value>
+  </data>
+  <data name="TimeCnt" xml:space="preserve">
+    <value>每小时</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>是第一个列表</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>最终名单</value>
+  </data>
+  <data name="ResourcesAddTree" xml:space="preserve">
+    <value>资源预留</value>
+  </data>
+  <data name="DeptReserve" xml:space="preserve">
+    <value>部门预约</value>
+  </data>
+  <data name="BeforeReserve" xml:space="preserve">
+    <value>三个月前预约的资源量</value>
+  </data>
+  <data name="ConfirmAdd" xml:space="preserve">
+    <value>可以预约。您确定想要切换到您的预订吗?</value>
+  </data>
+  <data name="ConfirmReserve" xml:space="preserve">
+    <value>预约确认</value>
+  </data>
+  <data name="HomeDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="IconReserve" xml:space="preserve">
+    <value>现在预订</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>负责人</value>
+  </data>
+  <data name="SelectReserve" xml:space="preserve">
+    <value>预订资源选择</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>获取附件信息出错。</value>
+  </data>
+  <data name="HomeAttach" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>不存在相关文件。</value>
+  </data>
+  <data name="ReserveList" xml:space="preserve">
+    <value>预订记录</value>
+  </data>
+  <data name="HomeNoReserve" xml:space="preserve">
+    <value>没有保留可用的资源。</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="SecuritySetting" xml:space="preserve">
+    <value>安全设置</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共享器</value>
+  </data>
+  <data name="SelectShareUser" xml:space="preserve">
+    <value>选择共享者</value>
+  </data>
+  <data name="ObjePerson" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="ShareUserAdd" xml:space="preserve">
+    <value>添加共享资源</value>
+  </data>
+  <data name="Msg_AddShareUser" xml:space="preserve">
+    <value>请给我添加一个孔侑。</value>
+  </data>
+  <data name="Msg_OverlapShareUser" xml:space="preserve">
+    <value>已添加的用户(单位)。</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="SecurityReservation" xml:space="preserve">
+    <value>安全预订</value>
+  </data>
+  <data name="Msg_AddMe" xml:space="preserve">
+    <value>本人不能追加参加者。</value>
+  </data>
+  <data name="ExcelDownload" xml:space="preserve">
+    <value>Excel 下载</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>另类假期</value>
+  </data>
+  <data name="RejectTitle" xml:space="preserve">
+    <value>拒绝制作原因</value>
+  </data>
+  <data name="RejectStr" xml:space="preserve">
+    <value>拒绝思维</value>
+  </data>
+  <data name="UsableStr" xml:space="preserve">
+    <value>处理历史</value>
+  </data>
+  <data name="ResourcesUserStr" xml:space="preserve">
+    <value>只有分配给普通用户，您可以批准/拒绝资源。</value>
+  </data>
+  <data name="AdminList" xml:space="preserve">
+    <value>负责资源</value>
+  </data>
+  <data name="AdminReserveList" xml:space="preserve">
+    <value>预约资源管理</value>
+  </data>
+  <data name="AuthorityNeed" xml:space="preserve">
+    <value>承保人员批准</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="Type1" xml:space="preserve">
+    <value>预约预约订票现况</value>
+  </data>
+  <data name="Type2" xml:space="preserve">
+    <value>按资源分类统计的现状</value>
+  </data>
+  <data name="RequestSend" xml:space="preserve">
+    <value>批准申请</value>
+  </data>
+  <data name="SendAlarm" xml:space="preserve">
+    <value>授权请求已发送到报警资源代表。</value>
+  </data>
+  <data name="ConfirmSend" xml:space="preserve">
+    <value>您是否想要获取资源管理器许可提醒?</value>
+  </data>
+  <data name="HomeAll" xml:space="preserve">
+    <value>整体</value>
+  </data>
+  <data name="HomeMy" xml:space="preserve">
+    <value>我的预订</value>
+  </data>
+  <data name="HomeSecurity" xml:space="preserve">
+    <value>安全预订</value>
+  </data>
+  <data name="HomeShare" xml:space="preserve">
+    <value>共享计划</value>
+  </data>
+  <data name="BeforePage" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>没有搜索结果。</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>发生错误！请询问管理员</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>订购</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>已变更</value>
+  </data>
+  <data name="ListOrder" xml:space="preserve">
+    <value>订购</value>
+  </data>
+  <data name="ModListOrder" xml:space="preserve">
+    <value>资源顺序</value>
+  </data>
+  <data name="MoveSubFolder" xml:space="preserve">
+    <value>子文件夹的顺序</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>选择一个文件夹</value>
+  </data>
+</root>

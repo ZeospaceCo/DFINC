@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F54BADD-D4E8-4080-AF3E-AD63776D0DF4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Education.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Education.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Add.aspx" />
+    <Content Include="Admin\DashBoard.aspx" />
+    <Content Include="Admin\GetUserDept.aspx" />
+    <Content Include="Admin\List.aspx" />
+    <Content Include="Admin\View.aspx" />
+    <Content Include="App_Data\ko.xml" />
+    <Content Include="Content\AddComplete.aspx" />
+    <Content Include="Content\CertificateDownload.aspx" />
+    <Content Include="Content\List.aspx" />
+    <Content Include="Content\Tree.aspx" />
+    <Content Include="Content\View.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Js\Admin\Add.js" />
+    <Content Include="Js\Admin\DashBoard.js" />
+    <Content Include="Js\Admin\GetUserDept.js" />
+    <Content Include="Js\Admin\List.js" />
+    <Content Include="Js\Admin\View.js" />
+    <Content Include="Js\Content\AddComplete.js" />
+    <Content Include="Js\Content\List.js" />
+    <Content Include="Js\Content\Tree.js" />
+    <Content Include="Js\Content\View.js" />
+    <Content Include="Jt\Admin\JTAttachFile.htm" />
+    <Content Include="Jt\Content\JTList.htm" />
+    <Content Include="Ws\Admin\View.asmx" />
+    <Content Include="Ws\Content\List.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GetUserDept.aspx.cs">
+      <DependentUpon>GetUserDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GetUserDept.aspx.designer.cs">
+      <DependentUpon>GetUserDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlEducation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageEducation.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageEducationAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSEducation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Content\AddComplete.aspx.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddComplete.aspx.designer.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\CertificateDownload.aspx.cs">
+      <DependentUpon>CertificateDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ws\Admin\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EducationProject\Zeospace.DeskPlus.Education.BE\Zeospace.DeskPlus.Education.BE.csproj">
+      <Project>{DA92BF4B-33AD-4F93-AE1B-4FB226C4991C}</Project>
+      <Name>Zeospace.DeskPlus.Education.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EducationProject\Zeospace.DeskPlus.Education.BLL\Zeospace.DeskPlus.Education.BLL.csproj">
+      <Project>{7093DB5C-68C7-4C48-82FC-1E16E3A3AD20}</Project>
+      <Name>Zeospace.DeskPlus.Education.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EducationProject\Zeospace.DeskPlus.Education.DAL\Zeospace.DeskPlus.Education.DAL.csproj">
+      <Project>{60AC1B5E-F1C6-4168-844D-7B32315CD37B}</Project>
+      <Name>Zeospace.DeskPlus.Education.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45488</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Education</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

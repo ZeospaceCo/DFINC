@@ -1,0 +1,25 @@
+﻿<table class="tbl_LBoard" border="1" cellspacing="0" summary="">
+    <tbody>
+        {#foreach $T as BoardList}
+        <tr>
+            <td class="suj">
+                <div class="Hb_tit">
+                    <a onclick="Content.PopupView('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;">
+                    {$T.BoardList.Title.replace(/(<([^>]+)>)/ig,"")}  
+                    </a>
+                    {#if $T.BoardList.ShowNew == 'Y'}<img class="BtnNew" alt="" src="/DeskPlusEIP/Design/C/Img/btn/i_new.gif" />{#/if}
+                    <div class="Hb_dt">{ $T.BoardList.WriteDate }</div><div class="Hb_nm" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteUserName}</div>
+                 </div>
+                <div class="Hb_cnt">
+                    <a onclick="Content.PopupView('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;">
+                    {#if $T.BoardList.MobileContent.length > 35 } { $T.BoardList.MobileContent.substring(0,35) }.... 
+                    {#else} {$T.BoardList.MobileContent}
+                    {#/if}
+                    </a>
+                </div>
+            </td>
+        </tr>        
+        {#else}
+        {#/for}  
+    </tbody>
+</table>

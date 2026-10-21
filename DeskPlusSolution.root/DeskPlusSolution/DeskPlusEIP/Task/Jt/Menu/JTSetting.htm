@@ -1,0 +1,21 @@
+﻿<table class="table_typeA"> 
+<caption>리스트</caption>
+<colgroup>
+    <col width="40px">
+    <col width="*" />
+</colgroup>
+<tr>  
+    <th></th>  
+    <th><span class="r_title" /></th>
+</tr>
+{#foreach $T as List}
+<tr>        
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ItemID }" value="{ $T.List.ItemID }" checked /></td>
+    <td>{ $T.List.ItemName }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="2" class="center"><span class="NoListData" /></td>        
+</tr>
+ {#/for}  
+</table>

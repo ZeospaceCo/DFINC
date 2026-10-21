@@ -1,0 +1,39 @@
+﻿<table cellspacing="0" class="table_typeA" style="min-width:700px;">
+    <colgroup>
+        <col width="80px" />
+        <col width="140px" />
+        <col width="150px" />
+        <col width="150px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="*" />
+    </colgroup> 
+    <tr>        
+        <th class="center" id="r_photo"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_deptname"></th>
+        <th class="center" id="r_titledutyname"></th>
+        <th class="center" id="r_mobile"></th>
+        <th class="center" id="r_officephone"></th>
+        <th class="center" id="r_mail"></th>        
+    </tr>
+    {#foreach $T as AccountList}    
+    <tr>
+        <td class="center">{ $T.AccountList.PhotoImage }</td>
+        <td class="center"><a onclick="javascript:AccountInfo('{ $T.AccountList.UserID }')" style="cursor:pointer" >{ $T.AccountList.Name }</a>
+            {#if $T.AccountList.TodayCount > 0}             
+                <img src="/DeskPlusEIP/Design/C/Img/btn/i_new.gif" /> 
+            {#/if} 
+        </td>
+        <td class="center">{ $T.AccountList.DeptName }</td>
+        <td class="center">{ $T.AccountList.TitleName}/{$T.AccountList.DutyName}</td>
+        <td class="center">{ $T.AccountList.MobilePhone }</td>
+        <td class="center">{ $T.AccountList.OfficePhone }</td>   
+        <td>{ $T.AccountList.Mail }</td>     
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>        
+    </tr>   
+    {#/for}        
+ </table>

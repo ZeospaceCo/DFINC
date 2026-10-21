@@ -1,0 +1,14 @@
+﻿
+<ul class="table_typeT ul_typeT">
+    {#foreach $T as RejectList}
+    <li>
+        <span>{ $T.RejectList.Content } </span>
+        <a onclick="javascript:AccountInfo('{ $T.RejectList.UserID }')">{ $T.RejectList.UserName }</a>        
+        <span class="mount">{ $T.RejectList.InputDate }</span>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>
+
+

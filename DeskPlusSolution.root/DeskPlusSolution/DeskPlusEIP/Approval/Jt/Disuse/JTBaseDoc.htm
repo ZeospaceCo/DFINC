@@ -1,0 +1,10 @@
+﻿<ul class="table_typeT ul_typeT"> 
+	{#foreach $T as BaseDocList}
+    <li>
+        <a onclick="javascript:View.ViewBaseDoc('{ $T.BaseDocList.ParentDocumentID }')">{ $T.BaseDocList.Name }</a>
+        <!--a onclick="javascript:View.ViewBaseDoc('{ $T.BaseDocList.ParentDocumentID }')">{ $T.BaseDocList.Subject }</a-->
+    </li>
+    {#else}
+    <li></li>
+{#/for}
+</ul>

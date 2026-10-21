@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <colgroup>
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+    </colgroup>
+    <tr>
+        <th class="table_60"><input id="cbxAll" type="checkbox" onclick="AllChecked()" /></th>
+        <th class="table_100">이름</th>
+        <th class="table_title">메일</th>        
+        <th class="table_title">휴대폰</th>
+        <th class="table_title">집전화</th>
+        <th class="table_title">회사전화</th>
+        <th class="table_title">회사명</th>
+    </tr>
+    {#foreach $T as AddressList}
+    <tr>
+        <td><input type="checkbox" class="cbxID" id="cbxID{ $T.AddressList.CSVID }" value="{ $T.AddressList.CSVID }" /></td>        
+        <td>{ $T.AddressList.Name }</td>
+        <td>{ $T.AddressList.Email }</td>
+        <td>{ $T.AddressList.MobilePhone }</td>
+        <td>{ $T.AddressList.HomePhone }</td>
+        <td>{ $T.AddressList.CompanyPhone }</td>
+        <td>{ $T.AddressList.Company }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center">리스트가 존재하지 않습니다.</td>        
+    </tr>
+    {#/for}        
+ </table>

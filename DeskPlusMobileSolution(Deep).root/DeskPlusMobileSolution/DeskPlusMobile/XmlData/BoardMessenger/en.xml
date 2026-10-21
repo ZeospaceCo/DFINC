@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML>
+		[Board alarm]
+		&lt;br&gt;&lt;br&gt;
+		- SUBJECT : $SUBJECT$
+		&lt;br&gt;
+		- TIME:$TIME$
+		&lt;br&gt;&lt;br&gt;
+		"Function call: Click here to go to the relevant page."
+	</ContentHTML>
+</ContentInfo>

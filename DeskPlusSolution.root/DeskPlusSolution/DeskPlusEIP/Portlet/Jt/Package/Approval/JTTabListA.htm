@@ -1,0 +1,19 @@
+﻿
+<ul>
+    {#foreach $T as List}
+        <li>
+        <span class="list-title">			
+            <a onclick="TabApproveDoc('{ $T.List.CompanyID }','{ $T.List.DocumentID }','{ $T.List.Sequence }','{ $T.List.ApprovalTag }','{ $T.List.TargetUserID }','{ $T.List.DeptID }');" >
+            { $T.List.Subject }
+            </a>
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </span>
+        <span class="list-writer">
+            <a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a>
+        </span>
+        <span class="list-date">{ $T.List.WriteTimeStr }</span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

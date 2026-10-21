@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALL" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="APPCOMPLETE" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="APPING" xml:space="preserve">
+    <value>進捗</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>終了日を開始日の両方を入力してください</value>
+  </data>
+  <data name="APPRECV" xml:space="preserve">
+    <value>レセプション</value>
+  </data>
+  <data name="ApprovalTalk" xml:space="preserve">
+    <value>承認を話す</value>
+  </data>
+  <data name="APPSEND" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>ポスト</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="CommentShare" xml:space="preserve">
+    <value>共有パーソン</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>処理された</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>中身</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>MyTalk</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="NoAuthListData" xml:space="preserve">
+    <value>そして元の記事のクリエイターを閲覧することができます。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何もない</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>気付く</value>
+  </data>
+  <data name="OpenUserManager" xml:space="preserve">
+    <value>公開先管理</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>写真</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理中にエラーが発生しました。管理者に連絡してください</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ReceiveTalk" xml:space="preserve">
+    <value>ReceiveTalk</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登録者</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SendTalk" xml:space="preserve">
+    <value>SendTalk</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さくなければなりません</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>主題</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="WorkTalk" xml:space="preserve">
+    <value>WorkTalk</value>
+  </data>
+  <data name="ApprovalType" xml:space="preserve">
+    <value>意見</value>
+  </data>
+  <data name="ConfirmDeleteFavoritePerson" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>検索日入力</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>200文字以下を入力します。</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="NeedContents" xml:space="preserve">
+    <value>情報を入力してください。</value>
+  </data>
+  <data name="SeachText" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>個人的なスケジュール</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>学科スケジュール</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>共有スケジュール</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>きついスケジュール</value>
+  </data>
+  <data name="ShortContents" xml:space="preserve">
+    <value>中身</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>個人的な作業</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>部門別の作業</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>共有作業</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>ワーキング</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>短いコメントを追加</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>クローズ</value>
+  </data>
+  <data name="ShortListMsg" xml:space="preserve">
+    <value>ドキュメントの内容に関する短いコメントが含まれておりません。</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>短い返事</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>公にコメントする</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>にコメントを記録した。</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>働く</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>ビューを追加</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>伝える</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>ビジネス社会</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>댓글을 작성합니다.</value>
+  </data>
+  <data name="MyMove" xml:space="preserve">
+    <value>내 담벼락으로 이동</value>
+  </data>
+  <data name="TalkDes" xml:space="preserve">
+    <value>담벼락에 글을 작성합니다.</value>
+  </data>
+  <data name="ShareTalkTitle" xml:space="preserve">
+    <value>님의 공유담벼락입니다.</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>담벼락글</value>
+  </data>
+  <data name="MyTalkOne" xml:space="preserve">
+    <value>댓글을 입력할 담벼락글이 없습니다.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>공개</value>
+  </data>
+  <data name="AppReplySec1" xml:space="preserve">
+    <value>보류</value>
+  </data>
+  <data name="AppReplySec2" xml:space="preserve">
+    <value>대기</value>
+  </data>
+  <data name="AppReplySec3" xml:space="preserve">
+    <value>진행</value>
+  </data>
+  <data name="AppReplySec4" xml:space="preserve">
+    <value>반려</value>
+  </data>
+  <data name="AppReplySec5" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="MyTalkTitle" xml:space="preserve">
+    <value>님의 담벼락입니다.</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>님이 댓글을 기재하였습니다.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="ShareMove" xml:space="preserve">
+    <value>공유 담벼락으로 이동</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>파일추가</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>첨부파일</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>파일타입</value>
+  </data>
+  <data name="MsgDel" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="FileOrder" xml:space="preserve">
+    <value>순서변경</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>주소록</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>전자결재</value>
+  </data>
+  <data name="BoardTitle" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>설문조사</value>
+  </data>
+  <data name="PointTitle" xml:space="preserve">
+    <value>모아보기</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="WebHard" xml:space="preserve">
+    <value>웹폴더</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>즐겨찾기</value>
+  </data>
+  <data name="Impo" xml:space="preserve">
+    <value>중요표시</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>권한이 없습니다.</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="TalkMenu1" xml:space="preserve">
+    <value>私壁を見る人</value>
+  </data>
+  <data name="TalkMenu2" xml:space="preserve">
+    <value>私に壁を共有一人</value>
+  </data>
+</root>

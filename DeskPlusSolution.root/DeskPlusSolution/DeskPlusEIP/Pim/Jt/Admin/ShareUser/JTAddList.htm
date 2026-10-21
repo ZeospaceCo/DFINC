@@ -1,0 +1,46 @@
+﻿<table cellspacing="0" id="contentTable" class="table_typeB" style="width:100% !important;">  
+<caption></caption>
+<colgroup>
+    <col />
+    <col width="60px"/>
+</colgroup>
+<thead>
+<tr>
+    <th style="text-align:center;font-weight:bold;"><div id="divt1"></div></th>                            
+    <th style="text-align:center;font-weight:bold;"><div id="divt2"></div></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as ShareUserList}
+<tr >
+{#if $T.ShareUserList.GroupID == 0}
+<td id='M_{$T.ShareUserList.OpenUserID}' class="center">
+        {$T.ShareUserList.Name}                             
+        </td>                                
+{#/if}
+{#if $T.ShareUserList.GroupID > 0}
+    <td id='G_{$T.ShareUserList.GroupID}' class="center">
+            {$T.ShareUserList.Name}</td>
+{#/if}
+
+{#if $T.ShareUserList.kind == 'G'}
+<td class="center">
+{#if $T.ShareUserList.GroupID == 0}
+<a class="btn" onclick="Add.DelUserList('M_{$T.ShareUserList.OpenUserID}')">{$T.ShareUserList.DelStr}</a>
+{#/if}
+{#if $T.ShareUserList.GroupID > 0}
+<a class="btn" onclick="Add.DelUserList('G_{$T.ShareUserList.GroupID}')">{$T.ShareUserList.DelStr} </a>
+{#/if}
+</td>
+{#/if}
+{#if $T.ShareUserList.kind == 'P'}
+<td class="center">&nbsp;</td>
+{#/if}
+</tr>
+{#else}
+<tr>
+<td colspan="2" class="center"><div id="divt3"></div></td>        
+</tr>
+{#/for}  
+</tbody>                  
+</table>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+    <OPINION>
+      <SECTION>
+        <OPINION>결재의견이 작성되었습니다</OPINION>
+      </SECTION>
+      <SUBJ>
+        <OPINION>[결재의견]</OPINION>
+      </SUBJ>
+      <CONTENT>
+        &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+        &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+        &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+        &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+        &lt;li&gt;상신자 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견자 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견 : $OPINION$&lt;/li&gt;
+        &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      </CONTENT>
+    </OPINION>
+  
+    <MAIL>
+        <SECTION>
+            <OPINION>결재의견이 작성되었습니다</OPINION>
+            <APPROVE>결재문서가 도착하였습니다</APPROVE>
+            <COMPLETE>결재문서가 완결처리되었습니다</COMPLETE>
+            <CARBON>참조문서가 도착하였습니다</CARBON>
+            <RECEIVED>수신문서가 도착하였습니다</RECEIVED>
+			<RECEIVEDMOD>수신(담당자변경)문서가 도착하였습니다</RECEIVEDMOD>
+            <APPROVED>결재문서가 보류되었습니다</APPROVED>
+            <APPROVEDC>결재문서가 보류해제되었습니다</APPROVEDC>
+            <APPROVEH>결재문서가 상신보류되었습니다</APPROVEH>
+            <APPROVEHC>결재문서가 상신보류해제되었습니다</APPROVEHC>
+            <REJECT>결재문서가 반려되었습니다</REJECT>
+            <CIRCULATION>회람문서가 도착하였습니다.</CIRCULATION>
+            <ENFORCE>공문이 접수되었습니다.</ENFORCE>
+            <MEMO>메모가 작성되었습니다.</MEMO>
+            <PROXY>대결문서가 도착하였습니다.</PROXY>
+            <CANCEL>상신취소되었습니다.</CANCEL>
+            <FORWARD>전달문서가 도착하였습니다.</FORWARD>
+            <PASSED>이관문서가 도착하였습니다.</PASSED>
+            <APPROVEC>결재가 취소되었습니다.</APPROVEC>
+            <CONFIRM>결재문서가 도착하였습니다</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[결재의견]</OPINION>
+            <APPROVE>[결재]</APPROVE>
+            <COMPLETE>[완결]</COMPLETE>
+            <CARBON>[참조]</CARBON>
+            <RECEIVED>[수신]</RECEIVED>
+			<RECEIVEDMOD>[수신-담당자변경]</RECEIVEDMOD>
+            <APPROVED>[보류]</APPROVED>
+            <APPROVEDC>[보류해제]</APPROVEDC>
+            <APPROVEH>[상신보류]</APPROVEH>
+            <APPROVEHC>[상신보류해제]</APPROVEHC>
+            <REJECT>[반려]</REJECT>
+            <CIRCULATION>[회람]</CIRCULATION>
+            <ENFORCE>[공문]</ENFORCE>
+            <MEMO>[메모]</MEMO>
+            <PROXY>[대결]</PROXY>
+            <CANCEL>[상신취소]</CANCEL>
+            <FORWARD>[전달]</FORWARD>
+            <PASSED>[이관]</PASSED>
+            <APPROVEC>[결재취소]</APPROVEC>
+            <CONFIRM>[공람]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;상신부서 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자정보 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자의견 : $OPINION$&lt;/li&gt;
+            &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MAIL>
+
+    <MESSENGER>
+        <SECTION>
+            <OPINION>결재의견이 작성되었습니다</OPINION>
+            <APPROVE>결재문서가 도착하였습니다</APPROVE>
+            <COMPLETE>결재문서가 완결처리되었습니다</COMPLETE>
+            <CARBON>참조문서가 도착하였습니다</CARBON>
+            <RECEIVED>수신문서가 도착하였습니다</RECEIVED>
+			<RECEIVEDMOD>수신(담당자변경)문서가 도착하였습니다</RECEIVEDMOD>
+            <APPROVED>결재문서가 보류되었습니다</APPROVED>
+            <APPROVEDC>결재문서가 보류해제되었습니다</APPROVEDC>
+            <APPROVEH>결재문서가 상신보류되었습니다</APPROVEH>
+            <APPROVEHC>결재문서가 상신보류해제되었습니다</APPROVEHC>
+            <REJECT>결재문서가 반려되었습니다</REJECT>
+            <CIRCULATION>회람문서가 도착하였습니다.</CIRCULATION>
+            <ENFORCE>공문이 접수되었습니다.</ENFORCE>
+            <MEMO>메모가 작성되었습니다.</MEMO>
+            <PROXY>대결문서가 도착하였습니다.</PROXY>
+            <CANCEL>상신취소되었습니다.</CANCEL>
+            <FORWARD>전달문서가 도착하였습니다.</FORWARD>
+            <PASSED>이관문서가 도착하였습니다.</PASSED>
+            <APPROVEC>결재가 취소되었습니다.</APPROVEC>
+            <CONFIRM>결재문서가 도착하였습니다</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[결재의견]</OPINION>
+            <APPROVE>[결재]</APPROVE>
+            <COMPLETE>[완결]</COMPLETE>
+            <CARBON>[참조]</CARBON>
+            <RECEIVED>[수신]</RECEIVED>
+			<RECEIVEDMOD>[수신-담당자변경]</RECEIVEDMOD>
+            <APPROVED>[보류]</APPROVED>
+            <APPROVEDC>[보류해제]</APPROVEDC>
+            <APPROVEH>[상신보류]</APPROVEH>
+            <APPROVEHC>[상신보류해제]</APPROVEHC>
+            <REJECT>[반려]</REJECT>
+            <CIRCULATION>[회람]</CIRCULATION>
+            <ENFORCE>[공문]</ENFORCE>
+            <MEMO>[메모]</MEMO>
+            <PROXY>[대결]</PROXY>
+            <CANCEL>[상신취소]</CANCEL>
+            <FORWARD>[전달]</FORWARD>
+            <PASSED>[이관]</PASSED>
+            <APPROVEC>[결재취소]</APPROVEC>
+            <CONFIRM>[공람]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;상신부서 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자정보 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자의견 : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MESSENGER>
+
+    <SMS>
+        <SECTION>
+            <OPINION>결재의견이 작성되었습니다</OPINION>
+            <APPROVE>결재문서가 도착하였습니다</APPROVE>
+            <COMPLETE>결재문서가 완결처리되었습니다</COMPLETE>
+            <CARBON>참조문서가 도착하였습니다</CARBON>
+            <RECEIVED>수신문서가 도착하였습니다</RECEIVED>
+			<RECEIVEDMOD>수신(담당자변경)문서가 도착하였습니다</RECEIVEDMOD>
+            <APPROVED>결재문서가 보류되었습니다</APPROVED>
+            <APPROVEDC>결재문서가 보류해제되었습니다</APPROVEDC>
+            <APPROVEH>결재문서가 상신보류되었습니다</APPROVEH>
+            <APPROVEHC>결재문서가 상신보류해제되었습니다</APPROVEHC>
+            <REJECT>결재문서가 반려되었습니다</REJECT>
+            <CIRCULATION>회람문서가 도착하였습니다.</CIRCULATION>
+            <ENFORCE>공문이 접수되었습니다.</ENFORCE>
+            <MEMO>메모가 작성되었습니다.</MEMO>
+            <PROXY>대결문서가 도착하였습니다.</PROXY>
+            <CANCEL>상신취소되었습니다.</CANCEL>
+            <FORWARD>전달문서가 도착하였습니다.</FORWARD>
+            <PASSED>이관문서가 도착하였습니다.</PASSED>
+            <APPROVEC>결재가 취소되었습니다.</APPROVEC>
+            <CONFIRM>결재문서가 도착하였습니다</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[결재의견]</OPINION>
+            <APPROVE>[결재]</APPROVE>
+            <COMPLETE>[완결]</COMPLETE>
+            <CARBON>[참조]</CARBON>
+            <RECEIVED>[수신]</RECEIVED>
+			<RECEIVEDMOD>[수신-담당자변경]</RECEIVEDMOD>
+            <APPROVED>[보류]</APPROVED>
+            <APPROVEDC>[보류해제]</APPROVEDC>
+            <APPROVEH>[상신보류]</APPROVEH>
+            <APPROVEHC>[상신보류해제]</APPROVEHC>
+            <REJECT>[반려]</REJECT>
+            <CIRCULATION>[회람]</CIRCULATION>
+            <ENFORCE>[공문]</ENFORCE>
+            <MEMO>[메모]</MEMO>
+            <PROXY>[대결]</PROXY>
+            <CANCEL>[상신취소]</CANCEL>
+            <FORWARD>[전달]</FORWARD>
+            <PASSED>[이관]</PASSED>
+            <APPROVEC>[결재취소]</APPROVEC>
+            <CONFIRM>[공람]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            [전자결재] 알림
+            &lt;br&gt;&lt;br&gt;
+            - 알림메세지: $ACTION$
+            &lt;br&gt;
+            - 문서제목:$SUBJECT$
+            &lt;br&gt;
+            - 문서발신자:$USERTITLENAME$ $USERUSERNAME$
+            &lt;br&gt;&lt;br&gt;
+            - 첨언:$OPINION$
+        </CONTENT>
+    </SMS>
+
+    <MOBILE>
+        <SECTION>
+            <OPINION>결재의견이 작성되었습니다</OPINION>
+            <APPROVE>결재문서가 도착하였습니다</APPROVE>
+            <COMPLETE>결재문서가 완결처리되었습니다</COMPLETE>
+            <CARBON>참조문서가 도착하였습니다</CARBON>
+            <RECEIVED>수신문서가 도착하였습니다</RECEIVED>
+            <RECEIVEDMOD>수신(담당자변경)문서가 도착하였습니다</RECEIVEDMOD>
+            <APPROVED>결재문서가 보류되었습니다</APPROVED>
+            <APPROVEDC>결재문서가 보류해제되었습니다</APPROVEDC>
+            <APPROVEH>결재문서가 상신보류되었습니다</APPROVEH>
+            <APPROVEHC>결재문서가 상신보류해제되었습니다</APPROVEHC>
+            <REJECT>결재문서가 반려되었습니다</REJECT>
+            <CIRCULATION>회람문서가 도착하였습니다.</CIRCULATION>
+            <ENFORCE>공문이 접수되었습니다.</ENFORCE>
+            <MEMO>메모가 작성되었습니다.</MEMO>
+            <PROXY>대결문서가 도착하였습니다.</PROXY>
+            <CANCEL>상신취소되었습니다.</CANCEL>
+            <FORWARD>전달문서가 도착하였습니다.</FORWARD>
+            <PASSED>이관문서가 도착하였습니다.</PASSED>
+            <APPROVEC>결재가 취소되었습니다.</APPROVEC>
+            <CONFIRM>결재문서가 도착하였습니다</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[결재의견]</OPINION>
+            <APPROVE>[결재]</APPROVE>
+            <COMPLETE>[완결]</COMPLETE>
+            <CARBON>[참조]</CARBON>
+            <RECEIVED>[수신]</RECEIVED>
+            <RECEIVEDMOD>[수신-담당자변경]</RECEIVEDMOD>
+            <APPROVED>[보류]</APPROVED>
+            <APPROVEDC>[보류해제]</APPROVEDC>
+            <APPROVEH>[상신보류]</APPROVEH>
+            <APPROVEHC>[상신보류해제]</APPROVEHC>
+            <REJECT>[반려]</REJECT>
+            <CIRCULATION>[회람]</CIRCULATION>
+            <ENFORCE>[공문]</ENFORCE>
+            <MEMO>[메모]</MEMO>
+            <PROXY>[대결]</PROXY>
+            <CANCEL>[상신취소]</CANCEL>
+            <FORWARD>[전달]</FORWARD>
+            <PASSED>[이관]</PASSED>
+            <APPROVEC>[결재취소]</APPROVEC>
+            <CONFIRM>[공람]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;상신부서 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자정보 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;결재자의견 : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MOBILE>
+</ALARM>

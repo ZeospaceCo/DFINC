@@ -1,0 +1,2 @@
+companyid,name,deptcode,deptname,employeenumber,loginid,pwd,titlecode,titlename,dutycode,dutyname,mailid,mailpwd,maildomain,birthday,address,joindate
+1,jiaoxiaqing,a20,연구소(메이크업),20070920,20070920,20070920,NULL,NULL,d11,파트장,jiaoxiaqing,20070920,cosmax.com.cn,,,

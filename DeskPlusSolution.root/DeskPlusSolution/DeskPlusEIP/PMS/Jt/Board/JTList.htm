@@ -1,0 +1,62 @@
+﻿<table class="table_typeA">
+<caption>리스트</caption>
+<colgroup>
+    <col width="60px" />    
+    <col />
+    <col width="85px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_num"></th>
+        <th class="center" id="r_subject"></th>
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_readcount"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_writedate"></th>
+        
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.Row }</td>
+        <td class="left">
+             <a href="#" onclick="List.View('{ $T.List.ProjectID }','{ $T.List.MenuID }','{ $T.List.BoardID }');return false;" style="cursor:pointer" >{ $T.List.Title }</a>
+            {#if $T.List.ReplyCount > 0}
+            <a href="#" onclick="List.PopupShort('{ $T.List.ProjectID }','{ $T.List.MenuID }','{ $T.List.BoardID }');return false;" style="cursor:pointer" >
+            <span class="icon_Comment_view">({ $T.List.ReplyCount })</span>
+            </a>
+            {#/if}  
+            <a onclick="List.PopupView('{ $T.List.ProjectID }','{ $T.List.MenuID }','{ $T.List.BoardID }');return false;" style="cursor:pointer" >
+                <img class="IconPopUp" alt="" />
+            </a>  
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}
+        </td>
+        <td class="center">
+            {#if $T.List.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ProjectID='{ $T.List.ProjectID }' MenuID='{$T.List.MenuID}' BoardID='{ $T.List.BoardID }'></i>
+            {#/if}
+        </td>
+        <td class="center">
+            <a onclick="List.ReadList('{ $T.List.ProjectID }','{ $T.List.MenuID }', '{ $T.List.BoardID }');return false;" style="cursor:pointer" >
+            { $T.List.ReadCount }
+        </td>
+        <td class="center">
+            {#if $T.List.WriteUserID > 0}
+                <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.NameBase }</a>             
+            {#else}
+            { $T.List.NameBase }
+            {#/if}
+        </td>
+        <td class="center">{ $T.List.WriteDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="6" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

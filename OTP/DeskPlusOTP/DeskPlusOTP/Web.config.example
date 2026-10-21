@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.8" />
+    <httpRuntime targetFramework="4.8" />
+	<identity impersonate="true" userName="YOUR_USERNAME" password="YOUR_PASSWORD" />
+  </system.web>
+</configuration>

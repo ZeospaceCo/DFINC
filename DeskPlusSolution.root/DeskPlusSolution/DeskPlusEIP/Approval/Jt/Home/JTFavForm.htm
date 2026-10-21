@@ -1,0 +1,7 @@
+﻿<ul class="doc_list">
+{#foreach $T as List}
+    <li><h2><a href="#" onclick="javascript:Menu.MoveFavForm('{ $T.List.FormID }')">{ $T.List.FormBase }<span class="clsFavTit"></span></a></h2></li>
+{#else}
+    <li><h2><a href="#" onclick="javascript:Menu.MoveFavFormMgr()"><span class="clsFavTitMgr"></span></a></h2></li>
+{#/for} 
+</ul>

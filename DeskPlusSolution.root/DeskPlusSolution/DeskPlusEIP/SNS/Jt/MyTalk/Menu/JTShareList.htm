@@ -1,0 +1,22 @@
+﻿
+<table cellspacing="0" class="table_typeT">    
+<colgroup>        
+    <col width="80px">        
+    <col width="120px">    
+</colgroup>     
+<tbody>
+<tr>                
+    <th class="center" id="r_photo"></th>    
+    <th class="center" id="r_name"></th>        
+</tr>  
+{#foreach $T as List}
+<tr>    
+	<td class="center">{ $T.List.PhotoImage }</td>    
+	<td class="center"><a onclick="Menu.GoPopMyTalkList('{ $T.List.UserID }')" style="cursor:pointer">{ $T.List.Name }</a></td>    
+</tr>    
+{#else}
+ <tr>
+    <td colspan="2" class="center"><span class="NoListData" /></td>       
+ </tr>
+{#/for}    
+</table>

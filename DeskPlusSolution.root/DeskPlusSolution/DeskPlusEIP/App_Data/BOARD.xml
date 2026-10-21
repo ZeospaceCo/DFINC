@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+	<Item ID="NoticeCategoryID" Value="4" Content="공지사항 카테고리" />
+	<Item ID="BoardNewShowDay" Value="0" Content="new 이미지 보이기 (당일 : 0)" />
+	<Item ID="VWNameField" Value="WriteName" Content="이름 보이기 (이름:WriteName, 부서:DeptName, 직급:TitleName, 직책:DutyName)" />
+	<Item ID="VWNameFieldCategory" Value="0" Content="이름 보이기 카테고리 설정 (1,2,3,4) 콤마로 구분하며, 0 은 전체임" />
+	<Item ID="MimeUseChk" Value="Y" Content="글쓰기에 이미지 추가를 위해 마임을 쓸건지 않쓸건지 설정 (Y : 사용 , N : 사용하지 않음)" />
+	<Item ID="UseNumberListID" Value="N" Content="게시판의 번호를 listID 로 하면 : Y, 로직으로 하면 : N" />
+	<Item ID="TopMessageCategoryID" Value="8" Content="TopMessage 카테고리" />
+	<Item ID="UseBold" Value="N" Content="읽지 않은글 bold (Y:사용,N:미사용)" />
+	<Item ID="MovieFileType" Value=".avi,.asf,.wma" Content="동영상 보기 확장자,다중시 콤마구분 (asf,mdi)" />
+	<Item ID="UseListFontColor" Value="font-weight:bold;color:;" Content="게시판 글리스트 색깔 입히기" />
+	<Item ID="TabBoardListCount" Value="5" Content="메인화면 Tab 컨트롤 리스트 갯수" />
+	<Item ID="IsDelOriginalList" Value="Y" Content="답글달린 원본글 삭제 여부" />
+	<Item ID="DelOriginalTitle" Value="원본글이 삭제되었습니다.,No content,内容不存在,内容がありません。" Content="원본글 삭제시 제목 비교" />
+	<Item ID="CustomCategory" Value="" Content="외부모듈에 필요한 게시판 카테고리용" />
+	<Item ID="AnonymityName" Value="익명,NoName" Content="익명시 이름표기" />
+	<Item ID="UseAnonymityList" Value="Y" Content="사용자 익명 사용 컨트롤여부(Y:사용;N:미사용)" />
+	<Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/Board/Content/ViewPopup.aspx"  Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+	<Item ID="SMSContent" Value="{0}님이 '{1}' 글내용을 작성했습니다." Content="SMS 발송 내용" />
+	<Item ID="TemplateDocNumber" Value="[DEPTNAME]-[YYYYMM]-[NUMBER]" Content="템플릿문서번호 : [DEPTNAME]-[YYYYMM]-[NUMBER]" />
+	<Item ID="AlarmCategoryviewCount" Value="0" Content="알람보낼시 보여줄 카테고리 갯수" />
+	<Item ID="ShowListTitleField" Value="Type,CategoryTitle,WriteUserName,Title,WriteDate,Filecount,ReadCount"  Content="보여줄 리스트 항목" />
+	<Item ID="StatusCategoryID" Value="5" Content="상태값 보이는 카테고리(하위까지 포함함)" />
+	<Item ID="ShowListTitleStatusField" Value="Type,CategoryTitle,WriteUserName,Title,WriteDate,Filecount,{0},ReadCount"  Content="보여줄 리스트 항목" />
+	<Item ID="ReplyVisible" Value="N"  Content="답변버튼 권한 없을때 비활성화(Y) 안보이기(N)" />
+	<Item ID="GalleryPageSize" Value="8"  Content="갤러리 페이지 사이즈" />
+	<Item ID="AttachFileOrder" Value="1" Content="첨부파일 정렬 순서 0:일렬 1:순차적" />
+	<Item ID="AttachFileImgHeight" Value="800"  Content="본문 이미지 첨부파일 줄이기 높이" />
+	<Item ID="AttachFileImgWidth" Value="800"  Content="본문 이미지 첨부파일 줄이기 넓이" />
+	<Item ID="AttachFileImgUse" Value="1"  Content="본문 이미지 첨부파일 줄이기 여부" />
+	<Item ID="UseReplyBeforeContent" Value="N"  Content="답변 글 작성시, 기존 원본글 에디터 보이기" />
+  <Item ID="IsBatchPDF" Value="1" Content="PDF일괄 다운로드사용유부 (1:사용, 0:미사용), 팩키지=미사용, Aspose Component 구매필요" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

@@ -1,0 +1,33 @@
+﻿<table class="table_typeA">
+    <caption>
+    질문관리
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col />
+        <col width="100px" />
+        <col width="100px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input type="checkbox" onclick="GetUnitList.Checked()" id="cbxAll" /></th>
+            <th class="center"><a href="#" onclick="javascript:GetUnitList.Sort('Title')"><span id="jtUL_F1"></span></a></th>
+            <th class="center"><a href="#" onclick="javascript:GetUnitList.Sort('Type')"><span id="jtUL_F2"></span></a></th>
+            <th class="center"><a href="#" onclick="javascript:GetUnitList.Sort('WriteDate')"><span id="jtUL_F3"></span></a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {#foreach $T as List}
+        <tr>
+            <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.UnitID }" value="{ $T.List.UnitID }" /></td>
+            <td class="left">{ $T.List.Title }</td>
+            <td class="center">{ $T.List.TypeStr }</td>
+            <td class="center">{ $T.List.WriteDateStr }</td>
+        </tr>
+        {#else}
+        <tr>
+            <td colspan="4" class="center"><span class="jtNoData"></span></td>
+        </tr>
+        {#/for}
+    </tbody>
+</table>

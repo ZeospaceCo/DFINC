@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 社區無法打開</Title>
+	<ContentHTML>
+		[社區無法打開]
+		&lt;br&gt;&lt;br&gt;
+		- 社區居民 : $Title$
+	</ContentHTML>
+</ContentInfo>

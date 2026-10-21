@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>添加的</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>添加评论</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>请输入标题。</value>
+  </data>
+  <data name="Add_Templete" xml:space="preserve">
+    <value>添加模板</value>
+  </data>
+  <data name="AdminConfirm" xml:space="preserve">
+    <value>管理员核准</value>
+  </data>
+  <data name="Admin_ListClose_IsReceipt" xml:space="preserve">
+    <value>要接受关闭吗？</value>
+  </data>
+  <data name="Admin_ListClose_IsReject" xml:space="preserve">
+    <value>要拒绝关闭申请吗？</value>
+  </data>
+  <data name="Admin_ListLinked_IsReceipt" xml:space="preserve">
+    <value>要批准吗？</value>
+  </data>
+  <data name="Admin_ListLinked_IsReject" xml:space="preserve">
+    <value>要拒绝吗?</value>
+  </data>
+  <data name="Admin_ListOpen_IsReceipt" xml:space="preserve">
+    <value>接受开设申请吗？</value>
+  </data>
+  <data name="Admin_Menu" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="Admin_Menu1" xml:space="preserve">
+    <value>开设申请</value>
+  </data>
+  <data name="Admin_Menu2" xml:space="preserve">
+    <value>关闭申请</value>
+  </data>
+  <data name="Admin_Menu3" xml:space="preserve">
+    <value>项目列表</value>
+  </data>
+  <data name="Admin_Menu4" xml:space="preserve">
+    <value>关联项目</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>适用</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>要删除吗？</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请输入开始日和结束日。</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Board_List_Attach" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Board_List_Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Board_List_DateTime" xml:space="preserve">
+    <value>张贴日</value>
+  </data>
+  <data name="Board_List_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Board_List_Num" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="Board_List_ShortReply" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="Board_List_Title" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="Board_List_Viewer" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="Board_Read_ShortReply" xml:space="preserve">
+    <value>请输入评论。</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>顺序变更</value>
+  </data>
+  <data name="ChargerUserDept_Remark" xml:space="preserve">
+    <value>请选择对象</value>
+  </data>
+  <data name="ChargerUserDept_SelectedReceiptor" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="ChargerUserDept_Title" xml:space="preserve">
+    <value>选择对象</value>
+  </data>
+  <data name="CheckDate" xml:space="preserve">
+    <value>计划开始日的完成日范围小于开始日范围。</value>
+  </data>
+  <data name="CheckEndDate" xml:space="preserve">
+    <value>完成日范围小于开始日范围。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CompleteAdd" xml:space="preserve">
+    <value>要添加选择的项目吗?</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已被批准。</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>顺序已变更</value>
+  </data>
+  <data name="CompleteReject" xml:space="preserve">
+    <value>已被拒绝</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前创建的内容将消失。要选择吗？</value>
+  </data>
+  <data name="ConfirmProject" xml:space="preserve">
+    <value>请选择要批准的项目。</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>确定要删除文件吗？</value>
+  </data>
+  <data name="DeleteReal" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>删除文件</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="Ditto" xml:space="preserve">
+    <value>相同</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>因正文含有脚本可疑文句，内容可能被更改。</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>文件夹管理</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夹名称</value>
+  </data>
+  <data name="FOLDER_Register_MSGName" xml:space="preserve">
+    <value>请输入文件夹名</value>
+  </data>
+  <data name="FormatApply" xml:space="preserve">
+    <value>适用样式</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到查看页面。</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>转到列表。</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>请输入计划开始日及计划完成日。</value>
+  </data>
+  <data name="InputStartDate" xml:space="preserve">
+    <value>请输入开始和完成日期。</value>
+  </data>
+  <data name="InputStartDays" xml:space="preserve">
+    <value>请输入计划日</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>特殊字符的安全漏洞，攻击是有限的。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ListLinked_LinkedTitle" xml:space="preserve">
+    <value>关联项目</value>
+  </data>
+  <data name="ListLinked_Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="ListLinked_RequestTitle" xml:space="preserve">
+    <value>申请项目</value>
+  </data>
+  <data name="List_DBInjection" xml:space="preserve">
+    <value>是被禁止语言。</value>
+  </data>
+  <data name="List_IsOpen" xml:space="preserve">
+    <value>非公开与否</value>
+  </data>
+  <data name="List_ltlFolder" xml:space="preserve">
+    <value>文件夹名</value>
+  </data>
+  <data name="List_Msg_Input" xml:space="preserve">
+    <value>请输入搜索词</value>
+  </data>
+  <data name="List_Msg_NotUseSpecial" xml:space="preserve">
+    <value>搜索语不能使用特殊文字。</value>
+  </data>
+  <data name="List_PlanDate" xml:space="preserve">
+    <value>计划日</value>
+  </data>
+  <data name="List_ProjectName" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="List_Status1" xml:space="preserve">
+    <value>等待中</value>
+  </data>
+  <data name="List_Status2" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="List_Status3" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="List_Status4" xml:space="preserve">
+    <value>延迟</value>
+  </data>
+  <data name="List_Status5" xml:space="preserve">
+    <value>保留</value>
+  </data>
+  <data name="Main_DatePercent" xml:space="preserve">
+    <value>期间率</value>
+  </data>
+  <data name="Manage_Progress_Folder" xml:space="preserve">
+    <value>进行文件夹管理</value>
+  </data>
+  <data name="Manage_Template" xml:space="preserve">
+    <value>模板管理</value>
+  </data>
+  <data name="MaxList" xml:space="preserve">
+    <value>（显示5个最新文章。）</value>
+  </data>
+  <data name="Member_Birthday" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="Member_DeptName" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Member_Employ" xml:space="preserve">
+    <value>社号</value>
+  </data>
+  <data name="Member_List_ChargerDel" xml:space="preserve">
+    <value>要删除参与人吗？</value>
+  </data>
+  <data name="Member_List_ChargerSelectDel" xml:space="preserve">
+    <value>请选择要删除的参与人。</value>
+  </data>
+  <data name="Member_LoginID" xml:space="preserve">
+    <value>用户ID</value>
+  </data>
+  <data name="Member_Mail" xml:space="preserve">
+    <value>电子邮件地址</value>
+  </data>
+  <data name="Member_ModifyDate" xml:space="preserve">
+    <value>最终修改日</value>
+  </data>
+  <data name="Member_Phone" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Member_RegisterDate" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="Member_Sex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="Member_Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Member_TitleName" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="Member_VisitDate" xml:space="preserve">
+    <value>最终访问日</value>
+  </data>
+  <data name="Menu_admin1" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Menu_admin2" xml:space="preserve">
+    <value>参与人管理</value>
+  </data>
+  <data name="Menu_admin3" xml:space="preserve">
+    <value>菜单管理</value>
+  </data>
+  <data name="Menu_admin4" xml:space="preserve">
+    <value>写总评</value>
+  </data>
+  <data name="Menu_admin5" xml:space="preserve">
+    <value>模板管理</value>
+  </data>
+  <data name="Menu_admin6" xml:space="preserve">
+    <value>申请关闭</value>
+  </data>
+  <data name="Menu_admin8" xml:space="preserve">
+    <value>总评</value>
+  </data>
+  <data name="Menu_Header1" xml:space="preserve">
+    <value>菜单名</value>
+  </data>
+  <data name="Menu_Header2" xml:space="preserve">
+    <value>菜单说明</value>
+  </data>
+  <data name="Menu_Header3" xml:space="preserve">
+    <value>使用与否</value>
+  </data>
+  <data name="Menu_Header4" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Menu_Register_MSGDesc" xml:space="preserve">
+    <value>菜单说明超过了允许的大小。</value>
+  </data>
+  <data name="Menu_Register_MSGName" xml:space="preserve">
+    <value>请输入菜单名</value>
+  </data>
+  <data name="Menu_Related" xml:space="preserve">
+    <value>关联项目</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>修改帖子</value>
+  </data>
+  <data name="Module_Folder_Node1" xml:space="preserve">
+    <value>文件夹管理</value>
+  </data>
+  <data name="Module_Node1" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Module_Node2" xml:space="preserve">
+    <value>开设申请</value>
+  </data>
+  <data name="Module_Node3" xml:space="preserve">
+    <value>全体 项目</value>
+  </data>
+  <data name="Module_Node4" xml:space="preserve">
+    <value>完成 项目</value>
+  </data>
+  <data name="Module_Node5" xml:space="preserve">
+    <value>我的项目</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="MSG_CONFIRM_DEL" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="MSG_DUF_USERDEPT" xml:space="preserve">
+    <value>已经注册的人（部门）。</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>处理时发生了错误。</value>
+  </data>
+  <data name="MSG_NOAdminAUTH" xml:space="preserve">
+    <value>没有访问权限。</value>
+  </data>
+  <data name="MSG_NOAUTH" xml:space="preserve">
+    <value>没有访问该项目权限。</value>
+  </data>
+  <data name="MSG_NODELETE" xml:space="preserve">
+    <value>不能删除的项目。</value>
+  </data>
+  <data name="MSG_NOSELECT_MENU" xml:space="preserve">
+    <value>请选择菜单。</value>
+  </data>
+  <data name="MSG_NOStatusAUTH" xml:space="preserve">
+    <value>该项目是管理员保留开设批准的状态。</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多国语名</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附件不存在。</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>该用户不能访问。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容。</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>附件不存在。</value>
+  </data>
+  <data name="OnlyAdminClose" xml:space="preserve">
+    <value>只有项目管理员申请关闭。</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>上级文件夹名</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>参与人</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Private_BoardAdd_DPEditorTEXT" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="Private_BoardView_IsDelMSG" xml:space="preserve">
+    <value>要删除吗？</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时发生了错误。请与管理员联系。</value>
+  </data>
+  <data name="ProjectInfo_DelayDays" xml:space="preserve">
+    <value>延迟天数</value>
+  </data>
+  <data name="ProjectInfo_EDate" xml:space="preserve">
+    <value>完成日</value>
+  </data>
+  <data name="ProjectInfo_InDays" xml:space="preserve">
+    <value>投入天数</value>
+  </data>
+  <data name="ProjectInfo_PlanEDate" xml:space="preserve">
+    <value>计划完成日</value>
+  </data>
+  <data name="ProjectInfo_PlanSDate" xml:space="preserve">
+    <value>规划开始日</value>
+  </data>
+  <data name="ProjectInfo_RemainDays" xml:space="preserve">
+    <value>剩余天数</value>
+  </data>
+  <data name="ProjectInfo_SDate" xml:space="preserve">
+    <value>开始日</value>
+  </data>
+  <data name="ProjectInfo_TotalDays" xml:space="preserve">
+    <value>总天数</value>
+  </data>
+  <data name="ProjectList_Header1" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="ProjectList_Header2" xml:space="preserve">
+    <value>开设人</value>
+  </data>
+  <data name="ProjectList_Header3" xml:space="preserve">
+    <value>计划开始日</value>
+  </data>
+  <data name="ProjectList_Header4" xml:space="preserve">
+    <value>计划完成日</value>
+  </data>
+  <data name="ProjectList_Header5" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="ProjectList_Header6" xml:space="preserve">
+    <value>进度率</value>
+  </data>
+  <data name="ProjectList_Header7" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="Project_Content_MsgProject" xml:space="preserve">
+    <value>没有选择的项目。</value>
+  </data>
+  <data name="Project_Menu_ClosedRequest" xml:space="preserve">
+    <value>确定要申请关闭吗？</value>
+  </data>
+  <data name="Project_Menu_ClosedSuccess" xml:space="preserve">
+    <value>关闭已申请。</value>
+  </data>
+  <data name="Project_Menu_Opinion" xml:space="preserve">
+    <value>管理员可以记载总评。</value>
+  </data>
+  <data name="Project_ProjectInfo_Approval" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Project_ProjectInfo_Date" xml:space="preserve">
+    <value>开设日</value>
+  </data>
+  <data name="Project_ProjectInfo_IsOpen" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Project_ProjectInfo_NoApproval" xml:space="preserve">
+    <value>未批准</value>
+  </data>
+  <data name="Project_RegisterOpinion_Save" xml:space="preserve">
+    <value>要保存吗？</value>
+  </data>
+  <data name="Project_Register_CountProjectList" xml:space="preserve">
+    <value>该文件里有项目，不能删除。</value>
+  </data>
+  <data name="Project_State" xml:space="preserve">
+    <value>进行/完成 项目现况</value>
+  </data>
+  <data name="Read_WriteDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登记日</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>登记人</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="RejectProject" xml:space="preserve">
+    <value>选择要拒绝的项​​目。</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="ReplyBoard" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>申请</value>
+  </data>
+  <data name="R_Project_MSGFolder" xml:space="preserve">
+    <value>请选择文件夹。</value>
+  </data>
+  <data name="R_Project_MSGPlanDate" xml:space="preserve">
+    <value>请选择计划日。</value>
+  </data>
+  <data name="R_Project_MSGPProcess" xml:space="preserve">
+    <value>请只输入数字。</value>
+  </data>
+  <data name="R_Project_MSGProjectName" xml:space="preserve">
+    <value>请选择项目名。</value>
+  </data>
+  <data name="Schedule_AddPims" xml:space="preserve">
+    <value>添加到个人日程里。</value>
+  </data>
+  <data name="Schedule_Header1" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="Schedule_Header2" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Schedule_Header3" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Schedule_Header4" xml:space="preserve">
+    <value>日程反复</value>
+  </data>
+  <data name="Schedule_Header5" xml:space="preserve">
+    <value>提醒</value>
+  </data>
+  <data name="Schedule_Header6" xml:space="preserve">
+    <value>日程添加</value>
+  </data>
+  <data name="Schedule_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Schedule_Title" xml:space="preserve">
+    <value>项目 日程</value>
+  </data>
+  <data name="Schedule_Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SetRepeat" xml:space="preserve">
+    <value>反复设置</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>查看图像</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>结束日期不能小于开始日。</value>
+  </data>
+  <data name="Template_Register_ltlTitle" xml:space="preserve">
+    <value>模板标题</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="Unit_Code" xml:space="preserve">
+    <value>代号</value>
+  </data>
+  <data name="Unit_Owner" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="Unit_PlanDay" xml:space="preserve">
+    <value>所需天数</value>
+  </data>
+  <data name="Unit_PlanEndDate" xml:space="preserve">
+    <value>计划完成日 / 结束日</value>
+  </data>
+  <data name="Unit_PlanEndDate1" xml:space="preserve">
+    <value>计划完成日 / 完成日</value>
+  </data>
+  <data name="Unit_PlanStartDate" xml:space="preserve">
+    <value>计划开始日 / 开始日</value>
+  </data>
+  <data name="Unit_Process" xml:space="preserve">
+    <value>进度率</value>
+  </data>
+  <data name="Unit_RealProcess" xml:space="preserve">
+    <value>实进度率</value>
+  </data>
+  <data name="Unit_Register_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Unit_Register_LoadTemplate" xml:space="preserve">
+    <value>因选择模版，页面重新加载。要引用吗？</value>
+  </data>
+  <data name="Unit_Register_ltlChargeDeptName" xml:space="preserve">
+    <value>担当部门</value>
+  </data>
+  <data name="Unit_Register_ltlCharger" xml:space="preserve">
+    <value>负责人名</value>
+  </data>
+  <data name="Unit_Register_ltlCode" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="Unit_Register_ltlEndDate" xml:space="preserve">
+    <value>结束日</value>
+  </data>
+  <data name="Unit_Register_ltlExecuteMoney" xml:space="preserve">
+    <value>执行金额</value>
+  </data>
+  <data name="Unit_Register_ltlPlanDay" xml:space="preserve">
+    <value>计划需要天数</value>
+  </data>
+  <data name="Unit_Register_ltlPlanEndDate" xml:space="preserve">
+    <value>计划完成日</value>
+  </data>
+  <data name="Unit_Register_ltlPlanMoney" xml:space="preserve">
+    <value>计划金额</value>
+  </data>
+  <data name="Unit_Register_ltlPlanStartDate" xml:space="preserve">
+    <value>计划开始日</value>
+  </data>
+  <data name="Unit_Register_ltlProcess" xml:space="preserve">
+    <value>进度率</value>
+  </data>
+  <data name="Unit_Register_ltlRelateDeptName" xml:space="preserve">
+    <value>关联部门</value>
+  </data>
+  <data name="Unit_Register_ltlStartDate" xml:space="preserve">
+    <value>开始日</value>
+  </data>
+  <data name="Unit_Register_ltlStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Unit_Register_ltlTemplate" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="Unit_Register_ltlTitle" xml:space="preserve">
+    <value>单位工作业务名</value>
+  </data>
+  <data name="Unit_Register_ltlWeightPercent" xml:space="preserve">
+    <value>重量</value>
+  </data>
+  <data name="Unit_Register_Request1" xml:space="preserve">
+    <value>请输入业务单元操作的名称。</value>
+  </data>
+  <data name="Unit_Register_Request2" xml:space="preserve">
+    <value>请输入计划的开始日期。</value>
+  </data>
+  <data name="Unit_Register_Request3" xml:space="preserve">
+    <value>请输入计划的完成日期。</value>
+  </data>
+  <data name="Unit_Register_Request4" xml:space="preserve">
+    <value>计划完成日期是早于计划的开始日期。</value>
+  </data>
+  <data name="Unit_Status" xml:space="preserve">
+    <value>州</value>
+  </data>
+  <data name="Unit_Title" xml:space="preserve">
+    <value>工作期间单位</value>
+  </data>
+  <data name="Unit_WeightPercent" xml:space="preserve">
+    <value>加重值</value>
+  </data>
+  <data name="Unit_whole" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="ViewBoard" xml:space="preserve">
+    <value>查看帖子</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>查看数</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>查看日</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>查看现况</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>登录信息</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>处理中。请稍候。</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>写留言</value>
+  </data>
+  <data name="Writing" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="Schedule_CompareTime" xml:space="preserve">
+    <value>开始日期必须小于终止日期。</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>节省</value>
+  </data>
+  <data name="ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>帖子限于200字以内</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>请输入文件夹名</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+</root>

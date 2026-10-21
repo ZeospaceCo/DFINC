@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SEL_PROC_MyTalk" Value="DPM_SNS_MyTalk_Sel" Content="마이톡 리스트 가져오기" />
+	<Item ID="SEL_QRY_MYTALKBYGROUPID"
+		  Value="SELECT *,(SELECT Count(*) FROM DP_SNS_Attach WITH(NOLOCK) WHERE CompanyID = DP_SNS_MyTalk.CompanyID AND GroupID = DP_SNS_MyTalk.GroupID) as FileCnt 
+		  FROM DP_SNS_MyTalk WITH(NOLOCK) WHERE CompanyID =  '{0}' AND GroupID =  '{1}'" Content="마이톡 상세내용 가져오기" />
+	<Item ID="INS_PROC_MyTalk" Value="DP_SNS_MyTalk_Ins" Content="마이톡 댓글 등록하기" />
+	<Item ID="DEL_PROC_MyTalk" Value="DP_SNS_MyTalk_Del" Content="마이톡 댓글 삭제하기" />
+	<Item ID="DEL_PROC_GROUPID" Value="DP_SNS_MyTalk_DelByGroupID" Content="마이톡 댓글그룹 삭제하기" />
+	<Item ID="INS_PROC_Attach" Value="DP_SNS_Attach_Ins" Content="마이톡 첨부파일 등록하기" />
+	<Item ID="SEL_QRY_Attach" Value="SELECT * FROM DP_SNS_Attach WITH(NOLOCK) WHERE CompanyID =  '{0}' AND GroupID =  '{1}'" Content="마이톡 첨부파일 가져오기" />
+	<Item ID="SEL_PROC_MyTalkTodayCnt" Value="DPM_SNS_MyTalk_SelTodayCnt" Content="마이톡 카운트(당일)" />
+	<Item ID="SEL_PROC_MyTalkCnt" Value="DPM_SNS_MyTalk_SelCnt" Content="마이톡 카운트" />
+	<Item ID="INS_PROC_MyTalkDraft" Value="DPM_SNS_MyTalk_Ins" Content="마이톡 임시저장 " />
+	<Item ID="SEL_QRY_Draft" Value="SELECT * FROM DPM_SNS_MyTalk WITH(NOLOCK) WHERE COMPANYID = {0} AND DraftTalkID = {1}" Content="마이톡 임시저장가져오기" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

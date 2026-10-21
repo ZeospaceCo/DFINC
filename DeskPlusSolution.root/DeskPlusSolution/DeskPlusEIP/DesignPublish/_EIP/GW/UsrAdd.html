@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_EIP.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_one">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>사용자정보</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="UsrCard.html"><span>인사카드</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>추가</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                <li><a href="UsrList.html"><span>목록</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 기본정보 //-->
+
+            <table class="table_typeB">
+                <caption>사용자정보</caption>
+                <colgroup>
+                    <col width="120px" />
+                    <col width="80px" />
+                    <col />
+                    <col width="80px" />
+                    <col />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="11">
+                            <ul class="eip_space">
+                                <li><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_noimg.gif" alt="사진"/></li>
+                                <li class="space">
+                                    <ul class="btn_smallL">
+                                        <li><a href="#"><span>추가</span></a></li>
+                                        <li><a href="#"><span>삭제</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_noimg2.gif" alt="인장"/></li>
+                                <li class="space">
+                                    <ul class="btn_smallL">
+                                        <li><a href="#"><span>추가</span></a></li>
+                                        <li><a href="#"><span>삭제</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <th>이름&nbsp;<a id=""><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th>
+                        <td><input type="text" style="width:95% !important;" /></td>
+                        <th>영문명</th>
+                        <td><input type="text" style="width:95% !important;" /></td>
+                    </tr>
+                    <tr>
+                        <th>로그인아이디</th>
+                        <td>
+                            <span class="aLeft">
+                                <input type="text" style="width:100px !important;" />
+                            </span>
+                            <ul class="btn_smallL">
+                                <li><a href="#"><span>중복체크</span></a></li>
+                            </ul>
+                        </td>
+                        <th>활성화</th>
+                        <td>
+                            <select class="searchselect">
+	                            <option value="">활성</option>
+	                            <option value="">비활성</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>기본메일</th>
+                        <td colspan="3">
+                            <span class="aLeft">
+                                <input type="text" style="width:100px !important;" />
+                                @
+                                <select class="searchselect">
+	                                <option value="">zeospace.com</option>
+	                                <option value="">nate.com</option>
+                                </select>
+                            </span>
+
+                            <ul class="btn_smallL">
+                                <li><a href="#"><span>중복체크</span></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>사번</th>
+                        <td><input type="text" style="width:95% !important;" /></td>
+                        <th>성별</th>
+                        <td>
+                            <select class="searchselect">
+                                <option value="">여</option>
+	                            <option value="">남</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>입사일</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.2005-05-25</span></td>
+                        <th>퇴사일</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.2005-05-25</span></td>
+                    </tr>
+                    <tr>
+                        <th>전화(내선)</th>
+                        <td>
+                            <input type="text" style="width:100px !important;" />
+                            <input type="text" style="width:40px !important;" />
+                            &nbsp;<span class="sample">ex.02-1234-5678 (101)</span>
+                        </td>
+                        <th>팩스</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.02-1234-5678</span></td>
+                    </tr>
+                    <tr>
+                        <th>집주소&nbsp;<a id="A1"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th>
+                        <td colspan="3">
+                            <input type="text" style="width:40px !important;" />
+                            <input type="text" style="width:40% !important;" />
+                            <input type="text" style="width:40% !important;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>본적주소&nbsp;<a id="A2"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th>
+                        <td colspan="3">
+                            <input type="text" style="width:40px !important;" />
+                            <input type="text" style="width:40% !important;" />
+                            <input type="text" style="width:40% !important;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>집전화</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.02-1234-5678</span></td>
+                        <th>휴대폰</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.010-1234-5678</span></td>
+                    </tr>
+                    <tr>
+                        <th>생년월일</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.1980-01-01</span></td>
+                        <th>결혼기념일</th>
+                        <td><input type="text" style="width:100px !important;" />&nbsp;<span class="sample">ex.1980-01-01</span></td>
+                    </tr>
+                    <tr>
+                        <th>담당업무</th>
+                        <td colspan="3"><input type="text" style="width:95% !important;" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+             <div class="layout_subbox">
+                <h2>부서정보 및 기타</h2>
+             </div>
+
+            <!-- 부서정보 및 기타 //-->
+            <ul class="tab">
+                <li><a href="#tabs-1" class="tab_on"><span>부서정보</span></a></li>
+                <li><a href="#tabs-2"><span>부가정보</span></a></li>
+            </ul>
+
+            <!-- 부서정보 Start //-->
+            <div class="eip_tabCont">
+                <div class="eip_auth_left">
+                <div class="rTableTop"><p></p></div>
+	            <div class="rTableMid">
+                    조직도부분
+                </div>
+                <div class="rTableBot"><p></p></div>
+            </div>
+                <div class="eip_auth_middle">
+                <ul>
+                    <li><a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/tree_btnAdd.gif" alt="추가" /></a></li>
+                    <li><a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/tree_btnDel.gif" alt="삭제" /></a></li>
+                </ul>
+            </div>
+                <div class="eip_auth_right">
+
+                <!-- 테이블 시작 //-->
+                <div class="table_typeAtop_left"><p></p></div>
+
+                <table class="table_typeA">
+                <caption>권한리스트</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>부서명</th>
+                        <th>직급명</th>
+                        <th>직책명</th>
+                        <th>기본조직여부</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>솔루션개발</td>
+                        <td>사원</td>
+                        <td>팀원</td>
+                        <td>Y</td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>솔루션개발</td>
+                        <td>사원</td>
+                        <td>팀원</td>
+                        <td>Y</td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 테이블 끝 //-->
+
+            </div>
+            </div>
+            <!-- 부서정보 End //-->
+
+
+            <!-- 기타 Start //-->
+            <div class="eip_tabCont">
+            
+                <!-- 가족정보 Start //-->
+                <div class="layout_subbox">
+                    <h2>가족정보</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="UsrEtc1.html"><span>추가</span></a></li>
+                        <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                    </ul>
+                </div>
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>가족정보</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>관계</th>
+                        <th>이름</th>
+                        <th>생년월일</th>
+                        <th>직업</th>
+                        <th>학력</th>
+                        <th>동거</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 가족정보 End //-->
+
+                <!-- 교육정보 Start //-->
+                <div class="layout_subbox">
+                    <h2>교육정보</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="UsrEtc2.html"><span>추가</span></a></li>
+                        <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                    </ul>
+                </div>
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>교육정보</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>과정명</th>
+                        <th>점수</th>
+                        <th>등급</th>
+                        <th>장소</th>
+                        <th>이수여부</th>
+                        <th>수료일</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 교육정보 End //-->
+
+                <!-- 상벌사항 Start //-->
+                <div class="layout_subbox">
+                    <h2>상벌사항</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="UsrEtc3.html"><span>추가</span></a></li>
+                        <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                    </ul>
+                </div>
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>상벌사항</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>상벌일자</th>
+                        <th>상.벌</th>
+                        <th>상벌종류</th>
+                        <th>적요</th>
+                        <th>포상징계자</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 상벌사항 End //-->
+
+                <!-- 경력사항 Start //-->
+                <div class="layout_subbox">
+                    <h2>경력사항</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="UsrEtc4.html"><span>추가</span></a></li>
+                        <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                    </ul>
+                </div>
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>경력사항</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>근무기간</th>
+                        <th>회사명</th>
+                        <th>경력기간</th>
+                        <th>직위</th>
+                        <th>직종</th>
+                        <th>기타</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 경력사항 End //-->
+
+                <!-- 학력사항 Start //-->
+                <div class="layout_subbox">
+                    <h2>학력사항</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="UsrEtc5.html"><span>추가</span></a></li>
+                        <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                    </ul>
+                </div>
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>학력사항</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>기간</th>
+                        <th>학교명</th>
+                        <th>학위</th>
+                        <th>전공</th>
+                        <th>졸업여부</th>
+                        <th>소재지</th>
+                        <th>.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" title="수정"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정" /></a>
+                            <a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+                <!-- 학력사항 End //-->
+
+            </div>
+            <!-- 기타 End //-->
+            
+        </div>
+        
+</div>
+</body>
+</html>

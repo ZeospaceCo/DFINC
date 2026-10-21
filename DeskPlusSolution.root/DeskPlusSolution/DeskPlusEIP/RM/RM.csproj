@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34E58B85-1A3E-4A26-B500-84B611C54D4A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.RM.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.RM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\Util\Component\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Content\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListQRCode.aspx.cs">
+      <DependentUpon>ListQRCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListQRCode.aspx.designer.cs">
+      <DependentUpon>ListQRCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListUpDown.aspx.cs">
+      <DependentUpon>ListUpDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListUpDown.aspx.designer.cs">
+      <DependentUpon>ListUpDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\SubFolderUpdown.aspx.cs">
+      <DependentUpon>SubFolderUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\SubFolderUpdown.aspx.designer.cs">
+      <DependentUpon>SubFolderUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\GetFolderTree.aspx.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\GetFolderTree.aspx.designer.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reserve\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reserve\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable0List.aspx.cs">
+      <DependentUpon>Usable0List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable0List.aspx.designer.cs">
+      <DependentUpon>Usable0List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable1List.aspx.cs">
+      <DependentUpon>Usable1List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable1List.aspx.designer.cs">
+      <DependentUpon>Usable1List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable2List.aspx.cs">
+      <DependentUpon>Usable2List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reserve\Usable2List.aspx.designer.cs">
+      <DependentUpon>Usable2List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reserve\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reserve\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlRM.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageRM.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageRMAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSRM.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Content\AddRepeat.aspx.cs">
+      <DependentUpon>AddRepeat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddRepeat.aspx.designer.cs">
+      <DependentUpon>AddRepeat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\AddResource.aspx.cs">
+      <DependentUpon>AddResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddResource.aspx.designer.cs">
+      <DependentUpon>AddResource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\AddReserveUser.aspx.cs">
+      <DependentUpon>AddReserveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddReserveUser.aspx.designer.cs">
+      <DependentUpon>AddReserveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\AddShareUser.aspx.cs">
+      <DependentUpon>AddShareUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddShareUser.aspx.designer.cs">
+      <DependentUpon>AddShareUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ExcelDown.aspx.cs">
+      <DependentUpon>ExcelDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ExcelDown.aspx.designer.cs">
+      <DependentUpon>ExcelDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Manager\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Manager\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Reject\AddReject.aspx.cs">
+      <DependentUpon>AddReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Reject\AddReject.aspx.designer.cs">
+      <DependentUpon>AddReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Manager\Usable0List.aspx.cs">
+      <DependentUpon>Usable0List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Manager\Usable0List.aspx.designer.cs">
+      <DependentUpon>Usable0List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ConfirmRepeat.aspx.cs">
+      <DependentUpon>ConfirmRepeat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ConfirmRepeat.aspx.designer.cs">
+      <DependentUpon>ConfirmRepeat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\DelRepeat.aspx.cs">
+      <DependentUpon>DelRepeat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\DelRepeat.aspx.designer.cs">
+      <DependentUpon>DelRepeat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\MyList.aspx.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\MyList.aspx.designer.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ShortReply.aspx.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ShortReply.aspx.designer.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ShortReplyMod.aspx.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ShortReplyMod.aspx.designer.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Manager\Usable1List.aspx.cs">
+      <DependentUpon>Usable1List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Manager\Usable1List.aspx.designer.cs">
+      <DependentUpon>Usable1List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Manager\Usable2List.aspx.cs">
+      <DependentUpon>Usable2List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Manager\Usable2List.aspx.designer.cs">
+      <DependentUpon>Usable2List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ViewQRCode.aspx.cs">
+      <DependentUpon>ViewQRCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ViewQRCode.aspx.designer.cs">
+      <DependentUpon>ViewQRCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ViewTotal.aspx.cs">
+      <DependentUpon>ViewTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ViewTotal.aspx.designer.cs">
+      <DependentUpon>ViewTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WholeDay.aspx.cs">
+      <DependentUpon>WholeDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WholeDay.aspx.designer.cs">
+      <DependentUpon>WholeDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WholeMonth.aspx.cs">
+      <DependentUpon>WholeMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WholeMonth.aspx.designer.cs">
+      <DependentUpon>WholeMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WholeWeek.aspx.cs">
+      <DependentUpon>WholeWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WholeWeek.aspx.designer.cs">
+      <DependentUpon>WholeWeek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetFolderTree.aspx.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetFolderTree.aspx.designer.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListDay.aspx.cs">
+      <DependentUpon>ListDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListDay.aspx.designer.cs">
+      <DependentUpon>ListDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListMonth.aspx.cs">
+      <DependentUpon>ListMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListMonth.aspx.designer.cs">
+      <DependentUpon>ListMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListWeek.aspx.cs">
+      <DependentUpon>ListWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListWeek.aspx.designer.cs">
+      <DependentUpon>ListWeek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListMain.aspx.cs">
+      <DependentUpon>ListMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListMain.aspx.designer.cs">
+      <DependentUpon>ListMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ws\Admin\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\ListQRCode.asmx.cs">
+      <DependentUpon>ListQRCode.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\ListUpDown.asmx.cs">
+      <DependentUpon>ListUpDown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\SubFolderUpdown.asmx.cs">
+      <DependentUpon>SubFolderUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Folder\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Reserve\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Reserve\Usable0List.asmx.cs">
+      <DependentUpon>Usable0List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Reserve\Usable1List.asmx.cs">
+      <DependentUpon>Usable1List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Reserve\Usable2List.asmx.cs">
+      <DependentUpon>Usable2List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Reserve\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\AddResource.asmx.cs">
+      <DependentUpon>AddResource.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListDay.asmx.cs">
+      <DependentUpon>ListDay.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListMonth.asmx.cs">
+      <DependentUpon>ListMonth.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListWeek.asmx.cs">
+      <DependentUpon>ListWeek.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Manager\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Manager\Usable0List.asmx.cs">
+      <DependentUpon>Usable0List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Manager\Usable1List.asmx.cs">
+      <DependentUpon>Usable1List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Manager\Usable2List.asmx.cs">
+      <DependentUpon>Usable2List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\MyList.asmx.cs">
+      <DependentUpon>MyList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Reject\AddReject.asmx.cs">
+      <DependentUpon>AddReject.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ShortReply.asmx.cs">
+      <DependentUpon>ShortReply.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ShortReplyMod.asmx.cs">
+      <DependentUpon>ShortReplyMod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ViewQRCode.asmx.cs">
+      <DependentUpon>ViewQRCode.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\WholeDay.asmx.cs">
+      <DependentUpon>WholeDay.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\WholeMonth.asmx.cs">
+      <DependentUpon>WholeMonth.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Home\Main.asmx.cs">
+      <DependentUpon>Main.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Interface\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Interface\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Content\AddUser.aspx" />
+    <Content Include="Admin\Content\ListQRCode.aspx" />
+    <Content Include="Admin\Content\ListUpDown.aspx" />
+    <Content Include="Admin\Content\Mod.aspx" />
+    <Content Include="Admin\Content\SubFolderUpdown.aspx" />
+    <Content Include="Admin\Content\View.aspx" />
+    <Content Include="Admin\Folder\Add.aspx" />
+    <Content Include="Admin\Folder\GetFolderTree.aspx" />
+    <Content Include="Admin\Folder\Tree.aspx" />
+    <Content Include="Admin\Content\Add.aspx" />
+    <Content Include="Admin\Content\List.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Reserve\Mod.aspx" />
+    <Content Include="Admin\Reserve\ModN.aspx" />
+    <Content Include="Admin\Reserve\Usable0List.aspx" />
+    <Content Include="Admin\Reserve\Usable1List.aspx" />
+    <Content Include="Admin\Reserve\Usable2List.aspx" />
+    <Content Include="Admin\Reserve\View.aspx" />
+    <Content Include="App_Data\en.xml" />
+    <Content Include="App_Data\fr.xml" />
+    <Content Include="App_Data\ja.xml" />
+    <Content Include="App_Data\ko.xml" />
+    <Content Include="App_Data\zh-cn.xml" />
+    <Content Include="App_Data\zh-tw.xml" />
+    <Content Include="Content\AddN.aspx" />
+    <Content Include="Content\AddRepeat.aspx" />
+    <Content Include="Content\AddResource.aspx" />
+    <Content Include="Content\AddReserveUser.aspx" />
+    <Content Include="Content\AddShareUser.aspx" />
+    <Content Include="Content\ExcelDown.aspx" />
+    <Content Include="Content\Manager\List.aspx" />
+    <Content Include="Content\Reject\AddReject.aspx" />
+    <Content Include="Content\Manager\Usable0List.aspx" />
+    <Content Include="Content\ConfirmRepeat.aspx" />
+    <Content Include="Content\DelRepeat.aspx" />
+    <Content Include="Content\Mod.aspx" />
+    <Content Include="Content\ModN.aspx" />
+    <Content Include="Content\MyList.aspx" />
+    <Content Include="Content\ShortReply.aspx" />
+    <Content Include="Content\ShortReplyMod.aspx" />
+    <Content Include="Content\Manager\Usable1List.aspx" />
+    <Content Include="Content\Manager\Usable2List.aspx" />
+    <Content Include="Content\View.aspx" />
+    <Content Include="Content\ViewPopup.aspx" />
+    <Content Include="Content\ViewQRCode.aspx" />
+    <Content Include="Content\ViewTotal.aspx" />
+    <Content Include="Content\WholeDay.aspx" />
+    <Content Include="Content\WholeMonth.aspx" />
+    <Content Include="Content\WholeWeek.aspx" />
+    <Content Include="Folder\GetFolderTree.aspx" />
+    <Content Include="Folder\Tree.aspx" />
+    <Content Include="Content\Add.aspx" />
+    <Content Include="Content\ListDay.aspx" />
+    <Content Include="Content\ListMonth.aspx" />
+    <Content Include="Content\ListWeek.aspx" />
+    <Content Include="Content\ListMain.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Home\Main.aspx" />
+    <Content Include="Js\Admin\Content\AddUser.js" />
+    <Content Include="Js\Admin\Content\ListQRCode.js" />
+    <Content Include="Js\Admin\Content\ListUpDown.js" />
+    <Content Include="Js\Admin\Content\Mod.js" />
+    <Content Include="Js\Admin\Content\SubFolderUpDown.js" />
+    <Content Include="Js\Admin\Content\View.js" />
+    <Content Include="Js\Admin\Folder\Add.js" />
+    <Content Include="Js\Admin\Folder\Tree.js" />
+    <Content Include="Js\Admin\Content\Add.js" />
+    <Content Include="Js\Admin\Content\List.js" />
+    <Content Include="Js\Admin\Reserve\Mod.js" />
+    <Content Include="Js\Admin\Reserve\Usable0List.js" />
+    <Content Include="Js\Admin\Reserve\Usable1List.js" />
+    <Content Include="Js\Admin\Reserve\Usable2List.js" />
+    <Content Include="Js\Admin\Reserve\View.js" />
+    <Content Include="Js\Content\Add.js" />
+    <Content Include="Js\Content\AddRepeat.js" />
+    <Content Include="Js\Content\AddResource.js" />
+    <Content Include="Js\Content\AddReserveUser.js" />
+    <Content Include="Js\Content\AddShareUser.js" />
+    <Content Include="Js\Content\Manager\List.js" />
+    <Content Include="Js\Content\Reject\AddReject.js" />
+    <Content Include="Js\Content\Manager\Usable0List.js" />
+    <Content Include="Js\Content\ConfirmRepeat.js" />
+    <Content Include="Js\Content\DelRepeat.js" />
+    <Content Include="Js\Content\Mod.js" />
+    <Content Include="Js\Content\MyList.js" />
+    <Content Include="Js\Content\ShortReply.js" />
+    <Content Include="Js\Content\ShortReplyMod.js" />
+    <Content Include="Js\Content\View.js" />
+    <Content Include="Js\Content\ViewQRCode.js" />
+    <Content Include="Js\Content\WholeDay.js" />
+    <Content Include="Js\Content\WholeMonth.js" />
+    <Content Include="Js\Content\WholeWeek.js" />
+    <Content Include="Js\Content\Manager\Usable1List.js" />
+    <Content Include="Js\Content\Manager\Usable2List.js" />
+    <Content Include="Js\Content\ViewTotal.js" />
+    <Content Include="Js\Folder\Tree.js" />
+    <Content Include="Js\Content\ListDay.js" />
+    <Content Include="Js\Content\ListMonth.js" />
+    <Content Include="Js\Content\ListWeek.js" />
+    <Content Include="Js\Content\ListMain.js" />
+    <Content Include="Js\Home\Main.js" />
+    <Content Include="Jt\Admin\Content\JTFile.htm" />
+    <Content Include="Jt\Admin\Content\JTList.htm" />
+    <Content Include="Jt\Admin\Content\JTModFile.htm" />
+    <Content Include="Jt\Admin\Content\JTSpoolFile.htm" />
+    <Content Include="Jt\Admin\Content\JTUser.htm" />
+    <Content Include="Jt\Admin\Content\JTQRCode.htm" />
+    <Content Include="Jt\Admin\Reserve\JTReply.htm" />
+    <Content Include="Jt\Admin\Reserve\JTUsableList.htm" />
+    <Content Include="Jt\Content\JTAddResources.htm" />
+    <Content Include="Jt\Content\JTFile.htm" />
+    <Content Include="Jt\Content\JTMyList.htm" />
+    <Content Include="Jt\Content\JTListDay.htm" />
+    <Content Include="Jt\Content\JTListMonth.htm" />
+    <Content Include="Jt\Content\JTListWeek.htm" />
+    <Content Include="Jt\Content\JTModFile.htm" />
+    <Content Include="Jt\Content\JTReply.htm" />
+    <Content Include="Jt\Content\JTSpoolFile.htm" />
+    <Content Include="Jt\Content\JTReserveUser.htm" />
+    <Content Include="Jt\Content\JTWholeMonth.htm" />
+    <Content Include="Jt\Content\Manager\JTUsableList.htm" />
+    <Content Include="Jt\Content\JTReject.htm" />
+    <Content Include="Jt\Content\Manager\JTList.htm" />
+    <Content Include="Jt\Home\JTMainList.htm" />
+    <Content Include="Jt\Home\JTMyList.htm" />
+    <Content Include="Jt\Home\JTDeptList.htm" />
+    <Content Include="Ws\Admin\Content\List.asmx" />
+    <Content Include="Ws\Admin\Content\ListQRCode.asmx" />
+    <Content Include="Ws\Admin\Content\ListUpDown.asmx" />
+    <Content Include="Ws\Admin\Content\Mod.asmx" />
+    <Content Include="Ws\Admin\Content\SubFolderUpdown.asmx" />
+    <Content Include="Ws\Admin\Content\View.asmx" />
+    <Content Include="Ws\Admin\Folder\Tree.asmx" />
+    <Content Include="Ws\Admin\Reserve\Mod.asmx" />
+    <Content Include="Ws\Admin\Reserve\Usable0List.asmx" />
+    <Content Include="Ws\Admin\Reserve\Usable1List.asmx" />
+    <Content Include="Ws\Admin\Reserve\Usable2List.asmx" />
+    <Content Include="Ws\Admin\Reserve\View.asmx" />
+    <Content Include="Ws\Content\Add.asmx" />
+    <Content Include="Ws\Content\AddResource.asmx" />
+    <Content Include="Ws\Content\ListDay.asmx" />
+    <Content Include="Ws\Content\ListMonth.asmx" />
+    <Content Include="Ws\Content\ListWeek.asmx" />
+    <Content Include="Ws\Content\Manager\List.asmx" />
+    <Content Include="Ws\Content\Manager\Usable0List.asmx" />
+    <Content Include="Ws\Content\Manager\Usable1List.asmx" />
+    <Content Include="Ws\Content\Manager\Usable2List.asmx" />
+    <Content Include="Ws\Content\Mod.asmx" />
+    <Content Include="Ws\Content\MyList.asmx" />
+    <Content Include="Ws\Content\Reject\AddReject.asmx" />
+    <Content Include="Ws\Content\ShortReply.asmx" />
+    <Content Include="Ws\Content\ShortReplyMod.asmx" />
+    <Content Include="Ws\Content\View.asmx" />
+    <Content Include="Ws\Content\ViewQRCode.asmx" />
+    <Content Include="Ws\Content\WholeDay.asmx" />
+    <Content Include="Ws\Content\WholeMonth.asmx" />
+    <Content Include="Ws\Home\Main.asmx" />
+    <Content Include="Ws\Interface\Add.asmx" />
+    <Content Include="Ws\Interface\Mod.asmx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.QRCode\Zeospace.DeskPlus.Component.QRCode.csproj">
+      <Project>{22A26F52-4E45-4722-94B6-1BBFAFB11560}</Project>
+      <Name>Zeospace.DeskPlus.Component.QRCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\RMProject\Zeospace.DeskPlus.RM.BE\Zeospace.DeskPlus.RM.BE.csproj">
+      <Project>{91D58159-F27A-4C29-8470-7C2B1ABCD6B7}</Project>
+      <Name>Zeospace.DeskPlus.RM.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\RMProject\Zeospace.DeskPlus.RM.BLL\Zeospace.DeskPlus.RM.BLL.csproj">
+      <Project>{4693DB0F-996F-4266-BBB1-33BBD8A22A31}</Project>
+      <Name>Zeospace.DeskPlus.RM.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\RMProject\Zeospace.DeskPlus.RM.DAL\Zeospace.DeskPlus.RM.DAL.csproj">
+      <Project>{461B8139-3C63-4579-8F83-1EEF8856A28D}</Project>
+      <Name>Zeospace.DeskPlus.RM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3127</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskplusEIP/RM</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

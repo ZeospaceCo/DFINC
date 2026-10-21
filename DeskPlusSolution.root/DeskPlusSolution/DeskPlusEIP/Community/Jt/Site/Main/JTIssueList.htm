@@ -1,0 +1,52 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="50px" />
+    <col width="150px" />
+    <col  />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="60px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_number"></th>
+    <th class="center" id="r_menu"></th>  
+    <th class="center" id="r_title"></th>  
+    <th class="center" id="r_register"></th>
+    <th class="center" id="r_regDate"></th>
+    <th class="center" id="r_del"></th>
+</tr>
+{#foreach $T as CmnBoardList}
+<tr>
+    <td class="center">{ $T.CmnBoardList.ROW }</td>
+    <td class="center">{ $T.CmnBoardList.MenuName }</td>
+    <td>        
+        <a href="#" onclick="Content.View('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >{ $T.CmnBoardList.Title }</a>
+        {#if $T.CmnBoardList.ReplyCount > 0}
+        
+        <a href="#" onclick="Content.PopupShort('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">({ $T.CmnBoardList.ReplyCount })</span>
+        </a>
+        {#/if}   
+        {#if $T.CmnBoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}           
+    </td>
+    <td class="center">
+        {#if $T.CmnBoardList.WriteUserID > 0}
+        <a href="#" onclick="AccountInfo('{ $T.CmnBoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.CmnBoardList.WriteUserName }</a>             
+        {#else}
+        { $T.CmnBoardList.WriteUserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.CmnBoardList.WriteDate }</td>        
+    <td class="center">
+        {#if $T.CmnBoardList.Auth == 2}
+        <a href="#" onclick="javascript:Content.DelIssue('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }')" style="cursor:pointer;display:inline-block;" class="btn"><span class='btn_del'></span></a>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span class="NoIssueListData" /></td>        
+</tr>
+{#/for}        
+</table>

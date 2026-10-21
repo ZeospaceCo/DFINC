@@ -1,0 +1,66 @@
+﻿<div class="table_typeLmiddle">
+<div class="blog_cont">
+        <ul class="gall">
+            {#foreach $T as RepleList}
+            <li {#if $T.RepleList$last == true} class="last-child" {#/if} style="background:url() !important;height:auto;padding-left:0px !important;padding:2px 15px 0px 2px !important;" >
+                <table class="blog_cont_table" border="0">
+                    <caption></caption>
+                    <colgroup>
+                        <col width="10%" />
+                        <col />
+                    </colgroup>
+                        {#if $T.RepleList.View == 'Y'}
+                        <tr>
+                            <td class="blog_img" style="text-align:center;">
+                                <a onclick="MyComment_PopupCommentList('{ $T.RepleList.UserID }');return false;" style="cursor:pointer">{ $T.RepleList.PhotoImage }</a>
+                            </td>
+                            <td style="height:auto !important;">
+                                <div class="tk_b">
+                                    <p class="lb">
+                                    <span class="subto">
+                                        <a onclick="MyComment_PopupCommentList('{ $T.RepleList.UserID }');return false;" style="cursor:pointer">{$T.RepleList.UserName}</a> ▶ 
+                                        <a onclick="MyComment_PopupCommentList('{ $T.RepleList.RUserID }');return false;" style="cursor:pointer">{$T.RepleList.RUserName }</a>
+                                        {#if $T.RepleList.ReplyCount > 0}
+                                            <a onclick="MyComment_PopupCommentGroup('{ $T.RepleList.GroupID }');return false;" style="cursor:pointer">[{ $T.RepleList.ReplyCount }]</a>
+                                        {#/if}
+                                        { $T.RepleList.WriteDateYMD }
+                                    </span>          
+                                    {#if $T.RepleList.ShowNew == 'Y'} <span class="m_talk"></span>&nbsp; {#/if} 
+                                    {#if $T.RepleList.IsAuth == 'Y'} 
+                                        <a href="#" onclick="MyCommnet_DelReple('{ $T.RepleList.MyTalkID}','{ $T.RepleList.GroupID }')")>
+                                            <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" />
+                                            <span class="BtnDel" style="display:none;"></span>
+                                        </a>
+                                    {#/if}
+									<br />
+									<a onclick="MyComment_PopupCommentGroup('{ $T.RepleList.GroupID }');return false;" style="cursor:pointer"> 
+										{ $T.RepleList.Content } <br /> { $T.RepleList.FileImage }
+									</a>                                    
+                                    </p>  
+                                <div class="arr"></div>
+                                </div>                    
+                            </td>
+                        </tr>
+                        {#else}
+                        <tr>
+                            <td colspan="2" class="left">{$T.RepleList.Depth} { $T.RepleList.Content }</td>
+                        </tr>
+                        {#/if}
+                </table>
+            </li>
+            {#else}
+            <li class="last-child" style="background:url() !important;height:auto;padding-left:0px !important;">
+                <table class="blog_cont_table">
+                    <caption></caption>
+                    <colgroup>                        
+                        <col />
+                    </colgroup>                        
+                        <tr>
+                            <td colspan="3" class="center"><span class="NoListData" /></td>
+                        </tr>
+                </table>
+            </li>                        
+            {#/for}
+        </ul>
+</div>
+</div>

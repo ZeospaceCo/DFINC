@@ -1,0 +1,43 @@
+﻿<table class="table_typeA"> 
+<caption>
+    게시물조회
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="150px" />
+    <col  />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="70px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="r_readCount_th1"></th>            
+        <th class="r_readCount_th2"></th>
+        <th class="r_readCount_th3"></th>
+        <th class="r_readCount_th4"></th>
+        <th class="r_readCount_th5"></th>
+        <th class="r_readCount_th6"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ROW }</td>
+    <td>{ $T.BoardList.PathName }</td>
+    <td>
+        <a href="#" onclick="javascript:ReadCount.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }')" style="cursor:pointer" >{ $T.BoardList.Title }</a>
+    </td>
+    <td class="center">
+        <a href="#" onclick="javascript:AccountInfo('{ $T.BoardList.WriteUserID }')" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>
+    </td>
+    <td class="center">{ $T.BoardList.WriteDate }</td>        
+    <td class="center">{ $T.BoardList.ReadCount }</td>        
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"></td>
+</tr>
+{#/for} 
+</tbody>
+ </table>

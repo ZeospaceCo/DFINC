@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="글자크기"/>
+	<Item ID="1" Value="작게"/>
+	<Item ID="2" Value="보통"/>
+	<Item ID="3" Value="크게"/>
+	<Item ID="5" Value="아주크게"/>
+</XmlData>
+

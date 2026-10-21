@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Pim.css?v=1" />
+<title>일정추가</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>일정등록</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>저장후계속</span></a></li>
+                <li class="btn_blue"><a href="#"><span>저장</span></a></li>
+                <li><a href="#"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <table class="table_typeB">
+			<caption>
+			일정등록
+			</caption>
+			<colgroup>
+                <col width="80px" />
+                <col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>제목</th>
+					<td>
+                        <input type="text" class="text required" style="width:80% !important;" />
+                        <select class="searchselect">
+	                        <option value="0">개인일정</option>
+	                        <option value="3">부서일정</option>
+	                        <option value="1">공유일정</option>
+	                        <option value="2">전체일정</option>
+                        </select>
+                    </td>
+				</tr> 
+				<tr>
+					<th>날짜</th>
+					<td>
+                        <input type="text" size="10" value="2011-10-26" /> 
+                        <select class="searchselect">
+	                        <option value="0:00">오전  12:00</option>
+	                        <option value="0:30">오전  12:30</option>
+                        </select>
+                        ~
+                        <input type="text" size="10" value="2011-10-26" /> 
+                        <select class="searchselect">
+	                        <option value="0:00">오전  12:00</option>
+	                        <option value="0:30">오전  12:30</option>
+                        </select>
+                    </td>
+				</tr> 
+				<tr>
+					<th>상세내용</th>
+					<td style="height:500px;">에디터</td>
+				</tr> 
+				<tr>
+					<th>일정알람</th>
+					<td>
+                        <select class="searchselect">
+                            <option value="M">메신저</option>
+                            <option value="E">메일</option>
+                            <option value="S">SMS</option>
+                        </select>
+                        <input type="text" class="text" />
+                        <select class="searchselect">
+	                        <option value="">Time</option>
+	                        <option value="5">5분</option>
+	                        <option value="10">10분</option>
+	                        <option value="15">15분</option>
+                        </select>
+                    </td>
+				</tr> 
+                <tr>
+					<th>반복설정</th>
+					<td>
+                        <input type="text" class="searchterm" />
+                        <ul class="btn_smallL">
+                            <li><a href="#"><span>등록</span></a></li>
+                            <li><a href="#"><span>취소</span></a></li>
+                        </ul>
+                    </td>
+				</tr>
+                <tr>
+					<th class="last-child">공유설정</th>
+					<td class="last-child">
+                        <ul class="btn_smallL">
+                            <li><a href="#"><span>공유대상찾기</span></a></li>
+                        </ul>
+                    </td>
+				</tr> 
+			</tbody>
+		    </table> 
+
+            <div class="layout_subbox">
+                <h2>파일첨부</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>다운로드</span></a></li>
+                    <li><a href="#"><span>등록</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+                <caption>
+                    첨부파일리스트
+                </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col width="100px" />
+                <col width="20px" />
+			</colgroup>
+            <thead>
+                <tr>
+                    <th>파일명</th>
+                    <th>파일타입</th>
+                    <th>파일크기</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

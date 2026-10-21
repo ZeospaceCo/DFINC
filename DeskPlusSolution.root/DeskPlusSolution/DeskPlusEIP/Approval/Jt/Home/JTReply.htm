@@ -1,0 +1,54 @@
+﻿<table class="tbl_App" border="0" cellspacing="0" summary="결재의견 리스트" style="width:100%;">
+<tbody>
+<tr>
+    <td>
+        <div class="cb_module">
+        <div class="cb_lstcomment cb_lstcomment_v1">
+        <ul>
+            {#foreach $T as List}
+            <li class="cb_thumb_on">
+                <div class="cb_comment_area">
+                    <div class="cb_dsc_comment">
+                        <!-- div class="at_odr">{ $T.List.SectionStr }</div -->
+                        <div class="cmt_box">
+                        <div>
+                            <span class="spsubject"></span> : 
+                            {#if $T.List.IsGuard == '1'}
+                                <img class="IconSecurity" />                
+                            {#elseif $T.List.IsGuard == '2'}
+                                <img class="IconEmergency" />                
+                            {#/if}
+                            <a onclick="Content.View('{ $T.List.CompanyID }','{ $T.List.DocumentID }');" title="제목">{ $T.List.Subject }</a>
+                            {#if $T.List.ShowNew == 'Y'} <img class="rBtnNew" alt="" />{#/if}  
+                            &nbsp;- <span class="spmem"><a onclick="AccountInfo('{ $T.List.AccountUserID }');return false;" title="상신자정보">{ $T.List.AccountNameBase } { $T.List.AccountTitleBase }</a></span>
+                        </div>
+                        <div class="c_b_cnt">{ $T.List.Content }</div>
+                        </div>
+                    </div>
+                    <div class="cb_info_area3">
+                        <div class="cb_thumb">
+                            <a href="#"><img src="{ $T.List.PhotoImage }" width="22" height="22" alt="썸네일" class="cb_usr_thumb"><span class="cb_tmp_border"></span></a>
+                        </div>
+                        <div class="cb_section">
+                            <span class="cb_nick_name"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase } { $T.List.TitleBase }</a></span>
+                            <span class="cb_date">{ $T.List.WriteTimeStr }</span>
+                        </div>
+                    </div>
+                </div>
+            
+            {#else}
+            <li class="cb_thumb_on">
+                <div class="cb_comment_area">
+                    <div class="cb_dsc_comment" style="min-height:200px">
+                        <span id="spReplyNoData"></span>
+                    </div>
+                </div>
+            </li>
+            {#/for}
+        </ul>
+        </div>
+        </div>
+    </td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿
+    {#foreach $T as List}
+        <li>
+        <span class="mcopy">
+            <a onclick="Approval_Popup('{ $T.List.DocumentID }','{ $T.List.ApprovalState }','ZD0','1', 'A');"  style="cursor:pointer">
+                { $T.List.Subject }
+            </a>
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </span>
+        <span class="etcinfo">
+            <span class="list_name"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a></span>
+            <span class="list_date" title="{ $T.List.WriteTimeStr }">{ $T.List.WriteTimeStr }</span>
+        </span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  

@@ -1,0 +1,47 @@
+﻿QuesSeq = {}
+
+$(function () {
+    $(document).ready(function () {
+
+        //[확인]
+        $("#ulWidgets").sortable();
+
+        //[닫기]
+        $("#cbtnClose").click(function (e) {
+            e.preventDefault();
+            if (parent.disablePopup) { parent.disablePopup(); } else { self.close(); }
+        });
+
+        $("#cbtnConfirm").click(function (e) {
+
+            e.preventDefault();
+            var items = $("#ulWidgets li");
+            var sortlist = "";
+
+            for (var i = 0; i < items.length; i++) {
+                sortlist += items[i].id + ",";
+            }
+
+            ParamArray = { 'sortlist': sortlist };
+            CallEncrypt(CallGetParam());
+            var data = "{p:'" + GetEncryptValue + "'}";
+            var obj = eval("QuesSeq.ScsModSeq");
+            var url = "/DeskPlusEIP/Opinion/Ws/Admin/Content/QuesSeq.asmx/ModSeq";
+
+            AjaxService(url, data, obj);
+        });
+
+
+    });
+});
+
+
+/**********************************************************************************************
+작성자   : withsuki
+작성일자 : 
+작성목적 : 항목순서변경
+**********************************************************************************************/
+QuesSeq.ScsModSeq = function (data, status) {
+    if (data.d == true) { alert(R_Msg_Success); }
+    if (parent.disablePopup) { parent.disablePopup(); parent.QuesMod.GetUnitList(); } else { opener.QuesMod.GetUnitList(); self.close(); }
+}

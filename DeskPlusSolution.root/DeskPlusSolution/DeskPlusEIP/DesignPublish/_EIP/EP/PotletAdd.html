@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_EIP.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_one">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>포틀릿관리</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="#"><span>미리보기</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>추가</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                <li><a href="PotletList.html"><span>목록</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+            <table class="table_typeB">
+			<caption>포틀릿관리</caption>
+			<colgroup>
+                <col width="80px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+					<th>포틀릿그룹</th>
+					<td>
+                        <ul class="aLeft">
+                            <li>공용포틀릿/컨텐츠</li>
+                            <li>
+                                <ul class="btn_smallL">
+                                    <li><a href="#"><span>그룹변경</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+				</tr>
+				<tr>
+					<th>포틀릿명</th>
+					<td><input type="text" style="width:95% !important;" /></td>
+				</tr>
+                <tr>
+					<th>URL정보</th>
+					<td>
+                        <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">RSS</option>
+	                                <option value="">웹서비스</option>
+                                    <option value="">직접입력</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:500px !important;" /></li>
+                            <li>
+                                <ul class="btn_smallL">
+                                    <li><a href="#"><span>검사</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+				</tr>
+                <tr>
+					<th>호출종류</th>
+					<td>
+                        <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+	                                <option value="" selected="selected">IFRAME</option>
+	                                <option value="">LAYER</option>
+                                    <option value="">CHART</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:500px !important;" value="/DeskPlusEIP/EIP/Modules/WebUnitEPContents/EPContents.ascx" /></li>
+                        </ul>
+                    </td>
+				</tr>
+                <tr>
+					<th>호출종류</th>
+					<td>
+                        <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">IFRAME</option>
+	                                <option value="" selected="selected">LAYER</option>
+                                    <option value="">CHART</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">선택하세요.</option>
+	                                <option value="" title="텍스트">일반리스트형</option>
+                                    <option value="" title="이미지">앨범형</option>
+                                    <option value="" title="이미지+텍스트">뉴스형</option>
+                                    <option value="" title="이미지+텍스트">슬라이드형</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:500px !important;" value="/DeskPlusEIP/EIP/Modules/WebUnitEPContents/EPContentsLayer.ascx" /></li>
+                        </ul>
+                    </td>
+				</tr>
+                <tr>
+					<th>호출종류</th>
+					<td>
+                        <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">IFRAME</option>
+	                                <option value="">LAYER</option>
+                                    <option value="" selected="selected">CHART</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select class="searchselect">
+                                    <option value="">선택하세요</option>
+	                                <option value="">선형+바형</option>
+	                                <option value="">단일선형</option>
+                                    <option value="">단일바형</option>
+                                    <option value="">......</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:500px !important;" value="/DeskPlusEIP/EIP/Modules/WebUnitEPContents/EPContentsChart.ascx" /></li>
+                        </ul>
+                    </td>
+				</tr>
+                
+                <tr>
+                    <th rowspan="2">LinkPage설정</th>
+                    <td>
+                         <li>
+                            <select class="searchselect">
+	                            <option value="">팝업창</option>
+	                            <option value="">새창</option>
+                                <option value="">하단프레임</option>
+                            </select>
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">가로</option>
+	                                <option value="" title="자동일때, 입력박스 비활성화">가로자동</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:50px !important;" value="자동일때비활성화" />px</li>
+                            <li>/</li>
+                            <li>
+                                <select class="searchselect">
+	                                <option value="">세로</option>
+	                                <option value="">세로자동</option>
+                                </select>
+                            </li>
+                            <li><input type="text" style="width:50px !important;" value="자동일때비활성화" />px</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th rowspan="2"><label title="권한/역할지정">권한/역할지정</label></th>
+                    <td>
+                        보안등급
+                        <select class="searchselect">
+    	                    <option value="" selected="selected">선택없음</option>
+	                        <option value="">1등급이상</option>
+                            <option value="">...</option>
+                            <option value="">10등급이상</option>
+                        </select>
+                        은 메뉴사용가능.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="eip_auth_left">
+                            <div class="rTableTop"><p></p></div>
+	                        <div class="rTableMid">
+                                - Role <br />
+                                - 조직도
+                            </div>
+                            <div class="rTableBot"><p></p></div>
+                        </div>
+                        <div class="eip_auth_middle">
+                            <ul>
+                                <li><a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/tree_btnAdd.gif" alt="추가" /></a></li>
+                                <li><a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/tree_btnDel.gif" alt="삭제" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="eip_auth_right">
+
+                            <table class="table_typeC">
+                            <caption>권한리스트</caption>
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="th"><input type="checkbox" /></th>
+                                    <th class="th">명칭</th>
+                                    <th class="th">삭제여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td"><input type="checkbox" /></td>
+                                    <td class="td">솔루션개발 사원 홍길동 deskplus</td>
+                                    <td class="td"><a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+					<th>개인화사용</th>
+					<td>
+                        <select class="searchselect">
+	                        <option value="">활성</option>
+	                        <option value="">비활성</option>
+                        </select>
+                    </td>
+				</tr>
+                <tr>
+					<th>활성화여부</th>
+					<td>
+                        <select class="searchselect">
+	                        <option value="">활성</option>
+	                        <option value="">비활성</option>
+                        </select>
+                    </td>
+				</tr>
+			</tbody>
+		    </table> 
+
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

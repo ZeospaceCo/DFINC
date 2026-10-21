@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_PROC_SCHEDULEETC" Value="DPM_PIM_Schedule_Sel" Content="일정관리 스케줄 가지고 오기" />
+  <Item ID="SEL_PROC_SCHEDULEETC0" Value="DPM_PIM_Schedule_SelByType0" Content="일정관리 스케줄 가지고 오기(개인)" />
+  <Item ID="SEL_PROC_SCHEDULEETC1" Value="DPM_PIM_Schedule_SelByType1" Content="일정관리 스케줄 가지고 오기(부서)" />
+  <Item ID="SEL_PROC_SCHEDULEETC2" Value="DPM_PIM_Schedule_SelByType2" Content="일정관리 스케줄 가지고 오기(공유)" />
+  <Item ID="SEL_PROC_SCHEDULEETC3" Value="DPM_PIM_Schedule_SelByType3" Content="일정관리 스케줄 가지고 오기(전체)" />
+  <Item ID="SEL_PROC_SCHEDULEETCSHARE" Value="DPM_PIM_Schedule_SelShare" Content="일정관리 스케줄 가지고 오기(공유자)" />
+  <Item ID="SEL_QRY_SCHESHAREUSERS"
+		  Value="SELECT po.UserID as OpenID,
+				   vw.NameBase,vw.NameKo,vw.NameEn,vw.NameJa,	
+				   vw.NameFr,vw.NameZhCn,vw.NameZhTw,vw.TitleBase,
+				   vw.TitleKo,vw.TitleEn,vw.TitleJa,vw.TitleFr,
+				   vw.TitleZhCn,vw.TitleZhTw,vw.DeptBase,vw.DeptKo,
+				   vw.DeptEn,vw.DeptJa,vw.DeptFr,vw.DeptZhCn,
+				   vw.DeptZhTw,vw.TitleCodeOrder,vw.DutyCodeOrder, vw.UserDeptOrder, vw.Deptorder, vw.Writedate			   
+			FROM DP_PIM_OpenUser as po WITH(NOLOCK) INNER JOIN VW_UserInfo as vw WITH(NOLOCK) ON po.UserID = vw.UserID
+				AND po.CompanyID = vw.CompanyID
+			WHERE po.CompanyID = '{0}' AND po.OpenUserID = '{1}' AND vw.UserID != '{1}' AND vw.basedept ='1' AND vw.ActiveUser = '1'				
+			Union
+			SELECT po.UserID as OpenID,
+				   vw.NameBase,vw.NameKo,vw.NameEn,vw.NameJa,	
+				   vw.NameFr,vw.NameZhCn,vw.NameZhTw,vw.TitleBase,
+				   vw.TitleKo,vw.TitleEn,vw.TitleJa,vw.TitleFr,
+				   vw.TitleZhCn,vw.TitleZhTw,vw.DeptBase,vw.DeptKo,
+				   vw.DeptEn,vw.DeptJa,vw.DeptFr,vw.DeptZhCn,
+				   vw.DeptZhTw,vw.TitleCodeOrder,vw.DutyCodeOrder, vw.UserDeptOrder, vw.Deptorder, vw.Writedate		      
+			FROM DP_PIM_OpenUser as po WITH(NOLOCK) INNER JOIN VW_UserInfo as vw WITH(NOLOCK) ON po.UserID = vw.UserID
+				AND po.CompanyID = vw.CompanyID
+			WHERE	po.CompanyID = '{0}' AND po.GroupID in (SELECT DeptID FROM ufn_GetUserUpTree('{0}' , '{1}'))
+				AND vw.UserID != '{1}' AND vw.basedept ='1' AND vw.ActiveUser = '1'
+				Order by vw.TitleCodeOrder, vw.DutyCodeOrder, vw.UserDeptOrder desc, vw.Deptorder asc, vw.Writedate desc"
+		  Content="일정관리 공유자 가지고 오기" />
+  <Item ID="INS_PROC_SCHEDULE" Value="DPM_PIM_Schedule_Ins" Content="일정 저장하기" />
+  <Item ID="UPD_PROC_SCHEDULE" Value="DPM_PIM_Schedule_Upd" Content="일정 수정하기" />
+  <Item ID="SEL_QRY_SCHEDULE_SCHEDULEID"
+		  Value="SELECT DP_PIM_Schedule.ScheduleID,DP_PIM_Schedule.Type,DP_PIM_Schedule.Title,DP_PIM_Schedule.Content,DP_PIM_Schedule.StatusID,DP_PIM_Schedule.Colors,
+		DP_PIM_Display.StartDate as StartTime ,DP_PIM_Display.EndDate as EndTime,DP_PIM_Schedule.IsOpen,DP_PIM_Schedule.UserID,DP_PIM_Schedule.OpenType,DP_PIM_Schedule.Repeat,
+    DP_PIM_Schedule.Alert, DP_PIM_Schedule.AlertType,DP_PIM_Schedule.AlertTime,DP_PIM_Schedule.AlertTargetAddress
+		FROM DP_PIM_Schedule WITH(NOLOCK) INNER JOIN DP_PIM_Display WITH(NOLOCK) ON DP_PIM_Schedule.CompanyID = DP_PIM_Display.CompanyID
+		AND DP_PIM_Schedule.ScheduleID = DP_PIM_Display.ScheduleID 
+		WHERE DP_PIM_Schedule.CompanyID = '{0}' AND DP_PIM_Schedule.ScheduleID = '{1}' AND DP_PIM_Display.DisplayID = '{2}'"
+		  Content="일정관리 내용 가져오기" />
+  <Item ID="SEL_QRY_ATTACHLIST" Value="SELECT AttachFileID,FilePath,FileName,FileType,FileLength,FileGUID FROM DP_PIMS_Attach WITH(NOLOCK) WHERE CompanyID = '{0}' AND ScheduleID = '{1}'"
+		  Content="일정관리 첨부파일 가져오기" />
+  <Item ID="DEL_PROC_SCHEDULE" Value="DPM_PIM_Schedule_Del" Content="일정 삭제하기" />
+  <Item ID="SEL_PROC_TODOETC" Value="DPM_PIM_ToDo_Sel" Content="일정관리 할일 가지고 오기" />
+  <Item ID="SEL_PROC_TODOETC0" Value="DPM_PIM_ToDo_SelByType0" Content="일정관리 할일 가지고 오기(개인)" />
+  <Item ID="SEL_PROC_TODOETC1" Value="DPM_PIM_ToDo_SelByType1" Content="일정관리 할일 가지고 오기(부서)" />
+  <Item ID="SEL_PROC_TODOETC2" Value="DPM_PIM_ToDo_SelByType2" Content="일정관리 할일 가지고 오기(공유)" />
+  <Item ID="SEL_PROC_TODOETC3" Value="DPM_PIM_ToDo_SelByType3" Content="일정관리 할일 가지고 오기(전체)" />
+  <Item ID="SEL_PROC_TODOETCSHARE" Value="DPM_PIM_ToDo_SelShare" Content="일정관리 할일 가지고 오기(공유자)" />
+  <Item ID="SEL_QRY_TODO_TODOID" Value="SELECT * FROM DP_PIM_ToDo WITH(NOLOCK) WHERE CompanyID = '{0}' AND ToDoID = '{1}'" Content="일정관리 할일 내용 가져오기" />
+  <Item ID="DEL_PROC_TODO" Value="DPM_PIM_ToDo_Del" Content="일정관리 할일 삭제오기" />
+  <Item ID="SEL_PROC_SCHEDULEETC_MONTH" Value="DPM_PIM_Schedule_SelMonth" Content="일정관리 스케줄 가지고 오기(달력표시)" />
+  <Item ID="SEL_PROC_SCHEDULEETC0_MONTH" Value="DPM_PIM_Schedule_SelMonthByType0" Content="일정관리 스케줄 가지고 오기(개인)(달력표시)" />
+  <Item ID="SEL_PROC_SCHEDULEETC1_MONTH" Value="DPM_PIM_Schedule_SelMonthByType1" Content="일정관리 스케줄 가지고 오기(부서)(달력표시)" />
+  <Item ID="SEL_PROC_SCHEDULEETC2_MONTH" Value="DPM_PIM_Schedule_SelMonthByType2" Content="일정관리 스케줄 가지고 오기(공유)(달력표시)" />
+  <Item ID="SEL_PROC_SCHEDULEETC3_MONTH" Value="DPM_PIM_Schedule_SelMonthByType3" Content="일정관리 스케줄 가지고 오기(전체)(달력표시)" />
+  <Item ID="SEL_PROC_SCHEDULEETC_MONTHSHARE" Value="DPM_PIM_Schedule_SelMonthShare" Content="일정관리 스케줄 가지고 오기(공유자)(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC_MONTH" Value="DPM_PIM_ToDo_SelMonth"	Content="일정관리 할일 가지고 오기(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC0_MONTH" Value="DPM_PIM_ToDo_SelMonthByType0" Content="일정관리 할일 가지고 오기(개인)(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC1_MONTH" Value="DPM_PIM_ToDo_SelMonthByType1" Content="일정관리 할일 가지고 오기(부서)(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC2_MONTH" Value="DPM_PIM_ToDo_SelMonthByType2" Content="일정관리 할일 가지고 오기(공유)(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC3_MONTH" Value="DPM_PIM_ToDo_SelMonthByType3" Content="일정관리 할일 가지고 오기(전체)(달력표시)" />
+  <Item ID="SEL_PROC_TODOETC_MONTHSHARE" Value="DPM_PIM_ToDo_SelMonthShare" Content="일정관리 할일 가지고 오기(공유자)(달력표시)" />
+  <Item ID="INS_PROC_TODO" Value="DPM_PIM_ToDo_Ins" Content="할일 저장하기" />
+  <Item ID="UPD_PROC_TODO" Value="DPM_PIM_ToDo_Upd" Content="할일 수정하기" />
+  <Item ID="SEL_PROC_HolidayR_SelByYear" Value="DP_PIM_HolidayR_SelByYear" Content="공휴일 가져오기" />
+  <Item ID="SEL_QRY_AttList"
+	  Value="SELECT ISNULL(FilePath, '') AS FilePath, ISNULL(FileName, '') AS FileName, ISNULL(FileType, '') AS FileType, ISNULL(FileGUID, '') AS FileGUID, ISNULL(FileLength, '') AS FileLength
+        FROM DP_PIM_Attach WITH(NOLOCK) WHERE CompanyID = '{0}' AND ScheduleID = '{1}'" Content="첨부파일리스트"></Item>
+  <Item ID="SEL_QRY_DSList" Value="DP_PIM_DS_SelList" Content="닥스트리밍 파일 리스트" />
+  <Item ID="SEL_QRY_Status" Value="SELECT * FROM DP_PIM_Status WITH(NOLOCK) WHERE CompanyID = '{0}' AND UseActive = '1' order by WriteDate desc" Content="일정분류값 가져오기"></Item>
+  <Item ID="SEL_QRY_StatusID" Value="SELECT * FROM DP_PIM_Status WITH(NOLOCK) WHERE CompanyID = '{0}' AND StatusID = '{1}'" Content="일정분류값 가져오기"></Item>
+  <Item ID="SEL_QRY_ScheduleReply"
+	  Value="SELECT SR.* ,DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw ,DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw,
+			(SELECT UserID FROM DP_PIM_Schedule WITH(NOLOCK) WHERE CompanyID = '{0}' AND ScheduleID = '{1}') AS SUserID 
+			FROM DP_PIM_ScheduleReply AS SR WITH(NOLOCK) LEFT OUTER JOIN DP_COM_DeptCode AS DC WITH(NOLOCK) ON SR.CompanyID = DC.CompanyID AND SR.DeptCodeID = DC.DeptCodeID  
+			WHERE SR.CompanyID = '{0}' AND SR.ScheduleID = '{1}'" Content="일정 댓글 가져오기"></Item>
+  <Item ID="SEL_QRY_ToDoReply"
+	  Value="SELECT TR.* ,DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw ,DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw,
+			(SELECT UserID FROM DP_PIM_ToDo WITH(NOLOCK) WHERE CompanyID = '{0}' AND ToDoID = '{1}') AS TUserID 
+			FROM DP_PIM_ToDoReply AS TR WITH(NOLOCK) LEFT OUTER JOIN DP_COM_DeptCode AS DC WITH(NOLOCK) ON TR.CompanyID = DC.CompanyID AND TR.DeptCodeID = DC.DeptCodeID  
+			WHERE TR.CompanyID = '{0}' AND TR.ToDoID = '{1}'" Content="할일 댓글 가져오기"></Item>
+  <Item ID="INS_PROC_ScheduleReply" Value="DP_PIM_ScheduleReply_Ins" Content="일정 댓글 등록하기" />
+  <Item ID="INS_PROC_ToDoReply" Value="DP_PIM_ToDoReply_Ins" Content="할일 댓글 등록하기" />
+  <Item ID="SEL_QRY_ToDoReply"
+	  Value="SELECT TR.* ,DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw ,DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw,
+			(SELECT UserID FROM DP_PIM_ToDo WITH(NOLOCK) WHERE CompanyID = '{0}' AND ToDoID = '{1}') AS TUserID 
+			FROM DP_PIM_ToDoReply AS TR WITH(NOLOCK) LEFT OUTER JOIN DP_COM_DeptCode AS DC WITH(NOLOCK) ON TR.CompanyID = DC.CompanyID AND TR.DeptCodeID = DC.DeptCodeID  
+			WHERE TR.CompanyID = '{0}' AND TR.ToDoID = '{1}'" Content="할일 댓글 가져오기"></Item>
+  <Item ID="SEL_QRY_ScheduleID"
+	  Value="SELECT S.*, U.NameBase,U.NameKo,U.NameEn,U.NameJa, U.NameFr,U.NameZhcn, U.NameZhtw
+			FROM DP_PIM_Schedule S WITH(NOLOCK) LEFT OUTER JOIN VW_UserInfo U WITH(NOLOCK) ON S.CompanyID = U.CompanyID AND  S.UserID = U.UserID
+			WHERE U.ActiveCompany = '1' AND U.ActiveUser = '1' AND BaseDept = '1' AND S.CompanyID = '{0}' AND S.ScheduleID ='{1}'" Content="일정 하나 가져오기"></Item>
+  <Item ID="SEL_QRY_ToDoID"
+	  Value="SELECT TD.*, U.NameBase,U.NameKo,U.NameEn,U.NameJa, U.NameFr,U.NameZhcn, U.NameZhtw
+			FROM DP_PIM_ToDo as TD WITH(NOLOCK) LEFT OUTER JOIN VW_UserInfo U WITH(NOLOCK) ON TD.CompanyID = U.CompanyID AND  TD.UserID = U.UserID
+			WHERE U.ActiveCompany = '1' AND U.ActiveUser = '1' AND BaseDept = '1' AND TD.CompanyID = '{0}' AND TD.ToDoID ='{1}'" Content="할일 하나 가져오기">
+  </Item>
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+  <Item ID="SEL_QRY_Alarm" Value="SELECT * FROM DP_PIM_Alarm WITH(NOLOCK) WHERE CompanyID = '{0}' AND UserID = '{1}'" Content="개인 알람설정가져오기"></Item>
+  <Item ID="SEL_QRY_PimAlarm" Value="SELECT * FROM DP_ACC_UserEnv WITH(NOLOCK) WHERE CompanyID = '{0}' AND UserID = '{1}'" Content="개인 알람설정가져오기"></Item>
+  <Item ID="DEL_PROC_SCHEDULEALARM" Value="SQL_DP_ALARM_Common_DelPim" Content="일정 알람 삭제하기" />
+  <Item ID="DEL_PROC_SCHEDULESolo" Value="DP_PIM_Display_DelIDSolo" Content="일정 삭제하기" />
+</XmlData>

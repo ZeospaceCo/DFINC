@@ -1,0 +1,50 @@
+﻿
+{#foreach $T as List}   
+    <table cellpadding="0" cellspacing="0" class="ptl_tabcontB" border="0" width="100%">
+    <colgroup>
+        <col width="50%" />
+        <col width="50%" />
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <ul class="itemsA">
+                    <li class="itemA"><a id="myInfo_NewMail" onclick="MyInfo_ShortCut('myInfo_NewMail')"><img class="IconMyInfot1" alt="" title="" /></a><label> {$T.List.NewMailCnt} <span class="r_count"></span></label></li>
+                </ul>
+                <ul class="itemsA">
+                    <li class="itemA"><a id="myInfo_TodayS" onclick="MyInfo_ShortCut('myInfo_TodayS')"><img class="IconMyInfot6" alt="" title="" /></a><label> {$T.List.TodayPimSchCnt} <span class="r_count"></span></label></li>
+                    <li class="itemA"><a id="myInfo_TodayT" onclick="MyInfo_ShortCut('myInfo_TodayT')"><img class="IconMyInfot7" alt="" title="" /></a><label> {$T.List.TodayPimDoCnt} <span class="r_count"></span></label></li>
+                </ul>
+                <!--ul class="itemsA">
+                    <li class="itemA"><a href="#"><img class="IconMyInfot8" alt="" title="" /></a><label> - {$T.List.NewReplyCnt} <span class="r_count"></span></label></li>
+                </ul-->
+            </td>
+            <td>
+                <ul class="itemsB">
+                    <li class="itemB"><a id="myInfo_AppDoc" onclick="MyInfo_ShortCut('myInfo_AppDoc')"><img class="IconMyInfot2" alt="" title="" /></a><label> {$T.List.DocmentCnt} <span class="r_count"></span></label></li>
+                    <li class="itemB"><a id="myInfo_AppApp" onclick="MyInfo_ShortCut('myInfo_AppApp')"><img class="IconMyInfot3" alt="" title="" /></a><label> {$T.List.ApprovalCnt} <span class="r_count"></span></label></li>
+                    <li class="itemB"><a id="myInfo_AppDept" onclick="MyInfo_ShortCut('myInfo_AppDept')"><img class="IconMyInfot9" alt="" title="" /></a><label> {$T.List.DeptSusinCnt} <span class="r_count"></span></label></li>
+                    <li class="itemB"><a id="myInfo_AppCom" onclick="MyInfo_ShortCut('myInfo_AppCom')"><img class="IconMyInfot4" alt="" title="" /></a><label> {$T.List.CompleteCnt} <span class="r_count"></span></label></li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <ul class="itemsB">
+                 <li class="itemB"><img class="MyInfo_Proposal" alt="" title="" /><label> {$T.List.Proposal} <span class="r_count"></span></label></li>
+                 <li class="itemB"><img class="MyInfo_MBO" alt="" title="" /><label> {$T.List.MBO}</label></li>
+                </ul>
+            </td>
+            <td>
+                <ul class="itemsB">
+                 <li class="itemB"><img class="MyInfo_VoluntaryService" alt="" title="" /><label> {$T.List.VoluntaryService}</label></li>
+                 <li class="itemB"><img class="MyInfo_TotalCheckup" alt="" title="" /><label> {$T.List.TotalCheckup}</label></li>                   
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+{#else}     
+        
+{#/for}  

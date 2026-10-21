@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Base.ApplicationFrameworks</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Base.ApplicationFrameworks</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DeskPlusKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Util\Component\MicrosoftInformationSecurity\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.Informix">
+      <HintPath>..\..\..\DeskPlusEIP\Util\Component\IBM.Data.Informix.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\Auth\Authenticator.cs" />
+    <Compile Include="Helper\Auth\IUserEnvironment.cs" />
+    <Compile Include="Helper\Auth\UserEnvironmentBaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Auth\UserEnvironmentBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Auth\UserEnvironmentBaseService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\Auth\UserEnvironmentMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Auth\UserInfo.cs" />
+    <Compile Include="Helper\Base\BaseBLL.cs" />
+    <Compile Include="Helper\Base\BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Base\BaseDAL.cs" />
+    <Compile Include="Helper\Base\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Base\BasePageAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\Base\BaseService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Exceptions\AppException.cs" />
+    <Compile Include="Helper\ADHelper.cs" />
+    <Compile Include="Helper\AppSettingHelper.cs" />
+    <Compile Include="Helper\CacheHelper.cs" />
+    <Compile Include="Helper\CalendarHelper.cs" />
+    <Compile Include="Helper\CodeHelper.cs" />
+    <Compile Include="Helper\CommonLib.cs" />
+    <Compile Include="Helper\CookieHelper.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\HtmlParseHelper.cs" />
+    <Compile Include="Helper\InformixHelper.cs" />
+    <Compile Include="Helper\IPListHelper.cs" />
+    <Compile Include="Helper\LdapHelper.cs" />
+    <Compile Include="Helper\MessengerHelper.cs" />
+    <Compile Include="Helper\OdbcHelper.cs" />
+    <Compile Include="Helper\OleDbHelper.cs" />
+    <Compile Include="Helper\OracleHelper.cs" />
+    <Compile Include="Helper\RegexHelper.cs" />
+    <Compile Include="Helper\Rss20Helper.cs" />
+    <Compile Include="Helper\RssHelper.cs" />
+    <Compile Include="Helper\RssReader.cs" />
+    <Compile Include="Helper\Security\AESManager.cs" />
+    <Compile Include="Helper\Security\HashManager.cs" />
+    <Compile Include="Helper\Security\QueryStringModule.cs" />
+    <Compile Include="Helper\Security\TripleDES.cs" />
+    <Compile Include="Helper\Security\TripleDESManager.cs" />
+    <Compile Include="Helper\SQLHelper.cs" />
+    <Compile Include="Helper\UrlSendHelper.cs" />
+    <Compile Include="Helper\UserInfoHelper.cs" />
+    <Compile Include="Helper\UtilHelper.cs" />
+    <Compile Include="Helper\WebComponent\BaseParameterPasser.cs" />
+    <Compile Include="Helper\WebComponent\ClientAButton.cs" />
+    <Compile Include="Helper\WebComponent\ClientButton.cs" />
+    <Compile Include="Helper\WebComponent\ClientSmartButton.cs" />
+    <Compile Include="Helper\WebComponent\ClientSmartButtonOld.cs" />
+    <Compile Include="Helper\WebComponent\ClientSmartTextBox.cs" />
+    <Compile Include="Helper\WebComponent\ClientTextBox.cs" />
+    <Compile Include="Helper\WebComponent\DateHelper.cs" />
+    <Compile Include="Helper\WebComponent\DateHelperExtension.cs" />
+    <Compile Include="Helper\WebComponent\DocStream.cs" />
+    <Compile Include="Helper\WebComponent\ExecuteFile.cs" />
+    <Compile Include="Helper\WebComponent\MimeUtilClass.cs" />
+    <Compile Include="Helper\WebComponent\RepeaterEx.cs" />
+    <Compile Include="Helper\WebComponent\ServerFindControl.cs" />
+    <Compile Include="Helper\WebComponent\UrlParameterPasser.cs" />
+    <Compile Include="Helper\WebComponent\Utility.cs" />
+    <Compile Include="Helper\WebServiceHelper.cs" />
+    <Compile Include="Mail\Common.cs" />
+    <Compile Include="Mail\DNS.cs" />
+    <Compile Include="Mail\MailDataInfo.cs" />
+    <Compile Include="Mail\Parse.cs" />
+    <Compile Include="Mail\SendMail.cs" />
+    <Compile Include="Mail\SMTP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeskPlusKey.snk" />
+    <None Include="Helper\Auth\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

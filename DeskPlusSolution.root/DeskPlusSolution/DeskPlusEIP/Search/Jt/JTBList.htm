@@ -1,0 +1,141 @@
+﻿<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+        {#foreach $T as SearchList}
+            <li {#if $T.SearchList$last == true} class="last-child" {#/if} >
+
+                <table class="blog_cont_table">
+				    <caption>BLOG CONTENT</caption>
+                    <colgroup>
+                        <col width="100%" />
+                    </colgroup>
+                    <tr>
+                        <td>
+                            <span class="category">
+                            {#if $T.SearchList.Module == 'BOARD' || $T.SearchList.Module == 'APPROVAL' || $T.SearchList.Module == 'EDM'} 
+                                [{ $T.SearchList.CategoryName }]
+                            {#/if}      
+
+                            {#if $T.SearchList.Module == 'COOP' || $T.SearchList.Module == 'TASK'} 
+                                [{ $T.SearchList.ItemNameBase } / { $T.SearchList.ItemSubNameBase }]
+                            {#/if}
+
+                            {#if $T.SearchList.Module == 'ADDRESS'} 
+                                [{ $T.SearchList.DeptBase }]
+                            {#/if}
+                            
+                            {#if $T.SearchList.Module == 'WEBHARD'} 
+                                [{ $T.SearchList.FolderName }]
+                            {#/if}
+
+                            {#if $T.SearchList.Module == 'PIM'}
+                                {#if $T.SearchList.IDType == 'S'} 
+                                    [<span class="IDNameS"></span>]
+                                {#else}
+                                    [<span class="IDNameT"></span>]
+                                {#/if}        
+                            {#/if}
+
+                            {#if $T.SearchList.Module == 'RM'} 
+                                [{ $T.SearchList.Title }]
+                            {#/if}
+  
+                            </span>
+                            {#if $T.SearchList.Module == 'APPROVAL'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.CategoryID }','{ $T.SearchList.DocumentID }','');return false;" style="cursor:pointer" >
+                                   <span class="title">{ $T.SearchList.Title }</span>
+                                </a> 
+                            {#/if}        
+                            {#if $T.SearchList.Module == 'BOARD'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.CategoryID }','{ $T.SearchList.ListID }','');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.Title }</span>
+                                </a> 
+                            {#/if} 
+                            {#if $T.SearchList.Module == 'EDM'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.DocumentID }','{ $T.SearchList.ObjectID }','{ $T.SearchList.ObjectID }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.Title }</span>
+                                </a> 
+                            {#/if} 
+                            {#if $T.SearchList.Module == 'ADDRESS'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.GroupID }','{ $T.SearchList.ObjectID }','{ $T.SearchList.Mail }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.NameBase }</span>  { $T.SearchList.Mail } { $T.SearchList.MobilePhone } { $T.SearchList.Company }
+                                </a> 
+                            {#/if} 
+                            {#if $T.SearchList.Module == 'WEBHARD'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.FilePath }','{ $T.SearchList.FileName }','{ $T.SearchList.FileGuid }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.FileName }</span>
+                                </a> 
+                            {#/if} 
+                            {#if $T.SearchList.Module == 'COOP' || $T.SearchList.Module == 'TASK'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.ListID }','{ $T.SearchList.GroupID }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.Title }</span>
+                                </a> 
+                            {#/if} 
+                            {#if $T.SearchList.Module == 'PIM'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.IDType }','{ $T.SearchList.ListID }','{ $T.SearchList.DisplayID }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.Title }</span>
+                                </a> 
+                            {#/if} 
+
+                            {#if $T.SearchList.Module == 'RM'} 
+                                <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.IDType }','{ $T.SearchList.GroupID }','{ $T.SearchList.ReservationID }');return false;" style="cursor:pointer" >
+                                    <span class="title">{ $T.SearchList.Subject }</span>
+                                </a> 
+                            {#/if} 
+
+                            <span class="data">{ $T.SearchList.WriteDate } | <a onclick="AccountInfo('{ $T.SearchList.WriteUserID }');return false;" style="cursor:pointer">{ $T.SearchList.WriteUserName }</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    {#if $T.SearchList.Type == 'F'} 
+                                        <a href="#" onclick="javascript:List.FileDownload('{ $T.SearchList.FilePath }','{ $T.SearchList.FileName }','{ $T.SearchList.FileGUID }')">
+                                        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/icon_file.gif" /><span class="file">{ $T.SearchList.FileName }</span>
+                                        </a>
+                                    {#/if} 
+                                    {#if $T.SearchList.Module == 'APPROVAL'} 
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.CategoryID }','{ $T.SearchList.DocumentID }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if}        
+                                    {#if $T.SearchList.Module == 'BOARD'}  
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.CategoryID }','{ $T.SearchList.ListID }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if} 
+                                    {#if $T.SearchList.Module == 'EDM'}  
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.DocumentID }','{ $T.SearchList.ObjectID }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if} 
+                                    {#if $T.SearchList.Module == 'WEBHARD'}  
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.FilePath }','{ $T.SearchList.FileName }','{ $T.SearchList.FileGuid }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if} 
+                                    {#if $T.SearchList.Module == 'COOP' || $T.SearchList.Module == 'TASK'}  
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.ListID }','{ $T.SearchList.GroupID }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if} 
+                                    {#if $T.SearchList.Module == 'PIM'}  
+                                        <a onclick="List.PopupView('{ $T.SearchList.Module }','{ $T.SearchList.ListID }','{ $T.SearchList.ListType }');return false;" style="cursor:pointer" >
+                                            <span style="cursor:pointer">{ $T.SearchList.Content }</span>
+                                        </a> 
+                                    {#/if} 
+                                </li>
+                            </ul>
+                       </td>
+                    </tr>
+                </table>
+            </li>
+
+        {#else}
+            <li class="last-child center"><span class="NoListData" /></li>
+        {#/for} 
+        </ul>
+    </div>
+</div>

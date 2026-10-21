@@ -1,0 +1,18 @@
+﻿<ul class="table_typeT ul_typeT">  
+     {#foreach $T as RepleList}
+            <li class="reply_box">
+        <ul><li>  
+                <p class="writer"><a onclick="javascript:AccountInfo('{ $T.RepleList.UserID }');return false;" class="badge badge-secondary">{ $T.RepleList.UserName }</a>  
+                { $T.RepleList.InputDateDT }</p>
+                
+                <p>{ $T.RepleList.Content }{#if $T.RepleList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}</p>
+
+                    {#if $T.RepleList.IsAuth == 'Y'} 
+                        <a onclick="javascript:ShortReplyList.DelReple('{ $T.RepleList.ShortReplyID }', '{ $T.RepleList.GroupID }')"><span class="btn btn-sm DelMsg"></span></a> 
+                    {#/if}
+            </li></ul>
+         </li> 
+    {#else}
+    {#/for}
+</ul>
+

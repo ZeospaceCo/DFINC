@@ -1,0 +1,22 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="100px" />
+    <col />
+</colgroup>
+    <tr>
+        <th id="j_Name">Code</th>
+        <th id="j_Content">Name</th>
+    </tr>
+    {#foreach $T as GLAccountList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopProductGroup.Binding('{ $T.GLAccountList.GLAccountNo}', '{ $T.GLAccountList.GLAccountName}')")>{ $T.GLAccountList.GLAccountNo }</a></td>
+        <td>
+            <a href="#" onclick="javascript:PopProductGroup.Binding('{ $T.GLAccountList.GLAccountNo}', '{ $T.GLAccountList.GLAccountName}')")>{ $T.GLAccountList.GLAccountName }</a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>메일발송</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="#"><span>미리보기</span></a></li>
+                <li><a href="#"><span>임시저장</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>보내기</span></a></li>
+                <li><a href="#"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 메일발송 시작 //-->
+            <table class="table_typeB cm_mail">
+			<caption>메일발송</caption>
+			<colgroup>
+                <col width="80px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>보내는사람</th>
+                    <td>
+                        <input type="text" value="신현숙" />
+                        <select>
+                            <option>withsuki@zeospace.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr title="여러명일 경우 ; 로 분리하세요.">
+					<th>받는 사람</th>
+					<td>
+                        <input type="text" style="width:94%;" /><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_address.gif" alt="" title="주소록" class="addressbtn" />
+                    </td>
+				</tr>
+                <tr title="여러명일 경우 ; 로 분리하세요.">
+                    <th>참조 <img src="/DeskPlusEIP/Design/Blue/Img/bullet/bul_icon_plus.gif" alt="" title="추가" />
+                             <img src="/DeskPlusEIP/Design/Blue/Img/bullet/bul_icon_minus.gif" alt="" title="삭제" />
+                    </th>
+                    <td>
+                        <input type="text" style="width:94%;" /><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_address.gif" alt="" title="주소록" class="addressbtn" />
+                    </td>
+                </tr>
+                <tr title="여러명일 경우 ; 로 분리하세요.">
+                    <th>숨은참조</th>
+                    <td>
+                        <input type="text" style="width:94%;" /><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_address.gif" alt="" title="주소록" class="addressbtn" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" style="width:98%;" /></td>
+                </tr>
+			</tbody>
+		    </table> 
+
+            <div id="tabs" class="layout_subbox">
+                <ul id="tab" class="tab">
+                    <li><a id="ActvieX"  class="tab_on"><span>ActiveX</span> </a></li>
+                    <li><a id="NonActiveX"><span>NonActiveX</span> </a></li>
+                </ul>
+                <div class="divEditor">
+                    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/IEActiveX/ko/activexTagfree.js"></script>
+                </div>
+            </div>
+
+            <!-- 첨부파일 시작 //-->
+            <div class="layout_subbox">
+                <h2>첨부파일</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>다운로드</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+                <caption>
+                    첨부파일리스트
+                </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col width="100px" />
+			</colgroup>
+            <thead>
+                <tr>
+                    <th>파일명</th>
+                    <th>파일타입</th>
+                    <th>파일크기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 첨부파일 끝 //-->
+            
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

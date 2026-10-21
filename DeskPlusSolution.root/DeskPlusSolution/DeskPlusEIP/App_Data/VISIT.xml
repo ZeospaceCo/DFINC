@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+  <Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=Visit"  Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="MessengerHeaderText" Value="$Title$$Name$$StartDate$$StartTime$$EndDate$$EndTime$" Content="Alarm : $Title$(제목), $Name$(신청자명), $StartDate$(예약시작년월일), $StartTime$(예약시작시분초), $EndDate$(예약종료년월일), $EndTime$(예약종료시분초)" />
+</XmlData>

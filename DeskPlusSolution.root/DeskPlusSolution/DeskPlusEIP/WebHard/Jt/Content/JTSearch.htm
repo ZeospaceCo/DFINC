@@ -1,0 +1,32 @@
+﻿<table class="table_typeA">
+<tr>
+    <th width="200px" id="r_folders"></th>
+    <th style="min-width:350px" id="r_fileName"></th>
+    <th width="60px" id="r_download"></th>                            
+    <th width="90px" id="r_fileLength"></th>
+    <th width="90px" id="r_fileType"></th>
+    <th width="100px" id="r_regUser"></th>
+    <th width="100px" id="r_writeDate"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">
+    {#if $T.List.SendName == ""}
+        {$T.List.FolderName }
+    {#else}
+        {$T.List.SendName } ({$T.List.FolderName })
+    {#/if}
+    </td>
+    <td><span action="attach" style="cursor:pointer" FilePath='{ $T.List.DownPath }'>{$T.List.FileName }</span></td>
+    <td class="center"><i class="fas fa-arrow-alt-circle-down" id="{ $T.List.FileID }" action="attach" style="cursor:pointer" FilePath='{ $T.List.DownPath }'></i></td>    
+    <td class="center">{$T.List.FileLength }</td>
+    <td class="center">{$T.List.FileType }</td>
+    <td class="center">{$T.List.WriteName }</td>
+    <td class="center">{$T.List.WriteDate }</td>
+</tr>
+{#else}
+ <tr>
+    <td colspan="7" class="center"><span id="NoListData" /></td>       
+ </tr>
+{#/for}    
+</table>

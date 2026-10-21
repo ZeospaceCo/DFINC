@@ -1,0 +1,11 @@
+﻿<ul class="table_typeT ul_typeT">
+    {#foreach $T as FileList}
+    <li>
+        <span>{ $T.FileList.FileName }</span>
+        <span class="mount">{ $T.FileList.FileLengthKB }</span>
+        <a href="#" onclick="javascript:DelFile('{ $T.FileList.AttachID }')" style="display:inline-block;" title="삭제"><i class="fas fa-times-circle test"></i></a>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SIZEIMGSEAL" Value="50,50"  Content="인장사이즈 (가로, 세로) 숫자만 됩니다.!!!" />
+  <Item ID="CustomScriptRoot" Value="/DeskPlusMobile/Legacy/" Content="연동모듈 루트URL정보" />
+  <Item ID="AlarmMethod" Value="MAIL,MESSENGER" Content="알람방식" />
+  <Item ID="AlarmMessengerW" Value="{0}{1}/DeskplusEIP/Approval/Process/Basic/ApprovePopup.aspx" Content="알람-Messenger-상신" />
+  <Item ID="AlarmMessengerS" Value="{0}{1}/DeskplusEIP/Approval/Process/Basic/ApprovePopup.aspx" Content="알람-Messenger-결재" />
+  <Item ID="AlarmMessengerSR" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Receive" Content="알람-Messenger-수신결재" />
+  <Item ID="AlarmMessengerO" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-첨언/첨언추가" />
+  <Item ID="AlarmMessengerC" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-완료" />
+  <Item ID="AlarmMessengerRW" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Reject" Content="알람-Messenger-반려(상신자)" />
+  <Item ID="AlarmMessengerRS" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Approve" Content="알람-Messenger-반려(중간결재자)" />
+  <Item ID="AlarmMessengerView" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-기타(문서보기)" />
+  <Item ID="AlarmMail" Value="{0}{1}/DeskPlusEIP/Approval/Common/Popup/View.aspx" Content="알람-Mail" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+  <Item ID="IsDRMUse" Value="0"  Content="DRM 연동 사용여부 0(안한다/1(모든첨부파일에 대한 drm 건다./2(코미코특정문서에대한drm건다)" />
+</XmlData>

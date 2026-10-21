@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JQuery JSONP + Twitter API</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+    TwitterAPI = {
+        Statuses: {
+            user_timeline: function (screen_name, count, callback) {
+                jQuery.getJSON("http://twitter.com/statuses/user_timeline/" + screen_name + ".json?count=" + count + "&b=" + Math.random() + "&callback=?",
+			callback);
+            }
+        }
+    };
+    // @rem
+    window.ify = function () { var entities = { '"': '&quote;', '&': '&amp;', '<': '&lt;', '>': '&gt;' }; return { "link": function (t) { return t.replace(/[a-z]+:\/\/[a-z0-9-_]+\.[a-z0-9-_:~%&amp;\?\/.=]+[^:\.,\)\s*$]/ig, function (m) { return '<a href="' + m + '">' + ((m.length > 25) ? m.substr(0, 24) + '...' : m) + '</a>'; }); }, "at": function (t) { return t.replace(/(^|[^\w]+)\@([a-zA-Z0-9_]{1,15})/g, function (m, m1, m2) { return m1 + '@<a href="http://twitter.com/' + m2 + '">' + m2 + '</a>'; }); }, "hash": function (t) { return t.replace(/(^|[^\w'"]+)\#([a-zA-Z0-9_]+)/g, function (m, m1, m2) { return m1 + '#<a href="http://search.twitter.com/search?q=%23' + m2 + '">' + m2 + '</a>'; }); }, "clean": function (tweet) { return this.hash(this.at(this.link(tweet))); } }; } ();
+
+    
+
+</script>
+</head>
+<body>
+<aside>
+<h3>My Tweets</h3>
+</aside>
+<script type="text/javascript">
+
+function parseTwitterDate(text) {
+        var newtext = text.replace(/(\+\S+) (.*)/, '$2 $1')
+        var date = new Date(Date.parse(newtext)).toLocaleDateString();
+        var time = new Date(Date.parse(newtext)).toLocaleTimeString();
+        return date +' ' + time;
+    }
+
+    jQuery(document).ready(function ($) {
+        TwitterAPI.Statuses.user_timeline("shimjaewoon", 15, function (json) {
+            content = '<ul>';
+            $.each(json, function (i) {
+                var tweet = ify.clean(this['text']);
+                content += '<li>' + tweet + ' (<date>' + parseTwitterDate(this['created_at']) + '</date>)</li>';
+            });
+            content += '</ul>';
+            $('aside').append(content);
+        });
+    });
+</script>
+</body>
+</html>

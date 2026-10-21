@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddMulti" xml:space="preserve">
+    <value>添加多國語</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>處理後發生了錯誤。請與管理員聯繫。</value>
+  </data>
+  <data name="AlbumListType" xml:space="preserve">
+    <value>相冊型列表</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>全體</value>
+  </data>
+  <data name="AllDel" xml:space="preserve">
+    <value>完全刪除</value>
+  </data>
+  <data name="AllDownload" xml:space="preserve">
+    <value>全部下載</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請同時輸入開始日期和結束日期。</value>
+  </data>
+  <data name="BlogListType" xml:space="preserve">
+    <value>文件型列表</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>已被取消</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="CompareFolder" xml:space="preserve">
+    <value>是當前文件夾的位置。請選擇一個不同的文件夾</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已處理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>該文件夾和材料將被完全刪除。確定要刪除文件夾嗎？</value>
+  </data>
+  <data name="DeleteShare" xml:space="preserve">
+    <value>想要解除文件夾共享嗎？</value>
+  </data>
+  <data name="DeleteSubFolder" xml:space="preserve">
+    <value>請首先刪除下級文件夾</value>
+  </data>
+  <data name="DelFavoriteFolder" xml:space="preserve">
+    <value>確定要刪除搜藏文件夾嗎？</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>確定要完全刪除文件嗎？</value>
+  </data>
+  <data name="DelImpo" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="DelImpoFile" xml:space="preserve">
+    <value>要解除重要表示嗎？</value>
+  </data>
+  <data name="DelTrashFile" xml:space="preserve">
+    <value>要刪除文件嗎？</value>
+  </data>
+  <data name="DelUserOne" xml:space="preserve">
+    <value>請先刪除已經指定的用戶後添加。</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="DownloadAuthority" xml:space="preserve">
+    <value>沒有下載該文件的權限。</value>
+  </data>
+  <data name="FavoriteFolder" xml:space="preserve">
+    <value>收藏夾</value>
+  </data>
+  <data name="FavoriteFolderAdd" xml:space="preserve">
+    <value>添加到收藏夾</value>
+  </data>
+  <data name="FavoriteFolderMod" xml:space="preserve">
+    <value>收藏夾修改</value>
+  </data>
+  <data name="FavoriteFolderMove" xml:space="preserve">
+    <value>收藏夾移動</value>
+  </data>
+  <data name="FavoriteFolderName" xml:space="preserve">
+    <value>收藏夾名</value>
+  </data>
+  <data name="FavoriteMultiFolderName" xml:space="preserve">
+    <value>收藏夾名（多國語）</value>
+  </data>
+  <data name="FavoriteOrder" xml:space="preserve">
+    <value>下級順序變更</value>
+  </data>
+  <data name="FavoriteParentFolderName" xml:space="preserve">
+    <value>上級收藏夾名</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>文件夾</value>
+  </data>
+  <data name="FolderAdd" xml:space="preserve">
+    <value>添加文件夾</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>下級文件夾順序</value>
+  </data>
+  <data name="FolderMod" xml:space="preserve">
+    <value>修改文件夾</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夾名</value>
+  </data>
+  <data name="FolderShare" xml:space="preserve">
+    <value>文件夾共享</value>
+  </data>
+  <data name="FolderShareDelete" xml:space="preserve">
+    <value>解除文件夾共享</value>
+  </data>
+  <data name="GetSubDept" xml:space="preserve">
+    <value>調取下級部門</value>
+  </data>
+  <data name="ImpoMark" xml:space="preserve">
+    <value>重要表示</value>
+  </data>
+  <data name="InputFavoriteFolderName" xml:space="preserve">
+    <value>請輸入收藏夾名</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>請輸入文件夾名</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>該特殊文字用於保安脆弱型攻擊，將被限制。</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>一般列表</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1個月</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="MoveLocationFavorite" xml:space="preserve">
+    <value>要移動的位置，和當前的位置是相同的。</value>
+  </data>
+  <data name="MoveNoSubFolder" xml:space="preserve">
+    <value>沒有可變更順序的下級文件夾</value>
+  </data>
+  <data name="MoveSameFavorite" xml:space="preserve">
+    <value>不能轉到相同收藏夾文件夾</value>
+  </data>
+  <data name="MoveSubFavorite" xml:space="preserve">
+    <value>只能轉移到沒有下級文件夾的文件夾</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多國語名</value>
+  </data>
+  <data name="MultiNames" xml:space="preserve">
+    <value>多國語名稱</value>
+  </data>
+  <data name="MyFolder" xml:space="preserve">
+    <value>我的文件夾</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下頁</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>該文件不存在</value>
+  </data>
+  <data name="NotFoundFile" xml:space="preserve">
+    <value>無法找到文件</value>
+  </data>
+  <data name="NotFoundPath" xml:space="preserve">
+    <value>沒有選擇文件夾</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NoWebHardUpload" xml:space="preserve">
+    <value>無法從網絡硬盤上傳文件到網絡硬盤</value>
+  </data>
+  <data name="OrderFolder" xml:space="preserve">
+    <value>順序已變更</value>
+  </data>
+  <data name="ParentFolder" xml:space="preserve">
+    <value>上級文件夾名</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>上級文件夾名</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="PresentFolder" xml:space="preserve">
+    <value>當前文件夾名</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="PrivateFolderName" xml:space="preserve">
+    <value>個人文件夾</value>
+  </data>
+  <data name="ProcessingDelay" xml:space="preserve">
+    <value>文件容量大或者文件數量多時可能需要較長時間。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>處理時發生了錯誤。請與管理員聯繫。</value>
+  </data>
+  <data name="ProcessingWait" xml:space="preserve">
+    <value>正在處理中。請稍候。</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>註冊日</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>恢復</value>
+  </data>
+  <data name="RestoreFile" xml:space="preserve">
+    <value>需要恢復文件嗎？</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>請選擇用戶</value>
+  </data>
+  <data name="SelectAddFolder" xml:space="preserve">
+    <value>請選擇文件夾。</value>
+  </data>
+  <data name="SelectAttach" xml:space="preserve">
+    <value>請選擇要上傳的文件</value>
+  </data>
+  <data name="SelectCheckBox" xml:space="preserve">
+    <value>上傳或下載當中請至少選擇其一</value>
+  </data>
+  <data name="SelectCopy" xml:space="preserve">
+    <value>請選擇要復制的文件</value>
+  </data>
+  <data name="SelectDel" xml:space="preserve">
+    <value>請選擇要刪除的文件</value>
+  </data>
+  <data name="SelectDelImpo" xml:space="preserve">
+    <value>請選擇要解除的文件</value>
+  </data>
+  <data name="SelectDownload" xml:space="preserve">
+    <value>請選擇要下載的文件</value>
+  </data>
+  <data name="SelectFavoriteFolder" xml:space="preserve">
+    <value>請選擇收藏夾文件夾</value>
+  </data>
+  <data name="SelectFavoriteFolderMove" xml:space="preserve">
+    <value>請選擇要移動的收藏夾文件夾</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>選擇文件夾</value>
+  </data>
+  <data name="SelectMe" xml:space="preserve">
+    <value>不能與本人共享。</value>
+  </data>
+  <data name="SelectMove" xml:space="preserve">
+    <value>請選擇要移動的文件</value>
+  </data>
+  <data name="SelectRestore" xml:space="preserve">
+    <value>請選擇要恢復的文件</value>
+  </data>
+  <data name="SelectSend" xml:space="preserve">
+    <value>請選擇要轉發的文件</value>
+  </data>
+  <data name="SelectSendMe" xml:space="preserve">
+    <value>不能轉達給本人</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>轉發</value>
+  </data>
+  <data name="SendConfirm" xml:space="preserve">
+    <value>請選擇要轉發的用戶</value>
+  </data>
+  <data name="SendFile" xml:space="preserve">
+    <value>轉接到的文件</value>
+  </data>
+  <data name="SendTarget" xml:space="preserve">
+    <value>設置轉達對象</value>
+  </data>
+  <data name="SendUserOne" xml:space="preserve">
+    <value>轉達對象請只選擇一位</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="SharedFolder" xml:space="preserve">
+    <value>共享的文件夾</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>已被共享文件夾</value>
+  </data>
+  <data name="ShareFolderName" xml:space="preserve">
+    <value>共享文件夾</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>共享設置</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期要小於結束日期</value>
+  </data>
+  <data name="TargetFolder" xml:space="preserve">
+    <value>目標文件夾</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="TrashFolder" xml:space="preserve">
+    <value>垃圾箱</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上傳</value>
+  </data>
+  <data name="UploadComputer" xml:space="preserve">
+    <value>我的電腦</value>
+  </data>
+  <data name="UploadCount" xml:space="preserve">
+    <value>超過了被賦予到個人的容量。請完全刪除不使用的文件後再上傳。</value>
+  </data>
+  <data name="UploadDesktop" xml:space="preserve">
+    <value>桌面</value>
+  </data>
+  <data name="UploadDocuments" xml:space="preserve">
+    <value>我的文檔</value>
+  </data>
+  <data name="UploadNetworkPlaces" xml:space="preserve">
+    <value>我的網上鄰居</value>
+  </data>
+  <data name="UseTotal" xml:space="preserve">
+    <value>使用容量</value>
+  </data>
+  <data name="WDel" xml:space="preserve">
+    <value>全部刪除</value>
+  </data>
+  <data name="WDelFile" xml:space="preserve">
+    <value>要全部刪除嗎？</value>
+  </data>
+  <data name="WebHardTitle" xml:space="preserve">
+    <value>網絡文件夾</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1週</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="SendUser" xml:space="preserve">
+    <value>通訊</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="DeleteAuthority" xml:space="preserve">
+    <value>唯一的刪除文件，您已註冊，就可以了。</value>
+  </data>
+  <data name="InputFileLength" xml:space="preserve">
+    <value>請輸入您的上傳限制能力。</value>
+  </data>
+  <data name="InputFileLengthInt" xml:space="preserve">
+    <value>您只能上傳容量限制的數字。.</value>
+  </data>
+  <data name="InputFolderLength" xml:space="preserve">
+    <value>輸入文件夾的容量。</value>
+  </data>
+  <data name="InputFolderLengthInt" xml:space="preserve">
+    <value>文件夾容量僅可數。</value>
+  </data>
+  <data name="MoveAuthority" xml:space="preserve">
+    <value>只有您已註冊的文件，你可以移動。</value>
+  </data>
+  <data name="PublicAuthSetting" xml:space="preserve">
+    <value>設置權限</value>
+  </data>
+  <data name="PublicFileCount" xml:space="preserve">
+    <value>您已超過每個文件的上傳限制。</value>
+  </data>
+  <data name="PublicFileLength" xml:space="preserve">
+    <value>上傳容量限制</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>公用文件夾</value>
+  </data>
+  <data name="PublicFolderAdd" xml:space="preserve">
+    <value>公用文件夾存儲</value>
+  </data>
+  <data name="PublicFolderCount" xml:space="preserve">
+    <value>這已經超出分配給文件夾的能力。\n 未使用的文件，請稍後上傳完全去除。</value>
+  </data>
+  <data name="PublicFolderLength" xml:space="preserve">
+    <value>文件夾容量</value>
+  </data>
+  <data name="PublicFolderMod" xml:space="preserve">
+    <value>修改的公用文件夾</value>
+  </data>
+  <data name="PublicRegInfo" xml:space="preserve">
+    <value>註冊信息</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>無權限</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>動力</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="BeforePage" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>第一個列表</value>
+  </data>
+  <data name="Folders" xml:space="preserve">
+    <value>文件夾</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>最終名單</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>請輸入檢索詞至少兩個字符。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>清單</value>
+  </data>
+  <data name="ManagerS" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="NewFile" xml:space="preserve">
+    <value>最新上傳的文件</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>搜索結果</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>關鍵詞目標：文件名</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共享器</value>
+  </data>
+  <data name="RegUser" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="DownloadAuth" xml:space="preserve">
+    <value>*只有在下載權限的文件顯示在列表中。</value>
+  </data>
+  <data name="DownloadSearch" xml:space="preserve">
+    <value>*您只能在下載許可搜索文件。</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+</root>

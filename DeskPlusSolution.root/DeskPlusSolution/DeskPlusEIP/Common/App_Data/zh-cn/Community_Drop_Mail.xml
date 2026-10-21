@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 撤回</Title>
+	<ContentHTML>
+		[撤回]
+		&lt;br&gt;&lt;br&gt;
+		- 社区居民 : $Title$
+	</ContentHTML>
+</ContentInfo>

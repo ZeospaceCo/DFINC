@@ -1,0 +1,34 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="150px" />
+    <col />
+    <col width="60px" />
+</colgroup>
+<tr>
+    <th id="r_relplyMenu"></th>
+    <th id="r_relplyTitle"></th>  
+    <th id="r_relplyCnt"></th>  
+</tr>
+{#foreach $T as CmnBoardList}
+<tr>
+    <td class="center">{ $T.CmnBoardList.MenuName }</td>
+    <td>        
+        <a href="#" onclick="Content.View('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >{ $T.CmnBoardList.Title }</a>  
+        {#if $T.CmnBoardList.shortReplyCount > 0}        
+        <a href="#" onclick="Content.PopupShort('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">({ $T.CmnBoardList.shortReplyCount })</span>
+        </a>
+        {#/if}
+        {#if $T.CmnBoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}           
+    </td>
+    <td class="center">
+        <a onclick="Content.ReadList('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >{ $T.CmnBoardList.ReadCount }</a>
+    </td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoReplyListData" /></td>        
+</tr>
+{#/for}        
+</table>

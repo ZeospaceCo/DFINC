@@ -1,0 +1,32 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<colgroup>
+    <col width="100px" />
+    <col width="80px" />
+    <col width="200px" />
+    <col  />
+    <col width="100px" />
+    <col width="60px" />
+</colgroup>
+    <tr>        
+        <th class="center" id="r_rewardDate"></th>
+        <th class="center" id="r_gubun"></th>
+        <th class="center" id="r_rewardType"></th>
+        <th class="center" id="r_contents"></th>                                    
+        <th class="center" id="r_rewarder"></th>  
+        <th class="center" id="r_del"></th>      
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>        
+        <td class="center">{ $T.AccountList.RewardDate }</td>
+        <td class="center">{ $T.AccountList.GubunName }</td>
+        <td class="center">{ $T.AccountList.RewardType }</td>
+        <td>{ $T.AccountList.Contents }</td>
+        <td class="center">{ $T.AccountList.Rewarder }</td>                 
+        <td class="center"><a class="btn" href="#" onclick="RewardInfo.Del('{ $T.AccountList.CompanyID }','{ $T.AccountList.RewardID }')">{ $T.AccountList.BtnDel }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="6" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

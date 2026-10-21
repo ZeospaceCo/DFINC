@@ -1,0 +1,1578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>처리 되었습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_ltName" xml:space="preserve">
+    <value>조직명</value>
+  </data>
+  <data name="Admin_DeptManager_ltEnglishName" xml:space="preserve">
+    <value>조직 영문명</value>
+  </data>
+  <data name="Admin_DeptManager_ltDescription" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Admin_DeptManager_ltAddress" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="Admin_DeptManager_ltPhone" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
+  <data name="Admin_DeptManager_ltFax" xml:space="preserve">
+    <value>팩스</value>
+  </data>
+  <data name="Admin_DeptManager_ltHomePage" xml:space="preserve">
+    <value>홈페이지</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearchZipCode" xml:space="preserve">
+    <value>우편번호</value>
+  </data>
+  <data name="Admin_DeptManager_btnAdd" xml:space="preserve">
+    <value>하위조직 추가</value>
+  </data>
+  <data name="Admin_DeptManager_btnDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Admin_DeptManager_cbRoot" xml:space="preserve">
+    <value>루트조직</value>
+  </data>
+  <data name="Admin_DeptManager_cbActive" xml:space="preserve">
+    <value>활성화</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupList" xml:space="preserve">
+    <value>조직리스트</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupInform" xml:space="preserve">
+    <value>조직정보</value>
+  </data>
+  <data name="Admin_CompanyManager_btnSubmit" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Admin_CompanyManager_btnDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Admin_CompanyManager_cbtnSearchZipCode" xml:space="preserve">
+    <value>우편번호찾기</value>
+  </data>
+  <data name="Authentication_SignIn_rfvLoginID" xml:space="preserve">
+    <value>로그인 아이디를 넣으세요</value>
+  </data>
+  <data name="Authentication_SignIn_rfvPassword" xml:space="preserve">
+    <value>비밀번호를 넣으세요</value>
+  </data>
+  <data name="Authentication_SignIn_MSG_LoginError" xml:space="preserve">
+    <value>접속명 혹은 비밀번호를 확인해 주십시오</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SUCCESS" xml:space="preserve">
+    <value>처리되었습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_FAILURE" xml:space="preserve">
+    <value>처리 시, 에러가 발생하였습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelSUCCESS" xml:space="preserve">
+    <value>삭제되었습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelFAILURE" xml:space="preserve">
+    <value>삭제 시, 에러가 발생하였습니다.</value>
+  </data>
+  <data name="Admin_CompanyManager_btnAdd" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupMember" xml:space="preserve">
+    <value>조직구성원</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearch" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Admin_UserManager_ltName" xml:space="preserve">
+    <value>이름(한글)</value>
+  </data>
+  <data name="Admin_UserManager_ltLoginID" xml:space="preserve">
+    <value>사용자ID</value>
+  </data>
+  <data name="Admin_UserManager_ltPassword" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="Admin_UserManager_ltPasswordConfirm" xml:space="preserve">
+    <value>비밀번호 확인</value>
+  </data>
+  <data name="Admin_UserManager_ltMobilePhone" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="Admin_UserManager_tabs0" xml:space="preserve">
+    <value>기본정보</value>
+  </data>
+  <data name="Admin_UserManager_tabs1" xml:space="preserve">
+    <value>세부정보</value>
+  </data>
+  <data name="Admin_UserManager_tabs2" xml:space="preserve">
+    <value>조직정보</value>
+  </data>
+  <data name="Admin_UserManager_tabs3" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="Admin_UserManager_ltPrivateQuota" xml:space="preserve">
+    <value>개인사용용량</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoAdd" xml:space="preserve">
+    <value>사진추가</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoDel" xml:space="preserve">
+    <value>사진삭제</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealAdd" xml:space="preserve">
+    <value>인장추가</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealDel" xml:space="preserve">
+    <value>인장삭제</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Admin_UserManager_ltMail" xml:space="preserve">
+    <value>기본 메일</value>
+  </data>
+  <data name="Admin_UserManager_ltMailPassword" xml:space="preserve">
+    <value>메일 비밀번호</value>
+  </data>
+  <data name="Admin_UserManager_ltEmployeeNumber" xml:space="preserve">
+    <value>사번</value>
+  </data>
+  <data name="Admin_UserManager_ltJoinDate" xml:space="preserve">
+    <value>입사일</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTERROR" xml:space="preserve">
+    <value>검색조건을 입력하세요.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTGROUPERROR" xml:space="preserve">
+    <value>조직을 선택하세요.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTLENGTHERROR" xml:space="preserve">
+    <value>검색 시, 두글자 이상부터 가능합니다.</value>
+  </data>
+  <data name="Admin_UserList_cbtnSearch" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Admin_UserList_cbsUserDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Admin_UserList_cbsUserAdd" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserList" xml:space="preserve">
+    <value>사용자리스트</value>
+  </data>
+  <data name="Admin_UserList_MSG_DelUserERROR" xml:space="preserve">
+    <value>삭제 시, 에러가 발생하였습니다.</value>
+  </data>
+  <data name="Admin_UserManager_ltEnglishName" xml:space="preserve">
+    <value>영문명</value>
+  </data>
+  <data name="Admin_UserManager_ltChineseName" xml:space="preserve">
+    <value>한자명</value>
+  </data>
+  <data name="Admin_UserManager_ltRegistrationNumber" xml:space="preserve">
+    <value>주민등록번호</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthDay" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="Admin_UserManager_ltSex" xml:space="preserve">
+    <value>성별</value>
+  </data>
+  <data name="Admin_UserManager_ltHomeAddress" xml:space="preserve">
+    <value>집주소</value>
+  </data>
+  <data name="Admin_UserManager_ltHomePhone" xml:space="preserve">
+    <value>집전화</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthAddress" xml:space="preserve">
+    <value>본적주소</value>
+  </data>
+  <data name="Admin_UserManager_ltOfficePhone" xml:space="preserve">
+    <value>근무지전화</value>
+  </data>
+  <data name="Admin_UserManager_ltExtensionOfficePhone" xml:space="preserve">
+    <value>내선</value>
+  </data>
+  <data name="Admin_UserManager_ltFax" xml:space="preserve">
+    <value>팩스</value>
+  </data>
+  <data name="Admin_UserManager_cbtnHomeSearchZipCode" xml:space="preserve">
+    <value>주소찾기</value>
+  </data>
+  <data name="Admin_UserManager_cbtnBirthSearchZipCode" xml:space="preserve">
+    <value>주소찾기</value>
+  </data>
+  <data name="Admin_UserManager_cbsExtentionConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Admin_UserManager_ltDescription" xml:space="preserve">
+    <value>담당업무</value>
+  </data>
+  <data name="Admin_UserManager_ltCurrentDept" xml:space="preserve">
+    <value>소속 조직</value>
+  </data>
+  <data name="Admin_UserManager_cbtnUserDeptAdd" xml:space="preserve">
+    <value>그룹할당</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseDept" xml:space="preserve">
+    <value>기본 조직</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTLoginID" xml:space="preserve">
+    <value>로그인아이디</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTMobilePhone" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDeptName" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTTitleName" xml:space="preserve">
+    <value>직책명</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDutyName" xml:space="preserve">
+    <value>직급명</value>
+  </data>
+  <data name="Admin_UserList_MSG_BtnSelect" xml:space="preserve">
+    <value>조회</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SelectedDeptTree" xml:space="preserve">
+    <value>조직을 선택하세요</value>
+  </data>
+  <data name="Admin_UserManager_MSG_DelConfirm" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SUCCESS" xml:space="preserve">
+    <value>처리되었습니다</value>
+  </data>
+  <data name="Admin_UserManager_MSG_FAILURE" xml:space="preserve">
+    <value>처리 시, 에러가 발생하였습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_ltParentName" xml:space="preserve">
+    <value>부모 조직</value>
+  </data>
+  <data name="Admin_DeptManager_ltMove" xml:space="preserve">
+    <value>조직</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptUp" xml:space="preserve">
+    <value>조직 위로 이동</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptDown" xml:space="preserve">
+    <value>조직 아래로 이동</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTTREE" xml:space="preserve">
+    <value>부모조직을 선택하세요</value>
+  </data>
+  <data name="Admin_UserManager_RequireCodes" xml:space="preserve">
+    <value>코드(직책/직급) 정보를 넣어주세요</value>
+  </data>
+  <data name="Admin_UserManager_MSG_IsBelongDept" xml:space="preserve">
+    <value>선택하신 조직에 속해 있습니다</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SelectedUserTree" xml:space="preserve">
+    <value>삭제할 사용자를 선택하세요</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelDeptTree" xml:space="preserve">
+    <value>사용자가 있는 조직은 삭제할수 없습니다</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SubDeptTreeYN" xml:space="preserve">
+    <value>하위조직가 있는 조직은 삭제할 수 없습니다</value>
+  </data>
+  <data name="Private_MyInfoMenu_hlExit" xml:space="preserve">
+    <value>나가기</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModOK" xml:space="preserve">
+    <value>처리되었습니다</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModNo" xml:space="preserve">
+    <value>처리 시, 에러가 발생하였습니다.</value>
+  </data>
+  <data name="Private_MyInfo_ltBaseDept" xml:space="preserve">
+    <value>기본 조직 : </value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelChk" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Admin_UserManager_MSG_NotSelectRootNode" xml:space="preserve">
+    <value>부서를 선택하세요.</value>
+  </data>
+  <data name="Admin_UserManager_ltPreferredLanguage" xml:space="preserve">
+    <value>기본언어 설정</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ReLogIn" xml:space="preserve">
+    <value>환경을 적용하기 위하여 다시 로그인하셔야 합니다.</value>
+  </data>
+  <data name="Private_MyInfo_MSG_AlertReLogIn" xml:space="preserve">
+    <value>일부 환경(기본언어/기본부서) 적용시 다시 로그인 하셔야 합니다.</value>
+  </data>
+  <data name="Admin_UserList_MSGDel" xml:space="preserve">
+    <value>사용자가 삭제됩니다.\n겸직삭제는 사용자정보의 조직정보에서 삭제하세요.\n삭제하시겠습니까?</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserDept" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="Private_AccountInfo_ltTitle" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="Private_AccountInfo_ltDuty" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="Private_AccountInfo_ltMobile" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="Private_AccountInfo_ltOfficePhone" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
+  <data name="Private_AccountInfo_ltMail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="Admin_UserManager_ltTitle1" xml:space="preserve">
+    <value>사진정보</value>
+  </data>
+  <data name="Admin_UserManager_Literal1" xml:space="preserve">
+    <value>인장정보</value>
+  </data>
+  <data name="Admin_UserManager_Literal2" xml:space="preserve">
+    <value>조직도</value>
+  </data>
+  <data name="Admin_UserManager_Literal3" xml:space="preserve">
+    <value>조직정보</value>
+  </data>
+  <data name="Private_MyInfo_ltHomePhoneEx" xml:space="preserve">
+    <value>(ex: 021002000)</value>
+  </data>
+  <data name="Private_MyInfo_ltExtensionOfficePhoneEx" xml:space="preserve">
+    <value>(ex: 123)</value>
+  </data>
+  <data name="Private_MyInfo_FaxEx" xml:space="preserve">
+    <value>(ex: 021001000)</value>
+  </data>
+  <data name="Admin_UserList_UserManager" xml:space="preserve">
+    <value>사용자관리</value>
+  </data>
+  <data name="Admin_DeptManager_DeptManager" xml:space="preserve">
+    <value>조직관리</value>
+  </data>
+  <data name="Admin_BatchManagerList_BatchManager" xml:space="preserve">
+    <value>조직일괄관리</value>
+  </data>
+  <data name="Admin_UserManager_UserManager" xml:space="preserve">
+    <value>사용자정보</value>
+  </data>
+  <data name="UserManager_msgIsValidLicense" xml:space="preserve">
+    <value>* 등록하신 License 개수에 도달하였습니다. \n\n* 사용자를 더 추가하시려면 License를\n\n 추가 구매하시기 바랍니다</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader2" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader3" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader4" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader5" xml:space="preserve">
+    <value>순서</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader6" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader7" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader8" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Admin_UserManager_msgIsNumeric" xml:space="preserve">
+    <value>숫자만 입력하세요</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTUserDeptOrder" xml:space="preserve">
+    <value>순서</value>
+  </data>
+  <data name="Admin_UserManager_Use" xml:space="preserve">
+    <value>사용 가능 합니다</value>
+  </data>
+  <data name="Admin_UserManager_NoUse" xml:space="preserve">
+    <value>사용 중에 있습니다</value>
+  </data>
+  <data name="Admin_UserManager_rfvMailID" xml:space="preserve">
+    <value>Mail ID를 넣으세요</value>
+  </data>
+  <data name="Common_revSpecialChar" xml:space="preserve">
+    <value>* 특수문자는 사용하실 수 없습니다!</value>
+  </data>
+  <data name="Common_rfvInput" xml:space="preserve">
+    <value>* 입력하여 주십시요</value>
+  </data>
+  <data name="Common_revIsNumber" xml:space="preserve">
+    <value>* 숫자만 입력해 주시기 바랍니다!</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_NoSelectedManyUser" xml:space="preserve">
+    <value>다수의 사용자를 선택하실 수 없습니다.</value>
+  </data>
+  <data name="Admin_DeptManager_ltSecurityLogIn" xml:space="preserve">
+    <value>보안인증</value>
+  </data>
+  <data name="Admin_UserManager_ltPictureType" xml:space="preserve">
+    <value>사진,인장은 jpg 만 가능 (사진: 94 * 124 / 인장: 50 * 50)</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseMenu" xml:space="preserve">
+    <value>처음 페이지 설정</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_AdditionalJob" xml:space="preserve">
+    <value>겸</value>
+  </data>
+  <data name="Admin_DeptManager_RootDept" xml:space="preserve">
+    <value>최상위부서</value>
+  </data>
+  <data name="Admin_DeptManager_ChangeDept" xml:space="preserve">
+    <value>선택한 사용자를 이동 시키겠습니까?</value>
+  </data>
+  <data name="SMS_Default_MSG_DisConnect" xml:space="preserve">
+    <value>USB Key가 연결 되지 않았습니다. \nUSB 키를 연결한 후 다시 접속하시기 바랍니다.</value>
+  </data>
+  <data name="Base_Authentication_Default_MSG_USBKey" xml:space="preserve">
+    <value>USB Key 정보가 그룹웨어 사용자의 정보와 일치하지 않습니다.</value>
+  </data>
+  <data name="Admin_UserManager_Password" xml:space="preserve">
+    <value>영문자 및 숫자로만 입력하세요</value>
+  </data>
+  <data name="Admin_UserManager_Font" xml:space="preserve">
+    <value>글자</value>
+  </data>
+  <data name="Private_MailDomain_Title" xml:space="preserve">
+    <value>메일 계정</value>
+  </data>
+  <data name="Admin_BatchManagerContent_MSG_ModChk" xml:space="preserve">
+    <value>수정하시겠습니까?</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_VirtualTree" xml:space="preserve">
+    <value>가상조직</value>
+  </data>
+  <data name="Admin_UserContent_MSG_Checkbox" xml:space="preserve">
+    <value>삭제할 목록을 체크해 주세요.</value>
+  </data>
+  <data name="Admin_UserManager_ActiveUser" xml:space="preserve">
+    <value>활성화 처리할 사용자를 선택해 주세요.</value>
+  </data>
+  <data name="Admin_UserManager_ltDesignStyle" xml:space="preserve">
+    <value>SKIN</value>
+  </data>
+  <data name="Admin_UserManager_cbxVirtualDept" xml:space="preserve">
+    <value>가상부서</value>
+  </data>
+  <data name="Admin_DeptManager_ltShortName" xml:space="preserve">
+    <value>약어</value>
+  </data>
+  <data name="Admin_DeptManager_ltDeptCode" xml:space="preserve">
+    <value>연동코드</value>
+  </data>
+  <data name="Admin_UserManager_ltAnniversary" xml:space="preserve">
+    <value>기념일</value>
+  </data>
+  <data name="Admin_UserManager_ltWeddingAnniversary" xml:space="preserve">
+    <value>결혼 기념일</value>
+  </data>
+  <data name="Admin_DeptManager_cbIsFPDept" xml:space="preserve">
+    <value>수당부서</value>
+  </data>
+  <data name="Admin_DeptManager_cbPassword" xml:space="preserve">
+    <value>암호창</value>
+  </data>
+  <data name="Admin_UserRegister_Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="Admin_UserRegister_Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Admin_UserRegister_DoubleCheck" xml:space="preserve">
+    <value>중복체크</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_Validation" xml:space="preserve">
+    <value>사용자 기본정보를 입력하시고 세부 정보를 입력하실 수 있습니다.</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_RetireDate" xml:space="preserve">
+    <value>퇴사일</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_lunar" xml:space="preserve">
+    <value>음력</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_WeddingDate" xml:space="preserve">
+    <value>결혼기념일</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_auth" xml:space="preserve">
+    <value>해당 사용자는 접근 권한이 없습니다.</value>
+  </data>
+  <data name="Admin_UserRegister_PasswordChange" xml:space="preserve">
+    <value>로그인비밀번호 변경</value>
+  </data>
+  <data name="Admin_UserRegister_MailPasswordChange" xml:space="preserve">
+    <value>메일비밀번호 변경</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>업무담당</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>상세정보</value>
+  </data>
+  <data name="RegistContact" xml:space="preserve">
+    <value>연락처 등록</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>중국어</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>직급/직책관리</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>영어</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>프랑스어</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>일본어</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>한국어</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>대만어</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>아이디</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>처리시 오류가 발생되었습니다. 관리자에게 문의해주시기 바랍니다.</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>목록으로 이동합니다.</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>직급을 선택해 주세요.</value>
+  </data>
+  <data name="SelectDuty" xml:space="preserve">
+    <value>직책을 선택해 주세요.</value>
+  </data>
+  <data name="TitleOrder" xml:space="preserve">
+    <value>직급순서</value>
+  </data>
+  <data name="DutyOrder" xml:space="preserve">
+    <value>직책순서</value>
+  </data>
+  <data name="DeptOrder" xml:space="preserve">
+    <value>부서순서</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>선택된 사용자</value>
+  </data>
+  <data name="ActivityDept" xml:space="preserve">
+    <value>활성화여부</value>
+  </data>
+  <data name="AddBaseInfo" xml:space="preserve">
+    <value>인사기록정보</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>적용</value>
+  </data>
+  <data name="CareerInfo" xml:space="preserve">
+    <value>경력사항</value>
+  </data>
+  <data name="CareerInfoStatus" xml:space="preserve">
+    <value>경력사항현황</value>
+  </data>
+  <data name="CareerPeriod" xml:space="preserve">
+    <value>경력기간</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>순서변경</value>
+  </data>
+  <data name="ChangeUpperDept" xml:space="preserve">
+    <value>상위부서변경</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>회사명</value>
+  </data>
+  <data name="CompleteCheck" xml:space="preserve">
+    <value>이수여부</value>
+  </data>
+  <data name="CompleteDelete" xml:space="preserve">
+    <value>삭제되었습니다..</value>
+  </data>
+  <data name="CompleteModify" xml:space="preserve">
+    <value>수정되었습니다</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>순서 변경되었습니다.</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>등록되었습니다</value>
+  </data>
+  <data name="CompleteSave" xml:space="preserve">
+    <value>저장되었습니다.</value>
+  </data>
+  <data name="CourseName" xml:space="preserve">
+    <value>과정명</value>
+  </data>
+  <data name="DeleteDept" xml:space="preserve">
+    <value>정말로 해당 부서를 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeleteDuty" xml:space="preserve">
+    <value>정말로 해당 직책을 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeleteInfo" xml:space="preserve">
+    <value>정말로 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>정말로 해당 직급을 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>부서정보</value>
+  </data>
+  <data name="DutyDescription" xml:space="preserve">
+    <value>직책설명</value>
+  </data>
+  <data name="DutyTree" xml:space="preserve">
+    <value>직책 트리</value>
+  </data>
+  <data name="EducationInfo" xml:space="preserve">
+    <value>교육정보</value>
+  </data>
+  <data name="EducationInfoStatus" xml:space="preserve">
+    <value>교육정보현황</value>
+  </data>
+  <data name="EnableUse" xml:space="preserve">
+    <value>사용여부</value>
+  </data>
+  <data name="FamilyInfo" xml:space="preserve">
+    <value>가족정보</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>수료일</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>등급</value>
+  </data>
+  <data name="JobClass" xml:space="preserve">
+    <value>직종</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>장소</value>
+  </data>
+  <data name="ManagementDuty" xml:space="preserve">
+    <value>직책 관리</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>직급 관리</value>
+  </data>
+  <data name="ManagementDept" xml:space="preserve">
+    <value>부서 관리</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="MultilingualName" xml:space="preserve">
+    <value>다국명</value>
+  </data>
+  <data name="OutsideInterface" xml:space="preserve">
+    <value>외부연동</value>
+  </data>
+  <data name="ParentOption" xml:space="preserve">
+    <value>옵션</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="RegisterDeptName" xml:space="preserve">
+    <value>부서명을 입력해 주세요</value>
+  </data>
+  <data name="RegisterDutyName" xml:space="preserve">
+    <value>직책명을 입력해 주세요</value>
+  </data>
+  <data name="RegisterTitleName" xml:space="preserve">
+    <value>직급명을 입력해 주세요</value>
+  </data>
+  <data name="RewardInfo" xml:space="preserve">
+    <value>상벌사항</value>
+  </data>
+  <data name="ScholarshipInfo" xml:space="preserve">
+    <value>학력사항</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>점수</value>
+  </data>
+  <data name="SearchAddress" xml:space="preserve">
+    <value>주소검색</value>
+  </data>
+  <data name="TitleDescription" xml:space="preserve">
+    <value>직급설명</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>직위</value>
+  </data>
+  <data name="TitleTree" xml:space="preserve">
+    <value>직급 트리</value>
+  </data>
+  <data name="TopDept" xml:space="preserve">
+    <value>최상위부서</value>
+  </data>
+  <data name="UpperDept" xml:space="preserve">
+    <value>상위부서</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>사용자정보</value>
+  </data>
+  <data name="VirtualDept" xml:space="preserve">
+    <value>가상부서</value>
+  </data>
+  <data name="WorkPeriod" xml:space="preserve">
+    <value>근무기간</value>
+  </data>
+  <data name="AllPhoneNumber" xml:space="preserve">
+    <value>회사전화</value>
+  </data>
+  <data name="EmployeeSearch" xml:space="preserve">
+    <value>임직원조회</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>핸드폰</value>
+  </data>
+  <data name="MyPhoto" xml:space="preserve">
+    <value>사진</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="TitleDutyName" xml:space="preserve">
+    <value>직급/직책</value>
+  </data>
+  <data name="Academic" xml:space="preserve">
+    <value>학력</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="BasicAddInfo" xml:space="preserve">
+    <value>인사기록정보</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>겸직</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>카드</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>로그인 중복체크를 선택해 주세요.</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>해당 로그인은 중복되지 않습니다.</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>해당 로그인은 중복이 됩니다.</value>
+  </data>
+  <data name="CheckMailRepetition" xml:space="preserve">
+    <value>메일 중복체크를 선택해 주세요.</value>
+  </data>
+  <data name="OnlyOneMail" xml:space="preserve">
+    <value>해당 메일은 중복되지 않습니다.</value>
+  </data>
+  <data name="RepetitionMail" xml:space="preserve">
+    <value>해당 메일은 중복이 됩니다.</value>
+  </data>
+  <data name="Cohabitation" xml:space="preserve">
+    <value>동거</value>
+  </data>
+  <data name="CompleteCategoryOrders" xml:space="preserve">
+    <value>카테고리 순서 변경되었습니다.</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>학위</value>
+  </data>
+  <data name="DeleteUserInfo" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="FamilyInfoState" xml:space="preserve">
+    <value>가족정보현황</value>
+  </data>
+  <data name="Graduation" xml:space="preserve">
+    <value>졸업여부</value>
+  </data>
+  <data name="ImpossibleModify" xml:space="preserve">
+    <value>수정불가</value>
+  </data>
+  <data name="InputBaseMail" xml:space="preserve">
+    <value>기본메일을 입력해 주세요</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>로그인 아이디를 입력해 주세요</value>
+  </data>
+  <data name="InputMailPassword" xml:space="preserve">
+    <value>메일비밀번호를 입력해 주세요</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>이름을 입력해 주세요</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>비밀번호를 입력해 주세요</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>직업</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>메일주소</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>전공</value>
+  </data>
+  <data name="PrivateCapacity" xml:space="preserve">
+    <value>개인용량</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>관계</value>
+  </data>
+  <data name="Reward" xml:space="preserve">
+    <value>상.벌</value>
+  </data>
+  <data name="RewardDate" xml:space="preserve">
+    <value>상벌일자</value>
+  </data>
+  <data name="RewardInfoState" xml:space="preserve">
+    <value>상벌사항현황</value>
+  </data>
+  <data name="RewardPerson" xml:space="preserve">
+    <value>포상징계자</value>
+  </data>
+  <data name="RewardType" xml:space="preserve">
+    <value>상벌종류</value>
+  </data>
+  <data name="ScholarshipInfoState" xml:space="preserve">
+    <value>학력사항현황</value>
+  </data>
+  <data name="SchoolName" xml:space="preserve">
+    <value>학교명</value>
+  </data>
+  <data name="Seat" xml:space="preserve">
+    <value>소재지</value>
+  </data>
+  <data name="SettingBothDept" xml:space="preserve">
+    <value>겸직부서에서 기본을 설정해 주시기 바랍니다.</value>
+  </data>
+  <data name="SettingDeptAuthority" xml:space="preserve">
+    <value>부서 권한을 설정해 주시기 바랍니다</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>적요</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>시스템코드</value>
+  </data>
+  <data name="UserInfoManage" xml:space="preserve">
+    <value>사용자관리</value>
+  </data>
+  <data name="AlertExitUserByDeptID" xml:space="preserve">
+    <value>해당 부서에 사용자가 존재하므로 이를 삭제할 수 없습니다.</value>
+  </data>
+  <data name="AlertExitParentDept" xml:space="preserve">
+    <value>하위 부서가 존재하므로 이를 삭제할 수 없습니다.</value>
+  </data>
+  <data name="ParentCode" xml:space="preserve">
+    <value>상위코드</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>코드명</value>
+  </data>
+  <data name="ActiveYes" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="ActiveNo" xml:space="preserve">
+    <value>아니오</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>분류내</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1주</value>
+  </data>
+  <data name="onemonth" xml:space="preserve">
+    <value>1달</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>등록일자를 입력해 주세요.</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>시작일자가 종료일자보다 작아야 합니다.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="MultiDomain" xml:space="preserve">
+    <value>메일정보</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="CheckMember" xml:space="preserve">
+    <value>소속원조회</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>권한리스트</value>
+  </data>
+  <data name="AuthLevel" xml:space="preserve">
+    <value>권한/등급</value>
+  </data>
+  <data name="ActiveOnOff" xml:space="preserve">
+    <value>활성/비활성화</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>부서변경</value>
+  </data>
+  <data name="ChangeBasicDept" xml:space="preserve">
+    <value>기본부서변경</value>
+  </data>
+  <data name="MultiDomainState" xml:space="preserve">
+    <value>메일 현황</value>
+  </data>
+  <data name="LinkOutsideAccount" xml:space="preserve">
+    <value>SNS 정보 관리</value>
+  </data>
+  <data name="FaceBook" xml:space="preserve">
+    <value>페이스북</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>트위터</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>구글 캘린더</value>
+  </data>
+  <data name="MeToday" xml:space="preserve">
+    <value>미투데이</value>
+  </data>
+  <data name="InputChangedPassword" xml:space="preserve">
+    <value>* 비밀번호는 변경할 경우 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="UserState" xml:space="preserve">
+    <value>사용자현황</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="WrongAccess" xml:space="preserve">
+    <value>잘못된 접근으로 접속하셨습니다.</value>
+  </data>
+  <data name="WrongAccess_NoReferer" xml:space="preserve">
+    <value>잘못된 접근으로 접속하셨습니다.(no referer)</value>
+  </data>
+  <data name="WrongAccess_Error" xml:space="preserve">
+    <value>잘못된 접근으로 접속하셨습니다.(error)</value>
+  </data>
+  <data name="AndSearch" xml:space="preserve">
+    <value>검색어 모두 포함</value>
+  </data>
+  <data name="OrSearch" xml:space="preserve">
+    <value>검색어 중에 하나라도 포함</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="BaseMail" xml:space="preserve">
+    <value>기본메일</value>
+  </data>
+  <data name="CheckBaseMail" xml:space="preserve">
+    <value>기본메일 지정</value>
+  </data>
+  <data name="CheckChangeDeptUserList" xml:space="preserve">
+    <value>부서 변경할 사용자 리스트를 선택해 주세요.</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>삭제할 리스트를 선택해 주세요.</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>리스트를 선택해 주세요.</value>
+  </data>
+  <data name="CheckMoveBaseDept" xml:space="preserve">
+    <value>이동할 기본부서를 선택해 주세요.</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>반영됨</value>
+  </data>
+  <data name="DenyConfirm" xml:space="preserve">
+    <value>처리 후 문제가 발생되었습니다.</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>처리시 , 오류가 발생되었습니다.</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>해당 특수문자는 보안취약성 공격에 사용되므로 제한됩니다.</value>
+  </data>
+  <data name="MailDomain" xml:space="preserve">
+    <value>메일도메인</value>
+  </data>
+  <data name="MailID" xml:space="preserve">
+    <value>메일아이디</value>
+  </data>
+  <data name="NotApplySameUpper" xml:space="preserve">
+    <value>해당 부서와 변경할 상위부서가 동일하게 할 수 없습니다.</value>
+  </data>
+  <data name="NotCheckUser" xml:space="preserve">
+    <value>선택된 사용자가 없습니다. 사용자를 선택해 주세요.</value>
+  </data>
+  <data name="SelectRelation" xml:space="preserve">
+    <value>관계를 선택해 주세요</value>
+  </data>
+  <data name="BasicLanguage" xml:space="preserve">
+    <value>기본언어</value>
+  </data>
+  <data name="WriteEduName" xml:space="preserve">
+    <value>과정명을 입력해 주세요</value>
+  </data>
+  <data name="SelectEduDate" xml:space="preserve">
+    <value>수료일을 선택해 주세요</value>
+  </data>
+  <data name="SelectRewardDate" xml:space="preserve">
+    <value>상벌일자를 선택해 주세요</value>
+  </data>
+  <data name="WriteSummary" xml:space="preserve">
+    <value>적요를 입력해 주세요</value>
+  </data>
+  <data name="WriteRewarder" xml:space="preserve">
+    <value>포상징계자를 입력해 주세요</value>
+  </data>
+  <data name="SelectCareerDate" xml:space="preserve">
+    <value>근무기간을 선택해 주세요</value>
+  </data>
+  <data name="WriteCompanyName" xml:space="preserve">
+    <value>회사명을 입력해 주세요</value>
+  </data>
+  <data name="WriteSchoolName" xml:space="preserve">
+    <value>학교명을 입력해 주세요</value>
+  </data>
+  <data name="SelectPeriod" xml:space="preserve">
+    <value>기간을 선택해 주세요</value>
+  </data>
+  <data name="SettingBaseDeptOnlyone" xml:space="preserve">
+    <value>겸직의 기본을 하나만 선택 가능합니다.</value>
+  </data>
+  <data name="MoveUserDeptOrder" xml:space="preserve">
+    <value>사용자순서변경</value>
+  </data>
+  <data name="LinkageInfo" xml:space="preserve">
+    <value>연동정보</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>회사전화</value>
+  </data>
+  <data name="NaverBlog" xml:space="preserve">
+    <value>네이버블로그</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>비밀번호가 조건에 맞지 않습니다.</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>조건</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>자수이상</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>소문자</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>대문자</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>숫자</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>특수문자</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>라이센스</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>총 사용자</value>
+  </data>
+  <data name="License_Error" xml:space="preserve">
+    <value>라이센스 오류 : 사용 가능한 라이센스가 없습니다.</value>
+  </data>
+  <data name="MultiComUserManage" xml:space="preserve">
+    <value>타회사인사관리</value>
+  </data>
+  <data name="NoMatchPwd" xml:space="preserve">
+    <value>비밀번호가 서로 동일하지 않습니다. 다시 입력해 주세요.</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="AlarmMail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="AlarmMessenger" xml:space="preserve">
+    <value>메신저</value>
+  </data>
+  <data name="AlarmSMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>비밀번호 변경</value>
+  </data>
+  <data name="SetApprovalAlarm" xml:space="preserve">
+    <value>전자결재 알람 설정</value>
+  </data>
+  <data name="MailPwdChange" xml:space="preserve">
+    <value>메일 비밀번호를 수정 하시겠습니까?</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>모바일 사용 여부</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>사용가능</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>사용불가</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>알람설정</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>전자결재</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>승인일</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>커뮤니티</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>디바이스이름</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>로그인 요청 정보</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>아이디+비밀번호</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>자동인증</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>모바일관리</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>모바일정보</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>모바일종류</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>모바일번호</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>일정관리</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>요청일</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>사내SNS</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>고유키값</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>업무일지</value>
+  </data>
+  <data name="ActiveMobile0" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="ActiveMobile3" xml:space="preserve">
+    <value>승인불가</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>모바일</value>
+  </data>
+  <data name="ModMsg" xml:space="preserve">
+    <value>사용가능 기기만 수정이 가능합니다.</value>
+  </data>
+  <data name="SenderName" xml:space="preserve">
+    <value>발송자이름</value>
+  </data>
+  <data name="SenderEmail" xml:space="preserve">
+    <value>발송자이메일</value>
+  </data>
+  <data name="ReceiverName" xml:space="preserve">
+    <value>수신자이름</value>
+  </data>
+  <data name="ReceiverEmail" xml:space="preserve">
+    <value>수신자이메일</value>
+  </data>
+  <data name="SenderTime" xml:space="preserve">
+    <value>발송시간</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>메일발송리스트</value>
+  </data>
+  <data name="AuthEmail" xml:space="preserve">
+    <value>패스워드 인증메일</value>
+  </data>
+  <data name="PasswordManager" xml:space="preserve">
+    <value>패스워드관리자</value>
+  </data>
+  <data name="ManagerOnlyOne" xml:space="preserve">
+    <value>관리자는 한명만 등록가능합니다.</value>
+  </data>
+  <data name="ManagerNotDept" xml:space="preserve">
+    <value>관리자는 부서지정이 불가능 합니다.</value>
+  </data>
+  <data name="ManagerGuide" xml:space="preserve">
+    <value>사용자들의 패스워드 분실시 등록된 담당자이메일이 보낸사람 이메일로 표기됩니다.&lt;br /&gt; 관리자가 등록되지 않았다면 사용자들은 임시 패스워드를 발급 받을 수 없습니다. </value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>제목, 첨부파일명</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="TodoItemN" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="TodoItemY" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>TO-DO 사용여부</value>
+  </data>
+  <data name="AlarmIsUsing0" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="AlarmIsUsing1" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="AlarmOption" xml:space="preserve">
+    <value>알람 옵션 :</value>
+  </data>
+  <data name="AlarmTitle" xml:space="preserve">
+    <value>알람설정</value>
+  </data>
+  <data name="MSG_SELITEM" xml:space="preserve">
+    <value>항목을 선택하세요</value>
+  </data>
+  <data name="LoginInfo" xml:space="preserve">
+    <value>로그인정보</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1년</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2년</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3년</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6개월</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>기간입력</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>접속일</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>열람등급</value>
+  </data>
+  <data name="Msg_ErrAccessGrade" xml:space="preserve">
+    <value>열람등급명을 선택하세요.</value>
+  </data>
+  <data name="BasicTimeZone" xml:space="preserve">
+    <value>표준 시간대</value>
+  </data>
+  <data name="EtcInfo" xml:space="preserve">
+    <value>기타정보</value>
+  </data>
+  <data name="Summary01" xml:space="preserve">
+    <value>개인문서함</value>
+  </data>
+  <data name="Summary02" xml:space="preserve">
+    <value>결재문서함</value>
+  </data>
+  <data name="Summary03" xml:space="preserve">
+    <value>반려문서함</value>
+  </data>
+  <data name="Summary04" xml:space="preserve">
+    <value>전결문서함</value>
+  </data>
+  <data name="Summary05" xml:space="preserve">
+    <value>전달문서함</value>
+  </data>
+  <data name="Summary06" xml:space="preserve">
+    <value>받은회람함</value>
+  </data>
+  <data name="Summary07" xml:space="preserve">
+    <value>보낸회람함</value>
+  </data>
+  <data name="Summary08" xml:space="preserve">
+    <value>상신한문서</value>
+  </data>
+  <data name="Summary09" xml:space="preserve">
+    <value>관계있는문서</value>
+  </data>
+  <data name="Summary10" xml:space="preserve">
+    <value>결재대상문서</value>
+  </data>
+  <data name="Summary11" xml:space="preserve">
+    <value>수신문서</value>
+  </data>
+  <data name="SummaryEA" xml:space="preserve">
+    <value>건</value>
+  </data>
+  <data name="Summary12" xml:space="preserve">
+    <value>요청한협업</value>
+  </data>
+  <data name="Summary13" xml:space="preserve">
+    <value>요청받은협업</value>
+  </data>
+  <data name="Summary14" xml:space="preserve">
+    <value>참조받은협업</value>
+  </data>
+  <data name="Summary15" xml:space="preserve">
+    <value>전달받은협업</value>
+  </data>
+  <data name="SummaryTit1" xml:space="preserve">
+    <value>요약정보</value>
+  </data>
+  <data name="SummaryTit10" xml:space="preserve">
+    <value>게시글 등록건수</value>
+  </data>
+  <data name="SummaryTit11" xml:space="preserve">
+    <value>게시판 폴더 관리목록</value>
+  </data>
+  <data name="SummaryTit12" xml:space="preserve">
+    <value>커뮤니티</value>
+  </data>
+  <data name="SummaryTit13" xml:space="preserve">
+    <value>게시글 등록건수</value>
+  </data>
+  <data name="SummaryTit14" xml:space="preserve">
+    <value>커뮤니티 관리목록</value>
+  </data>
+  <data name="SummaryTit15" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="SummaryTit16" xml:space="preserve">
+    <value>등록건수</value>
+  </data>
+  <data name="SummaryTit2" xml:space="preserve">
+    <value>로그인정보</value>
+  </data>
+  <data name="SummaryTit3" xml:space="preserve">
+    <value>권한정보</value>
+  </data>
+  <data name="SummaryTit4" xml:space="preserve">
+    <value>요약정보</value>
+  </data>
+  <data name="SummaryTit5" xml:space="preserve">
+    <value>전자결재</value>
+  </data>
+  <data name="SummaryTit6" xml:space="preserve">
+    <value>[조회]</value>
+  </data>
+  <data name="SummaryTit7" xml:space="preserve">
+    <value>진행중인 문서</value>
+  </data>
+  <data name="SummaryTit8" xml:space="preserve">
+    <value>완료된 문서</value>
+  </data>
+  <data name="SummaryTit9" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="Admin_User_Input_JoinDate" xml:space="preserve">
+    <value>입사일을 입력하세요</value>
+  </data>
+  <data name="Admin_User_Input_RetireDate" xml:space="preserve">
+    <value>퇴사일을 입력하세요</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>알림함 보기 ON 설정해야지 Push를 설정할 수 있음</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>공지</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>패스워드인증관리</value>
+  </data>
+</root>

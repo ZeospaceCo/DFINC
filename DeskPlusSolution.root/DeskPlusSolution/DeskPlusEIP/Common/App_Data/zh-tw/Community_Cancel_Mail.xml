@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 社會開放的期限為($Name$)</Title>
+	<ContentHTML>
+		[社會開放的期限為]
+		&lt;br&gt;&lt;br&gt;
+		- 社區居民 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 誰取消 : $Name$
+	</ContentHTML>
+</ContentInfo>

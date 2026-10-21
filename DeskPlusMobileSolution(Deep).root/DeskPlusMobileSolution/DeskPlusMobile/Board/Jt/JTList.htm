@@ -1,0 +1,32 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="title linkDiv" onclick="javascript:List.viewList('{ $T.List.CategoryID }','{ $T.List.ListID }')">
+        {#if $T.List.ListID != '0'}
+            {#if $T.List.ViewCount == '0'}
+                <a class="LNoready"><div class="podot">●</div><div class="conBox">{#if $T.List.OptionTop != ''}<span>{ $T.List.OptionTop }]</span> {#/if}
+                {$T.List.Title } {$T.List.ReplyCount } {$T.List.ShowNew}<br />
+            {#else}
+                <a class="Lready"><div class="grdot">●</div><div class="conBox">{#if $T.List.OptionTop != ''}<span>{ $T.List.OptionTop }]</span> {#/if}
+                {$T.List.Title } {$T.List.ReplyCount } {$T.List.ShowNew}<br />
+            {#/if}
+           </a>
+           <div><span class="sch_user">{ $T.List.WriteUserInfo }&nbsp;{ $T.List.WriteDateAll }</span><br /></div>     
+           </div>
+        {#else}
+            <a href="#"><i class="fas fa-clipboard-list"></i>&nbsp;{$T.List.Title}</a>
+        {#/if}
+
+    </div>
+</li>
+{#else}   
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}
+
+
+
+
+ 

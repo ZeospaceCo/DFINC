@@ -1,0 +1,15 @@
+﻿{#foreach $T as Share}
+<li class="contentblock padding0">
+    <div class="linkDiv mli3 full-width" onclick="javascript:Share.viewShare('{ $T.Share.FolderID }')">
+        <a class="mct" onclick="">
+            <i class="fas fa-folder-open"></i><font>{ $T.Share.FolderName }</font> <span class="lis"> ({ $T.Share.DeptName } { $T.Share.TitleName } { $T.Share.Name })</span> 
+        </a>
+    </div>  
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

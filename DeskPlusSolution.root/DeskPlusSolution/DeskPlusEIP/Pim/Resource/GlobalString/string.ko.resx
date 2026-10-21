@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>대상이없습니다.</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>처리 되었습니다.</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>파일추가</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>날짜</value>
+  </data>
+  <data name="DATE2" xml:space="preserve">
+    <value>일자</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>파일삭제</value>
+  </data>
+  <data name="DetailContent" xml:space="preserve">
+    <value>상세 내용</value>
+  </data>
+  <data name="HolidayInsert" xml:space="preserve">
+    <value>공휴일 등록</value>
+  </data>
+  <data name="HolidayManage" xml:space="preserve">
+    <value>공휴일관리</value>
+  </data>
+  <data name="KIND" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="SaveContinue" xml:space="preserve">
+    <value>저장후계속</value>
+  </data>
+  <data name="schedule1" xml:space="preserve">
+    <value>개인일정</value>
+  </data>
+  <data name="schedule2" xml:space="preserve">
+    <value>개인기념일</value>
+  </data>
+  <data name="schedule3" xml:space="preserve">
+    <value>공휴일정</value>
+  </data>
+  <data name="schedule4" xml:space="preserve">
+    <value>공휴기념일</value>
+  </data>
+  <data name="schedule5" xml:space="preserve">
+    <value>절기</value>
+  </data>
+  <data name="schedule6" xml:space="preserve">
+    <value>국가공휴일</value>
+  </data>
+  <data name="schedule7" xml:space="preserve">
+    <value>국가기념일</value>
+  </data>
+  <data name="ShareManage" xml:space="preserve">
+    <value>공유자관리</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="WRITER" xml:space="preserve">
+    <value>등록자</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>메신저</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>본문 내용을 입력해 주세요.</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>제목을 입력해 주세요.</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>공지 기간을 설정해 주세요.</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>파일타입</value>
+  </data>
+  <data name="Add_InputDate" xml:space="preserve">
+    <value>날짜를 입력하세요</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>정말 삭제하시겠습니까?</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>첨부파일</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>오전</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>오후</value>
+  </data>
+  <data name="QUICKADD" xml:space="preserve">
+    <value>바로추가</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>개인일정</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>부서일정</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>공유일정</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>전체일정</value>
+  </data>
+  <data name="BOTTOM" xml:space="preserve">
+    <value>하</value>
+  </data>
+  <data name="Importance" xml:space="preserve">
+    <value>중요</value>
+  </data>
+  <data name="MIDDLE" xml:space="preserve">
+    <value>중</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>할일</value>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>상</value>
+  </data>
+  <data name="priority1" xml:space="preserve">
+    <value>시작안함</value>
+  </data>
+  <data name="priority2" xml:space="preserve">
+    <value>진행중</value>
+  </data>
+  <data name="priority3" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="priority4" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="priority5" xml:space="preserve">
+    <value>위임</value>
+  </data>
+  <data name="priority6" xml:space="preserve">
+    <value>연기</value>
+  </data>
+  <data name="todo1" xml:space="preserve">
+    <value>내일할일</value>
+  </data>
+  <data name="todo2" xml:space="preserve">
+    <value>특정일까지할일</value>
+  </data>
+  <data name="todo3" xml:space="preserve">
+    <value>특정일에할일</value>
+  </data>
+  <data name="todo4" xml:space="preserve">
+    <value>내일로연기</value>
+  </data>
+  <data name="todo5" xml:space="preserve">
+    <value>특정일연기</value>
+  </data>
+  <data name="todo6" xml:space="preserve">
+    <value>선택안함</value>
+  </data>
+  <data name="kind1" xml:space="preserve">
+    <value>날</value>
+  </data>
+  <data name="kind10" xml:space="preserve">
+    <value>토</value>
+  </data>
+  <data name="kind2" xml:space="preserve">
+    <value>평일</value>
+  </data>
+  <data name="kind3" xml:space="preserve">
+    <value>주말</value>
+  </data>
+  <data name="kind4" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="kind5" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="kind6" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="kind7" xml:space="preserve">
+    <value>수</value>
+  </data>
+  <data name="kind8" xml:space="preserve">
+    <value>목</value>
+  </data>
+  <data name="kind9" xml:space="preserve">
+    <value>금</value>
+  </data>
+  <data name="order1" xml:space="preserve">
+    <value>첫째</value>
+  </data>
+  <data name="order2" xml:space="preserve">
+    <value>둘째</value>
+  </data>
+  <data name="order3" xml:space="preserve">
+    <value>셋째</value>
+  </data>
+  <data name="order4" xml:space="preserve">
+    <value>넷째</value>
+  </data>
+  <data name="order5" xml:space="preserve">
+    <value>마지막</value>
+  </data>
+  <data name="Admin1" xml:space="preserve">
+    <value>시간이 정해진 공유일정</value>
+  </data>
+  <data name="Admin2" xml:space="preserve">
+    <value>기념일</value>
+  </data>
+  <data name="Admin3" xml:space="preserve">
+    <value>절기</value>
+  </data>
+  <data name="Admin4" xml:space="preserve">
+    <value>국가공휴일</value>
+  </data>
+  <data name="Admin5" xml:space="preserve">
+    <value>국가기념일</value>
+  </data>
+  <data name="holy1" xml:space="preserve">
+    <value>공유일정+기념일</value>
+  </data>
+  <data name="holy2" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="holy3" xml:space="preserve">
+    <value>공유일정</value>
+  </data>
+  <data name="holy4" xml:space="preserve">
+    <value>기념일</value>
+  </data>
+  <data name="holy5" xml:space="preserve">
+    <value>절기</value>
+  </data>
+  <data name="holy6" xml:space="preserve">
+    <value>국가공휴일</value>
+  </data>
+  <data name="holy7" xml:space="preserve">
+    <value>국가기념일</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>전체다운로드</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>첨부파일 정보를 가져오는데 에러가 발생하였습니다.</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>해당 파일이 존재하지 않습니다.</value>
+  </data>
+  <data name="AddSchedule" xml:space="preserve">
+    <value>일정추가</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>일정</value>
+  </data>
+  <data name="ShareSchedule" xml:space="preserve">
+    <value>공유일정</value>
+  </data>
+  <data name="TimeOver" xml:space="preserve">
+    <value>종료시간이 시작시간보다 앞입니다.</value>
+  </data>
+  <data name="ADMIN" xml:space="preserve">
+    <value>관리자</value>
+  </data>
+  <data name="BASICVIEW" xml:space="preserve">
+    <value>기본보기설정</value>
+  </data>
+  <data name="DETAIL" xml:space="preserve">
+    <value>상세</value>
+  </data>
+  <data name="IMPORTANCE_MEASURE" xml:space="preserve">
+    <value>중요도</value>
+  </data>
+  <data name="MYSCHEDULE" xml:space="preserve">
+    <value>나의일정</value>
+  </data>
+  <data name="PRINT" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="TIMEINFO" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="TODAYTODO" xml:space="preserve">
+    <value>오늘의할일</value>
+  </data>
+  <data name="TODOLIST" xml:space="preserve">
+    <value>할일</value>
+  </data>
+  <data name="TODAYSCHEDULE" xml:space="preserve">
+    <value>오늘의일정</value>
+  </data>
+  <data name="AnniversaryInquery" xml:space="preserve">
+    <value>기념일조회</value>
+  </data>
+  <data name="AllShare" xml:space="preserve">
+    <value>전체공유일정</value>
+  </data>
+  <data name="AnnivControl" xml:space="preserve">
+    <value>기념일관리</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>일간</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>월간</value>
+  </data>
+  <data name="PersonSchedule" xml:space="preserve">
+    <value>전체공유일정</value>
+  </data>
+  <data name="ShareObj" xml:space="preserve">
+    <value>기본공유대상관리</value>
+  </data>
+  <data name="WeekView" xml:space="preserve">
+    <value>주간</value>
+  </data>
+  <data name="myviewschedule" xml:space="preserve">
+    <value>내일정보기</value>
+  </data>
+  <data name="SEARCHTEXT" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="DEPTNAME" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="INPUTPERIOD" xml:space="preserve">
+    <value>기간입력</value>
+  </data>
+  <data name="ONEMON" xml:space="preserve">
+    <value>1달</value>
+  </data>
+  <data name="SEARCHKIND" xml:space="preserve">
+    <value>검색조건</value>
+  </data>
+  <data name="THREEMON" xml:space="preserve">
+    <value>3달</value>
+  </data>
+  <data name="USERINPUT" xml:space="preserve">
+    <value>사용자입력</value>
+  </data>
+  <data name="scheduleing" xml:space="preserve">
+    <value>일정에서</value>
+  </data>
+  <data name="todoing" xml:space="preserve">
+    <value>할일에서</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1주</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>엑셀다운로드</value>
+  </data>
+  <data name="SEARCH1" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="SEARCH2" xml:space="preserve">
+    <value>1주</value>
+  </data>
+  <data name="SEARCH3" xml:space="preserve">
+    <value>1달</value>
+  </data>
+  <data name="SEARCH4" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>개인할일</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>부서할일</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>공유할일</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>전체할일</value>
+  </data>
+  <data name="SCHEDULECADALOG" xml:space="preserve">
+    <value>일정목록</value>
+  </data>
+  <data name="TODOCADALOG" xml:space="preserve">
+    <value>할일목록</value>
+  </data>
+  <data name="ModSchedule" xml:space="preserve">
+    <value>일정수정</value>
+  </data>
+  <data name="ViewSchedule" xml:space="preserve">
+    <value>일정보기</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>기존에 작성하신 내용이 사라집니다. 선택하시겠습니까?</value>
+  </data>
+  <data name="AddTO" xml:space="preserve">
+    <value>추가할</value>
+  </data>
+  <data name="AfterContinue" xml:space="preserve">
+    <value>저장후 계속</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>전에알림</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>파일첨부</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>일정알람</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5시간</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4시간</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1시간</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6시간</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3시간</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2시간</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1일</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3일</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2일</value>
+  </data>
+  <data name="FourDay" xml:space="preserve">
+    <value>4일</value>
+  </data>
+  <data name="FiveDay" xml:space="preserve">
+    <value>5일</value>
+  </data>
+  <data name="SixDay" xml:space="preserve">
+    <value>6일</value>
+  </data>
+  <data name="SevenDay" xml:space="preserve">
+    <value>7일</value>
+  </data>
+  <data name="HolidayModify" xml:space="preserve">
+    <value>공휴일수정</value>
+  </data>
+  <data name="HolyDay" xml:space="preserve">
+    <value>공휴일</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>보기 페이지로 이동합니다.</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>리스트로 이동합니다.</value>
+  </data>
+  <data name="EnviroMent" xml:space="preserve">
+    <value>환경</value>
+  </data>
+  <data name="EnviroMentSetting" xml:space="preserve">
+    <value>환경 설정</value>
+  </data>
+  <data name="PimShare" xml:space="preserve">
+    <value>일정 공유자</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>권한관리</value>
+  </data>
+  <data name="pimconfirm" xml:space="preserve">
+    <value>일정확인자</value>
+  </data>
+  <data name="shareobjsel" xml:space="preserve">
+    <value>공유대상선택</value>
+  </data>
+  <data name="PIMShareManager" xml:space="preserve">
+    <value>일정 공유자 관리</value>
+  </data>
+  <data name="PimConfirmPerson" xml:space="preserve">
+    <value>일정확인자 선택</value>
+  </data>
+  <data name="AllShareAnniversary" xml:space="preserve">
+    <value>전체공유기념일</value>
+  </data>
+  <data name="AnniversaryDay" xml:space="preserve">
+    <value>기념일</value>
+  </data>
+  <data name="AnniversaryDayAdd" xml:space="preserve">
+    <value>기념일 추가</value>
+  </data>
+  <data name="AnniversaryMod" xml:space="preserve">
+    <value>기념일수정</value>
+  </data>
+  <data name="AnniversaryReg" xml:space="preserve">
+    <value>기념일등록</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="lunalday" xml:space="preserve">
+    <value>음력</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>양력</value>
+  </data>
+  <data name="AnniversaryEdit" xml:space="preserve">
+    <value>기념일수정</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>검색일을 입력하세요</value>
+  </data>
+  <data name="BasicSetting" xml:space="preserve">
+    <value>기본설정</value>
+  </data>
+  <data name="DayToo" xml:space="preserve">
+    <value>일마다</value>
+  </data>
+  <data name="DeepContent" xml:space="preserve">
+    <value>상세내용</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>매</value>
+  </data>
+  <data name="EveryDay" xml:space="preserve">
+    <value>매일</value>
+  </data>
+  <data name="EveryDayRepeat" xml:space="preserve">
+    <value>매일반복</value>
+  </data>
+  <data name="MonthToo" xml:space="preserve">
+    <value>개월마다</value>
+  </data>
+  <data name="PimRepeatSet" xml:space="preserve">
+    <value>일정 반복 설정</value>
+  </data>
+  <data name="PmReg" xml:space="preserve">
+    <value>일정등록</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="RepeatResult" xml:space="preserve">
+    <value>반복설정결과</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>반복 설정</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>자원예약</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>공유설정</value>
+  </data>
+  <data name="TodoAdd" xml:space="preserve">
+    <value>할일추가</value>
+  </data>
+  <data name="UserPim" xml:space="preserve">
+    <value>사용자일정</value>
+  </data>
+  <data name="ViewLimit" xml:space="preserve">
+    <value>게시범위</value>
+  </data>
+  <data name="WeekNextDay" xml:space="preserve">
+    <value>주마다 다음 요일에 반복</value>
+  </data>
+  <data name="basicShareperson" xml:space="preserve">
+    <value>기본공유자</value>
+  </data>
+  <data name="basicsShareDept" xml:space="preserve">
+    <value>기본공유부서</value>
+  </data>
+  <data name="InqueryObjSel" xml:space="preserve">
+    <value>조회대상선택</value>
+  </data>
+  <data name="oneShareDept" xml:space="preserve">
+    <value>일정공유부서</value>
+  </data>
+  <data name="OneSharePerson" xml:space="preserve">
+    <value>일정공유자</value>
+  </data>
+  <data name="shareinfo" xml:space="preserve">
+    <value>공유자정보</value>
+  </data>
+  <data name="ShareObjSearch" xml:space="preserve">
+    <value>공유대상찾기</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="CONTINUEADD" xml:space="preserve">
+    <value>작성페이지로 이동합니다.</value>
+  </data>
+  <data name="RegisterComplate" xml:space="preserve">
+    <value>등록됬습니다.</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>해당 특수문자는 보안취약성 공격에 사용되므로 제한됩니다.</value>
+  </data>
+  <data name="AlertScriptContnet" xml:space="preserve">
+    <value>본문에 Script 관련 의심구문이 있어 내용이 변경되실 수 있습니다.</value>
+  </data>
+  <data name="Catalog" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="CurrentObjectPerson" xml:space="preserve">
+    <value>현재공유자</value>
+  </data>
+  <data name="ObjePerson" xml:space="preserve">
+    <value>대상자</value>
+  </data>
+  <data name="SelectObjectPerson" xml:space="preserve">
+    <value>공유자선택</value>
+  </data>
+  <data name="ShareObjectAdd" xml:space="preserve">
+    <value>공유자추가</value>
+  </data>
+  <data name="AfterPim" xml:space="preserve">
+    <value>향후 모든 일정</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>모든 일정</value>
+  </data>
+  <data name="RepeatMent1" xml:space="preserve">
+    <value>반복일정의 다른 모든 일정을 그대로 유지합니다.</value>
+  </data>
+  <data name="RepeatMent2" xml:space="preserve">
+    <value>이 일정 및 향후 모든 일정이 변경됩니다. 미래 일정에 대한 변경사항이 손실됩니다.</value>
+  </data>
+  <data name="RepeatMent3" xml:space="preserve">
+    <value>반복되는 모든 일정을 변경합니다. 다른 일정에 대한 변경사항이 유지됩니다.</value>
+  </data>
+  <data name="ShareList" xml:space="preserve">
+    <value>공유목록</value>
+  </data>
+  <data name="THISPIM" xml:space="preserve">
+    <value>이번일정만</value>
+  </data>
+  <data name="AutoSync" xml:space="preserve">
+    <value>자동연동</value>
+  </data>
+  <data name="GetContent" xml:space="preserve">
+    <value>가져오기</value>
+  </data>
+  <data name="GoogleAccount1" xml:space="preserve">
+    <value>구글 계정 정보를</value>
+  </data>
+  <data name="GoogleAccount2" xml:space="preserve">
+    <value>내정보관리/SNS/구글</value>
+  </data>
+  <data name="GoogleAccount3" xml:space="preserve">
+    <value>에 입력해주세요.</value>
+  </data>
+  <data name="GoogleCalendarSync" xml:space="preserve">
+    <value>구글 캘린더 연동</value>
+  </data>
+  <data name="NowSync" xml:space="preserve">
+    <value>연동기간</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>반복일정 수정</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>이후부터</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>중지</value>
+  </data>
+  <data name="SyncAccount" xml:space="preserve">
+    <value>연동계정</value>
+  </data>
+  <data name="Syncing" xml:space="preserve">
+    <value>연동</value>
+  </data>
+  <data name="UserPim2" xml:space="preserve">
+    <value>유저일정</value>
+  </data>
+  <data name="AllShareView" xml:space="preserve">
+    <value>전체공유일정보기</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>날짜선택</value>
+  </data>
+  <data name="OutSync" xml:space="preserve">
+    <value>구글캘린더연동</value>
+  </data>
+  <data name="EveryMonRepeat" xml:space="preserve">
+    <value>매월반복</value>
+  </data>
+  <data name="EveryWeekRepeat" xml:space="preserve">
+    <value>매주반복</value>
+  </data>
+  <data name="RepeatSettingMent1" xml:space="preserve">
+    <value>회 반복</value>
+  </data>
+  <data name="DateView" xml:space="preserve">
+    <value>일시</value>
+  </data>
+  <data name="RepeatDatePeriod" xml:space="preserve">
+    <value>반복범위</value>
+  </data>
+  <data name="makrname" xml:space="preserve">
+    <value>목표명</value>
+  </data>
+  <data name="MarkManage" xml:space="preserve">
+    <value>목표관리</value>
+  </data>
+  <data name="MarkName" xml:space="preserve">
+    <value>목표명</value>
+  </data>
+  <data name="marknameperiod" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="MarkReg" xml:space="preserve">
+    <value>목표등록</value>
+  </data>
+  <data name="sharesure" xml:space="preserve">
+    <value>공유여부</value>
+  </data>
+  <data name="topmarkname" xml:space="preserve">
+    <value>상위 목표명</value>
+  </data>
+  <data name="topmarknameperiod" xml:space="preserve">
+    <value>상위 목표 기간</value>
+  </data>
+  <data name="YearViewMark" xml:space="preserve">
+    <value>년도 목표보기</value>
+  </data>
+  <data name="Ebem" xml:space="preserve">
+    <value>반영</value>
+  </data>
+  <data name="PimEbem" xml:space="preserve">
+    <value>일정에 반영</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>진척도</value>
+  </data>
+  <data name="TODOREG" xml:space="preserve">
+    <value>할일 등록</value>
+  </data>
+  <data name="UnPimEbem" xml:space="preserve">
+    <value>미반영</value>
+  </data>
+  <data name="TODOVIEW" xml:space="preserve">
+    <value>할일보기</value>
+  </data>
+  <data name="OjbectSelect" xml:space="preserve">
+    <value>대상선택</value>
+  </data>
+  <data name="AddUserSelect" xml:space="preserve">
+    <value>공유자를 추가할 유저를 선택하세요</value>
+  </data>
+  <data name="allDelete" xml:space="preserve">
+    <value>전체 삭제 하시겠습니까?</value>
+  </data>
+  <data name="NoneSelUser" xml:space="preserve">
+    <value>선택된유저가 없습니다.</value>
+  </data>
+  <data name="objectSelect" xml:space="preserve">
+    <value>피공유자를 선택하세요</value>
+  </data>
+  <data name="SharePesonSuccess" xml:space="preserve">
+    <value>공유자 추가 성공</value>
+  </data>
+  <data name="ShareSelect" xml:space="preserve">
+    <value>공유자를 선택하세요</value>
+  </data>
+  <data name="GUN" xml:space="preserve">
+    <value>건</value>
+  </data>
+  <data name="TimeAlert" xml:space="preserve">
+    <value>종료시간이 시작시간을 앞섭니다.</value>
+  </data>
+  <data name="FailSync" xml:space="preserve">
+    <value>연동하고자하는 구글계정이 일치 하지 않거나\r\n연동에 실패했습니다.</value>
+  </data>
+  <data name="GoogleInfo_Input" xml:space="preserve">
+    <value>구글계정을 입력하세요</value>
+  </data>
+  <data name="Inquery_Input" xml:space="preserve">
+    <value>조회기간을 입력하세요</value>
+  </data>
+  <data name="SuccessSync" xml:space="preserve">
+    <value>연동완료</value>
+  </data>
+  <data name="UserSelect" xml:space="preserve">
+    <value>유저를 선택하세요</value>
+  </data>
+  <data name="RepeatAlert1" xml:space="preserve">
+    <value>반복 범위날짜를 입력하세요</value>
+  </data>
+  <data name="RepeatAlert2" xml:space="preserve">
+    <value>반복 횟수가 올바르지 않습니다.</value>
+  </data>
+  <data name="RepeatAlert3" xml:space="preserve">
+    <value>반복주기가 올바르지 않습니다.</value>
+  </data>
+  <data name="RepeatAlert5" xml:space="preserve">
+    <value>요일을 선택해주세요</value>
+  </data>
+  <data name="MonthString" xml:space="preserve">
+    <value>['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']</value>
+  </data>
+  <data name="TheDay" xml:space="preserve">
+    <value>일에</value>
+  </data>
+  <data name="WeekString" xml:space="preserve">
+    <value>['일요일','월요일', '화요일', '수요일', '목요일', '금요일', '토요일']</value>
+  </data>
+  <data name="DayPeriod" xml:space="preserve">
+    <value>일까지</value>
+  </data>
+  <data name="TYPE1" xml:space="preserve">
+    <value>나의</value>
+  </data>
+  <data name="TYPE2" xml:space="preserve">
+    <value>개인</value>
+  </data>
+  <data name="TYPE3" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="TYPE4" xml:space="preserve">
+    <value>공유</value>
+  </data>
+  <data name="TYPE5" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="AddToDo" xml:space="preserve">
+    <value>할일등록</value>
+  </data>
+  <data name="AllAnniversary" xml:space="preserve">
+    <value>전체기념일</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>요일에</value>
+  </data>
+  <data name="EveryDayR" xml:space="preserve">
+    <value>매일마다</value>
+  </data>
+  <data name="EveryMonth" xml:space="preserve">
+    <value>매월</value>
+  </data>
+  <data name="EveryWeek" xml:space="preserve">
+    <value>매주마다</value>
+  </data>
+  <data name="Half" xml:space="preserve">
+    <value>반쪽</value>
+  </data>
+  <data name="ModToDo" xml:space="preserve">
+    <value>할일수정</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>반복</value>
+  </data>
+  <data name="ShareAnniversary" xml:space="preserve">
+    <value>공유기념일</value>
+  </data>
+  <data name="ShareQuarter" xml:space="preserve">
+    <value>공유절기</value>
+  </data>
+  <data name="TimeRepeat" xml:space="preserve">
+    <value>회 반복합니다.</value>
+  </data>
+  <data name="ToRepeat" xml:space="preserve">
+    <value>까지 반복합니다.</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>주마다</value>
+  </data>
+  <data name="XDay" xml:space="preserve">
+    <value>날에</value>
+  </data>
+  <data name="XFri" xml:space="preserve">
+    <value>금요일에</value>
+  </data>
+  <data name="XMon" xml:space="preserve">
+    <value>월요일에</value>
+  </data>
+  <data name="XNormalDay" xml:space="preserve">
+    <value>평일에</value>
+  </data>
+  <data name="XOrder" xml:space="preserve">
+    <value>번째</value>
+  </data>
+  <data name="XSat" xml:space="preserve">
+    <value>토요일에</value>
+  </data>
+  <data name="XSun" xml:space="preserve">
+    <value>일요일에</value>
+  </data>
+  <data name="XThu" xml:space="preserve">
+    <value>목요일에</value>
+  </data>
+  <data name="XTue" xml:space="preserve">
+    <value>화요일에</value>
+  </data>
+  <data name="XWed" xml:space="preserve">
+    <value>수요일에</value>
+  </data>
+  <data name="XWeekend" xml:space="preserve">
+    <value>주말에</value>
+  </data>
+  <data name="WeekToo" xml:space="preserve">
+    <value>주마다</value>
+  </data>
+  <data name="TextEmpty" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>메뉴</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="AddPimPlz" xml:space="preserve">
+    <value>일정을 입력하세요</value>
+  </data>
+  <data name="normalday" xml:space="preserve">
+    <value>매일(평일)</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>처리중입니다. 잠시만 기다려주세요</value>
+  </data>
+  <data name="GoogleAccErr" xml:space="preserve">
+    <value>구글 계정정보가 일치하지 않습니다.</value>
+  </data>
+  <data name="PimSearchEnquiry" xml:space="preserve">
+    <value>일정검색조회</value>
+  </data>
+  <data name="NoMine" xml:space="preserve">
+    <value>자신은 선택할수 없습니다.</value>
+  </data>
+  <data name="WeekSort" xml:space="preserve">
+    <value>일,월,화,수,목,금,토</value>
+  </data>
+  <data name="PimAddTime" xml:space="preserve">
+    <value>일정 반영 시간</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>알람시간을 선택해주세요</value>
+  </data>
+  <data name="EmailAlert" xml:space="preserve">
+    <value>이메일을 입력하세요</value>
+  </data>
+  <data name="HOLIDAYCADALOG" xml:space="preserve">
+    <value>기념일목록</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>시작일자가 종료일자보다 작아야 합니다</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>1이상의 숫자를 입력해주세요</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>댓글추가</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>내용을 입력해 주세요.</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>댓글쓰기</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>에 댓글이 기재되었습니다.</value>
+  </data>
+  <data name="NoUserAuth" xml:space="preserve">
+    <value>해당 사용자는 접근하실 수 없습니다.</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>댓글수정</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>일정분류</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>쪽지</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>님이 댓글을 기재하였습니다.</value>
+  </data>
+  <data name="CategoryHelp" xml:space="preserve">
+    <value>분류 설명</value>
+  </data>
+  <data name="NoRepeatAdd" xml:space="preserve">
+    <value>해당 하는 일정이 없습니다. 다시 입력해 주세요.</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>작성</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>분류명</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>다국명</value>
+  </data>
+  <data name="LayoutColor" xml:space="preserve">
+    <value>테두리 색</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>활성화</value>
+  </data>
+  <data name="MsgCategoryName" xml:space="preserve">
+    <value>분류명을 입력해 주세요.</value>
+  </data>
+  <data name="MsgError" xml:space="preserve">
+    <value>처리시, 오류가 발생되었습니다.</value>
+  </data>
+  <data name="InterfaceCode" xml:space="preserve">
+    <value>외부연동코드</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>비활성화</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>댓글공개</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>해당 글을 원본자와 작성자만 볼 수 있습니다.</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>글등록</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>마이톡</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>공개</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>담벼락글</value>
+  </data>
+  <data name="CommentShare" xml:space="preserve">
+    <value>공개대상관리</value>
+  </data>
+  <data name="GoogleGetCalendar" xml:space="preserve">
+    <value>캘린더 선택</value>
+  </data>
+  <data name="GoogleSignIn" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="GoogleSignOut" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="GoogleUserRejectException" xml:space="preserve">
+    <value>이 사용자는 초대를 거부했습니다</value>
+  </data>
+  <data name="HolidayManageDay" xml:space="preserve">
+    <value>휴일관리</value>
+  </data>
+  <data name="Holiday_HoliDay1" xml:space="preserve">
+    <value>반복일자</value>
+  </data>
+  <data name="Holiday_HoliDay2" xml:space="preserve">
+    <value>휴무일자</value>
+  </data>
+  <data name="Holiday_HolidayBetween" xml:space="preserve">
+    <value>연휴구분</value>
+  </data>
+  <data name="Holiday_HolidayBetween1" xml:space="preserve">
+    <value>당일</value>
+  </data>
+  <data name="Holiday_HolidayBetween2" xml:space="preserve">
+    <value>이전일포함</value>
+  </data>
+  <data name="Holiday_HolidayBetween3" xml:space="preserve">
+    <value>다음일포함</value>
+  </data>
+  <data name="Holiday_HolidayBetween4" xml:space="preserve">
+    <value>이전일다음일포함</value>
+  </data>
+  <data name="Holiday_HolidayBetweenDay" xml:space="preserve">
+    <value>연휴구분일자</value>
+  </data>
+  <data name="Holiday_HoliDayKind" xml:space="preserve">
+    <value>반복구분</value>
+  </data>
+  <data name="Holiday_HoliDayKind1" xml:space="preserve">
+    <value>반복</value>
+  </data>
+  <data name="Holiday_HoliDayKind2" xml:space="preserve">
+    <value>미반복</value>
+  </data>
+  <data name="Holiday_IsHoliday" xml:space="preserve">
+    <value>사용여부</value>
+  </data>
+  <data name="Holiday_IsReplace" xml:space="preserve">
+    <value>대체휴일사용여부</value>
+  </data>
+  <data name="Holiday_Lunar" xml:space="preserve">
+    <value>음력</value>
+  </data>
+  <data name="Holiday_Solar" xml:space="preserve">
+    <value>양력</value>
+  </data>
+  <data name="Holiday_SolarLunar" xml:space="preserve">
+    <value>양음력구분</value>
+  </data>
+  <data name="Holiday_Title" xml:space="preserve">
+    <value>휴일명</value>
+  </data>
+  <data name="HolidayManageDay_Add" xml:space="preserve">
+    <value>휴일 등록</value>
+  </data>
+  <data name="HolidayManageDay_Mod" xml:space="preserve">
+    <value>휴일 수정</value>
+  </data>
+  <data name="HolidayManage_Add" xml:space="preserve">
+    <value>공휴일 등록</value>
+  </data>
+  <data name="HolidayManage_Mod" xml:space="preserve">
+    <value>공휴일 수정</value>
+  </data>
+  <data name="Holiday_Error1" xml:space="preserve">
+    <value>휴일명을 입력하세요.</value>
+  </data>
+  <data name="Holiday_Error2" xml:space="preserve">
+    <value>일자를 입력하세요.</value>
+  </data>
+  <data name="Holiday_Error3" xml:space="preserve">
+    <value>연휴일자를 입력하세요.</value>
+  </data>
+  <data name="Holiday_Error4" xml:space="preserve">
+    <value>중복된 휴일 입니다.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="Holiday_IsHolidayKind1" xml:space="preserve">
+    <value>공휴일</value>
+  </data>
+  <data name="Holiday_IsHolidayKind2" xml:space="preserve">
+    <value>반복휴일</value>
+  </data>
+  <data name="Holiday_IsHolidayKind" xml:space="preserve">
+    <value>공휴일여부</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>다국명</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>연휴</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>대체휴무</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>제목, 첨부파일명</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="BOTTOMAbb" xml:space="preserve">
+    <value>하</value>
+  </data>
+  <data name="MIDDLEAbb" xml:space="preserve">
+    <value>중</value>
+  </data>
+  <data name="TOPAbb" xml:space="preserve">
+    <value>상</value>
+  </data>
+  <data name="MsgRepeat" xml:space="preserve">
+    <value>반복으로 지정된 일정입니다.\n[모든 일정] 에 반영됩니다.</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>메일형식이 맞지 않습니다.</value>
+  </data>
+  <data name="SplitMail" xml:space="preserve">
+    <value>구분자( ; ) / 일정공유대상자와 입력 메일주소로 제목과 시간이 발송</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>기본알람설정</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>구분자( ; ) / 입력 메일주소로 제목과 시간이 발송</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>관리</value>
+  </data>
+</root>

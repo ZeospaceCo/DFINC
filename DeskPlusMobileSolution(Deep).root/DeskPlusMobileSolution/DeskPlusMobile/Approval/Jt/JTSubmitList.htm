@@ -1,0 +1,19 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:SubmitList.Add('{ $T.List.DocumentID }')">
+        <a href="#" class="Lready">
+         <div class="grdot">●</div>
+         <div class="conBox"><span class="LNoready">{ $T.List.Subject }</span><br />
+         <span class="sch_user">{ $T.List.DocNumber }<br />
+         { $T.List.WriteTime} ～ {$T.List.TotalDate}</span>      
+        </a>
+    </div>
+</li>
+{#else} 
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>  
+{#/for}
+

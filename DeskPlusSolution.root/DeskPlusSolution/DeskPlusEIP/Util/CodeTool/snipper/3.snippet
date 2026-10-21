@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>zmod</Title>
+			<Shortcut>zmod</Shortcut>
+			<Description>수정하기</Description>
+			<Author>friendmy</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>entity</ID>
+					<ToolTip>프로젝트명</ToolTip>
+					<Default></Default>
+				</Literal>
+        <Literal>
+          <ID>spName</ID>
+          <ToolTip>프로시져명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name1</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name2</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name3</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name4</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name5</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>be</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>MethodName</ID>
+          <ToolTip>프로시져명</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+			<Code Language="csharp">
+    <![CDATA[
+        public bool Mod$MethodName$($be$ _be)
+        {    
+             try
+            {
+                using (SqlConnection cn = new SqlConnection(this.ConnSolution(_be.CompanyID)))
+                {
+                    SqlCommand cmd = new SqlCommand("$spName$", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@$Name1$", SqlDbType.Int).Value = _be.$Name1$;
+                    cmd.Parameters.Add("@$Name2$", SqlDbType.Int).Value = _be.$Name2$;
+                    cmd.Parameters.Add("@$Name3$", SqlDbType.Int).Value = _be.$Name3$;
+                    cmd.Parameters.Add("@$Name4$", SqlDbType.Int).Value = _be.$Name4$;
+                    cmd.Parameters.Add("@$Name5$", SqlDbType.Int).Value = _be.$Name5$;
+
+                    cn.Open();
+                    ExecuteNonQuery(cmd);
+                    return true;
+                }
+            }
+            catch (SqlException ex)
+            {
+                string errMsg = Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.SqlExceptionLog(ex);
+                Base.ApplicationFrameworks.Exceptions.AppException.WriteException(errMsg);
+                return false;
+            }
+          }
+  ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

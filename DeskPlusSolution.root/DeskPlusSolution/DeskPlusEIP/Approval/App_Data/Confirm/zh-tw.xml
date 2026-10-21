@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+    <OPINION>
+      <SECTION>
+        <OPINION>결재의견이 작성되었습니다</OPINION>
+      </SECTION>
+      <SUBJ>
+        <OPINION>[결재의견]</OPINION>
+      </SUBJ>
+      <CONTENT>
+        &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+        &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+        &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+        &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+        &lt;li&gt;상신자 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견자 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견 : $OPINION$&lt;/li&gt;
+        &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      </CONTENT>
+    </OPINION>
+  
+    <MAIL>
+        <SECTION>
+            <OPINION>付款意见书面</OPINION>
+            <APPROVE>批准文件到</APPROVE>
+            <COMPLETE>完成批准文件;</COMPLETE>
+            <CARBON>参考文件到达</CARBON>
+            <RECEIVED>接收到的文件到达</RECEIVED>
+			<RECEIVEDMOD>接收到的文件到达(人事變動)</RECEIVEDMOD>
+            <APPROVED>批准文件待</APPROVED>
+            <APPROVEDC>待刊发的批准文件;</APPROVEDC>
+            <APPROVEH>待审批文件上申</APPROVEH>
+            <APPROVEHC>批准文件上申推迟</APPROVEHC>
+            <REJECT>批准文件同伴</REJECT>
+            <CIRCULATION>发送通函文件</CIRCULATION>
+            <ENFORCE>备忘录收到</ENFORCE>
+            <MEMO>写笔记</MEMO>
+            <PROXY>对峙文件到达</PROXY>
+            <CANCEL>上申取消</CANCEL>
+            <FORWARD>转发文件航运</FORWARD>
+            <PASSED>发送传输文件</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>該文件已經到來</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[审批意见]</OPINION>
+            <APPROVE>[审批]</APPROVE>
+            <COMPLETE>[完成]</COMPLETE>
+            <CARBON>[参照]</CARBON>
+            <RECEIVED>[收信]</RECEIVED>
+			<RECEIVEDMOD>[收信-人事變動]</RECEIVEDMOD>
+            <APPROVED>[保留]</APPROVED>
+            <APPROVEDC>[保留释放]</APPROVEDC>
+            <APPROVEH>[上申释放]</APPROVEH>
+            <APPROVEHC>[上申持有释放]</APPROVEHC>
+            <REJECT>[伴侣]</REJECT>
+            <CIRCULATION>[循环]</CIRCULATION>
+            <ENFORCE>[备忘录]</ENFORCE>
+            <MEMO>[备忘录]</MEMO>
+            <PROXY>[對決]</PROXY>
+            <CANCEL>[上申取消]</CANCEL>
+            <FORWARD>[传输]</FORWARD>
+            <PASSED>[贬谪]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[流傳]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;主题 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;表格名称 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;上申部门 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人意见 : $OPINION$&lt;/li&gt;
+            &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;选中时，文件移动。.&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MAIL>
+
+    <MESSENGER>
+        <SECTION>
+            <OPINION>付款意见书面</OPINION>
+            <APPROVE>批准文件到</APPROVE>
+            <COMPLETE>完成批准文件;</COMPLETE>
+            <CARBON>参考文件到达</CARBON>
+            <RECEIVED>接收到的文件到达</RECEIVED>
+			<RECEIVEDMOD>接收到的文件到达(人事變動)</RECEIVEDMOD>
+            <APPROVED>批准文件待</APPROVED>
+            <APPROVEDC>待刊发的批准文件;</APPROVEDC>
+            <APPROVEH>待审批文件上申</APPROVEH>
+            <APPROVEHC>批准文件上申推迟</APPROVEHC>
+            <REJECT>批准文件同伴</REJECT>
+            <CIRCULATION>发送通函文件</CIRCULATION>
+            <ENFORCE>备忘录收到</ENFORCE>
+            <MEMO>写笔记</MEMO>
+            <PROXY>对峙文件到达</PROXY>
+            <CANCEL>上申取消</CANCEL>
+            <FORWARD>转发文件航运</FORWARD>
+            <PASSED>发送传输文件</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>該文件已經到來</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[付款方式评论]</OPINION>
+            <APPROVE>[付款]</APPROVE>
+            <COMPLETE>[完成]</COMPLETE>
+            <CARBON>[看]</CARBON>
+            <RECEIVED>[前台]</RECEIVED>
+			<RECEIVEDMOD>[收信-人事變動]</RECEIVEDMOD>
+            <APPROVED>[持有]</APPROVED>
+            <APPROVEDC>[持有释放]</APPROVEDC>
+            <APPROVEH>[上申持有]</APPROVEH>
+            <APPROVEHC>[上申持有释放]</APPROVEHC>
+            <REJECT>[伴侣]</REJECT>
+            <CIRCULATION>[循环]</CIRCULATION>
+            <ENFORCE>[备忘录]</ENFORCE>
+            <MEMO>[备忘录]</MEMO>
+            <PROXY>[摊牌]</PROXY>
+            <CANCEL>[上申取消]</CANCEL>
+            <FORWARD>[传输]</FORWARD>
+            <PASSED>[贬谪]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[流傳]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;主题 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;表格名称 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;上申部门 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人意见 : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MESSENGER>
+
+    <SMS>
+        <SECTION>
+            <OPINION>付款意见书面</OPINION>
+            <APPROVE>批准文件到</APPROVE>
+            <COMPLETE>完成批准文件;</COMPLETE>
+            <CARBON>参考文件到达</CARBON>
+            <RECEIVED>接收到的文件到达</RECEIVED>
+			<RECEIVEDMOD>接收到的文件到达(人事變動)</RECEIVEDMOD>
+            <APPROVED>批准文件待</APPROVED>
+            <APPROVEDC>待刊发的批准文件;</APPROVEDC>
+            <APPROVEH>待审批文件上申</APPROVEH>
+            <APPROVEHC>批准文件上申推迟</APPROVEHC>
+            <REJECT>批准文件同伴</REJECT>
+            <CIRCULATION>发送通函文件</CIRCULATION>
+            <ENFORCE>备忘录收到</ENFORCE>
+            <MEMO>写笔记</MEMO>
+            <PROXY>对峙文件到达</PROXY>
+            <CANCEL>上申取消</CANCEL>
+            <FORWARD>转发文件航运</FORWARD>
+            <PASSED>发送传输文件</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>該文件已經到來</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[付款方式评论]</OPINION>
+            <APPROVE>[付款]</APPROVE>
+            <COMPLETE>[完成]</COMPLETE>
+            <CARBON>[看]</CARBON>
+            <RECEIVED>[前台]</RECEIVED>
+			<RECEIVEDMOD>[收信-人事變動]</RECEIVEDMOD>
+            <APPROVED>[持有]</APPROVED>
+            <APPROVEDC>[持有释放]</APPROVEDC>
+            <APPROVEH>[上申持有]</APPROVEH>
+            <APPROVEHC>[上申持有释放]</APPROVEHC>
+            <REJECT>[伴侣]</REJECT>
+            <CIRCULATION>[循环]</CIRCULATION>
+            <ENFORCE>[备忘录]</ENFORCE>
+            <MEMO>[备忘录]</MEMO>
+            <PROXY>[摊牌]</PROXY>
+            <CANCEL>[上申取消]</CANCEL>
+            <FORWARD>[传输]</FORWARD>
+            <PASSED>[贬谪]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[流傳]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            [电子支付] 通知
+            &lt;br&gt;&lt;br&gt;
+            - 通知信息: $ACTION$
+            &lt;br&gt;
+            - 文件标题:$SUBJECT$
+            &lt;br&gt;
+            - 文件传出人:$USERTITLENAME$ $USERUSERNAME$
+            &lt;br&gt;&lt;br&gt;
+            - 顺便:$OPINION$
+        </CONTENT>
+    </SMS>
+
+    <MOBILE>
+        <SECTION>
+            <OPINION>付款意见书面</OPINION>
+            <APPROVE>批准文件到</APPROVE>
+            <COMPLETE>完成批准文件;</COMPLETE>
+            <CARBON>参考文件到达</CARBON>
+            <RECEIVED>接收到的文件到达</RECEIVED>
+            <RECEIVEDMOD>接收到的文件到达(人事變動)</RECEIVEDMOD>
+            <APPROVED>批准文件待</APPROVED>
+            <APPROVEDC>待刊发的批准文件;</APPROVEDC>
+            <APPROVEH>待审批文件上申</APPROVEH>
+            <APPROVEHC>批准文件上申推迟</APPROVEHC>
+            <REJECT>批准文件同伴</REJECT>
+            <CIRCULATION>发送通函文件</CIRCULATION>
+            <ENFORCE>备忘录收到</ENFORCE>
+            <MEMO>写笔记</MEMO>
+            <PROXY>对峙文件到达</PROXY>
+            <CANCEL>上申取消</CANCEL>
+            <FORWARD>转发文件航运</FORWARD>
+            <PASSED>发送传输文件</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>該文件已經到來</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[付款方式评论]</OPINION>
+            <APPROVE>[付款]</APPROVE>
+            <COMPLETE>[完成]</COMPLETE>
+            <CARBON>[看]</CARBON>
+            <RECEIVED>[前台]</RECEIVED>
+            <RECEIVEDMOD>[收信-人事變動]</RECEIVEDMOD>
+            <APPROVED>[持有]</APPROVED>
+            <APPROVEDC>[持有释放]</APPROVEDC>
+            <APPROVEH>[上申持有]</APPROVEH>
+            <APPROVEHC>[上申持有释放]</APPROVEHC>
+            <REJECT>[伴侣]</REJECT>
+            <CIRCULATION>[循环]</CIRCULATION>
+            <ENFORCE>[备忘录]</ENFORCE>
+            <MEMO>[备忘录]</MEMO>
+            <PROXY>[摊牌]</PROXY>
+            <CANCEL>[上申取消]</CANCEL>
+            <FORWARD>[传输]</FORWARD>
+            <PASSED>[贬谪]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[流傳]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;主题 : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;表格名称 : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;上申部门 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;付款人意见 : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MOBILE>
+</ALARM>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="字体颜色"/>
+	<Item ID="#666666" Value="灰色"/>
+	<Item ID="#f29e00" Value="黄色"/>
+	<Item ID="#ff6737" Value="橙色"/>
+	<Item ID="#e23234" Value="红色"/>
+	<Item ID="#b66428" Value="棕色"/>
+	<Item ID="#f0418c" Value="粉红"/>
+	<Item ID="#7a3dc2" Value="紫色"/>
+	<Item ID="#b13db0" Value="紫红"/>
+	<Item ID="#58b837" Value="蓝色"/>
+	<Item ID="#12a1a7" Value="青绿"/>
+	<Item ID="#1867cf" Value="绿色"/>
+</XmlData>
+

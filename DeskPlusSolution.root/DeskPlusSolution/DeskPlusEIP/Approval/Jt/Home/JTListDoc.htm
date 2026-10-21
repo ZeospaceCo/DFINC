@@ -1,0 +1,48 @@
+﻿<table class="table_typeA" border="1" cellspacing="0">
+<caption>문서검색</caption>
+<colgroup>
+    <col width="250px" />
+    <col />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+<tr>
+    <th scope="col"><span id="spDocTh01"></span></th>
+    <th scope="col"><span id="spDocTh02"></span></th>
+    <th scope="col"><span id="spDocTh03"></span></th>
+    <th scope="col"><span id="spDocTh04"></span></th>
+    <th scope="col"><span id="spDocTh05"></span></th>
+    <th scope="col"><span id="spDocTh06"></span></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="suj">{ $T.List.DocNumber }</td>
+    <td class="suj">
+        {#if $T.List.IsGuard == '1'}
+            <img class="IconSecurity" />                
+        {#elseif $T.List.IsGuard == '2'}
+            <img class="IconEmergency" />                
+        {#/if}
+        <a href="#" onclick="Search.View('{ $T.List.CompanyID }','{ $T.List.DocumentID }','{ $T.List.GroupID }');">{ $T.List.Subject }</a>
+    </td>
+    <td class="center">
+        {#if $T.List.Filecount > 0}
+            <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.List.ChildDocID }'></i>
+        {#/if}
+    </td>
+    <td class="center"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a></td>
+    <td class="center">{ $T.List.WriteTimeStr }</td>
+    <td class="center">{ $T.List.CompleteDateStr }</td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="6"><span class="NoListData"></span></td>
+</tr>
+{#/for}
+</tbody>
+</table>

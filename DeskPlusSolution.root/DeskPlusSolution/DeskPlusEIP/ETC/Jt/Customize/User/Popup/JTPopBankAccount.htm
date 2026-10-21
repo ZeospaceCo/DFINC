@@ -1,0 +1,32 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="90px" />
+    <col width="90px" />
+    <col width="145px" />
+    <col  />
+</colgroup>
+    <tr>
+        <th id="j_Name">Vendor Code</th>
+        <th id="j_Content">Code</th>
+        <th id="j_RegDate">Name</th>
+        <th>Bank Account CD</th>
+    </tr>
+    {#foreach $T as BankAccountList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopBankAccount.Binding( '{ $T.BankAccountList.Code}',  '{ $T.BankAccountList.BankAccountCode}','{ $T.BankAccountList.BankClearingID}')")>{ $T.BankAccountList.VendorCode }</a></td>
+        <td>
+            <a href="#" onclick="javascript:PopBankAccount.Binding( '{ $T.BankAccountList.Code}', '{ $T.BankAccountList.BankAccountCode}','{ $T.BankAccountList.BankClearingID}')")>{ $T.BankAccountList.Code }</a>
+        </td>
+        <td>
+            <a href="#" onclick="javascript:PopBankAccount.Binding( '{ $T.BankAccountList.Code}', '{ $T.BankAccountList.BankAccountCode}','{ $T.BankAccountList.BankClearingID}')")>{ $T.BankAccountList.BankAccountName }</a>
+        </td>
+        <td>
+            <a href="#" onclick="javascript:PopBankAccount.Binding( '{ $T.BankAccountList.Code}', '{ $T.BankAccountList.BankAccountCode}','{ $T.BankAccountList.BankClearingID}')")>{ $T.BankAccountList.BankAccountCode }</a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

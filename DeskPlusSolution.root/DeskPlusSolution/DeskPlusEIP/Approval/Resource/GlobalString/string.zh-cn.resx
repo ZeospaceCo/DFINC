@@ -1,0 +1,3162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Active2" xml:space="preserve">
+    <value>活跃</value>
+  </data>
+  <data name="ActiveNInactive" xml:space="preserve">
+    <value>激活/停用</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="AddBaseDoc" xml:space="preserve">
+    <value>添加依据文件</value>
+  </data>
+  <data name="AddBaseDoc2" xml:space="preserve">
+    <value>要添加的依据文件</value>
+  </data>
+  <data name="AddDate" xml:space="preserve">
+    <value>登录日</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>添加文件夹</value>
+  </data>
+  <data name="AddOpinion" xml:space="preserve">
+    <value>添加意见(*)</value>
+  </data>
+  <data name="AddProxy" xml:space="preserve">
+    <value>添加代审人</value>
+  </data>
+  <data name="AddSign" xml:space="preserve">
+    <value>请注册印章。</value>
+  </data>
+  <data name="AddStampFile" xml:space="preserve">
+    <value>添加印章文件</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>添加用户</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="AfterCall" xml:space="preserve">
+    <value>连动后呼叫</value>
+  </data>
+  <data name="AfterwardDate" xml:space="preserve">
+    <value>后审日</value>
+  </data>
+  <data name="AfterwardUserName" xml:space="preserve">
+    <value>后审人</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>* 注意）</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="AppDoc" xml:space="preserve">
+    <value>审批文件</value>
+  </data>
+  <data name="AppInfo" xml:space="preserve">
+    <value>审批信息</value>
+  </data>
+  <data name="AppLineOrder" xml:space="preserve">
+    <value>审批线顺序</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请输入提交日期</value>
+  </data>
+  <data name="AppOrder" xml:space="preserve">
+    <value>审批顺序</value>
+  </data>
+  <data name="AppProcess" xml:space="preserve">
+    <value>审批进行现况</value>
+  </data>
+  <data name="ApprovalAdmin" xml:space="preserve">
+    <value>电子审批管理</value>
+  </data>
+  <data name="ApprovalFolder" xml:space="preserve">
+    <value>审批结束文件箱</value>
+  </data>
+  <data name="ApprovalList" xml:space="preserve">
+    <value>审批人列表</value>
+  </data>
+  <data name="ApprovalManage" xml:space="preserve">
+    <value>审批人管理</value>
+  </data>
+  <data name="ApprovalTag" xml:space="preserve">
+    <value>审批标签</value>
+  </data>
+  <data name="ApprovalTypeA" xml:space="preserve">
+    <value>前决</value>
+  </data>
+  <data name="ApprovalTypeL" xml:space="preserve">
+    <value>后审</value>
+  </data>
+  <data name="ApprovalTypeP" xml:space="preserve">
+    <value>代决</value>
+  </data>
+  <data name="ApprovalTypeR" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="ApprovalTypeS" xml:space="preserve">
+    <value>承认</value>
+  </data>
+  <data name="ApprovalUserInfo" xml:space="preserve">
+    <value>审批人信息</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>承认</value>
+  </data>
+  <data name="ApproveAll" xml:space="preserve">
+    <value>前决</value>
+  </data>
+  <data name="ApproveBulk" xml:space="preserve">
+    <value>批量审批</value>
+  </data>
+  <data name="ApproveCancel" xml:space="preserve">
+    <value>取消审批</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>审批日</value>
+  </data>
+  <data name="ApproveDateMD" xml:space="preserve">
+    <value>审批日（月，日）</value>
+  </data>
+  <data name="ApproveFolder" xml:space="preserve">
+    <value>审批文件箱</value>
+  </data>
+  <data name="ApproveLine" xml:space="preserve">
+    <value>审批线顺序</value>
+  </data>
+  <data name="ApproveS" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="ApproveStatus" xml:space="preserve">
+    <value>审批情况查看</value>
+  </data>
+  <data name="ApproveTime" xml:space="preserve">
+    <value>审批时间</value>
+  </data>
+  <data name="ArbitraryFolder" xml:space="preserve">
+    <value>前决文件箱</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="AttachOpinion" xml:space="preserve">
+    <value>添加意见</value>
+  </data>
+  <data name="AuthText" xml:space="preserve">
+    <value>* 管理样式文件夹。自己公司情况下，可以指定权限情报。</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>依据文件</value>
+  </data>
+  <data name="BaseDocAdd" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="BaseDocCnt" xml:space="preserve">
+    <value>依据文件数量</value>
+  </data>
+  <data name="BaseDocList" xml:space="preserve">
+    <value>依据文件列表</value>
+  </data>
+  <data name="BaseLang" xml:space="preserve">
+    <value>基本名</value>
+  </data>
+  <data name="BasicDocInfo" xml:space="preserve">
+    <value>文件基本情报</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>基本情报</value>
+  </data>
+  <data name="BasicListCnt" xml:space="preserve">
+    <value>基本列表数</value>
+  </data>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Btn_Check" xml:space="preserve">
+    <value>重复确认</value>
+  </data>
+  <data name="Btn_Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Btn_FolderSel" xml:space="preserve">
+    <value>选择文件夹</value>
+  </data>
+  <data name="Btn_Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Btn_Seq" xml:space="preserve">
+    <value>下位顺序</value>
+  </data>
+  <data name="Btn_Set" xml:space="preserve">
+    <value>权限指定</value>
+  </data>
+  <data name="CallName" xml:space="preserve">
+    <value>直接连动呼叫名</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>取消提交</value>
+  </data>
+  <data name="CancelDelayApp" xml:space="preserve">
+    <value>解除提交保留</value>
+  </data>
+  <data name="CanNotUseTogether" xml:space="preserve">
+    <value>* 固定审批线不可同时使用</value>
+  </data>
+  <data name="CanUse" xml:space="preserve">
+    <value>可以使用。</value>
+  </data>
+  <data name="Carboncopy" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="CarbonFolder" xml:space="preserve">
+    <value>参考文件箱</value>
+  </data>
+  <data name="CarbonInfo" xml:space="preserve">
+    <value>参考人信息</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>审批顺序变更</value>
+  </data>
+  <data name="ChangeOrder2" xml:space="preserve">
+    <value>改变审批顺序</value>
+  </data>
+  <data name="ChangeOrder3" xml:space="preserve">
+    <value>顺序变更</value>
+  </data>
+  <data name="ChangeOrder4" xml:space="preserve">
+    <value>更改顺序。</value>
+  </data>
+  <data name="ChangeRcver" xml:space="preserve">
+    <value>担当者变更</value>
+  </data>
+  <data name="CheckDeleteFavoritePerson" xml:space="preserve">
+    <value>请选择要删除的经常指定审批人。</value>
+  </data>
+  <data name="CheckDeleteProxyPerson" xml:space="preserve">
+    <value>请选择要删除的代审人。</value>
+  </data>
+  <data name="CheckSize" xml:space="preserve">
+    <value>容量限制</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国语</value>
+  </data>
+  <data name="Chinese1" xml:space="preserve">
+    <value>中国语</value>
+  </data>
+  <data name="Chinese2" xml:space="preserve">
+    <value>台湾语</value>
+  </data>
+  <data name="Circulation" xml:space="preserve">
+    <value>传阅</value>
+  </data>
+  <data name="CirDate" xml:space="preserve">
+    <value>传阅日</value>
+  </data>
+  <data name="CirList" xml:space="preserve">
+    <value>传阅人名单</value>
+  </data>
+  <data name="CirOpinion" xml:space="preserve">
+    <value>传阅意见</value>
+  </data>
+  <data name="CirSender" xml:space="preserve">
+    <value>传阅人</value>
+  </data>
+  <data name="CirState" xml:space="preserve">
+    <value>传阅人现况</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>解除指定</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ComeBack" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司名</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>完成日</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmAppInfo" xml:space="preserve">
+    <value>审批信息确认</value>
+  </data>
+  <data name="ConfirmDeleteFavoritePerson" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="ConfirmDeleteProxyPerson" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="ConfirmDeptManyName" xml:space="preserve">
+    <value>确认人部门名</value>
+  </data>
+  <data name="ConfirmNumber" xml:space="preserve">
+    <value>确认号码</value>
+  </data>
+  <data name="ConfirmRcv" xml:space="preserve">
+    <value>收信确认</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>指定为公文内容的部分请将ID值指定为&lt;b&gt;CONTENT&lt;/ b&gt;</value>
+  </data>
+  <data name="ContentTEXT" xml:space="preserve">
+    <value>正文搜索</value>
+  </data>
+  <data name="Cphone" xml:space="preserve">
+    <value>公司电话号码</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>习惯</value>
+  </data>
+  <data name="DateOfWrite" xml:space="preserve">
+    <value>编写日期</value>
+  </data>
+  <data name="DefaultMenu" xml:space="preserve">
+    <value>设置为初始菜单</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelAlert" xml:space="preserve">
+    <value>删除时，实际文件将被删除。</value>
+  </data>
+  <data name="DelAlert2" xml:space="preserve">
+    <value>删除时，在实际列表里依据文件将被删除。</value>
+  </data>
+  <data name="DelAll" xml:space="preserve">
+    <value>全部删除</value>
+  </data>
+  <data name="DelayApp" xml:space="preserve">
+    <value>提交保留</value>
+  </data>
+  <data name="DelayCancel" xml:space="preserve">
+    <value>取消保留</value>
+  </data>
+  <data name="DelCompletely" xml:space="preserve">
+    <value>彻底删除</value>
+  </data>
+  <data name="DelItem" xml:space="preserve">
+    <value>删除与否</value>
+  </data>
+  <data name="DelProxy" xml:space="preserve">
+    <value>删除代审人</value>
+  </data>
+  <data name="DelUser" xml:space="preserve">
+    <value>删除用户</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="DeptFolder" xml:space="preserve">
+    <value>部门文件夹</value>
+  </data>
+  <data name="DeptFolderManage" xml:space="preserve">
+    <value>部门文件夹管理</value>
+  </data>
+  <data name="DeptID" xml:space="preserve">
+    <value>内部编码</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>部门信息</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="DeptSet" xml:space="preserve">
+    <value>部门指定</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="DiscardDoc" xml:space="preserve">
+    <value>文档废弃</value>
+  </data>
+  <data name="DocAdd" xml:space="preserve">
+    <value>文档提交</value>
+  </data>
+  <data name="DocCnt" xml:space="preserve">
+    <value>文档数量</value>
+  </data>
+  <data name="DocComplete" xml:space="preserve">
+    <value>已完成、文档</value>
+  </data>
+  <data name="DocConfirm" xml:space="preserve">
+    <value>文档确认</value>
+  </data>
+  <data name="DocContents" xml:space="preserve">
+    <value>文档内容</value>
+  </data>
+  <data name="DocEditAdd" xml:space="preserve">
+    <value>修改后再提交</value>
+  </data>
+  <data name="DocFolder" xml:space="preserve">
+    <value>文件箱</value>
+  </data>
+  <data name="DocInfo" xml:space="preserve">
+    <value>文档信息</value>
+  </data>
+  <data name="DocName" xml:space="preserve">
+    <value>文档名称</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>文档编号</value>
+  </data>
+  <data name="DocProcess" xml:space="preserve">
+    <value>进行中的文档</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>查看文档</value>
+  </data>
+  <data name="DraftSubTitle" xml:space="preserve">
+    <value>* 临时保存创建的&lt;strong&gt;文件内容/依据文件/附件&lt;/strong&gt;</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>职责名</value>
+  </data>
+  <data name="DutyName2" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="EA" xml:space="preserve">
+    <value>个</value>
+  </data>
+  <data name="EditDoc" xml:space="preserve">
+    <value>正文/审批线 修改</value>
+  </data>
+  <data name="EditItem" xml:space="preserve">
+    <value>编辑项目</value>
+  </data>
+  <data name="EditNReport" xml:space="preserve">
+    <value>修改后再提交</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>编辑器</value>
+  </data>
+  <data name="EditUpFolder" xml:space="preserve">
+    <value>更改上级文件夹</value>
+  </data>
+  <data name="EDM" xml:space="preserve">
+    <value>EDM</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>紧急</value>
+  </data>
+  <data name="EnforceAdd" xml:space="preserve">
+    <value>公文申请</value>
+  </data>
+  <data name="EnforceAlarmContentA" xml:space="preserve">
+    <value>公文已被申请。请在公文申请列表里确认。</value>
+  </data>
+  <data name="EnforceAlarmContentB" xml:space="preserve">
+    <value>申请的公文已被退回。请在公文申请列表里确认。</value>
+  </data>
+  <data name="EnforceAlarmContentC" xml:space="preserve">
+    <value>申请的公文已被批准。请在公文发送列表里确认。</value>
+  </data>
+  <data name="EnforceAlarmSubjectA" xml:space="preserve">
+    <value>【公文申请】公文已经申请。</value>
+  </data>
+  <data name="EnforceAlarmSubjectB" xml:space="preserve">
+    <value>【公文退回】公文已被退回。</value>
+  </data>
+  <data name="EnforceAlarmSubjectC" xml:space="preserve">
+    <value>【公文批准】公文已被批准。</value>
+  </data>
+  <data name="EnforceCompleteNumber" xml:space="preserve">
+    <value>批准编号</value>
+  </data>
+  <data name="EnforceConfirm" xml:space="preserve">
+    <value>管理员批准</value>
+  </data>
+  <data name="EnforceConfirmDate" xml:space="preserve">
+    <value>确认日</value>
+  </data>
+  <data name="EnforceConfirmInfo" xml:space="preserve">
+    <value>确认人信息</value>
+  </data>
+  <data name="EnforceDate" xml:space="preserve">
+    <value>实施日期</value>
+  </data>
+  <data name="EnforceDel" xml:space="preserve">
+    <value>取消申请</value>
+  </data>
+  <data name="EnforceDoc" xml:space="preserve">
+    <value>公文</value>
+  </data>
+  <data name="EnforceDocType" xml:space="preserve">
+    <value>文档形式</value>
+  </data>
+  <data name="EnforceDocTypeItem0" xml:space="preserve">
+    <value>在线文档          </value>
+  </data>
+  <data name="EnforceDocTypeItem1" xml:space="preserve">
+    <value>离线文件         </value>
+  </data>
+  <data name="EnforceEdit" xml:space="preserve">
+    <value>申请内容修改</value>
+  </data>
+  <data name="EnforceExpEndTitle" xml:space="preserve">
+    <value>公文变换时，将显示在下端的内容。</value>
+  </data>
+  <data name="EnforceExpFirstTitle" xml:space="preserve">
+    <value>公文变换时，将显示在上端的内容。</value>
+  </data>
+  <data name="EnforceExpMidTitle" xml:space="preserve">
+    <value>公文变换时，将显示在下端的内容。</value>
+  </data>
+  <data name="EnforceFolder" xml:space="preserve">
+    <value>公文管理</value>
+  </data>
+  <data name="EnforceFormPath" xml:space="preserve">
+    <value>公文形式</value>
+  </data>
+  <data name="EnforceHistory" xml:space="preserve">
+    <value>公文发送内容</value>
+  </data>
+  <data name="EnforceHistoryComment" xml:space="preserve">
+    <value>是公文发送的内容</value>
+  </data>
+  <data name="EnforceIsAdmin" xml:space="preserve">
+    <value>指定担当与否</value>
+  </data>
+  <data name="EnforceIsSend0" xml:space="preserve">
+    <value>未发送</value>
+  </data>
+  <data name="EnforceIsSend1" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="EnforceIsSendInfo" xml:space="preserve">
+    <value>发送与否</value>
+  </data>
+  <data name="EnforceIsStamp" xml:space="preserve">
+    <value>职印登录与否</value>
+  </data>
+  <data name="EnforceMail" xml:space="preserve">
+    <value>发送邮件                              </value>
+  </data>
+  <data name="EnforceMsg00" xml:space="preserve">
+    <value>请选择分支机构。</value>
+  </data>
+  <data name="EnforceMsg01" xml:space="preserve">
+    <value>已经注册的分公司。</value>
+  </data>
+  <data name="EnforceMsg02" xml:space="preserve">
+    <value>按分公司，只能输入一个情报。</value>
+  </data>
+  <data name="EnforceMsg03" xml:space="preserve">
+    <value>职印管理</value>
+  </data>
+  <data name="EnforceMsg04" xml:space="preserve">
+    <value>请输入分公司情报。</value>
+  </data>
+  <data name="EnforceMsg05" xml:space="preserve">
+    <value>请输入表现名</value>
+  </data>
+  <data name="EnforceMsg06" xml:space="preserve">
+    <value>请输入地址</value>
+  </data>
+  <data name="EnforceMsg07" xml:space="preserve">
+    <value>请输入电话号码</value>
+  </data>
+  <data name="EnforceMsg08" xml:space="preserve">
+    <value>请输入传真号码</value>
+  </data>
+  <data name="EnforceMsgSendMail" xml:space="preserve">
+    <value>要发送的邮件吗？</value>
+  </data>
+  <data name="ForwardUser" xml:space="preserve">
+    <value>用户转发</value>
+  </data>
+  <data name="EnforcePreviewMsg1" xml:space="preserve">
+    <value>可按申请的公文形式查看。</value>
+  </data>
+  <data name="EnforcePreviewStamp" xml:space="preserve">
+    <value>职印预览</value>
+  </data>
+  <data name="EnforcePrint" xml:space="preserve">
+    <value>打印（没有职印）</value>
+  </data>
+  <data name="EnforcePrintStamp" xml:space="preserve">
+    <value>打印（职印）</value>
+  </data>
+  <data name="EnforcePurpose" xml:space="preserve">
+    <value>使用目的        </value>
+  </data>
+  <data name="EnforceQuantity" xml:space="preserve">
+    <value>数量             </value>
+  </data>
+  <data name="EnforceReAdd" xml:space="preserve">
+    <value>修改后再申请      </value>
+  </data>
+  <data name="EnforceReqInfo" xml:space="preserve">
+    <value>申请人信息</value>
+  </data>
+  <data name="EnforceReqNumber" xml:space="preserve">
+    <value>接收编号</value>
+  </data>
+  <data name="EnforceSend" xml:space="preserve">
+    <value>实施文发送</value>
+  </data>
+  <data name="EnforceSendDate" xml:space="preserve">
+    <value>发送日</value>
+  </data>
+  <data name="EnforceSendMsg1" xml:space="preserve">
+    <value>转化为申请的公文形式处理</value>
+  </data>
+  <data name="EnforceSendMsgApprove" xml:space="preserve">
+    <value>确定要批准吗？</value>
+  </data>
+  <data name="EnforceSendMsgReject" xml:space="preserve">
+    <value>确定要退回吗？</value>
+  </data>
+  <data name="EnforceSendType" xml:space="preserve">
+    <value>发送形式         </value>
+  </data>
+  <data name="EnforceSendTypeItem0" xml:space="preserve">
+    <value>邮件发送</value>
+  </data>
+  <data name="EnforceSendTypeItem1" xml:space="preserve">
+    <value>注册             </value>
+  </data>
+  <data name="EnforceSendTypeItem2" xml:space="preserve">
+    <value>传真              </value>
+  </data>
+  <data name="EnforceSendUser" xml:space="preserve">
+    <value>发送人</value>
+  </data>
+  <data name="EnforceStampAdd" xml:space="preserve">
+    <value>印章登记</value>
+  </data>
+  <data name="EnforceStampType" xml:space="preserve">
+    <value>职印形式</value>
+  </data>
+  <data name="EnforceStampTypeItem0" xml:space="preserve">
+    <value>在线职印</value>
+  </data>
+  <data name="EnforceStampTypeItem1" xml:space="preserve">
+    <value>离线职印</value>
+  </data>
+  <data name="EnforceStateEtc" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="EnforceStateInfo" xml:space="preserve">
+    <value>状态信息    </value>
+  </data>
+  <data name="EnforceStateR" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="EnforceStateS" xml:space="preserve">
+    <value>完成批准</value>
+  </data>
+  <data name="EnforceStateW" xml:space="preserve">
+    <value>等待批准</value>
+  </data>
+  <data name="EnforceSubTit01" xml:space="preserve">
+    <value>分公司情报</value>
+  </data>
+  <data name="EnforceSubTit02" xml:space="preserve">
+    <value>表现名</value>
+  </data>
+  <data name="EnforceSubTit03" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="EnforceSubTit04" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="EnforceSubTit05" xml:space="preserve">
+    <value>传真号码</value>
+  </data>
+  <data name="EnforceSubTit06" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="EnforceTaregetMail" xml:space="preserve">
+    <value>邮箱地址      </value>
+  </data>
+  <data name="EnforceTaregetMailSubject" xml:space="preserve">
+    <value>邮件题目</value>
+  </data>
+  <data name="EnforceTitle" xml:space="preserve">
+    <value>公文职印管理</value>
+  </data>
+  <data name="EnforceTitle1" xml:space="preserve">
+    <value>公文列表</value>
+  </data>
+  <data name="EnforceTitle2" xml:space="preserve">
+    <value>公文发送列表</value>
+  </data>
+  <data name="EnforceTitle3" xml:space="preserve">
+    <value>公文申请列表</value>
+  </data>
+  <data name="EnforceTitleSub" xml:space="preserve">
+    <value>按分公司指定公文职印管理</value>
+  </data>
+  <data name="EnforceTitleSub1" xml:space="preserve">
+    <value>提交的文档里，只能查看被指定公文的文档。</value>
+  </data>
+  <data name="EnforceTitleSub2" xml:space="preserve">
+    <value>公文申请列表里，可查看批准完成后发送公文的列表。</value>
+  </data>
+  <data name="EnforceTitleSub3" xml:space="preserve">
+    <value>公文列表里，可查看公文发送申请的列表。</value>
+  </data>
+  <data name="EnforceTitleSub4" xml:space="preserve">
+    <value>可查看公文发送申请的全部列表。</value>
+  </data>
+  <data name="EnforceTitleSub5" xml:space="preserve">
+    <value>可查看公文发送批准的全体列表。</value>
+  </data>
+  <data name="EnforceTypeMail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="EnforceTypePrint" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="EnforceView" xml:space="preserve">
+    <value>查看申请内容</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>获取附件信息时发生了错误。</value>
+  </data>
+  <data name="ETC" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="ETC2" xml:space="preserve">
+    <value>其他信息设置</value>
+  </data>
+  <data name="ETC3" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="ETCSetInfo" xml:space="preserve">
+    <value>其他设置情报</value>
+  </data>
+  <data name="FavoriteApp" xml:space="preserve">
+    <value>经常指定的审批人</value>
+  </data>
+  <data name="FavoriteApprovalUser" xml:space="preserve">
+    <value>经常指定的审批人</value>
+  </data>
+  <data name="FavScription" xml:space="preserve">
+    <value>* 设置后，起草电子审批文档时便于选择审批人。</value>
+  </data>
+  <data name="FavSec" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="FavTag" xml:space="preserve">
+    <value>审批项目</value>
+  </data>
+  <data name="FavTitIsDept0" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="FavTitIsDept1" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="FavTitIsSub0" xml:space="preserve">
+    <value>不包括下级部门</value>
+  </data>
+  <data name="FavTitIsSub1" xml:space="preserve">
+    <value>包括下级部门</value>
+  </data>
+  <data name="FavTitLineZC" xml:space="preserve">
+    <value>参考审批线</value>
+  </data>
+  <data name="FavTitLineZD" xml:space="preserve">
+    <value>发信（一般）审批线</value>
+  </data>
+  <data name="FavTitLineZP" xml:space="preserve">
+    <value>收信 审批线</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="FileBackup" xml:space="preserve">
+    <value>文件备份</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FlowInfo" xml:space="preserve">
+    <value>流动程序情报</value>
+  </data>
+  <data name="FlowMsg01" xml:space="preserve">
+    <value>输入审批线姓名后，转到程序管理画面。</value>
+  </data>
+  <data name="FlowScription" xml:space="preserve">
+    <value>* 设置后，起草电子审批文档时便于选择审批人。</value>
+  </data>
+  <data name="FlowZA" xml:space="preserve">
+    <value>流动协议</value>
+  </data>
+  <data name="FlowZA2" xml:space="preserve">
+    <value>协议群组</value>
+  </data>
+  <data name="FlowZALoc" xml:space="preserve">
+    <value>指定协议审批线位置</value>
+  </data>
+  <data name="FlowZD" xml:space="preserve">
+    <value>流动审批</value>
+  </data>
+  <data name="FlowZD2" xml:space="preserve">
+    <value>发信群组</value>
+  </data>
+  <data name="FlowZDLoc" xml:space="preserve">
+    <value>指定发信审批线位置</value>
+  </data>
+  <data name="FlowZH" xml:space="preserve">
+    <value>流动协助</value>
+  </data>
+  <data name="FlowZH2" xml:space="preserve">
+    <value>协助群组</value>
+  </data>
+  <data name="FlowZHLoc" xml:space="preserve">
+    <value>指定协助审批线位置</value>
+  </data>
+  <data name="FlowZR" xml:space="preserve">
+    <value>散发组</value>
+  </data>
+  <data name="FlowZRLoc" xml:space="preserve">
+    <value>发给批准行定位</value>
+  </data>
+  <data name="Flow_D" xml:space="preserve">
+    <value>保留中</value>
+  </data>
+  <data name="Flow_I" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Flow_W" xml:space="preserve">
+    <value>等待中</value>
+  </data>
+  <data name="FolderGubun" xml:space="preserve">
+    <value>文件夹区分</value>
+  </data>
+  <data name="FolderInfo" xml:space="preserve">
+    <value>文件夹信息</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夹名</value>
+  </data>
+  <data name="FolderPath" xml:space="preserve">
+    <value>文件夹路径</value>
+  </data>
+  <data name="FolderType1" xml:space="preserve">
+    <value>共通</value>
+  </data>
+  <data name="FolderType2" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="FolderType3" xml:space="preserve">
+    <value>连动</value>
+  </data>
+  <data name="FolderType4" xml:space="preserve">
+    <value>审批线</value>
+  </data>
+  <data name="Form2" xml:space="preserve">
+    <value>审批样式</value>
+  </data>
+  <data name="Form3" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FormInfo" xml:space="preserve">
+    <value>样式情报</value>
+  </data>
+  <data name="FormName1" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FormName2" xml:space="preserve">
+    <value>样式名</value>
+  </data>
+  <data name="FormName3" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>转达</value>
+  </data>
+  <data name="Forwarder" xml:space="preserve">
+    <value>转达人</value>
+  </data>
+  <data name="ForwardingDate" xml:space="preserve">
+    <value>转发日期</value>
+  </data>
+  <data name="ViewingDate" xml:space="preserve">
+    <value>查看日期</value>
+  </data>
+  <data name="ForwardList" xml:space="preserve">
+    <value>转达名单</value>
+  </data>
+  <data name="ForwardOpinion" xml:space="preserve">
+    <value>转达意见</value>
+  </data>
+  <data name="Franch" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到列表。</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>转到详细信息输入页面。</value>
+  </data>
+  <data name="ImpoMark" xml:space="preserve">
+    <value>重要标识</value>
+  </data>
+  <data name="InChar" xml:space="preserve">
+    <value>字 以内</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>请输入搜索日</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>指定</value>
+  </data>
+  <data name="IsActiveTit" xml:space="preserve">
+    <value>使用与否</value>
+  </data>
+  <data name="IsActiveTitN" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="IsActiveTitY" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="IsConfirm" xml:space="preserve">
+    <value>确认与否</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>启用与否</value>
+  </data>
+  <data name="IsProxy" xml:space="preserve">
+    <value>代审与否</value>
+  </data>
+  <data name="IsUse" xml:space="preserve">
+    <value>是否使用</value>
+  </data>
+  <data name="ItemAtt" xml:space="preserve">
+    <value>项目属性                </value>
+  </data>
+  <data name="ItemMulti" xml:space="preserve">
+    <value>多行格式</value>
+  </data>
+  <data name="ItemOutline" xml:space="preserve">
+    <value>格式                  </value>
+  </data>
+  <data name="ItemSet" xml:space="preserve">
+    <value>适用</value>
+  </data>
+  <data name="ItemSetMsg" xml:space="preserve">
+    <value>请适用格式与宽、高度。</value>
+  </data>
+  <data name="ItemSingle" xml:space="preserve">
+    <value>单行格式</value>
+  </data>
+  <data name="ItemWH" xml:space="preserve">
+    <value>宽/高</value>
+  </data>
+  <data name="ItemWHSub" xml:space="preserve">
+    <value>包括单位</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日语</value>
+  </data>
+  <data name="KeepYear" xml:space="preserve">
+    <value>保存年限</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韩国语</value>
+  </data>
+  <data name="LaterOn" xml:space="preserve">
+    <value>以后处理</value>
+  </data>
+  <data name="LaterOnItem1" xml:space="preserve">
+    <value>休假</value>
+  </data>
+  <data name="LaterOnItem2" xml:space="preserve">
+    <value>出差</value>
+  </data>
+  <data name="LaterOnItem3" xml:space="preserve">
+    <value>病假</value>
+  </data>
+  <data name="LaterOnItem4" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="LaterOnTarget" xml:space="preserve">
+    <value>以后处理对象</value>
+  </data>
+  <data name="LaterOnTit" xml:space="preserve">
+    <value>以后处理</value>
+  </data>
+  <data name="LegacyFileInfo" xml:space="preserve">
+    <value>相关文件信息</value>
+  </data>
+  <data name="LegacyPath" xml:space="preserve">
+    <value>连动路径</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="ListLang" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>电子邮件地址</value>
+  </data>
+  <data name="MailSubject" xml:space="preserve">
+    <value>邮件题目</value>
+  </data>
+  <data name="MakeDoc" xml:space="preserve">
+    <value>编写文档</value>
+  </data>
+  <data name="MakeDocEdit" xml:space="preserve">
+    <value>修改后再提交</value>
+  </data>
+  <data name="MakeDocFile" xml:space="preserve">
+    <value>起草文档 文件</value>
+  </data>
+  <data name="MakeDocMod" xml:space="preserve">
+    <value>修改文档</value>
+  </data>
+  <data name="MakeDocNet" xml:space="preserve">
+    <value>提交收信文档</value>
+  </data>
+  <data name="ManageApprover" xml:space="preserve">
+    <value>审批人管理</value>
+  </data>
+  <data name="ManageDoc" xml:space="preserve">
+    <value>审批文档管理</value>
+  </data>
+  <data name="ManageEnforceAdmin" xml:space="preserve">
+    <value>公文 担当者管理</value>
+  </data>
+  <data name="ManageEnforceStamp" xml:space="preserve">
+    <value>公文 职印管理</value>
+  </data>
+  <data name="ManageFolder" xml:space="preserve">
+    <value>文件夹管理</value>
+  </data>
+  <data name="ManageForm" xml:space="preserve">
+    <value>样式管理</value>
+  </data>
+  <data name="ManageProxy" xml:space="preserve">
+    <value>代审人管理</value>
+  </data>
+  <data name="ManageStamp" xml:space="preserve">
+    <value>印章/签名管理</value>
+  </data>
+  <data name="MenuPrivateFolder" xml:space="preserve">
+    <value>个人文件夹</value>
+  </data>
+  <data name="MenuSubmitFolder" xml:space="preserve">
+    <value>提交 文件夹</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>个人 通讯录</value>
+  </data>
+  <data name="ModDate" xml:space="preserve">
+    <value>修改日</value>
+  </data>
+  <data name="ModFolder" xml:space="preserve">
+    <value>文件夹 修改</value>
+  </data>
+  <data name="ModHistory" xml:space="preserve">
+    <value>修改内容</value>
+  </data>
+  <data name="ModifyList" xml:space="preserve">
+    <value>部门变更内容</value>
+  </data>
+  <data name="ModSeqMsg1" xml:space="preserve">
+    <value>按样式里指定的审批线</value>
+  </data>
+  <data name="ModSeqMsg2" xml:space="preserve">
+    <value>变更审批顺序</value>
+  </data>
+  <data name="ModSeqMsg3" xml:space="preserve">
+    <value>担当者要在最前面存在，协助（或协议）时不能成为最后的审批顺序。</value>
+  </data>
+  <data name="ModUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>以上</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="MoveFolder" xml:space="preserve">
+    <value>移动文件夹</value>
+  </data>
+  <data name="MsgCheckClick" xml:space="preserve">
+    <value>处理中，请稍候。</value>
+  </data>
+  <data name="MsgConfirmEditor" xml:space="preserve">
+    <value>删除了编辑器里不符合标准的内容。\n请确认内容。</value>
+  </data>
+  <data name="MsgFavSeqInfo0" xml:space="preserve">
+    <value>发信流程间的审批线的顺序，以按样式指定的流程顺序为优先。</value>
+  </data>
+  <data name="MsgFavSeqInfo1" xml:space="preserve">
+    <value>一个部门只能指定一个审批人。</value>
+  </data>
+  <data name="MsgFavSeqInfo2" xml:space="preserve">
+    <value>重复的用户不能指定。</value>
+  </data>
+  <data name="MsgFavSeqInfo3" xml:space="preserve">
+    <value>指定该审批线时，以前指定的审批线将被全部取消。</value>
+  </data>
+  <data name="Msg_AccountInfo_Alert" xml:space="preserve">
+    <value>以前登记的审批人中，部门信息变更的目录。&lt;br/&gt;无法使用该审批人信息。 </value>
+  </data>
+  <data name="MSG_Active" xml:space="preserve">
+    <value>请选择激活/停用的项目</value>
+  </data>
+  <data name="Msg_AdminDocDel" xml:space="preserve">
+    <value>进行中的文件中，如有连动删除模块时，可以个个删除文档。</value>
+  </data>
+  <data name="Msg_AlarmAlert" xml:space="preserve">
+    <value>出于安全原因，附件及依据文件，可以通过门户从电子审批菜单里访问。</value>
+  </data>
+  <data name="Msg_AlarmError" xml:space="preserve">
+    <value>该文件已被删除，无法查询。</value>
+  </data>
+  <data name="Msg_AlarmErrorAuth" xml:space="preserve">
+    <value>没有查询文档权限</value>
+  </data>
+  <data name="MSG_AlertIsSub" xml:space="preserve">
+    <value>参照审批线的部门指定里，需要包括下级部门吗？</value>
+  </data>
+  <data name="MSG_AlertProcess" xml:space="preserve">
+    <value>收信流程，只能登记一个流程。</value>
+  </data>
+  <data name="MSG_ALERTSETLINE" xml:space="preserve">
+    <value>协议审批顺序应该有序地指定。</value>
+  </data>
+  <data name="Msg_AlertTemporaryBaseDoc" xml:space="preserve">
+    <value>临时存储的依据文档也将被删除。</value>
+  </data>
+  <data name="Msg_AlertTemporaryFile" xml:space="preserve">
+    <value>临时存储的文件也将被删除。</value>
+  </data>
+  <data name="Msg_AlertUserInfo" xml:space="preserve">
+    <value>请确认审批人信息</value>
+  </data>
+  <data name="Msg_Backup" xml:space="preserve">
+    <value>请选择要备份的审批文档</value>
+  </data>
+  <data name="MSG_Backup2" xml:space="preserve">
+    <value>请选择要备份的传阅文档</value>
+  </data>
+  <data name="MSG_CancelApproval" xml:space="preserve">
+    <value>审批已被取消。</value>
+  </data>
+  <data name="MSG_CancelApprove" xml:space="preserve">
+    <value>要取消审批吗？</value>
+  </data>
+  <data name="MSG_CancelDelay" xml:space="preserve">
+    <value>要取消保留吗？</value>
+  </data>
+  <data name="MSG_Carboncopy" xml:space="preserve">
+    <value>请选择要删除参照文档。</value>
+  </data>
+  <data name="Msg_Change" xml:space="preserve">
+    <value>想要变更吗？</value>
+  </data>
+  <data name="MSG_Cir" xml:space="preserve">
+    <value>请选择要传阅的审批文档。</value>
+  </data>
+  <data name="MSG_CirOpinion" xml:space="preserve">
+    <value>请输入传阅意见。</value>
+  </data>
+  <data name="Msg_Close" xml:space="preserve">
+    <value>想要结束吗？</value>
+  </data>
+  <data name="MSG_ComeBack" xml:space="preserve">
+    <value>请选择要恢复的文档。</value>
+  </data>
+  <data name="Msg_ConfirmEditorTab" xml:space="preserve">
+    <value>之前起草的内容将要消失。要选择吗?</value>
+  </data>
+  <data name="Msg_ConfirmUpdate" xml:space="preserve">
+    <value>要覆盖吗？</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>要删除吗?</value>
+  </data>
+  <data name="MSG_Del10" xml:space="preserve">
+    <value>请选择要删除的提交文档。</value>
+  </data>
+  <data name="MSG_Del2" xml:space="preserve">
+    <value>永久删除将无法恢复。要删除吗？</value>
+  </data>
+  <data name="MSG_Del3" xml:space="preserve">
+    <value>请选择要永久删除的文件</value>
+  </data>
+  <data name="MSG_Del4" xml:space="preserve">
+    <value>完全永久删除了所选文档。</value>
+  </data>
+  <data name="MSG_Del5" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="MSG_Del6" xml:space="preserve">
+    <value>请选择要删除的完审文档。</value>
+  </data>
+  <data name="MSG_Del7" xml:space="preserve">
+    <value>请选择要删除的前审文档。</value>
+  </data>
+  <data name="MSG_Del8" xml:space="preserve">
+    <value>请选择要删除的传阅文档。</value>
+  </data>
+  <data name="MSG_Del9" xml:space="preserve">
+    <value>如果删除发送的传阅文档，将与发送人的传阅文档一起被删除。确定要删除吗？</value>
+  </data>
+  <data name="MSG_DelAll" xml:space="preserve">
+    <value>完成文档要从目录全部删除吗？</value>
+  </data>
+  <data name="MSG_Delay" xml:space="preserve">
+    <value>要保留吗？</value>
+  </data>
+  <data name="MSG_DelDoc" xml:space="preserve">
+    <value>要从目录删除所选的文档吗？</value>
+  </data>
+  <data name="MSG_DelForm" xml:space="preserve">
+    <value>请先删除属于该文件夹的样式</value>
+  </data>
+  <data name="MSG_DelSubFolder" xml:space="preserve">
+    <value>请首先删除子文件夹</value>
+  </data>
+  <data name="Msg_Dept" xml:space="preserve">
+    <value>请选择部门。</value>
+  </data>
+  <data name="MSG_DoActive" xml:space="preserve">
+    <value>想要激活/停用吗？</value>
+  </data>
+  <data name="MSG_EnforceAddress" xml:space="preserve">
+    <value>输入电子邮件地址    </value>
+  </data>
+  <data name="MSG_EnforceReceive" xml:space="preserve">
+    <value>请输入收信处</value>
+  </data>
+  <data name="MSG_EnforceReference" xml:space="preserve">
+    <value>请输入参照</value>
+  </data>
+  <data name="MSG_EnforceSubject" xml:space="preserve">
+    <value>请输入题目</value>
+  </data>
+  <data name="Msg_EnforceSubmit" xml:space="preserve">
+    <value>\n请在公文申请列表里确认。</value>
+  </data>
+  <data name="MSG_EnforceTargetMail" xml:space="preserve">
+    <value>请输入邮件题目</value>
+  </data>
+  <data name="MSG_EnforceTargetMailSubject" xml:space="preserve">
+    <value>请输入使用目的</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>是已经存储为依据文件的文档。</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>是已经添加到目录的文档。</value>
+  </data>
+  <data name="Msg_ErrComplete" xml:space="preserve">
+    <value>要结束吗？</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>正文里有脚本方面疑问字句，内容可能被更改。</value>
+  </data>
+  <data name="Msg_ErrDefaultInfo" xml:space="preserve">
+    <value>没有基本信息。请与管理员联系。</value>
+  </data>
+  <data name="Msg_ErrFormSequence" xml:space="preserve">
+    <value>请选择要变更的样式。</value>
+  </data>
+  <data name="Msg_ErrInputNameCode" xml:space="preserve">
+    <value>请输入生成文档编号的样式编码。</value>
+  </data>
+  <data name="Msg_ErrLife" xml:space="preserve">
+    <value>请指定保存年限。</value>
+  </data>
+  <data name="Msg_ErrNetNon" xml:space="preserve">
+    <value>请在没有审批线的状态下退回。</value>
+  </data>
+  <data name="Msg_ErrNetNonCom" xml:space="preserve">
+    <value>请在没有审批线的状态下完成。</value>
+  </data>
+  <data name="Msg_ErrNetNonReplace" xml:space="preserve">
+    <value>请在没有审批线的状态下变更担当者。</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>输入字数限200字以内。</value>
+  </data>
+  <data name="Msg_ErrOpinionNon" xml:space="preserve">
+    <value>请输入审批意见。</value>
+  </data>
+  <data name="Msg_ErrorUserBefore" xml:space="preserve">
+    <value>是已被指定的部门（用户）。</value>
+  </data>
+  <data name="Msg_ErrorUserInfo" xml:space="preserve">
+    <value>审批人信息输入错误。请询问管理员。</value>
+  </data>
+  <data name="Msg_ErrorUserNon" xml:space="preserve">
+    <value>指定的用户不存在。</value>
+  </data>
+  <data name="Msg_ErrReCancel" xml:space="preserve">
+    <value>取消指定后，请重新选择</value>
+  </data>
+  <data name="Msg_ErrRejectTarget" xml:space="preserve">
+    <value>请选择退回目标。</value>
+  </data>
+  <data name="Msg_ErrSelFolder" xml:space="preserve">
+    <value>顺序变更时，请只选一个目标文件夹。</value>
+  </data>
+  <data name="Msg_ErrSelForm" xml:space="preserve">
+    <value>请选择样式。</value>
+  </data>
+  <data name="Msg_ErrSelNet" xml:space="preserve">
+    <value>请选择审批线。</value>
+  </data>
+  <data name="Msg_ErrSelUnit" xml:space="preserve">
+    <value>请选择要指定的审批栏。</value>
+  </data>
+  <data name="Msg_ErrSelUser" xml:space="preserve">
+    <value>请选择用户。</value>
+  </data>
+  <data name="Msg_ErrSetZA" xml:space="preserve">
+    <value>协议人不能成为最终审批人 \ n请改变审批顺序。</value>
+  </data>
+  <data name="Msg_ErrSetZH" xml:space="preserve">
+    <value>协助人不能成为最终审批人 \ n请改变审批顺序。</value>
+  </data>
+  <data name="Msg_ErrSubj" xml:space="preserve">
+    <value>请输入标题</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>处理时，发生了错误。</value>
+  </data>
+  <data name="Msg_Favorite_Alert" xml:space="preserve">
+    <value>这是以前登记的审批人中部门情报已变更的列表。该信息不能指定为经常指定的审批人。</value>
+  </data>
+  <data name="Msg_Favorite_Title" xml:space="preserve">
+    <value>部门变更审批人列表。</value>
+  </data>
+  <data name="Msg_FlowErrorSet" xml:space="preserve">
+    <value>审批人被指定的状态下无法删除审批线。请在【取消该审批线的最后审批人指定】后删除。</value>
+  </data>
+  <data name="Msg_Folder" xml:space="preserve">
+    <value>请输入文件夹名称</value>
+  </data>
+  <data name="MSG_Foraward2" xml:space="preserve">
+    <value>请选择要删除的转达文档。</value>
+  </data>
+  <data name="MSG_Forward" xml:space="preserve">
+    <value>请选择要转达的文件</value>
+  </data>
+  <data name="MSG_ForwardOpinion" xml:space="preserve">
+    <value>请输入转达意见。</value>
+  </data>
+  <data name="Msg_IE" xml:space="preserve">
+    <value>审批样式的创建及修改只能在IE浏览器里进行。</value>
+  </data>
+  <data name="Msg_InputDraftName" xml:space="preserve">
+    <value>请输入临时存储名。</value>
+  </data>
+  <data name="Msg_LaterOnSelItem" xml:space="preserve">
+    <value>请选择后阅事由。</value>
+  </data>
+  <data name="MSG_ListApprove1" xml:space="preserve">
+    <value>需要确认传递的参数。\ n请与管理员联系。</value>
+  </data>
+  <data name="Msg_Mail" xml:space="preserve">
+    <value>请选择要发送邮件的审批文档。</value>
+  </data>
+  <data name="MSG_Mail2" xml:space="preserve">
+    <value>请输入发送邮件的主题。</value>
+  </data>
+  <data name="MSG_Mail3" xml:space="preserve">
+    <value>请选择发送邮件发的传阅文档。</value>
+  </data>
+  <data name="MSG_Move" xml:space="preserve">
+    <value>请选择要移动的审批文档。</value>
+  </data>
+  <data name="MSG_Move2" xml:space="preserve">
+    <value>请选择要移动的文件</value>
+  </data>
+  <data name="MSG_NeedAddDate" xml:space="preserve">
+    <value>请输入登录日期。</value>
+  </data>
+  <data name="MSG_NoSelect" xml:space="preserve">
+    <value>选定的文件是不存在</value>
+  </data>
+  <data name="MSG_Processing" xml:space="preserve">
+    <value>修改或审批正在​​进行中。</value>
+  </data>
+  <data name="Msg_Proxy_Alert" xml:space="preserve">
+    <value>这是以前登记的代审人中部门情报已变更的列表。该信息不能指定为代审批人。</value>
+  </data>
+  <data name="Msg_Proxy_Title" xml:space="preserve">
+    <value>部门变更代审人列表。</value>
+  </data>
+  <data name="MSG_Refresh" xml:space="preserve">
+    <value>更新文件箱。</value>
+  </data>
+  <data name="MSG_Secure" xml:space="preserve">
+    <value>该特殊文字因用于保安脆弱性攻击而被限制。</value>
+  </data>
+  <data name="MSG_SelDel" xml:space="preserve">
+    <value>请选择要删除的项目。</value>
+  </data>
+  <data name="MSG_SelDelDoc" xml:space="preserve">
+    <value>请选择要删除的文件</value>
+  </data>
+  <data name="MSG_SelFolder" xml:space="preserve">
+    <value>请选择文件夹。</value>
+  </data>
+  <data name="MSG_SelItem" xml:space="preserve">
+    <value>请选择一个项目。</value>
+  </data>
+  <data name="MSG_SelPassDoc" xml:space="preserve">
+    <value>请选择要传递的审批文档。</value>
+  </data>
+  <data name="MSG_SelStamp" xml:space="preserve">
+    <value>请选择职印。</value>
+  </data>
+  <data name="MSG_SelTarget" xml:space="preserve">
+    <value>首先在样式里选择指定属性的对象。</value>
+  </data>
+  <data name="MSG_SelTransferDoc" xml:space="preserve">
+    <value>请选择要移动的文档。</value>
+  </data>
+  <data name="Msg_SeqErrZA" xml:space="preserve">
+    <value>审批顺序指定错误。 \ n协议人不能成为最终审批人。 \ n请重新指定审批顺序。</value>
+  </data>
+  <data name="Msg_SeqErrZD" xml:space="preserve">
+    <value>审批顺序指定错误。 \ n担当者应该指定为第一个顺序。 \ n请重新指定审批顺序。</value>
+  </data>
+  <data name="Msg_SeqErrZH" xml:space="preserve">
+    <value>审批顺序指定错误。 \ n协助人不能成为最终审批人。 \ n请重新指定审批顺序。</value>
+  </data>
+  <data name="Msg_SetLine" xml:space="preserve">
+    <value>请指定审批线。</value>
+  </data>
+  <data name="MSG_Stamp" xml:space="preserve">
+    <value>*印章/签名 图像按55 * 55规格附加到文档里。</value>
+  </data>
+  <data name="MSG_SubDept" xml:space="preserve">
+    <value>要包括下级部门吗？</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="MSG_TransferComplete" xml:space="preserve">
+    <value>文档复制本转移完了。</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>多国名</value>
+  </data>
+  <data name="MultiLang2" xml:space="preserve">
+    <value>多国语</value>
+  </data>
+  <data name="MultiLangSetting" xml:space="preserve">
+    <value>多国语设置</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NeedContents" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="NeedFolderInfo" xml:space="preserve">
+    <value>请输入文件夹信息。</value>
+  </data>
+  <data name="NeedFolderInfo2" xml:space="preserve">
+    <value>公司/共通的情况下，请务必指定文件夹信息的。</value>
+  </data>
+  <data name="NeedFolderName" xml:space="preserve">
+    <value>请输入文件夹名。</value>
+  </data>
+  <data name="NeedFormName" xml:space="preserve">
+    <value>请输入样式名。</value>
+  </data>
+  <data name="NeedLegacyName" xml:space="preserve">
+    <value>请直接输入连动呼叫名。</value>
+  </data>
+  <data name="NetAdd" xml:space="preserve">
+    <value>审批线保存</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="NextName" xml:space="preserve">
+    <value>下一个审批人</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容。</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>没有登记的经常指定审批人。</value>
+  </data>
+  <data name="NoDataProxy" xml:space="preserve">
+    <value>没有登记的代审人。</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>该文档不存在。</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="NotZA" xml:space="preserve">
+    <value>不可协议</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>审批意见</value>
+  </data>
+  <data name="Opinion2" xml:space="preserve">
+    <value>审批意见</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="OrganAddtionJob" xml:space="preserve">
+    <value>兼</value>
+  </data>
+  <data name="OrganBtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="OrganBtnSearch" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="OrganTit" xml:space="preserve">
+    <value>组织结构图</value>
+  </data>
+  <data name="OrganVirtual" xml:space="preserve">
+    <value>虚拟组织</value>
+  </data>
+  <data name="OtherDeptDocManage" xml:space="preserve">
+    <value>查看其他部门文件 管理</value>
+  </data>
+  <data name="OtherDeptFolder" xml:space="preserve">
+    <value>查看其他部门文件</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Password2" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="Password3" xml:space="preserve">
+    <value>请再次输入密码</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>照片</value>
+  </data>
+  <data name="PleaseSelectPerson" xml:space="preserve">
+    <value>请选择目标。</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="PrivateAppNet" xml:space="preserve">
+    <value>个人审批线</value>
+  </data>
+  <data name="PrivateAppNetMgr" xml:space="preserve">
+    <value>个人审批线管理</value>
+  </data>
+  <data name="PrivateDraft" xml:space="preserve">
+    <value>临时保存</value>
+  </data>
+  <data name="PrivateDraftCnt" xml:space="preserve">
+    <value>临时保存数量</value>
+  </data>
+  <data name="PrivateDraftName" xml:space="preserve">
+    <value>临时保存名</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>个人文件箱</value>
+  </data>
+  <data name="PrivateSetting" xml:space="preserve">
+    <value>个人设置</value>
+  </data>
+  <data name="ProcessInfo" xml:space="preserve">
+    <value>流程信息</value>
+  </data>
+  <data name="ProcessingCnt" xml:space="preserve">
+    <value>进行中数量</value>
+  </data>
+  <data name="ProxyS" xml:space="preserve">
+    <value>[台]</value>
+  </data>
+  <data name="ProxyText1" xml:space="preserve">
+    <value>*按在对抗中“交锋停止按钮指定，从该点指定的对抗也将被取消。</value>
+  </data>
+  <data name="ProxyText3" xml:space="preserve">
+    <value>* 代审人只能指定一个人。</value>
+  </data>
+  <data name="ProxyText4" xml:space="preserve">
+    <value>* 不能指定本人为代审人。</value>
+  </data>
+  <data name="ProxyText5" xml:space="preserve">
+    <value>* 当代理机构变更时，无论何时休息，对抗都会结束。</value>
+  </data>
+  <data name="ProxyTit" xml:space="preserve">
+    <value>代审</value>
+  </data>
+  <data name="RcvComplete" xml:space="preserve">
+    <value>收信完成</value>
+  </data>
+  <data name="RcvUser" xml:space="preserve">
+    <value>收信人</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>变更事由</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>收信</value>
+  </data>
+  <data name="ReceiveDate" xml:space="preserve">
+    <value>收信日</value>
+  </data>
+  <data name="ReceiveDept" xml:space="preserve">
+    <value>收信处</value>
+  </data>
+  <data name="ReceiveSender" xml:space="preserve">
+    <value>收发人管理</value>
+  </data>
+  <data name="ReceiveSenderList" xml:space="preserve">
+    <value>收发人列表</value>
+  </data>
+  <data name="RejectNo" xml:space="preserve">
+    <value>（不可退回）</value>
+  </data>
+  <data name="RejectTarget" xml:space="preserve">
+    <value>退回对象</value>
+  </data>
+  <data name="RejectYes" xml:space="preserve">
+    <value>（可以退回）</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>起草</value>
+  </data>
+  <data name="Report2" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Report3" xml:space="preserve">
+    <value>吗？必须与担当者</value>
+  </data>
+  <data name="Report4" xml:space="preserve">
+    <value>确认。</value>
+  </data>
+  <data name="ReportCompanyNum" xml:space="preserve">
+    <value>提交人 社号</value>
+  </data>
+  <data name="ReportDept" xml:space="preserve">
+    <value>提交部门</value>
+  </data>
+  <data name="ReportTitle" xml:space="preserve">
+    <value>提交人职务</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>提交人</value>
+  </data>
+  <data name="ReportYear" xml:space="preserve">
+    <value>起案年份</value>
+  </data>
+  <data name="RootCompanyName" xml:space="preserve">
+    <value>分公司名</value>
+  </data>
+  <data name="R_LIFE" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="R_ZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="R_ZD" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="R_ZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="R_ZR" xml:space="preserve">
+    <value>流传</value>
+  </data>
+  <data name="ScriptAcc1" xml:space="preserve">
+    <value>管理收发人。</value>
+  </data>
+  <data name="ScriptAcc2" xml:space="preserve">
+    <value>每部门只能激活一个人。</value>
+  </data>
+  <data name="ScriptAcc3" xml:space="preserve">
+    <value>管理审批人。</value>
+  </data>
+  <data name="ScriptAcc4" xml:space="preserve">
+    <value>指定他部门按部门查阅的用户。</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>保安</value>
+  </data>
+  <data name="SelApprover" xml:space="preserve">
+    <value>选择审批人</value>
+  </data>
+  <data name="SelBaseDocList" xml:space="preserve">
+    <value>依据文档 选择列表</value>
+  </data>
+  <data name="SelDept" xml:space="preserve">
+    <value>选择部门</value>
+  </data>
+  <data name="SelectPerson" xml:space="preserve">
+    <value>选择对象</value>
+  </data>
+  <data name="SelectProxy" xml:space="preserve">
+    <value>选择代审委托人。</value>
+  </data>
+  <data name="SelMovefolder" xml:space="preserve">
+    <value>请选择要移动的文件夹。</value>
+  </data>
+  <data name="SelUser" xml:space="preserve">
+    <value>请选择对象。</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发信</value>
+  </data>
+  <data name="SendDept" xml:space="preserve">
+    <value>发信部门</value>
+  </data>
+  <data name="SendDeptUser" xml:space="preserve">
+    <value>发信部门 起草人</value>
+  </data>
+  <data name="SendDocInfo" xml:space="preserve">
+    <value>发信文档信息</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>传送人</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>发信人名单</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>邮件发送</value>
+  </data>
+  <data name="SendName" xml:space="preserve">
+    <value>发信人</value>
+  </data>
+  <data name="SeqLineAddMsg" xml:space="preserve">
+    <value>请选择流程按钮，通过组织图指定审批人</value>
+  </data>
+  <data name="SeqLineMemo" xml:space="preserve">
+    <value>审批线 概要</value>
+  </data>
+  <data name="SeqLineSubject" xml:space="preserve">
+    <value>审批线 名称</value>
+  </data>
+  <data name="SeqLineTagZA" xml:space="preserve">
+    <value>添加协议审批</value>
+  </data>
+  <data name="SeqLineTagZC" xml:space="preserve">
+    <value>添加参照审批</value>
+  </data>
+  <data name="SeqLineTagZD" xml:space="preserve">
+    <value>添加一般审批</value>
+  </data>
+  <data name="SeqLineTagZH" xml:space="preserve">
+    <value>添加协助审批</value>
+  </data>
+  <data name="SeqLineTagZP" xml:space="preserve">
+    <value>添加收信（不可退回）</value>
+  </data>
+  <data name="SeqLineTagZQ" xml:space="preserve">
+    <value>添加收信（可以退回）</value>
+  </data>
+  <data name="SeqLineTit" xml:space="preserve">
+    <value>添加个人审批线</value>
+  </data>
+  <data name="SeqTitDel" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SeqTitInfo" xml:space="preserve">
+    <value>审批人信息</value>
+  </data>
+  <data name="SeqTitOrder" xml:space="preserve">
+    <value>顺序变更</value>
+  </data>
+  <data name="SeqTitSeq" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="SeqTitStat" xml:space="preserve">
+    <value>审批状态</value>
+  </data>
+  <data name="SeqTitZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="SeqTitZC" xml:space="preserve">
+    <value>参照</value>
+  </data>
+  <data name="SeqTitZD" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="SeqTitZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="SeqTitZP" xml:space="preserve">
+    <value>收信（不可退回）</value>
+  </data>
+  <data name="SeqTitZQ" xml:space="preserve">
+    <value>收信（可以退回）</value>
+  </data>
+  <data name="SetAdministrator" xml:space="preserve">
+    <value>指定管理员（需要变更）</value>
+  </data>
+  <data name="SetAppLine" xml:space="preserve">
+    <value>指定审批线</value>
+  </data>
+  <data name="SetBasicInfo" xml:space="preserve">
+    <value>* 指定与文档有关的基本信息</value>
+  </data>
+  <data name="SetEDM" xml:space="preserve">
+    <value>EDM转移设置</value>
+  </data>
+  <data name="SetETC" xml:space="preserve">
+    <value>其他设置</value>
+  </data>
+  <data name="SetFormInfo" xml:space="preserve">
+    <value>设置样式信息</value>
+  </data>
+  <data name="SetProxy" xml:space="preserve">
+    <value>指定代审人</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Setting2" xml:space="preserve">
+    <value>环境设置</value>
+  </data>
+  <data name="SetUp" xml:space="preserve">
+    <value>指定设置</value>
+  </data>
+  <data name="ShortContents" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="ShortFormName" xml:space="preserve">
+    <value>样式 简称</value>
+  </data>
+  <data name="ShortListMsg" xml:space="preserve">
+    <value>该短回信不包括在文档内容里。</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>短回信</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>添加意见</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>转达</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>业务社交</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>查看图像</value>
+  </data>
+  <data name="Sign" xml:space="preserve">
+    <value>签署</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>签名</value>
+  </data>
+  <data name="SignatureClear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Stamp" xml:space="preserve">
+    <value>印章</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期必须小于终止日期。</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>指定 代审</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>审批状况</value>
+  </data>
+  <data name="StatusC" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="StatusD" xml:space="preserve">
+    <value>保留</value>
+  </data>
+  <data name="StatusH" xml:space="preserve">
+    <value>保留提交</value>
+  </data>
+  <data name="StatusI" xml:space="preserve">
+    <value>进行</value>
+  </data>
+  <data name="StatusP" xml:space="preserve">
+    <value>提交等待(收信）</value>
+  </data>
+  <data name="StatusR" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="StatusW" xml:space="preserve">
+    <value>审批等待</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TagDic_BODY" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TagDic_BODY_etc" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="TagDic_COMPANY" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="TagDic_DATE" xml:space="preserve">
+    <value>起草日</value>
+  </data>
+  <data name="TagDic_EDITOR" xml:space="preserve">
+    <value>编辑器</value>
+  </data>
+  <data name="TagDic_EMPNUM" xml:space="preserve">
+    <value>社号</value>
+  </data>
+  <data name="TagDic_ENFORCEDEPTNAME" xml:space="preserve">
+    <value>公文收信处</value>
+  </data>
+  <data name="TagDic_ENFORCENAME" xml:space="preserve">
+    <value>公文参照</value>
+  </data>
+  <data name="TagDic_ENFORCERECEIVECARBON" xml:space="preserve">
+    <value>公文参照</value>
+  </data>
+  <data name="TagDic_FLOWZA" xml:space="preserve">
+    <value>协议群组</value>
+  </data>
+  <data name="TagDic_FLOWZD" xml:space="preserve">
+    <value>发信群组</value>
+  </data>
+  <data name="TagDic_FLOWZH" xml:space="preserve">
+    <value>协助群组</value>
+  </data>
+  <data name="TagDic_FLOWZR" xml:space="preserve">
+    <value>散发组</value>
+  </data>
+  <data name="TagDic_INFO0" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="TagDic_INFO1" xml:space="preserve">
+    <value>职位 名称</value>
+  </data>
+  <data name="TagDic_INFO10" xml:space="preserve">
+    <value>职责 名称</value>
+  </data>
+  <data name="TagDic_INFO11" xml:space="preserve">
+    <value>职责 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO12" xml:space="preserve">
+    <value>部门 职责 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO13" xml:space="preserve">
+    <value>名称 审批日 时间</value>
+  </data>
+  <data name="TagDic_INFO14" xml:space="preserve">
+    <value>审批日（月日）</value>
+  </data>
+  <data name="TagDic_INFO15" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TagDic_INFO2" xml:space="preserve">
+    <value>职位 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO3" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TagDic_INFO4" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="TagDic_INFO5" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="TagDic_INFO6" xml:space="preserve">
+    <value>名称 审批日  </value>
+  </data>
+  <data name="TagDic_INFO7" xml:space="preserve">
+    <value>部门 职位 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO8" xml:space="preserve">
+    <value>审批日 时间</value>
+  </data>
+  <data name="TagDic_INFO9" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="TagDic_LIFE" xml:space="preserve">
+    <value>保存期间</value>
+  </data>
+  <data name="TagDic_NO" xml:space="preserve">
+    <value>文档编号</value>
+  </data>
+  <data name="TagDic_OPINION" xml:space="preserve">
+    <value>审批意见</value>
+  </data>
+  <data name="TagDic_OPINIONVIEW" xml:space="preserve">
+    <value>（加审批意见）</value>
+  </data>
+  <data name="TagDic_SUBJ" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TagDic_UPDPT" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="TagDic_UPJC" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="TagDic_UPNM" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="TagDic_ZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="TagDic_ZC" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="TagDic_ZD" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="TagDic_ZD0" xml:space="preserve">
+    <value>担当</value>
+  </data>
+  <data name="TagDic_ZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="TagDic_ZP" xml:space="preserve">
+    <value>收信</value>
+  </data>
+  <data name="TagDic_ZP0" xml:space="preserve">
+    <value>收信担当</value>
+  </data>
+  <data name="TagDic_ZR" xml:space="preserve">
+    <value>流传</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾语</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="TargetDept" xml:space="preserve">
+    <value>目标部门</value>
+  </data>
+  <data name="TargetFolderInfo" xml:space="preserve">
+    <value>目标文档信息</value>
+  </data>
+  <data name="TargetUser" xml:space="preserve">
+    <value>目标人</value>
+  </data>
+  <data name="TempFolder" xml:space="preserve">
+    <value>草稿箱</value>
+  </data>
+  <data name="TitGroup" xml:space="preserve">
+    <value>群组</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="TitleName2" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="TitMember" xml:space="preserve">
+    <value>个人   </value>
+  </data>
+  <data name="TitSec" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="TitSub" xml:space="preserve">
+    <value>以下</value>
+  </data>
+  <data name="Tit_Cancel" xml:space="preserve">
+    <value>取消指定</value>
+  </data>
+  <data name="Tit_File" xml:space="preserve">
+    <value>文件区分</value>
+  </data>
+  <data name="Tit_FlowAdd" xml:space="preserve">
+    <value>添加审批线</value>
+  </data>
+  <data name="Tit_FlowDel" xml:space="preserve">
+    <value>删除审批线</value>
+  </data>
+  <data name="Tit_Life1" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="Tit_Life2" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="Tit_Life3" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>转移</value>
+  </data>
+  <data name="TransferAfter" xml:space="preserve">
+    <value>变更后信息</value>
+  </data>
+  <data name="TransferBefore" xml:space="preserve">
+    <value>变更前信息</value>
+  </data>
+  <data name="TransferBtnCopy" xml:space="preserve">
+    <value>选择复制    </value>
+  </data>
+  <data name="TransferBtnCopyAll" xml:space="preserve">
+    <value>全部复制          </value>
+  </data>
+  <data name="TransferBtnDeptA" xml:space="preserve">
+    <value>变更后部门</value>
+  </data>
+  <data name="TransferBtnDeptB" xml:space="preserve">
+    <value>变更前部门</value>
+  </data>
+  <data name="TransferBtnDeptDel" xml:space="preserve">
+    <value>变更前删除部门</value>
+  </data>
+  <data name="TransferBtnSubmit" xml:space="preserve">
+    <value>选择转移</value>
+  </data>
+  <data name="TransferBtnSubmitAll" xml:space="preserve">
+    <value>全部转移            </value>
+  </data>
+  <data name="TransferBtnUserA" xml:space="preserve">
+    <value>变更后用户</value>
+  </data>
+  <data name="TransferBtnUserB" xml:space="preserve">
+    <value>变更前用户</value>
+  </data>
+  <data name="TransferDate" xml:space="preserve">
+    <value>转移日</value>
+  </data>
+  <data name="TransferDept" xml:space="preserve">
+    <value>转移部门</value>
+  </data>
+  <data name="TransferDoc" xml:space="preserve">
+    <value>文档转移</value>
+  </data>
+  <data name="TransferMsgCopy" xml:space="preserve">
+    <value>想要复制吗？</value>
+  </data>
+  <data name="TransferMsgCopyAll" xml:space="preserve">
+    <value>想要全部复制吗？</value>
+  </data>
+  <data name="TransferMsgSubmit" xml:space="preserve">
+    <value>要转移吗？</value>
+  </data>
+  <data name="TransferMsgSubmitAll" xml:space="preserve">
+    <value>要全部转移吗？</value>
+  </data>
+  <data name="TransferMsgTargetInfo" xml:space="preserve">
+    <value>请选择目标信息。</value>
+  </data>
+  <data name="TransferName" xml:space="preserve">
+    <value>转移人</value>
+  </data>
+  <data name="TransferWay" xml:space="preserve">
+    <value>转移方式</value>
+  </data>
+  <data name="TransFolderApp" xml:space="preserve">
+    <value>审批文件箱</value>
+  </data>
+  <data name="TransFolderAppA" xml:space="preserve">
+    <value>前审文件箱</value>
+  </data>
+  <data name="TransFolderCarbon" xml:space="preserve">
+    <value>参照文件箱</value>
+  </data>
+  <data name="TransFolderCirR" xml:space="preserve">
+    <value>传阅收信箱</value>
+  </data>
+  <data name="TransFolderCirS" xml:space="preserve">
+    <value>传阅发信箱</value>
+  </data>
+  <data name="TransFolderDept" xml:space="preserve">
+    <value>部门文件箱</value>
+  </data>
+  <data name="TransFolderForward" xml:space="preserve">
+    <value>转达文件箱</value>
+  </data>
+  <data name="TransFolderPri" xml:space="preserve">
+    <value>个人文件箱</value>
+  </data>
+  <data name="UpFolder" xml:space="preserve">
+    <value>上级文件夹</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="UpperFolderName" xml:space="preserve">
+    <value>上级文件夹名</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>使用Active X</value>
+  </data>
+  <data name="UseDoc" xml:space="preserve">
+    <value>使用文档</value>
+  </data>
+  <data name="UseDocNumber" xml:space="preserve">
+    <value>当创建文件编号时，使用。</value>
+  </data>
+  <data name="User1" xml:space="preserve">
+    <value>用户（必填）</value>
+  </data>
+  <data name="User2" xml:space="preserve">
+    <value>用户（可选）</value>
+  </data>
+  <data name="UsingName" xml:space="preserve">
+    <value>现在使用中的连动名</value>
+  </data>
+  <data name="VewOtherDeptDoc" xml:space="preserve">
+    <value>查看他部门文件箱</value>
+  </data>
+  <data name="ViewAuth" xml:space="preserve">
+    <value>查看权限</value>
+  </data>
+  <data name="ViewBaseDoc" xml:space="preserve">
+    <value>查看依据文件</value>
+  </data>
+  <data name="ViewCirOpinion" xml:space="preserve">
+    <value>查看传阅意见</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>查看日期</value>
+  </data>
+  <data name="ViewDoc" xml:space="preserve">
+    <value>查看文档</value>
+  </data>
+  <data name="ViewForm" xml:space="preserve">
+    <value>查看样式</value>
+  </data>
+  <data name="ViewForwardOpinion" xml:space="preserve">
+    <value>查看转达意见</value>
+  </data>
+  <data name="ViewHistory" xml:space="preserve">
+    <value>查看修改内容</value>
+  </data>
+  <data name="ViewOpinion" xml:space="preserve">
+    <value>查看意见</value>
+  </data>
+  <data name="ViewZPZQ" xml:space="preserve">
+    <value>查看收信文档</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>添加帖子</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>提交日</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>起草人</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="ZD" xml:space="preserve">
+    <value>审议</value>
+  </data>
+  <data name="ZD0" xml:space="preserve">
+    <value>负责</value>
+  </data>
+  <data name="ZDZP" xml:space="preserve">
+    <value>收/发信</value>
+  </data>
+  <data name="ZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="ZP" xml:space="preserve">
+    <value>不可回复收信</value>
+  </data>
+  <data name="ZQ" xml:space="preserve">
+    <value>可回复收信</value>
+  </data>
+  <data name="ZR" xml:space="preserve">
+    <value>流传</value>
+  </data>
+  <data name="Msg_Resource01" xml:space="preserve">
+    <value>我要审批的文件</value>
+  </data>
+  <data name="Msg_Resource02" xml:space="preserve">
+    <value>没有委托代审的审批人</value>
+  </data>
+  <data name="Msg_Resource03" xml:space="preserve">
+    <value>个人审批线目录</value>
+  </data>
+  <data name="Msg_Resource04" xml:space="preserve">
+    <value>对抗开始</value>
+  </data>
+  <data name="Msg_Resource05" xml:space="preserve">
+    <value>代审终止</value>
+  </data>
+  <data name="FavoriteForm" xml:space="preserve">
+    <value>常用样式</value>
+  </data>
+  <data name="Msg_AlertEDMCheck" xml:space="preserve">
+    <value>需要设置EDMS移动</value>
+  </data>
+  <data name="SendEDM" xml:space="preserve">
+    <value>EDMS移动设置</value>
+  </data>
+  <data name="Tit_Life" xml:space="preserve">
+    <value>永恒的</value>
+  </data>
+  <data name="Tit_Life4" xml:space="preserve">
+    <value>4年</value>
+  </data>
+  <data name="Tit_Life5" xml:space="preserve">
+    <value>5年</value>
+  </data>
+  <data name="SelTarget" xml:space="preserve">
+    <value>选择目的地</value>
+  </data>
+  <data name="StatC" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="StatD" xml:space="preserve">
+    <value>持有</value>
+  </data>
+  <data name="StatExcel" xml:space="preserve">
+    <value>Excel视图</value>
+  </data>
+  <data name="StatGraph" xml:space="preserve">
+    <value>图形视图</value>
+  </data>
+  <data name="StatMonth0" xml:space="preserve">
+    <value>表格/文件状态</value>
+  </data>
+  <data name="StatMonth1" xml:space="preserve">
+    <value>一月</value>
+  </data>
+  <data name="StatMonth10" xml:space="preserve">
+    <value>十月</value>
+  </data>
+  <data name="StatMonth11" xml:space="preserve">
+    <value>十一月</value>
+  </data>
+  <data name="StatMonth12" xml:space="preserve">
+    <value>十二月</value>
+  </data>
+  <data name="StatMonth2" xml:space="preserve">
+    <value>二月</value>
+  </data>
+  <data name="StatMonth3" xml:space="preserve">
+    <value>三月</value>
+  </data>
+  <data name="StatMonth4" xml:space="preserve">
+    <value>四月</value>
+  </data>
+  <data name="StatMonth5" xml:space="preserve">
+    <value>五月</value>
+  </data>
+  <data name="StatMonth6" xml:space="preserve">
+    <value>六月</value>
+  </data>
+  <data name="StatMonth7" xml:space="preserve">
+    <value>七月</value>
+  </data>
+  <data name="StatMonth8" xml:space="preserve">
+    <value>八月</value>
+  </data>
+  <data name="StatMonth9" xml:space="preserve">
+    <value>九月</value>
+  </data>
+  <data name="StatMonthDept" xml:space="preserve">
+    <value>部门每月现状</value>
+  </data>
+  <data name="StatMonthForm" xml:space="preserve">
+    <value>从每月地位</value>
+  </data>
+  <data name="StatMonthUser" xml:space="preserve">
+    <value>部门每月现状</value>
+  </data>
+  <data name="StatR" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="StatSub" xml:space="preserve">
+    <value>*月度统计数据。</value>
+  </data>
+  <data name="StatSum" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="StatTitle" xml:space="preserve">
+    <value>统计数据 - 每月/期状态</value>
+  </data>
+  <data name="StatTot" xml:space="preserve">
+    <value>总和</value>
+  </data>
+  <data name="StatUnit" xml:space="preserve">
+    <value>片</value>
+  </data>
+  <data name="StatW" xml:space="preserve">
+    <value>进步</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="StatTop1" xml:space="preserve">
+    <value>条件的特定的使用情况</value>
+  </data>
+  <data name="StatTop10" xml:space="preserve">
+    <value>搜索期间           </value>
+  </data>
+  <data name="StatTop2" xml:space="preserve">
+    <value>的文件总数          </value>
+  </data>
+  <data name="StatTop3" xml:space="preserve">
+    <value>已完成的          </value>
+  </data>
+  <data name="StatTop4" xml:space="preserve">
+    <value>正在进行的数量      </value>
+  </data>
+  <data name="StatTop5" xml:space="preserve">
+    <value>数伴侣              </value>
+  </data>
+  <data name="StatTop6" xml:space="preserve">
+    <value>未决数量            </value>
+  </data>
+  <data name="StatTop7" xml:space="preserve">
+    <value>形式的状态星        </value>
+  </data>
+  <data name="StatTop8" xml:space="preserve">
+    <value>部门顶部的状态        </value>
+  </data>
+  <data name="StatTop9" xml:space="preserve">
+    <value>个别顶部的状态         </value>
+  </data>
+  <data name="Msg_AlarmErrorView" xml:space="preserve">
+    <value>不能查看此文件。</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>正文里含有脚本管理怀疑文句，内容可能被改变。</value>
+  </data>
+  <data name="MsgAlertEdit" xml:space="preserve">
+    <value>你想改变吗？</value>
+  </data>
+  <data name="MsgAlertScript" xml:space="preserve">
+    <value>有恶意软件在您的PC上。请问您的系统管理员。</value>
+  </data>
+  <data name="SendDeptReportUser" xml:space="preserve">
+    <value>送部门的起草人</value>
+  </data>
+  <data name="CheckZQ" xml:space="preserve">
+    <value>没有收件人信息。请指定收件人。</value>
+  </data>
+  <data name="ConfirmAdd" xml:space="preserve">
+    <value>你要提交吗？</value>
+  </data>
+  <data name="DisuseDoc" xml:space="preserve">
+    <value>丟棄文件？</value>
+  </data>
+  <data name="DisuseFolder" xml:space="preserve">
+    <value>处置文章</value>
+  </data>
+  <data name="DocDisuse" xml:space="preserve">
+    <value>文件丢弃</value>
+  </data>
+  <data name="DocRestore" xml:space="preserve">
+    <value>恢复文件</value>
+  </data>
+  <data name="RestoreDoc" xml:space="preserve">
+    <value>要还原文档吗？</value>
+  </data>
+  <data name="MSG_GETSIGN" xml:space="preserve">
+    <value>未签名或者签名。</value>
+  </data>
+  <data name="ZACheck" xml:space="preserve">
+    <value>并行协议不能因为以前的审批阶段加入。</value>
+  </data>
+  <data name="AddAlarmTarget" xml:space="preserve">
+    <value>添加报警目标</value>
+  </data>
+  <data name="AlarmTarget" xml:space="preserve">
+    <value>添加报警目标</value>
+  </data>
+  <data name="AllAlarmTarget" xml:space="preserve">
+    <value>大家</value>
+  </data>
+  <data name="DeptComplete" xml:space="preserve">
+    <value>收信完了文件箱</value>
+  </data>
+  <data name="DeptReceipt" xml:space="preserve">
+    <value>收信文件箱</value>
+  </data>
+  <data name="MsgApprovalNetSaveOK" xml:space="preserve">
+    <value>该报告样式的裁决顺序信息已保存\n下次选择此报告样式时,裁决者及裁决顺序将自动保存</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>PDF格式批量輸出</value>
+  </data>
+  <data name="BatchZIP" xml:space="preserve">
+    <value>ZIP格式批量輸出</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[PDF格式批量下载目的地分机] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="StatusLookup" xml:space="preserve">
+    <value>查看状态</value>
+  </data>
+  <data name="ProxyText2" xml:space="preserve">
+    <value>*按在对抗中“对抗开始”按钮指定，从这一点上，我会面对这个文件应该是自动的，付款。</value>
+  </data>
+  <data name="MSG_CancelApprovalCheck" xml:space="preserve">
+    <value>该文档已在审批或付款,已完成结算。</value>
+  </data>
+  <data name="ConfirmTit" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Msg_Resource06" xml:space="preserve">
+    <value>诉讼</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>生成pdf文件出错。请向管理员询问。</value>
+  </data>
+  <data name="Msg_Resource07" xml:space="preserve">
+    <value>无进展</value>
+  </data>
+  <data name="MSG_DelAllR" xml:space="preserve">
+    <value>完成文档要从目录全部删除吗？</value>
+  </data>
+  <data name="Msg_ImportantDel" xml:space="preserve">
+    <value>要从重要表示列表里解除吗？</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>选择的文件被释放</value>
+  </data>
+  <data name="HomeCntCC" xml:space="preserve">
+    <value>见收件箱</value>
+  </data>
+  <data name="HomeCntCP" xml:space="preserve">
+    <value>接收到的文件</value>
+  </data>
+  <data name="HomeCntSC" xml:space="preserve">
+    <value>申请文件</value>
+  </data>
+  <data name="HomeCntSM" xml:space="preserve">
+    <value>审批目标文件</value>
+  </data>
+  <data name="HomeCntUnit" xml:space="preserve">
+    <value>单元</value>
+  </data>
+  <data name="HomeProxy" xml:space="preserve">
+    <value>现在对决</value>
+  </data>
+  <data name="HomeProxyAlert" xml:space="preserve">
+    <value>您确定要停止对抗？</value>
+  </data>
+  <data name="HomeProxyMgr" xml:space="preserve">
+    <value>现在指定对决</value>
+  </data>
+  <data name="HomeProxyNo" xml:space="preserve">
+    <value>没有自我对抗。</value>
+  </data>
+  <data name="HomeProxyStop" xml:space="preserve">
+    <value>停止对抗</value>
+  </data>
+  <data name="HomeFavTit" xml:space="preserve">
+    <value>创建文章 &gt;</value>
+  </data>
+  <data name="HomeFavTitMgr" xml:space="preserve">
+    <value>要设置常用的形式</value>
+  </data>
+  <data name="HomeAttachTit" xml:space="preserve">
+    <value>最近的历史附件</value>
+  </data>
+  <data name="HomeAttachTitSub" xml:space="preserve">
+    <value>(全文引用)</value>
+  </data>
+  <data name="HomeNoData" xml:space="preserve">
+    <value>没有数据。</value>
+  </data>
+  <data name="HomeDelMsg" xml:space="preserve">
+    <value>你确定要删除？</value>
+  </data>
+  <data name="HomeFavAppTit" xml:space="preserve">
+    <value>常用户指定</value>
+  </data>
+  <data name="HomeFileTh01" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="HomeFileTh02" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="HomeFileTh03" xml:space="preserve">
+    <value>使用日期</value>
+  </data>
+  <data name="HomeImpoTh01" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="HomeImpoTh02" xml:space="preserve">
+    <value>奖项信徒</value>
+  </data>
+  <data name="HomeImpoTit" xml:space="preserve">
+    <value>重要文件</value>
+  </data>
+  <data name="HomeReplyTit" xml:space="preserve">
+    <value>付款方式的意见列表</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>电子支付</value>
+  </data>
+  <data name="HomeTabTH01" xml:space="preserve">
+    <value>司</value>
+  </data>
+  <data name="HomeTabTH02" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="HomeTabTH03" xml:space="preserve">
+    <value>进展</value>
+  </data>
+  <data name="HomeTabTH04" xml:space="preserve">
+    <value>用户信息</value>
+  </data>
+  <data name="HomeTabTit01" xml:space="preserve">
+    <value>整体</value>
+  </data>
+  <data name="HomeTabTit02" xml:space="preserve">
+    <value>诉讼</value>
+  </data>
+  <data name="HomeTabTit03" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="HomeTabTit04" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="HomeTabTH05" xml:space="preserve">
+    <value>奖项信徒</value>
+  </data>
+  <data name="HomeTabTH06" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="HomeImpoLink" xml:space="preserve">
+    <value>查看指定为应该出现在一个重要的文档文件。</value>
+  </data>
+  <data name="HomeFavLink" xml:space="preserve">
+    <value>要指定自定义设置，往往</value>
+  </data>
+  <data name="HomeFileTh04" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="R_InfoC" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="R_InfoCR" xml:space="preserve">
+    <value>见</value>
+  </data>
+  <data name="R_InfoD" xml:space="preserve">
+    <value>有待</value>
+  </data>
+  <data name="R_InfoH" xml:space="preserve">
+    <value>有待</value>
+  </data>
+  <data name="R_InfoI" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="R_InfoR" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="R_InfoT" xml:space="preserve">
+    <value>目标被拒绝</value>
+  </data>
+  <data name="R_InfoTR" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="R_InfoW" xml:space="preserve">
+    <value>有待</value>
+  </data>
+  <data name="R_InfoY" xml:space="preserve">
+    <value>审核中</value>
+  </data>
+  <data name="R_InfoZ" xml:space="preserve">
+    <value>前台</value>
+  </data>
+  <data name="R_InfoZR" xml:space="preserve">
+    <value>接收伴侣</value>
+  </data>
+  <data name="Msg_AttachDownAuth" xml:space="preserve">
+    <value>您没有权限下载。</value>
+  </data>
+  <data name="HomeSearchDocTit" xml:space="preserve">
+    <value>审批搜索</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>对象：主题，表格，文件，请求者</value>
+  </data>
+  <data name="HomeSrhTarget" xml:space="preserve">
+    <value>搜索 : 全文 = 文件名 + 主題 + 樣式名稱</value>
+  </data>
+  <data name="MSG_ApplySubFolder" xml:space="preserve">
+    <value>套用一个子文件夹</value>
+  </data>
+  <data name="FavAddDept" xml:space="preserve">
+    <value>其他部门</value>
+  </data>
+  <data name="FavAddUser" xml:space="preserve">
+    <value>添加用户</value>
+  </data>
+  <data name="ViewingForce" xml:space="preserve">
+    <value>文档查看初始化</value>
+  </data>
+  <data name="ViewingForceMsg" xml:space="preserve">
+    <value>你确定要重置文档视图检查？</value>
+  </data>
+  <data name="ErrorBaseDoc" xml:space="preserve">
+    <value>检索基本文档信息时出错。</value>
+  </data>
+  <data name="CarbonUserViewOption" xml:space="preserve">
+    <value>推荐人查看选项</value>
+  </data>
+  <data name="CarbonUserViewOptionItem1" xml:space="preserve">
+    <value>付款期間閱讀</value>
+  </data>
+  <data name="CarbonUserViewOptionItem2" xml:space="preserve">
+    <value>只有在完成付款后</value>
+  </data>
+  <data name="CarbonView" xml:space="preserve">
+    <value>参考浏览</value>
+  </data>
+  <data name="Msg_CarbonUserViewOption" xml:space="preserve">
+    <value>看看谁可以设置读取文档的时间。</value>
+  </data>
+  <data name="Msg_ReportUserCarbonViewOption" xml:space="preserve">
+    <value>即使在完成付款后设置为浏览，也允许引荐来源查看文档。</value>
+  </data>
+  <data name="ReportUserCarbonViewOption" xml:space="preserve">
+    <value>商家参考视图选项</value>
+  </data>
+  <data name="SettingApprovePwd" xml:space="preserve">
+    <value>使用专用密码付款</value>
+  </data>
+  <data name="SettingEnv" xml:space="preserve">
+    <value>首</value>
+  </data>
+  <data name="TitleSetting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="FolderAuthTotal" xml:space="preserve">
+    <value>查看完整历史记录</value>
+  </data>
+  <data name="FolderAuthUserInfo" xml:space="preserve">
+    <value>查看者信息</value>
+  </data>
+  <data name="TitleFolderAuth" xml:space="preserve">
+    <value>查看其他部门的文件</value>
+  </data>
+  <data name="PrintOpt01" xml:space="preserve">
+    <value>排除结算意见</value>
+  </data>
+  <data name="PrintOpt02" xml:space="preserve">
+    <value>附件，包括文档根据病史</value>
+  </data>
+  <data name="TagDic_Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>主题，表格，文件，请求者</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="SelectDownLoadZIP" xml:space="preserve">
+    <value>ZIP选择下载</value>
+  </data>
+  <data name="MSG_SelectDownLoad" xml:space="preserve">
+    <value>请选择要下载的文件。</value>
+  </data>
+  <data name="AbsencePeriod" xml:space="preserve">
+    <value>缺席时期</value>
+  </data>
+  <data name="AllDay" xml:space="preserve">
+    <value>一整天</value>
+  </data>
+  <data name="ContentsAbsence" xml:space="preserve">
+    <value>缺席的内容</value>
+  </data>
+  <data name="TypeAbsence" xml:space="preserve">
+    <value>缺席类型</value>
+  </data>
+  <data name="ApplyAllRegDate" xml:space="preserve">
+    <value>请同时输入开始日期和结束日期</value>
+  </data>
+  <data name="SelectProxyPerson" xml:space="preserve">
+    <value>请选择代理人。</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>结束日期不能小于或等于开始日期</value>
+  </data>
+  <data name="IsModfy" xml:space="preserve">
+    <value>是否改变</value>
+  </data>
+  <data name="SelectProxyDiffer" xml:space="preserve">
+    <value>同一个人不能被分配。</value>
+  </data>
+  <data name="ModfyAppLine" xml:space="preserve">
+    <value>更改付款信息</value>
+  </data>
+  <data name="Msg_ConfirmAppLine" xml:space="preserve">
+    <value>请确认一下结算线。</value>
+  </data>
+  <data name="ProxyDetailInfo" xml:space="preserve">
+    <value>代理详细信息</value>
+  </data>
+  <data name="ProxyText6" xml:space="preserve">
+    <value>* 根据注册代理人的持续时间，对抗进度，等待和结束。</value>
+  </data>
+  <data name="SelectTypeAbsence" xml:space="preserve">
+    <value>请选择缺勤类型。</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>请输入起始日期</value>
+  </data>
+  <data name="MSG_FailNetwork" xml:space="preserve">
+    <value>网络不稳定，发生错误。\n请在几分钟后再试一次。</value>
+  </data>
+  <data name="ApplyDateOverlap" xml:space="preserve">
+    <value>已为所选日期分配代理。</value>
+  </data>
+  <data name="Msg_Resource08" xml:space="preserve">
+    <value>等候</value>
+  </data>
+  <data name="Msg_Resource09" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="ProxyRegister" xml:space="preserve">
+    <value>我们无法注册，因为目前有信息是代理。</value>
+  </data>
+  <data name="SelectProxyOverlap" xml:space="preserve">
+    <value>所选用户已经注册为代理。</value>
+  </data>
+  <data name="ProxyConfirm1" xml:space="preserve">
+    <value>根据注册代理人的持续时间，对抗进度，等待和结束。</value>
+  </data>
+  <data name="ProxyConfirm2" xml:space="preserve">
+    <value>你想注册吗？</value>
+  </data>
+  <data name="ModProxy" xml:space="preserve">
+    <value>代理修改</value>
+  </data>
+  <data name="ProxyAdminSubTxt" xml:space="preserve">
+    <value>* 指定每个用户委托</value>
+  </data>
+  <data name="InputSearch" xml:space="preserve">
+    <value>请输入关键字</value>
+  </data>
+  <data name="Transferbtn" xml:space="preserve">
+    <value>选择部门</value>
+  </data>
+  <data name="TransferDocDept" xml:space="preserve">
+    <value>文件传输 - 部门</value>
+  </data>
+  <data name="TransferDocUser" xml:space="preserve">
+    <value>文件传输 - 由用户</value>
+  </data>
+  <data name="TransferInfo" xml:space="preserve">
+    <value>系升级了</value>
+  </data>
+  <data name="TransferMsgDept" xml:space="preserve">
+    <value>选择一个部门</value>
+  </data>
+  <data name="TransferTarget" xml:space="preserve">
+    <value>降级部门</value>
+  </data>
+  <data name="AccessGrade" xml:space="preserve">
+    <value>显示等级管理</value>
+  </data>
+  <data name="AccessGradeDept" xml:space="preserve">
+    <value>称号</value>
+  </data>
+  <data name="AccessGradeDeptN" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="AccessGradeName" xml:space="preserve">
+    <value>向人们展示评级</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>显示评级</value>
+  </data>
+  <data name="Msg_ErrAccessGradeModify" xml:space="preserve">
+    <value>位置应用到其他牌号。你想应用到当前的评价？</value>
+  </data>
+  <data name="Msg_ErrAccessGradeName" xml:space="preserve">
+    <value>输入检查评级的名称。</value>
+  </data>
+  <data name="Transferbtn1" xml:space="preserve">
+    <value>选择用户</value>
+  </data>
+  <data name="TransferCap1" xml:space="preserve">
+    <value>* 轉讓時，由轉讓文件後，應從所選擇的目的地文件中轉出。</value>
+  </data>
+  <data name="TransferMsgChk" xml:space="preserve">
+    <value>选择不同的信息进行转移和转移</value>
+  </data>
+  <data name="DelAccessGradeCheck" xml:space="preserve">
+    <value>所使用的检测等级不能删除。请禁用处理。</value>
+  </data>
+  <data name="IsBase" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="SetBase" xml:space="preserve">
+    <value>默认设置</value>
+  </data>
+  <data name="MsgAccessGrade1" xml:space="preserve">
+    <value>仅指定一个默认值</value>
+  </data>
+  <data name="MsgAccessGrade2" xml:space="preserve">
+    <value>默认值仅指定活动项目</value>
+  </data>
+  <data name="MsgAccessGrade3" xml:space="preserve">
+    <value>要将其设置为默认值吗?</value>
+  </data>
+  <data name="TransferMsgUser" xml:space="preserve">
+    <value>请选择一个用户</value>
+  </data>
+  <data name="MobileWrite" xml:space="preserve">
+    <value>启用移动创作</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="ReceiveDoc" xml:space="preserve">
+    <value>收信文件</value>
+  </data>
+  <data name="CancelSusin" xml:space="preserve">
+    <value>取消收到的文档</value>
+  </data>
+  <data name="ConfirmCancelSusin" xml:space="preserve">
+    <value>取消吗？</value>
+  </data>
+  <data name="DelayAppState" xml:space="preserve">
+    <value>状态为待处理\n请稍后再试</value>
+  </data>
+  <data name="MyTurnAppState" xml:space="preserve">
+    <value>此文档当前未经过审批\n转到文档查看页面</value>
+  </data>
+  <data name="MyTurnSusin" xml:space="preserve">
+    <value>当前未收到此文档\n转到列表页面</value>
+  </data>
+  <data name="MSG_SelBundle" xml:space="preserve">
+    <value>請選擇您需要的文件批量結算。</value>
+  </data>
+  <data name="Msg_ErrBaseSameDoc" xml:space="preserve">
+    <value>无法添加相同的文档</value>
+  </data>
+  <data name="Btn_DisuseDel" xml:space="preserve">
+    <value>丢弃（删除）</value>
+  </data>
+  <data name="MSG_DisuseDel" xml:space="preserve">
+    <value>正在进行的文档将被永久删除且无法恢复。</value>
+  </data>
+  <data name="HomePrivate" xml:space="preserve">
+    <value>个人文件夹</value>
+  </data>
+  <data name="HomeApproval" xml:space="preserve">
+    <value>已完成的批准文件夹</value>
+  </data>
+  <data name="HomeReject" xml:space="preserve">
+    <value>拒绝文件夹</value>
+  </data>
+</root>

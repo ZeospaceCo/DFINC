@@ -1,0 +1,18 @@
+﻿{#foreach $T as Share}
+<li class="contentblock">
+    <div class="title linkDiv" onclick="javascript:Share.viewShare('{ $T.Share.OpenID }', '({ $T.Share.DeptName }/{ $T.Share.TitleName }/{ $T.Share.Name })')">
+        <a class="mct" onclick="">
+            <span class="lis">{ $T.Share.DeptName } { $T.Share.TitleName }</span> <font>{ $T.Share.Name }</font>
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

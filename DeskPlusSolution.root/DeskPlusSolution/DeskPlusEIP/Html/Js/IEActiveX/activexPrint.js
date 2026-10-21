@@ -1,0 +1,1 @@
+document.write('<object id="factory" viewastext  style="display:none" classid="clsid:1663ed61-23eb-11d2-b92f-008048fdd814" codebase="/DeskPlusEIP/Data/Cab/smsx.cab#Version=6,3,434,26"><param name="template" value="MeadCo://IE7" /></object>')

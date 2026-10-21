@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52ECEA7E-574E-4F49-9214-0BAF8EE46F3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Search.Analysis</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Search.Analysis</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttributeWrapper.cs" />
+    <Compile Include="KoreanAnalyzer.cs" />
+    <Compile Include="KoreanFilter.cs" />
+    <Compile Include="KoreanTokenizer.cs" />
+    <Compile Include="KoreanTokenizerImpl.cs" />
+    <Compile Include="Morph\AnalysisOutput.cs" />
+    <Compile Include="Morph\AnalysisOutputComparator.cs" />
+    <Compile Include="Morph\CompoundEntry.cs" />
+    <Compile Include="Morph\CompoundNounAnalyzer.cs" />
+    <Compile Include="Morph\MorphAnalyzer.cs" />
+    <Compile Include="Morph\MorphAnalyzerManager.cs" />
+    <Compile Include="Morph\MorphException.cs" />
+    <Compile Include="Morph\NounProperty.cs" />
+    <Compile Include="Morph\PatternConstants.cs" />
+    <Compile Include="Morph\SpaceOutput.cs" />
+    <Compile Include="Morph\Status.cs" />
+    <Compile Include="Morph\WordEntry.cs" />
+    <Compile Include="Morph\WordSpaceAnalyzer.cs" />
+    <Compile Include="Morph\WSAOutput.cs" />
+    <Compile Include="Morph\WSCandidateComparator.cs" />
+    <Compile Include="Morph\WSOuputComparator.cs" />
+    <Compile Include="Morph\WSOutput.cs" />
+    <Compile Include="Tagging\Tagger.cs" />
+    <Compile Include="Utils\ConstraintUtil.cs" />
+    <Compile Include="Utils\DictionaryUtil.cs" />
+    <Compile Include="Utils\EnumerableAdapter.cs" />
+    <Compile Include="Utils\EomiUtil.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\HanjaUtils.cs" />
+    <Compile Include="Utils\IrregularUtil.cs" />
+    <Compile Include="Utils\JarResources.cs" />
+    <Compile Include="Utils\KoreanEnv.cs" />
+    <Compile Include="Utils\MorphUtil.cs" />
+    <Compile Include="Utils\NounUtil.cs" />
+    <Compile Include="Utils\StrBuilder.cs" />
+    <Compile Include="Utils\StringEscapeUtil.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+    <Compile Include="Utils\SyllableUtil.cs" />
+    <Compile Include="Utils\Trie.cs" />
+    <Compile Include="Utils\UnhandledException.cs" />
+    <Compile Include="Utils\UnmodifiableIterator.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+    <Compile Include="Utils\VerbUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Util\Component\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Highlighter, Version=2.3.2.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Util\Component\Lucene.Net.Highlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dic\cj.dic" />
+    <None Include="Dic\compounds.dic" />
+    <None Include="Dic\eomi.dic" />
+    <None Include="Dic\extension.dic" />
+    <None Include="Dic\josa.dic" />
+    <None Include="Dic\mapHanja.dic" />
+    <None Include="Dic\occurrence.dic" />
+    <None Include="Dic\prefix.dic" />
+    <None Include="Dic\suffix.dic" />
+    <None Include="Dic\syllable.dic" />
+    <None Include="Dic\total.dic" />
+    <None Include="Dic\uncompounds.dic" />
+    <None Include="KoreanTokenizerImpl.jflex" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

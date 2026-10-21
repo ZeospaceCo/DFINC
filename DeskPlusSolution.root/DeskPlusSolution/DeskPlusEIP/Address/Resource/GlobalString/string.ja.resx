@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAdress" xml:space="preserve">
+    <value>住所を追加</value>
+  </data>
+  <data name="AddDetail" xml:space="preserve">
+    <value>詳細追加</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>アドレス</value>
+  </data>
+  <data name="AddressList" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+  <data name="AddressManage" xml:space="preserve">
+    <value>連絡先マネージャ</value>
+  </data>
+  <data name="AddressTree" xml:space="preserve">
+    <value>アドレス帳のツリー</value>
+  </data>
+  <data name="AddSimple" xml:space="preserve">
+    <value>追加するのは簡単</value>
+  </data>
+  <data name="AddSimpleAddress" xml:space="preserve">
+    <value>アドレスを追加するのは簡単</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>ユーザーの追加</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>処理エラーが発生した後。管理者に連絡してください。</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用可能</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
+  <data name="Basics" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="Beeper" xml:space="preserve">
+    <value>ページャ</value>
+  </data>
+  <data name="BirthDay" xml:space="preserve">
+    <value>誕生日</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>（非常勤）</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="CellPhoneEx" xml:space="preserve">
+    <value>電話（010-0000-0000）</value>
+  </data>
+  <data name="CellPhoneFormat" xml:space="preserve">
+    <value>電話番号は、+と数字のみを入力することができます -</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>注文の分類が変更されました。</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>フォルダに変更</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>市/郡/地区</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>和らげる</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="CommonAddress" xml:space="preserve">
+    <value>公開アドレス帳</value>
+  </data>
+  <data name="CommonAddressFolderAdd" xml:space="preserve">
+    <value>公開アドレス帳フォルダの追加</value>
+  </data>
+  <data name="CommonAddressFolderMod" xml:space="preserve">
+    <value>公開連絡先フォルダを変更する</value>
+  </data>
+  <data name="CommonFolderManage" xml:space="preserve">
+    <value>パブリックフォルダを管理する</value>
+  </data>
+  <data name="CommonManage" xml:space="preserve">
+    <value>公開アドレス帳の管理</value>
+  </data>
+  <data name="CommonSimpleInfo" xml:space="preserve">
+    <value>公開連絡先シンプルインテリジェンス</value>
+  </data>
+  <data name="CommunityInfo" xml:space="preserve">
+    <value>コミュニティ情報</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>会社の連絡先</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>会社名</value>
+  </data>
+  <data name="CompanyTel" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>処理された</value>
+  </data>
+  <data name="CompleteAddressSend" xml:space="preserve">
+    <value>伝える住所を完了します。</value>
+  </data>
+  <data name="CompleteDeleteAddress" xml:space="preserve">
+    <value>アドレス帳は削除されました</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>選択したフォルダに移動</value>
+  </data>
+  <data name="CompleteSelectCopyAddress" xml:space="preserve">
+    <value>処理されています。コピーしたフォルダを選択して確認してください。</value>
+  </data>
+  <data name="CompleteSelectMoveAddress" xml:space="preserve">
+    <value>処理されています。移動先フォルダを選択して確認してください。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="CopyAddress" xml:space="preserve">
+    <value>電話帳</value>
+  </data>
+  <data name="CopyAdressList" xml:space="preserve">
+    <value>電話帳</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国/都市/州</value>
+  </data>
+  <data name="DaumCsv" xml:space="preserve">
+    <value>ダウムコンタクト（CSV）</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>フォルダとアドレスを削除します。あなたは、フォルダを削除してもよろしいですか？</value>
+  </data>
+  <data name="DeleteSubFolder" xml:space="preserve">
+    <value>サブフォルダを削除してください</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>デザイン</value>
+  </data>
+  <data name="Duty" xml:space="preserve">
+    <value>責任</value>
+  </data>
+  <data name="DutyAddress" xml:space="preserve">
+    <value>責任のアドレス帳</value>
+  </data>
+  <data name="E-Mail" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="EmailEx" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="EnglishFolderName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>英語の名前</value>
+  </data>
+  <data name="ExceptRepetition" xml:space="preserve">
+    <value>除いて繰り返し</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="ExportAdress" xml:space="preserve">
+    <value>アドレス帳のエクスポート</value>
+  </data>
+  <data name="ExportCommand1" xml:space="preserve">
+    <value>Outlook Expressで、GOOGLE、NAVER、CSVファイル内のダウムからエクスポートできます。</value>
+  </data>
+  <data name="ExportCommand2" xml:space="preserve">
+    <value>個人アドレス帳の名前、電話番号、電子メール、電話、自宅の電話、会社名の順序をエクスポートします。</value>
+  </data>
+  <data name="ExpressCsv" xml:space="preserve">
+    <value>Expressのアドレス帳（。CSV）</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="FavoriteAddressFolderAdd" xml:space="preserve">
+    <value>お気に入りフォルダに追加</value>
+  </data>
+  <data name="FavoriteAddressFolderMod" xml:space="preserve">
+    <value>お気に入りフォルダを変更する</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>ファックス</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="FolderFavorite" xml:space="preserve">
+    <value>フォルダのお気に入り</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>配下のファイル·フォルダの順番</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>親フォルダを変更する</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>フォルダ名</value>
+  </data>
+  <data name="FolderOrderDesc" xml:space="preserve">
+    <value>フォルダを変更するためには、上下にドラッグし、マウス、保存するために "Apply"ボタンを選択します。</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>フォントサイズ</value>
+  </data>
+  <data name="ForwardAddress" xml:space="preserve">
+    <value>アドレス帳に移した</value>
+  </data>
+  <data name="GetAddress" xml:space="preserve">
+    <value>連絡先のインポート</value>
+  </data>
+  <data name="GetAddressFile" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="GetGoogleMail" xml:space="preserve">
+    <value>Googleの連絡先のインポート</value>
+  </data>
+  <data name="GetOutLooK" xml:space="preserve">
+    <value>外部連絡先をインポートする</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>リストに移動します。</value>
+  </data>
+  <data name="GoogleCsv" xml:space="preserve">
+    <value>Googleの連絡先（CSV）</value>
+  </data>
+  <data name="GoPageStep3" xml:space="preserve">
+    <value>店舗のページに移動します。</value>
+  </data>
+  <data name="GoPrint" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="HomeAddress" xml:space="preserve">
+    <value>自宅の住所</value>
+  </data>
+  <data name="HomeZipCode" xml:space="preserve">
+    <value>家族の郵便番号</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>重要なのは、言った</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>リスト外で重要なリフトから？</value>
+  </data>
+  <data name="InGoogleStep1_Descript1" xml:space="preserve">
+    <value>外部メールボックスまでお問い合わせくださいアドレス帳に追加することができます。</value>
+  </data>
+  <data name="InGoogleStep1_Descript2" xml:space="preserve">
+    <value>メンバーの承諾を得ることなく、保存されませんか、別のログイン·インテリジェンスに転送されます。</value>
+  </data>
+  <data name="InGoogleStep2_Descript1" xml:space="preserve">
+    <value>外部メールボックスまでお問い合わせくださいアドレス帳に追加することができます。</value>
+  </data>
+  <data name="InGoogleStep2_Descript2" xml:space="preserve">
+    <value>メンバーの承諾を得ることなく、保存されませんか、別のログイン·インテリジェンスに転送されます。</value>
+  </data>
+  <data name="InGoogleStep3_Descript1" xml:space="preserve">
+    <value>Googleの連絡先は、格納された</value>
+  </data>
+  <data name="InGoogleStep3_Descript2" xml:space="preserve">
+    <value>確認は、アドレス帳に転送することができます。</value>
+  </data>
+  <data name="InOutStep1_Descript1" xml:space="preserve">
+    <value>CSV（カンマ区別）ファイル、または彼らはExcelファイルが携帯電話によって発行されたアドレス帳に追加することができました。</value>
+  </data>
+  <data name="InOutStep1_Descript2" xml:space="preserve">
+    <value>CSVファイルやExcelファイルのダウンロードを使用して連絡先HANMAIL Outlook Expressを必要とする場合</value>
+  </data>
+  <data name="InOutStep1_Descript3" xml:space="preserve">
+    <value>を活用することができます</value>
+  </data>
+  <data name="InOutStep1_Descript4" xml:space="preserve">
+    <value>速度が1000個別のインポートによると、遅くなることがあり、1000以上のアドレスの*ファイル番号。</value>
+  </data>
+  <data name="InOutStep2_Descript1" xml:space="preserve">
+    <value>アドレスがインポートされます。</value>
+  </data>
+  <data name="InOutStep3_Descript1" xml:space="preserve">
+    <value>E-mailアドレス帳が外部に格納されている</value>
+  </data>
+  <data name="InOutStep3_Descript2" xml:space="preserve">
+    <value>アドレス帳に転送を確認することができます。</value>
+  </data>
+  <data name="InputEmail" xml:space="preserve">
+    <value>電子メールを入力してください</value>
+  </data>
+  <data name="InputFamilyName" xml:space="preserve">
+    <value>姓を入力してください</value>
+  </data>
+  <data name="InputFitstName" xml:space="preserve">
+    <value>名前を入力してください</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>フォルダ名を入力してください</value>
+  </data>
+  <data name="InputGoogleMail" xml:space="preserve">
+    <value>Google Mailを入力してください</value>
+  </data>
+  <data name="InputGooglePW" xml:space="preserve">
+    <value>グーグルのパスワードを入力してください</value>
+  </data>
+  <data name="InternationalName" xml:space="preserve">
+    <value>多国籍企業名</value>
+  </data>
+  <data name="IPTelePhone" xml:space="preserve">
+    <value>IPテレフォニー</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティの脆弱性の種類の攻撃に使用される特殊な単語は限られています。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>基本的なリストの数</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>導入された01</value>
+  </data>
+  <data name="Lunar" xml:space="preserve">
+    <value>太陰暦</value>
+  </data>
+  <data name="LunarGubun" xml:space="preserve">
+    <value>陰と陽の区別</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>手紙を書く</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>マン</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>覚書</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>ミドルネーム（オプション）</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>電話（図）。</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>携帯電話</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>動き</value>
+  </data>
+  <data name="MoveAddress" xml:space="preserve">
+    <value>コンタクトモバイル</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>呼び出す</value>
+  </data>
+  <data name="NaverCsv" xml:space="preserve">
+    <value>NAVERコンタクト（CSV）</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="NoCSV" xml:space="preserve">
+    <value>CSVファイルを選択し、[インポート]を選択します。</value>
+  </data>
+  <data name="NoMailFormat" xml:space="preserve">
+    <value>メッセージの形式は存在しません送信します。</value>
+  </data>
+  <data name="NotCorrectEmailFormat" xml:space="preserve">
+    <value>メールのスタイルに応じて入力してください</value>
+  </data>
+  <data name="NotEmailFormat" xml:space="preserve">
+    <value>ない電子メールスタイル</value>
+  </data>
+  <data name="ObjectFolder" xml:space="preserve">
+    <value>ターゲットフォルダ</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>オフィス</value>
+  </data>
+  <data name="OutAddress" xml:space="preserve">
+    <value>外部リンケージ</value>
+  </data>
+  <data name="OutlookCsv" xml:space="preserve">
+    <value>Outlookの連絡先（CSV）</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>親フォルダ名</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>自宅の電話</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>写真</value>
+  </data>
+  <data name="PresentFolder" xml:space="preserve">
+    <value>現行フォルダー</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintFormat" xml:space="preserve">
+    <value>印刷スタイル</value>
+  </data>
+  <data name="PrintItems" xml:space="preserve">
+    <value>プロジェクトを印刷する</value>
+  </data>
+  <data name="PrintItemSelect" xml:space="preserve">
+    <value>印刷プロジェクトを選択します（フィールド名は変更できます。）</value>
+  </data>
+  <data name="PrivateAddress" xml:space="preserve">
+    <value>個人アドレス帳</value>
+  </data>
+  <data name="PrivateAddressFolderAdd" xml:space="preserve">
+    <value>個人アドレス帳フォルダを追加</value>
+  </data>
+  <data name="PrivateAddressFolderMod" xml:space="preserve">
+    <value>個人の連絡先フォルダを変更するには</value>
+  </data>
+  <data name="PrivateSimpleInfo" xml:space="preserve">
+    <value>個人の連絡先シンプルインテリジェンス</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理エラーが発生しました。管理者に連絡してください。</value>
+  </data>
+  <data name="PWD" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="ReallyDel" xml:space="preserve">
+    <value>あなたがアドレス帳を削除してもよろしいですか？</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>繰り返して</value>
+  </data>
+  <data name="Repetition" xml:space="preserve">
+    <value>繰り返す</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>03ストレージ</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SelectAddressList" xml:space="preserve">
+    <value>連絡先リスト</value>
+  </data>
+  <data name="SelectBringAddressFile" xml:space="preserve">
+    <value>インポートするアドレス帳ファイルを選択</value>
+  </data>
+  <data name="SelectCopyAddress" xml:space="preserve">
+    <value>コピーしたい連絡先を選択してください。</value>
+  </data>
+  <data name="SelectDeleteAddress" xml:space="preserve">
+    <value>削除したい連絡先を選択してください。</value>
+  </data>
+  <data name="SelectedAddressAddMove" xml:space="preserve">
+    <value>[連絡先]フォルダを選択してくださいselect（携帯のみ、個人アドレス帳の連絡先またはアダプタに適用されます）を追加またはモバイル</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>選択されたユーザー</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>お気に入りフォルダ、またはフォルダを選択します。</value>
+  </data>
+  <data name="SelectMoveAddress" xml:space="preserve">
+    <value>移動したいアドレス帳を選択してください</value>
+  </data>
+  <data name="SelectOutLookFormat" xml:space="preserve">
+    <value>外部メールボックスのスタイルを選択してください</value>
+  </data>
+  <data name="SelectPintUser" xml:space="preserve">
+    <value>リストプリントリストから選択してください</value>
+  </data>
+  <data name="SelectPrintItems" xml:space="preserve">
+    <value>印刷プロジェクト]を選択します</value>
+  </data>
+  <data name="SelectSaveAddress" xml:space="preserve">
+    <value>ストレージ·アドレスを選択してください</value>
+  </data>
+  <data name="SelectSendAddress" xml:space="preserve">
+    <value>あなたが伝えたいアドレス帳を選択してください</value>
+  </data>
+  <data name="SelectSendAddressUser" xml:space="preserve">
+    <value>コンタクトユーザーを伝えるください</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>伝える</value>
+  </data>
+  <data name="SendAddress" xml:space="preserve">
+    <value>伝える対処</value>
+  </data>
+  <data name="SentList" xml:space="preserve">
+    <value>伝えリスト</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>環境設定</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>ジェンダー</value>
+  </data>
+  <data name="Solar" xml:space="preserve">
+    <value>太陽暦</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>邑/顔/穴</value>
+  </data>
+  <data name="SubFolder" xml:space="preserve">
+    <value>サブフォルダ</value>
+  </data>
+  <data name="TelePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="TitleAddress" xml:space="preserve">
+    <value>仕事の連絡先</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>サイズ制限をアップロード</value>
+  </data>
+  <data name="UploadPicture" xml:space="preserve">
+    <value>写真アップロード（52x52）</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>ActiveXを使用して</value>
+  </data>
+  <data name="UsePreview" xml:space="preserve">
+    <value>02プレビュー</value>
+  </data>
+  <data name="WebPage" xml:space="preserve">
+    <value>ウェブページ</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="XmlOptionMsg" xml:space="preserve">
+    <value>*あなたがフォルダを追加することができます公開連絡下位フォルダが。</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>ユーザーを選択してください</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>그룹추가</value>
+  </data>
+  <data name="TargetBCC" xml:space="preserve">
+    <value>BCC</value>
+  </data>
+  <data name="TargetCC" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="TargetTo" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>カテゴリを選択</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>あなたの名前を入力してください</value>
+  </data>
+  <data name="NotUserSelect" xml:space="preserve">
+    <value>なしあり選択されたユーザー</value>
+  </data>
+  <data name="GroupConfirm" xml:space="preserve">
+    <value>그룹확인</value>
+  </data>
+  <data name="RcvUserConfirm" xml:space="preserve">
+    <value>수신자확인</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="AddPersonal" xml:space="preserve">
+    <value>個人的な連絡先を追加</value>
+  </data>
+  <data name="DetailAddress" xml:space="preserve">
+    <value>詳細アドレス</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>組織図</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>리스트타입</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>블로그타입</value>
+  </data>
+</root>

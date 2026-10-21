@@ -1,0 +1,38 @@
+﻿<table>
+<caption></caption>
+<colgroup> 
+    <col width="100%" />
+</colgroup>
+<tbody>
+{#foreach $T as OpinionView}
+<tr>
+    <td>
+        <table class="table_typeB" style="margin-bottom: 4px">
+        <colgroup>
+            <col width="65%" />    
+            <col width="35%" />
+        </colgroup>
+        <tbody>
+        <tr>
+            <th>{ $T.OpinionView.NameBase }/{ $T.OpinionView.TitleBase }/{ $T.OpinionView.DeptBase }</th> 
+            <th class="right" style="padding-right: 4px">
+                { $T.OpinionView.WriteTimeStr }
+                {#if $T.OpinionView.Section == '2'}
+                <b>(*)</b>
+                {#/if}
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2"><span>{ $T.OpinionView.Content } </span></td>
+        </tr>
+        </tbody>
+        </table>
+    </td> 
+</tr>
+{#else}
+<tr>
+    <td class="center"></td>
+</tr>
+{#/for}
+</tbody>
+</table>

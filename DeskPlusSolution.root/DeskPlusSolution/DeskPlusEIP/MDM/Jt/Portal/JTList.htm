@@ -1,0 +1,24 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="40px" />
+    <col width="180px" />   
+    <col />   
+</colgroup>
+<tr>
+    <th class="center" style="display:none"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+    <th class="center"><span id="r_name"></span></th>  
+    <th class="left"><span id="r_order"></span></th>   
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center" style="display:none"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.PortalID }" value="{ $T.List.PortalID }" checked /></td>    
+    <td class="center">{ $T.List.NameBase }</td>          
+    <td class="left">{ $T.List.OrderStr }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

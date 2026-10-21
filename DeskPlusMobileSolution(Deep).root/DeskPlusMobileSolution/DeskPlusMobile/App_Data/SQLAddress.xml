@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_QRY_ACCOUNTUSER_VIEW"
+		  Value="SELECT NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw, Mail, MobilePhone, OfficePhone, PhotoName, UserID
+				,TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw, DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw, BaseDept 
+				FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('GM') {1}"
+		  Content="회사 주소내용 보기" />
+  <Item ID="SEL_QRY_COMMONUSER_VIEW"
+		  Value="SELECT NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw, Mail, MobilePhone, OfficePhone, PhotoName
+				,TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw, DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw
+				FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('CM') {1}"
+		  Content="공용 주소내용 보기" />
+  <Item ID="SEL_QRY_PRIVATEUSER_VIEW"
+		  Value="SELECT NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw, Mail, MobilePhone, OfficePhone, PhotoName
+				,TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw,DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw 
+				FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('PM') {1}"
+		  Content="개인 주소내용 보기" />
+  <Item ID="SEL_QRY_ACCOUNTUSER_LIST_PAGEING"
+		  Value="WITH TmpTBL AS 
+		(SELECT Row_Number() over (ORDER BY titleorder, dutyorder,userdeptorder DESC, NameBase, NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw) AS RowNum,KeyID as OwnerID,NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw,ManyName,
+		TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw,DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw,Mail,Orders,PhotoName
+		FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('GM') {1} {2} {3}) 
+		SELECT * FROM TmpTBL WHERE RowNum Between (({4}-1) * {5}) + 1 and {4} * {5} order by RowNum"
+		  Content="회사 주소록 페이징 리스트" />
+  <Item ID="SEL_QRY_COMMONUSER_LIST_PAGEING"
+		  Value="WITH TmpTBL AS 
+		(SELECT Row_Number() over (ORDER BY Orders ASC,NameBase, NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw) AS RowNum,KeyID as OwnerID,NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw,ManyName,
+		TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw,DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw,Mail,Orders,PhotoName
+		FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('CM') {1} {2} {3}) 
+		SELECT * FROM TmpTBL WHERE RowNum Between (({4}-1) * {5}) + 1 and {4} * {5} order by RowNum"
+		  Content="공용 주소록 페이징 리스트" />
+  <Item ID="SEL_QRY_PRIVATEUSER_LIST_PAGEING"
+		  Value="WITH TmpTBL AS 
+		(SELECT Row_Number() over (ORDER BY Orders ASC,NameBase, NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw) AS RowNum,KeyID as OwnerID,NameBase,NameKo,NameEn,NameJa,NameFr,NameZhCn,NameZhTw,ManyName,
+		TitleBase,TitleKo,TitleEn,TitleJa,TitleFr,TitleZhCn,TitleZhTw,DeptBase,DeptKo,DeptEn,DeptJa,DeptFr,DeptZhCn,DeptZhTw,Mail,Orders,PhotoName
+		FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('PM') {1} {2} {3}) 
+		SELECT * FROM TmpTBL WHERE RowNum Between (({4}-1) * {5}) + 1 and {4} * {5} order by RowNum"
+		  Content="개인 주소록 페이징 리스트" />
+
+  <Item ID="SEL_QRY_ACCOUNTUSER_LIST_CNT"
+	  Value="SELECT Count(*) FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('GM') {1} {2} {3}" Content="회사 주소록 페이징 리스트" />
+  <Item ID="SEL_QRY_COMMONUSER_LIST_CNT"
+		  Value="SELECT Count(*) FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('CM') {1} {2} {3}" Content="공용 주소록 페이징 리스트" />
+  <Item ID="SEL_QRY_PRIVATEUSER_LIST_CNT"
+		  Value="SELECT Count(*) FROM VW_ADD_Tree WITH(NOLOCK) WHERE Companyid = {0} AND Type IN ('PM') {1} {2} {3}" Content="개인 주소록 페이징 리스트" />
+</XmlData>
+

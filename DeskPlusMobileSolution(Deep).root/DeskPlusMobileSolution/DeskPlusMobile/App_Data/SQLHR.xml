@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_PROC_ATTENDANCEDATA" Value="DP_PT_HR_SelAttendanceData" Content="근태정보 가져오기" />
+  <Item ID="SEL_PROC_ATTENDANCETIME" Value="DP_PT_HR_SelAttendanceTime" Content="사용자별 출, 퇴근시간 가져오기" />
+  <Item ID="SEL_PROC_ATTENDANCEPRIVATESUM" Value="DP_HR_Attendance_SelPrivateSUM" Content="개인근태현황표 리스트 합계" />
+  <Item ID="INS_PROC_GOTOWORK" Value="DP_PT_HR_Attendance_GotoWork_Ins" Content="출근" />
+  <Item ID="INS_PROC_OFFWORK" Value="DP_PT_HR_Attendance_OffWork_Ins" Content="퇴근" />
+  <Item ID="INS_PROC_PREOFFWORK" Value="DP_PT_HR_Attendance_PreOffWork_Ins" Content="이전일퇴근" />
+  <Item ID="INS_PROC_OFFWORKDEL" Value="DP_PT_HR_Attendance_OffWork_Del" Content="퇴근 삭제" />
+  <Item ID="SEL_QRY_HR_IP_Sel"
+		  Value="SELECT * FROM DP_HR_IP WHERE CompanyID = {0}"
+		  Content="사내IP가져오기" />
+</XmlData>

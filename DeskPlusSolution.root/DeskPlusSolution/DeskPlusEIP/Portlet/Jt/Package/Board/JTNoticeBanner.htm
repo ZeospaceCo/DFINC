@@ -1,0 +1,28 @@
+﻿<div class="clsimg" align="center">
+<ul>
+    {#foreach $T as List} 
+    <li>
+        <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');">
+            <img src="{ $T.List.ScreenShotURL }" alt="img" idx="{ $T.List.ROW }" style="width:725px;height:228px;"/>
+        </a>
+    </li>
+    {#else}     
+    <li style="width:100%;height:100%;text-align:center;">
+        <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_noimg3.gif" alt="img" />
+    </li>   
+    {#/for}
+</ul>
+</div>
+
+<!-- 버튼 //-->
+<div style="POSITION:relative; FLOAT: left; LEFT: 10px; Z-INDEX: 2; DISPLAY: inline-block; TOP: -30px;" class="flowmenu">
+    <!--<a href="#" class="left">◀</a>-->
+    {#foreach $T as List} 
+        {#if $T.List.ROW == "1"}
+            <a href="#" class="go { $T.List.ROW } flowactive">{ $T.List.ROW }</a>
+        {#else}
+            <a href="#" class="go { $T.List.ROW }">{ $T.List.ROW }</a>
+        {#/if}
+    {#/for}
+    <!--<a href="#" class="right">▶</a>-->
+</div>

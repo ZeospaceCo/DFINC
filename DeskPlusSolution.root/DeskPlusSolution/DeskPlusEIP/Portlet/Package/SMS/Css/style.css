@@ -1,0 +1,295 @@
+/**전체 스타일**/
+* {margin:0;padding:0;}
+
+BODY,TD,SELECT,DIV,form,TEXTAREA {font-family:"tahoma", "verdana", "gulim";color:444444;font-size:8pt;line-height:16px;}
+
+
+/**기본 링크**/
+a {onfocus : "this.blur();"}
+a:link {color: 444444;text-decoration: none;}
+a:visited {color: 444444;text-decoration: none;}
+a:hover {color: 007FB7;text-decoration: none;}
+a:active {color: 444444; text-decoration: none;}
+
+
+/**특수 링크
+a.blue:link{color: 007FB7;text-decoration: underline;}
+a.blue:visited {color: 007FB7;text-decoration: underline;}
+a.blue:hover {color: FF4F01;text-decoration: underline;}
+a.blue:active {color: 007FB7; text-decoration: underline;}
+**/
+
+
+/**텍스트 :  Small **/
+.small_basic {font-size:8pt;font-family:gulim,tahoma;line-height:14px;}
+.small_orange {font-size:8pt;font-family:gulim,tahoma;color:FF4F01;line-height:14px;}
+.small_blue {font-size:8pt;font-family:gulim,tahoma;color:007FB7;line-height:14px;}
+.small_gray {font-size:8pt;font-family:gulim,tahoma;color:7E7E7E;line-height:14px;}
+.small_gray2 {font-size:8pt;font-family:gulim,tahoma;color:B3B3B3;line-height:14px;}
+.small_white {font-size:8pt;font-family:gulim,tahoma;color:FFFFFF;line-height:14px;text-decoration: underline;}
+.small_red {font-size:8pt;font-family:gulim,tahoma;color:E82100;line-height:14px;}
+
+.cal_sun {font-size:8pt;font-family:gulim,tahoma;color:CF0000;line-height:14px;}
+.cal_sat {font-size:8pt;font-family:gulim,tahoma;color:0867A7;line-height:14px;}
+.cal_today {font-size:8pt;font-family:gulim,tahoma;color:86B20E;line-height:14px;font-weight:bold;}
+
+.page {letter-spacing:0px;}
+
+
+/**텍스트 :  Normal **/
+.bold {font-weight:bold;}
+.bold_menu {font-weight:bold;letter-spacing:-1px;}
+.bold_blue {font-weight:bold;color:007FB7;}
+.bold_orange {font-weight:bold;color:FF4F01;}
+
+.dotum {font-size:9pt;font-family:gulim,tahoma;line-height:16px;}
+
+.blue {color:007FB7;}
+.gray {color:919191;}
+.orange {color:FF4F01;}
+
+/**tr, td 스타일**/
+.td_line {background-color:DDDDDD;}
+.td_line2 {background-color:DBDBDB;}
+.td_line3 {background-color:E6E6E6;}
+
+.td_gray {background-color:F5F5F5;}
+
+.td_sky {background-color:F0F7FA;}
+.td_sky2 {background-color:97C5D9;}
+
+.td_login {background-color:F8FAEC;}
+.td_login2 {background-color:E0D9B2;}
+
+.tooltip_bg {background-color:FFFFE1;}
+.tooltip_line {background-color:DDDDA3;}
+
+/**입력**/
+.input_basic {border:solid 1;background-color:FFFFFF;border-color:B3B3B3;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;padding-left:1px;}
+.input_login {border:solid 1;background-color:FFFFFF;border-color:C8C6BE;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;padding-left:2px;}
+.input_search {border:solid 1;background-color:797979;border-color:C8C6BE;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:FFFFFF;padding-left:2px;}
+.input_tr {border:solid 0;background-color:transparent;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;}
+.input_join {border:solid 1;background-color:FFFFFF;border-color:B3B3B3;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;padding-left:3px;}
+.input_line {background-color:FFFFFF;border-left:FFFFFF;border-right:FFFFFF;border-bottom:B3B3B3;border-top:FFFFFF;border-width:1px; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid;height:18px;line-height:14px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;padding-left:1px;}
+.input_transparent {border:solid 0;background-color:transparent;width:100%;height:18px;font-family:tahoma,gulim,verdana;font-size:8pt;color:444444;}
+
+.textarea1 {border:solid 1;border-color:FFFFFF;font-family:tahoma,gulim,verdana;font-size:9pt;color:303030;overflow:auto; background-color:FFFFFF;line-height:14pt;}
+.textarea2 {border:solid 1;border-color:E2E2E2;font-family:tahoma,gulim,verdana;font-size:9pt;color:303030;overflow:auto; background-color:FFFFFF;line-height:14pt;padding-left:6px;padding-right:6px;padding-top:5px;padding-bottom:5px;}
+.textarea3 {border:solid 1;border-color:B3B3B3;font-family:tahoma,gulim,verdana;font-size:9pt;color:303030;overflow:auto; background-color:FFFFFF;line-height:14pt;padding-left:6px;padding-right:6px;padding-top:5px;padding-bottom:5px;}
+
+/**이미지 테두리 제거**/
+a img{ border:none;}
+
+
+/** 최보라 추가 **/
+.phonemsglen {
+	font-family:u;
+	font-size:8pt;
+	overflow:hidden;
+	border-style:none;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background:none;
+}
+
+.phonemsgprice {
+	font-family:u;
+	font-size:8pt;
+	color:#FFFFFF;
+	overflow:hidden;
+	border-style:none;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background:none;
+}
+
+.phonemsgbox {
+	width:100px; height:84px;
+	font-family:gulim;
+	font-size:9pt;
+	color:#303030;
+	overflow:hidden;
+	border-style:none;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background:none;
+}
+
+.ttsmsgbox {
+	width:237px; height:155px;
+	font-family:u;
+	font-size:9pt;
+	color:#303030;
+	overflow:hidden;
+	border-style:none;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background:none;
+}
+
+.phonemsgbox_intlpop {
+	width:120px; height:103px;
+	font-family:u;
+	font-size:9pt;
+	color:#303030;
+	overflow:hidden;
+	border-style:none;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background:none;
+}
+
+.cal {font-size:8pt;font-family:gulim,tahoma;color:444444;line-height:14px;}
+
+#scroll_01 {
+overflow-y:scroll; padding:0px;
+scrollbar-face-color: #E7EFF7; 
+scrollbar-shadow-color: #BAC7DF; 
+scrollbar-highlight-color: #FFFFFF; 
+scrollbar-3dlight-color: #FFFFFF; 
+scrollbar-darkshadow-color: #BAC7DF; 
+scrollbar-track-color: #EFF3FF; 
+scrollbar-arrow-color: #4A92DE;}
+}
+
+
+#scroll {
+	overflow-y:scroll; padding:0px;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-highlight-color: #999999;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-shadow-color: #999999;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #ffffff;
+}
+
+#scroll_02 {
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+}
+
+#scroll_03 {
+	scrollbar-3dlight-color:595959;
+    scrollbar-arrow-color:ffffff;
+    scrollbar-base-color:E0E0E0;
+    scrollbar-darkshadow-color:FFFFFF;
+    scrollbar-face-color:E0E0E0;
+    scrollbar-highlight-color:FFFFF;
+    scrollbar-shadow-color:595959 }
+}
+
+.tips {
+	background-Color:#FFCC99;
+	border:1px dotted gray;
+	filter:alpha(opacity=45);
+	cursor:default;
+	font-size:8pt;font-family:gulim,tahoma;color:#000000;line-height:14px;
+}
+
+.bookmarkinput {
+	background-Color:#E6E1FF;
+	border:1px dotted gray;
+	filter:alpha(opacity=85);
+	cursor:default;
+	font-size:8pt;font-family:gulim,tahoma;color:#000000;line-height:14px;
+}
+
+SELECT.htc {
+ BEHAVIOR: url('/common/htc/select.htc')
+}
+.sms_nametip
+{
+	position:absolute; 
+	visibility:hidden;	
+	width:100px;
+	color:#000000; 
+	background-color:#ffffe6;
+	border: 1px solid black;
+	font-family:gulim;
+	text-decoration:none; 
+	z-index:1; 
+	padding:3px 3px;
+}
+
+
+/**X-messgenter*/
+/**tr, td 스타일**/
+.td1 {background-color:F5F5F5;font-weight:bold;}
+.td2 {background-color:FFFFFF;}
+.td3 {background-color:EBF2FC;}
+.td4 {background-color:F5F5F5;}
+
+/*MMS 스타일*/
+.mmstext {
+	width:118px;
+	border:0;
+	font-family:gulim,tahoma;
+	font-size:9pt;
+	color:303030;
+	overflow:; 
+	background-color:transparent;
+	line-height:14px;
+	scrollbar-face-color: #E0E0E0; 
+	scrollbar-shadow-color: #E0E0E0; 
+	scrollbar-highlight-color: #FEFEFE; 
+	scrollbar-3dlight-color: #AEAEAE; 
+	scrollbar-darkshadow-color: #AEAEAE; 
+	scrollbar-track-color: #F2F2F2; 
+	scrollbar-arrow-color: #FFFFFF;
+	
+}
+
+
+
+/**20070627 비쥬얼폰 입력 CSS - 단문 **/
+.newtext {
+	width:125px;
+	height:90px;
+	border:0;
+	font-family:gulim,tahoma;
+	font-size:9pt;
+	color:303030;
+	overflow:; 
+	background-color:transparent;
+	line-height:14px;
+	padding-left:3px;
+	scrollbar-face-color: #AFCEEB;
+	scrollbar-shadow-color: #AFCEEB; 
+	scrollbar-highlight-color: #FEFEFE; 
+	scrollbar-3dlight-color: #7196D0; 
+	scrollbar-darkshadow-color: #7196D0; 
+	scrollbar-track-color: #B5D0EC; 
+	scrollbar-arrow-color: #FFFFFF;
+}
+
+
+/**20070627 비쥬얼폰 입력 CSS - 장문 **/
+.newtext2 {
+	width:125px;
+	height:90px;
+	border:0;
+	font-family:gulim,tahoma;
+	font-size:9pt;
+	color:303030;
+	overflow:; 
+	background-color:transparent;
+	line-height:14px;
+	padding-left:3px;
+	scrollbar-face-color: #C4C2F0;
+	scrollbar-shadow-color: #AFCEEB; 
+	scrollbar-highlight-color: #FEFEFE; 
+	scrollbar-3dlight-color: #9D90DB; 
+	scrollbar-darkshadow-color: #9D90DB; 
+	scrollbar-track-color: #CBC7F1; 
+	scrollbar-arrow-color: #FFFFFF;
+}
+
+
+/**이미지 테두리 제거**/
+a img{ border:none;}

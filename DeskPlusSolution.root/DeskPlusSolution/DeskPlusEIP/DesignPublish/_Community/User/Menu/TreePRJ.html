@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        $(".accordion").accordion({
+            fillSpace: true,
+            animated: 'slide',
+            //event: "mouseover"
+            overTop: 180
+        });
+
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <!-- Info //-->
+    <div class="cm_left_lineA">
+        <div class="wtop"></div>
+        <div class="wmid">
+            
+          <div class="cm_left_infoA">
+            <div class="wtop"></div>
+            <div class="wmid">
+
+                <ul class="info">
+                    <li><span class="cm_tit_fontA">새싹</span>&nbsp;<span class="tit">98수기(withsuki)</span></li>
+                    <li>since 2012.01.01<span class="aRight"><a href="">[카페소개]</a></span></li>
+                    <li><span class="txtbul">회원수:100명 / 방문수:10명</span></li>
+                    <li><span class="txtbul">즐겨찾기멤버 : 100명</span></li>
+                    <li><div class="cm_barA"></div></li>
+                    <li class="set">
+                        <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_sett.gif" alt="" title=""/><span class="tit">카페관리</span>
+                        |
+                        <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" alt="" title=""/><span class="tit">통계</span>
+                    </li>
+                    <li><div class="cm_barA"></div></li>
+                    <li>
+                        <h1 class="txt cm_bulC">비공개</h1>
+                        <span class="txt aRight"><a href="">[초대하기]</a></span>
+                    </li>
+                    <li><div class="cm_barA"></div></li>
+                    <li><div class="cm_gap5"></div></li>
+                    <li><div class="cm_btnA"><a href="#"><span>글 쓰 기</span></a></div></li>
+                </ul>
+            </div>
+            <div class="wbott"></div>
+        </div>  
+
+        </div>
+        <div class="wbott"></div>
+    </div>
+    <div class="cm_gap"></div>
+
+    <!-- 검색 //-->
+    <ul class="cm_left_srhA">
+        <li><input type="text" class="srhtxt" value="검색어를 입력하세요." /></li>
+        <li><a href="#" class="srhbtn" title="검색">검색</a></li>
+    </ul>
+
+
+    <!-- 메뉴 //-->
+    TreePRJ.html
+</div>
+</body>
+</html>

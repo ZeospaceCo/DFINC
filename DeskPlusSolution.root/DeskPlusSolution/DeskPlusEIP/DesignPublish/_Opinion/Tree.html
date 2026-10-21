@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Opinion.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        //$("#accordion").height("100%")
+        $(".accordion").accordion({
+            fillSpace: true
+        });
+        $(".accordion").accordion({
+            animated: 'slide'
+        });
+    });
+    $(function () {
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+
+        //alert($(".accordion").height());
+    });
+</script>
+
+</head>
+<body>
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">설문조사</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            <div class="menu"><a href="#" onclick="" >진행중인 설문</a></div>
+            <div class="menusub">
+
+                <table cellspacing="0" cellpadding="0" border="0" class="SelectedTreeNodeRow">
+                    <tbody>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">참여 리스트</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">미참여 리스트</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListBlog.html" target="frmContent">[블로그형리스트]</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >마감된 설문</a></div>
+            <div class="menusub">
+
+                <table cellspacing="0" cellpadding="0" border="0" class="SelectedTreeNodeRow">
+                    <tbody>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">2009</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">2010</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >중요표시</a></div>
+
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+    <!-- 버튼>
+    <div id="layout_treebutton">
+        <ul class="btn_small">
+            <li class="btn_small_red"><a href="#"><span>삭제</span></a></li>
+            <li><a href="#"><span>수정</span></a></li>
+            <li class="btn_small_blue"><a href="#"><span>추가</span></a></li>
+        </ul>
+    </div //-->
+
+</div>
+
+</body>
+</html>

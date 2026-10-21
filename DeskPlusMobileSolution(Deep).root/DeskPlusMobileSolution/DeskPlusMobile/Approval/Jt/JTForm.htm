@@ -1,0 +1,20 @@
+﻿{#foreach $T as List}
+<li class="contentblock linkDiv">
+    <div class="title" onclick="javascript:Form.GoList('{ $T.List.FolderID }','{ $T.List.FormID }','{ $T.List.TypeInfo }')">
+        <a href="#" class="mct">
+            {#if $T.List.FormID == '0'}
+                <i class="fas fa-folder-open"></i>
+            {#else}
+                <i class="fas fa-file-alt"></i>
+            {#/if}
+            <font>{ $T.List.FName }</font>
+        </a>
+    </div>
+</li>
+{#else} 
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

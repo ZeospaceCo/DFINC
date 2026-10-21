@@ -1,0 +1,80 @@
+﻿<div class="reple_divBox">
+{#foreach $T as RepleList}
+    {#if $T.RepleList.IsTop != "1"}
+        { $T.RepleList.DepthDivStart }
+    {#else} 
+        <div class="title divTop full-width">
+    {#/if}
+        {#if $T.RepleList.Active == "1"}
+            <table width='100%' cellpadding='0' cellspacing='0'>
+            <tr>
+            {#if $T.RepleList.Depth > 0 && $T.RepleList.IsTop != "1"}
+            <td class="review">
+                <img src="/DeskPlusMobile/Design/C/Img/Board/review.png" class="repleImg" />
+            </td>
+            {#/if}
+            <td>
+                <div class="divBest">
+                    {#if $T.RepleList.IsBest == "1"}
+                    <img src="/DeskPlusMobile/Design/C/Img/Board/best.png" class="repleImg" />&nbsp;
+                    {#/if}
+                    <span class="repleName">{ $T.RepleList.UserName }</span>
+                </div>
+                <div style="width: 100%">
+                    <table cellpadding='0' cellspacing='0'>
+                    <tr>
+                    <td>
+                        { $T.RepleList.Content } {$T.RepleList.ShowNew}
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+                <div class="reple_Box">
+                    <span class="reple_Date">
+                        {$T.RepleList.InputDateStr}
+                    </span>
+                </div>
+                <div class="reple_Box">
+                    {#if $T.RepleList.Depth < 2 && $T.RepleList.IsTop != "1"}
+                    <button class="btn btn-sm btn-primary replyGroupAdd " onclick="View.GroupAdd('{$T.RepleList.CompanyID}', '{$T.RepleList.ShortReplyID}');return false;">
+                    </button>
+                    {#/if}
+                    {#if $T.RepleList.IsAuth == 'Y' && $T.RepleList.IsBest != "1"}
+                    {#if $T.RepleList.ParentCnt == 0}
+                    <button class="btn btn-sm btn-light repleDel" onclick="View.DelReply('{$T.RepleList.CompanyID}', '{$T.RepleList.ShortReplyID}', '{$T.RepleList.GroupID}');return false;">
+                        <img src="/DeskPlusMobile/Design/C/Img/Board/del.png" class="repleImg" />
+                    </button>
+                    {#/if}
+                    <button class="btn btn-sm btn-light repleMod" onclick="View.ModShortReply('{$T.RepleList.CompanyID}', '{$T.RepleList.ShortReplyID}');return false;">
+                        <img src="/DeskPlusMobile/Design/C/Img/Board/mod.png" class="repleImg" />
+                    </button>
+                    {#/if}
+                    <button class="btn btn-sm btn-light goodbtn" onclick="View.GoodCount('{$T.RepleList.CompanyID}', '{$T.RepleList.ShortReplyID}', '0', '{$T.RepleList.UserID}');return false;">
+                        <img src="/DeskPlusMobile/Design/C/Img/Board/dn.png" class="repleImg" />
+                        <span class="goodcnt">{$T.RepleList.BadCount}</span>
+                    </button>
+                    <button class="btn btn-sm btn-light goodbtn" onclick="View.GoodCount('{$T.RepleList.CompanyID}', '{$T.RepleList.ShortReplyID}', '1', '{$T.RepleList.UserID}');return false;">
+                        <img src="/DeskPlusMobile/Design/C/Img/Board/up.png" class="repleImg" />
+                        <span class="goodcnt">{$T.RepleList.GoodCount}</span>
+                    </button>
+                </div>
+            </td>
+            </tr>
+            </table>
+        {#else}
+            <div style="width: 100%">
+            <table cellpadding='0' cellspacing='0'>
+            <tr>
+            <td class="review2">
+                <img src="/DeskPlusMobile/Design/C/Img/Board/review.png" class="repleImg" />
+            </td>
+            <td>
+                <span class="delReply"></span>
+            </td>
+            </tr>
+            </table>
+            </div>
+        {#/if}
+        </div>  
+{#/for}
+</div>

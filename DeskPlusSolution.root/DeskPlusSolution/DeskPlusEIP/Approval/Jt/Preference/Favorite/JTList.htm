@@ -1,0 +1,40 @@
+﻿<table class="table_typeA"> 
+<caption>자주지정하는 결재자 리스트</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="50px" />
+    <col width="80px"/>
+    <col width="*"/>
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()"/></th>
+    <th class="center" id="r_number"></th>
+    <th class="center" id="r_isModfy"></th>
+    <th class="center" id="r_deptName"></th>
+    <th class="center" id="r_titleName"></th>
+    <th class="center" id="r_dutyName"></th>
+    <th class="center" id="r_userName"></th>
+    <th class="center" id="r_addDate"></th>
+</tr>
+{#foreach $T as FavoriteList}
+
+{#if $T.FavoriteList.Gubun == 'ML'} <tr style="background-color:#EAEAEA"> {#else} <tr> {#/if}
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.FavoriteList.ApprovalUserSeq }" value="{ $T.FavoriteList.FavoriteApprovalID }" /></td>    
+    <td class="center">{ $T.FavoriteList.ApprovalUserSeq }</td>
+    <td class="center">{#if $T.FavoriteList.Gubun == 'ML'}O{#/if}</td>
+    <td class="center">{ $T.FavoriteList.ApprovalUserDeptName } { $T.FavoriteList.BaseDeptStr }</td>    
+    <td class="center">{ $T.FavoriteList.ApprovalUserTitleName }</td>
+    <td class="center">{ $T.FavoriteList.ApprovalUserDutyName }</td>
+    <td class="center"><a onclick="AccountInfo('{ $T.FavoriteList.UserID }');return false;">{ $T.FavoriteList.ApprovalUserName }</a></td>
+    <td class="center">{ $T.FavoriteList.AddDateStr }</td>          
+</tr>
+{#else}
+<tr>
+    <td colspan="8" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

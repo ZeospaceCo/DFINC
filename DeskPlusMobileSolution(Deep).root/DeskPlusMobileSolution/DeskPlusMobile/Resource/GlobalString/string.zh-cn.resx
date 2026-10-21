@@ -1,0 +1,2118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
+    <value>验收</value>
+  </data>
+  <data name="AccessRight" xml:space="preserve">
+    <value>允许移动应用程序只能访问</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddMail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="AddOpinion" xml:space="preserve">
+    <value>添加评论</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>通讯录</value>
+  </data>
+  <data name="Alarm1" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="Alarm2" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>报警设置</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>报警周期</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="AllReply" xml:space="preserve">
+    <value>全部回复</value>
+  </data>
+  <data name="AllSelect" xml:space="preserve">
+    <value>全部选择</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>匿名</value>
+  </data>
+  <data name="AppDownload" xml:space="preserve">
+    <value>App下載</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>电子审批</value>
+  </data>
+  <data name="ApprovalA" xml:space="preserve">
+    <value>审批 前审</value>
+  </data>
+  <data name="ApprovalFolder" xml:space="preserve">
+    <value>审批完成文件箱</value>
+  </data>
+  <data name="ApprovalH" xml:space="preserve">
+    <value>审批 协议</value>
+  </data>
+  <data name="ApprovalHR" xml:space="preserve">
+    <value>审批 协议不可</value>
+  </data>
+  <data name="ApprovalInfo" xml:space="preserve">
+    <value>审批信息</value>
+  </data>
+  <data name="ApprovalO" xml:space="preserve">
+    <value>添加评论</value>
+  </data>
+  <data name="ApprovalReturn" xml:space="preserve">
+    <value>审批退回</value>
+  </data>
+  <data name="ApprovalS" xml:space="preserve">
+    <value>审批 批准</value>
+  </data>
+  <data name="ApprovalSC" xml:space="preserve">
+    <value>审批 取消</value>
+  </data>
+  <data name="ApprovalStatus" xml:space="preserve">
+    <value>审批 状况查看</value>
+  </data>
+  <data name="ApprovalTitle" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="ApprovalWait" xml:space="preserve">
+    <value>审批/评论中。请稍后再利用。</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>审批对象文件</value>
+  </data>
+  <data name="ApprovedExt" xml:space="preserve">
+    <value>要审批的文件</value>
+  </data>
+  <data name="ApproveSC" xml:space="preserve">
+    <value>审批取消</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>审批人</value>
+  </data>
+  <data name="Arbitrary" xml:space="preserve">
+    <value>前审</value>
+  </data>
+  <data name="ArbitraryFolder" xml:space="preserve">
+    <value>个人文件箱</value>
+  </data>
+  <data name="AskAdmin" xml:space="preserve">
+    <value>请与管理员联系</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="AttachView" xml:space="preserve">
+    <value>查看附件</value>
+  </data>
+  <data name="AuthFail" xml:space="preserve">
+    <value>您没有权限，请与管理员联系。</value>
+  </data>
+  <data name="AuthWait" xml:space="preserve">
+    <value>正在等待连接承认  </value>
+  </data>
+  <data name="BaseApp" xml:space="preserve">
+    <value>基础的支付</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>依据文件</value>
+  </data>
+  <data name="BaseDocView" xml:space="preserve">
+    <value>查看依据文件</value>
+  </data>
+  <data name="BaseTask" xml:space="preserve">
+    <value>基于业务</value>
+  </data>
+  <data name="BeforeDay" xml:space="preserve">
+    <value>以前日</value>
+  </data>
+  <data name="BeforeDoc" xml:space="preserve">
+    <value>以前文</value>
+  </data>
+  <data name="BeforeMonth" xml:space="preserve">
+    <value>前一月</value>
+  </data>
+  <data name="BeforePage" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>公告栏</value>
+  </data>
+  <data name="BoardView" xml:space="preserve">
+    <value>查看公告文</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>胆大</value>
+  </data>
+  <data name="BtnTaskStatus5" xml:space="preserve">
+    <value>复议请求</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CarboncopyFolder" xml:space="preserve">
+    <value>参照文件箱</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>日程分类</value>
+  </data>
+  <data name="Cc" xml:space="preserve">
+    <value>现在看到的</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="CellPhoneSms" xml:space="preserve">
+    <value>手机短信</value>
+  </data>
+  <data name="ChangeCC" xml:space="preserve">
+    <value>从哪里来变化</value>
+  </data>
+  <data name="ChangeDate" xml:space="preserve">
+    <value>更改日期</value>
+  </data>
+  <data name="ChangeSave" xml:space="preserve">
+    <value>保存更改</value>
+  </data>
+  <data name="ChangeTO" xml:space="preserve">
+    <value>更改收件人</value>
+  </data>
+  <data name="CheckFileType" xml:space="preserve">
+    <value>文件无法注册。</value>
+  </data>
+  <data name="CirRecv" xml:space="preserve">
+    <value>共览收到箱</value>
+  </data>
+  <data name="CirSend" xml:space="preserve">
+    <value>共览发送箱</value>
+  </data>
+  <data name="ComfirmAuth" xml:space="preserve">
+    <value>请确认登录名或密码。</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>帖子登记</value>
+  </data>
+  <data name="CommentView" xml:space="preserve">
+    <value>查看帖子</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>公用</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>社区</value>
+  </data>
+  <data name="CommunityJoin" xml:space="preserve">
+    <value>加入的社区</value>
+  </data>
+  <data name="CommunityMenu" xml:space="preserve">
+    <value>社区菜单</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="CompCancel" xml:space="preserve">
+    <value>提交取消</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>已处理</value>
+  </data>
+  <data name="CompleteRequestDate" xml:space="preserve">
+    <value>完成一个请求</value>
+  </data>
+  <data name="Config" xml:space="preserve">
+    <value>环境设置</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="ConfirmCancle" xml:space="preserve">
+    <value>你确定要取消付款？</value>
+  </data>
+  <data name="ConfirmMail" xml:space="preserve">
+    <value>病史检查初始化 \n 你确定你想要去的邮件撰写窗口？</value>
+  </data>
+  <data name="ConfirmZR" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ContactList" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Coop" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="CoopComplete" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="CoopStatus1" xml:space="preserve">
+    <value>等待</value>
+  </data>
+  <data name="CoopStatus2" xml:space="preserve">
+    <value>接受</value>
+  </data>
+  <data name="CoopStatus3" xml:space="preserve">
+    <value>处理中</value>
+  </data>
+  <data name="CoopStatus4" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="CoopStatus5" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="CReply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="CStatus0" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="CStatus1" xml:space="preserve">
+    <value>等待</value>
+  </data>
+  <data name="CStatus2" xml:space="preserve">
+    <value>进行</value>
+  </data>
+  <data name="CStatus4" xml:space="preserve">
+    <value>结束</value>
+  </data>
+  <data name="CStatus5" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelCoop" xml:space="preserve">
+    <value>已经被删除的合作</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>转达</value>
+  </data>
+  <data name="DelList" xml:space="preserve">
+    <value>要删除吗？</value>
+  </data>
+  <data name="DelNoFile" xml:space="preserve">
+    <value>没有要删除的文件</value>
+  </data>
+  <data name="DelNoMail" xml:space="preserve">
+    <value>没有要删除的邮件</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>详细内容</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>困难</value>
+  </data>
+  <data name="Difficulty1" xml:space="preserve">
+    <value>最佳</value>
+  </data>
+  <data name="Difficulty2" xml:space="preserve">
+    <value>中间</value>
+  </data>
+  <data name="Difficulty3" xml:space="preserve">
+    <value>底部</value>
+  </data>
+  <data name="DocFolder" xml:space="preserve">
+    <value>拱顶</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>查看文件</value>
+  </data>
+  <data name="DownloadAuthority" xml:space="preserve">
+    <value>没有权限下载该文件</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>完成（预定）日</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>发生了错误</value>
+  </data>
+  <data name="ErrorDraftMail" xml:space="preserve">
+    <value>临时保存邮件时发生了错误</value>
+  </data>
+  <data name="ETCUser" xml:space="preserve">
+    <value>答案</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>转发收到的协作</value>
+  </data>
+  <data name="ForwardFolder" xml:space="preserve">
+    <value>转达文件箱</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="GoDirect" xml:space="preserve">
+    <value>快捷方式</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>更改历史记录</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="InputAdd" xml:space="preserve">
+    <value>姓名，电子邮件，部门，电话号码</value>
+  </data>
+  <data name="InputApp" xml:space="preserve">
+    <value>标题，信徒</value>
+  </data>
+  <data name="InputBoa" xml:space="preserve">
+    <value>标题，马头，注册</value>
+  </data>
+  <data name="InputCom" xml:space="preserve">
+    <value>标题，注册</value>
+  </data>
+  <data name="InputComment" xml:space="preserve">
+    <value>请输入评论</value>
+  </data>
+  <data name="InputCont" xml:space="preserve">
+    <value>请输入您的信息</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>请将文章</value>
+  </data>
+  <data name="InputCount" xml:space="preserve">
+    <value>请输入140字以内的内容</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>请输入日期时间</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="InputOpinion" xml:space="preserve">
+    <value>请输入意见</value>
+  </data>
+  <data name="InputPassWord" xml:space="preserve">
+    <value>密码输入</value>
+  </data>
+  <data name="InputPwd" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="InputReceiver" xml:space="preserve">
+    <value>请输入收件人</value>
+  </data>
+  <data name="InputReceiverMail" xml:space="preserve">
+    <value>请正确输入收件人邮箱地址</value>
+  </data>
+  <data name="InputRefer2Mail" xml:space="preserve">
+    <value>请正确输入秘密参照人邮箱地址</value>
+  </data>
+  <data name="InputReferMail" xml:space="preserve">
+    <value>请正确输入参照人邮箱地址</value>
+  </data>
+  <data name="InputSubject" xml:space="preserve">
+    <value>请输入标题</value>
+  </data>
+  <data name="InputTask" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>上有帖子</value>
+  </data>
+  <data name="IsActiveTitN" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="IsActiveTitY" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="IsClose" xml:space="preserve">
+    <value>安全级别</value>
+  </data>
+  <data name="IsClose1" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="IsClose2" xml:space="preserve">
+    <value>非公开</value>
+  </data>
+  <data name="IsGubun1" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="IsGubun2" xml:space="preserve">
+    <value>作业指导书</value>
+  </data>
+  <data name="ItemGubun" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>回复数限制在200字以内</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ListView" xml:space="preserve">
+    <value>查看目录</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>登录时发生了错误</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>登录信息请求</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>ID+Pwd</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>Pwd</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>自动认证</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="MailError1" xml:space="preserve">
+    <value>这些都是同一个名字，</value>
+  </data>
+  <data name="MailError2" xml:space="preserve">
+    <value>没有收件人</value>
+  </data>
+  <data name="MailError3" xml:space="preserve">
+    <value>此电子邮件的格式不正确</value>
+  </data>
+  <data name="MailSend" xml:space="preserve">
+    <value>写邮件</value>
+  </data>
+  <data name="MailSendUser" xml:space="preserve">
+    <value>运费批准是必需的，不能发送的邮件用户从移动的环境，因为</value>
+  </data>
+  <data name="MailTitle" xml:space="preserve">
+    <value>信箱</value>
+  </data>
+  <data name="MailView" xml:space="preserve">
+    <value>查看信件</value>
+  </data>
+  <data name="MaxFile" xml:space="preserve">
+    <value>溢出</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>移动管理</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>菜单列表</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="MobileAuth" xml:space="preserve">
+    <value>移动认证</value>
+  </data>
+  <data name="MobileDesign" xml:space="preserve">
+    <value>手机外观集</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>修改他人</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="MsgAccept" xml:space="preserve">
+    <value>我们已经收到了一家企业。</value>
+  </data>
+  <data name="MsgApp" xml:space="preserve">
+    <value>只有它的作品在App</value>
+  </data>
+  <data name="MsgCancel" xml:space="preserve">
+    <value>很显然，完成任务。</value>
+  </data>
+  <data name="MsgCompCancel" xml:space="preserve">
+    <value>正如“正在处理”状态会发生变化。 \n你真的要彻底取消？</value>
+  </data>
+  <data name="MsgComplete" xml:space="preserve">
+    <value>我们已经完成了任务。</value>
+  </data>
+  <data name="MsgReject" xml:space="preserve">
+    <value>它已拒绝了这份工作。</value>
+  </data>
+  <data name="MyPims" xml:space="preserve">
+    <value>我的日程</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>我的讲话</value>
+  </data>
+  <data name="NextDay" xml:space="preserve">
+    <value>第二天</value>
+  </data>
+  <data name="NextDoc" xml:space="preserve">
+    <value>下篇文</value>
+  </data>
+  <data name="NextMailMessage" xml:space="preserve">
+    <value>非常第一封电子邮件。</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>下个月</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="NoApprove" xml:space="preserve">
+    <value>待定</value>
+  </data>
+  <data name="NoConfirm" xml:space="preserve">
+    <value>不可协议</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="NoDownload" xml:space="preserve">
+    <value>不能下载该文件</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>请选择该文件。</value>
+  </data>
+  <data name="NoList" xml:space="preserve">
+    <value>目前没有相应的文章。</value>
+  </data>
+  <data name="NoLodingCustom" xml:space="preserve">
+    <value>不能加载自定义文件</value>
+  </data>
+  <data name="NoLodingDoc" xml:space="preserve">
+    <value>文件没能传输</value>
+  </data>
+  <data name="NoMail" xml:space="preserve">
+    <value>没有邮箱地址</value>
+  </data>
+  <data name="NoPrivateMail" xml:space="preserve">
+    <value>没有个人箱</value>
+  </data>
+  <data name="NoProxy" xml:space="preserve">
+    <value>没有代审人</value>
+  </data>
+  <data name="NoPwd" xml:space="preserve">
+    <value>密码不匹配</value>
+  </data>
+  <data name="NoReadAuth" xml:space="preserve">
+    <value>没有阅读权限</value>
+  </data>
+  <data name="NoRegID" xml:space="preserve">
+    <value>没有收到警报没有收到您的谷歌凭证</value>
+  </data>
+  <data name="NoSchedule" xml:space="preserve">
+    <value>没有日程</value>
+  </data>
+  <data name="NoSelList" xml:space="preserve">
+    <value>我没有选择的列表。</value>
+  </data>
+  <data name="NoShare" xml:space="preserve">
+    <value>没有共享人</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>写了帖子</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>通知事项</value>
+  </data>
+  <data name="NoTodaySchedule" xml:space="preserve">
+    <value>没有今日日程</value>
+  </data>
+  <data name="NoTodayToDo" xml:space="preserve">
+    <value>没有今天的工作</value>
+  </data>
+  <data name="NoToDo" xml:space="preserve">
+    <value>没有工作</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>公司电话</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>公开</value>
+  </data>
+  <data name="OpinionAdd" xml:space="preserve">
+    <value>添加评论</value>
+  </data>
+  <data name="OptionTop" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="Order1" xml:space="preserve">
+    <value>按日期</value>
+  </data>
+  <data name="Order2" xml:space="preserve">
+    <value>按名称</value>
+  </data>
+  <data name="Order3" xml:space="preserve">
+    <value>按分类</value>
+  </data>
+  <data name="Order4" xml:space="preserve">
+    <value>按大小</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>查看原文</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PC" xml:space="preserve">
+    <value>PC版本</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>日程管理</value>
+  </data>
+  <data name="PimsAdd" xml:space="preserve">
+    <value>添加日程</value>
+  </data>
+  <data name="PimsMod" xml:space="preserve">
+    <value>修改日程</value>
+  </data>
+  <data name="PimsSetting" xml:space="preserve">
+    <value>设置查看日程管理</value>
+  </data>
+  <data name="PimsSetting1" xml:space="preserve">
+    <value>查看我的日程</value>
+  </data>
+  <data name="PimsSetting2" xml:space="preserve">
+    <value>查看个人，部门，共享，全体日程</value>
+  </data>
+  <data name="PimsSetting3" xml:space="preserve">
+    <value>查看个人日程</value>
+  </data>
+  <data name="PimsSetting4" xml:space="preserve">
+    <value>查看部门日程</value>
+  </data>
+  <data name="PimsSetting5" xml:space="preserve">
+    <value>查看共享日程</value>
+  </data>
+  <data name="PimsSetting6" xml:space="preserve">
+    <value>查看全体日程</value>
+  </data>
+  <data name="PimsView" xml:space="preserve">
+    <value>查看日程</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>使用弹出</value>
+  </data>
+  <data name="PrevMailMessage" xml:space="preserve">
+    <value>最后一个电子邮件。</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>重要度</value>
+  </data>
+  <data name="Priority1" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="Priority2" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Priority3" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>个人文件箱</value>
+  </data>
+  <data name="PrivateFolderName" xml:space="preserve">
+    <value>个人文件夹</value>
+  </data>
+  <data name="PrivateMail" xml:space="preserve">
+    <value>个人箱</value>
+  </data>
+  <data name="ProcessingCustom" xml:space="preserve">
+    <value>自定义文件处理没有正确进行</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时发生了错误</value>
+  </data>
+  <data name="ProcessingWait" xml:space="preserve">
+    <value>正在进行中。请稍候。</value>
+  </data>
+  <data name="Proxy" xml:space="preserve">
+    <value>查看代审人</value>
+  </data>
+  <data name="Proxy1" xml:space="preserve">
+    <value>代审</value>
+  </data>
+  <data name="ProxyApproved" xml:space="preserve">
+    <value>代审 审批对象文件</value>
+  </data>
+  <data name="ProxyApprovedExt" xml:space="preserve">
+    <value>要审批的本人为代审人的文件列表</value>
+  </data>
+  <data name="ProxyS" xml:space="preserve">
+    <value>[台]</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>部门文件箱</value>
+  </data>
+  <data name="ReadLaterOn" xml:space="preserve">
+    <value>后览</value>
+  </data>
+  <data name="ReceiptFolder" xml:space="preserve">
+    <value>收信文件箱</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>被邀请的协同业务</value>
+  </data>
+  <data name="ReceiveMail" xml:space="preserve">
+    <value>收件箱</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>收件人</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>最新更新的任务</value>
+  </data>
+  <data name="RecentStr" xml:space="preserve">
+    <value>(要求,前台,见)</value>
+  </data>
+  <data name="RecomCount" xml:space="preserve">
+    <value>推荐数</value>
+  </data>
+  <data name="Refer" xml:space="preserve">
+    <value>抄送</value>
+  </data>
+  <data name="Refer1" xml:space="preserve">
+    <value>抄送/密送</value>
+  </data>
+  <data name="Refer2" xml:space="preserve">
+    <value>秘密参照</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>已登记</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>报名注意事项</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>您确定要同伴？</value>
+  </data>
+  <data name="RejectFolder" xml:space="preserve">
+    <value>做配套文件</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>相关文件</value>
+  </data>
+  <data name="RelatedExt" xml:space="preserve">
+    <value>审批进行文件中本人为审批人的文件</value>
+  </data>
+  <data name="ReLoadDoc" xml:space="preserve">
+    <value>文件信息发生了变化。 \n重新导入电子审批文件</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>评论公开</value>
+  </data>
+  <data name="ReplyTitle" xml:space="preserve">
+    <value>答案</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>提交的文件</value>
+  </data>
+  <data name="Reporter" xml:space="preserve">
+    <value>提交人</value>
+  </data>
+  <data name="ReportExt" xml:space="preserve">
+    <value>本人起草的文件</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>邀请的协同业务</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="Requester" xml:space="preserve">
+    <value>邀请人</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>资源管理</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="RestoreMessage" xml:space="preserve">
+    <value>恢复邮件移动到接收邮件。</value>
+  </data>
+  <data name="RestoreNoMail" xml:space="preserve">
+    <value>没有可恢复的邮件</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="ReturnUser" xml:space="preserve">
+    <value>退回对象</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save1" xml:space="preserve">
+    <value>已保存</value>
+  </data>
+  <data name="SaveCompany" xml:space="preserve">
+    <value>保存公司</value>
+  </data>
+  <data name="SaveFile" xml:space="preserve">
+    <value>注册文件</value>
+  </data>
+  <data name="SaveImage" xml:space="preserve">
+    <value>图像配准</value>
+  </data>
+  <data name="SaveLogin" xml:space="preserve">
+    <value>保存用户名</value>
+  </data>
+  <data name="SaveMail" xml:space="preserve">
+    <value>邮件已发送</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>日程</value>
+  </data>
+  <data name="ScheduleToDo" xml:space="preserve">
+    <value>[日程反映]</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchWord" xml:space="preserve">
+    <value>搜索词</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>该文章只能由原作者和创建人查看</value>
+  </data>
+  <data name="SelAll" xml:space="preserve">
+    <value>全部选择</value>
+  </data>
+  <data name="SelCntFile" xml:space="preserve">
+    <value>选择的文件数</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>文件选择</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>选择页头</value>
+  </data>
+  <data name="SelectReturnUser" xml:space="preserve">
+    <value>请选择退回对象</value>
+  </data>
+  <data name="SelFile" xml:space="preserve">
+    <value>选择文件名</value>
+  </data>
+  <data name="SelImage" xml:space="preserve">
+    <value>选择图片</value>
+  </data>
+  <data name="SelNoAll" xml:space="preserve">
+    <value>全部解除</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="SendDate" xml:space="preserve">
+    <value>发送日期</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>发件人</value>
+  </data>
+  <data name="SendFile" xml:space="preserve">
+    <value>转接到的文件</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>发件箱</value>
+  </data>
+  <data name="SendNoFile" xml:space="preserve">
+    <value>请选择要发邮件的文件</value>
+  </data>
+  <data name="SendUser" xml:space="preserve">
+    <value>通讯</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingApprovePwd" xml:space="preserve">
+    <value>使用专用密码付款</value>
+  </data>
+  <data name="ShallWeReject" xml:space="preserve">
+    <value>您确定要重新审查的要求？</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="SharedFolder" xml:space="preserve">
+    <value>共享的文件夹</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>被共享文件夹</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共享人</value>
+  </data>
+  <data name="SignNo" xml:space="preserve">
+    <value>需要在PC版本里登记印章</value>
+  </data>
+  <data name="Sms" xml:space="preserve">
+    <value>短信</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="SOpenType0" xml:space="preserve">
+    <value>个人日程</value>
+  </data>
+  <data name="SOpenType1" xml:space="preserve">
+    <value>共享日程</value>
+  </data>
+  <data name="SOpenType2" xml:space="preserve">
+    <value>全体日程</value>
+  </data>
+  <data name="SOpenType3" xml:space="preserve">
+    <value>部门日程</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>源</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>开始（预订）日</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期要小于结束日期</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>日程适用时，结束时间不能早于或等于开始时间</value>
+  </data>
+  <data name="State1" xml:space="preserve">
+    <value>完审</value>
+  </data>
+  <data name="State2" xml:space="preserve">
+    <value>保留</value>
+  </data>
+  <data name="State3" xml:space="preserve">
+    <value>提交保留</value>
+  </data>
+  <data name="State4" xml:space="preserve">
+    <value>进行</value>
+  </data>
+  <data name="State5" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="State6" xml:space="preserve">
+    <value>等待审批</value>
+  </data>
+  <data name="State7" xml:space="preserve">
+    <value>等待提交（再审）</value>
+  </data>
+  <data name="State8" xml:space="preserve">
+    <value>等待提交（收信）</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>进展率</value>
+  </data>
+  <data name="Status1" xml:space="preserve">
+    <value>没有开始</value>
+  </data>
+  <data name="Status2" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="Status3" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Status4" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Status5" xml:space="preserve">
+    <value>委任</value>
+  </data>
+  <data name="Status6" xml:space="preserve">
+    <value>延期</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="TagDic_OPINIONVIEW" xml:space="preserve">
+    <value>（添加审批意见）</value>
+  </data>
+  <data name="TagDic_ZD0" xml:space="preserve">
+    <value>担当</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="TaskAccept" xml:space="preserve">
+    <value>我们已经收到了一家企业。</value>
+  </data>
+  <data name="TaskCancel" xml:space="preserve">
+    <value>很显然，完成任务。</value>
+  </data>
+  <data name="TaskCompCancel" xml:space="preserve">
+    <value>你真的要彻底取消？</value>
+  </data>
+  <data name="TaskComplete" xml:space="preserve">
+    <value>我们已经完成了任务。</value>
+  </data>
+  <data name="TaskReject" xml:space="preserve">
+    <value>它回顾了服务请求。</value>
+  </data>
+  <data name="TaskStatus5" xml:space="preserve">
+    <value>回顾</value>
+  </data>
+  <data name="TaskStatus6" xml:space="preserve">
+    <value>延迟</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TIsClose1" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="TIsClose2" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>收件人</value>
+  </data>
+  <data name="ToDo" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="ToDoMod" xml:space="preserve">
+    <value>修改工作</value>
+  </data>
+  <data name="ToMe" xml:space="preserve">
+    <value>给我</value>
+  </data>
+  <data name="ToMeMail" xml:space="preserve">
+    <value>给我的邮件箱</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>顶部</value>
+  </data>
+  <data name="TOpenType0" xml:space="preserve">
+    <value>个人工作</value>
+  </data>
+  <data name="TOpenType1" xml:space="preserve">
+    <value>共享工作</value>
+  </data>
+  <data name="TOpenType2" xml:space="preserve">
+    <value>全体工作</value>
+  </data>
+  <data name="TOpenType3" xml:space="preserve">
+    <value>部门工作</value>
+  </data>
+  <data name="Trash" xml:space="preserve">
+    <value>垃圾箱</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="UploadCount" xml:space="preserve">
+    <value>它是在分配容量。\n未使用的文件，请稍后上传完全去除。</value>
+  </data>
+  <data name="Viewing" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="ViewMemo" xml:space="preserve">
+    <value>查看评论</value>
+  </data>
+  <data name="ViewToCc" xml:space="preserve">
+    <value>收件人，抄送</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>涂鸦墙文</value>
+  </data>
+  <data name="WebHard" xml:space="preserve">
+    <value>网盘文件夹</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>业务日志</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>写作</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="ZD" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="ZD0" xml:space="preserve">
+    <value>起草</value>
+  </data>
+  <data name="ZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="ZR" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="MailSendStr" xml:space="preserve">
+    <value>写邮件</value>
+  </data>
+  <data name="AddressStr" xml:space="preserve">
+    <value>通讯录</value>
+  </data>
+  <data name="MyReserve" xml:space="preserve">
+    <value>我的预约现状</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>预约</value>
+  </data>
+  <data name="ResourcesReserve" xml:space="preserve">
+    <value>資源預留狀態</value>
+  </data>
+  <data name="Usable0" xml:space="preserve">
+    <value>擅自</value>
+  </data>
+  <data name="Usable0Reserve" xml:space="preserve">
+    <value>待审批</value>
+  </data>
+  <data name="Usable1" xml:space="preserve">
+    <value>承认</value>
+  </data>
+  <data name="Usable2" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="SecurityReservation" xml:space="preserve">
+    <value>安全预订</value>
+  </data>
+  <data name="InputRM" xml:space="preserve">
+    <value>标题，资源名称，布克</value>
+  </data>
+  <data name="ReserveDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="ResourcesAdd" xml:space="preserve">
+    <value>资源预约</value>
+  </data>
+  <data name="SecuritySetting" xml:space="preserve">
+    <value>安全设置</value>
+  </data>
+  <data name="SelectResource" xml:space="preserve">
+    <value>资源选择</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>没有外部下载</value>
+  </data>
+  <data name="QtyZero" xml:space="preserve">
+    <value>没有可预约数量</value>
+  </data>
+  <data name="SelectResources" xml:space="preserve">
+    <value>请选择资源</value>
+  </data>
+  <data name="UsableResource" xml:space="preserve">
+    <value>在选择的日期里，资源已被预约。</value>
+  </data>
+  <data name="DeleteAuthority" xml:space="preserve">
+    <value>唯一的删除文件，您已注册，就可以了。</value>
+  </data>
+  <data name="PublicFolders" xml:space="preserve">
+    <value>公用文件夹</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>删除重复日程</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>照样维持重复日程的其他一切日程</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>将删除该日程及以后全部日程。</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>删除重复的一切日程。</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>只有这个日程</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>以后全部日程</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>全部日程</value>
+  </data>
+  <data name="ReserveResourceView" xml:space="preserve">
+    <value>查看预留资源</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>无权限</value>
+  </data>
+  <data name="ModifyDate" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="RejectStr" xml:space="preserve">
+    <value>拒绝思维</value>
+  </data>
+  <data name="RejectTitle" xml:space="preserve">
+    <value>拒绝制作原因</value>
+  </data>
+  <data name="RequestQty" xml:space="preserve">
+    <value>申请数量</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>考勤管理</value>
+  </data>
+  <data name="Attendance_Beforework" xml:space="preserve">
+    <value>工作之前</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>早退</value>
+  </data>
+  <data name="Attendance_GotoWork" xml:space="preserve">
+    <value>去工作</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Attendance_NotGotoWork" xml:space="preserve">
+    <value>它不在工作状态。</value>
+  </data>
+  <data name="Attendance_OffWork" xml:space="preserve">
+    <value>下班</value>
+  </data>
+  <data name="Attendance_OffWorkConfirm" xml:space="preserve">
+    <value>你想回家吗？</value>
+  </data>
+  <data name="Attendance_OffWorkRe" xml:space="preserve">
+    <value>你确定要回家吗？\nYour处理将被保存回当前时间。</value>
+  </data>
+  <data name="Attendance_Onduty" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>請輸入你的理由。</value>
+  </data>
+  <data name="Attendance_Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>它已经被评论过了</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>你会解雇吗？</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>此评论已被删除</value>
+  </data>
+  <data name="ModComment" xml:space="preserve">
+    <value>编辑评论</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>不推荐/弃用您的评论。</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>它建议</value>
+  </data>
+  <data name="State_Receive" xml:space="preserve">
+    <value>受信</value>
+  </data>
+  <data name="Menu_Address" xml:space="preserve">
+    <value>通讯录</value>
+  </data>
+  <data name="Menu_Approval" xml:space="preserve">
+    <value>电子审批</value>
+  </data>
+  <data name="Menu_Attendance" xml:space="preserve">
+    <value>考勤管理</value>
+  </data>
+  <data name="Menu_Board" xml:space="preserve">
+    <value>公告栏</value>
+  </data>
+  <data name="Menu_Community" xml:space="preserve">
+    <value>社区</value>
+  </data>
+  <data name="Menu_Config" xml:space="preserve">
+    <value>环境设置</value>
+  </data>
+  <data name="Menu_Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Menu_MyTalk" xml:space="preserve">
+    <value>我的讲话</value>
+  </data>
+  <data name="Menu_Pims" xml:space="preserve">
+    <value>日程管理</value>
+  </data>
+  <data name="Menu_RM" xml:space="preserve">
+    <value>资源管理</value>
+  </data>
+  <data name="Menu_Task" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="Menu_WebHard" xml:space="preserve">
+    <value>网盘文件夹</value>
+  </data>
+  <data name="Attendance_EarlyCancelConfirm" xml:space="preserve">
+    <value>你想取消吗？</value>
+  </data>
+  <data name="Attendance_EarlyConfirm" xml:space="preserve">
+    <value>你想回家吗？</value>
+  </data>
+  <data name="Attendance_EarlyRe" xml:space="preserve">
+    <value>你确定要回家吗？\nYour处理将被保存回当前时间。</value>
+  </data>
+  <data name="Attendance_EarlyTime" xml:space="preserve">
+    <value>提前离境时间表</value>
+  </data>
+  <data name="Attendance_EarlyTimeMsg" xml:space="preserve">
+    <value>请选择预计出发时间</value>
+  </data>
+  <data name="WeekOverTime" xml:space="preserve">
+    <value>每周加班工作</value>
+  </data>
+  <data name="WeekOverTimeMsg" xml:space="preserve">
+    <value>（基于每周52小时内的批准）</value>
+  </data>
+  <data name="Delay" xml:space="preserve">
+    <value>延迟工作(请求和接收）</value>
+  </data>
+  <data name="AppPRO" xml:space="preserve">
+    <value>代审</value>
+  </data>
+  <data name="AppREL" xml:space="preserve">
+    <value>关系</value>
+  </data>
+  <data name="ApprovalStaus" xml:space="preserve">
+    <value>批准状态</value>
+  </data>
+  <data name="AprAPP" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="AprREP" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="TaskDE" xml:space="preserve">
+    <value>延迟</value>
+  </data>
+  <data name="TaskRC" xml:space="preserve">
+    <value>最新</value>
+  </data>
+  <data name="TaskRE" xml:space="preserve">
+    <value>要求</value>
+  </data>
+  <data name="TaskStaus" xml:space="preserve">
+    <value>协作状态</value>
+  </data>
+  <data name="TaskTO" xml:space="preserve">
+    <value>前台</value>
+  </data>
+  <data name="CancelApprovalCheck" xml:space="preserve">
+    <value>该文档已在审批或付款,已完成结算。</value>
+  </data>
+  <data name="Attendance_GotoWorkRe" xml:space="preserve">
+    <value>您确定要去上班吗?\n您的处理将保存回当前时间。</value>
+  </data>
+  <data name="DraftMail" xml:space="preserve">
+    <value>草稿</value>
+  </data>
+  <data name="DraftSend" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="EarlySucceed" xml:space="preserve">
+    <value>조퇴 처리되었습니다.</value>
+  </data>
+  <data name="EarlyTime" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="GotoSucceed" xml:space="preserve">
+    <value>출근 처리되었습니다.</value>
+  </data>
+  <data name="GotoTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="LocationIn" xml:space="preserve">
+    <value>사내</value>
+  </data>
+  <data name="LocationOut" xml:space="preserve">
+    <value>사외</value>
+  </data>
+  <data name="OffWorkSucceed" xml:space="preserve">
+    <value>퇴근 처리되었습니다.</value>
+  </data>
+  <data name="OffWorkTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="MailError4" xml:space="preserve">
+    <value>此电子邮件的格式不正确</value>
+  </data>
+  <data name="MailError5" xml:space="preserve">
+    <value>邮件地址无效</value>
+  </data>
+  <data name="InputMail" xml:space="preserve">
+    <value>主题，由此看来，收件人</value>
+  </data>
+  <data name="ApprovalBase" xml:space="preserve">
+    <value>审批完成</value>
+  </data>
+  <data name="ArbitraryBase" xml:space="preserve">
+    <value>前决</value>
+  </data>
+  <data name="AuthMore" xml:space="preserve">
+    <value>以上</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>取消提交</value>
+  </data>
+  <data name="CancelDelayApp" xml:space="preserve">
+    <value>解除提交保留</value>
+  </data>
+  <data name="CarboncopyBase" xml:space="preserve">
+    <value>参照</value>
+  </data>
+  <data name="CarbonView" xml:space="preserve">
+    <value>参考浏览</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="ConfirmAppInfo" xml:space="preserve">
+    <value>审批信息确认</value>
+  </data>
+  <data name="DelAlert" xml:space="preserve">
+    <value>删除时，实际文件将被删除。</value>
+  </data>
+  <data name="DelAlert2" xml:space="preserve">
+    <value>删除时，在实际列表里依据文件将被删除。</value>
+  </data>
+  <data name="DelPerson" xml:space="preserve">
+    <value>删除代理</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>部门信息</value>
+  </data>
+  <data name="DocAdd" xml:space="preserve">
+    <value>文档提交</value>
+  </data>
+  <data name="DocEditAdd" xml:space="preserve">
+    <value>修改后再提交</value>
+  </data>
+  <data name="DraftFolder" xml:space="preserve">
+    <value>移動 草稿箱</value>
+  </data>
+  <data name="EditDoc" xml:space="preserve">
+    <value>正文/审批线 修改</value>
+  </data>
+  <data name="EditNReport" xml:space="preserve">
+    <value>修改后再提交</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>紧急</value>
+  </data>
+  <data name="ETC3" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Existing" xml:space="preserve">
+    <value>现有</value>
+  </data>
+  <data name="Form3" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FormFolder" xml:space="preserve">
+    <value>文件形式</value>
+  </data>
+  <data name="ForwardBase" xml:space="preserve">
+    <value>转达</value>
+  </data>
+  <data name="InChar" xml:space="preserve">
+    <value>字 以内</value>
+  </data>
+  <data name="LaterOn" xml:space="preserve">
+    <value>以后处理</value>
+  </data>
+  <data name="LaterOnItem1" xml:space="preserve">
+    <value>休假</value>
+  </data>
+  <data name="LaterOnItem2" xml:space="preserve">
+    <value>出差</value>
+  </data>
+  <data name="LaterOnItem3" xml:space="preserve">
+    <value>病假</value>
+  </data>
+  <data name="LaterOnItem4" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="LaterOnTarget" xml:space="preserve">
+    <value>以后处理对象</value>
+  </data>
+  <data name="ModfyAppLine" xml:space="preserve">
+    <value>更改付款信息</value>
+  </data>
+  <data name="MsgCancelApp" xml:space="preserve">
+    <value>你确定要取消吗？</value>
+  </data>
+  <data name="MsgPerson" xml:space="preserve">
+    <value>请选择代办业务</value>
+  </data>
+  <data name="Msg_AlertEDMCheck" xml:space="preserve">
+    <value>需要设置EDMS移动</value>
+  </data>
+  <data name="Msg_ConfirmAppLine" xml:space="preserve">
+    <value>请确认一下结算线。</value>
+  </data>
+  <data name="Msg_ConfirmUpdate" xml:space="preserve">
+    <value>要覆盖吗？</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>是已经存储为依据文件的文档。</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>是已经添加到目录的文档。</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>正文里有脚本方面疑问字句，内容可能被更改。</value>
+  </data>
+  <data name="Msg_ErrLife" xml:space="preserve">
+    <value>请指定保存年限。</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>输入字数限200字以内。</value>
+  </data>
+  <data name="Msg_ErrorUserBefore" xml:space="preserve">
+    <value>是已被指定的部门（用户）。</value>
+  </data>
+  <data name="Msg_ErrorUserInfo" xml:space="preserve">
+    <value>审批人信息输入错误。请询问管理员。</value>
+  </data>
+  <data name="Msg_ErrorUserNon" xml:space="preserve">
+    <value>指定的用户不存在。</value>
+  </data>
+  <data name="Msg_ErrReCancel" xml:space="preserve">
+    <value>取消指定后，请重新选择</value>
+  </data>
+  <data name="Msg_ErrSelUnit" xml:space="preserve">
+    <value>请选择要指定的审批栏。</value>
+  </data>
+  <data name="Msg_FlowErrorSet" xml:space="preserve">
+    <value>审批人被指定的状态下无法删除审批线。请在【取消该审批线的最后审批人指定】后删除。</value>
+  </data>
+  <data name="Msg_InputDraftName" xml:space="preserve">
+    <value>请输入临时存储名。</value>
+  </data>
+  <data name="Msg_LaterOnSelItem" xml:space="preserve">
+    <value>请选择后阅事由。</value>
+  </data>
+  <data name="MSG_Processing" xml:space="preserve">
+    <value>修改或审批正在​​进行中。</value>
+  </data>
+  <data name="MSG_SelDel" xml:space="preserve">
+    <value>请选择要删除的项目。</value>
+  </data>
+  <data name="Msg_SeqErrZA" xml:space="preserve">
+    <value>审批顺序指定错误。 \ n协议人不能成为最终审批人。 \ n请重新指定审批顺序。</value>
+  </data>
+  <data name="Msg_SeqErrZH" xml:space="preserve">
+    <value>审批顺序指定错误。 \ n协助人不能成为最终审批人。 \ n请重新指定审批顺序。</value>
+  </data>
+  <data name="Msg_SetLine" xml:space="preserve">
+    <value>请指定审批线。</value>
+  </data>
+  <data name="MSG_SubDept" xml:space="preserve">
+    <value>要包括下级部门吗？</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>审批意见</value>
+  </data>
+  <data name="OrganAddtionJob" xml:space="preserve">
+    <value>兼</value>
+  </data>
+  <data name="PrivateAppNet" xml:space="preserve">
+    <value>个人审批线</value>
+  </data>
+  <data name="PrivateBase" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="PrivateDraft" xml:space="preserve">
+    <value>临时保存</value>
+  </data>
+  <data name="PrivateDraftName" xml:space="preserve">
+    <value>临时保存名</value>
+  </data>
+  <data name="PublicBase" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>保安</value>
+  </data>
+  <data name="SelApprover" xml:space="preserve">
+    <value>选择审批人</value>
+  </data>
+  <data name="SelectForm" xml:space="preserve">
+    <value>选择表格</value>
+  </data>
+  <data name="SelectPerson" xml:space="preserve">
+    <value>选择目标</value>
+  </data>
+  <data name="SubmitFolder" xml:space="preserve">
+    <value>移動 提交 文件夹</value>
+  </data>
+  <data name="TagDic_BODY" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="TagDic_BODY_etc" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="TagDic_COMPANY" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="TagDic_DATE" xml:space="preserve">
+    <value>起草日</value>
+  </data>
+  <data name="TagDic_EDITOR" xml:space="preserve">
+    <value>编辑器</value>
+  </data>
+  <data name="TagDic_EMPNUM" xml:space="preserve">
+    <value>社号</value>
+  </data>
+  <data name="TagDic_ENFORCEDEPTNAME" xml:space="preserve">
+    <value>公文收信处</value>
+  </data>
+  <data name="TagDic_ENFORCENAME" xml:space="preserve">
+    <value>公文参照</value>
+  </data>
+  <data name="TagDic_ENFORCERECEIVECARBON" xml:space="preserve">
+    <value>公文参照</value>
+  </data>
+  <data name="TagDic_FLOWZA" xml:space="preserve">
+    <value>协议群组</value>
+  </data>
+  <data name="TagDic_FLOWZD" xml:space="preserve">
+    <value>发信群组</value>
+  </data>
+  <data name="TagDic_FLOWZH" xml:space="preserve">
+    <value>协助群组</value>
+  </data>
+  <data name="TagDic_FLOWZR" xml:space="preserve">
+    <value>散发组</value>
+  </data>
+  <data name="TagDic_INFO0" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="TagDic_INFO1" xml:space="preserve">
+    <value>职位 名称</value>
+  </data>
+  <data name="TagDic_INFO10" xml:space="preserve">
+    <value>职责 名称</value>
+  </data>
+  <data name="TagDic_INFO11" xml:space="preserve">
+    <value>职责 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO12" xml:space="preserve">
+    <value>部门 职责 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO13" xml:space="preserve">
+    <value>名称 审批日 时间</value>
+  </data>
+  <data name="TagDic_INFO14" xml:space="preserve">
+    <value>审批日（月日）</value>
+  </data>
+  <data name="TagDic_INFO15" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TagDic_INFO2" xml:space="preserve">
+    <value>职位 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO3" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TagDic_INFO4" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="TagDic_INFO5" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="TagDic_INFO6" xml:space="preserve">
+    <value>名称 审批日  </value>
+  </data>
+  <data name="TagDic_INFO7" xml:space="preserve">
+    <value>部门 职位 名称 审批日</value>
+  </data>
+  <data name="TagDic_INFO8" xml:space="preserve">
+    <value>审批日 时间</value>
+  </data>
+  <data name="TagDic_INFO9" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="TagDic_LIFE" xml:space="preserve">
+    <value>保存期间</value>
+  </data>
+  <data name="TagDic_NO" xml:space="preserve">
+    <value>文档编号</value>
+  </data>
+  <data name="TagDic_OPINION" xml:space="preserve">
+    <value>审批意见</value>
+  </data>
+  <data name="TagDic_Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="TagDic_SUBJ" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TagDic_UPDPT" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="TagDic_UPJC" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="TagDic_UPNM" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="TagDic_ZA" xml:space="preserve">
+    <value>协议</value>
+  </data>
+  <data name="TagDic_ZC" xml:space="preserve">
+    <value>参考</value>
+  </data>
+  <data name="TagDic_ZD" xml:space="preserve">
+    <value>审批</value>
+  </data>
+  <data name="TagDic_ZD01" xml:space="preserve">
+    <value>担当</value>
+  </data>
+  <data name="TagDic_ZH" xml:space="preserve">
+    <value>协助</value>
+  </data>
+  <data name="TagDic_ZP" xml:space="preserve">
+    <value>收信</value>
+  </data>
+  <data name="TagDic_ZP0" xml:space="preserve">
+    <value>收信担当</value>
+  </data>
+  <data name="TagDic_ZR" xml:space="preserve">
+    <value>流传</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="TitSub" xml:space="preserve">
+    <value>以下</value>
+  </data>
+  <data name="Tit_Cancel" xml:space="preserve">
+    <value>取消指定</value>
+  </data>
+  <data name="Tit_File" xml:space="preserve">
+    <value>文件区分</value>
+  </data>
+  <data name="Tit_FlowAdd" xml:space="preserve">
+    <value>添加审批线</value>
+  </data>
+  <data name="Tit_FlowDel" xml:space="preserve">
+    <value>删除审批线</value>
+  </data>
+  <data name="Tit_Life" xml:space="preserve">
+    <value>永恒的</value>
+  </data>
+  <data name="Tit_Life1" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="Tit_Life2" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="Tit_Life3" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="Tit_Life4" xml:space="preserve">
+    <value>4年</value>
+  </data>
+  <data name="Tit_Life5" xml:space="preserve">
+    <value>5年</value>
+  </data>
+  <data name="ViewAuth" xml:space="preserve">
+    <value>查看权限</value>
+  </data>
+  <data name="WriteDoc" xml:space="preserve">
+    <value>编写文档</value>
+  </data>
+  <data name="SetAlarmTimeUse" xml:space="preserve">
+    <value>设置提醒时间</value>
+  </data>
+  <data name="BasedOnTime" xml:space="preserve">
+    <value>服务器时基</value>
+  </data>
+  <data name="AlarmEndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="AlarmStartTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="AlarmTimeCheck" xml:space="preserve">
+    <value>请选择不同的开始时间和结束时间来接收通知</value>
+  </data>
+  <data name="Menu_Notification" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NotificationBox" xml:space="preserve">
+    <value>通知必须</value>
+  </data>
+  <data name="ReadProcessing" xml:space="preserve">
+    <value>读处理</value>
+  </data>
+  <data name="SaveDate" xml:space="preserve">
+    <value>贮存期：7天</value>
+  </data>
+  <data name="DelNoNoti" xml:space="preserve">
+    <value>没有要删除的通知。</value>
+  </data>
+  <data name="ReadNoNoti" xml:space="preserve">
+    <value>没有通知要阅读。</value>
+  </data>
+  <data name="MobileNotiMessege" xml:space="preserve">
+    <value>一封新邮件已经到了</value>
+  </data>
+  <data name="DeptSet" xml:space="preserve">
+    <value>部門指定</value>
+  </data>
+  <data name="EmptyContent" xml:space="preserve">
+    <value>歷史記錄已被刪除。</value>
+  </data>
+  <data name="ChangeDoc" xml:space="preserve">
+    <value>文件信息发生了变化。</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>通知框必须设为开</value>
+  </data>
+  <data name="NotifiView" xml:space="preserve">
+    <value>查看收件箱</value>
+  </data>
+  <data name="AlarmNotice" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>请选择提醒时间</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>之前通知</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>邮件格式不正确。</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5小时</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4小时</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1小时</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1天</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>日程提醒</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>分隔符（;）/时间表标题和时间将发送到输入的电子邮件地址。</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6小时</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3小时</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3天</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2小时</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2天</value>
+  </data>
+  <data name="Msg_ErrBaseSameDoc" xml:space="preserve">
+    <value>无法添加相同的文档</value>
+  </data>
+  <data name="FourDay" xml:space="preserve">
+    <value>4天</value>
+  </data>
+  <data name="FiveDay" xml:space="preserve">
+    <value>5天</value>
+  </data>
+  <data name="SixDay" xml:space="preserve">
+    <value>6天</value>
+  </data>
+  <data name="SevenDay" xml:space="preserve">
+    <value>7天</value>
+  </data>  
+</root>

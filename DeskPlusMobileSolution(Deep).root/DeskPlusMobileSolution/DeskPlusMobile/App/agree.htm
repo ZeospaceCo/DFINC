@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/DeskPlusMobile/Content/ko/base/Css/DStyle/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/DeskPlusMobile/Content/ko/base/Css/DStyle/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/DeskPlusMobile/Content/ko/base/Css/DStyle/mobile.css"/>
+	<style>
+		body.agreeC {
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background-color: #000;}
+
+		.agreeCbox {
+			background: #182430;
+			position: fixed;
+			height: 100%;
+			overflow: hidden;
+			width: 100%;
+			opacity: 0.88;
+			z-index: -1;
+			top: 0;}
+
+		.agreeCboxin {
+			width: 100%;
+			max-width: 330px;
+			padding: 40px 40px 20px;
+			margin: auto;
+			background: #fff;
+			border: 0px;
+			text-align:center;
+			font-size:1.15em;
+			font-weight:bold;
+			border-top: 5px solid #3d6efc;}
+	</style>
+  <script>
+      function select_tag_excute(string) {
+          Android.select_tag_excute(string); //변경금지
+      }
+
+  </script>
+ </head>
+<body class="agreeC">
+    <div class="agreeCbox"></div>
+    <div class="login-logo-area">
+      <div class="logo"><a><img src="/DeskPlusMobile/FileData/1/lgn_logo.png" alt="" /></a></div>
+    </div>
+    <div class="container">
+        <div class="login-login-box ">
+            <div class="agreeCboxin">
+			<div><p><span>푸시 수신에 동의하셔야 그룹웨어<br />알람 메시지를 이용하실수 있습니다.<br/></span></p></div>
+			<div class="input-group mb-3">
+                <input type="submit" value="동의" id="submit"   class="btn btn-lg btn-primary btn-block" style="margin-bottom:10px;" onclick="select_tag_excute('agree')" />
+                <input type="submit" value="미동의" id="submit" class="btn btn-lg btn-warning btn-block" style="margin-bottom:10px;"  onclick="select_tag_excute('deny')"/>
+		 	</div>
+			</div>
+		</div>
+	</div>
+            
+</body>
+</html>

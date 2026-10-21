@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../Design/ko/base/Css/DeskPlusEIPBase.css" type="text/css" media="screen" rel="stylesheet" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_header">
+    <ul id="tab" class="tab">
+        <li><a href="#" class="tab_on"> <span>외부메일 가져오기</span> </a></li>
+        <li><a href="#"> <span>구글메일 가져오기</span> </a></li>
+    </ul>
+</div>
+<!-- //layout_header -->
+<div id="layout_info">
+    <div class="outmail">           
+        <ul class="outmail_location">
+            <li><a href="">01 불러오기</a></li>
+            <li><a href="" class="over">02 미리보기</a></li>
+            <li class="last-child"><a href="">03 저장하기</a></li>
+        </ul>
+        <div class="outmail_select">
+            <p class="descrip">총 <em class="ft_blue">11개</em>의 주소중 <em class="ft_blue">7개의 주소</em>를 가져왔습니다.</p>
+        </div>
+        <div class="boardW">
+            <div class="listAtoZ fl_left">
+                <ul>
+                    <li class="first-child">&lowast;전체(30)</li>
+                    <li>중복제외(10)</li>
+                    <li>중복(20)</li>
+                </ul>
+            </div>
+             <!-- 테이블 시작 -->
+            <div class="table_typeAtop_left">
+                <p></p>
+            </div>
+            <table class="table_typeA">
+                <caption>
+                외부메일 가져오기
+                </caption>
+                <colgroup>
+                <col width="10%" />
+                <col width="20%" />
+                <col width="30%" />
+                <col width="10%" />
+                <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="first-child"><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+                        <th><a href="#">이름</a></th>
+                        <th><a href="#">메일</a></th>
+                        <th>구분</th>
+                        <th class="last-child"><a href="#">휴대폰</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td ><input type="checkbox" value="GM|7" id="cbxID1" /></td>
+                        <td>홍박사</td>
+                        <td >test2@zeospace.com</td>
+                        <td >중복</td>
+                        <td >01011112222</td>
+                    </tr>
+                    <tr>
+                        <td ><input type="checkbox" value="GM|7"  /></td>
+                        <td>홍박사</td>
+                        <td >test2@zeospace.com</td>
+                        <td >신규</td>
+                        <td >01011112222</td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="table_typeAbottom_left">
+                <p></p>
+            </div><!-- 테이블 끝 -->
+        </div>
+        <div class="btnwrap_w ">        
+            <div class="leftArea">
+                <span class="list_add_style4">
+                    <span class="ft_blue mgl10"><strong>주소를 저장할 그룹선택</strong> </span>
+                    <span>
+                        <select class="input_style3">
+                            <option>선택하세요</option>
+                            <option> </option>
+                            <option> </option>
+                        </select>
+                    </span>
+                </span>
+                <a href="#" class="btn_style2">저장</a>
+                 <ul class="btn_left">
+                    <li><a href="" title=""><span>취소</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

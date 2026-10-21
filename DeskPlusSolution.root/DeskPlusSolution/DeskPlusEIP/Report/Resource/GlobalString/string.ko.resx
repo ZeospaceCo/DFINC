@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>추가할 첨부파일</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>파일추가</value>
+  </data>
+  <data name="AddShort" xml:space="preserve">
+    <value>댓글추가</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>내용을 입력해 주세요.</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>관리자</value>
+  </data>
+  <data name="AfterDept" xml:space="preserve">
+    <value>변경후부서</value>
+  </data>
+  <data name="AfterInfo" xml:space="preserve">
+    <value>변경후정보</value>
+  </data>
+  <data name="AfterUser" xml:space="preserve">
+    <value>변경후사용자</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>전체다운로드</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>정말로 삭제하시겠습니까?</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>첨부파일</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>권한관리</value>
+  </data>
+  <data name="AuthOnlyOne" xml:space="preserve">
+    <value>보고 대상자는 1명만 가능합니다.</value>
+  </data>
+  <data name="BeforeDept" xml:space="preserve">
+    <value>변경전부서</value>
+  </data>
+  <data name="BeforeDeptGarbage" xml:space="preserve">
+    <value>변경전삭제부서</value>
+  </data>
+  <data name="BeforeInfo" xml:space="preserve">
+    <value>변경전정보</value>
+  </data>
+  <data name="BeforeUser" xml:space="preserve">
+    <value>변경전사용자</value>
+  </data>
+  <data name="BeforeWeekJob" xml:space="preserve">
+    <value>지난주 실적</value>
+  </data>
+  <data name="BringNextJobSche" xml:space="preserve">
+    <value>차주 일정관리 가져오기</value>
+  </data>
+  <data name="BringNowJobSche" xml:space="preserve">
+    <value>금주 일정관리 가져오기</value>
+  </data>
+  <data name="BringPim" xml:space="preserve">
+    <value>일정관리 자료 갖고오기</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>순서변경</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>조회</value>
+  </data>
+  <data name="CheckAdmin" xml:space="preserve">
+    <value>비공개로 설정된 일지는 보고대상자와 본인만 조회됩니다.</value>
+  </data>
+  <data name="CheckAuth" xml:space="preserve">
+    <value>권한을 할당해 주시기 바랍니다.</value>
+  </data>
+  <data name="CheckAuthUser" xml:space="preserve">
+    <value>확인요청은 권한관리에서 보고대상자를 추가해야 합니다.</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>중국어</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="CloseYN" xml:space="preserve">
+    <value>공개여부</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인여부</value>
+  </data>
+  <data name="ConfirmCheck" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ConfirmFolder" xml:space="preserve">
+    <value>확인요청함</value>
+  </data>
+  <data name="ConfirmRequest" xml:space="preserve">
+    <value>확인요청</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>선택복사</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>전체복사</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>실제 파일을 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeletedDept" xml:space="preserve">
+    <value>삭제된 부서현황</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="DeptCode" xml:space="preserve">
+    <value>내부코드</value>
+  </data>
+  <data name="DeptFolder" xml:space="preserve">
+    <value>부서함</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="DoConfirmRequest" xml:space="preserve">
+    <value>확인요청 하였습니다.</value>
+  </data>
+  <data name="DocumentTransfer" xml:space="preserve">
+    <value>문서이관</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>영어</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>첨부파일 정보를 가져오는데 에러가 발생하였습니다.</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>파일타입</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>프랑스어</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>보기 페이지로 이동합니다.</value>
+  </data>
+  <data name="GroupBaseName" xml:space="preserve">
+    <value>그룹 기본명</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>활성화여부</value>
+  </data>
+  <data name="IsClose" xml:space="preserve">
+    <value>비공개</value>
+  </data>
+  <data name="IsOpen" xml:space="preserve">
+    <value>공개</value>
+  </data>
+  <data name="IssueWork" xml:space="preserve">
+    <value>이슈</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>일본어</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>한국어</value>
+  </data>
+  <data name="Linked" xml:space="preserve">
+    <value>이관여부</value>
+  </data>
+  <data name="LinkedCopyDept" xml:space="preserve">
+    <value>복사(부서)</value>
+  </data>
+  <data name="LinkedCopyUser" xml:space="preserve">
+    <value>복사(사용자)</value>
+  </data>
+  <data name="LinkedMoveDept" xml:space="preserve">
+    <value>이관(부서)</value>
+  </data>
+  <data name="LinkedMoveUser" xml:space="preserve">
+    <value>이관(사용자)</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="Modifyed" xml:space="preserve">
+    <value>수정하였습니다.</value>
+  </data>
+  <data name="ModShort" xml:space="preserve">
+    <value>의견 수정</value>
+  </data>
+  <data name="MSG_ErrDelSubFolder" xml:space="preserve">
+    <value>하위폴더를 먼저 삭제해 주세요.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>성명</value>
+  </data>
+  <data name="Naming" xml:space="preserve">
+    <value>명칭</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>차주업무의 보고내용을 작성하세요.</value>
+  </data>
+  <data name="NextWork" xml:space="preserve">
+    <value>차주업무</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>해당 사용자는 접근하실 수 없습니다.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>해당 파일이 존재하지 않습니다.</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>상위그룹명</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>개인함</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>처리되었습니다.</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>처리시 오류가 발생되었습니다. 관리자에게 문의해주시기 바랍니다.</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>정말 삭제하시겠습니까?</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>추가하였습니다.</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="ReplyScript" xml:space="preserve">
+    <value>님이 댓글을 기재하였습니다.</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>일지</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>보고대상자</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>요청</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="SelectCopyList" xml:space="preserve">
+    <value>복사 할 목록 현황을 선택해 주세요.</value>
+  </data>
+  <data name="SelectDeleteList" xml:space="preserve">
+    <value>삭제할 리스트를 선택해 주세요.</value>
+  </data>
+  <data name="SelectDeptAfterDept" xml:space="preserve">
+    <value>[변경후부서] 버튼을 선택하여 부서를 선택해 주세요.</value>
+  </data>
+  <data name="SelectDeptBeforeDept" xml:space="preserve">
+    <value>[변경전부서] 버튼을 선택하여 부서를 선택해 주세요.</value>
+  </data>
+  <data name="SelectMoveList" xml:space="preserve">
+    <value>이동할 목록 현황을 선택해 주세요.</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>사용자를 선택해 주시기 바랍니다.</value>
+  </data>
+  <data name="SelectUserAfterUser" xml:space="preserve">
+    <value>[변경후사용자] 버튼을 선택하여 사용자를 선택해 주세요.</value>
+  </data>
+  <data name="SelectUserBeforeUser" xml:space="preserve">
+    <value>[변경전사용자] 버튼을 선택하여 사용자를 선택해 주세요.</value>
+  </data>
+  <data name="SelFolder" xml:space="preserve">
+    <value>폴더를 선택해 주세요.</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>권한을 설정해 주시기 바랍니다.</value>
+  </data>
+  <data name="SettingMultiLang" xml:space="preserve">
+    <value>다국어 설정</value>
+  </data>
+  <data name="ShallAddNextJob" xml:space="preserve">
+    <value>입력하신 차주업무에 추가하시겠습니까?</value>
+  </data>
+  <data name="ShallAddNowJob" xml:space="preserve">
+    <value>입력하신 금주 계획에 추가하시겠습니까?</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>공유함</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>공유대상자</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>의견</value>
+  </data>
+  <data name="ShortRegister" xml:space="preserve">
+    <value>의견 작성</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>대만어</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>금주 계획의 보고내용을 작성하세요.</value>
+  </data>
+  <data name="ThisWork" xml:space="preserve">
+    <value>금주 계획</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>선택이관</value>
+  </data>
+  <data name="TransferAll" xml:space="preserve">
+    <value>전체이관</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>업무일지</value>
+  </data>
+  <data name="WorkCancel" xml:space="preserve">
+    <value>일지확인취소</value>
+  </data>
+  <data name="WorkClose" xml:space="preserve">
+    <value>일지 비공개</value>
+  </data>
+  <data name="WorkConfirm" xml:space="preserve">
+    <value>일지확인</value>
+  </data>
+  <data name="WorkConfirmCancel" xml:space="preserve">
+    <value>일지확인취소를 하였습니다.</value>
+  </data>
+  <data name="WorkConfirmOK" xml:space="preserve">
+    <value>일지확인을 하였습니다.</value>
+  </data>
+  <data name="WorkContent" xml:space="preserve">
+    <value>보고내용</value>
+  </data>
+  <data name="WorkFolder" xml:space="preserve">
+    <value>업무일지함</value>
+  </data>
+  <data name="WorkMod" xml:space="preserve">
+    <value>업무일지 수정하기</value>
+  </data>
+  <data name="WorkOpen" xml:space="preserve">
+    <value>일지 공개</value>
+  </data>
+  <data name="WorkRegister" xml:space="preserve">
+    <value>업무일지 작성하기</value>
+  </data>
+  <data name="WorkView" xml:space="preserve">
+    <value>업무일지 보기</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>작성</value>
+  </data>
+  <data name="Writer" xml:space="preserve">
+    <value>작성자</value>
+  </data>
+  <data name="GetReportList" xml:space="preserve">
+    <value>보고내역 가져오기</value>
+  </data>
+  <data name="ViewPT" xml:space="preserve">
+    <value>PT보기</value>
+  </data>
+  <data name="Inform" xml:space="preserve">
+    <value>보고용</value>
+  </data>
+  <data name="InformSystem" xml:space="preserve">
+    <value>보고체계</value>
+  </data>
+  <data name="SelInformSystem" xml:space="preserve">
+    <value>보고체계를 지정해 주세요.</value>
+  </data>
+  <data name="InformList" xml:space="preserve">
+    <value>주간업무(보고용)</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>제목, 첨부파일명</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="AdminList" xml:space="preserve">
+    <value>관리자 화면</value>
+  </data>
+  <data name="InformBox" xml:space="preserve">
+    <value>주간업무(보고용)</value>
+  </data>
+  <data name="PrivateBox" xml:space="preserve">
+    <value>주간보고(개인용)</value>
+  </data>
+  <data name="ShareBox" xml:space="preserve">
+    <value>주간업무(상세) - 공유함</value>
+  </data>
+  <data name="BriefingSetMsg" xml:space="preserve">
+    <value>* 보고체계를 위해 분류를 생성할 수 있습니다.</value>
+  </data>
+  <data name="BriefingSetting" xml:space="preserve">
+    <value>보고체계관리</value>
+  </data>
+  <data name="AllList" xml:space="preserve">
+    <value>전체업무조회</value>
+  </data>
+</root>

@@ -1,0 +1,43 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:Portal.viewApproval('{ $T.List.DocumentID }','{ $T.List.ApprovalState }','{ $T.List.ApprovalTag }','{ $T.List.AccountTag }','{ $T.List.Number2 }','{ $T.List.Sequence }','{ $T.List.ApprovalType }')">
+        <a class="Lready">
+
+          {#if     $T.List.ApprovalState == 'W'} <div class="w_ready">●</div> 
+          {#elseif $T.List.ApprovalState == 'I'} <div class="w_ing">●</div>
+          {#elseif $T.List.ApprovalState == 'R'} <div class="w_delay">●</div>
+          {#elseif $T.List.ApprovalState == 'D'} <div class="w_end">●</div>
+          {#elseif $T.List.ApprovalState == 'C'} <div class="w_end">●</div>
+          {#elseif $T.List.ApprovalState == 'H'} <div class="w_end">●</div>          
+          {#elseif $T.List.ApprovalState == 'P'} <div class="w_etc">●</div>{#/if}
+
+         <div class="conBox">
+         {#if $T.List.IsMobile == '0'}&nbsp;<span class="LNoready fas fa-desktop">&nbsp;
+         {#else}&nbsp;<span class="LNoready fas fa-mobile-alt">&nbsp;{#/if}
+         {#if $T.List.IsGuard == '1'}<img src='/DeskPlusMobile/Content/ko/Base/Img/Security.gif' title='' />              
+         {#elseif $T.List.IsGuard == '2'}<img src='/DeskPlusMobile/Content/ko/Base/Img/Emergency.gif' title='' />{#/if}
+         { $T.List.Subject }&nbsp;{$T.List.ShowNew}</span><br />
+         <span class="sch_user">{ $T.List.DeptBase }&nbsp;{ $T.List.NameBase }&nbsp;{ $T.List.WriteTime }<br />
+            { $T.List.Number3 }&nbsp;
+             {#if    $T.List.ApprovalState == 'W'} <span class="bg-ready text-white">
+             {#elseif $T.List.ApprovalState == 'I'} <span class="bg-ing text-white">
+             {#elseif $T.List.ApprovalState == 'R'} <span class="bg-delay text-white">
+             {#elseif $T.List.ApprovalState == 'D'} <span class="bg-end text-white">
+             {#elseif $T.List.ApprovalState == 'C'} <span class="bg-end text-white">
+             {#elseif $T.List.ApprovalState == 'H'} <span class="bg-end text-white">
+             {#elseif $T.List.ApprovalState == 'P'} <span class="bg-etc text-white">{#/if}&nbsp;{$T.List.StateStr}&nbsp;</span>  </span>          
+
+         </div>
+        </a>
+    </div>
+</li>
+{#else}   
+<li class="contentblock">
+    <div class="title">
+        <a href="#" ><span id="NoApprovalListData" />&nbsp;</a>
+    </div>
+</li>  
+{#/for}  
+
+
+

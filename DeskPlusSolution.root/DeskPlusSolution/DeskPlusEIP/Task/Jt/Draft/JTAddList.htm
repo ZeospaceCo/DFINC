@@ -1,0 +1,23 @@
+﻿<table class="table_typeA"> 
+<caption>리스트</caption>
+<colgroup>
+    <col  />
+    <col width="100px">
+</colgroup>
+<tr>  
+    <th id="r_title"></th>
+    <th class="center" id="r_draftDate"></th>
+</tr>
+{#foreach $T as List}
+<tr>        
+    <td>        
+        <a onclick="AddList.Choice('{ $T.List.DraftID }', '{ $T.List.Title }');return false;" onDblClick="AddList.ChoiceClose('{ $T.List.DraftID }', '{ $T.List.Title }')" style="cursor:pointer" title="{ $T.List.Title }">{ $T.List.Title }</a>
+    </td>
+    <td class="center">{ $T.List.WriteDate }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="2" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

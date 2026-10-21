@@ -1,0 +1,26 @@
+﻿<div class='h_graph'>
+<ul>
+    {#foreach $T as List}
+    <li title='{ $T.List.Percentage }% ({ $T.List.Cnt }/{ $T.List.TotCnt })'>
+        <span class='g_term' title='{ $T.List.NameBase }'>
+        {#if $T.List.UserID > 0}
+            <a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a>
+        {#else if}
+            { $T.List.NameBase }
+        {#/if}
+        </span>
+        <span style='width:{ $T.List.Percentage }%;' class='g_bar{ $T.List.ClassInfo }'></span> 
+        <span class='g_per'>
+            <span ><font style="font-weight:bold">{ $T.List.Percentage }%</font> ({ $T.List.Cnt }/{ $T.List.TotCnt })</span>
+        </span>
+    </li>
+    {#else}
+    <li style="text-align:center;">
+        <span class='jtNoData'></span>
+    </li>
+    {#/for}
+</ul>
+</div>
+
+
+

@@ -1,0 +1,37 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<caption>
+    UserList
+</caption>
+<colgroup>        
+    <col width="40px" />
+    <col width="120px" />
+    <col  />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="60px" />
+</colgroup>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="UserListByDept.Checked()" /></th>
+        <th class="center" id="r_name"></th>        
+        <th class="center" id="r_deptname"><a class="table_viewA" href="#" onclick="javascript:UserListByDept.Sort ('ReadCount')"></a></th>
+        <th class="center" id="r_titlename"></th>
+        <th class="center" id="r_dutyname"><a class="table_120A" href="#" onclick="javascript:UserListByDept.Sort ('WriteDate')"></a></th>
+        <th class="center" id="r_active"></th>        
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>
+        <td class="center">
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.AccountList.UserID }" value="{ $T.AccountList.UserID }" />
+        </td>
+        <td class="center"><a onclick="javascript:AccountInfo('{ $T.AccountList.UserID }')" style="cursor:pointer">{ $T.AccountList.Name }</a></td>        
+        <td class="center">{ $T.AccountList.DeptName }</td>
+        <td class="center">{ $T.AccountList.TitleName }</td>
+        <td class="center">{ $T.AccountList.DutyName }</td>
+        <td class="center">{#if $T.AccountList.ActiveUser == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="6" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

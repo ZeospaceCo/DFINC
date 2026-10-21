@@ -1,0 +1,35 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Board List
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col  />
+    <col width="70px" />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_number"></th>    
+    <th class="center" id="r_title"></th>                       
+    <th class="center" id="r_view"></th>
+    <th class="center" id="r_register"></th>    
+    <th class="center" id="r_regDate"></th>
+</tr>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ROW }</td>
+    <td><a onclick="GetTargetURL.SetTitle('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }','{ $T.BoardList.TitleShort }');return false;" style="" class="mdm_title" >{ $T.BoardList.Title }</a></td>   
+    <td class="center">
+            <span onclick="GetTargetURL.PopupShort('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" /></span>
+    </td>  
+    <td class="center">{ $T.BoardList.WriteUserName }</td>
+    <td class="center">{ $T.BoardList.WriteDate }</td>           
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span id="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

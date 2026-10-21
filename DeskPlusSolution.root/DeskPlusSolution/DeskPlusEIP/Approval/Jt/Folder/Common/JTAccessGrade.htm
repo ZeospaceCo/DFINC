@@ -1,0 +1,30 @@
+﻿<table class="table_typeA">
+    <caption>
+        열람등급 리스트</caption>
+    <colgroup>
+        <col width="100px"/>
+        <col />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_accessGrades"></th>
+            <th class="center" id="r_titleName2"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td class="center">
+                { $T.List.NameBase }
+            </td>
+            <td>
+                { $T.List.AccessGradeUser }
+            </td>
+        </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+    </tbody>
+</table>

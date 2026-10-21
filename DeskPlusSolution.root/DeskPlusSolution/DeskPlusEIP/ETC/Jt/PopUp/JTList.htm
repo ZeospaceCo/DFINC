@@ -1,0 +1,52 @@
+﻿<table class="table_typeA"> 
+<caption>
+    팝업관리 리스트
+</caption>
+<colgroup>
+    <col />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th id="r_title" class="center"></th>
+    <th id="r_register" class="center"></th>
+    <th id="r_startdate" class="center"></th>
+    <th id="r_enddate" class="center"></th>
+    <th id="r_preview" class="center"></th>   
+</tr>
+{#foreach $T as ManagerList}
+<tr>  
+    <td class="center">
+        {#if $T.ManagerList.ManagerID > 0}
+        <a onclick="List.Mod('{ $T.ManagerList.ManagerID }');return false;" style="cursor:pointer">{ $T.ManagerList.Subject }</a>             
+        {#else}
+        { $T.ManagerList.Subject }
+        {#/if}
+    </td>
+    <td class="center">
+        {#if $T.ManagerList.UserID > 0}
+        <a onclick="AccountInfo('{ $T.ManagerList.UserID }');return false;" style="cursor:pointer">{ $T.ManagerList.UserName }</a>             
+        {#else}
+        { $T.ManagerList.UserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.ManagerList.StartDate }</td>
+    <td class="center">{ $T.ManagerList.EndDate }</td>
+    <td class="center">
+        {#if $T.ManagerList.ManagerID > 0}
+        <a>
+        <img src="/DeskPlusEIP/Design/C/Img/Main/icon_search.gif" style="cursor:pointer" onclick="List.View('{ $T.ManagerList.ManagerID }', '{ $T.ManagerList.Height }', '{ $T.ManagerList.Width }');return false;">     
+        </a>
+        {#else}
+        <img src="/DeskPlusEIP/Design/C/Img/Main/icon_search.gif">
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

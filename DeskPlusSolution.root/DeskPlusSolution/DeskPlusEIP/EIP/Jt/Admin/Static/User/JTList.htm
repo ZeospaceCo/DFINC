@@ -1,0 +1,38 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        인사변경내역
+    </caption>
+    <colgroup>
+        <col width="*" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="120px" />
+        <col width="160px" />
+    </colgroup>
+    <tr>
+        <th id="r_dept"></th>
+        <th id="r_title"></th>
+        <th id="r_duty"></th>
+        <th id="r_name"></th>
+        <th id="r_date"></th>
+    </tr>
+    {#foreach $T as HistoryList}
+    <tr>
+        <td class='center'>{ $T.HistoryList.DeptBase }</td>
+        <td class='center'>{ $T.HistoryList.TitleBase }</td>
+        <td class='center'>{ $T.HistoryList.DutyBase }</td>
+        <td class='center'>
+            {#if $T.HistoryList.UserID > 0}
+                <a onclick="AccountInfo('{ $T.HistoryList.UserID }');return false;" style="cursor:pointer">{ $T.HistoryList.NameBase }</a>             
+            {#else}
+            { $T.HistoryList.NameBase }
+            {#/if}
+        </td>
+        <td class='center'>{ $T.HistoryList.WriteDateStr }</td>        
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="5" class="center"><span class="NoListData" /></td>        
+     </tr>
+    {#/for}  
+ </table>

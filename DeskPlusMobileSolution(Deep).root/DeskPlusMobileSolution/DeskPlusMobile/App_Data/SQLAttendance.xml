@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+    <Item ID="SEL_PROC_ATTENDANCEDATA" Value="DP_PT_Attendance_SelAttendanceData" Content="근태정보 가져오기" />
+    <Item ID="INS_PROC_GOTOWORK" Value="DP_PT_Attendance_GotoWork_Ins" Content="출근" />
+	<Item ID="INS_PROC_OFFWORK" Value="DP_PT_Attendance_OffWork_Ins" Content="퇴근" />
+</XmlData>

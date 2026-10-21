@@ -1,0 +1,34 @@
+﻿<table class="table_typeA">
+<caption>자원 리스트</caption>
+<colgroup>
+    <col width="40px" />
+    <col />
+    <col width="80px" />
+    <col width="120px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th align="center" id="r_checked"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+        <th align="center"><a id="a_Title" href="#" onclick="javascript:List.Sort ('Title')" ><span id="r_title"></span></a></th>
+        <th align="center"><a id="a_Qty" href="#" onclick="javascript:List.Sort ('Qty')" ><span id="r_qty"></span></a></th>
+        <th align="center"><a id="a_ManyName" href="#" onclick="javascript:List.Sort ('ManyName')" ><span id="r_writeUserName"></span></a></th>
+        <th align="center"><a id="a_WriteDate" href="#" onclick="javascript:List.Sort ('WriteDate')" ><span id="r_writeDate"></span></a></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td align="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.ListID }" /></td>
+        <td><a href="#" onclick="javascript:List.View('{ $T.List.ListID }')" style="cursor:pointer" >{ $T.List.Title }</a></td>
+        <td align="center">{ $T.List.Qty }</td>
+        <td align="center"><a href="#" onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a></td>
+        <td align="center">{ $T.List.WriteDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span id="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

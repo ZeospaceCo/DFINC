@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAdministrator" xml:space="preserve">
+    <value>Add admin</value>
+  </data>
+  <data name="AddTagert" xml:space="preserve">
+    <value>Add target</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>Enter contents</value>
+  </data>
+  <data name="BlogListType" xml:space="preserve">
+    <value>Blog-type list</value>
+  </data>
+  <data name="BtnActive" xml:space="preserve">
+    <value>Enable/Disable</value>
+  </data>
+  <data name="BtnBoard" xml:space="preserve">
+    <value>Posting</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="BtnCopy" xml:space="preserve">
+    <value>Create copy</value>
+  </data>
+  <data name="BtnDel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="BtnExcel" xml:space="preserve">
+    <value>Excel reports</value>
+  </data>
+  <data name="BtnFileAdd" xml:space="preserve">
+    <value>Add file</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="BtnPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="BtnReply" xml:space="preserve">
+    <value>Add short replies</value>
+  </data>
+  <data name="BtnSeq" xml:space="preserve">
+    <value>Question order</value>
+  </data>
+  <data name="BtnSeqUnit" xml:space="preserve">
+    <value>Item order</value>
+  </data>
+  <data name="BtnSrh" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="BtnSubmit" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="BtnSuper" xml:space="preserve">
+    <value>Change dept</value>
+  </data>
+  <data name="BtnUnitAdd" xml:space="preserve">
+    <value>Create Q's</value>
+  </data>
+  <data name="BtnVoteUser" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Btn_Vote" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Has been processed</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>Previously written contents will disappear. Will you select?</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>Example</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="GoToInfo" xml:space="preserve">
+    <value>Go to detail page</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>Go to detail input page</value>
+  </data>
+  <data name="GoToListPage" xml:space="preserve">
+    <value>Go to the list page</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Header1" xml:space="preserve">
+    <value>Header1</value>
+  </data>
+  <data name="Header2" xml:space="preserve">
+    <value>Header2</value>
+  </data>
+  <data name="Header3" xml:space="preserve">
+    <value>Header3</value>
+  </data>
+  <data name="JTF1" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="JTF10" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="JTF11" xml:space="preserve">
+    <value>Target info</value>
+  </data>
+  <data name="JTF12" xml:space="preserve">
+    <value>Admin info</value>
+  </data>
+  <data name="JTF13" xml:space="preserve">
+    <value>Writer</value>
+  </data>
+  <data name="JTF14" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="JTF15" xml:space="preserve">
+    <value>Reg date</value>
+  </data>
+  <data name="JTF16" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="JTF17" xml:space="preserve">
+    <value>This survey does not reveal the results</value>
+  </data>
+  <data name="JTF18" xml:space="preserve">
+    <value>[Show result ▼]</value>
+  </data>
+  <data name="JTF19" xml:space="preserve">
+    <value>[Close result ▲]</value>
+  </data>
+  <data name="JTF2" xml:space="preserve">
+    <value>Participants#</value>
+  </data>
+  <data name="JTF20" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="JTF21" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="JTF22" xml:space="preserve">
+    <value>No of Q's </value>
+  </data>
+  <data name="JTF23" xml:space="preserve">
+    <value>Unpublished</value>
+  </data>
+  <data name="JTF24" xml:space="preserve">
+    <value>Anony</value>
+  </data>
+  <data name="JTF25" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="JTF26" xml:space="preserve">
+    <value>Replied</value>
+  </data>
+  <data name="JTF27" xml:space="preserve">
+    <value>Voting day</value>
+  </data>
+  <data name="JTF3" xml:space="preserve">
+    <value>Questions#</value>
+  </data>
+  <data name="JTF4" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="JTF5" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="JTF6" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="JTF7" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="JTF8" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="JTF9" xml:space="preserve">
+    <value>Item#</value>
+  </data>
+  <data name="JTNoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>Its special character is limited, so use security vulnerabilities to attack</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="MenuF1" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="MenuF10" xml:space="preserve">
+    <value>Statistics-comp</value>
+  </data>
+  <data name="MenuF11" xml:space="preserve">
+    <value>Statistics-dept</value>
+  </data>
+  <data name="MenuF12" xml:space="preserve">
+    <value>Statistics-position</value>
+  </data>
+  <data name="MenuF13" xml:space="preserve">
+    <value>Statistics-gender</value>
+  </data>
+  <data name="MenuF14" xml:space="preserve">
+    <value>Participante list</value>
+  </data>
+  <data name="MenuF15" xml:space="preserve">
+    <value>Nonparticipate list </value>
+  </data>
+  <data name="MenuF16" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="MenuF2" xml:space="preserve">
+    <value>Item mgmt</value>
+  </data>
+  <data name="MenuF3" xml:space="preserve">
+    <value>Sample mgmt</value>
+  </data>
+  <data name="MenuF4" xml:space="preserve">
+    <value>Question mgmt</value>
+  </data>
+  <data name="MenuF5" xml:space="preserve">
+    <value>Survey mgmt</value>
+  </data>
+  <data name="MenuF6" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="MenuF7" xml:space="preserve">
+    <value>Ended </value>
+  </data>
+  <data name="MenuF8" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="MenuF9" xml:space="preserve">
+    <value>Statistics(user)</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Msg_Active" xml:space="preserve">
+    <value>Do you want to enable / disable?</value>
+  </data>
+  <data name="Msg_Add" xml:space="preserve">
+    <value>Do you want to register?</value>
+  </data>
+  <data name="Msg_Admin" xml:space="preserve">
+    <value>Contact admin</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="Msg_Dept" xml:space="preserve">
+    <value>Select dept</value>
+  </data>
+  <data name="Msg_ErrActive" xml:space="preserve">
+    <value>Select items to enable / disable?</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>The contents can be modified because there are suspicious sentences about script in the body paragraphs</value>
+  </data>
+  <data name="Msg_ErrDate" xml:space="preserve">
+    <value>Enter date</value>
+  </data>
+  <data name="Msg_ErrDelItem" xml:space="preserve">
+    <value>Select item to delete</value>
+  </data>
+  <data name="Msg_ErrEDate" xml:space="preserve">
+    <value>Enter ending date</value>
+  </data>
+  <data name="Msg_ErrItem" xml:space="preserve">
+    <value>Enter the item info.</value>
+  </data>
+  <data name="Msg_ErrMaxNum" xml:space="preserve">
+    <value>In case of additional number formation, input the maximum value correctly</value>
+  </data>
+  <data name="Msg_ErrNum" xml:space="preserve">
+    <value>Enter number</value>
+  </data>
+  <data name="Msg_ErrOpt" xml:space="preserve">
+    <value>You must choice questions more than one</value>
+  </data>
+  <data name="Msg_ErrReq" xml:space="preserve">
+    <value>Select all the essential items</value>
+  </data>
+  <data name="Msg_ErrSDate" xml:space="preserve">
+    <value>Enter starting date</value>
+  </data>
+  <data name="Msg_ErrSEDate" xml:space="preserve">
+    <value>Enter start and end dates</value>
+  </data>
+  <data name="Msg_ErrSupDept" xml:space="preserve">
+    <value>Enter admin dept</value>
+  </data>
+  <data name="Msg_ErrTitle" xml:space="preserve">
+    <value>Enter subject</value>
+  </data>
+  <data name="Msg_Fail" xml:space="preserve">
+    <value>Error has occurred during processing</value>
+  </data>
+  <data name="Msg_Sel" xml:space="preserve">
+    <value>Select item</value>
+  </data>
+  <data name="Msg_Success" xml:space="preserve">
+    <value>Has been processed</value>
+  </data>
+  <data name="Msg_Unit" xml:space="preserve">
+    <value>Select question</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>unuse</value>
+  </data>
+  <data name="Opened" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Multiple</value>
+  </data>
+  <data name="OptionNon" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attached file name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="ReqItem" xml:space="preserve">
+    <value>Essential</value>
+  </data>
+  <data name="ReqItemNon" xml:space="preserve">
+    <value>Non-essential</value>
+  </data>
+  <data name="Signed" xml:space="preserve">
+    <value>Signed</value>
+  </data>
+  <data name="TitBig" xml:space="preserve">
+    <value>Blow-up</value>
+  </data>
+  <data name="TitClose" xml:space="preserve">
+    <value>Ended</value>
+  </data>
+  <data name="TitDay" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="TitEDate" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="TitF1" xml:space="preserve">
+    <value>Survey title</value>
+  </data>
+  <data name="TitF10" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="TitF11" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="TitF12" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="TitF13" xml:space="preserve">
+    <value>File list</value>
+  </data>
+  <data name="TitF14" xml:space="preserve">
+    <value>Change order</value>
+  </data>
+  <data name="TitF15" xml:space="preserve">
+    <value>* Change the order of items about the items registered</value>
+  </data>
+  <data name="TitF16" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="TitF17" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="TitF18" xml:space="preserve">
+    <value>: You can modify only during the survey period</value>
+  </data>
+  <data name="TitF19" xml:space="preserve">
+    <value>Attach file</value>
+  </data>
+  <data name="TitF2" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="TitF20" xml:space="preserve">
+    <value>Survey&gt;</value>
+  </data>
+  <data name="TitF21" xml:space="preserve">
+    <value>Attach</value>
+  </data>
+  <data name="TitF22" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="TitF23" xml:space="preserve">
+    <value>Nonparticipate list</value>
+  </data>
+  <data name="TitF24" xml:space="preserve">
+    <value>Participate list</value>
+  </data>
+  <data name="TitF25" xml:space="preserve">
+    <value>Descriptopn</value>
+  </data>
+  <data name="TitF26" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="TitF3" xml:space="preserve">
+    <value>In charge</value>
+  </data>
+  <data name="TitF4" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="TitF5" xml:space="preserve">
+    <value>When checked, it will be displayed at the top of the survey list</value>
+  </data>
+  <data name="TitF6" xml:space="preserve">
+    <value>When checking, you can use reply function</value>
+  </data>
+  <data name="TitF7" xml:space="preserve">
+    <value>When checking, you can look up the result</value>
+  </data>
+  <data name="TitF8" xml:space="preserve">
+    <value>When checking, you can view the list of participants</value>
+  </data>
+  <data name="TitF9" xml:space="preserve">
+    <value>Target </value>
+  </data>
+  <data name="TitGetDept" xml:space="preserve">
+    <value>Select dept</value>
+  </data>
+  <data name="TitGetUD" xml:space="preserve">
+    <value>Select User / dept</value>
+  </data>
+  <data name="TitInfo" xml:space="preserve">
+    <value>Survey info</value>
+  </data>
+  <data name="TitIng" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="TitIsMain" xml:space="preserve">
+    <value>Set main</value>
+  </data>
+  <data name="TitIsOpen" xml:space="preserve">
+    <value>Open result</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Item mgmt</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Smaple mgmt</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>Q's mgmt</value>
+  </data>
+  <data name="TitMonth" xml:space="preserve">
+    <value>1M</value>
+  </data>
+  <data name="TitNoReq" xml:space="preserve">
+    <value>Non-essense</value>
+  </data>
+  <data name="TitQuesAdd" xml:space="preserve">
+    <value>Mgmt &gt; Qs add &gt;</value>
+  </data>
+  <data name="TitQuesList" xml:space="preserve">
+    <value>Mgmt &gt;</value>
+  </data>
+  <data name="TitQuesMod" xml:space="preserve">
+    <value>Mgmt &gt; Qs edit &gt;</value>
+  </data>
+  <data name="TitQuesResult" xml:space="preserve">
+    <value>Mgmt &gt; Status &gt;</value>
+  </data>
+  <data name="TitQuesView" xml:space="preserve">
+    <value>Mgmt &gt; Survey view&gt;</value>
+  </data>
+  <data name="TitReply" xml:space="preserve">
+    <value>Use reply</value>
+  </data>
+  <data name="TitReq" xml:space="preserve">
+    <value>Reqiured</value>
+  </data>
+  <data name="TitSDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="TitSubM1" xml:space="preserve">
+    <value>(in progress)</value>
+  </data>
+  <data name="TitSubM2" xml:space="preserve">
+    <value>(Closed)</value>
+  </data>
+  <data name="TitTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TitTotal" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="TitUnitAddF1" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TitUnitAddF2" xml:space="preserve">
+    <value>Item Info</value>
+  </data>
+  <data name="TitUnitAddF3" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="TitUnitAddF4" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="TitUnitAddF5" xml:space="preserve">
+    <value>Assign item</value>
+  </data>
+  <data name="TitUnitAddSub1" xml:space="preserve">
+    <value>For additional points type, enter the maximum value</value>
+  </data>
+  <data name="TitUnitAddSub10" xml:space="preserve">
+    <value>* Registered questions can only be used in one questionnaire. * When registering a question, it is convenient to use the example list that you registered in advance</value>
+  </data>
+  <data name="TitUnitAddSub11" xml:space="preserve">
+    <value>Add file</value>
+  </data>
+  <data name="TitUnitAddSub12" xml:space="preserve">
+    <value>Enter subject</value>
+  </data>
+  <data name="TitUnitAddSub13" xml:space="preserve">
+    <value>Delete file</value>
+  </data>
+  <data name="TitUnitAddSub14" xml:space="preserve">
+    <value>[View Image]</value>
+  </data>
+  <data name="TitUnitAddSub2" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="TitUnitAddSub3" xml:space="preserve">
+    <value>Input item</value>
+  </data>
+  <data name="TitUnitAddSub4" xml:space="preserve">
+    <value>* For item files, for images, size (150 * 150 pixels) and format (gif, jpg, png) must match</value>
+  </data>
+  <data name="TitUnitAddSub5" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="TitUnitAddSub6" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TitUnitAddSub7" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="TitUnitAddSub8" xml:space="preserve">
+    <value>When required, the item is treated as a required item</value>
+  </data>
+  <data name="TitUnitAddSub9" xml:space="preserve">
+    <value>* If you create an example list, you can reuse it in question management.</value>
+  </data>
+  <data name="TitUnitList" xml:space="preserve">
+    <value>Survey &gt; Item mgmt &gt;</value>
+  </data>
+  <data name="TitUnitListSub1" xml:space="preserve">
+    <value>Q's mgmt</value>
+  </data>
+  <data name="TitUnitListSub2" xml:space="preserve">
+    <value>Example mgmt</value>
+  </data>
+  <data name="TitUnitSeq" xml:space="preserve">
+    <value>Change order</value>
+  </data>
+  <data name="TitUnitSeqSub" xml:space="preserve">
+    <value>* For items already registered, change the item order</value>
+  </data>
+  <data name="TitVoteUser" xml:space="preserve">
+    <value>Open respondent</value>
+  </data>
+  <data name="TitWeek" xml:space="preserve">
+    <value>1W</value>
+  </data>
+  <data name="Tit_Count" xml:space="preserve">
+    <value>Participants#</value>
+  </data>
+  <data name="Tit_CountTot" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Tit_Person" xml:space="preserve">
+    <value>Ps</value>
+  </data>
+  <data name="Unit_Active" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Unit_ActiveNon" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="Unit_Horizon" xml:space="preserve">
+    <value>Horizon</value>
+  </data>
+  <data name="Unit_PointA" xml:space="preserve">
+    <value>Single-score</value>
+  </data>
+  <data name="Unit_PointB" xml:space="preserve">
+    <value>Multi-score</value>
+  </data>
+  <data name="Unit_SelectA" xml:space="preserve">
+    <value>Single-choice</value>
+  </data>
+  <data name="Unit_SelectB" xml:space="preserve">
+    <value>Multi-choice</value>
+  </data>
+  <data name="Unit_TypeA" xml:space="preserve">
+    <value>Single-choice</value>
+  </data>
+  <data name="Unit_TypeB" xml:space="preserve">
+    <value>Multi-choice</value>
+  </data>
+  <data name="Unit_TypeC" xml:space="preserve">
+    <value>Single-score</value>
+  </data>
+  <data name="Unit_TypeD" xml:space="preserve">
+    <value>Multi-score</value>
+  </data>
+  <data name="Unit_TypeE" xml:space="preserve">
+    <value>Short-answer</value>
+  </data>
+  <data name="Unit_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>Unsigned</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Mgmt</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>Anonymous Use</value>
+  </data>
+  <data name="TitSecret" xml:space="preserve">
+    <value>When checked, both users and administrators cannot search for participants.</value>
+  </data>
+  <data name="VoteUser" xml:space="preserve">
+    <value>Open Participant</value>
+  </data>
+</root>

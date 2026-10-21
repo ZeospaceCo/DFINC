@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ios>
+    <version>4.6.2</version>
+    <name>DeskPlusMobile</name>
+    <url>itms-services://?action=download-manifest&amp;url=https://m.zeospace.com/ios/zeospace/Zeo.plist</url>
+    <date>20170418</date>
+</ios>

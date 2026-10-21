@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>단위항목 관리</h1>
+            <ul class="aLeft">
+                <li>
+                    <select name="ddlSearchTerm" id="ddlSearchTerm" class="searchselect">
+                        <option selected="selected">프로젝트메뉴A</option><option>프로젝트메뉴B</option><option>프로젝트메뉴C</option>
+                    </select>
+                    <span class="cm_subtxt">* 프로젝트 게시판에서 사용할 단위항목을 관리합니다.</span>
+                </li>
+            </ul>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>단위항목삭제</span></a></li>
+                <li><a href="2_PJT(단위항목)관리_추가.html"><span>단위항목추가</span></a></li>
+            </ul>
+        </div>
+        <div class="cm_gap5"></div>
+        <div class="cm_layout_srh">
+            <div class="left">
+                <ul class="cm_tab">
+                    <li><a href="#" class="tab_on">단위항목리스트</a></li>
+                    <li><a href="2_PJT(단위항목)관리_보기(일정별).html">일정별조회</a></li>
+                    <li><a href="2_PJT(단위항목)관리_보기(자원별).html">자원별조회</a></li>
+                    <li class="last"><a href="2_PJT(단위항목)관리_보기(프젝별).html">PJT별조회</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="btn_searchbox">
+                    <li>
+                    <select class="searchselect">
+	                    <option>제목</option>
+	                    <option>내용</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>리스트</caption>
+            <colgroup>
+                <col width="30px" />
+                <col width="50px" />
+                <col width="50px" />
+                <col />
+                <col width="70px" />
+                <col width="90px" />
+                <col width="90px" />
+                <col width="50px" />
+                <col width="100px" />
+                <col width="40px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>코드</th>
+                    <th>상위코드</th>
+                    <th><a href="#">작업이름</a></th>
+                    <th><a href="#">진행률</a></th>
+                    <th style="text-align:center">계획시작일<br />시작일</th>
+                    <th style="text-align:center">계획완료일<br />완료일</th>
+                    <th><a href="#">기간</a></th>
+                    <th><a href="#">담당자</a></th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1v</td>
+                    <td>1v</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_추가.html">작업이름v</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>100%</td>
+                    <td>2011-05-09 <br /> 2011-05-09</td>
+                    <td>2011-05-09 <br /> 2011-05-09</td>
+                    <td>100일</td>
+                    <td>솔루션개발 <br /> 사원 홍길동</td>
+                    <td class="center"><a href="#" title="단위항목추가"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_add.gif" /></a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1v</td>
+                    <td>1v</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_추가.html">작업이름v</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>100%</td>
+                    <td>2011-05-09 <br /> 2011-05-09</td>
+                    <td>2011-05-09 <br /> 2011-05-09</td>
+                    <td>100일</td>
+                    <td>솔루션개발 <br /> 사원 홍길동</td>
+                    <td class="center"><a href="#" title="단위항목추가"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_add.gif" /></a></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+            <div class="cm_gap10"></div>
+            <span class="cm_subtxt">* <b>작업명</b> 선택 시, <b>상세정보 수정</b>이 가능합니다.</span><br />
+            <span class="cm_subtxt">* <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /> 선택 시, <b>상세정보</b>를 볼 수 있습니다.</span><br />
+            <span class="cm_subtxt">* <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_add.gif" /> 선택 시, 해당 단위항목의 <b>하위 항목</b>을 추가합니다.
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SEL_QRY_ZTMAILBOX"
+		  Value="SELECT *,  (SELECT Count(*) as Total FROM zt_user_mailinfo WHERE user_sn = '{0}' AND mailbox_code= z.mailbox_code AND trash_flag = 0 AND read_flag ='0') as MailCount 
+		FROM zt_user_mailbox z
+		WHERE z.user_sn = '{0}' 
+		order by z.levels, z.mailbox_name, z.upper_mailbox_code" Content="메일박스 가져오기" />
+	<Item ID="SEL_QRY_ZTMESSAGE"
+		  Value="WITH TmpTBL AS 
+		(SELECT  Row_Number() over (order by u.create_time desc) AS RowNum,
+		m.mail_subject, m.from_email, m.from_name, u.state_code, u.create_time, u.mail_sn, u.email_account, u.mailbox_code, u.read_flag
+		FROM zt_user_mailInfo u inner join zt_mail_message m on u.mail_sn = m.mail_sn 
+		WHERE u.user_sn = '{0}' 
+		AND u.mailbox_code='{1}' 
+		AND u.trash_flag = 0) 
+		SELECT * FROM TmpTBL WHERE RowNum Between (({2}-1) * {3}) + 1 and {2} * {3}" Content="편지함 리스트가져오기" />
+	<Item ID="SEL_QRY_ZTMESSAGE_MESSAGE_SN"
+		  Value="SELECT m.mail_subject, u.create_time, m.from_email, m.from_name, 
+		 (select mail_body from zt_mail_body where body_sn=m.body_sn) as body, u.mail_sn
+		 FROM zt_user_mailInfo u inner join zt_mail_message m on u.mail_sn = m.mail_sn 
+		 WHERE u.user_sn = '{0}' 
+		 AND u.mailbox_code='{1}' 
+		 AND u.mail_sn = '{2}'" Content="메일보기" />
+	<Item ID="SEL_PROC_ZTMESSAGE"
+		  Value="SQL_DPM_MAIL_List_TopDown"
+		  Content="메일 이전,이후" />
+	<Item ID="INS_PROC_MESSAGE"
+	  Value="DPM_MAIL_Message_Ins"
+	  Content="메일임시저장하기" />
+	<Item ID="SEL_QRY_MESSAGE"
+	  Value="SELECT *
+		 FROM DPM_MAIL_Message
+		 WHERE CompanyID = '{0}'
+		 AND UserID = '{1}' 
+		 AND MailID='{2}'" Content="임시 저장 메일 가져오기" />
+	<Item ID="SEL_QRY_ZTMESSAGE_COUNT"
+		  Value="SELECT Count(*) as Total
+		 FROM dbo.zt_message 
+		 WHERE domain_idx = '{0}'
+		 AND member_sn = '{1}' 
+		 AND mailbox_code='{2}' 
+		 AND delete_flag = 0
+		 AND (message_type ='10' or message_type ='11')" Content="편지함별로 안 읽은 편지 카운트 가져오기" />
+	<Item ID="SEL_PROC_ZTMESSAGE_COUNT"
+	  Value="SQL_DPM_MAIL_SelectCnt" Content="메일 카운트 가져오기" />
+	<Item ID="SEL_PROC_ZTMESSAGE_DEL"
+	  Value="SQL_DPM_MAIL_mailInfo_Delete" Content="메일 삭제하기" />
+	<Item ID="SEL_QRY_ZTMESSAGE_TRASH"
+	  Value="WITH TmpTBL AS 
+		(SELECT  Row_Number() over (order by u.create_time desc) AS RowNum,
+		m.mail_subject, m.from_email, m.from_name, u.state_code, u.create_time, u.mail_sn, u.email_account, u.mailbox_code, u.read_flag
+		FROM zt_user_mailInfo u inner join zt_mail_message m on u.mail_sn = m.mail_sn 
+		WHERE u.user_sn = '{0}' 
+		AND u.trash_flag != 0) 
+		SELECT * FROM TmpTBL WHERE RowNum Between (({1}-1) * {2}) + 1 and {1} * {2}" Content="휴지통 리스트가져오기" />
+	<Item ID="SEL_PROC_ZTMESSAGE_RESTORE"
+  Value="SQL_DPM_MAIL_mailInfo_Update" Content="메일 복원하기" />
+	<Item ID="SEL_PROC_ZTMESSAGE_TRASH"
+	   Value="SQL_DPM_MAIL_List_TopDownTrash"
+	   Content="메일 이전,이후(휴지통)" />
+	<Item ID="SEL_QRY_ZTMESSAGE_ATTACHFILE"
+		  Value="SELECT *, (SELECT filesize FROM zt_file_info where file_sn = a.file_sn) as filesize FROM zt_mail_attachfile a
+		 WHERE a.mail_sn = '{0}'" Content="메일첨부파일보기" />
+	<Item ID="SEL_QRY_ZTMESSAGE_RECIPIENT"
+	  Value="SELECT * FROM zt_mail_recipient WHERE mail_sn = '{0}' AND r_type in (1,2)" Content="메일받은사람,참조보기" />
+	<Item ID="SEL_QRY_REQUEST"
+	  Value="select count(*) from zt_send_request_confirm a, zt_user_info b
+			where a.target_sn = '{0}' and a.gubun_code = 1 and a.confirm_user_sn = b.user_sn" Content="메일발송승인자" />
+	<Item ID="SEL_PROC_ALARMMali"
+		Value=" select count(mail_sn) as Cnt, MAX(mail_sn) as MaxMail from zt_user_mailinfo where user_sn = '{0}' and state_code in (10,11,12) and read_flag=0 and trash_flag=0"
+	    Content="읽지 않은 메일 카운트(알람)" />
+
+	<Item ID="SEL_PROC_USER" Value="DPM_MAIL_User_SelDeep" Content="메일사용자검색자동완성" />
+	<Item ID="SEL_PROC_USERNAME" Value="DPM_MAIL_User_SelByNameDeep" Content="메일사용자이름으로검색" />
+</XmlData>
+

@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>no data</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>Process Complete</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddPimPlz" xml:space="preserve">
+    <value>Input your schedule.</value>
+  </data>
+  <data name="AddSchedule" xml:space="preserve">
+    <value>Add Schedule</value>
+  </data>
+  <data name="AddTO" xml:space="preserve">
+    <value>Add to</value>
+  </data>
+  <data name="AddToDo" xml:space="preserve">
+    <value>Register what to do</value>
+  </data>
+  <data name="AddUserSelect" xml:space="preserve">
+    <value>Select users to add sharer.</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>Please input the contents of the main paragraphs.</value>
+  </data>
+  <data name="Add_InputDate" xml:space="preserve">
+    <value>Input the dates.</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>Input the title.</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>Input the contents.</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>Set your notice period.</value>
+  </data>
+  <data name="ADMIN" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Admin1" xml:space="preserve">
+    <value>Sharing schedule that the time is fixed.</value>
+  </data>
+  <data name="Admin2" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="Admin3" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="Admin4" xml:space="preserve">
+    <value>National Holidays</value>
+  </data>
+  <data name="Admin5" xml:space="preserve">
+    <value>National Anniversaries</value>
+  </data>
+  <data name="AfterContinue" xml:space="preserve">
+    <value>Continue after save</value>
+  </data>
+  <data name="AfterPim" xml:space="preserve">
+    <value>All the schedules afterward</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>Please select the alarm time.</value>
+  </data>
+  <data name="AlertScriptContnet" xml:space="preserve">
+    <value>The contents may be changed because there are suspicious sentences about script in the body paragraghs?</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AllAnniversary" xml:space="preserve">
+    <value>All anniversaries</value>
+  </data>
+  <data name="allDelete" xml:space="preserve">
+    <value>Do you want to delete all?</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>All downloads</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>All schedules</value>
+  </data>
+  <data name="AllShare" xml:space="preserve">
+    <value>All Sharing Schedules</value>
+  </data>
+  <data name="AllShareAnniversary" xml:space="preserve">
+    <value>All Sharing Anniversaries</value>
+  </data>
+  <data name="AllShareView" xml:space="preserve">
+    <value>Shared list</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="AnnivControl" xml:space="preserve">
+    <value>Anniversary mgmt</value>
+  </data>
+  <data name="AnniversaryDay" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="AnniversaryDayAdd" xml:space="preserve">
+    <value>Add anniversary</value>
+  </data>
+  <data name="AnniversaryEdit" xml:space="preserve">
+    <value>Anniversary Edition</value>
+  </data>
+  <data name="AnniversaryInquery" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="AnniversaryMod" xml:space="preserve">
+    <value>Anniversary Edit</value>
+  </data>
+  <data name="AnniversaryReg" xml:space="preserve">
+    <value>Anniversary Registration</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Will you delete it?</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>Authority Setting</value>
+  </data>
+  <data name="AutoSync" xml:space="preserve">
+    <value>Automatic interlocking</value>
+  </data>
+  <data name="BasicSetting" xml:space="preserve">
+    <value>The default setting</value>
+  </data>
+  <data name="basicShareperson" xml:space="preserve">
+    <value>Basic sharer</value>
+  </data>
+  <data name="basicsShareDept" xml:space="preserve">
+    <value>Basic sharing department</value>
+  </data>
+  <data name="BASICVIEW" xml:space="preserve">
+    <value>Basic View Setting</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>Notification before</value>
+  </data>
+  <data name="BOTTOM" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Catalog" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CategoryHelp" xml:space="preserve">
+    <value>Category Explanation</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="CommentShare" xml:space="preserve">
+    <value>Shared person mgmt</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>The contents you had written before will disappear. Will you select it?</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>Consecutive holidays</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="CONTINUEADD" xml:space="preserve">
+    <value>Go to the writing page?</value>
+  </data>
+  <data name="CurrentObjectPerson" xml:space="preserve">
+    <value>Current sharer</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DATE2" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>Choose date</value>
+  </data>
+  <data name="DateView" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DayPeriod" xml:space="preserve">
+    <value>Until day</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>On the day of the week</value>
+  </data>
+  <data name="DayToo" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="DeepContent" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>File delete</value>
+  </data>
+  <data name="DEPTNAME" xml:space="preserve">
+    <value>Dept name</value>
+  </data>
+  <data name="DETAIL" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="DetailContent" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Ebem" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="EmailAlert" xml:space="preserve">
+    <value>Enter your e-mail</value>
+  </data>
+  <data name="EnviroMent" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="EnviroMentSetting" xml:space="preserve">
+    <value>Environment Setting</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>An error has occurred while bringing the attachment file information.</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>Every</value>
+  </data>
+  <data name="EveryDay" xml:space="preserve">
+    <value>Every day</value>
+  </data>
+  <data name="EveryDayR" xml:space="preserve">
+    <value>Every day</value>
+  </data>
+  <data name="EveryDayRepeat" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="EveryMonRepeat" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="EveryMonth" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="EveryWeek" xml:space="preserve">
+    <value>Every week</value>
+  </data>
+  <data name="EveryWeekRepeat" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>Excel download</value>
+  </data>
+  <data name="FailSync" xml:space="preserve">
+    <value>Incorrectly linked Google account that you want to shoot blanks or \ r \ n works failed.</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>File attach</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5 hours</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4 hours</value>
+  </data>
+  <data name="GetContent" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the view page</value>
+  </data>
+  <data name="GoogleAccErr" xml:space="preserve">
+    <value>Google account information does not correspond.</value>
+  </data>
+  <data name="GoogleAccount1" xml:space="preserve">
+    <value>Google account information</value>
+  </data>
+  <data name="GoogleAccount2" xml:space="preserve">
+    <value>My Account Management / SNS / Google</value>
+  </data>
+  <data name="GoogleAccount3" xml:space="preserve">
+    <value>Enter at.</value>
+  </data>
+  <data name="GoogleCalendarSync" xml:space="preserve">
+    <value>Google Calender Linkage</value>
+  </data>
+  <data name="GoogleGetCalendar" xml:space="preserve">
+    <value>Choose calendar</value>
+  </data>
+  <data name="GoogleInfo_Input" xml:space="preserve">
+    <value>Input Google account information</value>
+  </data>
+  <data name="GoogleSignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="GoogleSignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="GoogleUserRejectException" xml:space="preserve">
+    <value>This user has rejected the invitation</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Go to the list.</value>
+  </data>
+  <data name="GUN" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Half" xml:space="preserve">
+    <value>Half</value>
+  </data>
+  <data name="HOLIDAYCADALOG" xml:space="preserve">
+    <value>Anniversary List</value>
+  </data>
+  <data name="HolidayInsert" xml:space="preserve">
+    <value>Holiday Registration</value>
+  </data>
+  <data name="HolidayManage" xml:space="preserve">
+    <value>Holiday Management</value>
+  </data>
+  <data name="HolidayManageDay" xml:space="preserve">
+    <value>Day-off Management</value>
+  </data>
+  <data name="HolidayManageDay_Add" xml:space="preserve">
+    <value>Day-off Registration</value>
+  </data>
+  <data name="HolidayManageDay_Mod" xml:space="preserve">
+    <value>Day-off Edit</value>
+  </data>
+  <data name="HolidayManage_Add" xml:space="preserve">
+    <value>Holiday Registration</value>
+  </data>
+  <data name="HolidayManage_Mod" xml:space="preserve">
+    <value>Holiday Modify</value>
+  </data>
+  <data name="HolidayModify" xml:space="preserve">
+    <value>Holiday Edit</value>
+  </data>
+  <data name="Holiday_Error1" xml:space="preserve">
+    <value>Please Title</value>
+  </data>
+  <data name="Holiday_Error2" xml:space="preserve">
+    <value>Please Holiday</value>
+  </data>
+  <data name="Holiday_Error3" xml:space="preserve">
+    <value>Please Consecutive holidays</value>
+  </data>
+  <data name="Holiday_Error4" xml:space="preserve">
+    <value>Please Duplicate Holiday</value>
+  </data>
+  <data name="Holiday_HoliDay1" xml:space="preserve">
+    <value>Repeat Days</value>
+  </data>
+  <data name="Holiday_HoliDay2" xml:space="preserve">
+    <value>This Days</value>
+  </data>
+  <data name="Holiday_HolidayBetween" xml:space="preserve">
+    <value>Kind of holidays</value>
+  </data>
+  <data name="Holiday_HolidayBetween1" xml:space="preserve">
+    <value>This Days</value>
+  </data>
+  <data name="Holiday_HolidayBetween2" xml:space="preserve">
+    <value>Include Yesterday</value>
+  </data>
+  <data name="Holiday_HolidayBetween3" xml:space="preserve">
+    <value>Include Nextday</value>
+  </data>
+  <data name="Holiday_HolidayBetween4" xml:space="preserve">
+    <value>Include Yesterday and Nextday</value>
+  </data>
+  <data name="Holiday_HolidayBetweenDay" xml:space="preserve">
+    <value>Consecutive holidays</value>
+  </data>
+  <data name="Holiday_HoliDayKind" xml:space="preserve">
+    <value>Kind of Repert</value>
+  </data>
+  <data name="Holiday_HoliDayKind1" xml:space="preserve">
+    <value>Repeat Yes</value>
+  </data>
+  <data name="Holiday_HoliDayKind2" xml:space="preserve">
+    <value>Repeat No</value>
+  </data>
+  <data name="Holiday_IsHoliday" xml:space="preserve">
+    <value>Use Holiday</value>
+  </data>
+  <data name="Holiday_IsHolidayKind" xml:space="preserve">
+    <value>Kind of Holiday</value>
+  </data>
+  <data name="Holiday_IsHolidayKind1" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="Holiday_IsHolidayKind2" xml:space="preserve">
+    <value>Day-off</value>
+  </data>
+  <data name="Holiday_IsReplace" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="Holiday_Lunar" xml:space="preserve">
+    <value>Lunar</value>
+  </data>
+  <data name="Holiday_Solar" xml:space="preserve">
+    <value>Solar</value>
+  </data>
+  <data name="Holiday_SolarLunar" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="Holiday_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="holy1" xml:space="preserve">
+    <value>Sharing Schedule + Anniversary</value>
+  </data>
+  <data name="holy2" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="holy3" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="holy4" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="holy5" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="holy6" xml:space="preserve">
+    <value>National Holidays</value>
+  </data>
+  <data name="holy7" xml:space="preserve">
+    <value>National Anniversaries</value>
+  </data>
+  <data name="HolyDay" xml:space="preserve">
+    <value>Holidays</value>
+  </data>
+  <data name="Importance" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="IMPORTANCE_MEASURE" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="INPUTPERIOD" xml:space="preserve">
+    <value>Input period</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>Input search day</value>
+  </data>
+  <data name="InqueryObjSel" xml:space="preserve">
+    <value>Inquery Object Selection</value>
+  </data>
+  <data name="Inquery_Input" xml:space="preserve">
+    <value>Input the inquery period</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>Comments were listed</value>
+  </data>
+  <data name="InterfaceCode" xml:space="preserve">
+    <value>Interface Code</value>
+  </data>
+  <data name="KIND" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="kind1" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="kind10" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="kind2" xml:space="preserve">
+    <value>Weekdays</value>
+  </data>
+  <data name="kind3" xml:space="preserve">
+    <value>Weekend</value>
+  </data>
+  <data name="kind4" xml:space="preserve">
+    <value>Su</value>
+  </data>
+  <data name="kind5" xml:space="preserve">
+    <value>Mo</value>
+  </data>
+  <data name="kind6" xml:space="preserve">
+    <value>Tu</value>
+  </data>
+  <data name="kind7" xml:space="preserve">
+    <value>We</value>
+  </data>
+  <data name="kind8" xml:space="preserve">
+    <value>Th</value>
+  </data>
+  <data name="kind9" xml:space="preserve">
+    <value>Fr</value>
+  </data>
+  <data name="LayoutColor" xml:space="preserve">
+    <value>Layout Color</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>The special characters are limited because they are used for security vulnerabilities attacks.</value>
+  </data>
+  <data name="lunalday" xml:space="preserve">
+    <value>The lunar</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="makrname" xml:space="preserve">
+    <value>Objective Name</value>
+  </data>
+  <data name="MarkManage" xml:space="preserve">
+    <value>Objective Management</value>
+  </data>
+  <data name="MarkName" xml:space="preserve">
+    <value>Objective Name</value>
+  </data>
+  <data name="marknameperiod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="MarkReg" xml:space="preserve">
+    <value>Objective Registration</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>Messenger</value>
+  </data>
+  <data name="MIDDLE" xml:space="preserve">
+    <value>Middle</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Minute</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>Short reply Modify</value>
+  </data>
+  <data name="ModSchedule" xml:space="preserve">
+    <value>Schedule Modify</value>
+  </data>
+  <data name="ModToDo" xml:space="preserve">
+    <value>Edit what to do</value>
+  </data>
+  <data name="MonthString" xml:space="preserve">
+    <value>['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.' , 'Nov.', 'Dec.']</value>
+  </data>
+  <data name="MonthToo" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="MsgCategoryName" xml:space="preserve">
+    <value>Please input the category name</value>
+  </data>
+  <data name="MsgError" xml:space="preserve">
+    <value>When processing, an error has occurred.</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>Multilingual name</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>Multilingual name</value>
+  </data>
+  <data name="MYSCHEDULE" xml:space="preserve">
+    <value>My Schedule</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>MyTalk</value>
+  </data>
+  <data name="myviewschedule" xml:space="preserve">
+    <value>View my schedule</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>The file does not exist.</value>
+  </data>
+  <data name="NoMine" xml:space="preserve">
+    <value>You can't select yourself.</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>Deactivation</value>
+  </data>
+  <data name="NoneSelUser" xml:space="preserve">
+    <value>There are no users selected.</value>
+  </data>
+  <data name="NoRepeatAdd" xml:space="preserve">
+    <value>There are no pertinent schedules. Please input again.</value>
+  </data>
+  <data name="normalday" xml:space="preserve">
+    <value>Every day</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>~ wrote a short comment.</value>
+  </data>
+  <data name="NoUserAuth" xml:space="preserve">
+    <value>The pertinent user can't access.</value>
+  </data>
+  <data name="NowSync" xml:space="preserve">
+    <value>period</value>
+  </data>
+  <data name="objectSelect" xml:space="preserve">
+    <value>Select the Object who is being shared.</value>
+  </data>
+  <data name="ObjePerson" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="OjbectSelect" xml:space="preserve">
+    <value>Object Selection</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1 hour</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1 day</value>
+  </data>
+  <data name="ONEMON" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="oneShareDept" xml:space="preserve">
+    <value>Schedule Sharing Department</value>
+  </data>
+  <data name="OneSharePerson" xml:space="preserve">
+    <value>Schedule-Sharer</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Release</value>
+  </data>
+  <data name="order1" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="order2" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="order3" xml:space="preserve">
+    <value>Third</value>
+  </data>
+  <data name="order4" xml:space="preserve">
+    <value>Fourth</value>
+  </data>
+  <data name="order5" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="OutSync" xml:space="preserve">
+    <value>Google Calender Linkage</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="PersonSchedule" xml:space="preserve">
+    <value>Full Sharing Schedule</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="PimAddTime" xml:space="preserve">
+    <value>ADD PIM time</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="pimconfirm" xml:space="preserve">
+    <value>Schedule confirmor</value>
+  </data>
+  <data name="PimConfirmPerson" xml:space="preserve">
+    <value>Schedule confirmor Selection</value>
+  </data>
+  <data name="PimEbem" xml:space="preserve">
+    <value>Add Sched</value>
+  </data>
+  <data name="PimRepeatSet" xml:space="preserve">
+    <value>Repeat setting</value>
+  </data>
+  <data name="PimSearchEnquiry" xml:space="preserve">
+    <value>Schedule Search Inquery</value>
+  </data>
+  <data name="PimShare" xml:space="preserve">
+    <value>Share Info</value>
+  </data>
+  <data name="PIMShareManager" xml:space="preserve">
+    <value>Share Info Mgmt</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment Name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="PmReg" xml:space="preserve">
+    <value>Add Schedule</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PRINT" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="priority1" xml:space="preserve">
+    <value>Did not start</value>
+  </data>
+  <data name="priority2" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="priority3" xml:space="preserve">
+    <value>Comple</value>
+  </data>
+  <data name="priority4" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="priority5" xml:space="preserve">
+    <value>Delegation</value>
+  </data>
+  <data name="priority6" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="QUICKADD" xml:space="preserve">
+    <value>Quick Add</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>Do you really want to delete?</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Reg-date</value>
+  </data>
+  <data name="RegisterComplate" xml:space="preserve">
+    <value>Regist Completed</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Repetition</value>
+  </data>
+  <data name="RepeatAlert1" xml:space="preserve">
+    <value>Please input the repetition range date.</value>
+  </data>
+  <data name="RepeatAlert2" xml:space="preserve">
+    <value>The number of iterations is not correct.</value>
+  </data>
+  <data name="RepeatAlert3" xml:space="preserve">
+    <value>The cycle of repetition is not correct</value>
+  </data>
+  <data name="RepeatAlert5" xml:space="preserve">
+    <value>Please select the day of the week</value>
+  </data>
+  <data name="RepeatDatePeriod" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="RepeatMent1" xml:space="preserve">
+    <value>Retain all the othee schedules of repetition schedules.</value>
+  </data>
+  <data name="RepeatMent2" xml:space="preserve">
+    <value>All the schedules afterward will be changed. Data about future schedule will be lost.</value>
+  </data>
+  <data name="RepeatMent3" xml:space="preserve">
+    <value>All of the repetitive schedule changes. Other changes of the schedule will be maintained.</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>Repetition schedule modify</value>
+  </data>
+  <data name="RepeatResult" xml:space="preserve">
+    <value>Result of repetition setting</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="RepeatSettingMent1" xml:space="preserve">
+    <value>times</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>Input a number that exceeds 0.</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>Reply Opening</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>Resourse reservation</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveContinue" xml:space="preserve">
+    <value>Save and Continue</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="schedule1" xml:space="preserve">
+    <value>Personal schedule</value>
+  </data>
+  <data name="schedule2" xml:space="preserve">
+    <value>Personal anniversary</value>
+  </data>
+  <data name="schedule3" xml:space="preserve">
+    <value>A holiday schedule</value>
+  </data>
+  <data name="schedule4" xml:space="preserve">
+    <value>Holiday anniversary</value>
+  </data>
+  <data name="schedule5" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="schedule6" xml:space="preserve">
+    <value>National Holidays</value>
+  </data>
+  <data name="schedule7" xml:space="preserve">
+    <value>National Anniversaries</value>
+  </data>
+  <data name="SCHEDULECADALOG" xml:space="preserve">
+    <value>Schedule list</value>
+  </data>
+  <data name="scheduleing" xml:space="preserve">
+    <value>In the schedule</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SEARCH1" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="SEARCH2" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="SEARCH3" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="SEARCH4" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="SEARCHKIND" xml:space="preserve">
+    <value>Search Criteria</value>
+  </data>
+  <data name="SEARCHTEXT" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>The pertinent text is allowed only to the original owner and writer.</value>
+  </data>
+  <data name="SelectObjectPerson" xml:space="preserve">
+    <value>Sharer selection</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="ShareAnniversary" xml:space="preserve">
+    <value>Sharing Anniversary</value>
+  </data>
+  <data name="shareinfo" xml:space="preserve">
+    <value>Sharer information</value>
+  </data>
+  <data name="ShareList" xml:space="preserve">
+    <value>Share List</value>
+  </data>
+  <data name="ShareManage" xml:space="preserve">
+    <value>Sharer mgmt</value>
+  </data>
+  <data name="ShareObj" xml:space="preserve">
+    <value>Share setting</value>
+  </data>
+  <data name="ShareObjectAdd" xml:space="preserve">
+    <value>Sharer addition</value>
+  </data>
+  <data name="ShareObjSearch" xml:space="preserve">
+    <value>Finding share objects</value>
+  </data>
+  <data name="shareobjsel" xml:space="preserve">
+    <value>Share objective selection</value>
+  </data>
+  <data name="SharePesonSuccess" xml:space="preserve">
+    <value>Sharer addition success</value>
+  </data>
+  <data name="ShareQuarter" xml:space="preserve">
+    <value>Share quarter</value>
+  </data>
+  <data name="ShareSchedule" xml:space="preserve">
+    <value>Share schedule</value>
+  </data>
+  <data name="ShareSelect" xml:space="preserve">
+    <value>Choose sharer</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="sharesure" xml:space="preserve">
+    <value>Whether you shared or not</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>Since</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6 hours</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Starting date should be earlier than the ending date.</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>Substitute Holiday</value>
+  </data>
+  <data name="SuccessSync" xml:space="preserve">
+    <value>Linkage completed</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>Solar calender</value>
+  </data>
+  <data name="SyncAccount" xml:space="preserve">
+    <value>Linked accounts</value>
+  </data>
+  <data name="Syncing" xml:space="preserve">
+    <value>Linkage</value>
+  </data>
+  <data name="TextEmpty" xml:space="preserve">
+    <value>There is no information.</value>
+  </data>
+  <data name="TheDay" xml:space="preserve">
+    <value>th day</value>
+  </data>
+  <data name="THISPIM" xml:space="preserve">
+    <value>only this schedule</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3 hours</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3 days</value>
+  </data>
+  <data name="THREEMON" xml:space="preserve">
+    <value>3 months</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TimeAlert" xml:space="preserve">
+    <value>Ending time comes earlier than the starting time.</value>
+  </data>
+  <data name="TIMEINFO" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TimeOver" xml:space="preserve">
+    <value>Ending time comes earlier than the starting time.</value>
+  </data>
+  <data name="TimeRepeat" xml:space="preserve">
+    <value>Repeat ~ times.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TODAYSCHEDULE" xml:space="preserve">
+    <value>Today's schedule</value>
+  </data>
+  <data name="TODAYTODO" xml:space="preserve">
+    <value>To-do list</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>To-do</value>
+  </data>
+  <data name="todo1" xml:space="preserve">
+    <value>Do tomorrow</value>
+  </data>
+  <data name="todo2" xml:space="preserve">
+    <value>Do until a particular day</value>
+  </data>
+  <data name="todo3" xml:space="preserve">
+    <value>Do on certain day.</value>
+  </data>
+  <data name="todo4" xml:space="preserve">
+    <value>Postpone to tomorrow</value>
+  </data>
+  <data name="todo5" xml:space="preserve">
+    <value>Delay certain date</value>
+  </data>
+  <data name="todo6" xml:space="preserve">
+    <value>Do not select.</value>
+  </data>
+  <data name="TodoAdd" xml:space="preserve">
+    <value>Add to-do</value>
+  </data>
+  <data name="TODOCADALOG" xml:space="preserve">
+    <value>To-do list</value>
+  </data>
+  <data name="todoing" xml:space="preserve">
+    <value>at the to-do list</value>
+  </data>
+  <data name="TODOLIST" xml:space="preserve">
+    <value>To-do</value>
+  </data>
+  <data name="TODOREG" xml:space="preserve">
+    <value>Add To-do</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>Personal to-do</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>Dept to-do</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>Share to-do</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>Company to-do</value>
+  </data>
+  <data name="TODOVIEW" xml:space="preserve">
+    <value>View Things to do</value>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="topmarkname" xml:space="preserve">
+    <value>Top objective name</value>
+  </data>
+  <data name="topmarknameperiod" xml:space="preserve">
+    <value>Top objective period</value>
+  </data>
+  <data name="ToRepeat" xml:space="preserve">
+    <value>Repeat until ~.</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2 hours</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2 days</value>
+  </data>
+  <data name="TYPE1" xml:space="preserve">
+    <value>My</value>
+  </data>
+  <data name="TYPE2" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="TYPE3" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="TYPE4" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="TYPE5" xml:space="preserve">
+    <value>Company </value>
+  </data>
+  <data name="UnPimEbem" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="USERINPUT" xml:space="preserve">
+    <value>User Input</value>
+  </data>
+  <data name="UserPim" xml:space="preserve">
+    <value>User Schedule</value>
+  </data>
+  <data name="UserPim2" xml:space="preserve">
+    <value>User schedule</value>
+  </data>
+  <data name="UserSelect" xml:space="preserve">
+    <value>Choose users</value>
+  </data>
+  <data name="ViewLimit" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="ViewSchedule" xml:space="preserve">
+    <value>View the schedule</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>Is being processed. Please wait a moment</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>WallPosts</value>
+  </data>
+  <data name="WeekNextDay" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="WeekSort" xml:space="preserve">
+    <value>Sun,Mon, Tue, Wed, Thu, Fri, Sat</value>
+  </data>
+  <data name="WeekString" xml:space="preserve">
+    <value>['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</value>
+  </data>
+  <data name="WeekToo" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="WeekView" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="WRITER" xml:space="preserve">
+    <value>Users Name</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>Write a short comment</value>
+  </data>
+  <data name="XDay" xml:space="preserve">
+    <value>at the day</value>
+  </data>
+  <data name="XFri" xml:space="preserve">
+    <value>On Friday</value>
+  </data>
+  <data name="XMon" xml:space="preserve">
+    <value>On Monday</value>
+  </data>
+  <data name="XNormalDay" xml:space="preserve">
+    <value>On weekdays</value>
+  </data>
+  <data name="XOrder" xml:space="preserve">
+    <value>~th order</value>
+  </data>
+  <data name="XSat" xml:space="preserve">
+    <value>On Saturday</value>
+  </data>
+  <data name="XSun" xml:space="preserve">
+    <value>On Sunday</value>
+  </data>
+  <data name="XThu" xml:space="preserve">
+    <value>On Thursday</value>
+  </data>
+  <data name="XTue" xml:space="preserve">
+    <value>On Tuesday</value>
+  </data>
+  <data name="XWed" xml:space="preserve">
+    <value>On Wednesday</value>
+  </data>
+  <data name="XWeekend" xml:space="preserve">
+    <value>On weekends</value>
+  </data>
+  <data name="YearViewMark" xml:space="preserve">
+    <value>View the goals of the year</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="BOTTOMAbb" xml:space="preserve">
+    <value>Bot</value>
+  </data>
+  <data name="MIDDLEAbb" xml:space="preserve">
+    <value>Mid</value>
+  </data>
+  <data name="TOPAbb" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="MsgRepeat" xml:space="preserve">
+    <value>Recurring event.\nThis is reflected in All Events.</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>The mail format is not correct</value>
+  </data>
+  <data name="SplitMail" xml:space="preserve">
+    <value>Delimiter (;) / Subject and time are sent to the calendar sharer and the input email address</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>Set as default alarm</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>Delimiter (;) / Subject and time are sent to the entered e-mail address</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Mgmt</value>
+  </data>
+  <data name="FourDay" xml:space="preserve">
+    <value>4 days</value>
+  </data>
+  <data name="FiveDay" xml:space="preserve">
+    <value>5 days</value>
+  </data>
+  <data name="SixDay" xml:space="preserve">
+    <value>6 days</value>
+  </data>
+  <data name="SevenDay" xml:space="preserve">
+    <value>7 days</value>
+  </data>
+</root>

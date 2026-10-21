@@ -1,0 +1,93 @@
+﻿<table class="table_typeC"> 
+<colgroup>
+    <col width="" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>    
+    <th id="r_attendance_Userinformation" class="center" colspan="2" ></th>    
+    <th id="r_gubun" class="center" rowspan="2"></th>
+    <th id="r_attendance_month" class="center" colspan="4"></th>    
+</tr>
+<tr>    
+    <th id="r_attendance_Department" class="center" ></th>    
+    <th id="r_attendance_user" class="center" ></th>        
+    <th id="r_attendance_Today" class="center" ></th>
+    <th id="r_attendance_Start" class="center" ></th>
+    <th id="r_attendance_Tardy" class="center" ></th>
+    <th id="r_attendance_End" class="center" ></th>    
+</tr>
+{#foreach $T as AdminStatus}
+<tr>
+    <td class="center" rowspan="6">{ $T.AdminStatus.DeptName }</td>    
+    <td class="center" rowspan="6">{ $T.AdminStatus.UserName }</td>    
+</tr>  
+<tr>
+    <td class="center" ><span class="r_holi_Days" /></td>
+    <td class="center" >{ $T.AdminStatus.TodayCount }</td>
+    <td class="center" >
+        {#if $T.AdminStatus.WSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.WSTimeCount }</FONT></b>
+        {#else}
+            { $T.AdminStatus.WSTimeCount }
+        {#/if}  
+	</td>
+    <td class="center" >
+        {#if $T.AdminStatus.WSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.WSTimeCountLate }</FONT></b>
+        {#else}
+            { $T.AdminStatus.WSTimeCountLate }
+        {#/if}      
+    </td>
+    <td class="center" >{ $T.AdminStatus.WCTimeCount }</td>
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_percent" /></td>
+    <td class="center" ></td>
+    <td class="center" >
+        {#if $T.AdminStatus.WSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.WSTimePer } %</FONT></b>
+        {#else}
+            { $T.AdminStatus.WSTimePer } %
+        {#/if}       
+    </td>
+    <td class="center" >
+        {#if $T.AdminStatus.WSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.WSTimePerLate } %</FONT></b>
+        {#else}
+            { $T.AdminStatus.WSTimePerLate } %
+        {#/if}         
+    </td>
+    <td class="center" >{ $T.AdminStatus.WCTimePer } %</td>
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_min" /></td> 
+    <td class="center" >{ $T.AdminStatus.TodayMIN }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeMIN }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeMINLate }</td> 
+    <td class="center" >{ $T.AdminStatus.WCTimeMIN }</td> 
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_max" /></td> 
+    <td class="center" >{ $T.AdminStatus.TodayMAX }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeMAX }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeMAXLate }</td> 
+    <td class="center" >{ $T.AdminStatus.WCTimeMAX }</td> 
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_avg" /></td> 
+    <td class="center" >{ $T.AdminStatus.TodayAVG }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeAVG }</td> 
+    <td class="center" >{ $T.AdminStatus.WSTimeAVGLate }</td> 
+    <td class="center" >{ $T.AdminStatus.WCTimeAVG }</td> 
+</tr>  
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

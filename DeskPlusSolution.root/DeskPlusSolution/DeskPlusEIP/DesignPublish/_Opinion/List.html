@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Opinion.css?v=1" />
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+    function change(_val) {
+        if ($("#chkFav_" + _val).attr("checked") == true) $("#lbFav_" + _val).addClass("on");
+        else $("#lbFav_" + _val).removeClass("on");
+    }
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>설문조사 > 진행중인 설문 > 참여리스트 > </h1>
+        </div>
+
+        <div id="layout_srh">
+            <ul class="btn_searchImg">
+                <li class="board"><a href="#" class="board" title="일반리스트"><img src="../../Design/ko/Base/Img/Btn/list_board_on.gif" alt="리스트" /></a></li>
+                <li class="blog"><a href="#" class="blog" title="블로그형리스트"><img src="../../Design/ko/Base/Img/Btn/list_blog.gif" alt="블로그" /></a></li>
+            </ul>
+
+            <ul class="btn_searchbox">
+                <li>
+                    <select name="ddlSearchField" id="Select1" class="searchselect">
+	                    <option value="">전체</option>
+	                    <option value="">1주</option>
+	                    <option value="">한달</option>
+	                    <option value="">기간</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="ddlSearchField" id="ddlSearchField" class="searchselect">
+	                    <option>제목</option>
+	                    <option>말머리</option>
+	                    <option>설문기간</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 테이블 시작 //-->
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>
+                설문 리스트
+            </caption>
+            <colgroup>
+                <col width="30px" />
+                <col />
+                <col width="65px" />
+                <col width="65px" />
+                <col width="160px" />
+                <col width="65px" />
+                <col width="65px" />
+                <col width="65px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><a href="#">설문제목</a></th>
+                    <th><a href="#">참여여부</a></th>
+                    <th><a href="#">참여자수</a></th>
+                    <th>설문기간</th>
+                    <th>결과미공개</th>
+                    <th>답글사용</th>
+                    <th>익명여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="fav">
+                            <input type="checkbox" id="chkFav_1" checked="checked" onclick="change('1')" />
+	                        <label for="chkFav_1" title="중요" id="lbFav_1" class="on">
+                                <span class="blind">중요 표시</span>
+                            </label>
+                        </p>
+                    </td>
+                    <td><a href="Add.html">설문제목입니다.</a></td>
+                    <td>미참여</td>
+                    <td>100명</td>
+                    <td>2011-01-01 ~ 2011-01-01</td>
+                    <td>공개</td>
+                    <td>사용</td>
+                    <td>기명</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="fav">
+                            <input type="checkbox" id="Checkbox1" checked="checked" onclick="change('1')" />
+	                        <label for="chkFav_1" title="중요" id="Label1" class="on">
+                                <span class="blind">중요 표시</span>
+                            </label>
+                        </p>
+                    </td>
+                    <td><a href="Add.html">설문제목입니다.</a></td>
+                    <td>미참여</td>
+                    <td>100명</td>
+                    <td>2011-01-01 ~ 2011-01-01</td>
+                    <td>공개</td>
+                    <td>사용</td>
+                    <td>기명</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿<ul>
+    {#foreach $T as List}
+        <li>
+        <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" >{ $T.List.Title }</a>
+        {#if $T.List.ReplyCount > 0}
+        <a onclick="TabBoardShort('{ $T.List.CategoryID }','{ $T.List.ListID }');return false;" class="icon_Comment_view" >
+        ({ $T.List.ReplyCount })
+        </a>
+        {#/if}
+        </li>
+        {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

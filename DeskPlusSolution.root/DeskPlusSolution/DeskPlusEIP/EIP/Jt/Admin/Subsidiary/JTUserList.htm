@@ -1,0 +1,44 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <caption>
+        회사담당자정보
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="150px" />
+        <col width="150px" />
+        <col width="100px" />
+        <col width="120px" />
+        <col width="120px" />
+        <col width="110px" />
+        <col width="110px" />
+        <col />
+    </colgroup>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="Add.Checked()" /></th>
+        <th class="center" id="r_companyName"></th>
+        <th class="center" id="r_dept"></th>
+        <th class="center" id="r_title"></th>
+        <th class="center" id="r_username"></th>
+        <th class="center" id="r_login"></th>
+        <th class="center" id="r_officePhone"></th>
+        <th class="center" id="r_mobilePhone"></th>
+        <th class="center" id="r_mail"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.AccountList.RowNum }" value="{ $T.AccountList.UserID }" /></td>        
+        <td class="center">{ $T.AccountList.ComBase }</td>
+        <td class="center">{ $T.AccountList.DeptBase }</td>
+        <td class="center">{ $T.AccountList.TitleBase }</td>
+        <td class="center">{ $T.AccountList.NameBase }</td>
+        <td class="center">{ $T.AccountList.LogInID }</td>
+        <td class="center">{ $T.AccountList.OfficePhone }</td>
+        <td class="center">{ $T.AccountList.MobilePhone }</td>
+        <td>{ $T.AccountList.Mail }</td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="10" class="center">&nbsp;</td>        
+    </tr>
+    {#/for}        
+ </table>

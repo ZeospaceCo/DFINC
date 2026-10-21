@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="INS_PROC_MobileList" Value="DPM_MDM_List_Ins" Content="uuid 저장" />
+  <Item ID="SEL_QRY_SignCheck" Value="SELECT IsNull( au.UserID, -1) as UserID, IsNull(am.UUID,'') as UUID, IsNull(am.ActiveMobile,0) as ActiveMobile, AccessRight,au.NameBase, au.PwdCount
+		FROM DP_ACC_User au WITH(NOLOCK) left outer join DP_MDM_List am WITH(NOLOCK) ON au.CompanyID = am.CompanyID AND au.UserID = am.UserID 
+		WHERE au.CompanyID = '{0}' And au.LoginID = '{1}' And Password = '{2}' AND au.ActiveUser=1" Content="로그인 체크" />
+  <Item ID="SEL_QRY_SignInApp"
+		  Value="SELECT top 1 IsNull( au.UserID, -1) as UserID, am.MobileType, am.RegID, am.LogOutYN FROM DP_ACC_User au WITH(NOLOCK) inner join DP_MDM_List am WITH(NOLOCK) 
+		  ON au.CompanyID = am.CompanyID AND au.UserID = am.UserID WHERE au.CompanyID = '{0}' And au.LoginID = '{1}' AND am.UUID = '{2}' AND au.ActiveUser=1" Content="로그인 체크" />
+  <Item ID="SEL_PROC_ALARMCommon" Value="SQL_DPM_ALARM_Common_Select" Content="알람정보 가져오기" />
+  <Item ID="UPD_PROC_ALARMCommon" Value="SQL_DPM_ALARM_Common_Update" Content="알람정보 변경하기" />
+  <Item ID="SEL_QRY_MDM_ListApp" Value="SELECT am.* FROM DP_ACC_User au WITH(NOLOCK) left outer join DP_MDM_List am WITH(NOLOCK) ON au.CompanyID = am.CompanyID AND au.UserID = am.UserID 
+		WHERE au.CompanyID = '{0}' And au.LoginID = '{1}' And am.UUID = '{2}' AND au.ActiveUser=1" Content="환경정보 가져오기" />
+  <Item ID="SEL_QRY_MDM_ListAppPwd" Value="SELECT am.* FROM DP_ACC_User au WITH(NOLOCK) left outer join DP_MDM_List am WITH(NOLOCK) ON au.CompanyID = am.CompanyID AND au.UserID = am.UserID 
+		WHERE au.CompanyID = '{0}' And au.Password = '{1}' And au.LoginID = '{2}' And am.UUID = '{3}' AND au.ActiveUser=1" Content="환경정보 가져오기" />
+  <Item ID="UPD_PROC_MDM_List" Value="DPM_MDM_List_Upd" Content="모바일 환경저장" />
+  <Item ID="SEL_QRY_MDM_List" Value="SELECT * FROM DP_MDM_List WITH(NOLOCK) WHERE CompanyID = '{0}' And UserID = '{1}' And UUID = '{2}'" Content="모바일 사용자환경정보 가져오기" />
+  <Item ID="SEL_QRY_MDM_Env" Value="SELECT * FROM DP_MDM_Env WITH(NOLOCK) WHERE CompanyID = '{0}'" Content="모바일 환경정보 가져오기" />
+  <Item ID="SEL_QRY_MDM_ListEnv" Value="SELECT Top 1 IsNull(am.AccessRight,'') as AccessRight, 1 as Gubun
+		FROM DP_ACC_User au WITH(NOLOCK) left outer join DP_MDM_List am WITH(NOLOCK) ON au.CompanyID = am.CompanyID AND au.UserID = am.UserID 
+		WHERE au.CompanyID = '{0}' And au.LoginID = '{1}' AND au.ActiveUser=1
+		UNION SELECT IsNull(AccessRight,'') as AccessRight, 2 as Gubun FROM DP_MDM_Env WITH(NOLOCK) WHERE CompanyID = '{0}' order by Gubun" Content="모바일 접근권한 가져오기" />
+  <Item ID="SEL_QRY_UserRole" Value="SELECT UserRoles.CompanyID, UserRoles.RoleID, Roles.RoleCode, Roles.RoleName, Users.UserID,
+		Users.NameKo,Users.NameEn,Users.NameJa,	Users.NameFr,Users.NameZhCn,Users.NameZhTw,	Users.ManyName,
+		Users.MobilePhone, Users.MailID , Users.MailDomain
+	FROM         
+		DP_EIP_UserRole AS UserRoles WITH(NOLOCK) INNER JOIN
+		DP_ACC_Dept AS Depts WITH(NOLOCK) ON UserRoles.CompanyID = Depts.CompanyID AND UserRoles.UserID = Depts.DeptID INNER JOIN
+		DP_EIP_Role AS Roles WITH(NOLOCK) ON UserRoles.RoleID = Roles.RoleID AND UserRoles.CompanyID = Roles.CompanyID INNER JOIN
+		VW_UserInfo as Users WITH(NOLOCK) ON UserRoles.UserID = Users.DeptID AND UserRoles.CompanyID = Users.CompanyID 
+	WHERE 
+		UserRoles.CompanyID = {0} AND UserRoles.Types = 'GG' AND Depts.ActiveDept = 1 AND
+		Users.ActiveCompany = 1 AND Users.ActiveUser = 1 
+		AND UserRoles.RoleID in (SELECT RoleID FROM DP_EIP_Role Where CompanyID = {0} AND RoleCode='mdm')
+	UNION 
+	SELECT 
+		UserRoles.CompanyID, UserRoles.RoleID, Roles.RoleCode, Roles.RoleName, Users.UserID,
+		Users.NameKo,Users.NameEn,Users.NameJa,	Users.NameFr,Users.NameZhCn,Users.NameZhTw,	Users.ManyName,
+		Users.MobilePhone, Users.MailID , Users.MailDomain
+	FROM         
+		DP_EIP_UserRole AS UserRoles WITH(NOLOCK) INNER JOIN 
+		VW_UserInfo AS Users WITH(NOLOCK) ON UserRoles.CompanyID = Users.CompanyID AND UserRoles.UserID = Users.UserID INNER JOIN
+		DP_EIP_Role AS Roles WITH(NOLOCK) ON UserRoles.RoleID = Roles.RoleID AND UserRoles.CompanyID = Roles.CompanyID
+	WHERE 
+		UserRoles.CompanyID = {0} AND UserRoles.Types = 'GM' AND 
+		Users.ActiveCompany = 1 AND Users.ActiveUser = 1 AND 
+		Users.BaseDept = 1	AND UserRoles.RoleID in (SELECT RoleID FROM DP_EIP_Role WITH(NOLOCK) Where CompanyID = {0} AND RoleCode='mdm')" Content="권한별 사용자 정보 가져오기"/>
+  <Item ID="SEL_QRY_Auth" Value="SELECT * FROM DP_MDM_AuthGroup WITH(NOLOCK) WHERE CompanyID =  {0} AND ((OwnerID =  {1} AND Type = 'M') 
+		  OR (OwnerID IN (SELECT DeptID FROM [ufn_GetUserUpTree] ({0} ,{1})) AND Type = 'G' ))" Content="승인불가 사용자정보 가져오기" />
+  <Item ID="UPD_PROC_MDM_ListRegID" Value="DPM_MDM_List_UpdByRegID" Content="모바일 regID 값 저장" />
+  <Item ID="SEL_PROC_MDM_NotificationBox" Value="DPM_MDM_NotificationBox_Sel" Content="모바일 알람함 리스트" />
+  <Item ID="SEL_QRY_MDM_UserEnv" Value="SELECT * FROM DP_MDM_UserEnv WITH(NOLOCK) WHERE CompanyID = '{0}' And UserID = '{1}'" Content="알림함 설정 가져오기" />
+  <Item ID="INS_PROC_USERENV" Value="DPM_MDM_UserEnv_Ins" Content="환경 정보 추가" />
+</XmlData>

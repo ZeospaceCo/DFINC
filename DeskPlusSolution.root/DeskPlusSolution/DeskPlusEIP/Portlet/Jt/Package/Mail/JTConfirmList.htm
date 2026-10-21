@@ -1,0 +1,15 @@
+﻿{#foreach $T as List}
+    <li>
+    <span class="mcopy">        
+        <a style="cursor:pointer" onclick="Mail_ConfirmPopup('{ $T.List.Request_mail_sn }', '{ $T.List.Confirm_gubun }', '{ $T.List.Request_user_sn }', '{ $T.List.Confirm_user_sn }', '{ $T.List.Confirm_sn }');">
+            <font style='font-weight:bold;'>{ $T.List.Mail_subject }</font>
+        </a>
+    </span>
+    <span class="etcinfo" style="width:180px !important;">
+			<span class="name" style="width:80px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis; ">{ $T.List.Request_user_account }</span>
+        <em>{ $T.List.Request_time }</em>
+    </span>
+    </li>    
+{#else}     
+    <li><span class="NoListData"></span></li>            
+{#/for}  

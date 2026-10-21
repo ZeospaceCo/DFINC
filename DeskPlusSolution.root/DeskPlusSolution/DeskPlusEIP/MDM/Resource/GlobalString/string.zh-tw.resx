@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessRight" xml:space="preserve">
+    <value>移動限制</value>
+  </data>
+  <data name="AccessRight1" xml:space="preserve">
+    <value>啟用的移動應用（所允許的移動裝置）</value>
+  </data>
+  <data name="AccessRight2" xml:space="preserve">
+    <value>移動+網絡功能的移動應用程序</value>
+  </data>
+  <data name="AccessRight3" xml:space="preserve">
+    <value>禁用手機</value>
+  </data>
+  <data name="AccountDept" xml:space="preserve">
+    <value>組織結構圖</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>無論是使用手機的</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>可得到</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>殘</value>
+  </data>
+  <data name="Alarm1" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Alarm2" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>報警設置</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>報警週期</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>整體</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>證明</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>名單</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>它已被處理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="ConfirmAccessReject" xml:space="preserve">
+    <value>你確定你要不能用於移動？</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="ConfirmApprove" xml:space="preserve">
+    <value>你確定要批准的授權請求？</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>你確定要刪除？</value>
+  </data>
+  <data name="ConfirmReject" xml:space="preserve">
+    <value>你確定要拒絕這個請求？</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DelNoMobile" xml:space="preserve">
+    <value>我不希望刪除設備信息</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>設備名稱</value>
+  </data>
+  <data name="Duty" xml:space="preserve">
+    <value>辦公室</value>
+  </data>
+  <data name="EnvSetting" xml:space="preserve">
+    <value>出廠默認設置</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>我的類別</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>證書存儲位置</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>登錄信息請求</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>ID+PW</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>PW</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>自動認證</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>郵件地址</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>移動管理</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="MobileAuth" xml:space="preserve">
+    <value>移動認證</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>移動信息</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>手機號碼</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>手機類型</value>
+  </data>
+  <data name="MobileUserInfo" xml:space="preserve">
+    <value>移動用戶信息</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>水晶</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1個月</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一個</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>無信息</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>數</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>辦公室電話</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>它正在處理中。請稍候</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>在發生了處理錯誤。請與管理員聯繫</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>被拒絕</value>
+  </data>
+  <data name="ReqApprove" xml:space="preserve">
+    <value>授權請求</value>
+  </data>
+  <data name="ReqName" xml:space="preserve">
+    <value>請求者</value>
+  </data>
+  <data name="ReqReject" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>一個請求</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>選擇列表</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>統計信息</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>等級</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>唯一鍵的值</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1週</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>整體</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>表</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>節省</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>電子支付</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>公告板</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="Coop" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>進度管理</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>資源管理</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>日記</value>
+  </data>
+  <data name="AddAuth" xml:space="preserve">
+    <value>權限添加</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="AuthAccessControl" xml:space="preserve">
+    <value>控制權限訪問</value>
+  </data>
+  <data name="AuthName" xml:space="preserve">
+    <value>權限名</value>
+  </data>
+  <data name="MenuAuth" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="MenuManagement" xml:space="preserve">
+    <value>菜單管理</value>
+  </data>
+  <data name="RegAccessAuth" xml:space="preserve">
+    <value>訪問權限 登記</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>區分</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>請設置權限。</value>
+  </data>
+  <data name="ReqUse" xml:space="preserve">
+    <value>已批准的用戶</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="AppApprove" xml:space="preserve">
+    <value>App 批准設置</value>
+  </data>
+  <data name="AppApprove1" xml:space="preserve">
+    <value>管理員批准</value>
+  </data>
+  <data name="AppApprove2" xml:space="preserve">
+    <value>自動批准</value>
+  </data>
+  <data name="Desc1" xml:space="preserve">
+    <value>默認用戶是第一次連接期間分配給移動。</value>
+  </data>
+  <data name="Desc2" xml:space="preserve">
+    <value>更改所有設備的環境設置。</value>
+  </data>
+  <data name="ListSetting" xml:space="preserve">
+    <value>變化值</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>另外</value>
+  </data>
+  <data name="AuthGroup" xml:space="preserve">
+    <value>未授權用戶（部門）</value>
+  </data>
+  <data name="CheckUserGroup" xml:space="preserve">
+    <value>請選擇用戶和部門。</value>
+  </data>
+  <data name="Desc3" xml:space="preserve">
+    <value>用戶和部門設置的話，當你無法連接到移動設備的請求批准</value>
+  </data>
+  <data name="HearderName" xml:space="preserve">
+    <value>稱號</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="Portal" xml:space="preserve">
+    <value>主要配置</value>
+  </data>
+  <data name="MenuGuide" xml:space="preserve">
+    <value>頂部和底部portlet在移動主機中配置。</value>
+  </data>
+  <data name="Portlet" xml:space="preserve">
+    <value>順序</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>底部</value>
+  </data>
+  <data name="BottomSet" xml:space="preserve">
+    <value>指定了多個底部。</value>
+  </data>
+  <data name="NoPortlet" xml:space="preserve">
+    <value>不要指定</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>頂</value>
+  </data>
+  <data name="TopSet" xml:space="preserve">
+    <value>指定了多個頂部。</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>通知框必須設為開</value>
+  </data>
+  <data name="PushSend" xml:space="preserve">
+    <value>发送通知</value>
+  </data>
+  <data name="AppN" xml:space="preserve">
+    <value>app未安裝</value>
+  </data>
+  <data name="AppY" xml:space="preserve">
+    <value>app安裝</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>內容內容</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>頁頭</value>
+  </data>
+  <data name="PushAdd" xml:space="preserve">
+    <value>發送通知</value>
+  </data>
+  <data name="PushList" xml:space="preserve">
+    <value>通知事項</value>
+  </data>
+  <data name="ReceiveName" xml:space="preserve">
+    <value>收件者</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>傳輸方式</value>
+  </data>
+  <data name="SendName" xml:space="preserve">
+    <value>调度员</value>
+  </data>
+  <data name="SendTime" xml:space="preserve">
+    <value>花時間</value>
+  </data>
+  <data name="TargetUrl" xml:space="preserve">
+    <value>捷徑</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>請註明您的</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>請輸入</value>
+  </data>
+  <data name="InputHeader" xml:space="preserve">
+    <value>請輸入標題</value>
+  </data>
+  <data name="InputReceive" xml:space="preserve">
+    <value>請輸入收件人</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登記日</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登記人</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>題目</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目標</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>公告欄清單</value>
+  </data>
+  <data name="MsgBoardAuth" xml:space="preserve">
+    <value>設置為有權查看帖子的用戶</value>
+  </data>
+  <data name="MsgKey" xml:space="preserve">
+    <value>用戶（部門）ID值無法區分。</value>
+  </data>
+  <data name="MsgNoUser" xml:space="preserve">
+    <value>沒有用戶（部門），請檢查</value>
+  </data>
+  <data name="MsgOverlap" xml:space="preserve">
+    <value>有一個同名的用戶（部門），請選擇自動完成</value>
+  </data>
+  <data name="MsgSendAlarm" xml:space="preserve">
+    <value>通知已發送。</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>請選擇標題</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請輸入註冊的日期。</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於終止日期。</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>查看文件</value>
+  </data>
+</root>

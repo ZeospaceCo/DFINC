@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>개설신청</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li class="btn_blue"><a href="부서협업개설신청.html"><span>부서협업개설신청</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>확인</span></a></li>
+                <li><a href="/DeskPlusEIP/designPublish/_Community/User/Content/Main.html"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 개설신청 시작 //-->
+            <table class="table_typeB">
+			<caption>개설신청정보</caption>
+			<colgroup>
+                <col width="120px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>커뮤니티 성격</th>
+                    <td>
+                        <select>
+                            <option>주제를 선택하세요.</option>
+                            <option>소모임형</option>
+                            <option>프로젝트형</option>
+                            <option>협업형</option>
+                        </select>
+                        <span class="cm_subtxt">* dropdown 선택시, 관련 설명이 보여집니다. (<b>이후,수정불가</b>)</span>
+                    </td>
+                </tr>
+                <tr>
+					<th>커뮤니티 이름</th>
+					<td>
+                        <input type="text" />
+                        <span class="cm_subtxt cm_req">0/20 bytes</span>
+                        <span class="cm_subtxt">* 카페주제와 연관된 이름을 입력하세요.(검색 시, 유용)</span>
+                    </td>
+				</tr>
+                <tr>
+                    <th>주소</th>
+                    <td>
+                        <span class="aLeft">
+                            http://localhost/DeskPlusEIP/ <input type="text" />
+                        </span>
+                        <ul class="btn_smallL" style="padding-left:5px;">
+                            <li><a href="#" title="중복체크"><span>중복체크</span></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>공개여부</th>
+                    <td>
+                        <input type="radio" name="r1" title="바로가입/승인후가입 방식" />공개&nbsp;&nbsp;<input type="radio" name="r1" title="초대를 통해서, 회원가입가능. 초대 후, 대상자 수락 시, 바로 가입." />비공개
+                        <span class="cm_subtxt">* 비공개의 경우, 초대를 통해서, 회원가입 가능. 대상자 수락 시, 바로 가입.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th title="공개여부가 공개인 경우">가입방식</th>
+                    <td><input type="radio" name="r2" />바로가입&nbsp;&nbsp;<input type="radio" name="r2" />승인후가입</td>
+                </tr>
+                <tr>
+                    <th title="공개여부가 비공개인 경우">가입방식</th>
+                    <td><span class="cm_subtxt">* 비공개 카페는 운영자 초대로만 가입이 가능, 검색시 노출되지 않습니다.</span></td>
+                </tr>
+                <tr>
+                    <th>카테고리</th>
+                    <td>
+                        <select>
+                            <option>대분류를 선택하세요.</option>
+                        </select>
+                        →
+                        <select>
+                            <option>소분류를 선택하세요.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>카페검색어</th>
+                    <td>
+                        <ul>
+                            <li>
+                                <span class="aLeft"><input type="text" /></span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="#" title="추가"><span>추가</span></a></li>
+                                </ul>
+                                <span class="cm_subtxt cm_req">0/20 bytes</span>
+                            </li>
+                            <li>
+                                <h1 class="cm_bulA">검색어1 <a href="#">[삭제]</a></h1>
+                                <h1 class="cm_bulA">검색어2 <a href="#">[삭제]</a></h1>
+                                <h1 class="cm_bulA">검색어3 <a href="#">[삭제]</a></h1>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>소개글</th>
+                    <td><textarea rows="5"></textarea> <span class="cm_subtxt cm_req">0/600 bytes</span></td>
+                </tr>
+                <tr>
+                    <th>모바일적용여부</th>
+                    <td><input type="radio" name="r3" />적용&nbsp;&nbsp;<input type="radio" name="r3" />미적용</td>
+                </tr>
+                <tr>
+                    <th>스킨적용</th>
+                    <td>
+                        <span class="aLeft">
+                            <img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_skin_TypeA_s.jpg" style="width:140px;height:160px;vertical-align:text-top;" alt="" title="skin" />
+                            <span class="cm_subtxt">* 커뮤니티에 적용할 스킨을 선택하세요. 추후, CM꾸미기에서 변경가능 합니다.</span>
+                        </span>
+                        <ul class="btn_smallL" style="padding-left:5px;">
+                            <li><a href="#" title="스킨선택"><span>스킨선택</span></a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+                
+			</tbody>
+		    </table> 
+            
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

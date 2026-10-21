@@ -1,0 +1,43 @@
+﻿<table class="table_typeA"> 
+<caption>개인결재선 관리</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="100px" />
+    <col width="*" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="center"><span class="r_number"></span></th>
+    <th class="center"><span class="r_tag"></span></th>
+    <th class="center"><span class="r_isDept"></span></th>
+    <th class="center"><span class="r_deptName"></span></th>
+    <th class="center"><span class="r_titleName"></span></th>
+    <th class="center"><span class="r_dutyName"></span></th>
+    <th class="center"><span class="r_userName"></span></th>
+    <th class="center"><span class="r_del"></span></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.RowStr }</td>
+    <td class="center">{ $T.List.ApprovalTagStr }<span class="tags" style="display:none">{ $T.List.ApprovalTag }</span></td>
+    <td class="center">{ $T.List.IsDeptStr }</td>
+    <td class="center">{ $T.List.DeptBase }{#if $T.List.IsSub == '1'} (+){#/if}</td>
+    <td class="center">{ $T.List.TitleBase }</td>
+    <td class="center">{ $T.List.DutyBase }</td>
+    <td class="center">{ $T.List.NameBase }</td>
+    <td class="center"><a href="" onclick="Mod.DelItem('{ $T.List.FavSeqLineID}','{ $T.List.ApprovalTag}');return false;" style="cursor:pointer" class="btn" >{ $T.List.FileDel }</a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="8" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}
+</tbody>
+</table>

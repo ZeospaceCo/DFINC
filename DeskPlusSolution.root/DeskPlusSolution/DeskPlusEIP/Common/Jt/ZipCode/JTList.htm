@@ -1,0 +1,39 @@
+﻿<table class="table_typeA" border="0">
+<caption>우편번호찾기</caption>
+<colgroup>
+    <col width="65px"/>
+    <col width="60px"/>
+    <col width="60px"/>
+    <col width="70px"/>
+    <col />
+    <col />
+    <col width="90px"/>
+</colgroup>
+<thead>
+    <tr>
+        <th id="header_1"></th>
+        <th id="header_2"></th>
+        <th id="header_3"></th>
+        <th id="header_4"></th>
+        <th id="header_5"></th>
+        <th id="header_7"></th>
+        <th id="header_6"></th>
+    </tr> 
+</thead>
+{#foreach $T as ZipCodeList}
+    <tr>
+        <td><a href="#" onclick="javascript:List.GetAddress('{ $T.ZipCodeList.ZipCode }','{ $T.ZipCodeList.Si }','{ $T.ZipCodeList.Gu }','{ $T.ZipCodeList.Dong }','{ $T.ZipCodeList.Ri }','{ $T.ZipCodeList.Building }','{ $T.ZipCodeList.Bunji }')" style="cursor:pointer"><span style="text-decoration:underline;">{ $T.ZipCodeList.ZipCode }</span></a></td>
+        <td>{ $T.ZipCodeList.Si }</td>
+        <td>{ $T.ZipCodeList.Gu }</td>
+        <td>{ $T.ZipCodeList.Dong }</td>
+        <td>{ $T.ZipCodeList.Ri }</td>
+        <td>{ $T.ZipCodeList.Building }&nbsp;</td>
+        <td>{ $T.ZipCodeList.Bunji }&nbsp;</td>       
+    </tr>
+{#else}
+    <tr>
+        <td colspan="7" class="center" id="NoListData"></td>        
+    </tr>
+{#/for}        
+ </table>
+ 

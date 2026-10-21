@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="이름" Value="WriteUserName"/>
+	<Item ID="제목" Value="Title"/>
+	<Item ID="내용" Value="MobileContent"/>
+	<Item ID="날짜" Value="WriteDate"/>
+</XmlData>
+

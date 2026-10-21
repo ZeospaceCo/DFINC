@@ -1,0 +1,13 @@
+﻿<ul class="mli"> 
+    {#foreach $T as List}
+        <li><a class="mct" onclick="javascript:List.viewList('{ $T.List.ListID }','{ $T.List.GroupID }','{ $T.List.Status }','{ $T.List.ForwardListID }')">
+        <span class="lif">{ $T.List.CoopNumber }</span><br />
+        <span class="lif">{ $T.List.DeptBase } { $T.List.NameBase } { $T.List.TitleBase } {#if $T.List.TOCnt > 1}+{#/if} {#if $T.List.ExcessDay != ''}&nbsp;&nbsp; [D-Day :{ $T.List.ExcessDay }]{#/if}</span><br />
+        <span class="lif">{ $T.List.RequestDate } ~ { $T.List.EndDate }</span><font class="isti">{$T.List.StatusStr}</font><br />
+        { $T.List.Title } {#if $T.List.ReplyCnt > 0} [{$T.List.ReplyCnt }] {#/if}{$T.List.ShowNew}</a></li>
+    {#else}   
+    <li><a href="#" class="mct"><span id="NoListData" class="lif" /><br />   
+        &nbsp;</a></li>  
+    {#/for}  
+</ul>
+

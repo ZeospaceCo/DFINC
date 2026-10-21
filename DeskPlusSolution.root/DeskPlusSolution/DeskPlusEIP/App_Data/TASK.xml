@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+	<Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/Task/Common/ViewPopupTotal.aspx"  Content="알람페이지" />
+  <Item ID="AlarmForwardURL" Value="{0}{1}/DeskPlusEIP/Task/Common/ViewPopup.aspx"  Content="전달알람페이지" />  
+  <Item ID="IsBackupFile" Value="IMAGE" Content="상세내용 백업파일 형식 (MHT, IMAGE, PDF)" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>
+

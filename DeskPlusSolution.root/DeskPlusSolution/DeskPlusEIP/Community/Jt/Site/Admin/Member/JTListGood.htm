@@ -1,0 +1,41 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Community Good List
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="*" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_number"></th>    
+    <th class="center" id="r_userName"></th>
+    <th class="center" id="r_memberType"></th>
+    <th class="center" id="r_joinDate"></th>                            
+    <th class="center" id="r_point"></th>
+
+</tr>
+{#foreach $T as CmnList}
+<tr>
+    <td class="center">{ $T.CmnList.ROW }</td>
+    <td class="center">
+        {#if $T.CmnList.UserID > 0}
+        <a href="#" onclick="AccountInfo('{ $T.CmnList.UserID }');return false;" style="cursor:pointer">{ $T.CmnList.UserName }</a>             
+        {#else}
+        { $T.CmnList.UserName }
+        {#/if}
+    </td>
+    <td class="center">
+        { $T.CmnList.GubunName }
+    </td>
+    <td class="center">{ $T.CmnList.JoinDate }</td>
+    <td class="center">{ $T.CmnList.Point }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

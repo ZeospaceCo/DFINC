@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        $(".accordion").accordion({
+            fillSpace: true,
+            animated: 'slide',
+            //event: "mouseover"
+            overTop: 180
+        });
+
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+    });
+
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <!-- 내활동알림 //-->
+    <div class="cm_left_line">
+        <div class="wtop"></div>
+        <div class="wmid">
+            <div class="cm_Info">
+                <span class="tit">내활동알림</span><span class="cap2">| 30일내의 활동소식</span>
+                <ul class="cont">
+                    <li class="menu">
+                        <span class="cm_tit_fontA">개설건수&nbsp;</span>
+                        <span class="sub">: 0 / 0 건</span>
+                    </li>
+                    <li class="bar"><div class="cm_barA"></div></li>
+                    <li class="menu">
+                        <span class="cm_tit_fontB">가입건수&nbsp;</span>
+                        <span class="sub">: 0 / 0 건</span>
+                    </li>
+                    <li class="bar"><div class="cm_barB"></div></li>
+                    <li class="menu">
+                        <span class="cm_tit_fontA">스크랩수&nbsp;</span>
+                        <span class="sub">: 0 / 0 건</span>
+                    </li>
+                    <li class="bar"><div class="cm_barA"></div></li>
+                    <li class="menu">
+                        <span class="cm_tit_fontB">내작업수&nbsp;</span>
+                        <span class="sub">: 0 / 0 건</span>
+                    </li>
+                    <li class="bar"><div class="cm_barB"></div></li>
+                    <li class="menu">
+                        <span class="cm_tit_fontA">댓글/답글</span>
+                        <span class="sub">: 0 / 0 건</span>
+                    </li>
+                    <li class="bar"><div class="cm_barA"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wbott"></div>
+    </div>
+
+    <div class="cm_gap"></div>
+
+    <!-- 개설신청 //-->
+    <div class="cm_left_line">
+        <div class="wtop"></div>
+        <div class="wmid">
+            <a onclick="javascript:redirect('../Content/개설신청.html')"><span class="titMsgB">개설신청</span><span class="cap2">| 개설신청합니다.</span></a>
+        </div>
+        <div class="wbott"></div>
+    </div>
+
+    <div class="cm_gap"></div>
+
+    <!-- 내커뮤니티소식 //-->
+    <div class="cm_left_line">
+        <div class="wtop"></div>
+        <div class="wmid">
+            <a href="../../SuperAdmin/Default.html" target="_parent"><span class="titMsgA">슈퍼관리자</span><span class="cap2">| 관리자모드이동</span></a>
+        </div>
+        <div class="wbott"></div>
+    </div>
+
+    <div class="cm_gap"></div>
+
+    <!-- 기타목록 //-->
+    <div id="layout_treetopw"></div>
+    <div id="layout_treeboxAcc">
+
+        <div class="accordion">
+            <div class="menu" style="border-top:0px solid red;">
+                <span><a href="#" onclick="">내 커뮤니티 목록</a></span>
+            </div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a>가입한 커뮤니티</a></h2></li>
+                    <li><h2><a>XML 스터디 그룹</a></h2></li>
+                    <li><h2><a>영업 수주 사례 발표회</a></h2></li> 
+                    <li><h2><a>TrainnigKit</a></h2></li>
+                    <li><h2><a>Orange T.F.T.</a></h2></li>
+                    <li><h2><a>SIP study</a></h2></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <span><a href="#" onclick="" >개설 신청중인 목록</a></span>
+                <img src="/DeskPlusEIP/Design/Blue/Img/Bullet/arrA_right.gif" alt="" title="" class="aright" />
+            </div>
+            <div class="menusub">
+                <span>트리</span>
+                <ul>
+                    <li><h2><a>동호회별</a></h2></li>
+                    <li><h2><a>프로젝트별</a></h2></li>
+                    <li><h2><a>협업별</a></h2></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="layout_treebuttom"></div>
+    
+
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="View.asmx.cs" Class="Zeospace.DeskPlus.RM.Web.Ws.Admin.Reserve.View" %>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--관리 -->
+  <Item ID="Manage" Text="Manage" ClientSideCommand="" />
+  <Item ID="Category" Text="Folder" ClientSideCommand="Menu.MovePage('Category');" />
+  <Item ID="Content" Text="Posts" ClientSideCommand="Menu.MovePage('Content');" />
+  <Item ID="Template" Text="Template" ClientSideCommand="Menu.MovePage('Template');" />
+
+  <!-- 환경  -->
+  <Item ID="Environment" Text="Environment" ClientSideCommand="" />
+  <Item ID="Setting" Text="Setting" ClientSideCommand="Menu.MovePage('Setting');" />
+
+  <!-- 통계 -->
+  <Item ID="Statistic" Text="Statistic" ClientSideCommand="" />
+  <Item ID="ReadCount" Text="Posts viewed" ClientSideCommand="Menu.MovePage('ReadCount');" />
+  <Item ID="WriteCount" Text="Post" ClientSideCommand="Menu.MovePage('WriteCount');" />
+</MenuData> 

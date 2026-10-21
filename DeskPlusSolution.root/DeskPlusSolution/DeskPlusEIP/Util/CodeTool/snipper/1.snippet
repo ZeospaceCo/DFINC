@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>zweb</Title>
+			<Shortcut>zweb</Shortcut>
+			<Description>웹폼 Templete</Description>
+			<Author>friendmy</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>expression</ID>
+					<ToolTip>프로젝트명</ToolTip>
+					<Default></Default>
+				</Literal>
+        <Literal>
+          <ID>expression1</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>expression2</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name</ID>
+          <ToolTip>클래스명</ToolTip>
+          <Default></Default>
+          <Function>ClassName()</Function>
+        </Literal>
+      </Declarations>
+			<Code Language="csharp">
+    <![CDATA[
+    public partial class $Name$ : Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BasePage
+    { 
+        #region Declaration (컨트롤 선언)
+        #endregion
+
+        #region 변수설정
+        #endregion
+
+        #region Page Process (페이지 처리)
+        #endregion
+
+        #region Method (함수)
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            #region 다국어 리소스 로드/Title 정보
+            this.ResourceName = "Zeospace.DeskPlus.$expression$.Web.Resource.GlobalString.string";			//리소스 명 선언
+            this.AssemblyName = typeof(Zeospace.DeskPlus.$expression1$.Web.$expression2$).Assembly;	//어셈블리 선언
+            #endregion
+
+            if (!IsPostBack)
+            {                
+                SetLanguage();
+                LoadData();
+            }
+        }
+
+        /// <summary>
+        /// 작성목적   : 초기화 데이터 설정
+        /// 작성자     : 
+        /// </summary>
+        private void LoadData()
+        {
+            LoadParam();
+        }
+
+
+        /// <summary>
+        /// 작성목적   : 파라미터 설정
+        /// 작성자     : 
+        /// </summary>
+        private void LoadParam()
+        {
+            //CatID = GetDecryptParam("catID", "0").ToNumber<int>();
+        }
+
+        /// <summary>
+        /// 작성목적   : 다국어 설정
+        /// 작성자     : 
+        /// </summary>
+        private void SetLanguage()
+        {
+            this.GetResourceManager();
+            if (!this.resMng.Equals(null))
+            {
+                //cbtnCancel.Text = resMng.GetString("Cancel");
+            }
+        }
+
+        #endregion
+
+        #region Event Handler (이벤트 핸들러)
+
+        #endregion
+
+        #region Property (프로퍼티)
+
+        #endregion
+    }        
+  ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

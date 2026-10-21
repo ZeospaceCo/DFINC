@@ -1,0 +1,166 @@
+﻿body {
+}
+@charset "utf-8";
+
+/* =스타일 초기화
+----------------------------------------------------------------------------------------------------------------*/
+html{color:#4d4d4d;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,i {font-style:normal;font-weight:normal;}
+button { margin:0; padding:0; border:none; border:0; cursor:pointer; }
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{*font-size:100%;}
+legend{color:#4d4d4d;}
+label { cursor:pointer; }
+
+/* float 해제 */
+.f-clear:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+.f-clear { display:inline-block; }
+* html .f-clear { height:1%; }
+.f-clear { display:block; }
+
+
+/* =기본 폰트
+----------------------------------------------------------------------------------------------------------------*/
+body { color:#4d4d4d; font:normal 9pt 돋움,dotum,AppleGothic,serif; text-align:center; }
+
+
+
+/* =Content
+----------------------------------------------------------------------------------------------------------------*/
+#container.sms_simple #content { margin:30px 0 0 15px; display:inline; float:left; width:795px; /* width:810px; */ }
+
+#container.sms_simple .login-alert { display:block; position:absolute; z-index:999; left:166px; top:150px; width:795px; height:750px; }
+
+/* =폰 영역(기본형)
+----------------------------------------------------------------------------------------------------------------*/
+.col-phone { padding:0 47px 0 10px; position:relative; display:inline; float:left; height:431px; background: url('../img/common/bg_phone_simple_portlet.gif') no-repeat; z-index:1; }
+	.col-phone h3 { height:0; overflow:hidden; }
+
+    /* 입력창 */
+    .col-phone .message { position:relative; margin:19px 0 0 10px; padding:14px 0 0 0; height:114px;  }
+    .col-phone .message textarea { margin:0; padding:0 10px 0 0; border:none; border:0; position:absolute; top:14px; left:14px; overflow:auto; width:138px; height:86px; background-color:transparent; line-height:1.4em; overflow:scroll; overflow-y:scroll; overflow-x:hidden; resize:none;}
+
+    /* 추가기능 */
+    .col-phone .add-function {  }
+    .col-phone .add-function span.byte { position:absolute; top:126px; left:94px; width:30px; color:#626c85; font:normal 11px tahoma; text-align:center; }
+    .col-phone .add-function button.sign { position:absolute; top:126px; left:26px; overflow:hidden; width:46px; height:16px; background:url('../img/button/btn_sign.gif') no-repeat; text-indent:-1000em; }
+    .col-phone .add-function button.save { position:absolute; top:126px; left:133px; overflow:hidden; width:30px; height:16px; background:url('../img/button/btn_save_1.gif') no-repeat; text-indent:-1000em; }
+    .col-phone .add-function button.open { position:absolute; top:126px; left:160px; overflow:hidden; width:36px; height:16px; background:url('../img/button/btn_open.gif') no-repeat; text-indent:-1000em; }	
+
+	/* 특수기호 레이어 */
+	.col-phone .layer_sign { top:172px; left:96px; z-index:3; border:1px solid red;}
+
+	/* 보내는 사람 */
+	.col-phone .sender { margin:0 0 0 10px; padding-top:6px; height:26px; }
+	    .col-phone .sender strong { padding-top:5px; float:left; color:#394c71; font-size:11px; letter-spacing:-1px; }
+	    .col-phone .sender input { display:inline; margin-right:10px; padding:2px 0 0 5px; float:right; border:1px solid #e9e9e9; width:99px; height:16px; color:#4d4d4d; font:normal 11px tahoma; }
+
+	/* 받는사람 */
+	.col-phone .reciver { position:relative; margin:0 10px 0 10px; height:166px; background:url('../img/common/bg_phone_line.gif') repeat-x; }
+		.col-phone .reciver strong { padding-top:12px; float:left; height:16px; color:#394c71; font-size:11px; letter-spacing:-1px; }
+		.col-phone .reciver p.btn { padding-top:9px;padding-right:0px; float:right; height:19px; }
+			.col-phone .reciver p.btn button { margin-left:3px; display:inline; float:left; overflow:hidden; width:51px; height:16px; background:url('../img/button/btn_address.gif') no-repeat; text-indent:-1000em; }
+			.col-phone .reciver p.btn button.recent { background-image:url('../img/button/btn_recent.gif');width:62px; }
+
+		/* 최근번호 레이어 */
+		.col-phone .reciver .layer_recent_number { border:1px solid #888888; position:absolute; top:26px; left:119px; width:156px; height:141px; background:#fff; z-index:2; }
+			.col-phone .reciver .layer_recent_number ul.recent-list { margin:3px 3px 0 4px; width:150px; height:100px; overflow:auto; overflow-y:scroll; }
+				.col-phone .reciver .layer_recent_number ul.recent-list li { padding-right:3px; border-bottom:1px solid #dedede; float:left; height:19px; }
+					.col-phone .reciver .layer_recent_number ul.recent-list li span { margin:4px 0 0 0; padding-left:3px; display:block; float:left; overflow:hidden; width:38px; font-size:11px; white-space:nowrap; text-overflow:ellipsis; }
+					.col-phone .reciver .layer_recent_number ul.recent-list li input.text { margin:2px 0 0 0; border:none; border:0; display:inline; float:left; overflow:hidden; width:77px; font:normal 11px tahoma; white-space:nowrap; }
+					.col-phone .reciver .layer_recent_number ul.recent-list li button { margin:5px 0 0 0; display:inline; float:left; width:7px; height:7px; overflow:hidden; background:url('../img/button/btn_delete.gif') no-repeat; text-indent:-1000em; }
+			.col-phone .reciver .layer_recent_number .layer_button { margin-top:10px; margin-left:42px; }
+			.col-phone .reciver .layer_recent_number .layer_button button { margin-left:42px; display:inline; float:left; height:16px; overflow:hidden; text-indent:-1000em; }
+				.col-phone .reciver .layer_recent_number .layer_button button.select-all { margin-left:4px; width:44px; background-image:url('../img/button/btn_del_all.gif'); }
+				.col-phone .reciver .layer_recent_number .layer_button button.close { margin-left:4px; width:26px; background-image:url('../img/button/btn_close.gif'); }
+
+		/* wrapper */
+		.col-phone .reciver .wrapper { padding:6px; position:relative; clear:both; width:158px; height:128px; background:url('../img/common/bg_wrapper.gif') no-repeat; }
+			/* 검색 */
+			.col-phone .reciver .wrapper fieldset { }
+				.col-phone .reciver .wrapper fieldset legend { display:block; height:0; overflow:hidden; font:normal 0/0 verdana; }
+				.col-phone .reciver .wrapper fieldset p { position:relative; width:158px; height:20px; }
+					.col-phone .reciver .wrapper fieldset p input.text { position:absolute; top:0; left:0; margin:0; padding:5px 0 0 3px; border:none; border:0; width:135px; height:15px; background:#e0e0e0; color:#969696; font-family:돋움; font-size:11px; letter-spacing:-1px; }
+					.col-phone .reciver .wrapper fieldset p button { position:absolute; top:0; right:0; width:20px; height:20px; overflow:hidden; background:url('../img/button/btn_search_01.gif') no-repeat; text-indent:-1000em; }
+			/* 목록 */
+			.col-phone .reciver ul.list { position:relative; margin-top:3px; width:158px; height:98px; overflow:auto; overflow-y:scroll; background:url('../img/common/bg_dotline_02.gif') repeat-y 0 0; z-index:1; }
+				.col-phone .reciver ul.list li { float:left; height:20px; }
+					.col-phone .reciver ul.list li em { margin:2px 0 0 3px; display:inline; float:left; overflow:hidden; width:15px; color:#7992ed; font:normal 11px tahoma; }
+					.col-phone .reciver ul.list li span { margin:4px 0 0 0; display:inline; float:left; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; width:36px; font-size:11px; }
+					.col-phone .reciver ul.list li input.text { margin:2px 0 0 0; border:none; border:0; display:inline; float:left; overflow:hidden; width:77px; font:normal 11px tahoma; white-space:nowrap; }
+					.col-phone .reciver ul.list li button { margin:5px 0 0 0; display:inline; float:left; width:7px; height:7px; overflow:hidden; background:url('../img/button/btn_delete.gif') no-repeat; text-indent:-1000em; }
+				.col-phone .reciver ul.list li.desc {  }
+					.col-phone .reciver ul.list li.desc span.name { margin:4px 0 0 0; padding-left:24px; display:inline; float:left; overflow:hidden; width:48px; color:#a6a6a6; font-size:11px; }
+					.col-phone .reciver ul.list li.desc span.number { margin:4px 0 0 0; display:inline; float:left; width:auto; white-space:nowrap; color:#a6a6a6; font-size:11px; }
+			/* 검색결과 목록 */
+			.col-phone .reciver dl.search-list { position:absolute; top:26px; left:6px; width:158px; background:#fff; z-index:2; }
+				.col-phone .reciver dl.search-list dt { border-bottom:1px solid #e7e7e7; width:158px; height:20px; }
+					.col-phone .reciver dl.search-list dt strong { margin:5px 0 0 0; padding:0; float:left; color:#7992ed; font-size:11px; letter-spacing:-1px; }
+					.col-phone .reciver dl.search-list dt button { margin:6px 0 0 0; float:right; width:9px; height:9px; overflow:hidden; background:url('../img/button/btn_close_01.gif') no-repeat; text-indent:-1000em; }
+				.col-phone .reciver dl.search-list dd { clear:both; }
+					.col-phone .reciver dl.search-list dd ul { margin-top:2px; width:158px; height:78px; overflow:auto; overflow-y:scroll; background:url('../img/common/bg_dotline_02.gif') repeat-y 0 0; cursor:pointer; }
+						.col-phone .reciver dl.search-list dd ul li { float:left; height:20px; }
+							.col-phone .reciver dl.search-list dd ul li span { margin:4px 0 0 0; display:inline; float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:56px; font-size:11px; }
+							.col-phone .reciver dl.search-list dd ul li input.text { margin:2px 0 0 0; border:0; border:none; display:inline; float:left; overflow:hidden; width:77px; font:normal 11px tahoma; white-space:nowrap; cursor:pointer; }
+
+			/* 검색결과 없음 */
+			.col-phone .reciver dl.search-list-none { position:absolute; top:26px; left:6px; width:158px; background:#fff; z-index:2; }
+				.col-phone .reciver dl.search-list-none dt { border-bottom:1px solid #e7e7e7; width:158px; height:20px; }
+					.col-phone .reciver dl.search-list-none dt strong { margin:5px 0 0 0; padding:0; float:left; color:#7992ed; font-size:11px; letter-spacing:-1px; }
+					.col-phone .reciver dl.search-list-none dt button { margin:6px 0 0 0; float:right; width:9px; height:9px; overflow:hidden; background:url('../img/button/btn_close_01.gif') no-repeat; text-indent:-1000em; }
+				.col-phone .reciver dl.search-list-none dd { clear:both; }
+					.col-phone .reciver dl.search-list-none dd p { margin-top:2px; padding-top:25px; height:53px; text-align:center; font-size:11px; }
+
+	/* 예약전송 */
+	.col-phone .booking { position:relative; margin:10px 0 0 120px; height:33px; z-index:3;  }
+		.col-phone .booking span.label { margin:13px 0 0 7px; position:relative; display:inline; float:left; overflow:hidden; height:12px; background:url('../img/common/bg_checkbox_portlet.gif') no-repeat 0 0; cursor:pointer;}
+		.col-phone .booking span.label.on { background-position:0 -20px; }
+			.col-phone .booking span.label input.check { position:absolute; left:-1000em; }
+			.col-phone .booking span.label em { margin:0 0 0 14px; display:inline; float:left; color:#394c71; height:12px; font:11px 돋움; letter-spacing:-1px; }
+		.col-phone .booking button.help { margin:-13px 0 0 6px; display:inline; float:left; width:12px; height:12px; overflow:hidden; background:url('../img/button/btn_help.gif') no-repeat; text-indent:-1000em;  border:0px solid red;}
+		.col-phone .booking div.help { padding-top:14px; position:absolute; top:-44px; left:-2px; width:153px; height:42px; background:url('../img/common/layer_help2.gif') no-repeat; color:#a59877; font:normal 11px 돋움; letter-spacing:-1px; text-align:center; line-height:1.3em; }
+		/* 기간설정 */
+		.col-phone .booking div.info { padding-bottom:6px; border:1px solid #888888; clear:both; position:absolute; top:-60px; left:7px; width:178px; background:#fff; }
+			.col-phone .booking div.info p.term { margin:0 3px; padding:8px 0 0 3px; border-bottom:1px solid #dedede; width:169px; height:18px; display:none; }
+				.col-phone .booking div.info p.term input.radio { .margin:-4px -4px 0 -4px;vertical-align:middle; }
+				.col-phone .booking div.info p.term label { margin:0 14px 0 6px; color:#4d4d4d; font-weight:bold; vertical-align:middle; }
+			/* 한번 */
+			.col-phone .booking div.info .once { padding:4px 3px 0 3px; }
+				.col-phone .booking div.info .once p { padding:1px 0 0 4px; }
+					.col-phone .booking div.info .once p input.text { margin:0 3px 0 0; padding:4px 0 0 4px; border:1px solid #cacaca; display:inline; float:left; width:93px; height:14px; color:#656767; font-size:11px; }
+					.col-phone .booking div.info .once p button { margin:0; display:inline; float:left; width:23px; height:22px; overflow:hidden; background:url('../img/button/btn_calendar.gif') no-repeat; text-indent:-1000em; }
+					.col-phone .booking div.info .once p select { margin:0 3px 0 0; display:inline; float:left; }
+			/* 반복 */
+			.col-phone .booking div.info .repeat { padding:2px 3px 0 3px; }
+				.col-phone .booking div.info .repeat p { padding:3px 0 0 4px; }
+					.col-phone .booking div.info .repeat p input.text { margin:0 3px 0 0; padding:4px 0 0 4px; border:1px solid #cacaca; display:inline; float:left; width:93px; height:14px; color:#656767; font-size:11px; }
+					.col-phone .booking div.info .repeat p button { margin:0; display:inline; float:left; width:23px; height:22px; overflow:hidden; background:url('../img/button/btn_calendar.gif') no-repeat; text-indent:-1000em; }
+					.col-phone .booking div.info .repeat p select { margin:0 3px 0 0; display:inline; float:left; }
+					.col-phone .booking div.info .repeat p em { margin:4px 0 0 4px; display:inline; float:left; font-size:11px; }
+				.col-phone .booking div.info .repeat dl { padding:3px 0 0 0; }
+					.col-phone .booking div.info .repeat dl dt { padding:0 0 0 5px; position:relative; .top:2px; display:inline; font-size:11px; vertical-align:middle; }
+					.col-phone .booking div.info .repeat dl dd { display:inline; font-size:11px; vertical-align:middle; }
+						.col-phone .booking div.info .repeat dl dd select { display:inline; font-size:11px; vertical-align:middle; }
+
+			/* 닫기 버튼 */
+			.col-phone .booking div.info button.close { position:absolute; top:10px; right:6px; width:9px; height:9px; overflow:hidden; background:url('../img/button/btn_close_01.gif') no-repeat; text-indent:-1000em; }
+
+	/* 달력 레이어 */
+	.layer_calendar { top:25px; left:187px; }
+
+
+/* 버튼 */
+	.col-phone div.button .b_send{ position:absolute;margin:0px 0 0 0 ; height:31px; background:url('../img/button/btn_send_portlet.gif') no-repeat;width:90px;left:13px; }
+	.col-phone div.button .b_reset{ position:absolute;margin:0px 0 0 95px ; height:31px; background:url('../img/button/btn_reset_portlet.gif') no-repeat; width:90px;left:13px;}
+	.col-phone div.button button { position:absolute;float:left; overflow:hidden; width:95px; height:31px; text-indent:-1000em; background:transparent;border:0px solid red;}
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="Font-Size"/>
+	<Item ID="1" Value="small"/>
+	<Item ID="2" Value="normal"/>
+	<Item ID="3" Value="large"/>
+	<Item ID="5" Value="very large"/>
+</XmlData>
+

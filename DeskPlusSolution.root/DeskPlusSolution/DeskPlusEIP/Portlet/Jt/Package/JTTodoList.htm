@@ -1,0 +1,12 @@
+﻿ <ul> 
+    {#foreach $T as TodoList}   
+    <li>
+        <a onclick="TodoList_ShortCut()" >
+        <span class="todolist_Priority_{$T.TodoList.Priority}">{$T.TodoList.Priority}</span>
+        {$T.TodoList.Title}     
+        </a>    
+    </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

@@ -1,0 +1,12 @@
+﻿ <ul class="ptl_type5sub">
+    {#foreach $T as AnniversaryList}   
+        <li>
+        {$T.AnniversaryList.Gubun}
+        {$T.AnniversaryList.SpecialDay}
+        {$T.AnniversaryList.Lunar}
+        <a onclick="AccountInfo('{ $T.AnniversaryList.UserID }');return false;" style="cursor:pointer">{ $T.AnniversaryList.UserName }</a> 
+        {$T.AnniversaryList.TitleName}</li>    
+    {#else}     
+        <li id="NoContents"></li>            
+    {#/for}  
+</ul>

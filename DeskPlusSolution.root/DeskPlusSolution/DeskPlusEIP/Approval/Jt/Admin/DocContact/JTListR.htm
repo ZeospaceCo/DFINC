@@ -1,0 +1,61 @@
+﻿
+ <table class="table_typeA">
+    <caption>
+        수발자 리스트
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="100px" />
+        <col width="120px" />               
+        <col  />        
+        <col width="100px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="ListR.Checked()" /></th>
+            <th class="center" id="r_photo" class="center"></th>
+            <th class="center" id="r_name"></th>            
+            <th class="center" id="r_dept"></th>
+            <th class="center" id="r_isactive"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as AccList}
+        <tr>
+            <td class="center">
+                <input type="checkbox" class="cbxID" id="cbxID{ $T.AccList.ROW }" value="{ $T.AccList.AccountID }" />
+            </td>        
+            <td class="center">
+                { $T.AccList.PhotoName }
+            </td>
+            <td class="center">
+                {#if $T.AccList.TitleName != ''}
+                <span class="orangeSquare">{ $T.AccList.TitleName }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.AccList.UserID }');return false;">
+                { $T.AccList.UserName }
+                {#if $T.AccList.BaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>                
+                </strong>
+            </td>            
+            <td class="center">
+                { $T.AccList.DeptName }
+            </td>
+            <td class="center">
+                {#if $T.AccList.IsActive == '1'}
+                <div class="Stop"><a href="#" onclick="ListR.Stop('{ $T.AccList.UserID }', '{ $T.AccList.DeptID }');"><span class="orangeSquare activeN">지정해제</span></a></div>               
+                {#/if}
+                <div class="Start"><a href="#" onclick="ListR.Start('{ $T.AccList.UserID }', '{ $T.AccList.DeptID }');"><span class="orangeSquare activeY">지정설정</span></a></div>
+            </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="5" class="center"><span class="NoListData"></span></td>        
+        </tr>
+    {#/for}
+
+    </tbody>
+</table>

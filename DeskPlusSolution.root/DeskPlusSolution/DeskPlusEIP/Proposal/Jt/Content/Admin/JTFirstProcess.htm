@@ -1,0 +1,56 @@
+﻿<table class="table_typeA"> 
+<caption>
+    1차 심사중 리스트
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="350px" />
+    <col width="80px" />
+    <col />
+</colgroup>
+<tr>
+    <th class="center">NO</th>
+    <th class="center">접수번호</th>
+    <th class="center">접수일자</th>
+    <th class="center">제안자</th>
+    <th class="center">승인자</th>
+    <th class="center">제안 제목</th>                         
+</tr>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ProposalNo }</td>
+    <td class="center">
+        <a onclick="Process.View('{ $T.BoardList.ProposalNo }','{ $T.BoardList.ItemNo }');return false;" style="cursor:pointer" >{ $T.BoardList.No }</a> 
+    </td>
+    <td class="center">{ $T.BoardList.WriteDateYMD }</td>
+    <td class="center">{ $T.BoardList.ParentDeptName } &nbsp;{ $T.BoardList.DeptName } &nbsp;
+        {#if $T.BoardList.UserID > 0}
+            {#if $T.BoardList.PersonCnt == 1}
+                <a onclick="AccountInfo('{ $T.BoardList.UserID }');return false;" style="cursor:pointer">{ $T.BoardList.Name }</a>
+            {#else}
+                <a onclick="AccountInfo('{ $T.BoardList.UserID }');return false;" style="cursor:pointer">{ $T.BoardList.Name }(+)</a>
+            {#/if}
+        {#else}
+            { $T.BoardList.Name }
+        {#/if}
+    </td>
+    <td class="center">
+        {#if $T.BoardList.JudgeCnt == 1}
+            <a onclick="AccountInfo('{ $T.BoardList.JudgeUserID }');return false;" style="cursor:pointer">{ $T.BoardList.JudgeName }</a>
+        {#else}
+            { $T.BoardList.JudgeName }
+        {#/if}
+    </td>
+    <td>        
+        <a onclick="Process.View('{ $T.BoardList.ProposalNo }','{ $T.BoardList.ItemNo }');return false;" style="cursor:pointer" >{ $T.BoardList.Title }</a> 
+      
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span class="NoListData" />등록된 제안이 없습니다.</td>        
+</tr>
+{#/for}        
+</table>

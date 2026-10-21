@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>	
+	<Item ID="현재분류" Value="Dept"/>
+	<Item ID="하위분류포함" Value="SubDept"/>
+</XmlData>
+

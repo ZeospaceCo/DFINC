@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+    <MAIL>
+        <SUBJ>
+            <START>[대결시작] 대결지정 되었습니다.</START>
+            <END>[대결종료] 대결중지 되었습니다.</END>
+        </SUBJ>
+        <ACTION>
+            <START>대결지정 되었습니다.</START>
+            <END>대결중지 되었습니다.</END>
+        </ACTION>
+        <CONTENT>
+            &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;[전자결재] 대결자알람&lt;/li&gt;
+            &lt;li&gt;대결자 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결대상자 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결기간 : $PROXYDATE$&lt;/li&gt;
+            &lt;li&gt;부재유형 : $PROXYTYPE$&lt;/li&gt;
+            &lt;li&gt;부재내용 : $PROXYCONTENT$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MAIL>
+    
+    <MESSENGER>
+        <SUBJ>
+            <START>[대결시작] 대결지정 되었습니다.</START>
+            <END>[대결종료] 대결중지 되었습니다.</END>
+        </SUBJ>
+        <ACTION>
+            <START>대결지정 되었습니다.</START>
+            <END>대결중지 되었습니다.</END>
+        </ACTION>
+        <CONTENT>
+            &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;[전자결재] 대결자알람&lt;/li&gt;
+            &lt;li&gt;대결자 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결대상자 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결기간 : $PROXYDATE$&lt;/li&gt;
+            &lt;li&gt;부재유형 : $PROXYTYPE$&lt;/li&gt;
+            &lt;li&gt;부재내용 : $PROXYCONTENT$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MESSENGER>
+    
+    <SMS>
+        <SUBJ>
+            <START>[대결시작] 대결지정 되었습니다.</START>
+            <END>[대결종료] 대결중지 되었습니다.</END>
+        </SUBJ>
+        <ACTION>
+            <START>대결지정 되었습니다.</START>
+            <END>대결중지 되었습니다.</END>
+        </ACTION>
+        <CONTENT>
+            &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;[전자결재] 대결자알람&lt;/li&gt;
+            &lt;li&gt;대결자 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결대상자 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결기간 : $PROXYDATE$&lt;/li&gt;
+            &lt;li&gt;부재유형 : $PROXYTYPE$&lt;/li&gt;
+            &lt;li&gt;부재내용 : $PROXYCONTENT$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </SMS>
+
+    <MOBILE>
+        <SUBJ>
+            <START>[대결시작] 대결지정 되었습니다.</START>
+            <END>[대결종료] 대결중지 되었습니다.</END>
+        </SUBJ>
+        <ACTION>
+            <START>대결지정 되었습니다.</START>
+            <END>대결중지 되었습니다.</END>
+        </ACTION>
+        <CONTENT>
+            &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;[전자결재] 대결자알람&lt;/li&gt;
+            &lt;li&gt;대결자 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결대상자 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+            &lt;li&gt;대결기간 : $PROXYDATE$&lt;/li&gt;
+            &lt;li&gt;부재유형 : $PROXYTYPE$&lt;/li&gt;
+            &lt;li&gt;부재내용 : $PROXYCONTENT$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MOBILE>
+</ALARM>

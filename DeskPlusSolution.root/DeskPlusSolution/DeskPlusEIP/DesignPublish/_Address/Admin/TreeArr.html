@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>html, body {height:98%}</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DeskPlus4.0 웹표준</title>
+
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Address.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        //$("#accordion").height("100%")
+        $(".accordion").accordion({
+            fillSpace: true
+        });
+        $(".accordion").accordion({
+            animated: 'slide'
+        });
+    });
+    $(function () {
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+
+        //alert($(".accordion").height());
+    });
+</script>
+
+</head>
+<body>
+
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">주소록관리자</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            <div class="menu"><a href="#" onclick="" >공용폴더관리</a></div>
+            <div class="menusub">
+
+                트리
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >공용주소록관리</a></div>
+            <div class="menusub">
+
+                트리
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >환경설정</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><a href="/DeskPlusEIP/Address/Admin/Config/Default.aspx" target="frmContent">환경설정</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+
+    <!-- 버튼 //-->
+    <div id="layout_treebutton">
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+    </div>
+</div>
+
+</body>
+</html>

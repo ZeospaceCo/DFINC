@@ -1,0 +1,31 @@
+﻿<table class="table_typeA"> 
+<caption>
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="140px" />    
+    <col  />
+    <col width="70px" />        
+    <col width="140px" />
+</colgroup>
+<tr>
+    <th id="r_checked"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+    <th class="center" id="r_username"></th>  
+    <th class="center" id="r_faxnumber"></th>
+    <th class="center" id="r_isactive"></th>                              
+    <th class="center" id="r_branchname"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.FaxID }" /></td>
+    <td class="center"id="namebase_{ $T.List.FaxID }"><a onclick="List.View('{ $T.List.FaxID }')">{ $T.List.NameBase }</a></td>
+    <td class="center" id="faxnumber_{ $T.List.FaxID }"><a onclick="List.View('{ $T.List.FaxID }')">{ $T.List.FaxNumber }</a></td>    
+    <td class="center" id="isactive_{ $T.List.FaxID }"><a onclick="List.View('{ $T.List.FaxID }')">{ $T.List.ActiveName }</a></td>    
+    <td class="center" id="deptnamebase_{ $T.List.FaxID }"><a onclick="List.View('{ $T.List.FaxID }')">{ $T.List.BranchNameBase }</a></td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

@@ -1,0 +1,1578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Academic" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>Use mobile</value>
+  </data>
+  <data name="ActiveMobile0" xml:space="preserve">
+    <value>Wait</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>No use</value>
+  </data>
+  <data name="ActiveMobile3" xml:space="preserve">
+    <value>Disapprove</value>
+  </data>
+  <data name="ActiveNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ActiveOnOff" xml:space="preserve">
+    <value>Enable/Disable</value>
+  </data>
+  <data name="ActiveYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ActivityDept" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="AddBaseInfo" xml:space="preserve">
+    <value>Personnel info</value>
+  </data>
+  <data name="Admin_BatchManagerContent_MSG_ModChk" xml:space="preserve">
+    <value>Do you want to edit ?</value>
+  </data>
+  <data name="Admin_BatchManagerList_BatchManager" xml:space="preserve">
+    <value>Org mgmt</value>
+  </data>
+  <data name="Admin_CompanyManager_btnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Admin_CompanyManager_btnDel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Admin_CompanyManager_btnSubmit" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptDown" xml:space="preserve">
+    <value>Move down</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptUp" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="Admin_CompanyManager_cbtnSearchZipCode" xml:space="preserve">
+    <value>Zip Search</value>
+  </data>
+  <data name="Admin_DeptManager_btnAdd" xml:space="preserve">
+    <value>Add sub-org</value>
+  </data>
+  <data name="Admin_DeptManager_btnDel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearchZipCode" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="Admin_DeptManager_cbActive" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Admin_DeptManager_cbIsFPDept" xml:space="preserve">
+    <value>Allowance dept</value>
+  </data>
+  <data name="Admin_DeptManager_cbPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Admin_DeptManager_cbRoot" xml:space="preserve">
+    <value>Root org</value>
+  </data>
+  <data name="Admin_DeptManager_ChangeDept" xml:space="preserve">
+    <value>Do you want to move the selected user?</value>
+  </data>
+  <data name="Admin_DeptManager_DeptManager" xml:space="preserve">
+    <value>Org mgmt</value>
+  </data>
+  <data name="Admin_DeptManager_ltAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Admin_DeptManager_ltDeptCode" xml:space="preserve">
+    <value>I/F code</value>
+  </data>
+  <data name="Admin_DeptManager_ltDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Admin_DeptManager_ltEnglishName" xml:space="preserve">
+    <value>Org Designation</value>
+  </data>
+  <data name="Admin_DeptManager_ltFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupInform" xml:space="preserve">
+    <value>Org Info</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupList" xml:space="preserve">
+    <value>Org list</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupMember" xml:space="preserve">
+    <value>Org Member</value>
+  </data>
+  <data name="Admin_DeptManager_ltHomePage" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="Admin_DeptManager_ltMove" xml:space="preserve">
+    <value>Org</value>
+  </data>
+  <data name="Admin_DeptManager_ltName" xml:space="preserve">
+    <value>Org name</value>
+  </data>
+  <data name="Admin_DeptManager_ltParentName" xml:space="preserve">
+    <value>Parent Org</value>
+  </data>
+  <data name="Admin_DeptManager_ltPhone" xml:space="preserve">
+    <value>Phone No</value>
+  </data>
+  <data name="Admin_DeptManager_ltSecurityLogIn" xml:space="preserve">
+    <value>Security Certi.</value>
+  </data>
+  <data name="Admin_DeptManager_ltShortName" xml:space="preserve">
+    <value>Abbr.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelChk" xml:space="preserve">
+    <value>Do you want delete ?</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelDeptTree" xml:space="preserve">
+    <value>You cannot delete organizations with users</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelFAILURE" xml:space="preserve">
+    <value>An error has occurred during deletion</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelSUCCESS" xml:space="preserve">
+    <value>Has been deleted</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_FAILURE" xml:space="preserve">
+    <value>An error has occurred during processing</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_NoSelectedManyUser" xml:space="preserve">
+    <value>You can not select multiple users</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SelectedUserTree" xml:space="preserve">
+    <value>Choose the user you want to delete</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTERROR" xml:space="preserve">
+    <value>Enter your search criteria</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTGROUPERROR" xml:space="preserve">
+    <value>Select org</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTLENGTHERROR" xml:space="preserve">
+    <value>When searching, you should enter more than two characters</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTTREE" xml:space="preserve">
+    <value>Select the parent organization</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SubDeptTreeYN" xml:space="preserve">
+    <value>You can't delete organizations which are having sub-organizations</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SUCCESS" xml:space="preserve">
+    <value>Has been processed</value>
+  </data>
+  <data name="Admin_DeptManager_RootDept" xml:space="preserve">
+    <value>Top dept</value>
+  </data>
+  <data name="Admin_UserContent_MSG_Checkbox" xml:space="preserve">
+    <value>Check the list to delete</value>
+  </data>
+  <data name="Admin_UserList_cbsUserAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Admin_UserList_cbsUserDel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Admin_UserList_cbtnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Admin_UserList_MSGDel" xml:space="preserve">
+    <value>Users are being deleted. \n Delete the organization of the user information. \n Do you want to delete?</value>
+  </data>
+  <data name="Admin_UserList_MSG_BtnSelect" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="Admin_UserList_MSG_DelUserERROR" xml:space="preserve">
+    <value>An error has occurred during deletion</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDeptName" xml:space="preserve">
+    <value>Dept </value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDutyName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTLoginID" xml:space="preserve">
+    <value>Login ID</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTMobilePhone" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTTitleName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTUserDeptOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Admin_UserList_UserManager" xml:space="preserve">
+    <value>User mgmt</value>
+  </data>
+  <data name="Admin_UserManager_ActiveUser" xml:space="preserve">
+    <value>Select users you will activate</value>
+  </data>
+  <data name="Admin_UserManager_cbsExtentionConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserDel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserList" xml:space="preserve">
+    <value>User List</value>
+  </data>
+  <data name="Admin_UserManager_cbtnBirthSearchZipCode" xml:space="preserve">
+    <value>Addr search</value>
+  </data>
+  <data name="Admin_UserManager_cbtnHomeSearchZipCode" xml:space="preserve">
+    <value>Addr search</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoAdd" xml:space="preserve">
+    <value>Add Photo</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoDel" xml:space="preserve">
+    <value>Delete photo</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealAdd" xml:space="preserve">
+    <value>Add stamp</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealDel" xml:space="preserve">
+    <value>Delete stamp</value>
+  </data>
+  <data name="Admin_UserManager_cbtnUserDeptAdd" xml:space="preserve">
+    <value>Assign group</value>
+  </data>
+  <data name="Admin_UserManager_cbxVirtualDept" xml:space="preserve">
+    <value>Virtual dept</value>
+  </data>
+  <data name="Admin_UserManager_Font" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader2" xml:space="preserve">
+    <value>Dept name</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader3" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader4" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader5" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader6" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader7" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader8" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Admin_UserManager_Literal1" xml:space="preserve">
+    <value>Stemp Info</value>
+  </data>
+  <data name="Admin_UserManager_Literal2" xml:space="preserve">
+    <value>Org chart</value>
+  </data>
+  <data name="Admin_UserManager_Literal3" xml:space="preserve">
+    <value>Org Info</value>
+  </data>
+  <data name="Admin_UserManager_ltAnniversary" xml:space="preserve">
+    <value>Anniversary</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseDept" xml:space="preserve">
+    <value>Basic org</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseMenu" xml:space="preserve">
+    <value>Set 1st page</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthAddress" xml:space="preserve">
+    <value>Permanent addr</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthDay" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Admin_UserManager_ltChineseName" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="Admin_UserManager_ltCurrentDept" xml:space="preserve">
+    <value>Org Info</value>
+  </data>
+  <data name="Admin_UserManager_ltDescription" xml:space="preserve">
+    <value>Responsibility</value>
+  </data>
+  <data name="Admin_UserManager_ltDesignStyle" xml:space="preserve">
+    <value>Skin</value>
+  </data>
+  <data name="Admin_UserManager_ltEmployeeNumber" xml:space="preserve">
+    <value>Employee No</value>
+  </data>
+  <data name="Admin_UserManager_ltEnglishName" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Admin_UserManager_ltExtensionOfficePhone" xml:space="preserve">
+    <value>Extention</value>
+  </data>
+  <data name="Admin_UserManager_ltFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Admin_UserManager_ltHomeAddress" xml:space="preserve">
+    <value>Home Addr</value>
+  </data>
+  <data name="Admin_UserManager_ltHomePhone" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="Admin_UserManager_ltJoinDate" xml:space="preserve">
+    <value>Date of entry</value>
+  </data>
+  <data name="Admin_UserManager_ltLoginID" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="Admin_UserManager_ltMail" xml:space="preserve">
+    <value>Default mail</value>
+  </data>
+  <data name="Admin_UserManager_ltMailPassword" xml:space="preserve">
+    <value>Mail password</value>
+  </data>
+  <data name="Admin_UserManager_ltMobilePhone" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Admin_UserManager_ltName" xml:space="preserve">
+    <value>Name(Korean)</value>
+  </data>
+  <data name="Admin_UserManager_ltOfficePhone" xml:space="preserve">
+    <value>Office Phone</value>
+  </data>
+  <data name="Admin_UserManager_ltPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Admin_UserManager_ltPasswordConfirm" xml:space="preserve">
+    <value>PW confirm</value>
+  </data>
+  <data name="Admin_UserManager_ltPictureType" xml:space="preserve">
+    <value>Photo, Stemp can only be imprint in the form of jpg (Photo: 94 * 124 / Stemp: 50 * 50)</value>
+  </data>
+  <data name="Admin_UserManager_ltPreferredLanguage" xml:space="preserve">
+    <value>Set default</value>
+  </data>
+  <data name="Admin_UserManager_ltPrivateQuota" xml:space="preserve">
+    <value>Individual capacity</value>
+  </data>
+  <data name="Admin_UserManager_ltRegistrationNumber" xml:space="preserve">
+    <value>Social Security No</value>
+  </data>
+  <data name="Admin_UserManager_ltSex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Admin_UserManager_ltTitle1" xml:space="preserve">
+    <value>Photo Info</value>
+  </data>
+  <data name="Admin_UserManager_ltWeddingAnniversary" xml:space="preserve">
+    <value>Wedding Day</value>
+  </data>
+  <data name="Admin_UserManager_msgIsNumeric" xml:space="preserve">
+    <value>Enter numbers only</value>
+  </data>
+  <data name="Admin_UserManager_MSG_DelConfirm" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="Admin_UserManager_MSG_FAILURE" xml:space="preserve">
+    <value>An error has occurred during processing</value>
+  </data>
+  <data name="Admin_UserManager_MSG_IsBelongDept" xml:space="preserve">
+    <value>Belong to the organization you chose</value>
+  </data>
+  <data name="Admin_UserManager_MSG_NotSelectRootNode" xml:space="preserve">
+    <value>Choose the department</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SelectedDeptTree" xml:space="preserve">
+    <value>Select the organization</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SUCCESS" xml:space="preserve">
+    <value>processed</value>
+  </data>
+  <data name="Admin_UserManager_NoUse" xml:space="preserve">
+    <value>Being used</value>
+  </data>
+  <data name="Admin_UserManager_Password" xml:space="preserve">
+    <value>Enter only alphanumeric</value>
+  </data>
+  <data name="Admin_UserManager_RequireCodes" xml:space="preserve">
+    <value>Enter Code (Position/Title) Info</value>
+  </data>
+  <data name="Admin_UserManager_rfvMailID" xml:space="preserve">
+    <value>Insert Mail ID</value>
+  </data>
+  <data name="Admin_UserManager_tabs0" xml:space="preserve">
+    <value>Basic Info</value>
+  </data>
+  <data name="Admin_UserManager_tabs1" xml:space="preserve">
+    <value>Detailed Info</value>
+  </data>
+  <data name="Admin_UserManager_tabs2" xml:space="preserve">
+    <value>Org Info</value>
+  </data>
+  <data name="Admin_UserManager_tabs3" xml:space="preserve">
+    <value>etc</value>
+  </data>
+  <data name="Admin_UserManager_Use" xml:space="preserve">
+    <value>available</value>
+  </data>
+  <data name="Admin_UserManager_UserManager" xml:space="preserve">
+    <value>User Info</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_auth" xml:space="preserve">
+    <value>Permission denied</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_lunar" xml:space="preserve">
+    <value>Lunar</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_RetireDate" xml:space="preserve">
+    <value>Date of Retire</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_Validation" xml:space="preserve">
+    <value>You can enter detailed information after entering User Basic Information</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_WeddingDate" xml:space="preserve">
+    <value>Wedding anni.</value>
+  </data>
+  <data name="Admin_UserRegister_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Admin_UserRegister_DoubleCheck" xml:space="preserve">
+    <value>Check duplicate</value>
+  </data>
+  <data name="Admin_UserRegister_MailPasswordChange" xml:space="preserve">
+    <value>Change Mail PW</value>
+  </data>
+  <data name="Admin_UserRegister_PasswordChange" xml:space="preserve">
+    <value>Change Login PW</value>
+  </data>
+  <data name="Admin_UserRegister_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="AlarmIsUsing0" xml:space="preserve">
+    <value>unuse</value>
+  </data>
+  <data name="AlarmIsUsing1" xml:space="preserve">
+    <value>use</value>
+  </data>
+  <data name="AlarmMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="AlarmMessenger" xml:space="preserve">
+    <value>Messenger</value>
+  </data>
+  <data name="AlarmOption" xml:space="preserve">
+    <value>Alarm options :</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>Alarm Setting</value>
+  </data>
+  <data name="AlarmSMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="AlarmTitle" xml:space="preserve">
+    <value>Alarm setting</value>
+  </data>
+  <data name="AlertExitParentDept" xml:space="preserve">
+    <value>You cannot delete it due to the presence of subordinate departments.</value>
+  </data>
+  <data name="AlertExitUserByDeptID" xml:space="preserve">
+    <value>You cannot delete it due to the presence of subordinate departments.</value>
+  </data>
+  <data name="AllPhoneNumber" xml:space="preserve">
+    <value>Phone No.</value>
+  </data>
+  <data name="AndSearch" xml:space="preserve">
+    <value>AND :</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Enter the date of registration</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>Approve Date</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="AuthEmail" xml:space="preserve">
+    <value>PW authentic mail</value>
+  </data>
+  <data name="Authentication_SignIn_MSG_LoginError" xml:space="preserve">
+    <value>Check the ID or password</value>
+  </data>
+  <data name="Authentication_SignIn_rfvLoginID" xml:space="preserve">
+    <value>Put your login ID</value>
+  </data>
+  <data name="Authentication_SignIn_rfvPassword" xml:space="preserve">
+    <value>Put a password</value>
+  </data>
+  <data name="AuthLevel" xml:space="preserve">
+    <value>Authority/Level</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>Authority List</value>
+  </data>
+  <data name="BaseMail" xml:space="preserve">
+    <value>Basic mail</value>
+  </data>
+  <data name="Base_Authentication_Default_MSG_USBKey" xml:space="preserve">
+    <value>The USB Key information does not match the groupware user's information.</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="BasicAddInfo" xml:space="preserve">
+    <value>Personnel info</value>
+  </data>
+  <data name="BasicLanguage" xml:space="preserve">
+    <value>Default lang.</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Adjunct</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Affairs</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="CareerInfo" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="CareerInfoStatus" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="CareerPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="ChangeBasicDept" xml:space="preserve">
+    <value>Change basic</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>Change dept</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>Change order</value>
+  </data>
+  <data name="ChangeUpperDept" xml:space="preserve">
+    <value>Change parent dept</value>
+  </data>
+  <data name="CheckBaseMail" xml:space="preserve">
+    <value>Set default mail</value>
+  </data>
+  <data name="CheckChangeDeptUserList" xml:space="preserve">
+    <value>Select a user list to change department</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>Select list to delete</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>Select list</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>Duplicate login check</value>
+  </data>
+  <data name="CheckMailRepetition" xml:space="preserve">
+    <value>Duplicate mail check</value>
+  </data>
+  <data name="CheckMember" xml:space="preserve">
+    <value>Check member</value>
+  </data>
+  <data name="CheckMoveBaseDept" xml:space="preserve">
+    <value>Select basic dept to move</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>Position/Duty setting</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>Code name</value>
+  </data>
+  <data name="Cohabitation" xml:space="preserve">
+    <value>Cohabitation</value>
+  </data>
+  <data name="Common_revIsNumber" xml:space="preserve">
+    <value>* Please enter numbers only!</value>
+  </data>
+  <data name="Common_revSpecialChar" xml:space="preserve">
+    <value>* Special characters are not allowed!</value>
+  </data>
+  <data name="Common_rfvInput" xml:space="preserve">
+    <value>* Please input.</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompleteCategoryOrders" xml:space="preserve">
+    <value>Category order changed</value>
+  </data>
+  <data name="CompleteCheck" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="CompleteDelete" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="CompleteModify" xml:space="preserve">
+    <value>Corrected</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="CompleteSave" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="CourseName" xml:space="preserve">
+    <value>Course</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="DeleteDept" xml:space="preserve">
+    <value>Would you delete the pertinent department ?</value>
+  </data>
+  <data name="DeleteDuty" xml:space="preserve">
+    <value>Would you delete the pertinent Duty ?</value>
+  </data>
+  <data name="DeleteInfo" xml:space="preserve">
+    <value>Do you want to delete ?</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>Do you want to delete this job title?</value>
+  </data>
+  <data name="DeleteUserInfo" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="DenyConfirm" xml:space="preserve">
+    <value>Problem has occurred after processing</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>Dept info</value>
+  </data>
+  <data name="DeptOrder" xml:space="preserve">
+    <value>Dept order</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>Detail info</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="DutyDescription" xml:space="preserve">
+    <value>Duty descript</value>
+  </data>
+  <data name="DutyOrder" xml:space="preserve">
+    <value>Duty order</value>
+  </data>
+  <data name="DutyTree" xml:space="preserve">
+    <value>Duty tree</value>
+  </data>
+  <data name="EducationInfo" xml:space="preserve">
+    <value>Edu info</value>
+  </data>
+  <data name="EducationInfoStatus" xml:space="preserve">
+    <value>Edu info status</value>
+  </data>
+  <data name="EmployeeSearch" xml:space="preserve">
+    <value>Search Employee</value>
+  </data>
+  <data name="EnableUse" xml:space="preserve">
+    <value>Use or not</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>Error has occurred during processing</value>
+  </data>
+  <data name="FaceBook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="FamilyInfo" xml:space="preserve">
+    <value>Family info</value>
+  </data>
+  <data name="FamilyInfoState" xml:space="preserve">
+    <value>Family status</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Finish date</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the list</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>Google cal</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="Graduation" xml:space="preserve">
+    <value>Graduated</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ImpossibleModify" xml:space="preserve">
+    <value>Can not edit</value>
+  </data>
+  <data name="InputBaseMail" xml:space="preserve">
+    <value>Input basic mail</value>
+  </data>
+  <data name="InputChangedPassword" xml:space="preserve">
+    <value>* Input password when you change it</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>Enter login ID</value>
+  </data>
+  <data name="InputMailPassword" xml:space="preserve">
+    <value>Enter email password</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>Enter name</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>In category</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="JobClass" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="License_Error" xml:space="preserve">
+    <value>License Error : There are no licenses available</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>The special characters are limited because they are used for security vulnerability attack</value>
+  </data>
+  <data name="LinkageInfo" xml:space="preserve">
+    <value>Link info</value>
+  </data>
+  <data name="LinkOutsideAccount" xml:space="preserve">
+    <value>SNS info</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="LoginInfo" xml:space="preserve">
+    <value>Login Info</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>Access date</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>Login req info</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>ID+PW</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>Auto-certify</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>Mail addr</value>
+  </data>
+  <data name="MailDomain" xml:space="preserve">
+    <value>Mail domain</value>
+  </data>
+  <data name="MailID" xml:space="preserve">
+    <value>Mail ID</value>
+  </data>
+  <data name="MailPwdChange" xml:space="preserve">
+    <value>Do you want to modify your e-mail password?</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="ManagementDept" xml:space="preserve">
+    <value>Dept mgmt</value>
+  </data>
+  <data name="ManagementDuty" xml:space="preserve">
+    <value>Duty mgmt</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>Title  mgmt</value>
+  </data>
+  <data name="ManagerGuide" xml:space="preserve">
+    <value>If the user's password is lost, the email address will be displayed in the email address of the registered contact person. &lt;br /&gt; If the administrator is not registered, users can not get a temporary password.</value>
+  </data>
+  <data name="ManagerNotDept" xml:space="preserve">
+    <value>Administrators can not assign dept</value>
+  </data>
+  <data name="ManagerOnlyOne" xml:space="preserve">
+    <value>Only one administrator can register</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>Mobile mgmt</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="MeToday" xml:space="preserve">
+    <value>MeToday</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>Mobile info</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>M_phone</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>Mobile type</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ModMsg" xml:space="preserve">
+    <value>Only available devices can be edited</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_AdditionalJob" xml:space="preserve">
+    <value>Adjunct</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_VirtualTree" xml:space="preserve">
+    <value>Virtual org</value>
+  </data>
+  <data name="MoveUserDeptOrder" xml:space="preserve">
+    <value>Change user order</value>
+  </data>
+  <data name="MSG_SELITEM" xml:space="preserve">
+    <value>Please select items</value>
+  </data>
+  <data name="MultiComUserManage" xml:space="preserve">
+    <value>Manage of multi-company</value>
+  </data>
+  <data name="MultiDomain" xml:space="preserve">
+    <value>Mail info</value>
+  </data>
+  <data name="MultiDomainState" xml:space="preserve">
+    <value>Mail status</value>
+  </data>
+  <data name="MultilingualName" xml:space="preserve">
+    <value>Multilingual</value>
+  </data>
+  <data name="MyPhoto" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="NaverBlog" xml:space="preserve">
+    <value>Naver blog</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoMatchPwd" xml:space="preserve">
+    <value>The passwords are not identical. Please try again.</value>
+  </data>
+  <data name="NotApplySameUpper" xml:space="preserve">
+    <value>You can not make the same department as the parent department you want to change</value>
+  </data>
+  <data name="NotCheckUser" xml:space="preserve">
+    <value>There are no selected users. Select users.</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>Office tel</value>
+  </data>
+  <data name="onemonth" xml:space="preserve">
+    <value>1M</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1W</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>This login ID is not a duplicate</value>
+  </data>
+  <data name="OnlyOneMail" xml:space="preserve">
+    <value>This mail addr is not a duplicate</value>
+  </data>
+  <data name="OrSearch" xml:space="preserve">
+    <value>OR :</value>
+  </data>
+  <data name="OutsideInterface" xml:space="preserve">
+    <value>Link outside</value>
+  </data>
+  <data name="ParentCode" xml:space="preserve">
+    <value>Above code</value>
+  </data>
+  <data name="ParentOption" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>Change PW</value>
+  </data>
+  <data name="PasswordManager" xml:space="preserve">
+    <value>PW manager</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Mobile no</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, Attach file name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PrivateCapacity" xml:space="preserve">
+    <value>Personal capacity</value>
+  </data>
+  <data name="Private_AccountInfo_ltDuty" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="Private_AccountInfo_ltMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Private_AccountInfo_ltMobile" xml:space="preserve">
+    <value>M_phone</value>
+  </data>
+  <data name="Private_AccountInfo_ltOfficePhone" xml:space="preserve">
+    <value>Phone no</value>
+  </data>
+  <data name="Private_AccountInfo_ltTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserDept" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Private_MailDomain_Title" xml:space="preserve">
+    <value>Mail ID</value>
+  </data>
+  <data name="Private_MyInfoMenu_hlExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Private_MyInfo_FaxEx" xml:space="preserve">
+    <value>(ex: 021001000)</value>
+  </data>
+  <data name="Private_MyInfo_ltBaseDept" xml:space="preserve">
+    <value>Basic org :</value>
+  </data>
+  <data name="Private_MyInfo_ltExtensionOfficePhoneEx" xml:space="preserve">
+    <value>(ex: 123)</value>
+  </data>
+  <data name="Private_MyInfo_ltHomePhoneEx" xml:space="preserve">
+    <value>(ex: 021002000)</value>
+  </data>
+  <data name="Private_MyInfo_MSG_AlertReLogIn" xml:space="preserve">
+    <value>You must login again to reset</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModNo" xml:space="preserve">
+    <value>An error has occurred during processing</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModOK" xml:space="preserve">
+    <value>Have been processed</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ReLogIn" xml:space="preserve">
+    <value>You must login again to reset.</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error has occurred during processing. Contact the administrator</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>length over</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>Small letter</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>Numbers</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>The PW does not meet the criteria</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>Special letter</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>Capital letter</value>
+  </data>
+  <data name="ReceiverEmail" xml:space="preserve">
+    <value>Receiver email</value>
+  </data>
+  <data name="ReceiverName" xml:space="preserve">
+    <value>Receiver name</value>
+  </data>
+  <data name="RegistContact" xml:space="preserve">
+    <value>Contact reg</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterDeptName" xml:space="preserve">
+    <value>Enter dept name</value>
+  </data>
+  <data name="RegisterDutyName" xml:space="preserve">
+    <value>Enter duty name</value>
+  </data>
+  <data name="RegisterTitleName" xml:space="preserve">
+    <value>Enter title name</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>The Login ID is duplicated</value>
+  </data>
+  <data name="RepetitionMail" xml:space="preserve">
+    <value>Mail addr is duplicated</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Req date</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>Resource mgmt</value>
+  </data>
+  <data name="Reward" xml:space="preserve">
+    <value>Reward</value>
+  </data>
+  <data name="RewardDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="RewardInfo" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RewardInfoState" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="RewardPerson" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="RewardType" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="ScholarshipInfo" xml:space="preserve">
+    <value>Edu history</value>
+  </data>
+  <data name="ScholarshipInfoState" xml:space="preserve">
+    <value>Edu status</value>
+  </data>
+  <data name="SchoolName" xml:space="preserve">
+    <value>School</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="SearchAddress" xml:space="preserve">
+    <value>Search addr</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1Year</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2Year</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3Year</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6Month</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>Enter a date range</value>
+  </data>
+  <data name="Seat" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="SelectCareerDate" xml:space="preserve">
+    <value>Select period of employment</value>
+  </data>
+  <data name="SelectDuty" xml:space="preserve">
+    <value>Select positions</value>
+  </data>
+  <data name="SelectEduDate" xml:space="preserve">
+    <value>Select the date of completion</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>Selected user</value>
+  </data>
+  <data name="SelectPeriod" xml:space="preserve">
+    <value>Select the period</value>
+  </data>
+  <data name="SelectRelation" xml:space="preserve">
+    <value>Select the relationship</value>
+  </data>
+  <data name="SelectRewardDate" xml:space="preserve">
+    <value>Select the date of reward</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>Select title</value>
+  </data>
+  <data name="SenderEmail" xml:space="preserve">
+    <value>Sender email</value>
+  </data>
+  <data name="SenderName" xml:space="preserve">
+    <value>Sender name</value>
+  </data>
+  <data name="SenderTime" xml:space="preserve">
+    <value>Sending time</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>Mailing list</value>
+  </data>
+  <data name="SetApprovalAlarm" xml:space="preserve">
+    <value>Set e-appro alarm</value>
+  </data>
+  <data name="SettingBaseDeptOnlyone" xml:space="preserve">
+    <value>Select only one</value>
+  </data>
+  <data name="SettingBothDept" xml:space="preserve">
+    <value>Set up in the adjunct department.</value>
+  </data>
+  <data name="SettingDeptAuthority" xml:space="preserve">
+    <value>Set up the department authority</value>
+  </data>
+  <data name="SMS_Default_MSG_DisConnect" xml:space="preserve">
+    <value>USB Key is not connected. Please reaccess after connecting USB Key</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Starting date must be earlier than the termination date</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>Has been processed</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>System code</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>Taiwanese</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Co-work</value>
+  </data>
+  <data name="TitleDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TitleDutyName" xml:space="preserve">
+    <value>Title/duty</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="TitleOrder" xml:space="preserve">
+    <value>Title order</value>
+  </data>
+  <data name="TitleTree" xml:space="preserve">
+    <value>Title tree</value>
+  </data>
+  <data name="TodoItemN" xml:space="preserve">
+    <value>unused</value>
+  </data>
+  <data name="TodoItemY" xml:space="preserve">
+    <value>use</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>use TO-DO</value>
+  </data>
+  <data name="TopDept" xml:space="preserve">
+    <value>Top dept</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>Total users</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="UpperDept" xml:space="preserve">
+    <value>Parent dept</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>User info</value>
+  </data>
+  <data name="UserInfoManage" xml:space="preserve">
+    <value>User mgmt</value>
+  </data>
+  <data name="UserManager_msgIsValidLicense" xml:space="preserve">
+    <value>* You have used all the licenses you have registered. \n\n* Please purchase additional license to add more \n\n</value>
+  </data>
+  <data name="UserState" xml:space="preserve">
+    <value>User status</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>Unique key</value>
+  </data>
+  <data name="VirtualDept" xml:space="preserve">
+    <value>Virtual dept</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>whole</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Biz report</value>
+  </data>
+  <data name="WorkPeriod" xml:space="preserve">
+    <value>Work period</value>
+  </data>
+  <data name="WriteCompanyName" xml:space="preserve">
+    <value>Enter company name</value>
+  </data>
+  <data name="WriteEduName" xml:space="preserve">
+    <value>Enter course name</value>
+  </data>
+  <data name="WriteRewarder" xml:space="preserve">
+    <value>Enter prizewinner</value>
+  </data>
+  <data name="WriteSchoolName" xml:space="preserve">
+    <value>Enter school name</value>
+  </data>
+  <data name="WriteSummary" xml:space="preserve">
+    <value>Enter brief</value>
+  </data>
+  <data name="WrongAccess" xml:space="preserve">
+    <value>You are connected with wrong access</value>
+  </data>
+  <data name="WrongAccess_Error" xml:space="preserve">
+    <value>You are connected with wrong access (Error)</value>
+  </data>
+  <data name="WrongAccess_NoReferer" xml:space="preserve">
+    <value>You are connected with wrong access (No referer)</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>Browse rating</value>
+  </data>
+  <data name="Msg_ErrAccessGrade" xml:space="preserve">
+    <value>Please select a rating class name.</value>
+  </data>
+  <data name="BasicTimeZone" xml:space="preserve">
+    <value>Time zone</value>
+  </data>
+  <data name="EtcInfo" xml:space="preserve">
+    <value>Other info</value>
+  </data>
+  <data name="Summary01" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="Summary02" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Summary03" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Summary04" xml:space="preserve">
+    <value>Final approve</value>
+  </data>
+  <data name="Summary05" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="Summary06" xml:space="preserve">
+    <value>Received circulation</value>
+  </data>
+  <data name="Summary07" xml:space="preserve">
+    <value>Sent circulation</value>
+  </data>
+  <data name="Summary08" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Summary09" xml:space="preserve">
+    <value>Related</value>
+  </data>
+  <data name="Summary10" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="Summary11" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="SummaryEA" xml:space="preserve">
+    <value>Case</value>
+  </data>
+  <data name="Summary12" xml:space="preserve">
+    <value>Request to</value>
+  </data>
+  <data name="Summary13" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="Summary14" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="Summary15" xml:space="preserve">
+    <value>Foward</value>
+  </data>
+  <data name="SummaryTit1" xml:space="preserve">
+    <value>Summary Information</value>
+  </data>
+  <data name="SummaryTit10" xml:space="preserve">
+    <value>Post count</value>
+  </data>
+  <data name="SummaryTit11" xml:space="preserve">
+    <value>Bulletin B'd Manage</value>
+  </data>
+  <data name="SummaryTit12" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="SummaryTit13" xml:space="preserve">
+    <value>Post count</value>
+  </data>
+  <data name="SummaryTit14" xml:space="preserve">
+    <value>Community Manage</value>
+  </data>
+  <data name="SummaryTit15" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="SummaryTit16" xml:space="preserve">
+    <value>Post count</value>
+  </data>
+  <data name="SummaryTit2" xml:space="preserve">
+    <value>Login Info</value>
+  </data>
+  <data name="SummaryTit3" xml:space="preserve">
+    <value>Authority Info</value>
+  </data>
+  <data name="SummaryTit4" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="SummaryTit5" xml:space="preserve">
+    <value>E-Approval</value>
+  </data>
+  <data name="SummaryTit6" xml:space="preserve">
+    <value>[Search]</value>
+  </data>
+  <data name="SummaryTit7" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="SummaryTit8" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="SummaryTit9" xml:space="preserve">
+    <value>Bulletin B'd</value>
+  </data>
+  <data name="Admin_User_Input_JoinDate" xml:space="preserve">
+    <value>Please enter the date of employment</value>
+  </data>
+  <data name="Admin_User_Input_RetireDate" xml:space="preserve">
+    <value>Enter retirement date</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>Notification box ON must be set Push can be set</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>PasswordAuthManager</value>
+  </data>
+</root>

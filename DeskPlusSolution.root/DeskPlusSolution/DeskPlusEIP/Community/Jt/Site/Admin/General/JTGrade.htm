@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Community Grade Manage List
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th id="r_number" class="center"></th>    
+    <th id="r_grade" class="center"></th>
+    <th id="r_mod" class="center"></th>
+
+</tr>
+{#foreach $T as CmnList}
+<tr>
+    <td class="center">{ $T.CmnList.ROW }</td>
+    <td class="center">{ $T.CmnList.GradeName }</td>
+    <td class="center">
+        <a href="#" onclick="Grade.GetGrade('{$T.CmnList.CommunityID}', '{$T.CmnList.GroupID }');return false;" style="cursor:pointer"><img class="GradeImg" /></a>
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

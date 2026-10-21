@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption>
+    대결자 결재자 리스트
+</caption>
+<colgroup>
+    <col width="250px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th id="r_deptName" class="center"></th>
+    <th id="r_titleName" class="center"></th>
+    <th id="r_dutyName" class="center"></th>
+    <th id="r_userName" class="center"></th>
+</tr>
+{#foreach $T as ProxyList}
+<tr>
+    <td class="center">{ $T.ProxyList.ProxyDeptName }</td>    
+    <td class="center">{ $T.ProxyList.ProxyTitleName }</td>
+    <td class="center">{ $T.ProxyList.ProxyDutyName }</td>
+    <td class="center">{ $T.ProxyList.ProxyUserName }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

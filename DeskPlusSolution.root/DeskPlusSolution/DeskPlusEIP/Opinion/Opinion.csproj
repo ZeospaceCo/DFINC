@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D672E49-1E3C-4096-80C1-9E2ED3A9BEC3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Opinion.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Opinion.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Content\QuesAdd.aspx.cs">
+      <DependentUpon>QuesAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesAdd.aspx.designer.cs">
+      <DependentUpon>QuesAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\QuesList.aspx.cs">
+      <DependentUpon>QuesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesList.aspx.designer.cs">
+      <DependentUpon>QuesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\QuesMod.aspx.cs">
+      <DependentUpon>QuesMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesMod.aspx.designer.cs">
+      <DependentUpon>QuesMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\QuesResult.aspx.cs">
+      <DependentUpon>QuesResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesResult.aspx.designer.cs">
+      <DependentUpon>QuesResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\QuesSeq.aspx.cs">
+      <DependentUpon>QuesSeq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesSeq.aspx.designer.cs">
+      <DependentUpon>QuesSeq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\QuesView.aspx.cs">
+      <DependentUpon>QuesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\QuesView.aspx.designer.cs">
+      <DependentUpon>QuesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\UnitAdd.aspx.cs">
+      <DependentUpon>UnitAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\UnitAdd.aspx.designer.cs">
+      <DependentUpon>UnitAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\UnitList.aspx.cs">
+      <DependentUpon>UnitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\UnitList.aspx.designer.cs">
+      <DependentUpon>UnitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\UnitSeq.aspx.cs">
+      <DependentUpon>UnitSeq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\UnitSeq.aspx.designer.cs">
+      <DependentUpon>UnitSeq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\VoteList.aspx.cs">
+      <DependentUpon>VoteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\VoteList.aspx.designer.cs">
+      <DependentUpon>VoteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlOpinion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageOpinion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageOpinionAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSOpinion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\OpinionTree.ascx.cs">
+      <DependentUpon>OpinionTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\OpinionTree.ascx.designer.cs">
+      <DependentUpon>OpinionTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavList.aspx.cs">
+      <DependentUpon>FavList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavList.aspx.designer.cs">
+      <DependentUpon>FavList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Result.aspx.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Result.aspx.designer.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ResultPopup.aspx.cs">
+      <DependentUpon>ResultPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ResultPopup.aspx.designer.cs">
+      <DependentUpon>ResultPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Vote.aspx.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Vote.aspx.designer.cs">
+      <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\VotePopup.aspx.cs">
+      <DependentUpon>VotePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\VotePopup.aspx.designer.cs">
+      <DependentUpon>VotePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetDept.aspx.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetDept.aspx.designer.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetUnitList.aspx.cs">
+      <DependentUpon>GetUnitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetUnitList.aspx.designer.cs">
+      <DependentUpon>GetUnitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetUserDept.aspx.cs">
+      <DependentUpon>GetUserDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetUserDept.aspx.designer.cs">
+      <DependentUpon>GetUserDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\ShortReply.aspx.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\ShortReply.aspx.designer.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\VoteList.aspx.cs">
+      <DependentUpon>VoteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\VoteList.aspx.designer.cs">
+      <DependentUpon>VoteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ws\Admin\Content\QuesList.asmx.cs">
+      <DependentUpon>QuesList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\QuesMod.asmx.cs">
+      <DependentUpon>QuesMod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\QuesResult.asmx.cs">
+      <DependentUpon>QuesResult.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\QuesSeq.asmx.cs">
+      <DependentUpon>QuesSeq.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\QuesView.asmx.cs">
+      <DependentUpon>QuesView.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\UnitAdd.asmx.cs">
+      <DependentUpon>UnitAdd.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\UnitList.asmx.cs">
+      <DependentUpon>UnitList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\UnitSeq.asmx.cs">
+      <DependentUpon>UnitSeq.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\VoteList.asmx.cs">
+      <DependentUpon>VoteList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\FavList.asmx.cs">
+      <DependentUpon>FavList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Result.asmx.cs">
+      <DependentUpon>Result.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Vote.asmx.cs">
+      <DependentUpon>Vote.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\GetUnitList.asmx.cs">
+      <DependentUpon>GetUnitList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\ShortReply.asmx.cs">
+      <DependentUpon>ShortReply.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\VoteList.asmx.cs">
+      <DependentUpon>VoteList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Admin\Content\QuesAddN.aspx" />
+    <Content Include="Admin\Content\QuesAdd.aspx" />
+    <Content Include="Admin\Content\QuesList.aspx" />
+    <Content Include="Admin\Content\QuesMod.aspx" />
+    <Content Include="Admin\Content\QuesResult.aspx" />
+    <Content Include="Admin\Content\QuesSeq.aspx" />
+    <Content Include="Admin\Content\QuesView.aspx" />
+    <Content Include="Admin\Content\UnitAdd.aspx" />
+    <Content Include="Admin\Content\UnitList.aspx" />
+    <Content Include="Admin\Content\QuesModN.aspx" />
+    <Content Include="Admin\Content\UnitSeq.aspx" />
+    <Content Include="Admin\Content\VoteList.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Menu\Menu.aspx" />
+    <Content Include="App_Data\AdminMenu\en.xml" />
+    <Content Include="App_Data\AdminMenu\fr.xml" />
+    <Content Include="App_Data\AdminMenu\ja.xml" />
+    <Content Include="App_Data\AdminMenu\ko.xml" />
+    <Content Include="App_Data\AdminMenu\zh-cn.xml" />
+    <Content Include="App_Data\AdminMenu\zh-tw.xml" />
+    <Content Include="Common\OpinionTree.ascx" />
+    <Content Include="Content\FavList.aspx" />
+    <Content Include="Content\List.aspx" />
+    <Content Include="Content\Result.aspx" />
+    <Content Include="Content\ResultPopup.aspx" />
+    <Content Include="Content\Vote.aspx" />
+    <Content Include="Content\VotePopup.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Folder\GetDept.aspx" />
+    <Content Include="Folder\GetUnitList.aspx" />
+    <Content Include="Folder\GetUserDept.aspx" />
+    <Content Include="Folder\ShortReply.aspx" />
+    <Content Include="Folder\Tree.aspx" />
+    <Content Include="Folder\VoteList.aspx" />
+    <Content Include="Js\Admin\Content\QuesAdd.js" />
+    <Content Include="Js\Admin\Content\QuesList.js" />
+    <Content Include="Js\Admin\Content\QuesMod.js" />
+    <Content Include="Js\Admin\Content\QuesResult.js" />
+    <Content Include="Js\Admin\Content\QuesSeq.js" />
+    <Content Include="Js\Admin\Content\QuesView.js" />
+    <Content Include="Js\Admin\Content\UnitSeq.js" />
+    <Content Include="Js\Admin\Content\UnitAdd.js" />
+    <Content Include="Js\Admin\Content\UnitList.js" />
+    <Content Include="Js\Admin\Content\VoteList.js" />
+    <Content Include="Js\Admin\Menu\Menu.js" />
+    <Content Include="Js\Content\FavList.js" />
+    <Content Include="Js\Content\List.js" />
+    <Content Include="Js\Content\Result.js" />
+    <Content Include="Js\Content\Vote.js" />
+    <Content Include="Js\Default.js" />
+    <Content Include="Js\Folder\GetDept.js" />
+    <Content Include="Js\Folder\GetUnitList.js" />
+    <Content Include="Js\Folder\GetUserDept.js" />
+    <Content Include="Js\Folder\VoteList.js" />
+    <Content Include="Js\Folder\ShortReply.js" />
+    <Content Include="Js\Folder\Tree.js" />
+    <Content Include="Jt\Admin\Content\JtAttachList.htm" />
+    <Content Include="Jt\Admin\Content\JtAttachListView.htm" />
+    <Content Include="Jt\Admin\Content\JtQuesAdminList.htm" />
+    <Content Include="Jt\Admin\Content\JtQuesList.htm" />
+    <Content Include="Jt\Admin\Content\JtQuesTargetList.htm" />
+    <Content Include="Jt\Admin\Content\JtQuesUnitList.htm" />
+    <Content Include="Jt\Admin\Content\JtReplyList.htm" />
+    <Content Include="Jt\Admin\Content\JTResult.htm" />
+    <Content Include="Jt\Admin\Content\JtUnitItem.htm" />
+    <Content Include="Jt\Admin\Content\JtUnitList.htm" />
+    <Content Include="Jt\Admin\Content\JtVoteList.htm" />
+    <Content Include="Jt\Content\JtAttachListView.htm" />
+    <Content Include="Jt\Content\JTFavList.htm" />
+    <Content Include="Jt\Content\JTFavListBlog.htm" />
+    <Content Include="Jt\Content\JTList.htm" />
+    <Content Include="Jt\Content\JTListBlog.htm" />
+    <Content Include="Jt\Content\JtReplyList.htm" />
+    <Content Include="Jt\Content\JTResult.htm" />
+    <Content Include="Jt\Folder\JtUnitList.htm" />
+    <Content Include="Jt\Folder\JtVoteList.htm" />
+    <Content Include="Ws\Admin\Content\QuesList.asmx" />
+    <Content Include="Ws\Admin\Content\QuesMod.asmx" />
+    <Content Include="Ws\Admin\Content\QuesResult.asmx" />
+    <Content Include="Ws\Admin\Content\QuesSeq.asmx" />
+    <Content Include="Ws\Admin\Content\QuesView.asmx" />
+    <Content Include="Ws\Admin\Content\UnitAdd.asmx" />
+    <Content Include="Ws\Admin\Content\UnitList.asmx" />
+    <Content Include="Ws\Admin\Content\UnitSeq.asmx" />
+    <Content Include="Ws\Admin\Content\VoteList.asmx" />
+    <Content Include="Ws\Content\FavList.asmx" />
+    <Content Include="Ws\Content\List.asmx" />
+    <Content Include="Ws\Content\Result.asmx" />
+    <Content Include="Ws\Content\Vote.asmx" />
+    <Content Include="Ws\Folder\GetUnitList.asmx" />
+    <Content Include="Ws\Folder\ShortReply.asmx" />
+    <Content Include="Ws\Folder\VoteList.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\OpinionProject\Zeospace.DeskPlus.Opinion.BE\Zeospace.DeskPlus.Opinion.BE.csproj">
+      <Project>{8F25AC4D-C05D-46F9-9DC5-C87CE86DA9BB}</Project>
+      <Name>Zeospace.DeskPlus.Opinion.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\OpinionProject\Zeospace.DeskPlus.Opinion.BLL\Zeospace.DeskPlus.Opinion.BLL.csproj">
+      <Project>{F2802FF2-94BF-4E32-A272-BE288FA0734A}</Project>
+      <Name>Zeospace.DeskPlus.Opinion.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\OpinionProject\Zeospace.DeskPlus.Opinion.DAL\Zeospace.DeskPlus.Opinion.DAL.csproj">
+      <Project>{11D842F7-C3AE-4F7F-B05F-830096878E14}</Project>
+      <Name>Zeospace.DeskPlus.Opinion.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3121</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Opinion</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

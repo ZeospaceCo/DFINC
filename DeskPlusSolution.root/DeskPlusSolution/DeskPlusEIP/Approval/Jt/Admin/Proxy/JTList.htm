@@ -1,0 +1,103 @@
+﻿ <table class="table_typeA">
+    <caption>
+        ProxyList
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="90px" />
+        <col width="150px" />
+        <col width="70px"/>
+        <col width="90px" />
+        <col width="150px" />
+        <col width="250px" />
+        <col width="70px" />
+        <col width="70px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th style="text-align:center;"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+            <th style="text-align:center;" id="r_name0"></th>
+            <th style="text-align:center;" id="r_dept0"></th>
+            <th style="text-align:center;" id="r_isModfy"></th>
+            <th style="text-align:center;" id="r_name"></th> 
+            <th style="text-align:center;" id="r_dept"></th>
+            <th style="text-align:center;" id="r_proxydate"></th>
+            <th style="text-align:center;" id="r_proxytype"></th>
+            <th style="text-align:center;" id="r_sta"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as ProxyList}
+            {#if $T.ProxyList.Gubun == 'ML'} <tr style="background-color:#EAEAEA"> {#else} <tr> {#/if}
+            <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.ProxyList.ProxyID }" value="{ $T.ProxyList.ProxyID }" /></td>   
+            <td class="center">
+                {#if $T.ProxyList.TitleName != ''}
+                <span class="orangeSquare">{ $T.ProxyList.TitleName }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.ProxyList.UserID }');return false;">
+                { $T.ProxyList.NameBase }
+                {#if $T.ProxyList.BaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>                
+                </strong>
+            </td> 
+            <td class="center">
+                { $T.ProxyList.DeptName }
+            </td>   
+            <td class="center">{#if $T.ProxyList.Gubun == 'ML'}O{#/if}</td> 
+            <td class="center">
+                {#if $T.ProxyList.ProxyTitleName != ''}
+                <span class="orangeSquare">{ $T.ProxyList.ProxyTitleName }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.ProxyList.ProxyUserID }');return false;">
+                { $T.ProxyList.ProxyUserName }
+                {#if $T.ProxyList.ProxyBaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>                
+                </strong>
+            </td>
+            <td class="center">
+                {#if $T.ProxyList.Gubun != 'ML'}
+                    <a href="#" onclick="List.View('{ $T.ProxyList.ProxyID }');">{ $T.ProxyList.ProxyDeptName }</a>
+                {#else}
+                    { $T.ProxyList.ProxyDeptName }
+                {#/if}
+            </td>
+            <td class="center">
+                {#if $T.ProxyList.Gubun != 'ML'}
+                    <a href="#" onclick="List.View('{ $T.ProxyList.ProxyID }');">
+                        { $T.ProxyList.ProxyDateStr }
+                        {#if $T.ProxyList.AllDay == 'Y'} <span class="r_allday"></span>{#/if}
+                    </a>
+                {#else}
+                    { $T.ProxyList.ProxyDateStr }
+                    {#if $T.ProxyList.AllDay == 'Y'} <span class="r_allday"></span>{#/if}
+                {#/if}
+            </td>
+            <td class="center">
+                { $T.ProxyList.ProxyType }
+            </td>
+            <td class="center">
+                {#if $T.ProxyList.ProxyState == 'Y'}
+                <span class="txt_point"><b><span class="spIng"></span></b></span>
+                {#else}
+                    {#if $T.ProxyList.IsCall == 'Y'}
+                    <span class="txt_point"><b><span class="spCall"></span></b></span>
+                    {#else}
+                    <span><span class="spCallEnd"></span></span>
+                    {#/if}
+                {#/if}
+            </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="9" class="center"><span id="r_noData" class="NoListData"></span></td>
+        </tr>
+    {#/for}
+
+    </tbody>
+</table>

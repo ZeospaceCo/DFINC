@@ -1,0 +1,56 @@
+﻿<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+            {#foreach $T as RepleList}
+            <li {#if $T.RepleList$last == true} class="last-child" {#/if} >
+                <table class="blog_cont_table">
+                    <caption>BLOG SCHEDULE CONTENT</caption>
+                    <colgroup>
+                        <col width="10%" />
+                        <col />
+                    </colgroup>
+                        {#if $T.RepleList.View == 'Y'}
+                        <tr>
+                            <td class="blog_img" rowspan="2">
+                                <a onclick="AccountInfoWin('{ $T.RepleList.UserID }');return false;" style="cursor:pointer">{ $T.RepleList.PhotoImage }</a>
+                            </td>
+                            <td>
+                                { $T.RepleList.Content }
+                                {#if $T.RepleList.ShowNew == 'Y'} <img class="BtnNew" alt="" /> {#/if}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            {#if $T.RepleList.IsAuth == 'Y'} 
+                                <a href="#" onclick="javascript:ShortReplyList.DelReple({ $T.RepleList.ReplyID})")>
+                                <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" />
+                                <span class="BtnDel" style="display:none;"></span>
+                                </a>
+                            {#/if}                            
+                            <span class="subDate" style="font-size:11px;color:#808080;"><a onclick="AccountInfoWin('{ $T.RepleList.UserID }');return false;" style="cursor:pointer;font-size:11px;color:#808080 !important;">{ $T.RepleList.UserName } </a>| { $T.RepleList.InputDate }</span>
+                            </td>
+                        </tr>
+                        {#else}
+                        <tr>
+                            <td colspan="3" class="center"><span class="NoAuthListData"></span></td>
+                        </tr>
+                        {#/if}
+                </table>
+            </li>
+            {#else}
+            <li class="last-child">
+                <table class="blog_cont_table">
+                    <caption>BLOG SCHEDULE CONTENT</caption>
+                    <colgroup>                        
+                        <col />
+                    </colgroup>                        
+                        <tr>
+                            <td colspan="3" class="center"><span class="NoListData" /></td>
+                        </tr>
+                </table>
+            </li>                        
+            {#/for}
+        </ul>
+    </div>
+</div>

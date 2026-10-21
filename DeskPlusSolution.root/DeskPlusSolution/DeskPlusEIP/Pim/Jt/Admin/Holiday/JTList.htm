@@ -1,0 +1,29 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        Holyday List
+    </caption>
+    <colgroup>
+        <col width="100px" />
+        <col  />
+        <col width="100px" />
+        <col width="120px" />
+    </colgroup>
+    <tr>
+        <th id="r_kindDesk"></th>
+        <th id="r_title"></th>
+        <th id="r_startTime"></th>
+        <th id="r_userName"></th>        
+    </tr>
+    {#foreach $T as BoardList}
+    <tr>
+        <td class="center">{ $T.BoardList.KindDesk}</td>
+        <td><a href="#" onclick="javascript:List.View('{ $T.BoardList.ScheduleID }','{ $T.BoardList.DisplayID }')" style="cursor:pointer" >{ $T.BoardList.Title }</a></td>
+        <td class="center">{ $T.BoardList.stringStartTime }</td>        
+        <td class="center"><a href="#" onclick="AccountInfo('{ $T.BoardList.UserID }');return false;" style="cursor:pointer">{ $T.BoardList.UserName }</a></td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="4" class="center"><div id="idempty"></div></td>        
+     </tr>
+    {#/for}       
+ </table>

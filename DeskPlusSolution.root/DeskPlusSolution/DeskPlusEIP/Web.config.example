@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration xmlns:ns0="urn:schemas-microsoft-com:asm.v1">
+  <connectionStrings configSource="WebConnectionString.config" />
+  <appSettings file="webAppSettings.config" />
+
+    <system.web>
+    <compilation debug="true" defaultLanguage="c#" targetFramework="4.8" />
+		
+    <httpHandlers>
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/Thumbnail.ashx" type="Zeospace.DeskPlus.Component.Handler.ThumbnailHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/ThumbnailGen.ashx" type="Zeospace.DeskPlus.Component.Handler.ThumbnailGenHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/MoveUserPicture.ashx" type="Zeospace.DeskPlus.Component.Handler.MoveUserPictureHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/DelUserPicFile.ashx" type="Zeospace.DeskPlus.Component.Handler.DelUserPictureHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/DelSpool.ashx" type="Zeospace.DeskPlus.Component.Handler.DelSpoolHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/DelFile.ashx" type="Zeospace.DeskPlus.Component.Handler.DelFileHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/Upload.ashx" type="Zeospace.DeskPlus.Component.Handler.UploadHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/UploadFileAttach.ashx" type="Zeospace.DeskPlus.Component.Handler.UploadFileAttachHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add verb="*" path="/DeskPlusEIP/Common/Upload/MoveSpool.ashx" type="Zeospace.DeskPlus.Component.Handler.MoveSpoolHandler, Zeospace.DeskPlus.Component.Handler" />
+      <add path="*.aspx" verb="*" type="ComponentArt.Web.UI.CallbackHandler,ComponentArt.Web.UI" />
+      <add path="*.ascx" verb="*" type="ComponentArt.Web.UI.CallbackHandler,ComponentArt.Web.UI" />
+    </httpHandlers>
+
+    
+
+    <pages buffer="true" enableSessionState="true" enableViewStateMac="false" enableEventValidation="false" validateRequest="false">
+        <controls>
+            <add tagPrefix="zeoDeptSearchTree" src="/DeskPlusEIP/Account/Common/DeptSearchTree.ascx" tagName="UCDeptSearchTreeScript" />
+            <add tagPrefix="zeoAddressTree" src="/DeskPlusEIP/Address/Common/AddressTree.ascx" tagName="UCAddressTreeScript" />
+            <add tagPrefix="zeoTree" src="/DeskPlusEIP/Account/Common/UserDeptTreeScript.ascx" tagName="UCUserDeptTreeScript" />
+            <add tagPrefix="zeoSearchTree" src="/DeskPlusEIP/Account/Common/SearchTreeScript.ascx" tagName="UCSearchTreeScript" />
+            <add tagPrefix="zeoDeptTree" src="/DeskPlusEIP/Account/Common/DeptTreeScript.ascx" tagName="UCDeptTreeScript" />
+            <add tagPrefix="zeoCodeTree" src="/DeskPlusEIP/Account/Common/CodeTreeScript.ascx" tagName="UCCodeTreeScript" />
+            <add tagPrefix="zeoSysCodeTree" src="/DeskPlusEIP/EIP/Common/SysCodeTreeScript.ascx" tagName="UCSysCodeTreeScript" />
+            <add tagPrefix="zeoRoleTree" src="/DeskPlusEIP/EIP/Common/RoleTreeScript.ascx" tagName="UCRoleTreeScript" />
+            <add tagPrefix="zeoMenuTree" src="/DeskPlusEIP/EIP/Common/MenuTreeScript.ascx" tagName="UCMenuTreeScript" />
+            <add tagPrefix="zeoUserMenuTree" src="/DeskPlusEIP/EIP/Common/UserMenuTreeScript.ascx" tagName="UCUserMenuTreeScript" />
+            <add tagPrefix="zeoPortletTree" src="/DeskPlusEIP/EIP/Common/PortletTreeScript.ascx" tagName="UCPortletTreeScript" />
+            <add tagPrefix="zeoPortletCategoryTree" src="/DeskPlusEIP/EIP/Common/PortletCategoryTree.ascx" tagName="UCPortletCategoryTreeScript" />
+            <add tagPrefix="zeoAppFolderTree" src="/DeskPlusEIP/Approval/Common/Folder/FolderTreeScript.ascx" tagName="UCAppFolderTreeScript" />
+            <add tagPrefix="zeoAppFolderSplitTree" src="/DeskPlusEIP/Approval/Common/Folder/FolderSplitTreeScript.ascx" tagName="UCAppFolderSplitTreeScript" />
+            <add tagPrefix="zeoAppFolderStatusTree" src="/DeskPlusEIP/Approval/Common/Status/FolderStatusTreeScript.ascx" tagName="UCAppFolderStatusTreeScript" />
+            <add tagPrefix="zeoAppFolderStatusAllTree" src="/DeskPlusEIP/Approval/Common/Status/FolderStatusAllTreeScript.ascx" tagName="UCAppFolderStatusAllTreeScript" />
+            <add tagPrefix="zeoAppFormFolderTree" src="/DeskPlusEIP/Approval/Common/Admin/FolderTreeScript.ascx" tagName="UCAppFormFolderTreeScript" />            
+            <add tagPrefix="zeoAppFormTree" src="/DeskPlusEIP/Approval/Common/FormFlow/FormTreeScript.ascx" tagName="UCAppFormTreeScript" />
+            <add tagPrefix="zeoAppFormNetTree" src="/DeskPlusEIP/Approval/Common/FormFlow/FormNetTreeScript.ascx" tagName="UCAppFormNetTreeScript" />
+            <add tagPrefix="zeoAppDeptUserTree" src="/DeskPlusEIP/Approval/Common/FormFlow/DeptUserScript.ascx" tagName="UCAppDeptUserTreeScript" />
+            <add tagPrefix="zeoAppFolderDeptTree" src="/DeskPlusEIP/Approval/Common/Folder/FolderDeptTreeScript.ascx" tagName="UCAppFolderDeptTreeScript" />
+            <add tagPrefix="zeoAppPrivate" src="/DeskPlusEIP/Approval/Common/FormFlow/PrivateTree.ascx" tagName="UCAppPrivate" />
+            <add tagPrefix="zeoEtcPayFolderStatusTree" src="/DeskPlusEIP/ETC/Pay/Common/FolderStatusTreeScript.ascx" tagName="UCEtcPayFolderStatusTreeScript" />
+			      <add tagPrefix="zeoMDMTree" src="/DeskPlusEIP/MDM/Common/MDMMenuTreeScript.ascx" tagName="UCMDMTreeScript" />
+            <add tagPrefix="zeoHRFolderStatusTree" src="/DeskPlusEIP/HR/Common/FolderStatusTreeScript.ascx" tagName="UCHRFolderStatusTreeScript" />
+            <add tagPrefix="zeoHRDeptTree" src="/DeskPlusEIP/HR/Common/DeptTreeScript.ascx" tagName="UCHRDeptTreeScript" />
+        </controls>
+    </pages>
+    
+    <identity impersonate="true" userName="YOUR_USERNAME" password="YOUR_PASSWORD" />
+
+    
+    <authentication mode="Forms">
+      <forms name="DeskPlusEIPAuth" path="/" loginUrl="/DeskPlusEIP/Site/Auth/Default.aspx" slidingExpiration="true" cookieless="UseCookies" protection="All" timeout="480">
+      </forms>
+    </authentication>
+
+    
+    <customErrors mode="Off" defaultRedirect="/DeskPlusEIP/Html/ErrorMessage/ErrorDefault.htm">
+      <error statusCode="404" redirect="/DeskPlusEIP/Html/ErrorMessage/Error404.htm" />
+      <error statusCode="405" redirect="/DeskPlusEIP/Html/ErrorMessage/Error405.htm" />
+      <error statusCode="500" redirect="/DeskPlusEIP/Html/ErrorMessage/Error500.htm" />
+    </customErrors>
+
+
+
+    
+    <authorization>
+      <deny users="?" />
+    </authorization>
+
+    
+	<httpRuntime targetFramework="4.8" executionTimeout="270000" maxRequestLength="1048576" requestValidationMode="2.0" useFullyQualifiedRedirectUrl="false" maxUrlLength="10999" maxQueryStringLength="2097151" />
+
+		
+    <trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true" />
+
+    
+    <sessionState mode="InProc" cookieless="false" timeout="540" />
+
+    
+    <globalization requestEncoding="utf-8" responseEncoding="utf-8" fileEncoding="utf-8" />
+
+    
+      
+    
+  </system.web>
+
+  <location path="Site/Auth/Default.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Site/Auth/LoginOutSide.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Site/Auth/ModPassword.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>  
+  
+  <location path="Mobile/Portal/Default.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>  
+
+  <location path="Default.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  
+  <location path="Ws/Site/Auth/Default.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Html">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>  
+
+  <location path="SWFUpload/handler.ashx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Site/Auth">
+    <system.web>
+        <authorization>
+            <allow users="*" />
+        </authorization>
+    </system.web>
+  </location>
+
+  <location path="Design">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Util">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="RM/Content/ViewQRCode.aspx">
+    <system.web>
+        <authorization>
+            <allow users="*" />
+        </authorization>
+    </system.web>
+  </location>
+
+  <location path="Common/Mail/ZettaMail65/Address/Add.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  
+  <location path="Common/Messenger/UC/SLO.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Approval/Common/Popup/View.aspx">
+      <system.web>
+          <authorization>
+              <allow users="*" />
+          </authorization>
+      </system.web>
+  </location>
+
+  <location path="Approval/Ws/Process/Basic/Approve.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+
+      <webServices>
+        <protocols>
+          <add name="HttpPost" />
+          <add name="HttpGet" />
+        </protocols>
+      </webServices>
+    </system.web>
+  </location>
+
+  <location path="Approval/Ws/FormFlow/Basic/Mod.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+
+      <webServices>
+        <protocols>
+          <add name="HttpPost" />
+          <add name="HttpGet" />
+        </protocols>
+      </webServices>
+    </system.web>
+  </location>
+
+    <location path="EIP/Ws/Auth/ClearMenuCache.asmx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+    <location path="Upload/JSUpload/Default.aspx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+    <location path="Search/Admin/Index/Schedule.aspx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+    <location path="Address/Common/GetAddressMailTree.aspx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+    <location path="Address/Mail/AddressSearch.aspx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+    <location path="Address/Mail/AddressAdd.aspx">
+        <system.web>
+            <authorization>
+                <allow users="*" />
+            </authorization>
+        </system.web>
+    </location>
+
+  <location path="Address/Ws/Mail/AddressAdd.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Address/Ws/Mail/AddressSearch.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Etc/Mail/MailCount.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="RM/Content/ViewTotal.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+	<location path="Preview.aspx">
+		<system.web>
+			<authorization>
+				<allow users="*" />
+			</authorization>
+		</system.web>
+	</location>
+
+  <location path="Common/Messenger/Ezmaru/Alarm.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Common/ws/ezmaru/Count.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="SO/Ws/Things/Default.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+
+      <webServices>
+        <protocols>
+          <add name="HttpPost" />
+          <add name="HttpGet" />
+        </protocols>
+      </webServices>
+    </system.web>
+  </location>
+
+  <location path="Approval/Common/Popup/OpinionView.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <location path="Approval/Ws/Common/Popup/OpinionView.asmx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+
+  <system.webServer>       
+    <security>
+      <requestFiltering>
+        
+        <requestLimits maxAllowedContentLength="1073741824" maxUrl="4096" maxQueryString="2048" />
+      </requestFiltering>
+    </security>
+	<staticContent>
+		<mimeMap fileExtension=".*" mimeType="application/octet-stream" />
+    <clientCache cacheControlMode="UseMaxAge" cacheControlMaxAge="7.00:00:00" />
+	</staticContent>
+    <defaultDocument>
+          <files>
+              <clear />
+              <add value="default.aspx" />
+              <add value="Default.htm" />
+              <add value="Default.asp" />
+              <add value="index.htm" />
+              <add value="index.html" />
+              <add value="iisstart.htm" />
+          </files>
+      </defaultDocument>
+    <httpProtocol>
+      <customHeaders>
+        <clear />
+        <add name="X-UA-Compatible" value="IE=edge" />
+      </customHeaders>
+      
+    </httpProtocol>
+  </system.webServer>
+
+  <system.web.extensions>
+    <scripting>
+      <webServices>
+        <jsonSerialization maxJsonLength="5000000" />
+      </webServices>
+    </scripting>
+  </system.web.extensions>
+    <runtime>
+        <ns0:assemblyBinding>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-2.2.29.0" newVersion="2.2.29.0" />
+            </ns0:dependentAssembly>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="System.Threading.Tasks" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-2.6.10.0" newVersion="2.6.10.0" />
+            </ns0:dependentAssembly>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="System.Runtime" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-2.6.10.0" newVersion="2.6.10.0" />
+            </ns0:dependentAssembly>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="System.Net.Http.Primitives" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-2.2.29.0" newVersion="2.2.29.0" />
+            </ns0:dependentAssembly>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-7.0.0.0" newVersion="7.0.0.0" />
+            </ns0:dependentAssembly>
+            <ns0:dependentAssembly>
+                <ns0:assemblyIdentity name="Google.GData.Client" publicKeyToken="04a59ca9b0273830" culture="neutral" />
+                <ns0:bindingRedirect oldVersion="0.0.0.0-2.2.0.0" newVersion="2.2.0.0" />
+            </ns0:dependentAssembly>
+        </ns0:assemblyBinding>
+    </runtime>
+</configuration>

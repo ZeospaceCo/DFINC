@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="Font Color"/>	
+	<Item ID="#666666" Value="Gray"/>
+	<Item ID="#f29e00" Value="Yellow"/>
+	<Item ID="#ff6737" Value="Orange"/>
+	<Item ID="#e23234" Value="Red"/>
+	<Item ID="#b66428" Value="Brown"/>
+	<Item ID="#f0418c" Value="Pink"/>
+	<Item ID="#7a3dc2" Value="Violet"/>
+	<Item ID="#b13db0" Value="Purple"/>
+	<Item ID="#58b837" Value="Yellowish"/>
+	<Item ID="#12a1a7" Value="Bluish green"/>
+	<Item ID="#1867cf" Value="Blue"/>
+</XmlData>
+

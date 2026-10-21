@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<XmlData>
+  <Item ID="TimeView" Value="0" Content="0(일반시간) / 1(24시간)" />
+  <Item ID="StartTIME" Value="9" Content="9,10,11" />
+  <Item ID="DefaultView" Value="day" Content="day,week,month" />
+  <Item ID="AlartType" Value="Messenger,EMAIL" Content="Messenger,SMS,EMAIL" />
+  <Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/Pim/Schedule/ViewPopup.aspx" Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="PimColor1" Value="1" Content="개인일정색상" />
+  <Item ID="PimColor2" Value="2" Content="부서일정색상" />
+  <Item ID="PimColor3" Value="3" Content="공유일정색상" />
+  <Item ID="PimColor4" Value="4" Content="전체일정색상" />  
+  <Item ID="PimColor5" Value="5" Content="일정묶음색상" />
+  <Item ID="PimColor6" Value="6" Content="할일묶음색상" />
+  <Item ID="PimColor7" Value="7" Content="관리자공유색상" />
+  <Item ID="PimColor8" Value="8" Content="기념일색상" />
+  <Item ID="ClientId" Value="936298080309-rc6rfrdpvedocuf8atpg2pv70sqa68tk.apps.googleusercontent.com" Content="Client Id" />
+  <Item ID="ClientSecret" Value="jV0IvjI8ZgorQW0ykqV67R30" Content="Client Secret" />
+  <Item ID="APIKey" Value="YOUR_GOOGLE_API_KEY" Content="API Key" />
+  <Item ID="ApplicationName" Value="DeskPlus Pims Google Calendar" Content="제품명" />
+  <Item ID="Storage" Value="/DeskPlusEIP/Pim/App_Data/GoogleStorage" Content="티켓 저장 위치" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

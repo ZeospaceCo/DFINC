@@ -1,0 +1,44 @@
+﻿<table class="table_typeA">
+<caption>근거문서</caption>
+<colgroup>
+    <col width="220px" />
+    <col width="80px" />
+    <col />
+    <col width="140px" />
+    <col width="110px" />
+    <col width="110px" />
+    <col width="110px" />
+    <col width="40px" />
+</colgroup>
+<thead>
+    <tr>
+
+        <th class="center" id="r_title">제목</th>
+        <th class="center" id="r_status">상태</th>
+        <th class="center" id="r_itemID">1차분류</th>
+        <th class="center" id="r_itemSubID">2차분류</th>        
+        <th class="center" id="r_requestDate">요청일자</th>
+        <th class="center" id="r_startDate">시작예정일</th>
+        <th class="center" id="r_endDate">종료예정일</th>
+        <th id="r_add"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as GetListBase}
+    <tr>     
+        <td><a onclick="List.View('{ $T.GetListBase.ListID }');return false;" style="cursor:pointer" >{ $T.GetListBase.Title }</a></td>
+        <td class="center">{ $T.GetListBase.Status }</td>
+        <td class="center">{ $T.GetListBase.ItemName }</td>
+        <td class="center">{ $T.GetListBase.ItemSubName }</td>
+        <td class="center">{ $T.GetListBase.RequestDate }</td>
+        <td class="center">{ $T.GetListBase.StartDate }</td>
+        <td class="center">{ $T.GetListBase.EndDate }</td>
+        <td><a onclick="javascript:List.Add('{ $T.GetListBase.ListID }', '{ $T.GetListBase.Title }', '{ $T.GetListBase.Status }', '{ $T.GetListBase.ItemName }', '{ $T.GetListBase.ItemSubName }','{ $T.GetListBase.RequestDate }','{ $T.GetListBase.StartDate }','{ $T.GetListBase.EndDate }');">&nbsp;<img class="BtnAdd" alt=""/></a></td>   
+    </tr>
+{#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoBaseListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

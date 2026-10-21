@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () { $(".accordion").accordion({ fillSpace: true }); $(".accordion").accordion({ animated: 'slide' }); });
+    $(function () { $("#accordionResizer").resizable({ minHeight: 0, resize: function () { $("#accordion").accordion("resize"); } }); });
+
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">커뮤니티 관리자</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            
+            <div class="menu"><a href="#" onclick="" >회원 관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('../Content/가입신청조회.html')">가입신청관리</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/탈퇴가입불가활동정지관리.html')">탈퇴/가입불가/활동정지 관리</a></h2></li>
+                    <li style="padding:3px;"><div class="cm_barA" style="clear:both;"></div></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/회원관리.html')">회원 관리</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/우수회원조회.html')">우수회원조회</a></h2></li>
+                    <li style="padding:3px;"><div class="cm_barA" style="clear:both;"></div></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/분류명수정.html')">회원등급 관리</a></h2></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >커뮤니티 관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티정보변경.html')">커뮤니티 정보변경</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/커뮤니티해지신청.html')">커뮤니티 해지신청</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/시샵변경.html')">시샵변경</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/포인트관리.html')">포인트관리</a></h2></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="menu"><a href="#" onclick="" >메뉴/화면 관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('../Content/메뉴변경및권한설정.html')">메뉴변경 및 권한설정</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/화면관리.html')">화면관리</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('../Content/스킨관리.html')">스킨관리</a></h2></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+
+</div>
+
+</body>
+</html>

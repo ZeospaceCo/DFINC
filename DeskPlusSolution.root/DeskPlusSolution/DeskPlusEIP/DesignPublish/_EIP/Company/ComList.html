@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_EIP.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_one">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>회사관리</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="#"><span>활성/비활성화</span></a></li>
+                <li><a href="#"><span>메일발송</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="ComAdd.html"><span>추갸</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul class="btn_searchbox">
+                <li>
+                    <select class="searchselect">
+	                    <option value="">회사명</option>
+	                    <option value="">관리자</option>
+	                    <option value="">관리자휴대폰</option>
+	                    <option value="">...</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 테이블 시작 //-->
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>
+                회사정보 리스트
+            </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>회사명</th>
+                    <th>대표자명</th>
+                    <th>라이센스수</th>
+                    <th>실사용자수</th>
+                    <th>전화번호</th>
+                    <th>팩스</th>
+                    <th>담당자소속</th>
+                    <th>담당자명</th>
+                    <th>담당자이메일</th>
+                    <th>활성화</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>제오스페이스(주)</td>
+                    <td>이병두</td>
+                    <td>1000명</td>
+                    <td>800명</td>
+                    <td>02-1111-1111</td>
+                    <td>02-1111-1111</td>
+                    <td>솔루션개발 차장</td>
+                    <td>홍길동</td>
+                    <td>hong@zeospace.com</td>
+                    <td>예</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>제오스페이스(주)</td>
+                    <td>이병두</td>
+                    <td>1000명</td>
+                    <td>800명</td>
+                    <td>02-1111-1111</td>
+                    <td>02-1111-1111</td>
+                    <td>솔루션개발 차장</td>
+                    <td>홍길동</td>
+                    <td>hong@zeospace.com</td>
+                    <td>예</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

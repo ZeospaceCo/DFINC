@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>관리자</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>일간</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>종료일</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>금요일</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>월요일</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>월간</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>처리시 오류가 발생되었습니다. 관리자에게 문의해주시기 바랍니다</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>예약</value>
+  </data>
+  <data name="ROW" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>토요일</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="ShareManager" xml:space="preserve">
+    <value>기본공유자관리</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>시작일</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Subscriber" xml:space="preserve">
+    <value>예약자</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>일요일</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>목요일</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>화요일</value>
+  </data>
+  <data name="Type0" xml:space="preserve">
+    <value>예약</value>
+  </data>
+  <data name="Type1" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="Type2" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="VisitReservation" xml:space="preserve">
+    <value>방문예약</value>
+  </data>
+  <data name="VisitType" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>수요일</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>주간</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>처리중입니다. 잠시만 기다려 주세요</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>파일추가</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>시작일자, 종료일자 둘다 입력해 주시기 바랍니다</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>시작일자를 입력해 주세요</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>첨부파일</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>처리되었습니다</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>일시</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>파일타입</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>금</value>
+  </data>
+  <data name="InputNumber" xml:space="preserve">
+    <value>숫자만 입력해주세요</value>
+  </data>
+  <data name="InputSubject" xml:space="preserve">
+    <value>제목을 입력해 주세요</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="NoRepeatDay" xml:space="preserve">
+    <value>해당되는 반복일정이 없습니다</value>
+  </data>
+  <data name="Qty" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="QtyZero" xml:space="preserve">
+    <value>예약가능수량이 없습니다</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>반복일정</value>
+  </data>
+  <data name="Repeat1" xml:space="preserve">
+    <value>반복설정</value>
+  </data>
+  <data name="Repeat10" xml:space="preserve">
+    <value>둘째</value>
+  </data>
+  <data name="Repeat11" xml:space="preserve">
+    <value>매</value>
+  </data>
+  <data name="Repeat111" xml:space="preserve">
+    <value>셋째</value>
+  </data>
+  <data name="Repeat12" xml:space="preserve">
+    <value>넷째</value>
+  </data>
+  <data name="Repeat13" xml:space="preserve">
+    <value>마지막</value>
+  </data>
+  <data name="Repeat14" xml:space="preserve">
+    <value>날</value>
+  </data>
+  <data name="Repeat15" xml:space="preserve">
+    <value>평일</value>
+  </data>
+  <data name="Repeat16" xml:space="preserve">
+    <value>주말</value>
+  </data>
+  <data name="Repeat17" xml:space="preserve">
+    <value>일마다,</value>
+  </data>
+  <data name="Repeat18" xml:space="preserve">
+    <value>주마다</value>
+  </data>
+  <data name="Repeat19" xml:space="preserve">
+    <value>요일에,</value>
+  </data>
+  <data name="Repeat2" xml:space="preserve">
+    <value>일 마다</value>
+  </data>
+  <data name="Repeat20" xml:space="preserve">
+    <value>일에,</value>
+  </data>
+  <data name="Repeat21" xml:space="preserve">
+    <value>에,</value>
+  </data>
+  <data name="Repeat22" xml:space="preserve">
+    <value>일까지 반복</value>
+  </data>
+  <data name="Repeat23" xml:space="preserve">
+    <value>회까지 반복</value>
+  </data>
+  <data name="Repeat3" xml:space="preserve">
+    <value>매일(평일)</value>
+  </data>
+  <data name="Repeat4" xml:space="preserve">
+    <value>주마다 다음 요일에 반복</value>
+  </data>
+  <data name="Repeat5" xml:space="preserve">
+    <value>개월마다</value>
+  </data>
+  <data name="Repeat6" xml:space="preserve">
+    <value>일에</value>
+  </data>
+  <data name="Repeat7" xml:space="preserve">
+    <value>일까지</value>
+  </data>
+  <data name="Repeat8" xml:space="preserve">
+    <value>회 반복</value>
+  </data>
+  <data name="Repeat9" xml:space="preserve">
+    <value>첫째</value>
+  </data>
+  <data name="RepeatCount" xml:space="preserve">
+    <value>반복범위의 반복횟수를 입력해 주세요</value>
+  </data>
+  <data name="RepeatDay" xml:space="preserve">
+    <value>매일반복</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>반복일정 삭제</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>이번 일정만</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>향후 모든 일정</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>모든 일정</value>
+  </data>
+  <data name="RepeatInput" xml:space="preserve">
+    <value>반복주기값을 입력해 주세요</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>반복일정 수정</value>
+  </data>
+  <data name="RepeatMonth" xml:space="preserve">
+    <value>매월반복</value>
+  </data>
+  <data name="RepeatNumber" xml:space="preserve">
+    <value>반복주기값이 올바르지 않습니다</value>
+  </data>
+  <data name="RepeatRange" xml:space="preserve">
+    <value>반복범위</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>반복설정</value>
+  </data>
+  <data name="RepeatSettingResult" xml:space="preserve">
+    <value>반복설정결과</value>
+  </data>
+  <data name="RepeatStartDateEndDate" xml:space="preserve">
+    <value>반복범위 만료일이 시작일보다 작을 수 없습니다</value>
+  </data>
+  <data name="RepeatWeek" xml:space="preserve">
+    <value>매주반복</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>1이상의 숫자를 입력해주세요</value>
+  </data>
+  <data name="ReserveResource" xml:space="preserve">
+    <value>예약자원</value>
+  </data>
+  <data name="ResourcesTitle" xml:space="preserve">
+    <value>자원명</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>토</value>
+  </data>
+  <data name="SelectRepeatDay" xml:space="preserve">
+    <value>반복범위의 날짜를 선택해 주세요</value>
+  </data>
+  <data name="SelectResource" xml:space="preserve">
+    <value>자원선택</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>요일을 선택해 주세요</value>
+  </data>
+  <data name="ShareAdd" xml:space="preserve">
+    <value>공유대상추가</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>공유설정</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>시작일자가 종료일자보다 작아야 합니다</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>종료시간은 시작시간과 같거나 작을 수 없습니다</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>목</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>명칭</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="UsableResource" xml:space="preserve">
+    <value>선택한 날짜에 이미 자원이 예약되어 있습니다</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>수</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>기존에 작성하신 내용이 사라집니다. 선택하시겠습니까?</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="ResourcesUser" xml:space="preserve">
+    <value>자원담당자</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>기본공유자</value>
+  </data>
+  <data name="ShareType1" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="ShareType2" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>공유자</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>추가할 첨부파일</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>실제 파일을 삭제하시겠습니까?</value>
+  </data>
+  <data name="EditorScript" xml:space="preserve">
+    <value>본문에 Script 관련 의심구문이 있어 내용이 변경되실 수 있습니다</value>
+  </data>
+  <data name="ErrorDelFile" xml:space="preserve">
+    <value>파일을 삭제하는데 에러가 발생하였습니다</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>리스트 페이지로 이동합니다</value>
+  </data>
+  <data name="GoView" xml:space="preserve">
+    <value>보기 페이지로 이동합니다</value>
+  </data>
+  <data name="ViewDetail" xml:space="preserve">
+    <value>상세보기</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>반복일정의 다른 모든 일정을 그대로 유지합니다</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>이 일정 및 향후 모든 일정이 변경됩니다. 미래 일정에 대한 변경사항이 손실됩니다</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>반복되는 모든 일정을 변경합니다. 다른 일정에 대한 변경 사항이 유지됩니다</value>
+  </data>
+  <data name="RepeatEx4" xml:space="preserve">
+    <value>해당 일정 및 향후 모든 일정이 삭제됩니다</value>
+  </data>
+  <data name="RepeatEx5" xml:space="preserve">
+    <value>반복되는 모든 일정을 삭제합니다</value>
+  </data>
+  <data name="WeekName" xml:space="preserve">
+    <value>요일</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>연휴</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>대체휴무</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>제목, 첨부파일명</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="Msg_AddShareUser" xml:space="preserve">
+    <value>공유자를 추가 해주세요.</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>관리</value>
+  </data>
+</root>

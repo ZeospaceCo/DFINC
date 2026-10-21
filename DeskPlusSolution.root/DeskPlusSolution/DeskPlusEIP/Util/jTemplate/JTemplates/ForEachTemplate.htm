@@ -1,0 +1,36 @@
+﻿<table border="1" cellpadding="3" cellspacing="2">
+    <thead>
+        <tr>
+            <th>
+                이름
+            </th>
+            <th>
+                한글
+            </th>
+            <th>
+                DOB
+            </th>
+            <th>
+                Location1
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {#foreach $T as Customers}
+            <tr bgcolor="{#cycle values=['#AFCFFF','#C0FFBF']}">
+                <td>
+                    { $T.Customers.Forename }
+                </td>
+                <td>
+                    <a onclick="alert(1)">{$T.Customers.Surname}</a>
+                </td>
+                <td>
+                    { $T.Customers.DOB }
+                </td>
+                <td>
+                    { $T.Customers.Location }
+                </td>
+            </tr>
+        {#/for}        
+    </tbody>
+</table>

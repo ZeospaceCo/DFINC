@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="字色"/>	
+	<Item ID="#666666" Value="灰色"/>
+	<Item ID="#f29e00" Value="黄色"/>
+	<Item ID="#ff6737" Value="かば色"/>
+	<Item ID="#e23234" Value="赤色"/>
+	<Item ID="#b66428" Value="茶色"/>
+	<Item ID="#f0418c" Value="桃色"/>
+	<Item ID="#7a3dc2" Value="紫色"/>
+	<Item ID="#b13db0" Value="赤紫色"/>
+	<Item ID="#58b837" Value="軟豆色"/>
+	<Item ID="#12a1a7" Value="青緑"/>
+	<Item ID="#1867cf" Value="青色"/>
+</XmlData>
+

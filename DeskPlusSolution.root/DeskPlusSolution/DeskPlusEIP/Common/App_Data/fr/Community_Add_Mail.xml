@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Appliqué pour la Communauté($Name$)</Title>
+	<ContentHTML>
+		[Appliqué pour la Communauté]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- demandeur : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- introduction à la Communauté : $Content$
+	</ContentHTML>
+</ContentInfo>

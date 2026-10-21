@@ -1,0 +1,56 @@
+﻿<table class="table_typeA">
+    <caption>
+        SEARCH LIST
+    </caption>
+    <colgroup>
+        <col width="80px" />
+        <col width="100px" />
+        <col />
+        <col />
+        <col width="90px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th><span class="r_number"></span></th>
+            <th class="r_modulename"></th>
+            <th class="r_title"></th>
+            <th class="r_attach"></th>
+            <th class="r_regdate"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as DataList}
+        <tr>
+            <td>
+                { $T.DataList.ID }
+            </td>
+            <td>
+                { $T.DataList.Module }
+            </td>
+            <td>                
+            {#if $T.DataList.Module == 'APPROVAL'} 
+                <a onclick="List.PopupView('{ $T.DataList.Module }','{ $T.DataList.CategoryID }','{ $T.DataList.DocumentID }');return false;" style="cursor:pointer" >
+                    { $T.DataList.Title }
+                </a> 
+            {#else}        
+                <a onclick="List.PopupView('{ $T.DataList.Module }','{ $T.DataList.CategoryID }','{ $T.DataList.ListID }');return false;" style="cursor:pointer" >
+                    { $T.DataList.Title }
+                </a> 
+            {#/if} 
+
+            </td>
+            <td>
+                { $T.DataList.Content }
+            </td>
+            <td>
+                { $T.DataList.WriteDate }
+            </td>
+        </tr>
+
+        {#else}
+        <tr>
+            <td colspan="5" class="center"><span class="NoListData" /></td>        
+        </tr>
+        {#/for} 
+    </tbody>
+</table>

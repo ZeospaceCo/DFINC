@@ -1,0 +1,3162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbsencePeriod" xml:space="preserve">
+    <value>Absence period</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Active2" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ActiveNInactive" xml:space="preserve">
+    <value>Activate / deactivate</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAlarmTarget" xml:space="preserve">
+    <value>Add the alarm target</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="AddBaseDoc" xml:space="preserve">
+    <value>Add related docs</value>
+  </data>
+  <data name="AddBaseDoc2" xml:space="preserve">
+    <value>Related docs to add</value>
+  </data>
+  <data name="AddDate" xml:space="preserve">
+    <value>Req-date</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>Add Folder</value>
+  </data>
+  <data name="AddOpinion" xml:space="preserve">
+    <value>Comments(*)</value>
+  </data>
+  <data name="AddProxy" xml:space="preserve">
+    <value>Add delegate</value>
+  </data>
+  <data name="AddSign" xml:space="preserve">
+    <value>Register stamp</value>
+  </data>
+  <data name="AddStampFile" xml:space="preserve">
+    <value>Add stamp</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AfterCall" xml:space="preserve">
+    <value>After interoperate</value>
+  </data>
+  <data name="AfterwardDate" xml:space="preserve">
+    <value>App-date</value>
+  </data>
+  <data name="AfterwardUserName" xml:space="preserve">
+    <value>Approver</value>
+  </data>
+  <data name="AlarmTarget" xml:space="preserve">
+    <value>Alarm target</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>* Caution)</value>
+  </data>
+  <data name="AllAlarmTarget" xml:space="preserve">
+    <value>Everyone</value>
+  </data>
+  <data name="AllDay" xml:space="preserve">
+    <value>All day</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Full download</value>
+  </data>
+  <data name="AppDoc" xml:space="preserve">
+    <value>Approval docs</value>
+  </data>
+  <data name="AppInfo" xml:space="preserve">
+    <value>Approval info</value>
+  </data>
+  <data name="AppLineOrder" xml:space="preserve">
+    <value>Approval order</value>
+  </data>
+  <data name="ApplyAllRegDate" xml:space="preserve">
+    <value>Input both the starting date and the ending date</value>
+  </data>
+  <data name="ApplyDateOverlap" xml:space="preserve">
+    <value>The user is already assigned on the selected date</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Input report date</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>Input the starting date</value>
+  </data>
+  <data name="AppOrder" xml:space="preserve">
+    <value>Approval order</value>
+  </data>
+  <data name="AppProcess" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="ApprovalAdmin" xml:space="preserve">
+    <value>E-Approval Mgmt</value>
+  </data>
+  <data name="ApprovalFolder" xml:space="preserve">
+    <value>Approved docs</value>
+  </data>
+  <data name="ApprovalList" xml:space="preserve">
+    <value>Approver list</value>
+  </data>
+  <data name="ApprovalManage" xml:space="preserve">
+    <value>Approver Mgmt.</value>
+  </data>
+  <data name="ApprovalTag" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ApprovalTypeA" xml:space="preserve">
+    <value>Final approve</value>
+  </data>
+  <data name="ApprovalTypeL" xml:space="preserve">
+    <value>Later approve</value>
+  </data>
+  <data name="ApprovalTypeP" xml:space="preserve">
+    <value>Delegate</value>
+  </data>
+  <data name="ApprovalTypeR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="ApprovalTypeS" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ApprovalUserInfo" xml:space="preserve">
+    <value>Approver info</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ApproveAll" xml:space="preserve">
+    <value>Final approve</value>
+  </data>
+  <data name="ApproveBulk" xml:space="preserve">
+    <value>Batch approval</value>
+  </data>
+  <data name="ApproveCancel" xml:space="preserve">
+    <value>Cancel approval</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>App-date</value>
+  </data>
+  <data name="ApproveDateMD" xml:space="preserve">
+    <value>App-date (month, day)</value>
+  </data>
+  <data name="ApproveFolder" xml:space="preserve">
+    <value>Approved docs</value>
+  </data>
+  <data name="ApproveLine" xml:space="preserve">
+    <value>Approval info</value>
+  </data>
+  <data name="ApproveS" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ApproveStatus" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="ApproveTime" xml:space="preserve">
+    <value>App-Time</value>
+  </data>
+  <data name="ArbitraryFolder" xml:space="preserve">
+    <value>Last approved docs</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="AttachOpinion" xml:space="preserve">
+    <value>Attach comment</value>
+  </data>
+  <data name="AuthText" xml:space="preserve">
+    <value>* Manage folders. Lets you specify privileges per company</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>Related docs</value>
+  </data>
+  <data name="BaseDocAdd" xml:space="preserve">
+    <value>Add docs</value>
+  </data>
+  <data name="BaseDocCnt" xml:space="preserve">
+    <value>Related docs</value>
+  </data>
+  <data name="BaseDocList" xml:space="preserve">
+    <value>List of related docs</value>
+  </data>
+  <data name="BaseLang" xml:space="preserve">
+    <value>Default name</value>
+  </data>
+  <data name="BasicDocInfo" xml:space="preserve">
+    <value>Basic info</value>
+  </data>
+  <data name="BasicInfo" xml:space="preserve">
+    <value>Basic info</value>
+  </data>
+  <data name="BasicListCnt" xml:space="preserve">
+    <value>Number of docs</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>PDF batch download</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[Target extension] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="BatchZIP" xml:space="preserve">
+    <value>ZIP batch download</value>
+  </data>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Btn_Check" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="Btn_Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Btn_FolderSel" xml:space="preserve">
+    <value>Select folder</value>
+  </data>
+  <data name="Btn_Mod" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Btn_Seq" xml:space="preserve">
+    <value>lower order</value>
+  </data>
+  <data name="Btn_Set" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="CallName" xml:space="preserve">
+    <value>Interoperating</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelDelayApp" xml:space="preserve">
+    <value>Cancel the delay of reporting</value>
+  </data>
+  <data name="CanNotUseTogether" xml:space="preserve">
+    <value>* Can not be used simultaneously with fixed order</value>
+  </data>
+  <data name="CanUse" xml:space="preserve">
+    <value>Is available</value>
+  </data>
+  <data name="Carboncopy" xml:space="preserve">
+    <value>Refer</value>
+  </data>
+  <data name="CarbonFolder" xml:space="preserve">
+    <value>Referenced</value>
+  </data>
+  <data name="CarbonInfo" xml:space="preserve">
+    <value>Referer Information</value>
+  </data>
+  <data name="CarbonUserViewOption" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="CarbonUserViewOptionItem1" xml:space="preserve">
+    <value>Reading in progress</value>
+  </data>
+  <data name="CarbonUserViewOptionItem2" xml:space="preserve">
+    <value>View after completion</value>
+  </data>
+  <data name="CarbonView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>Change approval order</value>
+  </data>
+  <data name="ChangeOrder2" xml:space="preserve">
+    <value>Change the order of approval</value>
+  </data>
+  <data name="ChangeOrder3" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="ChangeOrder4" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="ChangeRcver" xml:space="preserve">
+    <value>Change contact person</value>
+  </data>
+  <data name="CheckDeleteFavoritePerson" xml:space="preserve">
+    <value>Select a user to delete</value>
+  </data>
+  <data name="CheckDeleteProxyPerson" xml:space="preserve">
+    <value>Select a user to delete</value>
+  </data>
+  <data name="CheckSize" xml:space="preserve">
+    <value>Capacity limit</value>
+  </data>
+  <data name="CheckZQ" xml:space="preserve">
+    <value>There is no user information. Specify a user.</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="Chinese1" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="Chinese2" xml:space="preserve">
+    <value>Taiwanese</value>
+  </data>
+  <data name="Circulation" xml:space="preserve">
+    <value>Circulate</value>
+  </data>
+  <data name="CirDate" xml:space="preserve">
+    <value>Circ-date</value>
+  </data>
+  <data name="CirList" xml:space="preserve">
+    <value>User list</value>
+  </data>
+  <data name="CirOpinion" xml:space="preserve">
+    <value>User comments</value>
+  </data>
+  <data name="CirSender" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="CirState" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Release</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ComeBack" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>Comp-date</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmAdd" xml:space="preserve">
+    <value>Want to submit it?</value>
+  </data>
+  <data name="ConfirmAppInfo" xml:space="preserve">
+    <value>Confirm Approval info</value>
+  </data>
+  <data name="ConfirmDeleteFavoritePerson" xml:space="preserve">
+    <value>Delete it?</value>
+  </data>
+  <data name="ConfirmDeleteProxyPerson" xml:space="preserve">
+    <value>Delete it?</value>
+  </data>
+  <data name="ConfirmDeptManyName" xml:space="preserve">
+    <value>Confirmor dept</value>
+  </data>
+  <data name="ConfirmNumber" xml:space="preserve">
+    <value>Confirmation no.</value>
+  </data>
+  <data name="ConfirmRcv" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="ConfirmTit" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>In the portion of official docs, specify ID value as &lt;b&gt;CONTENT&lt;/b&gt;.</value>
+  </data>
+  <data name="ContentsAbsence" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="ContentTEXT" xml:space="preserve">
+    <value>Contents search</value>
+  </data>
+  <data name="Cphone" xml:space="preserve">
+    <value>Company phone</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="DateOfWrite" xml:space="preserve">
+    <value>Req-date</value>
+  </data>
+  <data name="DefaultMenu" xml:space="preserve">
+    <value>Set default folder</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DelAlert" xml:space="preserve">
+    <value>If you delete it, the actual file will be deleted</value>
+  </data>
+  <data name="DelAlert2" xml:space="preserve">
+    <value>If you delete it, the related docs is deleted from the list</value>
+  </data>
+  <data name="DelAll" xml:space="preserve">
+    <value>Erase</value>
+  </data>
+  <data name="DelayApp" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="DelayCancel" xml:space="preserve">
+    <value>Cancel hold</value>
+  </data>
+  <data name="DelCompletely" xml:space="preserve">
+    <value>Erase</value>
+  </data>
+  <data name="DelItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DelProxy" xml:space="preserve">
+    <value>Delete delegate</value>
+  </data>
+  <data name="DelUser" xml:space="preserve">
+    <value>Delete user</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="DeptComplete" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="DeptFolder" xml:space="preserve">
+    <value>Deptment docs</value>
+  </data>
+  <data name="DeptFolderManage" xml:space="preserve">
+    <value>Manage folders</value>
+  </data>
+  <data name="DeptID" xml:space="preserve">
+    <value>Internal code</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Dept name</value>
+  </data>
+  <data name="DeptReceipt" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="DeptSet" xml:space="preserve">
+    <value>Setting dept</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="DiscardDoc" xml:space="preserve">
+    <value>Docs discard</value>
+  </data>
+  <data name="DisuseDoc" xml:space="preserve">
+    <value>Discard docs?</value>
+  </data>
+  <data name="DisuseFolder" xml:space="preserve">
+    <value>Trash bin</value>
+  </data>
+  <data name="DocAdd" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="DocCnt" xml:space="preserve">
+    <value>No. of docs</value>
+  </data>
+  <data name="DocComplete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="DocConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="DocContents" xml:space="preserve">
+    <value>Contents of docs</value>
+  </data>
+  <data name="DocDisuse" xml:space="preserve">
+    <value>Docs discard</value>
+  </data>
+  <data name="DocEditAdd" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="DocFolder" xml:space="preserve">
+    <value>Docs folder</value>
+  </data>
+  <data name="DocInfo" xml:space="preserve">
+    <value>Docs info</value>
+  </data>
+  <data name="DocName" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>Docs number</value>
+  </data>
+  <data name="DocProcess" xml:space="preserve">
+    <value>Docs in progress</value>
+  </data>
+  <data name="DocRestore" xml:space="preserve">
+    <value>Restore docs</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>Contents may be changed because there are suspicious sentences about script in the body</value>
+  </data>
+  <data name="DraftSubTitle" xml:space="preserve">
+    <value>* Temporarily save &lt;strong&gt;content/related docs/attachments&lt;/strong&gt;</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="DutyName2" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="EA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditDoc" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditItem" xml:space="preserve">
+    <value>Edit item</value>
+  </data>
+  <data name="EditNReport" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="EditUpFolder" xml:space="preserve">
+    <value>Change the upperclass folder</value>
+  </data>
+  <data name="EDM" xml:space="preserve">
+    <value>DOC Mgmt.</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="EnforceAdd" xml:space="preserve">
+    <value>Official application</value>
+  </data>
+  <data name="EnforceAlarmContentA" xml:space="preserve">
+    <value>Processed. Check the application list</value>
+  </data>
+  <data name="EnforceAlarmContentB" xml:space="preserve">
+    <value>Rejected. Check the application list</value>
+  </data>
+  <data name="EnforceAlarmContentC" xml:space="preserve">
+    <value>Approved. Check out the sending list</value>
+  </data>
+  <data name="EnforceAlarmSubjectA" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="EnforceAlarmSubjectB" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="EnforceAlarmSubjectC" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="EnforceCompleteNumber" xml:space="preserve">
+    <value>Approval number</value>
+  </data>
+  <data name="EnforceConfirm" xml:space="preserve">
+    <value>Admin Approval</value>
+  </data>
+  <data name="EnforceConfirmDate" xml:space="preserve">
+    <value>Conf-date</value>
+  </data>
+  <data name="EnforceConfirmInfo" xml:space="preserve">
+    <value>Confirmor info</value>
+  </data>
+  <data name="EnforceDate" xml:space="preserve">
+    <value>Enforce date      </value>
+  </data>
+  <data name="EnforceDel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EnforceDoc" xml:space="preserve">
+    <value>Official docs</value>
+  </data>
+  <data name="EnforceDocType" xml:space="preserve">
+    <value>Docs form</value>
+  </data>
+  <data name="EnforceDocTypeItem0" xml:space="preserve">
+    <value>On-line</value>
+  </data>
+  <data name="EnforceDocTypeItem1" xml:space="preserve">
+    <value>Off-line</value>
+  </data>
+  <data name="EnforceEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EnforceExpEndTitle" xml:space="preserve">
+    <value>At the time of conversion, the contents are shown at the bottom</value>
+  </data>
+  <data name="EnforceExpFirstTitle" xml:space="preserve">
+    <value>At the time of conversion, the contents are shown at the top</value>
+  </data>
+  <data name="EnforceExpMidTitle" xml:space="preserve">
+    <value>At the time of conversion, the contents are shown at the bottom</value>
+  </data>
+  <data name="EnforceFolder" xml:space="preserve">
+    <value>Official Mgmt.</value>
+  </data>
+  <data name="EnforceFormPath" xml:space="preserve">
+    <value>Docs form</value>
+  </data>
+  <data name="EnforceHistory" xml:space="preserve">
+    <value>Sending list</value>
+  </data>
+  <data name="EnforceHistoryComment" xml:space="preserve">
+    <value>Sending list</value>
+  </data>
+  <data name="EnforceIsAdmin" xml:space="preserve">
+    <value>Designation</value>
+  </data>
+  <data name="EnforceIsSend0" xml:space="preserve">
+    <value>No send</value>
+  </data>
+  <data name="EnforceIsSend1" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="EnforceIsSendInfo" xml:space="preserve">
+    <value>Sending</value>
+  </data>
+  <data name="EnforceIsStamp" xml:space="preserve">
+    <value>Regist</value>
+  </data>
+  <data name="EnforceMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="EnforceMsg00" xml:space="preserve">
+    <value>Select company</value>
+  </data>
+  <data name="EnforceMsg01" xml:space="preserve">
+    <value>It's already registered company</value>
+  </data>
+  <data name="EnforceMsg02" xml:space="preserve">
+    <value>Enter only one piece of information</value>
+  </data>
+  <data name="EnforceMsg03" xml:space="preserve">
+    <value>Stamp Mgmt.</value>
+  </data>
+  <data name="EnforceMsg04" xml:space="preserve">
+    <value>Input company</value>
+  </data>
+  <data name="EnforceMsg05" xml:space="preserve">
+    <value>Input name</value>
+  </data>
+  <data name="EnforceMsg06" xml:space="preserve">
+    <value>Input address</value>
+  </data>
+  <data name="EnforceMsg07" xml:space="preserve">
+    <value>Input phone</value>
+  </data>
+  <data name="EnforceMsg08" xml:space="preserve">
+    <value>Input fax</value>
+  </data>
+  <data name="EnforceMsgSendMail" xml:space="preserve">
+    <value>Are you sending mail?</value>
+  </data>
+  <data name="EnforcePreviewMsg1" xml:space="preserve">
+    <value>You can view it in the form of an applied form</value>
+  </data>
+  <data name="EnforcePreviewStamp" xml:space="preserve">
+    <value>Preview Stamp</value>
+  </data>
+  <data name="EnforcePrint" xml:space="preserve">
+    <value>Output (no stamp)</value>
+  </data>
+  <data name="EnforcePrintStamp" xml:space="preserve">
+    <value>Output (stamp)</value>
+  </data>
+  <data name="EnforcePurpose" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="EnforceQuantity" xml:space="preserve">
+    <value>Quantity              </value>
+  </data>
+  <data name="EnforceReAdd" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EnforceReqInfo" xml:space="preserve">
+    <value>Requester info</value>
+  </data>
+  <data name="EnforceReqNumber" xml:space="preserve">
+    <value>Reception number</value>
+  </data>
+  <data name="EnforceSend" xml:space="preserve">
+    <value>Official sending</value>
+  </data>
+  <data name="EnforceSendDate" xml:space="preserve">
+    <value>Send date</value>
+  </data>
+  <data name="EnforceSendMsg1" xml:space="preserve">
+    <value>It is converted into an applied letter form and processed</value>
+  </data>
+  <data name="EnforceSendMsgApprove" xml:space="preserve">
+    <value>Want to approve?</value>
+  </data>
+  <data name="EnforceSendMsgReject" xml:space="preserve">
+    <value>Want to reject?</value>
+  </data>
+  <data name="EnforceSendType" xml:space="preserve">
+    <value>Sending type</value>
+  </data>
+  <data name="EnforceSendTypeItem0" xml:space="preserve">
+    <value>Send mail</value>
+  </data>
+  <data name="EnforceSendTypeItem1" xml:space="preserve">
+    <value>Postal registration</value>
+  </data>
+  <data name="EnforceSendTypeItem2" xml:space="preserve">
+    <value>Fax                   </value>
+  </data>
+  <data name="EnforceSendUser" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="EnforceStampAdd" xml:space="preserve">
+    <value>Regist official stamp</value>
+  </data>
+  <data name="EnforceStampType" xml:space="preserve">
+    <value>Stamp type</value>
+  </data>
+  <data name="EnforceStampTypeItem0" xml:space="preserve">
+    <value>On-line</value>
+  </data>
+  <data name="EnforceStampTypeItem1" xml:space="preserve">
+    <value>Off-line</value>
+  </data>
+  <data name="EnforceStateEtc" xml:space="preserve">
+    <value>Etc</value>
+  </data>
+  <data name="EnforceStateInfo" xml:space="preserve">
+    <value>Status info</value>
+  </data>
+  <data name="EnforceStateR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="EnforceStateS" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="EnforceStateW" xml:space="preserve">
+    <value>Wait</value>
+  </data>
+  <data name="EnforceSubTit01" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="EnforceSubTit02" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="EnforceSubTit03" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="EnforceSubTit04" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="EnforceSubTit05" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="EnforceSubTit06" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="EnforceTaregetMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EnforceTaregetMailSubject" xml:space="preserve">
+    <value>Mail subject</value>
+  </data>
+  <data name="EnforceTitle" xml:space="preserve">
+    <value>Stamp Mgmt.</value>
+  </data>
+  <data name="EnforceTitle1" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="EnforceTitle2" xml:space="preserve">
+    <value>Sending list</value>
+  </data>
+  <data name="EnforceTitle3" xml:space="preserve">
+    <value>Application list</value>
+  </data>
+  <data name="EnforceTitleSub" xml:space="preserve">
+    <value>Specify the company and the stamp management</value>
+  </data>
+  <data name="EnforceTitleSub1" xml:space="preserve">
+    <value>Only docs that have been written by the written docs will be checked</value>
+  </data>
+  <data name="EnforceTitleSub2" xml:space="preserve">
+    <value>Out of the list of applications, check the completed docs</value>
+  </data>
+  <data name="EnforceTitleSub3" xml:space="preserve">
+    <value>Out of the list of applications, check the completed docs</value>
+  </data>
+  <data name="EnforceTitleSub4" xml:space="preserve">
+    <value>The entire list requested is checked</value>
+  </data>
+  <data name="EnforceTitleSub5" xml:space="preserve">
+    <value>The approved full list is checked</value>
+  </data>
+  <data name="EnforceTypeMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="EnforceTypePrint" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="EnforceView" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>An error occurred.</value>
+  </data>
+  <data name="ErrorBaseDoc" xml:space="preserve">
+    <value>An error occurred.</value>
+  </data>
+  <data name="ETC" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ETC2" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ETC3" xml:space="preserve">
+    <value>The rest</value>
+  </data>
+  <data name="ETCSetInfo" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="FavAddDept" xml:space="preserve">
+    <value>Add dept</value>
+  </data>
+  <data name="FavAddUser" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="FavoriteApp" xml:space="preserve">
+    <value>Frequently used users</value>
+  </data>
+  <data name="FavoriteApprovalUser" xml:space="preserve">
+    <value>Frequently used users</value>
+  </data>
+  <data name="FavoriteForm" xml:space="preserve">
+    <value>Frequently used forms</value>
+  </data>
+  <data name="FavScription" xml:space="preserve">
+    <value>* When setting the case of E-Approval docs, you can conveniently choose approver.</value>
+  </data>
+  <data name="FavSec" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FavTag" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="FavTitIsDept0" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="FavTitIsDept1" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="FavTitIsSub0" xml:space="preserve">
+    <value>Do not include subordinate dept</value>
+  </data>
+  <data name="FavTitIsSub1" xml:space="preserve">
+    <value>Include subordinate dept</value>
+  </data>
+  <data name="FavTitLineZC" xml:space="preserve">
+    <value>Reference info</value>
+  </data>
+  <data name="FavTitLineZD" xml:space="preserve">
+    <value>Review info</value>
+  </data>
+  <data name="FavTitLineZP" xml:space="preserve">
+    <value>Received info</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>Add Attachment</value>
+  </data>
+  <data name="FileBackup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FlowInfo" xml:space="preserve">
+    <value>Flow process info</value>
+  </data>
+  <data name="FlowMsg01" xml:space="preserve">
+    <value>Then, go to the administration screen</value>
+  </data>
+  <data name="FlowScription" xml:space="preserve">
+    <value>* When setting the case of electronic approval docsation, you can conveniently choose approver.</value>
+  </data>
+  <data name="FlowZA" xml:space="preserve">
+    <value>Flow agreement</value>
+  </data>
+  <data name="FlowZA2" xml:space="preserve">
+    <value>Agreement group</value>
+  </data>
+  <data name="FlowZALoc" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="FlowZD" xml:space="preserve">
+    <value>Flow approval</value>
+  </data>
+  <data name="FlowZD2" xml:space="preserve">
+    <value>Business dept group</value>
+  </data>
+  <data name="FlowZDLoc" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="FlowZH" xml:space="preserve">
+    <value>Flow cooperation</value>
+  </data>
+  <data name="FlowZH2" xml:space="preserve">
+    <value>Cooperation group</value>
+  </data>
+  <data name="FlowZHLoc" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="FlowZR" xml:space="preserve">
+    <value>Circulated group</value>
+  </data>
+  <data name="FlowZRLoc" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="Flow_D" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="Flow_I" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="Flow_W" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="FolderAuthTotal" xml:space="preserve">
+    <value>View total list</value>
+  </data>
+  <data name="FolderAuthUserInfo" xml:space="preserve">
+    <value>Viewers info</value>
+  </data>
+  <data name="FolderGubun" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FolderInfo" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FolderPath" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="FolderType1" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="FolderType2" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="FolderType3" xml:space="preserve">
+    <value>Interlocking</value>
+  </data>
+  <data name="FolderType4" xml:space="preserve">
+    <value>Approval info</value>
+  </data>
+  <data name="Form2" xml:space="preserve">
+    <value>Select form</value>
+  </data>
+  <data name="Form3" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FormInfo" xml:space="preserve">
+    <value>Form info</value>
+  </data>
+  <data name="FormName1" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="FormName2" xml:space="preserve">
+    <value>Form Name</value>
+  </data>
+  <data name="FormName3" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="Forwarder" xml:space="preserve">
+    <value>Forwarder</value>
+  </data>
+  <data name="ForwardingDate" xml:space="preserve">
+    <value>Forward date</value>
+  </data>
+  <data name="ForwardList" xml:space="preserve">
+    <value>Forwarder list</value>
+  </data>
+  <data name="ForwardOpinion" xml:space="preserve">
+    <value>Forward opinion</value>
+  </data>
+  <data name="ForwardUser" xml:space="preserve">
+    <value>Forward Status</value>
+  </data>
+  <data name="Franch" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the list</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>Go to the details page</value>
+  </data>
+  <data name="HomeAttachTit" xml:space="preserve">
+    <value>Latest file</value>
+  </data>
+  <data name="HomeAttachTitSub" xml:space="preserve">
+    <value>(Based on completed docs)</value>
+  </data>
+  <data name="HomeCntCC" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="HomeCntCP" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="HomeCntSC" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="HomeCntSM" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="HomePrivate" xml:space="preserve">
+    <value>Personal Folder</value>
+  </data>
+  <data name="HomeApproval" xml:space="preserve">
+    <value>Completed Approval Folder</value>
+  </data>
+  <data name="HomeReject" xml:space="preserve">
+    <value>Reject Folder</value>
+  </data>
+  <data name="HomeCntUnit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="HomeDelMsg" xml:space="preserve">
+    <value>Want to delete?</value>
+  </data>
+  <data name="HomeFavAppTit" xml:space="preserve">
+    <value>Frequently used users</value>
+  </data>
+  <data name="HomeFavLink" xml:space="preserve">
+    <value>Set favorite users</value>
+  </data>
+  <data name="HomeFavTit" xml:space="preserve">
+    <value>Write docs &gt;</value>
+  </data>
+  <data name="HomeFavTitMgr" xml:space="preserve">
+    <value>To set frequently used forms</value>
+  </data>
+  <data name="HomeFileTh01" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HomeFileTh02" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="HomeFileTh03" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="HomeFileTh04" xml:space="preserve">
+    <value>Docs</value>
+  </data>
+  <data name="HomeImpoLink" xml:space="preserve">
+    <value>View docs marked as important</value>
+  </data>
+  <data name="HomeImpoTh01" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="HomeImpoTh02" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="HomeImpoTit" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="HomeNoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="HomeProxy" xml:space="preserve">
+    <value>Delegator</value>
+  </data>
+  <data name="HomeProxyAlert" xml:space="preserve">
+    <value>Want to stop delegator?</value>
+  </data>
+  <data name="HomeProxyMgr" xml:space="preserve">
+    <value>Set delegator</value>
+  </data>
+  <data name="HomeProxyNo" xml:space="preserve">
+    <value>No delegator</value>
+  </data>
+  <data name="HomeProxyStop" xml:space="preserve">
+    <value>Stop delegator</value>
+  </data>
+  <data name="HomeReplyTit" xml:space="preserve">
+    <value>Comments list</value>
+  </data>
+  <data name="HomeSearchDocTit" xml:space="preserve">
+    <value>Search docs</value>
+  </data>
+  <data name="HomeSrhTarget" xml:space="preserve">
+    <value>Search for : Complete doc = File + Subject + Form</value>
+  </data>
+  <data name="HomeTabTH01" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HomeTabTH02" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="HomeTabTH03" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="HomeTabTH04" xml:space="preserve">
+    <value>User info</value>
+  </data>
+  <data name="HomeTabTH05" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="HomeTabTH06" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="HomeTabTit01" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="HomeTabTit02" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="HomeTabTit03" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="HomeTabTit04" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>E-Approval</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ImpoMark" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="InChar" xml:space="preserve">
+    <value>in char</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>Input search day</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IsActiveTit" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IsActiveTitN" xml:space="preserve">
+    <value>Unused</value>
+  </data>
+  <data name="IsActiveTitY" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="IsConfirm" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IsEnable" xml:space="preserve">
+    <value>Enabled or not</value>
+  </data>
+  <data name="IsModfy" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IsProxy" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IsUse" xml:space="preserve">
+    <value>Used or not</value>
+  </data>
+  <data name="ItemAtt" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="ItemMulti" xml:space="preserve">
+    <value>Multiple format</value>
+  </data>
+  <data name="ItemOutline" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="ItemSet" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ItemSetMsg" xml:space="preserve">
+    <value>Apply format, width, and height</value>
+  </data>
+  <data name="ItemSingle" xml:space="preserve">
+    <value>Single format</value>
+  </data>
+  <data name="ItemWH" xml:space="preserve">
+    <value>Width / height</value>
+  </data>
+  <data name="ItemWHSub" xml:space="preserve">
+    <value>Including unit</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="KeepYear" xml:space="preserve">
+    <value>Retention period</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="LaterOn" xml:space="preserve">
+    <value>Later approve</value>
+  </data>
+  <data name="LaterOnItem1" xml:space="preserve">
+    <value>Vacation</value>
+  </data>
+  <data name="LaterOnItem2" xml:space="preserve">
+    <value>On-site</value>
+  </data>
+  <data name="LaterOnItem3" xml:space="preserve">
+    <value>Sick leave</value>
+  </data>
+  <data name="LaterOnItem4" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="LaterOnTarget" xml:space="preserve">
+    <value>Later approve target</value>
+  </data>
+  <data name="LaterOnTit" xml:space="preserve">
+    <value>Later approve</value>
+  </data>
+  <data name="LegacyFileInfo" xml:space="preserve">
+    <value>Associated file info</value>
+  </data>
+  <data name="LegacyPath" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListLang" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail address</value>
+  </data>
+  <data name="MailSubject" xml:space="preserve">
+    <value>Mail subject</value>
+  </data>
+  <data name="MakeDoc" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="MakeDocEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MakeDocFile" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MakeDocMod" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MakeDocNet" xml:space="preserve">
+    <value>Request received docs</value>
+  </data>
+  <data name="ManageApprover" xml:space="preserve">
+    <value>Manage approver</value>
+  </data>
+  <data name="ManageDoc" xml:space="preserve">
+    <value>Manage approved docs</value>
+  </data>
+  <data name="ManageEnforceAdmin" xml:space="preserve">
+    <value>Manage contact</value>
+  </data>
+  <data name="ManageEnforceStamp" xml:space="preserve">
+    <value>Manage stamp</value>
+  </data>
+  <data name="ManageFolder" xml:space="preserve">
+    <value>Manage folder</value>
+  </data>
+  <data name="ManageForm" xml:space="preserve">
+    <value>Manage Form </value>
+  </data>
+  <data name="ManageProxy" xml:space="preserve">
+    <value>Manage Delegater</value>
+  </data>
+  <data name="ManageStamp" xml:space="preserve">
+    <value>Stamp/signature</value>
+  </data>
+  <data name="MenuPrivateFolder" xml:space="preserve">
+    <value>Personal folder</value>
+  </data>
+  <data name="MenuSubmitFolder" xml:space="preserve">
+    <value>Request docs</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Personal contacts</value>
+  </data>
+  <data name="ModDate" xml:space="preserve">
+    <value>Edit date</value>
+  </data>
+  <data name="ModFolder" xml:space="preserve">
+    <value>Edit folder</value>
+  </data>
+  <data name="ModfyAppLine" xml:space="preserve">
+    <value>Changed approver info</value>
+  </data>
+  <data name="ModHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="ModifyList" xml:space="preserve">
+    <value>Edit history</value>
+  </data>
+  <data name="ModProxy" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ModSeqMsg1" xml:space="preserve">
+    <value>Based on the specified E-Approval order</value>
+  </data>
+  <data name="ModSeqMsg2" xml:space="preserve">
+    <value>Change approver order</value>
+  </data>
+  <data name="ModSeqMsg3" xml:space="preserve">
+    <value>The person in charge should always be at the beginning, Consensus can not come last</value>
+  </data>
+  <data name="ModUser" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="MoveFolder" xml:space="preserve">
+    <value>Folder Move</value>
+  </data>
+  <data name="MsgAlertEdit" xml:space="preserve">
+    <value>Want to edit?</value>
+  </data>
+  <data name="MsgAlertScript" xml:space="preserve">
+    <value>There is malware on your PC. Contact the administrator</value>
+  </data>
+  <data name="MsgApprovalNetSaveOK" xml:space="preserve">
+    <value>Approver information has been saved. \nWhen you select a form, the information is automatically assigned</value>
+  </data>
+  <data name="MsgCheckClick" xml:space="preserve">
+    <value>Processing, please wait</value>
+  </data>
+  <data name="MsgConfirmEditor" xml:space="preserve">
+    <value>You have removed the nonstandard style.\nPlease check the contents</value>
+  </data>
+  <data name="MsgFavSeqInfo0" xml:space="preserve">
+    <value>The information specified by the administrator takes precedence</value>
+  </data>
+  <data name="MsgFavSeqInfo1" xml:space="preserve">
+    <value>A department can only specify one contractor.</value>
+  </data>
+  <data name="MsgFavSeqInfo2" xml:space="preserve">
+    <value>Duplicate user can not be specified</value>
+  </data>
+  <data name="MsgFavSeqInfo3" xml:space="preserve">
+    <value>When you specify this information, any existing approvor information will be canceled.</value>
+  </data>
+  <data name="Msg_AccountInfo_Alert" xml:space="preserve">
+    <value>Approver information changed. This information is not available</value>
+  </data>
+  <data name="MSG_Active" xml:space="preserve">
+    <value>Select an item</value>
+  </data>
+  <data name="Msg_AdminDocDel" xml:space="preserve">
+    <value>If there is a link related to deletion among docs in progress, you can delete docs individually</value>
+  </data>
+  <data name="Msg_AlarmAlert" xml:space="preserve">
+    <value>For security reasons, files and related docs are accessible from the E-Approval menu via the portal</value>
+  </data>
+  <data name="Msg_AlarmError" xml:space="preserve">
+    <value>This docs has been deleted and can not be viewed</value>
+  </data>
+  <data name="Msg_AlarmErrorAuth" xml:space="preserve">
+    <value>You do not have authority to check docs</value>
+  </data>
+  <data name="Msg_AlarmErrorView" xml:space="preserve">
+    <value>This docs can not be viewed</value>
+  </data>
+  <data name="Msg_AlertEDMCheck" xml:space="preserve">
+    <value>Setting is required</value>
+  </data>
+  <data name="MSG_AlertIsSub" xml:space="preserve">
+    <value>For reference, do you want to include sub-depts?</value>
+  </data>
+  <data name="MSG_AlertProcess" xml:space="preserve">
+    <value>For reception, only one process can be registered</value>
+  </data>
+  <data name="MSG_ALERTSETLINE" xml:space="preserve">
+    <value>Must be specified sequentially</value>
+  </data>
+  <data name="Msg_AlertTemporaryBaseDoc" xml:space="preserve">
+    <value>Drafted docs will also be deleted</value>
+  </data>
+  <data name="Msg_AlertTemporaryFile" xml:space="preserve">
+    <value>Drafted attachments will also be deleted</value>
+  </data>
+  <data name="Msg_AlertUserInfo" xml:space="preserve">
+    <value>See approver information</value>
+  </data>
+  <data name="MSG_ApplySubFolder" xml:space="preserve">
+    <value>Apply a subfolder</value>
+  </data>
+  <data name="Msg_AttachDownAuth" xml:space="preserve">
+    <value>No download privileges</value>
+  </data>
+  <data name="Msg_Backup" xml:space="preserve">
+    <value>Select a approval docs to back up</value>
+  </data>
+  <data name="MSG_Backup2" xml:space="preserve">
+    <value>Select a circulated docs to back up</value>
+  </data>
+  <data name="MSG_CancelApproval" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MSG_CancelApprovalCheck" xml:space="preserve">
+    <value>Already, approval is holding or the next approval has already been signed</value>
+  </data>
+  <data name="MSG_CancelApprove" xml:space="preserve">
+    <value>Want to cancel approved?</value>
+  </data>
+  <data name="MSG_CancelDelay" xml:space="preserve">
+    <value>Want to cancel hold?</value>
+  </data>
+  <data name="MSG_Carboncopy" xml:space="preserve">
+    <value>Select docs to delete</value>
+  </data>
+  <data name="Msg_CarbonUserViewOption" xml:space="preserve">
+    <value>Sets when the referrer should view the docs</value>
+  </data>
+  <data name="Msg_Change" xml:space="preserve">
+    <value>Want to change?</value>
+  </data>
+  <data name="MSG_Cir" xml:space="preserve">
+    <value>Select a docs to circulate</value>
+  </data>
+  <data name="MSG_CirOpinion" xml:space="preserve">
+    <value>Enter your feedback</value>
+  </data>
+  <data name="Msg_Close" xml:space="preserve">
+    <value>Want to quit?</value>
+  </data>
+  <data name="MSG_ComeBack" xml:space="preserve">
+    <value>Select a documetation to return</value>
+  </data>
+  <data name="Msg_ConfirmAppLine" xml:space="preserve">
+    <value>Check the approval order</value>
+  </data>
+  <data name="Msg_ConfirmEditorTab" xml:space="preserve">
+    <value>The content disappears. Are you sure?</value>
+  </data>
+  <data name="Msg_ConfirmUpdate" xml:space="preserve">
+    <value>Want to overwrite it?</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>Want to delete?</value>
+  </data>
+  <data name="MSG_Del10" xml:space="preserve">
+    <value>Select a docs to delete</value>
+  </data>
+  <data name="MSG_Del2" xml:space="preserve">
+    <value>I can not recover it. Want to delete?</value>
+  </data>
+  <data name="MSG_Del3" xml:space="preserve">
+    <value>Select a docs to delete</value>
+  </data>
+  <data name="MSG_Del4" xml:space="preserve">
+    <value>You have been permanently deleted</value>
+  </data>
+  <data name="MSG_Del5" xml:space="preserve">
+    <value>Want to delete?</value>
+  </data>
+  <data name="MSG_Del6" xml:space="preserve">
+    <value>Select docs to delete</value>
+  </data>
+  <data name="MSG_Del7" xml:space="preserve">
+    <value>Select docs to delete</value>
+  </data>
+  <data name="MSG_Del8" xml:space="preserve">
+    <value>Select docs to delete</value>
+  </data>
+  <data name="MSG_Del9" xml:space="preserve">
+    <value>When you delete a sent docs, it is deleted with the docs of the sender.\nWant to delete?</value>
+  </data>
+  <data name="MSG_DelAll" xml:space="preserve">
+    <value>Want to delete all from the list?</value>
+  </data>
+  <data name="MSG_DelAllR" xml:space="preserve">
+    <value>Want to delete all from the list?</value>
+  </data>
+  <data name="MSG_Delay" xml:space="preserve">
+    <value>Want to hold?</value>
+  </data>
+  <data name="MSG_DelDoc" xml:space="preserve">
+    <value>Want to delete?</value>
+  </data>
+  <data name="MSG_DelForm" xml:space="preserve">
+    <value>Delete forms belong to the folder first</value>
+  </data>
+  <data name="MSG_DelSubFolder" xml:space="preserve">
+    <value>Delete the subfolders first</value>
+  </data>
+  <data name="Msg_Dept" xml:space="preserve">
+    <value>Choose the department</value>
+  </data>
+  <data name="MSG_DoActive" xml:space="preserve">
+    <value>Want to enable/disable it?</value>
+  </data>
+  <data name="MSG_EnforceAddress" xml:space="preserve">
+    <value>Enter the e-mail address</value>
+  </data>
+  <data name="MSG_EnforceReceive" xml:space="preserve">
+    <value>Enter destinations      </value>
+  </data>
+  <data name="MSG_EnforceReference" xml:space="preserve">
+    <value>Enter the reference     </value>
+  </data>
+  <data name="MSG_EnforceSubject" xml:space="preserve">
+    <value>Enter a subject</value>
+  </data>
+  <data name="Msg_EnforceSubmit" xml:space="preserve">
+    <value>Check the application list</value>
+  </data>
+  <data name="MSG_EnforceTargetMail" xml:space="preserve">
+    <value>Input the mail subject</value>
+  </data>
+  <data name="MSG_EnforceTargetMailSubject" xml:space="preserve">
+    <value>Input the way of use</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>Already been added</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>Already been added</value>
+  </data>
+  <data name="Msg_ErrComplete" xml:space="preserve">
+    <value>Want to complete?</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>The content may be changed because there are suspicious sentences about script at the body</value>
+  </data>
+  <data name="Msg_ErrDefaultInfo" xml:space="preserve">
+    <value>No basic information. Ask administrator</value>
+  </data>
+  <data name="Msg_ErrFormSequence" xml:space="preserve">
+    <value>Choose a form to modify</value>
+  </data>
+  <data name="Msg_ErrInputNameCode" xml:space="preserve">
+    <value>Enter the code of the form to be used when creating a docs number</value>
+  </data>
+  <data name="Msg_ErrLife" xml:space="preserve">
+    <value>Specify retention period</value>
+  </data>
+  <data name="Msg_ErrNetNon" xml:space="preserve">
+    <value>Reject in the condition that there is no approval informatioin</value>
+  </data>
+  <data name="Msg_ErrNetNonCom" xml:space="preserve">
+    <value>Complete when there is no approval information</value>
+  </data>
+  <data name="Msg_ErrNetNonReplace" xml:space="preserve">
+    <value>Change people in charge when there's no approval information</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>Enter 200 characters or less</value>
+  </data>
+  <data name="Msg_ErrOpinionNon" xml:space="preserve">
+    <value>Enter approval comments</value>
+  </data>
+  <data name="Msg_ErrorUserBefore" xml:space="preserve">
+    <value>Already been added</value>
+  </data>
+  <data name="Msg_ErrorUserInfo" xml:space="preserve">
+    <value>Approvor information has been entered incorrectly.\nContact your administrator</value>
+  </data>
+  <data name="Msg_ErrorUserNon" xml:space="preserve">
+    <value>No users specified</value>
+  </data>
+  <data name="Msg_ErrReCancel" xml:space="preserve">
+    <value>Cancel again, Select again</value>
+  </data>
+  <data name="Msg_ErrRejectTarget" xml:space="preserve">
+    <value>Select the target to reject</value>
+  </data>
+  <data name="Msg_ErrSelFolder" xml:space="preserve">
+    <value>When changing the order, choose only one subject folder</value>
+  </data>
+  <data name="Msg_ErrSelForm" xml:space="preserve">
+    <value>Select form</value>
+  </data>
+  <data name="Msg_ErrSelNet" xml:space="preserve">
+    <value>Select approval information</value>
+  </data>
+  <data name="Msg_ErrSelUnit" xml:space="preserve">
+    <value>Select range to specify</value>
+  </data>
+  <data name="Msg_ErrSelUser" xml:space="preserve">
+    <value>Select user</value>
+  </data>
+  <data name="Msg_ErrSetZA" xml:space="preserve">
+    <value>Consensus can not be the final approver. Change the order of approval</value>
+  </data>
+  <data name="Msg_ErrSetZH" xml:space="preserve">
+    <value>Collaborator can not be the final approver. Change the order of approval</value>
+  </data>
+  <data name="Msg_ErrSubj" xml:space="preserve">
+    <value>Enter subject</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>Error has occurred</value>
+  </data>
+  <data name="MSG_FailNetwork" xml:space="preserve">
+    <value>The network is unstable and an error has occurred.\nPlease try again in a few minutes</value>
+  </data>
+  <data name="Msg_Favorite_Alert" xml:space="preserve">
+    <value>Information has changed.\nCan not be used as an approver</value>
+  </data>
+  <data name="Msg_Favorite_Title" xml:space="preserve">
+    <value>Dept change approver list</value>
+  </data>
+  <data name="Msg_FlowErrorSet" xml:space="preserve">
+    <value>Approval information deletion is impossible in condition that approver is designated. After cancel designation of the last approver of the appro information, delete</value>
+  </data>
+  <data name="Msg_Folder" xml:space="preserve">
+    <value>Enter folder name</value>
+  </data>
+  <data name="MSG_Foraward2" xml:space="preserve">
+    <value>Select docs to delete</value>
+  </data>
+  <data name="MSG_Forward" xml:space="preserve">
+    <value>Select docs to pass</value>
+  </data>
+  <data name="MSG_ForwardOpinion" xml:space="preserve">
+    <value>Enter your feedback</value>
+  </data>
+  <data name="MSG_GETSIGN" xml:space="preserve">
+    <value>It can not be signed or used as a signature</value>
+  </data>
+  <data name="Msg_IE" xml:space="preserve">
+    <value>Create and edit approval forms are only available in the IE browser</value>
+  </data>
+  <data name="Msg_ImportantDel" xml:space="preserve">
+    <value>Want to remove it from the list?</value>
+  </data>
+  <data name="Msg_InputDraftName" xml:space="preserve">
+    <value>Enter the name</value>
+  </data>
+  <data name="Msg_LaterOnSelItem" xml:space="preserve">
+    <value>Select reason</value>
+  </data>
+  <data name="MSG_ListApprove1" xml:space="preserve">
+    <value>Contact your administrator</value>
+  </data>
+  <data name="Msg_Mail" xml:space="preserve">
+    <value>Select docs to send mail</value>
+  </data>
+  <data name="MSG_Mail2" xml:space="preserve">
+    <value>Enter the subject </value>
+  </data>
+  <data name="MSG_Mail3" xml:space="preserve">
+    <value>Select docs to circulated</value>
+  </data>
+  <data name="MSG_Move" xml:space="preserve">
+    <value>Select docs to move</value>
+  </data>
+  <data name="MSG_Move2" xml:space="preserve">
+    <value>Select docs to move</value>
+  </data>
+  <data name="MSG_NeedAddDate" xml:space="preserve">
+    <value>Enter the registration date</value>
+  </data>
+  <data name="MSG_NoSelect" xml:space="preserve">
+    <value>No docs selected</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>Error occurred during file creation. Contact your administrator</value>
+  </data>
+  <data name="MSG_Processing" xml:space="preserve">
+    <value>Edit or approve is in progress</value>
+  </data>
+  <data name="Msg_Proxy_Alert" xml:space="preserve">
+    <value>Approver information changed. This information is not available</value>
+  </data>
+  <data name="Msg_Proxy_Title" xml:space="preserve">
+    <value>Information change user list</value>
+  </data>
+  <data name="MSG_Refresh" xml:space="preserve">
+    <value>Update your docs folder</value>
+  </data>
+  <data name="Msg_ReportUserCarbonViewOption" xml:space="preserve">
+    <value>Allows the requester to view the docs for referrers</value>
+  </data>
+  <data name="Msg_Resource01" xml:space="preserve">
+    <value>Docs to be approved</value>
+  </data>
+  <data name="Msg_Resource02" xml:space="preserve">
+    <value>No delegator</value>
+  </data>
+  <data name="Msg_Resource03" xml:space="preserve">
+    <value>List of personal approval info</value>
+  </data>
+  <data name="Msg_Resource04" xml:space="preserve">
+    <value>Start delegation</value>
+  </data>
+  <data name="Msg_Resource05" xml:space="preserve">
+    <value>Stop delegation</value>
+  </data>
+  <data name="Msg_Resource06" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="Msg_Resource07" xml:space="preserve">
+    <value>No Progress</value>
+  </data>
+  <data name="Msg_Resource08" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="Msg_Resource09" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="MSG_Secure" xml:space="preserve">
+    <value>The special characters are limited because they are used for security vulnerabilities attacks</value>
+  </data>
+  <data name="MSG_SelDel" xml:space="preserve">
+    <value>Select Item to delete</value>
+  </data>
+  <data name="MSG_SelDelDoc" xml:space="preserve">
+    <value>Select Item to delete</value>
+  </data>
+  <data name="MSG_SelectDownLoad" xml:space="preserve">
+    <value>Select file to download</value>
+  </data>
+  <data name="MSG_SelFolder" xml:space="preserve">
+    <value>Select folder</value>
+  </data>
+  <data name="MSG_SelItem" xml:space="preserve">
+    <value>Select item</value>
+  </data>
+  <data name="MSG_SelPassDoc" xml:space="preserve">
+    <value>Select docs to pass</value>
+  </data>
+  <data name="MSG_SelStamp" xml:space="preserve">
+    <value>Select stamp</value>
+  </data>
+  <data name="MSG_SelTarget" xml:space="preserve">
+    <value>Select the target at the form to specify properties</value>
+  </data>
+  <data name="MSG_SelTransferDoc" xml:space="preserve">
+    <value>Select docs to transfer</value>
+  </data>
+  <data name="Msg_SeqErrZA" xml:space="preserve">
+    <value>Invalid ordering.The consensus can not be final.Re-order your approval order</value>
+  </data>
+  <data name="Msg_SeqErrZD" xml:space="preserve">
+    <value>Invalid ordering.Contact person is always in the first order.Re-order your approval order</value>
+  </data>
+  <data name="Msg_SeqErrZH" xml:space="preserve">
+    <value>Invalid ordering.Collaborator can not be final.Re-order your approval order</value>
+  </data>
+  <data name="Msg_SetLine" xml:space="preserve">
+    <value>Specify the approval information</value>
+  </data>
+  <data name="MSG_Stamp" xml:space="preserve">
+    <value>* Stamp/signature file will be attached to the docs in the size of 55*55</value>
+  </data>
+  <data name="MSG_SubDept" xml:space="preserve">
+    <value>Want to include sub-department?</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="MSG_TransferComplete" xml:space="preserve">
+    <value>Completion of transfer</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>Multilingual</value>
+  </data>
+  <data name="MultiLang2" xml:space="preserve">
+    <value>Multilingual</value>
+  </data>
+  <data name="MultiLangSetting" xml:space="preserve">
+    <value>Multilingual settings</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NeedContents" xml:space="preserve">
+    <value>Enter a information</value>
+  </data>
+  <data name="NeedFolderInfo" xml:space="preserve">
+    <value>Enter the folder information</value>
+  </data>
+  <data name="NeedFolderInfo2" xml:space="preserve">
+    <value>Company/common case, Specify the folder of information essentially.</value>
+  </data>
+  <data name="NeedFolderName" xml:space="preserve">
+    <value>Enter folder name</value>
+  </data>
+  <data name="NeedFormName" xml:space="preserve">
+    <value>Enter form name</value>
+  </data>
+  <data name="NeedLegacyName" xml:space="preserve">
+    <value>Enter Interlocking call name</value>
+  </data>
+  <data name="NetAdd" xml:space="preserve">
+    <value>Save approver in form</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NextName" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoDataProxy" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>File does not exist</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>Unused</value>
+  </data>
+  <data name="NotZA" xml:space="preserve">
+    <value>No agreement</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Opinion2" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="OrganAddtionJob" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="OrganBtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="OrganBtnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="OrganTit" xml:space="preserve">
+    <value>Org chart</value>
+  </data>
+  <data name="OrganVirtual" xml:space="preserve">
+    <value>Virtual Org chart</value>
+  </data>
+  <data name="OtherDeptDocManage" xml:space="preserve">
+    <value>Authority Mgmt.</value>
+  </data>
+  <data name="OtherDeptFolder" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Password2" xml:space="preserve">
+    <value>Enter the password</value>
+  </data>
+  <data name="Password3" xml:space="preserve">
+    <value>Enter the password again</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>Persons</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, Form, File, Requester</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="PleaseSelectPerson" xml:space="preserve">
+    <value>Select a target.</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintOpt01" xml:space="preserve">
+    <value>Excluding comments</value>
+  </data>
+  <data name="PrintOpt02" xml:space="preserve">
+    <value>Including file and related docs</value>
+  </data>
+  <data name="PrivateAppNet" xml:space="preserve">
+    <value>Approver info</value>
+  </data>
+  <data name="PrivateAppNetMgr" xml:space="preserve">
+    <value>Approver info Mgmt</value>
+  </data>
+  <data name="PrivateDraft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="PrivateDraftCnt" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="PrivateDraftName" xml:space="preserve">
+    <value>Draft name</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>Personal docs</value>
+  </data>
+  <data name="PrivateSetting" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ProcessInfo" xml:space="preserve">
+    <value>Process info</value>
+  </data>
+  <data name="ProcessingCnt" xml:space="preserve">
+    <value>No. in progress</value>
+  </data>
+  <data name="ProxyAdminSubTxt" xml:space="preserve">
+    <value>* Assign a delegate for each user.</value>
+  </data>
+  <data name="ProxyConfirm1" xml:space="preserve">
+    <value>Delegation will proceed, wait, and end according to the duration of absence.</value>
+  </data>
+  <data name="ProxyConfirm2" xml:space="preserve">
+    <value>To register?</value>
+  </data>
+  <data name="ProxyDetailInfo" xml:space="preserve">
+    <value>Delegator details</value>
+  </data>
+  <data name="ProxyRegister" xml:space="preserve">
+    <value>Due to the information already specified, registration is not possible</value>
+  </data>
+  <data name="ProxyS" xml:space="preserve">
+    <value>[D]</value>
+  </data>
+  <data name="ProxyText1" xml:space="preserve">
+    <value>* Pressing the 'stop button' will stop the delegation</value>
+  </data>
+  <data name="ProxyText2" xml:space="preserve">
+    <value>* Press 'start button' to start delegation</value>
+  </data>
+  <data name="ProxyText3" xml:space="preserve">
+    <value>* Only one delegate person can be assigned</value>
+  </data>
+  <data name="ProxyText4" xml:space="preserve">
+    <value>* I can not set a delegator</value>
+  </data>
+  <data name="ProxyText5" xml:space="preserve">
+    <value>* When a department is changed, it may be deleted from the list</value>
+  </data>
+  <data name="ProxyText6" xml:space="preserve">
+    <value>* Defendants whose delegation period is registered will automatically start and end confrontation according to the period</value>
+  </data>
+  <data name="ProxyTit" xml:space="preserve">
+    <value>Delegate</value>
+  </data>
+  <data name="RcvComplete" xml:space="preserve">
+    <value>Comp</value>
+  </data>
+  <data name="RcvUser" xml:space="preserve">
+    <value>Receiver</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="ReceiveDate" xml:space="preserve">
+    <value>Rec-date</value>
+  </data>
+  <data name="ReceiveDept" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="ReceiveSender" xml:space="preserve">
+    <value>Manage Receiver</value>
+  </data>
+  <data name="ReceiveSenderList" xml:space="preserve">
+    <value>Receiver list</value>
+  </data>
+  <data name="RejectNo" xml:space="preserve">
+    <value>(Not available rejected)</value>
+  </data>
+  <data name="RejectTarget" xml:space="preserve">
+    <value>Target to reject</value>
+  </data>
+  <data name="RejectYes" xml:space="preserve">
+    <value>(Available rejected)</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Req</value>
+  </data>
+  <data name="Report2" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="Report3" xml:space="preserve">
+    <value>Would you like to do it? </value>
+  </data>
+  <data name="Report4" xml:space="preserve">
+    <value>Check people in charge surely.</value>
+  </data>
+  <data name="ReportCompanyNum" xml:space="preserve">
+    <value>Employee number</value>
+  </data>
+  <data name="ReportDept" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="ReportTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="ReportUserCarbonViewOption" xml:space="preserve">
+    <value>Reference options</value>
+  </data>
+  <data name="ReportYear" xml:space="preserve">
+    <value>Requested year</value>
+  </data>
+  <data name="RestoreDoc" xml:space="preserve">
+    <value>Want to restore the docs?</value>
+  </data>
+  <data name="RootCompanyName" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="R_InfoC" xml:space="preserve">
+    <value>Comp</value>
+  </data>
+  <data name="R_InfoCR" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="R_InfoD" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="R_InfoH" xml:space="preserve">
+    <value>Req-hold</value>
+  </data>
+  <data name="R_InfoI" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="R_InfoR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="R_InfoT" xml:space="preserve">
+    <value>Tar-reject</value>
+  </data>
+  <data name="R_InfoTR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="R_InfoW" xml:space="preserve">
+    <value>Wait</value>
+  </data>
+  <data name="R_InfoY" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="R_InfoZ" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="R_InfoZR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="R_LIFE" xml:space="preserve">
+    <value>3years</value>
+  </data>
+  <data name="R_ZA" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+  <data name="R_ZD" xml:space="preserve">
+    <value>Appr</value>
+  </data>
+  <data name="R_ZH" xml:space="preserve">
+    <value>Coop</value>
+  </data>
+  <data name="R_ZR" xml:space="preserve">
+    <value>Circul</value>
+  </data>
+  <data name="ScriptAcc1" xml:space="preserve">
+    <value>Manage receivers</value>
+  </data>
+  <data name="ScriptAcc2" xml:space="preserve">
+    <value>Only one person per department can activate</value>
+  </data>
+  <data name="ScriptAcc3" xml:space="preserve">
+    <value>Manage approvers</value>
+  </data>
+  <data name="ScriptAcc4" xml:space="preserve">
+    <value>Specify who can see docs from other departments</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>Target : Subject, Form, File, Requester</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="SelApprover" xml:space="preserve">
+    <value>Select approver</value>
+  </data>
+  <data name="SelBaseDocList" xml:space="preserve">
+    <value>Related Docs list</value>
+  </data>
+  <data name="SelDept" xml:space="preserve">
+    <value>Select dept</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>Select the docs to be released.</value>
+  </data>
+  <data name="SelectDownLoadZIP" xml:space="preserve">
+    <value>Select download</value>
+  </data>
+  <data name="SelectPerson" xml:space="preserve">
+    <value>Select target</value>
+  </data>
+  <data name="SelectProxy" xml:space="preserve">
+    <value>Select delegator</value>
+  </data>
+  <data name="SelectProxyDiffer" xml:space="preserve">
+    <value>The same person can not be assigned</value>
+  </data>
+  <data name="SelectProxyOverlap" xml:space="preserve">
+    <value>Already assigned</value>
+  </data>
+  <data name="SelectProxyPerson" xml:space="preserve">
+    <value>Select delegator</value>
+  </data>
+  <data name="SelectTypeAbsence" xml:space="preserve">
+    <value>Select type of absence.</value>
+  </data>
+  <data name="SelMovefolder" xml:space="preserve">
+    <value>Select folder to move</value>
+  </data>
+  <data name="SelTarget" xml:space="preserve">
+    <value>Select target</value>
+  </data>
+  <data name="SelUser" xml:space="preserve">
+    <value>Select target user</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendDept" xml:space="preserve">
+    <value>Sending dept</value>
+  </data>
+  <data name="SendDeptReportUser" xml:space="preserve">
+    <value>Sending dept requester</value>
+  </data>
+  <data name="SendDeptUser" xml:space="preserve">
+    <value>Requester info</value>
+  </data>
+  <data name="SendDocInfo" xml:space="preserve">
+    <value>Sending dept info</value>
+  </data>
+  <data name="SendEDM" xml:space="preserve">
+    <value>EDM</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Deliverer</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>Send list</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="SendName" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="SeqLineAddMsg" xml:space="preserve">
+    <value>Assign users through organization charts</value>
+  </data>
+  <data name="SeqLineMemo" xml:space="preserve">
+    <value>Approver summary info</value>
+  </data>
+  <data name="SeqLineSubject" xml:space="preserve">
+    <value>Approver name</value>
+  </data>
+  <data name="SeqLineTagZA" xml:space="preserve">
+    <value>Add agreement</value>
+  </data>
+  <data name="SeqLineTagZC" xml:space="preserve">
+    <value>Add reference</value>
+  </data>
+  <data name="SeqLineTagZD" xml:space="preserve">
+    <value>Add approval (normal)</value>
+  </data>
+  <data name="SeqLineTagZH" xml:space="preserve">
+    <value>Add Cooperation</value>
+  </data>
+  <data name="SeqLineTagZP" xml:space="preserve">
+    <value>Add Receive(can't reject)</value>
+  </data>
+  <data name="SeqLineTagZQ" xml:space="preserve">
+    <value>Add Receive(can reject)</value>
+  </data>
+  <data name="SeqLineTit" xml:space="preserve">
+    <value>Add approver info</value>
+  </data>
+  <data name="SeqTitDel" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="SeqTitInfo" xml:space="preserve">
+    <value>Approver info</value>
+  </data>
+  <data name="SeqTitOrder" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="SeqTitSeq" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="SeqTitStat" xml:space="preserve">
+    <value>Approval Status</value>
+  </data>
+  <data name="SeqTitZA" xml:space="preserve">
+    <value>Agreement</value>
+  </data>
+  <data name="SeqTitZC" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="SeqTitZD" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="SeqTitZH" xml:space="preserve">
+    <value>Cooperation</value>
+  </data>
+  <data name="SeqTitZP" xml:space="preserve">
+    <value>Receive(can't reject)</value>
+  </data>
+  <data name="SeqTitZQ" xml:space="preserve">
+    <value>Receive(can reject)</value>
+  </data>
+  <data name="SetAdministrator" xml:space="preserve">
+    <value>Assign administrator(need to be changed)</value>
+  </data>
+  <data name="SetAppLine" xml:space="preserve">
+    <value>Assign approval order</value>
+  </data>
+  <data name="SetBasicInfo" xml:space="preserve">
+    <value>* Specify basic information related to the docs</value>
+  </data>
+  <data name="SetEDM" xml:space="preserve">
+    <value>Transference setting</value>
+  </data>
+  <data name="SetETC" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SetFormInfo" xml:space="preserve">
+    <value>Set form info</value>
+  </data>
+  <data name="SetProxy" xml:space="preserve">
+    <value>Delegater Settings</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Setting2" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="SettingApprovePwd" xml:space="preserve">
+    <value>Use E-Approval only password</value>
+  </data>
+  <data name="SettingEnv" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="SetUp" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="ShortContents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="ShortFormName" xml:space="preserve">
+    <value>Form abbreviation</value>
+  </data>
+  <data name="ShortListMsg" xml:space="preserve">
+    <value>Short comment on the contents of the docs are not included.</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>Short reply</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>Etc.</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>Work talk</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>View images</value>
+  </data>
+  <data name="Sign" xml:space="preserve">
+    <value>Add Sign</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="SignatureClear" xml:space="preserve">
+    <value>Erase</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Stamp" xml:space="preserve">
+    <value>Stamp</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than the termination date.</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>The ending time cannot be same or lesser than the starting date.</value>
+  </data>
+  <data name="StatC" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="StatD" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Assign delegation</value>
+  </data>
+  <data name="StatExcel" xml:space="preserve">
+    <value>View Excel</value>
+  </data>
+  <data name="StatGraph" xml:space="preserve">
+    <value>View Graph</value>
+  </data>
+  <data name="StatMonth0" xml:space="preserve">
+    <value>Form name / docs status</value>
+  </data>
+  <data name="StatMonth1" xml:space="preserve">
+    <value>Jan.</value>
+  </data>
+  <data name="StatMonth10" xml:space="preserve">
+    <value>Oct.</value>
+  </data>
+  <data name="StatMonth11" xml:space="preserve">
+    <value>Nov.</value>
+  </data>
+  <data name="StatMonth12" xml:space="preserve">
+    <value>Dec.</value>
+  </data>
+  <data name="StatMonth2" xml:space="preserve">
+    <value>Feb.</value>
+  </data>
+  <data name="StatMonth3" xml:space="preserve">
+    <value>Mar.</value>
+  </data>
+  <data name="StatMonth4" xml:space="preserve">
+    <value>Apr.</value>
+  </data>
+  <data name="StatMonth5" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="StatMonth6" xml:space="preserve">
+    <value>Jun.</value>
+  </data>
+  <data name="StatMonth7" xml:space="preserve">
+    <value>Jul.</value>
+  </data>
+  <data name="StatMonth8" xml:space="preserve">
+    <value>Aug.</value>
+  </data>
+  <data name="StatMonth9" xml:space="preserve">
+    <value>Sept.</value>
+  </data>
+  <data name="StatMonthDept" xml:space="preserve">
+    <value>Dept Monthly Status</value>
+  </data>
+  <data name="StatMonthForm" xml:space="preserve">
+    <value>Form monthly status</value>
+  </data>
+  <data name="StatMonthUser" xml:space="preserve">
+    <value>Individual monthly status</value>
+  </data>
+  <data name="StatR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="StatSub" xml:space="preserve">
+    <value>* Monthly Statistics.</value>
+  </data>
+  <data name="StatSum" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="StatTitle" xml:space="preserve">
+    <value>Statistics - monthly / period status</value>
+  </data>
+  <data name="StatTop1" xml:space="preserve">
+    <value>Condition-specific usage</value>
+  </data>
+  <data name="StatTop10" xml:space="preserve">
+    <value>Search the period</value>
+  </data>
+  <data name="StatTop2" xml:space="preserve">
+    <value>Total no. of docs</value>
+  </data>
+  <data name="StatTop3" xml:space="preserve">
+    <value>No. of completed</value>
+  </data>
+  <data name="StatTop4" xml:space="preserve">
+    <value>No. of progress</value>
+  </data>
+  <data name="StatTop5" xml:space="preserve">
+    <value>No. of rejected</value>
+  </data>
+  <data name="StatTop6" xml:space="preserve">
+    <value>No. of holding</value>
+  </data>
+  <data name="StatTop7" xml:space="preserve">
+    <value>Status of forms Stars Top</value>
+  </data>
+  <data name="StatTop8" xml:space="preserve">
+    <value>Status of dept Top</value>
+  </data>
+  <data name="StatTop9" xml:space="preserve">
+    <value>Status of personel Top</value>
+  </data>
+  <data name="StatTot" xml:space="preserve">
+    <value>Tot.</value>
+  </data>
+  <data name="StatUnit" xml:space="preserve">
+    <value>Case</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusC" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="StatusD" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="StatusH" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="StatusI" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="StatusLookup" xml:space="preserve">
+    <value>LookUp list</value>
+  </data>
+  <data name="StatusP" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="StatusR" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="StatusW" xml:space="preserve">
+    <value>Wait</value>
+  </data>
+  <data name="StatW" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TagDic_BODY" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="TagDic_BODY_etc" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="TagDic_COMPANY" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="TagDic_DATE" xml:space="preserve">
+    <value>Req-date</value>
+  </data>
+  <data name="TagDic_EDITOR" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="TagDic_EMPNUM" xml:space="preserve">
+    <value>Company number</value>
+  </data>
+  <data name="TagDic_ENFORCEDEPTNAME" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="TagDic_ENFORCENAME" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="TagDic_ENFORCERECEIVECARBON" xml:space="preserve">
+    <value>Official reference</value>
+  </data>
+  <data name="TagDic_FLOWZA" xml:space="preserve">
+    <value>Agreement group</value>
+  </data>
+  <data name="TagDic_FLOWZD" xml:space="preserve">
+    <value>Business group</value>
+  </data>
+  <data name="TagDic_FLOWZH" xml:space="preserve">
+    <value>Cooperative group</value>
+  </data>
+  <data name="TagDic_FLOWZR" xml:space="preserve">
+    <value>Circulated group</value>
+  </data>
+  <data name="TagDic_INFO0" xml:space="preserve">
+    <value>App-date</value>
+  </data>
+  <data name="TagDic_INFO1" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TagDic_INFO10" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="TagDic_INFO11" xml:space="preserve">
+    <value>Duty Name Date</value>
+  </data>
+  <data name="TagDic_INFO12" xml:space="preserve">
+    <value>Dept Title Name Date</value>
+  </data>
+  <data name="TagDic_INFO13" xml:space="preserve">
+    <value>Name Date Hours</value>
+  </data>
+  <data name="TagDic_INFO14" xml:space="preserve">
+    <value>Date (MM/DD)</value>
+  </data>
+  <data name="TagDic_INFO15" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TagDic_INFO2" xml:space="preserve">
+    <value>Title Name Date</value>
+  </data>
+  <data name="TagDic_INFO3" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TagDic_INFO4" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TagDic_INFO5" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="TagDic_INFO6" xml:space="preserve">
+    <value>Name Date</value>
+  </data>
+  <data name="TagDic_INFO7" xml:space="preserve">
+    <value>Dept Title Name Date</value>
+  </data>
+  <data name="TagDic_INFO8" xml:space="preserve">
+    <value>Date Hours</value>
+  </data>
+  <data name="TagDic_INFO9" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="TagDic_LIFE" xml:space="preserve">
+    <value>Retention</value>
+  </data>
+  <data name="TagDic_NO" xml:space="preserve">
+    <value>Docs number</value>
+  </data>
+  <data name="TagDic_OPINION" xml:space="preserve">
+    <value>comments</value>
+  </data>
+  <data name="TagDic_OPINIONVIEW" xml:space="preserve">
+    <value>(Attach comments)</value>
+  </data>
+  <data name="TagDic_Print" xml:space="preserve">
+    <value>Print area</value>
+  </data>
+  <data name="TagDic_SUBJ" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TagDic_UPDPT" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="TagDic_UPJC" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TagDic_UPNM" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TagDic_ZA" xml:space="preserve">
+    <value>Agreement</value>
+  </data>
+  <data name="TagDic_ZC" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="TagDic_ZD" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="TagDic_ZD0" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="TagDic_ZH" xml:space="preserve">
+    <value>Cooperation</value>
+  </data>
+  <data name="TagDic_ZP" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="TagDic_ZP0" xml:space="preserve">
+    <value>Received contact person</value>
+  </data>
+  <data name="TagDic_ZR" xml:space="preserve">
+    <value>Circulated</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>Taiwanese</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="TargetDept" xml:space="preserve">
+    <value>Target dept</value>
+  </data>
+  <data name="TargetFolderInfo" xml:space="preserve">
+    <value>Target folder</value>
+  </data>
+  <data name="TargetUser" xml:space="preserve">
+    <value>User info</value>
+  </data>
+  <data name="TempFolder" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="TitGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="TitleFolderAuth" xml:space="preserve">
+    <value>View full history</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TitleName2" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TitleSetting" xml:space="preserve">
+    <value>Set up</value>
+  </data>
+  <data name="TitMember" xml:space="preserve">
+    <value>Personel</value>
+  </data>
+  <data name="TitSec" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TitSub" xml:space="preserve">
+    <value>Below</value>
+  </data>
+  <data name="Tit_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Tit_File" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Tit_FlowAdd" xml:space="preserve">
+    <value>Add approver info</value>
+  </data>
+  <data name="Tit_FlowDel" xml:space="preserve">
+    <value>Delete approver info</value>
+  </data>
+  <data name="Tit_Life" xml:space="preserve">
+    <value>Everlasting</value>
+  </data>
+  <data name="Tit_Life1" xml:space="preserve">
+    <value>1 year</value>
+  </data>
+  <data name="Tit_Life2" xml:space="preserve">
+    <value>2 years</value>
+  </data>
+  <data name="Tit_Life3" xml:space="preserve">
+    <value>3 years</value>
+  </data>
+  <data name="Tit_Life4" xml:space="preserve">
+    <value>4Year</value>
+  </data>
+  <data name="Tit_Life5" xml:space="preserve">
+    <value>5Year</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="TransferAfter" xml:space="preserve">
+    <value>Post-change info</value>
+  </data>
+  <data name="TransferBefore" xml:space="preserve">
+    <value>Before change info</value>
+  </data>
+  <data name="TransferBtnCopy" xml:space="preserve">
+    <value>Select copy</value>
+  </data>
+  <data name="TransferBtnCopyAll" xml:space="preserve">
+    <value>Full copy</value>
+  </data>
+  <data name="TransferBtnDeptA" xml:space="preserve">
+    <value>After change</value>
+  </data>
+  <data name="TransferBtnDeptB" xml:space="preserve">
+    <value>Dept before change</value>
+  </data>
+  <data name="TransferBtnDeptDel" xml:space="preserve">
+    <value>Delete before change dept</value>
+  </data>
+  <data name="TransferBtnSubmit" xml:space="preserve">
+    <value>Select transfer</value>
+  </data>
+  <data name="TransferBtnSubmitAll" xml:space="preserve">
+    <value>Full transfer</value>
+  </data>
+  <data name="TransferBtnUserA" xml:space="preserve">
+    <value>After change</value>
+  </data>
+  <data name="TransferBtnUserB" xml:space="preserve">
+    <value>Before change</value>
+  </data>
+  <data name="TransferDate" xml:space="preserve">
+    <value>Trans-date</value>
+  </data>
+  <data name="TransferDept" xml:space="preserve">
+    <value>Transfer dept</value>
+  </data>
+  <data name="TransferDoc" xml:space="preserve">
+    <value>Docs transfer</value>
+  </data>
+  <data name="TransferMsgCopy" xml:space="preserve">
+    <value>Want to copy</value>
+  </data>
+  <data name="TransferMsgCopyAll" xml:space="preserve">
+    <value>Want to copy the whole thing?</value>
+  </data>
+  <data name="TransferMsgSubmit" xml:space="preserve">
+    <value>Want to transfer?</value>
+  </data>
+  <data name="TransferMsgSubmitAll" xml:space="preserve">
+    <value>Want to transfer the whole thing?</value>
+  </data>
+  <data name="TransferMsgTargetInfo" xml:space="preserve">
+    <value>Select a destination.</value>
+  </data>
+  <data name="TransferName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="TransferWay" xml:space="preserve">
+    <value>Methods</value>
+  </data>
+  <data name="TransFolderApp" xml:space="preserve">
+    <value>Approved docs</value>
+  </data>
+  <data name="TransFolderAppA" xml:space="preserve">
+    <value>Final approve docs folder</value>
+  </data>
+  <data name="TransFolderCarbon" xml:space="preserve">
+    <value>Reference docs folder</value>
+  </data>
+  <data name="TransFolderCirR" xml:space="preserve">
+    <value>Received circulation docs folder</value>
+  </data>
+  <data name="TransFolderCirS" xml:space="preserve">
+    <value>Sent circulation docs folder</value>
+  </data>
+  <data name="TransFolderDept" xml:space="preserve">
+    <value>Deptment docs</value>
+  </data>
+  <data name="TransFolderForward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="TransFolderPri" xml:space="preserve">
+    <value>Personel docs folder</value>
+  </data>
+  <data name="TypeAbsence" xml:space="preserve">
+    <value>Type of absence</value>
+  </data>
+  <data name="UpFolder" xml:space="preserve">
+    <value>Upperclass folder</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="UpperFolderName" xml:space="preserve">
+    <value>Upperclass folder name</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>Using Active X</value>
+  </data>
+  <data name="UseDoc" xml:space="preserve">
+    <value>Using docs</value>
+  </data>
+  <data name="UseDocNumber" xml:space="preserve">
+    <value>When creating a docs number, use it.</value>
+  </data>
+  <data name="User1" xml:space="preserve">
+    <value>User (required)</value>
+  </data>
+  <data name="User2" xml:space="preserve">
+    <value>User (optional)</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="UsingName" xml:space="preserve">
+    <value>It is in use</value>
+  </data>
+  <data name="VewOtherDeptDoc" xml:space="preserve">
+    <value>Authority Mgmt.</value>
+  </data>
+  <data name="ViewAuth" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="ViewBaseDoc" xml:space="preserve">
+    <value>Related docs</value>
+  </data>
+  <data name="ViewCirOpinion" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ViewDoc" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewForm" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="ViewForwardOpinion" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ViewHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="ViewingDate" xml:space="preserve">
+    <value>Conf-date</value>
+  </data>
+  <data name="ViewingForce" xml:space="preserve">
+    <value>Initialize</value>
+  </data>
+  <data name="ViewingForceMsg" xml:space="preserve">
+    <value>Want to initialize?</value>
+  </data>
+  <data name="ViewOpinion" xml:space="preserve">
+    <value>View comments</value>
+  </data>
+  <data name="ViewZPZQ" xml:space="preserve">
+    <value>View received docs</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>Add a comment</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>Req-date</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>Agreement</value>
+  </data>
+  <data name="ZACheck" xml:space="preserve">
+    <value>Parallel agreement can not be added because the previous approval stage</value>
+  </data>
+  <data name="ZD" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="ZD0" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ZDZP" xml:space="preserve">
+    <value>Rec/Send</value>
+  </data>
+  <data name="ZH" xml:space="preserve">
+    <value>Cooperation</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="ZP" xml:space="preserve">
+    <value>Not return receive</value>
+  </data>
+  <data name="ZQ" xml:space="preserve">
+    <value>Possible return received</value>
+  </data>
+  <data name="ZR" xml:space="preserve">
+    <value>Circulate</value>
+  </data>
+  <data name="InputSearch" xml:space="preserve">
+    <value>Enter search term</value>
+  </data>
+  <data name="Transferbtn" xml:space="preserve">
+    <value>Select department</value>
+  </data>
+  <data name="TransferDocDept" xml:space="preserve">
+    <value>Transfer-Dept</value>
+  </data>
+  <data name="TransferDocUser" xml:space="preserve">
+    <value>Transfer-User</value>
+  </data>
+  <data name="TransferInfo" xml:space="preserve">
+    <value>Transfer Department</value>
+  </data>
+  <data name="TransferMsgDept" xml:space="preserve">
+    <value>Select department</value>
+  </data>
+  <data name="TransferTarget" xml:space="preserve">
+    <value>Target Department</value>
+  </data>
+  <data name="AccessGrade" xml:space="preserve">
+    <value>Manage rating</value>
+  </data>
+  <data name="AccessGradeDept" xml:space="preserve">
+    <value>appointed</value>
+  </data>
+  <data name="AccessGradeDeptN" xml:space="preserve">
+    <value>Unspecified</value>
+  </data>
+  <data name="AccessGradeName" xml:space="preserve">
+    <value>Browse rating</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>Browse rating</value>
+  </data>
+  <data name="Msg_ErrAccessGradeModify" xml:space="preserve">
+    <value>It is a rank applied to other grades. Apply to current rating?</value>
+  </data>
+  <data name="Msg_ErrAccessGradeName" xml:space="preserve">
+    <value>Please enter a rating class name.</value>
+  </data>
+  <data name="Transferbtn1" xml:space="preserve">
+    <value>Select user</value>
+  </data>
+  <data name="TransferCap1" xml:space="preserve">
+    <value>* Will be transferred, by such documents should be transferred from the selected destination document during transfer.</value>
+  </data>
+  <data name="TransferMsgChk" xml:space="preserve">
+    <value>Choose different information for transfer and transfer</value>
+  </data>
+  <data name="DelAccessGradeCheck" xml:space="preserve">
+    <value>The browsing class used can not be deleted. Please deactivate.</value>
+  </data>
+  <data name="IsBase" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="SetBase" xml:space="preserve">
+    <value>Set Default</value>
+  </data>
+  <data name="MsgAccessGrade1" xml:space="preserve">
+    <value>Specify only one default value</value>
+  </data>
+  <data name="MsgAccessGrade2" xml:space="preserve">
+    <value>Default specifies only the active item</value>
+  </data>
+  <data name="MsgAccessGrade3" xml:space="preserve">
+    <value>Want to set it as default?</value>
+  </data>
+  <data name="TransferMsgUser" xml:space="preserve">
+    <value>Please select a user</value>
+  </data>
+  <data name="MobileWrite" xml:space="preserve">
+    <value>Using Mobile Write</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="ReceiveDoc" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="CancelSusin" xml:space="preserve">
+    <value>Cancel received docs</value>
+  </data>
+  <data name="ConfirmCancelSusin" xml:space="preserve">
+    <value>Cancel it?</value>
+  </data>
+  <data name="DelayAppState" xml:space="preserve">
+    <value>The status is pending\nPlease try again later</value>
+  </data>
+  <data name="MyTurnAppState" xml:space="preserve">
+    <value>This document is not currently subject to approval.\nGo to the document view page</value>
+  </data>
+  <data name="MyTurnSusin" xml:space="preserve">
+    <value>This document is not currently received\nGo to the list page</value>
+  </data>
+  <data name="MSG_SelBundle" xml:space="preserve">
+    <value>Please select the document you want to batch settlement.</value>
+  </data>
+  <data name="Msg_ErrBaseSameDoc" xml:space="preserve">
+    <value>The same document cannot be added</value>
+  </data>
+  <data name="Btn_DisuseDel" xml:space="preserve">
+    <value>Discard(Delete)</value>
+  </data>
+  <data name="MSG_DisuseDel" xml:space="preserve">
+    <value>Documents in progress are permanently deleted and cannot be recovered.</value>
+  </data>
+</root>

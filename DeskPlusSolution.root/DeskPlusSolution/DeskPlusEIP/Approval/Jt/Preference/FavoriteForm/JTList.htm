@@ -1,0 +1,34 @@
+﻿<table class="table_typeA">
+<caption>자주사용하는양식</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="200px" />
+    <col width="200px" />
+    <col width="*"/>
+    <col width="100px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="center"><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+    <th class="center" id="r_formname"></th>
+    <th class="center" id="r_foldername"></th>
+    <th class="center" id="r_pathname"></th>
+    <th class="center" id="r_writedate"></th>
+</tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.FavoriteFormID }" value="{ $T.List.FavoriteFormID }" /></td>
+        <td class="center"><a href="#" onclick="javascript:List.View('{ $T.List.FormID }')" style="cursor:pointer" title="">{ $T.List.FormBase }</a></td>
+        <td class="center">{ $T.List.NameBase } </td>
+        <td>{ $T.List.PathNameBase } </td>
+        <td class="center">{ $T.List.WriteDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

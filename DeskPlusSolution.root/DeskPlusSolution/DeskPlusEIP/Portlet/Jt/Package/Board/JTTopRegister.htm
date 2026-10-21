@@ -1,0 +1,13 @@
+﻿<ul>
+{#foreach $T as List}
+    <li>
+        <span class="list-titlecnt">	
+        { $T.List.Row }
+        <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;">{ $T.List.DeptBase } { $T.List.NameBase }</a>        
+        </span>
+        <span class="list-cnt">{ $T.List.Cnt }</span>
+    </li>
+{#else}     
+        <li><span class="NoListData"></span></li>            
+{#/for}  
+</ul>

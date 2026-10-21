@@ -1,0 +1,36 @@
+﻿<table class="tbl_type" border="1" cellspacing="0">
+<caption>최근 첨부파일 사용내역</caption>
+<colgroup>
+    <col width="30px" />
+    <col />
+    <col width="50px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+<tr>
+    <th scope="col"><span id="spFileTh01"></span></th>
+    <th scope="col"><span id="spFileTh02"></span></th>
+    <th scope="col"><span id="spFileTh04"></span></th>
+    <th scope="col"><span id="spFileTh03"></span></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="center"><span class="{ $T.List.ImageType }"></span></td>
+    <td class="suj">
+        <div style="text-overflow:ellipsis; overflow:hidden" title="{ $T.List.FileName }">
+        <a href="#" onclick="javascript:Content.FileDownload('{ $T.List.FilePath }','{ $T.List.FileName }','{ $T.List.FileGUID }')">{ $T.List.FileName }</a>
+        {#if $T.List.ShowNew == 'Y'} <img class="fBtnNew" alt="" />{#/if}  
+        </div>
+    </td>
+    <td class="center"><a href="#" onclick="Content.View('{ $T.List.CompanyID }','{ $T.List.DocumentID }');"><span class="docview"></span></a></td>
+    <td class="center">{ $T.List.CompleteDateStr }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4"><span id="spAttachNoData"></span></td>
+</tr>
+{#/for}
+</tbody>
+</table>

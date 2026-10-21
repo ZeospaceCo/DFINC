@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Rss.aspx.cs" Inherits="Zeospace.DeskPlus.Board.Web.Rss.Rss" %>

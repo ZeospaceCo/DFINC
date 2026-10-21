@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Rejoignez la communauté de retourner</Title>
+	<ContentHTML>
+		[Rejoignez la communauté de retourner]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+	</ContentHTML>
+</ContentInfo>

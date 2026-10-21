@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_PROC_SelectReport" Value="DPM_APP_DocProcess_SelReport" Content="상신리스트"></Item>
+  <Item ID="SEL_PROC_SelectApprove" Value="DPM_APP_DocProcess_SelApprove" Content="미결리스트"></Item>
+  <Item ID="SEL_PROC_SelectRelated" Value="DPM_APP_DocProcess_SelRelated" Content="관계있는리스트"></Item>
+  <Item ID="SEL_QRY_DocProcessInfo" Value="SELECT * FROM DP_APP_DocProcess WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="특정문서정보 가져오기"></Item>
+  <Item ID="SEL_QRY_DocCompleteInfo" Value="SELECT * FROM DP_App_Doc WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="특정문서정보 가져오기(완결문서)"></Item>
+  <Item ID="SEL_QRY_SelectSeqList"
+		  Value="SELECT 
+          ISNULL(CompanyID, 0) AS CompanyID,
+          ISNULL(DocumentID, 0) AS DocumentID,
+          ISNULL(Sequence, 0) AS Sequence,
+          ISNULL(ApprovalTag,'') AS ApprovalTag,
+          ISNULL(MyTurn,'') AS MyTurn,
+          ISNULL(UserID, 0) AS UserID,
+          ISNULL(NameBase,'') AS NameBase,
+          ISNULL(NameKo,'') AS NameKo,
+          ISNULL(NameEn,'') AS NameEn,
+          ISNULL(NameJa,'') AS NameJa,
+          ISNULL(NameFr,'') AS NameFr,
+          ISNULL(NameZhcn,'') AS NameZhcn,
+          ISNULL(NameZhtw,'') AS NameZhtw,          
+          ISNULL(TitleBase,'') AS TitleBase,
+          ISNULL(TitleKo,'') AS TitleKo,
+          ISNULL(TitleEn,'') AS TitleEn,
+          ISNULL(TitleJa,'') AS TitleJa,
+          ISNULL(TitleFr,'') AS TitleFr,
+          ISNULL(TitleZhcn,'') AS TitleZhcn,
+          ISNULL(TitleZhtw,'') AS TitleZhtw,          
+          ISNULL(DeptBase,'') AS DeptBase,
+          ISNULL(DeptKo,'') AS DeptKo,
+          ISNULL(DeptEn,'') AS DeptEn,
+          ISNULL(DeptJa,'') AS DeptJa,
+          ISNULL(DeptFr,'') AS DeptFr,          
+          ISNULL(DeptZhcn,'') AS DeptZhcn,
+          ISNULL(DeptZhtw,'') AS DeptZhtw,          
+          ISNULL(ApprovalDate,'') AS ApprovalDate,
+          ISNULL(ApprovalType,'') AS ApprovalType,
+          ISNULL(Proxy,'N') AS Proxy,          
+          ISNULL(ProxyNameBase,'') AS ProxyNameBase,
+          ISNULL(ProxyNameKo,'') AS ProxyNameKo,
+          ISNULL(ProxyNameEn,'') AS ProxyNameEn,
+          ISNULL(ProxyNameJa,'') AS ProxyNameJa,
+          ISNULL(ProxyNameFr,'') AS ProxyNameFr,
+          ISNULL(ProxyNameZhcn,'') AS ProxyNameZhcn,
+          ISNULL(ProxyNameZhtw,'') AS ProxyNameZhtw,
+          ISNULL(P_TitleBase,'') AS ProxyTitleBase,
+          ISNULL(P_TitleKo,'') AS ProxyTitleKo,
+          ISNULL(P_TitleEn,'') AS ProxyTitleEn,
+          ISNULL(P_TitleJa,'') AS ProxyTitleJa,
+          ISNULL(P_TitleFr,'') AS ProxyTitleFr,
+          ISNULL(P_TitleZhcn,'') AS ProxyTitleZhcn,
+          ISNULL(P_TitleZhtw,'') AS ProxyTitleZhtw,
+          ISNULL(P_DeptBase,'') AS ProxyDeptBase,
+          ISNULL(P_DeptKo,'') AS ProxyDeptKo,
+          ISNULL(P_DeptEn,'') AS ProxyDeptEn,
+          ISNULL(P_DeptJa,'') AS ProxyDeptJa,
+          ISNULL(P_DeptFr,'') AS ProxyDeptFr,
+          ISNULL(P_DeptZhcn,'') AS ProxyDeptZhcn,
+          ISNULL(P_DeptZhtw,'') AS ProxyDeptZhtw  FROM VW_APP_Seq WITH(NOLOCK) 
+        WHERE CompanyID = '{0}' AND DocumentID = '{1}' 
+        ORDER BY Sequence ASC"
+		  Content="결재선정보리스트(진행중)">
+  </Item>
+  <Item ID="SEL_QRY_SelectSeq" Value="SELECT Sequence, ApprovalTag, UserID, NameBase FROM DP_App_Seq WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}' AND Sequence >= '{2}'" Content="결재선 정보 가져오기"></Item>
+  <Item ID="SEL_PROC_SelectAttList" Value="DP_APP_Attach_SelDocID" Content="첨부파일리스트" />
+  <Item ID="SEL_PROC_SelectDSAtList" Value="DP_APP_DS_SelList" Content="닥스트리밍 파일 리스트" />
+  <Item ID="SEL_PROC_SelectBaseList" Value="DP_APP_BaseDoc_SelDocID" Content="근거문서리스트" />
+  <Item ID="UPT_PROC_Viewing" Value="DPM_APP_Seq_UpdViewing" Content="결재진행중 체크" />
+  <Item ID="UPT_PROC_DocViewing" Value="DPM_APP_Doc_UpdViewing" Content="결재진행을 안하는 것" />
+  <Item ID="UPT_PROC_APPROVES" Value="DPM_APP_DocProcess_ApproveS" Content="승인" />
+  <Item ID="UPT_PROC_APPROVEA" Value="DPM_APP_DocProcess_ApproveA" Content="전결" />
+  <Item ID="UPT_PROC_APPROVEH" Value="DPM_APP_DocProcess_ApproveH" Content="합의" />
+  <Item ID="UPT_PROC_CANCEL" Value="DPM_APP_DocProcess_Cancel" Content="결재취소" />
+  <Item ID="UPT_PROC_RETURN" Value="DPM_APP_DocProcess_Return" Content="반려" />
+  <Item ID="UPT_PROC_APPROVEL" Value="DPM_APP_DocProcess_ApproveL" Content="후열" />
+  <Item ID="SEL_PROC_REJECT" Value="DP_APP_Seq_SelByReject" Content="반려대상자 정보 가져오기" />
+  <Item ID="SEL_PROC_DOCUMENTS_REPORT" Value="DPM_APP_List_TopDown_Report" Content="전자결재 이전,이후(상신리스트)" />
+  <Item ID="SEL_PROC_DOCUMENTS_APPROVE" Value="DPM_APP_List_TopDown_Approve" Content="전자결재 이전,이후(미결리스트)" />
+  <Item ID="SEL_PROC_DOCUMENTS_RELATED" Value="DPM_APP_List_TopDown_Related" Content="전자결재 이전,이후(관계있는리스트)" />
+  <Item ID="SEL_PROC_CNT" Value="DPM_APP_SelCnt" Content="전자결재 카운트 가져오기 " />
+  <Item ID="INS_PROC_LOG" Value="DPM_APP_Log_Ins" Content="전자결재 로그 남기기"></Item>
+  <Item ID="SEL_PROC_PROXY_USERID" Value="DP_APP_Proxy_SelByUserID" Content="대결자 정보" />
+  <Item ID="SEL_QRY_SEQUENCES_MYTURN" Value="SELECT Myturn FROM DP_APP_SEQ WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID = '{1}' AND ApprovalTag = '{2}'" Content="전자결재 결재 순서 확인" />
+  <Item ID="UPT_PROC_CONTENT" Value="DPM_APP_Doc_UpdContent" Content="문서내용수정" />
+  <Item ID="SEL_PROC_ALARMCOMPLETE" Value="DP_APP_Seq_SelAlarmComplete" Content="완결알람" />
+  <Item ID="SEL_PROC_ALARMOPINION" Value="DP_APP_Seq_SelAlarmOpinion" Content="첨언알람" />
+  <Item ID="SEL_PROC_ALARMAPPROVE" Value="DP_APP_Seq_SelAlarmNext" Content="결재알람" />
+  <Item ID="SEL_PROC_ALARMREJECT" Value="DP_APP_Seq_SelAlarmReject" Content="반려알람" />
+  <Item ID="SEL_PROC_ALARMOPINIONALL" Value="DP_APP_Seq_SelAlarmOpinionAddAll" Content="첨언추가알람" />
+  <Item ID="SEL_QRY_SelectDoc" Value="SELECT * FROM VW_APP_Doc WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}' 
+		  UNION ALL SELECT * FROM VW_App_DocProcess WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="문서정보 가져오기"></Item>
+  <Item ID="SEL_PROC_NEXTCNT" Value="DP_APP_Seq_SelByNextCnt" Content="발신건수-수신건수" />
+  <Item ID="SEL_QRY_DocInfo" Value="SELECT * FROM VW_APP_Doc WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="완결문서정보 가져오기"></Item>
+  <Item ID="SEL_QRY_FormInfo" Value="SELECT * FROM DP_APP_Form WITH(NOLOCK) WHERE CompanyID = '{0}' AND FormID='{1}'" Content="양식정보 가져오기"></Item>
+  <Item ID="INS_PROC_EDMDocument" Value="SQL_DP_DOCUMENT_Document_Insert" Content="EDM Document 저장"></Item>
+  <Item ID="INS_PROC_EDMVersion" Value="SQL_DP_DOCUMENT_Version_Insert" Content="EDM Version 저장"></Item>
+  <Item ID="INS_PROC_EDMCoworker" Value="SQL_DP_DOCUMENT_Coworker_Insert" Content="EDM Coworker 저장"></Item>
+  <Item ID="INS_PROC_EDMFile" Value="SQL_DP_DOCUMENT_File_Insert" Content="EDM File 저장"></Item>
+  <Item ID="INS_PROC_EDMSearch" Value="SQL_DP_DOCUMENT_Search_InsertDelete" Content="EDM Search 저장"></Item>
+  <Item ID="SEL_PROC_ACCOUNT" Value="SELECT * FROM VW_UserInfo WITH(NOLOCK) WHERE CompanyID = '{0}' AND ActiveCompany = '1' AND UserID='{1}' AND DeptID = '{2}'" Content="사용자 정보 가져오기" />
+  <Item ID="SEL_UserInfo" Value="SELECT * FROM VW_UserInfo WHERE CompanyID = {2}  AND ActiveCompany = '1' AND UserID = {3} AND ActiveUser IN({0}) AND BaseDept IN({1})" Content="사용자 정보 가져오기" />
+  <Item ID="SEL_UserEnv" Value="SELECT * FROM DP_ACC_UserEnv WITH(NOLOCK) WHERE CompanyID = '{0}' AND UserID = '{1}'" Content="UserID로 사용자별 전자결재 알람 설정값 가져오기"/>
+  <Item ID="SEL_PROC_MENUCNT" Value="DPM_APP_SelMenuCnt" Content="전자결재 카운트 가져오기(메뉴)" />
+  <Item ID="SEL_PROC_BADGECNT" Value="DPM_APP_SelBadgeCnt" Content="Badge 카운트 가져오기(App)" />
+  <Item ID="SEL_PROC_DocPublic" Value="DPM_APP_Doc_SelPublic" Content="부서별문서함"></Item>
+  <Item ID="SEL_PROC_DocPrivate" Value="DPM_APP_Doc_SelPrivate" Content="개인별문서함"></Item>
+  <Item ID="SEL_PROC_DocApproval" Value="DPM_APP_Doc_SelApproval" Content="완결결재문서함"></Item>
+  <Item ID="SEL_PROC_DocReject" Value="DPM_APP_Doc_SelReject" Content="반려문서함"></Item>
+  <Item ID="SEL_PROC_DocArbitrary" Value="DPM_APP_Doc_SelArbitrary" Content="전결문서함"></Item>
+  <Item ID="SEL_PROC_DocCarboncopy" Value="DPM_APP_Doc_SelCarboncopy" Content="참조문서함"></Item>
+  <Item ID="SEL_PROC_DocForward" Value="DPM_APP_Doc_SelForward" Content="전달문서함"></Item>
+  <Item ID="SEL_PROC_CirRecv" Value="DPM_APP_CirDoc_SelRecv" Content="받은회람함"></Item>
+  <Item ID="SEL_PROC_CirSend" Value="DPM_APP_CirDoc_SelSend" Content="보낸회람함"></Item>
+  <Item ID="SEL_PROC_DocProcessPrivate" Value="DPM_APP_DocProcess_SelPrivate" Content="개인별 진행중인문서"></Item>
+  <Item ID="SEL_QRY_SeqBackUpList"
+		  Value="SELECT ISNULL(Sequence, 0) AS Sequence,
+          ISNULL(ApprovalTag,'') AS ApprovalTag,
+          ISNULL(NameBase,'') AS NameBase,
+          ISNULL(NameKo,'') AS NameKo,
+          ISNULL(NameEn,'') AS NameEn,
+          ISNULL(NameJa,'') AS NameJa,
+          ISNULL(NameFr,'') AS NameFr,
+          ISNULL(NameZhcn,'') AS NameZhcn,
+          ISNULL(NameZhtw,'') AS NameZhtw,          
+          ISNULL(TitleBase,'') AS TitleBase,
+          ISNULL(TitleKo,'') AS TitleKo,
+          ISNULL(TitleEn,'') AS TitleEn,
+          ISNULL(TitleJa,'') AS TitleJa,
+          ISNULL(TitleFr,'') AS TitleFr,
+          ISNULL(TitleZhcn,'') AS TitleZhcn,
+          ISNULL(TitleZhtw,'') AS TitleZhtw,          
+          ISNULL(DeptBase,'') AS DeptBase,
+          ISNULL(DeptKo,'') AS DeptKo,
+          ISNULL(DeptEn,'') AS DeptEn,
+          ISNULL(DeptJa,'') AS DeptJa,
+          ISNULL(DeptFr,'') AS DeptFr,          
+          ISNULL(DeptZhcn,'') AS DeptZhcn,
+          ISNULL(DeptZhtw,'') AS DeptZhtw,          
+          ISNULL(ApprovalDate,'') AS ApprovalDate,
+          ISNULL(ApprovalType,'') AS ApprovalType,
+          ISNULL(Proxy,'N') AS Proxy,          
+          ISNULL(ProxyNameBase,'') AS ProxyNameBase,
+          ISNULL(ProxyNameKo,'') AS ProxyNameKo,
+          ISNULL(ProxyNameEn,'') AS ProxyNameEn,
+          ISNULL(ProxyNameJa,'') AS ProxyNameJa,
+          ISNULL(ProxyNameFr,'') AS ProxyNameFr,
+          ISNULL(ProxyNameZhcn,'') AS ProxyNameZhcn,
+          ISNULL(ProxyNameZhtw,'') AS ProxyNameZhtw,
+          ISNULL(P_TitleBase,'') AS ProxyTitleBase,
+          ISNULL(P_TitleKo,'') AS ProxyTitleKo,
+          ISNULL(P_TitleEn,'') AS ProxyTitleEn,
+          ISNULL(P_TitleJa,'') AS ProxyTitleJa,
+          ISNULL(P_TitleFr,'') AS ProxyTitleFr,
+          ISNULL(P_TitleZhcn,'') AS ProxyTitleZhcn,
+          ISNULL(P_TitleZhtw,'') AS ProxyTitleZhtw,
+          ISNULL(P_DeptBase,'') AS ProxyDeptBase,
+          ISNULL(P_DeptKo,'') AS ProxyDeptKo,
+          ISNULL(P_DeptEn,'') AS ProxyDeptEn,
+          ISNULL(P_DeptJa,'') AS ProxyDeptJa,
+          ISNULL(P_DeptFr,'') AS ProxyDeptFr,
+          ISNULL(P_DeptZhcn,'') AS ProxyDeptZhcn,
+          ISNULL(P_DeptZhtw,'') AS ProxyDeptZhtw  FROM VW_APP_SeqBackUp WITH(NOLOCK) 
+        WHERE CompanyID = '{0}' AND DocumentID = '{1}' 
+        ORDER BY Sequence ASC"
+		  Content="결재선정보리스트(완결)">
+  </Item>
+  <Item ID="SEL_PROC_DOC_Public" Value="DPM_APP_Doc_TopDown_Public" Content="전자결재 이전,이후(부서별문서함)" />
+  <Item ID="SEL_PROC_DOC_Private" Value="DPM_APP_Doc_TopDown_Private" Content="전자결재 이전,이후(개인별문서함)" />
+  <Item ID="SEL_PROC_DOC_Approval" Value="DPM_APP_Doc_TopDown_Approval" Content="전자결재 이전,이후(완결결재문서함)" />
+  <Item ID="SEL_PROC_DOC_Reject" Value="DPM_APP_Doc_TopDown_Reject" Content="전자결재 이전,이후(반려문서함)" />
+  <Item ID="SEL_PROC_DOC_Arbitrary" Value="DPM_APP_Doc_TopDown_Arbitrary" Content="전자결재 이전,이후(전결문서함)" />
+  <Item ID="SEL_PROC_DOC_Carboncopy" Value="DPM_APP_Doc_TopDown_Carboncopy" Content="전자결재 이전,이후(참조문서함)" />
+  <Item ID="SEL_PROC_DOC_Forward" Value="DPM_APP_Doc_TopDown_Forward" Content="전자결재 이전,이후(전달문서함)" />
+  <Item ID="SEL_PROC_CirDoc_Recv" Value="DPM_APP_CirDoc_TopDown_Recv" Content="전자결재 이전,이후(받은회람함)" />
+  <Item ID="SEL_PROC_CirDoc_Send" Value="DPM_APP_CirDoc_TopDown_Send" Content="전자결재 이전,이후(보낸회람함)" />
+  <Item ID="UPD_PROC_CarbonCopyUser_ViewDate" Value="DP_APP_CarbonCopyUser_UpdViewingDate" Content="참조문서 확인일자 수정" />
+  <Item ID="UPD_PROC_ForwardUser_ViewDate" Value="DP_APP_ForwardUser_UpdConfirmDate" Content="전달문서 확인일자 수정" />
+  <Item ID="SEL_QRY_ForwardDoc" Value="SELECT * FROM DP_APP_ForwardDoc WITH(NOLOCK) WHERE CompanyID = {0} AND DocumentID = {1} AND ForwardDocumentID = {2}" Content="전달문서 정보가져오기" />
+  <Item ID="SEL_QRY_CirDoc" Value="SELECT * FROM DP_APP_CirDoc WITH(NOLOCK) WHERE CompanyID = {0} AND CirculationDocumentID = {1}" Content="회람문서 정보가져오기" />
+  <Item ID="SEL_QRY_AttCirList" Value="SELECT * FROM DP_APP_CirAttachFile WITH(NOLOCK) WHERE CompanyID = {0} AND CirculationDocumentID = {1} ORDER BY DocumentID, FileOrder" Content="첨부파일리스트(" />
+  <Item ID="SEL_QRY_BaseCirList" Value="SELECT * FROM DP_APP_CirBaseDoc WITH(NOLOCK) WHERE CompanyID = {0} AND CirculationDocumentID = {1} ORDER BY DocumentID, BaseOrder" Content="회람근거문서리스트" />
+  <Item ID="UPD_PROC_CircUser_ConfirmDate" Value="DP_APP_CircUser_Upd" Content="회람문서 확인일자 수정" />
+  <Item ID="SEL_PROC_ReportCnt" Value="DPM_APP_DocProcess_SelReportCnt" Content="상신리스트갯수"></Item>
+  <Item ID="SEL_PROC_RelatedCnt" Value="DPM_APP_DocProcess_SelRelatedCnt" Content="관계있는리스트갯수"></Item>
+  <Item ID="SEL_PROC_ApproveCnt" Value="DPM_APP_DocProcess_SelApproveCnt" Content="결재대상문서갯수"></Item>
+  <Item ID="SEL_PROC_PublicCnt" Value="DPM_APP_Doc_SelPublicCnt" Content="부서별문서함갯수"></Item>
+  <Item ID="SEL_PROC_PrivateCnt" Value="DPM_APP_Doc_SelPrivateCnt" Content="개인별문서함갯수"></Item>
+  <Item ID="SEL_PROC_ApprovalCnt" Value="DPM_APP_Doc_SelApprovalCnt" Content="완결결재문서함갯수"></Item>
+  <Item ID="SEL_PROC_RejectCnt" Value="DPM_APP_Doc_SelRejectCnt" Content="반려문서함갯수"></Item>
+  <Item ID="SEL_PROC_ArbitraryCnt" Value="DPM_APP_Doc_SelArbitraryCnt" Content="전결문서함갯수"></Item>
+  <Item ID="SEL_PROC_CarboncopyCnt" Value="DPM_APP_Doc_SelCarboncopyCnt" Content="참조문서함갯수"></Item>
+  <Item ID="SEL_PROC_ForwardCnt" Value="DPM_APP_Doc_SelForwardCnt" Content="전달문서함갯수"></Item>
+  <Item ID="SEL_PROC_RecvCnt" Value="DPM_APP_CirDoc_SelRecvCnt" Content="받은회람함갯수"></Item>
+  <Item ID="SEL_PROC_SendCnt" Value="DPM_APP_CirDoc_SelSendCnt" Content="보낸회람함갯수"></Item>
+  <Item ID="SEL_PROC_PrivateProcessCnt" Value="DPM_APP_DocProcess_SelPrivateCnt" Content="개인별진행중인문서갯수"></Item>
+  <Item ID="UPT_PROC_DocProcessOpinion" Value="DPM_APP_DocProcess_UpdOpinion" Content="결재의견추가(진행중)" />
+  <Item ID="UPT_PROC_DocOpinion" Value="DPM_APP_Doc_UpdOpinion" Content="결재의견추가(완결)" />
+  <Item ID="SEL_PROC_ViewingEtc" Value="DP_APP_Seq_SelViewingEtc" Content="문서열람여부확인" />
+  <Item ID="INS_PROC_Proxy" Value="DP_APP_Proxy_Ins" Content="대결자 저장"></Item>
+  <Item ID="SEL_QRY_ACC_SelByUserID" Value="SELECT * FROM VW_UserInfo WHERE CompanyID = {0} AND ActiveCompany = '1' AND UserID = {1} AND ActiveUser IN ('1') AND BaseDept IN ('0','1')" Content="USERID 로 사용자 정보 가져오기"></Item>
+  <Item ID="SEL_PROC_IsCancelApproval" Value="DP_APP_Doc_IsCancelApproval" Content="결재취소 가능여부 가져오기"></Item>
+  <Item ID="UPT_PROC_CancelApproval" Value="DPM_APP_DocProcess_CancelApproval" Content="결재취소(관계있는문서)" />
+  <Item ID="SEL_PROC_ALARMAPPROVECNEXT" Value="DP_APP_Seq_SelAlarmApproveCNext" Content="결재취소 알람" />
+  <Item ID="SEL_QRY_FavoriteForm" Value="SELECT FF.*, AF.FormBase, AF.FormKo, AF.FormEn, AF.FormJa, AF.FormFr, AF.FormZhcn, AF.FormZhtw 
+        FROM DP_APP_FavoriteForm AS FF WITH(NOLOCK) INNER JOIN DP_APP_Form AS AF WITH(NOLOCK) ON FF.CompanyID = AF.CompanyID AND FF.FormID = AF.FormID
+        WHERE FF.CompanyID = '{0}' AND FF.UserID = '{1}' AND AF.IsActive = 1 AND AF.IsMobile = 1 ORDER BY FavOrder, FavoriteFormID DESC" Content="특정문서정보 가져오기(완결문서)"></Item>
+  <Item ID="SEL_QRY_FolderParent" Value="SELECT * FROM DP_APP_Folder WITH(NOLOCK) WHERE CompanyID = '{0}' AND ParentID IS NULL AND TypeInfo in ('1','2')" Content="상위폴더" />
+  <Item ID="SEL_QRY_Folder" Value="SELECT * FROM DP_APP_Folder WITH(NOLOCK) WHERE CompanyID = '{0}' AND IsActive = 1 AND ParentID ='{1}' ORDER BY FolderOrder ASC" Content="양식폴더" />
+  <Item ID="SEL_QRY_Form" Value="SELECT * FROM DP_APP_Form WITH(NOLOCK) WHERE CompanyID = '{0}' AND FolderID ='{1}' AND IsActive = 1 AND IsMobile = 1 ORDER BY FormOrder, FormID DESC" Content="폴더별양식" />
+  <Item ID="SEL_QRY_FolderAuth" Value="SELECT * FROM DP_APP_FolderAuth WITH(NOLOCK) WHERE CompanyID = '{0}' AND DeptID ='{1}'" Content="폴더별권한" />
+  <Item ID="SEL_PROC_SubmitCnt" Value="DPM_APP_Doc_SelSubmitCnt" Content="모바일상신문서함갯수"></Item>
+  <Item ID="SEL_PROC_DocSubmit" Value="DPM_APP_Doc_SelSubmit" Content="모바일상신문서함"></Item>
+  <Item ID="SEL_PROC_DraftCnt" Value="DPM_APP_Draft_SelCnt" Content="모바일임시보관함갯수"></Item>
+  <Item ID="SEL_PROC_Draft" Value="DPM_APP_Draft_Sel" Content="모바일임시보관함"></Item>
+  <Item ID="SEL_PROC_AccessGrade" Value="DP_APP_AccessGrade_SelIsAccessList" Content="열람권한"></Item>
+  <Item ID="SEL_QRY_FavSeq" Value="SELECT * FROM DP_APP_FavSeq WITH(NOLOCK) WHERE CompanyID = '{0}' AND UserID = '{1}' ORDER BY FavSeqOrder, WriteDate Desc" Content="개인결재선"></Item>
+  <Item ID="SEL_QRY_Attach" Value="SELECT * FROM DP_APP_Attach WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID = '{1}' ORDER BY FileOrder" Content="첨부파일가져오기"></Item>
+  <Item ID="SEL_PROC_AppState" Value="DP_APP_DocProcess_UpdAppState" Content="문서상태변경"></Item>
+  <Item ID="SEL_QRY_CirDocByDID" Value="SELECT * FROM VW_APP_CirDoc WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="회람문서 documentid 로 가져오기"></Item>
+  <Item ID="SEL_QRY_DocProcess" Value="SELECT d.*
+        ,ISNULL((SELECT TOP 1 ApprovalTag FROM DP_APP_Seq s WITH(NOLOCK) WHERE s.CompanyID = d.CompanyID and s.DocumentID = d.DocumentID and s.Myturn = 'Y'), '') AS MyTurnYTag
+        ,ISNULL((SELECT TOP 1 (s.ApprovalTag) FROM DP_APP_Seq s WITH(NOLOCK) WHERE s.CompanyID = d.CompanyID AND s.DocumentID = d.DocumentID ORDER BY s.Sequence Desc), '') AS LastTag
+        ,ISNULL((SELECT TOP 1 Sequence FROM DP_APP_Seq s WITH(NOLOCK) WHERE s.CompanyID = d.CompanyID and s.DocumentID = d.DocumentID and s.Myturn = 'Y'), '') AS NextSequence
+        FROM DP_App_DocProcess AS d WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="특정문서정보 가져오기(진행중문서)"></Item>
+  <Item ID="SEL_QRY_ApprovalTag" Value="SELECT * FROM VW_APP_Seq WHERE CompanyID = '{0}' AND DocumentID='{1}' AND Sequence='{2}' AND ApprovalTag='{3}'" Content="특정문서의 특정결재라인 가져오기"></Item>
+  <Item ID="SEL_QRY_VWDocProcess" Value="SELECT * FROM VW_App_DocProcess WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="문서정보 가져오기"></Item>
+  <Item ID="SEL_QRY_AttachFileID" Value="SELECT * FROM DP_APP_Attach WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}' AND AttachFileID='{2}'" Content="첨부파일 가져오기"></Item>
+  <Item ID="SEL_QRY_BaseDoc" Value="SELECT * FROM DP_APP_BaseDoc WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID ='{1}' ORDER BY BaseOrder" Content="근거문서 가져오기"></Item>
+  <Item ID="SEL_QRY_TotalSeq"
+		  Value="SELECT * FROM (SELECT 
+          ISNULL(CompanyID, 0) AS CompanyID,
+          ISNULL(DocumentID, 0) AS DocumentID,
+          ISNULL(Sequence, 0) AS Sequence,
+          ISNULL(ApprovalTag,'') AS ApprovalTag,
+          ISNULL(MyTurn,'') AS MyTurn,
+          ISNULL(UserID, 0) AS UserID,
+          ISNULL(NameBase,'') AS NameBase,
+          ISNULL(NameKo,'') AS NameKo,
+          ISNULL(NameEn,'') AS NameEn,
+          ISNULL(NameJa,'') AS NameJa,
+          ISNULL(NameFr,'') AS NameFr,
+          ISNULL(NameZhcn,'') AS NameZhcn,
+          ISNULL(NameZhtw,'') AS NameZhtw,          
+          ISNULL(TitleBase,'') AS TitleBase,
+          ISNULL(TitleKo,'') AS TitleKo,
+          ISNULL(TitleEn,'') AS TitleEn,
+          ISNULL(TitleJa,'') AS TitleJa,
+          ISNULL(TitleFr,'') AS TitleFr,
+          ISNULL(TitleZhcn,'') AS TitleZhcn,
+          ISNULL(TitleZhtw,'') AS TitleZhtw,          
+          ISNULL(DeptBase,'') AS DeptBase,
+          ISNULL(DeptKo,'') AS DeptKo,
+          ISNULL(DeptEn,'') AS DeptEn,
+          ISNULL(DeptJa,'') AS DeptJa,
+          ISNULL(DeptFr,'') AS DeptFr,          
+          ISNULL(DeptZhcn,'') AS DeptZhcn,
+          ISNULL(DeptZhtw,'') AS DeptZhtw,          
+          ISNULL(ApprovalDate,'') AS ApprovalDate,
+          ISNULL(ApprovalType,'') AS ApprovalType,
+          ISNULL(Proxy,'N') AS Proxy,          
+          ISNULL(ProxyNameBase,'') AS ProxyNameBase,
+          ISNULL(ProxyNameKo,'') AS ProxyNameKo,
+          ISNULL(ProxyNameEn,'') AS ProxyNameEn,
+          ISNULL(ProxyNameJa,'') AS ProxyNameJa,
+          ISNULL(ProxyNameFr,'') AS ProxyNameFr,
+          ISNULL(ProxyNameZhcn,'') AS ProxyNameZhcn,
+          ISNULL(ProxyNameZhtw,'') AS ProxyNameZhtw,
+          ISNULL(P_TitleBase,'') AS ProxyTitleBase,
+          ISNULL(P_TitleKo,'') AS ProxyTitleKo,
+          ISNULL(P_TitleEn,'') AS ProxyTitleEn,
+          ISNULL(P_TitleJa,'') AS ProxyTitleJa,
+          ISNULL(P_TitleFr,'') AS ProxyTitleFr,
+          ISNULL(P_TitleZhcn,'') AS ProxyTitleZhcn,
+          ISNULL(P_TitleZhtw,'') AS ProxyTitleZhtw,
+          ISNULL(P_DeptBase,'') AS ProxyDeptBase,
+          ISNULL(P_DeptKo,'') AS ProxyDeptKo,
+          ISNULL(P_DeptEn,'') AS ProxyDeptEn,
+          ISNULL(P_DeptJa,'') AS ProxyDeptJa,
+          ISNULL(P_DeptFr,'') AS ProxyDeptFr,
+          ISNULL(P_DeptZhcn,'') AS ProxyDeptZhcn,
+          ISNULL(P_DeptZhtw,'') AS ProxyDeptZhtw  FROM VW_APP_Seq WITH(NOLOCK) 
+        WHERE CompanyID = '{0}' AND DocumentID = '{1}'
+        UNION ALL        
+        SELECT 
+          ISNULL(CompanyID, 0) AS CompanyID,
+          ISNULL(DocumentID, 0) AS DocumentID,
+          ISNULL(Sequence, 0) AS Sequence,
+          ISNULL(ApprovalTag,'') AS ApprovalTag,
+          ISNULL(MyTurn,'') AS MyTurn,
+          ISNULL(UserID, 0) AS UserID,
+          ISNULL(NameBase,'') AS NameBase,
+          ISNULL(NameKo,'') AS NameKo,
+          ISNULL(NameEn,'') AS NameEn,
+          ISNULL(NameJa,'') AS NameJa,
+          ISNULL(NameFr,'') AS NameFr,
+          ISNULL(NameZhcn,'') AS NameZhcn,
+          ISNULL(NameZhtw,'') AS NameZhtw,          
+          ISNULL(TitleBase,'') AS TitleBase,
+          ISNULL(TitleKo,'') AS TitleKo,
+          ISNULL(TitleEn,'') AS TitleEn,
+          ISNULL(TitleJa,'') AS TitleJa,
+          ISNULL(TitleFr,'') AS TitleFr,
+          ISNULL(TitleZhcn,'') AS TitleZhcn,
+          ISNULL(TitleZhtw,'') AS TitleZhtw,          
+          ISNULL(DeptBase,'') AS DeptBase,
+          ISNULL(DeptKo,'') AS DeptKo,
+          ISNULL(DeptEn,'') AS DeptEn,
+          ISNULL(DeptJa,'') AS DeptJa,
+          ISNULL(DeptFr,'') AS DeptFr,          
+          ISNULL(DeptZhcn,'') AS DeptZhcn,
+          ISNULL(DeptZhtw,'') AS DeptZhtw,          
+          ISNULL(ApprovalDate,'') AS ApprovalDate,
+          ISNULL(ApprovalType,'') AS ApprovalType,
+          ISNULL(Proxy,'N') AS Proxy,          
+          ISNULL(ProxyNameBase,'') AS ProxyNameBase,
+          ISNULL(ProxyNameKo,'') AS ProxyNameKo,
+          ISNULL(ProxyNameEn,'') AS ProxyNameEn,
+          ISNULL(ProxyNameJa,'') AS ProxyNameJa,
+          ISNULL(ProxyNameFr,'') AS ProxyNameFr,
+          ISNULL(ProxyNameZhcn,'') AS ProxyNameZhcn,
+          ISNULL(ProxyNameZhtw,'') AS ProxyNameZhtw,
+          ISNULL(P_TitleBase,'') AS ProxyTitleBase,
+          ISNULL(P_TitleKo,'') AS ProxyTitleKo,
+          ISNULL(P_TitleEn,'') AS ProxyTitleEn,
+          ISNULL(P_TitleJa,'') AS ProxyTitleJa,
+          ISNULL(P_TitleFr,'') AS ProxyTitleFr,
+          ISNULL(P_TitleZhcn,'') AS ProxyTitleZhcn,
+          ISNULL(P_TitleZhtw,'') AS ProxyTitleZhtw,
+          ISNULL(P_DeptBase,'') AS ProxyDeptBase,
+          ISNULL(P_DeptKo,'') AS ProxyDeptKo,
+          ISNULL(P_DeptEn,'') AS ProxyDeptEn,
+          ISNULL(P_DeptJa,'') AS ProxyDeptJa,
+          ISNULL(P_DeptFr,'') AS ProxyDeptFr,
+          ISNULL(P_DeptZhcn,'') AS ProxyDeptZhcn,
+          ISNULL(P_DeptZhtw,'') AS ProxyDeptZhtw  FROM VW_APP_SeqBackUp WITH(NOLOCK) 
+        WHERE CompanyID = '{0}' AND DocumentID = '{1}' ) x ORDER BY Sequence ASC"
+		  Content="결재선정보리스트(진행중, 완료)">
+  </Item>
+  <Item ID="SEL_QRY_DocTotal" Value="SELECT * FROM DP_APP_Doc WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}' 
+		  UNION ALL SELECT * FROM DP_App_DocProcess WITH(NOLOCK) WHERE CompanyID = '{0}' AND DocumentID='{1}'" Content="문서정보 가져오기"></Item>
+  <Item ID="SEL_PROC_IsCancelZA" Value="DP_APP_Doc_IsCancelZA" Content="병렬결재자 중 결재한 사람이 있는지 체크" />
+  <Item ID="SEL_PROC_SelectShortReply" Value="DP_APP_ShortReply_Sel" Content="결재의견 가져오기"></Item>
+</XmlData>

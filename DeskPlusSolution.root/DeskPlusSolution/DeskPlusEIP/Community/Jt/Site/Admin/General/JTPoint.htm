@@ -1,0 +1,51 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Community Point Manage List
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="*" />
+    <col width="100px" />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_number"></th>
+    <th class="center" id="r_category"></th>
+    <th class="center" id="r_point"></th>
+    <th class="center" id="r_writeName"></th>
+    <th class="center" id="r_writeDate"></th>
+    <th class="center"></th>
+
+</tr>
+{#foreach $T as CmnList}
+<tr>
+    <td class="center">{ $T.CmnList.ROW }</td>
+    <td class="center">{ $T.CmnList.CategoryName }</td>
+    <td class="center">
+        { $T.CmnList.Point }
+    </td>
+    <td class="center">
+        {#if $T.CmnList.WriteUserID > 0}
+        <a href="#" onclick="AccountInfo('{ $T.CmnList.WriteUserID }');return false;" style="cursor:pointer">{ $T.CmnList.WriteUserName }</a>             
+        {#else}
+        { $T.CmnList.WriteUserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.CmnList.WriteDate }</td>
+    <td class="center">
+        <a href="#" onclick="Point.GetPoint('{$T.CmnList.CommunityID}', '{$T.CmnList.Type }');return false;" style="cursor:pointer"><img class="PointImg" /></a>
+        {#if $T.CmnList.CommunityID > 0 && $T.CmnList.Type > 0}
+        
+        {#else}
+        
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

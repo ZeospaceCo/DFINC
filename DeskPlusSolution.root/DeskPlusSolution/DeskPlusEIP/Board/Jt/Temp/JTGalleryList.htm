@@ -1,0 +1,47 @@
+﻿<div class="table_typeLmiddle">
+	<div class="album_cont">
+		<ul>
+        {#foreach $T as BoardList}
+			<li>   
+                <div class="thumb">
+                    <dl class="album_img">   
+                    {#if $T.BoardList.ImgCount == "0"}
+                        <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.MyTemplateID }');return false;" style="cursor:pointer">
+                        <img src="{ $T.BoardList.ScreenShot }" alt="" />
+                        </a>
+                    {#else}
+                        <a href="#" onclick="List.ShowImage('{ $T.BoardList.MyTemplateID }');return false;" style="cursor:pointer">
+                        <img src="{ $T.BoardList.ScreenShot }" alt="" /></a>
+                    {#/if}
+
+					</dl>
+                    <dl class="text">   
+                        <dd>
+                            {#if $T.BoardList.WriteUserID > 0}
+                                <a href="#" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>             
+                            {#else}
+                                { $T.BoardList.WriteUserName }
+                            {#/if}
+                        </dd>
+					</dl>
+                    <dl class="text">   
+                        <dd>{ $T.BoardList.WriteDateStr }</dd>
+                        <dd class="end">
+							{#if $T.BoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}
+						</dd> 
+						<dt>
+                            <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.MyTemplateID }');return false;" style="cursor:pointer">
+                            <span class="fontCut">
+                                { $T.BoardList.Title }
+                            </span>
+                            </a>
+                        </dt>
+					</dl>
+				</div>         
+			</li>
+        {#else}
+            <li class="last-child"><span class="NoListData" /></li>
+        {#/for}
+		</ul>
+	</div>				 
+</div>

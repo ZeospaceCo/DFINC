@@ -1,0 +1,30 @@
+﻿<table cellspacing="0" class="table_typeT"> 
+<caption>멀티도메인 리스트</caption>
+<colgroup>
+    <col width="120px" />
+    <col  />
+    <col width="80px" />
+    <col width="110px" />
+    <col width="60px" />
+</colgroup>
+    <tr> 
+        <th class="center" id="r_mailID"></th>
+        <th class="center" id="r_mailDomain"></th>
+        <th class="center" id="r_basemail"></th>
+        <th class="center" id="r_base"></th>
+        <th class="center" id="r_del"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr> 
+        <td class="center">{ $T.List.MailID }</td>        
+        <td class="center">{ $T.List.MailDomain }</td>
+        <td class="center">{#if $T.List.BaseMail == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>
+        <td class="center"><ul class="btn_left"><a onclick="MultiDomain.ModBase('{ $T.List.UserMailDomainID }')" style="cursor:pointer;"><div class="r_mailcheck"></div></a></ul></td>
+        <td class="center"><a class='btn' onclick="MultiDomain.Del('{ $T.List.UserMailDomainID }','{ $T.List.MailID }','{ $T.List.MailDomain }');return false;" style="cursor:pointer;display:inline-block;">{ $T.List.BtnDel }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

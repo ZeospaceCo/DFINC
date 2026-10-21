@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML>
+		[理事會的通知]
+		&lt;br&gt;&lt;br&gt;
+		- 主題 : $SUBJECT$
+		&lt;br&gt;
+		- 時間:$TIME$
+		&lt;br&gt;&lt;br&gt;
+		“函數調用：按此到相關的畫面。”
+	</ContentHTML>
+</ContentInfo>

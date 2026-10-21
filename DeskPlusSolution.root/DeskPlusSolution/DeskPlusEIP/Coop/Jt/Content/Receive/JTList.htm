@@ -1,0 +1,59 @@
+﻿<table class="table_typeCO"> 
+<caption>
+    리스트
+</caption>
+<colgroup>
+    <col width="165px" />
+    <col  />
+    <col width="55px">
+    <col width="55px">
+    <col width="55px">
+    <col width="80px">
+    <col width="80px">
+    <col width="80px">
+    <col width="80px">
+    <col width="50px">
+</colgroup>
+<tr>    
+    <th id="r_num"></th>
+    <th id="r_title"></th>
+    <th class="center" id="r_attach"></th>
+    <th class="center" id="r_status"></th>
+    <th class="center" id="r_requester"></th>
+    <th class="center" id="r_item"></th>
+    <th class="center" id="r_itemsub"></th>
+    <th class="center" id="r_requestdate"></th>
+    <th class="center" id="r_enddate"></th>
+    <th class="center">D-Day</th>    
+</tr>
+{#foreach $T as BoardList}
+<tr>    
+    <td><span title="{ $T.BoardList.CoopNumber }">{ $T.BoardList.CoopNumber }</span></td>
+    <td {#if $T.BoardList.ViewerCount == '0'}style="font-weight:bold"{#/if}>        
+        <a onclick="List.View('{ $T.BoardList.ListID }','{ $T.BoardList.GroupID }','{ $T.BoardList.StatusID }');return false;" style="cursor:pointer" title="{ $T.BoardList.Title }">{ $T.BoardList.Title }</a>                
+        {#if $T.BoardList.ShowNew == 'Y'}&nbsp;<span class="i_new"></span>{#/if} 
+        {#if $T.BoardList.ReplyCnt > 0}
+        <span class="icon_Comment_view">[{ $T.BoardList.ReplyCnt }]</span>        
+        {#/if}
+    </td>
+    <td class="center">
+    {#if $T.BoardList.FileCount > 0}
+        <img class="IconAttach" action="attach" style="cursor:pointer" ListID='{ $T.BoardList.ListID }' />
+    {#/if}
+    </td>
+    <td>{ $T.BoardList.Status }</td>     
+    <td class="center">
+    <a onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;"><span class="name">{ $T.BoardList.NameBase }</span></a>
+    </td>  
+    <td class="center">{ $T.BoardList.ItemName }</td>    
+    <td class="center">{ $T.BoardList.ItemSubName }</td>    
+    <td class="center">{ $T.BoardList.RequestDate }</td>    
+    <td class="center">{ $T.BoardList.EndDate }</td>
+    <td class="center">{ $T.BoardList.ExcessDay }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="10" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

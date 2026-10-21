@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+    
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>게시글 관리</h1>
+            <ul class="aLeft">
+                <li>
+                    <select name="ddlSearchTerm" id="ddlSearchTerm" class="searchselect">
+                        <option selected="selected">게시판전체</option><option>우리들의이야기</option><option>우리들의이야기</option>
+                    </select>
+                    <span class="cm_subtxt">* 게시판 리스트 항목을 관리합니다</span>
+                </li>
+            </ul>
+            
+
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>영구삭제</span></a></li>
+                <li class="btn_red"><a href="#" title="삭제 시, 해당 글은 휴지통으로 이관됩니다."><span>삭제</span></a></li>
+                <li class="btn_red"><a href="#" title="스팸처리의 경우, 해당 회원은 활동중지되며, 해당 글은 자동삭제 됩니다. 단, 본인또는 운영진(카페지기/운영자)의 글은 스팸처리 할 수 없습니다."><span>스팸처리</span></a></li>
+                <li><a href="#" title="게시물을 이동합니다."><span>이동</span></a></li>
+                <li class="btn_blue"><a href="#"><span>추가</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul>
+                <li></li>
+            </ul>
+            <ul class="btn_searchbox">
+                <li>
+                    <select class="searchselect">
+	                    <option>전체</option><option>1주</option><option>1달</option><option>기간</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="searchselect">
+	                    <option value="Title">제목</option><option value="ManyName">등록자</option><option value="MobileContent">내용</option>
+                    </select>
+                </li>
+                <li>
+                    <input name="ctbSearch" type="text" id="Text1" class="searchtext" Required="False" class="text" title="" style="width:200px;" />
+                </li>
+                <li><a href="#" class="searchbtn" id="cbtnSearch" title="검색">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>리스트</caption>
+            <colgroup>
+                <col width="30px" />
+                <col width="50px" />
+                <col width="150px" />
+                <col />
+                <col width="80px" />
+                <col width="30px" />
+                <col width="90px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>번호</th>
+                    <th><a href="#">게시판명</a></th>
+                    <th><a href="#">제목</a></th>
+                    <th><a href="#">작성자</a></th>
+                    <th><a href="#">조회수</a></th>
+                    <th><a href="#">등록일</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>우리들의이야기</td>
+                    <td><a href="http://localhost/DeskplusEIP/Board/Admin/Content/View.aspx?p=kgaxuA%2FaWG%2FBMqNmmWbQ1lHmEfCwqhrjszjkUd%2F%2F4m8Gtebq8l0jKgELZWCN7mim3v2cUNmzjJHFZWu6ONC1tDuY2LPJWgfoHtuIBf1kqQ3sXrH2w%2Frg%2FBjq22lcRZcjXeOM7uJlTp1e9A5~plus~z3enRzB5c3ZIOfTCLNkD3iDkiOByClnEJ8kKO9MwgVfglXLNjQ0oEspRoPkGLMWdgNt60RHWCMopT7oviFlCglU08sujbec3k0OZddEn90e2XWQwxyX4BGNgQwU%3D">카페포커스 공식블로..</a></td>
+                    <td>홍길동</td>
+                    <td>2</td>
+                    <td>2011-05-09</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>2</td>
+                    <td>우리들의이야기</td>
+                    <td><a href="http://localhost/DeskplusEIP/Board/Admin/Content/View.aspx?p=kgaxuA%2FaWG%2FBMqNmmWbQ1lHmEfCwqhrjszjkUd%2F%2F4m8Gtebq8l0jKgELZWCN7mim3v2cUNmzjJHFZWu6ONC1tDuY2LPJWgfoHtuIBf1kqQ3sXrH2w%2Frg%2FBjq22lcRZcjXeOM7uJlTp1e9A5~plus~z3enRzB5c3ZIOfTCLNkD3iDkiOByClnEJ8kKO9MwgVfglXLNjQ0oEspRoPkGLMWdgNt60RHWCMopT7oviFlCglU08sujbec3k0OZddEn90e2XWQwxyX4BGNgQwU%3D">카페포커스 공식블로..</a></td>
+                    <td>홍길동</td>
+                    <td>2</td>
+                    <td>2011-05-09</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>1</td>
+                    <td>우리들의이야기2</td>
+                    <td><a href="http://localhost/DeskplusEIP/Board/Admin/Content/View.aspx?p=kgaxuA%2FaWG%2FBMqNmmWbQ1lHmEfCwqhrjszjkUd%2F%2F4m8Gtebq8l0jKgELZWCN7mim3v2cUNmzjJHFZWu6ONC1tDuY2LPJWgfoHtuIBf1kqQ3sXrH2w%2Frg%2FBjq22lcRZcjXeOM7uJlTp1e9A5~plus~z3enRzB5c3ZIOfTCLNkD3iDkiOByClnEJ8kKO9MwgVfglXLNjQ0oEspRoPkGLMWdgNt60RHWCMopT7oviFlCglU08sujbec3k0OZddEn90e2XWQwxyX4BGNgQwU%3D">카페포커스 공식블로..</a></td>
+                    <td>홍길동</td>
+                    <td>2</td>
+                    <td>2011-05-09</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

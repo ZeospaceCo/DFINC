@@ -1,0 +1,62 @@
+﻿<table class="table_typeA"> 
+<caption>
+    휴가원(관리자) 리스트
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col  />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="110px" />
+    <col width="110px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th id="r_number" class="center"></th>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_titlename" class="center"></th>
+    <th id="r_dutyname" class="center"></th>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_year" class="center"></th>
+    <th id="r_history" class="center"></th>
+    <th id="r_holiused" class="center"></th>
+    <th id="r_holireceive" class="center"></th>
+</tr>
+{#foreach $T as ListAdmin}
+<tr>
+    <td class="center">
+        { $T.ListAdmin.ROW }
+        <input type="hidden" class="holiuserid" value="{ $T.ListAdmin.UserID }" />
+    </td>
+    <td class="center">{ $T.ListAdmin.DeptName }</td>
+    <td class="center">   
+        {#if $T.ListAdmin.UserID > 0}        
+        <a onclick="ListAdmin.View('{ $T.ListAdmin.UserID }','{ $T.ListAdmin.WriteUserName }');return false;" style="cursor:pointer" >{ $T.ListAdmin.WriteUserName }</a>
+        {#else}
+        { $T.ListAdmin.WriteUserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.ListAdmin.TitleName }</td>
+    <td class="center">{ $T.ListAdmin.DutyName }</td>
+    <td class="r_holitype1"></td>
+    <td class="center">
+        <input type="text" value="{ $T.ListAdmin.All1 }" class="holireceive1" style="width:80%;height:20px;" />
+    </td>
+    <td class="center">
+        <span onclick="ListAdmin.ViewHistory('{ $T.ListAdmin.UserID }', '{ $T.ListAdmin.WriteUserName }', '1');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/tree_search.gif" />
+        </span>
+    </td>
+    <td class="center">{ $T.ListAdmin.Used1 }</td>
+    <td class="center">{ $T.ListAdmin.Jan1 }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="9" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

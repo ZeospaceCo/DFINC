@@ -1,0 +1,26 @@
+﻿{#foreach $T as ToDo}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:List.viewToDo('{ $T.ToDo.ToDoID }','{ $T.ToDo.UserID }')">
+        <a>
+        {#if $T.ToDo.OpenType == '0'}     <div class="pim_pr">●</div>
+        {#elseif $T.ToDo.OpenType == '1'} <div class="pim_dept">●</div>
+        {#elseif $T.ToDo.OpenType == '2'} <div class="pim_share">●</div>
+        {#elseif $T.ToDo.OpenType == '3'} <div class="pim_tot">●</div>{#/if}
+        <div class="conBox"><span class="LNoready">{$T.ToDo.ScheduleYN}{$T.ToDo.Title } {$T.ToDo.ReplyCnt }</span><br />
+            <span class="sch_user">
+            {#if $T.ToDo.UserInfo != ''}{$T.ToDo.UserInfo}<br />{#/if}
+            {$T.ToDo.OpenTypeStr }&nbsp;&nbsp;
+            <span class="bg-success text-white">&nbsp;{$T.ToDo.Status}&nbsp;</span>&nbsp;&nbsp;{$T.ToDo.Priority}</span>
+            </div>
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" ><span id="NoToDoListData" />&nbsp;</a>
+    </div>
+</li>        
+{#/for}        
+
+

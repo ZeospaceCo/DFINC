@@ -1,0 +1,65 @@
+﻿<table class="table_typeA">
+<caption>수신 문서</caption>
+<colgroup>
+    <col width="130px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="150px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_dept"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_ReceiveDate"></th>
+        <th class="center" id="r_writeTime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Receive}
+    <tr>
+        <!--td><input type="checkbox" class="cbxID" id="cbxID{ $T.Receive.ROW }" value="{ $T.Receive.DocumentID }" /></td!--> 
+        <td class="center">{ $T.Receive.FormBase }</td>
+        <td class="center"><a href="" onclick="Receive.State('{ $T.Receive.DocumentID }','{ $T.Receive.ApprovalTag }');return false;" style="cursor:pointer" >
+        {#if $T.Receive.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Receive.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Receive.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Receive.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Receive.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Receive.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Receive.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>            
+            {#if $T.Receive.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Receive.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <a href="" onclick="Receive.Approval('{ $T.Receive.DocumentID }', '{ $T.Receive.ApprovalTag }', '{ $T.Receive.ReceiveUserID }', '{ $T.Receive.ReceiveDeptID }', '{ $T.Receive.GroupID }', '{ $T.Receive.ReceiveSequence }');return false;" style="cursor:pointer" >{ $T.Receive.Subject }</a> 
+            {#if $T.Receive.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Receive.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Receive.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center">{ $T.Receive.DeptBase }</td>    
+        <td class="center"><a onclick="AccountInfo('{ $T.Receive.UserID }');return false;">{ $T.Receive.NameBase }</a></td>      
+        <td class="center">{ $T.Receive.ReceiveDateStr }</td>
+        <td class="center">{ $T.Receive.WriteTimeStr }</td>          
+    </tr>
+{#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

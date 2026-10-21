@@ -1,0 +1,33 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <colgroup>
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+    </colgroup>
+    <tr>
+        <th>
+            <input id="cbxAll" type="checkbox" onclick="Add.Checked()" />
+        </th>
+        <th id="r_username"></th>
+        <th id="r_dept"></th>
+        <th id="r_title"></th>
+        <th id="r_duty"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>
+        <td>
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.AccountList.RowNum }" value="{ $T.AccountList.UserID }" />
+        </td>        
+        <td>{ $T.AccountList.Name }</td>
+        <td>{ $T.AccountList.DeptName }</td>
+        <td>{ $T.AccountList.TitleName }</td>
+        <td>{ $T.AccountList.DutyName }</td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

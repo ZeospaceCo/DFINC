@@ -1,0 +1,35 @@
+﻿<table class="table_typeA">
+    <caption>
+        수정내역 리스트</caption>
+    <colgroup>
+        <col />
+        <col width="200px" />
+        <col width="130px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="j_subject"></th>
+            <th class="center" id="j_username"></th>
+            <th class="center" id="j_writedate"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td>
+                <a href="#" onclick="HistoryDoc.View('{ $T.List.DocumentID }','{ $T.List.HistoryID }');return false;" style="cursor:pointer" >{ $T.List.Subject }</a>
+            </td>
+            <td>
+                { $T.List.DeptBase } { $T.List.TitleBase } { $T.List.ModifyNameBase }
+            </td>
+            <td>
+                { $T.List.ModifyDateStr }
+            </td>
+        </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿<table class="table_typeA">
+    <caption>
+    </caption>
+    <colgroup>        
+        <col width="*" />
+        <col width="80px" />
+        <col width="80px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_name"></th>
+            <th class="center" id="r_gubun"></th>
+            <th class="center" id="r_del"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {#foreach $T as List}
+        <tr>
+            
+            <td class="center">
+                {#if $T.List.Gubun == "M"}
+                <a href="#" onclick="AccountInfo('{ $T.List.OwnerID }');return false;">{ $T.List.NameBase }</a>
+                {#elseif $T.List.Gubun == "G"}
+                { $T.List.NameBase }
+                {#/if}
+            </td>
+            <td class="center">
+                {#if $T.List.Gubun == "G" } 
+                <span class="orangeSquare"><span class="Group" /></span>
+                {#elseif $T.List.Gubun == "M"}
+                <span class="Member" />
+                {#/if}
+            </td>
+            <td class="center">
+                <a class="btn" onclick="javascript:FolderList.DelFolderAuth('{ $T.List.Gubun }','{ $T.List.OwnerID }')" style="cursor:pointer" title="delete">
+                 { $T.List.DelStr }
+                </a>
+            </td>
+        </tr>
+        {#else}
+        <tr>
+            <td colspan="3" class="center">
+                <span class="NoListData"></span>
+            </td>
+        </tr>
+        {#/for}
+    </tbody>
+</table>

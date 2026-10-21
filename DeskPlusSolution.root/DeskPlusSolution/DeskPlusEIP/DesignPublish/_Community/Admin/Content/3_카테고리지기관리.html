@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+    
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>카테고리지기 관리</h1>
+            <span class="cm_subtxt">* 카테고리지기는 해당 카테고리의 모든 게시글을 관리합니다.</span>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#" title=""><span>관리해제</span></a></li>
+                <li class="btn_blue" title="각 항목선택 후, 사용자지정"><a href="#"><span>관리지정</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul>
+                <li></li>
+            </ul>
+            <ul class="btn_searchbox">
+                <li>
+                    <select class="searchselect">
+	                    <option value="">제목</option><option value="">등록자</option><option value="">내용</option>
+                    </select>
+                </li>
+                <li>
+                    <input name="ctbSearch" type="text" id="Text1" class="searchtext" Required="False" class="text" title="" style="width:200px;" />
+                </li>
+                <li><a href="#" class="searchbtn" id="cbtnSearch" title="검색">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>리스트</caption>
+            <colgroup>
+                <col width="30px" />
+                <col width="50px" />
+                <col />
+                <col width="100px" />
+                <col width="90px" />
+                <col width="90px" />
+                <col width="90px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>번호</th>
+                    <th><a href="#">메뉴명</a></th>
+                    <th><a href="#">메뉴건수</a></th>
+                    <th><a href="#">카테고리지기</a></th>
+                    <th><a href="#">최종방문일</a></th>
+                    <th><a href="#">가입일</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>우리들의이야기</td>
+                    <td>100건</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>우리들의이야기</td>
+                    <td>100건</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>우리들의이야기</td>
+                    <td>100건</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

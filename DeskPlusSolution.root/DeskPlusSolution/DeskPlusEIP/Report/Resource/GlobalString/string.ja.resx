@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>添付ファイルを追加するには</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添付ファイルを追加</value>
+  </data>
+  <data name="AddShort" xml:space="preserve">
+    <value>ビューを追加</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>内容を入力してください</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="AfterDept" xml:space="preserve">
+    <value>変更後の部門</value>
+  </data>
+  <data name="AfterInfo" xml:space="preserve">
+    <value>変更された情報</value>
+  </data>
+  <data name="AfterUser" xml:space="preserve">
+    <value>ユーザーの後に変更</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>プレナリーダウンロード</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>能力</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>著作権管理</value>
+  </data>
+  <data name="AuthOnlyOne" xml:space="preserve">
+    <value>レポート·オブジェクトは1つだけ指定できます</value>
+  </data>
+  <data name="BeforeDept" xml:space="preserve">
+    <value>変化セクターに先立ち</value>
+  </data>
+  <data name="BeforeDeptGarbage" xml:space="preserve">
+    <value>変更は、部門を削除する前に</value>
+  </data>
+  <data name="BeforeInfo" xml:space="preserve">
+    <value>変更前</value>
+  </data>
+  <data name="BeforeUser" xml:space="preserve">
+    <value>変更ユーザに先立ち</value>
+  </data>
+  <data name="BeforeWeekJob" xml:space="preserve">
+    <value>週ジョブの前に</value>
+  </data>
+  <data name="BringNextJobSche" xml:space="preserve">
+    <value>来週のスケジュール管理に転送</value>
+  </data>
+  <data name="BringNowJobSche" xml:space="preserve">
+    <value>今週のスケジュール管理を移管</value>
+  </data>
+  <data name="BringPim" xml:space="preserve">
+    <value>スケジュール管理データを取得する</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>順序を変更する</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>検査</value>
+  </data>
+  <data name="CheckAdmin" xml:space="preserve">
+    <value>検査レポートオブジェクトと私は、非パブリック日に設定</value>
+  </data>
+  <data name="CheckAuth" xml:space="preserve">
+    <value>権限を割り当ててください</value>
+  </data>
+  <data name="CheckAuthUser" xml:space="preserve">
+    <value>レポートオブジェクトを追加著作権管理（DRM）の招待を確認します</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国人</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="CloseYN" xml:space="preserve">
+    <value>[開く]または[しない</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>か否かを確認する</value>
+  </data>
+  <data name="ConfirmCheck" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="ConfirmFolder" xml:space="preserve">
+    <value>招待ボックスを確認</value>
+  </data>
+  <data name="ConfirmRequest" xml:space="preserve">
+    <value>招待を確認</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>[コピー]を選択</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>プレナリーコピー</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>あなたがファイルを削除してもよろしいですか？</value>
+  </data>
+  <data name="DeletedDept" xml:space="preserve">
+    <value>セクターの現状は削除されました</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptCode" xml:space="preserve">
+    <value>部門コード</value>
+  </data>
+  <data name="DeptFolder" xml:space="preserve">
+    <value>デパートボックス</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="DoConfirmRequest" xml:space="preserve">
+    <value>招待を確認</value>
+  </data>
+  <data name="DocumentTransfer" xml:space="preserve">
+    <value>ドキュメント転送</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>附属書エラーが発生しました入手してください</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>表示ページに移動します</value>
+  </data>
+  <data name="GroupBaseName" xml:space="preserve">
+    <value>グループ名</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>アクティブですか?</value>
+  </data>
+  <data name="IsClose" xml:space="preserve">
+    <value>非公共</value>
+  </data>
+  <data name="IsOpen" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="IssueWork" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本人</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓国</value>
+  </data>
+  <data name="Linked" xml:space="preserve">
+    <value>転移</value>
+  </data>
+  <data name="LinkedCopyDept" xml:space="preserve">
+    <value>コピー（県）</value>
+  </data>
+  <data name="LinkedCopyUser" xml:space="preserve">
+    <value>コピー（ユーザ）</value>
+  </data>
+  <data name="LinkedMoveDept" xml:space="preserve">
+    <value>転送（県）</value>
+  </data>
+  <data name="LinkedMoveUser" xml:space="preserve">
+    <value>転送（ユーザ）</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="Modifyed" xml:space="preserve">
+    <value>変更します</value>
+  </data>
+  <data name="ModShort" xml:space="preserve">
+    <value>修正には、ビュー</value>
+  </data>
+  <data name="MSG_ErrDelSubFolder" xml:space="preserve">
+    <value>最初のサブフォルダを削除してください</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Naming" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>来週事業報告書を作成します</value>
+  </data>
+  <data name="NextWork" xml:space="preserve">
+    <value>来週の仕事</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>ユーザーがアクセスすることはできません</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>ファイルが存在しません</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>フォルダ名の親</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>個装箱</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>処理されています</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理エラーが発生しました管理者に連絡してください</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>ログイン·デー</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>追加されました</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="ReplyScript" xml:space="preserve">
+    <value>投稿を公開しました</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>日誌</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>オブジェクトを報告します</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>招待</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SelectCopyList" xml:space="preserve">
+    <value>ステータスをコピーしたいディレクトリを選択してください</value>
+  </data>
+  <data name="SelectDeleteList" xml:space="preserve">
+    <value>削除したいリストを選択してください</value>
+  </data>
+  <data name="SelectDeptAfterDept" xml:space="preserve">
+    <value>部門の部門を選択して[変更]ボタンを選択してください</value>
+  </data>
+  <data name="SelectDeptBeforeDept" xml:space="preserve">
+    <value>部門変更前]部署を選択するボタンを選択してください</value>
+  </data>
+  <data name="SelectMoveList" xml:space="preserve">
+    <value>ステータスを移動したいディレクトリを選択してください</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>ユーザーを選択してください</value>
+  </data>
+  <data name="SelectUserAfterUser" xml:space="preserve">
+    <value>選択してください[ユーザーの変更]ボタンをクリックし、ユーザーを選択する</value>
+  </data>
+  <data name="SelectUserBeforeUser" xml:space="preserve">
+    <value>選択してください[ユーザーの変更]ボタンをクリックし、ユーザーを選択する</value>
+  </data>
+  <data name="SelFolder" xml:space="preserve">
+    <value>フォルダを選択してください</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>権限を設定して下さい</value>
+  </data>
+  <data name="SettingMultiLang" xml:space="preserve">
+    <value>マルチラングを設定します</value>
+  </data>
+  <data name="ShallAddNextJob" xml:space="preserve">
+    <value>来週の事業の入力に追加するには？</value>
+  </data>
+  <data name="ShallAddNowJob" xml:space="preserve">
+    <value>この週ビジネスに参入するには、それに追加？</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>共有ボックス</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共有オブジェクト</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>意見</value>
+  </data>
+  <data name="ShortRegister" xml:space="preserve">
+    <value>コメントを準備</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>今週の事業報告書を作成してください</value>
+  </data>
+  <data name="ThisWork" xml:space="preserve">
+    <value>今週のビジネス</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>転送を選択する</value>
+  </data>
+  <data name="TransferAll" xml:space="preserve">
+    <value>プレナリー転送</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>日記</value>
+  </data>
+  <data name="WorkCancel" xml:space="preserve">
+    <value>ログの確認を取り消す</value>
+  </data>
+  <data name="WorkClose" xml:space="preserve">
+    <value>プライベートでログイン</value>
+  </data>
+  <data name="WorkConfirm" xml:space="preserve">
+    <value>確認をログに記録</value>
+  </data>
+  <data name="WorkConfirmCancel" xml:space="preserve">
+    <value>ログの確認が取り消されました</value>
+  </data>
+  <data name="WorkConfirmOK" xml:space="preserve">
+    <value>認識しログインします</value>
+  </data>
+  <data name="WorkContent" xml:space="preserve">
+    <value>レポート</value>
+  </data>
+  <data name="WorkFolder" xml:space="preserve">
+    <value>日記ボックス</value>
+  </data>
+  <data name="WorkMod" xml:space="preserve">
+    <value>ビジネス·ログの変更</value>
+  </data>
+  <data name="WorkOpen" xml:space="preserve">
+    <value>ログを開く</value>
+  </data>
+  <data name="WorkRegister" xml:space="preserve">
+    <value>ビジネス·ログを作成する</value>
+  </data>
+  <data name="WorkView" xml:space="preserve">
+    <value>ビュー·ビジネス·ジャーナル</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>書き込む</value>
+  </data>
+  <data name="Writer" xml:space="preserve">
+    <value>により作製</value>
+  </data>
+  <data name="GetReportList" xml:space="preserve">
+    <value>レポートの一覧を取得</value>
+  </data>
+  <data name="ViewPT" xml:space="preserve">
+    <value>ビュー PT</value>
+  </data>
+  <data name="Inform" xml:space="preserve">
+    <value>知らせる</value>
+  </data>
+  <data name="InformSystem" xml:space="preserve">
+    <value>フォルダに通知</value>
+  </data>
+  <data name="SelInformSystem" xml:space="preserve">
+    <value>フォルダを知らせる選択.</value>
+  </data>
+  <data name="InformList" xml:space="preserve">
+    <value>知らせる</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="AdminList" xml:space="preserve">
+    <value>Admin List</value>
+  </data>
+  <data name="InformBox" xml:space="preserve">
+    <value>Imform box</value>
+  </data>
+  <data name="PrivateBox" xml:space="preserve">
+    <value>Private box</value>
+  </data>
+  <data name="ShareBox" xml:space="preserve">
+    <value>Share box</value>
+  </data>
+  <data name="BriefingSetMsg" xml:space="preserve">
+    <value>* You can generate a classification for the reporting system</value>
+  </data>
+  <data name="BriefingSetting" xml:space="preserve">
+    <value>Briefing setting</value>
+  </data>
+  <data name="AllList" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+</root>

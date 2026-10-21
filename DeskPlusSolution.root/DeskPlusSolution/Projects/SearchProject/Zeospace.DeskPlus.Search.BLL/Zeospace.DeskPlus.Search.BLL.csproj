@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC924A72-FF4A-4702-B6AB-76F1778E3332}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Search.BLL</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Search.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Search\Util\Lucene\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Analyzers, Version=2.9.2.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Search\Util\Lucene\Lucene.Net.Contrib.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Highlighter, Version=2.3.2.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DeskPlusEIP\Search\Util\Lucene\Lucene.Net.Contrib.Highlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address\Index.cs" />
+    <Compile Include="Address\Search.cs" />
+    <Compile Include="Approval\Index.cs" />
+    <Compile Include="Approval\Search.cs" />
+    <Compile Include="Board\Index.cs" />
+    <Compile Include="Board\Search.cs" />
+    <Compile Include="Coop\Index.cs" />
+    <Compile Include="Coop\Search.cs" />
+    <Compile Include="EDM\Index.cs" />
+    <Compile Include="EDM\Search.cs" />
+    <Compile Include="FTR\FileText.cs" />
+    <Compile Include="Index.cs" />
+    <Compile Include="LuceneSearch.cs" />
+    <Compile Include="Pim\Index.cs" />
+    <Compile Include="Pim\Search.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RM\Index.cs" />
+    <Compile Include="RM\Search.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="WebHard\Index.cs" />
+    <Compile Include="WebHard\Search.cs" />
+    <Compile Include="TAS\Index.cs" />
+    <Compile Include="TAS\Search.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ComponentProject\Zeospace.DeskPlus.Component.Converter\Zeospace.DeskPlus.Component.Converter.csproj">
+      <Project>{C6960428-C3C0-460A-BF97-78FDC8CCF5E5}</Project>
+      <Name>Zeospace.DeskPlus.Component.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Search.BE\Zeospace.DeskPlus.Search.BE.csproj">
+      <Project>{0279388A-2E3F-4378-BC10-79D196DD2131}</Project>
+      <Name>Zeospace.DeskPlus.Search.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Search.DAL\Zeospace.DeskPlus.Search.DAL.csproj">
+      <Project>{9B4CA28E-8569-4476-BE9C-C9A02E2B8F0F}</Project>
+      <Name>Zeospace.DeskPlus.Search.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SNS\" />
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

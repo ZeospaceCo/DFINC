@@ -1,0 +1,117 @@
+﻿<table border="1" cellspacing="0" class="table_stat">
+<caption></caption>
+<thead>
+<tr>
+<th colspan="2" scope="row"><span class="spStatMonth0"></span></th>
+<th><span class="spStatMonth1"></span></th>
+<th><span class="spStatMonth2"></span></th>
+<th><span class="spStatMonth3"></span></th>
+<th><span class="spStatMonth4"></span></th>
+<th><span class="spStatMonth5"></span></th>
+<th><span class="spStatMonth6"></span></th>
+<th><span class="spStatMonth7"></span></th>
+<th><span class="spStatMonth8"></span></th>
+<th><span class="spStatMonth9"></span></th>
+<th><span class="spStatMonth10"></span></th>
+<th><span class="spStatMonth11"></span></th>
+<th><span class="spStatMonth12"></span></th>
+</tr>
+</thead>
+
+<tbody>
+
+{#foreach $T as List}
+
+<tr title="{ $T.List.NameBase }">
+<th rowspan="5" scope="rowgroup" style="width:150px;">
+    {#if $T.List.UserID > 0}
+        <a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a>
+    {#else if}
+        { $T.List.NameBase }
+    {#/if}
+    <br />
+    <span class="txt_point">(<span class="spStatTot"></span> { $T.List.Cnt } <span class="spStatUnit"></span>)</span>
+</th>
+<th scope="row" style="width:50px;"><span class="spStatC"></span></th>
+<td>{ $T.List.ArrMonthInfo[0].January }</td>
+<td>{ $T.List.ArrMonthInfo[0].February }</td>
+<td>{ $T.List.ArrMonthInfo[0].March }</td>
+<td>{ $T.List.ArrMonthInfo[0].April }</td>
+<td>{ $T.List.ArrMonthInfo[0].May }</td>
+<td>{ $T.List.ArrMonthInfo[0].June }</td>
+<td>{ $T.List.ArrMonthInfo[0].July }</td>
+<td>{ $T.List.ArrMonthInfo[0].Auguest }</td>
+<td>{ $T.List.ArrMonthInfo[0].September }</td>
+<td>{ $T.List.ArrMonthInfo[0].October }</td>
+<td>{ $T.List.ArrMonthInfo[0].November }</td>
+<td>{ $T.List.ArrMonthInfo[0].December }</td>
+</tr>
+<tr title="{ $T.List.NameBase }">
+<th scope="row"><span class="spStatW"></span></th>
+<td>{ $T.List.ArrMonthInfo[1].January }</td>
+<td>{ $T.List.ArrMonthInfo[1].February }</td>
+<td>{ $T.List.ArrMonthInfo[1].March }</td>
+<td>{ $T.List.ArrMonthInfo[1].April }</td>
+<td>{ $T.List.ArrMonthInfo[1].May }</td>
+<td>{ $T.List.ArrMonthInfo[1].June }</td>
+<td>{ $T.List.ArrMonthInfo[1].July }</td>
+<td>{ $T.List.ArrMonthInfo[1].Auguest }</td>
+<td>{ $T.List.ArrMonthInfo[1].September }</td>
+<td>{ $T.List.ArrMonthInfo[1].October }</td>
+<td>{ $T.List.ArrMonthInfo[1].November }</td>
+<td>{ $T.List.ArrMonthInfo[1].December }</td>
+</tr>
+<tr title="{ $T.List.NameBase }">
+<th scope="row"><span class="spStatR"></span></th>
+<td>{ $T.List.ArrMonthInfo[2].January }</td>
+<td>{ $T.List.ArrMonthInfo[2].February }</td>
+<td>{ $T.List.ArrMonthInfo[2].March }</td>
+<td>{ $T.List.ArrMonthInfo[2].April }</td>
+<td>{ $T.List.ArrMonthInfo[2].May }</td>
+<td>{ $T.List.ArrMonthInfo[2].June }</td>
+<td>{ $T.List.ArrMonthInfo[2].July }</td>
+<td>{ $T.List.ArrMonthInfo[2].Auguest }</td>
+<td>{ $T.List.ArrMonthInfo[2].September }</td>
+<td>{ $T.List.ArrMonthInfo[2].October }</td>
+<td>{ $T.List.ArrMonthInfo[2].November }</td>
+<td>{ $T.List.ArrMonthInfo[2].December }</td>
+</tr>
+<tr title="{ $T.List.NameBase }">
+<th scope="row"><span class="spStatD"></span></th>
+<td>{ $T.List.ArrMonthInfo[3].January }</td>
+<td>{ $T.List.ArrMonthInfo[3].February }</td>
+<td>{ $T.List.ArrMonthInfo[3].March }</td>
+<td>{ $T.List.ArrMonthInfo[3].April }</td>
+<td>{ $T.List.ArrMonthInfo[3].May }</td>
+<td>{ $T.List.ArrMonthInfo[3].June }</td>
+<td>{ $T.List.ArrMonthInfo[3].July }</td>
+<td>{ $T.List.ArrMonthInfo[3].Auguest }</td>
+<td>{ $T.List.ArrMonthInfo[3].September }</td>
+<td>{ $T.List.ArrMonthInfo[3].October }</td>
+<td>{ $T.List.ArrMonthInfo[3].November }</td>
+<td>{ $T.List.ArrMonthInfo[3].December }</td>
+</tr>
+<tr title="{ $T.List.NameBase }">
+<th scope="row" class="sum"><span class="spStatSum"></span></th>
+<td class="sum">{ $T.List.ArrMonthInfo[4].January }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].February }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].March }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].April }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].May }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].June }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].July }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].Auguest }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].September }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].October }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].November }</td>
+<td class="sum">{ $T.List.ArrMonthInfo[4].December }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="14" class="center"><span class="jtNoData"></span></td>
+</tr>
+{#/for}
+
+
+</tbody>
+</table>

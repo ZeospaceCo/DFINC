@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 退会 ($Name$)</Title>
+	<ContentHTML>
+		[退会]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 脱退する人 : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- 脱退の理由 : $Content$
+	</ContentHTML>
+</ContentInfo>

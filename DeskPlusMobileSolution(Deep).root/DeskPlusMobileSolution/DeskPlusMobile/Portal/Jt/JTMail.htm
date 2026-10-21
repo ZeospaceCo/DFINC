@@ -1,0 +1,25 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:Portal.viewMail('{ $T.List.mail_sn }','{ $T.List.read_flag }')">
+            <a href="#">
+            {#if ($T.List.read_flag == '1')} <div class="podot">●</div> {#else} <div class="grdot">●</div>  {#/if}
+            
+            <div class="conBox">
+            {#if ($T.List.read_flag == '1')} <span class="LNoready"> {#else} <span class="Lready">{#/if}             
+            
+            { $T.List.mail_subject }&nbsp;{$T.List.today}</span>
+            
+            {#if $T.List.isAttach == 'true'} &nbsp;<i class="fas fa-paperclip" style="color:#999;font-size:0.8em;"></i>{#/if}<br />
+            { $T.List.from_header }&nbsp;{ $T.List.create_time }
+            </div>
+
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title ">
+        <a href="#" class="mct"><span id="NoMailListData" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

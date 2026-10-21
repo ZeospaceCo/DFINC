@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0ACD902-7319-449C-8D18-026674E8F8BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Proposal.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Proposal.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Zeospace.DeskPlus.Account.Web">
+      <HintPath>..\bin\Zeospace.DeskPlus.Account.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseControlProposal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageProposal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageProposalAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSProposal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\GetJudgeUserList.aspx.cs">
+      <DependentUpon>GetJudgeUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetJudgeUserList.aspx.designer.cs">
+      <DependentUpon>GetJudgeUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GetUserList.aspx.cs">
+      <DependentUpon>GetUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetUserList.aspx.designer.cs">
+      <DependentUpon>GetUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\AuthList.aspx.cs">
+      <DependentUpon>AuthList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\AuthList.aspx.designer.cs">
+      <DependentUpon>AuthList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\EstimateItem.aspx.cs">
+      <DependentUpon>EstimateItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\EstimateItem.aspx.designer.cs">
+      <DependentUpon>EstimateItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\FirstProcess.aspx.cs">
+      <DependentUpon>FirstProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\FirstProcess.aspx.designer.cs">
+      <DependentUpon>FirstProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\JudgeView.aspx.cs">
+      <DependentUpon>JudgeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\JudgeView.aspx.designer.cs">
+      <DependentUpon>JudgeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\Opinion.aspx.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\Opinion.aspx.designer.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Admin\ResultView.aspx.cs">
+      <DependentUpon>ResultView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Admin\ResultView.aspx.designer.cs">
+      <DependentUpon>ResultView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Judge\JudgeList.aspx.cs">
+      <DependentUpon>JudgeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Judge\JudgeList.aspx.designer.cs">
+      <DependentUpon>JudgeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Judge\JudgeView.aspx.cs">
+      <DependentUpon>JudgeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Judge\JudgeView.aspx.designer.cs">
+      <DependentUpon>JudgeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\MyList.aspx.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\MyList.aspx.designer.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\PopUpStats.aspx.cs">
+      <DependentUpon>PopUpStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\PopUpStats.aspx.designer.cs">
+      <DependentUpon>PopUpStats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Write.aspx.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Write.aspx.designer.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ws\Common\GetJudgeUserList.asmx.cs">
+      <DependentUpon>GetJudgeUserList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Admin\AuthList.asmx.cs">
+      <DependentUpon>AuthList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Admin\FirstProcess.asmx.cs">
+      <DependentUpon>FirstProcess.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Admin\ResultView.asmx.cs">
+      <DependentUpon>ResultView.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Judge\JudgeList.asmx.cs">
+      <DependentUpon>JudgeList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Judge\JudgeView.asmx.cs">
+      <DependentUpon>JudgeView.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\MyList.asmx.cs">
+      <DependentUpon>MyList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\PopUpStats.asmx.cs">
+      <DependentUpon>PopUpStats.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Statistics.asmx.cs">
+      <DependentUpon>Statistics.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ProposalProject\Zeospace.DeskPlus.Proposal.BE\Zeospace.DeskPlus.Proposal.BE.csproj">
+      <Project>{177C4C05-998C-4F97-AD5E-166E7AA682B4}</Project>
+      <Name>Zeospace.DeskPlus.Proposal.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ProposalProject\Zeospace.DeskPlus.Proposal.BLL\Zeospace.DeskPlus.Proposal.BLL.csproj">
+      <Project>{12BEB663-EF83-455B-BD01-D5D736996A11}</Project>
+      <Name>Zeospace.DeskPlus.Proposal.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ProposalProject\Zeospace.DeskPlus.Proposal.DAL\Zeospace.DeskPlus.Proposal.DAL.csproj">
+      <Project>{68FC6E05-9266-4F7B-A340-BAB662369BD8}</Project>
+      <Name>Zeospace.DeskPlus.Proposal.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\GetJudgeUserList.aspx" />
+    <Content Include="Common\GetUserList.aspx" />
+    <Content Include="Common\UserInfo.aspx" />
+    <Content Include="Content\Admin\AuthList.aspx" />
+    <Content Include="Content\Admin\EstimateItem.aspx" />
+    <Content Include="Content\Admin\FirstProcess.aspx" />
+    <Content Include="Content\Admin\JudgeView.aspx" />
+    <Content Include="Content\Admin\Opinion.aspx" />
+    <Content Include="Content\Admin\ResultView.aspx" />
+    <Content Include="Content\Judge\JudgeList.aspx" />
+    <Content Include="Content\Judge\JudgeView.aspx" />
+    <Content Include="Content\List.aspx" />
+    <Content Include="Content\Mod.aspx" />
+    <Content Include="Content\MyList.aspx" />
+    <Content Include="Content\PopUpStats.aspx" />
+    <Content Include="Content\Statistics.aspx" />
+    <Content Include="Content\View.aspx" />
+    <Content Include="Content\Write.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Js\Common\GetJudgeUserList.js" />
+    <Content Include="Js\Common\GetUserList.js" />
+    <Content Include="Js\Common\UserInfo.js" />
+    <Content Include="Js\Content\Admin\AuthList.js" />
+    <Content Include="Js\Content\Admin\EstimateItem.js" />
+    <Content Include="Js\Content\Admin\FirstProcess.js" />
+    <Content Include="Js\Content\Admin\JudgeView.js" />
+    <Content Include="Js\Content\Admin\Opinion.js" />
+    <Content Include="Js\Content\Admin\ResultView.js" />
+    <Content Include="Js\Content\Judge\JudgeList.js" />
+    <Content Include="Js\Content\Judge\JudgeView.js" />
+    <Content Include="Js\Content\List.js" />
+    <Content Include="Js\Content\Mod.js" />
+    <Content Include="Js\Content\MyList.js" />
+    <Content Include="Js\Content\PopUpStats.js" />
+    <Content Include="Js\Content\Statistics.js" />
+    <Content Include="Js\Content\View.js" />
+    <Content Include="Js\Content\Write.js" />
+    <Content Include="Js\Menu\Menu.js" />
+    <Content Include="Jt\Common\JTGetJudgeUserList.htm" />
+    <Content Include="Jt\Content\Admin\JTFirstProcess.htm" />
+    <Content Include="Jt\Content\Admin\JTStatusResult.htm" />
+    <Content Include="Jt\Content\JTDelFile.htm" />
+    <Content Include="Jt\Content\JTList.htm" />
+    <Content Include="Jt\Content\JTMonthList.htm" />
+    <Content Include="Jt\Content\JTMyList.htm" />
+    <Content Include="Jt\Content\JTPopUpStats.htm" />
+    <Content Include="Jt\Content\JTStatistics.htm" />
+    <Content Include="Jt\Content\JTStatus.htm" />
+    <Content Include="Jt\Content\Judge\JTJudgeList.htm" />
+    <Content Include="Menu\Menu.aspx" />
+    <Content Include="Ws\Common\GetJudgeUserList.asmx" />
+    <Content Include="Ws\Content\Admin\AuthList.asmx" />
+    <Content Include="Ws\Content\Admin\FirstProcess.asmx" />
+    <Content Include="Ws\Content\Admin\ResultView.asmx" />
+    <Content Include="Ws\Content\Judge\JudgeList.asmx" />
+    <Content Include="Ws\Content\Judge\JudgeView.asmx" />
+    <Content Include="Ws\Content\List.asmx" />
+    <Content Include="Ws\Content\Mod.asmx" />
+    <Content Include="Ws\Content\MyList.asmx" />
+    <Content Include="Ws\Content\PopUpStats.asmx" />
+    <Content Include="Ws\Content\Statistics.asmx" />
+    <Content Include="Ws\Content\View.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26317</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Proposal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

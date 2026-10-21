@@ -1,0 +1,40 @@
+﻿<table class="table_typeA"> 
+<caption>업무톡 리스트</caption>
+<colgroup>
+    <col width="150px" />
+    <col width="100px" />
+    <col />    
+    <col width="120px" />    
+    <col width="100px" />
+</colgroup>
+<tr>    
+    <th class="center" id="r_categoryName"></th>    
+    <th class="center" id="r_state"></th>    
+    <th class="center" id="r_title"></th>    
+    <th class="center" id="r_register"></th>    
+    <th class="center" id="r_regDate"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{$T.List.GubunTitle }{ $T.List.SectionCount }</td>
+    <td class="center">{ $T.List.StateStr }</td>
+    <td>
+        <a onclick="List.PopupAppViewList('{ $T.List.ListID }');return false;" style="cursor:pointer" >{ $T.List.Title }</a>        
+
+        {#if $T.List.ShowNew == 'Y'}&nbsp;<span class="m_new"></span>{#/if} 
+
+        <a onclick="List.PopupAppShort('{ $T.List.ListID }', '0');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">{#if $T.List.ReplyCount > 0}({ $T.List.ReplyCount }){#/if}</span>
+        </a>
+    </td>
+    <td class="center">
+        <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.Name }{ $T.List.ReplyUserStr }</span></a>
+    </td>
+    <td class="center">{$T.List.RegDate }</td>
+</tr>
+{#else}
+ <tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>       
+ </tr>
+{#/for}    
+</table>

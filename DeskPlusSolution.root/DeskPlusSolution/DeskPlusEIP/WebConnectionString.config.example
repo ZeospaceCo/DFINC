@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<connectionStrings>
+    <remove name="LocalSqlServer" />
+    <add name="SQLConnMaster" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnSolution" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnAlarm" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnEtc" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnEDMS" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnMail" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnCMP" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+    <add name="SQLConnERP" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
+</connectionStrings>

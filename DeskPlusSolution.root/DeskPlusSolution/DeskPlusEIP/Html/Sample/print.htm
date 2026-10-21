@@ -1,0 +1,277 @@
+﻿<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>jQuery Print Element 1.2 Sample Page</title>
+        <meta name="author" content="Erik Zaadi" />
+        <meta name="keywords" content="jquery,aspnetmvc,c#,plugins,programming,web,web dev,utilities,git,github,open source" />
+        <meta name="distribution" content="all" />
+        <meta name="rating" content="general" />
+        <meta name="robots" content="all" />
+        <meta name="MSSmartTagsPreventParsing" content="true" />
+        <link href="http://projects.erikzaadi.com/atom.xml" rel="alternate" title="Erik Zaadi @ Github" type="application/atom+xml" />
+		<link media="all" rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/dark-hive/jquery-ui.css" />
+        <link rel="stylesheet" href="http://projects.erikzaadi.com/css/blueprint.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="http://projects.erikzaadi.com/css/main.css" type="text/css" media="all" />
+        <!--[if lt IE 8]><link rel="stylesheet" href="http://projects.erikzaadi.com/css/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+    </head>
+    <body>
+    <div class="container ui-widget-content">
+        <div class="span-24 last ui-widget ui-corner-all">
+            <div class="span-24 last ui-widget-header ui-corner-top">
+                <div>
+                    &nbsp;
+                </div>
+                <h1 class="centered"><a href="/">Erik Zaadi @ GitHub</a></h1>
+            </div>
+            <div class="span-24 last">
+                <div class="span-19">
+                    <div class="span-19 last">
+                        &nbsp;
+                    </div>
+                    <div class="span-19 last">
+                        <ul class="BreadCrumbs">
+                            <li>
+                                <a class="ui-state-default" href="/">Home</a>
+                            </li>
+                            
+                            <li>
+                                <span>&nbsp;::&nbsp;</span>
+                            </li>
+                            <li>
+                                <a class="ui-state-default" href="/jQueryPlugins/jQuery.printElement/">jQuery Plugins / jQuery Print Element </a>
+                            </li>
+                             
+                            <li>
+                                <span>&nbsp;::&nbsp;</span>
+                            </li>
+                            <li>
+                                <a class="ui-state-default" href="/jQueryPlugins/jQuery.printElement/Sample">jQuery Print Element 1.2 Sample Page </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="span-19 last">
+                        &nbsp;
+                    </div>
+                    <div class="span-19 last">
+                        <div class="span-18 prepend-1 last">
+                            <div class="span-17 last">
+    <style type="text/css">
+        .labelSpan {
+            float: left;
+            display: block;
+            width: 160px !important;
+            font-weight: bold;
+        }
+        
+        .contentDiv {
+            display: inline;
+        }
+        
+        .item {
+            float: none;
+            clear: both;
+            display: block;
+        }
+    </style>
+    <input type="button" value="Default" id="simplePrint" /><input type="button" value="Popup" id="PrintinPopup" /><input type="button" value="Change Title" id="ChangeTitle" /><input type="button" value="Popup and Leave open" id="PopupandLeaveopen" /><input type="button" value="Strip CSS" id="stripCSS" /><input type="button" value="External CSS" id="externalCSS"/><hr/>
+    <div id="toPrint">
+        <h2>Here's a sample of an element to print!</h2>
+        <div class="notice">
+            Notice!
+            <br />
+            <img src="http://localhost/DeskPlusEIP/FileData/1/Board/201105/editor/4df1b7e1-2644-4b99-b904-8b41709b606c/아이유~1.JPG" alt="" />
+        </div>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>
+                       &nbsp;Form inputs test&nbsp;
+                    </legend>
+                    <div class="item">
+                        <span class="labelSpan">Radio Test </span>
+                        <div class="contentDiv">
+                            <input type="radio" name="radio1" value="1" /><input type="radio" name="radio1" value="2">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="labelSpan">Select Test </span>
+                        <div class="contentDiv">
+                            <select name="asdsdad">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="labelSpan">
+                            Check Box Test 
+                        </span>
+                        <div class="contentDiv">
+                            <input type="checkbox" name="check1" value="1"/><input type="checkbox" value="2"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="labelSpan">
+                        Text Input Test 
+                        </span>
+                        <div class="contentDiv">
+                            <input type="text" name="TextTest" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="labelSpan">Text Area Test </span>
+                        <div class="contentDiv">
+                            <textarea name="texareatest">
+                            </textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="span-19 last">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="span-5 last">
+                    <div class="span-5 last">
+                        &nbsp;
+                    </div>
+                    <div class="span-5 last">
+                        <div class="span-5 last hideifnoscript" id="themeswitcher">
+                            Change jQuery UI Theme
+                        </div>
+                        <div class="span-5 last">
+                            <div id="switcher">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span-5 last">
+                        &nbsp;
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="span-24 last ui-widget-header ui-corner-bottom">
+            <div class="span-24 last">
+                &nbsp;
+            </div>
+            <div class="span-24 last">
+                <div class="span-24 last">
+                    <div class="span-5">
+                        &nbsp;
+                    </div>
+                    <div class="span-18 last">
+                        <div class="span-3 centered">
+                            Blog
+                        </div>
+                        <div class="span-7 centered">
+                            RSS
+                        </div>
+                        <div class="span-4 centered last">
+                            Twitter
+                        </div>
+                    </div>
+                </div>
+                <div class="span-24 last">
+                    <div class="span-5">
+                        &nbsp;
+                    </div>
+                    <div class="span-18 last">
+                        <div class="span-3 centered">
+                            <a href="http://erikzaadi.com"><img alt='Blog' src="/images/blog.JPG" class="centered" title='Blog' /></a>
+                        </div>
+                        <div class='span-7 centered'>
+                            <a href='http://projects.erikzaadi.com/atom.xml' rel="alternate" title="Suscribe"><img alt='RSS' src='/images/rss.png' class="centered" title='RSS' /></a>
+                        </div>
+                        <div class='span-4 last centered'>
+                            <span href='http://twitter.com/erikzaadi' alt='Twitter' id='Twitter'></span>
+                            <noscript>
+                                <a title="Follow me on Twitter!" href="http://twitter.com/erikzaadi"><img src="/images/twitter.png" alt="Twitter" /></a>
+                            </noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span-24 last">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript" src="/scripts/jquery.themeswitcher.js">
+    </script>
+    <script type="text/javascript" src="/scripts/jquery.tooltip.min.js">
+    </script>
+    <script type="text/javascript" src="/scripts/main.js">
+    </script>
+    
+    <script type="text/javascript" src="http://github.com/erikzaadi/jQueryPlugins/raw/master/jQuery.printElement/jquery.printElement.min.js">
+    </script>
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#simplePrint").click(function () {
+                printElem({});
+            });
+            $("#PrintinPopup").click(function () {
+                printElem({ printMode: 'popup' });
+            });
+            $("#ChangeTitle").click(function () {
+                printElem({ pageTitle: 'thisWillBeTheNameInThePrintersLog.html' });
+            });
+            $("#PopupandLeaveopen").click(function () {
+                printElem({ leaveOpen: true, printMode: 'popup' });
+            });
+            $("#stripCSS").click(function () {
+                printElem({ overrideElementCSS: true });
+            });
+            $("#externalCSS").click(function () {
+                printElem({ overrideElementCSS: ['http://assets3.github.com/stylesheets/bundle.css?180c214baeba2d8a1194e7b48ea7581cfee3e505'] });
+            });
+        });
+        function printElem(options) {
+            $('#toPrint').printElement(options);
+        }
+
+    </script>
+    
+    
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost +
+        "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-8728177-2");
+            pageTracker._trackPageview();
+        }
+        catch (err) {
+        }
+    </script>
+	<noscript> 
+	    <img src="http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=633372029&utmsr=-&utmsc=-&utmul=-&utmje=0&utmfl=-&utmdt=-&utmhn=projects.erikzaadi.com&utmr=&utmp=/jQueryPlugins/jQuery.printElement/Sample[noscript]&utmac=UA-8728177-2&utmcc=__utma%3D633372029.1680039647.1256046866.1256046866.1256046866.2%3B%2B__utmb%3D633372029%3B%2B__utmc%3D633372029%3B%2B__utmz%3D633372029.12560468662.2.utmccn%3D(direct)%7Cutmcsr%3D(direct)%7Cutmcmd%3D(none)%3B%2B__utmv%3D633372029.%3B" alt="GA" style="display: none;" /> 
+	</noscript> 
+   
+    <noscript>
+        <style type="text/css">
+            
+            .hideifnoscript {
+                display: none
+            }
+        </style>
+    </noscript>
+</body>
+</html>

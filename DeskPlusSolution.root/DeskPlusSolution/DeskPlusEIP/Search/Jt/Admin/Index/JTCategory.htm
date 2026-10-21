@@ -1,0 +1,57 @@
+﻿<table class="table_typeA">
+    <caption>
+        Category LIST
+    </caption>
+    <colgroup>
+        <col width="25px" />
+        <col width="140px" />
+        <col width="80px" />
+        <col width="180px" />
+        <col width="180px" />
+        <col width="120px" />
+        <col width="120px" />
+        <col />
+    </colgroup>
+    <thead>
+        <tr>
+            <th id="r_checked"><input type="checkbox" id="cbxAll" onclick="Default.Checked()" /></th>
+            <th class="center"><span id="r_category"></span></th>
+            <th class="center"><span id="r_status"></span></th>
+            <th class="center"><span id="r_startdate"></span></th>
+            <th class="center"><span id="r_enddate"></span></th>
+            <th class="center"><span id="r_exectime"></span></th>
+            <th class="center"><span id="r_ftrtextcount"></span></th>
+            <th class="center"><span id="r_indexcount"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as CateList}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="{ $T.CateList.LogID }" value="{ $T.CateList.Category }" /></td>
+        <td class="center">
+        <a onclick="Default.LoadDataDetail('{ $T.CateList.LogID }');return false;" style="cursor:pointer" >
+        { $T.CateList.Category }
+        </a>
+        </td>
+        <td class="center">
+            {#if $T.CateList.Status == 'P'} <span class="r_p"></span> 
+            {#elseif $T.CateList.Status == 'C'} <span class="r_c"></span>  
+            {#elseif $T.CateList.Status == 'E'} <span class="r_e"></span> 
+            {#elseif $T.CateList.Status == 'D'} <span class="r_d"></span> 
+            {#else} <span class="r_n"></span>         
+            {#/if}
+            <input type="hidden" id="Status_{ $T.CateList.LogID }" value="{ $T.CateList.Status }" />
+        </td>
+        <td class="center">{ $T.CateList.StartDateStr }</td>
+        <td class="center">{ $T.CateList.EndDateStr }</td>
+        <td class="center">{ $T.CateList.ExecTime }</td>
+        <td class="center">{ $T.CateList.FTRTextCount }</td>
+        <td class="center">{ $T.CateList.IndexCount }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}  
+    </tbody>
+</table>

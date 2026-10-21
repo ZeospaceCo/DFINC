@@ -1,0 +1,2912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2797A17B-EF87-4D2B-900C-6E1653876CF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlusMobile.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlusMobile.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.BarCode, Version=6.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=8.4.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells.GridDesktop, Version=8.4.1.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Cells.GridDesktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells.GridWeb, Version=8.4.1.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Cells.GridWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Diagram, Version=5.2.0.0, Culture=neutral, PublicKeyToken=dfdba7ce0555ea8b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Diagram.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Email, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ad504e9f0d34714a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Imaging, Version=2.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Note, Version=1.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Note.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.OCR, Version=2.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=10.3.0.0, Culture=neutral, PublicKeyToken=6947866647e416ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides, Version=15.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Tasks, Version=8.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=15.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\Aspose\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Html\Util\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Html\Util\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="interop.SMSCALL">
+      <HintPath>Html\Util\interop.SMSCALL.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.4.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Util\PDF\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Address\Add.aspx" />
+    <Content Include="Address\Jt\JTList.htm" />
+    <Content Include="Address\List.aspx" />
+    <Content Include="Address\View.aspx" />
+    <Content Include="Address\Ws\GetAddress.asmx" />
+    <Content Include="Approval\Add.aspx" />
+    <Content Include="Approval\AddOpinion.aspx" />
+    <Content Include="Approval\Afterward.aspx" />
+    <Content Include="Approval\AlarmView.aspx" />
+    <Content Include="Approval\Approve.aspx" />
+    <Content Include="Approval\BaseView.aspx" />
+    <Content Include="Approval\DeptList.aspx" />
+    <Content Include="Approval\DocOpinion.aspx" />
+    <Content Include="Approval\DocView.aspx" />
+    <Content Include="Approval\DraftAdd.aspx" />
+    <Content Include="Approval\DraftList.aspx" />
+    <Content Include="Approval\EditorNonActiveX.aspx" />
+    <Content Include="Approval\Folder.aspx" />
+    <Content Include="Approval\Form.aspx" />
+    <Content Include="Approval\GetBaseDoc.aspx" />
+    <Content Include="Approval\Jt\JTBaseList.htm" />
+    <Content Include="Approval\Jt\JTDraftList.htm" />
+    <Content Include="Approval\Jt\JTFavForm.htm" />
+    <Content Include="Approval\Jt\JTForm.htm" />
+    <Content Include="Approval\Jt\JTList.htm" />
+    <Content Include="Approval\Jt\JTProxyList.htm" />
+    <Content Include="Approval\Jt\JTDocList.htm" />
+    <Content Include="Approval\Jt\JTCirDocList.htm" />
+    <Content Include="Approval\Jt\JTSubmitList.htm" />
+    <Content Include="Approval\List.aspx" />
+    <Content Include="Approval\Memo.aspx" />
+    <Content Include="Approval\Mod.aspx" />
+    <Content Include="Approval\ModSequence.aspx" />
+    <Content Include="Approval\Proxy.aspx" />
+    <Content Include="Approval\Return.aspx" />
+    <Content Include="Approval\SaveDraft.aspx" />
+    <Content Include="Approval\SubmitAdd.aspx" />
+    <Content Include="Approval\SubmitList.aspx" />
+    <Content Include="Approval\View.aspx" />
+    <Content Include="Approval\WFolder.aspx" />
+    <Content Include="Approval\Ws\Common.asmx" />
+    <Content Include="Approval\Ws\GetApproval.asmx" />
+    <Content Include="Approval\Ws\Proxy\Add.asmx" />
+    <Content Include="Approval\Ws\SetApproval.asmx" />
+    <Content Include="Approval\DocList.aspx" />
+    <Content Include="Approval\CarboncopyList.aspx" />
+    <Content Include="Approval\CirDocList.aspx" />
+    <Content Include="Approval\CirDocView.aspx" />
+    <Content Include="App\agree.htm" />
+    <Content Include="App\FCM.aspx" />
+    <Content Include="App\Info.aspx" />
+    <Content Include="App\ios_update.htm" />
+    <Content Include="App\PushTest.aspx" />
+    <Content Include="App\iosPushTest.aspx" />
+    <Content Include="App\Push.aspx" />
+    <Content Include="App\android_update.htm" />
+    <Content Include="App_Data\Approval.xml" />
+    <Content Include="App_Data\Base.xml" />
+    <Content Include="App_Data\Coop.xml" />
+    <Content Include="App_Data\Mail.xml" />
+    <Content Include="App_Data\RM.xml" />
+    <Content Include="App_Data\SQLAccount.xml" />
+    <Content Include="App_Data\SQLAddress.xml" />
+    <Content Include="App_Data\SQLApproval.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\SQLAttendance.xml" />
+    <Content Include="App_Data\SQLBoard.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\SQLCommunity.xml" />
+    <Content Include="App_Data\SQLCoop.xml" />
+    <Content Include="App_Data\SQLHR.xml" />
+    <Content Include="App_Data\SQLMail.xml" />
+    <Content Include="App_Data\SQLMDM.xml" />
+    <Content Include="App_Data\SQLPim.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\SQLPortal.xml" />
+    <Content Include="App_Data\SQLRM.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\SQLSNS.xml" />
+    <Content Include="App_Data\SQLTask.xml" />
+    <Content Include="App_Data\SQLWebHard.xml" />
+    <Content Include="App_Data\Task.xml" />
+    <Content Include="Attendance\Add.aspx" />
+    <Content Include="Attendance\Ws\GetAttendance.asmx" />
+    <Content Include="Attendance\Ws\SetAttendance.asmx" />
+    <Content Include="Board\Add.aspx" />
+    <Content Include="Board\AddShortReply.aspx" />
+    <Content Include="Board\AlarmView.aspx" />
+    <Content Include="Board\Folder.aspx" />
+    <Content Include="Board\Jt\JTCalendar.htm" />
+    <Content Include="Board\Jt\JTFolder.htm" />
+    <Content Include="Board\Jt\JTList.htm" />
+    <Content Include="Board\Jt\JTShortReply.htm" />
+    <Content Include="Board\List.aspx" />
+    <Content Include="Board\ModShortReply.aspx" />
+    <Content Include="Board\View.aspx" />
+    <Content Include="Board\Write.aspx" />
+    <Content Include="Board\Ws\GetBoard.asmx" />
+    <Content Include="Board\Ws\SetBoard.asmx" />
+    <Content Include="Common\AttachMail.aspx" />
+    <Content Include="Common\AttachUrl.aspx" />
+    <Content Include="Common\AttachView.aspx" />
+    <Content Include="Common\Calendar.aspx" />
+    <Content Include="Common\CalendarDialog.aspx" />
+    <Content Include="Common\CalendarDualDialog.aspx" />
+    <Content Include="Common\ImageView.aspx" />
+    <Content Include="Common\Jt\JTCalendar.htm" />
+    <Content Include="Common\Jt\JTCalendarE.htm" />
+    <Content Include="Common\Jt\JTCalendarS.htm" />
+    <Content Include="Common\UploadProgress.aspx" />
+    <Content Include="Common\Ws\GetCommon.asmx" />
+    <Content Include="Common\AttachDSView.aspx" />
+    <Content Include="Community\Add.aspx" />
+    <Content Include="Community\AlarmView.aspx" />
+    <Content Include="Community\BoardFolder.aspx" />
+    <Content Include="Community\BoardList.aspx" />
+    <Content Include="Community\BoardView.aspx" />
+    <Content Include="Community\Folder.aspx" />
+    <Content Include="Community\Jt\JTBoardFolder.htm" />
+    <Content Include="Community\Jt\JTBoardList.htm" />
+    <Content Include="Community\Jt\JTFolder.htm" />
+    <Content Include="Community\Ws\GetCommunity.asmx" />
+    <Content Include="Community\Ws\SetCommunity.asmx" />
+    <Content Include="Config\List.aspx" />
+    <Content Include="Config\Ws\GetConfig.asmx" />
+    <Content Include="Config\Ws\SetConfig.asmx" />
+    <Content Include="Content\ko\Base\Css\C1\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C1\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C1\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C1\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C1\style.css" />
+    <Content Include="Content\ko\Base\Css\C2\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C2\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C2\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C2\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C2\style.css" />
+    <Content Include="Content\ko\Base\Css\C3\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C3\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C3\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C3\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C3\style.css" />
+    <Content Include="Content\ko\Base\Css\C4\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C4\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C4\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C4\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C4\style.css" />
+    <Content Include="Content\ko\Base\Css\C5\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C5\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C5\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C5\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C5\style.css" />
+    <Content Include="Content\ko\Base\Css\C6\mobile.css" />
+    <Content Include="Content\ko\Base\Css\C6\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\C6\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\C6\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\C6\style.css" />
+    <Content Include="Content\ko\Base\Css\DeskPlusApprovalView.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\all.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap-grid.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap-grid.min.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap-reboot.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap-reboot.min.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap.min.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\bootstrap.mintable.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\ie9.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\ml.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\mobile.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\navihorizontal.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\navimobile.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\navivertical.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\style.css" />
+    <Content Include="Content\ko\Base\Css\DStyle\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\ko\Base\Css\DStyle\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\ko\Base\Css\DStyle\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\ko\Base\Css\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\ko\Base\Css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\ko\Base\Css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\ko\Base\Css\Func_SNS.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default1.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default10.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default2.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default3.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default4.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default5.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default6.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default7.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default8.css" />
+    <Content Include="Content\ko\Base\Css\mobile_Default9.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main_c1.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main_c2.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main_c3.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main_c4.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main_c5.css" />
+    <Content Include="Content\ko\Base\Img\add.png" />
+    <Content Include="Content\ko\Base\Img\Approval.png" />
+    <Content Include="Content\ko\Base\Img\bg.png" />
+    <Content Include="Content\ko\Base\Img\bg_image2.gif" />
+    <Content Include="Content\ko\Base\Img\bg_image2.png" />
+    <Content Include="Content\ko\Base\Img\bt.gif" />
+    <Content Include="Content\ko\Base\Img\btbg.gif" />
+    <Content Include="Content\ko\Base\Img\btn_AndApp.png" />
+    <Content Include="Content\ko\Base\Img\bu_lk.gif" />
+    <Content Include="Content\ko\Base\Img\CheckOut.gif" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C1.png" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C2.png" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C3.png" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C4.png" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C5.png" />
+    <Content Include="Content\ko\Base\Img\ColorSample\C6.png" />
+    <Content Include="Content\ko\Base\Img\community.png" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\del.png" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\ico_ctxAppI.gif" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\ico_ctxAppS.gif" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\ico_ctx_bg.gif" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\info.png" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\max.png" />
+    <Content Include="Content\ko\Base\Img\ContextMenu\min.png" />
+    <Content Include="Content\ko\Base\Img\coop.png" />
+    <Content Include="Content\ko\Base\Img\ct_bg.gif" />
+    <Content Include="Content\ko\Base\Img\DStyle\myimgdefault.gif" />
+    <Content Include="Content\ko\Base\Img\email.png" />
+    <Content Include="Content\ko\Base\Img\Emergency.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\avi.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\bat.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\bin.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\bmp.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\dll.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\doc.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\docx.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\eml.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\exe.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\folder.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\gif.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\ini.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\jpg.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\js.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\log.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\mdb.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\mht.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\mp3.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\mp4.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\mpp.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\msi.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\no.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\pdf.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\png.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\ppt.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\pptx.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\psd.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\txt.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\ucl.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\xls.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\xlsx.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\xml.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\xps.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\zip.gif" />
+    <Content Include="Content\ko\Base\Img\Ext\_folder.gif" />
+    <Content Include="Content\ko\Base\Img\fav_Icon.gif" />
+    <Content Include="Content\ko\Base\Img\fav_Icon_on.gif" />
+    <Content Include="Content\ko\Base\Img\hp.png" />
+    <Content Include="Content\ko\Base\Img\icon.png" />
+    <Content Include="Content\ko\Base\Img\icon_Talk_bg.gif" />
+    <Content Include="Content\ko\Base\Img\ico_arrow.gif" />
+    <Content Include="Content\ko\Base\Img\ico_noimg2.gif" />
+    <Content Include="Content\ko\Base\Img\ico_tree_listDel.gif" />
+    <Content Include="Content\ko\Base\Img\ic_mail_s.gif" />
+    <Content Include="Content\ko\Base\Img\ic_mail_s_r.gif" />
+    <Content Include="Content\ko\Base\Img\i_new.gif" />
+    <Content Include="Content\ko\Base\Img\loader.gif" />
+    <Content Include="Content\ko\Base\Img\Login\10\13_02login_bt.png" />
+    <Content Include="Content\ko\Base\Img\Login\10\13_07text.png" />
+    <Content Include="Content\ko\Base\Img\Login\10\13_10back_p_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\10\13_11top_or.png" />
+    <Content Include="Content\ko\Base\Img\Login\10\13_12back_p_bt.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_01img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_02img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_03img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_04img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_05img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_06img.png" />
+    <Content Include="Content\ko\Base\Img\Login\1\1_09img.png" />
+    <Content Include="Content\ko\Base\Img\Login\2\2_02.png" />
+    <Content Include="Content\ko\Base\Img\Login\2\2_03_line.png" />
+    <Content Include="Content\ko\Base\Img\Login\2\2_04.png" />
+    <Content Include="Content\ko\Base\Img\Login\2\2_05.png" />
+    <Content Include="Content\ko\Base\Img\Login\2\2_06.png" />
+    <Content Include="Content\ko\Base\Img\Login\3\3_02bt.png" />
+    <Content Include="Content\ko\Base\Img\Login\3\3_08object_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\4\4_06logo.png" />
+    <Content Include="Content\ko\Base\Img\Login\4\4_07object.png" />
+    <Content Include="Content\ko\Base\Img\Login\4\4_08login_bt_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\4\4_09back_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\5\5_01back.png" />
+    <Content Include="Content\ko\Base\Img\Login\5\5_02login_bt.png" />
+    <Content Include="Content\ko\Base\Img\Login\5\5_06slide_3.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_01gradation.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_03login_box.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_04login_bt.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_05login_text.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_07map.png" />
+    <Content Include="Content\ko\Base\Img\Login\6\7_08text.png" />
+    <Content Include="Content\ko\Base\Img\Login\7\8_img_15.png" />
+    <Content Include="Content\ko\Base\Img\Login\7\8_img_18.png" />
+    <Content Include="Content\ko\Base\Img\Login\7\8_img_19.png" />
+    <Content Include="Content\ko\Base\Img\Login\7\8_img_20.png" />
+    <Content Include="Content\ko\Base\Img\Login\8\11_05login_bt1.png" />
+    <Content Include="Content\ko\Base\Img\Login\8\11_10back.png" />
+    <Content Include="Content\ko\Base\Img\Login\9\12_10back_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\9\12_11login_bt_m.png" />
+    <Content Include="Content\ko\Base\Img\Login\check_box.png" />
+    <Content Include="Content\ko\Base\Img\Login\fom.jpg" />
+    <Content Include="Content\ko\Base\Img\Login\logo.png" />
+    <Content Include="Content\ko\Base\Img\logo.png" />
+    <Content Include="Content\ko\Base\Img\mail.png" />
+    <Content Include="Content\ko\Base\Img\mn_bg.gif" />
+    <Content Include="Content\ko\Base\Img\mytalk.png" />
+    <Content Include="Content\ko\Base\Img\nb.gif" />
+    <Content Include="Content\ko\Base\Img\noimg.gif" />
+    <Content Include="Content\ko\Base\Img\notice.png" />
+    <Content Include="Content\ko\Base\Img\office.png" />
+    <Content Include="Content\ko\Base\Img\pims.png" />
+    <Content Include="Content\ko\Base\Img\resource.png" />
+    <Content Include="Content\ko\Base\Img\Security.gif" />
+    <Content Include="Content\ko\Base\Img\set.png" />
+    <Content Include="Content\ko\Base\Img\sm_logo.gif" />
+    <Content Include="Content\ko\Base\Img\sm_logo.png" />
+    <Content Include="Content\ko\Base\Img\sm_logo_1.png" />
+    <Content Include="Content\ko\Base\Img\talk.png" />
+    <Content Include="Content\ko\Base\Img\tgb.png" />
+    <Content Include="Content\ko\Base\Img\webHard.png" />
+    <Content Include="Coop\Add.aspx" />
+    <Content Include="Coop\AddAccept.aspx" />
+    <Content Include="Coop\AddChange.aspx" />
+    <Content Include="Coop\AddComplete.aspx" />
+    <Content Include="Coop\BaseView.aspx" />
+    <Content Include="Coop\Folder.aspx" />
+    <Content Include="Coop\ForwardView.aspx" />
+    <Content Include="Coop\Jt\JTCalendar.htm" />
+    <Content Include="Coop\Jt\JtList.htm" />
+    <Content Include="Coop\List.aspx" />
+    <Content Include="Coop\View.aspx" />
+    <Content Include="Coop\Ws\GetCoop.asmx" />
+    <Content Include="Coop\Ws\SetCoop.asmx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Content\ko\Base\Css\mobile_login.css" />
+    <Content Include="Content\ko\Base\Css\mobile_main.css" />
+    <Content Include="Editor\XFE2\config\cn_s.xml" />
+    <Content Include="Editor\XFE2\config\cn_s_ver30.xml" />
+    <Content Include="Editor\XFE2\config\cn_t.xml" />
+    <Content Include="Editor\XFE2\config\cn_t_ver30.xml" />
+    <Content Include="Editor\XFE2\config\crossdomain.js" />
+    <Content Include="Editor\XFE2\config\en.xml" />
+    <Content Include="Editor\XFE2\config\env.xml" />
+    <Content Include="Editor\XFE2\config\en_ver30.xml" />
+    <Content Include="Editor\XFE2\config\jp.xml" />
+    <Content Include="Editor\XFE2\config\jp_ver30.xml" />
+    <Content Include="Editor\XFE2\config\ko.xml" />
+    <Content Include="Editor\XFE2\config\ko_ver30.xml" />
+    <Content Include="Editor\XFE2\config\strings.xml" />
+    <Content Include="Editor\XFE2\CSS\main.css" />
+    <Content Include="Editor\XFE2\CSS\xfe-chart-data.css" />
+    <Content Include="Editor\XFE2\CSS\xfe-content-base.css" />
+    <Content Include="Editor\XFE2\dialog\xfe_dialog_main.js" />
+    <Content Include="Editor\XFE2\examples\example.html" />
+    <Content Include="Editor\XFE2\examples\example_multi.html" />
+    <Content Include="Editor\XFE2\ex_documents\doc1.html" />
+    <Content Include="Editor\XFE2\ex_documents\doc2.html" />
+    <Content Include="Editor\XFE2\ex_documents\doc3.html" />
+    <Content Include="Editor\XFE2\ex_documents\doc4.html" />
+    <Content Include="Editor\XFE2\ex_documents\doc5.html" />
+    <Content Include="Editor\XFE2\images\colorpicker\leftGradient-1.png" />
+    <Content Include="Editor\XFE2\images\colorpicker\leftGradient.png" />
+    <Content Include="Editor\XFE2\images\colorpicker\leftSelector.png" />
+    <Content Include="Editor\XFE2\images\colorpicker\rightGradient.png" />
+    <Content Include="Editor\XFE2\images\colorpicker\rightSelector.png" />
+    <Content Include="Editor\XFE2\images\common\bookmark-1.png" />
+    <Content Include="Editor\XFE2\images\common\color_bg_box.gif" />
+    <Content Include="Editor\XFE2\images\common\color_box.gif" />
+    <Content Include="Editor\XFE2\images\common\mediaobject.png" />
+    <Content Include="Editor\XFE2\images\common\xfe_logo.jpg" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a3_blue.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a3_green.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a3_lime.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a3_orange.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a3_red.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a4_blue.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a4_green.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a4_lime.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a4_orange.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_a4_red.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_b4_blue.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_b4_green.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_b4_lime.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_b4_orange.png" />
+    <Content Include="Editor\XFE2\images\grid\xfe_grid_b4_red.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\about.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\adminlock.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\adminunlock.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\alignbottom.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\aligncenter.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\alignleft.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\alignmiddle.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\alignright.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\aligntop.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\autosave.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\background.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\blank.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\bold.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\bookmark-1.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\bookmark.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\bullets.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\cellproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\changemode.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\copy.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\css.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\cut.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\decreaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\deletecolumn.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\deleterow.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\drawtable.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\fontbgcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\fontcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\fullscreen.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\horizontalrule.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\imageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\increaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertchart.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertcolumnleft.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertcolumnright.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertflash.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertgrid.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\inserthyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertimage.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertmedia.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertmedialink.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertrowabove.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertrowbelow.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\insertsymbol.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\inserttable.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\italic.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\justify.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\layout.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\letterspacing.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\lineheight.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\mergecell.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\newfile.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\numbering.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\pagebreak.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\paste.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\popup.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\print.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\rebar1.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\redo.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\removeformatting.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\removehyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\replace.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\savefile.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\search.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\selectall.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\split.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\splitcell.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\strikethrough.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\subscript.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\superscript.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\tableproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\tag.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\test1.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\test2.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\test3.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\test4.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\test5.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\underline.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\undo.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\userguide.png" />
+    <Content Include="Editor\XFE2\images\icon\classic\zeroborder.png" />
+    <Content Include="Editor\XFE2\images\icon\new\about.png" />
+    <Content Include="Editor\XFE2\images\icon\new\adminlock.png" />
+    <Content Include="Editor\XFE2\images\icon\new\adminunlock.png" />
+    <Content Include="Editor\XFE2\images\icon\new\alignbottom.png" />
+    <Content Include="Editor\XFE2\images\icon\new\aligncenter.png" />
+    <Content Include="Editor\XFE2\images\icon\new\alignleft.png" />
+    <Content Include="Editor\XFE2\images\icon\new\alignmiddle.png" />
+    <Content Include="Editor\XFE2\images\icon\new\alignright.png" />
+    <Content Include="Editor\XFE2\images\icon\new\aligntop.png" />
+    <Content Include="Editor\XFE2\images\icon\new\background.png" />
+    <Content Include="Editor\XFE2\images\icon\new\blank.png" />
+    <Content Include="Editor\XFE2\images\icon\new\bold.png" />
+    <Content Include="Editor\XFE2\images\icon\new\bookmark-1.png" />
+    <Content Include="Editor\XFE2\images\icon\new\bookmark.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_bottom.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_bottom.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_bottom_gray.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_bottom_gray.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_left.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_left.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_left_gray.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_left_gray.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_right.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_right.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_right_gray.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_right_gray.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_top.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_top.png" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_top_gray.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\btn_top_gray.png" />
+    <Content Include="Editor\XFE2\images\icon\new\bullets.png" />
+    <Content Include="Editor\XFE2\images\icon\new\cellproperty.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\cellproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\new\changemode.png" />
+    <Content Include="Editor\XFE2\images\icon\new\copy.png" />
+    <Content Include="Editor\XFE2\images\icon\new\cust_test1.png" />
+    <Content Include="Editor\XFE2\images\icon\new\cust_test2.png" />
+    <Content Include="Editor\XFE2\images\icon\new\cust_test3.png" />
+    <Content Include="Editor\XFE2\images\icon\new\cut.png" />
+    <Content Include="Editor\XFE2\images\icon\new\dashed.png" />
+    <Content Include="Editor\XFE2\images\icon\new\decreaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\new\deletecolumn.png" />
+    <Content Include="Editor\XFE2\images\icon\new\deleterow.png" />
+    <Content Include="Editor\XFE2\images\icon\new\dotted.png" />
+    <Content Include="Editor\XFE2\images\icon\new\double.png" />
+    <Content Include="Editor\XFE2\images\icon\new\drawtable.png" />
+    <Content Include="Editor\XFE2\images\icon\new\fontbgcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\new\fontcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\new\fullscreen.png" />
+    <Content Include="Editor\XFE2\images\icon\new\horizontalrule.png" />
+    <Content Include="Editor\XFE2\images\icon\new\icongroup.png" />
+    <Content Include="Editor\XFE2\images\icon\new\imageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\new\increaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertchart.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertcolumnleft.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertcolumnright.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertflash.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertgrid.png" />
+    <Content Include="Editor\XFE2\images\icon\new\inserthyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertimage.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertmedia.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertmedialink.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertrowabove.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertrowbelow.png" />
+    <Content Include="Editor\XFE2\images\icon\new\insertsymbol.png" />
+    <Content Include="Editor\XFE2\images\icon\new\inserttable.png" />
+    <Content Include="Editor\XFE2\images\icon\new\italic.png" />
+    <Content Include="Editor\XFE2\images\icon\new\justify.png" />
+    <Content Include="Editor\XFE2\images\icon\new\layout.png" />
+    <Content Include="Editor\XFE2\images\icon\new\letterspacing.png" />
+    <Content Include="Editor\XFE2\images\icon\new\letterspacing_backup.png" />
+    <Content Include="Editor\XFE2\images\icon\new\lineheight.png" />
+    <Content Include="Editor\XFE2\images\icon\new\mergecell.png" />
+    <Content Include="Editor\XFE2\images\icon\new\newfile.png" />
+    <Content Include="Editor\XFE2\images\icon\new\nonwiki.png" />
+    <Content Include="Editor\XFE2\images\icon\new\numbering.png" />
+    <Content Include="Editor\XFE2\images\icon\new\openfile.png" />
+    <Content Include="Editor\XFE2\images\icon\new\pagebreak.png" />
+    <Content Include="Editor\XFE2\images\icon\new\paste.png" />
+    <Content Include="Editor\XFE2\images\icon\new\print.png" />
+    <Content Include="Editor\XFE2\images\icon\new\rebar1.png" />
+    <Content Include="Editor\XFE2\images\icon\new\redo.png" />
+    <Content Include="Editor\XFE2\images\icon\new\removeformatting.png" />
+    <Content Include="Editor\XFE2\images\icon\new\removeformatting_bakup.png" />
+    <Content Include="Editor\XFE2\images\icon\new\removehyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\new\replace.png" />
+    <Content Include="Editor\XFE2\images\icon\new\replace_backup.png" />
+    <Content Include="Editor\XFE2\images\icon\new\right_arrow.png" />
+    <Content Include="Editor\XFE2\images\icon\new\savefile.png" />
+    <Content Include="Editor\XFE2\images\icon\new\search.png" />
+    <Content Include="Editor\XFE2\images\icon\new\search_backup.png" />
+    <Content Include="Editor\XFE2\images\icon\new\selectall.png" />
+    <Content Include="Editor\XFE2\images\icon\new\solid.png" />
+    <Content Include="Editor\XFE2\images\icon\new\split.png" />
+    <Content Include="Editor\XFE2\images\icon\new\splitcell.png" />
+    <Content Include="Editor\XFE2\images\icon\new\strikethrough.png" />
+    <Content Include="Editor\XFE2\images\icon\new\subscript.png" />
+    <Content Include="Editor\XFE2\images\icon\new\superscript.png" />
+    <Content Include="Editor\XFE2\images\icon\new\tableproperty.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\tableproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\new\tableproperty_grey.gif" />
+    <Content Include="Editor\XFE2\images\icon\new\tagdiet.png" />
+    <Content Include="Editor\XFE2\images\icon\new\underline.png" />
+    <Content Include="Editor\XFE2\images\icon\new\undo.png" />
+    <Content Include="Editor\XFE2\images\icon\new\userguide.png" />
+    <Content Include="Editor\XFE2\images\icon\new\xfe_mark.jpg" />
+    <Content Include="Editor\XFE2\images\icon\new\zeroborder.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\about.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\accessibility.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\accessibility_check.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\accessibility_check_mark.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\adminlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\adminunlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\alignbottom.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\aligncenter.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\alignleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\alignmiddle.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\alignright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\aligntop.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\autosave.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\background.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\blank.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\bold.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\bookmark.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\bullets.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\cellproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\copy.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\copyformat.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\cut.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\decreaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\deletecolumn.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\deleterow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\deletetable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\drawtable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\etc-web.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\etc-web2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\etc-web3.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\etc-web4.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\fontbgcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\fontcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\fullscreen.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\horizontalrule.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\imageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\increaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\indentobject.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insert-grid.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertcolumnleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertcolumnright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertflash.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertgrid.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertgrid2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\inserthyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertimage.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertmedia.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertmedialink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertrowabove.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertrowbelow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\insertsymbol.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\inserttable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\italic.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\justify.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\layout.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\mergecell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\newfile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\numbering.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\openfile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\outdentobject.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\pagebreak.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\pageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\paste.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\pasteformat.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\print.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\redo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\removeformatting.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\removehyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\replace.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\right_arrow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\savefile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\selectall.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\split.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\splitcell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\strikethrough.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\subscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\superscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\table-addline-bt.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\table-addline.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\table-addrow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\tableproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\underline.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\undo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\userguide.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\zeroborder.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\blue\그림2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\about.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\adminlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\adminunlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\alignbottom.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\aligncenter.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\alignleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\alignmiddle.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\alignright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\aligntop.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\autosave.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\background.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\blank.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\bold.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\bookmark-1.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\bookmark.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\bullets.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\cellproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\changemode.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\copy.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\css.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\cust_test1.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\cut.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\decreaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\deletecolumn.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\deleterow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\drawtable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\fontbgcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\fontcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\fullscreen.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\horizontalrule.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\imageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\increaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertchart.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertcolumnleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertcolumnright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertflash.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertgrid.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\inserthyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertimage.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertmedia.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertmedialink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertrowabove.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertrowbelow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\insertsymbol.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\inserttable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\italic.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\justify.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\layout.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\letterspacing.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\lineheight.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\mergecell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\newfile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\numbering.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\pagebreak.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\paste.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\popup.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\print.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\rebar1.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\redo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\removeformatting.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\removehyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\replace.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\right_arrow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\savefile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\search.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\selectall.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\split.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\splitcell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\strikethrough.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\subscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\superscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\tableproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\tag.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\test1.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\test2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\test3.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\test4.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\test5.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\underline.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\undo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\userguide.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\classic\zeroborder.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\about.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\accessibility.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\accessibility_check.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\accessibility_check_mark.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\adminlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\adminunlock.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\align-between-line.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\alignbottom.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\aligncenter.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\alignleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\alignmiddle.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\alignright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\aligntop.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\autosave.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\background.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\blank.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\bold.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\bookmark.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\bullets.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\cellproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\copy.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\cut.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\decreaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\deletecolumn.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\deleterow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\deletetable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\drawtable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\etc-fileinfo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\font-formcopy.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\font-formpaste.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\fontbgcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\fontcolor.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\fullscreen.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\horizontalrule.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\imageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\increaseindent.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\indentobject.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insert-photoedit.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insert-photoedit2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insert-photoedit3.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertcolumnleft.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertcolumnright.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertflash.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertgrid.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\inserthyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertimage.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertmedia.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertmedialink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertrowabove.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertrowbelow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\insertsymbol.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\inserttable.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\italic.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\justify.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\layout-grid2.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\layout.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\letterspacing.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\lineheight.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\mergecell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\newfile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\numbering.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\openfile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\outdentobject.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\pagebreak.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\pageproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\paste.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\print.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\redo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\removeformatting.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\removehyperlink.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\replace.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\right_arrow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\savefile.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\selectall.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\splitcell.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\strikethrough.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\subscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\superscript.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\tableproperty.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\underline.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\undo.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\userguide.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\gray\zeroborder.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\menubar_arrow.png" />
+    <Content Include="Editor\XFE2\images\icon\v30\rebar1.png" />
+    <Content Include="Editor\XFE2\images\layer\layer1.png" />
+    <Content Include="Editor\XFE2\images\layer\layer10.png" />
+    <Content Include="Editor\XFE2\images\layer\layer11.png" />
+    <Content Include="Editor\XFE2\images\layer\layer12.png" />
+    <Content Include="Editor\XFE2\images\layer\layer13.png" />
+    <Content Include="Editor\XFE2\images\layer\layer14.png" />
+    <Content Include="Editor\XFE2\images\layer\layer15.png" />
+    <Content Include="Editor\XFE2\images\layer\layer16.png" />
+    <Content Include="Editor\XFE2\images\layer\layer2.png" />
+    <Content Include="Editor\XFE2\images\layer\layer3.png" />
+    <Content Include="Editor\XFE2\images\layer\layer4.png" />
+    <Content Include="Editor\XFE2\images\layer\layer5.png" />
+    <Content Include="Editor\XFE2\images\layer\layer6.png" />
+    <Content Include="Editor\XFE2\images\layer\layer7.png" />
+    <Content Include="Editor\XFE2\images\layer\layer8.png" />
+    <Content Include="Editor\XFE2\images\layer\layer9.png" />
+    <Content Include="Editor\XFE2\js\library\parser.js" />
+    <Content Include="Editor\XFE2\js\library\rangy\rangy-classapplier.js" />
+    <Content Include="Editor\XFE2\js\library\rangy\rangy-core.js" />
+    <Content Include="Editor\XFE2\js\library\rangy\rangy-highlighter.js" />
+    <Content Include="Editor\XFE2\js\library\rangy\rangy-textrange.js" />
+    <Content Include="Editor\XFE2\js\xfe_main.js" />
+    <Content Include="Editor\XFE2\js\xfe_sub_func.js" />
+    <Content Include="Editor\XFE2\save\saveas_step1.htm" />
+    <Content Include="Editor\XFE2\save\saveas_step2.asp" />
+    <Content Include="Editor\XFE2\upload\TFUpload.dll" />
+    <Content Include="Editor\XFE2\upload\upload.asp" />
+    <Content Include="Editor\XFE2\upload\upload.aspx" />
+    <Content Include="Editor\XFE2\upload\upload_contents.asp" />
+    <Content Include="Editor\XFE2\upload\upload_contents.aspx" />
+    <Content Include="Editor\XFE2\upload\WEB-INF\lib\cos.jar" />
+    <Content Include="ETC\GetUserInfo.aspx" />
+    <Content Include="ETC\Jt\JTWorkList.htm" />
+    <Content Include="ETC\WorkList.aspx" />
+    <Content Include="ETC\Ws\GetETC.asmx" />
+    <Content Include="Global.asax" />
+    <Content Include="HR\Attendance.aspx" />
+    <Content Include="HR\Ws\GetAttendance.asmx" />
+    <Content Include="HR\Ws\SetAttendance.asmx" />
+    <Content Include="Html\ErrorMessage\ErrorDefault.aspx" />
+    <Content Include="Html\ErrorMessage\Images\btn_detail.gif" />
+    <Content Include="Html\ErrorMessage\Images\btn_list_fb.gif" />
+    <Content Include="Html\ErrorMessage\Images\errbg_main.jpg" />
+    <Content Include="Html\ErrorMessage\Images\err_bottom.jpg" />
+    <Content Include="Html\ErrorMessage\Images\err_top.jpg" />
+    <Content Include="Html\ErrorMessage\Images\ico_help.gif" />
+    <Content Include="Html\Js.min\aes.js" />
+    <Content Include="Html\Js.min\jquery-ui.css" />
+    <Content Include="Html\Js.min\jquery-ui.js" />
+    <Content Include="Html\Js.min\jquery.autogrow-textarea.js" />
+    <Content Include="Html\Js.min\jquery.common.js" />
+    <Content Include="Html\Js.min\jquery.event.drag-1.5.min.js" />
+    <Content Include="Html\Js.min\jquery.form.min.js" />
+    <Content Include="Html\Js.min\jquery.js" />
+    <Content Include="Html\Js.min\jquery.touchslider.js" />
+    <Content Include="Html\Js.min\jtemplates.js" />
+    <Content Include="Html\Js.min\validator.js" />
+    <Content Include="Html\Js\aes.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573A488.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573B188.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573C488.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573D588.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573E888.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573G188.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573G788.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573G988.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573H888.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573I688.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573J198.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573J482.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573J988.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573K688.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573L238.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573L991.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573M488.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573O788.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573P191.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573P288.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573Q088.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573Q148.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573Q288.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573R178.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573R288.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573R378.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573R388.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573S188.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573S388.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573T069.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573T388.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573U699.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573V588.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573W128.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573W888.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573W988.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573X288.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573Z288.js" />
+    <Content Include="Html\Js\ComponentArt\componentart_webui_client\2006_1_1283\A573Z388.js" />
+    <Content Include="Html\Js\Design\bootstrap.bundle.js" />
+    <Content Include="Html\Js\Design\bootstrap.bundle.min.js" />
+    <Content Include="Html\Js\Design\bootstrap.js" />
+    <Content Include="Html\Js\Design\bootstrap.min.js" />
+    <Content Include="Html\Js\Design\jquery.cookie.js" />
+    <Content Include="Html\Js\Design\navimobile.js" />
+    <Content Include="Html\Js\DeskPlusEIPComponent.js" />
+    <Content Include="Html\Js\JModal\DeskPlusModal.css" />
+    <Content Include="Html\Js\JModal\DeskPlusModal.js" />
+    <Content Include="Html\Js\jquery-ui.css" />
+    <Content Include="Html\Js\jquery-ui.js" />
+    <Content Include="Html\Js\jquery.autogrow-textarea.js" />
+    <Content Include="Html\Js\jquery.common.js" />
+    <Content Include="Html\Js\jquery.event.drag-1.5.min.js" />
+    <Content Include="Html\Js\jquery.form.min.js" />
+    <Content Include="Html\Js\jquery.hashtable.js" />
+    <Content Include="Html\Js\jquery.js" />
+    <Content Include="Html\Js\jquery.mobile-1.0a4.1.css" />
+    <Content Include="Html\Js\jquery.mobile-1.0a4.1.js" />
+    <Content Include="Html\Js\jquery.mobile-1.0a4.1.min.css" />
+    <Content Include="Html\Js\jquery.mobile-1.0a4.1.min.js" />
+    <Content Include="Html\Js\jquery.touchslider.js" />
+    <Content Include="Html\Js\jtemplates.js" />
+    <Content Include="Html\Js\validator.js" />
+    <Content Include="Html\Util\ComponentArt.Web.UI.dll" />
+    <Content Include="Html\Util\Enc\AESTest.aspx" />
+    <Content Include="Html\Util\HtmlAgilityPack.dll" />
+    <Content Include="Html\Util\interop.SMSCALL.dll" />
+    <Content Include="Js\Address\Add.js" />
+    <Content Include="Js\Address\List.js" />
+    <Content Include="Js\Address\View.js" />
+    <Content Include="Js\Approval\Add.js" />
+    <Content Include="Js\Approval\AddOpinion.js" />
+    <Content Include="Js\Approval\Afterward.js" />
+    <Content Include="Js\Approval\AlarmView.js" />
+    <Content Include="Js\Approval\Approve.js" />
+    <Content Include="Js\Approval\BaseView.js" />
+    <Content Include="Js\Approval\Common.js" />
+    <Content Include="Js\Approval\CommonFlow.js" />
+    <Content Include="Js\Approval\DocOpinion.js" />
+    <Content Include="Js\Approval\DraftAdd.js" />
+    <Content Include="Js\Approval\DraftList.js" />
+    <Content Include="Js\Approval\EditorNonActiveX.js" />
+    <Content Include="Js\Approval\Folder.js" />
+    <Content Include="Js\Approval\Form.js" />
+    <Content Include="Js\Approval\GetBaseDoc.js" />
+    <Content Include="Js\Approval\List.js" />
+    <Content Include="Js\Approval\Memo.js" />
+    <Content Include="Js\Approval\Mod.js" />
+    <Content Include="Js\Approval\ModSequence.js" />
+    <Content Include="Js\Approval\Proxy.js" />
+    <Content Include="Js\Approval\Return.js" />
+    <Content Include="Js\Approval\SaveDraft.js" />
+    <Content Include="Js\Approval\SubmitAdd.js" />
+    <Content Include="Js\Approval\SubmitList.js" />
+    <Content Include="Js\Approval\View.js" />
+    <Content Include="Js\Approval\DocList.js" />
+    <Content Include="Js\Approval\DocView.js" />
+    <Content Include="Js\Approval\DeptList.js" />
+    <Content Include="Js\Approval\CarboncopyList.js" />
+    <Content Include="Js\Approval\CirDocList.js" />
+    <Content Include="Js\Approval\CirDocView.js" />
+    <Content Include="Js\Approval\WFolder.js" />
+    <Content Include="Js\Attendance\Add.js" />
+    <Content Include="Js\Board\Add.js" />
+    <Content Include="Js\Board\AddShortReply.js" />
+    <Content Include="Js\Board\AlarmView.js" />
+    <Content Include="Js\Board\Folder.js" />
+    <Content Include="Js\Board\List.js" />
+    <Content Include="Js\Board\ModShortReply.js" />
+    <Content Include="Js\Board\View.js" />
+    <Content Include="Js\Board\Write.js" />
+    <Content Include="Js\Common\Calendar.js" />
+    <Content Include="Js\Common\CalendarDialog.js" />
+    <Content Include="Js\Common\CalendarDualDialog.js" />
+    <Content Include="Js\Community\Add.js" />
+    <Content Include="Js\Community\AlarmView.js" />
+    <Content Include="Js\Community\BoardFolder.js" />
+    <Content Include="Js\Community\BoardList.js" />
+    <Content Include="Js\Community\BoardView.js" />
+    <Content Include="Js\Community\Folder.js" />
+    <Content Include="Js\Config\List.js" />
+    <Content Include="Js\Coop\Add.js" />
+    <Content Include="Js\Coop\AddAccept.js" />
+    <Content Include="Js\Coop\AddComplete.js" />
+    <Content Include="Js\Coop\BaseView.js" />
+    <Content Include="Js\Coop\Folder.js" />
+    <Content Include="Js\Coop\ForwardView.js" />
+    <Content Include="Js\Coop\List.js" />
+    <Content Include="Js\Coop\View.js" />
+    <Content Include="Js\ETC\GetUserInfo.js" />
+    <Content Include="Js\ETC\WorkList.js" />
+    <Content Include="Js\HR\Attendance.js" />
+    <Content Include="Js\Mail\DraftSend.js" />
+    <Content Include="Js\Mail\DraftView.js" />
+    <Content Include="Js\Mail\Folder.js" />
+    <Content Include="Js\Mail\List.js" />
+    <Content Include="Js\Mail\Private.js" />
+    <Content Include="Js\Mail\Send.js" />
+    <Content Include="Js\Mail\Trash.js" />
+    <Content Include="Js\Mail\View.js" />
+    <Content Include="Js\Mail\ViewTrash.js" />
+    <Content Include="Js\MyTalk\Add.js" />
+    <Content Include="Js\MyTalk\List.js" />
+    <Content Include="Js\MyTalk\View.js" />
+    <Content Include="Js\MyTalk\ShareList.js" />
+    <Content Include="Js\Pims\Add.js" />
+    <Content Include="Js\Pims\AlarmView.js" />
+    <Content Include="Js\Pims\List.js" />
+    <Content Include="Js\Pims\ReplyAdd.js" />
+    <Content Include="Js\Pims\Share.js" />
+    <Content Include="Js\Pims\View.js" />
+    <Content Include="Js\Pims\Mod.js" />
+    <Content Include="Js\Portal\AnLogin.js" />
+    <Content Include="Js\Portal\Default.js" />
+    <Content Include="Js\Portal\DefaultN.js" />
+    <Content Include="Js\Portal\Portal.js" />
+    <Content Include="Js\Portal\IosLogin.js" />
+    <Content Include="Js\RM\Add.js" />
+    <Content Include="Js\RM\AlarmView.js" />
+    <Content Include="Js\RM\Folder.js" />
+    <Content Include="Js\RM\List.js" />
+    <Content Include="Js\RM\RejectAdd.js" />
+    <Content Include="Js\RM\RepeatDel.js" />
+    <Content Include="Js\RM\ReplyAdd.js" />
+    <Content Include="Js\RM\UsableList.js" />
+    <Content Include="Js\RM\View.js" />
+    <Content Include="Js\Task\AddAccept.js" />
+    <Content Include="Js\Task\AddComplete.js" />
+    <Content Include="Js\Task\AddReject.js" />
+    <Content Include="Js\Task\AddReply.js" />
+    <Content Include="Js\Task\AlarmView.js" />
+    <Content Include="Js\Task\BaseView.js" />
+    <Content Include="Js\Task\DelayList.js" />
+    <Content Include="Js\Task\DelayView.js" />
+    <Content Include="Js\Task\Folder.js" />
+    <Content Include="Js\Task\ForwardList.js" />
+    <Content Include="Js\Task\ForwardView.js" />
+    <Content Include="Js\Task\List.js" />
+    <Content Include="Js\Task\View.js" />
+    <Content Include="Js\WebHard\Folder.js" />
+    <Content Include="Js\WebHard\List.js" />
+    <Content Include="Js\WebHard\Send.js" />
+    <Content Include="Js\WebHard\Share.js" />
+    <Content Include="Js\MDM\List.js" />
+    <Content Include="Legacy\Basic.aspx" />
+    <Content Include="Legacy\Basic_Complete.aspx" />
+    <Content Include="Legacy\HoliDay.aspx" />
+    <Content Include="Legacy\HoliDay_Complete.aspx" />
+    <Content Include="Legacy\ShowHide.aspx" />
+    <Content Include="Legacy\Work.aspx" />
+    <Content Include="Legacy\WorkReport.aspx" />
+    <Content Include="Legacy\WorkReport_Complete.aspx" />
+    <Content Include="Legacy\Work_Complete.aspx" />
+    <Content Include="Mail\DraftSend.aspx" />
+    <Content Include="Mail\DraftView.aspx" />
+    <Content Include="Mail\Folder.aspx" />
+    <Content Include="Mail\Jt\JTList.htm" />
+    <Content Include="Mail\Jt\JTPrivate.htm" />
+    <Content Include="Mail\Jt\JTTrash.htm" />
+    <Content Include="Mail\List.aspx" />
+    <Content Include="Mail\Private.aspx" />
+    <Content Include="Mail\Send.aspx" />
+    <Content Include="Mail\Trash.aspx" />
+    <Content Include="Mail\View.aspx" />
+    <Content Include="Mail\ViewTrash.aspx" />
+    <Content Include="Mail\Ws\GetMail.asmx" />
+    <Content Include="Mail\Ws\MailGate.asmx" />
+    <Content Include="Mail\Ws\SetMail.asmx" />
+    <Content Include="MDM\List.aspx" />
+    <Content Include="MDM\Jt\JTList.htm" />
+    <Content Include="MDM\WS\GetNotification.asmx" />
+    <Content Include="MDM\WS\SetNotification.asmx" />
+    <Content Include="MyTalk\Add.aspx" />
+    <Content Include="MyTalk\Jt\JtList.htm" />
+    <Content Include="MyTalk\Jt\JtShareList.htm" />
+    <Content Include="MyTalk\Jt\JtSNSList.htm" />
+    <Content Include="MyTalk\List.aspx" />
+    <Content Include="MyTalk\View.aspx" />
+    <Content Include="MyTalk\Ws\GetMyTalk.asmx" />
+    <Content Include="MyTalk\Ws\SetMyTalk.asmx" />
+    <Content Include="MyTalk\ShareList.aspx" />
+    <Content Include="Pims\Add.aspx" />
+    <Content Include="Pims\AlarmView.aspx" />
+    <Content Include="Pims\Jt\JTCalendar.htm" />
+    <Content Include="Pims\Jt\JTSchedule.htm" />
+    <Content Include="Pims\Jt\JTShare.htm" />
+    <Content Include="Pims\Jt\JTToDo.htm" />
+    <Content Include="Pims\List.aspx" />
+    <Content Include="Pims\Mod.aspx" />
+    <Content Include="Pims\ReplyAdd.aspx" />
+    <Content Include="Pims\Share.aspx" />
+    <Content Include="Pims\View.aspx" />
+    <Content Include="Pims\Ws\GetPims.asmx" />
+    <Content Include="Pims\Ws\SetPims.asmx" />
+    <Content Include="Portal\AnLogin.aspx" />
+    <Content Include="Portal\Default.aspx" />
+    <Content Include="Portal\Default1.aspx" />
+    <Content Include="Portal\Default10.aspx" />
+    <Content Include="Portal\Default2.aspx" />
+    <Content Include="Portal\Default3.aspx" />
+    <Content Include="Portal\Default4.aspx" />
+    <Content Include="Portal\Default5.aspx" />
+    <Content Include="Portal\Default6.aspx" />
+    <Content Include="Portal\Default7.aspx" />
+    <Content Include="Portal\Default8.aspx" />
+    <Content Include="Portal\Default9.aspx" />
+    <Content Include="Portal\Footer.ascx" />
+    <Content Include="Portal\ForMobileOnly.htm" />
+    <Content Include="Portal\Js\jquery.min.js" />
+    <Content Include="Portal\Js\jquery.slides.js" />
+    <Content Include="Portal\Js\jquery.slides.min.js" />
+    <Content Include="Portal\Jt\JTMail.htm" />
+    <Content Include="Portal\Jt\JTSchedule.htm" />
+    <Content Include="Portal\Jt\JTBoard.htm" />
+    <Content Include="Portal\Jt\JTApproval.htm" />
+    <Content Include="Portal\Jt\JTToDo.htm" />
+    <Content Include="Portal\LoginOutSide.aspx" />
+    <Content Include="Portal\LogOut.aspx" />
+    <Content Include="Portal\Menu.ascx" />
+    <Content Include="Portal\Portal.aspx" />
+    <Content Include="Portal\SetLogOut.aspx" />
+    <Content Include="Portal\Ws\GetDefault.asmx" />
+    <Content Include="Portal\Ws\GetPortal.asmx" />
+    <Content Include="Portal\IosLogin.aspx" />
+    <Content Include="Portal\Menu_Backup.ascx" />
+    <Content Include="readme.txt" />
+    <Content Include="RM\Add.aspx" />
+    <Content Include="RM\AlarmView.aspx" />
+    <Content Include="RM\Folder.aspx" />
+    <Content Include="RM\Jt\JTCalendar.htm" />
+    <Content Include="RM\Jt\JTList.htm" />
+    <Content Include="RM\Jt\JTMyReserveList.htm" />
+    <Content Include="RM\Jt\JTReserveList.htm" />
+    <Content Include="RM\List.aspx" />
+    <Content Include="RM\RejectAdd.aspx" />
+    <Content Include="RM\RepeatDel.aspx" />
+    <Content Include="RM\ReplyAdd.aspx" />
+    <Content Include="RM\UsableList.aspx" />
+    <Content Include="RM\View.aspx" />
+    <Content Include="RM\Ws\GetRM.asmx" />
+    <Content Include="RM\Ws\SetRM.asmx" />
+    <Content Include="Task\AddAccept.aspx" />
+    <Content Include="Task\AddComplete.aspx" />
+    <Content Include="Task\AddReject.aspx" />
+    <Content Include="Task\AddReply.aspx" />
+    <Content Include="Task\AlarmView.aspx" />
+    <Content Include="Task\BaseView.aspx" />
+    <Content Include="Task\DelayList.aspx" />
+    <Content Include="Task\DelayView.aspx" />
+    <Content Include="Task\Folder.aspx" />
+    <Content Include="Task\ForwardList.aspx" />
+    <Content Include="Task\ForwardView.aspx" />
+    <Content Include="Task\Jt\JTCalendar.htm" />
+    <Content Include="Task\Jt\JTForwardList.htm" />
+    <Content Include="Task\Jt\JtList.htm" />
+    <Content Include="Task\List.aspx" />
+    <Content Include="Task\View.aspx" />
+    <Content Include="Task\Ws\GetTask.asmx" />
+    <Content Include="Task\Ws\SetTask.asmx" />
+    <Content Include="Update\Android\version.xml" />
+    <Content Include="Update\IOS\version.xml" />
+    <Content Include="Util\Aspose\Aspose.BarCode.dll" />
+    <Content Include="Util\Aspose\Aspose.Cells.dll" />
+    <Content Include="Util\Aspose\Aspose.Cells.GridDesktop.dll" />
+    <Content Include="Util\Aspose\Aspose.Cells.GridWeb.dll" />
+    <Content Include="Util\Aspose\Aspose.Diagram.dll" />
+    <Content Include="Util\Aspose\Aspose.Email.dll" />
+    <Content Include="Util\Aspose\Aspose.Imaging.dll" />
+    <Content Include="Util\Aspose\Aspose.Note.dll" />
+    <Content Include="Util\Aspose\Aspose.OCR.dll" />
+    <Content Include="Util\Aspose\Aspose.Pdf.dll" />
+    <Content Include="Util\Aspose\Aspose.Slides.dll" />
+    <Content Include="Util\Aspose\Aspose.Tasks.dll" />
+    <Content Include="Util\Aspose\Aspose.Words.dll" />
+    <Content Include="Util\PDF\HtmlRenderer.dll" />
+    <Content Include="Util\PDF\itextsharp.dll" />
+    <Content Include="Util\PDF\itextsharp.pdfa.dll" />
+    <Content Include="Util\PDF\iTextSharp.xml" />
+    <Content Include="Util\PDF\itextsharp.xmlworker.dll" />
+    <Content Include="Util\PDF\itextsharp.xtra.dll" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebHard\Folder.aspx" />
+    <Content Include="WebHard\Jt\JTList.htm" />
+    <Content Include="WebHard\Jt\JTShare.htm" />
+    <Content Include="WebHard\List.aspx" />
+    <Content Include="WebHard\Send.aspx" />
+    <Content Include="WebHard\Share.aspx" />
+    <Content Include="WebHard\Ws\GetWebHard.asmx" />
+    <Content Include="WebHard\Ws\SetWebHard.asmx" />
+    <Content Include="XmlData\BoardMessenger\en.xml" />
+    <Content Include="XmlData\BoardMessenger\fr.xml" />
+    <Content Include="XmlData\BoardMessenger\ja.xml" />
+    <Content Include="XmlData\BoardMessenger\ko.xml" />
+    <Content Include="XmlData\BoardMessenger\zh-cn.xml" />
+    <Content Include="XmlData\BoardMessenger\zh-tw.xml" />
+    <Content Include="XmlData\Confirm\en.xml" />
+    <Content Include="XmlData\Confirm\fr.xml" />
+    <Content Include="XmlData\Confirm\ja.xml" />
+    <Content Include="XmlData\Confirm\ko.xml" />
+    <Content Include="XmlData\Confirm\zh-cn.xml" />
+    <Content Include="XmlData\Confirm\zh-tw.xml" />
+    <Content Include="XmlData\FontColor\en.xml" />
+    <Content Include="XmlData\FontColor\fr.xml" />
+    <Content Include="XmlData\FontColor\ja.xml" />
+    <Content Include="XmlData\FontColor\ko.xml" />
+    <Content Include="XmlData\FontColor\zh-cn.xml" />
+    <Content Include="XmlData\FontColor\zh-tw.xml" />
+    <Content Include="XmlData\FontSize\en.xml" />
+    <Content Include="XmlData\FontSize\fr.xml" />
+    <Content Include="XmlData\FontSize\ja.xml" />
+    <Content Include="XmlData\FontSize\ko.xml" />
+    <Content Include="XmlData\FontSize\zh-cn.xml" />
+    <Content Include="XmlData\FontSize\zh-tw.xml" />
+    <Content Include="XmlData\MDM\en.xml" />
+    <Content Include="XmlData\MDM\fr.xml" />
+    <Content Include="XmlData\MDM\ja.xml" />
+    <Content Include="XmlData\MDM\ko.xml" />
+    <Content Include="XmlData\MDM\zh-cn.xml" />
+    <Content Include="XmlData\MDM\zh-tw.xml" />
+    <Content Include="XmlData\Proxy\en.xml" />
+    <Content Include="XmlData\Proxy\fr.xml" />
+    <Content Include="XmlData\Proxy\ja.xml" />
+    <Content Include="XmlData\Proxy\ko.xml" />
+    <Content Include="XmlData\Proxy\zh-cn.xml" />
+    <Content Include="XmlData\Proxy\zh-tw.xml" />
+    <Content Include="XmlData\RM\en.xml" />
+    <Content Include="XmlData\RM\fr.xml" />
+    <Content Include="XmlData\RM\ja.xml" />
+    <Content Include="XmlData\RM\ko.xml" />
+    <Content Include="XmlData\RM\zh-cn.xml" />
+    <Content Include="XmlData\RM\zh-tw.xml" />
+    <Content Include="XmlData\Task\en.xml" />
+    <Content Include="XmlData\Task\fr.xml" />
+    <Content Include="XmlData\Task\ja.xml" />
+    <Content Include="XmlData\Task\ko.xml" />
+    <Content Include="XmlData\Task\zh-cn.xml" />
+    <Content Include="XmlData\Task\zh-tw.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\BE\SSOInfo.cs" />
+    <Compile Include="Account\BE\UserDeptInfo.cs" />
+    <Compile Include="Account\BE\UserInfo.cs" />
+    <Compile Include="Account\BLL\Dept.cs" />
+    <Compile Include="Account\BLL\User.cs" />
+    <Compile Include="Account\Data\Dept.cs" />
+    <Compile Include="Account\Data\SSO.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Data\User.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Data\UserDept.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address\Ws\BE\AddressInfo.cs" />
+    <Compile Include="Address\Ws\Data\List.cs" />
+    <Compile Include="Address\Ws\GetAddress.asmx.cs">
+      <DependentUpon>GetAddress.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Approval\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\AddOpinion.aspx.cs">
+      <DependentUpon>AddOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\AddOpinion.aspx.designer.cs">
+      <DependentUpon>AddOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Afterward.aspx.cs">
+      <DependentUpon>Afterward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Afterward.aspx.designer.cs">
+      <DependentUpon>Afterward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\BaseView.aspx.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\BaseView.aspx.designer.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\DeptList.aspx.cs">
+      <DependentUpon>DeptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DeptList.aspx.designer.cs">
+      <DependentUpon>DeptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\DocOpinion.aspx.cs">
+      <DependentUpon>DocOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DocOpinion.aspx.designer.cs">
+      <DependentUpon>DocOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\DocView.aspx.cs">
+      <DependentUpon>DocView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DocView.aspx.designer.cs">
+      <DependentUpon>DocView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\DraftAdd.aspx.cs">
+      <DependentUpon>DraftAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DraftAdd.aspx.designer.cs">
+      <DependentUpon>DraftAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\DraftList.aspx.cs">
+      <DependentUpon>DraftList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DraftList.aspx.designer.cs">
+      <DependentUpon>DraftList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\EditorNonActiveX.aspx.cs">
+      <DependentUpon>EditorNonActiveX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\EditorNonActiveX.aspx.designer.cs">
+      <DependentUpon>EditorNonActiveX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\GetBaseDoc.aspx.cs">
+      <DependentUpon>GetBaseDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\GetBaseDoc.aspx.designer.cs">
+      <DependentUpon>GetBaseDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Memo.aspx.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Memo.aspx.designer.cs">
+      <DependentUpon>Memo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Proxy.aspx.cs">
+      <DependentUpon>Proxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Proxy.aspx.designer.cs">
+      <DependentUpon>Proxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Return.aspx.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\Return.aspx.designer.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\SaveDraft.aspx.cs">
+      <DependentUpon>SaveDraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\SaveDraft.aspx.designer.cs">
+      <DependentUpon>SaveDraft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\SubmitAdd.aspx.cs">
+      <DependentUpon>SubmitAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\SubmitAdd.aspx.designer.cs">
+      <DependentUpon>SubmitAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\SubmitList.aspx.cs">
+      <DependentUpon>SubmitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\SubmitList.aspx.designer.cs">
+      <DependentUpon>SubmitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\WFolder.aspx.cs">
+      <DependentUpon>WFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\WFolder.aspx.designer.cs">
+      <DependentUpon>WFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\Ws\BE\AccountInfo.cs" />
+    <Compile Include="Approval\Ws\BE\AttachInfo.cs" />
+    <Compile Include="Approval\Ws\BE\BaseDocumentInfo.cs" />
+    <Compile Include="Approval\Ws\BE\CarbonCopyUserInfo.cs" />
+    <Compile Include="Approval\Ws\BE\CirculationDocumentInfo.cs" />
+    <Compile Include="Approval\Ws\BE\CounterPartUserInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DocInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DocumentProcessInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DraftBaseDocInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DraftFileInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DraftInfo.cs" />
+    <Compile Include="Approval\Ws\BE\DraftSequenceInfo.cs" />
+    <Compile Include="Approval\Ws\BE\EDM\AppDocInfo.cs" />
+    <Compile Include="Approval\Ws\BE\EDM\CoworkerInfo.cs" />
+    <Compile Include="Approval\Ws\BE\EDM\DocumentInfo.cs" />
+    <Compile Include="Approval\Ws\BE\EDM\FileInfo.cs" />
+    <Compile Include="Approval\Ws\BE\EDM\VersionInfo.cs" />
+    <Compile Include="Approval\Ws\BE\FavoriteApprovalInfo.cs" />
+    <Compile Include="Approval\Ws\BE\FavSeqInfo.cs" />
+    <Compile Include="Approval\Ws\BE\FavSeqLineInfo.cs" />
+    <Compile Include="Approval\Ws\BE\FormInfo.cs" />
+    <Compile Include="Approval\Ws\BE\FormSeqInfo.cs" />
+    <Compile Include="Approval\Ws\BE\ListInfo.cs" />
+    <Compile Include="Approval\Ws\BE\ProxyInfo.cs" />
+    <Compile Include="Approval\Ws\BE\SequenceInfo.cs" />
+    <Compile Include="Approval\Ws\BE\UserDeptInfo.cs" />
+    <Compile Include="Approval\Ws\BLL\AttachFile.cs" />
+    <Compile Include="Approval\Ws\BLL\CirculationDocument.cs" />
+    <Compile Include="Approval\Ws\BLL\CreatePDF.cs" />
+    <Compile Include="Approval\Ws\BLL\DocumentProcess.cs" />
+    <Compile Include="Approval\Ws\BLL\Draft.cs" />
+    <Compile Include="Approval\Ws\BLL\DraftFile.cs" />
+    <Compile Include="Approval\Ws\Common.asmx.cs">
+      <DependentUpon>Common.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Approval\Ws\Data\AccessGrade.cs" />
+    <Compile Include="Approval\Ws\Data\AttachFile.cs" />
+    <Compile Include="Approval\Ws\Data\BaseDocument.cs" />
+    <Compile Include="Approval\Ws\Data\CarbonCopyUser.cs" />
+    <Compile Include="Approval\Ws\Data\CirculationDocument.cs" />
+    <Compile Include="Approval\Ws\Data\CounterPartUser.cs" />
+    <Compile Include="Approval\Ws\Data\Document.cs" />
+    <Compile Include="Approval\Ws\Data\DocumentProcess.cs" />
+    <Compile Include="Approval\Ws\Data\Draft.cs" />
+    <Compile Include="Approval\Ws\Data\DraftBaseDoc.cs" />
+    <Compile Include="Approval\Ws\Data\DraftFile.cs" />
+    <Compile Include="Approval\Ws\Data\DraftSequence.cs" />
+    <Compile Include="Approval\Ws\Data\Form.cs" />
+    <Compile Include="Approval\Ws\Data\List.cs" />
+    <Compile Include="Approval\Ws\Data\Sequence.cs" />
+    <Compile Include="Approval\Ws\Data\ShortReply.cs" />
+    <Compile Include="Approval\Ws\EDM\Transfer.cs" />
+    <Compile Include="Approval\Ws\GetApproval.asmx.cs">
+      <DependentUpon>GetApproval.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Approval\Ws\Proxy\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Approval\Ws\SetApproval.asmx.cs">
+      <DependentUpon>SetApproval.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Approval\DocList.aspx.cs">
+      <DependentUpon>DocList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\DocList.aspx.designer.cs">
+      <DependentUpon>DocList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\CarboncopyList.aspx.cs">
+      <DependentUpon>CarboncopyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\CarboncopyList.aspx.designer.cs">
+      <DependentUpon>CarboncopyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\CirDocList.aspx.cs">
+      <DependentUpon>CirDocList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\CirDocList.aspx.designer.cs">
+      <DependentUpon>CirDocList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Approval\CirDocView.aspx.cs">
+      <DependentUpon>CirDocView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approval\CirDocView.aspx.designer.cs">
+      <DependentUpon>CirDocView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\FCM.aspx.cs">
+      <DependentUpon>FCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\FCM.aspx.designer.cs">
+      <DependentUpon>FCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\Ws\Data\List.cs" />
+    <Compile Include="Attendance\Ws\GetAttendance.asmx.cs">
+      <DependentUpon>GetAttendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Attendance\Ws\SetAttendance.asmx.cs">
+      <DependentUpon>SetAttendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Board\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\AddShortReply.aspx.cs">
+      <DependentUpon>AddShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\AddShortReply.aspx.designer.cs">
+      <DependentUpon>AddShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ModShortReply.aspx.cs">
+      <DependentUpon>ModShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ModShortReply.aspx.designer.cs">
+      <DependentUpon>ModShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Write.aspx.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Write.aspx.designer.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Ws\BE\AttachInfo.cs" />
+    <Compile Include="Board\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="Board\Ws\BE\CategoryInfo.cs" />
+    <Compile Include="Board\Ws\BE\HeaderInfo.cs" />
+    <Compile Include="Board\Ws\BE\ListEtcInfo.cs" />
+    <Compile Include="Board\Ws\BE\ListInfo.cs" />
+    <Compile Include="Board\Ws\BE\ShortReplyGoodInfo.cs" />
+    <Compile Include="Board\Ws\BE\ShortReplyInfo.cs" />
+    <Compile Include="Board\Ws\BE\XmlInfo.cs" />
+    <Compile Include="Board\Ws\BLL\Authority.cs" />
+    <Compile Include="Board\Ws\BLL\Category.cs" />
+    <Compile Include="Board\Ws\BLL\Dept.cs" />
+    <Compile Include="Board\Ws\BLL\List.cs" />
+    <Compile Include="Board\Ws\BLL\ListViewer.cs" />
+    <Compile Include="Board\Ws\Data\AttachFiles.cs" />
+    <Compile Include="Board\Ws\Data\Authority.cs" />
+    <Compile Include="Board\Ws\Data\Category.cs" />
+    <Compile Include="Board\Ws\Data\Dept.cs" />
+    <Compile Include="Board\Ws\Data\Header.cs" />
+    <Compile Include="Board\Ws\Data\List.cs" />
+    <Compile Include="Board\Ws\Data\ListEtc.cs" />
+    <Compile Include="Board\Ws\Data\ListViewer.cs" />
+    <Compile Include="Board\Ws\Data\ShortReply.cs" />
+    <Compile Include="Board\Ws\Data\ShortReplyGood.cs" />
+    <Compile Include="Board\Ws\GetBoard.asmx.cs">
+      <DependentUpon>GetBoard.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Board\Ws\SetBoard.asmx.cs">
+      <DependentUpon>SetBoard.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\AttachMail.aspx.cs">
+      <DependentUpon>AttachMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AttachMail.aspx.designer.cs">
+      <DependentUpon>AttachMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AttachUrl.aspx.cs">
+      <DependentUpon>AttachUrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AttachUrl.aspx.designer.cs">
+      <DependentUpon>AttachUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AttachView.aspx.cs">
+      <DependentUpon>AttachView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AttachView.aspx.designer.cs">
+      <DependentUpon>AttachView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CalendarDialog.aspx.cs">
+      <DependentUpon>CalendarDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CalendarDialog.aspx.designer.cs">
+      <DependentUpon>CalendarDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CalendarDualDialog.aspx.cs">
+      <DependentUpon>CalendarDualDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CalendarDualDialog.aspx.designer.cs">
+      <DependentUpon>CalendarDualDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImageView.aspx.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ImageView.aspx.designer.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UploadProgress.aspx.cs">
+      <DependentUpon>UploadProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UploadProgress.aspx.designer.cs">
+      <DependentUpon>UploadProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="Common\Ws\BE\PDFInfo.cs" />
+    <Compile Include="Common\Ws\BLL\CreatePDF.cs" />
+    <Compile Include="Common\Ws\Data\CreatePDF.cs" />
+    <Compile Include="Common\Ws\GetCommon.asmx.cs">
+      <DependentUpon>GetCommon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\AttachDSView.aspx.cs">
+      <DependentUpon>AttachDSView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AttachDSView.aspx.designer.cs">
+      <DependentUpon>AttachDSView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\BoardFolder.aspx.cs">
+      <DependentUpon>BoardFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\BoardFolder.aspx.designer.cs">
+      <DependentUpon>BoardFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\BoardList.aspx.cs">
+      <DependentUpon>BoardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\BoardList.aspx.designer.cs">
+      <DependentUpon>BoardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\BoardView.aspx.cs">
+      <DependentUpon>BoardView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\BoardView.aspx.designer.cs">
+      <DependentUpon>BoardView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Community\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Community\Ws\BE\Boarnfo.cs" />
+    <Compile Include="Community\Ws\BE\BoaShortReplyInfo.cs" />
+    <Compile Include="Community\Ws\BE\BoaViewInfo.cs" />
+    <Compile Include="Community\Ws\BE\ComInfo.cs" />
+    <Compile Include="Community\Ws\BE\MenuAuthInfo.cs" />
+    <Compile Include="Community\Ws\BE\MenuInfo.cs" />
+    <Compile Include="Community\Ws\BE\PointInfo.cs" />
+    <Compile Include="Community\Ws\Data\Boa.cs" />
+    <Compile Include="Community\Ws\Data\BoaAttach.cs" />
+    <Compile Include="Community\Ws\Data\BoaShortReply.cs" />
+    <Compile Include="Community\Ws\Data\BoaView.cs" />
+    <Compile Include="Community\Ws\Data\Com.cs" />
+    <Compile Include="Community\Ws\Data\List.cs" />
+    <Compile Include="Community\Ws\Data\Menu.cs" />
+    <Compile Include="Community\Ws\Data\MenuAuth.cs" />
+    <Compile Include="Community\Ws\Data\Point.cs" />
+    <Compile Include="Community\Ws\GetCommunity.asmx.cs">
+      <DependentUpon>GetCommunity.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Community\Ws\SetCommunity.asmx.cs">
+      <DependentUpon>SetCommunity.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Ws\BE\ListInfo.cs" />
+    <Compile Include="Config\Ws\GetConfig.asmx.cs">
+      <DependentUpon>GetConfig.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\Ws\SetConfig.asmx.cs">
+      <DependentUpon>SetConfig.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Coop\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\AddAccept.aspx.cs">
+      <DependentUpon>AddAccept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\AddAccept.aspx.designer.cs">
+      <DependentUpon>AddAccept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\AddChange.aspx.cs">
+      <DependentUpon>AddChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\AddChange.aspx.designer.cs">
+      <DependentUpon>AddChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\AddComplete.aspx.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\AddComplete.aspx.designer.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\BaseView.aspx.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\BaseView.aspx.designer.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\ForwardView.aspx.cs">
+      <DependentUpon>ForwardView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\ForwardView.aspx.designer.cs">
+      <DependentUpon>ForwardView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coop\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coop\Ws\BE\AttachInfo.cs" />
+    <Compile Include="Coop\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="Coop\Ws\BE\ListInfo.cs" />
+    <Compile Include="Coop\Ws\BE\ListViewerInfo.cs" />
+    <Compile Include="Coop\Ws\Data\APPBaseDoc.cs" />
+    <Compile Include="Coop\Ws\Data\Attach.cs" />
+    <Compile Include="Coop\Ws\Data\BaseCoop.cs" />
+    <Compile Include="Coop\Ws\Data\ForwardAttach.cs" />
+    <Compile Include="Coop\Ws\Data\ForwardBaseCoop.cs" />
+    <Compile Include="Coop\Ws\Data\ForwardBaseDoc.cs" />
+    <Compile Include="Coop\Ws\Data\ForwardList.cs" />
+    <Compile Include="Coop\Ws\Data\ForwardListViewer.cs" />
+    <Compile Include="Coop\Ws\Data\List.cs" />
+    <Compile Include="Coop\Ws\Data\ListViewer.cs" />
+    <Compile Include="Coop\Ws\GetCoop.asmx.cs">
+      <DependentUpon>GetCoop.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Coop\Ws\SetCoop.asmx.cs">
+      <DependentUpon>SetCoop.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\XFE2\upload\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\XFE2\upload\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\XFE2\upload\upload_contents.aspx.cs">
+      <DependentUpon>upload_contents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editor\XFE2\upload\upload_contents.aspx.designer.cs">
+      <DependentUpon>upload_contents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETC\GetUserInfo.aspx.cs">
+      <DependentUpon>GetUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETC\GetUserInfo.aspx.designer.cs">
+      <DependentUpon>GetUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETC\WorkList.aspx.cs">
+      <DependentUpon>WorkList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETC\WorkList.aspx.designer.cs">
+      <DependentUpon>WorkList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETC\Ws\BE\UserInfo.cs" />
+    <Compile Include="ETC\Ws\GetETC.asmx.cs">
+      <DependentUpon>GetETC.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AppException.cs" />
+    <Compile Include="Helper\CalendarHelper.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\MailParser\EmlParse.cs" />
+    <Compile Include="Helper\MailParser\MailMessage.cs" />
+    <Compile Include="Helper\MailParser\QuotedCoding.cs" />
+    <Compile Include="Helper\MobileBaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\MobileBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helper\MobileBaseService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\PhoneValidator.cs" />
+    <Compile Include="Helper\Security\AES.cs" />
+    <Compile Include="Helper\Security\HashManager.cs" />
+    <Compile Include="Helper\Security\QueryStringModule.cs" />
+    <Compile Include="Helper\Security\TripleDES.cs" />
+    <Compile Include="Helper\Security\TripleDESManager.cs" />
+    <Compile Include="Helper\SendMail.cs" />
+    <Compile Include="Helper\SQLHelper.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
+    <Compile Include="Helper\UploadAttachHandler.cs" />
+    <Compile Include="Helper\UploadBoardHandler.cs" />
+    <Compile Include="Helper\UploadHandler.cs" />
+    <Compile Include="Helper\UploadMailHandler.cs" />
+    <Compile Include="Helper\UploadMyTalkHandler.cs" />
+    <Compile Include="Helper\UrlSendHelper.cs" />
+    <Compile Include="Helper\UserInfoHelper.cs" />
+    <Compile Include="Helper\WebComponent\AsposeEmail.cs" />
+    <Compile Include="Helper\WebComponent\AsposeExcel.cs" />
+    <Compile Include="Helper\WebComponent\AsposeLicense.cs" />
+    <Compile Include="Helper\WebComponent\AsposePDF.cs" />
+    <Compile Include="Helper\WebComponent\AsposePPT.cs" />
+    <Compile Include="Helper\WebComponent\AsposeWord.cs" />
+    <Compile Include="Helper\WebComponent\DateHelper.cs" />
+    <Compile Include="Helper\WebComponent\DocStream.cs" />
+    <Compile Include="Helper\WebComponent\HtmlToPDF.cs" />
+    <Compile Include="Helper\WebComponent\Utility.cs" />
+    <Compile Include="Helper\XmlDataBaseHelper.cs" />
+    <Compile Include="HR\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Ws\Data\HR.cs" />
+    <Compile Include="HR\Ws\GetAttendance.asmx.cs">
+      <DependentUpon>GetAttendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HR\Ws\SetAttendance.asmx.cs">
+      <DependentUpon>SetAttendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Html\ErrorMessage\ErrorDefault.aspx.cs">
+      <DependentUpon>ErrorDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Html\ErrorMessage\ErrorDefault.aspx.designer.cs">
+      <DependentUpon>ErrorDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Html\Util\Enc\AESTest.aspx.cs">
+      <DependentUpon>AESTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Html\Util\Enc\AESTest.aspx.designer.cs">
+      <DependentUpon>AESTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\DraftSend.aspx.cs">
+      <DependentUpon>DraftSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\DraftSend.aspx.designer.cs">
+      <DependentUpon>DraftSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\DraftView.aspx.cs">
+      <DependentUpon>DraftView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\DraftView.aspx.designer.cs">
+      <DependentUpon>DraftView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Private.aspx.cs">
+      <DependentUpon>Private.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Private.aspx.designer.cs">
+      <DependentUpon>Private.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Trash.aspx.cs">
+      <DependentUpon>Trash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Trash.aspx.designer.cs">
+      <DependentUpon>Trash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\ViewTrash.aspx.cs">
+      <DependentUpon>ViewTrash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\ViewTrash.aspx.designer.cs">
+      <DependentUpon>ViewTrash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Ws\BE\AttachInfo.cs" />
+    <Compile Include="Mail\Ws\BE\ContentInfo.cs" />
+    <Compile Include="Mail\Ws\BE\ListInfo.cs" />
+    <Compile Include="Mail\Ws\BE\MailBoxInfo.cs" />
+    <Compile Include="Mail\Ws\BE\SearchInfo.cs" />
+    <Compile Include="Mail\Ws\Data\List.cs" />
+    <Compile Include="Mail\Ws\GetMail.asmx.cs">
+      <DependentUpon>GetMail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mail\Ws\MailGate.asmx.cs">
+      <DependentUpon>MailGate.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mail\Ws\SetMail.asmx.cs">
+      <DependentUpon>SetMail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDM\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MDM\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MDM\WS\BE\ListInfo.cs" />
+    <Compile Include="MDM\WS\BE\NotificationInfo.cs" />
+    <Compile Include="MDM\WS\BLL\Notification.cs" />
+    <Compile Include="MDM\WS\Data\Notification.cs" />
+    <Compile Include="MDM\WS\GetNotification.asmx.cs">
+      <DependentUpon>GetNotification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDM\WS\SetNotification.asmx.cs">
+      <DependentUpon>SetNotification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Messenger\BE\AlarmInfo.cs" />
+    <Compile Include="Messenger\BLL\Alarm.cs" />
+    <Compile Include="Messenger\Data\Alarm.cs" />
+    <Compile Include="MyTalk\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Ws\BE\AttachInfo.cs" />
+    <Compile Include="MyTalk\Ws\BE\MyTalkInfo.cs" />
+    <Compile Include="MyTalk\Ws\Data\List.cs" />
+    <Compile Include="MyTalk\Ws\GetMyTalk.asmx.cs">
+      <DependentUpon>GetMyTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Ws\SetMyTalk.asmx.cs">
+      <DependentUpon>SetMyTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyTalk\ShareList.aspx.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\ShareList.aspx.designer.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\ReplyAdd.aspx.cs">
+      <DependentUpon>ReplyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\ReplyAdd.aspx.designer.cs">
+      <DependentUpon>ReplyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\Share.aspx.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\Share.aspx.designer.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pims\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pims\Ws\BE\HolidayRInfo.cs" />
+    <Compile Include="Pims\Ws\BE\ScheduleInfo.cs" />
+    <Compile Include="Pims\Ws\BE\ScheduleReplyInfo.cs" />
+    <Compile Include="Pims\Ws\BE\ShareListInfo.cs" />
+    <Compile Include="Pims\Ws\BE\ToDoInfo.cs" />
+    <Compile Include="Pims\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="Pims\Ws\BE\ToDoReplyInfo.cs" />
+    <Compile Include="Pims\Ws\GetPims.asmx.cs">
+      <DependentUpon>GetPims.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pims\Ws\SetPims.asmx.cs">
+      <DependentUpon>SetPims.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Portal\AnLogin.aspx.cs">
+      <DependentUpon>AnLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\AnLogin.aspx.designer.cs">
+      <DependentUpon>AnLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default1.aspx.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default1.aspx.designer.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default10.aspx.cs">
+      <DependentUpon>Default10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default10.aspx.designer.cs">
+      <DependentUpon>Default10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default3.aspx.cs">
+      <DependentUpon>Default3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default3.aspx.designer.cs">
+      <DependentUpon>Default3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default4.aspx.cs">
+      <DependentUpon>Default4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default4.aspx.designer.cs">
+      <DependentUpon>Default4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default5.aspx.cs">
+      <DependentUpon>Default5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default5.aspx.designer.cs">
+      <DependentUpon>Default5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default6.aspx.cs">
+      <DependentUpon>Default6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default6.aspx.designer.cs">
+      <DependentUpon>Default6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default7.aspx.cs">
+      <DependentUpon>Default7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default7.aspx.designer.cs">
+      <DependentUpon>Default7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default8.aspx.cs">
+      <DependentUpon>Default8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default8.aspx.designer.cs">
+      <DependentUpon>Default8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Default9.aspx.cs">
+      <DependentUpon>Default9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Default9.aspx.designer.cs">
+      <DependentUpon>Default9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\LoginOutSide.aspx.cs">
+      <DependentUpon>LoginOutSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\LoginOutSide.aspx.designer.cs">
+      <DependentUpon>LoginOutSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Portal.aspx.cs">
+      <DependentUpon>Portal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Portal.aspx.designer.cs">
+      <DependentUpon>Portal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\SetLogOut.aspx.cs">
+      <DependentUpon>SetLogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\SetLogOut.aspx.designer.cs">
+      <DependentUpon>SetLogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Ws\BE\CompanyInfo.cs" />
+    <Compile Include="Portal\Ws\BE\MailInfo.cs" />
+    <Compile Include="Portal\Ws\BE\ScheduleInfo.cs" />
+    <Compile Include="Portal\Ws\BE\ToDoInfo.cs" />
+    <Compile Include="Portal\Ws\BE\ApprovalInfo.cs" />
+    <Compile Include="Portal\Ws\BE\BoardInfo.cs" />
+    <Compile Include="Portal\Ws\GetDefault.asmx.cs">
+      <DependentUpon>GetDefault.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Portal\Ws\GetPortal.asmx.cs">
+      <DependentUpon>GetPortal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Portal\IosLogin.aspx.cs">
+      <DependentUpon>IosLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\IosLogin.aspx.designer.cs">
+      <DependentUpon>IosLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Menu_Backup.ascx.cs">
+      <DependentUpon>Menu_Backup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Menu_Backup.ascx.designer.cs">
+      <DependentUpon>Menu_Backup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RM\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\RejectAdd.aspx.cs">
+      <DependentUpon>RejectAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\RejectAdd.aspx.designer.cs">
+      <DependentUpon>RejectAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\RepeatDel.aspx.cs">
+      <DependentUpon>RepeatDel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\RepeatDel.aspx.designer.cs">
+      <DependentUpon>RepeatDel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\ReplyAdd.aspx.cs">
+      <DependentUpon>ReplyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\ReplyAdd.aspx.designer.cs">
+      <DependentUpon>ReplyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\UsableList.aspx.cs">
+      <DependentUpon>UsableList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\UsableList.aspx.designer.cs">
+      <DependentUpon>UsableList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RM\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\Ws\BE\AccountInfo.cs" />
+    <Compile Include="RM\Ws\BE\AttachInfo.cs" />
+    <Compile Include="RM\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="RM\Ws\BE\ListInfo.cs" />
+    <Compile Include="RM\Ws\BE\RejectInfo.cs" />
+    <Compile Include="RM\Ws\BE\ReserveInfo.cs" />
+    <Compile Include="RM\Ws\BE\ShareUserInfo.cs" />
+    <Compile Include="RM\Ws\BE\ShortReplyInfo.cs" />
+    <Compile Include="RM\Ws\BLL\Attach.cs" />
+    <Compile Include="RM\Ws\BLL\Reserve.cs" />
+    <Compile Include="RM\Ws\BLL\ShortReply.cs" />
+    <Compile Include="RM\Ws\Data\Attach.cs" />
+    <Compile Include="RM\Ws\Data\Reject.cs" />
+    <Compile Include="RM\Ws\Data\Repeat.cs" />
+    <Compile Include="RM\Ws\Data\Reserve.cs" />
+    <Compile Include="RM\Ws\Data\ReserveList.cs" />
+    <Compile Include="RM\Ws\Data\ShareUser.cs" />
+    <Compile Include="RM\Ws\Data\ShortReply.cs" />
+    <Compile Include="RM\Ws\GetRM.asmx.cs">
+      <DependentUpon>GetRM.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RM\Ws\SetRM.asmx.cs">
+      <DependentUpon>SetRM.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SMS\ControlSendSMS.cs" />
+    <Compile Include="SMS\SMSHelper.cs" />
+    <Compile Include="SMS\SMSLook.cs" />
+    <Compile Include="SMS\SMSNotice.cs" />
+    <Compile Include="SMS\Surem.cs" />
+    <Compile Include="SMS\SuremDll.cs" />
+    <Compile Include="SMS\SuremInfo.cs" />
+    <Compile Include="SMS\SuremOracle.cs" />
+    <Compile Include="Task\AddAccept.aspx.cs">
+      <DependentUpon>AddAccept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\AddAccept.aspx.designer.cs">
+      <DependentUpon>AddAccept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\AddComplete.aspx.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\AddComplete.aspx.designer.cs">
+      <DependentUpon>AddComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\AddReject.aspx.cs">
+      <DependentUpon>AddReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\AddReject.aspx.designer.cs">
+      <DependentUpon>AddReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\AddReply.aspx.cs">
+      <DependentUpon>AddReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\AddReply.aspx.designer.cs">
+      <DependentUpon>AddReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\AlarmView.aspx.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\AlarmView.aspx.designer.cs">
+      <DependentUpon>AlarmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\BaseView.aspx.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\BaseView.aspx.designer.cs">
+      <DependentUpon>BaseView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\DelayList.aspx.cs">
+      <DependentUpon>DelayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\DelayList.aspx.designer.cs">
+      <DependentUpon>DelayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\DelayView.aspx.cs">
+      <DependentUpon>DelayView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\DelayView.aspx.designer.cs">
+      <DependentUpon>DelayView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\ForwardList.aspx.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\ForwardList.aspx.designer.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\ForwardView.aspx.cs">
+      <DependentUpon>ForwardView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\ForwardView.aspx.designer.cs">
+      <DependentUpon>ForwardView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task\Ws\BE\AttachInfo.cs" />
+    <Compile Include="Task\Ws\BE\CalendarInfo.cs" />
+    <Compile Include="Task\Ws\BE\ForwardInfo.cs" />
+    <Compile Include="Task\Ws\BE\ListInfo.cs" />
+    <Compile Include="Task\Ws\BE\ListViewerInfo.cs" />
+    <Compile Include="Task\Ws\BLL\Alarm.cs" />
+    <Compile Include="Task\Ws\Data\Attach.cs" />
+    <Compile Include="Task\Ws\Data\BaseApp.cs" />
+    <Compile Include="Task\Ws\Data\BaseTask.cs" />
+    <Compile Include="Task\Ws\Data\Forward.cs" />
+    <Compile Include="Task\Ws\Data\List.cs" />
+    <Compile Include="Task\Ws\Data\ListTO.cs" />
+    <Compile Include="Task\Ws\Data\ListViewer.cs" />
+    <Compile Include="Task\Ws\GetTask.asmx.cs">
+      <DependentUpon>GetTask.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Task\Ws\SetTask.asmx.cs">
+      <DependentUpon>SetTask.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebHard\Folder.aspx.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebHard\Folder.aspx.designer.cs">
+      <DependentUpon>Folder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHard\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebHard\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHard\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebHard\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHard\Share.aspx.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebHard\Share.aspx.designer.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHard\Ws\BE\AttachInfo.cs" />
+    <Compile Include="WebHard\Ws\BE\FileInfo.cs" />
+    <Compile Include="WebHard\Ws\BE\FolderInfo.cs" />
+    <Compile Include="WebHard\Ws\BE\ShareFolderInfo.cs" />
+    <Compile Include="WebHard\Ws\DAL\File.cs" />
+    <Compile Include="WebHard\Ws\DAL\Folder.cs" />
+    <Compile Include="WebHard\Ws\DAL\List.cs" />
+    <Compile Include="WebHard\Ws\GetWebHard.asmx.cs">
+      <DependentUpon>GetWebHard.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebHard\Ws\SetWebHard.asmx.cs">
+      <DependentUpon>SetWebHard.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App\android_version.dat" />
+    <None Include="App\ios_version.dat" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-brands-400.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-brands-400.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-brands-400.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-brands-400.woff2" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-regular-400.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-regular-400.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-regular-400.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-regular-400.woff2" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-solid-900.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-solid-900.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-solid-900.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\fa-solid-900.woff2" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Bold.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Bold.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Bold.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Bold.woff2" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-ExtraBold.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-ExtraBold.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-ExtraBold.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-ExtraBold.woff2" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Regular.eot" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Regular.ttf" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Regular.woff" />
+    <None Include="Content\ko\Base\Css\DStyle\webfonts\NanumGothic-Regular.woff2" />
+    <EmbeddedResource Include="Helper\WebComponent\Aspose.Total.lic" />
+    <None Include="Content\ko\Base\Img\ContextMenu\Thumbs.db" />
+    <None Include="Di.apk" />
+    <None Include="Editor\XFE2\save\saveas_step2.jsp" />
+    <None Include="Editor\XFE2\save\saveas_step2.php" />
+    <None Include="Editor\XFE2\upload\desktop.ini" />
+    <None Include="Editor\XFE2\upload\upload.jsp" />
+    <None Include="Editor\XFE2\upload\upload.php" />
+    <None Include="Editor\XFE2\upload\upload_contents.jsp" />
+    <None Include="Editor\XFE2\upload\upload_contents.php" />
+    <None Include="Html\ErrorMessage\Images\Thumbs.db" />
+    <None Include="Html\Util\ComponentArt.Web.UI.lic" />
+    <None Include="Util\Aspose\Aspose.Total.lic" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4140</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusMobile</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

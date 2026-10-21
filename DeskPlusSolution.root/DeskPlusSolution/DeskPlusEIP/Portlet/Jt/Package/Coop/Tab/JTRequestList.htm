@@ -1,0 +1,25 @@
+﻿
+    {#foreach $T as List}
+        <li>
+        <span class="mcopy">
+        <a onclick="TabCoop_PopupCoop('{ $T.List.ListID }','{ $T.List.GroupID }');return false;" style="cursor:pointer" >
+        [{ $T.List.HeaderTitle }] { $T.List.Title }</a>        
+        
+        {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if} 
+        </span>                
+
+        <span class="etcinfo" style="min-width:200px;border:0px solid #f00;">
+            <img class="statebar" 
+            {#if $T.List.StatusLast == '1'} src="/DeskPlusEIP/Design/C/Img/Icon/r.gif" 
+            {#elseif $T.List.StatusLast == '2'} src="/DeskPlusEIP/Design/C/Img/Icon/a.gif"             
+            {#elseif $T.List.StatusLast == '3'} src="/DeskPlusEIP/Design/C/Img/Icon/i.gif" 
+            {#elseif $T.List.StatusLast == '4'} src="/DeskPlusEIP/Design/C/Img/Icon/e.gif" 
+            {#/if} 
+            alt="{ $T.List.StatusLastName }" title="{ $T.List.StatusLastName }" />&nbsp;
+            <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.NameBase }</span></a>
+            <em style="min-width:80px;">{ $T.List.WriteDate }</em>
+        </span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  

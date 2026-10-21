@@ -1,0 +1,63 @@
+﻿<table class="table_typeA">
+<caption>관계있는 문서</caption>
+<colgroup>
+    <col width="150px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_nextUser"></th>
+        <th class="center" id="r_writeTime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Related}
+    <tr>
+        <!--td><input type="checkbox" class="cbxID" id="cbxID{ $T.Related.ROW }" value="{ $T.Related.DocumentID }" /></td--> 
+        <td class="center">{ $T.Related.FormBase }</td>
+        <td class="center"><a href="" onclick="Related.State('{ $T.Related.DocumentID }','{ $T.Related.AccountTag }');return false;" style="cursor:pointer" >
+        {#if $T.Related.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Related.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Related.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Related.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Related.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Related.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Related.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>            
+            {#if $T.Related.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Related.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <span action="subject" style="cursor:pointer" documentID='{ $T.Related.DocumentID }' isCancelApproval='{ $T.Related.IsCancelApproval }'
+            sequence='{ $T.Related.Sequence }' approvalTag='{ $T.Related.ApprovalTag }'>{ $T.Related.Subject }</span> 
+            {#if $T.Related.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Related.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Related.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Related.UserID }');return false;">{ $T.Related.NameBase }</a></td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Related.NextUserID }');return false;">{ $T.Related.NextUserInfo }</a></td>         
+        <td class="center">{ $T.Related.WriteTimeStr }</td>        
+    </tr>
+{#else}
+    <tr>
+        <td colspan="7" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

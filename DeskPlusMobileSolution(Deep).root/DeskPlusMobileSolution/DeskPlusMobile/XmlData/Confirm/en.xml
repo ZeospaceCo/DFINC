@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+  <OPINION>
+    <SECTION>
+      <OPINION>결재의견이 작성되었습니다</OPINION>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[결재의견]</OPINION>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;상신자 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;의견자 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;의견 : $OPINION$&lt;/li&gt;
+      &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </OPINION>
+  
+  <MAIL>
+    <SECTION>
+      <OPINION>Settlement comments were written.</OPINION>
+      <APPROVE>Approval document arrived.</APPROVE>
+      <COMPLETE>Completion of the settlement documents have been processed.</COMPLETE>
+      <CARBON>Reference documents arrived.</CARBON>
+      <RECEIVED>Received documents arrived.</RECEIVED>
+      <APPROVED>Approval document has been put on hold.</APPROVED>
+      <APPROVEDC>Pending settlement documents were released.</APPROVEDC>
+      <APPROVEH>Settlement documents were pending. Submit</APPROVEH>
+      <APPROVEHC>Pending approval document Submit been released.</APPROVEHC>
+      <REJECT>Companion document approval.</REJECT>
+      <CIRCULATION>Circulate the document has been sent.</CIRCULATION>
+      <ENFORCE>Official letter has been received.</ENFORCE>
+      <MEMO>The memo was written.</MEMO>
+      <PROXY>Confrontation document arrived</PROXY>
+      <CANCEL>Submit has been canceled.</CANCEL>
+      <FORWARD>Delivered documents have been sent</FORWARD>
+      <PASSED>Transfer documents have been sent.</PASSED>
+      <APPROVEC>Cancel</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[Payment opinion]</OPINION>
+      <APPROVE>[Approval]</APPROVE>
+      <COMPLETE>[Commit]</COMPLETE>
+      <CARBON>[Reference]</CARBON>
+      <RECEIVED>[Received]</RECEIVED>
+      <APPROVED>[Pending]</APPROVED>
+      <APPROVEDC>[Hold off]</APPROVEDC>
+      <APPROVEH>[Pending Submit]</APPROVEH>
+      <APPROVEHC>[Hold Off Submit]</APPROVEHC>
+      <REJECT>[Reject]</REJECT>
+      <CIRCULATION>[Circulated]</CIRCULATION>
+      <ENFORCE>[Memorandum]</ENFORCE>
+      <MEMO>[Note]</MEMO>
+      <PROXY>[Proxy]</PROXY>
+      <CANCEL>[Cancel Submit]</CANCEL>
+      <FORWARD>[Forward]</FORWARD>
+      <PASSED>[Transferred]</PASSED>
+      <APPROVEC>[Cancel approval]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;Subject : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;Form name : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;Submit department : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver information : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver Comments : $OPINION$&lt;/li&gt;
+      &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;When clicked, go to the document view.&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MAIL>
+
+  <MESSENGER>
+    <SECTION>
+      <OPINION>Settlement comments were written.</OPINION>
+      <APPROVE>Approval document arrived.</APPROVE>
+      <COMPLETE>Completion of the settlement documents have been processed.</COMPLETE>
+      <CARBON>Reference documents arrived.</CARBON>
+      <RECEIVED>Received documents arrived.</RECEIVED>
+      <APPROVED>Approval document has been put on hold.</APPROVED>
+      <APPROVEDC>Pending settlement documents were released.</APPROVEDC>
+      <APPROVEH>Settlement documents were pending. Submit</APPROVEH>
+      <APPROVEHC>Pending approval document Submit been released.</APPROVEHC>
+      <REJECT>Companion document approval.</REJECT>
+      <CIRCULATION>Circulate the document has been sent.</CIRCULATION>
+      <ENFORCE>Official letter has been received.</ENFORCE>
+      <MEMO>The memo was written.</MEMO>
+      <PROXY>Confrontation document arrived</PROXY>
+      <CANCEL>Submit has been canceled.</CANCEL>
+      <FORWARD>Delivered documents have been sent</FORWARD>
+      <PASSED>Transfer documents have been sent.</PASSED>
+      <APPROVEC>Cancel</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[Payment opinion]</OPINION>
+      <APPROVE>[Approval]</APPROVE>
+      <COMPLETE>[Commit]</COMPLETE>
+      <CARBON>[Reference]</CARBON>
+      <RECEIVED>[Received]</RECEIVED>
+      <APPROVED>[Pending]</APPROVED>
+      <APPROVEDC>[Hold off]</APPROVEDC>
+      <APPROVEH>[Pending Submit]</APPROVEH>
+      <APPROVEHC>[Hold Off Submit]</APPROVEHC>
+      <REJECT>[Reject]</REJECT>
+      <CIRCULATION>[Circulated]</CIRCULATION>
+      <ENFORCE>[Memorandum]</ENFORCE>
+      <MEMO>[Note]</MEMO>
+      <PROXY>[Proxy]</PROXY>
+      <CANCEL>[Cancel Submit]</CANCEL>
+      <FORWARD>[Forward]</FORWARD>
+      <PASSED>[Transferred]</PASSED>
+      <APPROVEC>[Cancel approval]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;Subject : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;Form name : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;Submit department : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver information : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver Comments : $OPINION$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MESSENGER>
+
+  <SMS>
+    <SECTION>
+      <OPINION>Settlement comments were written.</OPINION>
+      <APPROVE>Approval document arrived.</APPROVE>
+      <COMPLETE>Completion of the settlement documents have been processed.</COMPLETE>
+      <CARBON>Reference documents arrived.</CARBON>
+      <RECEIVED>Received documents arrived.</RECEIVED>
+      <APPROVED>Approval document has been put on hold.</APPROVED>
+      <APPROVEDC>Pending settlement documents were released.</APPROVEDC>
+      <APPROVEH>Settlement documents were pending. Submit</APPROVEH>
+      <APPROVEHC>Pending approval document Submit been released.</APPROVEHC>
+      <REJECT>Companion document approval.</REJECT>
+      <CIRCULATION>Circulate the document has been sent.</CIRCULATION>
+      <ENFORCE>Official letter has been received.</ENFORCE>
+      <MEMO>The memo was written.</MEMO>
+      <PROXY>Confrontation document arrived</PROXY>
+      <CANCEL>Submit has been canceled.</CANCEL>
+      <FORWARD>Delivered documents have been sent</FORWARD>
+      <PASSED>Transfer documents have been sent.</PASSED>
+      <APPROVEC>Cancel</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[Payment opinion]</OPINION>
+      <APPROVE>[Approval]</APPROVE>
+      <COMPLETE>[Commit]</COMPLETE>
+      <CARBON>[Reference]</CARBON>
+      <RECEIVED>[Received]</RECEIVED>
+      <APPROVED>[Pending]</APPROVED>
+      <APPROVEDC>[Hold off]</APPROVEDC>
+      <APPROVEH>[Pending Submit]</APPROVEH>
+      <APPROVEHC>[Hold Off Submit]</APPROVEHC>
+      <REJECT>[Reject]</REJECT>
+      <CIRCULATION>[Circulated]</CIRCULATION>
+      <ENFORCE>[Memorandum]</ENFORCE>
+      <MEMO>[Note]</MEMO>
+      <PROXY>[Proxy]</PROXY>
+      <CANCEL>[Cancel Submit]</CANCEL>
+      <FORWARD>[Forward]</FORWARD>
+      <PASSED>[Transferred]</PASSED>
+      <APPROVEC>[Cancel approval]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+    </CONTENT>
+  </SMS>
+
+  <MOBILE>
+    <SECTION>
+      <OPINION>Settlement comments were written.</OPINION>
+      <APPROVE>Approval document arrived.</APPROVE>
+      <COMPLETE>Completion of the settlement documents have been processed.</COMPLETE>
+      <CARBON>Reference documents arrived.</CARBON>
+      <RECEIVED>Received documents arrived.</RECEIVED>
+      <APPROVED>Approval document has been put on hold.</APPROVED>
+      <APPROVEDC>Pending settlement documents were released.</APPROVEDC>
+      <APPROVEH>Settlement documents were pending. Submit</APPROVEH>
+      <APPROVEHC>Pending approval document Submit been released.</APPROVEHC>
+      <REJECT>Companion document approval.</REJECT>
+      <CIRCULATION>Circulate the document has been sent.</CIRCULATION>
+      <ENFORCE>Official letter has been received.</ENFORCE>
+      <MEMO>The memo was written.</MEMO>
+      <PROXY>Confrontation document arrived</PROXY>
+      <CANCEL>Submit has been canceled.</CANCEL>
+      <FORWARD>Delivered documents have been sent</FORWARD>
+      <PASSED>Transfer documents have been sent.</PASSED>
+      <APPROVEC>Cancel</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[Payment opinion]</OPINION>
+      <APPROVE>[Approval]</APPROVE>
+      <COMPLETE>[Commit]</COMPLETE>
+      <CARBON>[Reference]</CARBON>
+      <RECEIVED>[Received]</RECEIVED>
+      <APPROVED>[Pending]</APPROVED>
+      <APPROVEDC>[Hold off]</APPROVEDC>
+      <APPROVEH>[Pending Submit]</APPROVEH>
+      <APPROVEHC>[Hold Off Submit]</APPROVEHC>
+      <REJECT>[Reject]</REJECT>
+      <CIRCULATION>[Circulated]</CIRCULATION>
+      <ENFORCE>[Memorandum]</ENFORCE>
+      <MEMO>[Note]</MEMO>
+      <PROXY>[Proxy]</PROXY>
+      <CANCEL>[Cancel Submit]</CANCEL>
+      <FORWARD>[Forward]</FORWARD>
+      <PASSED>[Transferred]</PASSED>
+      <APPROVEC>[Cancel approval]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;Subject : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;Form name : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;Submit department : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver information : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;Approver Comments : $OPINION$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MOBILE>
+</ALARM>

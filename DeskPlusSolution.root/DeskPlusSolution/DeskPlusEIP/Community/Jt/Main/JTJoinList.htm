@@ -1,0 +1,31 @@
+﻿<table class="table_typeA">
+<caption>가입 신청한 리스트</caption>
+<colgroup>
+    <col width="250px" />        
+    <col width="200px" />
+    <col width="100px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="r_cname"></span></th>        
+        <th class="center"><span id="r_joindes"></span></th>
+        <th class="center"><span id="r_applyDateStr"></span></th>
+        <th class="center"><span id="r_cancel"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.CMNName }</td>                
+        <td>{ $T.List.Description }</td>
+        <td class="center">{ $T.List.ApplyDateStr }</td>
+        <td class="center"><a href="#" onclick="javascript:Content.DelUserApply('{ $T.List.CommunityID }','{ $T.List.UserID }')" style="cursor:pointer;display:inline-block;" class="btn"><span class='btn_del'></span></a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center"><span id="NoJoinListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

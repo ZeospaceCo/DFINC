@@ -1,0 +1,33 @@
+﻿<table class="table_typeA"> 
+<caption>
+    수신자 및 참조자
+</caption>
+<colgroup>
+    <col  />
+    <col  />
+    <col  />
+    <col  />
+    <col  />
+</colgroup>
+<tr>    
+    <th class="center" id="r_gubun">구분</th>
+    <th class="center" id="r_name">이름</th>
+    <th class="center" id="r_dept">부서</th>
+    <th class="center" id="r_title">직급</th>
+    <th class="center" id="r_duty">직책</th>
+</tr>
+{#foreach $T as BoardList}
+<tr>    
+    <td class="center">{ $T.BoardList.Gubun }</td>        
+    <td class="center"><a onclick="javascript:AccountInfo('{ $T.BoardList.UserID }')" style="cursor:pointer" >{ $T.BoardList.Name }</a></td>    
+    <td class="center">{ $T.BoardList.BaseDeptName }</td>    
+    <td class="center">{ $T.BoardList.BaseTitleName }</td>    
+    <td class="center">{ $T.BoardList.BaseDutyName }</td>    
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

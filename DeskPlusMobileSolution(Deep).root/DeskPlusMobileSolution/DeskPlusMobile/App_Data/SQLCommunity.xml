@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SEL_QRY_USERLIST" Value="SELECT CompanyID, CommunityID, Name FROM DP_CMN_Com AS a WITH(NOLOCK) WHERE CompanyID = {0} 
+      AND CommunityID IN (Select CommunityiD from DP_CMN_UserInfo WITH(NOLOCK) where CompanyID = {0} and UserID = {1} and Status =1) AND Status = 1  "
+		Content="내가 가입한 커뮤니티" />
+	<Item ID="INS_PROC_USERVISITETC" Value="DPM_CMN_UserVisitEtc_Ins" Content="방문카운트, 방문포인트 추가"></Item>
+	<Item ID="SEL_QRY_COM"
+		  Value="SELECT CC.Name , CU.Grade From DP_CMN_Com as CC WITH(NOLOCK) Inner Join DP_CMN_UserInfo as CU WITH(NOLOCK) 
+		ON CC.CompanyID = CU.CompanyID AND CC.CommunityID = CU.CommunityID WHERE CC.CompanyID = {0} AND CC.CommunityID = {1} AND CU.UserID = {2} " Content="커뮤니티 정보" />
+	<Item ID="SEL_QRY_BOARDMENULIST"
+		Value="SELECT CM.* , CA.WriteAuth, CA.ReadAuth From DP_CMN_Menu as CM WITH(NOLOCK) Inner Join DP_CMN_MenuAuth as CA WITH(NOLOCK) 
+	  ON CM.CompanyID = CA.CompanyID AND CM.CommunityID = CA.CommunityID AND CM.MenuID = CA.MenuID WHERE CM.CompanyID = {0} AND CM.CommunityID = {1} AND CM.Type In (1,2,3) ORDER BY CM.Sequence "
+		Content="게시판종류 메뉴만 가져오기" />
+	<Item ID="SEL_QRY_MENU" Value="SELECT * From DP_CMN_Menu WITH(NOLOCK) WHERE CompanyID = {0} AND CommunityID = {1} AND MenuID = {2}" Content="선택한 게시판이름 가져오기" />
+	<Item ID="SQL_PROC_BOA_LIST" Value="DPM_CMN_Boa_Sel" Content="선택한 게시판리스트 가져오기" />
+	<Item ID="SEL_QRY_BOAATTACH" Value="SELECT * From DP_CMN_BoaAttach WITH(NOLOCK) WHERE CompanyID = {0} AND CommunityID = {1} AND MenuID = {2} AND BoardID = {3}"
+		  Content="첨부파일리스트 가져오기" />
+  <Item ID="SEL_PROC_BOA_DS" Value="DPM_CMN_DS_Sel" Content="닥스트리밍 파일" />
+	<Item ID="SEL_QRY_BOACONTENT"
+	Value="SELECT B.*, U.NameBase, U.NameKo, U.NameEn, U.NameJa , U.NameFr, U.NameZhcn, U.NameZhtw, U.ManyName
+	,U.DeptBase, U.DeptKo, U.DeptEn, U.DeptJa, U.DeptFr, U.DeptZhcn, U.DeptZhtw
+	,U.TitleBase, U.TitleKo, U.TitleEn, U.TitleJa, U.TitleFr, U.TitleZhcn, U.TitleZhtw
+    ,(SELECT COUNT(BoardID) FROM DP_CMN_BoaView WITH(NOLOCK) WHERE CompanyID = B.CompanyID AND CommunityID = B.CommunityID AND MenuID = B.MenuID AND BoardID = B.BoardID ) AS ReadCount
+	,(SELECT COUNT(RecommendID) FROM DP_CMN_BoaRecom WITH(NOLOCK) WHERE CompanyID = B.CompanyID AND CommunityID = B.CommunityID AND MenuID = B.MenuID AND BoardID = B.BoardID) AS RecomCount
+	,U.AlarmCommunity		  
+    FROM DP_CMN_Boa AS B WITH(NOLOCK) LEFT OUTER JOIN VW_UserInfo AS U WITH(NOLOCK) ON B.CompanyID = U.CompanyID AND B.WriteUserID = U.UserID AND U.BaseDept = 1 
+    WHERE B.CompanyID = {0} AND B.CommunityID = {1} AND B.MenuID = {2} AND B.BoardID = {3}" Content="게시물 내용 가져오기" />
+	<Item ID="INS_PROC_BOAVIEW" Value="DP_CMN_BoaView_Ins" Content="게시글 조회시 조회테이블에 넣기" />
+	<Item ID="INS_PROC_POINT" Value="DP_CMN_Point_Ins" Content="포인트 추가" />
+	<Item ID="SEL_QRY_BOASHORTREPLY"
+		Value="SELECT B.*,U.NameBase, U.NameKo, U.NameEn, U.NameJa , U.NameFr, U.NameZhcn, U.NameZhtw, U.ManyName
+	,U.DeptBase, U.DeptKo, U.DeptEn, U.DeptJa, U.DeptFr, U.DeptZhcn, U.DeptZhtw
+	,U.TitleBase, U.TitleKo, U.TitleEn, U.TitleJa, U.TitleFr, U.TitleZhcn, U.TitleZhtw
+	,U.AlarmCommunity	
+    FROM DP_CMN_BoaShortReply AS B WITH(NOLOCK) LEFT OUTER JOIN VW_UserInfo AS U WITH(NOLOCK) 
+    ON B.CompanyID = U.CompanyID AND B.UserID = U.UserID AND U.BaseDept = 1 
+    WHERE B.CompanyID = {0} AND B.CommunityID = {1} AND B.MenuID = {2} AND B.BoardID = {3} order by B.WriteDate" Content="선택한 게시물의 댓글 가져오기" />
+	<Item ID="INS_PROC_BOASHORTREPLYPOINT" Value="DPM_CMN_BoaShortReplyEtc_Ins" Content="댓글, 포인트추가 " />
+	<Item ID="SEL_PROC_CMNBOA_LIST_TOPDOWN" Value="DPM_CMN_BOA_List_TopDown" Content="선택한 게시판리스트 가져오기" />
+	<Item ID="SEL_QRY_MENUAUTH"
+	 Value="SELECT M.ReadAuth, M.WriteAuth, U.Grade From DP_CMN_MenuAuth AS M WITH(NOLOCK) LEFT OUTER JOIN DP_CMN_UserInfo AS U WITH(NOLOCK) 
+     ON M.CompanyID = U.CompanyID AND M.CommunityID = U.CommunityID 
+     WHERE M.CompanyID = {0} AND M.CommunityID ={1} AND M.MenuID = {2} AND U.UserID = {3}" Content="메뉴 권한 가져오기" />
+	<Item ID="SEL_QRY_USERCOMMUNITYID" Value="SELECT CU.* FROM DP_CMN_UserInfo as CU WITH(NOLOCK) INNER JOIN DP_CMN_Com as CC WITH(NOLOCK) 
+		  ON CU.CompanyID = CC.CompanyID AND CU.CommunityID = CC.CommunityID WHERE CU.CompanyID = {0} AND CU.UserID = {1} and CU.Status =1 AND CC.Status =1 " Content="내가 가입한 커뮤니티" />
+	<Item ID="SEL_QRY_MENUCNT" Value="SELECT Count(*) as Cnt FROM DP_CMN_BOA as CB WITH(NOLOCK) INNER JOIN DP_CMN_MenuAuth as CM WITH(NOLOCK) 
+		  ON CB.CompanyID = CM.CompanyID AND CB.CommunityID = CM.CommunityID AND CB.MenuID = CM.MenuID  
+		WHERE CB.CompanyID = {0} AND CB.CommunityID = {1} 
+		AND CB.BoardID not in (SELECT BoardID FROM DP_CMN_BoaView WITH(NOLOCK) WHERE CompanyID = CB.CompanyID AND CommunityID = CB.CommunityID AND MenuID = CB.MenuID)
+		AND CM.ReadAuth >= {2} " Content="커뮤니티 게시판글 카운트 가져오기(메뉴)" />
+	<Item ID="SQL_PROC_BOA_LISTCNT" Value="DPM_CMN_Boa_SelCnt" Content="선택한 게시판리스트 갯수" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

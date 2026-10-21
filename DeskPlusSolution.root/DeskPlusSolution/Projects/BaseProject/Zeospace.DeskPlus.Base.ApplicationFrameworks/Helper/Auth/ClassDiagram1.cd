@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentMasterPage" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gBgAAAAAAAAAAAIACQAIAIEKEBAQAAAAAAABCEACAAA=</HashCode>
+      <FileName>Helper\Auth\UserEnvironmentMasterPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBaseControl" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gBgAAAAAAAAAAAIACQAIAIEKEBAQAAAAAAABCEACAQA=</HashCode>
+      <FileName>Helper\Auth\UserEnvironmentBaseControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBasePage" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gBgAAAAAAAAAAAIACQAIAIEKEBAQAAAAAAABCEACAAA=</HashCode>
+      <FileName>Helper\Auth\UserEnvironmentBasePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBaseService">
+    <Position X="3.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAEACAAA=</HashCode>
+      <FileName>Helper\Auth\UserEnvironmentBaseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.Authenticator">
+    <Position X="3.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAiAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\Auth\Authenticator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BasePage">
+    <Position X="6" Y="8.75" Width="2.75" />
+    <InheritanceLine Type="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBasePage" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="6.021" />
+        <Point X="6.625" Y="6.396" />
+        <Point X="5.625" Y="6.396" />
+        <Point X="5.625" Y="10" />
+        <Point X="6" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAACABAAAAA=</HashCode>
+      <FileName>Helper\Base\BasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BasePageNoAuth">
+    <Position X="6" Y="6.75" Width="2.25" />
+    <InheritanceLine Type="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBasePage" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="6.021" />
+        <Point X="6.625" Y="6.396" />
+        <Point X="7.188" Y="6.396" />
+        <Point X="7.188" Y="6.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\Base\BasePageNoAuth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BaseControl">
+    <Position X="9" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAIAAAAAAAAAAAAAAQAAAACAAAAAAA=</HashCode>
+      <FileName>Helper\Base\BaseControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BaseMasterPage">
+    <Position X="11" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAACAACAAAA=</HashCode>
+      <FileName>Helper\Base\BaseMasterPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BaseService">
+    <Position X="3.5" Y="8.75" Width="1.5" />
+    <InheritanceLine Type="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.UserEnvironmentBaseService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.312" Y="7.819" />
+        <Point X="4.312" Y="8.285" />
+        <Point X="4.312" Y="8.285" />
+        <Point X="4.312" Y="8.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Helper\Base\BaseService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Auth.IUserEnvironment">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBgAAAAAAAAAAAIAAAAAAIACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\Auth\IUserEnvironment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

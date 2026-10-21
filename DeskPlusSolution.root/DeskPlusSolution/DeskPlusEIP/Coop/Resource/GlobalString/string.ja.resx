@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>アクティベーション</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>追加する添付ファイル</value>
+  </data>
+  <data name="AddBase" xml:space="preserve">
+    <value>根拠資料の追加</value>
+  </data>
+  <data name="AddBaseDoc" xml:space="preserve">
+    <value>追加する根拠文書</value>
+  </data>
+  <data name="AddDoc" xml:space="preserve">
+    <value>ドキュメントの追加</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>ファイルの追加</value>
+  </data>
+  <data name="AddReceive" xml:space="preserve">
+    <value>受信者の追加</value>
+  </data>
+  <data name="AddReference" xml:space="preserve">
+    <value>参照先の追加</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>テキストを入力してください</value>
+  </data>
+  <data name="AdminDel" xml:space="preserve">
+    <value>このリストとこれを使った根拠資料も削除されます。削除しますか？</value>
+  </data>
+  <data name="AfterChange" xml:space="preserve">
+    <value>変更後</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>処理後にエラーが発生しました。管理者にお問い合わせください。</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>既に登録されたユーザーです。</value>
+  </data>
+  <data name="AllCoWorkList" xml:space="preserve">
+    <value>完全コラボレーションリスト</value>
+  </data>
+  <data name="AllDel" xml:space="preserve">
+    <value>その要求文と回答文まで全部削除しますか？</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>フルダウンロード</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>日付を入力してください。</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>悪い</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>根拠資料</value>
+  </data>
+  <data name="BaseDocList" xml:space="preserve">
+    <value>根拠資料リスト</value>
+  </data>
+  <data name="BaseDocSelList" xml:space="preserve">
+    <value>根拠の文書を選択するリスト</value>
+  </data>
+  <data name="BaseName" xml:space="preserve">
+    <value>分類を入力してください。</value>
+  </data>
+  <data name="BeforeChanage" xml:space="preserve">
+    <value>前に変更</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>受信者、および参照者</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>送信キャンセル</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>要求の取り消し</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>主要なカテゴリ</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="CCCoWork" xml:space="preserve">
+    <value>参照されたコラボレーション</value>
+  </data>
+  <data name="ChangeComplete" xml:space="preserve">
+    <value>完了をキャンセルする場合進行中の状態に変更されます。変更しますか？</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>順序を変更する</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>大分類順序が変更されます。</value>
+  </data>
+  <data name="ChangeSave" xml:space="preserve">
+    <value>変更を保存</value>
+  </data>
+  <data name="ChangeSubOrders" xml:space="preserve">
+    <value>小分類順序が変更されます。</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="CheckCategory" xml:space="preserve">
+    <value>分類を選択してください。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>削除するリストを選択してください。</value>
+  </data>
+  <data name="CheckDelList" xml:space="preserve">
+    <value>削除したいリストを選択してください。</value>
+  </data>
+  <data name="CheckModList" xml:space="preserve">
+    <value>変更したいリストを選択してください。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Collabo" xml:space="preserve">
+    <value>業務協力</value>
+  </data>
+  <data name="CollaboReceived" xml:space="preserve">
+    <value>渡されたコラボレーション</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="CompleteCancel" xml:space="preserve">
+    <value>完了を処理しますか？</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>完了要求日</value>
+  </data>
+  <data name="Completes" xml:space="preserve">
+    <value>完了する</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前に作成されたコンテンツはすべて失われます。選択肢？</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="CoWork" xml:space="preserve">
+    <value>業務協力</value>
+  </data>
+  <data name="DateOfWrite" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>その要求文を削除しますか？</value>
+  </data>
+  <data name="DelGubun" xml:space="preserve">
+    <value>カテゴリを削除するには？</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>この回答文を削除しますか？</value>
+  </data>
+  <data name="DelSubCategory" xml:space="preserve">
+    <value>小分類を先に削除してください。</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>詳細情報</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難しさ</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>文書番号</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>ドキュメントの表示</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>ボディは、経営者が原文の内容を変えるかもしれない疑いがあるスクリプトが含まれています。</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>終了予定日</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>情報の誤りをフェッチするために添付ファイルが発生しました。</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>処理時、エラーが発生しました。</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>1次</value>
+  </data>
+  <data name="FormName" xml:space="preserve">
+    <value>フォーム名</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Forwarder" xml:space="preserve">
+    <value>ことぶれ</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>表示ページに移動します</value>
+  </data>
+  <data name="GotoCoopMainPage" xml:space="preserve">
+    <value>メインページに行く</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>リストに移動します。</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="GroupManage" xml:space="preserve">
+    <value>機密管理</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>カテゴリー名</value>
+  </data>
+  <data name="IngDetail" xml:space="preserve">
+    <value>進行内訳</value>
+  </data>
+  <data name="InputCompleteDate" xml:space="preserve">
+    <value>完了要求日を入力してください。</value>
+  </data>
+  <data name="InputEndDate" xml:space="preserve">
+    <value>終了予定日を入力してください。</value>
+  </data>
+  <data name="InputReceive" xml:space="preserve">
+    <value>受信者を入力してください。</value>
+  </data>
+  <data name="InputStartDate" xml:space="preserve">
+    <value>開始予定日を入力してください。</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>タイトルを入力してください。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="ManageItem" xml:space="preserve">
+    <value>大分類管理</value>
+  </data>
+  <data name="ManageItemSub" xml:space="preserve">
+    <value>小分類管理</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ModifyReply" xml:space="preserve">
+    <value>答辯修正</value>
+  </data>
+  <data name="MoveAccept" xml:space="preserve">
+    <value>受け入れスクロール</value>
+  </data>
+  <data name="MoveAdd" xml:space="preserve">
+    <value>追加画面に移動します。</value>
+  </data>
+  <data name="MoveMod" xml:space="preserve">
+    <value>編集画面に移動します。</value>
+  </data>
+  <data name="MovePage" xml:space="preserve">
+    <value>分類に設定されたテンプレートフォームが呼び出されます。ページ移動しますか？</value>
+  </data>
+  <data name="MoveRequest" xml:space="preserve">
+    <value>再要求画面に移動</value>
+  </data>
+  <data name="MoveScreen" xml:space="preserve">
+    <value>完了画面に移動</value>
+  </data>
+  <data name="MSGCancel" xml:space="preserve">
+    <value>様コラボレーションを完了キャンセルしました。</value>
+  </data>
+  <data name="MSGComplete" xml:space="preserve">
+    <value> 様コラボレーションを完了しました。</value>
+  </data>
+  <data name="MSGReceive" xml:space="preserve">
+    <value>様コラボレーションを受け付けました。</value>
+  </data>
+  <data name="MSGReject" xml:space="preserve">
+    <value> あなたのための協力を拒否</value>
+  </data>
+  <data name="MSGRequest" xml:space="preserve">
+    <value> 様コラボレーションを再要求しました。</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>すでにベースのドキュメントを保存</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>ドキュメントがすでにリストに追加されます</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>処理中にエラーが発生しました。管理者にお問い合わせください。</value>
+  </data>
+  <data name="MSG_NoSelect" xml:space="preserve">
+    <value>選択した文書ではありません</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>処理しました。</value>
+  </data>
+  <data name="MutiName" xml:space="preserve">
+    <value>多国籍企業名</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>順番</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附属書は存在しません。</value>
+  </data>
+  <data name="NoBaseListData" xml:space="preserve">
+    <value>根拠文書が存在しません。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容がありません。</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>ファイルが存在しません。</value>
+  </data>
+  <data name="NoListData" xml:space="preserve">
+    <value>コンテンツは存在しません。</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>無効にする</value>
+  </data>
+  <data name="OpenYN" xml:space="preserve">
+    <value>公開するかどうか</value>
+  </data>
+  <data name="OrganBtnSearch" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>非公開</value>
+  </data>
+  <data name="ProceedsTitle" xml:space="preserve">
+    <value>進行のタイトル</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>処理中</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>進行</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="Receipt" xml:space="preserve">
+    <value>受付</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>受信者</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>受付する</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>受信者</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>参照者</value>
+  </data>
+  <data name="Referencer" xml:space="preserve">
+    <value>參照者</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>伴侶</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>返信する</value>
+  </data>
+  <data name="ReplyDel" xml:space="preserve">
+    <value>回答の削除</value>
+  </data>
+  <data name="ReplyMod" xml:space="preserve">
+    <value>回答の変更</value>
+  </data>
+  <data name="ReplyTitle" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>筆者</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>要求する</value>
+  </data>
+  <data name="RequestCoWork" xml:space="preserve">
+    <value>要求されたコラボレーション</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>要求日</value>
+  </data>
+  <data name="RequestedCoWork" xml:space="preserve">
+    <value>要求されたコラボレーション</value>
+  </data>
+  <data name="Requester" xml:space="preserve">
+    <value>要求する人</value>
+  </data>
+  <data name="Requests" xml:space="preserve">
+    <value>再要求する</value>
+  </data>
+  <data name="RequireDetail" xml:space="preserve">
+    <value>要求の内訳</value>
+  </data>
+  <data name="Requires" xml:space="preserve">
+    <value>要求</value>
+  </data>
+  <data name="Rerequest" xml:space="preserve">
+    <value>再要求</value>
+  </data>
+  <data name="SaveBoth" xml:space="preserve">
+    <value>変更された受信者、および参照者を保存しますか？</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>ショットを作った最初のコメントをリリースする予定です。</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>2次</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>秘密文で作成する</value>
+  </data>
+  <data name="SelectFirst" xml:space="preserve">
+    <value>1次分類を選択してください。</value>
+  </data>
+  <data name="SelectLevel" xml:space="preserve">
+    <value>難易度を選択してください。</value>
+  </data>
+  <data name="SelectSecond" xml:space="preserve">
+    <value>2次分類を選択してください。</value>
+  </data>
+  <data name="SelTarget" xml:space="preserve">
+    <value>ターゲットの選択</value>
+  </data>
+  <data name="ShallWeReject" xml:space="preserve">
+    <value>あなたは拒否したい?</value>
+  </data>
+  <data name="StandBy" xml:space="preserve">
+    <value>待機</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始予定日</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日付が終了日よりも小さくなければなりません。</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="SubBaseName" xml:space="preserve">
+    <value>少人数のクラスを入力してください</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>少人数制クラス</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>対象者</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>テンプレート</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>テンプレートの名前を入力してください。</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>本文</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="UsedYN" xml:space="preserve">
+    <value>使用するかどうか</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>手順</value>
+  </data>
+  <data name="NoBaseCoopListData" xml:space="preserve">
+    <value>Have no based Document</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+</root>

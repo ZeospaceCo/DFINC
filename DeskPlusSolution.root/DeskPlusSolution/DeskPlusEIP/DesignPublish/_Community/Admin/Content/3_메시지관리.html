@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+    
+        <div id="layout_header">
+            <!-- 페이지타이틀,버튼 //-->
+            <h1>메세지관리(메일/초대)</h1>
+            <ul class="btn_right">        
+                <li class="btn_blue"><a href="#" title="확인"><span>확인</span></a></li>
+                <li><a href="#" title="취소"><span>취소</span></a></li>
+            </ul>
+        </div>
+    
+        <div id="layout_content">
+            <!-- 메일 //-->
+            <div>메일일때보여지는 테이블이에요~ 나중에 이 div는 지워주세요</div>
+            <table class="table_typeB">
+            <caption>메세지관리</caption>
+			<colgroup>
+                <col width="120px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>메세지포맷</th>
+                    <td>
+                        <input type="radio" name="r1" checked />사용안함&nbsp;
+                        <input type="radio" name="r1" />알림&nbsp;
+                        <input type="radio" name="r1" />모임&nbsp;
+                        <span class="cm_subtxt">* dropdown선택에 따라서, 하단, 에디터 템플릿이 달라짐.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>받는사람</th>
+                    <td>
+                        <select class="searchselect">
+                            <option selected="selected">전체회원</option><option>특정회원</option><option>등급항목리스트..</option><option>준회원</option><option>정회원</option><option>우수회원</option><option>....</option><option>....</option><option>....</option><option>....</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>
+                        <input type="text" style="width:95%"; />
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+            <!-- 초대 //-->
+            <div>초대일때보여지는 테이블이에요~ 나중에 이 div는 지워주세요</div>
+            <table class="table_typeB">
+            <caption>초대</caption>
+			<colgroup>
+                <col width="120px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>받는사람 메일주소</th>
+                    <td>
+                        <span class="aLeft" style="width:90%;"><input type="text" style="width:98%" /></span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="#" title="추가"><span>주소록</span></a></li>
+                                </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td>
+                        <input type="text" style="width:88%"; />
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div id="tabs" class="layout_subbox">
+                <ul id="tab" class="tab">
+                    <li><a id="ActvieX"  class="tab_on"><span>ActiveX</span> </a></li>
+                    <li><a id="NonActiveX"><span>NonActiveX</span> </a></li>
+                </ul>
+                <div class="divEditor">
+                    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/IEActiveX/ko/activexTagfree.js"></script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

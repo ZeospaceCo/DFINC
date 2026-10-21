@@ -1,0 +1,33 @@
+﻿<table class="table_typeA"> 
+<caption>
+    자주지정하는 결재자 리스트
+</caption>
+<colgroup>
+    <col width="60px" />
+    <col />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="120px" />
+</colgroup>
+<tr>
+    <th id="r_tag" class="center"></th>
+    <th id="r_deptName" class="center"></th>
+    <th id="r_titleName" class="center"></th>
+    <th id="r_dutyName" class="center"></th>
+    <th id="r_userName" class="center"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.ApprovalTagStr }</td>          
+    <td class="center">{ $T.List.DeptBase }</td>    
+    <td class="center">{ $T.List.TitleBase }</td>
+    <td class="center">{ $T.List.DutyBase }</td>
+    <td class="center">{ $T.List.NameBase }</td>
+    
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

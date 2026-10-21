@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>	
+	<Item id="部门" Value="Dept"/>
+	<Item id="下级部门" Value="SubDept"/>
+</XmlData>
+

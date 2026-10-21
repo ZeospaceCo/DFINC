@@ -1,0 +1,43 @@
+﻿<div class="table_typeLtop"><p></p></div>    
+<div class="table_typeLmiddle">
+<!--blog 내용 시작-->
+<div class="blog_cont">
+<ul>
+{#foreach $T as Lists}
+    <li {#if $T.Lists$last == true} class="last-child" {#/if} >
+
+        <table class="blog_cont_table">
+        <colgroup>
+            <col width="10%" />
+            <col />
+        </colgroup>
+        <tr>
+            <td class="blog_img">
+                <a onclick="AccountInfoWin('{ $T.Lists.UserID }');return false;" style="cursor:pointer">{ $T.Lists.PhotoImage }</a>
+            </td>
+            <td>
+               <div class="tk_b">
+                <p class="lb">
+               {#if $T.Lists.ShowNew == 'Y'} <span class="m_talk"></span> {#/if}
+               <span class="subtext">&nbsp;<a onclick="AccountInfoWin('{ $T.Lists.UserID }');return false;" style="cursor:pointer">{ $T.Lists.NameBase } </a>| { $T.Lists.WriteTimeStr }</span>
+                {#if $T.Lists.IsAuth == 'Y'} 
+                    <a href="#" onclick="javascript:ApprovalTalk.Del({ $T.Lists.ShortReplyID})")>
+                    <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" /><span class="BtnDel" style="display:none;"></span>
+                    </a>
+                {#/if}               
+               <br />
+               [{ $T.Lists.SectionStr }]&nbsp;{ $T.Lists.Content }               
+                </p>
+                <div class="arr"></div>
+               </div>
+            </td>
+        </tr>
+        </table>
+    </li>
+{#else}
+    <li class="last-child center"><span class="NoListData" /></li>
+{#/for}
+</ul>
+</div>
+</div>
+<div class="table_typeLbottom"><p></p></div>

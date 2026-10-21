@@ -1,0 +1,57 @@
+﻿<div class="table_typeLmiddle">
+	<div class="album_cont">
+		<ul>
+        {#foreach $T as CmnBoardList}
+			<li>   
+                <div class="thumb">
+                    <dl class="album_img">   
+                        <a href="#" onclick="ListGallery.ShowImage('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer">
+                        <img src="{ $T.CmnBoardList.ScreenShot }" alt="" /></a>
+
+					</dl>
+                    <dl class="text">   
+                        <dd>
+                            {#if $T.CmnBoardList.WriteUserID > 0}
+                                <a href="#" onclick="AccountInfo('{ $T.CmnBoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.CmnBoardList.WriteUserName }</a>             
+                            {#else}
+                                { $T.CmnBoardList.WriteUserName }
+                            {#/if}
+                        </dd>
+					</dl>
+                    <dl class="text">   
+                        <dd>{ $T.CmnBoardList.WriteDate }</dd>
+                        <dd class="end">                            
+                            <a href="#" onclick="ListGallery.ReadList('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" class="badge number bg-info">
+                            { $T.CmnBoardList.ReadCount }
+                            </a>
+                        </dd>
+                        <dd class="end">                            
+                            <a href="#" onclick="ListGallery.RecomList('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" class="badge number bg-info">
+                            { $T.CmnBoardList.RecomCount }
+                            </a>
+                        </dd>                     
+                        <dd class="end">       
+                            {#if $T.CmnBoardList.ReplyCount > 0}                          
+                            <a href="#" onclick="ListGallery.PopupShort('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" class="badge number bg-info">
+                            { $T.CmnBoardList.ReplyCount }
+                            </a>
+                            {#/if}  
+                            {#if $T.CmnBoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+                        </dd>                       
+						<dt>
+                            <a href="#" onclick="ListGallery.View('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer">
+                            <span class="fontCut">
+                                { $T.CmnBoardList.Title }
+                            </span>
+                            </a>                                                     
+                        </dt>
+					</dl>
+				</div>         
+			</li>
+        {#else}
+            <li class="last-child"><span class="NoListData" /></li>
+        {#/for}
+		</ul>
+	</div>				 
+</div>
+

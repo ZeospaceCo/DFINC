@@ -1,0 +1,44 @@
+﻿<table class="table_typeA"> 
+<caption>
+    휴가원(사용자) 휴가내역
+</caption>
+<colgroup>
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col />
+    <col width="170px" />
+</colgroup>
+<tr>
+    <th id="r_startdate" class="center"></th>
+    <th id="r_starthalf" class="center"></th>
+    <th id="r_enddate" class="center"></th>
+    <th id="r_endhalf" class="center"></th>
+    <th id="r_duration" class="center"></th>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_docview" class="center"></th>    
+</tr>
+{#foreach $T as ListUser}
+<tr>  
+    <td class="center">{ $T.ListUser.StartDate }</td>
+    <td class="center">{ $T.ListUser.StartHalf }</td>
+    <td class="center">{ $T.ListUser.EndDate }</td>
+    <td class="center">{ $T.ListUser.EndHalf }</td>
+    <td class="center">({ $T.ListUser.Duration }일간)</td>
+    <td class="center">{ $T.ListUser.Gubun }</td>
+    <td class="center">        
+        {#if $T.ListUser.DocumentID > 0}
+        <span onclick="ListUser.DocView('{ $T.ListUser.DocumentID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

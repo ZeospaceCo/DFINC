@@ -1,0 +1,33 @@
+﻿<table cellspacing="0" class="table_typeA" border="0"> 
+<caption>UserList</caption>
+<colgroup>    
+    <col width="40px" />
+    <col width="120px" />
+    <col width="120px" />
+    <col  />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+    <tr>        
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+        <th class="center"><span id="r_loginID"></span></th>
+        <th class="center"><span id="r_name"></span></th>        
+        <th class="center"><span id="r_deptName"></span></th>
+        <th class="center"><span id="r_titleName"></span></th>
+        <th class="center"><span id="r_dutyName"></span></th>          
+    </tr>
+    {#foreach $T as List}
+    <tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.UserID }" /></td>
+    <td class="center"><a onclick="javascript:List.DeviceInfo('{ $T.List.UserID }')" style="cursor:pointer">{ $T.List.LoginID }</a></td>        
+    <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.Name }</a></td>    
+    <td class="center">{ $T.List.DeptName }</td>
+    <td class="center">{ $T.List.TitleName }</td>
+    <td class="center">{ $T.List.DutyName }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

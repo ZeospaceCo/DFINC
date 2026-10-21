@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>File addition</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>Add a Comment</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>Please input the title</value>
+  </data>
+  <data name="Add_Templete" xml:space="preserve">
+    <value>Templet addition</value>
+  </data>
+  <data name="AdminConfirm" xml:space="preserve">
+    <value>Administrator Confirm</value>
+  </data>
+  <data name="Admin_ListClose_IsReceipt" xml:space="preserve">
+    <value>Will you accept the closure?</value>
+  </data>
+  <data name="Admin_ListClose_IsReject" xml:space="preserve">
+    <value>Will you reject the closure application?</value>
+  </data>
+  <data name="Admin_ListLinked_IsReceipt" xml:space="preserve">
+    <value>Will you approve?</value>
+  </data>
+  <data name="Admin_ListLinked_IsReject" xml:space="preserve">
+    <value>Will you reject?</value>
+  </data>
+  <data name="Admin_ListOpen_IsReceipt" xml:space="preserve">
+    <value>Will you accept the opening application?</value>
+  </data>
+  <data name="Admin_Menu" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Admin_Menu1" xml:space="preserve">
+    <value>Opening Application</value>
+  </data>
+  <data name="Admin_Menu2" xml:space="preserve">
+    <value>Closure Application</value>
+  </data>
+  <data name="Admin_Menu3" xml:space="preserve">
+    <value>Project List</value>
+  </data>
+  <data name="Admin_Menu4" xml:space="preserve">
+    <value>Associated project</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Full Download</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Will you delete?</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Please input the starting date and ending date.</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>Attached file</value>
+  </data>
+  <data name="Board_List_Attach" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="Board_List_Content" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Board_List_DateTime" xml:space="preserve">
+    <value>Boarded date</value>
+  </data>
+  <data name="Board_List_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Board_List_Num" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Board_List_ShortReply" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Board_List_Title" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Board_List_Viewer" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="Board_Read_ShortReply" xml:space="preserve">
+    <value>Please enter a comment.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>Change order</value>
+  </data>
+  <data name="ChargerUserDept_Remark" xml:space="preserve">
+    <value>Please select the target.</value>
+  </data>
+  <data name="ChargerUserDept_SelectedReceiptor" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="ChargerUserDept_Title" xml:space="preserve">
+    <value>Target Selection</value>
+  </data>
+  <data name="CheckDate" xml:space="preserve">
+    <value>The completion date range of the starting date of schedule is lower than the starting date range.</value>
+  </data>
+  <data name="CheckEndDate" xml:space="preserve">
+    <value>Completion date range is lower than the starting date range.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CompleteAdd" xml:space="preserve">
+    <value>Will you add the selected project?</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>Has been approved.</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Order has changed.</value>
+  </data>
+  <data name="CompleteReject" xml:space="preserve">
+    <value>Denied.</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>Previously written contents disappear. Will you select?</value>
+  </data>
+  <data name="ConfirmProject" xml:space="preserve">
+    <value>Choose a project to approve.</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>Will you delete the actual file?</value>
+  </data>
+  <data name="DeleteReal" xml:space="preserve">
+    <value>Do you really want to delete?</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>Delete Files</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Department name</value>
+  </data>
+  <data name="Ditto" xml:space="preserve">
+    <value>Ditto</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>The contents may be changed because there are suspicious sentences about script in the body paragraphs.</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>Folder Management</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="FOLDER_Register_MSGName" xml:space="preserve">
+    <value>Input Folder Name</value>
+  </data>
+  <data name="FormatApply" xml:space="preserve">
+    <value>Form application</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the view page</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Go to the list.</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>Please enter a start date and completion date of plan.</value>
+  </data>
+  <data name="InputStartDate" xml:space="preserve">
+    <value>Please input the starting date and ending date.</value>
+  </data>
+  <data name="InputStartDays" xml:space="preserve">
+    <value>Please input the day of plan.</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>The special characters are limited because they are used for security vulnerabilities attacks.</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListLinked_LinkedTitle" xml:space="preserve">
+    <value>Associated project</value>
+  </data>
+  <data name="ListLinked_Reject" xml:space="preserve">
+    <value>Refusal</value>
+  </data>
+  <data name="ListLinked_RequestTitle" xml:space="preserve">
+    <value>Application Project</value>
+  </data>
+  <data name="List_DBInjection" xml:space="preserve">
+    <value>That is a banned word.</value>
+  </data>
+  <data name="List_IsOpen" xml:space="preserve">
+    <value>Whether it is opened or not</value>
+  </data>
+  <data name="List_ltlFolder" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="List_Msg_Input" xml:space="preserve">
+    <value>Please input your search words.</value>
+  </data>
+  <data name="List_Msg_NotUseSpecial" xml:space="preserve">
+    <value>You cannot use special characters at the search words.</value>
+  </data>
+  <data name="List_PlanDate" xml:space="preserve">
+    <value>Planned date</value>
+  </data>
+  <data name="List_ProjectName" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="List_Status1" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="List_Status2" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="List_Status3" xml:space="preserve">
+    <value>Completion</value>
+  </data>
+  <data name="List_Status4" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="List_Status5" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="Main_DatePercent" xml:space="preserve">
+    <value>Date percent</value>
+  </data>
+  <data name="Manage_Progress_Folder" xml:space="preserve">
+    <value>Ongoing folder management</value>
+  </data>
+  <data name="Manage_Template" xml:space="preserve">
+    <value>Template Management</value>
+  </data>
+  <data name="MaxList" xml:space="preserve">
+    <value>(We show 5 latest posts)</value>
+  </data>
+  <data name="Member_Birthday" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Member_DeptName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Member_Employ" xml:space="preserve">
+    <value>Business number</value>
+  </data>
+  <data name="Member_List_ChargerDel" xml:space="preserve">
+    <value>Will you delete participants?</value>
+  </data>
+  <data name="Member_List_ChargerSelectDel" xml:space="preserve">
+    <value>Please select a participant to delete.</value>
+  </data>
+  <data name="Member_LoginID" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="Member_Mail" xml:space="preserve">
+    <value>Mail address</value>
+  </data>
+  <data name="Member_ModifyDate" xml:space="preserve">
+    <value>Last modification date</value>
+  </data>
+  <data name="Member_Phone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="Member_RegisterDate" xml:space="preserve">
+    <value>Registered date</value>
+  </data>
+  <data name="Member_Sex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Member_Status" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Member_TitleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Member_VisitDate" xml:space="preserve">
+    <value>Date of last visit</value>
+  </data>
+  <data name="Menu_admin1" xml:space="preserve">
+    <value>Project Management</value>
+  </data>
+  <data name="Menu_admin2" xml:space="preserve">
+    <value>Participant management</value>
+  </data>
+  <data name="Menu_admin3" xml:space="preserve">
+    <value>Menu Management</value>
+  </data>
+  <data name="Menu_admin4" xml:space="preserve">
+    <value>Mentioning the verdict</value>
+  </data>
+  <data name="Menu_admin5" xml:space="preserve">
+    <value>Template Management</value>
+  </data>
+  <data name="Menu_admin6" xml:space="preserve">
+    <value>Applying closure</value>
+  </data>
+  <data name="Menu_admin8" xml:space="preserve">
+    <value>Verdict</value>
+  </data>
+  <data name="Menu_Header1" xml:space="preserve">
+    <value>Menu Name</value>
+  </data>
+  <data name="Menu_Header2" xml:space="preserve">
+    <value>Menu explanation</value>
+  </data>
+  <data name="Menu_Header3" xml:space="preserve">
+    <value>Used or not</value>
+  </data>
+  <data name="Menu_Header4" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Menu_Register_MSGDesc" xml:space="preserve">
+    <value>Menu explanation exceeded the allowed size.</value>
+  </data>
+  <data name="Menu_Register_MSGName" xml:space="preserve">
+    <value>Please input the menu name</value>
+  </data>
+  <data name="Menu_Related" xml:space="preserve">
+    <value>Related Projects</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>Modification</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>Short reply modification</value>
+  </data>
+  <data name="Module_Folder_Node1" xml:space="preserve">
+    <value>Folder Management</value>
+  </data>
+  <data name="Module_Node1" xml:space="preserve">
+    <value>Project Management</value>
+  </data>
+  <data name="Module_Node2" xml:space="preserve">
+    <value>Opening application</value>
+  </data>
+  <data name="Module_Node3" xml:space="preserve">
+    <value>The entire project</value>
+  </data>
+  <data name="Module_Node4" xml:space="preserve">
+    <value>Completed project</value>
+  </data>
+  <data name="Module_Node5" xml:space="preserve">
+    <value>My Project</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="MSG_CONFIRM_DEL" xml:space="preserve">
+    <value>Will you delete?</value>
+  </data>
+  <data name="MSG_DUF_USERDEPT" xml:space="preserve">
+    <value>Person(Department) already have been registered.</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>When processing, an error has occurred.</value>
+  </data>
+  <data name="MSG_NOAdminAUTH" xml:space="preserve">
+    <value>There is no access authority.</value>
+  </data>
+  <data name="MSG_NOAUTH" xml:space="preserve">
+    <value>You don't have access authority of this project.</value>
+  </data>
+  <data name="MSG_NODELETE" xml:space="preserve">
+    <value>This item cannot be deleted.</value>
+  </data>
+  <data name="MSG_NOSELECT_MENU" xml:space="preserve">
+    <value>Please select menu.</value>
+  </data>
+  <data name="MSG_NOStatusAUTH" xml:space="preserve">
+    <value>The manager of this project delayed the opening approval.</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Has been processed.</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>Multilingual name</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>Attachment does not exist.</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>The pertinent user cannot access.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>There is no information.</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>There are no attachment files.</value>
+  </data>
+  <data name="OnlyAdminClose" xml:space="preserve">
+    <value>Only the project manager can apply for the closure.</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>Parent folder name</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Private_BoardAdd_DPEditorTEXT" xml:space="preserve">
+    <value>Please enter your information.</value>
+  </data>
+  <data name="Private_BoardView_IsDelMSG" xml:space="preserve">
+    <value>Will you delete?</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error has occurred while processing. Please inquire to the administrator.</value>
+  </data>
+  <data name="ProjectInfo_DelayDays" xml:space="preserve">
+    <value>The number of delay days</value>
+  </data>
+  <data name="ProjectInfo_EDate" xml:space="preserve">
+    <value>Completion date</value>
+  </data>
+  <data name="ProjectInfo_InDays" xml:space="preserve">
+    <value>Days of injection</value>
+  </data>
+  <data name="ProjectInfo_PlanEDate" xml:space="preserve">
+    <value>Plan completion date</value>
+  </data>
+  <data name="ProjectInfo_PlanSDate" xml:space="preserve">
+    <value>Plan starting date</value>
+  </data>
+  <data name="ProjectInfo_RemainDays" xml:space="preserve">
+    <value>The remaining days</value>
+  </data>
+  <data name="ProjectInfo_SDate" xml:space="preserve">
+    <value>Starting date</value>
+  </data>
+  <data name="ProjectInfo_TotalDays" xml:space="preserve">
+    <value>Total days</value>
+  </data>
+  <data name="ProjectList_Header1" xml:space="preserve">
+    <value>Department name</value>
+  </data>
+  <data name="ProjectList_Header2" xml:space="preserve">
+    <value>Establisher</value>
+  </data>
+  <data name="ProjectList_Header3" xml:space="preserve">
+    <value>Plan starting date</value>
+  </data>
+  <data name="ProjectList_Header4" xml:space="preserve">
+    <value>Plan completion date</value>
+  </data>
+  <data name="ProjectList_Header5" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ProjectList_Header6" xml:space="preserve">
+    <value>Progress rate</value>
+  </data>
+  <data name="ProjectList_Header7" xml:space="preserve">
+    <value>Position Name</value>
+  </data>
+  <data name="Project_Content_MsgProject" xml:space="preserve">
+    <value>There are no selected projects.</value>
+  </data>
+  <data name="Project_Menu_ClosedRequest" xml:space="preserve">
+    <value>Do you really want to apply for closure?</value>
+  </data>
+  <data name="Project_Menu_ClosedSuccess" xml:space="preserve">
+    <value>Closure Application has been completed.</value>
+  </data>
+  <data name="Project_Menu_Opinion" xml:space="preserve">
+    <value>Administrator can write verdicts.</value>
+  </data>
+  <data name="Project_ProjectInfo_Approval" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="Project_ProjectInfo_Date" xml:space="preserve">
+    <value>Opening Date</value>
+  </data>
+  <data name="Project_ProjectInfo_IsOpen" xml:space="preserve">
+    <value>Separation</value>
+  </data>
+  <data name="Project_ProjectInfo_NoApproval" xml:space="preserve">
+    <value>Disapproval</value>
+  </data>
+  <data name="Project_RegisterOpinion_Save" xml:space="preserve">
+    <value>Will you save?</value>
+  </data>
+  <data name="Project_Register_CountProjectList" xml:space="preserve">
+    <value>You can't delete it because a project exists in this folder.</value>
+  </data>
+  <data name="Project_State" xml:space="preserve">
+    <value>Progress/Completing project status</value>
+  </data>
+  <data name="Read_WriteDate" xml:space="preserve">
+    <value>Written date</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>Do you really want to delete?</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>Registrant</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Denial</value>
+  </data>
+  <data name="RejectProject" xml:space="preserve">
+    <value>Choose a project to deny.</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="ReplyBoard" xml:space="preserve">
+    <value>Answering</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="R_Project_MSGFolder" xml:space="preserve">
+    <value>Please select a folder.</value>
+  </data>
+  <data name="R_Project_MSGPlanDate" xml:space="preserve">
+    <value>Please select a plan date</value>
+  </data>
+  <data name="R_Project_MSGPProcess" xml:space="preserve">
+    <value>Please enter only numbers.</value>
+  </data>
+  <data name="R_Project_MSGProjectName" xml:space="preserve">
+    <value>Please choose a project name.</value>
+  </data>
+  <data name="Schedule_AddPims" xml:space="preserve">
+    <value>Add to the individual schedule</value>
+  </data>
+  <data name="Schedule_Header1" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Schedule_Header2" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Schedule_Header3" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Schedule_Header4" xml:space="preserve">
+    <value>Schedule repetition</value>
+  </data>
+  <data name="Schedule_Header5" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Schedule_Header6" xml:space="preserve">
+    <value>Schedule addition</value>
+  </data>
+  <data name="Schedule_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Schedule_Title" xml:space="preserve">
+    <value>Project Schedule</value>
+  </data>
+  <data name="Schedule_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SetRepeat" xml:space="preserve">
+    <value>Repeat Settings</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>View images</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Ending date cannot be smaller than the starting date.</value>
+  </data>
+  <data name="Template_Register_ltlTitle" xml:space="preserve">
+    <value>Template title</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Position Name</value>
+  </data>
+  <data name="Unit_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Unit_Owner" xml:space="preserve">
+    <value>Writer</value>
+  </data>
+  <data name="Unit_PlanDay" xml:space="preserve">
+    <value>The number of days spent</value>
+  </data>
+  <data name="Unit_PlanEndDate" xml:space="preserve">
+    <value>Plan completion / ending </value>
+  </data>
+  <data name="Unit_PlanEndDate1" xml:space="preserve">
+    <value>Plan completion  / completion</value>
+  </data>
+  <data name="Unit_PlanStartDate" xml:space="preserve">
+    <value>Plan starting / Starting</value>
+  </data>
+  <data name="Unit_Process" xml:space="preserve">
+    <value>Progress rate</value>
+  </data>
+  <data name="Unit_RealProcess" xml:space="preserve">
+    <value>Real Progress rate</value>
+  </data>
+  <data name="Unit_Register_Delete" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="Unit_Register_LoadTemplate" xml:space="preserve">
+    <value>Page will be loaded again due to the template selection. Will you call?</value>
+  </data>
+  <data name="Unit_Register_ltlChargeDeptName" xml:space="preserve">
+    <value>Department in charge</value>
+  </data>
+  <data name="Unit_Register_ltlCharger" xml:space="preserve">
+    <value>The name of people in charge</value>
+  </data>
+  <data name="Unit_Register_ltlCode" xml:space="preserve">
+    <value>code</value>
+  </data>
+  <data name="Unit_Register_ltlEndDate" xml:space="preserve">
+    <value>Ending date</value>
+  </data>
+  <data name="Unit_Register_ltlExecuteMoney" xml:space="preserve">
+    <value>Executed money</value>
+  </data>
+  <data name="Unit_Register_ltlPlanDay" xml:space="preserve">
+    <value>Plan spending date</value>
+  </data>
+  <data name="Unit_Register_ltlPlanEndDate" xml:space="preserve">
+    <value>Plan completion date</value>
+  </data>
+  <data name="Unit_Register_ltlPlanMoney" xml:space="preserve">
+    <value>Planned money</value>
+  </data>
+  <data name="Unit_Register_ltlPlanStartDate" xml:space="preserve">
+    <value>Plan starting date</value>
+  </data>
+  <data name="Unit_Register_ltlProcess" xml:space="preserve">
+    <value>Progress rate</value>
+  </data>
+  <data name="Unit_Register_ltlRelateDeptName" xml:space="preserve">
+    <value>Relevant department</value>
+  </data>
+  <data name="Unit_Register_ltlStartDate" xml:space="preserve">
+    <value>Starting date</value>
+  </data>
+  <data name="Unit_Register_ltlStatus" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Unit_Register_ltlTemplate" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Unit_Register_ltlTitle" xml:space="preserve">
+    <value>PERIOD units of work</value>
+  </data>
+  <data name="Unit_Register_ltlWeightPercent" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Unit_Register_Request1" xml:space="preserve">
+    <value>Please enter the name of business unit operations.</value>
+  </data>
+  <data name="Unit_Register_Request2" xml:space="preserve">
+    <value>Please input the plan starting date</value>
+  </data>
+  <data name="Unit_Register_Request3" xml:space="preserve">
+    <value>Please input the plan completion date.</value>
+  </data>
+  <data name="Unit_Register_Request4" xml:space="preserve">
+    <value>Plan completing date is earlier than plan starting date</value>
+  </data>
+  <data name="Unit_Status" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Unit_Title" xml:space="preserve">
+    <value>PERIOD units of work</value>
+  </data>
+  <data name="Unit_WeightPercent" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Unit_whole" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="ViewBoard" xml:space="preserve">
+    <value>View posts</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>View date</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>Lookup Status</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>Registration information</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>Is being processed. Please wait a moment</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>Writing shor reply</value>
+  </data>
+  <data name="Writing" xml:space="preserve">
+    <value>Writing</value>
+  </data>
+  <data name="Schedule_CompareTime" xml:space="preserve">
+    <value>Start date must be less than the termination date.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ReplyInputContent" xml:space="preserve">
+    <value>Please enter your information.</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>Replies are limited to 200 characters</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>Please input contents.</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>Enter the name of the folder</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment Name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Main Home</value>
+  </data>
+</root>

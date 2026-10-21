@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="100Unit" xml:space="preserve">
+    <value>100개</value>
+  </data>
+  <data name="10Unit" xml:space="preserve">
+    <value>10개</value>
+  </data>
+  <data name="50Unit" xml:space="preserve">
+    <value>50개</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>처리 되었습니다.</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>파일추가</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>폴더추가</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>추가할</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>포틀릿추가</value>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>템플릿추가</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>본문 내용을 입력해 주세요.</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>제목을 입력해 주세요.</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>내용을 입력해 주세요.</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>공지 기간을 설정해 주세요.</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>관리자</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>처리 후 오류가 발생되었습니다. 관리자에게 문의하시기 바랍니다</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>전체다운로드</value>
+  </data>
+  <data name="AlreadySettingAuthority" xml:space="preserve">
+    <value>이미 권한에 전사권한이 추가되어 있습니다.</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>익명</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>적용</value>
+  </data>
+  <data name="ApplyAllSubordination" xml:space="preserve">
+    <value>모든 하위분류에 적용합니다.</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="ApplyFolderAllAuthority" xml:space="preserve">
+    <value>해당 폴더의 권한을 전부 반영하시겠습니까?</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>기간설정을 해 주세요.</value>
+  </data>
+  <data name="ApplySameAuthSubordinatioFolder" xml:space="preserve">
+    <value>하위폴더 동일 권한 적용</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>첨부파일 파일</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>첨부파일</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="AuthSetting" xml:space="preserve">
+    <value>권한설정</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="BoardListFormat" xml:space="preserve">
+    <value>게시판 리스트 형식</value>
+  </data>
+  <data name="BoardManagement" xml:space="preserve">
+    <value>게시관리</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>굵게</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>명칭</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="CategoryOrder" xml:space="preserve">
+    <value>하위폴더순서</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>카테고리 순서 변경되었습니다.</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>상위 폴더 변경</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>삭제할 리스트를 선택해 주세요.</value>
+  </data>
+  <data name="CheckHits" xml:space="preserve">
+    <value>조회자를 체크합니다.</value>
+  </data>
+  <data name="CheckMoveFavoriteFolder" xml:space="preserve">
+    <value>이동할 즐겨찾기 폴더를 선택해 주세요.</value>
+  </data>
+  <data name="CheckMoveList" xml:space="preserve">
+    <value>이동할 리스트를 선택해 주세요</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="CompleteFolder" xml:space="preserve">
+    <value>폴더 추가 되었습니다..</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>선택한 폴더로 이동되었습니다.</value>
+  </data>
+  <data name="CompleteModifyFolder" xml:space="preserve">
+    <value>폴더 수정 처리 되었습니다.</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>정말로 삭제하시겠습니까?</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>기존에 작성하신 내용이 사라집니다. 선택하시겠습니까?</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="ContentsManagement" xml:space="preserve">
+    <value>게시물관리</value>
+  </data>
+  <data name="CreateMenu" xml:space="preserve">
+    <value>메뉴생성</value>
+  </data>
+  <data name="DefaultList" xml:space="preserve">
+    <value>(선택하지 않을 경우 List 형)</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>실제 파일을 삭제하시겠습니까?</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>해당 폴더를 삭제하시겠습니까</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="Description1" xml:space="preserve">
+    <value>해당 폴더에 게시판 리스트( </value>
+  </data>
+  <data name="Description2" xml:space="preserve">
+    <value> 건 ) 존재하여 삭제 할 수 없습니다.</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>디자인</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>본문에 Script 관련 의심구문이 있어 내용이 변경되실 수 있습니다.</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>하위</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>첨부파일 정보를 가져오는데 에러가 발생하였습니다.</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>처리시, 오류가 발생되었습니다.</value>
+  </data>
+  <data name="FavoriteFolder" xml:space="preserve">
+    <value>즐겨찾기</value>
+  </data>
+  <data name="FavoriteFolderAdd" xml:space="preserve">
+    <value>즐겨찾기추가</value>
+  </data>
+  <data name="FavoriteFolderMod" xml:space="preserve">
+    <value>즐겨찾기수정</value>
+  </data>
+  <data name="FavoriteFolderMove" xml:space="preserve">
+    <value>즐겨찾기이동</value>
+  </data>
+  <data name="FavoriteFolderName" xml:space="preserve">
+    <value>즐겨찾기명</value>
+  </data>
+  <data name="FavoriteMultiFolderName" xml:space="preserve">
+    <value>즐겨찾기명(다국어)</value>
+  </data>
+  <data name="FavoriteOrder" xml:space="preserve">
+    <value>하위순서변경</value>
+  </data>
+  <data name="FavoriteParentFolderName" xml:space="preserve">
+    <value>상위즐겨찾기명</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>파일타입</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="FolderDescription" xml:space="preserve">
+    <value>폴더설명</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>하위폴더순서</value>
+  </data>
+  <data name="FolderManagement" xml:space="preserve">
+    <value>폴더관리</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>폴더이동</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>폴더명을 입력해 주세요.</value>
+  </data>
+  <data name="FolderTitle" xml:space="preserve">
+    <value>폴더명</value>
+  </data>
+  <data name="ForderPath" xml:space="preserve">
+    <value>폴더위치</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>부터</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>전체경로</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>보기 페이지로 이동합니다.</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>리스트로 이동합니다.</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>말머리</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>중요표시해제</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>중요표시</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>중요표시 리스트에서 해제 하시겠습니까?</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>해당 특수문자는 보안취약성 공격에 사용되므로 제한됩니다.</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>기본 리스트 수</value>
+  </data>
+  <data name="ListMove" xml:space="preserve">
+    <value>이동</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="ListType1" xml:space="preserve">
+    <value>리스트형</value>
+  </data>
+  <data name="ListType2" xml:space="preserve">
+    <value>블로그형</value>
+  </data>
+  <data name="ListType3" xml:space="preserve">
+    <value>앨범형</value>
+  </data>
+  <data name="List_ConsultGubun" xml:space="preserve">
+    <value>상담분야</value>
+  </data>
+  <data name="List_Group" xml:space="preserve">
+    <value>현재분류</value>
+  </data>
+  <data name="List_Move" xml:space="preserve">
+    <value>글올리기</value>
+  </data>
+  <data name="List_Register" xml:space="preserve">
+    <value>작성하기</value>
+  </data>
+  <data name="List_ReplyNo" xml:space="preserve">
+    <value>답변여부(아니오)</value>
+  </data>
+  <data name="List_ReplyYes" xml:space="preserve">
+    <value>답변여부(예)</value>
+  </data>
+  <data name="List_SubGroup" xml:space="preserve">
+    <value>하위분류포함</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>타인수정 가능</value>
+  </data>
+  <data name="ModifyFolder" xml:space="preserve">
+    <value>폴더수정</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>댓글수정</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1달</value>
+  </data>
+  <data name="MoveCategory" xml:space="preserve">
+    <value>이동할 폴더를 선택해 주세요.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>성명</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>첨부파일이 존재하지 않습니다.</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>권한없음</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>권한이 없습니다.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="DeletedPost" xml:space="preserve">
+    <value>삭제된 게시물입니다.</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>내용이 존재 하지 않습니다.</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>해당 파일이 존재하지 않습니다.</value>
+  </data>
+  <data name="NoReplyData" xml:space="preserve">
+    <value>댓글이 존재하지 않습니다.</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>리스트가 존재하지 않습니다.</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>공지</value>
+  </data>
+  <data name="NoticeCheck" xml:space="preserve">
+    <value>게시물조회</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>이미지 형식이 아닙니다.</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>제목없음</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>옵션</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>처리되었습니다.</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>처리시 오류가 발생되었습니다. 관리자에게 문의해주시기 바랍니다.</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>공용폴더</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>순위</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>평가</value>
+  </data>
+  <data name="Rate_lblAverageRatingMessage" xml:space="preserve">
+    <value>평가 비율</value>
+  </data>
+  <data name="Rate_lblCommentMessage" xml:space="preserve">
+    <value>평가한 사유를 말씀해 주시기 바랍니다(선택)</value>
+  </data>
+  <data name="Rate_lblTopMessage" xml:space="preserve">
+    <value>내용에 대한 평가를 투표해 주시기 바랍니다.</value>
+  </data>
+  <data name="Rate_lblVoteCastMessage" xml:space="preserve">
+    <value>평가해 주셔서 감사합니다.</value>
+  </data>
+  <data name="Rate_Outstanding" xml:space="preserve">
+    <value>우수</value>
+  </data>
+  <data name="Rate_Poor" xml:space="preserve">
+    <value>부족</value>
+  </data>
+  <data name="Rate_SelectVote" xml:space="preserve">
+    <value>평가를 선택해 주세요.</value>
+  </data>
+  <data name="Rate_Success" xml:space="preserve">
+    <value>평가 신청 완료 되었습니다.</value>
+  </data>
+  <data name="Rate_Title" xml:space="preserve">
+    <value>평가</value>
+  </data>
+  <data name="Rate_VotedPeople" xml:space="preserve">
+    <value>분이 평가해 주셨습니다</value>
+  </data>
+  <data name="RatingComment" xml:space="preserve">
+    <value>평가사유</value>
+  </data>
+  <data name="RatingList" xml:space="preserve">
+    <value>평가상세내역</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>읽기</value>
+  </data>
+  <data name="ReadReply" xml:space="preserve">
+    <value>읽기+댓글쓰기</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>정말 삭제하시겠습니까?</value>
+  </data>
+  <data name="RecordCntPerPage" xml:space="preserve">
+    <value>페이지 당 레코드 수 :</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>등록일</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>등록자</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>공지사항 등록</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>답변</value>
+  </data>
+  <data name="SaveTemp" xml:space="preserve">
+    <value>임시저장</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>스크린샷</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="SelectFavoriteFolder" xml:space="preserve">
+    <value>즐겨찾기 폴더를 선택해 주세요.</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>폴더를 선택해 주세요.</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>말머리선택</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>권한을 설정해 주시기 바랍니다.</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>환경설정</value>
+  </data>
+  <data name="SettingSameAuth" xml:space="preserve">
+    <value>일괄 권한 설정</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="ShowAttachedImage" xml:space="preserve">
+    <value>첨부된 이미지를 본문에 보여줍니다.</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>이미지 보기</value>
+  </data>
+  <data name="ShowMobile" xml:space="preserve">
+    <value>모바일에 보이도록 합니다.</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>시작일자가 종료일자보다 작아야 합니다.</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>통계</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>템플릿</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>템플릿명을 입력해 주세요.</value>
+  </data>
+  <data name="TempManage" xml:space="preserve">
+    <value>템플릿관리</value>
+  </data>
+  <data name="TempSaveAlert" xml:space="preserve">
+    <value>임시저장은 구분에서 글자색,크기,굵게,타인수정,첨부파일만 저장됩니다. \n저장하시겠습니까?</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>문서제목</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>직위명</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>까지</value>
+  </data>
+  <data name="TotalRecord" xml:space="preserve">
+    <value>총 레코드 수 :</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>상위</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>업로드 용량 제한</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>ActiveX 사용</value>
+  </data>
+  <data name="UseAlarm" xml:space="preserve">
+    <value>알람을 사용합니다.</value>
+  </data>
+  <data name="UseAnonymity" xml:space="preserve">
+    <value>익명을 사용합니다.</value>
+  </data>
+  <data name="UseDeptBoard" xml:space="preserve">
+    <value>부서별 게시판 사용 (부서별로 만드신 후에는 일반 분류로 변환 할 수 없으며 하위도 부서별로 자동 적용됩니다.)</value>
+  </data>
+  <data name="UseEvaluation" xml:space="preserve">
+    <value>평가 기능을 사용합니다.</value>
+  </data>
+  <data name="UseReply" xml:space="preserve">
+    <value>답변글을 사용합니다.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>사용자명</value>
+  </data>
+  <data name="UseShortRelpy" xml:space="preserve">
+    <value>댓글을 사용합니다.</value>
+  </data>
+  <data name="UseSubordinationBoardNotice" xml:space="preserve">
+    <value>하위게시판들의 게시물 보이기로 사용합니다(읽기 전용 게시판)</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>조회</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>조회수</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>조회일</value>
+  </data>
+  <data name="ViewUserRatingList" xml:space="preserve">
+    <value>평가 상세내역 사용자에게 보여주기</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>댓글추가</value>
+  </data>
+  <data name="View_Info" xml:space="preserve">
+    <value>기본정보</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>조회현황</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>등록정보</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1주</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>전사</value>
+  </data>
+  <data name="WholeSettingAuth" xml:space="preserve">
+    <value>전사권한추가</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>쓰기</value>
+  </data>
+  <data name="WriteCnt" xml:space="preserve">
+    <value>등록수</value>
+  </data>
+  <data name="WriteContent" xml:space="preserve">
+    <value>게시물 등록</value>
+  </data>
+  <data name="WriteContents" xml:space="preserve">
+    <value>게시물작성</value>
+  </data>
+  <data name="WriteFavoriteName" xml:space="preserve">
+    <value>즐겨찾기명을 입력해 주세요.</value>
+  </data>
+  <data name="WriteReply" xml:space="preserve">
+    <value>쓰기+댓글쓰기</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>댓글쓰기</value>
+  </data>
+  <data name="WriteText" xml:space="preserve">
+    <value>글쓰기</value>
+  </data>
+  <data name="WriteUseTemplate" xml:space="preserve">
+    <value>템플릿을 사용하여 글을 작성합니다.</value>
+  </data>
+  <data name="FolerMoveSameFolder" xml:space="preserve">
+    <value>이동할 폴더와 동일하므로 다른 폴더를 선택해 주세요.</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>해제할 게시물을 선택하세요.</value>
+  </data>
+  <data name="NoAuthMenu" xml:space="preserve">
+    <value>접근 가능한 포탈 메뉴가 없습니다.</value>
+  </data>
+  <data name="CreateScreenShot" xml:space="preserve">
+    <value>게시물의 첫번째 이미지를 스크린샷으로 생성합니다.</value>
+  </data>
+  <data name="StatYearMonth" xml:space="preserve">
+    <value>년월별 현황</value>
+  </data>
+  <data name="SearchYear" xml:space="preserve">
+    <value>년도검색</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>받는사람</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>메일보내기</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>대상자를 선택해 주시기 바랍니다.</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>메일발송</value>
+  </data>
+  <data name="SendMailTitle" xml:space="preserve">
+    <value>메일 발송 제목</value>
+  </data>
+  <data name="SpammerList" xml:space="preserve">
+    <value>메일 발송자 명단</value>
+  </data>
+  <data name="NoMove" xml:space="preserve">
+    <value>같은 폴더로 이동하실 수 없습니다.</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>팝업공지설정</value>
+  </data>
+  <data name="BeforeContent" xml:space="preserve">
+    <value>원문글</value>
+  </data>
+  <data name="WholeBoardManager" xml:space="preserve">
+    <value>전사폴더관리</value>
+  </data>
+  <data name="WholeBoardListManager" xml:space="preserve">
+    <value>전사게시물관리</value>
+  </data>
+  <data name="NoAddOtherCompany" xml:space="preserve">
+    <value>타사 조직도를 추가할 수 없습니다.</value>
+  </data>
+  <data name="AddOnlyReadAuth" xml:space="preserve">
+    <value>[읽기 전용 게시판] 에는 읽기 권한만 추가할 수 있습니다.</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>PDF파일 생성중 에러가 발생하였습니다. 관리자에게 문의하세요.</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[PDF일괄다운로드 대상확장자] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>PDF 일괄다운로드</value>
+  </data>
+  <data name="UseMainPopup" xml:space="preserve">
+    <value>메인팝업사용</value>
+  </data>
+  <data name="UsePopup" xml:space="preserve">
+    <value>팝업사용</value>
+  </data>
+  <data name="UsingMainPopup" xml:space="preserve">
+    <value>이미 메인팝업이 사용중 입니다.</value>
+  </data>
+  <data name="WritePopupSize" xml:space="preserve">
+    <value>메인팝업 사이즈를 입력해 주세요.</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>목록 형태로 제공해 드립니다.</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>블로그 형태로 왼쪽 상단에 대표 이미지 및 간략 본문내용과 함께 제공합니다.</value>
+  </data>
+  <data name="TooltiplistType3" xml:space="preserve">
+    <value>갤러리 형태로 대표 이미지로 제목과 함께 제공합니다.</value>
+  </data>
+  <data name="CategorySelect" xml:space="preserve">
+    <value>카테고리 선택</value>
+  </data>
+  <data name="CategorySelectGuide" xml:space="preserve">
+    <value>※ 본문내용 작성 전 반드시 카테고리를 먼저 선택 해 주세요!!</value>
+  </data>
+  <data name="CategorySelectCheck" xml:space="preserve">
+    <value>카테고리를 선택 해 주세요!</value>
+  </data>
+  <data name="BoardStatus" xml:space="preserve">
+    <value>게시판 현황</value>
+  </data>
+  <data name="MyTotalBoardStatus" xml:space="preserve">
+    <value>나의 게시글 현황</value>
+  </data>
+  <data name="YearMaxWriter" xml:space="preserve">
+    <value>금년도 최다 작성자</value>
+  </data>
+  <data name="YearNoMaxWriter" xml:space="preserve">
+    <value>금년도 작성자가 없습니다.</value>
+  </data>
+  <data name="RecentWrite" xml:space="preserve">
+    <value>최신글</value>
+  </data>
+  <data name="MaxShort" xml:space="preserve">
+    <value>최다댓글</value>
+  </data>
+  <data name="MaxRead" xml:space="preserve">
+    <value>최다조회</value>
+  </data>
+  <data name="MaxRate" xml:space="preserve">
+    <value>평가우수</value>
+  </data>
+  <data name="YearMaxShort" xml:space="preserve">
+    <value>금년도 최다 댓글자</value>
+  </data>
+  <data name="MyWrite" xml:space="preserve">
+    <value>등록한 게시글</value>
+  </data>
+  <data name="MyListByShort" xml:space="preserve">
+    <value>댓글 단 게시글</value>
+  </data>
+  <data name="MyShort" xml:space="preserve">
+    <value>등록한 댓글</value>
+  </data>
+  <data name="MyImpo" xml:space="preserve">
+    <value>중요표시</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>게시물</value>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="MyYearActivity" xml:space="preserve">
+    <value>나의 금년 활동</value>
+  </data>
+  <data name="CountNumber" xml:space="preserve">
+    <value>건수</value>
+  </data>
+  <data name="TotalStatus" xml:space="preserve">
+    <value>전체 현황</value>
+  </data>
+  <data name="CommentsAttachedList" xml:space="preserve">
+    <value>댓글달린게시물</value>
+  </data>
+  <data name="CategoryConfirm" xml:space="preserve">
+    <value>카테고리 선택 시 본문 내용이 사라집니다. 계속 하시겠습니까?</value>
+  </data>
+  <data name="PublishingWriting" xml:space="preserve">
+    <value>게시글쓰기</value>
+  </data>
+  <data name="TotalBoard" xml:space="preserve">
+    <value>전체 게시물</value>
+  </data>
+  <data name="MyBoard" xml:space="preserve">
+    <value>개인 게시물</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>첫번째 목록 입니다.</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>마지막 목록 입니다.</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>검색결과</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>검색어대상 : 제목, 첨부파일명</value>
+  </data>
+  <data name="AlarmUser" xml:space="preserve">
+    <value>알람대상자</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>이미 등록된 사용자(부서)입니다.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>조직도</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>추가할 대상을 선택해주세요</value>
+  </data>
+  <data name="TitleAll" xml:space="preserve">
+    <value>명칭</value>
+  </data>
+  <data name="CopyURL" xml:space="preserve">
+    <value>주소복사</value>
+  </data>
+  <data name="CopyURLComplete" xml:space="preserve">
+    <value>주소가 복사되었습니다.</value>
+  </data>
+  <data name="PopupSelect" xml:space="preserve">
+    <value>팝업창 크기를 선택하지 않았습니다.</value>
+  </data>
+  <data name="AllDeptUser" xml:space="preserve">
+    <value>작성자가 소속된 부서의 모든인원</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>제목, 첨부파일명</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="SearchAttachNames" xml:space="preserve">
+    <value>첨부파일명</value>
+  </data>
+  <data name="SearchContents" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="SearchShortReplyContents" xml:space="preserve">
+    <value>댓글내용</value>
+  </data>
+  <data name="SearchShortReplyWriter" xml:space="preserve">
+    <value>댓글작성자</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1년</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2년</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3년</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6개월</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>기간입력</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="SearchTitleContents" xml:space="preserve">
+    <value>제목+내용</value>
+  </data>
+  <data name="SearchWriter" xml:space="preserve">
+    <value>게시자</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>검색어를 두글자 이상 입력해 주세요.</value>
+  </data>
+  <data name="URLAdd" xml:space="preserve">
+    <value>링크 URL 첨부 추가</value>
+  </data>
+  <data name="URLAddBtn" xml:space="preserve">
+    <value>링크추가</value>
+  </data>
+  <data name="URLName" xml:space="preserve">
+    <value>링크 URL</value>
+  </data>
+  <data name="URLOption" xml:space="preserve">
+    <value>링크 URL 첨부 기능을 사용합니다.</value>
+  </data>
+  <data name="URLMsg" xml:space="preserve">
+    <value>링크 URL을 입력해 주세요.</value>
+  </data>
+  <data name="URLNameMsg" xml:space="preserve">
+    <value>파일명을 입력해 주세요.</value>
+  </data>
+  <data name="SetDate" xml:space="preserve">
+    <value>기간설정</value>
+  </data>
+  <data name="ReadOnlyBoard" xml:space="preserve">
+    <value>읽기전용 게시판</value>
+  </data>
+  <data name="InterestedPerson" xml:space="preserve">
+    <value>관심대상자</value>
+  </data>
+  <data name="InterestedPersonAdd" xml:space="preserve">
+    <value>팔로잉</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="SelectAlarm" xml:space="preserve">
+    <value>전사 권한의 경우 선택 알람이 가능합니다.</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>외부 다운로드 금지</value>
+  </data>
+  <data name="DownLoadArea" xml:space="preserve">
+    <value>이 게시물의 첨부파일은 외부 다운로드가 불가능합니다.</value>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>년월</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>이미 참여한 댓글입니다.</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>비추천을 하시겠습니까?</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>삭제된 댓글입니다.</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>자신의 댓글은 추천/비추천할 수 없습니다.</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>추천하였습니다.</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>댓글을 작성합니다.</value>
+  </data>
+  <data name="ShowTop" xml:space="preserve">
+    <value>추천 댓글을 최상위에 보여주기</value>
+  </data>
+  <data name="UseComments" xml:space="preserve">
+    <value>댓글 추천/비추천 기능을 사용합니다.</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+</root>

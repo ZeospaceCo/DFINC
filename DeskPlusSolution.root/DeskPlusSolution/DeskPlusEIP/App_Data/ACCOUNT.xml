@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>    
+    <Item ID="UseMultiDomain" Value="Y" Content="멀티도메인 사용여부" />
+    <Item ID="PasswordChangeByDay" Value="30" Content="제한할 패스워드 일자 제한일자 (기본은 30일)/ 0 은 제한하지 않음" />    
+    <Item ID="PasswrodFaultCount" Value="5" Content="패스워드 틀릴 경우 차단; 0 : 미사용; 숫자값은 카운트개수" />
+    <Item ID="ERPUse" Value="N" Content="ERP 인사 패스워드 변경 사용여부" />
+</XmlData>

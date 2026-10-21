@@ -1,0 +1,292 @@
+﻿<table class="table_typeC" style="min-width: 1400px;"> 
+<colgroup>
+    <col width="100px" />
+    <col width="70px" />
+    <col width="110px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="100px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_Name" class="center" style="font-weight: bold;" rowspan="2"></th>    
+    <th id="r_TitleName2" class="center" style="font-weight: bold;" rowspan="2"></th>
+    <th id="r_calcdate" class="center" style="font-weight: bold;" rowspan="2"></th>    
+    <th id="r_normal_work" class="center" style="font-weight: bold;" colspan="7"></th>
+    <th id="r_over_work" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_holi_hr" class="center" style="font-weight: bold;" colspan="5"></th>    
+    <th id="r_reason" class="center" style="font-weight: bold;" rowspan="2"></th>
+</tr>
+<tr>    
+    <th id="r_WS_Reg" class="center" style="font-weight: bold;"></th>    
+    <th id="r_WSLocation" class="center" style="font-weight: bold;"></th>
+    <th id="r_WC_Reg" class="center" style="font-weight: bold;"></th>
+    <th id="r_WCLocation" class="center" style="font-weight: bold;"></th>
+    <th id="r_History" class="center" style="font-weight: bold;"></th>
+    <th id="r_StandardReg" class="center" style="font-weight: bold;"></th>
+    <th id="r_WorkTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_OverTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_PRDocumentID" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Tardy" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Early" class="center" style="font-weight: bold;"></th>
+    <th id="r_Holi" class="center" style="font-weight: bold;"></th>
+    <th id="r_Etc" class="center" style="font-weight: bold;"></th>
+    <th id="r_AllWorkTime" class="center" style="font-weight: bold;"></th>
+</tr>
+</table>
+<div id="HRContent" style="min-width: 1400px; height: 300px; overflow-y:auto !important;">
+<table id="HRTable" class="table_typeC" style="border-top: 0;"> 
+<colgroup>
+    <col width="100px" />
+    <col width="70px" />
+    <col width="110px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="100px" />
+    <col />
+</colgroup>
+{#foreach $T as ListPrivateMod}
+    {#if $T.ListPrivateMod.Sunday == "1"}
+        <tr>
+            <td class="center">
+                <a onclick="ListPrivateMod.AccountInfo('{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DeptName }');return false;">{ $T.ListPrivateMod.UserName }</a>
+            </td>
+            <td class="center">
+                { $T.ListPrivateMod.TitleName }
+            </td>
+            {#if $T.ListPrivateMod.Today == "1"}
+            <td class="center" style="background-color: #FF9">
+            {#else}
+            <td class="center">
+            {#/if}
+                {#if $T.ListPrivateMod.bSysHoli == "1"}
+                    <FONT COLOR="red">{ $T.ListPrivateMod.CalcDate }{ $T.ListPrivateMod.DayWeek }</FONT>
+                {#else}
+                    { $T.ListPrivateMod.CalcDate }{ $T.ListPrivateMod.DayWeek }
+                {#/if}
+            </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                {#if $T.ListPrivateMod.Past == "0" || $T.ListPrivateMod.VW2_CompanyID == ""}
+                    <span style="color: #757575">{ $T.ListPrivateMod.WSTime }</span>
+                {#else}
+                    <span onclick="ListPrivateMod.CheckInfo('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.bSysHoli }', '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }');return false;" style="text-decoration: underline; cursor:pointer">
+                    {#if $T.ListPrivateMod.bLate == "1"}
+                        <span style="color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'">{ $T.ListPrivateMod.WSTime }</span>
+                    {#else}
+                         <span onmouseover="style.color='blue'" onmouseout="style.color='#303030'">{ $T.ListPrivateMod.WSTime }</span>
+                    {#/if}
+                    </span>
+                {#/if}
+            </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.WSConn }</td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                {#if $T.ListPrivateMod.Past == "0" || $T.ListPrivateMod.VW2_CompanyID == ""}
+                    <span style="color: #757575">{ $T.ListPrivateMod.WCTime }</span>
+                {#else}
+                    <span onclick="ListPrivateMod.CheckInfo('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.bSysHoli }', '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }');return false;" style="text-decoration: underline; cursor:pointer">
+                    {#if $T.ListPrivateMod.bEarly == "1"}
+                        <span style="color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'">{ $T.ListPrivateMod.WCTime }</span>
+                    {#else}
+                        <span onmouseover="style.color='blue'" onmouseout="style.color='#303030'">{ $T.ListPrivateMod.WCTime }</span>
+                    {#/if}
+                    </span>
+                {#/if}
+            </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.WCConn }</td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                {#if $T.ListPrivateMod.HistoryCount > 0}
+                    <span onclick="ListPrivateMod.ViewHistory('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }');return false;" style="cursor:pointer">
+                        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/tree_search.gif" />
+                    </span>
+                {#/if}
+            </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.TimeGap }</td>
+            <td class="center">{ $T.ListPrivateMod.WorkTime }</td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                {#if $T.ListPrivateMod.bOver == "1"}
+                    { $T.ListPrivateMod.OverTime }
+                {#else}
+                    &nbsp;
+                {#/if}
+            </td>
+            <td class="center">
+                {#if $T.ListPrivateMod.bOver == "1"}
+                    {#if $T.ListPrivateMod.PRDocumentID > 0}
+                        <span onclick="ListPrivateMod.DocView('{ $T.ListPrivateMod.PRDocumentID }');return false;" style="cursor:pointer">
+                            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+                        </span>            
+                    {#/if}
+                {#/if}
+            </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+		        {#if $T.ListPrivateMod.bLate == "1"}
+                    <span style="color: Red">{ $T.ListPrivateMod.bLateMinute }</span>
+                {#else}
+                    &nbsp;
+                {#/if}
+	        </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+		        {#if $T.ListPrivateMod.bEarly == "1"}
+                    <span style="color: Red">{ $T.ListPrivateMod.bEarlyMinute }</span>
+                {#else}
+                    &nbsp;
+                {#/if}
+	        </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                { $T.ListPrivateMod.bHoli }
+	        </td>
+            <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                { $T.ListPrivateMod.bEtc }
+	        </td>
+            <td class="center">{ $T.ListPrivateMod.AllWorkTime }</td>
+            <td>
+                <div style="cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListPrivateMod.EtcView('{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.HUDocumentID }', '{ $T.ListPrivateMod.PRDocumentID }'
+                        , '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }'
+                        , '{ $T.ListPrivateMod.bHoliAll }', '{ $T.ListPrivateMod.bLate }', '{ $T.ListPrivateMod.bEarly }', '{ $T.ListPrivateMod.bOver }'
+                        , '{ $T.ListPrivateMod.HoliGubun }', '{ $T.ListPrivateMod.bLateGubun }', '{ $T.ListPrivateMod.bEarlyGubun }', '{ $T.ListPrivateMod.bOverGubun }'
+                        , '{ $T.ListPrivateMod.HoliGubun2 }', '{ $T.ListPrivateMod.LateRemarkParam }', '{ $T.ListPrivateMod.EarlyRemarkParam }', '{ $T.ListPrivateMod.OverRemarkParam }');return false;">
+                {#if $T.ListPrivateMod.bHoliAll == "1"}{ $T.ListPrivateMod.HoliGubun }: { $T.ListPrivateMod.HoliGubun2 }{#/if}
+		        {#if $T.ListPrivateMod.bLate == "1"}{ $T.ListPrivateMod.bLateGubun }: { $T.ListPrivateMod.LateRemark }{#/if}
+		        {#if $T.ListPrivateMod.bEarly == "1"}{ $T.ListPrivateMod.bEarlyGubun }: { $T.ListPrivateMod.EarlyRemark }{#/if}
+		        {#if $T.ListPrivateMod.bOver == "1"}{ $T.ListPrivateMod.bOverGubun }: { $T.ListPrivateMod.OverRemark }{#/if}
+                </div>
+	        </td>
+        </tr>
+    {#else}
+        <tr>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            <a onclick="ListPrivateMod.AccountInfo('{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DeptName }');return false;">{ $T.ListPrivateMod.UserName }</a>
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListPrivateMod.TitleName }
+        </td>
+        {#if $T.ListPrivateMod.Today == "1"}
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; background-color: #FF9">
+        {#else}
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+        {#/if}
+            {#if $T.ListPrivateMod.bSysHoli == "1"}
+                <FONT COLOR="red">{ $T.ListPrivateMod.CalcDate }{ $T.ListPrivateMod.DayWeek }</FONT>
+            {#else}
+                { $T.ListPrivateMod.CalcDate }{ $T.ListPrivateMod.DayWeek }
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListPrivateMod.Past == "0" || $T.ListPrivateMod.VW2_CompanyID == ""}
+                <span style="color: #757575">{ $T.ListPrivateMod.WSTime }</span>
+            {#else}
+                <span onclick="ListPrivateMod.CheckInfo('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.bSysHoli }', '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }');return false;" style="text-decoration: underline; cursor:pointer">
+                {#if $T.ListPrivateMod.bLate == "1"}
+                    <span style="color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'">{ $T.ListPrivateMod.WSTime }</span>
+                {#else}
+                    <span onmouseover="style.color='blue'" onmouseout="style.color='#303030'">{ $T.ListPrivateMod.WSTime }</span>
+                {#/if}
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.WSConn }</td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListPrivateMod.Past == "0" || $T.ListPrivateMod.VW2_CompanyID == ""}
+                <span style="color: #757575">{ $T.ListPrivateMod.WCTime }</span>
+            {#else}
+                <span onclick="ListPrivateMod.CheckInfo('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.PathID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.bSysHoli }', '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }');return false;" style="text-decoration: underline; cursor:pointer">
+                {#if $T.ListPrivateMod.bEarly == "1"}
+                    <span style="color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'">{ $T.ListPrivateMod.WCTime }</span>
+                {#else}
+                    <span onmouseover="style.color='blue'" onmouseout="style.color='#303030'">{ $T.ListPrivateMod.WCTime }</span>
+                {#/if}
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.WCConn }</td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListPrivateMod.HistoryCount > 0}
+                <span onclick="ListPrivateMod.ViewHistory('{ $T.ListPrivateMod.AttID }', '{ $T.ListPrivateMod.UserID }', '{ $T.ListPrivateMod.DeptID }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.CalcDate }');return false;" style="cursor:pointer">
+                    <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/tree_search.gif" />
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.TimeGap }</td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.WorkTime }</td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListPrivateMod.bOver == "1"}
+                { $T.ListPrivateMod.OverTime }
+            {#else}
+                &nbsp;
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListPrivateMod.bOver == "1"}
+                {#if $T.ListPrivateMod.PRDocumentID > 0}
+                    <span onclick="ListPrivateMod.DocView('{ $T.ListPrivateMod.PRDocumentID }');return false;" style="cursor:pointer">
+                        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+                    </span>            
+                {#/if}
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+		    {#if $T.ListPrivateMod.bLate == "1"}
+                <span style="color: Red">{ $T.ListPrivateMod.bLateMinute }</span>
+            {#else}
+                &nbsp;
+            {#/if}
+	    </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+		    {#if $T.ListPrivateMod.bEarly == "1"}
+                <span style="color: Red">{ $T.ListPrivateMod.bEarlyMinute }</span>
+            {#else}
+                &nbsp;
+            {#/if}
+	    </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            { $T.ListPrivateMod.bHoli }
+	    </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            { $T.ListPrivateMod.bEtc }
+	    </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">{ $T.ListPrivateMod.AllWorkTime }</td>
+        <td style="border-bottom: 1px dotted #C3C3C3;">
+            <div style="cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                onclick="ListPrivateMod.EtcView('{ $T.ListPrivateMod.CalcDate }', '{ $T.ListPrivateMod.DayWeek }', '{ $T.ListPrivateMod.HUDocumentID }', '{ $T.ListPrivateMod.PRDocumentID }'
+                    , '{ $T.ListPrivateMod.UserName }', '{ $T.ListPrivateMod.DeptName }', '{ $T.ListPrivateMod.TitleName }'
+                    , '{ $T.ListPrivateMod.bHoliAll }', '{ $T.ListPrivateMod.bLate }', '{ $T.ListPrivateMod.bEarly }', '{ $T.ListPrivateMod.bOver }'
+                    , '{ $T.ListPrivateMod.HoliGubun }', '{ $T.ListPrivateMod.bLateGubun }', '{ $T.ListPrivateMod.bEarlyGubun }', '{ $T.ListPrivateMod.bOverGubun }'
+                    , '{ $T.ListPrivateMod.HoliGubun2 }', '{ $T.ListPrivateMod.LateRemarkParam }', '{ $T.ListPrivateMod.EarlyRemarkParam }', '{ $T.ListPrivateMod.OverRemarkParam }');return false;">
+            {#if $T.ListPrivateMod.bHoliAll == "1"}{ $T.ListPrivateMod.HoliGubun }: { $T.ListPrivateMod.HoliGubun2 }{#/if}
+		    {#if $T.ListPrivateMod.bLate == "1"}{ $T.ListPrivateMod.bLateGubun }: { $T.ListPrivateMod.LateRemark }{#/if}
+		    {#if $T.ListPrivateMod.bEarly == "1"}{ $T.ListPrivateMod.bEarlyGubun }: { $T.ListPrivateMod.EarlyRemark }{#/if}
+		    {#if $T.ListPrivateMod.bOver == "1"}{ $T.ListPrivateMod.bOverGubun }: { $T.ListPrivateMod.OverRemark }{#/if}
+            </div>
+	    </td>
+    </tr>
+    {#/if}  
+{#else}
+<tr>
+    <td colspan="18" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>
+</div>

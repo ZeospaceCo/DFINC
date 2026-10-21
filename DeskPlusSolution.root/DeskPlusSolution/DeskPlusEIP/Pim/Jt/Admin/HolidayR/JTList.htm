@@ -1,0 +1,57 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        HolydayR List
+    </caption>
+    <colgroup>
+        <col width="120px" />        
+        <col width="120px" />
+        <col  />
+        <col width="120px" />
+        <col width="120px" />
+        <col width="120px" />
+    </colgroup>
+    <tr>
+        <th id="r_holiday_SolarLunar"></th>
+        <th id="r_holiday_HoliDay1"></th>
+        <th id="r_holiday_Title"></th>
+        <th id="r_holiday_HolidayBetween"></th>        
+        <th id="r_holiday_IsReplace"></th>
+        <th id="r_wRITER"></th>        
+    </tr>
+    {#foreach $T as HolidayList}
+    <tr>
+        <td align="center">
+            {#if $T.HolidayList.SolarLunar == '0'}
+                <span class="r_holiday_Solar"></span>
+            {#else}
+                <span class="r_holiday_Lunar"></span>
+            {#/if}
+        </td>        
+        <td align="center">{ $T.HolidayList.HoliDay }</td>   
+        <td align="center"><a href="#" onclick="javascript:List.Mod('{ $T.HolidayList.HoliDayID }')" style="cursor:pointer" >{ $T.HolidayList.Title }</a></td>     
+        <td align="center">
+            {#if $T.HolidayList.HolidayBetween == '0'}<span class="r_holiday_HolidayBetween1"></span>
+            {#elseif $T.HolidayList.HolidayBetween == '1'}<span class="r_holiday_HolidayBetween2"></span>
+            {#elseif $T.HolidayList.HolidayBetween == '2'}<span class="r_holiday_HolidayBetween3"></span>
+            {#elseif $T.HolidayList.HolidayBetween == '3'}<span class="r_holiday_HolidayBetween4"></span>
+            {#/if}       
+        </td>        
+        <td align="center">
+            {#if $T.HolidayList.IsReplace == '1'}            
+                <span class="r_holiday_IsHolidayKind1"></span>
+            {#else}
+                {#if $T.HolidayList.IsReplace == '2'}
+                    <span class="r_holiday_IsHolidayKind2"></span>
+                {#else}
+                    <span class="r_no"></span>
+                {#/if}
+            {#/if}
+        </td>        
+        <td align="center"><a href="#" onclick="AccountInfo('{ $T.HolidayList.WriteUserID }');return false;" style="cursor:pointer">{ $T.HolidayList.WriteUserName }</a></td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="6" class="center"><span class="textEmpty" /></td> 
+     </tr>
+    {#/for}       
+ </table>

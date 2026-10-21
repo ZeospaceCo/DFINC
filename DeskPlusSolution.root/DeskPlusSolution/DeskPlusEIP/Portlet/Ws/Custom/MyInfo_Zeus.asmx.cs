@@ -1,0 +1,223 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Data;
+using System.Web;
+using System.Web.Services;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.WebComponent;
+using System.Data.SqlClient;
+using System.Configuration;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base;
+
+
+namespace Zeospace.DeskPlus.Portlet.Web.Ws.Custom
+{
+    /// <summary>
+    /// Opinion의 요약 설명입니다.
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // ASP.NET AJAX를 사용하여 스크립트에서 이 웹 서비스를 호출하려면 다음 줄의 주석 처리를 제거합니다. 
+    [System.Web.Script.Services.ScriptService]
+    public class MyInfo_Zeus : Base.BaseWSPortlet
+    {
+        
+
+        /// <summary>
+        /// 작성자 : freeman
+        /// 작성일자 : 2012-05-02
+        /// 작성목적 : 메일, 일정, 결재 건수 가져오기 
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public List<MyInfoEntity> GetMyInfo(string p)
+        {
+
+            #region 다국어 리소스 로드/Title 정보
+            this.ResourceName = "Zeospace.DeskPlus.Portlet.Web.Resource.GlobalString.string";			//리소스 명 선언
+            this.AssemblyName = typeof(Zeospace.DeskPlus.Portlet.Web.Ws.Custom.MyInfo_Zeus).Assembly;	//어셈블리 선언
+            this.GetResourceManager();
+            #endregion
+
+           
+            try
+            {
+                DAL.MyInfo myInfoDal = new DAL.MyInfo();
+
+                #region 일정관리, 전자결재 건수
+
+                DataTableReader dtr = myInfoDal.GetCountList(CurrentUserInfo.CompanyID, CurrentUserInfo.DeptID, CurrentUserInfo.UserID);
+                
+
+                DataTable myInfoTable = new DataTable();
+                myInfoTable.Load(dtr);
+
+                int cntWB = myInfoTable.Select("CAT = 'WB'").Length; //오늘의 할일
+                int cntWS = myInfoTable.Select("CAT = 'WS'").Length;  //오늘의 일정
+                //int cntSC = myInfoTable.Select("CAT = 'SC'").Length;  //전자결재 완결
+                int cntSCC = myInfoTable.Select("CAT = 'SCC'").Length;  //전자결재 상신문서 
+                //int cntSR = myInfoTable.Select("CAT = 'SR'").Length;  //전자결재 상신자반송
+                //int cntSRS = myInfoTable.Select("CAT = 'SRS'").Length; //전자결재 결재자반송
+                int cntSM = myInfoTable.Select("CAT = 'SM'").Length;  //전자결재 결재대상
+                int cntCP = myInfoTable.Select("CAT = 'CP'").Length;  //전자결재 수신문서 요청
+                //int cntSCU = myInfoTable.Select("CAT = 'SCU'").Length; //전자결재 참조문서함
+                int cntSP = myInfoTable.Select("CAT = 'SP'").Length;  //전자결재 대결자문서
+                //int cntEC = myInfoTable.Select("CAT = 'EC'").Length;  //전자결재 시행문 확인
+                //int cntES = myInfoTable.Select("CAT = 'ES'").Length;  //전자결재 시행문 직인
+                //int cntCR = myInfoTable.Select("CAT = 'CR'").Length;  //전자결재 받은회람
+                int cntnoSC = myInfoTable.Select("CAT = 'noSC'").Length;  //전자결재 진행중인문서(상신문서)
+                #endregion
+
+                #region 메일건수
+                int cntMail = 0;
+
+                string mailProduct = AppSettingHelper.GetAppSetting(AppSettingType.MAIL, "MailProduct", "");
+                if (mailProduct.ToUpper() == "ZETTA65")
+                {
+                    DataTableReader dtrMail = myInfoDal.GetMailCount(CurrentUserInfo.CompanyID, CurrentUserInfo.MailID, CurrentUserInfo.MailDomain);
+                    if (dtrMail != null)
+                    {
+                        if (dtrMail.HasRows)
+                        {
+                            while (dtrMail.Read())
+                            {
+                                cntMail = dtrMail["cnt"].ToString().ToNumber<int>();
+                            }
+                        }
+                    }
+                }
+                else if (mailProduct.ToUpper() == "ZETTA52") //zeus 전용으로 만든 포틀릿 (제우스는 메일아이디가 같은사람이 있기 때문에 도메인까지 넘겨야 함)
+                {
+                    DataTableReader dtrMail = myInfoDal.GetMailCount52_Zeus(CurrentUserInfo.CompanyID, CurrentUserInfo.MailID, CurrentUserInfo.MailDomain);
+                    if (dtrMail != null)
+                    {
+                        if (dtrMail.HasRows)
+                        {
+                            while (dtrMail.Read())
+                            {
+                                cntMail = dtrMail["Cnt"].ToString().ToNumber<int>();
+                            }
+                        }
+                    }
+                }
+                #endregion
+
+
+                MyInfoEntity be = new MyInfoEntity();
+                be.NewMailCnt = cntMail; //신규메일
+                be.TodayPimSchCnt = cntWS; //오늘일정
+                be.TodayPimDoCnt = cntWB;  //오늘할일
+                //be.NewReplyCnt = 53;    //답글
+                be.DocmentCnt = cntnoSC;     //상신문서
+                be.ApprovalCnt = cntSM;    //결재문서 - 결재할 문서
+                be.DeptSusinCnt = cntSP;   //대결문서
+                be.CompleteCnt = cntCP;    //수신문서 - 수신받은 문서
+
+                DataSet ds = GetErpCountList(CurrentUserInfo.CompanyID, CurrentUserInfo.UserID);
+                int MBO = 0;
+                int VoluntaryService = 0;
+                int TotalCheckup = 0;
+
+                if (ds != null)
+                {
+                    foreach (DataRow dr in ds.Tables[0].Rows)
+                    {
+                        be.Proposal= dr["Proposal"].ToString().ToNumber<int>();
+                        MBO= dr["MBO"].ToString().ToNumber<int>();
+                        VoluntaryService= dr["VoluntaryService"].ToString().ToNumber<int>();
+                        TotalCheckup = dr["TotalCheckup"].ToString().ToNumber<int>();
+                    }
+
+                    be.MBO = MBO == 1 ? this.GetResource("Target") : this.GetResource("Non_Target");
+                    be.VoluntaryService = VoluntaryService == 1 ? this.GetResource("Target") : this.GetResource("Non_Target");
+                    be.TotalCheckup = TotalCheckup == 1 ? this.GetResource("Target") : this.GetResource("Non_Target");
+
+                }
+
+                List<MyInfoEntity> al = new List<MyInfoEntity>();
+                al.Add(be);
+                return al;
+
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("GetMyInfo : " + ex);
+                return new List<MyInfoEntity>();
+                //throw;
+            }
+        }
+
+        public DataSet GetErpCountList(int companyID, int userID)
+        {
+            
+
+            try
+            {
+
+                SqlConnection mySqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnSolution"].ConnectionString);
+
+
+                SqlCommand mySqlCommand = new SqlCommand("KMS_Today", mySqlConnection);
+
+                mySqlCommand.CommandType = CommandType.StoredProcedure;
+
+                mySqlCommand.Parameters.Add("@userid", SqlDbType.Int).Value = userID;
+
+                SqlDataAdapter mySqlDataAdapter = new SqlDataAdapter();
+                mySqlDataAdapter.SelectCommand = mySqlCommand;
+
+                
+                DataSet myDataSet = new DataSet();
+                                
+
+                mySqlConnection.Open();
+
+                mySqlDataAdapter.Fill(myDataSet, "Products");
+
+                
+
+
+                mySqlConnection.Close();
+
+                return myDataSet;
+
+
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("GetErpCountList : " + ex);
+                throw;
+            }
+
+        }
+
+
+    }
+
+    /// <summary>
+    /// MyInfoEntity
+    /// </summary>
+    [Serializable]    
+    public class MyInfoEntity
+    {
+        public MyInfoEntity() { }
+
+        public int NewMailCnt { get; set; }
+        public int TodayPimSchCnt { get; set; }
+        public int TodayPimDoCnt { get; set; }
+        public int NewReplyCnt { get; set; }
+        public int DocmentCnt { get; set; }
+        public int ApprovalCnt { get; set; }
+        public int DeptSusinCnt { get; set; }
+        public int CompleteCnt { get; set; }
+        public int Proposal { get; set; }
+        public string MBO { get; set; }
+        public string VoluntaryService { get; set; }
+        public string TotalCheckup { get; set; }
+
+    }
+}

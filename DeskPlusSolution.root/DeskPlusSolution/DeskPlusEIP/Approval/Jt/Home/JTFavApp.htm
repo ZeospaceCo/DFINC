@@ -1,0 +1,28 @@
+﻿<table class="tbl_type" border="1" cellspacing="0" summary="자주 지정하는 결재자">
+<colgroup>
+    <col width="70px" />
+    <col />
+    <col width="80px" />
+</colgroup>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="center"><img src="{ $T.List.PhotoImage }" width="22" height="22" alt="썸네일" class="cb_usr_thumb"></td>
+    <td class="suj">
+        {#if $T.List.IsDept == 'M'} 
+        <a onclick="AccountInfo('{ $T.List.UserID }');return false;">
+            { $T.List.ApprovalUserName } { $T.List.ApprovalUserTitleName } { $T.List.ApprovalUserDeptName }
+        </a>
+        {#else}
+            { $T.List.ApprovalUserName } { $T.List.ApprovalUserTitleName } { $T.List.ApprovalUserDeptName }
+        {#/if}
+    </td>
+    <td class="center"><a href="#" onclick="Content.DelFavApp('{ $T.List.FavoriteApprovalID }');return false;"><span class="btn btn-sm"><span class="spdel">삭제</span></span></a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3"><a id="favapplink" onclick="javascript:Content.MoveFavApp();"><span id="spFavAppNoData"></span></a></td>
+</tr>
+{#/for} 
+</tbody>
+</table>

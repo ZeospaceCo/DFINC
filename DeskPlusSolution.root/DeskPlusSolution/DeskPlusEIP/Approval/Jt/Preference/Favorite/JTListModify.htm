@@ -1,0 +1,32 @@
+﻿<table class="table_typeA"> 
+<caption>
+    자주지정하는 결재자 리스트
+</caption>
+<colgroup>
+    <col width="*"/>
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th id="r_deptName" class="center"></th>
+    <th id="r_titleName" class="center"></th>
+    <th id="r_dutyName" class="center"></th>
+    <th id="r_userName" class="center"></th>
+    <th id="r_addDate" class="center"></th>
+</tr>
+{#foreach $T as FavoriteList}
+<tr>
+    <td class="center">{ $T.FavoriteList.ApprovalUserDeptName }</td>    
+    <td class="center">{ $T.FavoriteList.ApprovalUserTitleName }</td>
+    <td class="center">{ $T.FavoriteList.ApprovalUserDutyName }</td>
+    <td class="center">{ $T.FavoriteList.ApprovalUserName }</td>
+    <td class="center">{ $T.FavoriteList.AddDateStr }</td>          
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

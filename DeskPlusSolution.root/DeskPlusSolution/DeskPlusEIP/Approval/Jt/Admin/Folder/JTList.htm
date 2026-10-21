@@ -1,0 +1,28 @@
+﻿<table class="table_typeA">
+<caption>권한 리스트</caption>
+<colgroup>
+    <col />
+    <col width="50px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_authname"></th>
+        <th class="center"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.AuthName }</td>
+        <td class="center" style="text-align:center">
+            <a href="#" onclick="javascript:List.DelFolderAuth('{ $T.List.FolderAuthID }')" style="cursor:pointer" title="권한을 삭제합니다.">
+                <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" alt="" /></a>
+        </td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="2" class="center"><span class="r_jtNoData"></span></td>
+    </tr>
+{#/for}
+</tbody>
+</table>

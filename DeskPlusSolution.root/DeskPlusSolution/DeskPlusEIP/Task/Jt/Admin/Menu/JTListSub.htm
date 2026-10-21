@@ -1,0 +1,38 @@
+﻿<table class="table_typeA">
+<caption>소분류 리스트</caption>
+<colgroup>
+    <col width="*" />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="r_group center"></th>
+        <th class="r_active center"></th>
+        <th class="r_template center"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as ItemList}
+    <tr>     
+        <td class="center">
+            <a onclick="List.ItemSub('{ $T.ItemList.ItemID }','{ $T.ItemList.ItemSubID }');return false;" style="cursor:pointer" >{ $T.ItemList.ManyName }</a>
+        </td>
+        <td class="center"><span class="Active_{ $T.ItemList.IsActive }">{ $T.ItemList.IsActive }</span></td>
+        <td class="center">
+            <a onclick="List.TempAdd('{ $T.ItemList.ItemSubID }','{ $T.ItemList.ItemID }','{ $T.ItemList.TempCnt }');return false;" style="cursor:pointer" >
+            {#if $T.ItemList.TempCnt > 0}
+                <span class="r_mod"></span>
+            {#else}
+                <span class="r_add"></span>
+            {#/if}
+            </a>
+        </td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

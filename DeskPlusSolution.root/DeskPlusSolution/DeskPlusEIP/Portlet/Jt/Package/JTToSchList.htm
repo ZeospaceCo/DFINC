@@ -1,0 +1,21 @@
+﻿<ul>
+    {#foreach $T as ToSchList}   
+    <li>
+        <a onclick="ToSch_PopupView('{$T.ToSchList.ScheduleID}', '{$T.ToSchList.DisplayID}')">
+            {#if $T.ToSchList.OpenType == 0}
+                <span class="m_pim_private" />
+            {#elseif $T.ToSchList.OpenType == 1}
+                <span class="m_pim_share" />
+            {#elseif $T.ToSchList.OpenType == 2}
+                <span class="m_pim_tot" />
+            {#else}
+                <span class="m_pim_dept" />
+            {#/if}
+            {$T.ToSchList.StartTimeStr}
+            {$T.ToSchList.Title}
+            </a>  
+    </li>
+    {#else}     
+    <li><span class="NoListData"></span></li>            
+    {#/for} 
+</ul>

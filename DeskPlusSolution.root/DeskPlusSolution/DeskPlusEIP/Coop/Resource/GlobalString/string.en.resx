@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>Activation</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Addition</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>Added to the attachment</value>
+  </data>
+  <data name="AddBase" xml:space="preserve">
+    <value>Based document added</value>
+  </data>
+  <data name="AddBaseDoc" xml:space="preserve">
+    <value>Based documents to be added</value>
+  </data>
+  <data name="AddDoc" xml:space="preserve">
+    <value>Add Document</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>File addition</value>
+  </data>
+  <data name="AddReceive" xml:space="preserve">
+    <value>Add additional recipients</value>
+  </data>
+  <data name="AddReference" xml:space="preserve">
+    <value>Referrer Add</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>Please enter main content.</value>
+  </data>
+  <data name="AdminDel" xml:space="preserve">
+    <value>Appropriate based document with a list and it will also be deleted. Are you sure you want to delete?</value>
+  </data>
+  <data name="AfterChange" xml:space="preserve">
+    <value>after the change</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>Processing after the error has been encountered. Please contact the administrator.</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>Already a registered user.</value>
+  </data>
+  <data name="AllCoWorkList" xml:space="preserve">
+    <value>Full collaboration list</value>
+  </data>
+  <data name="AllDel" xml:space="preserve">
+    <value>Are you sure you want to delete the posts and replies, the request until all?</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Full Download</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Will you delete?</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Please enter the date.</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>Attached file</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>Bad</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>Based document</value>
+  </data>
+  <data name="BaseDocList" xml:space="preserve">
+    <value>Based on a list of documents</value>
+  </data>
+  <data name="BaseDocSelList" xml:space="preserve">
+    <value>Based document selection list</value>
+  </data>
+  <data name="BaseName" xml:space="preserve">
+    <value>Enter the Main Category.</value>
+  </data>
+  <data name="BeforeChanage" xml:space="preserve">
+    <value>before the change</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>The receiver and reference</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>Cancel Request</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Main Category</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="CCCoWork" xml:space="preserve">
+    <value>referenced who collaborate</value>
+  </data>
+  <data name="ChangeComplete" xml:space="preserve">
+    <value>Cancel if you are underway to change the status. Are you sure you want to change?</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>Change the order</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>Main Category The order has been changed.</value>
+  </data>
+  <data name="ChangeSave" xml:space="preserve">
+    <value>Saving Changes</value>
+  </data>
+  <data name="ChangeSubOrders" xml:space="preserve">
+    <value>Sub order has been changed.</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="CheckCategory" xml:space="preserve">
+    <value>Choose the main category first.</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>Please select the list you want to delete.</value>
+  </data>
+  <data name="CheckDelList" xml:space="preserve">
+    <value>Choose a list to delete.</value>
+  </data>
+  <data name="CheckModList" xml:space="preserve">
+    <value>Please select a list to modify.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="Collabo" xml:space="preserve">
+    <value>Business collaboration</value>
+  </data>
+  <data name="CollaboReceived" xml:space="preserve">
+    <value>Collaboration received</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="CompleteCancel" xml:space="preserve">
+    <value>Complete processing?</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>Has been processed.</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>Complete the request</value>
+  </data>
+  <data name="Completes" xml:space="preserve">
+    <value>To complete</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>Will you delete?</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>Previously written contents will disappear. Will you choose it?</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="CoWork" xml:space="preserve">
+    <value>Business cooperation</value>
+  </data>
+  <data name="DateOfWrite" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Are you sure you want to delete the corresponding request?</value>
+  </data>
+  <data name="DelGubun" xml:space="preserve">
+    <value>Do you want to delete the classification?</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>Are you sure you want to delete the corresponding replies?</value>
+  </data>
+  <data name="DelSubCategory" xml:space="preserve">
+    <value>Sub to delete it first.</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>Document number</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>Document Viewing</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>Contents may be changed because there are suspicious sentences about script in the body.</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Termination date</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>Attachment to fetch information error has occurred.</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>During processing, the error has been encountered.</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>1st</value>
+  </data>
+  <data name="FormName" xml:space="preserve">
+    <value>FormName</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="Forwarder" xml:space="preserve">
+    <value>Forwarder</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the view page.</value>
+  </data>
+  <data name="GotoCoopMainPage" xml:space="preserve">
+    <value>Go Mainpage</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Go to the list.</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="GroupManage" xml:space="preserve">
+    <value>Category Management</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Category name</value>
+  </data>
+  <data name="IngDetail" xml:space="preserve">
+    <value>Progression history</value>
+  </data>
+  <data name="InputCompleteDate" xml:space="preserve">
+    <value>Please enter the date of the request completed.</value>
+  </data>
+  <data name="InputEndDate" xml:space="preserve">
+    <value>Please enter your date of termination.</value>
+  </data>
+  <data name="InputReceive" xml:space="preserve">
+    <value>Please enter a recipient.</value>
+  </data>
+  <data name="InputStartDate" xml:space="preserve">
+    <value>Please enter a start date.</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>Please enter a title.</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="ManageItem" xml:space="preserve">
+    <value>Main Category Management</value>
+  </data>
+  <data name="ManageItemSub" xml:space="preserve">
+    <value>Sub Category Management</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>Modification</value>
+  </data>
+  <data name="ModifyReply" xml:space="preserve">
+    <value>Mod Reply</value>
+  </data>
+  <data name="MoveAccept" xml:space="preserve">
+    <value>Accept the screen to move</value>
+  </data>
+  <data name="MoveAdd" xml:space="preserve">
+    <value>To go to the add screen.</value>
+  </data>
+  <data name="MoveMod" xml:space="preserve">
+    <value>To go to the edit screen.</value>
+  </data>
+  <data name="MovePage" xml:space="preserve">
+    <value>Classification set in the template form will be called. Page you want to move?</value>
+  </data>
+  <data name="MoveRequest" xml:space="preserve">
+    <value>Screen, move the re-request</value>
+  </data>
+  <data name="MoveScreen" xml:space="preserve">
+    <value>Completed, Move screen</value>
+  </data>
+  <data name="MSGCancel" xml:space="preserve">
+    <value>For you collaboration has been canceled.</value>
+  </data>
+  <data name="MSGComplete" xml:space="preserve">
+    <value> Collaboration has been completed for you.</value>
+  </data>
+  <data name="MSGReceive" xml:space="preserve">
+    <value>Collaboration for you have received your</value>
+  </data>
+  <data name="MSGReject" xml:space="preserve">
+    <value> Reject the collaboration for you</value>
+  </data>
+  <data name="MSGRequest" xml:space="preserve">
+    <value> Requested the collaboration for you.</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>Already saved the based document</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>Document is already added to the list</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>Error occurs during processing. Please contact the administrator.</value>
+  </data>
+  <data name="MSG_NoSelect" xml:space="preserve">
+    <value>The selected document is not.</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Has been processed.</value>
+  </data>
+  <data name="MutiName" xml:space="preserve">
+    <value>Multilingual name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Turn</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>Attached files do not exist</value>
+  </data>
+  <data name="NoBaseListData" xml:space="preserve">
+    <value>Based on the document does not exist.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>There is no content.</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>The file does not exist.</value>
+  </data>
+  <data name="NoListData" xml:space="preserve">
+    <value>Information does not exist.</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="OpenYN" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="OrganBtnSearch" xml:space="preserve">
+    <value>Searches</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="ProceedsTitle" xml:space="preserve">
+    <value>Proceeds Title</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Go Public</value>
+  </data>
+  <data name="Receipt" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>Recipients</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Received to</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>Receiver</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referrer</value>
+  </data>
+  <data name="Referencer" xml:space="preserve">
+    <value>Referencer</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply to</value>
+  </data>
+  <data name="ReplyDel" xml:space="preserve">
+    <value>Answer deleted</value>
+  </data>
+  <data name="ReplyMod" xml:space="preserve">
+    <value>Correct Answers</value>
+  </data>
+  <data name="ReplyTitle" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>Reporter</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="RequestCoWork" xml:space="preserve">
+    <value>Requested collaboration</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="RequestedCoWork" xml:space="preserve">
+    <value>Requested collaboration</value>
+  </data>
+  <data name="Requester" xml:space="preserve">
+    <value>Person who requests</value>
+  </data>
+  <data name="Requests" xml:space="preserve">
+    <value>Re-request</value>
+  </data>
+  <data name="RequireDetail" xml:space="preserve">
+    <value>A breakdown of the requests</value>
+  </data>
+  <data name="Requires" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="Rerequest" xml:space="preserve">
+    <value>Re-request</value>
+  </data>
+  <data name="SaveBoth" xml:space="preserve">
+    <value>Recipient, and you change the referrer?</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>We'll make the first image of bulletin board to screenshot.</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>2nd</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>Secret to Writing</value>
+  </data>
+  <data name="SelectFirst" xml:space="preserve">
+    <value>Please select the 1st classification.</value>
+  </data>
+  <data name="SelectLevel" xml:space="preserve">
+    <value>Please select the level of difficulty.</value>
+  </data>
+  <data name="SelectSecond" xml:space="preserve">
+    <value>Please select 2nd classification.</value>
+  </data>
+  <data name="SelTarget" xml:space="preserve">
+    <value>Select a Destination</value>
+  </data>
+  <data name="ShallWeReject" xml:space="preserve">
+    <value>do you want to reject?</value>
+  </data>
+  <data name="StandBy" xml:space="preserve">
+    <value>Standby</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than the termination date.</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="SubBaseName" xml:space="preserve">
+    <value>Enter Sub.</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>Sub Category</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target characters</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Please enter the name of the template.</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="UsedYN" xml:space="preserve">
+    <value>Whether to use</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="NoBaseCoopListData" xml:space="preserve">
+    <value>Have no Cooperation Base Document</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment Name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+</root>

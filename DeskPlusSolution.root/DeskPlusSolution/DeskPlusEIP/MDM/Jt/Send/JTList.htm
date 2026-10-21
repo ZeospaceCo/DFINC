@@ -1,0 +1,47 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="40px" />
+    <col width="150px" />
+    <col width="80px" />    
+    <col width="150px" />
+    <col  />
+    <col width="60px" />
+    <col width="70px" />
+    <col width="70px" />
+</colgroup>
+<tr>
+    <th class="center">NO</th>
+    <th class="center"><span id="r_writeDate"></span></th>
+    <th class="center"><span id="r_name"></span></th>    
+    <th class="center"><span id="r_receiveName"></span></th>    
+    <th class="center"><span id="r_content"></span></th>
+    <th class="center"><span id="r_url"></span></th>
+    <th class="center"><span id="r_app"></span></th>    
+    <th class="center"><span id="r_noapp"></span></th>    
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.ROW }</td>
+    <td class="center">{ $T.List.WriteDateStr }</td>
+    <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.UserName }</a></td>   
+    <td class="center">
+        <a href="#" onclick="List.OpenReceive('{ $T.List.SendID }');return false;" style="cursor:pointer">{ $T.List.ReceiveName }{#if $T.List.ReceiveCnt > 1}+{#/if}</a>
+    </td>   
+    <td class="center"><a href="#" onclick="List.OpenContent('{ $T.List.SendID }');return false;" style="cursor:pointer">[{ $T.List.Header }] { $T.List.Content }</a></td>
+    <td class="center">
+     {#if $T.List.CategoryID > 0}
+        <span onclick="List.DocView('{ $T.List.TargetURL }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+     {#/if}
+    </td>
+    <td class="center"><a href="#" onclick="List.OpenApp('{ $T.List.SendID }', 'Y');return false;" style="cursor:pointer">{ $T.List.YAppCnt }</a></td>
+    <td class="center"><a href="#" onclick="List.OpenApp('{ $T.List.SendID }', 'N');return false;" style="cursor:pointer">{ $T.List.NAppCnt }</a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="8" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

@@ -1,0 +1,16 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="title linkDiv" onclick="javascript:Folder.goList('{ $T.List.CategoryID }','{ $T.List.ParentCategoryID }')">
+        <a href="#" class="mct">
+            <i class="far fa-clipboard"></i><font>{$T.List.CateInfo }</font>
+            <br /><span class="istc"></span>
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock" >
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" /><br /></a>
+    </div>
+</li>
+{#/for}

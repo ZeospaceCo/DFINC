@@ -1,0 +1,333 @@
+﻿<table class="table_typeC" style="min-width: 1250px;"> 
+<colgroup>
+    <col width="110px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="110px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_calcdate" class="center" style="font-weight: bold;" rowspan="2"></th>    
+    <th id="r_normal_work" class="center" style="font-weight: bold;" colspan="6"></th>
+    <th id="r_over_work" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_holi_hr" class="center" style="font-weight: bold;" colspan="5"></th>    
+    <th id="r_reason" class="center" style="font-weight: bold;" rowspan="2"></th>     
+</tr>
+<tr>    
+    <th id="r_WS_Reg" class="center" style="font-weight: bold;"></th>    
+    <th id="r_WSLocation" class="center" style="font-weight: bold;"></th>
+    <th id="r_WC_Reg" class="center" style="font-weight: bold;"></th>
+    <th id="r_WCLocation" class="center" style="font-weight: bold;"></th>
+    <th id="r_StandardReg" class="center" style="font-weight: bold;"></th>
+    <th id="r_WorkTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_OverTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_PRDocumentID" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Tardy" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Early" class="center" style="font-weight: bold;"></th>
+    <th id="r_Holi" class="center" style="font-weight: bold;"></th>
+    <th id="r_Etc" class="center" style="font-weight: bold;"></th>
+    <th id="r_AllWorkTime" class="center" style="font-weight: bold;"></th>
+</tr>
+</table>
+<div id="HRContent" style="min-width: 1250px; height: 300px; overflow-y:auto !important;">
+<table id="HRTable" class="table_typeC" style="border-top: 0;"> 
+<colgroup>
+    <col width="110px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="110px" />
+    <col />
+</colgroup>
+{#foreach $T as ListPrivate}
+	{#if $T.ListPrivate.ROW != "99999"}
+        {#if $T.ListPrivate.Sunday == "1"}
+            <tr>
+                {#if $T.ListPrivate.Today == "1"}
+                <td class="center" style="background-color: #FF9">
+                {#else}
+                <td class="center">
+                {#/if}
+			        {#if $T.ListPrivate.bSysHoli == "1"}
+				        <FONT COLOR="red">{ $T.ListPrivate.CalcDate }{ $T.ListPrivate.DayWeek }</FONT>
+			        {#else}
+                        { $T.ListPrivate.CalcDate }{ $T.ListPrivate.DayWeek }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bLate == "1"}
+				        <span style="color: Red">{ $T.ListPrivate.WSTime }</span>
+			        {#else}
+				        { $T.ListPrivate.WSTime }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.WSConn }</td>
+		        <td class="center" style="border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bEarly == "1"}
+				        <span style="color: Red">{ $T.ListPrivate.WCTime }</span>
+			        {#else}
+				        { $T.ListPrivate.WCTime }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.WCConn }</td>
+                <td class="center" style="border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.TimeGap }</td>
+		        <td class="center">{ $T.ListPrivate.WorkTime }</td>
+		        <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                    {#if $T.ListPrivate.bOver == "1"}
+                        { $T.ListPrivate.OverTime }
+                    {#else}
+                        &nbsp;
+                    {#/if}
+                </td>
+		        <td class="center">
+			        {#if $T.ListPrivate.bOver == "1"}
+				        {#if $T.ListPrivate.PRDocumentID > 0}
+					        <span onclick="ListPrivate.DocView('{ $T.ListPrivate.PRDocumentID }');return false;" style="cursor:pointer">
+						        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+					        </span>            
+				        {#/if}
+			        {#/if}
+		        </td>
+                <td class="center" style="border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bLate == "1"}
+                        <span style="color: Red">{ $T.ListPrivate.bLateMinute }</span>
+                    {#else}
+                        &nbsp;
+                    {#/if}
+		        </td>
+                <td class="center" style="border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bEarly == "1"}
+                        <span style="color: Red">{ $T.ListPrivate.bEarlyMinute }</span>
+                    {#else}
+                        &nbsp;
+                    {#/if}
+		        </td>
+                <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                    { $T.ListPrivate.bHoli }
+		        </td>
+                <td class="center" style="border-right: 1px dotted #C3C3C3;">
+                    { $T.ListPrivate.bEtc }
+		        </td>
+                <!--
+		        <td class="center">
+			        {#if $T.ListPrivate.bHoliAll == "1"}
+				        {#if $T.ListPrivate.HUDocumentID > 0}
+					        <span onclick="ListPrivate.DocView('{ $T.ListPrivate.HUDocumentID }');return false;" style="cursor:pointer">
+						        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+					        </span>            
+				        {#/if}
+			        {#/if}
+		        </td>
+                -->
+		        <td class="center">{ $T.ListPrivate.AllWorkTime }</td>
+		        <td>
+                    <div style="cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                        onclick="ListPrivate.EtcView('{ $T.ListPrivate.CalcDate }', '{ $T.ListPrivate.DayWeek }', '{ $T.ListPrivate.HUDocumentID }', '{ $T.ListPrivate.PRDocumentID }'
+                            , '{ $T.ListPrivate.UserName }', '{ $T.ListPrivate.DeptName }', '{ $T.ListPrivate.TitleName }'
+                            , '{ $T.ListPrivate.bHoliAll }', '{ $T.ListPrivate.bLate }', '{ $T.ListPrivate.bEarly }', '{ $T.ListPrivate.bOver }'
+                            , '{ $T.ListPrivate.HoliGubun }', '{ $T.ListPrivate.bLateGubun }', '{ $T.ListPrivate.bEarlyGubun }', '{ $T.ListPrivate.bOverGubun }'
+                            , '{ $T.ListPrivate.HoliGubun2 }', '{ $T.ListPrivate.LateRemarkParam }', '{ $T.ListPrivate.EarlyRemarkParam }', '{ $T.ListPrivate.OverRemarkParam }');return false;">
+                    {#if $T.ListPrivate.bHoliAll == "1"}{ $T.ListPrivate.HoliGubun }: { $T.ListPrivate.HoliGubun2 }{#/if}
+			        {#if $T.ListPrivate.bLate == "1"}{ $T.ListPrivate.bLateGubun }: { $T.ListPrivate.LateRemark }{#/if}
+			        {#if $T.ListPrivate.bEarly == "1"}{ $T.ListPrivate.bEarlyGubun }: { $T.ListPrivate.EarlyRemark }{#/if}
+			        {#if $T.ListPrivate.bOver == "1"}{ $T.ListPrivate.bOverGubun }: { $T.ListPrivate.OverRemark }{#/if}
+                    </div>
+		        </td>
+	        </tr>
+        {#else}
+            <tr>
+                {#if $T.ListPrivate.Today == "1"}
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; background-color: #FF9">
+                {#else}
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+                {#/if}
+			        {#if $T.ListPrivate.bSysHoli == "1"}
+				        <FONT COLOR="red">{ $T.ListPrivate.CalcDate }{ $T.ListPrivate.DayWeek }</FONT>
+			        {#else}
+                        { $T.ListPrivate.CalcDate }{ $T.ListPrivate.DayWeek }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bLate == "1"}
+				        <span style="color: Red">{ $T.ListPrivate.WSTime }</span>
+			        {#else}
+				        { $T.ListPrivate.WSTime }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.WSConn }</td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bEarly == "1"}
+				        <span style="color: Red">{ $T.ListPrivate.WCTime }</span>
+			        {#else}
+				        { $T.ListPrivate.WCTime }
+			        {#/if}
+		        </td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.WCConn }</td>
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">{ $T.ListPrivate.TimeGap }</td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">{ $T.ListPrivate.WorkTime }</td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+                    {#if $T.ListPrivate.bOver == "1"}
+                        { $T.ListPrivate.OverTime }
+                    {#else}
+                        &nbsp;
+                    {#/if}
+                </td>
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+			        {#if $T.ListPrivate.bOver == "1"}
+				        {#if $T.ListPrivate.PRDocumentID > 0}
+					        <span onclick="ListPrivate.DocView('{ $T.ListPrivate.PRDocumentID }');return false;" style="cursor:pointer">
+						        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+					        </span>            
+				        {#/if}
+			        {#/if}
+		        </td>
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+                    {#if $T.ListPrivate.bLate == "1"}
+                        <span style="color: Red">{ $T.ListPrivate.bLateMinute }</span>
+                    {#else}
+                        &nbsp;
+                    {#/if}
+		        </td>
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+                    {#if $T.ListPrivate.bEarly == "1"}
+                        <span style="color: Red">{ $T.ListPrivate.bEarlyMinute }</span>
+                    {#else}
+                        &nbsp;
+                    {#/if}
+		        </td>
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+                    { $T.ListPrivate.bHoli }
+		        </td>
+                <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+                    { $T.ListPrivate.bEtc }
+		        </td>
+                <!--
+		        <td class="center">
+			        {#if $T.ListPrivate.bHoliAll == "1"}
+				        {#if $T.ListPrivate.HUDocumentID > 0}
+					        <span onclick="ListPrivate.DocView('{ $T.ListPrivate.HUDocumentID }');return false;" style="cursor:pointer">
+						        <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+					        </span>            
+				        {#/if}
+			        {#/if}
+		        </td>
+                -->
+		        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">{ $T.ListPrivate.AllWorkTime }</td>
+		        <td style="border-bottom: 1px dotted #C3C3C3;">
+                    <div style="cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                        onclick="ListPrivate.EtcView('{ $T.ListPrivate.CalcDate }', '{ $T.ListPrivate.DayWeek }', '{ $T.ListPrivate.HUDocumentID }', '{ $T.ListPrivate.PRDocumentID }'
+                            , '{ $T.ListPrivate.UserName }', '{ $T.ListPrivate.DeptName }', '{ $T.ListPrivate.TitleName }'
+                            , '{ $T.ListPrivate.bHoliAll }', '{ $T.ListPrivate.bLate }', '{ $T.ListPrivate.bEarly }', '{ $T.ListPrivate.bOver }'
+                            , '{ $T.ListPrivate.HoliGubun }', '{ $T.ListPrivate.bLateGubun }', '{ $T.ListPrivate.bEarlyGubun }', '{ $T.ListPrivate.bOverGubun }'
+                            , '{ $T.ListPrivate.HoliGubun2 }', '{ $T.ListPrivate.LateRemarkParam }', '{ $T.ListPrivate.EarlyRemarkParam }', '{ $T.ListPrivate.OverRemarkParam }');return false;">
+                    {#if $T.ListPrivate.bHoliAll == "1"}{ $T.ListPrivate.HoliGubun }: { $T.ListPrivate.HoliGubun2 }{#/if}
+			        {#if $T.ListPrivate.bLate == "1"}{ $T.ListPrivate.bLateGubun }: { $T.ListPrivate.LateRemark }{#/if}
+			        {#if $T.ListPrivate.bEarly == "1"}{ $T.ListPrivate.bEarlyGubun }: { $T.ListPrivate.EarlyRemark }{#/if}
+			        {#if $T.ListPrivate.bOver == "1"}{ $T.ListPrivate.bOverGubun }: { $T.ListPrivate.OverRemark }{#/if}
+                    </div>
+		        </td>
+	        </tr>
+        {#/if}	
+	{#/if}
+{#else}
+	<tr>
+		<td colspan="15" class="center"><span class="NoListData" /></td>        
+	</tr>
+{#/for}
+</table>
+</div>
+{#foreach $T as ListPrivate}
+	{#if $T.ListPrivate.ROW == "99999"}
+    <table class="table_typeC" style="border-top: 0; min-width: 1250px;"> 
+    <colgroup>
+        <col width="110px" />
+        <col width="140px" />
+        <col width="140px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />
+        <col width="70px" />        
+        <col width="40px" />
+        <col width="70px" />
+        <col />
+    </colgroup>
+    <tr>
+	    <th class="center" rowspan="3" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListPrivate.SUMMARY }</th>
+        <th style="text-align: left; padding: 3px 5px 3px 5px">
+            { $T.ListPrivate.bWSStr }
+        </th>
+        <th style="text-align: left; padding: 3px 5px 3px 5px">
+            { $T.ListPrivate.bWCStr }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.TimeGap }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.WorkTime }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.OverTime }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">{ $T.ListPrivate.OverCount }</th>
+        <th class="center" style="font-weight: bold; color: Red; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.bLateMinute }
+        </th>
+        <th class="center" style="font-weight: bold; color: Red; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.bEarlyMinute }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.bHoli }
+        </th>
+        <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            { $T.ListPrivate.bEtc }
+        </th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px">
+            기준
+        </th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px">
+            { $T.ListPrivate.StandardTime }
+        </th>
+        <th style="color: Red; text-align: left; font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="3">
+            정상근무: 1일 8시간 (주 40시간)<br />
+            연장근무: 야근 & 특근<br />
+             -> 1주 12시간 초과 금지
+        </th>
+    </tr>
+    <tr>
+        <th style="text-align: left; padding: 3px 5px 3px 5px">{ $T.ListPrivate.bWSINStr }</th>
+        <th style="text-align: left; padding: 3px 5px 3px 5px">{ $T.ListPrivate.bWCINStr }</th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px">근무</th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px">{ $T.ListPrivate.AllWorkTime }</th>
+    </tr>
+    <tr>
+        <th style="text-align: left; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListPrivate.bWSOUTStr }</th>
+        <th style="text-align: left; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListPrivate.bWCOUTStr }</th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">가능</th>
+        <th class="center" style="font-weight: bold; color: Blue; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListPrivate.PossTime }</th>
+    </tr>
+    </table>
+    {#/if}
+{#/for}

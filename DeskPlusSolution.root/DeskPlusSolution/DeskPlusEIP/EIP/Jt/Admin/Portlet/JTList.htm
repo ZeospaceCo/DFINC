@@ -1,0 +1,39 @@
+﻿<table class="table_typeA">
+    <caption>
+        포틀릿정보 리스트
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="100px" />
+        <col width="150px" />
+        <col width="*" />
+        <col width="200px" />
+        <col width="80px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>            
+            <th class="center" id="r_portlettype"></th>
+            <th class="center" id="r_catname"></th>
+            <th class="center" id="r_name"></th>
+            <th class="center" id="r_uitype"></th>
+            <th class="center" id="r_active"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.PortletID }" value="{ $T.List.PortletID }" /></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.PortletID }','{ $T.List.PortletType }');">{ $T.List.PortletTypeName }</a></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.PortletID }','{ $T.List.PortletType }');">{ $T.List.CatNameBase }</a></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.PortletID }','{ $T.List.PortletType }');">{ $T.List.NameBase }</a></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.PortletID }','{ $T.List.PortletType }');">{ $T.List.UIType }</a></td>
+            <td class="center">{ $T.List.ActivePortlet }</td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="6" class="center"><span id="NoListData" /></td>        
+        </tr>
+    {#/for} 
+    </tbody>
+</table>

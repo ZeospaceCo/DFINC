@@ -1,0 +1,209 @@
+﻿<table class="table_typeC" style="min-width: 1250px;"> 
+<colgroup>
+    <col width="300px" />
+    <col width="60px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_DeptName" class="center" style="font-weight: bold;" rowspan="2"></th>    
+    <th id="r_PersonCount" class="center" style="font-weight: bold;"></th>
+    <th id="r_WorkTime" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_52Time" class="center" style="font-weight: bold;" colspan="3"></th>     
+    <th id="r_Holi_HR" class="center" style="font-weight: bold;" colspan="4"></th>      
+    <th id="r_HoliUserInfo" class="center" style="font-weight: bold;" rowspan="2"></th>
+</tr>
+<tr>    
+    <th id="r_PersonCount2" class="center" style="font-weight: bold;"></th>    
+    <th id="r_BaseWork" class="center" style="font-weight: bold;"></th>
+    <th id="r_Over_Work" class="center" style="font-weight: bold;"></th>
+    <th id="r_StandardTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_WorkSum" class="center" style="font-weight: bold;"></th>
+    <th id="r_StandardTimePer" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Tardy" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Early" class="center" style="font-weight: bold;"></th>
+    <th id="r_HoliType" class="center" style="font-weight: bold;"></th>
+    <th id="r_Etc" class="center" style="font-weight: bold;"></th>
+</tr>
+</table>
+<div id="HRContent" style="min-width: 1250px; height: 300px; overflow-y:auto !important;">
+<table id="HRTable" class="table_typeC" style="border-top: 0;"> 
+<colgroup>
+    <col width="300px" />
+    <col width="60px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col />
+</colgroup>
+{#foreach $T as ListCompany}
+    {#if $T.ListCompany.ROW != "99999"}
+    <tr>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">        
+            {#if $T.ListCompany.ParentDeptName != ""}
+                <span style="font-size: 11px">{ $T.ListCompany.ParentDeptName }</span> /
+                <span onclick="ListCompany.GoList('{ $T.ListCompany.DeptID }', '{ $T.ListCompany.DeptState }', '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }');return false;" style="color:#00c; text-decoration: underline; cursor:pointer">
+                    {#if $T.ListCompany.DeptState == "1"}
+                        { $T.ListCompany.DeptName }
+                    {#else}
+                        <span style="color: Red">{ $T.ListCompany.DeptName }</span>
+                    {#/if}
+                </span>
+            {#else}
+                <span onclick="ListCompany.GoList('{ $T.ListCompany.DeptID }', '{ $T.ListCompany.DeptState }', '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }');return false;" style="color:#00c; text-decoration: underline; cursor:pointer">
+                    {#if $T.ListCompany.DeptState == "1"}
+                        { $T.ListCompany.DeptName }
+                    {#else}
+                        <span style="color: Red">{ $T.ListCompany.DeptName }</span>
+                    {#/if}
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListCompany.UserSUM }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3; cursor: help">
+            <abbr title="휴가시간: -{ $T.ListCompany.HoliTime }">{ $T.ListCompany.WorkTime }</abbr>
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bOver == "0"}
+                { $T.ListCompany.OverTime }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListCompany.LateView('0', '{ $T.ListCompany.DeptID }', '', '', ''
+                    , '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }', '{ $T.ListCompany.MinClosingID }', '{ $T.ListCompany.MaxClosingID }', '3')">
+                    { $T.ListCompany.OverTime }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            { $T.ListCompany.StandardTime }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            { $T.ListCompany.AllWorkTime }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListCompany.StandardTimePer }%
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bLate == "0"}
+                { $T.ListCompany.bLate }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline; color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'"
+                    onclick="ListCompany.LateView('0', '{ $T.ListCompany.DeptID }', '', '', ''
+                    , '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }', '{ $T.ListCompany.MinClosingID }', '{ $T.ListCompany.MaxClosingID }', '1')">
+                    { $T.ListCompany.bLate }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bEarly == "0"}
+                { $T.ListCompany.bEarly }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline; color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'"
+                    onclick="ListCompany.LateView('0', '{ $T.ListCompany.DeptID }', '', '', ''
+                    , '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }', '{ $T.ListCompany.MinClosingID }', '{ $T.ListCompany.MaxClosingID }', '2')">
+                    { $T.ListCompany.bEarly }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bHoliCnt == "0"}
+                { $T.ListCompany.bHoliCnt }
+            {#else}
+                <div style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListCompany.EtcView('0', '{ $T.ListCompany.DeptID }', '', '', ''
+                    , '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }', '{ $T.ListCompany.MinClosingID }', '{ $T.ListCompany.MaxClosingID }')">
+                    { $T.ListCompany.bHoliCnt }
+                </div>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bEtcCnt == "0"}
+                { $T.ListCompany.bEtcCnt }
+            {#else}
+                <div style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListCompany.EtcView('0', '{ $T.ListCompany.DeptID }', '', '', ''
+                    , '{ $T.ListCompany.StartDate }', '{ $T.ListCompany.EndDate }', '{ $T.ListCompany.MinClosingID }', '{ $T.ListCompany.MaxClosingID }')">
+                    { $T.ListCompany.bEtcCnt }
+                </div>
+            {#/if}
+        </td>
+        <td style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListCompany.bHoliAll == "1"}
+                <div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                    { $T.ListCompany.HoliRemark }
+                </div>
+            {#else}
+                &nbsp;
+            {#/if}
+        </td>
+	</tr>
+	{#/if}
+{#else}
+	<tr>
+		<td colspan="12" class="center"><span class="NoListData" /></td>        
+	</tr>
+{#/for}
+</table>
+</div>
+{#foreach $T as ListCompany}
+    {#if $T.ListCompany.ROW == "99999"}
+    <table class="table_typeC" style="border-top: 0; min-width: 1250px;"> 
+    <colgroup>
+        <col width="300px" />
+        <col width="80px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="40px" />
+        <col width="40px" />
+        <col width="40px" />
+        <col width="40px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col />
+    </colgroup>
+    <th class="center"><b>{ $T.ListCompany.SUMMARY }</b></th>
+    <th class="center"><b>{ $T.ListCompany.BaseDeptUcnt1 }{ $T.ListCompany.BaseDeptUcnt0 }</b></th>
+    <th class="center"><b>{ $T.ListCompany.WorkTimeSUM }</b></th>
+    <th class="center"><b>{ $T.ListCompany.OverTimeSUM }</b></th>
+    <th class="center" style="border-right: 1px dotted #D2D2D2;">
+    <b>
+        {#if $T.ListCompany.bLate == "0"}
+            { $T.ListCompany.bLate }
+        {#else}
+            <span style="color: Red">{ $T.ListCompany.bLate }</span>
+        {#/if}
+    </b>
+    </th>
+    <th class="center" style="border-right: 1px dotted #D2D2D2;">
+    <b>
+        {#if $T.ListCompany.bEarly == "0"}
+            { $T.ListCompany.bEarly }
+        {#else}
+            <span style="color: Red">{ $T.ListCompany.bEarly }</span>
+        {#/if}
+    </b>
+    </th>
+    <th class="center" style="border-right: 1px dotted #D2D2D2;"><b>{ $T.ListCompany.bHoli }</b></th>
+    <th class="center"><b>{ $T.ListCompany.bEtc }</b></th>
+    <th class="center"><b>{ $T.ListCompany.AllWorkTimeSUM }</b></th>
+    <th class="center"><b>{ $T.ListCompany.pAvg }</b></th>
+    <th class="center">&nbsp;</th>
+    </table>
+    {#/if}
+{#/for}

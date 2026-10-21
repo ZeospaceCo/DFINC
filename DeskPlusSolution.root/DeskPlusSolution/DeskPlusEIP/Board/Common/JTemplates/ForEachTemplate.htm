@@ -1,0 +1,36 @@
+﻿<table border="1" cellpadding="3" cellspacing="2">
+    <thead>
+        <tr>
+            <th>
+                제목
+            </th>
+            <th>
+                부서
+            </th>
+            <th>
+                유저
+            </th>
+            <th>
+                작성일
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {#foreach $T as BoardList}
+            <tr bgcolor="{#cycle values=['#AFCFFF','#C0FFBF']}">
+                <td>
+                    { $T.BoardList.Title }
+                </td>
+                <td>
+                    <a onclick="alert(1)">{$T.BoardList.OwnerDeptID}</a>
+                </td>
+                <td>
+                    { $T.BoardList.WriteDate }
+                </td>
+                <td>
+                    { $T.BoardList.WriteUserName }
+                </td>
+            </tr>
+        {#/for}        
+    </tbody>
+</table>

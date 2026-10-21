@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML>
+		[게시판알림]
+		&lt;br&gt;&lt;br&gt;
+		- 카테고리 : $CATEGORYTITLE$
+		&lt;br&gt;&lt;br&gt;
+		- 제목 : $SUBJECT$
+		&lt;br&gt;
+		- 게시일 : $TIME$
+		&lt;br&gt;&lt;br&gt;
+		- 작성자 : $DEPTNAME$ $NAME$
+		&lt;br&gt;&lt;br&gt;
+	</ContentHTML>
+</ContentInfo>

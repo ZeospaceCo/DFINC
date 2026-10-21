@@ -1,0 +1,34 @@
+﻿<div class="album_cont">
+<ul>
+    {#foreach $T as List}
+	<li>   
+        <div class="thumb">
+        <dl class="sub">
+            <dd>
+                <input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.FileID }" />
+            </dd>
+        </dl>
+        <dl class="album_img">      
+            <img id="{ $T.List.FileID }" action="attach" style="cursor:pointer" src="{$T.List.ScreenShotImage }" FilePath='{ $T.List.FilePath }' FileGUID='{ $T.List.FileGUID }' FolderID='{ $T.List.FolderID }' />
+        </dl>
+        <dl class="text"> 
+            <dd>{$T.List.WriteDate }&nbsp;&nbsp;{$T.List.FileLength }</dd>
+        </dl>
+		<dl class="text"> 
+            <dd>{$T.List.WriteName }</dd>
+            <dd>{$T.List.FolderName }</dd>
+            <dt>     
+                <a href="#" onclick="ListImpoIcon.TitleDownLoad('{ $T.List.FileID }','{ $T.List.FolderID }','{ $T.List.FilePath }');return false;" style="cursor:pointer">
+                <span class="fontCut" id="fileName_{ $T.List.FileID }">{ $T.List.FileName }</span>
+                </a>
+            </dt>
+		</dl>
+	</div>         
+	</li>
+    {#else}
+    <li>
+        <span id="NoListData" />
+    </li>
+    {#/for}   
+</ul>
+</div>

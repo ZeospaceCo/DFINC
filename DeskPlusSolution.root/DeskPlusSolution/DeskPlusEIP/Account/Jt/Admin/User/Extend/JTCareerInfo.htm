@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<colgroup>
+    <col width="180px" />
+    <col width="150px" />
+    <col width="80px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col  />
+    <col width="60px" />
+</colgroup>
+    <tr>        
+        <th class="center" id="r_date"></th>
+        <th class="center" id="r_companyname"></th>
+        <th class="center" id="r_careerperiod"></th>
+        <th class="center" id="r_titlename"></th>                                    
+        <th class="center" id="r_jobtype"></th>
+        <th class="center" id="r_etc"></th>
+        <th class="center" id="r_del"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>        
+        <td class="center">{ $T.AccountList.StartDate } - { $T.AccountList.EndDate }</td>
+        <td class="center">{ $T.AccountList.CompanyName }</td>
+        <td class="center">{ $T.AccountList.CareerPeriod }</td>
+        <td class="center">{ $T.AccountList.TitleName }</td>
+        <td class="center">{ $T.AccountList.JobType }</td>
+        <td>{ $T.AccountList.Etc }</td>
+        <td class="center"><a class="btn" href="#" onclick="CareerInfo.Del('{ $T.AccountList.CompanyID }','{ $T.AccountList.CareerID }')">{ $T.AccountList.BtnDel }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

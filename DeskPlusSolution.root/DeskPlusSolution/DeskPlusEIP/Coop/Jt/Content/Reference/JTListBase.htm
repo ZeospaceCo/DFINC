@@ -1,0 +1,40 @@
+﻿<table class="table_typeA">
+<caption>근거문서</caption>
+<colgroup>
+    <col />
+    <col width="100px" />
+    <col width="100px" />    
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" /> 
+</colgroup>
+<thead>
+    <tr>
+        <th><span id="j_basetitle">제목</span></th>
+        <th><span id="j_basename">작성자</span></th>
+        <th><span id="j_baseitem">1차 분류</span></th>
+        <th><span id="j_baseitemsub">2차 분류</span></th>
+        <th><span id="j_baserequestdate">요청일자</span></th>
+        <th><span id="j_basestartdate">시작예정일</span></th>
+        <th><span id="j_baseenddate">종료예정일</span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td>{ $T.List.Title }</td>
+        <td>{ $T.List.NameBase }</td>
+        <td>{ $T.List.ItemName }</td>
+        <td>{ $T.List.ItemSubName }</td>
+        <td>{ $T.List.RequestDate }</td>
+        <td>{ $T.List.StartDate }</td>
+        <td>{ $T.List.EndDate }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span class="NoBaseListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

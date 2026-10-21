@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="250px"/>
+    <col width="*"/>
+    <col width="100px"/>
+    <col width="100px"/>
+</colgroup>
+<thead>
+    <th class="center" id="j_SendName"></th>
+    <th class="center" id="j_Name"></th>
+    <th class="center" id="j_ForwardingDate"></th>
+    <th class="center" id="j_ViewingDate"></th>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.SendName } / { $T.List.SendDeptName } / { $T.List.SendTitleName }</td>
+    <td class="center">{ $T.List.NameBase } / { $T.List.DeptName } / { $T.List.TitleName }</td>
+    <td class="center">{ $T.List.SendDateYMD }</td>
+    <td class="center">{ $T.List.ViewingDate }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

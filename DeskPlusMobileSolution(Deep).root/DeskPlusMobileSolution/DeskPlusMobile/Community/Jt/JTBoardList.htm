@@ -1,0 +1,20 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="title linkDiv"  onclick="javascript:BoardList.viewList('{ $T.List.BoardID }')">
+        {#if $T.List.ViewCount == '0'}
+            <a class="LNoready"><div class="podot">●</div><div class="conBox">{$T.List.Title } {$T.List.ReplyCount } {$T.List.ShowNew}<br />
+        {#else}
+            <a class="Lready"><div class="grdot">●</div><div class="conBox">{$T.List.Title } {$T.List.ReplyCount } {$T.List.ShowNew}<br />
+        {#/if}
+        </a>
+        <div><span class="sch_user">{ $T.List.WriteUserInfo }&nbsp;{ $T.List.WriteDate }</span><br /></div> 
+        </div>
+    </div>
+</li>
+{#else}   
+<li class="contentblock" >
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" /><br /></a>
+    </div>
+</li>
+{#/for}

@@ -1,0 +1,48 @@
+﻿
+ <table class="table_typeA">
+    <caption>
+        타부서문서열람
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="120px" />
+        <col />               
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+            <th class="center" id="r_targetUser"></th>
+            <th class="center" id="r_targetDept"></th>            
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as FolderViewList}
+        <tr>
+            <td class="center">
+                <input type="checkbox" class="cbxID" id="cbxID{ $T.FolderViewList.ROW }" value="{ $T.FolderViewList.FolderViewAuthorityID }" />
+            </td>        
+            <td class="center">
+                {#if $T.FolderViewList.TitleName != ''}
+                <span class="orangeSquare">{ $T.FolderViewList.TitleName }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.FolderViewList.UserID }');return false;">
+                { $T.FolderViewList.UserName }
+                {#if $T.FolderViewList.BaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>                
+                </strong>
+            </td>            
+            <td class="center">
+                { $T.FolderViewList.DeptName }
+            </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="3" class="center"><span class="NoListData"></span></td>        
+        </tr>
+    {#/for}
+
+    </tbody>
+</table>

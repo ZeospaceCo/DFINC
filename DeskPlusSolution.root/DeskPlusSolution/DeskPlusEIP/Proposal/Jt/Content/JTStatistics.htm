@@ -1,0 +1,27 @@
+﻿<table class="table_typeB">
+<caption>사업부별제안현황</caption>
+<colgroup>
+    <col width="20%" />
+    <col width="20%" />
+    <col width="20%" />
+    <col width="20%" />
+</colgroup>
+<tbody>
+<tr class="crt_tr">
+{#foreach $T as StaticsList}
+    <td><p>{ $T.StaticsList.Count }건</p><div class="tit_stick" style="height:{ $T.StaticsList.Percentage }%;"></div></td>
+{#else}
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+{#/for}
+</tr>
+<tr class="tit_tr">
+	<td>관리본부</td>
+    <td>영업본부</td>
+    <td>기술연구소</td>
+    <td>천안공장</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEE64A34-C4E1-436B-AAAB-4219A8605BE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Board.BE</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Board.BE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DeskPlusKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachFileInfo.cs" />
+    <Compile Include="AuthorityInfo.cs" />
+    <Compile Include="CategoryInfo.cs" />
+    <Compile Include="CategoryUserInfo.cs" />
+    <Compile Include="HeaderInfo.cs" />
+    <Compile Include="FavoriteInfo.cs" />
+    <Compile Include="ImpoUserInfo.cs" />
+    <Compile Include="InterestedUserInfo.cs" />
+    <Compile Include="LinkURLInfo.cs" />
+    <Compile Include="ListAlarmInfo.cs" />
+    <Compile Include="ListEtcInfo.cs" />
+    <Compile Include="ListInfo.cs" />
+    <Compile Include="ListViewersInfo.cs" />
+    <Compile Include="ListViewModel.cs" />
+    <Compile Include="MaxShortReplyerInfo.cs" />
+    <Compile Include="MaxWriterInfo.cs" />
+    <Compile Include="MyAttachFileInfo.cs" />
+    <Compile Include="MyTemplateEtcInfo.cs" />
+    <Compile Include="MyTemplateInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingInfo.cs" />
+    <Compile Include="ShortReplyGoodInfo.cs" />
+    <Compile Include="ShortReplyInfo.cs" />
+    <Compile Include="TemplatesInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeskPlusKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

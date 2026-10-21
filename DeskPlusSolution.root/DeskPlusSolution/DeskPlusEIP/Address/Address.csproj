@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AB4703F-0ED3-43AE-888D-8B405FBD1AC7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Address.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Address.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.2.1507.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\Util\GoogleApi\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.ApplicationBlock">
+      <HintPath>..\Util\GoogleApi\DotNetOpenAuth.ApplicationBlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.AccessControl, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\GoogleApi\Google.GData.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.8.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\GoogleApi\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Contacts, Version=1.8.0.0, Culture=neutral, PublicKeyToken=7e065189dd4b982f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\GoogleApi\Google.GData.Contacts.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=1.8.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\GoogleApi\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Config\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Config\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListBlog.aspx.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListBlog.aspx.designer.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\MoveCopy.aspx.cs">
+      <DependentUpon>MoveCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\MoveCopy.aspx.designer.cs">
+      <DependentUpon>MoveCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\UserFolder.aspx.cs">
+      <DependentUpon>UserFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\UserFolder.aspx.designer.cs">
+      <DependentUpon>UserFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlAddress.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageAddress.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageAddressAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSAddress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\AddressMailTree.ascx.cs">
+      <DependentUpon>AddressMailTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AddressMailTree.ascx.designer.cs">
+      <DependentUpon>AddressMailTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AddressTree.ascx.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AddressTree.ascx.designer.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GetAddressMailTree.aspx.cs">
+      <DependentUpon>GetAddressMailTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetAddressMailTree.aspx.designer.cs">
+      <DependentUpon>GetAddressMailTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GetAddressTree.aspx.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetAddressTree.aspx.designer.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\AddPrivate.aspx.cs">
+      <DependentUpon>AddPrivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddPrivate.aspx.designer.cs">
+      <DependentUpon>AddPrivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\AddSimple.aspx.cs">
+      <DependentUpon>AddSimple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\AddSimple.aspx.designer.cs">
+      <DependentUpon>AddSimple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavoriteFolder.aspx.cs">
+      <DependentUpon>FavoriteFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavoriteFolder.aspx.designer.cs">
+      <DependentUpon>FavoriteFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListBlog.aspx.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListBlog.aspx.designer.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\MoveCopy.aspx.cs">
+      <DependentUpon>MoveCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\MoveCopy.aspx.designer.cs">
+      <DependentUpon>MoveCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\PrivateTree.aspx.cs">
+      <DependentUpon>PrivateTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\PrivateTree.aspx.designer.cs">
+      <DependentUpon>PrivateTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UserFolder.aspx.cs">
+      <DependentUpon>UserFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\UserFolder.aspx.designer.cs">
+      <DependentUpon>UserFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListImpo.aspx.cs">
+      <DependentUpon>ListImpo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListImpo.aspx.designer.cs">
+      <DependentUpon>ListImpo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListBlogImpo.aspx.cs">
+      <DependentUpon>ListBlogImpo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListBlogImpo.aspx.designer.cs">
+      <DependentUpon>ListBlogImpo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ViewCommon.aspx.cs">
+      <DependentUpon>ViewCommon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ViewCommon.aspx.designer.cs">
+      <DependentUpon>ViewCommon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\AddressAdd.aspx.cs">
+      <DependentUpon>AddressAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\AddressAdd.aspx.designer.cs">
+      <DependentUpon>AddressAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\AddressSearch.aspx.cs">
+      <DependentUpon>AddressSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\AddressSearch.aspx.designer.cs">
+      <DependentUpon>AddressSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\AddressSSO.aspx.cs">
+      <DependentUpon>AddressSSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\AddressSSO.aspx.designer.cs">
+      <DependentUpon>AddressSSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\ExportCSV.aspx.cs">
+      <DependentUpon>ExportCSV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\ExportCSV.aspx.designer.cs">
+      <DependentUpon>ExportCSV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep2.aspx.cs">
+      <DependentUpon>InGoogleStep2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep2.aspx.designer.cs">
+      <DependentUpon>InGoogleStep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep3.aspx.cs">
+      <DependentUpon>InGoogleStep3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep3.aspx.designer.cs">
+      <DependentUpon>InGoogleStep3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InOutStep1.aspx.cs">
+      <DependentUpon>InOutStep1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InOutStep1.aspx.designer.cs">
+      <DependentUpon>InOutStep1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep1.aspx.cs">
+      <DependentUpon>InGoogleStep1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InGoogleStep1.aspx.designer.cs">
+      <DependentUpon>InGoogleStep1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InOutStep2.aspx.cs">
+      <DependentUpon>InOutStep2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InOutStep2.aspx.designer.cs">
+      <DependentUpon>InOutStep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Outlook\InOutStep3.aspx.cs">
+      <DependentUpon>InOutStep3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Outlook\InOutStep3.aspx.designer.cs">
+      <DependentUpon>InOutStep3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ws\Admin\Content\ListBlog.asmx.cs">
+      <DependentUpon>ListBlog.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\MoveCopy.asmx.cs">
+      <DependentUpon>MoveCopy.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\UserFolder.asmx.cs">
+      <DependentUpon>UserFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Folder\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Folder\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Menu\Menu.asmx.cs">
+      <DependentUpon>Menu.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\AddSimple.asmx.cs">
+      <DependentUpon>AddSimple.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\FavoriteFolder.asmx.cs">
+      <DependentUpon>FavoriteFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListBlog.asmx.cs">
+      <DependentUpon>ListBlog.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListBlogImpo.asmx.cs">
+      <DependentUpon>ListBlogImpo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListImpo.asmx.cs">
+      <DependentUpon>ListImpo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\MoveCopy.asmx.cs">
+      <DependentUpon>MoveCopy.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\Send.asmx.cs">
+      <DependentUpon>Send.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\UserFolder.asmx.cs">
+      <DependentUpon>UserFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\GetAddress.asmx.cs">
+      <DependentUpon>GetAddress.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\GoogleContactService.asmx.cs">
+      <DependentUpon>GoogleContactService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Mail\AddressAdd.asmx.cs">
+      <DependentUpon>AddressAdd.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Mail\AddressSearch.asmx.cs">
+      <DependentUpon>AddressSearch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Outlook\InGoogleStep2.asmx.cs">
+      <DependentUpon>InGoogleStep2.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Outlook\InOutStep2.asmx.cs">
+      <DependentUpon>InOutStep2.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\SetAddress.asmx.cs">
+      <DependentUpon>SetAddress.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Js\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Config\Default.aspx" />
+    <Content Include="Admin\Content\Add.aspx" />
+    <Content Include="Admin\Content\Default.aspx" />
+    <Content Include="Admin\Content\ListBlog.aspx" />
+    <Content Include="Admin\Content\MoveCopy.aspx" />
+    <Content Include="Admin\Content\UserFolder.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Folder\Add.aspx" />
+    <Content Include="Admin\Folder\Default.aspx" />
+    <Content Include="Admin\Folder\Move.aspx" />
+    <Content Include="Admin\Menu\Menu.aspx" />
+    <Content Include="App_Data\AdminMenu\en.xml" />
+    <Content Include="App_Data\AdminMenu\fr.xml" />
+    <Content Include="App_Data\AdminMenu\ja.xml" />
+    <Content Include="App_Data\AdminMenu\ko.xml" />
+    <Content Include="App_Data\AdminMenu\zh-cn.xml" />
+    <Content Include="App_Data\AdminMenu\zh-tw.xml" />
+    <Content Include="Common\AddressMailTree.ascx" />
+    <Content Include="Common\AddressTree.ascx" />
+    <Content Include="Common\GetAddressMailTree.aspx" />
+    <Content Include="Common\GetAddressTree.aspx" />
+    <Content Include="Content\Add.aspx" />
+    <Content Include="Content\AddPrivate.aspx" />
+    <Content Include="Content\AddSimple.aspx" />
+    <Content Include="Content\FavoriteFolder.aspx" />
+    <Content Include="Content\List.aspx" />
+    <Content Include="Content\ListBlog.aspx" />
+    <Content Include="Content\MoveCopy.aspx" />
+    <Content Include="Content\Print.aspx" />
+    <Content Include="Content\PrivateTree.aspx" />
+    <Content Include="Content\Send.aspx" />
+    <Content Include="Content\UserFolder.aspx" />
+    <Content Include="Content\ListImpo.aspx" />
+    <Content Include="Content\ListBlogImpo.aspx" />
+    <Content Include="Content\ViewCommon.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Folder\Add.aspx" />
+    <Content Include="Folder\Mod.aspx" />
+    <Content Include="Folder\Tree.aspx" />
+    <Content Include="Js\Admin\Config\Default.js" />
+    <Content Include="Js\Admin\Content\Add.js" />
+    <Content Include="Js\Admin\Content\ListBlog.js" />
+    <Content Include="Js\Admin\Content\MoveCopy.js" />
+    <Content Include="Js\Admin\Content\UserFolder.js" />
+    <Content Include="Js\Admin\Folder\Add.js" />
+    <Content Include="Js\Admin\Folder\Move.js" />
+    <Content Include="Js\Admin\Menu\Menu.js" />
+    <Content Include="Js\Content\Add.js" />
+    <Content Include="Js\Content\AddPrivate.js" />
+    <Content Include="Js\Content\AddSimple.js" />
+    <Content Include="Js\Content\FavoriteFolder.js" />
+    <Content Include="Js\Content\List.js" />
+    <Content Include="Js\Content\MoveCopy.js" />
+    <Content Include="Js\Content\Print.js" />
+    <Content Include="Js\Content\PrivateTree.js" />
+    <Content Include="Js\Content\Send.js" />
+    <Content Include="Js\Content\ListBlog.js" />
+    <Content Include="Js\Content\UserFolder.js" />
+    <Content Include="Js\Content\ListImpo.js" />
+    <Content Include="Js\Content\ListBlogImpo.js" />
+    <Content Include="Js\Content\ViewCommon.js" />
+    <Content Include="Js\Folder\Add.js" />
+    <Content Include="Js\Folder\Mod.js" />
+    <Content Include="Js\Folder\Tree.js" />
+    <Content Include="Js\Mail\AddressAdd.js" />
+    <Content Include="Js\Mail\AddressSearch.js" />
+    <Content Include="Js\Outlook\ExportCSV.js" />
+    <Content Include="Js\Outlook\InOutStep1.js" />
+    <Content Include="Js\Outlook\InOutStep2.js" />
+    <Content Include="Js\Outlook\InGoogleStep1.js" />
+    <Content Include="Js\Outlook\InGoogleStep2.js" />
+    <Content Include="Js\Outlook\InOutStep3.js" />
+    <Content Include="Jt\Admin\Content\JTListBlog.htm" />
+    <Content Include="Jt\Content\JTList.htm" />
+    <Content Include="Jt\Content\JTListBlog.htm" />
+    <Content Include="Jt\Content\JTListImpo.htm" />
+    <Content Include="Jt\Content\JTListBlogImpo.htm" />
+    <Content Include="Jt\Content\JTListPrivate.htm" />
+    <Content Include="Jt\Mail\JTList.htm" />
+    <Content Include="Jt\Outlook\JTOutStep.htm" />
+    <Content Include="Jt\Outlook\JTGoogle.htm" />
+    <Content Include="Mail\AddressAdd.aspx" />
+    <Content Include="Mail\AddressSearch.aspx" />
+    <Content Include="Mail\AddressSSO.aspx" />
+    <Content Include="Outlook\ExportCSV.aspx" />
+    <Content Include="Outlook\InGoogleStep2.aspx" />
+    <Content Include="Outlook\InGoogleStep3.aspx" />
+    <Content Include="Outlook\InOutStep1.aspx" />
+    <Content Include="Outlook\InGoogleStep1.aspx" />
+    <Content Include="Outlook\InOutStep2.aspx" />
+    <Content Include="Outlook\InOutStep3.aspx" />
+    <Content Include="Ws\Admin\Content\ListBlog.asmx" />
+    <Content Include="Ws\Admin\Content\MoveCopy.asmx" />
+    <Content Include="Ws\Admin\Content\UserFolder.asmx" />
+    <Content Include="Ws\Admin\Folder\Move.asmx" />
+    <Content Include="Ws\Admin\Folder\Tree.asmx" />
+    <Content Include="Ws\Admin\Menu\Menu.asmx" />
+    <Content Include="Ws\Content\AddSimple.asmx" />
+    <Content Include="Ws\Content\FavoriteFolder.asmx" />
+    <Content Include="Ws\Content\List.asmx" />
+    <Content Include="Ws\Content\ListBlog.asmx" />
+    <Content Include="Ws\Content\ListBlogImpo.asmx" />
+    <Content Include="Ws\Content\ListImpo.asmx" />
+    <Content Include="Ws\Content\MoveCopy.asmx" />
+    <Content Include="Ws\Content\Send.asmx" />
+    <Content Include="Ws\Content\UserFolder.asmx" />
+    <Content Include="Ws\Folder\Tree.asmx" />
+    <Content Include="Ws\GetAddress.asmx" />
+    <Content Include="Ws\GoogleContactService.asmx" />
+    <Content Include="Ws\Mail\AddressAdd.asmx" />
+    <Content Include="Ws\Mail\AddressSearch.asmx" />
+    <Content Include="Ws\Outlook\InGoogleStep2.asmx" />
+    <Content Include="Ws\Outlook\InOutStep2.asmx" />
+    <Content Include="Ws\SetAddress.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.BE\Zeospace.DeskPlus.Address.BE.csproj">
+      <Project>{C1C26D0B-13DC-4815-B31C-08BD1066E0CA}</Project>
+      <Name>Zeospace.DeskPlus.Address.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.BLL\Zeospace.DeskPlus.Address.BLL.csproj">
+      <Project>{CDF114CC-CC7E-4277-9B26-6B738AA08663}</Project>
+      <Name>Zeospace.DeskPlus.Address.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.DAL\Zeospace.DeskPlus.Address.DAL.csproj">
+      <Project>{F9C15205-4A8B-47E5-B827-A930DA28CFCD}</Project>
+      <Name>Zeospace.DeskPlus.Address.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.DAL\Zeospace.DeskPlus.EIP.DAL.csproj">
+      <Project>{138E6A3E-7DBB-443B-8409-3C55849FF6DF}</Project>
+      <Name>Zeospace.DeskPlus.EIP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22322</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Address</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

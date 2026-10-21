@@ -1,0 +1,35 @@
+﻿<table class="table_typeA"> 
+<caption>리스트</caption>
+<colgroup>
+    <col width="40px">
+    <col  />
+    <col width="80px">  
+    <col width="150px">
+</colgroup>
+<tr>  
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>  
+    <th class="center" id="r_title"></th>
+    <th class="center" id="r_attach"></th>  
+    <th class="center" id="r_draftDate"></th>
+</tr>
+{#foreach $T as List}
+<tr>        
+    <td class="center">
+        <input type="checkbox" class="cbxID" id="cbxID{ $T.List.DraftID }" value="{ $T.List.DraftID }" />
+    </td>
+    <td>        
+        <a onclick="List.Add('{ $T.List.DraftID }');return false;" style="cursor:pointer" title="{ $T.List.Title }">{ $T.List.Title }</a>
+    </td>
+    <td class="center">
+    {#if $T.List.FileCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.List.DraftID }'></i>
+    {#/if}
+    </td>
+    <td class="center">{ $T.List.WriteDate }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

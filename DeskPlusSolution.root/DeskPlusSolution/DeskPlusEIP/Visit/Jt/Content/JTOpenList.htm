@@ -1,0 +1,10 @@
+﻿<ul class="table_typeT ul_typeT">
+    {#foreach $T as List}
+    <li>
+        <span>{ $T.List.Title }</span>
+        <span class="mount">({ $T.List.Gubun })</span>        
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>

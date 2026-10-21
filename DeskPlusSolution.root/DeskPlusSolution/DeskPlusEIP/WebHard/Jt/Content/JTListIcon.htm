@@ -1,0 +1,47 @@
+﻿<div class="table_typeLmiddle">
+    <div class="album_cont">
+    <ul>
+        {#foreach $T as List}
+	    <li>   
+            <div class="thumb">
+            <dl class="sub">
+                <dd>
+                    <input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.FileID }" />
+                </dd>
+                <dd>
+                    <p class="fav">
+                        <input type="checkbox" id="chkImpo_{$T.List.FileID}" 
+                        {#if $T.List.ImpoCnt == 1}checked="checked"{#/if}
+                        onclick="ListIcon.ModImpUser('chkImpo_{$T.List.FileID}', this)" />
+
+	                    <label for="chkImpo_{$T.List.FileID}" title="" 
+                        id="lbImpo_{$T.List.FileID}" class="{#if $T.List.ImpoCnt == 1}on{#/if}">
+                            <span class="blind"></span>
+                        </label>
+                    </p>
+                </dd>
+            </dl>
+            <dl class="album_img">     
+                <img id="{ $T.List.FileID }" action="attach" style="cursor:pointer" src="{$T.List.ScreenShotImage }" FilePath='{ $T.List.FilePath }' FileGUID='{ $T.List.FileGUID }' />
+            </dl>
+            <dl class="text"> 
+                <dd>{$T.List.WriteDate }&nbsp;&nbsp;{$T.List.FileLength }</dd>
+		    </dl>
+            <dl class="text"> 
+                <dd>{$T.List.WriteName }</dd>
+                <dt>     
+                    <a href="#" onclick="ListIcon.TitleDownLoad('{ $T.List.FileID }','{ $T.List.FilePath }');return false;" style="cursor:pointer">
+                    <span class="fontCut" id="fileName_{ $T.List.FileID }">{ $T.List.FileName }</span>
+                    </a>
+                </dt>
+            </dl>
+	    </div>         
+	    </li>
+        {#else}
+        <li>
+            <span id="NoListData" />
+        </li>
+        {#/for}   
+    </ul>
+    </div>
+</div>

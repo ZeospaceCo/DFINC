@@ -1,0 +1,65 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="50px" />
+    <col  />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="120px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th id="r_number"></th>
+    <th id="r_title"></th>
+    <th id="r_attachName"></th>                            
+    <th id="r_viewCount"></th>
+    <th id="r_recomCount"></th>
+    <th id="r_register"></th>
+    <th id="r_regDate"></th>
+</tr>
+{#foreach $T as CmnBoardList}
+<tr>
+    <td class="center">{ $T.CmnBoardList.ROW }</td>
+    <td>        
+        <a href="#" onclick="List.View('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >{ $T.CmnBoardList.Title }</a>
+        {#if $T.CmnBoardList.ReplyCount > 0}        
+        <a href="#" onclick="List.PopupShort('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">({ $T.CmnBoardList.ReplyCount })</span>
+        </a>
+        {#/if}  
+        <a onclick="List.PopupView('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+            <img class="IconPopUp" alt="" />
+        </a>  
+        {#if $T.CmnBoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}           
+    </td>
+    <td class="center">
+    {#if $T.CmnBoardList.Attach > 0}
+    <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" CommunityID='{ $T.CmnBoardList.CommunityID }' MenuID='{ $T.CmnBoardList.MenuID }' BoardID='{ $T.CmnBoardList.BoardID }'></i>
+    {#/if}
+    </td>
+    <td class="center">
+     <a onclick="List.ReadList('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+	 { $T.CmnBoardList.ReadCount }
+	 </a>
+    </td>
+    <td class="center">
+     <a onclick="List.RecomList('{ $T.CmnBoardList.CommunityID }','{ $T.CmnBoardList.MenuID }','{ $T.CmnBoardList.BoardID }');return false;" style="cursor:pointer" >
+	 { $T.CmnBoardList.RecomCount }
+	 </a>
+    </td>
+    <td class="center">
+        {#if $T.CmnBoardList.WriteUserID > 0}
+        <a href="#" onclick="AccountInfo('{ $T.CmnBoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.CmnBoardList.WriteUserName }</a>             
+        {#else}
+        { $T.CmnBoardList.WriteUserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.CmnBoardList.WriteDate }</td>        
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

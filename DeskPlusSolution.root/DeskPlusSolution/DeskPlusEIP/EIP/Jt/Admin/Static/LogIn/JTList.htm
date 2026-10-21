@@ -1,0 +1,41 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        접속통계 리스트
+    </caption>
+    <colgroup>
+        <col width="*" />
+        <col width="100px" />
+        <col width="120px" />
+        <col width="150px" />
+        <col width="160px" />
+        <col width="160px" />
+    </colgroup>
+    <tr>
+        <th id="r_dept"></th>
+        <th id="r_title"></th>
+        <th id="r_name"></th>
+        <th id="r_ip"></th>
+        <th id="r_startDate"></th>
+        <th id="r_endDate"></th>
+    </tr>
+    {#foreach $T as LogInList}
+    <tr>
+        <td class="center">{ $T.LogInList.DeptName }</td>
+        <td class="center">{ $T.LogInList.TitleName }</td>
+        <td class="center">
+            {#if $T.LogInList.UserID > 0}
+                <a onclick="AccountInfo('{ $T.LogInList.UserID }');return false;" style="cursor:pointer">{ $T.LogInList.UserName }</a>             
+            {#else}
+            { $T.LogInList.UserName }
+            {#/if}
+        </td>
+        <td class="center">{ $T.LogInList.IPAddress }</td>
+        <td class="center">{ $T.LogInList.StartTimeStr }</td>        
+        <td class="center">{ $T.LogInList.EndTimeStr }</td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="6" class="center"><span class="NoListData" /></td>        
+     </tr>
+    {#/for}  
+ </table>

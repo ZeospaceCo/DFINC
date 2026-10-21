@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+	<Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=Community"  Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="AlarmBoardURL" Value="{0}{1}/DeskPlusEIP/Community/Site/Apps/Board/ViewPopup.aspx"  Content=" 게시판 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+	<Item ID="AlarmScheduleURL" Value="{0}{1}/DeskPlusEIP/Community/Site/Apps/Schedule/ViewPopup.aspx"  Content=" 일정관리 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+	<Item ID="BoardNewShowDay" Value="0" Content="new 이미지 보이기 (당일 : 0)" />
+	<Item ID="ScheduleAlartType" Value="Messenger,Mail" Content="Messenger,Mail,SMS" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

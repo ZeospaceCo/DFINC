@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Board.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <h1>폴더추가</h1>
+            <ul class="btn_right">
+                <li><a href="#" id="CbtnOpenFolder" title=""><span>상위 폴더 변경</span></a></li>
+                <li><a href="#" id="CbtnMove" title=""><span>하위폴더순서</span></a></li>
+                <li class="btn_blue"><a href="#" id="CbtnMod" title=""><span>확인</span></a></li>
+            </ul>
+            <ul class="tab">
+                <li><a href="javascript:Mod.SetTab('1');" class="tab_on" id="tabDivInfo"><p>등록정보</p></a></li>
+                <li><a href="javascript:Mod.SetTab('2');" id="tabDivAuth"><p>권한설정</p></a></li>
+            </ul>
+        </div>  
+
+        <div id="layout_content">
+
+            <div id="divInfo">
+                <!-- 등록정보 start-->    
+                <table class="table_typeB"> 
+                <tr> 
+                    <th>폴더명&nbsp;<a id="MultiName"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th> 
+                    <td>
+                        <input name="ctbTitle" type="text" value="블로그" maxlength="100" id="ctbTitle" Required="True" class="text required" style="width:100px !important;" />
+                        <input name="ctbMultiLang" type="text" value=",,,,," maxlength="100" id="ctbMultiLang" Required="True" class="text required" style="width:200px !important;" />
+                    </td>
+                </tr> 
+                <tr> 
+                    <th>전체경로</th> 
+                    <td>게시판_1/블로그</td>
+                </tr> 
+                <tr> 
+                    <th class="last-child">폴더설명</th> 
+                    <td class="last-child"><input name="cbtnExplan" type="text" value="행사용입니다.1" id="cbtnExplan" Required="False" class="text" style="width:95% !important;" /></td> 
+                </tr>
+                </table> 
+                <!-- 등록정보 end-->
+                <!-- 옵션 start-->
+                <div class="layout_subbox">
+                    <h2>옵션</h2>
+                </div>
+                <ul>
+                    <li><input id="cbShowImage" type="checkbox" name="cbShowImage" checked="checked" />첨부된 이미지를 본문에 보여줍니다.</li>
+                    <li><input id="cbUseReply" type="checkbox" name="cbUseReply" checked="checked" />답글을 사용합니다.</li>
+                    <li><input id="cbUseShortReply" type="checkbox" name="cbUseShortReply" checked="checked" />짧은 답글을 사용합니다.</li>
+                    <li><input id="cbShowViewer" type="checkbox" name="cbShowViewer" checked="checked" />조회자를 체크합니다.</li>
+                    <li><input id="cbUseDept" type="checkbox" name="cbUseDept" />부서별 게시판 사용 (부서별로 만드신 후에는 일반 분류로 변환 할 수 없으며 하위도 부서별로 자동 적용됩니다.)</li>
+                    <li><input id="cbVote" type="checkbox" name="cbVote" checked="checked" />평가 기능을 사용합니다.</li>
+                    <li><input id="cbAnonymity" type="checkbox" name="cbAnonymity" />익명을 사용합니다.</li>
+                    <li><input id="cbUseView" type="checkbox" name="cbUseView" />하위게시판들의 게시물 보이기로 사용합니다</li>
+                    <li>
+                        <input id="cbListType" type="checkbox" name="cbListType" checked="checked" />게시판 리스트 형식
+                        <select name="ddlListType" id="ddlListType">
+	                        <option value="0">전체</option>
+	                        <option value="1">리스트형</option>
+	                        <option selected="selected" value="2">블로그형</option>
+	                        <option value="3">앨범형</option>
+
+                        </select> (선택하지 않을 경우 List 형)
+                    </li>
+                    <li>
+                        <input id="cbTemplateID" type="checkbox" name="cbTemplateID" />템플릿을 사용하여 글을 작성합니다.
+                        <select name="ddlTemplate" id="ddlTemplate">
+	                        <option value="0">-------</option>
+	                        <option value="1">템플릿양식1</option>
+	                        <option value="2">템플릿양식2</option>
+
+                        </select>
+                    </li>
+                    <li>
+                        <input id="cbAlarm" type="checkbox" name="cbAlarm" checked="checked" />알람을 사용합니다.
+                        <select name="ddlAlarm" id="ddlAlarm">
+	                        <option selected="selected" value="1">ALARM</option>
+	                        <option value="2">SMS</option>
+
+                        </select>
+                    </li>
+                    <li><input id="cbMobile" type="checkbox" name="cbMobile" />모바일에 보이도록 합니다.</li>
+                    <li><input id="cbSubApply" type="checkbox" name="cbSubApply" />모든 하위분류에 적용합니다.</li>
+                    <li>
+                        <div class="boa_region">
+                            <div>
+                                <input type="checkbox" name="cbSubApply" />말머리기능 : &nbsp;
+                            </div>
+                            
+                            <div>
+                                <input type="text" />
+                                <img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" style="vertical-align:middle" />
+                                &nbsp;
+                            </div>
+                            <div class="line">
+                                <ul>
+                                    <li>
+                                        <input type="text" value="말머리1 말머리1" style="width:240px;" />
+                                        <span class="right">
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_confirm.gif" alt="저장" />
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        말머리1 말머리1
+                                        <span class="right">
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif" alt="다국어"/>
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정"/>
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제"/>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        말머리1 말머리1
+                                        <span class="right">
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif" alt="다국어"/>
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_edit.gif" alt="수정"/>
+                                            <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제"/>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <!-- 옵션 end -->    
+            </div>
+
+        </div>    
+    
+    </div>
+</div>
+
+</body>
+</html>

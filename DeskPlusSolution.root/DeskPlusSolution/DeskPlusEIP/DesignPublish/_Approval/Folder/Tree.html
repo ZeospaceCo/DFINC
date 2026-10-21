@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        //$("#accordion").height("100%")
+        $(".accordion").accordion({
+            fillSpace: true
+        });
+        $(".accordion").accordion({
+            animated: 'slide'
+        });
+    });
+    $(function () {
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+
+        //alert($(".accordion").height());
+    });
+
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+
+</head>
+<body>
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">문서함</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            <div class="menu"><a href="#" onclick="" >부서별 문서함</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('List.html')">트리(문서별분류/발신/수신/수신완료)</a></h2><br /><br /><br /></li>
+                    <li>****** 추가서브Page ******</li>
+                    <li><h2><a onclick="javascript:redirect('대상지정(Popup).html')">대상지정-전달/회람/이관(Popup)</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('메일발송(Popup).html')">메일발송</a></h2></li>
+                    <li><h2><a onclick="javascript:redirect('게시(Popup).html')">게시(Popup)</a></h2></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >결재문서함</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('List.html')">트리(상신문서/결재문서/전결문서)-양식별</a></h2></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >참조문서함</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><h2><a onclick="javascript:redirect('List.html')">트리(참조/전달/받은회람/보낸회람)</a></h2></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a onclick="javascript:redirect('List.html')">중요표시</a></div>
+
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+    <!-- 버튼//-->
+    <div id="layout_treebutton">
+        <ul class="btn_small">
+            <li class="btn_small_red"><a href="#"><span>삭제</span></a></li>
+            <li><a href="#"><span>수정</span></a></li>
+            <li class="btn_small_blue"><a href="#"><span>추가</span></a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

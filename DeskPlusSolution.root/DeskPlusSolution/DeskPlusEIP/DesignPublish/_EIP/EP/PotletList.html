@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_EIP.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>포틀릿관리</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="#"><span>활성/비활성화</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="PotletAddTab.html"><span>새탭포틀릿 추가</span></a></li>
+                <li class="btn_blue"><a href="PotletAdd.html"><span>새포틀릿 추가</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul class="btn_searchbox">
+                <li>
+                    <select class="searchselect">
+	                    <option value="">포틀릿명</option>
+	                    <option value="">등록자</option>
+	                    <option value="">...</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 테이블 시작 //-->
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>
+                포틀릿정보 리스트
+            </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>그룹명</th>
+                    <th>포틀릿명</th>
+                    <th>설명</th>
+                    <th>등록자</th>
+                    <th>사용건수</th>
+                    <th>활성화</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>공용/컨텐츠</td>
+                    <td>내용_DP40_사원검색</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>공용/카운터</td>
+                    <td>내용_DP40_사원검색</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

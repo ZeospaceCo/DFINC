@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML>
+    [掲示板お知らせ]
+    &lt;br&gt;&lt;br&gt;
+    - タイトル : $SUBJECT$
+    &lt;br&gt;
+    - 時間:$TIME$
+    &lt;br&gt;&lt;br&gt;
+    "機能の呼び出し：ここをクリックすると、関連画面に移動します。"
+  </ContentHTML>
+</ContentInfo>

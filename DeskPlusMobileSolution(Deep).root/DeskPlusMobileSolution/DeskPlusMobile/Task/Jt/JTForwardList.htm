@@ -1,0 +1,35 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:List.viewList('{ $T.List.ListID }','{ $T.List.GroupID }','{ $T.List.ForwardID }')">
+       <a>
+          {#if $T.List.Status == '1'}     <div class="w_ready">●</div> 
+          {#elseif $T.List.Status == '3'} <div class="w_ing">●</div>
+          {#elseif $T.List.Status == '4'} <div class="w_end">●</div>
+          {#elseif $T.List.Status == '6'} <div class="w_delay">●</div>{#/if}       
+
+            <div class="conBox">
+            {#if $T.List.Viewing == 'N'} <span class="LNoready">{#else}<span class="Lready">{#/if}{ $T.List.Title } {#if $T.List.ReplyCnt > 0} [{$T.List.ReplyCnt }] {#/if}{$T.List.ShowNew}</span> <br />
+
+            <span class="sch_user">
+            { $T.List.NameBase } { $T.List.TitleBase } {#if $T.List.TOCnt > 1}+{#/if} {#if $T.List.ExcessDay != ''}&nbsp;&nbsp; [D-Day :{ $T.List.ExcessDay }]{#/if}
+            { $T.List.RequestDate } ～ { $T.List.EndDate }<br />
+            
+            
+             { $T.List.IsGubunStr }&nbsp;&nbsp;
+             {#if $T.List.Status == '1'}     <span class="bg-ready text-white">
+             {#elseif $T.List.Status == '3'} <span class="bg-ing text-white">
+             {#elseif $T.List.Status == '4'} <span class="bg-end text-white">
+             {#elseif $T.List.Status == '6'} <span class="bg-delay text-white">{#/if}&nbsp;{$T.List.StatusStr}&nbsp;</span>
+            </span>
+            <br />
+            </div>
+        </a>
+    </div>
+</li>
+{#else} 
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

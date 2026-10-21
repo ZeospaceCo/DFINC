@@ -1,0 +1,25 @@
+﻿<table class="table_typeA"> 
+<caption>
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col  />    
+    <col  />
+</colgroup>
+<tr>
+    <th id="r_checked"><input id="cbxAll" type="checkbox" onclick="AddressBook.Checked()" /></th>
+    <th class="center" id="r_userName"></th>
+    <th class="center" id="r_faxName"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.OwnerID }" /></td>
+    <td class="center"id="name_{ $T.List.OwnerID }">{ $T.List.Name }</td>
+    <td class="center" id="fax_{ $T.List.OwnerID }">{ $T.List.Fax }</td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

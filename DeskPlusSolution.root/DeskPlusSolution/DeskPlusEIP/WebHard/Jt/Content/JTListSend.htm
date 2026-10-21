@@ -1,0 +1,57 @@
+﻿<table class="table_typeA"> 
+<caption>
+    웹하드 리스트
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="40px" />
+    <col  />
+    <col width="60px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="100px" />
+    <col width="120px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_checked"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+    <th class="center" id="r_point"></th>
+    <th class="center"><a id="a_FileName" href="#" onclick="javascript:List.Sort ('FileName')" ><span id="r_fileName"></span></a></th>
+    <th class="center" id="r_download" class="center"></th>                            
+    <th class="center"><a id="a_FileLength" href="#" onclick="javascript:List.Sort ('FileLength')"><span id="r_fileLength"></span></a></th>
+    <th class="center"><a id="a_FileType" href="#" onclick="javascript:List.Sort ('FileType')"><span id="r_fileType"></span></a></th>
+    <th class="center"><a id="a_WriteDate" href="#" onclick="javascript:List.Sort ('WriteDate')"><span id="r_writeDate"></span></a></th>
+    <th class="center" id="r_sendUser" class="center" ></th> 
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" value="{ $T.List.FileID }" /></td>
+    <td>
+        <p class="fav">
+            <input type="checkbox" id="chkImpo_{$T.List.FileID}" 
+            {#if $T.List.ImpoCnt == 1}checked="checked"{#/if}
+            onclick="List.ModImpUser('chkImpo_{$T.List.FileID}', this)" />
+
+	        <label for="chkImpo_{$T.List.FileID}" title="" 
+            id="lbImpo_{$T.List.FileID}" class="{#if $T.List.ImpoCnt == 1}on{#/if}">
+                <span class="blind"></span>
+            </label>
+        </p>
+    </td>
+    {#if $T.List.DownCheck == 'Y'}
+        <td><span action="attach" style="cursor:pointer" FilePath='{ $T.List.DownPath }'>{$T.List.FileName }</span></td>
+        <td class="center"><i class="fas fa-arrow-alt-circle-down" id="{ $T.List.FileID }" action="attach" style="cursor:pointer" FilePath='{ $T.List.DownPath }'></i></td>
+    {#else}
+        <td>{$T.List.FileName }</td>
+        <td class="center">&nbsp;</td>
+    {#/if}
+    <td class="center">{$T.List.FileLength }</td>
+    <td class="center">{$T.List.FileType }</td>
+    <td class="center">{$T.List.WriteDate }</td>
+    <td class="center"><a onclick="AccountInfo('{ $T.List.SendUserID }');return false;"><span class="name">{ $T.List.SendName }</span></a></td>  
+</tr>
+{#else}
+ <tr>
+    <td colspan="8" class="center"><span id="NoListData" /></td>       
+ </tr>
+{#/for}    
+</table>

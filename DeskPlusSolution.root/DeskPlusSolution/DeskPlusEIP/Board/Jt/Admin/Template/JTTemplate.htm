@@ -1,0 +1,30 @@
+﻿<table class="table_typeA"> 
+<caption>
+    템플릿관리
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col  />
+    <col width="100px" />
+</colgroup>
+<thead>
+<tr>
+    <th id="r_no">번호</th>            
+    <th><a id="a_Title" onclick="javascript:List.Sort ('Title')"><span id="r_title"></span></a></th>            
+    <th><a id="a_WriteDate" onclick="javascript:List.Sort ('WriteDate')"><span id="r_date"></span></a></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ROW }</td>            
+    <td><a href="#" onclick="javascript:List.Modify('{ $T.BoardList.TemplateID }')">{ $T.BoardList.Title }</a></td>                        
+    <td class="center">{ $T.BoardList.WriteDateStr }</td>        
+</tr>
+{#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for}        
+</tbody>
+ </table>

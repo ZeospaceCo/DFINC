@@ -1,0 +1,15 @@
+
+1. 구현한 웹서비스를 실행한 다음에, 상단 제목 중 " 서비스 설명" 을 선택하면 wsdl 소스가 나오며, 이를 소스보기를 통해서 복사한 다음에
+   아래와 같이 code.wsdl 이런 식으로 파일을 생성합니다. 
+
+2. 생성한 wsdl을 vs  command 를 통해서 아래와 같이 .cs 파일을 생성합니다.
+3. 생성된 .cs 파일을 어플리케이션에 파일을 두고, 해당 클래스의 인스턴스에 접근을 할 수 있습니다.
+
+wsdl /out:SetCodeInfo_SyncService.cs d:\code.wsdl
+wsdl /out:SetDeptInfo_SyncService.cs d:\dept.wsdl
+wsdl /out:SetUserInfo_SyncService.cs d:\user.wsdl
+
+
+SetCodeInfo_SyncService.cs
+SetDeptInfo_SyncService.cs
+SetUserInfo_SyncService.cs

@@ -1,0 +1,32 @@
+﻿<table class="table_typeT"> 
+    <caption>
+        ipAccessControl
+    </caption>
+    <colgroup>    
+        <col width="150px" />
+        <col />
+        <col width="80px" />
+    </colgroup>
+    <tr>
+        <th class="center" id="r_ipaccess"></th>
+        <th class="center" id="r_ip"></th>        
+        <th class="center" id="r_delIP"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.IPAccess }</td>
+        <td class="center">
+            { $T.List.StartIP1 }.{ $T.List.StartIP2 }.{ $T.List.StartIP3 }.{ $T.List.StartIP4 } ~ { $T.List.EndIP1 }.{ $T.List.EndIP2 }.{ $T.List.EndIP3 }.{ $T.List.EndIP4 }
+        </td>
+        <td class="center">
+            <a onclick="Mod.DelMenuIP('{ $T.List.MenuIPID }')" style="display:inline-block;" class="btn"><span class="btn_del"></span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="center" colspan="3">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}       
+</table>

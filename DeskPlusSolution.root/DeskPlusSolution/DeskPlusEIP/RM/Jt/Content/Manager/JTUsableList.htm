@@ -1,0 +1,49 @@
+﻿<table class="table_typeA">
+<caption>자원 리스트</caption>
+<colgroup>    
+    <col width="30px" />
+    <col width="250px" />    
+    <col width="240px" />
+    <col width="200px"/>
+    <col width="40px" />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>     
+        <th id="r_checked" class="center"><input id="cbxAll" type="checkbox" onclick="AdminList.Checked()" /></th>   
+        <th class="center"><span id="r_resourcesTitle"></span></th>        
+        <th class="center"><span id="r_reserveDate"></span></th>
+        <th class="center"><span id="r_subject"></span></th>
+        <th><span id="r_attach"></span></th>   
+        <th class="center"><span id="r_subscriber"></span></th>
+        <th class="center"><span id="r_modifyDay"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ReservationID }" value="{ $T.List.ReservationID }" /></td>
+        <td class="center">{ $T.List.Title }</td>                
+        <td>{ $T.List.ReserveDate }</td>
+        <td class="left">
+            <a href="#" onclick="javascript:AdminList.View('{ $T.List.ReservationID }')" style="cursor:pointer" >{ $T.List.Subject }</a>
+            {#if $T.List.ReplyCount > 0}
+            <span class="icon_Comment_view">({ $T.List.ReplyCount })</span>         
+            {#/if}
+        </td>
+        <td class="center">
+        {#if $T.List.FileCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.List.ParentReservationID }'></i>
+        {#/if}
+        </td>  
+        <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a></td>
+        <td class="center">{ $T.List.ModifyDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

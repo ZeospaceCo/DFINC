@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="100Unit" xml:space="preserve">
+    <value>100个</value>
+  </data>
+  <data name="10Unit" xml:space="preserve">
+    <value>10个</value>
+  </data>
+  <data name="50Unit" xml:space="preserve">
+    <value>50个</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>添加文件夹</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>要添加的</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>添加模块</value>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>添加模板</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>请输入正文</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>请输入标题。</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>请输入内容</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>请设置的通知期间。</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>处理后发生了错误后。请与管理员联系。</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="AlreadySettingAuthority" xml:space="preserve">
+    <value>权限里已被追加为全社权限。</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>匿名</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>适用</value>
+  </data>
+  <data name="ApplyAllSubordination" xml:space="preserve">
+    <value>适用于全部下级分类。</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="ApplyFolderAllAuthority" xml:space="preserve">
+    <value>全部反映该文件夹的权限吗？</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请输入注册的日期。</value>
+  </data>
+  <data name="ApplySameAuthSubordinatioFolder" xml:space="preserve">
+    <value>适用下级文件夹相同权限</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>附件文件</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="AuthSetting" xml:space="preserve">
+    <value>设置权限</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>公告栏</value>
+  </data>
+  <data name="BoardListFormat" xml:space="preserve">
+    <value>公告栏列表形式</value>
+  </data>
+  <data name="BoardManagement" xml:space="preserve">
+    <value>公告栏管理</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>粗</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="CategoryOrder" xml:space="preserve">
+    <value>下级文件夹顺序</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>目录顺序已变更</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>上位文件夹变更</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>请选择要删除的列表。</value>
+  </data>
+  <data name="CheckHits" xml:space="preserve">
+    <value>确认查阅人。</value>
+  </data>
+  <data name="CheckMoveFavoriteFolder" xml:space="preserve">
+    <value>请选择要移动的收藏文件夹。</value>
+  </data>
+  <data name="CheckMoveList" xml:space="preserve">
+    <value>请选择要移动的列表。</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="CompleteFolder" xml:space="preserve">
+    <value>文件夹已被添加。</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>已被移动到选定的文件夹中。</value>
+  </data>
+  <data name="CompleteModifyFolder" xml:space="preserve">
+    <value>文件夹修改已处理。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>将要丢失以前创建的内容。要选择吗？</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="ContentsManagement" xml:space="preserve">
+    <value>文章管理</value>
+  </data>
+  <data name="CreateMenu" xml:space="preserve">
+    <value>菜单生成</value>
+  </data>
+  <data name="CreateScreenShot" xml:space="preserve">
+    <value>将发布的第一个留言做成截图。</value>
+  </data>
+  <data name="DefaultList" xml:space="preserve">
+    <value>（如果不选择 列表型）</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>确定要删除实际文件吗？</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>确定要删除该文件夹吗?</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="Description1" xml:space="preserve">
+    <value>该文件夹里有公告栏列表（</value>
+  </data>
+  <data name="Description2" xml:space="preserve">
+    <value>个），不能删除。</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>正文里含有脚本管理怀疑文句，内容可能被改变。</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>下级</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>获取附件信息时发生了错误。</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>处理时，发生了错误。</value>
+  </data>
+  <data name="FavoriteFolder" xml:space="preserve">
+    <value>收藏夹</value>
+  </data>
+  <data name="FavoriteFolderAdd" xml:space="preserve">
+    <value>添加到收藏夹</value>
+  </data>
+  <data name="FavoriteFolderMod" xml:space="preserve">
+    <value>修改收藏夹</value>
+  </data>
+  <data name="FavoriteFolderMove" xml:space="preserve">
+    <value>收藏夹移动</value>
+  </data>
+  <data name="FavoriteFolderName" xml:space="preserve">
+    <value>收藏夹名</value>
+  </data>
+  <data name="FavoriteMultiFolderName" xml:space="preserve">
+    <value>收藏夹名（多国语）</value>
+  </data>
+  <data name="FavoriteOrder" xml:space="preserve">
+    <value>下级顺序变更</value>
+  </data>
+  <data name="FavoriteParentFolderName" xml:space="preserve">
+    <value>上级收藏夹名</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="FolderDescription" xml:space="preserve">
+    <value>文件夹说明</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>下级文件夹顺序</value>
+  </data>
+  <data name="FolderManagement" xml:space="preserve">
+    <value>文件夹管理</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>文件夹移动</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>请输入文件夹名称。</value>
+  </data>
+  <data name="FolderTitle" xml:space="preserve">
+    <value>文件夹名</value>
+  </data>
+  <data name="FolerMoveSameFolder" xml:space="preserve">
+    <value>要移动的文件夹相同，请选择其他文件夹。</value>
+  </data>
+  <data name="ForderPath" xml:space="preserve">
+    <value>文件夹位置</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>完整路径</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到查看页面</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>转到列表。</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>页头</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>重要标识</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>要从重要表示列表里解除吗？</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>基本列表数</value>
+  </data>
+  <data name="ListMove" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="ListType1" xml:space="preserve">
+    <value>列表型</value>
+  </data>
+  <data name="ListType2" xml:space="preserve">
+    <value>博客型</value>
+  </data>
+  <data name="ListType3" xml:space="preserve">
+    <value>相册型</value>
+  </data>
+  <data name="List_ConsultGubun" xml:space="preserve">
+    <value>洽谈领域</value>
+  </data>
+  <data name="List_Group" xml:space="preserve">
+    <value>现在分类</value>
+  </data>
+  <data name="List_Move" xml:space="preserve">
+    <value>发表文章</value>
+  </data>
+  <data name="List_Register" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="List_ReplyNo" xml:space="preserve">
+    <value>回答与否（不）</value>
+  </data>
+  <data name="List_ReplyYes" xml:space="preserve">
+    <value>回答与否（是）</value>
+  </data>
+  <data name="List_SubGroup" xml:space="preserve">
+    <value>包括下级分类</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>别人可以修改</value>
+  </data>
+  <data name="ModifyFolder" xml:space="preserve">
+    <value>修改文件夹</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>修改帖子</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="MoveCategory" xml:space="preserve">
+    <value>请选择要移动的文件夹。</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附件不存在。</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>没有权限</value>
+  </data>
+  <data name="NoAuthMenu" xml:space="preserve">
+    <value>没有可访问的门户菜单。</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>没有权限。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容。</value>
+  </data>
+  <data name="DeletedPost" xml:space="preserve">
+    <value>该帖子已被删除。</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>内容不存在。</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>该文件不存在。</value>
+  </data>
+  <data name="NoReplyData" xml:space="preserve">
+    <value>没有帖子。</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>列表不存在。</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NoticeCheck" xml:space="preserve">
+    <value>查阅公告栏</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>不是图片格式。</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>没有题目</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时发送了错误。请与管理员联系。</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>公用文件夹</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>排位</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>评价</value>
+  </data>
+  <data name="Rate_lblAverageRatingMessage" xml:space="preserve">
+    <value>评估比率</value>
+  </data>
+  <data name="Rate_lblCommentMessage" xml:space="preserve">
+    <value>请说明评估的原因（可选）</value>
+  </data>
+  <data name="Rate_lblTopMessage" xml:space="preserve">
+    <value>请对内容的评价进行投票。</value>
+  </data>
+  <data name="Rate_lblVoteCastMessage" xml:space="preserve">
+    <value>谢谢评价。</value>
+  </data>
+  <data name="Rate_Outstanding" xml:space="preserve">
+    <value>优秀</value>
+  </data>
+  <data name="Rate_Poor" xml:space="preserve">
+    <value>不足</value>
+  </data>
+  <data name="Rate_SelectVote" xml:space="preserve">
+    <value>请选择评价。</value>
+  </data>
+  <data name="Rate_Success" xml:space="preserve">
+    <value>已完成评价申请。</value>
+  </data>
+  <data name="Rate_Title" xml:space="preserve">
+    <value>评价</value>
+  </data>
+  <data name="Rate_VotedPeople" xml:space="preserve">
+    <value>人进行了评价。</value>
+  </data>
+  <data name="RatingComment" xml:space="preserve">
+    <value>评估事由</value>
+  </data>
+  <data name="RatingList" xml:space="preserve">
+    <value>评价详细内容</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>查阅</value>
+  </data>
+  <data name="ReadReply" xml:space="preserve">
+    <value>查阅+留言</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>接收人</value>
+  </data>
+  <data name="RecordCntPerPage" xml:space="preserve">
+    <value>每页记录数：</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登记日</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登记人</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>登记公告事项</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="SaveTemp" xml:space="preserve">
+    <value>临时保存</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>截图</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchYear" xml:space="preserve">
+    <value>年度搜索</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>请选择要解除的文章。</value>
+  </data>
+  <data name="SelectFavoriteFolder" xml:space="preserve">
+    <value>请选择收藏夹文件夹。</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>请选择文件夹。</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>选择页头</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>发送邮件</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>请设置权限。</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>环境设置</value>
+  </data>
+  <data name="SettingSameAuth" xml:space="preserve">
+    <value>批量设置权限</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="ShowAttachedImage" xml:space="preserve">
+    <value>附加的图片显示在正文里。</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>查看图像</value>
+  </data>
+  <data name="ShowMobile" xml:space="preserve">
+    <value>显示在手机上。</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期必须小于终止日期。</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>统计</value>
+  </data>
+  <data name="StatYearMonth" xml:space="preserve">
+    <value>按年月现况</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>请输入模板的名称。</value>
+  </data>
+  <data name="TempManage" xml:space="preserve">
+    <value>模板管理</value>
+  </data>
+  <data name="TempSaveAlert" xml:space="preserve">
+    <value>临时保存只保存区分里的字体色，大小，粗细，他人修改，附件。要保存吗？</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>文档标题</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>至</value>
+  </data>
+  <data name="TotalRecord" xml:space="preserve">
+    <value>总记录数：</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>上级</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>上传容量限制</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>使用ActiveX</value>
+  </data>
+  <data name="UseAlarm" xml:space="preserve">
+    <value>使用提醒。</value>
+  </data>
+  <data name="UseAnonymity" xml:space="preserve">
+    <value>使用匿名。</value>
+  </data>
+  <data name="UseDeptBoard" xml:space="preserve">
+    <value>使用部门公告栏（按部门创建后不能转化为一般分类，下级也将按部门自动适用）</value>
+  </data>
+  <data name="UseEvaluation" xml:space="preserve">
+    <value>用于评价功能。</value>
+  </data>
+  <data name="UseReply" xml:space="preserve">
+    <value>使用回复文。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用戶名</value>
+  </data>
+  <data name="UseShortRelpy" xml:space="preserve">
+    <value>使用帖子。</value>
+  </data>
+  <data name="UseSubordinationBoardNotice" xml:space="preserve">
+    <value>使用于查看下级公告栏文章。</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>查阅</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>查阅数</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>查阅日</value>
+  </data>
+  <data name="ViewUserRatingList" xml:space="preserve">
+    <value>给用户查看评价详细内容</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>添加帖子</value>
+  </data>
+  <data name="View_Info" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>查阅现况</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>登记信息</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>一周</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>全公司</value>
+  </data>
+  <data name="WholeSettingAuth" xml:space="preserve">
+    <value>全公司权限添加</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>写</value>
+  </data>
+  <data name="WriteCnt" xml:space="preserve">
+    <value>登记数</value>
+  </data>
+  <data name="WriteContent" xml:space="preserve">
+    <value>公告文登记</value>
+  </data>
+  <data name="WriteContents" xml:space="preserve">
+    <value>创建公告文</value>
+  </data>
+  <data name="WriteFavoriteName" xml:space="preserve">
+    <value>请输入收藏夹名。</value>
+  </data>
+  <data name="WriteReply" xml:space="preserve">
+    <value>写+写帖子</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>写帖子</value>
+  </data>
+  <data name="WriteText" xml:space="preserve">
+    <value>写文章</value>
+  </data>
+  <data name="WriteUseTemplate" xml:space="preserve">
+    <value>使用模版写文章。</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>请选择主题。</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>发送电子邮件</value>
+  </data>
+  <data name="SendMailTitle" xml:space="preserve">
+    <value>邮件标题</value>
+  </data>
+  <data name="SpammerList" xml:space="preserve">
+    <value>垃圾邮件发送者名单</value>
+  </data>
+  <data name="NoMove" xml:space="preserve">
+    <value>你不能去同一个文件夹中。</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>设置弹出的通知</value>
+  </data>
+  <data name="BeforeContent" xml:space="preserve">
+    <value>原创内容</value>
+  </data>
+  <data name="WholeBoardManager" xml:space="preserve">
+    <value>所有公司董事会</value>
+  </data>
+  <data name="WholeBoardListManager" xml:space="preserve">
+    <value>所有的公司董事会名单管理</value>
+  </data>
+  <data name="NoAddOtherCompany" xml:space="preserve">
+    <value>你不能添加用户和其他公司的部门。</value>
+  </data>
+  <data name="AddOnlyReadAuth" xml:space="preserve">
+    <value>[只读公告板]，您可以添加只读访问。</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>而生成的PDF文件时出错。请与管理员联系.</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[批量PDF下载扩展] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>下载PDF</value>
+  </data>
+  <data name="UseMainPopup" xml:space="preserve">
+    <value>使用主弹出</value>
+  </data>
+  <data name="UsePopup" xml:space="preserve">
+    <value>使用弹出</value>
+  </data>
+  <data name="UsingMainPopup" xml:space="preserve">
+    <value>主弹出已在使用中.</value>
+  </data>
+  <data name="WritePopupSize" xml:space="preserve">
+    <value>请进入主弹出尺寸.</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>它提供了在一个列表的形式。</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>它提供了只剩下代表机构的形象和简要细节上的博客形式。</value>
+  </data>
+  <data name="TooltiplistType3" xml:space="preserve">
+    <value>为了提供标题在画廊的形式形象代表。</value>
+  </data>
+  <data name="CategorySelect" xml:space="preserve">
+    <value>选择类别</value>
+  </data>
+  <data name="CategorySelectGuide" xml:space="preserve">
+    <value>※在填写主要内容之前，请务必先选择类别！</value>
+  </data>
+  <data name="CategorySelectCheck" xml:space="preserve">
+    <value>选择类别</value>
+  </data>
+  <data name="BoardStatus" xml:space="preserve">
+    <value>公告板状态</value>
+  </data>
+  <data name="MyTotalBoardStatus" xml:space="preserve">
+    <value>我的帖子状态</value>
+  </data>
+  <data name="YearMaxWriter" xml:space="preserve">
+    <value>今年的主要贡献者</value>
+  </data>
+  <data name="YearNoMaxWriter" xml:space="preserve">
+    <value>今年没有作者。</value>
+  </data>
+  <data name="RecentWrite" xml:space="preserve">
+    <value>最新帖子</value>
+  </data>
+  <data name="MaxShort" xml:space="preserve">
+    <value>評論最多</value>
+  </data>
+  <data name="MaxRead" xml:space="preserve">
+    <value>最受欢迎的</value>
+  </data>
+  <data name="MaxRate" xml:space="preserve">
+    <value>优秀的评价</value>
+  </data>
+  <data name="YearMaxShort" xml:space="preserve">
+    <value>今年大多数评论者</value>
+  </data>
+  <data name="MyWrite" xml:space="preserve">
+    <value>注册帖子</value>
+  </data>
+  <data name="MyListByShort" xml:space="preserve">
+    <value>回複評論</value>
+  </data>
+  <data name="MyShort" xml:space="preserve">
+    <value>注册评论</value>
+  </data>
+  <data name="MyImpo" xml:space="preserve">
+    <value>显示重要</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="MyYearActivity" xml:space="preserve">
+    <value>我的年活动</value>
+  </data>
+  <data name="CountNumber" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="TotalStatus" xml:space="preserve">
+    <value>总状态</value>
+  </data>
+  <data name="CommentsAttachedList" xml:space="preserve">
+    <value>帖子有评论</value>
+  </data>
+  <data name="CategoryConfirm" xml:space="preserve">
+    <value>选择类别时，文本内容将消失。 你想继续吗？</value>
+  </data>
+  <data name="PublishingWriting" xml:space="preserve">
+    <value>写作后</value>
+  </data>
+  <data name="TotalBoard" xml:space="preserve">
+    <value>所有帖子</value>
+  </data>
+  <data name="MyBoard" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>这是第一个清单。</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>上一个清单。</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>搜索结果</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>主题：主题，附件名称</value>
+  </data>
+  <data name="AlarmUser" xml:space="preserve">
+    <value>报警者</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>你已经有一个使用部门。</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>组织图</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>请选择您要添加的目的地</value>
+  </data>
+  <data name="TitleAll" xml:space="preserve">
+    <value>称号</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CopyURL" xml:space="preserve">
+    <value>复制地址</value>
+  </data>
+  <data name="CopyURLComplete" xml:space="preserve">
+    <value>地址已复制。</value>
+  </data>
+  <data name="PopupSelect" xml:space="preserve">
+    <value>未选择弹出窗口大小。</value>
+  </data>
+  <data name="AllDeptUser" xml:space="preserve">
+    <value>分配给相应工作人员的所有人员。</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="SearchAttachNames" xml:space="preserve">
+    <value>附加文件</value>
+  </data>
+  <data name="SearchContents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="SearchShortReplyContents" xml:space="preserve">
+    <value>更多评论</value>
+  </data>
+  <data name="SearchShortReplyWriter" xml:space="preserve">
+    <value>评论者</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6个月</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>整体</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>进入期</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="SearchTitleContents" xml:space="preserve">
+    <value>标题+内容</value>
+  </data>
+  <data name="SearchWriter" xml:space="preserve">
+    <value>出版商</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>请输入关键字至少两个字符。</value>
+  </data>
+  <data name="URLAdd" xml:space="preserve">
+    <value>添加附加URL链接</value>
+  </data>
+  <data name="URLAddBtn" xml:space="preserve">
+    <value>添加链接</value>
+  </data>
+  <data name="URLName" xml:space="preserve">
+    <value>URL链接</value>
+  </data>
+  <data name="URLOption" xml:space="preserve">
+    <value>使用附带的URL链接的功能。</value>
+  </data>
+  <data name="URLMsg" xml:space="preserve">
+    <value>请输入链接的URL。</value>
+  </data>
+  <data name="URLNameMsg" xml:space="preserve">
+    <value>请输入一个文件名。</value>
+  </data>
+  <data name="SetDate" xml:space="preserve">
+    <value>設置日期範圍</value>
+  </data>
+  <data name="ReadOnlyBoard" xml:space="preserve">
+    <value>只读板</value>
+  </data>
+  <data name="InterestedPerson" xml:space="preserve">
+    <value>有兴趣的人</value>
+  </data>
+  <data name="InterestedPersonAdd" xml:space="preserve">
+    <value>最喜欢的科目</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="SelectAlarm" xml:space="preserve">
+    <value>在转让权利的情况下，你可以选择报警。</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>没有外部下载</value>
+  </data>
+  <data name="DownLoadArea" xml:space="preserve">
+    <value>本出版物的附件在外部下载之外不可用。</value>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>它已经被评论过了</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>你会解雇吗？</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>此评论已被删除</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>不推荐/弃用您的评论。</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>它建议</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>写下你的评论</value>
+  </data>
+  <data name="ShowTop" xml:space="preserve">
+    <value>在顶部显示建议</value>
+  </data>
+  <data name="UseComments" xml:space="preserve">
+    <value>使用类似或不喜欢的评论</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+</root>

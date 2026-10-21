@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Nodes>
+    <TreeViewNode ID="INSA" Text="人事管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="USER" Text="ユーザー情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DEPT" Text="部門情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="TITLE" Text="職級について"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DUTY" Text="役職情報"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="POTAL" Text="ポータルの管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="SUBSIDIARY" Text="会社情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="AUTH" Text="権限について"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MENU" Text="メニュー情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="PAGE" Text="ページ情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="LAYOUT" Text="レイアウト情報"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="UNIT" Text="ポートレットについて"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="LINKED" Text="連動管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="MAIL" Text="メール"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MASSENGER" Text="メッセンジャー"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+</Nodes>
+ 

@@ -1,0 +1,103 @@
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/* ////////////////////////////////////////////////// */
+/* navi vertical menu  core */
+html {font-size:12px;height:100%;}
+
+.navi{ min-width:960px; position:fixed; z-index:999999999; width:100%; }
+
+.navi.navbarover .navbar{  background:#233345 !important}
+.navi.navbarover .navbar-brand{  background:#1eca3b !important}
+.navi.navbarover.icon .navbar-brand{ background:3d6efc !important}
+
+
+.viewtype{ background:none; color:#fff} .viewtype:hover, .viewtype:focus{ background:none; color:#fff}{}
+.navi.navbarover .viewtype > i:before{content:"\f142" !important ;}
+.navi.navbarover.icon .viewtype > i:before{ content:"\f151" !important; }
+.fa-arrow-right:before{ content:"\f142" !important}
+.navi.icon .dropdown-item.viewtype{ padding:.25rem 1.9rem}
+.navi.navbarover .dropdown-item.viewtype{padding:.25rem 1.9rem}
+.navi.navbarover.icon .dropdown-item.viewtype{padding:.25rem 1.5rem}
+
+
+
+
+
+.navi.icon .navbar-menu .dropdown-content{ width:50px; overflow:hidden;}
+
+.navbar{ padding:.0rem; font-family: '나눔고딕',NanumGothic,'맑은 고딕',Malgun Gothic,'돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;}
+.navbar i{ font-size:1.5em}
+.navbar .navbar-menu{background:#233345;height:50px; width:50px ;position: relative;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;-ms-flex-align: center;align-items: center;-ms-flex-pack: justify;justify-content: space-between;}
+	.navbar-menu > i{margin-left:1.4rem; margin-top:0; margin-bottom:0; color:#fff}
+	.navbar-toggler-icon{} /* same level #menuicon  */
+.dropdown{ outline:0px solid red;}
+.dropdown .dropdown-content{ position:fixed; left:0px; top:50px;z-index:999 ; background:#1eca3b; height:100%; display: none ; background-image:url(../include/img/naviback.gif) ; background-repeat:repeat-y}  /* this */
+.navi.icon .dropdown .dropdown-content{ display:block;}
+.dropdown:hover .dropdown-content {display: block; height:100%;}
+
+
+
+/* sub menu */
+.navbar-menu .dropdown-content { width:220px; padding:0px; }
+.navbar-menu .dropdown-content .dropdown-item{ color:#fff; outline:0px solid red; padding:0px; padding-left:5px; width:60px;  }
+.navbar-menu .dropdown-content li{font-size:16px;color:#fff; font-weight:500; line-height:200%; }
+.navbar-menu .dropdown-content li a{ color:#fff; font-size:0.9em;font-weight:normal; outline:0px solid red;}
+.navbar-menu .dropdown-content li a:hover{ text-decoration:none}
+.navbar-menu .dropdown-content ul{ list-style:none;}
+
+	.navbar-menu .dropdown-content > li{ }
+	.navbar-menu .dropdown-content > li > a{background-color: transparent;}
+	.navbar-menu .dropdown-content > li > a.dropdown-item { position:relative}
+	.navbar-menu .dropdown-content > li > a.dropdown-item i{background:#1eca3b; background:#233345 ; padding:15px 0 15px 0px ; width:45px; margin-right:10px; text-align:center;}
+	.navbar-menu .dropdown-content > li > a.dropdown-item:before{background:#78a1f7; width:5px;padding:15px 0 15px 0px ; height:100%;display:inline-block; position:absolute; left:0px; content:" ";}
+	.navbar-menu .dropdown-content > li.over > a.dropdown-item > i{background:#1eca3b; color:#78e0f7;}
+	.navbar-menu .dropdown-content > li.over > a.dropdown-item:before{background:#78e0f7;  }
+	.navbar-menu .dropdown-content > li > a.dropdown-item:hover > i{background:#1eca3b; color:#78e0f7;}
+	.navbar-menu .dropdown-content > li > a.dropdown-item:hover::before{background:#78e0f7;  }
+
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu{ list-style:none; margin:0px; padding-left:0px; position:absolute; top:3px ; left:50px; top:10px;display:none; outline:0px solid yellow }/* this */
+	.navbar-menu .dropdown-content li.over > ul.dropdown-item-submenu{display:inline-block; }
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li.title{  padding-bottom:10px;}
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li.dis { border-bottom:0px; margin-top:10px; font-size:0.8em; line-height:1.8em;}
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li.dis a{  line-height:1.8em; width:140px; display:block;outline:0px solid red;}
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li{ line-height:2.5em; margin-left:15px; width:155px; border-bottom:1px solid rgba(255,255,255,0.2)}
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li > a{ color:#fff}
+	.navbar-menu .dropdown-content li ul.dropdown-item-submenu li > a:hover{ color:#78e0f7}
+
+
+/* logo */
+.navbar-logo{}
+	.navbar-logo { flex-basis: auto !important; height:50px;}
+	.navbar-logo a img{ max-height:40px;}
+	.navbar-logo .navbar-brand{ padding-left:18px; height:100%; padding-top:12px; width:170px; }
+	.navbar-logo.navbar-logo-symbol-type a.navbar-brand{ padding-top:5px;padding-left:8px;}
+	.navbar-logo.navbar-logo-symbol-type a.navbar-brand img{ margin-right:5px;}
+	.navbar-logo.navbar-logo-symbol-type a.navbar-brand span{ color:#fff; font-size:15px;}
+
+/* util */
+.navbar-alert{outline:0px solid red; padding-right:20px;height:50px;}
+.navbar-alert > form{ margin:0px !important; height:100%;}
+	.navbar-alert .nav{ display:inline-block; border-right:1px solid rgba(255,255,255, 0.3); height:100% ; padding-right:10px; margin-right:20px;}
+	.navbar-alert .nav .nav-item{ margin-top:7px;}
+	.navbar-alert .nav .nav-item > a{ color:#fff; font-size:0.9em;}
+	.navbar-alert button { padding-right:0px; }
+	.navbar-alert button > .badge{ outline:0px solid red; background:#ee1747; color:#fff; border-radius:1em; top:-10px; left:-5px;line-height:1em; padding:2px 4px 3px 4px}
+	.navbar-alert .nav .dropdown-menu{ right:-11px; left:auto; margin-top:8px; border-radius: 0px; border-top:0px;}
+	.navbar-alert .btn-primary, .navbar-alert .btn-primary:hover{ background:rgba(255,255,255,0); border-color:rgba(255,255,255,0)}
+
+.navbar-alert .nav .myimg{ display:inline-block; background:#fff; border-radius:50%; width:35px; height:35px;}
+.navbar-alert .nav .myimg img{  border-radius:50%; width:35px; height:35px;}
+.navbar-alert .nav a#navbarDropdownMenuLink{ display:inline-block}
+
+
+
+.navbar a.nav-link{ font-weight:bold; font-size:1.1em;}
+.navbar i.far{ font-size:1.5em; color:#fff;}
+.navbar form.form-inline{ }

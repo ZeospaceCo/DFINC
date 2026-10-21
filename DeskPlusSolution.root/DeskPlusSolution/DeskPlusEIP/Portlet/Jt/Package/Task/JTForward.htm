@@ -1,0 +1,28 @@
+﻿<ul>
+    {#foreach $T as List}
+        <li>
+        <span class="list-titleW">
+        {#if $T.List.StatusLast == '1'}<font class="badge badge-secondary">대기</font>&nbsp;
+        {#elseif $T.List.StatusLast == '2'}<font class="badge badge-success">진행</font>&nbsp;
+        {#elseif $T.List.StatusLast == '3'}<font class="badge badge-success">진행</font>&nbsp;
+        {#elseif $T.List.StatusLast == '4'}<font class="badge badge-dark">완료</font>&nbsp;
+        {#elseif $T.List.StatusLast == '5'}<font class="badge badge-dark">완료</font>&nbsp;
+        {#elseif $T.List.StatusLast == '6'}<font class="badge badge-info">지연</font>&nbsp;
+        {#/if} 
+		<a onclick="TabTaskMain_Popup('{ $T.List.ListID }','{ $T.List.GroupID }',,'{ $T.List.Viewing }');return false;">{ $T.List.Title }</a>      
+        {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if} 
+        </span>      
+        {#if $T.List.StatusLast == '1'} <span class="list-processW list-process1"></span>
+        {#elseif $T.List.StatusLast == '2'} <span class="list-processW list-process2"></span>          
+        {#elseif $T.List.StatusLast == '3'} <span class="list-processW list-process3"></span>
+        {#elseif $T.List.StatusLast == '4'} <span class="list-processW list-process4"></span>
+        {#elseif $T.List.StatusLast == '5'} <span class="list-processW list-process1"></span>
+        {#elseif $T.List.StatusLast == '6'} <span class="list-processW list-process4"></span>
+        {#/if} 
+        <span class="list-writerW"><a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;">{ $T.List.NameBase }</a></span>
+        <span class="list-dateW">{ $T.List.WriteDate }</span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

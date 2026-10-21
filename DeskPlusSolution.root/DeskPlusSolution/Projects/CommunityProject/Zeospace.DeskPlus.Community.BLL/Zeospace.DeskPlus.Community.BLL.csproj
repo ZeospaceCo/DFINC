@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF783DA8-DE03-41C1-A84A-3864BDAC47E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Community.BLL</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Community.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DeskPlusKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm.cs" />
+    <Compile Include="Boa.cs" />
+    <Compile Include="BoaAttach.cs" />
+    <Compile Include="Com.cs" />
+    <Compile Include="ComApply.cs" />
+    <Compile Include="ComDetail.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="PointConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="ShortReply.cs" />
+    <Compile Include="UserApply.cs" />
+    <Compile Include="UserGroup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeskPlusKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EIPProject\Zeospace.DeskPlus.EIP.DAL\Zeospace.DeskPlus.EIP.DAL.csproj">
+      <Project>{138E6A3E-7DBB-443B-8409-3C55849FF6DF}</Project>
+      <Name>Zeospace.DeskPlus.EIP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Community.BE\Zeospace.DeskPlus.Community.BE.csproj">
+      <Project>{C94FF8F4-BBFC-4315-8013-B0E2C0823ACA}</Project>
+      <Name>Zeospace.DeskPlus.Community.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Community.DAL\Zeospace.DeskPlus.Community.DAL.csproj">
+      <Project>{380CC0B7-FF86-4F54-BCB9-B83FCF62E82A}</Project>
+      <Name>Zeospace.DeskPlus.Community.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

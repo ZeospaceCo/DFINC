@@ -1,0 +1,17 @@
+﻿ <ul>
+    {#foreach $T as List}  
+    {#if $T.List.Row == 1}<li>{ $T.List.Title }</li> {#/if}
+    <li class="reservation-list">
+    <ul>    
+        <li>
+        <a onclick="TabRmMaMain_PopupMyViewList('{ $T.List.ReservationID }');return false;" style="cursor:pointer">
+        { $T.List.StartTime } ~ { $T.List.EndTime }
+        </a>          
+		<a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;">{ $T.List.WriteUserName }</a>
+        </li>
+    </ul>     
+    </li>
+   {#else}    
+   <li><span class="RmMa_NoListData" /></li>      
+   {#/for} 
+</ul>

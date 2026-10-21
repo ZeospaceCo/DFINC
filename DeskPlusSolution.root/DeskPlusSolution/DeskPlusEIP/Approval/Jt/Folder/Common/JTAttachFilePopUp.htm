@@ -1,0 +1,13 @@
+﻿<ul class="table_typeT ul_typeT">
+	<li class="all_choice"><input type="checkbox" class="cbxAllFile" id="cbxAll" onclick="ViewBaseDoc.checkedAllValue()" /> <span id="j_selectall"></span></li>
+    {#foreach $T as FileList}
+    <li>
+        <input type="checkbox" class="cbxFile" id="cbxFile{ $T.FileList.AttachFileID }" value="{ $T.FileList.AttachFileID }" />
+        <a onclick="javascript:ViewBaseDoc.FileDownload('{ $T.FileList.FilePath }','{ $T.FileList.FileName }','{ $T.FileList.FileGUID }')">{ $T.FileList.FileName }</a>
+        <span class="mount">{ $T.FileList.FileLengthKB }</span>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>
+

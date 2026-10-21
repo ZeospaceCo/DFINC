@@ -1,0 +1,21 @@
+﻿<table cellspacing="0" class="table_typeT">
+    <caption></caption>
+    <colgroup>
+        <col />
+        <col width="70px" />
+    </colgroup>
+    <tr>
+        <th class="center"><span id="j_resourcesTitle"></span></th>
+        <th class="center"><span id="j_managerName"></span></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><a href="#" onclick="javascript:AddResource.ListInfo('{ $T.List.ListID }')" style="cursor:pointer" >{ $T.List.Title }</a></td>
+        <td class="center">{ $T.List.ManagerName }</td>    
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="td"><span id="NoResourcesListData" /></td>
+    </tr>
+    {#/for}
+</table>

@@ -1,0 +1,14 @@
+﻿ {#foreach $T as List}
+ <ul>
+    <li class="opn_unittit">
+        {$T.List.UnitTitle}
+        {#if T.List.IsReq == 1} 
+            <span class="opn_req">[필수]</span>
+        {#/if}
+    </li>
+    {#if T.List.IsReq == 1} 
+        <li class="opn_unittit"><img src="{$.T.List.ItemImgUrl}" class="opn_unitimg" title="" style="max-width:500px;" onclick="" /></li>
+    {#/if}
+
+ </ul>
+ {#/for}

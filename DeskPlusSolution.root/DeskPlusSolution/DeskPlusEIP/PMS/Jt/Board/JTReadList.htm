@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col />
+    <col width="100px" />
+    <col width="120px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <th id="j_DeptName"></th>
+    <th id="j_TitleName"></th>
+    <th id="j_Name"></th>
+    <th id="j_RegDate"></th>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.DeptBase }</td>
+    <td class="center">{ $T.BoardList.TitleBase }</td>
+    <td class="center">{ $T.BoardList.NameBase }</td>
+    <td class="center">{ $T.BoardList.CRUDDateStr }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

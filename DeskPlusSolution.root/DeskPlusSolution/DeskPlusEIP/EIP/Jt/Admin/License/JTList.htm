@@ -1,0 +1,45 @@
+﻿<table class="table_typeA">
+    <caption>
+        LicenseInfo
+    </caption>
+    <colgroup>
+        <col width="250px" />
+        <col />
+        <col width="100px" />
+        <col width="80px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="80px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_LicenseNumber"></th>
+            <th class="center" id="r_Description"></th>
+            <th class="center" id="r_Count"></th>
+            <th class="center" id="r_Status"></th>
+            <th class="center" id="r_Expire"></th>
+            <th class="center" id="r_ActActive"></th>
+            <th class="center" id="r_Active"></th>
+            <th class="center" id="r_Del"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td class="center">{ $T.List.LicenseNumber }</td>
+            <td>{ $T.List.Description }</td>
+            <td class="center">{ $T.List.Count }</td>
+            <td class="center">{ $T.List.Status }</td>
+            <td class="center">{ $T.List.Expire }</td>
+            <td class="center"><a href="#" onclick="javascript:List.ActServreActvie('{ $T.List.LicenseNumber }')" style="cursor:pointer" >Active</a></td>
+            <td class="center"><a href="#" onclick="javascript:List.ServerActvie('{ $T.List.LicenseNumber }')" style="cursor:pointer" >Active</a></td>
+            <td class="center"><a href="#" onclick="javascript:List.Del('{ $T.List.LicenseNumber }')" style="cursor:pointer" >Del</a></td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="8" class="center"><span id="NoListData" /></td>        
+        </tr>
+    {#/for} 
+    </tbody>
+</table>

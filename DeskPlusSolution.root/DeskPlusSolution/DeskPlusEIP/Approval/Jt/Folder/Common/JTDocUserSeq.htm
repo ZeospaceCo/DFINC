@@ -1,0 +1,55 @@
+﻿<table class="table_typeT">
+<caption></caption>
+<colgroup>
+    <col width="80px" />
+    <col width="80px" />
+    <col />
+    <col width="140px" />
+</colgroup>
+<thead>
+    <th class="center" id="r_gubun"></th>
+    <th class="center" id="r_tag"></th>
+    <th class="center" id="r_userInfo"></th>
+    <th class="center" id="r_date"></th>
+</thead>
+<tbody>
+{#foreach $T as ApprovalList}
+<tr>
+    <td class="center">{ $T.ApprovalList.Gubun }</td>
+    <td class="center">
+        {#if $T.ApprovalList.ApprovalTag == 'ZD0'} <span class="ZD0"></span>
+        {#elseif $T.ApprovalList.ApprovalTag == 'ZD'} <span class="ZD"></span>    
+        {#elseif $T.ApprovalList.ApprovalTag == 'ZH'} <span class="ZH"></span>
+        {#elseif $T.ApprovalList.ApprovalTag == 'ZA'} <span class="ZA"></span>
+        {#/if}
+    </td> 
+    <td class="center">
+        { $T.ApprovalList.DeptName }/{ $T.ApprovalList.TitleName }/{ $T.ApprovalList.UserName } 
+        
+        {#if $T.ApprovalList.ApprovalTypeStr != ''}
+            <span>[{ $T.ApprovalList.ApprovalTypeStr }]</span>
+        {#/if}
+
+        {#if $T.ApprovalList.Proxy == 'Y'}
+            <br />{ $T.ApprovalList.ProxyDeptName }/{ $T.ApprovalList.ProxyTitleName }/{ $T.ApprovalList.ProxyUserName }
+            
+            {#if $T.ApprovalList.ApprovalType == 'L'}
+                [<span class="ApprovalTypeL"></span>]
+            {#else}
+                [<span class="ApprovalTypeP"></span>]
+            {#/if}
+        {#/if}
+    </td> 
+    <td class="center">
+        {#if $T.ApprovalList.ApprovalDateStr == ''} . 
+        {#else} { $T.ApprovalList.ApprovalDateStr } 
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] お申し込みのキャンセル ($Name$)</Title>
+	<ContentHTML>
+		[お申し込みのキャンセル]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- オフにして人 : $Name$
+	</ContentHTML>
+</ContentInfo>

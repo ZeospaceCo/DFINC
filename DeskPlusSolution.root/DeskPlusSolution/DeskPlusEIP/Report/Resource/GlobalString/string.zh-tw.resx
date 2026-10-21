@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="AddShort" xml:space="preserve">
+    <value>添加意見</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>請輸入內容</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="AfterDept" xml:space="preserve">
+    <value>變更後部門</value>
+  </data>
+  <data name="AfterInfo" xml:space="preserve">
+    <value>變更後信息</value>
+  </data>
+  <data name="AfterUser" xml:space="preserve">
+    <value>變更後用戶</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全體</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全體下載</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>確定要刪除嗎？</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>權限</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>權限管理</value>
+  </data>
+  <data name="AuthOnlyOne" xml:space="preserve">
+    <value>報告對像只能為1位</value>
+  </data>
+  <data name="BeforeDept" xml:space="preserve">
+    <value>變更前部門</value>
+  </data>
+  <data name="BeforeDeptGarbage" xml:space="preserve">
+    <value>變更前刪除部門</value>
+  </data>
+  <data name="BeforeInfo" xml:space="preserve">
+    <value>變更前信息</value>
+  </data>
+  <data name="BeforeUser" xml:space="preserve">
+    <value>變更前用戶</value>
+  </data>
+  <data name="BeforeWeekJob" xml:space="preserve">
+    <value>一周工作之前，</value>
+  </data>
+  <data name="BringNextJobSche" xml:space="preserve">
+    <value>調入下週日程管理</value>
+  </data>
+  <data name="BringNowJobSche" xml:space="preserve">
+    <value>調入這週日程管理</value>
+  </data>
+  <data name="BringPim" xml:space="preserve">
+    <value>獲取日程管理資料</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>改變順序</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>查閱</value>
+  </data>
+  <data name="CheckAdmin" xml:space="preserve">
+    <value>設為非公開的日子，只能由報告對象和本人查閱</value>
+  </data>
+  <data name="CheckAuth" xml:space="preserve">
+    <value>請分配權限</value>
+  </data>
+  <data name="CheckAuthUser" xml:space="preserve">
+    <value>確認邀請需要在權限管理裡添加報告對像人</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中國</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="CloseYN" xml:space="preserve">
+    <value>公開與否</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認與否</value>
+  </data>
+  <data name="ConfirmCheck" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="ConfirmFolder" xml:space="preserve">
+    <value>確認邀請箱</value>
+  </data>
+  <data name="ConfirmRequest" xml:space="preserve">
+    <value>確認邀請</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>選擇複製</value>
+  </data>
+  <data name="CopyAll" xml:space="preserve">
+    <value>全體複製</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>確定要刪除文件嗎？</value>
+  </data>
+  <data name="DeletedDept" xml:space="preserve">
+    <value>已被刪除的部門現況</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptCode" xml:space="preserve">
+    <value>部門代碼</value>
+  </data>
+  <data name="DeptFolder" xml:space="preserve">
+    <value>部門箱</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部門名</value>
+  </data>
+  <data name="DoConfirmRequest" xml:space="preserve">
+    <value>進行了確認邀請</value>
+  </data>
+  <data name="DocumentTransfer" xml:space="preserve">
+    <value>文檔轉移</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>獲取附件時發生了錯誤</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件類型</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>文件夾</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法國人</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>轉到查看頁面</value>
+  </data>
+  <data name="GroupBaseName" xml:space="preserve">
+    <value>組名</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>區分</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>是活動？</value>
+  </data>
+  <data name="IsClose" xml:space="preserve">
+    <value>非公開</value>
+  </data>
+  <data name="IsOpen" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="IssueWork" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日語</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓國人</value>
+  </data>
+  <data name="Linked" xml:space="preserve">
+    <value>轉移與否</value>
+  </data>
+  <data name="LinkedCopyDept" xml:space="preserve">
+    <value>複製（部門）</value>
+  </data>
+  <data name="LinkedCopyUser" xml:space="preserve">
+    <value>複製（用戶）</value>
+  </data>
+  <data name="LinkedMoveDept" xml:space="preserve">
+    <value>轉移（部門）</value>
+  </data>
+  <data name="LinkedMoveUser" xml:space="preserve">
+    <value>轉移（用戶）</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目錄</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Modifyed" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModShort" xml:space="preserve">
+    <value>意見 修改</value>
+  </data>
+  <data name="MSG_ErrDelSubFolder" xml:space="preserve">
+    <value>請首先刪除子文件夾中</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Naming" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下頁</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>請創建下周業務報告</value>
+  </data>
+  <data name="NextWork" xml:space="preserve">
+    <value>下週工作</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>該用戶無法訪問</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>沒有內容</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>該文件不存在</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>家長的文件夾名稱</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>個人箱</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>已處理</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>處理時發生了錯誤請與管理員聯繫</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>確定要刪除嗎？</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登錄日</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>補充說</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="ReplyScript" xml:space="preserve">
+    <value>發表了帖子</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>報告對象</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>邀請</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SelectCopyList" xml:space="preserve">
+    <value>請選擇要復制的目錄現況</value>
+  </data>
+  <data name="SelectDeleteList" xml:space="preserve">
+    <value>請選擇要刪除的列表</value>
+  </data>
+  <data name="SelectDeptAfterDept" xml:space="preserve">
+    <value>請選擇[變更後部門]按鈕以選擇部門</value>
+  </data>
+  <data name="SelectDeptBeforeDept" xml:space="preserve">
+    <value>請選擇[變更前部門]按鈕以選擇部門</value>
+  </data>
+  <data name="SelectMoveList" xml:space="preserve">
+    <value>請選擇要移動的目錄現況</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>請選擇用戶</value>
+  </data>
+  <data name="SelectUserAfterUser" xml:space="preserve">
+    <value>請選擇[變更後用戶]按鈕以選擇用戶</value>
+  </data>
+  <data name="SelectUserBeforeUser" xml:space="preserve">
+    <value>請選擇[變更前用戶]按鈕以選擇用戶</value>
+  </data>
+  <data name="SelFolder" xml:space="preserve">
+    <value>請選擇文件夾</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>請設置權限</value>
+  </data>
+  <data name="SettingMultiLang" xml:space="preserve">
+    <value>設置多郎</value>
+  </data>
+  <data name="ShallAddNextJob" xml:space="preserve">
+    <value>要添加到輸入的下周業務裡嗎？</value>
+  </data>
+  <data name="ShallAddNowJob" xml:space="preserve">
+    <value>要添加到輸入的這周業務裡嗎？</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>共享箱</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共享對象</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>意見</value>
+  </data>
+  <data name="ShortRegister" xml:space="preserve">
+    <value>編寫意見</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台灣人</value>
+  </data>
+  <data name="Term" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>請創建今周業務報告內容</value>
+  </data>
+  <data name="ThisWork" xml:space="preserve">
+    <value>今周業務</value>
+  </data>
+  <data name="Transfer" xml:space="preserve">
+    <value>選擇轉移</value>
+  </data>
+  <data name="TransferAll" xml:space="preserve">
+    <value>全體轉移</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>業務日誌</value>
+  </data>
+  <data name="WorkCancel" xml:space="preserve">
+    <value>取消日誌確認</value>
+  </data>
+  <data name="WorkClose" xml:space="preserve">
+    <value>日誌 非公開</value>
+  </data>
+  <data name="WorkConfirm" xml:space="preserve">
+    <value>日誌確認</value>
+  </data>
+  <data name="WorkConfirmCancel" xml:space="preserve">
+    <value>日誌確認已被取消</value>
+  </data>
+  <data name="WorkConfirmOK" xml:space="preserve">
+    <value>日誌已確認</value>
+  </data>
+  <data name="WorkContent" xml:space="preserve">
+    <value>報告內容</value>
+  </data>
+  <data name="WorkFolder" xml:space="preserve">
+    <value>業務日誌箱</value>
+  </data>
+  <data name="WorkMod" xml:space="preserve">
+    <value>業務日誌修改</value>
+  </data>
+  <data name="WorkOpen" xml:space="preserve">
+    <value>日誌 公開</value>
+  </data>
+  <data name="WorkRegister" xml:space="preserve">
+    <value>創建業務日誌</value>
+  </data>
+  <data name="WorkView" xml:space="preserve">
+    <value>查看業務日誌</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>編寫</value>
+  </data>
+  <data name="Writer" xml:space="preserve">
+    <value>編寫人</value>
+  </data>
+  <data name="GetReportList" xml:space="preserve">
+    <value>拿到報告單</value>
+  </data>
+  <data name="ViewPT" xml:space="preserve">
+    <value>意見 PT</value>
+  </data>
+  <data name="Inform" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="InformSystem" xml:space="preserve">
+    <value>通知文件夾</value>
+  </data>
+  <data name="SelInformSystem" xml:space="preserve">
+    <value>選擇通知的文件夾。</value>
+  </data>
+  <data name="InformList" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="AdminList" xml:space="preserve">
+    <value>Admin List</value>
+  </data>
+  <data name="InformBox" xml:space="preserve">
+    <value>Imform box</value>
+  </data>
+  <data name="PrivateBox" xml:space="preserve">
+    <value>Private box</value>
+  </data>
+  <data name="ShareBox" xml:space="preserve">
+    <value>Share box</value>
+  </data>
+  <data name="BriefingSetMsg" xml:space="preserve">
+    <value>* 您可以为报告系统创建分类。</value>
+  </data>
+  <data name="BriefingSetting" xml:space="preserve">
+    <value>Briefing setting</value>
+  </data>
+  <data name="AllList" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+</root>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] S'enregistrer Retrait ($Name$)</Title>
+	<ContentHTML>
+		[커S'enregistrer Retrait]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- Qui annulée : $Name$
+	</ContentHTML>
+</ContentInfo>

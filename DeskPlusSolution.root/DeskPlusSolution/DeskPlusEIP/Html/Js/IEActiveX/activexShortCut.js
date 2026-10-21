@@ -1,0 +1,1 @@
+document.write('<OBJECT id="objShortCut" CLASSID="CLSID:88AC2D9E-D824-4E83-9728-1BB3F7F51492" CODEBASE="/DeskPlusEIP/Data/Cab/ZeoShortcut.cab#version=1,0,0,1" HEIGHT=1 WIDTH=1></OBJECT>')

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+  <MAIL>
+    <SUBJ>
+      <START>[開始授權] 授權轉讓</START>
+      <END>[停止授權] 代表團停止</END>
+    </SUBJ>
+    <ACTION>
+      <START>授權轉讓</START>
+      <END>代表團停止</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子支付] 代理人報警&lt;/li&gt;
+      &lt;li&gt;代表團 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委託人的目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;代理人期 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;缺席類型 : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;內容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MAIL>
+
+  <MESSENGER>
+    <SUBJ>
+      <START>[開始授權] 授權轉讓</START>
+      <END>[停止授權] 代表團停止</END>
+    </SUBJ>
+    <ACTION>
+      <START>授權轉讓</START>
+      <END>代表團停止</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子支付] 代理人報警&lt;/li&gt;
+      &lt;li&gt;代表團 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委託人的目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;代理人期 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;缺席類型 : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;內容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MESSENGER>
+
+  <SMS>
+    <SUBJ>
+      <START>[開始授權] 授權轉讓</START>
+      <END>[停止授權] 代表團停止</END>
+    </SUBJ>
+    <ACTION>
+      <START>授權轉讓</START>
+      <END>代表團停止</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子支付] 代理人報警&lt;/li&gt;
+      &lt;li&gt;代表團 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委託人的目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;代理人期 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;缺席類型 : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;內容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </SMS>
+
+  <MOBILE>
+    <SUBJ>
+      <START>[開始授權] 授權轉讓</START>
+      <END>[停止授權] 代表團停止</END>
+    </SUBJ>
+    <ACTION>
+      <START>授權轉讓</START>
+      <END>代表團停止</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子支付] 代理人報警&lt;/li&gt;
+      &lt;li&gt;代表團 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委託人的目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;代理人期 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;缺席類型 : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;內容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MOBILE>
+</ALARM>

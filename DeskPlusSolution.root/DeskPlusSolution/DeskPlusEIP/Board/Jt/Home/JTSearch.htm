@@ -1,0 +1,55 @@
+﻿<table class="table_typeA">
+<caption>게시판 리스트</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="120px" />
+    <col width="*" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="120px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th id="r_number"></th> 
+    <th id="r_folder"></th>
+    <th id="r_title"></th>
+    <th id="r_attachFile"></th>
+    <th id="r_readCount"></th>
+    <th id="r_writeName"></th>
+    <th id="r_writeDate"></th>    
+</tr>
+</thead>
+{#foreach $T as Search}
+<tr> 
+    <td class="center">{ $T.Search.ROW }</td>
+    <td class="center">{ $T.Search.CA_Title }</td>
+    <td class="suj">     
+        <a onclick="Search.PopupView('{ $T.Search.CategoryID }','{ $T.Search.ListID }');return false;" style="cursor:pointer" title="{ $T.Search.Title }">
+        {$T.Search.Title }</a>
+        {#if $T.Search.ShowNew == 'Y'}<img class="BtnNew" alt="" src="/DeskPlusEIP/Design/C/Img/btn/i_new.gif" />{#/if} 
+        {#if $T.Search.ReplyCount > 0}
+        <a onclick="Search.PopupShort('{ $T.Search.CategoryID }','{ $T.Search.ListID }');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">({ $T.Search.ReplyCount })</span>
+        </a>    
+        {#/if}
+    </td>
+    <td class="center">
+        {#if $T.Search.Filecount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" CategoryID='{ $T.Search.CategoryID }' ListID='{ $T.Search.ListID }'></i>
+        {#/if}
+    </td>  
+    <td class="center">
+     <a onclick="Search.ReadList('{ $T.Search.CategoryID }','{ $T.Search.ListID }');return false;" style="cursor:pointer" >
+	 { $T.Search.ReadCount }
+	 </a>
+    </td>
+    <td class="center"><a onclick="AccountInfo('{ $T.Search.WriteUserID }');return false;"><span class="name">{ $T.Search.WriteUserName }</span></a></td>    
+    <td class="center">{ $T.Search.WriteDate }</td>      
+    
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span id="W_NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

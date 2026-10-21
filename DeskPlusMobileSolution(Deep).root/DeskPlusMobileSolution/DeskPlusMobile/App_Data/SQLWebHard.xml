@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SEL_PROC_File" Value="DPM_WHD_File_Sel" Content="파일리스트"></Item>
+  <Item ID="SEL_PROC_DS" Value="DPM_WHD_DS_Sel" Content="닥스트리밍 파일" />
+	<Item ID="SEL_PROC_Folder" Value="DPM_WHD_Folder_Sel" Content="카테고리리스트"></Item>
+	<Item ID="Del_PROC_File" Value="DPM_WHD_File_UpdDel" Content="파일 휴지통으로 삭제"></Item>
+	<Item ID="SEL_PROC_Folder_FolderID" Value="DPM_WHD_Folder_SelByFID" Content="웹폴더카테고리정보"></Item>	
+	<Item ID="SEL_PROC_ShareFolder" Value="DPM_WHD_ShareFolder_Sel" Content="공유자 리스트"></Item>
+	<Item ID="SEL_PROC_ShareFolder_FolderID" Value="DPM_WHD_ShareFolder_SelByFID" Content="공유 받은 폴더의 권한 정보 가져오기"></Item>	
+	<Item ID="SEL_PROC_File_FileID" Value="DPM_WHD_File_SelByFID" Content="파일정보가져오기"></Item>	
+	<Item ID="INS_PROC_Folder" Value="DP_WHD_Folder_Ins" Content="개인폴더 생성"></Item>
+	<Item ID="INS_PROC_File" Value="DP_WHD_File_Ins" Content="파일 업로드"></Item>
+	<Item ID="SEL_QRY_File_Length" Value="SELECT ISNULL(SUM(FileLength),0) as FileSum FROM DP_WHD_File WITH(NOLOCK) WHERE CompanyID = {0} AND UserID = {1}" Content="개인사용용량" />
+	<Item ID="SEL_PROC_FileCnt" Value="DPM_WHD_File_SelCnt" Content="파일갯수"></Item>	
+	<Item ID="SEL_QRY_Folder_FolderID" Value="SELECT FolderID From DP_WHD_Folder WITH(NOLOCK) WHERE CompanyID = {0} AND UserID = {1} AND UserID != '0' AND NameBase = 'ROOT' AND ParentFolderID is null" Content="개인폴더정보" />	
+	<Item ID="SEL_QRY_Folder_PublicFolderID" Value="SELECT FolderID From DP_WHD_Folder WITH(NOLOCK) WHERE CompanyID = {0} AND UserID = '0' AND NameBase = 'ROOT' AND ParentFolderID is null" Content="개인폴더정보" />
+	<Item ID="SEL_PROC_PublicFolder_FolderID" Value="DPM_WHD_PublicFolder_SelByFID" Content="공용 폴더의 권한 정보 가져오기"></Item>
+	<Item ID="SEL_PROC_PublicFolderFile_FolderID" Value="DP_WHD_File_SelByFoldrID" Content="공용웹폴더카테고리정보"></Item>
+	<Item ID="SEL_PROC_PublicFolderFile_SelByUserID" Value="DP_WHD_File_SelByUserID" Content="파일권한정보"></Item>
+	<Item ID="SEL_PROC_PublicFolder_SelByUserID" Value="DPM_WHD_PublicFolder_SelByUID" Content="공용 폴더의 하위 정보 가져오기"></Item>
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+</XmlData>

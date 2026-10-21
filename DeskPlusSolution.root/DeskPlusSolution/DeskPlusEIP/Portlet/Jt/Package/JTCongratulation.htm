@@ -1,0 +1,53 @@
+﻿<div class="imageSlider" style="padding:0px;">
+    <div class="left"><a href="#"><img class="PtlType3Left" alt="" title="" /></a></div>
+    <div class="imageList" style="padding:0px;">
+        <ul>
+        {#foreach $T as List}                         
+        <li class="poboxlistset" style="width:170px;min-width:170px;max-width:170px;min-height:190px;height:190px;overflow:hidden;box-sizing:border-box;">
+        <dl style="font-size:11px;">
+            <dd class="img">{ $T.List.PhotoImage }</dd>
+            {#if $T.List.GuBun == 'B'}
+            <dd style="font-size:12px;font-weight:bold;color:#FF7E00;height:15px;">- Birthday -</dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                <a onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.DeptBase }</a>
+            </dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                <a onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.NameBase } { $T.List.TitleBase }</a>
+            </dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                Date : {#if $T.List.TodayImage == 'B'}<span style="font-weight:bold;color:red;">{ $T.List.BirthDay }</span> <img src="/DeskPlusEIP/Design/C/Img/Package/birthday.gif" alt="" title="" style="vertical-align:middle;" />
+                {#else} { $T.List.BirthDay } {#/if}  
+            </dd>
+            {#else if $T.List.GuBun == 'W'}  
+            <dd style="font-size:12px;font-weight:bold;color:#FF7E00;height:15px;">- Wedding Day -</dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                <a onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.DeptBase }</a>
+            </dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                <a onclick="AccountInfo('{ $T.List.UserID }');return false;" style="cursor:pointer">{ $T.List.NameBase } { $T.List.TitleBase }</a>
+            </dd>
+            <dd style="text-align:left;height:15px;">
+                <img src="/DeskPlusEIP/Design/C/Img/Bullet/ico_bulletS.gif" style="vertical-align:middle;" />
+                Date : {#if $T.List.TodayImage == 'W'}<span style="font-weight:bold;color:red;">{ $T.List.WeddingAnniversary }</span> <img src="/DeskPlusEIP/Design/C/Img/Package/birthday.gif" alt="" title="" style="vertical-align:middle;" />
+                {#else} { $T.List.WeddingAnniversary } {#/if} 
+            </dd>
+            {#/if}     
+        </dl>
+        </li>
+        {#else}   
+        <li class="poboxlistset" style="width:170px;min-width:170px;max-width:170px;min-height:190px;height:190px;overflow:hidden;box-sizing:border-box;">
+        <dl>
+            <dd class="img"><img class="IconNoImg" /></dd>
+            <dd class="tit"><span class="NoListData"></span></dd>
+        </dl>  
+        </li>
+        {#/for}                                          
+        </ul>
+    </div>
+    <div class="right"><a href="#"><img class="PtlType3Right" alt="" title="" /></a></div>
+</div>

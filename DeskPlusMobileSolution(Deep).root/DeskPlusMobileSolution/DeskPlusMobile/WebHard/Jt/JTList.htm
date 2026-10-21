@@ -1,0 +1,25 @@
+﻿{#foreach $T as List}
+<li class="contentblock padding0">
+    <div class="mli5 linkDiv full-width" onclick="javascript:List.gubun('{$T.List.FolderID}','{$T.List.FileID}','{ $T.List.FilePath }','{ $T.List.FileGUID }')">
+        <span class="mst">{#if $T.List.FileID == 0}&nbsp;&nbsp;&nbsp;{#else}<input type="checkbox" onclick="javascript:event.stopPropagation();" id='{$T.index}' value='{ $T.List.FileID }' />{#/if}</span>
+        <div class="img "><img src='{ $T.List.ImagePath }' style="width:45px;height:55px;" /></div>
+        <a class="mct " href="#2">
+            <span class="lif">
+                { $T.List.WriteDate }  { $T.List.FileLength }
+                {#if $T.List.WriteName != null}
+                <br />{ $T.List.WriteName }
+                {#/if}
+                <br />
+            </span>
+            { $T.List.FileName }<br />
+            { $T.List.SendName } 
+        </a>
+    </div>  
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

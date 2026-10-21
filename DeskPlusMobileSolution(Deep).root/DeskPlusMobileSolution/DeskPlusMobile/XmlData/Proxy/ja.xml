@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+  <MAIL>
+    <SUBJ>
+      <START>[委任を開始する] 委任が割り当てられました</START>
+      <END>[委任を停止する] 委任が停止しました</END>
+    </SUBJ>
+    <ACTION>
+      <START>委任が割り当てられました</START>
+      <END>委任が停止しました</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子決裁] 委任者アラーム&lt;/li&gt;
+      &lt;li&gt;委任者 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任者の目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任期間 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;欠席のタイプ : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;内容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MAIL>
+
+  <MESSENGER>
+    <SUBJ>
+      <START>[委任を開始する] 委任が割り当てられました</START>
+      <END>[委任を停止する] 委任が停止しました</END>
+    </SUBJ>
+    <ACTION>
+      <START>委任が割り当てられました</START>
+      <END>委任が停止しました</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子決裁] 委任者アラーム&lt;/li&gt;
+      &lt;li&gt;委任者 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任者の目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任期間 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;欠席のタイプ : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;内容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MESSENGER>
+
+  <SMS>
+    <SUBJ>
+      <START>[委任を開始する] 委任が割り当てられました</START>
+      <END>[委任を停止する] 委任が停止しました</END>
+    </SUBJ>
+    <ACTION>
+      <START>委任が割り当てられました</START>
+      <END>委任が停止しました</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子決裁] 委任者アラーム&lt;/li&gt;
+      &lt;li&gt;委任者 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任者の目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任期間 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;欠席のタイプ : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;内容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </SMS>
+
+  <MOBILE>
+    <SUBJ>
+      <START>[委任を開始する] 委任が割り当てられました</START>
+      <END>[委任を停止する] 委任が停止しました</END>
+    </SUBJ>
+    <ACTION>
+      <START>委任が割り当てられました</START>
+      <END>委任が停止しました</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[電子決裁] 委任者アラーム&lt;/li&gt;
+      &lt;li&gt;委任者 : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任者の目標 : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;委任期間 : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;欠席のタイプ : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;内容 : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MOBILE>
+</ALARM>

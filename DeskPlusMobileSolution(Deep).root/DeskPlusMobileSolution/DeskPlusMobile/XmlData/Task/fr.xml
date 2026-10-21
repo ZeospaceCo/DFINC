@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+
+	<MESSENGER>
+		<ACCEPT>[접수]</ACCEPT>
+		<COMPLETE>[완료]</COMPLETE>
+		<REJECT>[재검토]</REJECT>
+		<TO>[수신]</TO>
+		<CC>[참조]</CC>
+		<FORWARD>[전달]</FORWARD>
+		<REPLY>[답변]</REPLY>
+		<CANCEL>[완료취소]</CANCEL>
+		<INGDETAIL>[변경저장]</INGDETAIL>
+		<ContentHTMLACCEPT>
+			[업무협업 접수 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLACCEPT>
+		<ContentHTMLCOMPLETE>
+			[업무협업 완료 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLCOMPLETE>
+		<ContentHTMLREJECT>
+			[업무협업 재검토 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLREJECT>
+		<ContentHTMLTO>
+			[업무협업 수신 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLTO>
+		<ContentHTMLCC>
+			[업무협업 참조 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLCC>
+		<ContentHTMLFORWARD>
+			[업무협업 전달 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLFORWARD>
+		<ContentHTMLREPLY>
+			[업무협업 답변 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLREPLY>
+		<ContentHTMLCANCEL>
+			[업무협업 완료취소 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLCANCEL>
+		<ContentHTMLINGDETAIL>
+			[업무협업 변경저장 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLINGDETAIL>
+	</MESSENGER>
+
+</ALARM>

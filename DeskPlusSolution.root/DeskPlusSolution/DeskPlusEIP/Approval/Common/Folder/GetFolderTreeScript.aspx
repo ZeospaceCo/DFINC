@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableViewState="false" CodeBehind="GetFolderTreeScript.aspx.cs" Inherits="Zeospace.DeskPlus.Approval.Web.Common.Folder.GetFolderTreeScript" %>
+<% Response.ContentType = "text/xml"; %>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Address.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>주소록 가져오기</h1>
+        </div>
+        <div id="layout_content">
+            <h2>외부주소록 가져오기</h2>
+            <p class="outmail_descrip">
+                휴대폰에서 내보낸 CSV(쉼표로 분리)파일이나 직접 작성한 엑셀파일을 가져와 주소록에 추가할 수 있습니다.<br />
+                한메일 주소록을 아웃룩, 익스프레스용 CSV파일 또는 엑셀 파일로 다운받고 싶으신 경우는 <em class="ft_blue">주소록 내보내기</em>를 이용하시면 됩니다.<br />
+                ※ 파일의 주소 개수가 1000개 이상인 경우 속도가 느려질 수 있으며, 1000개씩 파일을 나눠서 가져오기 해 주세요. 
+            </p>
+            <ul class="outmail_location">
+                <li><a class="over">01 불러오기</a></li>
+                <li>02 미리보기</li>
+                <li class="last-child">03 저장하기</li>
+            </ul>
+            <div class="outmail_select"> 
+    	        <span class="btnWrap"> 
+        	        <span class="btn_address">
+                        <input id="csvDaum" name="csvGubun" type="radio" value="daum" />
+                        <img src="../../Design/ko/Base/Img/Icon/ico_mobile.gif" alt="mobile(그림)" /> <a href="#">DAUM 주소록(.csv)</a> </span> <span class="btn_address">
+                        <input id="csvNaver" name="csvGubun" type="radio" value="naver" />
+                        <img src="../../Design/ko/Base/Img/Icon/ico_address.gif" alt="mobile(그림)" /> <a href="#">NAVER 주소록(.csv)</a> </span> <span class="btn_address">
+                        <input id="csvGoogle" name="csvGubun" type="radio" value="google" />
+                        <img src="../../Design/ko/Base/Img/Icon/ico_gmail.gif" alt="mobile(그림)" /> <a href="#">GOOGLE 주소록(.csv)</a> </span> <span class="btn_address last-child">
+                        <input id="csvOutlook" name="csvGubun" type="radio" value="outlook" />
+                        <img src="../../Design/ko/Base/Img/Icon/ico_outlook.gif" alt="mobile(그림)" /> <a href="#">OUTLOOK 엑셀파일(.csv)</a> </span> 
+                </span>
+                <div class="addfile">
+        	        <span class="btnWrap">
+                        <span class="list_add_style4">
+                            <label for="fromfile">가져올 주소 파일 선택</label>
+                            <input type="file" name="fuFile" id="fuFile" /></span>
+                        <a href="#" id="cbtnGetCSV" class="btn_style2">가져오기</a> 
+                    </span>
+                </div>
+            </div>
+
+            <div class="layout_subbox">
+                <h2>구글 주소록 가져오기</h2>
+            </div>
+            <p class="outmail_descrip">
+                구글사이트에서 주소록을 가져올 수 있습니다.<br />
+                해당 기능을 사용하시기 위해선, 구글계정이 필요하며, 해당 계정을 통하여 주소록을 가져오게 됩니다.
+            </p>
+            <ul class="outmail_location">
+                <li><a class="over">01 불러오기</a></li>
+                <li>02 미리보기</li>
+                <li class="last-child">03 저장하기</li>
+            </ul>
+            <div class="outmail_select">
+                <span class="btnWrap"> 
+        	        <span class="btn_address">
+                        <img src="../../Design/ko/Base/Img/Icon/ico_address.gif" alt="mobile(그림)" /> <a href="#">구글주소록</a> 
+                    </span> 
+                </span>
+            </div>
+
+           
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

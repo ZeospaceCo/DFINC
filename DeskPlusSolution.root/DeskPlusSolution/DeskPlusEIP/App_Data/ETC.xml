@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+  <Item ID="HolidayDateType" Value="2012,1,2012,12" Content="휴가관리기간설정 : 시작년도,시작월,종료년도,종료월" />
+</XmlData>

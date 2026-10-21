@@ -1,0 +1,185 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using Zeospace.DeskPlus.Pim.BE;
+using System.Data.SqlClient;
+using System.Collections;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper;
+
+namespace Zeospace.DeskPlus.Pim.DAL
+{
+    public class RepeatSchedule : Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.Base.BaseDAL
+    {
+        /*
+         * cmd.Parameters.Add("@CompanyID", SqlDbType.Int).Value = _info.CompanyID;
+        cmd.Parameters.Add("@ScheduleID", SqlDbType.Int).Value = _info.ScheduleID;
+        cmd.Parameters.Add("@RepeatType", SqlDbType.Char,1).Value = _info.RepeatType.ToNull().ToXSS();
+        cmd.Parameters.Add("@SelectType", SqlDbType.Char,1).Value = _info.SelectType.ToNull().ToXSS();
+        cmd.Parameters.Add("@IntervalCnt", SqlDbType.Int).Value = _info.IntervalCnt;
+        cmd.Parameters.Add("@Option1", SqlDbType.VarChar,2).Value = _info.Option1.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option2", SqlDbType.VarChar,2).Value = _info.Option2.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option3", SqlDbType.VarChar,2).Value = _info.Option3.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option4", SqlDbType.VarChar,2).Value = _info.Option4.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option5", SqlDbType.VarChar,2).Value = _info.Option5.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option6", SqlDbType.VarChar,2).Value = _info.Option6.ToNull().ToXSS();
+        cmd.Parameters.Add("@Option7", SqlDbType.VarChar,2).Value = _info.Option7.ToNull().ToXSS();
+        cmd.Parameters.Add("@MaxReptCnt", SqlDbType.Int).Value = _info.MaxReptCnt;
+        cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = _info.EndDate;
+
+        */
+
+
+        /// <summary>
+        /// Gets the repeat schedule.
+        /// </summary>
+        /// <param name="_reader">The _reader.</param>
+        /// <returns></returns>
+        private BE.RepeatScheduleInfo GetRepeatSchedule(IDataReader _reader)
+        {
+            return new BE.RepeatScheduleInfo(
+                (_reader["CompanyID"] == DBNull.Value) ? -1 : (int)_reader["CompanyID"],
+                (_reader["ScheduleID"] == DBNull.Value) ? -1 : (int)_reader["ScheduleID"],
+                _reader["RepeatType"].ToString() ,
+                _reader["SelectType"].ToString() ,
+                (_reader["IntervalCnt"] == DBNull.Value) ? -1 : (int)_reader["IntervalCnt"],
+                _reader["Option1"].ToString() ,
+                _reader["Option2"].ToString() ,
+                _reader["Option3"].ToString() ,
+                _reader["Option4"].ToString() ,
+                _reader["Option5"].ToString() ,
+                _reader["Option6"].ToString() ,
+                _reader["Option7"].ToString() ,
+                (_reader["MaxReptCnt"] == DBNull.Value) ? -1 : (int)_reader["MaxReptCnt"],
+                (_reader["EndDate"] == DBNull.Value) ? DateTime.MinValue : (DateTime)_reader["EndDate"]
+            );
+        }
+
+        /// <summary>
+        /// Gets the repeat schedule list.
+        /// </summary>
+        /// <param name="reader">The reader.</param>
+        /// <returns></returns>
+        protected List<RepeatScheduleInfo> GetRepeatScheduleList(IDataReader reader)
+        {
+            List<RepeatScheduleInfo> list = new List<RepeatScheduleInfo>();
+            while (reader.Read())
+                list.Add(GetRepeatSchedule(reader));
+            return list;
+        }
+
+        #region GET() 
+    
+
+        /// <summary>
+        /// 공유리스트 가져오기
+        /// </summary>
+        /// <param name="para"></param>
+        /// <returns></returns>
+        public List<BE.RepeatScheduleInfo> GetRepeatSchedule(int companyid, int scheduleID)
+        {
+
+            using (var cn = new SqlConnection(ConnSolution(companyid)))
+            {
+                string query = AppSettingHelper.GetDynamicQuery(AppSettingType.PIM, "QRY_PIM_RepeatSchedule_Sel");
+
+                var cmd = new SqlCommand(query, cn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add("@CompanyID", SqlDbType.Int).Value = companyid;
+                cmd.Parameters.Add("@ScheduleID", SqlDbType.Int).Value = scheduleID;
+
+
+                cn.Open();
+
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    return GetRepeatScheduleList(reader);
+                }
+            }
+        }
+        #endregion 
+ 
+        #region ADD() 
+
+        public  void AddRepeatSchedule(RepeatScheduleInfo _info)
+        {
+            try
+            {
+                using (var cn = new SqlConnection(ConnSolution(_info.CompanyID)))
+                {
+                    var cmd = new SqlCommand("DP_PIM_RepeatSchedule_Ins", cn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@CompanyID", SqlDbType.Int).Value = _info.CompanyID;
+                    cmd.Parameters.Add("@ScheduleID", SqlDbType.Int).Value = _info.ScheduleID;
+                    cmd.Parameters.Add("@RepeatType", SqlDbType.Char, 1).Value = _info.RepeatType;
+                    cmd.Parameters.Add("@SelectType", SqlDbType.Char, 1).Value = _info.SelectType;
+                    cmd.Parameters.Add("@IntervalCnt", SqlDbType.Int).Value = _info.IntervalCnt;
+
+                    cmd.Parameters.Add("@Option1", SqlDbType.VarChar, 2).Value = _info.Option1;
+                    cmd.Parameters.Add("@Option2", SqlDbType.VarChar, 2).Value = _info.Option2;
+                    cmd.Parameters.Add("@Option3", SqlDbType.VarChar, 2).Value = _info.Option3;
+                    cmd.Parameters.Add("@Option4", SqlDbType.VarChar, 2).Value = _info.Option4;
+                    cmd.Parameters.Add("@Option5", SqlDbType.VarChar, 2).Value = _info.Option5;
+
+                    cmd.Parameters.Add("@Option6", SqlDbType.VarChar, 2).Value = _info.Option6;
+                    cmd.Parameters.Add("@Option7", SqlDbType.VarChar, 2).Value = _info.Option7;
+
+                    cmd.Parameters.Add("@MaxReptCnt", SqlDbType.Int).Value = _info.MaxReptCnt;
+                    cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = _info.EndDate;
+
+                    cn.Open();
+                    
+                    ExecuteNonQuery(cmd);
+                    
+                }
+            }
+            catch (SqlException ex)
+            {
+                string errMsg = Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.SqlExceptionLog(ex);
+                Base.ApplicationFrameworks.Exceptions.AppException.WriteException(errMsg);
+              
+            }
+        }
+
+
+        #endregion 
+ 
+        #region MOD() 
+        #endregion 
+ 
+        #region DEL() 
+
+        public void DelRepeatSchedule(RepeatScheduleInfo _info)
+        {
+            try
+            {
+                using (var cn = new SqlConnection(ConnSolution(_info.CompanyID)))
+                {
+                    var cmd = new SqlCommand("DP_PIM_RepeatSchedule_Del", cn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@CompanyID", SqlDbType.Int).Value = _info.CompanyID;
+                    cmd.Parameters.Add("@ScheduleID", SqlDbType.Int).Value = _info.ScheduleID;
+                    
+
+
+                    cn.Open();
+
+                    ExecuteNonQuery(cmd);
+                }
+            }
+            catch (SqlException ex)
+            {
+                string errMsg = Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.SqlExceptionLog(ex);
+                Base.ApplicationFrameworks.Exceptions.AppException.WriteException(errMsg);
+
+            }
+        }
+
+        #endregion 
+    }
+}

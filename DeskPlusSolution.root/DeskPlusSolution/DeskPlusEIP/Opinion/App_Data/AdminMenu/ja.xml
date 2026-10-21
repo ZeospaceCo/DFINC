@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--항목관리 -->
+  <Item ID="UnitManage" Text="エントリの管理" ClientSideCommand="" />
+  <Item ID="Exam" Text="例の管理" ClientSideCommand="Menu.MovePage('Exam');" />
+  <Item ID="Unit" Text="質問の管理" ClientSideCommand="Menu.MovePage('Unit');" />
+  <!-- 설문관리 -->
+  <Item ID="QuesManage" Text="アンケートの管理" ClientSideCommand="" />
+  <Item ID="QuesIng" Text="進行中のアンケート" ClientSideCommand="Menu.MovePage('QuesIng');" />
+  <Item ID="QuesClosing" Text="終了したアンケート" ClientSideCommand="Menu.MovePage('QuesClosing');" />
+  <!-- 설문통계 -->
+  <Item ID="Statistic" Text="アンケート統計" ClientSideCommand="Menu.MovePage('Statistic');" />
+</MenuData>

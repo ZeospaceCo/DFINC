@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../Design/ko/Base/Css/DeskPlusEIPBase.css" />
+<link rel="stylesheet" type="text/css" href="../../Design/ko/Base/Css/DeskPlusEIPComponent.css" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+    $(function () {
+        $(document).ready(function () {
+            $('#msub1').click(function (e) { e.preventDefault(); menu_click('../Company/ComList.html', 'sub1'); });
+            $('#msub2').click(function (e) { e.preventDefault(); menu_click('../Company/ComAdd.html', 'sub2'); });
+            $('#msub3').click(function (e) { e.preventDefault(); menu_click('../GW/CodeDefault.html', 'sub3'); });
+            $('#msub4').click(function (e) { e.preventDefault(); menu_click('../Legacy/Default.html', 'sub4'); });
+            $('#msub5').click(function (e) { e.preventDefault(); menu_click('../Func/Default.html', 'sub5'); });
+        });
+    });
+
+    menu_click = function (_url, _id) {
+        jQuery.each($(".menu_sub"), function () { this.style.display = "none"; });
+        $("#" + _id)[0].style.display = "";
+        parent.frmMainContent.location = _url;
+    }
+</script>
+</head>
+<body>
+ <form method="post" id="form1">
+<div id="layout_menu">
+    <div class="UTIL">
+    	<div class="menu_logo"><a href="/DeskPlusEIP/EIP/EPDefault.aspx" target="_parent"><img src="../../Design/ko/Base/img/Portal/logo.gif" title="SMART PLUS" alt="SmartPlus Logo" /></a></div>
+        <ul class="menu_util">
+            <li><a id="SignOutLink" href="/DeskPlusEIP/Site/Auth/LogOut.aspx">로그아웃</a></li>
+        </ul>
+    </div><!-- //UTIL --> 
+    
+    <div class="GNB">
+        <ul class="menu_gnb">
+            <li><a id="msub1" style="cursor:pointer;">회사관리</a></li>
+            <li><a id="msub2" style="cursor:pointer;">EP관리</a></li>
+            <li><a id="msub3" style="cursor:pointer;">GW관리</a></li>
+            <li><a id="msub4" style="cursor:pointer;">연동관리</a></li>
+            <li><a id="msub5" style="cursor:pointer;">메뉴별기능관리</a></li>
+        </ul>
+        <ul class="menu_cate" id="menu_cate">
+            <li><a href="#">WORK SPACE</a>
+                <ul>
+                    <li><a href="#">WORK SPACE</a></li>
+                    <li><a href="#">CO SPACE</a></li>
+                    <li><a href="#">MY SPACE</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- //GNB --> 
+
+    <div class="SUB">
+        <ul class="menu_sub" style="display:" id="sub1">
+            <li><a href="../Company/ComList.html" target="frmMainContent">회사관리</a></li>
+            <!--li><a href="../Company/LicDefault.html" target="frmMainContent">라이센스관리</a></li>
+            <li><a href="../Company/UsrDefault.html" target="frmMainContent">담당자관리</a></li>
+            <li><a href="../Company/UsrDefault.html" target="frmMainContent">설치정보관리</a></li //-->
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub2">
+            <li><a href="../Company/ComAdd.html" target="frmMainContent">회사정보관리</a></li>
+            <li><a href="../EP/AuthDefault.html" target="frmMainContent">권한관리</a></li>
+            <li><a href="../EP/MenuDefault.html" target="frmMainContent">메뉴관리</a></li>
+            <li><a href="../EP/PotletDefault.html" target="frmMainContent">포틀릿관리</a></li>
+            <li><a href="../EP/EtcDefault.html" target="frmMainContent">부가기능관리</a></li>
+
+            <!-- li><a href="../EP/PageList.html" target="frmMainContent">페이지관리</a></li //-->
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub3">
+            <li><a href="../GW/CodeDefault.html" target="frmMainContent">코드관리</a></li>
+            <li><a href="../GW/DeptDefault.html" target="frmMainContent">조직관리</a></li>
+            <li><a href="../GW/DeptDefault.html" target="frmMainContent">조직일괄관리</a></li>
+            <li><a href="../GW/TitleDefault.html" target="frmMainContent">직급/직책/직무 관리</a></li>
+            <li><a href="../GW/UsrDefault.html" target="frmMainContent">사용자관리</a></li>
+            <li><a href="#" target="frmMainContent" title="첨부파일갯수/용량/제한확장자/실사용량/남은용량/할당용량">용량관리</a></li>
+            <li><a href="#" target="frmMainContent">통계관리</a></li>
+            <li><a href="#" target="frmMainContent">접속IP관리</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub4">
+            <li><a href="../Legacy/Default.html" target="frmMainContent">메일관리</a></li>
+            <li><a href="../Legacy/Default.html" target="frmMainContent">메신저관리</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub5">
+            <li><a href="/DeskPlusEIP/DesignPublish/_board/Admin/Default.html" target="frmMainContent">지식맵관리</a></li>
+            <li><a href="/DeskPlusEIP/DesignPublish/_address/Admin/Default.html" target="frmMainContent">주소록관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">일정관리관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">설문조사관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">자원관리관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">전자결재관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">커뮤니티관리</a></li>
+            <li><a href="../Func/Default.html" target="frmMainContent">기타</a></li>
+        </ul>
+		
+    </div><!-- //SUB --> 
+</div><!-- //layout_menu -->  
+</form>
+</body>
+</html>

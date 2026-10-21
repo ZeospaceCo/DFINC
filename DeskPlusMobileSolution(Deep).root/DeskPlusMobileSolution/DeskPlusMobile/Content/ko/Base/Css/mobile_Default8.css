@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+input { vertical-align:middle; }
+p { -webkit-margin-before: 10px !important; -webkit-margin-after: 10px !important; font-size: 12px; }
+
+.show { position:absolute; }
+body {
+	overflow:hidden;
+	margin:0px; padding:0px;
+	min-width: 320px;
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/8/11_10back.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#warp { min-width:320px; width:100%; position: relative; margin: 0 auto; }
+/* iphone4 */
+@media all and (max-width:320px){
+	#warp { height:480px; }
+}
+@media all and (min-width:321px){
+	#warp { height:640px; }
+}
+
+#header { min-width:320px; width:100%; height:20%; position: relative; margin:0 auto; }
+#companylog {
+	width:189px; height:31px; top:100; bottom:0; left:0; right:0; margin:auto;
+}
+
+#main-content { min-width:320px; width:100%; height:80%; position: relative; margin: 0 auto; }
+#mid_text_img {
+	width:150px; height:19px; position:relative; margin:180px auto 0 auto;
+}
+#login_warp {
+	width:318px; height: 186px; position:relative; margin:10px auto 0 auto; font-size:12px;
+	font-family: 'Nanum Gothic', serif;
+}
+#fom_warp { position:relative; width: 300px; margin: 0 auto; text-align: left; }
+#fom_title { padding: 8px 0 0 10px; font-family: 'Nanum Gothic', serif; color: #fff; font-size: 12px;}
+#fom_1 { width:300px; }
+#fom_1 div { margin-bottom:8px; font-family: 'Nanum Gothic'; }
+#fom_1 > #move_id,#move_pw,#move_com { color: #fff; }
+
+#fom_2 { width:300px; padding: 5px 0 0 0; text-align: left; color:#fff;}
+
+.pl, .il {
+	width:294px; height:21px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/8/fom.jpg') no-repeat cover; border:none;
+	font: 12px 'Nanum Gothic'; color:#363636; border: 1px solid #b1b1b1; padding-left:5px;
+}
+#ddlCompany { width:301px; height:25px; border: 1px solid #b1b1b1;}
+.login_bt{
+	width:100px; height:30px; position:absolute; top: 110%; left: 50%; margin-left:-50px;
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/8/11_05login_bt1.png') no-repeat center center; background-size:cover; cursor: pointer;
+}
+#chkCompany, #chkRemember { width:15px; height:15px; }
+
+#footer { min-width:320px; width:100%; position: relative; margin: 0 auto; display:none; }
+#footline { display:none; }

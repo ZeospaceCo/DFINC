@@ -1,0 +1,30 @@
+﻿<!--<div style="height:20px;"></div>-->
+{#template MAIN}
+<div class="l_list">
+    <span class="s_tit">{$T.TITLE}</span><span class="badge number badge-light" >{$T.COUNT}</span>
+</div>
+<div class="pList" style="clear: both;">
+<table class="tbl_type" border="1" cellspacing="0">
+<colgroup>
+    <col>
+    <col width="100px">
+</colgroup>
+<tbody>
+{#include SUB root=$T.ItemList}
+</tbody>
+</table>
+</div>
+{#/template MAIN}
+
+{#template SUB}
+    {#foreach $T as SUB}
+        {#if $T.SUB.NAME == 'm_more'}
+            <tr><td class="suj"><a href="javascript:TodoList.PopupItem('{ $T.SUB.URL }')">{ $T.SUB.SUBJ }</a></td></tr>
+        {#else}
+            <tr><td class="suj"><a href="javascript:TodoList.PopupItem('{ $T.SUB.URL }')">{ $T.SUB.SUBJ }</a></td><td><a href="#">{ $T.SUB.NAME }</a></td></tr>
+        {#/if}  
+    {#/for}
+{#/template SUB}
+
+
+

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>html, body {height:98%}</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DeskPlus4.0 웹표준</title>
+
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Board.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        //$("#accordion").height("100%")
+        $(".accordion").accordion({
+            fillSpace: true
+        });
+        $(".accordion").accordion({
+            animated: 'slide'
+        });
+    });
+    $(function () {
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+
+        //alert($(".accordion").height());
+    });
+</script>
+
+</head>
+<body>
+
+<div id="layout_left">
+
+    <div id="layout_treetop">
+        <span class="treetop_title">게시판관리자</span>
+    </div>
+
+    <div id="layout_treeboxAcc" style="height:90%;">
+
+        <div class="accordion">
+            <div class="menu"><a href="#" onclick="" >폴더관리</a></div>
+            <div class="menusub">
+
+                <table cellspacing="0" cellpadding="0" border="0" class="SelectedTreeNodeRow">
+                    <tbody>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="LayoutTree.html" target="frmContent">기본레이아웃(Tree)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="LayoutContent.html" target="frmContent">기본레이아웃(Content)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td ><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">조회(리스트)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListAlbum.html" target="frmContent">조회(앨범)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListBlog.html" target="frmContent">조회(블로그)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListIcon.html" target="frmContent">조회(아이콘)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="Add.html" target="frmContent">작성</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="PopupList.html" target="frmContent">팝업</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="UserDeptTree.html" target="frmContent">조직도</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >게시물관리</a></div>
+            <div class="menusub">
+
+                <table cellspacing="0" cellpadding="0" border="0" class="SelectedTreeNodeRow">
+                    <tbody>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="LayoutTree.html" target="frmContent">기본레이아웃(Tree)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="LayoutContent.html" target="frmContent">기본레이아웃(Content)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td ><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="List.html" target="frmContent">조회(리스트)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListAlbum.html" target="frmContent">조회(앨범)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="ListBlog.html" target="frmContent">조회(블로그)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="Add.html" target="frmContent">작성(ing.....)</a></td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="19">&nbsp;</td>
+                            <td><img src="../../Design/ko/Base/Img/Component/Tree/lines/rminus.gif" alt="" /></td>
+                            <td ><img alt="folder" src="../../Design/ko/Base/Img/Component/Tree/folder.gif" /></td>
+                            <td ><a href="PopupList.html" target="frmContent">팝업(ing.....)</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >템플릿관리</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><a href="/DeskPlusEIP/Board/Admin/Template/List.aspx" target="frmContent">템플릿관리</a></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >환경</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><a href="/DeskPlusEIP/Board/Admin/Config/Default.aspx" target="frmContent">설정</a></li>
+                </ul>
+            </div>
+
+            <div class="menu"><a href="#" onclick="" >통계</a></div>
+            <div class="menusub">
+                <ul>
+                    <li><a href="/DeskPlusEIP/Board/Admin/Statistic/ReadCount.aspx" target="frmContent">게시물조회</a></li>
+                    <li><a href="/DeskPlusEIP/Board/Admin/Statistic/WriteCount.aspx" target="frmContent">게시물등록</a></li>
+                    <li><a href="/DeskPlusEIP/Board/Admin/Statistic/Chart.aspx" target="frmContent">통계</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    <div id="layout_treebuttom"></div>
+
+    <!-- 버튼 //-->
+    <div id="layout_treebutton">
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+        <a href="#" style="cursor:pointer"><img src="/DeskPlusEIP/Design/Base/Img/Icon/Tree_add.gif" /></a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../Design/ko/base/Css/DeskPlusEIPBase.css" type="text/css" media="screen" rel="stylesheet" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_header">
+	<h1>사용자정보</h1>
+	<div class="list_add_style1">
+		<ul class="btn_left">
+			<li><a href="" ><span>기본정보</span></a></li>
+		</ul>
+		<ul class="btn_right">
+			<li><a href="" ><span>인사카드</span></a></li>
+			<li><a href="" ><span>저장</span></a></li>
+			<li><a href="" ><span>닫기</span></a></li>
+		</ul>
+	</div>
+</div>
+<div id="layout_info">
+	<div class="boardW"> 
+		<!-- 테이블 시작 -->
+		<table class="table_typeK">
+			<caption>
+			사용자정보
+			</caption>
+			<colgroup>
+			<col width="13%"/>
+			<col width="13%"/>
+			<col width="7%"/>
+			<col width="13%"/>
+			<col width="20%"/>
+			<col width="13%"/>
+			<col width="20%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td rowspan="8" class="first-child-top tcenter">
+						<div> <img src="../../Design/ko/Base/Img/Icon/ico_noimg.gif" alt="Noimg" />
+							<div class="tree_add_btn_type2"> 
+								<span class="tree_add_btn_alignC"> 
+									<span class="btn_white_type2"><a href="#">저장</a></span> 
+									<span class="btn_white_type2"><a href="#">삭제</a></span></span>						</div>
+						</div>
+						<div> <img src="../../Design/ko/Base/Img/Icon/ico_noimg2.gif" alt="Noimg" />
+							<div class="tree_add_btn_type2"> 
+								<span class="tree_add_btn_alignC"> 
+									<span class="btn_white_type2"><a href="#">저장</a></span> 
+									<span class="btn_white_type2"><a href="#">삭제</a></span>							</span>						</div>
+						</div>				</td>
+					<th class="first-child2"><em class="f_red">*</em>이름</th>
+					<td colspan="3" class="first-child"><input type="text" class="input_type2" /></td>
+					<th class="first-child2">영문명</th>
+					<td class="last-child"><label>test</label></td>
+				</tr>
+				<tr>
+					<th><em class="f_red">*</em>로그인아이디</th>				
+					<td colspan="3" ><input type="text" class="input_type2" /></td>
+					<td colspan="2" class="last-child3"><ul class="btn_left">
+							<li><a href="" ><span>중복체크</span></a></li>
+						</ul>				    <em class="f_red">(*)수정불가</em></td>
+				</tr>
+				<tr>
+					<th>기본메일</th>
+					<td colspan="3"><span class="input_type2_w"><input type="text" class="input_type2" /></span>@
+						<select name="select" id="select">
+							<option>paran.com</option>
+						</select>				</td>
+					<th>시스템코드</th>
+					<td class="last-child3" ><input type="text" class="input_type2" />				</td>
+				</tr>
+				<tr>
+					<th><em class="f_red">*</em>패스워드</th>
+					<td colspan="3"><span class="first-child">
+						<input type="text" class="input_type2" />
+						</span></td>
+					<th>메일패스워드</th>
+					<td class="last-child3" ><input type="text" class="input_type2" /></td>
+				</tr>
+				<tr>
+					<th>주민등록번호</th>
+					<td colspan="3"><span class="first-child">
+						<input type="text" class="input_type2" />
+						</span></td>
+					<th>사번</th>
+					<td class="last-child3" ><input type="text" class="input_type2" /></td>
+				</tr>
+				<tr>
+					<th>입사일</th>
+					<td colspan="3"><span class="first-child">
+						<input type="text" class="input_type2" />
+						</span></td>
+					<th>퇴사일</th>
+					<td class="last-child3" ><input type="text" class="input_type2" /></td>
+				</tr>
+				<tr>
+					<th>집주소</th>
+					<td class="last-child3" colspan="5">
+						<div class="postw"><span class="input_type4_w"><input type="text" class="input_type2"  /> </span><a href="#" class="btn_style6">우편번호찾기</a></div>					
+						<input type="text" class="input_type3"  />				</td>
+				</tr>
+				<tr>
+					<th>본적주소</th>
+					<td class="last-child3" colspan="5">
+						<div class="postw"><span class="input_type4_w"><input type="text" class="input_type2"  /> </span><a href="#" class="btn_style6">우편번호찾기</a></div>					
+						<input type="text" class="input_type3"  />				</td>
+				</tr>
+				<tr>
+					<th class="first-child3">집전화</th>
+					<td colspan="2">전화번호</td>
+					<th>휴대폰</th>
+					<td><input type="text" class="input_type2" />				</td>
+					<th>활성화</th>
+					<td class="last-child3" ><span class="last-child_btm">
+						<input type="checkbox" name="checkbox3" id="checkbox3" />
+						</span></td>
+				</tr>
+				<tr>
+					<th class="first-child3">생년월일</th>
+					<td colspan="2"><input type="text" class="input_type5"  /> <input type="checkbox" name="checkbox4" id="checkbox4" />
+					음력
+					
+						</td>
+					<th>결혼기념일</th>
+					<td><input type="text" class="input_type2" />				</td>
+					<th>성별</th>
+					<td class="last-child3" >
+						<select name="select2" id="select2">
+							<option>남</option>
+							<option>여</option>
+						</select>					</td>
+				</tr>
+				<tr>
+					<th class="first-child3">근무자전화</th>
+					<td colspan="2"><input type="text" class="input_type2" /></td>
+					<th>버전</th>
+					<td><input type="text" class="input_type2" />				</td>
+					<th>팩스</th>
+					<td class="last-child3" ><span class="last-child_btm">
+						<input type="checkbox" name="checkbox3" id="checkbox3" />
+						</span></td>
+				</tr>
+				<tr>
+					<th class="first-child3">File 개인용량</th>
+					<td colspan="2"><input type="text" class="input_type5" />(MB)</td>
+					<th>Mail개인용량</th>
+					<td><input type="text" class="input_type5"  />(MB) </td>
+					<th>보안인증</th>
+					<td class="last-child3" ><span class="last-child_btm">
+						<input type="checkbox" name="checkbox3" id="checkbox3" />
+						</span></td>
+				</tr>
+				<tr>
+					<th class="first-child_btm">담당업무</th>
+					<td class="last-child_btm" colspan="6">
+						<textarea name="textarea" id="textarea" cols="45" rows="5"></textarea>				</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 테이블 끝 -->
+	</div>
+    <div class="boardW">
+	<ul id="tab" class="tab">
+		<li><a href="#" class="tab_on"> <span>부서정보</span> </a></li>
+		<li><a href="#"> <span>가족정보</span> </a></li>
+		<li><a href="#"> <span>교육정보</span> </a></li>
+		<li><a href="#"> <span>상벌사항</span> </a></li>
+		<li><a href="#"> <span>경력사항</span> </a></li>
+		<li><a href="#"> <span>학력사항</span> </a></li>
+	</ul>
+</div>
+    <div class="boardW">
+        <div class="security_left">
+            <div class="tree_typeW2">
+                <div class="roundtable2_l_b">
+                    <div class="roundtable2_l_t">
+                        <div class="roundtable2_r_b">
+                            <div class="roundtable2_r_t">
+                                <!--내용넣기-->
+                                 <div class="list_add_style4">
+                                <span class="input_type4_w"><input type="text" class="searchtext_type2"  />
+                                </span>
+                                <a href="#" class="btn_style4">검색</a>
+                                <a href="#" class="btn_style4">취소</a>				</div>
+                                <div class="clear"></div>
+                                <div class="tree">
+                                    트리넣기				</div><!--//내용넣기-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="arrow"><img src="../../Design/ko/Base/Img/Btn/34_16x16.png" alt="옆으로" /></p>
+        </div>
+        <div class="security_right">
+            <div class="boardW">
+                <h2>솔루션지원팀</h2>
+                <ul class="btn_searchbox">
+                    <li>기본조직
+                        <select size="1" class="searchselect">
+                            <option>솔루션지원팀</option>
+                        </select>
+                    </li>
+                </ul>
+                <!-- 테이블 시작 -->
+                <div class="table_typeAtop_left">
+                    <p></p>
+                </div>
+                <table class="table_typeA">
+                    <caption>
+                    주소록 리스트
+                    </caption>
+                    <colgroup>
+                    <col width="30%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>부서명</th>
+                            <th>직급</th>
+                            <th>직책</th>
+                            <th>순서</th>
+                            <th>Edit</th>
+                            <th>Del</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="checkbox" name="checkbox5" id="checkbox5" /></td>
+                            <td><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table_typeAbottom_left">
+                    <p></p>
+                </div>
+                <!-- 테이블 끝 -->
+            </div>
+            <div class="board_num_style2" id="Pager1"> <span id="pager"> <span id="pager_prev10"><a href="#">이전</a></span> <em> 1 </em> <a href="#"> 2 </a> <a href="#"> 3 </a> <a href="#"> 4 </a> <a href="#"> 5 </a> <a href="#"> 6 </a> <a href="#"> 7 </a> <a href="#"> 8 </a> <a href="#"> 9 </a> <a href="#"> 0 </a> <span id="pager_next10"><a href="#">다음</a></span></span> </div>
+        </div>
+    </div>
+</div>
+<!--layout_info -->
+
+
+</body>
+</html>

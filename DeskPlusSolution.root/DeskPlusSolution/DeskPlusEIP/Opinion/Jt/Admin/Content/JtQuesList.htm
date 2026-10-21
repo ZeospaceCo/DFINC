@@ -1,0 +1,42 @@
+﻿<table class="table_typeA">
+<caption>설문관리</caption>
+<colgroup>
+    <col width="40px" />
+    <col />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="160px" />
+    <col width="100px" />
+    <col width="100px" />    
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input type="checkbox" onclick="QuesList.Checked()" id="cbxAll" /></th>
+        <th class="center"><a id="jtA_Title" href="#" onclick="javascript:QuesList.Sort('Title','jtA_Title')"><span id="jtQL_F1"></span></a></th>
+        <th class="center"><span id="jtQL_F2"></span></th>
+        <th class="center"><span id="jtQL_F3"></span></th>
+        <th class="center"><span id="jtQL_F4"></span></th>
+        <th class="center"><a id="jtA_IsActive" href="#" onclick="javascript:QuesList.Sort('IsActive','jtA_IsActive')"><span id="jtQL_F5"></span></a></th>
+        <th class="center"><span id="jtQL_F6"></span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.QuesID }" value="{ $T.List.QuesID }" /></td>
+        <td><a href="#" onclick="javascript:QuesList.View('{ $T.List.QuesID }')" style="cursor:pointer">{ $T.List.Title }</a></td>
+        <td class="center">{ $T.List.VoteCnt }</td>
+        <td class="center">{ $T.List.UnitCnt }</td>
+        <td class="center">{ $T.List.StartDateStr } ~ { $T.List.EndDateStr }</td>
+        <td class="center">{ $T.List.IsActiveStr }
+            <input type="text" id="tbIsAct_{ $T.List.QuesID }" style="display:none" value="{ $T.List.IsActive }" />
+        </td>
+        <td class="center"><a href="#" onclick="javascript:QuesList.Result('{ $T.List.QuesID }')" style="cursor:pointer">[<span class="spResult"></span>]</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

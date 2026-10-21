@@ -1,0 +1,72 @@
+﻿<?xml version = "1.0" encoding="utf-8"?>
+
+<menu>
+	<newfile visible="visible">新しいファイルの</newfile>
+	<openfile visible="none">ファイルを開く</openfile>
+	<savefile visible="visible">ファイルの保存</savefile>
+	<print visible="visible">印刷</print>
+	<Cut visible="visible">カット</Cut>
+	<Copy visible="visible">コピー</Copy>
+	<paste visible="visible">貼り付け</paste>
+	<Undo visible="visible">アンドゥ</Undo>
+	<Redo visible="visible">再実行</Redo>
+	<InsertHyperlink visible="visible">ハイパーリンクの挿入</InsertHyperlink>
+	<RemoveHyperlink visible="visible">ハイパーリンクを削除する</RemoveHyperlink>
+	<InsertImage visible="visible">画像の挿入</InsertImage>
+	<ImageProperty visible="visible">画像編集</ImageProperty>
+	<InsertFlash visible="visible">フラッシュの挿入</InsertFlash>
+	<InsertSymbol visible="visible">記号を挿入</InsertSymbol>
+	<HorizontalRule visible="visible">水平線を挿入</HorizontalRule>
+	<insertrowabove visible="visible">上記の行を追加</insertrowabove>
+	<insertrowbelow visible="visible">下に行を挿入する</insertrowbelow>
+	<insertcolumnleft visible="visible">左に列を追加</insertcolumnleft>
+	<insertcolumnright visible="visible">右に列を追加</insertcolumnright>
+	<deleterow visible="visible">行の削除</deleterow>
+	<deletecolumn visible="visible">列の削除</deletecolumn>
+	<mergecell visible="visible">セルの結合</mergecell>
+	<splitcell visible="visible">セルの分割</splitcell>
+	<inserttable visible="visible">表の挿入</inserttable>
+	<tableproperty visible="visible">テーブルのプロパティ</tableproperty>
+	<cellproperty visible="visible">セルのプロパティ</cellproperty>
+	<cellverttop visible="visible">上揃え</cellverttop>
+	<cellvertcenter visible="visible">中央揃え</cellvertcenter>
+	<cellvertbottom visible="visible">下揃え</cellvertbottom>
+	<abouttse visible="visible">製品情報</abouttse>
+	<tseformat visible="visible">書式スタイル</tseformat>
+	<tsefontface visible="visible">フォントの種類</tsefontface>
+	<tsefontsize visible="visible">フォントサイズ</tsefontsize>
+	<Bold visible="visible">太字</Bold>
+	<Italic visible="visible">斜体</Italic>
+	<Underline visible="visible">下線</Underline>
+	<Strikethrough visible="visible">取り消し線</Strikethrough>
+	<RemoveFormatting visible="visible">書式を削除</RemoveFormatting>
+	<SelectAll visible="visible">すべてを選択</SelectAll>
+	<tsefontcolor visible="visible">文字色</tsefontcolor>
+	<tsefontbgcolor visible="visible">文字の背景色</tsefontbgcolor>
+	<AlignLeft visible="visible">左揃え</AlignLeft>
+	<AlignCenter visible="visible">中央揃え</AlignCenter>
+	<AlignRight visible="visible">右揃え</AlignRight>
+	<Justify visible="none">両端揃え</Justify>
+	<Numbering visible="visible">番号</Numbering>
+	<Bullets visible="visible">箇条書き</Bullets>
+	<DecreaseIndent visible="visible">インデントを減らす</DecreaseIndent>
+	<IncreaseIndent visible="visible">インデントを増やす</IncreaseIndent>
+	<Superscript visible="visible">上付き文字</Superscript>
+	<Subscript visible="visible">下付き文字</Subscript>
+	<selecttableCell visible="visible">セルを選択</selecttableCell>
+	<selecttable visible="visible">表の選択</selecttable>
+	<Search visible="visible">検索</Search>
+	<Replace visible="visible">変更</Replace>
+	<AdminLock title="書き込み領域の設定" visible="visible">書き込み領域の設定</AdminLock>
+	<AdminUnlock title="書き込み領域を解除" visible="visible">書き込み領域を解除</AdminUnlock>
+	<Userguide title="ユーザーヘルプ" visible="visible">ユーザーヘルプ</Userguide>
+	<TagDiet title="書式まとめ" visible="visible">書式まとめ</TagDiet>
+	<LineHeight title="行間隔" visible="visible">行間隔</LineHeight>
+	<LetterSpacing title="文字間隔" visible="visible">文字間隔</LetterSpacing>
+	<deletetable title="テーブルの削除" visible="visible">テーブルの削除</deletetable>
+	<eq_columnW title="均等にセルの幅を設定する" visible="visible">均等にセルの幅を設定する</eq_columnW>
+	<eq_columnH title="均等にセルの高さを設定する" visible="visible">均等にセルの高さを設定する</eq_columnH>
+	<FullScreen title="全画面表示" visible="visible">全画面表示</FullScreen>
+	<Design>デザイン</Design>
+	<Preview>プレビュー</Preview>
+</menu>

@@ -1,0 +1,39 @@
+﻿<table class="table_typeA">
+    <caption>
+        SystemCode List
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="200px" />
+        <col width="200px" />
+        <col width="200px" />
+        <col width="*" />
+        <col width="100px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+            <th class="center" id="r_groupkey"></th>
+            <th class="center" id="r_code"></th>
+            <th class="center" id="r_codename"></th>
+            <th class="center" id="r_interfacecode"></th>
+            <th class="center" id="r_active"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.SYSCodeID }" value="{ $T.List.SYSCodeID }" /></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.SYSCodeID }','{ $T.List.CodeID }');">{ $T.List.ParentCodeID }</a></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.SYSCodeID }','{ $T.List.CodeID }');">{ $T.List.CodeID }</a></td>
+            <td class="center"><a href="#" onclick="List.View('{ $T.List.SYSCodeID }','{ $T.List.CodeID }');">{ $T.List.NameBase }</a></td>
+            <td class="center">{ $T.List.InterfaceCode }</td>
+            <td class="center">{#if $T.List.ActiveCode == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="6" class="center"><span id="NoListData" /></td>        
+        </tr>
+    {#/for} 
+    </tbody>
+</table>

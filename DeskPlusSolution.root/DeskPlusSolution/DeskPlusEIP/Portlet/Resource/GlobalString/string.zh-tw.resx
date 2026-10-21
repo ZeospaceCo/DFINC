@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>全體日程</value>
+  </data>
+  <data name="AllPimSort" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>上午</value>
+  </data>
+  <data name="ApprovalTitle" xml:space="preserve">
+    <value>- 電子審批</value>
+  </data>
+  <data name="APP_COMPLETE" xml:space="preserve">
+    <value>審批完了</value>
+  </data>
+  <data name="APP_PROCESS" xml:space="preserve">
+    <value>審批進行</value>
+  </data>
+  <data name="BackColor" xml:space="preserve">
+    <value>背景色</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>藍色</value>
+  </data>
+  <data name="BoardTitle" xml:space="preserve">
+    <value>- 公告欄</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>(兼)</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>褐色</value>
+  </data>
+  <data name="Cal" xml:space="preserve">
+    <value>日曆</value>
+  </data>
+  <data name="CellerPhone" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="CommonAddress" xml:space="preserve">
+    <value>共用通訊錄</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>公司通訊錄</value>
+  </data>
+  <data name="CompleteDoc" xml:space="preserve">
+    <value>審批文件</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Congratulation" xml:space="preserve">
+    <value>祝賀</value>
+  </data>
+  <data name="COOP" xml:space="preserve">
+    <value>合作</value>
+  </data>
+  <data name="COOPAccept" xml:space="preserve">
+    <value>接受</value>
+  </data>
+  <data name="COOPComplete" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="COOPProcess" xml:space="preserve">
+    <value>过程</value>
+  </data>
+  <data name="COOPReject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="COOPStandby" xml:space="preserve">
+    <value>准备</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>個</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>選擇日期</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DelPortlet" xml:space="preserve">
+    <value>刪除模塊</value>
+  </data>
+  <data name="DeptDoc" xml:space="preserve">
+    <value>收信文檔</value>
+  </data>
+  <data name="DeptPim" xml:space="preserve">
+    <value>部門日程</value>
+  </data>
+  <data name="DeptPimSort" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DraftDoc" xml:space="preserve">
+    <value>代審文檔</value>
+  </data>
+  <data name="EndSearch" xml:space="preserve">
+    <value>搜索結束</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>與服務器的通信失敗。 ：</value>
+  </data>
+  <data name="FontColor" xml:space="preserve">
+    <value>字體色</value>
+  </data>
+  <data name="ForwardAddress" xml:space="preserve">
+    <value>轉接到的通訊錄</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>青綠</value>
+  </data>
+  <data name="Grey" xml:space="preserve">
+    <value>灰色</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>請輸入日期。</value>
+  </data>
+  <data name="JTOpinionItemNoData" xml:space="preserve">
+    <value>沒有項目</value>
+  </data>
+  <data name="JTOpinionNoData" xml:space="preserve">
+    <value>沒有進行中的問卷調查。</value>
+  </data>
+  <data name="JTOpinionR1" xml:space="preserve">
+    <value>查看項目▼</value>
+  </data>
+  <data name="JTOpinionR2" xml:space="preserve">
+    <value>關閉項目▲</value>
+  </data>
+  <data name="LargePortlet" xml:space="preserve">
+    <value>模塊最大化</value>
+  </data>
+  <data name="LastAccessDate" xml:space="preserve">
+    <value>▣ 最終搜索</value>
+  </data>
+  <data name="LightGreen" xml:space="preserve">
+    <value>黃綠</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>該特殊文字用於保安脆弱型攻擊，將被限制。</value>
+  </data>
+  <data name="ListRowCnt" xml:space="preserve">
+    <value>個查看</value>
+  </data>
+  <data name="Lunar" xml:space="preserve">
+    <value>陰</value>
+  </data>
+  <data name="MailTitle" xml:space="preserve">
+    <value>- 郵件</value>
+  </data>
+  <data name="Marriage" xml:space="preserve">
+    <value>結婚</value>
+  </data>
+  <data name="MenuF1" xml:space="preserve">
+    <value>調查</value>
+  </data>
+  <data name="Middle" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="MsgInputDate" xml:space="preserve">
+    <value>請輸入日期</value>
+  </data>
+  <data name="MsgSelUser" xml:space="preserve">
+    <value>請選擇用戶</value>
+  </data>
+  <data name="NewMail" xml:space="preserve">
+    <value>新郵件</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下頁</value>
+  </data>
+  <data name="NoContents" xml:space="preserve">
+    <value>沒有內容。</value>
+  </data>
+  <data name="Non_Target" xml:space="preserve">
+    <value>非對象</value>
+  </data>
+  <data name="NoResources" xml:space="preserve">
+    <value>沒有預約資源。</value>
+  </data>
+  <data name="NoSettingInfo" xml:space="preserve">
+    <value>沒有設定情報。</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>橙</value>
+  </data>
+  <data name="Pink" xml:space="preserve">
+    <value>粉紅</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>下午</value>
+  </data>
+  <data name="PortletInfoSave" xml:space="preserve">
+    <value>已儲存模塊信息。</value>
+  </data>
+  <data name="PortletSetting" xml:space="preserve">
+    <value>模塊設置</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="PrivateAddress" xml:space="preserve">
+    <value>個人通訊錄</value>
+  </data>
+  <data name="PrivatePim" xml:space="preserve">
+    <value>個人日程</value>
+  </data>
+  <data name="PrivatePimSort" xml:space="preserve">
+    <value>個人</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>處理時發生了錯誤。請與管理員聯繫。</value>
+  </data>
+  <data name="Purple" xml:space="preserve">
+    <value>紫色</value>
+  </data>
+  <data name="RecentShowCnt" xml:space="preserve">
+    <value>最新 表示 數</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>紅色</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>報告</value>
+  </data>
+  <data name="ResourceMng" xml:space="preserve">
+    <value>資源</value>
+  </data>
+  <data name="Saction" xml:space="preserve">
+    <value>提交文檔</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>日程</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchName" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>該文檔只能由原作者和提交人查看。</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="SharePim" xml:space="preserve">
+    <value>共享日程</value>
+  </data>
+  <data name="SharePimSort" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="SmallPortlet" xml:space="preserve">
+    <value>模塊最小化</value>
+  </data>
+  <data name="Solar" xml:space="preserve">
+    <value>陽</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於終止日期。</value>
+  </data>
+  <data name="StartSearch" xml:space="preserve">
+    <value>開始搜索</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目標</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>題目</value>
+  </data>
+  <data name="TitleAddress" xml:space="preserve">
+    <value>職位通訊錄</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>職位</value>
+  </data>
+  <data name="TodaySchedule" xml:space="preserve">
+    <value>今日日程</value>
+  </data>
+  <data name="TodayWork" xml:space="preserve">
+    <value>今日業務</value>
+  </data>
+  <data name="ToDo" xml:space="preserve">
+    <value>事情</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>紫羅蘭</value>
+  </data>
+  <data name="WebHardTitle" xml:space="preserve">
+    <value>- 網絡硬盤</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>白色</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>黃色</value>
+  </data>
+  <data name="MyCoopConfirmRequest" xml:space="preserve">
+    <value>的確認請求</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>板</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>公告</value>
+  </data>
+  <data name="APPSEND" xml:space="preserve">
+    <value>調用</value>
+  </data>
+  <data name="APPRECV" xml:space="preserve">
+    <value>前台</value>
+  </data>
+  <data name="APPING" xml:space="preserve">
+    <value>進度</value>
+  </data>
+  <data name="APPCOMPLETE" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="FirstTabSetting" xml:space="preserve">
+    <value>默認選項卡設置</value>
+  </data>
+  <data name="ApprovalTalk" xml:space="preserve">
+    <value>批准談話</value>
+  </data>
+  <data name="ApprovalType" xml:space="preserve">
+    <value>意見</value>
+  </data>
+  <data name="AppReplySec1" xml:space="preserve">
+    <value>持有</value>
+  </data>
+  <data name="AppReplySec2" xml:space="preserve">
+    <value>等候</value>
+  </data>
+  <data name="AppReplySec3" xml:space="preserve">
+    <value>進度</value>
+  </data>
+  <data name="AppReplySec4" xml:space="preserve">
+    <value>被拒絕</value>
+  </data>
+  <data name="AppReplySec5" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>個人日曆</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>部計劃</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>共享日曆</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>全部賽程</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>吉他</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>捎帶</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>順便添加</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>溝通</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>評論</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>個人待辦事項</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>部門做</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>分享待辦事項</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>全做</value>
+  </data>
+  <data name="AnalogClock_Korea" xml:space="preserve">
+    <value>首爾</value>
+  </data>
+  <data name="AnalogClock_England" xml:space="preserve">
+    <value>倫敦</value>
+  </data>
+  <data name="AnalogClock_Italy" xml:space="preserve">
+    <value>羅馬</value>
+  </data>
+  <data name="AnalogClock_Thailand" xml:space="preserve">
+    <value>曼谷</value>
+  </data>
+  <data name="AnalogClock_HongKong" xml:space="preserve">
+    <value>香港</value>
+  </data>
+  <data name="AnalogClock_Japan" xml:space="preserve">
+    <value>東京</value>
+  </data>
+  <data name="AnalogClock_Australia" xml:space="preserve">
+    <value>悉尼</value>
+  </data>
+  <data name="AnalogClock_Hawaii" xml:space="preserve">
+    <value>檀香山</value>
+  </data>
+  <data name="AnalogClock_SanFrancisco" xml:space="preserve">
+    <value>聖弗朗西斯科</value>
+  </data>
+  <data name="AnalogClock_NewYork" xml:space="preserve">
+    <value>紐約</value>
+  </data>
+  <data name="AnalogClock_Singapore" xml:space="preserve">
+    <value>新加坡</value>
+  </data>
+  <data name="Weather_Seoul" xml:space="preserve">
+    <value>首爾</value>
+  </data>
+  <data name="Weather_Incheon" xml:space="preserve">
+    <value>仁川</value>
+  </data>
+  <data name="Weather_Daejeon" xml:space="preserve">
+    <value>大田</value>
+  </data>
+  <data name="Weather_Daegu" xml:space="preserve">
+    <value>大邱</value>
+  </data>
+  <data name="Weather_Kwangju" xml:space="preserve">
+    <value>光州</value>
+  </data>
+  <data name="Weather_Busan" xml:space="preserve">
+    <value>釜山</value>
+  </data>
+  <data name="Weather_Jeju" xml:space="preserve">
+    <value>濟州</value>
+  </data>
+  <data name="Weather_Kangwon" xml:space="preserve">
+    <value>江原道</value>
+  </data>
+  <data name="Weather_Chungbuk" xml:space="preserve">
+    <value>忠清北道</value>
+  </data>
+  <data name="Weather_Chungnam" xml:space="preserve">
+    <value>忠清南道</value>
+  </data>
+  <data name="Weather_Jeonbuk" xml:space="preserve">
+    <value>全北</value>
+  </data>
+  <data name="Weather_Jeonnam" xml:space="preserve">
+    <value>全羅南道</value>
+  </data>
+  <data name="Weather_Kyungbuk" xml:space="preserve">
+    <value>慶北</value>
+  </data>
+  <data name="Weather_Kyungnam" xml:space="preserve">
+    <value>慶南</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="Delay" xml:space="preserve">
+    <value>延遲</value>
+  </data>
+  <data name="R1" xml:space="preserve">
+    <value>排行</value>
+  </data>
+  <data name="R2" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="R3" xml:space="preserve">
+    <value>數量</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>沒見過一個星期這個窗口</value>
+  </data>
+  <data name="NotOpen" xml:space="preserve">
+    <value>看不見的天窗口</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>星期天</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="NoSchedule" xml:space="preserve">
+    <value>有沒有檔期。</value>
+  </data>
+  <data name="NoTodo" xml:space="preserve">
+    <value>你不必做。</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部門名稱</value>
+  </data>
+  <data name="CompanyTelephone" xml:space="preserve">
+    <value>公司電話</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SearchIn" xml:space="preserve">
+    <value>在結果中搜索</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>商務</value>
+  </data>
+  <data name="NoPeople" xml:space="preserve">
+    <value>沒有員工可用</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>詳細資料</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptOrName" xml:space="preserve">
+    <value>輸入部門或名稱。</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>請輸入您的姓名</value>
+  </data>
+  <data name="PhName" xml:space="preserve">
+    <value>輸入名稱</value>
+  </data>
+  <data name="InputDeptName" xml:space="preserve">
+    <value>請輸入您的搜索部門。</value>
+  </data>
+  <data name="TodoAlert01" xml:space="preserve">
+    <value>您可以指定最多四個</value>
+  </data>
+  <data name="TodoItem01" xml:space="preserve">
+    <value>審批 - 審批</value>
+  </data>
+  <data name="TodoItem02" xml:space="preserve">
+    <value>審批 - 空氣</value>
+  </data>
+  <data name="TodoItem03" xml:space="preserve">
+    <value>業務協作 - 進展</value>
+  </data>
+  <data name="TodoItem04" xml:space="preserve">
+    <value>業務協同 - 等待</value>
+  </data>
+  <data name="TodoItem05" xml:space="preserve">
+    <value>進度管理 - 待辦事項</value>
+  </data>
+  <data name="TodoItem06" xml:space="preserve">
+    <value>行事歷 - 時間表</value>
+  </data>
+  <data name="TodoItem07" xml:space="preserve">
+    <value>資源管理 - 本書狀態</value>
+  </data>
+  <data name="TodoItem08" xml:space="preserve">
+    <value>資源管理器 - 等待審批</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>TO-DO列</value>
+  </data>
+  <data name="Qlink_Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Qlink_Approval" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="Qlink_Community" xml:space="preserve">
+    <value>社區</value>
+  </data>
+  <data name="Qlink_Edms" xml:space="preserve">
+    <value>EDMS</value>
+  </data>
+  <data name="Qlink_Mail" xml:space="preserve">
+    <value>郵件</value>
+  </data>
+  <data name="Qlink_Pims" xml:space="preserve">
+    <value>日曆</value>
+  </data>
+  <data name="Qlink_Reservation" xml:space="preserve">
+    <value>預訂</value>
+  </data>
+  <data name="Qlink_Setting" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="Qlink_SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="Qlink_Task" xml:space="preserve">
+    <value>合作</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="Weather" xml:space="preserve">
+    <value>天氣</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>選擇一個位置</value>
+  </data>
+  <data name="MyInfo_Title1" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="MyInfo_Title2" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="MyInfo_Title3" xml:space="preserve">
+    <value>業務支持</value>
+  </data>
+  <data name="MyInfo_Title4" xml:space="preserve">
+    <value>E-Approval : Process</value>
+  </data>
+  <data name="MyInfo_Title5" xml:space="preserve">
+    <value>E-Approval : Target</value>
+  </data>
+  <data name="MyInfo_Title6" xml:space="preserve">
+    <value>E-Approval : Received</value>
+  </data>
+  <data name="MyInfo_Title7" xml:space="preserve">
+    <value>E-Approval : Received</value>
+  </data>
+  <data name="TodoItem01Sett" xml:space="preserve">
+    <value>審批 - 審批</value>
+  </data>
+  <data name="TodoItem02Sett" xml:space="preserve">
+    <value>審批 - 空氣</value>
+  </data>
+  <data name="TodoItem03Sett" xml:space="preserve">
+    <value>業務協作 - 進展</value>
+  </data>
+  <data name="TodoItem04Sett" xml:space="preserve">
+    <value>業務協同 - 等待</value>
+  </data>
+  <data name="TodoItem05Sett" xml:space="preserve">
+    <value>進度管理 - 待辦事項</value>
+  </data>
+  <data name="TodoItem06Sett" xml:space="preserve">
+    <value>行事歷 - 時間表</value>
+  </data>
+  <data name="TodoItem07Sett" xml:space="preserve">
+    <value>資源管理 - 本書狀態</value>
+  </data>
+  <data name="TodoItem08Sett" xml:space="preserve">
+    <value>資源管理器 - 等待審批</value>
+  </data>
+  <data name="TodoPopupMsg" xml:space="preserve">
+    <value>最多可以指定4個。</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>早退</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>五</value>
+  </data>
+  <data name="Attendance_GotoWork" xml:space="preserve">
+    <value>去工作</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>一</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Attendance_OffWork" xml:space="preserve">
+    <value>下班</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>六</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>四</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>二</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>三</value>
+  </data>
+  <data name="Attendance_Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Attendance_NotGotoWork" xml:space="preserve">
+    <value>它不在工作狀態。</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>请输入你的理由。</value>
+  </data>
+  <data name="Attendance_OffWorkConfirm" xml:space="preserve">
+    <value>你想回家嗎？</value>
+  </data>
+  <data name="Attendance_OffWorkRe" xml:space="preserve">
+    <value>你確定要回家嗎？\nYour處理將被保存回當前時間。</value>
+  </data>
+  <data name="DeletePortlet" xml:space="preserve">
+    <value>模塊刪除</value>
+  </data>
+  <data name="OnDuty" xml:space="preserve">
+    <value>當班</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>已處理。</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="WeekOverTime" xml:space="preserve">
+    <value>每週加班工作</value>
+  </data>
+  <data name="WeekOverTimeMsg" xml:space="preserve">
+    <value>（基於每週52小時內的批准）</value>
+  </data>
+  <data name="Attendance_EarlyConfirm" xml:space="preserve">
+    <value>你想回家嗎？</value>
+  </data>
+  <data name="Attendance_EarlyRe" xml:space="preserve">
+    <value>你確定要回家嗎？\nYour處理將被保存回當前時間。</value>
+  </data>
+  <data name="Attendance_EarlyTime" xml:space="preserve">
+    <value>提前離境時間表</value>
+  </data>
+  <data name="Attendance_EarlyTimeMsg" xml:space="preserve">
+    <value>請選擇預計出發時間</value>
+  </data>
+  <data name="Attendance_EarlyCancelConfirm" xml:space="preserve">
+    <value>你想取消嗎？</value>
+  </data>
+  <data name="Beforework" xml:space="preserve">
+    <value>工作之前</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Attendance_GotoWorkRe" xml:space="preserve">
+    <value>您確定要去上班嗎?\n您的處理將保存回當前時間。</value>
+  </data>
+  <data name="Early_Time" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="GotoWork_Success" xml:space="preserve">
+    <value>출근 처리되었습니다.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="OffWorkEarly_Success" xml:space="preserve">
+    <value>조퇴 처리되었습니다.</value>
+  </data>
+  <data name="OffWork_Success" xml:space="preserve">
+    <value>퇴근 처리되었습니다.</value>
+  </data>
+  <data name="WCTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="WSTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+</root>

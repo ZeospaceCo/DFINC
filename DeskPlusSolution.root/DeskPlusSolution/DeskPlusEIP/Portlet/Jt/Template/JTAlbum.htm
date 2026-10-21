@@ -1,0 +1,29 @@
+﻿<div class="imageSlider">
+    <div class="left"><a href="#"><img class="ptlType3Left" alt="" title="" /></a></div>
+    <div class="imageList">
+        <ul>
+        {#foreach $T as List}                         
+        <li class="poboxlistset" style="height:170px;">
+        <dl>
+            <dd class="img">
+            {#if $T.List.Image == ""}
+                <img class="IconNoImg" height="90px"/>
+            {#else}
+                <img src="{ $T.List.Image }" height="90px"/>
+            {#/if}
+            </dd>
+            <dd class="tit"><a href="{ $T.List.Link }" target="_blank" style="cursor:pointer">{ $T.List.Title }</a></dd>        
+        </dl>
+        </li>
+        {#else}   
+        <li>
+        <dl>
+            <dd class="img"><img class="IconNoImg" /></dd>
+            <dd class="tit"><span class="NoListData"></span></dd>
+        </dl>  
+        </li>
+        {#/for}                                          
+        </ul>
+    </div>
+    <div class="right"><a href="#"><img class="PtlType3Right" alt="" title="" /></a></div>
+</div>

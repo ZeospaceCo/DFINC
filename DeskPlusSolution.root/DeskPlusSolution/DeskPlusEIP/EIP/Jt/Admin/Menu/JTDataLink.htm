@@ -1,0 +1,36 @@
+﻿<table class="table_typeT"> 
+    <caption>
+        Parameter
+    </caption>
+    <colgroup>
+        <col width="150px" />
+        <col width="200px" />
+        <col width="200px" />
+        <col />
+        <col width="80px" />
+    </colgroup>
+    <tr>
+        <th id="r_encripttype"></th>
+        <th id="r_encriptvalue"></th>
+        <th id="r_linkname"></th>
+        <th id="r_linkevalue"></th>
+        <th id="r_del"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.EncriptType }</td>
+        <td class="center">{ $T.List.EncriptValue }</td>
+        <td class="center">{ $T.List.LinkName }</td>
+        <td class="center">{ $T.List.LinkValue }</td>
+        <td class="center">
+            <a onclick="Mod.DelMenuDataLink('{ $T.List.MenuDataLinkID }')" style="display:inline-block;" class="btn"><span class="btn_del"></span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}       
+</table>

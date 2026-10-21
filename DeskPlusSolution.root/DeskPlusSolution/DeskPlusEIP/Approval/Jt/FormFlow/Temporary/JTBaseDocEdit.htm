@@ -1,0 +1,16 @@
+﻿<ul class="itemlist">
+    {#foreach $T as BaseDocList}
+        <li>
+            <a class="j_subject" onclick="javascript:Common.View('{ $T.BaseDocList.ParentDocumentID }')">{ $T.BaseDocList.Subject }</a>
+            {#if $T.BaseDocList.ApprovalState == 'C'} 
+            {#else}
+                <a onclick="javascript:Add.TemporaryBaseDocDel('{ $T.BaseDocList.DraftID }','{ $T.BaseDocList.BaseID }')" title="{ $T.BaseDocList.DocDel }"><i class='fas fa-times-circle'></i></a>&nbsp;
+            {#/if}
+            <p>
+            <span class="j_docNumber">{ $T.BaseDocList.Name }</span>
+            </p>
+        </li>
+    {#else}
+        <li></li>
+    {#/for}
+</ul>

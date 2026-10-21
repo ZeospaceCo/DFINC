@@ -1,0 +1,1359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>アクティベーション</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>添付ファイルを追加するには</value>
+  </data>
+  <data name="AddMenu" xml:space="preserve">
+    <value>メニューを追加</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>投稿を追加</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>ユーザーの追加</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="AdminDrop" xml:space="preserve">
+    <value>強制終了してもよろしいです？</value>
+  </data>
+  <data name="AdminMenu" xml:space="preserve">
+    <value>管理メニュー</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>すべてをダウンロード</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>答える</value>
+  </data>
+  <data name="ApplyCommunityList" xml:space="preserve">
+    <value>ディレクトリアプリケーションの作成</value>
+  </data>
+  <data name="ApplyDate" xml:space="preserve">
+    <value>出願日</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>削除しますか？</value>
+  </data>
+  <data name="ApplyGrade" xml:space="preserve">
+    <value>レベルが上の変更。</value>
+  </data>
+  <data name="ApplyJoinDate" xml:space="preserve">
+    <value>登録日の申請</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>登録の日付を入力してください</value>
+  </data>
+  <data name="ApplyRegDate1" xml:space="preserve">
+    <value>開始日と終了日を入力してください。</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>開始日を入力してください</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="AuthorityNot" xml:space="preserve">
+    <value>制限はありません</value>
+  </data>
+  <data name="BaseName" xml:space="preserve">
+    <value>分類を入力してください。</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="BasicMenu" xml:space="preserve">
+    <value>基本メニュー</value>
+  </data>
+  <data name="Bcc" xml:space="preserve">
+    <value>秘密Ccを</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>予告</value>
+  </data>
+  <data name="BoardCount" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>パートタイム</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>主要なカテゴリ</value>
+  </data>
+  <data name="CategoryGubun" xml:space="preserve">
+    <value>コミュニティ分類</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>カテゴリー名</value>
+  </data>
+  <data name="Cc" xml:space="preserve">
+    <value>リファレンス</value>
+  </data>
+  <data name="ChangeGrade" xml:space="preserve">
+    <value>レベルの変更。</value>
+  </data>
+  <data name="ChangeGradeNameManage" xml:space="preserve">
+    <value>メンバーシップのグレード名を変更します</value>
+  </data>
+  <data name="ChangeManager" xml:space="preserve">
+    <value>コミュニティ管理者の変更</value>
+  </data>
+  <data name="ChangeManagerConfirm" xml:space="preserve">
+    <value>コミュニティ管理者変更要求</value>
+  </data>
+  <data name="ChangeUser" xml:space="preserve">
+    <value>オブジェクトを変更</value>
+  </data>
+  <data name="CheckActive" xml:space="preserve">
+    <value>アクティブにしたいリストを選択してください。</value>
+  </data>
+  <data name="CheckActivelList" xml:space="preserve">
+    <value>復旧リストに加わりました選択してください。</value>
+  </data>
+  <data name="CheckAddMenu" xml:space="preserve">
+    <value>追加したいメニューを選択してください。</value>
+  </data>
+  <data name="CheckCategory" xml:space="preserve">
+    <value>分類を選択してください。</value>
+  </data>
+  <data name="CheckConfirm" xml:space="preserve">
+    <value>承認された処理のリストを選択してください。</value>
+  </data>
+  <data name="CheckDelList" xml:space="preserve">
+    <value>削除したいリストを選択してください。</value>
+  </data>
+  <data name="CheckDelMenu" xml:space="preserve">
+    <value>削除したいメニューを選択してください。</value>
+  </data>
+  <data name="CheckDroplList" xml:space="preserve">
+    <value>強制終了リストを選択してください。</value>
+  </data>
+  <data name="CheckGrade" xml:space="preserve">
+    <value>リストを変更するレベルを選択してください。</value>
+  </data>
+  <data name="CheckManager" xml:space="preserve">
+    <value>変更したいオブジェクトを選択してください。</value>
+  </data>
+  <data name="CheckModList" xml:space="preserve">
+    <value>変更したいリストを選択してください。</value>
+  </data>
+  <data name="CheckNonActive" xml:space="preserve">
+    <value>無効にしたいリストを選択してください。</value>
+  </data>
+  <data name="CheckReject" xml:space="preserve">
+    <value>不承認のリストを選択してください。</value>
+  </data>
+  <data name="CheckUser" xml:space="preserve">
+    <value>オブジェクトを選択してください。</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国語</value>
+  </data>
+  <data name="ClickBest" xml:space="preserve">
+    <value>最高の眺め</value>
+  </data>
+  <data name="ClipBoard" xml:space="preserve">
+    <value>コミュニティアドレスがクリップボードに格納されています。 \ Nは、Ctrl + V貼り付けを使用してください。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="CMNJoin" xml:space="preserve">
+    <value>への参加を要求した</value>
+  </data>
+  <data name="CMNPoint" xml:space="preserve">
+    <value>ポイント</value>
+  </data>
+  <data name="CMNScript1" xml:space="preserve">
+    <value>&lt;B&gt;コミュニティ会員、5月の内のオブジェクトを変更する&lt;/ b&gt;です。</value>
+  </data>
+  <data name="CMNScript2" xml:space="preserve">
+    <value>変更要求が思い出さ関連付けられたオブジェクトに送られます。</value>
+  </data>
+  <data name="CMNScript3" xml:space="preserve">
+    <value>メイン画面上の管理モジュールの一覧。</value>
+  </data>
+  <data name="CMNScript4" xml:space="preserve">
+    <value>コミュニティメンバーは&lt;b&gt;優秀会員&lt;/ b&gt;のを変更</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>パレット</value>
+  </data>
+  <data name="ComApplyDate" xml:space="preserve">
+    <value>コミュニティ作成日</value>
+  </data>
+  <data name="ComConfirm" xml:space="preserve">
+    <value>開くためのアプリケーション</value>
+  </data>
+  <data name="ComHost" xml:space="preserve">
+    <value>コミュニティ管理者</value>
+  </data>
+  <data name="ComInfo" xml:space="preserve">
+    <value>コミュニティ情報</value>
+  </data>
+  <data name="ComList" xml:space="preserve">
+    <value>すべてのコミュニティ</value>
+  </data>
+  <data name="ComManage" xml:space="preserve">
+    <value>* マネジメントは、地域社会の認可の申請を拒否している。</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="CommunityDel" xml:space="preserve">
+    <value>コミュニティを削除</value>
+  </data>
+  <data name="CommunityDes" xml:space="preserve">
+    <value>コミュニティプロフィール</value>
+  </data>
+  <data name="CommunityJoinType" xml:space="preserve">
+    <value>メンバーは道に参加</value>
+  </data>
+  <data name="CommunityManage" xml:space="preserve">
+    <value>コミュニティ管理</value>
+  </data>
+  <data name="CommunityName" xml:space="preserve">
+    <value>コミュニティ名</value>
+  </data>
+  <data name="CommunitySys" xml:space="preserve">
+    <value>コミュニティ管理者</value>
+  </data>
+  <data name="CommunityType" xml:space="preserve">
+    <value>コミュニティ性質</value>
+  </data>
+  <data name="ComName" xml:space="preserve">
+    <value>コミュニティ名</value>
+  </data>
+  <data name="CompleteApply" xml:space="preserve">
+    <value>アプリケーションを完了する。</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="ComWriteName" xml:space="preserve">
+    <value>によって作成された</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="ConfirmActive" xml:space="preserve">
+    <value>それをアクティブにするには？</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>承認された治療</value>
+  </data>
+  <data name="ConfirmChange" xml:space="preserve">
+    <value>あなたはそれを変更したいですか？</value>
+  </data>
+  <data name="ConfirmComplete" xml:space="preserve">
+    <value>それを承認するには？</value>
+  </data>
+  <data name="ConfirmDrop" xml:space="preserve">
+    <value>辞めたい？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前に作成したコンテンツが表示されなくなります。選択肢？</value>
+  </data>
+  <data name="ConfirmGrade" xml:space="preserve">
+    <value>ランクを変更しますか？</value>
+  </data>
+  <data name="ConfirmIssue" xml:space="preserve">
+    <value>トピックとして指定されています。</value>
+  </data>
+  <data name="ConfirmJoin" xml:space="preserve">
+    <value>追加されました。</value>
+  </data>
+  <data name="ConfirmManager" xml:space="preserve">
+    <value>コミュニティ管理者が変更されました。</value>
+  </data>
+  <data name="ConfirmNonActive" xml:space="preserve">
+    <value>あなたがそれを無効にしてもよろしいですか？</value>
+  </data>
+  <data name="ConfirmRecommend" xml:space="preserve">
+    <value>推奨されている。</value>
+  </data>
+  <data name="ConfirmReject" xml:space="preserve">
+    <value>それを承認することを拒否するには？</value>
+  </data>
+  <data name="ConfirmWaiting" xml:space="preserve">
+    <value>応募してきた。管理者の承認待ちです。</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="CopyClipBoard" xml:space="preserve">
+    <value>ショートカットをコピー</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="DefaultMenu" xml:space="preserve">
+    <value>基本的なメニューに適用</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DelAdminCommunity" xml:space="preserve">
+    <value>コミュニティを削除するには？</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>あなたがファイルを削除してもよろしいですか？</value>
+  </data>
+  <data name="DelCommunity" xml:space="preserve">
+    <value>コミュニティのリフティング</value>
+  </data>
+  <data name="DelConfirmCommunity" xml:space="preserve">
+    <value>コミュニティのロックを解除するには？</value>
+  </data>
+  <data name="DelGubun" xml:space="preserve">
+    <value>カテゴリを削除するには？</value>
+  </data>
+  <data name="DelIssue" xml:space="preserve">
+    <value>それを指定したトピックを削除するには？</value>
+  </data>
+  <data name="DelJoin" xml:space="preserve">
+    <value>それに参加するための要求をキャンセルするには？</value>
+  </data>
+  <data name="DelMenu" xml:space="preserve">
+    <value>メニューを削除するには？</value>
+  </data>
+  <data name="DelNonAcitve" xml:space="preserve">
+    <value>化、無効化、計画的なコミュニティを削除します。</value>
+  </data>
+  <data name="DelSchedule" xml:space="preserve">
+    <value>スケジュールを削除するには？</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>はじめに</value>
+  </data>
+  <data name="DisDes" xml:space="preserve">
+    <value>リフティングコミュニティ&lt;b&gt;を再度開くことができません&lt;/ b&gt;。</value>
+  </data>
+  <data name="DisDes1" xml:space="preserve">
+    <value>コミュニティはコミュニティの解除後にログインすることはできません。</value>
+  </data>
+  <data name="DisplayMenu" xml:space="preserve">
+    <value>画面に表示されたメニューの作成</value>
+  </data>
+  <data name="Dissolution" xml:space="preserve">
+    <value>和らげる</value>
+  </data>
+  <data name="DissolutionReason" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Drop" xml:space="preserve">
+    <value>強制終了</value>
+  </data>
+  <data name="DropUser" xml:space="preserve">
+    <value>やめる</value>
+  </data>
+  <data name="EditorScript" xml:space="preserve">
+    <value>本体スクリプト疑わしいテキストコンテンツが含まれていますが変更になることがあります。</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorMailType" xml:space="preserve">
+    <value>フォーム内の​​ユーザーまたは電子メールアドレスのエラーはありません。</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>ファイルの追加</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="FileDown" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5時間</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4時間</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>ゴールド</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>金曜日</value>
+  </data>
+  <data name="GoAdmin" xml:space="preserve">
+    <value>管理者モードでログインします</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>ディレクトリのページに移動します</value>
+  </data>
+  <data name="GoMain" xml:space="preserve">
+    <value>メインページに行く</value>
+  </data>
+  <data name="GoMyCommunity" xml:space="preserve">
+    <value>コミュニティのショートカット</value>
+  </data>
+  <data name="GoodMemberScript" xml:space="preserve">
+    <value>コミュニティのアクティブユーザーを表示します。</value>
+  </data>
+  <data name="GoodMemberSearch" xml:space="preserve">
+    <value>卓越したメンバーを見る</value>
+  </data>
+  <data name="GoSiteMain" xml:space="preserve">
+    <value>ポータル管理ページに移動します。</value>
+  </data>
+  <data name="GoView" xml:space="preserve">
+    <value>表示ページに移動します。</value>
+  </data>
+  <data name="GradeName" xml:space="preserve">
+    <value>グレード名</value>
+  </data>
+  <data name="GradeNameManage" xml:space="preserve">
+    <value>メンバーのレベル名の管理</value>
+  </data>
+  <data name="GroupManage" xml:space="preserve">
+    <value>機密管理</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="InputAnswer" xml:space="preserve">
+    <value>回答を入力してください</value>
+  </data>
+  <data name="InputCommunityName" xml:space="preserve">
+    <value>コミュニティ名を入力してください</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>テキストの内容を入力してください。</value>
+  </data>
+  <data name="InputDes" xml:space="preserve">
+    <value>自己紹介を入力してください。</value>
+  </data>
+  <data name="InputDissolution" xml:space="preserve">
+    <value>リフトの理由を入力してください</value>
+  </data>
+  <data name="InputMenu" xml:space="preserve">
+    <value>メニュー名を入力してください</value>
+  </data>
+  <data name="InputNumber" xml:space="preserve">
+    <value>数字のみを入力してください</value>
+  </data>
+  <data name="InputQuestion" xml:space="preserve">
+    <value>質問を入力してください</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>タイトルを入力してください。</value>
+  </data>
+  <data name="InputTo" xml:space="preserve">
+    <value>受信者を入力してください</value>
+  </data>
+  <data name="Introduce" xml:space="preserve">
+    <value>自己紹介</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>指定された問題</value>
+  </data>
+  <data name="IssueTitle" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本人</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>参加する</value>
+  </data>
+  <data name="JoinActive1" xml:space="preserve">
+    <value>参加する</value>
+  </data>
+  <data name="JoinActive2" xml:space="preserve">
+    <value>回収に参加</value>
+  </data>
+  <data name="JoinApply" xml:space="preserve">
+    <value>への参加を要求した</value>
+  </data>
+  <data name="JoinComList" xml:space="preserve">
+    <value>コミュニティに加盟</value>
+  </data>
+  <data name="JoinDate" xml:space="preserve">
+    <value>デイに参加</value>
+  </data>
+  <data name="JoinDes" xml:space="preserve">
+    <value>アプリケーションの敷地</value>
+  </data>
+  <data name="JoinManage" xml:space="preserve">
+    <value>会員管理のためのアプリケーション</value>
+  </data>
+  <data name="JoinName" xml:space="preserve">
+    <value>申請者</value>
+  </data>
+  <data name="JoinQuestion" xml:space="preserve">
+    <value>質問を追加</value>
+  </data>
+  <data name="JoinType" xml:space="preserve">
+    <value>タイプを追加</value>
+  </data>
+  <data name="JoinType1" xml:space="preserve">
+    <value>への参加を要求したがすぐに参加できます</value>
+  </data>
+  <data name="JoinType2" xml:space="preserve">
+    <value>参加するには管理者の要求の承認は、に含まれるかもしれません後</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓国語</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>投稿は200字以内に制限され</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>リスト</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>郵便</value>
+  </data>
+  <data name="MailAdmin" xml:space="preserve">
+    <value>コミュニティの管理者に</value>
+  </data>
+  <data name="MailDesc" xml:space="preserve">
+    <value>多くのプレス;区別</value>
+  </data>
+  <data name="MailSend" xml:space="preserve">
+    <value>メールを送信</value>
+  </data>
+  <data name="MainCommunity" xml:space="preserve">
+    <value>コミュニティホーム</value>
+  </data>
+  <data name="MainDisplay" xml:space="preserve">
+    <value>家庭経営</value>
+  </data>
+  <data name="MainDisplayDes" xml:space="preserve">
+    <value>メイン画面の管理は、ポータルフィールドに表示されます。</value>
+  </data>
+  <data name="MainPageManage" xml:space="preserve">
+    <value>画面管理を開始</value>
+  </data>
+  <data name="MainTitleDes" xml:space="preserve">
+    <value>メイン画面表示上の台湾ヘッド設計管理。</value>
+  </data>
+  <data name="MakeCommunity" xml:space="preserve">
+    <value>開くためのアプリケーション</value>
+  </data>
+  <data name="MakeCommunityDes" xml:space="preserve">
+    <value>開くためのアプリケーション。</value>
+  </data>
+  <data name="MemberManage" xml:space="preserve">
+    <value>会員管理</value>
+  </data>
+  <data name="MemberSearch" xml:space="preserve">
+    <value>検索は、コミュニティメンバーのインテリジェンスに入社しました。</value>
+  </data>
+  <data name="Membership" xml:space="preserve">
+    <value>メンバーシップ</value>
+  </data>
+  <data name="MemberType" xml:space="preserve">
+    <value>会員ランク</value>
+  </data>
+  <data name="MemeberGrade" xml:space="preserve">
+    <value>メンバーシップレベル</value>
+  </data>
+  <data name="MemeberGradeName" xml:space="preserve">
+    <value>会員グレード名</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="MenuDetail" xml:space="preserve">
+    <value>詳細情報セット</value>
+  </data>
+  <data name="MenuManager" xml:space="preserve">
+    <value>メニューマネージャ</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>メニュー名</value>
+  </data>
+  <data name="MenuSkinManage" xml:space="preserve">
+    <value>メニュー/画面管理</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>インスタントメッセージ</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ModCommunityInfo" xml:space="preserve">
+    <value>インテリジェンスのアプリケーションを変更</value>
+  </data>
+  <data name="ModGradeNameManage" xml:space="preserve">
+    <value>会員グレード名を変更</value>
+  </data>
+  <data name="ModShortReply" xml:space="preserve">
+    <value>ポストを編集</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1ヶ月</value>
+  </data>
+  <data name="Month1" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>携帯電話</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>多言語化</value>
+  </data>
+  <data name="MultiLangSetting" xml:space="preserve">
+    <value>多言語設定</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多言語名</value>
+  </data>
+  <data name="MutiName" xml:space="preserve">
+    <value>多国籍企業名</value>
+  </data>
+  <data name="MyCommunityList" xml:space="preserve">
+    <value>私のコミュニティ一覧</value>
+  </data>
+  <data name="NameAdvice" xml:space="preserve">
+    <value>コミュニティのトピックの名前を入力してください。</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附属書は存在しません。</value>
+  </data>
+  <data name="Noauth" xml:space="preserve">
+    <value>ユーザーがアクセスすることはできません。</value>
+  </data>
+  <data name="NoCategory" xml:space="preserve">
+    <value>カテゴリのリストが表示されない場合は、管理者に連絡してください。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>ファイルが存在しません。</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>無効にする</value>
+  </data>
+  <data name="NoReadAuth" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="NoRepeatDay" xml:space="preserve">
+    <value>繰り返しスケジュールが存在しません</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>気付く</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>ていない画像形式</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>無題</value>
+  </data>
+  <data name="NowManager" xml:space="preserve">
+    <value>現在、コミュニティマネージャ</value>
+  </data>
+  <data name="NoWriteAuth" xml:space="preserve">
+    <value>書面による許可がない</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1時間</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1日</value>
+  </data>
+  <data name="OpenDate" xml:space="preserve">
+    <value>開幕日</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>活性点</value>
+  </data>
+  <data name="PointChange" xml:space="preserve">
+    <value>ポイントの変更</value>
+  </data>
+  <data name="PointManage" xml:space="preserve">
+    <value>コミュニティで使用されるポイント数を管理します。</value>
+  </data>
+  <data name="PointManagement" xml:space="preserve">
+    <value>ポイントマネージャ</value>
+  </data>
+  <data name="PointScore" xml:space="preserve">
+    <value>ポイントスコア</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>処理されている。しばらくお待ちください。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理エラーが発生しました。管理者に連絡してください。</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>質問する</value>
+  </data>
+  <data name="ReadAuth" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>受取人</value>
+  </data>
+  <data name="RecomCount" xml:space="preserve">
+    <value>紹介</value>
+  </data>
+  <data name="RecomDate" xml:space="preserve">
+    <value>毎日の推奨される</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>推奨する</value>
+  </data>
+  <data name="RecomStatus" xml:space="preserve">
+    <value>推奨されるステータス</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>ログイン·デー</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>人ログイン</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>認めていない必要があります</value>
+  </data>
+  <data name="RejectJoin" xml:space="preserve">
+    <value>メンバーを終了します。参加を申請することはできません。</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>リピート設定</value>
+  </data>
+  <data name="Repeat1" xml:space="preserve">
+    <value>各</value>
+  </data>
+  <data name="Repeat10" xml:space="preserve">
+    <value>2番目の</value>
+  </data>
+  <data name="Repeat11" xml:space="preserve">
+    <value>第3</value>
+  </data>
+  <data name="Repeat12" xml:space="preserve">
+    <value>第4</value>
+  </data>
+  <data name="Repeat13" xml:space="preserve">
+    <value>最後</value>
+  </data>
+  <data name="Repeat14" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Repeat15" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="Repeat16" xml:space="preserve">
+    <value>週末</value>
+  </data>
+  <data name="Repeat17" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="Repeat18" xml:space="preserve">
+    <value>毎週</value>
+  </data>
+  <data name="Repeat19" xml:space="preserve">
+    <value>週の</value>
+  </data>
+  <data name="Repeat2" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="Repeat20" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Repeat21" xml:space="preserve">
+    <value>で</value>
+  </data>
+  <data name="Repeat22" xml:space="preserve">
+    <value>日リピートへ</value>
+  </data>
+  <data name="Repeat23" xml:space="preserve">
+    <value>繰り返しに</value>
+  </data>
+  <data name="Repeat3" xml:space="preserve">
+    <value>毎日（平日）</value>
+  </data>
+  <data name="Repeat4" xml:space="preserve">
+    <value>来週、リピート</value>
+  </data>
+  <data name="Repeat5" xml:space="preserve">
+    <value>毎月</value>
+  </data>
+  <data name="Repeat6" xml:space="preserve">
+    <value>で</value>
+  </data>
+  <data name="Repeat7" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="Repeat8" xml:space="preserve">
+    <value>リピート</value>
+  </data>
+  <data name="Repeat9" xml:space="preserve">
+    <value>最初の</value>
+  </data>
+  <data name="RepeatCount" xml:space="preserve">
+    <value>リピート範囲の繰り返し数を入力してください。</value>
+  </data>
+  <data name="RepeatDay" xml:space="preserve">
+    <value>毎日繰り返さ</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>繰り返すスケジュールを削除</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>いつものように他のすべてのスケジュールを繰り返すスケジュールを維持。</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>スケジュールおよび将来のすべてのスケジュールが変更されます。</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>すべてのスケジュールは、反復的に変更されます。他のスケジュールの変更事項を維持します。</value>
+  </data>
+  <data name="RepeatEx4" xml:space="preserve">
+    <value>スケジュールおよび将来のすべてのスケジュールを削除します。</value>
+  </data>
+  <data name="RepeatEx5" xml:space="preserve">
+    <value>すべてのスケジュールを重複削除</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>これだけスケジュール</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>すべての今後のスケジュール</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>すべてのスケジュール</value>
+  </data>
+  <data name="RepeatInput" xml:space="preserve">
+    <value>繰り返し周期の値を入力してください</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>繰り返しスケジュールを変更</value>
+  </data>
+  <data name="RepeatMonth" xml:space="preserve">
+    <value>毎月の定期的な</value>
+  </data>
+  <data name="RepeatNumber" xml:space="preserve">
+    <value>繰り返し周期の値が正しくありません</value>
+  </data>
+  <data name="RepeatRange" xml:space="preserve">
+    <value>再発の範囲</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>リピート設定</value>
+  </data>
+  <data name="RepeatStartDateEndDate" xml:space="preserve">
+    <value>期日の範囲を繰り返し、開始日より小さくすることはできません。</value>
+  </data>
+  <data name="RepeatWeek" xml:space="preserve">
+    <value>毎週繰り返される</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>数が1を超えるを入力してください</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>答える</value>
+  </data>
+  <data name="ReplyBest" xml:space="preserve">
+    <value>投稿ベスト</value>
+  </data>
+  <data name="ReplyCount" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="ReplyInputContent" xml:space="preserve">
+    <value>内容を入力してください。</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>地球</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>土曜日</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>スケジュール管理</value>
+  </data>
+  <data name="ScheduleAdd" xml:space="preserve">
+    <value>スケジュールを追加</value>
+  </data>
+  <data name="ScheduleAlarm" xml:space="preserve">
+    <value>スケジュールのリマインダ</value>
+  </data>
+  <data name="ScheduleMod" xml:space="preserve">
+    <value>変更するスケジュール</value>
+  </data>
+  <data name="ScheduleOne" xml:space="preserve">
+    <value>スケジュール管理メニューは1つだけを追加することができます。</value>
+  </data>
+  <data name="ScheduleView" xml:space="preserve">
+    <value>アジェンダビュー</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>スクリーンショット</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchUserInfo" xml:space="preserve">
+    <value>会員情報検索</value>
+  </data>
+  <data name="SearchUserList" xml:space="preserve">
+    <value>メンバーの表示</value>
+  </data>
+  <data name="SelChildID" xml:space="preserve">
+    <value>少人数のクラスを選択してください</value>
+  </data>
+  <data name="SelectRepeatDay" xml:space="preserve">
+    <value>リピート範囲の日付を選択してください</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>オブジェクトを選択します</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>曜日を選択してください</value>
+  </data>
+  <data name="SelGubun" xml:space="preserve">
+    <value>カテゴリーを選択してください</value>
+  </data>
+  <data name="SelMenu" xml:space="preserve">
+    <value>メニューを選択してください</value>
+  </data>
+  <data name="SelParentID" xml:space="preserve">
+    <value>カテゴリを選択</value>
+  </data>
+  <data name="SelScreenShot" xml:space="preserve">
+    <value>あなたはスクリーンショットのファイルを指定する必要があります。</value>
+  </data>
+  <data name="SelUser" xml:space="preserve">
+    <value>ユーザを選択してください</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>送り主</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>メールを送信</value>
+  </data>
+  <data name="SendWholeMail" xml:space="preserve">
+    <value>すべてのメールに送信</value>
+  </data>
+  <data name="SetDetailInfo" xml:space="preserve">
+    <value>詳細な知性を設定</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>セットアップする</value>
+  </data>
+  <data name="SettingAuth" xml:space="preserve">
+    <value>アクセス許可の設定</value>
+  </data>
+  <data name="SettingMenu" xml:space="preserve">
+    <value>メニューを構築することができる</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>画像を見る</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6時間</value>
+  </data>
+  <data name="Skin1" xml:space="preserve">
+    <value>メニューの境界線の上下端</value>
+  </data>
+  <data name="Skin2" xml:space="preserve">
+    <value>上部のメニューの背景</value>
+  </data>
+  <data name="Skin3" xml:space="preserve">
+    <value>メニューの背景の下端</value>
+  </data>
+  <data name="Skin4" xml:space="preserve">
+    <value>フォントの色の反転</value>
+  </data>
+  <data name="Skin5" xml:space="preserve">
+    <value>XXXようこそ</value>
+  </data>
+  <data name="Skin6" xml:space="preserve">
+    <value>2000年1月1日以来</value>
+  </data>
+  <data name="Skin7" xml:space="preserve">
+    <value>会員数：100</value>
+  </data>
+  <data name="Skin8" xml:space="preserve">
+    <value>訪問数：10</value>
+  </data>
+  <data name="Skin9" xml:space="preserve">
+    <value>色を選択されまし​​た：</value>
+  </data>
+  <data name="SkinDes" xml:space="preserve">
+    <value>コミュニティメニュー皮膚の管理</value>
+  </data>
+  <data name="SkinManager" xml:space="preserve">
+    <value>皮膚管理</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="StandDown" xml:space="preserve">
+    <value>活動の停止</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さくなければなりません。</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>終了日は未満または開始日と同じ日にすることはできません。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="SubBaseName" xml:space="preserve">
+    <value>少人数のクラスを入力してください</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>少人数制クラス</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>スーパー管理者</value>
+  </data>
+  <data name="TabTitle" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾語</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3時間</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3日間</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>ウッド</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="TitleDisplay" xml:space="preserve">
+    <value>台湾ヘッド背景の写真</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="TodayCount" xml:space="preserve">
+    <value>今日の投稿</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>火災</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2時間</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2日</value>
+  </data>
+  <data name="Type1" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="Type1Des" xml:space="preserve">
+    <value>メンバが参加する必要はありません</value>
+  </data>
+  <data name="Type2" xml:space="preserve">
+    <value>非公共</value>
+  </data>
+  <data name="Type2Des" xml:space="preserve">
+    <value>専用コミュニティのメンバーがアクセスすることができます</value>
+  </data>
+  <data name="Type3" xml:space="preserve">
+    <value>質問する</value>
+  </data>
+  <data name="Type3Des" xml:space="preserve">
+    <value>質問が制限参入が正解への参加を許可されたことを願っています。</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>上記の</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>メンバー·インテリジェンス</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="UsingMenu" xml:space="preserve">
+    <value>メニューを使用して</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>の数を表示</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>デイを見る</value>
+  </data>
+  <data name="ViewStatus" xml:space="preserve">
+    <value>のステータスを表示します</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>ログイン·インテリジェンス</value>
+  </data>
+  <data name="VisitCount" xml:space="preserve">
+    <value>訪問</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1週間</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>重要度</value>
+  </data>
+  <data name="Welcome1" xml:space="preserve">
+    <value>歓迎</value>
+  </data>
+  <data name="Welcome2" xml:space="preserve">
+    <value>メンバーシップ</value>
+  </data>
+  <data name="Welcome3" xml:space="preserve">
+    <value>訪問</value>
+  </data>
+  <data name="WholeMember" xml:space="preserve">
+    <value>すべてのメンバー</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>作る</value>
+  </data>
+  <data name="WriteAuth" xml:space="preserve">
+    <value>許可書</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>記事を書く</value>
+  </data>
+  <data name="WriteView" xml:space="preserve">
+    <value>投稿を表示</value>
+  </data>
+  <data name="WrongAnswer" xml:space="preserve">
+    <value>間違った答え。</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>연휴</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>대체휴무</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+</root>

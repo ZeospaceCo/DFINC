@@ -1,0 +1,56 @@
+﻿<table class="table_typeA">
+<caption>양식관리</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="400px" />
+    <col width="150px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />    
+    <col width="100px" />    
+    <col width="60px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="center"><input type="checkbox" onclick="List.Checked()" id="cbxAll" /></th>
+    <th class="center" id="r_formname"></th>
+    <th class="center" id="r_foldername"></th>
+    <th class="center" id="r_islegacy" class="center"></th>
+    <th class="center" id="r_isedm" class="center"></th>
+    <th class="center" id="r_isactive" class="center"></th>
+    <th class="center" id="r_draft" class="center"></th>
+    <th class="center" id="r_writedate" class="center"></th>
+    <th class="center" id="r_admin" class="center"></th>
+</tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.List.FormID }" value="{ $T.List.FormID }" />
+            <input type="text" id="tbIsAct_{ $T.List.FormID }" style="display:none" value="{ $T.List.IsActive }" />
+            <input type="text" id="tbFormBase_{ $T.List.FormID }" style="display:none" value="{ $T.List.FormBase }" />
+            <input type="text" id="tbFolderID_{ $T.List.FormID }" style="display:none" value="{ $T.List.FolderID }" />
+        </td>
+        <td><a href="#" onclick="javascript:List.Add('{ $T.List.FormID }')" style="cursor:pointer" title="">{ $T.List.FormBase }</a></td>
+        <td>{ $T.List.NameBase }</td>
+        <td class="center">{ $T.List.IsLegacy }</td>
+        <td class="center">{ $T.List.IsLinked }</td>
+        <td class="center">{ $T.List.IsActiveStr }</td>
+        <td class="center">{ $T.List.DraftCnt }</td>
+        <td class="center">{ $T.List.WriteDateStr }</td>
+        <td class="center">
+            <!--  <a href="#" onclick="javascript:List.View('{ $T.List.FormID }')" style="cursor:pointer" title="양식내용을 조회합니다">
+                <img src="/DeskPlusEIP/Design/Green/Img/Icon/ico_typeA_list.gif" alt="양식내용을 조회합니다" /></a>&nbsp;&nbsp; //-->
+            <a href="#" onclick="javascript:List.ModSetting('{ $T.List.FormID }')" style="cursor:pointer" title="">
+                <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_set1.gif" alt="" /></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="9" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

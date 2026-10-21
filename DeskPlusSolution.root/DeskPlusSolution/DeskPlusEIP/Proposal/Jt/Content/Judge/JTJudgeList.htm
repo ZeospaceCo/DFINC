@@ -1,0 +1,44 @@
+﻿<table class="table_typeA" >
+<caption>
+    심사 대상 리스트
+</caption>
+<colgroup>
+    <col width="100px" />
+    <col width="100px" />
+    <col width="250px"/>
+    <col />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center">접수번호</th>
+    <th class="center">접수일자</th>
+    <th class="center">제안자</th>
+    <th class="center">제안 제목</th>
+    <th class="center">진행 상황</th>
+</tr>
+
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">
+        <a onclick="JudgeList.View('{ $T.BoardList.ProposalNo }');return false;" style="cursor:pointer" >{ $T.BoardList.No }</a>  
+    </td>
+    <td class="center">{ $T.BoardList.WriteDateYMD }</td>
+    <td class="center">{ $T.BoardList.DeptName } &nbsp;
+        {#if $T.BoardList.WriteUserID > 0}
+            <a onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteName }</a>
+        {#else}
+            { $T.BoardList.WriteName }
+        {#/if}
+    </td>
+    <td>        
+        <a onclick="JudgeList.View('{ $T.BoardList.ProposalNo }');return false;" style="cursor:pointer" >{ $T.BoardList.Title }</a>
+        
+    </td>
+    <td class="center">{ $T.BoardList.Status }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center">심사 할 제안이 없습니다.</td>        
+</tr>
+{#/for}        
+</table>

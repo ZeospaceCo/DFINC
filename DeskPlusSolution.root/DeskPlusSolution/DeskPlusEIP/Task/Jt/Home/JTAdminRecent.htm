@@ -1,0 +1,43 @@
+﻿<table class="tbl_type" border="1" cellspacing="0">
+<thead>
+<tr>    
+    <th style="min-width:350px" id="r_rtitle"></th>
+    <th width="55px" id="r_rstatus"></th>
+    <th width="75px" id="r_rrequestdept"></th>
+    <th width="75px" id="r_rrequester"></th>
+    <th width="80px" id="r_rrequsetdate"></th>
+    <th width="55px" id="r_rexcessday">D-day</th>
+    <th width="80px" id="r_renddate"></th>
+    <th width="75px" id="r_rtodept"></th>
+    <th width="75px" id="r_rtoname"></th> 
+</tr>
+</thead>
+{#foreach $T as List}
+<tr>    
+    <td class="suj"><div class="w_dot"></div>        
+        <a onclick="Main.View('{ $T.List.ListID }','{ $T.List.GroupID }','{ $T.List.ViewerCount }');return false;" style="cursor:pointer">
+        {$T.List.Title }</a>
+        {#if $T.List.ShowNew == 'Y'}&nbsp;<span class="i_new"></span>{#/if} 
+        {#if $T.List.ReplyCnt > 0}
+        <span>({ $T.List.ReplyCnt })</span>        
+        {#/if}
+    </td>
+    <td>{ $T.List.Status }</td>  
+    <td class="center">{ $T.List.DeptName }</td>
+    <td class="center"><a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.NameBase }</span></a></td>    
+    <td class="center">{ $T.List.RequestDate }</td>
+    {#if $T.List.ExcessDay <= 0}
+    <td class="dday">{ $T.List.ExcessDay }</td>
+    {#else}
+    <td class="rdday">{ $T.List.ExcessDay }</td>
+    {#/if}
+    <td class="center">{ $T.List.EndDate }</td>     
+    <td class="center">{ $T.List.TODeptName }</td> 
+    <td class="center"><a onclick="AccountInfo('{ $T.List.TOUserID }');return false;"><span class="name">{ $T.List.TONameBase }{#if $T.List.TOCnt > 1}+{#/if}</span></a></td>       
+</tr>
+{#else}
+<tr>
+    <td colspan="9" class="center"><span id="R_NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

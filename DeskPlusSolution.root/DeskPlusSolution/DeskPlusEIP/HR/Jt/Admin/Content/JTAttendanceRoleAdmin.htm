@@ -1,0 +1,32 @@
+﻿<table class="table_typeA"> 
+<colgroup>   
+    <col width="40px" />
+    <col width="200px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col  />
+</colgroup>
+<tr>
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="AttendanceRoleAdmin.Checked()" /></th>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_titlename" class="center"></th>
+    <th id="r_dutyname" class="center"></th>
+    <th id="r_Department" class="center"></th>    
+</tr>
+{#foreach $T as AttendanceRoleAdmin}
+<tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.AttendanceRoleAdmin.CompanyID }_{ $T.AttendanceRoleAdmin.RoleID }_{ $T.AttendanceRoleAdmin.UserID }_{ $T.AttendanceRoleAdmin.Types }" value="{ $T.AttendanceRoleAdmin.CompanyID }_{ $T.AttendanceRoleAdmin.RoleID }_{ $T.AttendanceRoleAdmin.UserID }_{ $T.AttendanceRoleAdmin.Types }" /></td>
+    <td class="center"><a  onclick="javascript:AttendanceRoleAdmin.SelectUserPop('{$T.AttendanceRoleAdmin.UserName}|{$T.AttendanceRoleAdmin.UserID}')" style="cursor:pointer" >{ $T.AttendanceRoleAdmin.DeptName }</a></td>
+    <td class="center"><a  onclick="javascript:AttendanceRoleAdmin.SelectUserPop('{$T.AttendanceRoleAdmin.UserName}|{$T.AttendanceRoleAdmin.UserID}')" style="color:#00c; text-decoration: underline; cursor:pointer" >{ $T.AttendanceRoleAdmin.UserName }</a></td>
+    <td class="center"><a  onclick="javascript:AttendanceRoleAdmin.SelectUserPop('{$T.AttendanceRoleAdmin.UserName}|{$T.AttendanceRoleAdmin.UserID}')" style="cursor:pointer" >{ $T.AttendanceRoleAdmin.TitleName }</a></td>
+    <td class="center"><a  onclick="javascript:AttendanceRoleAdmin.SelectUserPop('{$T.AttendanceRoleAdmin.UserName}|{$T.AttendanceRoleAdmin.UserID}')" style="cursor:pointer" >{ $T.AttendanceRoleAdmin.DutyName }</a></td>
+    <td class="center">{ $T.AttendanceRoleAdmin.ViewDeptName }</td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

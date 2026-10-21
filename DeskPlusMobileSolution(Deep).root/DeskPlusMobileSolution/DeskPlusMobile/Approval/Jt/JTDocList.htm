@@ -1,0 +1,23 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:DocList.viewList('{ $T.List.DocumentID }','{ $T.List.KeyID }','{ $T.List.Key2ID }')">
+        <a href="#" class="Lready">
+         <div class="grdot">●</div>
+         <div class="conBox"><span class="LNoready">
+          {#if $T.List.IsGuard == '1'}<img src='/DeskPlusMobile/Content/ko/Base/Img/Security.gif' title='' />              
+          {#elseif $T.List.IsGuard == '2'}<img src='/DeskPlusMobile/Content/ko/Base/Img/Emergency.gif' title='' />{#/if}
+          { $T.List.Subject }</span><br />
+          <span class="sch_user">{#if $T.List.DocNumber != ''}{ $T.List.DocNumber }<br />{#/if}
+          { $T.List.DeptBase } { $T.List.NameBase } { $T.List.TitleBase }<br />
+          { $T.List.WriteTime} ～ {$T.List.TotalDate}</span>      
+        </a>
+    </div>
+</li>
+{#else} 
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>  
+{#/for}
+

@@ -1,0 +1,17 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col />
+</colgroup>
+    <tr>
+        <th id="j_Name">Name</th>
+    </tr>
+    {#foreach $T as DraftList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopDraft.Binding('{ $T.DraftList.VendorCode}', '{ $T.DraftList.VendorName}')")>{ $T.DraftList.VendorName }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

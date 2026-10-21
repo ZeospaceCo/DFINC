@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAdress" xml:space="preserve">
+    <value>添加地址</value>
+  </data>
+  <data name="AddDetail" xml:space="preserve">
+    <value>詳細添加</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="AddressList" xml:space="preserve">
+    <value>通訊錄</value>
+  </data>
+  <data name="AddressManage" xml:space="preserve">
+    <value>通訊錄管理</value>
+  </data>
+  <data name="AddressTree" xml:space="preserve">
+    <value>通訊錄樹型</value>
+  </data>
+  <data name="AddSimple" xml:space="preserve">
+    <value>簡便添加</value>
+  </data>
+  <data name="AddSimpleAddress" xml:space="preserve">
+    <value>簡便添加地址</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>添加用戶</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>處理後發生了錯誤。請與管理員聯繫。</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>附件文件</value>
+  </data>
+  <data name="Basics" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="Beeper" xml:space="preserve">
+    <value>呼叫器</value>
+  </data>
+  <data name="BirthDay" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>(兼)</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="CellPhoneEx" xml:space="preserve">
+    <value>手機(010-0000-0000)</value>
+  </data>
+  <data name="CellPhoneFormat" xml:space="preserve">
+    <value>手機號碼只能輸入數字與+，-</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>分類順序已變更。</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>文件夾變更</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>市/郡/區</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>解除</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="CommonAddress" xml:space="preserve">
+    <value>公用通訊錄</value>
+  </data>
+  <data name="CommonAddressFolderAdd" xml:space="preserve">
+    <value>公用通訊錄添加文件夾</value>
+  </data>
+  <data name="CommonAddressFolderMod" xml:space="preserve">
+    <value>修改公用通訊錄文件夾</value>
+  </data>
+  <data name="CommonFolderManage" xml:space="preserve">
+    <value>管理公用文件夾</value>
+  </data>
+  <data name="CommonManage" xml:space="preserve">
+    <value>公用通訊錄管理</value>
+  </data>
+  <data name="CommonSimpleInfo" xml:space="preserve">
+    <value>公用通訊錄簡單情報</value>
+  </data>
+  <data name="CommunityInfo" xml:space="preserve">
+    <value>社區信息</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>公司通訊錄</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>公司名稱</value>
+  </data>
+  <data name="CompanyTel" xml:space="preserve">
+    <value>公司電話</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>已處理</value>
+  </data>
+  <data name="CompleteAddressSend" xml:space="preserve">
+    <value>完成地址轉達。</value>
+  </data>
+  <data name="CompleteDeleteAddress" xml:space="preserve">
+    <value>該通訊錄已被刪除</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>移動到所選文件夾</value>
+  </data>
+  <data name="CompleteSelectCopyAddress" xml:space="preserve">
+    <value>已處理。請選擇並確認複製的文件夾。</value>
+  </data>
+  <data name="CompleteSelectMoveAddress" xml:space="preserve">
+    <value>已處理。請選擇並確認移動的文件夾。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="CopyAddress" xml:space="preserve">
+    <value>通訊錄複製</value>
+  </data>
+  <data name="CopyAdressList" xml:space="preserve">
+    <value>通訊錄複製</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>國家/市/省</value>
+  </data>
+  <data name="DaumCsv" xml:space="preserve">
+    <value>DAUM 通訊錄(.csv)</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>將刪除該文件夾及地址。確定要刪除文件夾嗎？</value>
+  </data>
+  <data name="DeleteSubFolder" xml:space="preserve">
+    <value>請先刪除下級文件夾</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部門名稱</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>設計</value>
+  </data>
+  <data name="Duty" xml:space="preserve">
+    <value>職責</value>
+  </data>
+  <data name="DutyAddress" xml:space="preserve">
+    <value>職責通訊錄</value>
+  </data>
+  <data name="E-Mail" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="EmailEx" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="EnglishFolderName" xml:space="preserve">
+    <value>英文名稱</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>英文姓名</value>
+  </data>
+  <data name="ExceptRepetition" xml:space="preserve">
+    <value>重複除外</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>導出</value>
+  </data>
+  <data name="ExportAdress" xml:space="preserve">
+    <value>通訊錄導出</value>
+  </data>
+  <data name="ExportCommand1" xml:space="preserve">
+    <value>可以導出由OUTLOOK，EXPRESS，GOOGLE，NAVER，DAUM裡的CSV文件。</value>
+  </data>
+  <data name="ExportCommand2" xml:space="preserve">
+    <value>導出按個人通訊錄的“姓名、手機、郵箱、公司電話、宅電、公司名”順序提供。</value>
+  </data>
+  <data name="ExpressCsv" xml:space="preserve">
+    <value>EXPRESS 通訊錄(.csv)</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>收藏夾</value>
+  </data>
+  <data name="FavoriteAddressFolderAdd" xml:space="preserve">
+    <value>添加收藏文件夾</value>
+  </data>
+  <data name="FavoriteAddressFolderMod" xml:space="preserve">
+    <value>修改收藏文件夾</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>傳真</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女子</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="FolderFavorite" xml:space="preserve">
+    <value>文件夾收藏</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>下級文件夾順序</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>變更上級文件夾</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夾名</value>
+  </data>
+  <data name="FolderOrderDesc" xml:space="preserve">
+    <value>更改文件夾的順序，上下拖動鼠標，選擇“應用”按鈕保存。</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>字體大小</value>
+  </data>
+  <data name="ForwardAddress" xml:space="preserve">
+    <value>轉接到的通訊錄</value>
+  </data>
+  <data name="GetAddress" xml:space="preserve">
+    <value>導入通訊錄</value>
+  </data>
+  <data name="GetAddressFile" xml:space="preserve">
+    <value>導入</value>
+  </data>
+  <data name="GetGoogleMail" xml:space="preserve">
+    <value>導入Google通訊錄</value>
+  </data>
+  <data name="GetOutLooK" xml:space="preserve">
+    <value>導入外部通訊錄</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>轉到列表。</value>
+  </data>
+  <data name="GoogleCsv" xml:space="preserve">
+    <value>GOOGLE 通訊錄(.csv)</value>
+  </data>
+  <data name="GoPageStep3" xml:space="preserve">
+    <value>轉到存儲頁面。</value>
+  </data>
+  <data name="GoPrint" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>區分</value>
+  </data>
+  <data name="HomeAddress" xml:space="preserve">
+    <value>家庭地址</value>
+  </data>
+  <data name="HomeZipCode" xml:space="preserve">
+    <value>家庭郵編</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>用戶名</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>重要表示</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>要從重要表示列表裡解除掉嗎？</value>
+  </data>
+  <data name="InGoogleStep1_Descript1" xml:space="preserve">
+    <value>外部郵箱裡的聯繫方式可以添加到通訊錄。</value>
+  </data>
+  <data name="InGoogleStep1_Descript2" xml:space="preserve">
+    <value>未經會員許可不會儲存或轉給他人登錄情報。</value>
+  </data>
+  <data name="InGoogleStep2_Descript1" xml:space="preserve">
+    <value>外部郵箱裡的聯繫方式可以添加到通訊錄。</value>
+  </data>
+  <data name="InGoogleStep2_Descript2" xml:space="preserve">
+    <value>未經會員許可不會儲存或轉給他人登錄情報。</value>
+  </data>
+  <data name="InGoogleStep3_Descript1" xml:space="preserve">
+    <value>儲存的谷歌通訊錄</value>
+  </data>
+  <data name="InGoogleStep3_Descript2" xml:space="preserve">
+    <value>可以在轉接到通訊錄裡確認。</value>
+  </data>
+  <data name="InOutStep1_Descript1" xml:space="preserve">
+    <value>由手機發出的CSV(逗號區分）文件或者自己做成的EXCEL文件可以添加到通訊錄。</value>
+  </data>
+  <data name="InOutStep1_Descript2" xml:space="preserve">
+    <value>如果需要把HANMAIL通訊錄以OUTLOOK,EXPRESS用CSV文件或者EXCEL文件下載時</value>
+  </data>
+  <data name="InOutStep1_Descript3" xml:space="preserve">
+    <value>可以利用</value>
+  </data>
+  <data name="InOutStep1_Descript4" xml:space="preserve">
+    <value>※文件里地址數超1000個時速度可能變慢，請按1000個分開導入。</value>
+  </data>
+  <data name="InOutStep2_Descript1" xml:space="preserve">
+    <value>的地址已導入。</value>
+  </data>
+  <data name="InOutStep3_Descript1" xml:space="preserve">
+    <value>儲存的外部郵箱通訊錄是</value>
+  </data>
+  <data name="InOutStep3_Descript2" xml:space="preserve">
+    <value>從轉接到的通訊錄裡可以確認。</value>
+  </data>
+  <data name="InputEmail" xml:space="preserve">
+    <value>請輸入電子郵件</value>
+  </data>
+  <data name="InputFamilyName" xml:space="preserve">
+    <value>請輸入姓氏</value>
+  </data>
+  <data name="InputFitstName" xml:space="preserve">
+    <value>請輸入名字</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>請輸入文件夾名</value>
+  </data>
+  <data name="InputGoogleMail" xml:space="preserve">
+    <value>請輸入谷歌郵件</value>
+  </data>
+  <data name="InputGooglePW" xml:space="preserve">
+    <value>請輸入谷歌密碼</value>
+  </data>
+  <data name="InternationalName" xml:space="preserve">
+    <value>多國姓名</value>
+  </data>
+  <data name="IPTelePhone" xml:space="preserve">
+    <value>IP電話</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>該特殊文字因使用於保安脆弱型攻擊而被限制。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目錄</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>基本列表數</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>01 引入</value>
+  </data>
+  <data name="Lunar" xml:space="preserve">
+    <value>農曆</value>
+  </data>
+  <data name="LunarGubun" xml:space="preserve">
+    <value>陰陽區分</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>寫信</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男子</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>備忘錄</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>中間名（可選）</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>手機（圖）。</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>移動電話</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>運動</value>
+  </data>
+  <data name="MoveAddress" xml:space="preserve">
+    <value>通訊錄移動</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>稱呼</value>
+  </data>
+  <data name="NaverCsv" xml:space="preserve">
+    <value>NAVER 通訊錄(.csv)</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一個</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>沒有內容</value>
+  </data>
+  <data name="NoCSV" xml:space="preserve">
+    <value>選擇CSV文件後請選擇導入。</value>
+  </data>
+  <data name="NoMailFormat" xml:space="preserve">
+    <value>發送郵件格式不存在。</value>
+  </data>
+  <data name="NotCorrectEmailFormat" xml:space="preserve">
+    <value>請按郵件樣式輸入</value>
+  </data>
+  <data name="NotEmailFormat" xml:space="preserve">
+    <value>不是郵件樣式</value>
+  </data>
+  <data name="ObjectFolder" xml:space="preserve">
+    <value>目標文件夾</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>辦公室</value>
+  </data>
+  <data name="OutAddress" xml:space="preserve">
+    <value>外部連動</value>
+  </data>
+  <data name="OutlookCsv" xml:space="preserve">
+    <value>OUTLOOK 通訊錄(.csv)</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>上級文件夾名</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>宅電</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>照片</value>
+  </data>
+  <data name="PresentFolder" xml:space="preserve">
+    <value>當前文件夾</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="PrintFormat" xml:space="preserve">
+    <value>打印樣式</value>
+  </data>
+  <data name="PrintItems" xml:space="preserve">
+    <value>打印項目</value>
+  </data>
+  <data name="PrintItemSelect" xml:space="preserve">
+    <value>選擇打印項目（字段名可以改變。）</value>
+  </data>
+  <data name="PrivateAddress" xml:space="preserve">
+    <value>個人通訊錄</value>
+  </data>
+  <data name="PrivateAddressFolderAdd" xml:space="preserve">
+    <value>添加個人通訊錄文件夾</value>
+  </data>
+  <data name="PrivateAddressFolderMod" xml:space="preserve">
+    <value>修改個人通訊錄文件夾</value>
+  </data>
+  <data name="PrivateSimpleInfo" xml:space="preserve">
+    <value>個人通訊錄簡單情報</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>處理時發生了錯誤。請與管理員聯繫。</value>
+  </data>
+  <data name="PWD" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="ReallyDel" xml:space="preserve">
+    <value>確定要刪除該通訊錄嗎？</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>反复</value>
+  </data>
+  <data name="Repetition" xml:space="preserve">
+    <value>重複</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>03 存儲</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SelectAddressList" xml:space="preserve">
+    <value>通訊錄列表</value>
+  </data>
+  <data name="SelectBringAddressFile" xml:space="preserve">
+    <value>選擇要導入的通訊錄文件</value>
+  </data>
+  <data name="SelectCopyAddress" xml:space="preserve">
+    <value>請選擇要復制的通訊錄。</value>
+  </data>
+  <data name="SelectDeleteAddress" xml:space="preserve">
+    <value>請選擇要刪除的通訊錄。</value>
+  </data>
+  <data name="SelectedAddressAddMove" xml:space="preserve">
+    <value>對於所選擇通訊錄請選擇添加或移動的文件夾（移動只適用於個人通訊錄或轉接的通訊錄）</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>選定的用戶</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>生成收藏夾文件夾或請選擇文件夾。</value>
+  </data>
+  <data name="SelectMoveAddress" xml:space="preserve">
+    <value>請選擇要移動的通訊錄</value>
+  </data>
+  <data name="SelectOutLookFormat" xml:space="preserve">
+    <value>請選擇外部郵箱樣式</value>
+  </data>
+  <data name="SelectPintUser" xml:space="preserve">
+    <value>請從列表裡選擇打印名單</value>
+  </data>
+  <data name="SelectPrintItems" xml:space="preserve">
+    <value>選擇打印項目</value>
+  </data>
+  <data name="SelectSaveAddress" xml:space="preserve">
+    <value>請選擇要存儲地址</value>
+  </data>
+  <data name="SelectSendAddress" xml:space="preserve">
+    <value>請選擇要轉達的通訊錄</value>
+  </data>
+  <data name="SelectSendAddressUser" xml:space="preserve">
+    <value>請選擇轉達通訊錄的用戶</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>轉達</value>
+  </data>
+  <data name="SendAddress" xml:space="preserve">
+    <value>地址轉達</value>
+  </data>
+  <data name="SentList" xml:space="preserve">
+    <value>轉達列表</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>環境設置</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="Solar" xml:space="preserve">
+    <value>陽曆</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>邑/面/洞</value>
+  </data>
+  <data name="SubFolder" xml:space="preserve">
+    <value>下級文件夾</value>
+  </data>
+  <data name="TelePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>職位</value>
+  </data>
+  <data name="TitleAddress" xml:space="preserve">
+    <value>職位通訊錄</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>總</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>上傳容量限制</value>
+  </data>
+  <data name="UploadPicture" xml:space="preserve">
+    <value>照片上傳（52x52）</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>使用ActiveX</value>
+  </data>
+  <data name="UsePreview" xml:space="preserve">
+    <value>02 預覽</value>
+  </data>
+  <data name="WebPage" xml:space="preserve">
+    <value>網頁</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>全體</value>
+  </data>
+  <data name="XmlOptionMsg" xml:space="preserve">
+    <value>* 公用通訊錄的下級文件夾裡可以添加文件夾。</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>郵政編碼</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>請選擇一個用戶</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>添加組</value>
+  </data>
+  <data name="TargetBCC" xml:space="preserve">
+    <value>BCC</value>
+  </data>
+  <data name="TargetCC" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="TargetTo" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>請選擇類別</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>請輸入您的姓名</value>
+  </data>
+  <data name="NotUserSelect" xml:space="preserve">
+    <value>有沒有選擇的用戶</value>
+  </data>
+  <data name="GroupConfirm" xml:space="preserve">
+    <value>群組OK</value>
+  </data>
+  <data name="RcvUserConfirm" xml:space="preserve">
+    <value>檢查收件人</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="AddPersonal" xml:space="preserve">
+    <value>添加個人聯繫人</value>
+  </data>
+  <data name="DetailAddress" xml:space="preserve">
+    <value>詳細地址</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>組織結構圖</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>清单类型</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>博客類型</value>
+  </data>
+</root>

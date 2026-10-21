@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Nodes>
+    <TreeViewNode ID="INSA" Text="인사관리" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="USER" Text="사용자정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DEPT" Text="부서정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="TITLE" Text="직급정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DUTY" Text="직책정보"  ImageUrl="folder.gif"/>        
+    </TreeViewNode>
+    <TreeViewNode ID="POTAL" Text="포탈관리" Expanded="true" ImageUrl="folders.gif">        
+        <TreeViewNode ID="SUBSIDIARY" Text="회사정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="AUTH" Text="권한정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MENU" Text="메뉴정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="PAGE" Text="페이지정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="LAYOUT" Text="레이아웃정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="UNIT" Text="포틀릿정보"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="LINKED" Text="연동관리" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="MAIL" Text="메일"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MASSENGER" Text="메신저"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="WHOLECOMPANY" Text="전사관리" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="COMPANY" Text="전사정보"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="LICENSE" Text="라이선스"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+</Nodes>

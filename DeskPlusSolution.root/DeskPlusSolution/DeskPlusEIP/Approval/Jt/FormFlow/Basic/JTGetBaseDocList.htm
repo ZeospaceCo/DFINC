@@ -1,0 +1,41 @@
+﻿<table class="table_typeA">
+<caption>근거문서</caption>
+<colgroup>
+    <col width="200px" />
+    <col width="120px" />
+    <col />
+    <col width="130px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="50px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"  id="r_docnumber"></th>
+        <th class="center"  id="r_formname"></th>
+        <th class="center"  id="r_subject"></th>
+        <th class="center" id="r_name"></th>        
+        <th class="center" id="r_writetime"></th>
+        <th class="center" id="r_completetime"></th>
+        <th class="center"  id="r_add"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as GetBaseDoc}
+    <tr>     
+        <td>{ $T.GetBaseDoc.DocNumber }</td>
+        <td class="center">{ $T.GetBaseDoc.FormBase }</td>
+        <td><a onclick="GetBaseDoc.View('{ $T.GetBaseDoc.DocumentID }');return false;" style="cursor:pointer" >{ $T.GetBaseDoc.Subject }</a>
+         {#if $T.GetBaseDoc.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}</td>
+        <td class="center">{ $T.GetBaseDoc.TitleBase } { $T.GetBaseDoc.NameBase }</td>      
+        <td class="center">{ $T.GetBaseDoc.WriteTimeStr }</td>  
+        <td class="center">{ $T.GetBaseDoc.CompleteDateStr }</td>    
+        <td class="center"><a onclick="javascript:GetBaseDoc.Add('{ $T.GetBaseDoc.DocumentID }', '{ $T.GetBaseDoc.DocNumber }', '{ $T.GetBaseDoc.FormBase }', '{ $T.GetBaseDoc.Subject }', '{ $T.GetBaseDoc.TitleBase } { $T.GetBaseDoc.NameBase }');">&nbsp;<img class="BtnAdd" alt=""/></a></td>   
+    </tr>
+{#else}
+    <tr>
+        <td colspan="7" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

@@ -1,0 +1,21 @@
+﻿{#foreach $T as List}
+<ul class="mli7">
+    <li class="contentblock">
+        <span class="base">
+            <a onclick="GetBaseDoc.Add('{ $T.List.DocumentID }', '{ $T.List.DocNumber }', '{ $T.List.SubjectStr }')" style="cursor:pointer">
+            &nbsp;<img src='/DeskPlusMobile/Content/ko/Base/Img/CheckOut.gif' title=''/>&nbsp;&nbsp;</a>
+        </span>
+         <div class="conBox"><span class="LNoready">{ $T.List.Subject }</span><br />
+         <span class="sch_user">{#if $T.List.DocNumber != ''}{ $T.List.DocNumber }<br />{#/if}
+         { $T.List.NameBase } { $T.List.TitleBase }/{ $T.List.WriteTime}～{$T.List.TotalDate}
+         </span>   
+         </div>   
+    </li>
+</ul>
+{#else}   
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

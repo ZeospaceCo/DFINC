@@ -1,0 +1,32 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <caption>
+        AuthList
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="200px" />
+        <col width="200px" />
+        <col />
+        <col width="100px" />
+    </colgroup>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>        
+        <th class="center" id="r_rolecode"></th>
+        <th class="center" id="r_rolename"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_types"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.CompanyID }_{ $T.List.RoleID }_{ $T.List.UserID }_{ $T.List.Types }" value="{ $T.List.CompanyID }_{ $T.List.RoleID }_{ $T.List.UserID }_{ $T.List.Types }" /></td>
+        <td class="center">{ $T.List.RoleCode }</td>
+        <td class="center">{ $T.List.RoleName }</td>
+        <td class="center">{ $T.List.NameBase }</td>
+        <td class="center">{#if $T.List.Types == 'GM'}<span class="r_user"></span>{#else if $T.List.Types == 'GG'}<span class="r_dept"></span>{#/if}</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center">&nbsp;</td>        
+    </tr>
+    {#/for}        
+ </table>

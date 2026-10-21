@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessFail" xml:space="preserve">
+    <value>没有访问的门户菜单。</value>
+  </data>
+  <data name="Alert_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Alert_Ok" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ApprovedDocuments" xml:space="preserve">
+    <value>提交的文档</value>
+  </data>
+  <data name="CheckAuthDept" xml:space="preserve">
+    <value>因部门设为非激活状态无法认证，请与管理员联系。</value>
+  </data>
+  <data name="CheckIDandPwd" xml:space="preserve">
+    <value>请输入连接名或密码。</value>
+  </data>
+  <data name="CheckPwd" xml:space="preserve">
+    <value>请输入连接名或密码。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>按公司</value>
+  </data>
+  <data name="ErrorAuth" xml:space="preserve">
+    <value>权限确认</value>
+  </data>
+  <data name="ErrorAuthDescription" xml:space="preserve">
+    <value>该用户没有权限。</value>
+  </data>
+  <data name="ErrorDescription" xml:space="preserve">
+    <value>系统错误。请稍后再试。</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>系统检查</value>
+  </data>
+  <data name="ExistLimitSize" xml:space="preserve">
+    <value>上传的文件中存在大容量的文件。</value>
+  </data>
+  <data name="ExistPrivateTotalLimitSize" xml:space="preserve">
+    <value>超过了分配给个人的容量。</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="IeSettingMsg1" xml:space="preserve">
+    <value>安装或与安全相关的错误发生时</value>
+  </data>
+  <data name="IeSettingMsg2" xml:space="preserve">
+    <value>IE菜单 - &gt;工具 菜单 - &gt;安全 - &gt;选择 - &gt;“自定义级别”按钮 - &gt; ActiveX控件和插件“禁用”，请请改为“使用”</value>
+  </data>
+  <data name="InputComparePwd" xml:space="preserve">
+    <value>新密码和新密码确认不同。</value>
+  </data>
+  <data name="InputNewPWd" xml:space="preserve">
+    <value>请输入新的密码。</value>
+  </data>
+  <data name="InputNewPWd1" xml:space="preserve">
+    <value>请再次输入新密码进行确认。</value>
+  </data>
+  <data name="InputNowPWd" xml:space="preserve">
+    <value>请输入当前密码。</value>
+  </data>
+  <data name="InputRequest" xml:space="preserve">
+    <value>输入值不存在一个以上。</value>
+  </data>
+  <data name="InvalidUserIDPassword" xml:space="preserve">
+    <value>用户名或密码错误</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LoginMsg_01" xml:space="preserve">
+    <value>请用用户名和密码登录。</value>
+  </data>
+  <data name="LoginNewPwd" xml:space="preserve">
+    <value>请用变更后的密码登录。</value>
+  </data>
+  <data name="ModPassword" xml:space="preserve">
+    <value>密码变更</value>
+  </data>
+  <data name="ModPasswordTitle1" xml:space="preserve">
+    <value>长期没有变更密码而使用着相同的密码。</value>
+  </data>
+  <data name="ModPasswordTitle2" xml:space="preserve">
+    <value>为了安全守住宝贵的信息，最好经常变更密码。</value>
+  </data>
+  <data name="ModPasswordTitle3" xml:space="preserve">
+    <value>因此，最后变更密码经过一段时间后，就像现在登录，本系统提示请用户变更密码。</value>
+  </data>
+  <data name="NoUploadOver" xml:space="preserve">
+    <value>不能再登记文件。</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PasswordFault" xml:space="preserve">
+    <value>密码错误。</value>
+  </data>
+  <data name="PasswordFaultCount" xml:space="preserve">
+    <value>密码错误。</value>
+  </data>
+  <data name="PasswordFaultTotalCount" xml:space="preserve">
+    <value>次错误时将切断登录，请与管理员咨询。</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>字数以上</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>小写</value>
+  </data>
+  <data name="PwdNew" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="PwdNewConfirm" xml:space="preserve">
+    <value>确认新密码</value>
+  </data>
+  <data name="PwdNow" xml:space="preserve">
+    <value>目前的密码</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>密码不符合条件。</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>特殊文字</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>大写</value>
+  </data>
+  <data name="RegisterTrustSite" xml:space="preserve">
+    <value>受信任的站点注册</value>
+  </data>
+  <data name="SaveCompany" xml:space="preserve">
+    <value>保存公司</value>
+  </data>
+  <data name="SaveID" xml:space="preserve">
+    <value>记住用户名</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="TotalUpload" xml:space="preserve">
+    <value>总上传次数</value>
+  </data>
+  <data name="UploadDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="UploadMyComputer" xml:space="preserve">
+    <value>我的电脑</value>
+  </data>
+  <data name="UploadMyDocument" xml:space="preserve">
+    <value>我的文档</value>
+  </data>
+  <data name="UploadName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="UploadPostFilePath" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="UploadRootFolder" xml:space="preserve">
+    <value>桌面</value>
+  </data>
+  <data name="UploadSearchButton" xml:space="preserve">
+    <value>查找文件</value>
+  </data>
+  <data name="UploadSize" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="UploadTitleFolder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="UploadTitleListHelp" xml:space="preserve">
+    <value>选择文件后，请拖动到选择窗或者点击文件选择按钮。</value>
+  </data>
+  <data name="UploadTitleSelectButton" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="UploadTitleSelected" xml:space="preserve">
+    <value>上传文件目录（删除时右点击）</value>
+  </data>
+  <data name="UploadType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="UploadCancel" xml:space="preserve">
+    <value>取消上传</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>完成转让</value>
+  </data>
+  <data name="UploadAllowList" xml:space="preserve">
+    <value>添加文件扩展名与可能的</value>
+  </data>
+  <data name="UploadBlockList" xml:space="preserve">
+    <value>阻塞的文件扩展名的安全性问题</value>
+  </data>
+  <data name="InputLogin" xml:space="preserve">
+    <value>请输入您的登录ID</value>
+  </data>
+  <data name="InputPwd" xml:space="preserve">
+    <value>请输入您的密码</value>
+  </data>
+  <data name="UploadBlockFileName" xml:space="preserve">
+    <value>文件名不能使用以下字符。\n \' \ / : * ? \" &lt; &gt; |</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>没见过一个星期这个窗口</value>
+  </data>
+  <data name="NotOpen" xml:space="preserve">
+    <value>看不见的天窗口</value>
+  </data>
+  <data name="AccessNoAuthIP" xml:space="preserve">
+    <value>这种访问已经由安全策略的限制</value>
+  </data>
+  <data name="SendEmail1" xml:space="preserve">
+    <value>将临时密码发送到您的个人信息中注册的外部邮件。</value>
+  </data>
+  <data name="SendEmail2" xml:space="preserve">
+    <value>它需要五分钟才能收到。</value>
+  </data>
+  <data name="SendTempPassword" xml:space="preserve">
+    <value>发送临时密码</value>
+  </data>
+  <data name="ReceiveEmail" xml:space="preserve">
+    <value>接收电子邮件</value>
+  </data>
+  <data name="PasswordOver" xml:space="preserve">
+    <value>验证邮件尚未注册。联系管理员。</value>
+  </data>
+  <data name="CheckEmail" xml:space="preserve">
+    <value>注册的外部邮件格式不正确。</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>发电子邮件</value>
+  </data>
+  <data name="NoAuthEmail" xml:space="preserve">
+    <value>没有注册外部消息</value>
+  </data>
+  <data name="AttachFileDrag" xml:space="preserve">
+    <value>拖放要附加的文件。 </value>
+  </data>
+  <data name="LoginIDRes" xml:space="preserve">
+    <value>登录ID_资源</value>
+  </data>
+  <data name="MailRes" xml:space="preserve">
+    <value>外部Mail_Resource</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="SendMsg" xml:space="preserve">
+    <value>输入您的登录ID，然后单击搜索按钮</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="WebHardTitle" xml:space="preserve">
+    <value>網絡文件夾</value>
+  </data>
+</root>

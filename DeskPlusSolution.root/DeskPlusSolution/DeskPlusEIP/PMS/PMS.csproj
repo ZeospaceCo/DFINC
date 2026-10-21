@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBCFB78A-BD04-47CD-A90D-2AA430A2768B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.PMS.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.PMS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Content\AdminMenu.aspx.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\AdminMenu.aspx.designer.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListClose.aspx.cs">
+      <DependentUpon>ListClose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListClose.aspx.designer.cs">
+      <DependentUpon>ListClose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\JListOpen.aspx.cs">
+      <DependentUpon>JListOpen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\JListOpen.aspx.designer.cs">
+      <DependentUpon>JListOpen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\JListClose.aspx.cs">
+      <DependentUpon>JListClose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\JListClose.aspx.designer.cs">
+      <DependentUpon>JListClose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\JListLinked.aspx.cs">
+      <DependentUpon>JListLinked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\JListLinked.aspx.designer.cs">
+      <DependentUpon>JListLinked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListLinked.aspx.cs">
+      <DependentUpon>ListLinked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListLinked.aspx.designer.cs">
+      <DependentUpon>ListLinked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Member\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Member\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Member\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Member\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Content\ListOpen.aspx.cs">
+      <DependentUpon>ListOpen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Content\ListOpen.aspx.designer.cs">
+      <DependentUpon>ListOpen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Opinion\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Opinion\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Project\ProjectInfo.aspx.cs">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Project\ProjectInfo.aspx.designer.cs">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BasePagePMSAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseControlPMS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePagePMS.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSPMS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Board\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ReadList.aspx.cs">
+      <DependentUpon>ReadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ReadList.aspx.designer.cs">
+      <DependentUpon>ReadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Reply.aspx.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Reply.aspx.designer.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ShortReply.aspx.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ShortReply.aspx.designer.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ShortReplyList.aspx.cs">
+      <DependentUpon>ShortReplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ShortReplyList.aspx.designer.cs">
+      <DependentUpon>ShortReplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ShortReplyMod.aspx.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ShortReplyMod.aspx.designer.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\Viewer.aspx.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\Viewer.aspx.designer.cs">
+      <DependentUpon>Viewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\ViewShortReplyList.aspx.cs">
+      <DependentUpon>ViewShortReplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\ViewShortReplyList.aspx.designer.cs">
+      <DependentUpon>ViewShortReplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Folder.ascx.cs">
+      <DependentUpon>Folder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Folder.ascx.designer.cs">
+      <DependentUpon>Folder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\GetFolder.aspx.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\GetFolder.aspx.designer.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Lib.cs" />
+    <Compile Include="Folder\ProjectTree.ascx.cs">
+      <DependentUpon>ProjectTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\ProjectTree.ascx.designer.cs">
+      <DependentUpon>ProjectTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\NoticeBoard.ascx.cs">
+      <DependentUpon>NoticeBoard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\NoticeBoard.ascx.designer.cs">
+      <DependentUpon>NoticeBoard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Popup\GetDept.aspx.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Popup\GetDept.aspx.designer.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Popup\GetFolder.aspx.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Popup\GetFolder.aspx.designer.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Popup\GetUser.aspx.cs">
+      <DependentUpon>GetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Popup\GetUser.aspx.designer.cs">
+      <DependentUpon>GetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\UnitList.ascx.cs">
+      <DependentUpon>UnitList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\UnitList.ascx.designer.cs">
+      <DependentUpon>UnitList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Opinion.aspx.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Opinion.aspx.designer.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ProjectInfo.aspx.cs">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectInfo.aspx.designer.cs">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Related\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Related\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Related\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Related\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Related\ProjectList.aspx.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Related\ProjectList.aspx.designer.cs">
+      <DependentUpon>ProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\MoveUpdown.aspx.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\MoveUpdown.aspx.designer.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\ShortReply.aspx.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\ShortReply.aspx.designer.cs">
+      <DependentUpon>ShortReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\ShortReplyMod.aspx.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\ShortReplyMod.aspx.designer.cs">
+      <DependentUpon>ShortReplyMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unit\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\ListClose.asmx.cs">
+      <DependentUpon>ListClose.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\ListLinked.asmx.cs">
+      <DependentUpon>ListLinked.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Content\ListOpen.asmx.cs">
+      <DependentUpon>ListOpen.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Member\JList.asmx.cs">
+      <DependentUpon>JList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\ReadList.asmx.cs">
+      <DependentUpon>ReadList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\ShortReply.asmx.cs">
+      <DependentUpon>ShortReply.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\ShortReplyList.asmx.cs">
+      <DependentUpon>ShortReplyList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\ShortReplyMod.asmx.cs">
+      <DependentUpon>ShortReplyMod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Board\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Member\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Project\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Project\Main.asmx.cs">
+      <DependentUpon>Main.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Related\JList.asmx.cs">
+      <DependentUpon>JList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Related\ProjectList.asmx.cs">
+      <DependentUpon>ProjectList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Template\JList.asmx.cs">
+      <DependentUpon>JList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Unit\JList.asmx.cs">
+      <DependentUpon>JList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Unit\MoveUpdown.asmx.cs">
+      <DependentUpon>MoveUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Unit\ShortReply.asmx.cs">
+      <DependentUpon>ShortReply.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Unit\ShortReplyMod.asmx.cs">
+      <DependentUpon>ShortReplyMod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Unit\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Content\AdminMenu.aspx" />
+    <Content Include="Admin\Content\ListClose.aspx" />
+    <Content Include="Admin\Content\JListOpen.aspx" />
+    <Content Include="Admin\Content\JListClose.aspx" />
+    <Content Include="Admin\Content\JListLinked.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Folder\Add.aspx" />
+    <Content Include="Admin\Content\ListLinked.aspx" />
+    <Content Include="Admin\Member\JList.aspx" />
+    <Content Include="Admin\Member\List.aspx" />
+    <Content Include="Admin\Menu\Add.aspx" />
+    <Content Include="Admin\Content\ListOpen.aspx" />
+    <Content Include="Admin\Opinion\Add.aspx" />
+    <Content Include="Admin\Project\ProjectInfo.aspx" />
+    <Content Include="App_Data\en\ProjectMenuType.xml" />
+    <Content Include="App_Data\fr\ProjectMenuType.xml" />
+    <Content Include="App_Data\ja\ProjectMenuType.xml" />
+    <Content Include="App_Data\ko\ProjectMenuType.xml" />
+    <Content Include="App_Data\zh-cn\ProjectMenuType.xml" />
+    <Content Include="App_Data\zh-tw\ProjectMenuType.xml" />
+    <Content Include="Board\Add.aspx" />
+    <Content Include="Board\AddN.aspx" />
+    <Content Include="Board\List.aspx" />
+    <Content Include="Board\Mod.aspx" />
+    <Content Include="Board\ModN.aspx" />
+    <Content Include="Board\ReadList.aspx" />
+    <Content Include="Board\Reply.aspx" />
+    <Content Include="Board\ReplyN.aspx" />
+    <Content Include="Board\ShortReply.aspx" />
+    <Content Include="Board\ShortReplyList.aspx" />
+    <Content Include="Board\ShortReplyMod.aspx" />
+    <Content Include="Board\View.aspx" />
+    <Content Include="Board\Viewer.aspx" />
+    <Content Include="Board\JList.aspx" />
+    <Content Include="Board\ViewPopup.aspx" />
+    <Content Include="Board\ViewShortReplyList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Folder\Add.aspx" />
+    <Content Include="Folder\Tree.aspx" />
+    <Content Include="Js\Admin\Content\AdminMenu.js" />
+    <Content Include="Js\Admin\Content\ListClose.js" />
+    <Content Include="Js\Admin\Content\JListOpen.js" />
+    <Content Include="Js\Admin\Content\JListClose.js" />
+    <Content Include="Js\Admin\Content\JListLinked.js" />
+    <Content Include="Js\Admin\Folder\Add.js" />
+    <Content Include="Js\Admin\Content\ListLinked.js" />
+    <Content Include="Js\Admin\Member\JList.js" />
+    <Content Include="Js\Admin\Member\List.js" />
+    <Content Include="Js\Admin\Menu\Add.js" />
+    <Content Include="Js\Admin\Content\ListOpen.js" />
+    <Content Include="Js\Admin\Opinion\Add.js" />
+    <Content Include="Js\Admin\Project\ProjectInfo.js" />
+    <Content Include="Js\Board\Add.js" />
+    <Content Include="Js\Board\List.js" />
+    <Content Include="Js\Board\Mod.js" />
+    <Content Include="Js\Board\ReadList.js" />
+    <Content Include="Js\Board\Reply.js" />
+    <Content Include="Js\Board\ShortReply.js" />
+    <Content Include="Js\Board\ShortReplyList.js" />
+    <Content Include="Js\Board\ShortReplyMod.js" />
+    <Content Include="Js\Board\View.js" />
+    <Content Include="Js\Board\Viewer.js" />
+    <Content Include="Js\Board\JList.js" />
+    <Content Include="Js\Board\ViewShortReplyList.js" />
+    <Content Include="Js\Folder\Add.js" />
+    <Content Include="Js\Folder\Tree.js" />
+    <Content Include="Js\Member\List.js" />
+    <Content Include="Js\Member\Read.js" />
+    <Content Include="Js\Member\JList.js" />
+    <Content Include="Js\Module\Folder.js" />
+    <Content Include="Js\Module\Main.js" />
+    <Content Include="Js\Module\Menu.js" />
+    <Content Include="Js\Module\Popup\GetDept.js" />
+    <Content Include="Js\Module\Popup\GetFolder.js" />
+    <Content Include="Js\Module\Popup\GetUser.js" />
+    <Content Include="Js\Project\Add.js" />
+    <Content Include="Js\Project\JList.js" />
+    <Content Include="Js\Project\List.js" />
+    <Content Include="Js\Project\Main.js" />
+    <Content Include="Js\Project\Menu.js" />
+    <Content Include="Js\Project\Opinion.js" />
+    <Content Include="Js\Project\ProjectInfo.js" />
+    <Content Include="Js\Related\JList.js" />
+    <Content Include="Js\Related\List.js" />
+    <Content Include="Js\Related\ProjectList.js" />
+    <Content Include="Js\Schedule\Add.js" />
+    <Content Include="Js\Schedule\List.js" />
+    <Content Include="Js\Schedule\Mod.js" />
+    <Content Include="Js\Schedule\View.js" />
+    <Content Include="Js\Template\Add.js" />
+    <Content Include="Js\Template\JList.js" />
+    <Content Include="Js\Template\List.js" />
+    <Content Include="Js\Template\View.js" />
+    <Content Include="Js\Template\Mod.js" />
+    <Content Include="Js\Unit\Add.js" />
+    <Content Include="Js\Unit\JList.js" />
+    <Content Include="Js\Unit\List.js" />
+    <Content Include="Js\Unit\MoveUpdown.js" />
+    <Content Include="Js\Unit\ShortReply.js" />
+    <Content Include="Js\Unit\ShortReplyMod.js" />
+    <Content Include="Js\Unit\View.js" />
+    <Content Include="Js\Unit\Mod.js" />
+    <Content Include="Jt\Admin\Content\JTListLinked.htm" />
+    <Content Include="Jt\Admin\Content\JTListOpen.htm" />
+    <Content Include="Jt\Admin\Content\JTListClose.htm" />
+    <Content Include="Jt\Admin\Member\JTList.htm" />
+    <Content Include="Jt\Board\JTAttachFile.htm" />
+    <Content Include="Jt\Board\JTDelFile.htm" />
+    <Content Include="Jt\Board\JTList.htm" />
+    <Content Include="Jt\Board\JTReadList.htm" />
+    <Content Include="Jt\Board\JTReple.htm" />
+    <Content Include="Jt\Board\JTShortReplyList.htm" />
+    <Content Include="Jt\Member\JTList.htm" />
+    <Content Include="Jt\Project\JTList.htm" />
+    <Content Include="Jt\Project\JTBoardList.htm" />
+    <Content Include="Jt\Project\JTUnitList.htm" />
+    <Content Include="Jt\Related\JTList.htm" />
+    <Content Include="Jt\Related\JTProjectList.htm" />
+    <Content Include="Jt\Template\JTList.htm" />
+    <Content Include="Jt\Unit\JTAttachFile.htm" />
+    <Content Include="Jt\Unit\JTList.htm" />
+    <Content Include="Jt\Unit\JTReple.htm" />
+    <Content Include="Member\List.aspx" />
+    <Content Include="Member\JList.aspx" />
+    <Content Include="Module\Folder.ascx" />
+    <Content Include="Module\GetFolder.aspx" />
+    <Content Include="Folder\ProjectTree.ascx" />
+    <Content Include="Module\NoticeBoard.ascx" />
+    <Content Include="Module\Popup\GetDept.aspx" />
+    <Content Include="Module\Popup\GetFolder.aspx" />
+    <Content Include="Module\Popup\GetUser.aspx" />
+    <Content Include="Module\UnitList.ascx" />
+    <Content Include="Project\Add.aspx" />
+    <Content Include="Project\Default.aspx" />
+    <Content Include="Project\JList.aspx" />
+    <Content Include="Project\List.aspx" />
+    <Content Include="Project\Main.aspx" />
+    <Content Include="Project\Menu.aspx" />
+    <Content Include="Project\Opinion.aspx" />
+    <Content Include="Project\ProjectInfo.aspx" />
+    <Content Include="Related\JList.aspx" />
+    <Content Include="Related\List.aspx" />
+    <Content Include="Related\ProjectList.aspx" />
+    <Content Include="Schedule\Add.aspx" />
+    <Content Include="Schedule\AddN.aspx" />
+    <Content Include="Schedule\List.aspx" />
+    <Content Include="Schedule\Mod.aspx" />
+    <Content Include="Schedule\ModN.aspx" />
+    <Content Include="Schedule\View.aspx" />
+    <Content Include="Template\Add.aspx" />
+    <Content Include="Template\AddN.aspx" />
+    <Content Include="Template\JList.aspx" />
+    <Content Include="Template\List.aspx" />
+    <Content Include="Template\Mod.aspx" />
+    <Content Include="Template\ModN.aspx" />
+    <Content Include="Template\View.aspx" />
+    <Content Include="Unit\Add.aspx" />
+    <Content Include="Unit\AddN.aspx" />
+    <Content Include="Unit\JList.aspx" />
+    <Content Include="Unit\List.aspx" />
+    <Content Include="Unit\Mod.aspx" />
+    <Content Include="Unit\ModN.aspx" />
+    <Content Include="Unit\MoveUpdown.aspx" />
+    <Content Include="Unit\ShortReply.aspx" />
+    <Content Include="Unit\ShortReplyMod.aspx" />
+    <Content Include="Unit\View.aspx" />
+    <Content Include="Ws\Admin\Content\ListClose.asmx" />
+    <Content Include="Ws\Admin\Content\ListLinked.asmx" />
+    <Content Include="Ws\Admin\Content\ListOpen.asmx" />
+    <Content Include="Ws\Admin\Member\JList.asmx" />
+    <Content Include="Ws\Board\List.asmx" />
+    <Content Include="Ws\Board\Mod.asmx" />
+    <Content Include="Ws\Board\ReadList.asmx" />
+    <Content Include="Ws\Board\ShortReply.asmx" />
+    <Content Include="Ws\Board\ShortReplyList.asmx" />
+    <Content Include="Ws\Board\ShortReplyMod.asmx" />
+    <Content Include="Ws\Board\View.asmx" />
+    <Content Include="Ws\Member\List.asmx" />
+    <Content Include="Ws\Project\List.asmx" />
+    <Content Include="Ws\Project\Main.asmx" />
+    <Content Include="Ws\Related\JList.asmx" />
+    <Content Include="Ws\Related\ProjectList.asmx" />
+    <Content Include="Ws\Template\JList.asmx" />
+    <Content Include="Ws\Unit\JList.asmx" />
+    <Content Include="Ws\Unit\MoveUpdown.asmx" />
+    <Content Include="Ws\Unit\ShortReply.asmx" />
+    <Content Include="Ws\Unit\ShortReplyMod.asmx" />
+    <Content Include="Ws\Unit\View.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.Chart\Zeospace.DeskPlus.Component.Chart.csproj">
+      <Project>{36CDC404-DD98-4187-8A48-FE5ADB29EF61}</Project>
+      <Name>Zeospace.DeskPlus.Component.Chart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.Grids\Zeospace.DeskPlus.Component.Grids.csproj">
+      <Project>{662EF254-976C-4F81-8AFF-A66BA1AD772B}</Project>
+      <Name>Zeospace.DeskPlus.Component.Grids</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.DAL\Zeospace.DeskPlus.Pim.DAL.csproj">
+      <Project>{C7B9274A-EEBD-4F62-BADE-9433252BF688}</Project>
+      <Name>Zeospace.DeskPlus.Pim.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PMSProject\Zeospace.DeskPlus.PMS.BE\Zeospace.DeskPlus.PMS.BE.csproj">
+      <Project>{3CA44D9B-8C30-476A-BB54-25CCDBE0E5B6}</Project>
+      <Name>Zeospace.DeskPlus.PMS.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PMSProject\Zeospace.DeskPlus.PMS.BLL\Zeospace.DeskPlus.PMS.BLL.csproj">
+      <Project>{678BE5B4-C45F-47DF-9C1A-AC3856DDBA5C}</Project>
+      <Name>Zeospace.DeskPlus.PMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PMSProject\Zeospace.DeskPlus.PMS.DAL\Zeospace.DeskPlus.PMS.DAL.csproj">
+      <Project>{081D88EB-8208-441F-B034-06035C07E7BA}</Project>
+      <Name>Zeospace.DeskPlus.PMS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3140</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskplusEIP/PMS</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

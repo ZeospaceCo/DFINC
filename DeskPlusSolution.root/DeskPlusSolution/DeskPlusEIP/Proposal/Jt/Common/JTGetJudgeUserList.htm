@@ -1,0 +1,35 @@
+﻿<table class="table_typeA"> 
+<caption>
+   1차심사 리스트
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="80px" />
+    <col />
+    <col width="80px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th class="center"></th>
+    <th class="center">부서</th>
+    <th class="center">소속</th>
+    <th class="center">이름</th>
+    <th class="center">직급</th>
+</tr>
+
+{#foreach $T as JudgeUserList}
+<tr>
+    <td class="center">
+        <input type="checkbox" class="cbxID" id="cbxID{ $T.JudgeUserList.UserID }" value="{ $T.JudgeUserList.UserID }${$T.JudgeUserList.Name}" />
+    </td>
+    <td class="center">{ $T.JudgeUserList.DeptName }</td>
+    <td class="center">{ $T.JudgeUserList.ParentDeptName }</td>   
+    <td class="center">{ $T.JudgeUserList.Name }</td>
+    <td class="center">{ $T.JudgeUserList.TitleName }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center">등록된 심사자가 없습니다.</td>        
+</tr>
+{#/for}        
+</table>

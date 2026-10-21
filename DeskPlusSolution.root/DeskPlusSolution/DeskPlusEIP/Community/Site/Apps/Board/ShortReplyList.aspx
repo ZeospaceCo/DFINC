@@ -1,0 +1,93 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShortReplyList.aspx.cs" Inherits="Zeospace.DeskPlus.Community.Web.Site.Apps.Board.ShortReplyList" %>
+<%@ Register Assembly="Zeospace.DeskPlus.Base.ApplicationFrameworks" Namespace="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.WebComponent" TagPrefix="cc3" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title><%=ConfigurationManager.AppSettings["SolutionTitle"].ToString()%></title>
+    <link rel="stylesheet" type="text/css" href="<%=BaseCssPath%>/DeskPlusEIPBase.css"/><link rel="stylesheet" type="text/css" href="<%=CssPath%>/DeskPlusEIPBase.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=BaseCssPath%>/Func_Community.css"/><link rel="stylesheet" type="text/css" href="<%=CssPath%>/Func_Community.css"/>            
+</head>
+<body>
+
+<form id="form1" runat="server">
+
+<div class="layer_popup">
+    <div class="inside">
+        <div class="popup_header">
+            <h1><%=GetResource("ShortReply")%></h1>
+            <ul class="btn_right">
+                <li><cc3:ClientSmartButton ID="CbtnClose" runat="server" /></li>
+            </ul>
+        </div>
+        <div class="dotLine"></div>
+        <div class="popup_layout_style3">
+            <div id="scrollDiv">
+            
+            <div id="phShortRelpyList" style="clear: both;"></div>
+            
+            <!-- 페이징 시작 //-->
+            <div id="Pager1" name="Pager1" class="paging_num_s1"> 
+                <h3><span id="pageInfo"></span></h3>
+	            <span id="pager"></span>
+                <asp:DropDownList ID="ddlListCount" runat="server" CssClass="aRight">
+                    <asp:ListItem Text="5 " Value="5"></asp:ListItem>
+                    <asp:ListItem Text="10 " Value="10"></asp:ListItem>
+                    <asp:ListItem Text="20 " Value="20"></asp:ListItem>
+                    <asp:ListItem Text="30 " Value="30"></asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            </div>
+
+
+            <div class="layout_subbox">
+                <h2><%=GetResource("ShortReply")%></h2>
+                (<span class="charsRemaining"></span>) 
+                <ul class="btn_right">
+                    <cc3:ClientSmartButton ID="cbtnShortReply" runat="server" BeginEndTag="li" />
+                </ul>
+            </div>
+            <textarea name="textarea" id="textarea"  class="textarea" style="width:97%;height:55px;" runat="server" maxlength="200"></textarea>
+
+        </div>
+    </div>
+</div>
+</form>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>    
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.url.js"></script>   
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jtemplates.js" ></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.list.pager.js" ></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/validator.js" ></script>    
+<script type="text/javascript">
+    var CommunityID = "<%=CommunityID %>";
+    var MenuID = "<%=MenuID %>";
+    var BoardID = "<%=BoardID %>";
+    var CurrentPage = "1"; //현재페이지
+    var TotalItemCount = 0; //게시물수
+    var RecordPerPage = "<%=RecordPerPage %>"; //보여줄게시물수       
+    var CheckAuth = "<%=CheckAuth %>"; 
+    var Grade = "<%=Grade %>"; 
+    var ListType = "<%=ListType %>";        
+    var PageUrl = "<%= Request.Url.ToString() %>";
+    var ImagePath = "<%=BaseImgPath%>";
+    var PreLang = "<%=PreLang%>";                                
+    var R_Previous = "<%=GetResource("Previous") %>";
+    var R_Next = "<%=GetResource("Next") %>";
+    var R_NoContent = "<%=GetResource("NoContent") %>";
+    var R_UserName = "<%=GetResource("UserName") %>";
+    var R_Contents = "<%=GetResource("Contents") %>";
+    var R_RegDate = "<%=GetResource("RegDate") %>";
+    var R_ApplyDelete = "<%=GetResource("ApplyDelete") %>";
+    var R_ReallyApplyDelete = "<%=GetResource("ReallyApplyDelete") %>";
+    var R_Del = "<%=GetResource("Del") %>";
+    var R_CompleteConfirm = "<%=GetResource("CompleteConfirm") %>";
+    var R_ReplyInputContent = "<%=GetResource("ReplyInputContent") %>";
+    var R_LimitShortReply = "<%=GetResource("LimitShortReply") %>";
+</script>
+<script type="text/javascript" src="/DeskPlusEIP/Community/Js/Site/Apps/Board/ShortReplyList.js" ></script>
+<script type="text/javascript">
+    //JsCall("/DeskPlusEIP/Community/Js/Site/Apps/Board/ShortReplyList.js");
+</script>
+</body>
+</html>

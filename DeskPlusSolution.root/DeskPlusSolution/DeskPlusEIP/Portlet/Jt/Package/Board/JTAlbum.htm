@@ -1,0 +1,25 @@
+﻿<div class="imageSlider">
+    <div class="imageList">
+        <ul>
+        {#foreach $T as List}                         
+        <li class="poboxlistset" style="height:170px;">
+        <dl>
+            <dd class="img">
+            <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+            <img src="{ $T.List.ScreenShot }" alt="img" width="120" height="90" /></a></dd>
+            <dd class="name">{ $T.List.WriteUserName }</dd>
+            <dd class="date">{ $T.List.WriteDate }</dd>
+            <dd class="tit"><a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1024,700);" style="cursor:pointer">{ $T.List.Title }</a></dd>        
+        </dl>
+        </li>
+        {#else}   
+        <li>
+        <dl>
+            <dd class="img"><img class="IconNoImg" /></dd>
+            <dd class="tit"><span class="NoListData"></span></dd>
+        </dl>  
+        </li>
+        {#/for}                                          
+        </ul>
+    </div>
+</div>

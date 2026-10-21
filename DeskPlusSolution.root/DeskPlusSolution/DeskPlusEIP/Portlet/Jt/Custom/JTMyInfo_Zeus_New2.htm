@@ -1,0 +1,19 @@
+﻿        
+{#foreach $T as List}   
+   <table border="0" cellpadding="4" cellspacing="4">
+   <tr>
+      <td><img class="my8" alt="" /></td>
+      <td>{$T.List.Proposal}</td>
+      <td><img class="my9" alt="" /></td>
+      <td>{$T.List.MBO}</td>
+   </tr>
+   <tr>
+      <td><img class="my10" alt="" /></td>
+      <td>{$T.List.VoluntaryService}</td>
+      <td><img class="my11" alt="" /></td>
+      <td>{$T.List.TotalCheckup}</td>
+   </tr>
+<table>
+{#else}     
+        
+{#/for}  

@@ -1,0 +1,25 @@
+﻿<table class="table_typeA">
+<caption>설문투표자</caption>
+<colgroup>
+    <col />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="jtVL_F1"></span></th>
+        <th class="center"><span id="jtVL_F2"></span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.DeptBase } { $T.List.TitleBase }/{ $T.List.DutyBase } { $T.List.NameBase }</td>
+        <td class="center">{ $T.List.WriteDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

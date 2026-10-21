@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="1" Value="プロジェクト情報"/>
+  <Item ID="2" Value="単位ジョブのタスク"/>
+  <Item ID="3" Value="お知らせ"/>
+  <Item ID="4" Value="掲示板"/>
+  <Item ID="5" Value="プロジェクトのスケジュール"/>
+  <Item ID="6" Value="参加者情報"/>
+</XmlData>

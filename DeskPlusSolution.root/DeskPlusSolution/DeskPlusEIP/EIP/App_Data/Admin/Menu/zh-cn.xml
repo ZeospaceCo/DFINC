@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Nodes>
+    <TreeViewNode ID="INSA" Text="人力资源管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="USER" Text="用户信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DEPT" Text="部门信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="TITLE" Text="位置信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DUTY" Text="标题信息"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="POTAL" Text="门户管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="SUBSIDIARY" Text="公司信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="AUTH" Text="权利的信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MENU" Text="菜单的详细信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="PAGE" Text="页面信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="LAYOUT" Text="布局信息"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="UNIT" Text="portlet信息"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="LINKED" Text="环环相扣的管理" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="MAIL" Text="邮件"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MASSENGER" Text="信使"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+</Nodes>
+ 

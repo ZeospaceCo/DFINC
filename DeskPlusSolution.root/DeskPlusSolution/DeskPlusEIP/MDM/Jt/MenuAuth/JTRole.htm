@@ -1,0 +1,27 @@
+﻿<table class="table_typeA"> 
+    <caption>
+        Parameter
+    </caption>
+    <colgroup>    
+        <col />
+        <col width="60px" />
+    </colgroup>
+    <tr>
+        <th class="th" id="r_authName"></th>        
+        <th class="th" id="r_del"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            { $T.List.RoleName }
+        </td>
+        <td class="center">
+            <a class="btn" onclick="Add.DelMenuRole('{ $T.List.MenuRoleID }')" style="display:inline-block;"><span class="btn_file_del"></span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="td" colspan="2"><span class="NoListData" /></td>
+    </tr>
+    {#/for}       
+</table>

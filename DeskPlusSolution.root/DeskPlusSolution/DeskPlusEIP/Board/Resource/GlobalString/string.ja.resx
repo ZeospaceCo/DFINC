@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="100Unit" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="10Unit" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="50Unit" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>ファイルの追加</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>フォルダを追加</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>追加するには</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>モジュールを追加</value>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>テンプレートの追加</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>テキストを入力してください</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>タイトルを入力してください。</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>内容を入力してください</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>予告期間を設定してください。</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>エラーが発生した後の処理。管理者に連絡してください。</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>すべてをダウンロード</value>
+  </data>
+  <data name="AlreadySettingAuthority" xml:space="preserve">
+    <value>許可は、社会全体のパーミッションに付加されています。</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>匿名の</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用可能</value>
+  </data>
+  <data name="ApplyAllSubordination" xml:space="preserve">
+    <value>すべての下位レベルの分類に適用されます。</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ApplyFolderAllAuthority" xml:space="preserve">
+    <value>すべてのフォルダのアクセス権を反映？</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>登録の日付を入力してください。</value>
+  </data>
+  <data name="ApplySameAuthSubordinatioFolder" xml:space="preserve">
+    <value>該当する下位フォルダと同じアクセス許可</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>能力</value>
+  </data>
+  <data name="AuthSetting" xml:space="preserve">
+    <value>設定された権限</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="BoardListFormat" xml:space="preserve">
+    <value>掲示板の一覧</value>
+  </data>
+  <data name="BoardManagement" xml:space="preserve">
+    <value>掲示板管理</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>原油</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="CategoryOrder" xml:space="preserve">
+    <value>配下のファイル·フォルダの順番</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>ディレクトリの順序は変更する必要があり</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>ホストフォルダの変更</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>削除したいリストを選択してください。</value>
+  </data>
+  <data name="CheckHits" xml:space="preserve">
+    <value>検査の人の確認。</value>
+  </data>
+  <data name="CheckMoveFavoriteFolder" xml:space="preserve">
+    <value>フォルダを移動するコレクションを選択してください。</value>
+  </data>
+  <data name="CheckMoveList" xml:space="preserve">
+    <value>移動したいリストを選択してください。</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="CompleteFolder" xml:space="preserve">
+    <value>フォルダが追加されました。</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>選択したフォルダに移動さ​​れました。</value>
+  </data>
+  <data name="CompleteModifyFolder" xml:space="preserve">
+    <value>フォルダの変更が処理されました。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前に作成されたコンテンツはすべて失われます。選択肢？</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="ContentsManagement" xml:space="preserve">
+    <value>記事の管理</value>
+  </data>
+  <data name="CreateMenu" xml:space="preserve">
+    <value>メニュー生成</value>
+  </data>
+  <data name="CreateScreenShot" xml:space="preserve">
+    <value>ショットを作った最初のコメントをリリースする予定です。</value>
+  </data>
+  <data name="DefaultList" xml:space="preserve">
+    <value>（あなたはリストタイプを選択しない場合）</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>実際のファイルは、あなたがそれを削除してもよろしいですか？</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>あなたは、フォルダを削除してもよろしいですか？</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="Description1" xml:space="preserve">
+    <value>掲示板のフォルダ一覧（</value>
+  </data>
+  <data name="Description2" xml:space="preserve">
+    <value>）を削除することはできません。</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>デザイン</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>ボディは、経営者が原文の内容を変えるかもしれない疑いがあるスクリプトが含まれています。</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>下位</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>エラーが発生したときに添付ファイル情報を取得します。</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>処理は、エラーが発生しました。</value>
+  </data>
+  <data name="FavoriteFolder" xml:space="preserve">
+    <value>お気に入り</value>
+  </data>
+  <data name="FavoriteFolderAdd" xml:space="preserve">
+    <value>お気に入りに追加</value>
+  </data>
+  <data name="FavoriteFolderMod" xml:space="preserve">
+    <value>お気に入りを編集</value>
+  </data>
+  <data name="FavoriteFolderMove" xml:space="preserve">
+    <value>お気に入りの携帯</value>
+  </data>
+  <data name="FavoriteFolderName" xml:space="preserve">
+    <value>お気に入りの名前</value>
+  </data>
+  <data name="FavoriteMultiFolderName" xml:space="preserve">
+    <value>好きな名前（多言語）</value>
+  </data>
+  <data name="FavoriteOrder" xml:space="preserve">
+    <value>下位の順序の変更</value>
+  </data>
+  <data name="FavoriteParentFolderName" xml:space="preserve">
+    <value>上司のお気に入りの名前</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="FolderDescription" xml:space="preserve">
+    <value>フォルダの説明</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>配下のファイル·フォルダの順番</value>
+  </data>
+  <data name="FolderManagement" xml:space="preserve">
+    <value>フォルダの管理</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>フォルダを移動する</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>フォルダの名前を入力してください。</value>
+  </data>
+  <data name="FolderTitle" xml:space="preserve">
+    <value>フォルダ名</value>
+  </data>
+  <data name="FolerMoveSameFolder" xml:space="preserve">
+    <value>同じフォルダに移動したい、他のフォルダを選択してください。</value>
+  </data>
+  <data name="ForderPath" xml:space="preserve">
+    <value>フォルダの場所</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>から</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>フルパス</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>表示ページに移動します</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>リストに移動します。</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>ページヘッダー</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>和らげる</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>重要なのは、言った</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>重要なのリストを発表？</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>基本的なリストの数</value>
+  </data>
+  <data name="ListMove" xml:space="preserve">
+    <value>携帯電話</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="ListType1" xml:space="preserve">
+    <value>リストタイプ</value>
+  </data>
+  <data name="ListType2" xml:space="preserve">
+    <value>ブログ型</value>
+  </data>
+  <data name="ListType3" xml:space="preserve">
+    <value>アルバムの種類</value>
+  </data>
+  <data name="List_ConsultGubun" xml:space="preserve">
+    <value>の分野を議論する</value>
+  </data>
+  <data name="List_Group" xml:space="preserve">
+    <value>今すぐ分類</value>
+  </data>
+  <data name="List_Move" xml:space="preserve">
+    <value>記事を掲載</value>
+  </data>
+  <data name="List_Register" xml:space="preserve">
+    <value>作る</value>
+  </data>
+  <data name="List_ReplyNo" xml:space="preserve">
+    <value>回答しないか（しない）</value>
+  </data>
+  <data name="List_ReplyYes" xml:space="preserve">
+    <value>答えたかどうか（YES）を</value>
+  </data>
+  <data name="List_SubGroup" xml:space="preserve">
+    <value>下位分類を含む</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>その他は変更することができます</value>
+  </data>
+  <data name="ModifyFolder" xml:space="preserve">
+    <value>フォルダを変更する</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>ポストを編集</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1ヶ月</value>
+  </data>
+  <data name="MoveCategory" xml:space="preserve">
+    <value>フォルダを移動したいファイルを選択してください。</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附属書は存在しません。</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>権限がありません</value>
+  </data>
+  <data name="NoAuthMenu" xml:space="preserve">
+    <value>アクセス可能なポータル·メニューはありません。</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>権限がありません。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容がありません。</value>
+  </data>
+  <data name="DeletedPost" xml:space="preserve">
+    <value>削除された投稿です。</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>コンテンツは存在しません。</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>ファイルが存在しません。</value>
+  </data>
+  <data name="NoReplyData" xml:space="preserve">
+    <value>投稿はありません。</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>リストは存在しません。</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>気付く</value>
+  </data>
+  <data name="NoticeCheck" xml:space="preserve">
+    <value>掲示板をチェック</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>しない画像フォーマット。</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>件名なし</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>エラー処理を送信します。管理者に連絡してください。</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>パブリックフォルダ</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>予選</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>評価する</value>
+  </data>
+  <data name="Rate_lblAverageRatingMessage" xml:space="preserve">
+    <value>評価額比率</value>
+  </data>
+  <data name="Rate_lblCommentMessage" xml:space="preserve">
+    <value>評価の説明（オプション）</value>
+  </data>
+  <data name="Rate_lblTopMessage" xml:space="preserve">
+    <value>コンテンツの評価についての投票。</value>
+  </data>
+  <data name="Rate_lblVoteCastMessage" xml:space="preserve">
+    <value>評価ありがとうございます。</value>
+  </data>
+  <data name="Rate_Outstanding" xml:space="preserve">
+    <value>優れた</value>
+  </data>
+  <data name="Rate_Poor" xml:space="preserve">
+    <value>不十分な</value>
+  </data>
+  <data name="Rate_SelectVote" xml:space="preserve">
+    <value>評価を選択してください。</value>
+  </data>
+  <data name="Rate_Success" xml:space="preserve">
+    <value>アプリケーションの評価を完了しました。</value>
+  </data>
+  <data name="Rate_Title" xml:space="preserve">
+    <value>評価する</value>
+  </data>
+  <data name="Rate_VotedPeople" xml:space="preserve">
+    <value>人を評価した。</value>
+  </data>
+  <data name="RatingComment" xml:space="preserve">
+    <value>理由を査定</value>
+  </data>
+  <data name="RatingList" xml:space="preserve">
+    <value>詳細を評価する</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>検査</value>
+  </data>
+  <data name="ReadReply" xml:space="preserve">
+    <value>検査+フィードバック</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>受取人</value>
+  </data>
+  <data name="RecordCntPerPage" xml:space="preserve">
+    <value>ページあたりのレコード数：</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>登録日</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>加入者</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>登録通知書</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>答える</value>
+  </data>
+  <data name="SaveTemp" xml:space="preserve">
+    <value>一時的に保存され</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>スクリーンショット</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchYear" xml:space="preserve">
+    <value>毎年恒例の検索</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>持ち上げられる記事を選択してください。</value>
+  </data>
+  <data name="SelectFavoriteFolder" xml:space="preserve">
+    <value>[お気に入り]フォルダを選択してください。</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>フォルダを選択してください。</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>ページヘッダーを選択</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>メールを送信</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>権限を設定して下さい。</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>環境設定</value>
+  </data>
+  <data name="SettingSameAuth" xml:space="preserve">
+    <value>ボリュームセットのアクセス許可</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="ShowAttachedImage" xml:space="preserve">
+    <value>他の写真は、テキストで表示されます。</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>画像を見る</value>
+  </data>
+  <data name="ShowMobile" xml:space="preserve">
+    <value>電話機に表示される。</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さくなければなりません。</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="StatYearMonth" xml:space="preserve">
+    <value>の時系列的な状況</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>テンプレート</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>テンプレートの名前を入力してください。</value>
+  </data>
+  <data name="TempManage" xml:space="preserve">
+    <value>テンプレートマネージャー</value>
+  </data>
+  <data name="TempSaveAlert" xml:space="preserve">
+    <value>一時的に区別のフォントの色、サイズ、重量、その他、別館を変更するだけで保存します。それを保存するには？</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>ドキュメントのタイトル</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="TotalRecord" xml:space="preserve">
+    <value>レコードの合計数：</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>優れた</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>サイズ制限をアップロード</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>ActiveXを使用して</value>
+  </data>
+  <data name="UseAlarm" xml:space="preserve">
+    <value>リマインダーを使用しています。</value>
+  </data>
+  <data name="UseAnonymity" xml:space="preserve">
+    <value>匿名を使用する。</value>
+  </data>
+  <data name="UseDeptBoard" xml:space="preserve">
+    <value>学科掲示板（部門によっては、低いでしょう部門が自動的に適用される、一般的な分類に変換することはできません作成したもの）</value>
+  </data>
+  <data name="UseEvaluation" xml:space="preserve">
+    <value>機能を評価するために使用される。</value>
+  </data>
+  <data name="UseReply" xml:space="preserve">
+    <value>返信テキストを使用します。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="UseShortRelpy" xml:space="preserve">
+    <value>POSTを使用して。</value>
+  </data>
+  <data name="UseSubordinationBoardNotice" xml:space="preserve">
+    <value>下位掲示板記事で使用している。</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>検査</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>アクセス番号</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>検査日</value>
+  </data>
+  <data name="ViewUserRatingList" xml:space="preserve">
+    <value>レビューの詳細を読む</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>投稿を追加</value>
+  </data>
+  <data name="View_Info" xml:space="preserve">
+    <value>基本情報</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>のステータスへのアクセス</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>登録情報</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>一週間</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>全社的な</value>
+  </data>
+  <data name="WholeSettingAuth" xml:space="preserve">
+    <value>全社追加する権限</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>書き込む</value>
+  </data>
+  <data name="WriteCnt" xml:space="preserve">
+    <value>登録数</value>
+  </data>
+  <data name="WriteContent" xml:space="preserve">
+    <value>発表テキスト登録</value>
+  </data>
+  <data name="WriteContents" xml:space="preserve">
+    <value>掲示板のテキストを作成します</value>
+  </data>
+  <data name="WriteFavoriteName" xml:space="preserve">
+    <value>お気に入りの名前を入力してください。</value>
+  </data>
+  <data name="WriteReply" xml:space="preserve">
+    <value>書き込み+書き込み投稿</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>記事を書く</value>
+  </data>
+  <data name="WriteText" xml:space="preserve">
+    <value>記事を書く</value>
+  </data>
+  <data name="WriteUseTemplate" xml:space="preserve">
+    <value>記事を書くためにテンプレートを使用します。</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提出する</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>対象者を選択してください。</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>メール送信</value>
+  </data>
+  <data name="SendMailTitle" xml:space="preserve">
+    <value>メール送信のタイトル</value>
+  </data>
+  <data name="SpammerList" xml:space="preserve">
+    <value>メール送信者リスト</value>
+  </data>
+  <data name="NoMove" xml:space="preserve">
+    <value>あなたは、同じフォルダに移動することはできません。</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>ポップアップ通知の設定</value>
+  </data>
+  <data name="BeforeContent" xml:space="preserve">
+    <value>元の内容</value>
+  </data>
+  <data name="WholeBoardManager" xml:space="preserve">
+    <value>すべての会社ボード</value>
+  </data>
+  <data name="WholeBoardListManager" xml:space="preserve">
+    <value>すべての会社のボードのリストを管理</value>
+  </data>
+  <data name="NoAddOtherCompany" xml:space="preserve">
+    <value>あなたはユーザーや他の企業の部署を追加することはできません。</value>
+  </data>
+  <data name="AddOnlyReadAuth" xml:space="preserve">
+    <value>[読み取り専用掲示板]を、あなたは読み取り専用アクセスを追加することができます。</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>PDF파일 생성중 에러가 발생하였습니다. 관리자에게 문의하세요.</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[PDF일괄다운로드 대상확장자] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>PDF 일괄다운로드</value>
+  </data>
+  <data name="UseMainPopup" xml:space="preserve">
+    <value>메인팝업사용</value>
+  </data>
+  <data name="UsePopup" xml:space="preserve">
+    <value>팝업사용</value>
+  </data>
+  <data name="UsingMainPopup" xml:space="preserve">
+    <value>이미 메인팝업이 사용중 입니다.</value>
+  </data>
+  <data name="WritePopupSize" xml:space="preserve">
+    <value>메인팝업 사이즈를 입력해 주세요.</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>목록 형태로 제공해 드립니다.</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>블로그 형태로 왼쪽 상단에 대표 이미지 및 간략 본문내용과 함께 제공합니다.</value>
+  </data>
+  <data name="TooltiplistType3" xml:space="preserve">
+    <value>갤러리 형태로 대표 이미지로 제목과 함께 제공합니다.</value>
+  </data>
+  <data name="CategorySelect" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="CategorySelectGuide" xml:space="preserve">
+    <value>Before creating the text, please be sure to select a category first!</value>
+  </data>
+  <data name="CategorySelectCheck" xml:space="preserve">
+    <value>Please select a category!</value>
+  </data>
+  <data name="BoardStatus" xml:space="preserve">
+    <value>BoardStatus</value>
+  </data>
+  <data name="MyTotalBoardStatus" xml:space="preserve">
+    <value>MyTotalBoardStatus</value>
+  </data>
+  <data name="YearMaxWriter" xml:space="preserve">
+    <value>YearMaxWriter</value>
+  </data>
+  <data name="YearNoMaxWriter" xml:space="preserve">
+    <value>YearNoMaxWriter.</value>
+  </data>
+  <data name="RecentWrite" xml:space="preserve">
+    <value>RecentWrite</value>
+  </data>
+  <data name="MaxShort" xml:space="preserve">
+    <value>MaxShort</value>
+  </data>
+  <data name="MaxRead" xml:space="preserve">
+    <value>MaxRead</value>
+  </data>
+  <data name="MaxRate" xml:space="preserve">
+    <value>MaxRate</value>
+  </data>
+  <data name="YearMaxShort" xml:space="preserve">
+    <value>YearMaxShort</value>
+  </data>
+  <data name="MyWrite" xml:space="preserve">
+    <value>MyWrite</value>
+  </data>
+  <data name="MyListByShort" xml:space="preserve">
+    <value>MyListByShort</value>
+  </data>
+  <data name="MyShort" xml:space="preserve">
+    <value>MyShort</value>
+  </data>
+  <data name="MyImpo" xml:space="preserve">
+    <value>MyImpo</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>BoardList</value>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>ShortList</value>
+  </data>
+  <data name="MyYearActivity" xml:space="preserve">
+    <value>MyYearActivity</value>
+  </data>
+  <data name="CountNumber" xml:space="preserve">
+    <value>CountNumber</value>
+  </data>
+  <data name="TotalStatus" xml:space="preserve">
+    <value>TotalStatus</value>
+  </data>
+  <data name="CommentsAttachedList" xml:space="preserve">
+    <value>CommentsAttachedList</value>
+  </data>
+  <data name="CategoryConfirm" xml:space="preserve">
+    <value>Categories Skip to content disappears when selected. Do you want to continue?</value>
+  </data>
+  <data name="PublishingWriting" xml:space="preserve">
+    <value>Publishing Writing</value>
+  </data>
+  <data name="TotalBoard" xml:space="preserve">
+    <value>TotalBoard</value>
+  </data>
+  <data name="MyBoard" xml:space="preserve">
+    <value>MyBoard</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>The First list.</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>The Last list.</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>Searches for: title, attachment filenames</value>
+  </data>
+  <data name="AlarmUser" xml:space="preserve">
+    <value>アラーム対象者</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>既に登録されているユーザー（部門）です。</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>組織図</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>追加する対象を選択してください</value>
+  </data>
+  <data name="TitleAll" xml:space="preserve">
+    <value>명칭</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="CopyURL" xml:space="preserve">
+    <value>CopyURL</value>
+  </data>
+  <data name="CopyURLComplete" xml:space="preserve">
+    <value>URL Copy Completed</value>
+  </data>
+  <data name="PopupSelect" xml:space="preserve">
+    <value>ポップアップウィンドウサイズが選択されていません。</value>
+  </data>
+  <data name="AllDeptUser" xml:space="preserve">
+    <value>すべての人員がそれぞれのスタッフに割り当てられます。</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="SearchAttachNames" xml:space="preserve">
+    <value>添付ファイル名</value>
+  </data>
+  <data name="SearchContents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="SearchShortReplyContents" xml:space="preserve">
+    <value>コメントの内容</value>
+  </data>
+  <data name="SearchShortReplyWriter" xml:space="preserve">
+    <value>コメント投稿者</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6ヶ月</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>期間を入力</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="SearchTitleContents" xml:space="preserve">
+    <value>タイトル+内容</value>
+  </data>
+  <data name="SearchWriter" xml:space="preserve">
+    <value>出版社</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>検索用語を2文字入力してください。</value>
+  </data>
+  <data name="URLAdd" xml:space="preserve">
+    <value>リンクURLの添付を追加</value>
+  </data>
+  <data name="URLAddBtn" xml:space="preserve">
+    <value>リンクの追加</value>
+  </data>
+  <data name="URLName" xml:space="preserve">
+    <value>リンクのURL</value>
+  </data>
+  <data name="URLOption" xml:space="preserve">
+    <value>リンクURLの添付機能を使用します。</value>
+  </data>
+  <data name="URLMsg" xml:space="preserve">
+    <value>リンクのURLを入力してください。</value>
+  </data>
+  <data name="URLNameMsg" xml:space="preserve">
+    <value>ファイル名を入力してください。</value>
+  </data>
+  <data name="SetDate" xml:space="preserve">
+    <value>期間設定</value>
+  </data>
+  <data name="ReadOnlyBoard" xml:space="preserve">
+    <value>読み取り専用ボード</value>
+  </data>
+  <data name="InterestedPerson" xml:space="preserve">
+    <value>関心対象者</value>
+  </data>
+  <data name="InterestedPersonAdd" xml:space="preserve">
+    <value>関心対象者を追加</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="SelectAlarm" xml:space="preserve">
+    <value>転写権限の場合は、選択アラームが可能です。</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>外部ダウンロードなし</value>
+  </data>
+  <data name="DownLoadArea" xml:space="preserve">
+    <value>このパブリケーションの添付ファイルは、外部ダウンロード以外では利用できません。</value>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>年月</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>それはすでにコメントされています。</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>非推奨をしますか？</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>このコメントは削除されました</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>あなたのコメントは推奨/推奨されません。</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>おすすめしました。</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>コメントを書く</value>
+  </data>
+  <data name="ShowTop" xml:space="preserve">
+    <value>おすすめコメントを最上位に表示する</value>
+  </data>
+  <data name="UseComments" xml:space="preserve">
+    <value>好きな嫌いなコメントを使う</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
+</root>

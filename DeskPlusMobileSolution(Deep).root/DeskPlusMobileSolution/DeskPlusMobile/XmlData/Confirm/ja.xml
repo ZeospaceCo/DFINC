@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+  <OPINION>
+    <SECTION>
+      <OPINION>결재의견이 작성되었습니다</OPINION>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[결재의견]</OPINION>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;상신자 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;의견자 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;의견 : $OPINION$&lt;/li&gt;
+      &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </OPINION>
+  
+  <MAIL>
+    <SECTION>
+      <OPINION>決済意見が書かれた。</OPINION>
+      <APPROVE>決済文書が到着しました。</APPROVE>
+      <COMPLETE>決済文書が完結処理しました。</COMPLETE>
+      <CARBON>参照文書が到着しました。</CARBON>
+      <RECEIVED>受信文書が到着しました。</RECEIVED>
+      <APPROVED>決済文書が保留しました。</APPROVED>
+      <APPROVEDC>決済文書が保留解除されます。</APPROVEDC>
+      <APPROVEH>決済文書が上申保留しました。</APPROVEH>
+      <APPROVEHC>決済文書が上申保留解除しました。</APPROVEHC>
+      <REJECT>決済文書が返戻されます。</REJECT>
+      <CIRCULATION>回覧文書を発送しました。</CIRCULATION>
+      <ENFORCE>公文を承りました。</ENFORCE>
+      <MEMO>メモが作成されます。</MEMO>
+      <PROXY>対決文書が到着しました。</PROXY>
+      <CANCEL>サンシンキャンセルしました。</CANCEL>
+      <FORWARD>配信文書を発送しました。</FORWARD>
+      <PASSED>移管文書を発送しました。</PASSED>
+      <APPROVEC>承認が取り消されました。</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[決済意見]</OPINION>
+      <APPROVE>[決済]</APPROVE>
+      <COMPLETE>[完結]</COMPLETE>
+      <CARBON>[参照]</CARBON>
+      <RECEIVED>[受信]</RECEIVED>
+      <APPROVED>[保留]</APPROVED>
+      <APPROVEDC>[保留解除]</APPROVEDC>
+      <APPROVEH>[サンシン保留]</APPROVEH>
+      <APPROVEHC>[サンシン保留解除]</APPROVEHC>
+      <REJECT>[伴侶]</REJECT>
+      <CIRCULATION>[回覧]</CIRCULATION>
+      <ENFORCE>[公文]</ENFORCE>
+      <MEMO>[メモ]</MEMO>
+      <PROXY>[対決]</PROXY>
+      <CANCEL>[サンシンキャンセル]</CANCEL>
+      <FORWARD>[転送]</FORWARD>
+      <PASSED>[移管]</PASSED>
+      <APPROVEC>[承認を取り消す]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;タイトル : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;フォーム名 : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;サンシン部 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者のコメント : $OPINION$&lt;/li&gt;
+      &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;クリック時、文書の表示に移動します。&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MAIL>
+
+  <MESSENGER>
+    <SECTION>
+      <OPINION>決済意見が書かれた。</OPINION>
+      <APPROVE>決済文書が到着しました。</APPROVE>
+      <COMPLETE>決済文書が完結処理しました。</COMPLETE>
+      <CARBON>参照文書が到着しました。</CARBON>
+      <RECEIVED>受信文書が到着しました。</RECEIVED>
+      <APPROVED>決済文書が保留しました。</APPROVED>
+      <APPROVEDC>決済文書が保留解除されます。</APPROVEDC>
+      <APPROVEH>決済文書が上申保留しました。</APPROVEH>
+      <APPROVEHC>決済文書が上申保留解除しました。</APPROVEHC>
+      <REJECT>決済文書が返戻されます。</REJECT>
+      <CIRCULATION>回覧文書を発送しました。</CIRCULATION>
+      <ENFORCE>公文を承りました。</ENFORCE>
+      <MEMO>メモが作成されます。</MEMO>
+      <PROXY>対決文書が到着しました。</PROXY>
+      <CANCEL>サンシンキャンセルしました。</CANCEL>
+      <FORWARD>配信文書を発送しました。</FORWARD>
+      <PASSED>移管文書を発送しました。</PASSED>
+      <APPROVEC>承認が取り消されました。</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[決済意見]</OPINION>
+      <APPROVE>[決済]</APPROVE>
+      <COMPLETE>[完結]</COMPLETE>
+      <CARBON>[参照]</CARBON>
+      <RECEIVED>[受信]</RECEIVED>
+      <APPROVED>[保留]</APPROVED>
+      <APPROVEDC>[保留解除]</APPROVEDC>
+      <APPROVEH>[サンシン保留]</APPROVEH>
+      <APPROVEHC>[サンシン保留解除]</APPROVEHC>
+      <REJECT>[伴侶]</REJECT>
+      <CIRCULATION>[回覧]</CIRCULATION>
+      <ENFORCE>[公文]</ENFORCE>
+      <MEMO>[メモ]</MEMO>
+      <PROXY>[対決]</PROXY>
+      <CANCEL>[サンシンキャンセル]</CANCEL>
+      <FORWARD>[転送]</FORWARD>
+      <PASSED>[移管]</PASSED>
+      <APPROVEC>[承認を取り消す]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;タイトル : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;フォーム名 : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;サンシン部 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者のコメント : $OPINION$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MESSENGER>
+
+  <SMS>
+    <SECTION>
+      <OPINION>決済意見が書かれた。</OPINION>
+      <APPROVE>決済文書が到着しました。</APPROVE>
+      <COMPLETE>決済文書が完結処理しました。</COMPLETE>
+      <CARBON>参照文書が到着しました。</CARBON>
+      <RECEIVED>受信文書が到着しました。</RECEIVED>
+      <APPROVED>決済文書が保留しました。</APPROVED>
+      <APPROVEDC>決済文書が保留解除されます。</APPROVEDC>
+      <APPROVEH>決済文書が上申保留しました。</APPROVEH>
+      <APPROVEHC>決済文書が上申保留解除しました。</APPROVEHC>
+      <REJECT>決済文書が返戻されます。</REJECT>
+      <CIRCULATION>回覧文書を発送しました。</CIRCULATION>
+      <ENFORCE>公文を承りました。</ENFORCE>
+      <MEMO>メモが作成されます。</MEMO>
+      <PROXY>対決文書が到着しました。</PROXY>
+      <CANCEL>サンシンキャンセルしました。</CANCEL>
+      <FORWARD>配信文書を発送しました。</FORWARD>
+      <PASSED>移管文書を発送しました。</PASSED>
+      <APPROVEC>承認が取り消されました。</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[決済意見]</OPINION>
+      <APPROVE>[決済]</APPROVE>
+      <COMPLETE>[完結]</COMPLETE>
+      <CARBON>[参照]</CARBON>
+      <RECEIVED>[受信]</RECEIVED>
+      <APPROVED>[保留]</APPROVED>
+      <APPROVEDC>[保留解除]</APPROVEDC>
+      <APPROVEH>[サンシン保留]</APPROVEH>
+      <APPROVEHC>[サンシン保留解除]</APPROVEHC>
+      <REJECT>[伴侶]</REJECT>
+      <CIRCULATION>[回覧]</CIRCULATION>
+      <ENFORCE>[公文]</ENFORCE>
+      <MEMO>[メモ]</MEMO>
+      <PROXY>[対決]</PROXY>
+      <CANCEL>[サンシンキャンセル]</CANCEL>
+      <FORWARD>[転送]</FORWARD>
+      <PASSED>[移管]</PASSED>
+      <APPROVEC>[承認を取り消す]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+    </CONTENT>
+  </SMS>
+
+  <MOBILE>
+    <SECTION>
+      <OPINION>決済意見が書かれた。</OPINION>
+      <APPROVE>決済文書が到着しました。</APPROVE>
+      <COMPLETE>決済文書が完結処理しました。</COMPLETE>
+      <CARBON>参照文書が到着しました。</CARBON>
+      <RECEIVED>受信文書が到着しました。</RECEIVED>
+      <APPROVED>決済文書が保留しました。</APPROVED>
+      <APPROVEDC>決済文書が保留解除されます。</APPROVEDC>
+      <APPROVEH>決済文書が上申保留しました。</APPROVEH>
+      <APPROVEHC>決済文書が上申保留解除しました。</APPROVEHC>
+      <REJECT>決済文書が返戻されます。</REJECT>
+      <CIRCULATION>回覧文書を発送しました。</CIRCULATION>
+      <ENFORCE>公文を承りました。</ENFORCE>
+      <MEMO>メモが作成されます。</MEMO>
+      <PROXY>対決文書が到着しました。</PROXY>
+      <CANCEL>サンシンキャンセルしました。</CANCEL>
+      <FORWARD>配信文書を発送しました。</FORWARD>
+      <PASSED>移管文書を発送しました。</PASSED>
+      <APPROVEC>承認が取り消されました。</APPROVEC>
+    </SECTION>
+    <SUBJ>
+      <OPINION>[決済意見]</OPINION>
+      <APPROVE>[決済]</APPROVE>
+      <COMPLETE>[完結]</COMPLETE>
+      <CARBON>[参照]</CARBON>
+      <RECEIVED>[受信]</RECEIVED>
+      <APPROVED>[保留]</APPROVED>
+      <APPROVEDC>[保留解除]</APPROVEDC>
+      <APPROVEH>[サンシン保留]</APPROVEH>
+      <APPROVEHC>[サンシン保留解除]</APPROVEHC>
+      <REJECT>[伴侶]</REJECT>
+      <CIRCULATION>[回覧]</CIRCULATION>
+      <ENFORCE>[公文]</ENFORCE>
+      <MEMO>[メモ]</MEMO>
+      <PROXY>[対決]</PROXY>
+      <CANCEL>[サンシンキャンセル]</CANCEL>
+      <FORWARD>[転送]</FORWARD>
+      <PASSED>[移管]</PASSED>
+      <APPROVEC>[承認を取り消す]</APPROVEC>
+    </SUBJ>
+    <CONTENT>
+      &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;タイトル : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;フォーム名 : $NUMBER3$&lt;/li&gt;
+      &lt;li&gt;サンシン部 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者情報 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+      &lt;li&gt;決裁者のコメント : $OPINION$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MOBILE>
+</ALARM>

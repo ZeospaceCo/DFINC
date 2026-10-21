@@ -1,0 +1,28 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<caption>PimEnqury</caption>
+<colgroup>
+    <col width="150px" />
+    <col width="80px" />
+    <col width="160px" />
+    <col />
+</colgroup>
+<tr>
+    <th id="r_name"></th>
+    <th id="r_kind"></th>
+    <th id="r_date"></th>    
+    <th id="r_title"></th>
+</tr>
+{#foreach $T as BoardList}
+<tr>
+    <td class='center'>{ $T.BoardList.UserName }</td>
+    <td class='center'>{ $T.BoardList.KindDesk }</td>
+    <td class='center'>{ $T.BoardList.stringStartTime }</td>
+    <td><a style="cursor:pointer" onclick="ListTotal.MovePage({ $T.BoardList.ScheduleID },{ $T.BoardList.OpenType })" >{ $T.BoardList.Title }</a></td>
+    <!--<a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer" >{ $T.BoardList.Title }</a>-->
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><div id="divt1"></div></td>        
+</tr>
+{#/for}        
+</table>

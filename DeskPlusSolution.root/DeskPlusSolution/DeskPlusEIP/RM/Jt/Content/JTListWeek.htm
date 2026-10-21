@@ -1,0 +1,235 @@
+﻿<table class="table_typeD">
+    <caption> 자원관리 일간</caption>
+    <colgroup>
+    <col width="220px" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />
+    <col width="3%" />    
+    <col />
+    <col width="80px" />
+    </colgroup>  
+    <tr>
+        <th class="first-child"><span id="j_resourcesTitle"></span></th>
+        <th colspan="15"><span id="j_time"></span></th>
+        <th><span id="j_title"></span></th>
+        <th class="last-child"><span id="j_subscriber"></span></th>
+    </tr>    
+    {#foreach $T as List}  
+
+    {#if $T.List.Row == 1}
+    <tr>
+        <td class="th2">{ $T.List.WeekName }</td>
+        <td class="th2"><-</td>
+        <td class="th2">7</td>
+        <td class="th2">8</td>
+        <td class="th2">9</td>
+        <td class="th2">10</td>
+        <td class="th2">11</td>
+        <td class="th2">12</td>
+        <td class="th2">13</td>
+        <td class="th2">14</td>
+        <td class="th2">15</td>
+        <td class="th2">16</td>
+        <td class="th2">17</td>
+        <td class="th2">18</td>
+        <td class="th2">19</td>
+        <td class="th2">-></td>
+        <td class="th2">&nbsp;</td>
+        <td class="th2">&nbsp;</td>
+    </tr>  
+    {#/if}
+    <tr>           
+
+        {#if $T.List.Admin == 'Y'}
+
+        <td class="first-child">{ $T.List.Title }<br />
+            {#if $T.List.Authority == '1'}
+            <span><a onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;" class="managerA">{ $T.List.ManagerName }</a></span> 
+            {#else}
+            <span><a onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;" >{ $T.List.ManagerName }</a></span>
+            {#/if}
+            {#if $T.List.UsableStr != ''}
+            <span class="requestMM"><a onclick="javascript:ListWeek.Send('{ $T.List.ReservationID }')" class="arequest btn btn-sm btn-secondary">{ $T.List.UsableStr }</a></span>
+            {#/if} 
+        </td>
+        {#if $T.List.StartTimeGap > 0}
+        <td>&nbsp;</td>          
+        {#for i= 2 to $T.List.StartTimeGap}
+        <td><a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i + 5}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a></td>
+        {#/for}       
+        {#else}
+        {#if $T.List.StartMinute > 0}
+        <td>&nbsp</td>
+        {#else}
+        <td>{#if $T.List.Usable == '0'}<a class="callContextAMenu" id="pu_{ $T.List.ReservationID }"><span class="unapproved"></span></a>{#/if}
+        {#if $T.List.Usable == '1'}<a class="callContextBMenu" id="pa_{ $T.List.ReservationID }"><span class="approved"></span></a>{#/if}
+        {#if $T.List.Usable == '2'}<a class="callContextCMenu" id="pr_{ $T.List.ReservationID }"><span class="refusal"></span></a>{#/if}</td>
+        {#/if}
+        {#/if}
+
+        {#if $T.List.StartMinute > 0}
+        <td>{#if $T.List.Usable == '0'}<a class="callContextAMenu" id="su_{ $T.List.ReservationID }"><span class="unapproved" style="float:right; width:50%;"></span></a>{#/if}
+        {#if $T.List.Usable == '1'}<a class="callContextBMenu" id="sa_{ $T.List.ReservationID }"><span class="approved" style="float:right; width:50%;"></span></a>{#/if}
+        {#if $T.List.Usable == '2'}<a class="callContextCMenu" id="sr_{ $T.List.ReservationID}"><span class="refusal" style="float:right; width:50%;"></span></a>{#/if}</td>
+        {#/if}
+
+        {#for i= 1 to $T.List.DifferMinite}
+        <td>{#if $T.List.Usable == '0'}<a class="callContextAMenu" id="{$T.i}u_{ $T.List.ReservationID }"><span class="unapproved"></span></a>{#/if}
+        {#if $T.List.Usable == '1'}<a class="callContextBMenu" id="{$T.i}a_{ $T.List.ReservationID }"><span class="approved"></span></a>{#/if}
+        {#if $T.List.Usable == '2'}<a class="callContextCMenu" id="{$T.i}r_{ $T.List.ReservationID}"><span class="refusal"></span></a>{#/if}</td>
+        {#/for}  
+
+        {#if $T.List.EndMinute > 0}
+        <td>{#if $T.List.Usable == '0'}<a class="callContextAMenu" id="eu_{ $T.List.ReservationID }"><span class="unapproved" style="float:left; width:50%;"></span></a>{#/if}
+        {#if $T.List.Usable == '1'}<a class="callContextBMenu" id="ea_{ $T.List.ReservationID }"><span class="approved" style="float:left; width:50%;"></span></a>{#/if}
+        {#if $T.List.Usable == '2'}<a class="callContextCMenu" id="er_{ $T.List.ReservationID }"><span class="refusal" style="float:left; width:50%;"></span></a>{#/if}</td>
+        {#/if}
+
+        {#if $T.List.EndTimeGap > 0}
+        {#for i= 2 to $T.List.EndTimeGap}
+        <td><a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i + $T.List.EndHour}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a></td> 
+        {#/for}
+        <td>&nbsp;</td>
+        {#else}
+        <td>{#if $T.List.Usable == '0'}<a class="callContextAMenu" id="nu_{ $T.List.ReservationID }"><span class="unapproved"></span></a>{#/if}
+        {#if $T.List.Usable == '1'}<a class="callContextBMenu" id="na_{ $T.List.ReservationID }"><span class="approved"></span></a>{#/if}
+        {#if $T.List.Usable == '2'}<a class="callContextCMenu" id="nr_{ $T.List.ReservationID }"><span class="refusal"></span></a>{#/if}</td>
+        {#/if}      
+        
+        <td>{ $T.List.Subject }
+            {#if $T.List.ReplyCount > 0}
+            <span>({ $T.List.ReplyCount })</span>        
+            {#/if}
+        </td>
+        <td class="last-child"><a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a></td>
+
+        
+        {#else}
+
+        <td class="first-child">{ $T.List.Title }<br />
+            {#if $T.List.Authority == '1'}
+            <span><a onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;" class="managerA">{ $T.List.ManagerName }</a></span>
+            {#else}
+            <span><a onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;" style="cursor:pointer">{ $T.List.ManagerName }</a></span>
+            {#/if}   
+            {#if $T.List.UsableStr != ''}
+            <span class="requestMM"><a onclick="javascript:ListWeek.Send('{ $T.List.ReservationID }')" class="arequest btn btn-sm btn-secondary">{ $T.List.UsableStr }</a></span>
+            {#/if}   
+        </td>
+        {#if $T.List.StartTimeGap > 0}
+        <td>&nbsp;</td>          
+        {#for i= 2 to $T.List.StartTimeGap}
+        <td><a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i + 5}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a></td>
+        {#/for}       
+        {#else}
+        {#if $T.List.StartMinute > 0}
+        <td>&nbsp</td>
+        {#else}        
+            {#if $T.List.Auth > 0}
+                <td>
+                {#if $T.List.Usable == '0'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="unapproved"></span></a>{#/if}
+                {#if $T.List.Usable == '1'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="approved"></span></a>{#/if}
+                {#if $T.List.Usable == '2'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="refusal"></span></a>{#/if}</td>
+            {#else}
+                <td>
+                {#if $T.List.Usable == '0'}<span class="unapproved"></span>{#/if}
+                {#if $T.List.Usable == '1'}<span class="approved"></span>{#/if}
+                {#if $T.List.Usable == '2'}<span class="refusal"></span>{#/if}</td>
+            {#/if}
+        {#/if}
+        {#/if}
+
+        {#if $T.List.StartMinute > 0}
+            {#if $T.List.Auth > 0}
+                <td>{#if $T.List.Usable == '0'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="unapproved" style="float:right; width:50%;"></span></a>{#/if}
+                {#if $T.List.Usable == '1'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="approved" style="float:right; width:50%;"></span></a>{#/if}
+                {#if $T.List.Usable == '2'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="refusal" style="float:right; width:50%;"></span></a>{#/if}</td>
+            {#else}
+                <td>{#if $T.List.Usable == '0'}<span class="unapproved" style="float:right; width:50%;"></span>{#/if}
+                {#if $T.List.Usable == '1'}<span class="approved" style="float:right; width:50%;"></span>{#/if}
+                {#if $T.List.Usable == '2'}<span class="refusal" style="float:right; width:50%;"></span>{#/if}</td>
+            {#/if}
+        {#/if}
+
+        {#for i= 1 to $T.List.DifferMinite}
+            {#if $T.List.Auth > 0}
+                <td>{#if $T.List.Usable == '0'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="unapproved"></span></a>{#/if}
+                {#if $T.List.Usable == '1'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="approved"></span></a>{#/if}
+                {#if $T.List.Usable == '2'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="refusal"></span></a>{#/if}
+                {#if $T.List.Usable == '3'}<a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i+6}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a>{#/if}</td>
+            {#else}
+                <td>{#if $T.List.Usable == '0'}<span class="unapproved"></span>{#/if}
+                {#if $T.List.Usable == '1'}<span class="approved"></span>{#/if}
+                {#if $T.List.Usable == '2'}<span class="refusal"></span>{#/if}
+                {#if $T.List.Usable == '3'}<a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i+6}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a>{#/if}</td>
+            {#/if}
+        {#/for}  
+
+        {#if $T.List.EndMinute > 0}
+            {#if $T.List.Auth > 0}
+                <td>{#if $T.List.Usable == '0'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="unapproved" style="float:left; width:50%;"></span></a>{#/if}
+                {#if $T.List.Usable == '1'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="approved" style="float:left; width:50%;"></span></a>{#/if}
+                {#if $T.List.Usable == '2'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="refusal" style="float:left; width:50%;"></span></a>{#/if}</td>
+            {#else}
+                <td>{#if $T.List.Usable == '0'}<span class="unapproved" style="float:left; width:50%;"></span>{#/if}
+                {#if $T.List.Usable == '1'}<span class="approved" style="float:left; width:50%;"></span>{#/if}
+                {#if $T.List.Usable == '2'}<span class="refusal" style="float:left; width:50%;"></span>{#/if}</td>
+            {#/if}
+        {#/if}
+
+        {#if $T.List.EndTimeGap > 0}
+        {#for i= 2 to $T.List.EndTimeGap}
+        <td><a onclick="javascript:ListWeek.Add('{$T.List.WeekDay}','{$T.i + $T.List.EndHour}', '{ $T.List.ListID }')"><span class="dataBlank"></span></a></td> 
+        {#/for}
+        <td>&nbsp;</td>
+        {#else}
+            {#if $T.List.Auth > 0}
+                <td>{#if $T.List.Usable == '0'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="unapproved"></span></a>{#/if}
+                {#if $T.List.Usable == '1'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="approved"></span></a>{#/if}
+                {#if $T.List.Usable == '2'}<a onclick="javascript:ListWeek.View('{ $T.List.ReservationID }')"><span class="refusal"></span></a>{#/if}</td>
+            {#else}
+                <td>{#if $T.List.Usable == '0'}<span class="unapproved"></span>{#/if}
+                {#if $T.List.Usable == '1'}<span class="approved"></span>{#/if}
+                {#if $T.List.Usable == '2'}<span class="refusal"></span>{#/if}</td>
+            {#/if}
+        {#/if}      
+        
+        <td>{ $T.List.Subject }
+            {#if $T.List.ReplyCount > 0}
+            <span>({ $T.List.ReplyCount })</span>        
+            {#/if}
+        </td>
+        <td class="last-child">
+            {#if $T.List.Auth > 0}
+                <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a>
+            {#else}
+                { $T.List.WriteUserName }
+            {#/if}
+        </td>
+
+        {#/if}
+      
+
+    </tr>       
+    {#else}
+    <tr>
+        <td class="first-child"></td>
+        <td colspan="15"><span id="NoListData" /></td>
+        <td></td>
+        <td class="last-child"></td>
+    </tr>
+    {#/for}
+</table>
+<div class="table_typeAbottom_left"><p></p></div>

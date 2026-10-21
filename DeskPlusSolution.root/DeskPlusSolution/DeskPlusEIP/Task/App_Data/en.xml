@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+
+  <MESSENGER>
+    <ACCEPT>[Accept]</ACCEPT>
+    <COMPLETE>[Complete]</COMPLETE>
+    <REJECT>[Reject]</REJECT>
+    <TO>[Receive]</TO>
+    <CC>[Reference]</CC>
+    <FORWARD>[Forward]</FORWARD>
+    <REPLY>[Comment]</REPLY>
+    <CANCEL>[Cancel]</CANCEL>
+    <INGDETAIL>[Save changes]</INGDETAIL>
+    <ContentHTMLACCEPT>
+      [Co-Work Accept]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLACCEPT>
+    <ContentHTMLCOMPLETE>
+      [Co-Work Complete]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLCOMPLETE>
+    <ContentHTMLREJECT>
+      [Co-Work Reject]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLREJECT>
+    <ContentHTMLTO>
+      [Co-Work Receive]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLTO>
+    <ContentHTMLCC>
+      [Co-Work Reference]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLCC>
+    <ContentHTMLFORWARD>
+      [Co-Work Forward]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLFORWARD>
+    <ContentHTMLREPLY>
+      [Co-Work Comment]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLREPLY>
+    <ContentHTMLCANCEL>
+      [Co-Work Cancel]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLCANCEL>
+    <ContentHTMLINGDETAIL>
+      [Co-Work Save changes]
+      &lt;br&gt;&lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTMLINGDETAIL>
+  </MESSENGER>
+
+</ALARM>

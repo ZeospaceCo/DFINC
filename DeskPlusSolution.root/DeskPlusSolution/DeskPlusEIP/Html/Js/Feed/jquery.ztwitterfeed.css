@@ -1,0 +1,70 @@
+﻿@charset "UTF-8";
+/*
+ * Example of zTwitterFeed Styling
+ *
+ * Version: 1.0.2
+ * (c) Copyright 2011, Zazar Ltd
+ *
+ */
+
+body {
+	margin: 1em 3em;
+	font-family: Tahoma, Genevam, sans-serif;
+}
+
+.twitterFeed
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	margin: 2em 3em;
+	width: 400px;
+}
+.twitterFeed a
+{
+	color: #000;
+	font-weight: bold;
+}
+.twitterFeed a:hover, .twitterHeader a, .tweetName a { text-decoration: none; }
+.twitterFeed a img { border: none; }
+.twitterFeed img
+{
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.twitterHeader { padding: 0.2em 0; }
+.twitterHeader span
+{
+	font-weight: bold;
+	font-size: 2.2em;
+}
+
+.twitterBody
+{
+	clear: left;
+	border: 1px solid #999;
+}
+.twitterBody ul { list-style: none; }
+.twitterBody ul, .twitterRow, .twitterRow h4
+{
+	margin: 0;
+	padding: 0;
+}
+
+.twitterRow { padding: 0.5em; }
+.twitterRow p { margin-left: 60px; }
+
+.tweetName a, .tweetTime
+{
+	font-weight: bold;
+	color: #444;
+}
+.tweetName
+{
+	float: left;
+	font-size: 1.2em;
+}
+.tweetTime { text-align: right; }
+
+.odd { background-color: #e8e8fc; }
+.even { background-color: #d4d4e8; }

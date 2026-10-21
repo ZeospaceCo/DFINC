@@ -1,0 +1,20 @@
+﻿
+<ul>
+{#foreach $T as List}
+    <li>
+		<span class="list-title">	  
+			<a href="{ $T.List.hrefURL }" target="mailWin" style="cursor:pointer" onclick="Mail_Popup(this,'{ $T.List.user_mail_sn }');">
+			{#if $T.List.read_flag == '0'}
+				<b>{ $T.List.mail_subject }</b>
+			{#else} 
+				{ $T.List.mail_subject }
+			{#/if}
+			</a>
+		</span>
+		<span class="list-writer">{ $T.List.from_name }</span>
+        <span class="list-date">{ $T.List.receive_time }</span>
+    </li>    
+{#else}     
+    <li><span class="NoListData"></span></li>            
+{#/for}  
+</ul>

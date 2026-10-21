@@ -1,0 +1,25 @@
+﻿<table cellspacing="0" id="contentTable" class="table_typeB" style="width:100% !important;">  
+    <caption></caption>
+    <colgroup>
+        <col />
+        <col width="60px"/>
+    </colgroup>
+    <thead>
+    <tr>
+        <th><div id="r_DeptName"></div></th>                            
+        <th align="center"><div id="r_HoliDel"></div></th>
+    </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as AdminRoleList}
+    <tr>
+        <td id='G_{$T.AdminRoleList.GroupID}'>{$T.AdminRoleList.DeptName}</td>            
+        <td><a onclick="AdminRoleAdd.DelUserList('G_{$T.AdminRoleList.GroupID}')"><img class='imgDel' /></a></td>    
+    </tr>
+    {#else}
+    <tr>
+    <td colspan="2" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}  
+    </tbody>                  
+    </table>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+	<Item ID="AlarmType" Value="0"  Content="알림형태 : 0 (사용안함), 1 (알람), 2 (메일), 3 (SMS)" />
+  <Item ID="BoardNewShowDay" Value="0" Content="new 이미지 보이기 (당일 : 0)" />
+</XmlData>

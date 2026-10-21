@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="Alert_Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Alert_Delete" xml:space="preserve">
+    <value>削除されました。</value>
+  </data>
+  <data name="Alert_Error" xml:space="preserve">
+    <value>処理エラーが発生しました。管理者に連絡してください。</value>
+  </data>
+  <data name="Alert_Modify" xml:space="preserve">
+    <value>変更されています。</value>
+  </data>
+  <data name="Alert_MovePage" xml:space="preserve">
+    <value>ページ秒後に自動的に移動されます。</value>
+  </data>
+  <data name="Alert_No" xml:space="preserve">
+    <value>ノー</value>
+  </data>
+  <data name="Alert_Ok" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="Alert_Register" xml:space="preserve">
+    <value>登録されています。</value>
+  </data>
+  <data name="Alert_Success" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="Alert_Yes" xml:space="preserve">
+    <value>ある</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>すべてをダウンロード</value>
+  </data>
+  <data name="BaseLang" xml:space="preserve">
+    <value>基底名</value>
+  </data>
+  <data name="Building" xml:space="preserve">
+    <value>建物</value>
+  </data>
+  <data name="CallNotifyMessage" xml:space="preserve">
+    <value>データには、登録時にある</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国語</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>市/郡/地区</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>市/県</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>リー/質量分布で</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="HouseNumber" xml:space="preserve">
+    <value>標札</value>
+  </data>
+  <data name="InsertContact" xml:space="preserve">
+    <value>アドレス帳登録</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓国語</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>作る</value>
+  </data>
+  <data name="MsgNotFoundFile" xml:space="preserve">
+    <value>ファイルを見つけることができません</value>
+  </data>
+  <data name="MsgNotFoundPath" xml:space="preserve">
+    <value>フォルダを選択しないでください</value>
+  </data>
+  <data name="MsgTotalDownLoad" xml:space="preserve">
+    <value>すべてをダウンロード</value>
+  </data>
+  <data name="MsgUploadAttachFileDesktop" xml:space="preserve">
+    <value>デスクトップ</value>
+  </data>
+  <data name="MsgUploadAttachFileMyComputer" xml:space="preserve">
+    <value>[マイコンピュータ]</value>
+  </data>
+  <data name="MsgUploadAttachFileMyDocuments" xml:space="preserve">
+    <value>マイドキュメント</value>
+  </data>
+  <data name="MsgUploadAttachFileMyNetworkPlaces" xml:space="preserve">
+    <value>ネットワークコンピュータ</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>PDF파일 생성중 에러가 발생하였습니다. 관리자에게 문의하세요.</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>リストは存在しません。</value>
+  </data>
+  <data name="SearchDetailNo" xml:space="preserve">
+    <value>住所検索</value>
+  </data>
+  <data name="SearchStreet" xml:space="preserve">
+    <value>検索道路名</value>
+  </data>
+  <data name="SearchValue1" xml:space="preserve">
+    <value>町/村/通りの名前を追加してください。</value>
+  </data>
+  <data name="SearchValue2" xml:space="preserve">
+    <value>道路名を入力してください。</value>
+  </data>
+  <data name="Searh" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SelGu" xml:space="preserve">
+    <value>エリアを選択してください</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>町/村/ストリート</value>
+  </data>
+  <data name="StreetName" xml:space="preserve">
+    <value>道路名</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾語</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="NoDownLoad" xml:space="preserve">
+    <value>ファイルをダウンロードすることができません</value>
+  </data>
+  <data name="DownLoadArea" xml:space="preserve">
+    <value>このパブリケーションの添付ファイルは、外部ダウンロード以外では利用できません。</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+</root>

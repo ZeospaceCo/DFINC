@@ -1,0 +1,26 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <caption>직급정보</caption>
+    <colgroup>
+        <col width="100px"/>
+        <col />
+        <col width="100px"/>
+    </colgroup>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="Mod.Checked()" /></th>
+        <th class="center" id="r_titleName2"></th>
+        <th class="center" id="r_isActiveTit"></th>
+    </tr>
+    {#foreach $T as TitleList}
+    <tr>
+        <td class="center">
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.TitleList.TitleID }" value="{ $T.TitleList.TitleID }" />
+        </td>        
+        <td >{ $T.TitleList.TitleName }</td>
+        <td class="center">{ $T.TitleList.ActiveCode }</td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

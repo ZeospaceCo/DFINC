@@ -1,0 +1,3497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0FF96B6-0247-43F0-B42D-73339DE84D1A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Approval.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Approval.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Util\Component\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AccessGrade\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AccessGrade\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Config\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Config\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DocContact\ListR.aspx.cs">
+      <DependentUpon>ListR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DocContact\ListR.aspx.designer.cs">
+      <DependentUpon>ListR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DocContact\ListS.aspx.cs">
+      <DependentUpon>ListS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DocContact\ListS.aspx.designer.cs">
+      <DependentUpon>ListS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document33\ViewDoc.aspx.cs">
+      <DependentUpon>ViewDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document33\ViewDoc.aspx.designer.cs">
+      <DependentUpon>ViewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document33\ViewDocProc.aspx.cs">
+      <DependentUpon>ViewDocProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document33\ViewDocProc.aspx.designer.cs">
+      <DependentUpon>ViewDocProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DocumentEtc\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DocumentEtc\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document\JList.aspx.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document\JList.aspx.designer.cs">
+      <DependentUpon>JList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document\ListCom.aspx.cs">
+      <DependentUpon>ListCom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document\ListCom.aspx.designer.cs">
+      <DependentUpon>ListCom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document\ViewDoc.aspx.cs">
+      <DependentUpon>ViewDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document\ViewDoc.aspx.designer.cs">
+      <DependentUpon>ViewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Document\ViewDocProc.aspx.cs">
+      <DependentUpon>ViewDocProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Document\ViewDocProc.aspx.designer.cs">
+      <DependentUpon>ViewDocProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\RegisterLangAddress.aspx.cs">
+      <DependentUpon>RegisterLangAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\RegisterLangAddress.aspx.designer.cs">
+      <DependentUpon>RegisterLangAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\RegisterLangExp.aspx.cs">
+      <DependentUpon>RegisterLangExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnforceSeal\RegisterLangExp.aspx.designer.cs">
+      <DependentUpon>RegisterLangExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FolderAuth\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FolderAuth\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FolderAuth\TotalList.aspx.cs">
+      <DependentUpon>TotalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FolderAuth\TotalList.aspx.designer.cs">
+      <DependentUpon>TotalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\AddFolderAuth.aspx.cs">
+      <DependentUpon>AddFolderAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\AddFolderAuth.aspx.designer.cs">
+      <DependentUpon>AddFolderAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Folder\ModSeq.aspx.cs">
+      <DependentUpon>ModSeq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Folder\ModSeq.aspx.designer.cs">
+      <DependentUpon>ModSeq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\GetFolder.aspx.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\GetFolder.aspx.designer.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModSetting.aspx.cs">
+      <DependentUpon>ModSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModSetting.aspx.designer.cs">
+      <DependentUpon>ModSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModUserSequence.aspx.cs">
+      <DependentUpon>ModUserSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModUserSequence.aspx.designer.cs">
+      <DependentUpon>ModUserSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModFormSequence.aspx.cs">
+      <DependentUpon>ModFormSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGeneration\ModFormSequence.aspx.designer.cs">
+      <DependentUpon>ModFormSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Proxy\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Proxy\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Proxy\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Proxy\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Proxy\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Proxy\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Proxy\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Proxy\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListMonth.aspx.cs">
+      <DependentUpon>ListMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListMonth.aspx.designer.cs">
+      <DependentUpon>ListMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListMonthExcel.aspx.cs">
+      <DependentUpon>ListMonthExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListMonthExcel.aspx.designer.cs">
+      <DependentUpon>ListMonthExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListTop.aspx.cs">
+      <DependentUpon>ListTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Statistics\ListTop.aspx.designer.cs">
+      <DependentUpon>ListTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Transfer\GetGarbage.aspx.cs">
+      <DependentUpon>GetGarbage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Transfer\GetGarbage.aspx.designer.cs">
+      <DependentUpon>GetGarbage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Transfer\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Transfer\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Transfer\ListDept.aspx.cs">
+      <DependentUpon>ListDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Transfer\ListDept.aspx.designer.cs">
+      <DependentUpon>ListDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Transfer\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Transfer\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\FolderDeptTreeScript.ascx.cs">
+      <DependentUpon>FolderDeptTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\FolderDeptTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderDeptTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\FolderSplitTreeScript.ascx.cs">
+      <DependentUpon>FolderSplitTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\FolderSplitTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderSplitTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\ForwardList.aspx.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\ForwardList.aspx.designer.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\GetFolderDeptTreeScript.aspx.cs">
+      <DependentUpon>GetFolderDeptTreeScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\GetFolderDeptTreeScript.aspx.designer.cs">
+      <DependentUpon>GetFolderDeptTreeScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\DeptUserScript.ascx.cs">
+      <DependentUpon>DeptUserScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\DeptUserScript.ascx.designer.cs">
+      <DependentUpon>DeptUserScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\FormNetTreeScript.ascx.cs">
+      <DependentUpon>FormNetTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\FormNetTreeScript.ascx.designer.cs">
+      <DependentUpon>FormNetTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\FormTreeScript.ascx.cs">
+      <DependentUpon>FormTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\FormTreeScript.ascx.designer.cs">
+      <DependentUpon>FormTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetDeptUserScript.aspx.cs">
+      <DependentUpon>GetDeptUserScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetDeptUserScript.aspx.designer.cs">
+      <DependentUpon>GetDeptUserScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetFormNetTreeScript.aspx.cs">
+      <DependentUpon>GetFormNetTreeScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetFormNetTreeScript.aspx.designer.cs">
+      <DependentUpon>GetFormNetTreeScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetFormTreeScript.aspx.cs">
+      <DependentUpon>GetFormTreeScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\GetFormTreeScript.aspx.designer.cs">
+      <DependentUpon>GetFormTreeScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormFlow\PrivateTree.ascx.cs">
+      <DependentUpon>PrivateTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FormFlow\PrivateTree.ascx.designer.cs">
+      <DependentUpon>PrivateTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup33\ViewTot.aspx.cs">
+      <DependentUpon>ViewTot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup33\ViewTot.aspx.designer.cs">
+      <DependentUpon>ViewTot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\GetDeptUserSelect.aspx.cs">
+      <DependentUpon>GetDeptUserSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\GetDeptUserSelect.aspx.designer.cs">
+      <DependentUpon>GetDeptUserSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\GetSign.aspx.cs">
+      <DependentUpon>GetSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\GetSign.aspx.designer.cs">
+      <DependentUpon>GetSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\OpinionView.aspx.cs">
+      <DependentUpon>OpinionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\OpinionView.aspx.designer.cs">
+      <DependentUpon>OpinionView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\PreView.aspx.cs">
+      <DependentUpon>PreView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\PreView.aspx.designer.cs">
+      <DependentUpon>PreView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\ShortReplyList.aspx.cs">
+      <DependentUpon>ShortReplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\ShortReplyList.aspx.designer.cs">
+      <DependentUpon>ShortReplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\SignImage.ashx.cs">
+      <DependentUpon>SignImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\ViewCir.aspx.cs">
+      <DependentUpon>ViewCir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\ViewCir.aspx.designer.cs">
+      <DependentUpon>ViewCir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\ViewTot.aspx.cs">
+      <DependentUpon>ViewTot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\ViewTot.aspx.designer.cs">
+      <DependentUpon>ViewTot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Status\FolderStatusTreeScript.ascx.cs">
+      <DependentUpon>FolderStatusTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Status\FolderStatusTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderStatusTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Status\FolderStatusAllTreeScript.ascx.cs">
+      <DependentUpon>FolderStatusAllTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Status\FolderStatusAllTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderStatusAllTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\FolderTreeScript.ascx.cs">
+      <DependentUpon>FolderTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\FolderTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Folder\GetFolderTreeScript.aspx.cs">
+      <DependentUpon>GetFolderTreeScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Folder\GetFolderTreeScript.aspx.designer.cs">
+      <DependentUpon>GetFolderTreeScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Admin\FolderTreeScript.ascx.cs">
+      <DependentUpon>FolderTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Admin\FolderTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\GetDeptUser.aspx.cs">
+      <DependentUpon>GetDeptUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\GetDeptUser.aspx.designer.cs">
+      <DependentUpon>GetDeptUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\DisuseTree.ascx.cs">
+      <DependentUpon>DisuseTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\DisuseTree.ascx.designer.cs">
+      <DependentUpon>DisuseTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\GallerySubList.aspx.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\GallerySubList.aspx.designer.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disuse\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disuse\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder33\Common\ViewBaseDoc.aspx.cs">
+      <DependentUpon>ViewBaseDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder33\Common\ViewBaseDoc.aspx.designer.cs">
+      <DependentUpon>ViewBaseDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\AddR.aspx.cs">
+      <DependentUpon>AddR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\AddR.aspx.designer.cs">
+      <DependentUpon>AddR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\ListFolder.aspx.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\ListFolder.aspx.designer.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\ListReject.aspx.cs">
+      <DependentUpon>ListReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\ListReject.aspx.designer.cs">
+      <DependentUpon>ListReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\ListRejectFolder.aspx.cs">
+      <DependentUpon>ListRejectFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\ListRejectFolder.aspx.designer.cs">
+      <DependentUpon>ListRejectFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\MoveR.aspx.cs">
+      <DependentUpon>MoveR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\MoveR.aspx.designer.cs">
+      <DependentUpon>MoveR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\ListFolder.aspx.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\ListFolder.aspx.designer.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirDocUser.aspx.cs">
+      <DependentUpon>CirDocUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirDocUser.aspx.designer.cs">
+      <DependentUpon>CirDocUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirOpinion.aspx.cs">
+      <DependentUpon>CirOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirOpinion.aspx.designer.cs">
+      <DependentUpon>CirOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReadList.aspx.cs">
+      <DependentUpon>CirReadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReadList.aspx.designer.cs">
+      <DependentUpon>CirReadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardOpinion.aspx.cs">
+      <DependentUpon>ForwardOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardOpinion.aspx.designer.cs">
+      <DependentUpon>ForwardOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\GallerySubList.aspx.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\GallerySubList.aspx.designer.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\GroupList.aspx.cs">
+      <DependentUpon>GroupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\GroupList.aspx.designer.cs">
+      <DependentUpon>GroupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\SendMail.aspx.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\SendMail.aspx.designer.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\AccessGrade.aspx.cs">
+      <DependentUpon>AccessGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\AccessGrade.aspx.designer.cs">
+      <DependentUpon>AccessGrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\DocUserSeq.aspx.cs">
+      <DependentUpon>DocUserSeq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\DocUserSeq.aspx.designer.cs">
+      <DependentUpon>DocUserSeq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\HistoryDoc.aspx.cs">
+      <DependentUpon>HistoryDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\HistoryDoc.aspx.designer.cs">
+      <DependentUpon>HistoryDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\ViewBaseDoc.aspx.cs">
+      <DependentUpon>ViewBaseDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\ViewBaseDoc.aspx.designer.cs">
+      <DependentUpon>ViewBaseDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\PrintHistory.aspx.cs">
+      <DependentUpon>PrintHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\PrintHistory.aspx.designer.cs">
+      <DependentUpon>PrintHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\CirMemo.aspx.cs">
+      <DependentUpon>CirMemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\CirMemo.aspx.designer.cs">
+      <DependentUpon>CirMemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\ForwardMemo.aspx.cs">
+      <DependentUpon>ForwardMemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\ForwardMemo.aspx.designer.cs">
+      <DependentUpon>ForwardMemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\SendList.aspx.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\SendList.aspx.designer.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\SendMail.aspx.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\SendMail.aspx.designer.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ApproveConfirm.aspx.cs">
+      <DependentUpon>ApproveConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ApproveConfirm.aspx.designer.cs">
+      <DependentUpon>ApproveConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ListSend.aspx.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ListSend.aspx.designer.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ListSubmit.aspx.cs">
+      <DependentUpon>ListSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\EnforceAdmin\ListSubmit.aspx.designer.cs">
+      <DependentUpon>ListSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\ListSend.aspx.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\ListSend.aspx.designer.cs">
+      <DependentUpon>ListSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\ListSubmit.aspx.cs">
+      <DependentUpon>ListSubmit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\ListSubmit.aspx.designer.cs">
+      <DependentUpon>ListSubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\Preview.aspx.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\Preview.aspx.designer.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\OtherDept\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\OtherDept\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\OtherDept\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\OtherDept\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\OtherDept\ReceiptList.aspx.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\OtherDept\ReceiptList.aspx.designer.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\OtherDept\SendList.aspx.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\OtherDept\SendList.aspx.designer.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\OtherDept\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\OtherDept\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Private\ListFolder.aspx.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Private\ListFolder.aspx.designer.cs">
+      <DependentUpon>ListFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Private\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Private\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\Opinion.aspx.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\Opinion.aspx.designer.cs">
+      <DependentUpon>Opinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\PostDoc.aspx.cs">
+      <DependentUpon>PostDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\PostDoc.aspx.designer.cs">
+      <DependentUpon>PostDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Common\ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Common\ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Basic\EditorActiveX.aspx.cs">
+      <DependentUpon>EditorActiveX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\EditorActiveX.aspx.designer.cs">
+      <DependentUpon>EditorActiveX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Basic\EditorNonActiveX.aspx.cs">
+      <DependentUpon>EditorNonActiveX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\EditorNonActiveX.aspx.designer.cs">
+      <DependentUpon>EditorNonActiveX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Basic\ModContent.aspx.cs">
+      <DependentUpon>ModContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\ModContent.aspx.designer.cs">
+      <DependentUpon>ModContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Common\ConfirmSequence.aspx.cs">
+      <DependentUpon>ConfirmSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Common\ConfirmSequence.aspx.designer.cs">
+      <DependentUpon>ConfirmSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Common\GetFavList.aspx.cs">
+      <DependentUpon>GetFavList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Common\GetFavList.aspx.designer.cs">
+      <DependentUpon>GetFavList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Common\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Common\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Common\SaveDraft.aspx.cs">
+      <DependentUpon>SaveDraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Common\SaveDraft.aspx.designer.cs">
+      <DependentUpon>SaveDraft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeEdit.aspx.cs">
+      <DependentUpon>TreeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeEdit.aspx.designer.cs">
+      <DependentUpon>TreeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeLegacy.aspx.cs">
+      <DependentUpon>TreeLegacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeLegacy.aspx.designer.cs">
+      <DependentUpon>TreeLegacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeMod.aspx.cs">
+      <DependentUpon>TreeMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeMod.aspx.designer.cs">
+      <DependentUpon>TreeMod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeModReceive.aspx.cs">
+      <DependentUpon>TreeModReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeModReceive.aspx.designer.cs">
+      <DependentUpon>TreeModReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceive.aspx.cs">
+      <DependentUpon>TreeReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceive.aspx.designer.cs">
+      <DependentUpon>TreeReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceiveAll.aspx.cs">
+      <DependentUpon>TreeReceiveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceiveAll.aspx.designer.cs">
+      <DependentUpon>TreeReceiveAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceiveEdit.aspx.cs">
+      <DependentUpon>TreeReceiveEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\TreeReceiveEdit.aspx.designer.cs">
+      <DependentUpon>TreeReceiveEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Receive\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Receive\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Receive\ConfirmReject.aspx.cs">
+      <DependentUpon>ConfirmReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Receive\ConfirmReject.aspx.designer.cs">
+      <DependentUpon>ConfirmReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Receive\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Receive\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Receive\ModContent.aspx.cs">
+      <DependentUpon>ModContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Receive\ModContent.aspx.designer.cs">
+      <DependentUpon>ModContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Submit\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Submit\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Submit\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Submit\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\ListModify.aspx.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\ListModify.aspx.designer.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\GetForm.aspx.cs">
+      <DependentUpon>GetForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\GetForm.aspx.designer.cs">
+      <DependentUpon>GetForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\FavoriteForm\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Favorite\ListModify.aspx.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Favorite\ListModify.aspx.designer.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Favorite\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Favorite\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Flow\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Flow\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Flow\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Flow\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Flow\ModSequence.aspx.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Flow\ModSequence.aspx.designer.cs">
+      <DependentUpon>ModSequence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Proxy\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Proxy\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Proxy\ListModify.aspx.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Proxy\ListModify.aspx.designer.cs">
+      <DependentUpon>ListModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Proxy\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Proxy\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Proxy\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Proxy\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Setting\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Setting\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Signature\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Signature\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Signature\GetImage.ashx.cs">
+      <DependentUpon>GetImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Afterward\ConfirmSeqLine.aspx.cs">
+      <DependentUpon>ConfirmSeqLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Afterward\ConfirmSeqLine.aspx.designer.cs">
+      <DependentUpon>ConfirmSeqLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\AlarmList.aspx.cs">
+      <DependentUpon>AlarmList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\AlarmList.aspx.designer.cs">
+      <DependentUpon>AlarmList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\ApprovePopup.aspx.cs">
+      <DependentUpon>ApprovePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\ApprovePopup.aspx.designer.cs">
+      <DependentUpon>ApprovePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmPassword.aspx.cs">
+      <DependentUpon>ConfirmPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmPassword.aspx.designer.cs">
+      <DependentUpon>ConfirmPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmPasswordBundle.aspx.cs">
+      <DependentUpon>ConfirmPasswordBundle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmPasswordBundle.aspx.designer.cs">
+      <DependentUpon>ConfirmPasswordBundle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmReject.aspx.cs">
+      <DependentUpon>ConfirmReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\ConfirmReject.aspx.designer.cs">
+      <DependentUpon>ConfirmReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\SetViewing.aspx.cs">
+      <DependentUpon>SetViewing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\SetViewing.aspx.designer.cs">
+      <DependentUpon>SetViewing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Confirm\Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Confirm\Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Confirm\ApprovePopup.aspx.cs">
+      <DependentUpon>ApprovePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Confirm\ApprovePopup.aspx.designer.cs">
+      <DependentUpon>ApprovePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Opinion\ConfirmOpinion.aspx.cs">
+      <DependentUpon>ConfirmOpinion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Opinion\ConfirmOpinion.aspx.designer.cs">
+      <DependentUpon>ConfirmOpinion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Common\DocUserSeq.aspx.cs">
+      <DependentUpon>DocUserSeq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Common\DocUserSeq.aspx.designer.cs">
+      <DependentUpon>DocUserSeq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Common\GallerySubList.aspx.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Common\GallerySubList.aspx.designer.cs">
+      <DependentUpon>GallerySubList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Common\View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Common\View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReceiptList.aspx.cs">
+      <DependentUpon>CirReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReceiptList.aspx.designer.cs">
+      <DependentUpon>CirReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirSendList.aspx.cs">
+      <DependentUpon>CirSendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirSendList.aspx.designer.cs">
+      <DependentUpon>CirSendList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardList.aspx.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardList.aspx.designer.cs">
+      <DependentUpon>ForwardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ListAll.aspx.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ListAll.aspx.designer.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ListReceiveAll.aspx.cs">
+      <DependentUpon>ListReceiveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ListReceiveAll.aspx.designer.cs">
+      <DependentUpon>ListReceiveAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardListAll.aspx.cs">
+      <DependentUpon>ForwardListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardListAll.aspx.designer.cs">
+      <DependentUpon>ForwardListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardListReceiveAll.aspx.cs">
+      <DependentUpon>ForwardListReceiveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\ForwardListReceiveAll.aspx.designer.cs">
+      <DependentUpon>ForwardListReceiveAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReceiptListAll.aspx.cs">
+      <DependentUpon>CirReceiptListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirReceiptListAll.aspx.designer.cs">
+      <DependentUpon>CirReceiptListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirSendListAll.aspx.cs">
+      <DependentUpon>CirSendListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Carboncopy\CirSendListAll.aspx.designer.cs">
+      <DependentUpon>CirSendListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\CommonList.aspx.cs">
+      <DependentUpon>CommonList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\CommonList.aspx.designer.cs">
+      <DependentUpon>CommonList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\CompList.aspx.cs">
+      <DependentUpon>CompList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\CompList.aspx.designer.cs">
+      <DependentUpon>CompList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\ReceiptList.aspx.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\ReceiptList.aspx.designer.cs">
+      <DependentUpon>ReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Enforce\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Enforce\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Impo\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Impo\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Menu\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Menu\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Dept\ListAll.aspx.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Dept\ListAll.aspx.designer.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Private\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Private\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Private\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Private\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Private\ListAll.aspx.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Private\ListAll.aspx.designer.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\ListAll.aspx.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\ListAll.aspx.designer.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Approve\ListRejectAll.aspx.cs">
+      <DependentUpon>ListRejectAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Approve\ListRejectAll.aspx.designer.cs">
+      <DependentUpon>ListRejectAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\ListAll.aspx.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Arbitrary\ListAll.aspx.designer.cs">
+      <DependentUpon>ListAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Popup\GetDept.aspx.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Popup\GetDept.aspx.designer.cs">
+      <DependentUpon>GetDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Afterward\Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Afterward\Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Process\Basic\Approve.aspx.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Process\Basic\Approve.aspx.designer.cs">
+      <DependentUpon>Approve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlApproval.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageApproval.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageApprovalAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSApproval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Basic\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Basic\GetBaseDoc.aspx.cs">
+      <DependentUpon>GetBaseDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Basic\GetBaseDoc.aspx.designer.cs">
+      <DependentUpon>GetBaseDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Temporary\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlow\DefaultAll.aspx.cs">
+      <DependentUpon>DefaultAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFlow\DefaultAll.aspx.designer.cs">
+      <DependentUpon>DefaultAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Favorite\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Favorite\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Proxy\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Proxy\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preference\Flow\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preference\Flow\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status\Batch\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Batch\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Common\GetDocFlow.aspx.cs">
+      <DependentUpon>GetDocFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Common\GetDocFlow.aspx.designer.cs">
+      <DependentUpon>GetDocFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\DefaultAll.aspx.cs">
+      <DependentUpon>DefaultAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\DefaultAll.aspx.designer.cs">
+      <DependentUpon>DefaultAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListApprove.aspx.cs">
+      <DependentUpon>ListApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListApprove.aspx.designer.cs">
+      <DependentUpon>ListApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListApproveAll.aspx.cs">
+      <DependentUpon>ListApproveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListApproveAll.aspx.designer.cs">
+      <DependentUpon>ListApproveAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListCooperateAll.aspx.cs">
+      <DependentUpon>ListCooperateAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListCooperateAll.aspx.designer.cs">
+      <DependentUpon>ListCooperateAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListApproveSlip.aspx.cs">
+      <DependentUpon>ListApproveSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListApproveSlip.aspx.designer.cs">
+      <DependentUpon>ListApproveSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListComplete.aspx.cs">
+      <DependentUpon>ListComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListComplete.aspx.designer.cs">
+      <DependentUpon>ListComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListCompleteSlip.aspx.cs">
+      <DependentUpon>ListCompleteSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListCompleteSlip.aspx.designer.cs">
+      <DependentUpon>ListCompleteSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListConfirm.aspx.cs">
+      <DependentUpon>ListConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListConfirm.aspx.designer.cs">
+      <DependentUpon>ListConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListDelay.aspx.cs">
+      <DependentUpon>ListDelay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListDelay.aspx.designer.cs">
+      <DependentUpon>ListDelay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListDelayAll.aspx.cs">
+      <DependentUpon>ListDelayAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListDelayAll.aspx.designer.cs">
+      <DependentUpon>ListDelayAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReportDelayAll.aspx.cs">
+      <DependentUpon>ListReportDelayAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReportDelayAll.aspx.designer.cs">
+      <DependentUpon>ListReportDelayAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListAfterward.aspx.cs">
+      <DependentUpon>ListAfterward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListAfterward.aspx.designer.cs">
+      <DependentUpon>ListAfterward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListAfterwardAll.aspx.cs">
+      <DependentUpon>ListAfterwardAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListAfterwardAll.aspx.designer.cs">
+      <DependentUpon>ListAfterwardAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListDelaySlip.aspx.cs">
+      <DependentUpon>ListDelaySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListDelaySlip.aspx.designer.cs">
+      <DependentUpon>ListDelaySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListProcessSlip.aspx.cs">
+      <DependentUpon>ListProcessSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListProcessSlip.aspx.designer.cs">
+      <DependentUpon>ListProcessSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListProxy.aspx.cs">
+      <DependentUpon>ListProxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListProxy.aspx.designer.cs">
+      <DependentUpon>ListProxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReceive.aspx.cs">
+      <DependentUpon>ListReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReceive.aspx.designer.cs">
+      <DependentUpon>ListReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReceiveAll.aspx.cs">
+      <DependentUpon>ListReceiveAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReceiveAll.aspx.designer.cs">
+      <DependentUpon>ListReceiveAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReceiveDept.aspx.cs">
+      <DependentUpon>ListReceiveDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReceiveDept.aspx.designer.cs">
+      <DependentUpon>ListReceiveDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReceiveReject.aspx.cs">
+      <DependentUpon>ListReceiveReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReceiveReject.aspx.designer.cs">
+      <DependentUpon>ListReceiveReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListReject.aspx.cs">
+      <DependentUpon>ListReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListReject.aspx.designer.cs">
+      <DependentUpon>ListReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListRejectAll.aspx.cs">
+      <DependentUpon>ListRejectAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListRejectAll.aspx.designer.cs">
+      <DependentUpon>ListRejectAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListRejectSlip.aspx.cs">
+      <DependentUpon>ListRejectSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListRejectSlip.aspx.designer.cs">
+      <DependentUpon>ListRejectSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListRelated.aspx.cs">
+      <DependentUpon>ListRelated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListRelated.aspx.designer.cs">
+      <DependentUpon>ListRelated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListRelatedAll.aspx.cs">
+      <DependentUpon>ListRelatedAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListRelatedAll.aspx.designer.cs">
+      <DependentUpon>ListRelatedAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListProcessAll.aspx.cs">
+      <DependentUpon>ListProcessAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListProcessAll.aspx.designer.cs">
+      <DependentUpon>ListProcessAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListProcess.aspx.cs">
+      <DependentUpon>ListProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListProcess.aspx.designer.cs">
+      <DependentUpon>ListProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListRelatedSlip.aspx.cs">
+      <DependentUpon>ListRelatedSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListRelatedSlip.aspx.designer.cs">
+      <DependentUpon>ListRelatedSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListTransfer.aspx.cs">
+      <DependentUpon>ListTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListTransfer.aspx.designer.cs">
+      <DependentUpon>ListTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\ListTransferAll.aspx.cs">
+      <DependentUpon>ListTransferAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\ListTransferAll.aspx.designer.cs">
+      <DependentUpon>ListTransferAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status\Menu\TreeAll.aspx.cs">
+      <DependentUpon>TreeAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status\Menu\TreeAll.aspx.designer.cs">
+      <DependentUpon>TreeAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Admin\AccessGrade\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\AccessGrade\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\AccessGrade\ModSequence.asmx.cs">
+      <DependentUpon>ModSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\DocContact\ListR.asmx.cs">
+      <DependentUpon>ListR.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\DocumentEtc\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Document\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Document\ViewDoc.asmx.cs">
+      <DependentUpon>ViewDoc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Document\ViewDocProc.asmx.cs">
+      <DependentUpon>ViewDocProc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\EnforceSeal\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\EnforceSeal\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\EnforceSeal\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FolderAuth\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Folder\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Folder\ModSeq.asmx.cs">
+      <DependentUpon>ModSeq.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FormGeneration\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FormGeneration\ModFormSequence.asmx.cs">
+      <DependentUpon>ModFormSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FormGeneration\ModSequence.asmx.cs">
+      <DependentUpon>ModSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FormGeneration\ModSetting.asmx.cs">
+      <DependentUpon>ModSetting.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\FormGeneration\ModUserSequence.asmx.cs">
+      <DependentUpon>ModUserSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Proxy\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Proxy\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Proxy\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Statistics\ListMonth.asmx.cs">
+      <DependentUpon>ListMonth.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Statistics\ListTop.asmx.cs">
+      <DependentUpon>ListTop.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Transfer\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Folder\ForwardList.asmx.cs">
+      <DependentUpon>ForwardList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Popup\GetSign.asmx.cs">
+      <DependentUpon>GetSign.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Popup\OpinionView.asmx.cs">
+      <DependentUpon>OpinionView.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Popup\ShortReplyList.asmx.cs">
+      <DependentUpon>ShortReplyList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Popup\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\Popup\ViewTot.asmx.cs">
+      <DependentUpon>ViewTot.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Disuse\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Disuse\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\EDMS\SpEDMS\SendEDMS.asmx.cs">
+      <DependentUpon>SendEDMS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\ListFolder.asmx.cs">
+      <DependentUpon>ListFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Arbitrary\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Arbitrary\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Arbitrary\ListFolder.asmx.cs">
+      <DependentUpon>ListFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Arbitrary\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirDocUser.asmx.cs">
+      <DependentUpon>CirDocUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirReadList.asmx.cs">
+      <DependentUpon>CirReadList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirReceiptList.asmx.cs">
+      <DependentUpon>CirReceiptList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirSendList.asmx.cs">
+      <DependentUpon>CirSendList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\ForwardList.asmx.cs">
+      <DependentUpon>ForwardList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\GroupList.asmx.cs">
+      <DependentUpon>GroupList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\ListAll.asmx.cs">
+      <DependentUpon>ListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\ListReceiveAll.asmx.cs">
+      <DependentUpon>ListReceiveAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\ForwardListAll.asmx.cs">
+      <DependentUpon>ForwardListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\ForwardListReceiveAll.asmx.cs">
+      <DependentUpon>ForwardListReceiveAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirReceiptListAll.asmx.cs">
+      <DependentUpon>CirReceiptListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\CirSendListAll.asmx.cs">
+      <DependentUpon>CirSendListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\SendMail.asmx.cs">
+      <DependentUpon>SendMail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Carboncopy\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Common\DocUserSeq.asmx.cs">
+      <DependentUpon>DocUserSeq.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Common\HistoryDoc.asmx.cs">
+      <DependentUpon>HistoryDoc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Common\SetDefault.asmx.cs">
+      <DependentUpon>SetDefault.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Common\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Common\ViewHistory.asmx.cs">
+      <DependentUpon>ViewHistory.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\CirMemo.asmx.cs">
+      <DependentUpon>CirMemo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\CommonList.asmx.cs">
+      <DependentUpon>CommonList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\CompList.asmx.cs">
+      <DependentUpon>CompList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\ForwardMemo.asmx.cs">
+      <DependentUpon>ForwardMemo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\ListAll.asmx.cs">
+      <DependentUpon>ListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\ReceiptList.asmx.cs">
+      <DependentUpon>ReceiptList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\SendBoard.asmx.cs">
+      <DependentUpon>SendBoard.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\SendList.asmx.cs">
+      <DependentUpon>SendList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Dept\SendMail.asmx.cs">
+      <DependentUpon>SendMail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\EnforceAdmin\Approve.asmx.cs">
+      <DependentUpon>Approve.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\EnforceAdmin\ListSend.asmx.cs">
+      <DependentUpon>ListSend.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\EnforceAdmin\ListSubmit.asmx.cs">
+      <DependentUpon>ListSubmit.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\History.asmx.cs">
+      <DependentUpon>History.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\ListSend.asmx.cs">
+      <DependentUpon>ListSend.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\ListSubmit.asmx.cs">
+      <DependentUpon>ListSubmit.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Enforce\Send.asmx.cs">
+      <DependentUpon>Send.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Impo\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Menu\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\OtherDept\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Private\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Private\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Private\ListAll.asmx.cs">
+      <DependentUpon>ListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\ListAll.asmx.cs">
+      <DependentUpon>ListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Approve\ListRejectAll.asmx.cs">
+      <DependentUpon>ListRejectAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Arbitrary\ListAll.asmx.cs">
+      <DependentUpon>ListAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Private\ListFolder.asmx.cs">
+      <DependentUpon>ListFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Private\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Basic\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Basic\GetBaseDoc.asmx.cs">
+      <DependentUpon>GetBaseDoc.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Basic\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Common\Common.asmx.cs">
+      <DependentUpon>Common.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Common\GetFavList.asmx.cs">
+      <DependentUpon>GetFavList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Receive\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Submit\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Submit\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Temporary\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Temporary\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\FormFlow\Temporary\ListModify.asmx.cs">
+      <DependentUpon>ListModify.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Home\Content.asmx.cs">
+      <DependentUpon>Content.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Home\Default.asmx.cs">
+      <DependentUpon>Default.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Home\Menu.asmx.cs">
+      <DependentUpon>Menu.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Home\Search.asmx.cs">
+      <DependentUpon>Search.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Legacy\Document\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Legacy\Document\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\FavoriteForm\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\FavoriteForm\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\FavoriteForm\ModSequence.asmx.cs">
+      <DependentUpon>ModSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Favorite\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Favorite\ListModify.asmx.cs">
+      <DependentUpon>ListModify.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Favorite\ModSequence.asmx.cs">
+      <DependentUpon>ModSequence.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Flow\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Flow\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Proxy\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Proxy\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Proxy\ListModify.asmx.cs">
+      <DependentUpon>ListModify.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Proxy\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Setting\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Preference\Signature\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Process\Basic\Approve.asmx.cs">
+      <DependentUpon>Approve.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Process\Basic\ConfirmPassword.asmx.cs">
+      <DependentUpon>ConfirmPassword.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\Common\DocUserSeq.asmx.cs">
+      <DependentUpon>DocUserSeq.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\Common\GetDocFlow.asmx.cs">
+      <DependentUpon>GetDocFlow.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\Common\SetDefault.asmx.cs">
+      <DependentUpon>SetDefault.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\Common\SetDefaultAll.asmx.cs">
+      <DependentUpon>SetDefaultAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\Common\View.asmx.cs">
+      <DependentUpon>View.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListAfterward.asmx.cs">
+      <DependentUpon>ListAfterward.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListAfterwardAll.asmx.cs">
+      <DependentUpon>ListAfterwardAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListApprove.asmx.cs">
+      <DependentUpon>ListApprove.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListApproveAll.asmx.cs">
+      <DependentUpon>ListApproveAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListCooperateAll.asmx.cs">
+      <DependentUpon>ListCooperateAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListComplete.asmx.cs">
+      <DependentUpon>ListComplete.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListConfirm.asmx.cs">
+      <DependentUpon>ListConfirm.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListDelay.asmx.cs">
+      <DependentUpon>ListDelay.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListDelayAll.asmx.cs">
+      <DependentUpon>ListDelayAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReportDelayAll.asmx.cs">
+      <DependentUpon>ListReportDelayAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListProxy.asmx.cs">
+      <DependentUpon>ListProxy.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReceive.asmx.cs">
+      <DependentUpon>ListReceive.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReceiveAll.asmx.cs">
+      <DependentUpon>ListReceiveAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReceiveDept.asmx.cs">
+      <DependentUpon>ListReceiveDept.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReceiveReject.asmx.cs">
+      <DependentUpon>ListReceiveReject.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListReject.asmx.cs">
+      <DependentUpon>ListReject.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListRejectAll.asmx.cs">
+      <DependentUpon>ListRejectAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListRelated.asmx.cs">
+      <DependentUpon>ListRelated.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListRelatedAll.asmx.cs">
+      <DependentUpon>ListRelatedAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListProcessAll.asmx.cs">
+      <DependentUpon>ListProcessAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListProcess.asmx.cs">
+      <DependentUpon>ListProcess.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListTransfer.asmx.cs">
+      <DependentUpon>ListTransfer.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Status\ListTransferAll.asmx.cs">
+      <DependentUpon>ListTransferAll.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Admin\AccessGrade\Add.aspx" />
+    <Content Include="Admin\AccessGrade\List.aspx" />
+    <Content Include="Admin\AccessGrade\ModSequence.aspx" />
+    <Content Include="Admin\AccessGrade\Mod.aspx" />
+    <Content Include="Admin\Config\List.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\DocContact\ListR.aspx" />
+    <Content Include="Admin\DocContact\ListS.aspx" />
+    <Content Include="Admin\Document33\ViewDoc.aspx" />
+    <Content Include="Admin\Document33\ViewDocProc.aspx" />
+    <Content Include="Admin\DocumentEtc\JList.aspx" />
+    <Content Include="Admin\Document\JList.aspx" />
+    <Content Include="Admin\Document\List.aspx" />
+    <Content Include="Admin\Document\ListCom.aspx" />
+    <Content Include="Admin\Document\ViewDoc.aspx" />
+    <Content Include="Admin\Document\ViewDocProc.aspx" />
+    <Content Include="Admin\EnforceSeal\Add.aspx" />
+    <Content Include="Admin\EnforceSeal\List.aspx" />
+    <Content Include="Admin\EnforceSeal\Mod.aspx" />
+    <Content Include="Admin\EnforceSeal\RegisterLangAddress.aspx" />
+    <Content Include="Admin\EnforceSeal\RegisterLangExp.aspx" />
+    <Content Include="Admin\FolderAuth\List.aspx" />
+    <Content Include="Admin\FolderAuth\TotalList.aspx" />
+    <Content Include="Admin\Folder\Add.aspx" />
+    <Content Include="Admin\Folder\AddFolderAuth.aspx" />
+    <Content Include="Admin\Folder\List.aspx" />
+    <Content Include="Admin\Folder\ModSeq.aspx" />
+    <Content Include="Admin\FormGeneration\Add.aspx" />
+    <Content Include="Admin\FormGeneration\AddN.aspx" />
+    <Content Include="Admin\FormGeneration\GetFolder.aspx" />
+    <Content Include="Admin\FormGeneration\List.aspx" />
+    <Content Include="Admin\FormGeneration\ModSequence.aspx" />
+    <Content Include="Admin\FormGeneration\ModSetting.aspx" />
+    <Content Include="Admin\FormGeneration\ModUserSequence.aspx" />
+    <Content Include="Admin\FormGeneration\View.aspx" />
+    <Content Include="Admin\FormGeneration\ModFormSequence.aspx" />
+    <Content Include="Admin\Menu\Tree.aspx" />
+    <Content Include="Admin\Proxy\Add.aspx" />
+    <Content Include="Admin\Proxy\List.aspx" />
+    <Content Include="Admin\Proxy\Mod.aspx" />
+    <Content Include="Admin\Proxy\View.aspx" />
+    <Content Include="Admin\Statistics\ListMonth.aspx" />
+    <Content Include="Admin\Statistics\ListMonthExcel.aspx" />
+    <Content Include="Admin\Statistics\ListTop.aspx" />
+    <Content Include="Admin\Statistics\TMP.htm" />
+    <Content Include="Admin\Transfer\GetGarbage.aspx" />
+    <Content Include="Admin\Transfer\List.aspx" />
+    <Content Include="Admin\Transfer\ListDept.aspx" />
+    <Content Include="Admin\Transfer\ListUser.aspx" />
+    <Content Include="App_Data\Confirm\en.xml" />
+    <Content Include="App_Data\Confirm\fr.xml" />
+    <Content Include="App_Data\Confirm\ja.xml" />
+    <Content Include="App_Data\Confirm\ko.xml" />
+    <Content Include="App_Data\Confirm\zh-cn.xml" />
+    <Content Include="App_Data\Confirm\zh-tw.xml" />
+    <Content Include="App_Data\Proxy\en.xml" />
+    <Content Include="App_Data\Proxy\fr.xml" />
+    <Content Include="App_Data\Proxy\ja.xml" />
+    <Content Include="App_Data\Proxy\ko.xml" />
+    <Content Include="App_Data\Proxy\zh-cn.xml" />
+    <Content Include="App_Data\Proxy\zh-tw.xml" />
+    <Content Include="Common\Folder\FolderDeptTreeScript.ascx" />
+    <Content Include="Common\Folder\FolderSplitTreeScript.ascx" />
+    <Content Include="Common\Folder\ForwardList.aspx" />
+    <Content Include="Common\Folder\GetFolderDeptTreeScript.aspx" />
+    <Content Include="Common\FormFlow\DeptUserScript.ascx" />
+    <Content Include="Common\FormFlow\FormNetTreeScript.ascx" />
+    <Content Include="Common\FormFlow\FormTreeScript.ascx" />
+    <Content Include="Common\FormFlow\GetDeptUserScript.aspx" />
+    <Content Include="Common\FormFlow\GetFormNetTreeScript.aspx" />
+    <Content Include="Common\FormFlow\GetFormTreeScript.aspx" />
+    <Content Include="Common\FormFlow\PrivateTree.ascx" />
+    <Content Include="Common\Popup33\ViewTot.aspx" />
+    <Content Include="Common\Popup\GetDeptUserSelect.aspx" />
+    <Content Include="Common\Popup\GetSign.aspx" />
+    <Content Include="Common\Popup\OpinionView.aspx" />
+    <Content Include="Common\Popup\PreView.aspx" />
+    <Content Include="Common\Popup\Print.aspx" />
+    <Content Include="Common\Popup\ShortReplyList.aspx" />
+    <Content Include="Common\Popup\View.aspx" />
+    <Content Include="Common\Popup\ViewCir.aspx" />
+    <Content Include="Common\Popup\ViewTot.aspx" />
+    <Content Include="Common\Status\FolderStatusTreeScript.ascx" />
+    <Content Include="Common\Status\FolderStatusAllTreeScript.ascx" />
+    <Content Include="Common\Folder\FolderTreeScript.ascx" />
+    <Content Include="Common\Folder\GetFolderTreeScript.aspx" />
+    <Content Include="Common\Admin\FolderTreeScript.ascx" />
+    <Content Include="Common\Popup\GetDeptUser.aspx" />
+    <Content Include="Css\Func_ApprovalEdit.css" />
+    <Content Include="Css\Func_ApprovalRegistForm.css" />
+    <Content Include="Css\Func_ApprovalView.css" />
+    <Content Include="Disuse\Default.aspx" />
+    <Content Include="Disuse\DisuseTree.ascx" />
+    <Content Include="Disuse\GallerySubList.aspx" />
+    <Content Include="Disuse\List.aspx" />
+    <Content Include="Disuse\Tree.aspx" />
+    <Content Include="Disuse\View.aspx" />
+    <Content Include="Folder33\Common\ViewBaseDoc.aspx" />
+    <Content Include="Folder\Approve\AddR.aspx" />
+    <Content Include="Folder\Approve\ListFolder.aspx" />
+    <Content Include="Folder\Approve\ListReject.aspx" />
+    <Content Include="Folder\Approve\ListRejectFolder.aspx" />
+    <Content Include="Folder\Approve\Move.aspx" />
+    <Content Include="Folder\Approve\MoveR.aspx" />
+    <Content Include="Folder\Arbitrary\Add.aspx" />
+    <Content Include="Folder\Arbitrary\ListFolder.aspx" />
+    <Content Include="Folder\Arbitrary\Move.aspx" />
+    <Content Include="Folder\Carboncopy\CirDocUser.aspx" />
+    <Content Include="Folder\Carboncopy\CirOpinion.aspx" />
+    <Content Include="Folder\Carboncopy\CirReadList.aspx" />
+    <Content Include="Folder\Carboncopy\ForwardOpinion.aspx" />
+    <Content Include="Folder\Carboncopy\GallerySubList.aspx" />
+    <Content Include="Folder\Carboncopy\GroupList.aspx" />
+    <Content Include="Folder\Carboncopy\Print.aspx" />
+    <Content Include="Folder\Carboncopy\SendMail.aspx" />
+    <Content Include="Folder\Carboncopy\View.aspx" />
+    <Content Include="Folder\Common\AccessGrade.aspx" />
+    <Content Include="Folder\Common\DocUserSeq.aspx" />
+    <Content Include="Folder\Common\HistoryDoc.aspx" />
+    <Content Include="Folder\Common\Print.aspx" />
+    <Content Include="Folder\Common\ViewBaseDoc.aspx" />
+    <Content Include="Folder\Common\PrintHistory.aspx" />
+    <Content Include="Folder\Dept\CirMemo.aspx" />
+    <Content Include="Folder\Dept\ForwardMemo.aspx" />
+    <Content Include="Folder\Dept\Move.aspx" />
+    <Content Include="Folder\Dept\SendList.aspx" />
+    <Content Include="Folder\Dept\SendMail.aspx" />
+    <Content Include="Folder\EnforceAdmin\Approve.aspx" />
+    <Content Include="Folder\EnforceAdmin\ApproveConfirm.aspx" />
+    <Content Include="Folder\EnforceAdmin\ListSend.aspx" />
+    <Content Include="Folder\EnforceAdmin\ListSubmit.aspx" />
+    <Content Include="Folder\Enforce\Add.aspx" />
+    <Content Include="Folder\Enforce\History.aspx" />
+    <Content Include="Folder\Enforce\ListSend.aspx" />
+    <Content Include="Folder\Enforce\ListSubmit.aspx" />
+    <Content Include="Folder\Enforce\Mod.aspx" />
+    <Content Include="Folder\Enforce\Preview.aspx" />
+    <Content Include="Folder\Enforce\Send.aspx" />
+    <Content Include="Folder\Enforce\View.aspx" />
+    <Content Include="Folder\OtherDept\Default.aspx" />
+    <Content Include="Folder\OtherDept\List.aspx" />
+    <Content Include="Folder\OtherDept\ReceiptList.aspx" />
+    <Content Include="Folder\OtherDept\SendList.aspx" />
+    <Content Include="Folder\OtherDept\Tree.aspx" />
+    <Content Include="Folder\Private\ListFolder.aspx" />
+    <Content Include="Folder\Private\Move.aspx" />
+    <Content Include="Folder\Common\Opinion.aspx" />
+    <Content Include="Folder\Common\PostDoc.aspx" />
+    <Content Include="Folder\Common\View.aspx" />
+    <Content Include="Folder\Common\ViewHistory.aspx" />
+    <Content Include="Folder\Approve\Add.aspx" />
+    <Content Include="Folder\Approve\List.aspx" />
+    <Content Include="FormFlow\Basic\EditorActiveX.aspx" />
+    <Content Include="FormFlow\Basic\EditorNonActiveX.aspx" />
+    <Content Include="FormFlow\Basic\ModContent.aspx" />
+    <Content Include="FormFlow\Common\ConfirmSequence.aspx" />
+    <Content Include="FormFlow\Common\GetFavList.aspx" />
+    <Content Include="FormFlow\Common\ModSequence.aspx" />
+    <Content Include="FormFlow\Common\SaveDraft.aspx" />
+    <Content Include="FormFlow\Menu\TreeEdit.aspx" />
+    <Content Include="FormFlow\Menu\TreeLegacy.aspx" />
+    <Content Include="FormFlow\Menu\TreeMod.aspx" />
+    <Content Include="FormFlow\Menu\TreeModReceive.aspx" />
+    <Content Include="FormFlow\Menu\TreeReceive.aspx" />
+    <Content Include="FormFlow\Menu\TreeReceiveAll.aspx" />
+    <Content Include="FormFlow\Menu\TreeReceiveEdit.aspx" />
+    <Content Include="FormFlow\Receive\Add.aspx" />
+    <Content Include="FormFlow\Receive\ConfirmReject.aspx" />
+    <Content Include="FormFlow\Receive\Mod.aspx" />
+    <Content Include="FormFlow\Receive\ModContent.aspx" />
+    <Content Include="FormFlow\Submit\Add.aspx" />
+    <Content Include="FormFlow\Submit\List.aspx" />
+    <Content Include="FormFlow\Temporary\ListModify.aspx" />
+    <Content Include="Home\Content.aspx" />
+    <Content Include="Home\Default.aspx" />
+    <Content Include="Home\Menu.aspx" />
+    <Content Include="Home\Search.aspx" />
+    <Content Include="Js\Admin\AccessGrade\Add.js" />
+    <Content Include="Js\Admin\AccessGrade\List.js" />
+    <Content Include="Js\Admin\AccessGrade\ModSequence.js" />
+    <Content Include="Js\Admin\AccessGrade\Mod.js" />
+    <Content Include="Js\Admin\Document33\ViewDoc.js" />
+    <Content Include="Js\Admin\Document33\ViewDocProc.js" />
+    <Content Include="Js\Admin\DocumentEtc\JListCom.js" />
+    <Content Include="Js\Admin\Document\ListCom.js" />
+    <Content Include="Js\Admin\Document\ViewDocProc.js" />
+    <Content Include="Js\Admin\Document\ViewDoc.js" />
+    <Content Include="Js\Admin\Document\JListCom.js" />
+    <Content Include="Js\Admin\EnforceSeal\RegisterLangExp.js" />
+    <Content Include="Js\Admin\EnforceSeal\RegisterLangAddress.js" />
+    <Content Include="Js\Admin\EnforceSeal\Mod.js" />
+    <Content Include="Js\Admin\FolderAuth\TotalList.js" />
+    <Content Include="Js\Admin\FormGeneration\GetFolder.js" />
+    <Content Include="Js\Admin\FormGeneration\ModFormSequence.js" />
+    <Content Include="Js\Admin\FormGeneration\ModUserSequence.js" />
+    <Content Include="Js\Admin\Proxy\Add.js" />
+    <Content Include="Js\Admin\Proxy\List.js" />
+    <Content Include="Js\Admin\Proxy\Mod.js" />
+    <Content Include="Js\Admin\Proxy\View.js" />
+    <Content Include="Js\Admin\Statistics\ListMonth.js" />
+    <Content Include="Js\Admin\Statistics\ListTop.js" />
+    <Content Include="Js\Admin\Transfer\GetGarbage.js" />
+    <Content Include="Js\Admin\Transfer\List.js" />
+    <Content Include="Js\Admin\Transfer\ListDept.js" />
+    <Content Include="Js\Admin\Transfer\ListUser.js" />
+    <Content Include="Js\Common\Folder\ForwardList.js" />
+    <Content Include="Js\Common\Popup33\ViewTot.js" />
+    <Content Include="Js\Common\Popup\GetDeptUserSelect.js" />
+    <Content Include="Js\Common\Popup\GetSign.js" />
+    <Content Include="Js\Common\Popup\OpinionView.js" />
+    <Content Include="Js\Common\Popup\PreView.js" />
+    <Content Include="Js\Common\Popup\Print.js" />
+    <Content Include="Js\Common\Popup\ShortReplyList.js" />
+    <Content Include="Js\Common\Popup\View.js" />
+    <Content Include="Js\Common\Popup\ViewCir.js" />
+    <Content Include="Js\Common\Popup\ViewTot.js" />
+    <Content Include="Js\Disuse\List.js" />
+    <Content Include="Js\Disuse\Tree.js" />
+    <Content Include="Js\Disuse\View.js" />
+    <Content Include="Js\Folder33\Common\ViewBaseDoc.js" />
+    <Content Include="Js\Folder\Approve\ListFolder.js" />
+    <Content Include="Js\Folder\Approve\ListReject.js" />
+    <Content Include="Js\Folder\Approve\Move.js" />
+    <Content Include="Js\Folder\Approve\ListRejectFolder.js" />
+    <Content Include="Js\Folder\Approve\AddR.js" />
+    <Content Include="Js\Folder\Approve\MoveR.js" />
+    <Content Include="Js\Folder\Arbitrary\Add.js" />
+    <Content Include="Js\Folder\Arbitrary\ListFolder.js" />
+    <Content Include="Js\Folder\Arbitrary\Move.js" />
+    <Content Include="Js\Folder\Carboncopy\CirDocUser.js" />
+    <Content Include="Js\Folder\Carboncopy\CirReceiptList.js" />
+    <Content Include="Js\Folder\Carboncopy\CirSendList.js" />
+    <Content Include="Js\Folder\Carboncopy\ForwardList.js" />
+    <Content Include="Js\Folder\Carboncopy\CirReadList.js" />
+    <Content Include="Js\Folder\Carboncopy\GroupList.js" />
+    <Content Include="Js\Folder\Carboncopy\SendMail.js" />
+    <Content Include="Js\Folder\Carboncopy\View.js" />
+    <Content Include="Js\Folder\Common\DocUserSeq.js" />
+    <Content Include="Js\Folder\Common\HistoryDoc.js" />
+    <Content Include="Js\Folder\Common\Opinion.js" />
+    <Content Include="Js\Folder\Common\PostDoc.js" />
+    <Content Include="Js\Folder\Common\SendMail.js" />
+    <Content Include="Js\Folder\Common\View.js" />
+    <Content Include="Js\Folder\Common\ViewBaseDoc.js" />
+    <Content Include="Js\Folder\Common\ViewHistory.js" />
+    <Content Include="Js\Folder\Common\AccessGrade.js" />
+    <Content Include="Js\Folder\Dept\ForwardMemo.js" />
+    <Content Include="Js\Folder\Dept\Move.js" />
+    <Content Include="Js\Folder\Dept\CirMemo.js" />
+    <Content Include="Js\Folder\Dept\SendList.js" />
+    <Content Include="Js\Folder\Dept\SendMail.js" />
+    <Content Include="Js\Folder\EnforceAdmin\Approve.js" />
+    <Content Include="Js\Folder\Enforce\Add.js" />
+    <Content Include="Js\Folder\Enforce\Common.js" />
+    <Content Include="Js\Folder\Enforce\History.js" />
+    <Content Include="Js\Folder\Enforce\Preview.js" />
+    <Content Include="Js\Folder\Enforce\List.js" />
+    <Content Include="Js\Folder\Enforce\ListSubmit.js" />
+    <Content Include="Js\Folder\Enforce\ListSend.js" />
+    <Content Include="Js\Folder\EnforceAdmin\ListSend.js" />
+    <Content Include="Js\Folder\EnforceAdmin\ListSubmit.js" />
+    <Content Include="Js\Folder\Enforce\Mod.js" />
+    <Content Include="Js\Folder\EnforceAdmin\ApproveConfirm.js" />
+    <Content Include="Js\Folder\Enforce\View.js" />
+    <Content Include="Js\Folder\Enforce\Send.js" />
+    <Content Include="Js\Folder\Impo\List.js" />
+    <Content Include="Js\Folder\OtherDept\List.js" />
+    <Content Include="Js\Folder\OtherDept\ReceiptList.js" />
+    <Content Include="Js\Folder\OtherDept\SendList.js" />
+    <Content Include="Js\Folder\OtherDept\Tree.js" />
+    <Content Include="Js\Folder\Private\ListFolder.js" />
+    <Content Include="Js\Folder\Private\Move.js" />
+    <Content Include="Js\FormFlow\Basic\EditorActiveX.js" />
+    <Content Include="Js\FormFlow\Basic\EditorNonActiveX.js" />
+    <Content Include="Js\FormFlow\Basic\GetBaseDoc.js" />
+    <Content Include="Js\FormFlow\Basic\ModContent.js" />
+    <Content Include="Js\FormFlow\Common\Common.js" />
+    <Content Include="Js\FormFlow\Common\CommonFlow.js" />
+    <Content Include="Js\FormFlow\Common\ConfirmSequence.js" />
+    <Content Include="Js\FormFlow\Common\ModSequence.js" />
+    <Content Include="Js\FormFlow\Common\SaveDraft.js" />
+    <Content Include="Js\FormFlow\Menu\Common.js" />
+    <Content Include="Js\FormFlow\Menu\TreeModReceive.js" />
+    <Content Include="Js\FormFlow\Menu\TreeReceive.js" />
+    <Content Include="Js\FormFlow\Menu\TreeReceiveAll.js" />
+    <Content Include="Js\FormFlow\Menu\TreeEdit.js" />
+    <Content Include="Js\FormFlow\Menu\TreeReceiveEdit.js" />
+    <Content Include="Js\FormFlow\Menu\TreeMod.js" />
+    <Content Include="Js\FormFlow\Menu\TreeLegacy.js" />
+    <Content Include="Js\FormFlow\Receive\Add.js" />
+    <Content Include="Js\FormFlow\Receive\ConfirmReject.js" />
+    <Content Include="Js\FormFlow\Receive\Mod.js" />
+    <Content Include="Js\FormFlow\Receive\ModContent.js" />
+    <Content Include="Js\FormFlow\Submit\Add.js" />
+    <Content Include="Js\FormFlow\Submit\List.js" />
+    <Content Include="Js\FormFlow\Temporary\ListModify.js" />
+    <Content Include="Js\Home\Content.js" />
+    <Content Include="Js\Home\Default.js" />
+    <Content Include="Js\Home\Menu.js" />
+    <Content Include="Js\Home\Search.js" />
+    <Content Include="Js\Preference\FavoriteForm\Add.js" />
+    <Content Include="Js\Preference\FavoriteForm\GetForm.js" />
+    <Content Include="Js\Preference\FavoriteForm\List.js" />
+    <Content Include="Js\Preference\FavoriteForm\ModSequence.js" />
+    <Content Include="Js\Preference\FavoriteForm\View.js" />
+    <Content Include="Js\Preference\Favorite\ModSequence.js" />
+    <Content Include="Js\Preference\Favorite\ListModify.js" />
+    <Content Include="Js\Preference\Flow\Add.js" />
+    <Content Include="Js\FormFlow\Common\GetFavList.js" />
+    <Content Include="Js\Preference\Flow\Mod.js" />
+    <Content Include="Js\Preference\Flow\ModSequence.js" />
+    <Content Include="Js\Preference\Proxy\Add.js" />
+    <Content Include="Js\Preference\Proxy\ListModify.js" />
+    <Content Include="Js\Preference\Proxy\Mod.js" />
+    <Content Include="Js\Preference\Proxy\View.js" />
+    <Content Include="Js\Preference\Setting\List.js" />
+    <Content Include="Js\Preference\Signature\List.js" />
+    <Content Include="Js\Process\Afterward\ConfirmSeqLine.js" />
+    <Content Include="Js\Process\Basic\AlarmList.js" />
+    <Content Include="Js\Process\Basic\ConfirmPassword.js" />
+    <Content Include="Js\Process\Basic\ConfirmReject.js" />
+    <Content Include="Js\Process\Basic\ApprovePopup.js" />
+    <Content Include="Js\Process\Confirm\Approve.js" />
+    <Content Include="Js\Process\Confirm\ApprovePopup.js" />
+    <Content Include="Js\Process\Opinion\ConfirmOpinion.js" />
+    <Content Include="Js\Status\Common\DocUserSeq.js" />
+    <Content Include="Js\Status\ListAfterward.js" />
+    <Content Include="Js\Status\ListAfterwardAll.js" />
+    <Content Include="Js\Status\Common\View.js" />
+    <Content Include="Js\Status\ListApprove.js" />
+    <Content Include="Js\Status\ListApproveAll.js" />
+    <Content Include="Js\Status\ListCooperateAll.js" />
+    <Content Include="Js\Status\ListApproveSlip.js" />
+    <Content Include="Js\Status\ListComplete.js" />
+    <Content Include="Js\Status\ListCompleteSlip.js" />
+    <Content Include="Js\Status\ListConfirm.js" />
+    <Content Include="Js\Status\ListDelay.js" />
+    <Content Include="Js\Status\ListDelayAll.js" />
+    <Content Include="Js\Status\ListReportDelayAll.js" />
+    <Content Include="Js\Status\ListDelaySlip.js" />
+    <Content Include="Js\Status\ListProcessSlip.js" />
+    <Content Include="Js\Status\ListProxy.js" />
+    <Content Include="Js\Status\ListReceive.js" />
+    <Content Include="Js\Status\ListReceiveAll.js" />
+    <Content Include="Js\Status\ListReceiveDept.js" />
+    <Content Include="Js\Status\ListReceiveReject.js" />
+    <Content Include="Js\Status\ListReject.js" />
+    <Content Include="Js\Status\ListRejectAll.js" />
+    <Content Include="Js\Status\ListRejectSlip.js" />
+    <Content Include="Js\Status\ListRelated.js" />
+    <Content Include="Js\Status\ListRelatedAll.js" />
+    <Content Include="Js\Status\ListProcessAll.js" />
+    <Content Include="Js\Status\ListRelatedSlip.js" />
+    <Content Include="Js\Status\ListTransfer.js" />
+    <Content Include="Js\Status\ListTransferAll.js" />
+    <Content Include="Js\Status\Menu\TreeAll.js" />
+    <Content Include="Jt\Admin\AccessGrade\JtList.htm" />
+    <Content Include="Jt\Admin\AccessGrade\JtTitleList.htm" />
+    <Content Include="Jt\Admin\DocContact\JTListS.htm" />
+    <Content Include="Jt\Admin\DocContact\JTListR.htm" />
+    <Content Include="Jt\Admin\DocumentEtc\JTList.htm" />
+    <Content Include="Jt\Admin\DocumentEtc\JTListProcess.htm" />
+    <Content Include="Jt\Admin\Document\JTList.htm" />
+    <Content Include="Jt\Admin\Document\JTListProcess.htm" />
+    <Content Include="Jt\Admin\EnforceSeal\JTList.htm" />
+    <Content Include="Jt\Admin\EnforceSeal\JTListUser.htm" />
+    <Content Include="Jt\Admin\FolderAuth\JTTotalList.htm" />
+    <Content Include="Jt\Admin\FolderAuth\JTList.htm" />
+    <Content Include="Jt\Admin\Proxy\JTList.htm" />
+    <Content Include="Jt\Admin\Statistics\ListMonth.htm" />
+    <Content Include="Jt\Admin\Statistics\ListTop.htm" />
+    <Content Include="Jt\Admin\Transfer\JTAttachFileCir.htm" />
+    <Content Include="Jt\Admin\Transfer\JTBaseDocCir.htm" />
+    <Content Include="Jt\Admin\Transfer\JTGetGarbage.htm" />
+    <Content Include="Jt\Admin\Transfer\JtList.htm" />
+    <Content Include="Jt\Admin\Transfer\JTListCir.htm" />
+    <Content Include="Jt\Admin\Transfer\JtList2.htm" />
+    <Content Include="Jt\Admin\Transfer\JTListCir2.htm" />
+    <Content Include="Jt\Common\Folder\JTForwardList.htm" />
+    <Content Include="Jt\Common\Popup\JTOpinionView.htm" />
+    <Content Include="Jt\Common\Popup\JTShortReplyList.htm" />
+    <Content Include="Jt\Disuse\JTAttachFile.htm" />
+    <Content Include="Jt\Disuse\JTBaseDoc.htm" />
+    <Content Include="Jt\Disuse\JTList.htm" />
+    <Content Include="Jt\Folder\Approve\JTListFolder.htm" />
+    <Content Include="Jt\Folder\Approve\JTListReject.htm" />
+    <Content Include="Jt\Folder\Approve\JTListRejectFolder.htm" />
+    <Content Include="Jt\Folder\Arbitrary\JTList.htm" />
+    <Content Include="Jt\Folder\Arbitrary\JTListFolder.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTAttachFile.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTBaseDoc.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTGroupList.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTList.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTCirReceiptList.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTForwardList.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTCirSendList.htm" />
+    <Content Include="Jt\Folder\Carboncopy\JTCirReadList.htm" />
+    <Content Include="Jt\Folder\Common\JTAttachFile.htm" />
+    <Content Include="Jt\Folder\Common\JTAttachFilePopUp.htm" />
+    <Content Include="Jt\Folder\Common\JTAttachFilePopUp_Old.htm" />
+    <Content Include="Jt\Folder\Common\JTAttachFile_Old.htm" />
+    <Content Include="Jt\Folder\Common\JTBaseDoc.htm" />
+    <Content Include="Jt\Folder\Common\JTBaseDocPopUp.htm" />
+    <Content Include="Jt\Folder\Common\JTBaseDocPopUp_Old.htm" />
+    <Content Include="Jt\Folder\Common\JTBaseDoc_Old.htm" />
+    <Content Include="Jt\Folder\Common\JTDocUserSeq.htm" />
+    <Content Include="Jt\Folder\Common\JTDocUserSeqCA.htm" />
+    <Content Include="Jt\Folder\Common\JTHistoryDoc.htm" />
+    <Content Include="Jt\Folder\Common\JTAccessGrade.htm" />
+    <Content Include="Jt\Folder\Enforce\JTHistory.htm" />
+    <Content Include="Jt\Folder\Enforce\JTList.htm" />
+    <Content Include="Jt\Folder\Enforce\JTListSubmit.htm" />
+    <Content Include="Jt\Folder\Enforce\JTListSend.htm" />
+    <Content Include="Jt\Folder\EnforceAdmin\JTListSend.htm" />
+    <Content Include="Jt\Folder\EnforceAdmin\JTListSubmit.htm" />
+    <Content Include="Jt\Folder\Impo\JTList.htm" />
+    <Content Include="Jt\Folder\OtherDept\JTDeptList.htm" />
+    <Content Include="Jt\Folder\OtherDept\JTList.htm" />
+    <Content Include="Jt\Folder\OtherDept\JTReceiptList.htm" />
+    <Content Include="Jt\Folder\OtherDept\JTSendList.htm" />
+    <Content Include="Jt\Folder\Private\JTListFolder.htm" />
+    <Content Include="Jt\FormFlow\Basic\JTGetBaseDocList.htm" />
+    <Content Include="Jt\FormFlow\Common\JTAttachFileEdit.htm" />
+    <Content Include="Jt\FormFlow\Common\JTBaseDocEdit.htm" />
+    <Content Include="Jt\FormFlow\Common\JTList.htm" />
+    <Content Include="Jt\FormFlow\Submit\JTList.htm" />
+    <Content Include="Jt\FormFlow\Temporary\JTAttachFileEdit.htm" />
+    <Content Include="Jt\FormFlow\Temporary\JTBaseDocEdit.htm" />
+    <Content Include="Jt\FormFlow\Temporary\JTList.htm" />
+    <Content Include="Jt\FormFlow\Temporary\JTListModify.htm" />
+    <Content Include="Jt\Home\JTFavApp.htm" />
+    <Content Include="Jt\Home\JTFavForm.htm" />
+    <Content Include="Jt\Home\JTFile.htm" />
+    <Content Include="Jt\Home\JTImpo.htm" />
+    <Content Include="Jt\Home\JTListDoc.htm" />
+    <Content Include="Jt\Home\JTListTab.htm" />
+    <Content Include="Jt\Home\JTReply.htm" />
+    <Content Include="Jt\Preference\FavoriteForm\JTAdd.htm" />
+    <Content Include="Jt\Preference\FavoriteForm\JTList.htm" />
+    <Content Include="Jt\Preference\Favorite\JTListModify.htm" />
+    <Content Include="Jt\Preference\Flow\JTList.htm" />
+    <Content Include="Jt\Preference\Flow\JTListLine.htm" />
+    <Content Include="Jt\Preference\Proxy\JTListModify.htm" />
+    <Content Include="Jt\Process\Basic\JTAttachFile.htm" />
+    <Content Include="Jt\Process\Basic\JTBaseDoc.htm" />
+    <Content Include="Jt\Status\Common\JTAttachFile.htm" />
+    <Content Include="Jt\Status\Common\JTAttachFile_Old.htm" />
+    <Content Include="Jt\Status\Common\JTBaseDoc.htm" />
+    <Content Include="Jt\Status\Common\JTBaseDoc_Old.htm" />
+    <Content Include="Jt\Status\Common\JTDocUserSeq.htm" />
+    <Content Include="Jt\Status\Common\JTDocUserSeqCA.htm" />
+    <Content Include="Jt\Status\JTListApproveSlip.htm" />
+    <Content Include="Jt\Status\JTListComplete.htm" />
+    <Content Include="Jt\Status\JTListConfirm.htm" />
+    <Content Include="Jt\Status\JTListProxy.htm" />
+    <Content Include="Jt\Status\JTListReject.htm" />
+    <Content Include="Preference\FavoriteForm\Add.aspx" />
+    <Content Include="Preference\FavoriteForm\GetForm.aspx" />
+    <Content Include="Preference\FavoriteForm\List.aspx" />
+    <Content Include="Preference\FavoriteForm\ModSequence.aspx" />
+    <Content Include="Preference\FavoriteForm\View.aspx" />
+    <Content Include="Preference\Favorite\ListModify.aspx" />
+    <Content Include="Preference\Favorite\ModSequence.aspx" />
+    <Content Include="Preference\Flow\Add.aspx" />
+    <Content Include="Preference\Flow\Mod.aspx" />
+    <Content Include="Preference\Flow\ModSequence.aspx" />
+    <Content Include="Preference\Proxy\Add.aspx" />
+    <Content Include="Preference\Proxy\ListModify.aspx" />
+    <Content Include="Preference\Proxy\Mod.aspx" />
+    <Content Include="Preference\Proxy\View.aspx" />
+    <Content Include="Preference\Setting\List.aspx" />
+    <Content Include="Preference\Signature\List.aspx" />
+    <Content Include="Process\Afterward\ConfirmSeqLine.aspx" />
+    <Content Include="Process\Basic\AlarmList.aspx" />
+    <Content Include="Process\Basic\ApprovePopup.aspx" />
+    <Content Include="Process\Basic\ConfirmPassword.aspx" />
+    <Content Include="Process\Basic\ConfirmPasswordBundle.aspx" />
+    <Content Include="Process\Basic\ConfirmReject.aspx" />
+    <Content Include="Process\Basic\SetViewing.aspx" />
+    <Content Include="Process\Confirm\Approve.aspx" />
+    <Content Include="Process\Confirm\ApprovePopup.aspx" />
+    <Content Include="Process\Opinion\ConfirmOpinion.aspx" />
+    <Content Include="Status\Common\DocUserSeq.aspx" />
+    <Content Include="Status\Common\GallerySubList.aspx" />
+    <Content Include="Status\Common\View.aspx" />
+    <Content Include="Folder\Arbitrary\List.aspx" />
+    <Content Include="Folder\Carboncopy\CirReceiptList.aspx" />
+    <Content Include="Folder\Carboncopy\CirSendList.aspx" />
+    <Content Include="Folder\Carboncopy\ForwardList.aspx" />
+    <Content Include="Folder\Carboncopy\List.aspx" />
+    <Content Include="Folder\Carboncopy\ListAll.aspx" />
+    <Content Include="Folder\Carboncopy\ListReceiveAll.aspx" />
+    <Content Include="Folder\Carboncopy\ForwardListAll.aspx" />
+    <Content Include="Folder\Carboncopy\ForwardListReceiveAll.aspx" />
+    <Content Include="Folder\Carboncopy\CirReceiptListAll.aspx" />
+    <Content Include="Folder\Carboncopy\CirSendListAll.aspx" />
+    <Content Include="Folder\Dept\Add.aspx" />
+    <Content Include="Folder\Dept\CommonList.aspx" />
+    <Content Include="Folder\Dept\CompList.aspx" />
+    <Content Include="Folder\Dept\ReceiptList.aspx" />
+    <Content Include="Folder\Enforce\List.aspx" />
+    <Content Include="Folder\Impo\List.aspx" />
+    <Content Include="Folder\Menu\Add.aspx" />
+    <Content Include="Folder\Menu\Tree.aspx" />
+    <Content Include="Folder\Dept\List.aspx" />
+    <Content Include="Folder\Dept\ListAll.aspx" />
+    <Content Include="Folder\Private\Add.aspx" />
+    <Content Include="Folder\Private\List.aspx" />
+    <Content Include="Folder\Private\ListAll.aspx" />
+    <Content Include="Folder\Approve\ListAll.aspx" />
+    <Content Include="Folder\Approve\ListRejectAll.aspx" />
+    <Content Include="Folder\Arbitrary\ListAll.aspx" />
+    <Content Include="Js\Folder\Private\ListAll.js" />
+    <Content Include="Js\Folder\Approve\ListAll.js" />
+    <Content Include="Js\Folder\Approve\ListRejectAll.js" />
+    <Content Include="Js\Folder\Arbitrary\ListAll.js" />
+    <Content Include="Status\ListTransferAll.aspx" />
+    <Content Include="Ws\Folder\Private\ListAll.asmx" />
+    <Content Include="Ws\Folder\Approve\ListAll.asmx" />
+    <Content Include="Ws\Folder\Approve\ListRejectAll.asmx" />
+    <Content Include="Ws\Folder\Arbitrary\ListAll.asmx" />
+    <Content Include="Js\Admin\Config\List.js" />
+    <Content Include="Js\Admin\DocContact\ListR.js" />
+    <Content Include="Js\Admin\Document\List.js" />
+    <Content Include="Js\Admin\EnforceSeal\Add.js" />
+    <Content Include="Js\Admin\EnforceSeal\List.js" />
+    <Content Include="Js\Admin\FolderAuth\List.js" />
+    <Content Include="Js\Admin\Folder\Add.js" />
+    <Content Include="Js\Admin\Folder\AddFolderAuth.js" />
+    <Content Include="Js\Admin\Folder\List.js" />
+    <Content Include="Js\Admin\Folder\ModSeq.js" />
+    <Content Include="Js\Admin\FormGeneration\Add.js" />
+    <Content Include="Js\Admin\FormGeneration\Common.js" />
+    <Content Include="Js\Admin\FormGeneration\List.js" />
+    <Content Include="Js\Admin\FormGeneration\ModSequence.js" />
+    <Content Include="Js\Admin\FormGeneration\ModSetting.js" />
+    <Content Include="Js\Admin\FormGeneration\View.js" />
+    <Content Include="Js\Admin\Menu\SetEDM.js" />
+    <Content Include="Js\Admin\Menu\Tree.js" />
+    <Content Include="Js\Admin\Menu\SetFolder.js" />
+    <Content Include="Js\Admin\Menu\SetLegacy.js" />
+    <Content Include="Js\Common\Popup\GetDept.js" />
+    <Content Include="Js\Common\Popup\GetDeptUser.js" />
+    <Content Include="Js\Folder\Approve\Add.js" />
+    <Content Include="Js\Folder\Approve\List.js" />
+    <Content Include="Js\Folder\Arbitrary\List.js" />
+    <Content Include="Js\Folder\Dept\Add.js" />
+    <Content Include="Js\Folder\Dept\CompList.js" />
+    <Content Include="Js\Folder\Dept\ReceiptList.js" />
+    <Content Include="Js\Folder\Dept\CommonList.js" />
+    <Content Include="Js\Folder\Menu\Add.js" />
+    <Content Include="Js\Folder\Menu\Tree.js" />
+    <Content Include="Js\Folder\Dept\List.js" />
+    <Content Include="Js\Folder\Dept\ListAll.js" />
+    <Content Include="Js\Folder\Private\Add.js" />
+    <Content Include="Js\Folder\Private\List.js" />
+    <Content Include="Js\Folder\Carboncopy\List.js" />
+    <Content Include="Js\Folder\Carboncopy\ListAll.js" />
+    <Content Include="Js\Folder\Carboncopy\ListReceiveAll.js" />
+    <Content Include="Js\Folder\Carboncopy\ForwardListAll.js" />
+    <Content Include="Js\Folder\Carboncopy\ForwardListReceiveAll.js" />
+    <Content Include="Js\Folder\Carboncopy\CirReceiptListAll.js" />
+    <Content Include="Js\Folder\Carboncopy\CirSendListAll.js" />
+    <Content Include="Js\Process\Afterward\Approve.js" />
+    <Content Include="Js\Process\Basic\Approve.js" />
+    <Content Include="Common\Popup\GetDept.aspx" />
+    <Content Include="Js\Status\ListProcess.js" />
+    <Content Include="Jt\Admin\Folder\JTList.htm" />
+    <Content Include="Jt\Admin\FormGeneration\JtList.htm" />
+    <Content Include="Jt\Folder\Approve\JTList.htm" />
+    <Content Include="Jt\Folder\Dept\JTList.htm" />
+    <Content Include="Jt\Folder\Dept\JTCompList.htm" />
+    <Content Include="Jt\Folder\Dept\JTReceiptList.htm" />
+    <Content Include="Jt\Folder\Dept\JTSendList.htm" />
+    <Content Include="Jt\Folder\Dept\JTCommonList.htm" />
+    <Content Include="Jt\Folder\Private\JTList.htm" />
+    <Content Include="Jt\Preference\Favorite\JTList.htm" />
+    <Content Include="Jt\Preference\Proxy\JTList.htm" />
+    <Content Include="Jt\Status\JTListAfterward.htm" />
+    <Content Include="Jt\Status\JTListApprove.htm" />
+    <Content Include="Jt\Status\JTListDelay.htm" />
+    <Content Include="Jt\Status\JTListReceive.htm" />
+    <Content Include="Jt\Status\JTListReceiveReject.htm" />
+    <Content Include="Jt\Status\JTListRelated.htm" />
+    <Content Include="Jt\Status\JTListProcess.htm" />
+    <Content Include="Jt\Status\JTListTransfer.htm" />
+    <Content Include="Process\Afterward\Approve.aspx" />
+    <Content Include="Process\Basic\Approve.aspx" />
+    <Content Include="App_Data\StatusMenu\en.xml" />
+    <Content Include="App_Data\StatusMenu\fr.xml" />
+    <Content Include="App_Data\StatusMenu\ja.xml" />
+    <Content Include="App_Data\StatusMenu\ko.xml" />
+    <Content Include="App_Data\StatusMenu\zh-cn.xml" />
+    <Content Include="App_Data\StatusMenu\zh-tw.xml" />
+    <Content Include="FormFlow\Basic\Add.aspx" />
+    <Content Include="FormFlow\Basic\Mod.aspx" />
+    <Content Include="FormFlow\Basic\GetBaseDoc.aspx" />
+    <Content Include="FormFlow\Menu\Tree.aspx" />
+    <Content Include="FormFlow\Temporary\Add.aspx" />
+    <Content Include="FormFlow\Temporary\List.aspx" />
+    <Content Include="Js\FormFlow\Basic\Add.js" />
+    <Content Include="Js\FormFlow\Basic\Mod.js" />
+    <Content Include="Js\FormFlow\Menu\Tree.js" />
+    <Content Include="Js\FormFlow\Temporary\Add.js" />
+    <Content Include="Js\FormFlow\Temporary\List.js" />
+    <Content Include="Js\Preference\Favorite\List.js" />
+    <Content Include="Js\Preference\Menu\Tree.js" />
+    <Content Include="Js\Preference\Proxy\List.js" />
+    <Content Include="Js\Preference\Flow\List.js" />
+    <Content Include="Preference\Default.aspx" />
+    <Content Include="Folder\Default.aspx" />
+    <Content Include="FormFlow\Default.aspx" />
+    <Content Include="FormFlow\DefaultAll.aspx" />
+    <Content Include="Js\Status\Common\GetDocFlow.js" />
+    <Content Include="Js\Status\Menu\Tree.js" />
+    <Content Include="Preference\Favorite\List.aspx" />
+    <Content Include="Preference\Menu\Tree.aspx" />
+    <Content Include="Preference\Proxy\List.aspx" />
+    <Content Include="Preference\Flow\List.aspx" />
+    <Content Include="Status\Batch\List.aspx" />
+    <Content Include="Status\Common\GetDocFlow.aspx" />
+    <Content Include="Status\Default.aspx" />
+    <Content Include="Status\DefaultAll.aspx" />
+    <Content Include="Status\ListApprove.aspx" />
+    <Content Include="Status\ListApproveAll.aspx" />
+    <Content Include="Status\ListCooperateAll.aspx" />
+    <Content Include="Status\ListApproveSlip.aspx" />
+    <Content Include="Status\ListComplete.aspx" />
+    <Content Include="Status\ListCompleteSlip.aspx" />
+    <Content Include="Status\ListConfirm.aspx" />
+    <Content Include="Status\ListDelay.aspx" />
+    <Content Include="Status\ListDelayAll.aspx" />
+    <Content Include="Status\ListReportDelayAll.aspx" />
+    <Content Include="Status\ListAfterward.aspx" />
+    <Content Include="Status\ListAfterwardAll.aspx" />
+    <Content Include="Status\ListDelaySlip.aspx" />
+    <Content Include="Status\ListProcessSlip.aspx" />
+    <Content Include="Status\ListProxy.aspx" />
+    <Content Include="Status\ListReceive.aspx" />
+    <Content Include="Status\ListReceiveAll.aspx" />
+    <Content Include="Status\ListReceiveDept.aspx" />
+    <Content Include="Status\ListReceiveReject.aspx" />
+    <Content Include="Status\ListReject.aspx" />
+    <Content Include="Status\ListRejectAll.aspx" />
+    <Content Include="Status\ListRejectSlip.aspx" />
+    <Content Include="Status\ListRelated.aspx" />
+    <Content Include="Status\ListRelatedAll.aspx" />
+    <Content Include="Status\ListProcessAll.aspx" />
+    <Content Include="Status\ListProcess.aspx" />
+    <Content Include="Status\ListRelatedSlip.aspx" />
+    <Content Include="Status\ListTransfer.aspx" />
+    <Content Include="Status\Menu\Tree.aspx" />
+    <Content Include="Status\Menu\TreeAll.aspx" />
+    <Content Include="Ws\Admin\AccessGrade\List.asmx" />
+    <Content Include="Ws\Admin\AccessGrade\Mod.asmx" />
+    <Content Include="Ws\Admin\AccessGrade\ModSequence.asmx" />
+    <Content Include="Ws\Admin\DocContact\ListR.asmx" />
+    <Content Include="Ws\Admin\DocumentEtc\List.asmx" />
+    <Content Include="Ws\Admin\Document\List.asmx" />
+    <Content Include="Ws\Admin\Document\ViewDoc.asmx" />
+    <Content Include="Ws\Admin\Document\ViewDocProc.asmx" />
+    <Content Include="Ws\Admin\EnforceSeal\Add.asmx" />
+    <Content Include="Ws\Admin\EnforceSeal\List.asmx" />
+    <Content Include="Ws\Admin\EnforceSeal\Mod.asmx" />
+    <Content Include="Ws\Admin\FolderAuth\List.asmx" />
+    <Content Include="Ws\Admin\Folder\List.asmx" />
+    <Content Include="Ws\Admin\Folder\ModSeq.asmx" />
+    <Content Include="Ws\Admin\FormGeneration\List.asmx" />
+    <Content Include="Ws\Admin\FormGeneration\ModFormSequence.asmx" />
+    <Content Include="Ws\Admin\FormGeneration\ModSequence.asmx" />
+    <Content Include="Ws\Admin\FormGeneration\ModSetting.asmx" />
+    <Content Include="Ws\Admin\FormGeneration\ModUserSequence.asmx" />
+    <Content Include="Ws\Admin\Proxy\Add.asmx" />
+    <Content Include="Ws\Admin\Proxy\List.asmx" />
+    <Content Include="Ws\Admin\Proxy\Mod.asmx" />
+    <Content Include="Ws\Admin\Statistics\ListMonth.asmx" />
+    <Content Include="Ws\Admin\Statistics\ListTop.asmx" />
+    <Content Include="Ws\Admin\Transfer\List.asmx" />
+    <Content Include="Ws\Common\Folder\ForwardList.asmx" />
+    <Content Include="Ws\Common\Popup\GetSign.asmx" />
+    <Content Include="Ws\Common\Popup\OpinionView.asmx" />
+    <Content Include="Ws\Common\Popup\ShortReplyList.asmx" />
+    <Content Include="Ws\Common\Popup\View.asmx" />
+    <Content Include="Ws\Common\Popup\ViewTot.asmx" />
+    <Content Include="Ws\Disuse\List.asmx" />
+    <Content Include="Ws\Disuse\View.asmx" />
+    <Content Include="Ws\EDMS\SpEDMS\SendEDMS.asmx" />
+    <Content Include="Ws\Folder\Approve\Add.asmx" />
+    <Content Include="Ws\Folder\Approve\List.asmx" />
+    <Content Include="Ws\Folder\Approve\ListFolder.asmx" />
+    <Content Include="Ws\Folder\Approve\Move.asmx" />
+    <Content Include="Ws\Folder\Arbitrary\Add.asmx" />
+    <Content Include="Ws\Folder\Arbitrary\List.asmx" />
+    <Content Include="Ws\Folder\Arbitrary\ListFolder.asmx" />
+    <Content Include="Ws\Folder\Arbitrary\Move.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirDocUser.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirReadList.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirReceiptList.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirSendList.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\ForwardList.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\GroupList.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\List.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\ListAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\ListReceiveAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\ForwardListAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\ForwardListReceiveAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirReceiptListAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\CirSendListAll.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\SendMail.asmx" />
+    <Content Include="Ws\Folder\Carboncopy\View.asmx" />
+    <Content Include="Ws\Folder\Common\DocUserSeq.asmx" />
+    <Content Include="Ws\Folder\Common\HistoryDoc.asmx" />
+    <Content Include="Ws\Folder\Common\SetDefault.asmx" />
+    <Content Include="Ws\Folder\Common\View.asmx" />
+    <Content Include="Ws\Folder\Common\ViewHistory.asmx" />
+    <Content Include="Ws\Folder\Dept\Add.asmx" />
+    <Content Include="Ws\Folder\Dept\CirMemo.asmx" />
+    <Content Include="Ws\Folder\Dept\CommonList.asmx" />
+    <Content Include="Ws\Folder\Dept\CompList.asmx" />
+    <Content Include="Ws\Folder\Dept\ForwardMemo.asmx" />
+    <Content Include="Ws\Folder\Dept\List.asmx" />
+    <Content Include="Ws\Folder\Dept\ListAll.asmx" />
+    <Content Include="Ws\Folder\Dept\Move.asmx" />
+    <Content Include="Ws\Folder\Dept\ReceiptList.asmx" />
+    <Content Include="Ws\Folder\Dept\SendBoard.asmx" />
+    <Content Include="Ws\Folder\Dept\SendList.asmx" />
+    <Content Include="Ws\Folder\Dept\SendMail.asmx" />
+    <Content Include="Ws\Folder\EnforceAdmin\Approve.asmx" />
+    <Content Include="Ws\Folder\EnforceAdmin\ListSend.asmx" />
+    <Content Include="Ws\Folder\EnforceAdmin\ListSubmit.asmx" />
+    <Content Include="Ws\Folder\Enforce\Add.asmx" />
+    <Content Include="Ws\Folder\Enforce\History.asmx" />
+    <Content Include="Ws\Folder\Enforce\List.asmx" />
+    <Content Include="Ws\Folder\Enforce\ListSend.asmx" />
+    <Content Include="Ws\Folder\Enforce\ListSubmit.asmx" />
+    <Content Include="Ws\Folder\Enforce\Send.asmx" />
+    <Content Include="Ws\Folder\Impo\List.asmx" />
+    <Content Include="Ws\Folder\Menu\Tree.asmx" />
+    <Content Include="Ws\Folder\OtherDept\Tree.asmx" />
+    <Content Include="Ws\Folder\Private\Add.asmx" />
+    <Content Include="Ws\Folder\Private\List.asmx" />
+    <Content Include="Ws\Folder\Private\ListFolder.asmx" />
+    <Content Include="Ws\Folder\Private\Move.asmx" />
+    <Content Include="Ws\FormFlow\Basic\Add.asmx" />
+    <Content Include="Ws\FormFlow\Basic\GetBaseDoc.asmx" />
+    <Content Include="Ws\FormFlow\Basic\Mod.asmx" />
+    <Content Include="Ws\FormFlow\Common\Common.asmx" />
+    <Content Include="Ws\FormFlow\Common\GetFavList.asmx" />
+    <Content Include="Ws\FormFlow\Receive\Add.asmx" />
+    <Content Include="Ws\FormFlow\Submit\Add.asmx" />
+    <Content Include="Ws\FormFlow\Submit\List.asmx" />
+    <Content Include="Ws\FormFlow\Temporary\Add.asmx" />
+    <Content Include="Ws\FormFlow\Temporary\List.asmx" />
+    <Content Include="Ws\FormFlow\Temporary\ListModify.asmx" />
+    <Content Include="Ws\Home\Content.asmx" />
+    <Content Include="Ws\Home\Default.asmx" />
+    <Content Include="Ws\Home\Menu.asmx" />
+    <Content Include="Ws\Home\Search.asmx" />
+    <Content Include="Ws\Legacy\Document\Add.asmx" />
+    <Content Include="Ws\Legacy\Document\List.asmx" />
+    <Content Include="Ws\Preference\FavoriteForm\Add.asmx" />
+    <Content Include="Ws\Preference\FavoriteForm\List.asmx" />
+    <Content Include="Ws\Preference\FavoriteForm\ModSequence.asmx" />
+    <Content Include="Ws\Preference\Favorite\List.asmx" />
+    <Content Include="Ws\Preference\Favorite\ListModify.asmx" />
+    <Content Include="Ws\Preference\Favorite\ModSequence.asmx" />
+    <Content Include="Ws\Preference\Flow\List.asmx" />
+    <Content Include="Ws\Preference\Flow\Mod.asmx" />
+    <Content Include="Ws\Preference\Proxy\Add.asmx" />
+    <Content Include="Ws\Preference\Proxy\List.asmx" />
+    <Content Include="Ws\Preference\Proxy\ListModify.asmx" />
+    <Content Include="Ws\Preference\Proxy\Mod.asmx" />
+    <Content Include="Ws\Preference\Setting\List.asmx" />
+    <Content Include="Ws\Preference\Signature\List.asmx" />
+    <Content Include="Ws\Process\Basic\Approve.asmx" />
+    <Content Include="Ws\Process\Basic\ConfirmPassword.asmx" />
+    <Content Include="Ws\Status\Common\DocUserSeq.asmx" />
+    <Content Include="Ws\Status\Common\GetDocFlow.asmx" />
+    <Content Include="Ws\Status\Common\SetDefault.asmx" />
+    <Content Include="Ws\Status\Common\SetDefaultAll.asmx" />
+    <Content Include="Ws\Status\Common\View.asmx" />
+    <Content Include="Ws\Status\ListAfterward.asmx" />
+    <Content Include="Ws\Status\ListAfterwardAll.asmx" />
+    <Content Include="Ws\Status\ListApprove.asmx" />
+    <Content Include="Ws\Status\ListApproveAll.asmx" />
+    <Content Include="Ws\Status\ListCooperateAll.asmx" />
+    <Content Include="Ws\Status\ListComplete.asmx" />
+    <Content Include="Ws\Status\ListConfirm.asmx" />
+    <Content Include="Ws\Status\ListDelay.asmx" />
+    <Content Include="Ws\Status\ListDelayAll.asmx" />
+    <Content Include="Ws\Status\ListReportDelayAll.asmx" />
+    <Content Include="Ws\Status\ListProxy.asmx" />
+    <Content Include="Ws\Status\ListReceive.asmx" />
+    <Content Include="Ws\Status\ListReceiveAll.asmx" />
+    <Content Include="Ws\Status\ListReceiveDept.asmx" />
+    <Content Include="Ws\Status\ListReceiveReject.asmx" />
+    <Content Include="Ws\Status\ListReject.asmx" />
+    <Content Include="Ws\Status\ListRejectAll.asmx" />
+    <Content Include="Ws\Status\ListRelated.asmx" />
+    <Content Include="Ws\Status\ListRelatedAll.asmx" />
+    <Content Include="Ws\Status\ListProcessAll.asmx" />
+    <Content Include="Ws\Status\ListProcess.asmx" />
+    <Content Include="Ws\Status\ListTransfer.asmx" />
+    <Content Include="Ws\Status\ListTransferAll.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BLL\Zeospace.DeskPlus.Approval.BLL.csproj">
+      <Project>{E07EA22B-817A-4E0C-802C-7FCF3F07076C}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BE\Zeospace.DeskPlus.Board.BE.csproj">
+      <Project>{CEE64A34-C4E1-436B-AAAB-4219A8605BE4}</Project>
+      <Name>Zeospace.DeskPlus.Board.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.DAL\Zeospace.DeskPlus.Board.DAL.csproj">
+      <Project>{AF2C4FCC-567C-4940-BB2E-553F8C8FC6B2}</Project>
+      <Name>Zeospace.DeskPlus.Board.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.SMS\Zeospace.DeskPlus.Component.SMS.csproj">
+      <Project>{E3C3D3D9-ED1A-45C2-A32B-18D22D0D46F2}</Project>
+      <Name>Zeospace.DeskPlus.Component.SMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.DAL\Zeospace.DeskPlus.EIP.DAL.csproj">
+      <Project>{138E6A3E-7DBB-443B-8409-3C55849FF6DF}</Project>
+      <Name>Zeospace.DeskPlus.EIP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Popup\SignImage.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Preference\Signature\GetImage.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1422</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Approval</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

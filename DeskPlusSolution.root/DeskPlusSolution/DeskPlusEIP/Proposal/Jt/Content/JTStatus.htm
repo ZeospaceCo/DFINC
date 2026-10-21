@@ -1,0 +1,28 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="180px" />
+    <col  />
+    <col width="70px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center">평가자</th>
+    <th class="center">심사의견</th>
+    <th class="center">평가점수</th>
+    <th class="center">평가시간</th>
+</tr>
+{#foreach $T as ViewList}
+<tr>
+    <td class="center">
+        <a href="#" onclick="javascript:AccountInfo('{ $T.ViewList.UserID }')" style="cursor:pointer">{ $T.ViewList.Name }</a>
+    </td>
+    <td class="center">{ $T.ViewList.JudgeView }</td>
+    <td class="center">{ $T.ViewList.TotalScore }</td>
+    <td class="center">{ $T.ViewList.WriteDateYMD }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center">평가자 정보가 없습니다.</td>
+</tr>
+{#/for}
+</table>

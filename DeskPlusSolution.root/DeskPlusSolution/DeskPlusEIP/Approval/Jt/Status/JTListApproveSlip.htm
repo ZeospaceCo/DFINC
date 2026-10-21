@@ -1,0 +1,66 @@
+﻿<table class="table_typeA">
+<caption>결재대상 문서</caption>
+<colgroup>
+    <col width="25px" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="Approve.Checked()" /></th>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_nextUser"></th>
+        <th class="center" id="r_writeTime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Approve}
+    <tr>
+        <td class="center">
+            {#if $T.Approve.ApprovalState != 'R'} <input type="checkbox" class="cbxID" id="cbxID{ $T.Approve.DocumentID }" value="{ $T.Approve.DocumentID }^{ $T.Approve.Sequence }^{ $T.Approve.ApprovalTag }^{ $T.Approve.TargetUserID }^{ $T.Approve.DeptID }" />{#/if}              
+        </td>
+        <td class="center">{ $T.Approve.FormBase }</td>
+        <td class="center"><a href="" onclick="Approve.State('{ $T.Approve.DocumentID }','{ $T.Approve.AccountTag }');return false;" style="cursor:pointer" >
+        {#if $T.Approve.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Approve.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Approve.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Approve.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Approve.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Approve.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Approve.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>            
+            {#if $T.Approve.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Approve.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <a href="" onclick="Approve.Approval('{ $T.Approve.DocumentID }', '{ $T.Approve.Sequence }', '{ $T.Approve.ApprovalTag }', '{ $T.Approve.TargetUserID }', '{ $T.Approve.DeptID }');return false;" style="cursor:pointer" >{ $T.Approve.Subject }</a> 
+            {#if $T.Approve.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Approve.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Approve.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Approve.UserID }');return false;"> { $T.Approve.NameBase }</a></td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Approve.NextUserID }');return false;">{ $T.Approve.NextUserInfo }</a></td>         
+        <td class="center">{ $T.Approve.WriteTimeStr }</td>        
+    </tr>
+{#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

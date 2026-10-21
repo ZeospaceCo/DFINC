@@ -1,0 +1,26 @@
+﻿<table class="table_typeA"> 
+<colgroup>   
+    <col />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<tr>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_titlename" class="center"></th>
+    <th id="r_dutyname" class="center"></th>
+</tr>
+{#foreach $T as UserList}
+<tr>
+    <td class="center"><a  onclick="javascript:UserList.View('{$T.UserList.UserID}','{$T.UserList.UserName}')" style="cursor:pointer" >{ $T.UserList.DeptName }</a></td>
+    <td class="center"><a  onclick="javascript:UserList.View('{$T.UserList.UserID}','{$T.UserList.UserName}')" style="cursor:pointer" >{ $T.UserList.UserName }</a></td>
+    <td class="center"><a  onclick="javascript:UserList.View('{$T.UserList.UserID}','{$T.UserList.UserName}')" style="cursor:pointer" >{ $T.UserList.TitleName }</a></td>
+    <td class="center"><a  onclick="javascript:UserList.View('{$T.UserList.UserID}','{$T.UserList.UserName}')" style="cursor:pointer" >{ $T.UserList.DutyName }</a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

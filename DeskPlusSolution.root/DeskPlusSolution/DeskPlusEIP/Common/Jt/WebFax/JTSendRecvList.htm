@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <th id="j_recvName"></th>
+    <th id="j_nationcode"></th>
+    <th id="j_faxnum"></th>
+    <th id="j_endtime"></th>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td>{ $T.List.RecvName }</td>
+    <td>{ $T.List.NationCode }</td>
+    <td>{ $T.List.FaxNum }</td>
+    <td>{ $T.List.EndTime }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

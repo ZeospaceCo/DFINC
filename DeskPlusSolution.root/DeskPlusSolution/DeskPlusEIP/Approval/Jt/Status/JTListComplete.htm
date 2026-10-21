@@ -1,0 +1,75 @@
+﻿<table class="table_typeA">
+<caption>상신한 문서</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="40px" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_checkBox"><input id="cbxAll" type="checkbox" onclick="Complete.Checked()" /></th>
+        <th class="center"></th>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_writeTime"></th>
+        <th class="center" id="r_completeDate"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Complete}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.Complete.ROW }" value="{ $T.Complete.DocumentID }" /></td> 
+        <td>
+            <p class="fav">
+                <input type="checkbox" id="chkImpo_{$T.Complete.DocumentID}" class="chkImpo_{$T.Complete.DocumentID}" {#if $T.Complete.ImpoCnt == 1} checked="checked" {#/if} onclick="Complete.ModImpUser('chkImpo_{$T.Complete.DocumentID}', this)" />
+
+	            <label for="chkImpo_{$T.Complete.DocumentID}" title="" id="lbImpo_{$T.Complete.DocumentID}" class="{#if $T.Complete.ImpoCnt == 1}on{#/if}">
+                    <span class="blind"></span>
+                </label>
+            </p>
+        </td>
+        <td class="center">{ $T.Complete.FormBase }</td>
+        <td class="center"><a href="" onclick="Complete.State('{ $T.Complete.DocumentID }','{ $T.Complete.AccountTag }');return false;" style="cursor:pointer" >
+        {#if $T.Complete.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Complete.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Complete.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Complete.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Complete.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Complete.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Complete.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>            
+            {#if $T.Complete.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Complete.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <a onclick="Complete.View('{ $T.Complete.DocumentID }','{ $T.Complete.GroupID }'); return false;" style="cursor:pointer">{ $T.Complete.Subject }</a> 
+            {#if $T.Complete.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Complete.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Complete.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Complete.UserID }');return false;">{ $T.Complete.NameBase }</a></td>
+        <td class="center">{ $T.Complete.WriteTimeStr }</td>        
+        <td class="center">{ $T.Complete.CompleteDateStr }</td>    
+    </tr>
+{#else}
+    <tr>
+        <td colspan="9" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

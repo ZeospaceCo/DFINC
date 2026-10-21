@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../Design/ko/Base/Css/DeskPlusEIPBase.css" />
+<link rel="stylesheet" type="text/css" href="../../Design/ko/Base/Css/DeskPlusEIPComponent.css" />
+</head>
+<body>
+ <form method="post" action="Menu.aspx" id="form1">
+<div id="layout_menu">
+    <div class="UTIL">
+    	<div class="menu_logo"><a href="../../EIP/EPDefault.aspx" target="_parent"><img src="../../Design/ko/Base/img/Portal/logo.gif" title="SMART PLUS" alt="SmartPlus Logo" /></a></div>
+        <ul class="menu_util">
+            <P class="date_title"></P>
+
+            <li><a href="http://ep.zeospace.com/UCWare_m_Setup.exe">메신저다운로드</a></li>
+            <li><a id="SignOutLink" href="../../Site/Auth/LogOut.aspx">로그아웃</a></li>
+            <li><a id="MyInfoLink" href="javascript:OpenUserInfo(&#39;/DeskPlusEIP/Account/Admin/UserRegister.aspx?userID=1&#39;)">내정보관리</a></li>
+            <li id="LiAdminLink"><a id="AdminLink" href="../../EIP/Admin/Default.aspx">슈퍼관리자</a></li>
+            
+            
+        </ul>
+    </div><!-- //UTIL --> 
+    
+    <div class="GNB">
+        <ul class="menu_gnb">
+        <li><a href="../../address/default.html" target="frmMainContent">주소록</a></li>
+        <li><a href="../../poll/default.html" target="frmMainContent">설문조사</a></li>
+        <li><a href="../../resource/default.html" target="frmMainContent">자원관리</a></li>
+        <li><a href="../../webhard/default.html" target="frmMainContent">웹하드</a></li>
+        <li><a href="../../project/default.html" target="frmMainContent">프로젝트</a></li>
+        <li><a href="../../portal/default.html" target="frmMainContent">포탈</a></li>
+        <li><a href="../../staff/default.html" target="frmMainContent">임직원조회</a></li>
+        <li><a href="../../settle/default.html" target="frmMainContent">전자결재</a></li>
+        <li><a href="../../community/default.html" target="frmMainContent">커뮤니티</a></li>		
+        <li><a href="../../gwadmin/default.html" target="frmMainContent">GW관리</a></li>
+        </ul>
+        <ul class="menu_cate" id="menu_cate">
+            <li><a href="#">WORK SPACE</a>
+                <ul>
+                    <li><a href="#">WORK SPACE</a></li>
+                    <li><a href="#">CO SPACE</a></li>
+                    <li><a href="#">MY SPACE</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- //GNB --> 
+
+    <div class="SUB">
+        <ul class="menu_sub" style="display:none;">
+        <li><a href="../../settle/content/inquery.html" target="frmContent">결재상황조회</a></li>
+        <li><a href="../../settle/content/document_make.html" target="frmContent">문서작성</a></li>
+        <li><a href="../../settle/document_box.html" target="frmMainContent">문서함</a></li>
+        <li><a href="../../settle/assignment.html" target="frmMainContent">대결자 지정</a></li>
+        <li><a href="../../settle/approval.html" target="frmMainContent">자주지정하는 결재자</a></li>
+        <li><a href="../../settle/pre_approval.html" target="frmMainContent">결재선관리</a></li>
+        </ul>
+
+		<ul class="menu_sub">
+        <li><a href="#" target="frmMainContent">회사정보</a></li>
+        <li><a href="#" target="frmMainContent">시스템코드관리</a></li>
+        <li><a href="#" target="frmMainContent">조직관리</a></li>
+        <li><a href="#" target="frmMainContent">직급/직책관리</a></li>
+        <li><a href="#" target="frmMainContent">사용자관리</a></li>
+        <li><a href="../../gwadmin/content/document_decide.html" target="frmContent">메뉴별기능관리</a></li>
+        </ul>
+    </div><!-- //SUB --> 
+</div><!-- //layout_menu -->  
+</form>
+</body>
+</html>

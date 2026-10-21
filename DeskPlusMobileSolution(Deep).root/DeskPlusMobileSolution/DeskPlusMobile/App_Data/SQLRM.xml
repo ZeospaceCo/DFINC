@@ -1,0 +1,103 @@
+﻿<XmlData>
+  <Item ID="SEL_PROC_SelReserve" Value="DPM_RM_Reserve_SelReserve" Content="자원예약현황 리스트 가져오기 " />
+  <Item ID="SEL_PROC_SelMyReserve" Value="DPM_RM_Reserve_SelMyReserve" Content="나의예약현황 리스트 가져오기 " />
+  <Item ID="SEL_PROC_SelMonth" Value="DPM_RM_Reserve_SelMonth" Content="예약현황 리스트 가져오기(달력표시) " />
+  <Item ID="SEL_PROC_CheckAuth" Value="DP_RM_ShareUser_SelCntByID" Content="권한체크 " />
+  <Item ID="SEL_PROC_SelUsableCnt" Value="DPM_RM_Reserve_SelUsableCnt" Content="자원예약현황 상태별 리스트 카운트 " />
+  <Item ID="SEL_PROC_SelUsable" Value="DPM_RM_Reserve_SelUsable" Content="자원예약현황 상태별 리스트 " />
+  <Item ID="SEL_PROC_Reserve_Date" Value="DP_RM_Reserve_SelByDate" Content="예약 되어 있는 지 자원 확인 " />
+  <Item ID="SEL_PROC_Reserve_AlarmUser" Value="DPM_RM_Reserve_SelAlarmUser" Content="알람대상자 가져오기 " />
+  <Item ID="UPD_PROC_Repeat" Value="DP_RM_Repeat_Upd" Content="예약자원 반복일정 삭제" />
+  <Item ID="UPD_PROC_Reserve_Usable" Value="DP_RM_Reserve_UpdByUsable" Content="승인or거부" />
+  <Item ID="UPD_PROC_Reserve_Del" Value="DP_RM_Reserve_DelUpd" Content="예약자원변경" />
+  <Item ID="UPD_PROC_ReserveList" Value="DP_RM_ReserveList_Upd" Content="자원예약 수정" />
+  <Item ID="UPD_PROC_ShareUser" Value="DP_RM_ShareUser_Upd" Content="공유자 수정(예약자원 삭제시)" />
+  <Item ID="INT_PROC_Reserve" Value="DP_RM_Reserve_Ins" Content="자원 예약 " />
+  <Item ID="INT_PROC_ReserveList" Value="DP_RM_ReserveList_Ins" Content="자원 예약 " />
+  <Item ID="INT_PROC_Attach" Value="DP_RM_ReserveList_Ins" Content="첨부파일정보 등록 " />
+  <Item ID="INT_PROC_ShortReply" Value="DP_RM_ShortReply_Ins" Content="댓글등록" />
+  <Item ID="INT_PROC_Reject" Value="DP_RM_Reject_Ins" Content="거부사유등록" />
+  <Item ID="DEL_PROC_ShareUser" Value="DP_RM_ShareUser_Del" Content="공유자 삭제" />
+  <Item ID="DEL_PROC_Reserve_All" Value="DP_RM_Reserve_DelALL" Content="예약자원삭제" />
+  <Item ID="DEL_PROC_Reserve_Pid" Value="DP_RM_Reserve_DelByPID" Content="예약자원삭제(반복일정 모두)" />
+  <Item ID="DEL_PROC_Reserve_Date" Value="DP_RM_Reserve_DelByStartDate" Content="예약자원변경(반복일정에서 빼기)" />
+  <Item ID="DEL_PROC_Attach" Value="DP_RM_Attach_Del" Content="예약자원 파일 삭제" />
+  <Item ID="DEL_PROC_Attach_Gubun" Value="DP_RM_Attach_DelByGubun" Content="예약자원 파일 삭제" />
+  <Item ID="DEL_PROC_Repeat" Value="DP_RM_Repeat_Del" Content="예약자원 반복일정 수정" />
+
+  <Item ID="SEL_QRY_SelectList"
+		  Value="
+        SELECT *
+        FROM DP_RM_List as List LEFT OUTER JOIN DP_RM_Category as Cate
+        ON List.CompanyID = Cate.CompanyID AND List.CategoryID = Cate.CategoryID 
+        WHERE List.CompanyID = {0} AND List.ActiveUse = 1 AND List.UsableQty > 0
+        ORDER BY List.CompanyID, List.CategoryID, List.ListOrder , List.WriteDate desc"
+		  Content="자원 리스트 가져오기">
+  </Item>
+  <Item ID="SEL_QRY_SelListInfo"
+		  Value="
+        SELECT * 
+        FROM VW_RM_List
+        WHERE CompanyID = {0} AND ListID = {1}"
+		  Content="자원정보 가져오기">
+  </Item>
+  <Item ID="SEL_QRY_SelReserve"
+		  Value="
+        SELECT 
+	        RL.*
+	        , DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName
+	        , DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName
+	        , DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+        FROM VW_RM_ReserveList RL WITH(NOLOCK) LEFT OUTER JOIN
+        dbo.DP_COM_DeptCode AS DC WITH(NOLOCK) ON RL.CompanyID = DC.CompanyID AND RL.DeptCodeID = DC.DeptCodeID
+        WHERE RL.CompanyID = {0} AND RL.ReservationID = {1}"
+		  Content="자원예약 내용 가져오기">
+  </Item>
+  <Item ID="SEL_QRY_ListUser"
+		  Value="
+        SELECT L.CompanyID
+              ,L.ListID
+              ,L.ListUserID
+              ,L.ManagerUserID
+              ,L.ManagerName
+              ,L.Gubun	  
+	        ,AU.NameBase, AU.NameKo, AU.NameEn, AU.NameJa , AU.NameFr, AU.NameZhcn
+	        ,AU.NameZhtw, AU.ManyName
+          ,AU.DeptBase ,AU.DeptKo,AU.DeptEn,AU.DeptJa,AU.DeptFr
+	        ,AU.DeptZhCn,AU.DeptZhTw,AU.ManyDeptName,AU.TitleBase
+	        ,AU.TitleKo,AU.TitleEn,AU.TitleJa,AU.TitleFr,AU.TitleZhCn
+	        ,AU.TitleZhTw,AU.ManyTitleName, AU.MailID, AU.MailDomain, AU.MobilePhone
+        FROM DP_RM_ListUser AS L	
+	        LEFT OUTER JOIN
+	        VW_UserInfo AS AU ON L.CompanyID = AU.CompanyID AND L.ManagerUserID = AU.UserID
+        WHERE L.CompanyID = {0} AND L.ListID = {1}
+        AND AU.BaseDept=1"
+		  Content="자원 담당자 정보 가져오기">
+  </Item>
+  <Item ID="SEL_QRY_ListUser_UserID"
+		  Value="
+        SELECT Count(*) FROM DP_RM_List WITH(NOLOCK) WHERE CompanyID = {0} AND ActiveUse = 1
+        AND ListID in (SELECT ListID FROM DP_RM_ListUser WITH(NOLOCK) WHERE CompanyID = {0} AND ManagerUserID={1} AND Gubun = '1')"
+		  Content="본인이 주 관리자로 있는 자원리스트 갯수">
+  </Item>
+  <Item ID="SEL_QRY_SelReply"
+	  Value="SELECT SR.* ,DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw ,DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw
+	FROM DP_RM_ShortReply AS SR WITH(NOLOCK) LEFT OUTER JOIN DP_COM_DeptCode AS DC WITH(NOLOCK) ON SR.CompanyID = DC.CompanyID AND SR.DeptCodeID = DC.DeptCodeID  
+	WHERE SR.CompanyID = {0} AND SR.ReservationID = {1}" Content="자원예약 댓글 가져오기"></Item>
+
+  <Item ID="SEL_QRY_SelReject"
+	  Value="SELECT R.* ,DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw ,DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw
+	FROM DP_RM_Reject AS R WITH(NOLOCK) LEFT OUTER JOIN DP_COM_DeptCode AS DC WITH(NOLOCK) ON R.CompanyID = DC.CompanyID AND R.DeptCodeID = DC.DeptCodeID  
+	WHERE R.CompanyID = {0} AND R.ReservationID = {1}" Content="자원예약 거부사유 가져오기"></Item>
+
+  <Item ID="SEL_QRY_Attach_ReID"
+	  Value="SELECT * 
+            FROM DP_RM_Attach 
+            WHERE CompanyID = {0} 
+            AND CategoryID = {1}
+            AND ListID = {2}
+            AND Gubun = {3}" Content="예약자원 파일 정보"></Item>
+  <Item ID="SEL_QRY_Repeat"
+	  Value="SELECT  * FROM DP_RM_Repeat	
+          WHERE  CompanyID = {0} AND ReservationID = {1}" Content="예약자원 반복일정 정보"></Item>
+</XmlData>

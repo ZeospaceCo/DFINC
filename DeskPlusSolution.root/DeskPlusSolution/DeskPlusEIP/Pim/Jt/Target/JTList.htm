@@ -1,0 +1,56 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+ <caption>Target</caption>
+<colgroup>
+    <col />
+    <col width="60px" />
+    <col width="160px" />
+    <col width="120px" />
+</colgroup>
+
+<tr>
+    <th id="r_name" class="center"></th>
+    <th id="r_kind" class="center"></th>
+    <th id="r_date" class="center"></th>
+    <th id="r_menu" class="center"></th>
+</tr>
+       {#foreach $T as BoardList}
+
+        <tr>
+            <td>
+            {#if $T.BoardList.ParentMBOID == 0} 
+                <span class="sub_Goal3">&nbsp;</span>
+            {#/if}
+
+            {#if $T.BoardList.Dept > 1} 
+                {#for index =1 to  $T.BoardList.Dept  }                     
+                    {#if $T.index == $T.BoardList.Dept } 
+                    <span class="sub_Goal4">&nbsp;</span>
+                    {#else}
+                    &nbsp;&nbsp;
+                    {#/if }
+                {#/for}     
+            {#/if}
+            { $T.BoardList.Title } </td>
+            <td class="center">
+                {#if $T.BoardList.attachYN > 0} <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" MBOID='{ $T.BoardList.MBOID }'></i>{#/if}
+            </td>
+            <td class="center">{ $T.BoardList.strStartDate } ~ { $T.BoardList.strEndDate }</td>
+            <td class="center">
+            
+            {#if $T.BoardList.Dept != 3} 
+                <a href="#" class="btn" onclick="Javascript:List.SubAdd('{ $T.BoardList.MBOID }')"><span class="spAdd"></span></a>
+            {#/if}
+             
+            {#if $T.BoardList.AuthYN == 0} 
+                {#if $T.BoardList.GroupCnt == 0} 
+                <a href="#" class="btn" onclick="Javascript:List.Del('{ $T.BoardList.MBOID }')"><span class="spDel"></span></a>
+                {#/if}
+            {#/if}
+             </td>
+        </tr>
+        {#else}
+            <tr>
+                <td colspan="4" class="center"><span class="NoListData" /></td>        
+            </tr>
+            {#/for}  
+        </table>

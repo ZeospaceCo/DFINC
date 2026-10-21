@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Administrator" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AdminListTitle" xml:space="preserve">
+    <value>Holiday Mgmt.</value>
+  </data>
+  <data name="AdminViewTitle" xml:space="preserve">
+    <value>Holiday history</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Input report date</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>Duty Name</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End-date</value>
+  </data>
+  <data name="EndHalf" xml:space="preserve">
+    <value>Half-day</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HoliAll" xml:space="preserve">
+    <value>Total holiday</value>
+  </data>
+  <data name="HoliDel" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="HoliJan" xml:space="preserve">
+    <value>Remain</value>
+  </data>
+  <data name="HoliReceive" xml:space="preserve">
+    <value>Remain</value>
+  </data>
+  <data name="HoliTitle" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HoliType1" xml:space="preserve">
+    <value>Annual holiday</value>
+  </data>
+  <data name="HoliType2" xml:space="preserve">
+    <value>Holiday work</value>
+  </data>
+  <data name="HoliType3" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="HoliUsed" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="HoliUserAll" xml:space="preserve">
+    <value>Total Annual Holiday</value>
+  </data>
+  <data name="HoliUserCnt" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="HoliUserJan" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="List_Group" xml:space="preserve">
+    <value>Current classification</value>
+  </data>
+  <data name="List_SubGroup" xml:space="preserve">
+    <value>Including sub-classification</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>LoginID</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="MSG_DELFAIL" xml:space="preserve">
+    <value>An error occurred during the delete.</value>
+  </data>
+  <data name="MSG_DELSUCCESS" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>Error has been encountered.</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Processed.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start-date</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than the termination date.</value>
+  </data>
+  <data name="StartHalf" xml:space="preserve">
+    <value>Half-day</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="UserListTitle" xml:space="preserve">
+    <value>Holiday history</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CustomerName" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="NightOverTime " xml:space="preserve">
+    <value>Night OverTime</value>
+  </data>
+  <data name="OverTime" xml:space="preserve">
+    <value>OverTime</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="YearText" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>Excel download</value>
+  </data>
+  <data name="ExcelUpload" xml:space="preserve">
+    <value>Excel Upload</value>
+  </data>
+  <data name="SampleDown" xml:space="preserve">
+    <value>Sample download</value>
+  </data>
+  <data name="EndHalfExcel" xml:space="preserve">
+    <value>End Half Day</value>
+  </data>
+  <data name="StartHalfExcel" xml:space="preserve">
+    <value>Start Half Day</value>
+  </data>
+  <data name="ModDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ModUser" xml:space="preserve">
+    <value>Modifiers</value>
+  </data>
+  <data name="ModHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="HoliCount" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Pay Approve</value>
+  </data>
+  <data name="ApproveCancel" xml:space="preserve">
+    <value>Cancel Payment</value>
+  </data>
+  <data name="PayAmount" xml:space="preserve">
+    <value>Payment Of Money</value>
+  </data>
+  <data name="ArrearAmount" xml:space="preserve">
+    <value>Amount In Arrear</value>
+  </data>
+  <data name="ContentTEXT" xml:space="preserve">
+    <value>TEXT Search</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>Reporter</value>
+  </data>
+  <data name="ReportYear" xml:space="preserve">
+    <value>Report year</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TagDic_NO" xml:space="preserve">
+    <value>Docs number</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>Comp-date</value>
+  </data>
+  <data name="IsPay" xml:space="preserve">
+    <value>Provision of Expense </value>
+  </data>
+  <data name="IsPayYN" xml:space="preserve">
+    <value>Payment Status</value>
+  </data>
+  <data name="TransportationCost" xml:space="preserve">
+    <value>For Transportation</value>
+  </data>
+  <data name="IsPayN" xml:space="preserve">
+    <value>Non-Payment</value>
+  </data>
+  <data name="IsPayY" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>File does not exist.</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>Write-date</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Full Download</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>An error has occurred while bringing attach file information.</value>
+  </data>
+  <data name="PayTitle" xml:space="preserve">
+    <value>Accounting docs</value>
+  </data>
+  <data name="MSG_PayNo" xml:space="preserve">
+    <value>Select the document you want to non-pay.</value>
+  </data>
+  <data name="MSG_PayNoFail" xml:space="preserve">
+    <value>Document failed to non-pay.</value>
+  </data>
+  <data name="MSG_PayNoSuccess" xml:space="preserve">
+    <value>Document has been unpaid.</value>
+  </data>
+  <data name="MSG_PayYes" xml:space="preserve">
+    <value>Select the document you want to pay.</value>
+  </data>
+  <data name="MSG_PayYesFail" xml:space="preserve">
+    <value>Document failed to pay.</value>
+  </data>
+  <data name="MSG_PayYesSuccess" xml:space="preserve">
+    <value>Document has been paid.</value>
+  </data>
+  <data name="EmpNo" xml:space="preserve">
+    <value>Employee Number</value>
+  </data>
+  <data name="AdminWorkList" xml:space="preserve">
+    <value>Work Overtime History Management</value>
+  </data>
+  <data name="UserWorkList" xml:space="preserve">
+    <value>Work Overtime History</value>
+  </data>
+  <data name="WorkList" xml:space="preserve">
+    <value>Work Log</value>
+  </data>
+  <data name="HoliList" xml:space="preserve">
+    <value>Holiday History Management</value>
+  </data>
+  <data name="HoliManage" xml:space="preserve">
+    <value>Holiday History Management</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Retire" xml:space="preserve">
+    <value>Retire</value>
+  </data>
+  <data name="SearchDate" xml:space="preserve">
+    <value>Search term</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Employment Status</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="DelPerson" xml:space="preserve">
+    <value>Delete Person</value>
+  </data>
+  <data name="MsgPerson" xml:space="preserve">
+    <value>Select a business representative.</value>
+  </data>
+  <data name="MsgTarget" xml:space="preserve">
+    <value>Only single users can be selected</value>
+  </data>
+  <data name="PleaseSelectPerson" xml:space="preserve">
+    <value>Select Person</value>
+  </data>
+  <data name="SelectPerson" xml:space="preserve">
+    <value>Select person</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, Attachment</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="SearchType" xml:space="preserve">
+    <value>SearchType</value>
+  </data>
+  <data name="AttachName1" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Time and attendance management</value>
+  </data>
+  <data name="AttendanceApproval" xml:space="preserve">
+    <value>Time-attendance</value>
+  </data>
+  <data name="Attendance_absenteeism" xml:space="preserve">
+    <value>Absenteeism</value>
+  </data>
+  <data name="Attendance_avg" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="Attendance_CurrentStatus" xml:space="preserve">
+    <value>Current Status</value>
+  </data>
+  <data name="Attendance_Date" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="Attendance_Deduction" xml:space="preserve">
+    <value>Deduction</value>
+  </data>
+  <data name="Attendance_Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Attendance_End" xml:space="preserve">
+    <value>Off work</value>
+  </data>
+  <data name="Attendance_EndX" xml:space="preserve">
+    <value>My workout</value>
+  </data>
+  <data name="Attendance_individual" xml:space="preserve">
+    <value>individual</value>
+  </data>
+  <data name="Attendance_Info" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Attendance_max" xml:space="preserve">
+    <value>maximum</value>
+  </data>
+  <data name="Attendance_min" xml:space="preserve">
+    <value>at least</value>
+  </data>
+  <data name="Attendance_month" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="Attendance_Msg" xml:space="preserve">
+    <value>Please select a user.</value>
+  </data>
+  <data name="Attendance_Msg2" xml:space="preserve">
+    <value>Please choose three delinquency breakdowns for annual deduction.</value>
+  </data>
+  <data name="Attendance_Msg3" xml:space="preserve">
+    <value>Do you want annual deductions?</value>
+  </data>
+  <data name="Attendance_normal" xml:space="preserve">
+    <value>normal</value>
+  </data>
+  <data name="Attendance_Now" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Attendance_percent" xml:space="preserve">
+    <value>rate</value>
+  </data>
+  <data name="Attendance_personnel" xml:space="preserve">
+    <value>system</value>
+  </data>
+  <data name="Attendance_Start" xml:space="preserve">
+    <value>Go to work</value>
+  </data>
+  <data name="Attendance_StartX" xml:space="preserve">
+    <value>Not coming to work</value>
+  </data>
+  <data name="Attendance_Tardy" xml:space="preserve">
+    <value>tardy</value>
+  </data>
+  <data name="Attendance_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Attendance_user" xml:space="preserve">
+    <value>user</value>
+  </data>
+  <data name="Attendance_Userinformation" xml:space="preserve">
+    <value>User information</value>
+  </data>
+  <data name="Attendance_vacation" xml:space="preserve">
+    <value>vacation</value>
+  </data>
+  <data name="Attendance_year" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="Holi_CompanyInfo_BaseDate" xml:space="preserve">
+    <value>Base date</value>
+  </data>
+  <data name="Holi_UserInfo" xml:space="preserve">
+    <value>User information</value>
+  </data>
+  <data name="List_SubDept" xml:space="preserve">
+    <value>Include sub-departments</value>
+  </data>
+  <data name="Work1" xml:space="preserve">
+    <value>Served</value>
+  </data>
+  <data name="Work_1" xml:space="preserve">
+    <value>Full-time</value>
+  </data>
+  <data name="Work_2" xml:space="preserve">
+    <value>Irregular work</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Holi_Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>Early</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="Day_Friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="Day_Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="Day_Part" xml:space="preserve">
+    <value>Day of the week</value>
+  </data>
+  <data name="Day_Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Day_Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="Day_Thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="Day_Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="Day_Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="Attendance_Holiday" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="AuthorityManagement" xml:space="preserve">
+    <value>Authority Management</value>
+  </data>
+  <data name="Attendance_Detail" xml:space="preserve">
+    <value>Details of attendance</value>
+  </data>
+  <data name="Attendances" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="ExtendWork" xml:space="preserve">
+    <value>Overtime</value>
+  </data>
+  <data name="Holi_Afternoon" xml:space="preserve">
+    <value>Afternoon</value>
+  </data>
+  <data name="Holi_Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Holi_Full" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Holi_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Holi_Morning" xml:space="preserve">
+    <value>Morning</value>
+  </data>
+  <data name="Holi_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Outside" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="AddPopup" xml:space="preserve">
+    <value>Add Pop-up</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>Enter content</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>Enter subject</value>
+  </data>
+  <data name="After" xml:space="preserve">
+    <value>After Login</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>Before Login</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>The contents will be deleted. Are you sure?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the view page</value>
+  </data>
+  <data name="List_Register" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="ModPopup" xml:space="preserve">
+    <value>Mod Pop-up</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="PopupManage" xml:space="preserve">
+    <value>Pop-up Mgmt.</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>Contents may be changed because there are suspicious sentences about script in the body.</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Go to the list</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>Error occurred! Please ask admin.</value>
+  </data>
+  <data name="HoliAdmin" xml:space="preserve">
+    <value>Annual Management</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>Docs number</value>
+  </data>
+  <data name="FormName2" xml:space="preserve">
+    <value>Form Name</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Type</value>
+  </data>
+</root>

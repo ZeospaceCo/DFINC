@@ -1,0 +1,20 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width = "100" />
+    <col />
+</colgroup>
+    <tr>
+        <th id="j_Name">Code</th>
+        <th id="Th1">Name</th>
+    </tr>
+    {#foreach $T as PopDepartMentList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopDepartMent.Binding('{ $T.PopDepartMentList.VendorPostingGroup}','{ $T.PopDepartMentList.VendorName}')">{ $T.PopDepartMentList.VendorPostingGroup }</a></td>
+        <td><a href="#" onclick="javascript:PopDepartMent.Binding('{ $T.PopDepartMentList.VendorPostingGroup}','{ $T.PopDepartMentList.VendorName}')">{ $T.PopDepartMentList.VendorName }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

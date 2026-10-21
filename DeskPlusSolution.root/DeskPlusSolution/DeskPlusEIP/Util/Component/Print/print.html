@@ -1,0 +1,51 @@
+<head>
+<!-- 헤드사이에 스크립트를 넣습니다. -->
+<SCRIPT>
+ function pagePrint(Obj) {
+    var W = Obj.offsetWidth; //screen.availWidth; 
+    var H = Obj.offsetHeight; //screen.availHeight;
+    var features = "menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=" + W + ",height=" + H + ",left=0,top=0";
+    var PrintPage = window.open("about:blank",Obj.id,features);
+    PrintPage.document.open();
+    PrintPage.document.write("<html><head><title></title><style type='text/css'>body, tr, td, input, textarea { font-family:굴림; font-size:12px; }</style>\n </head>\n<body>" + Obj.innerHTML + "\n</body></html>");
+    PrintPage.document.close();
+    PrintPage.document.title = document.domain;
+    PrintPage.printWindow(PrintPage.location.reload());
+ }
+</SCRIPT>
+</head>
+
+<!--그리고 인쇄할곳을 찾아서 div 태그로 감싸줍니다.-->
+<body>
+<table BORDER=1>
+ <tr>
+ <td>
+인쇄 안할곳<br>
+ <a href="javascript:pagePrint(d2)">인쇄 해야할곳만 인쇄하자~!</a>
+ </td>
+ </tr>
+</table>
+<DIV ID="d2">
+<script>
+ function printWindow() {
+    factory.printing.header = "헤더의 내용";
+    factory.printing.footer = "푸터의 내용";
+    factory.printing.portrait = true; //false 로할경우 가로방향으로 출력합니다.
+    factory.printing.leftMargin = 20.0;//마진값은 적당하게 주시면 됩니다.
+    factory.printing.topMargin = 1.0;
+    factory.printing.rightMargin = 1.0;
+    factory.printing.bottomMargin = 1.0;
+    factory.printing.Print(false);
+ }
+</script>
+<object id=factory style='display:none' classid='clsid:1663ed61-23eb-11d2-b92f-008048fdd814' codebase='smsx.cab#Version=6,4,438,06'>
+</object>
+<table BORDER=1>
+ <tr>
+ <td>
+인쇄 해야할곳!!!!
+ </td>
+ </tr>
+</table>
+</DIV>
+</body> 

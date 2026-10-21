@@ -1,0 +1,65 @@
+﻿<table class="table_typeA">
+<caption>전결문서함</caption>
+<colgroup>
+    <col width="30px" />
+    <col width="20px" />
+    <col width="250px" />
+    <col width="400px" />
+    <col width="80px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+        <th class="center"></th>
+        <th class="center" id="r_docnumber"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attachName"></th>                            
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_writetime"></th>
+        <th class="center" id="r_completetime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+    <tr>
+        <td class="center">
+            <input type="checkbox" class="cbxID" id="cbxID{ $T.List.FolderID }_{ $T.List.ArbitraryDocumentID }" value="{ $T.List.FolderID }_{ $T.List.ArbitraryDocumentID }" />
+        </td>
+        <td>
+            <p class="fav">
+                <input type="checkbox" id="chkImpo_{$T.List.ArbitraryDocumentID}" class="chkImpo_{$T.List.DocumentID}" {#if $T.List.ImpoCnt == 1} checked="checked" {#/if} onclick="List.ModImpUser('chkImpo_{$T.List.DocumentID}', this)" />
+
+	            <label for="chkImpo_{$T.List.ArbitraryDocumentID}" title="" id="lbImpo_{$T.List.ArbitraryDocumentID}" class="{#if $T.List.ImpoCnt == 1}on{#/if}">
+                    <span class="blind"></span>
+                </label>
+            </p>
+        </td>
+        <td>{ $T.List.DocNumber }</td>
+        <td>
+            {#if $T.List.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.List.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <a href="#" onclick="List.View('{ $T.List.DocumentID }');return false;" style="cursor:pointer" >{ $T.List.Subject }</a> 
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.List.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.List.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a></td>        
+        <td class="center">{ $T.List.WriteTimeStr }</td>
+        <td class="center">{ $T.List.CompleteDateStr }</td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>
+    </tr>
+{#/for} 
+</tbody>
+</table>

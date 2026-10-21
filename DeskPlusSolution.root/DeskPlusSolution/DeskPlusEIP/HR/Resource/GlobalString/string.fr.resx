@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="52Time" xml:space="preserve">
+    <value>주 52시간 기준</value>
+  </data>
+  <data name="AddIP" xml:space="preserve">
+    <value>IP 추가</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>사용자 추가</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>관리자</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Admin_UserManager_Literal2" xml:space="preserve">
+    <value>조직도</value>
+  </data>
+  <data name="Admin_UserManager_ltJoinDate" xml:space="preserve">
+    <value>입사일</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_RetireDate" xml:space="preserve">
+    <value>퇴사일</value>
+  </data>
+  <data name="Admin_User_Input_JoinDate" xml:space="preserve">
+    <value>입사일을 입력하세요</value>
+  </data>
+  <data name="Admin_User_Input_RetireDate" xml:space="preserve">
+    <value>퇴사일을 입력하세요</value>
+  </data>
+  <data name="AllWorkTime" xml:space="preserve">
+    <value>총근무시간</value>
+  </data>
+  <data name="AttendanceRoleAdmin" xml:space="preserve">
+    <value>수정권한관리</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>조퇴</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>금</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Attendance_Over" xml:space="preserve">
+    <value>연장</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>토</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Attendance_Tardy" xml:space="preserve">
+    <value>지각</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>목</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>수</value>
+  </data>
+  <data name="AuthorityManagement" xml:space="preserve">
+    <value>권한관리</value>
+  </data>
+  <data name="AvgAllWorkTime" xml:space="preserve">
+    <value>인당 평균&lt;br&gt;근로시간</value>
+  </data>
+  <data name="BaseDept" xml:space="preserve">
+    <value>겸</value>
+  </data>
+  <data name="BaseDeptManage" xml:space="preserve">
+    <value>겸직부서관리</value>
+  </data>
+  <data name="BaseDeptName" xml:space="preserve">
+    <value>기본부서</value>
+  </data>
+  <data name="BaseWork" xml:space="preserve">
+    <value>기본근무</value>
+  </data>
+  <data name="BaseWorkManage" xml:space="preserve">
+    <value>기본근무시간 설정</value>
+  </data>
+  <data name="BaseWorkTime" xml:space="preserve">
+    <value>기본근무시간</value>
+  </data>
+  <data name="BaseWorkTimeError" xml:space="preserve">
+    <value>기본근무시간은 8시간입니다.</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>겸직</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>업무담당</value>
+  </data>
+  <data name="CalcDate" xml:space="preserve">
+    <value>일자</value>
+  </data>
+  <data name="CecomReady" xml:space="preserve">
+    <value>준비중입니다.</value>
+  </data>
+  <data name="CecomYN" xml:space="preserve">
+    <value>세콤 연동</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>삭제할 리스트를 선택해 주세요.</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>정말로 삭제하시겠습니까?</value>
+  </data>
+  <data name="Consecutiveholidays" xml:space="preserve">
+    <value>연휴</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>회</value>
+  </data>
+  <data name="CurrentDept" xml:space="preserve">
+    <value>현재부서</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Day_Friday" xml:space="preserve">
+    <value>금</value>
+  </data>
+  <data name="Day_Monday" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Day_Saturday" xml:space="preserve">
+    <value>토</value>
+  </data>
+  <data name="Day_Sunday" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Day_Thursday" xml:space="preserve">
+    <value>목</value>
+  </data>
+  <data name="Day_Tuesday" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="Day_Wednesday" xml:space="preserve">
+    <value>수</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="DelUser" xml:space="preserve">
+    <value>사용자 삭제</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="DeptAllWorkTime" xml:space="preserve">
+    <value>총&lt;br&gt;근무시간</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>부서명</value>
+  </data>
+  <data name="DeptNameChange" xml:space="preserve">
+    <value>부서명칭변경</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>상세정보</value>
+  </data>
+  <data name="DocumentID" xml:space="preserve">
+    <value>결재승인</value>
+  </data>
+  <data name="DownView" xml:space="preserve">
+    <value>맨아래로</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>기간</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="EarlyReason" xml:space="preserve">
+    <value>조퇴사유를 입력하세요.</value>
+  </data>
+  <data name="EarlyRemark" xml:space="preserve">
+    <value>조퇴사유</value>
+  </data>
+  <data name="Early_Time" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>종료일</value>
+  </data>
+  <data name="EndHalf" xml:space="preserve">
+    <value>반차</value>
+  </data>
+  <data name="ErrorAccessAuth" xml:space="preserve">
+    <value>해당 사용자는 접근 권한에 문제 있습니다.</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>처리시, 오류가 발생되었습니다.</value>
+  </data>
+  <data name="Etc" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="EtcWorkTime" xml:space="preserve">
+    <value>유연근무시간</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>엑셀다운로드</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>상세정보 입력페이지로 이동합니다.</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>구분</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>수정내역</value>
+  </data>
+  <data name="Holi" xml:space="preserve">
+    <value>휴가</value>
+  </data>
+  <data name="HoliAdmin" xml:space="preserve">
+    <value>연차관리</value>
+  </data>
+  <data name="HoliAdminManage" xml:space="preserve">
+    <value>휴가내역관리</value>
+  </data>
+  <data name="HoliJan" xml:space="preserve">
+    <value>잔여연차</value>
+  </data>
+  <data name="HoliList" xml:space="preserve">
+    <value>휴가내역</value>
+  </data>
+  <data name="HoliType" xml:space="preserve">
+    <value>연차</value>
+  </data>
+  <data name="HoliUserInfo" xml:space="preserve">
+    <value>연차 사용자 정보 (휴가/반차/기타)</value>
+  </data>
+  <data name="Holi_HR" xml:space="preserve">
+    <value>근태정보</value>
+  </data>
+  <data name="HRMod" xml:space="preserve">
+    <value>근태정보수정</value>
+  </data>
+  <data name="HRStatus" xml:space="preserve">
+    <value>근태정보</value>
+  </data>
+  <data name="HR_Company" xml:space="preserve">
+    <value>회사 근태 현황표</value>
+  </data>
+  <data name="HR_Dept" xml:space="preserve">
+    <value>부서 근태 현황표</value>
+  </data>
+  <data name="HR_Private" xml:space="preserve">
+    <value>개인 근태 현황표</value>
+  </data>
+  <data name="IN" xml:space="preserve">
+    <value>사내</value>
+  </data>
+  <data name="InputIP" xml:space="preserve">
+    <value>IP 값을 입력해 주세요.</value>
+  </data>
+  <data name="InputIPNumber" xml:space="preserve">
+    <value>IP 에 숫자값을 입력해 주세요.</value>
+  </data>
+  <data name="IPAccess" xml:space="preserve">
+    <value>IP 설정</value>
+  </data>
+  <data name="IPBand" xml:space="preserve">
+    <value>IP 대역</value>
+  </data>
+  <data name="LateReason" xml:space="preserve">
+    <value>지각사유를 입력하세요.</value>
+  </data>
+  <data name="LateRemark" xml:space="preserve">
+    <value>지각사유</value>
+  </data>
+  <data name="ListCompany" xml:space="preserve">
+    <value>회사 현황표</value>
+  </data>
+  <data name="ListDept" xml:space="preserve">
+    <value>부서 현황표</value>
+  </data>
+  <data name="ListPrivate" xml:space="preserve">
+    <value>개인 현황표</value>
+  </data>
+  <data name="ListPrivateMod" xml:space="preserve">
+    <value>근태 정보 수정</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="ListUserDept" xml:space="preserve">
+    <value>겸직 부서 관리</value>
+  </data>
+  <data name="List_SubDept" xml:space="preserve">
+    <value>하위부서포함</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>아이디</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="ModifyDate" xml:space="preserve">
+    <value>수정일</value>
+  </data>
+  <data name="ModifyName" xml:space="preserve">
+    <value>수정자</value>
+  </data>
+  <data name="ModReason" xml:space="preserve">
+    <value>수정사유</value>
+  </data>
+  <data name="ModReasonInput" xml:space="preserve">
+    <value>수정사유를 입력하세요.</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>월간</value>
+  </data>
+  <data name="MonthTxt" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Msg_Add" xml:space="preserve">
+    <value>등록하시겠습니까?</value>
+  </data>
+  <data name="Msg_Admin" xml:space="preserve">
+    <value>관리자에게 문의하세요.</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>삭제하시겠습니까?</value>
+  </data>
+  <data name="Msg_Sel" xml:space="preserve">
+    <value>항목을 선택하세요.</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>처리되었습니다.</value>
+  </data>
+  <data name="Msg_WeekDay" xml:space="preserve">
+    <value>요일을 선택하세요.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>무</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>내용이 없습니다.</value>
+  </data>
+  <data name="NoInput" xml:space="preserve">
+    <value>미입력</value>
+  </data>
+  <data name="Normal_Work" xml:space="preserve">
+    <value>기본근무</value>
+  </data>
+  <data name="NoSetUp" xml:space="preserve">
+    <value>미설정</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="Now" xml:space="preserve">
+    <value>현재</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>회사전화</value>
+  </data>
+  <data name="OUT" xml:space="preserve">
+    <value>사외</value>
+  </data>
+  <data name="OverTimeAdmin" xml:space="preserve">
+    <value>야근/특근 내역관리</value>
+  </data>
+  <data name="OverWorkTime" xml:space="preserve">
+    <value>연장근무시간</value>
+  </data>
+  <data name="Over_Work" xml:space="preserve">
+    <value>연장근무</value>
+  </data>
+  <data name="PC" xml:space="preserve">
+    <value>PC</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>명</value>
+  </data>
+  <data name="PersonCount" xml:space="preserve">
+    <value>인원</value>
+  </data>
+  <data name="PersonCount2" xml:space="preserve">
+    <value>(명)</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>검색어 입력</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="PreviousDept" xml:space="preserve">
+    <value>이전부서</value>
+  </data>
+  <data name="Private_AccountInfo_ltMail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="Private_AccountInfo_ltMobile" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserDept" xml:space="preserve">
+    <value>부서</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>처리시 오류가 발생되었습니다. 관리자에게 문의해주시기 바랍니다.</value>
+  </data>
+  <data name="Quarter" xml:space="preserve">
+    <value>분기</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>비고(사유)</value>
+  </data>
+  <data name="Reason2" xml:space="preserve">
+    <value>사유</value>
+  </data>
+  <data name="Reason3" xml:space="preserve">
+    <value>이유</value>
+  </data>
+  <data name="Reg" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="RegIP" xml:space="preserve">
+    <value>IP 등록</value>
+  </data>
+  <data name="RegistContact" xml:space="preserve">
+    <value>연락처 등록</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>등록율</value>
+  </data>
+  <data name="RoleAdmin" xml:space="preserve">
+    <value>조회권한관리</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="SearchLimit" xml:space="preserve">
+    <value>5년 이하만 검색 가능합니다.</value>
+  </data>
+  <data name="SelDate" xml:space="preserve">
+    <value>조회가능기간</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="SelTime" xml:space="preserve">
+    <value>시간을 선택하세요.</value>
+  </data>
+  <data name="SelWCTime" xml:space="preserve">
+    <value>퇴근시간을 선택하세요.</value>
+  </data>
+  <data name="SelWSTime" xml:space="preserve">
+    <value>출근시간을 선택하세요.</value>
+  </data>
+  <data name="SetUp" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="StandardReg" xml:space="preserve">
+    <value>등록기준</value>
+  </data>
+  <data name="StandardTime" xml:space="preserve">
+    <value>기준시간</value>
+  </data>
+  <data name="StandardTimePer" xml:space="preserve">
+    <value>요율</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>시작일</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>시작일자가 종료일자보다 작아야 합니다</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>종료시간은 시작시간과 같거나 작을 수 없습니다</value>
+  </data>
+  <data name="StartHalf" xml:space="preserve">
+    <value>반차</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="SubstituteHoliday" xml:space="preserve">
+    <value>대체휴무</value>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>주간</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="TitGetU" xml:space="preserve">
+    <value>사용자 선택</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="TitleName2" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="TopView" xml:space="preserve">
+    <value>맨위로</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>조회</value>
+  </data>
+  <data name="WCTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="WCTimeExec" xml:space="preserve">
+    <value>퇴근 자동 등록 실행 시간</value>
+  </data>
+  <data name="WCTimeYN" xml:space="preserve">
+    <value>퇴근 자동 등록 설정</value>
+  </data>
+  <data name="WC_Reg" xml:space="preserve">
+    <value>퇴근등록</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>주간</value>
+  </data>
+  <data name="WeekDay" xml:space="preserve">
+    <value>요일</value>
+  </data>
+  <data name="WorkAdmin" xml:space="preserve">
+    <value>근무유형관리</value>
+  </data>
+  <data name="WorkAdminSubTxt1" xml:space="preserve">
+    <value>* 사용자와 부서가 중복될 경우 사용자 우선 순위가 됩니다.</value>
+  </data>
+  <data name="WorkAdminSubTxt2" xml:space="preserve">
+    <value>* 부서 추가의 경우 겸직 사용자는 적용되지 않습니다.</value>
+  </data>
+  <data name="WorkList" xml:space="preserve">
+    <value>야근/특근내역</value>
+  </data>
+  <data name="WorkSum" xml:space="preserve">
+    <value>근무합산</value>
+  </data>
+  <data name="WorkTime" xml:space="preserve">
+    <value>근무시간</value>
+  </data>
+  <data name="WorkTimeError" xml:space="preserve">
+    <value>유연근무시간은 8시간입니다.</value>
+  </data>
+  <data name="WorkTimeEtc" xml:space="preserve">
+    <value>유연근무 대상 설정</value>
+  </data>
+  <data name="WorkTimeManage" xml:space="preserve">
+    <value>유연근무시간 설정</value>
+  </data>
+  <data name="WorkYN" xml:space="preserve">
+    <value>근태 사용</value>
+  </data>
+  <data name="WrongIPRange" xml:space="preserve">
+    <value>IP 범위가 잘못 설정되었습니다.</value>
+  </data>
+  <data name="WSConn" xml:space="preserve">
+    <value>접속</value>
+  </data>
+  <data name="WSTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+  <data name="WSTimeLimit" xml:space="preserve">
+    <value>출근 인정 범위 설정</value>
+  </data>
+  <data name="WS_Reg" xml:space="preserve">
+    <value>출근등록</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>년간</value>
+  </data>
+  <data name="YearTxt" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>유</value>
+  </data>
+  <data name="Overlap" xml:space="preserve">
+    <value>타(겸직) 부서 정보로 등록되어 있습니다.</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="WorkManager" xml:space="preserve">
+    <value>근태관리</value>
+  </data>
+</root>

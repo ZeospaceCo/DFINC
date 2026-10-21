@@ -1,0 +1,12 @@
+﻿
+{#foreach $T as List}   
+    <li {#if $T.List.NewMailStr == 0}class="my1" {#else}class="my1on"{#/if}><a href="#" id="myInfo_NewMail" title="">{$T.List.NewMailStr}</a></li>
+    <li {#if $T.List.TodayPimSchStr == 0}class="my2" {#else}class="my2on"{#/if}><a href="#" id="myInfo_TodayS" title="">{$T.List.TodayPimSchStr}</a></li>
+    <li {#if $T.List.TaskStr == 0}class="my8" {#else}class="my8on"{#/if}><a href="#" id="myInfo_Task" title="">{$T.List.TaskStr}</a></li>
+    <li {#if $T.List.DocmentStr == 0}class="my4" {#else}class="my4on"{#/if}><a href="#" id="myInfo_AppDoc" title="">{$T.List.DocmentStr}</a></li>
+    <li {#if $T.List.ApprovalStr == 0}class="my5" {#else}class="my5on"{#/if}><a href="#" id="myInfo_AppApp"  title="">{$T.List.ApprovalStr}</a></li>
+    <li {#if $T.List.DeptSusinStr == 0}class="my6" {#else}class="my6on"{#/if}><a href="#" id="myInfo_AppDept" title="">{$T.List.DeptSusinStr}</a></li>
+    <li {#if $T.List.CompleteStr == 0}class="my7" {#else}class="my7on"{#/if}><a href="#" id="myInfo_AppCom" title="">{$T.List.CompleteStr}</a></li>
+{#else}     
+        
+{#/for}  

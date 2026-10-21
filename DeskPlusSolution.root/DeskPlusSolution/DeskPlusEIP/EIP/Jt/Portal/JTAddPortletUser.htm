@@ -1,0 +1,45 @@
+﻿<div class="table_typeLmiddle" style="min-height:405px;height: 410px;overflow:auto;">
+    <!--포틀릿 내용 시작-->
+    {#foreach $T as PortletList}
+    <div class="blog_cont">
+        <ul>            
+            <table style="width:100%;">
+				<caption>Portlet Setting</caption>
+                <colgroup>
+                    <col width="120px" />
+                    <col />
+                    <col width="80px" />
+                </colgroup>
+                <tr style="border-bottom:1px solid #e9e9e9;">
+                    <td>
+                        <img src='{ $T.PortletList.PhotoName }' alt="img" style="width: 120px; height: 60px;" />
+                    </td>
+                    <td style="vertical-align:middle;">
+					    <span style="font-weight: bold;">[{ $T.PortletList.TitleName }]</span>
+                    </td>
+                    <td style="padding-right:10px;vertical-align:middle;">
+                        <a href="#" onclick="AddPortletUser.DelPortlet('{ $T.PortletList.CategoryID }','{ $T.PortletList.PortletID }');" class="btn btn-danger">{ $T.PortletList.FileDel }</a>
+                    </td>
+                </tr>
+                <!-- tr>
+                    <td style="padding:0px 0px 0px 3px;" class="txt_sub">{ $T.PortletList.Description }</td>
+                </tr -->
+            </table>
+        </ul>
+    </div>
+   {#else}
+   <div class="blog_cont">
+        <ul>            
+            <table class="blog_cont_table">
+				<caption>Portlet Setting</caption>
+                <colgroup>
+                    <col />
+                </colgroup>
+                <tr><td class="center"><span id="NoListData" /></td></tr>
+            </table>
+        </ul>
+    </div>
+   {#/for}
+</div>
+
+

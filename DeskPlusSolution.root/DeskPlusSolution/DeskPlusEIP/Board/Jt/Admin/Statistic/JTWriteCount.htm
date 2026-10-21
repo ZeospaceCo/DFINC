@@ -1,0 +1,35 @@
+﻿<table class="table_typeA"> 
+<caption>
+    게시물작성
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col  />
+    <col width="120px" />
+    <col width="70px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="r_writeCount_th1"></th>
+    <th class="r_writeCount_th2"></th>
+    <th class="r_writeCount_th3"></th>  
+    <th class="r_writeCount_th4"></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ROW }</td>
+    <td class="center">{ $T.BoardList.DeptName }</td>
+    <td class="center">
+        <a href="#" onclick="javascript:AccountInfo('{ $T.BoardList.WriteUserID }')" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>
+    </td>
+    <td class="center">{ $T.BoardList.ReplyCount }</td>        
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"></td>        
+</tr>
+{#/for} 
+</tbody>       
+ </table>

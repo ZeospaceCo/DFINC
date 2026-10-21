@@ -1,0 +1,50 @@
+﻿<table cellspacing="0" class="table_typeA" border="0" style="min-width:850px;"> 
+<caption>
+    사용자 리스트
+</caption>
+<colgroup>
+    <col width="30px" />
+    <col width="70px" />
+    <col width="110px" />
+    <col width="110px" />
+    <col  />
+    <col width="100px" />
+    <col width="150px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="50px" />
+    <col width="50px" />
+</colgroup>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>   
+        <th class="center" id="r_photo"></th>
+        <th class="center" id="r_login"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_mail"><a class="table_titleA" href="#" onclick="javascript:List.Sort ('Mail')"></a></th>
+        <th class="center" id="r_phone"></th>                            
+        <th class="center" id="r_deptname"><a class="table_viewA" href="#" onclick="javascript:List.Sort ('DeptName')"></a></th>
+        <th class="center" id="r_titlename"></th>
+        <th class="center" id="r_dutyname"><a class="table_120A" href="#" onclick="javascript:List.Sort ('DutyName')"></a></th>     
+        <th class="center" id="r_active"></th>   
+        <th class="center" id="r_UserDeptOrder"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr> 
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.AccountList.UserID }" value="{ $T.AccountList.UserID }" /></td>
+        <td class="center">{ $T.AccountList.PhotoImage }</td>     
+        <td class="center">{ $T.AccountList.LogInID }</td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.UserID }')" style="cursor:pointer" >{ $T.AccountList.Name }</a></td>
+        <td>{ $T.AccountList.Mail }</td>
+        <td class="center">{ $T.AccountList.MobilePhone }</td>
+        <td class="center">{ $T.AccountList.DeptName }</td>
+        <td class="center">{ $T.AccountList.TitleName }</td>
+        <td class="center">{ $T.AccountList.DutyName }</td>
+        <td class="center">{#if $T.AccountList.ActiveUser == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>
+        <td class="center"><input type="text" id="UserDeptOrder_{ $T.AccountList.UserID }" userID="{ $T.AccountList.UserID }" deptID="{ $T.AccountList.DeptID }" size="1" value="{ $T.AccountList.UserDeptOrder }" /></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="11" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

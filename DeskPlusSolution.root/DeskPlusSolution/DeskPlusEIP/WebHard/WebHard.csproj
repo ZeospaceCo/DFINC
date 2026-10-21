@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B5FA0CD-EFC2-4E64-999B-552BF29284EC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.WebHard.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.WebHard.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.2.1507.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Zeospace.DeskPlus.WebHard.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Zeospace.DeskPlus.WebHard.DAL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseControlWebHard.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageWebHard.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSWebHard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\WebHardTree.ascx.cs">
+      <DependentUpon>WebHardTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\WebHardTree.ascx.designer.cs">
+      <DependentUpon>WebHardTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GetWebHardTree.aspx.cs">
+      <DependentUpon>GetWebHardTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetWebHardTree.aspx.designer.cs">
+      <DependentUpon>GetWebHardTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavoriteAdd.aspx.cs">
+      <DependentUpon>FavoriteAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavoriteAdd.aspx.designer.cs">
+      <DependentUpon>FavoriteAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavoriteCopy.aspx.cs">
+      <DependentUpon>FavoriteCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavoriteCopy.aspx.designer.cs">
+      <DependentUpon>FavoriteCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavoriteMove.aspx.cs">
+      <DependentUpon>FavoriteMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavoriteMove.aspx.designer.cs">
+      <DependentUpon>FavoriteMove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FavoriteOrder.aspx.cs">
+      <DependentUpon>FavoriteOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\FavoriteOrder.aspx.designer.cs">
+      <DependentUpon>FavoriteOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListIcon.aspx.cs">
+      <DependentUpon>ListIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListIcon.aspx.designer.cs">
+      <DependentUpon>ListIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListImpo.aspx.cs">
+      <DependentUpon>ListImpo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListImpo.aspx.designer.cs">
+      <DependentUpon>ListImpo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListImpoIcon.aspx.cs">
+      <DependentUpon>ListImpoIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListImpoIcon.aspx.designer.cs">
+      <DependentUpon>ListImpoIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListImpoPreview.aspx.cs">
+      <DependentUpon>ListImpoPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListImpoPreview.aspx.designer.cs">
+      <DependentUpon>ListImpoPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListPreview.aspx.cs">
+      <DependentUpon>ListPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\ListPreview.aspx.designer.cs">
+      <DependentUpon>ListPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\CopyMove.aspx.cs">
+      <DependentUpon>CopyMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\CopyMove.aspx.designer.cs">
+      <DependentUpon>CopyMove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetFolder.aspx.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetFolder.aspx.designer.cs">
+      <DependentUpon>GetFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetFolderTree.aspx.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetFolderTree.aspx.designer.cs">
+      <DependentUpon>GetFolderTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\GetPublicFolder.aspx.cs">
+      <DependentUpon>GetPublicFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\GetPublicFolder.aspx.designer.cs">
+      <DependentUpon>GetPublicFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Folder\TreeAdmin.aspx.cs">
+      <DependentUpon>TreeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Folder\TreeAdmin.aspx.designer.cs">
+      <DependentUpon>TreeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\GlobalString\string.ko.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>string.ko.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Send\GetTarget.aspx.cs">
+      <DependentUpon>GetTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Send\GetTarget.aspx.designer.cs">
+      <DependentUpon>GetTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Send\Send.aspx.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Send\Send.aspx.designer.cs">
+      <DependentUpon>Send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\GetShare.aspx.cs">
+      <DependentUpon>GetShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\GetShare.aspx.designer.cs">
+      <DependentUpon>GetShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trash\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\ListIcon.aspx.cs">
+      <DependentUpon>ListIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trash\ListIcon.aspx.designer.cs">
+      <DependentUpon>ListIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\ListPreview.aspx.cs">
+      <DependentUpon>ListPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trash\ListPreview.aspx.designer.cs">
+      <DependentUpon>ListPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\Attach.aspx.cs">
+      <DependentUpon>Attach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\Attach.aspx.designer.cs">
+      <DependentUpon>Attach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\WebHardAttach.aspx.cs">
+      <DependentUpon>WebHardAttach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\WebHardAttach.aspx.designer.cs">
+      <DependentUpon>WebHardAttach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Content\Download.asmx.cs">
+      <DependentUpon>Download.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\FavoriteCopy.asmx.cs">
+      <DependentUpon>FavoriteCopy.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\FavoriteMove.asmx.cs">
+      <DependentUpon>FavoriteMove.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\FavoriteOrder.asmx.cs">
+      <DependentUpon>FavoriteOrder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListIcon.asmx.cs">
+      <DependentUpon>ListIcon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListImpo.asmx.cs">
+      <DependentUpon>ListImpo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListImpoIcon.asmx.cs">
+      <DependentUpon>ListImpoIcon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListImpoPreview.asmx.cs">
+      <DependentUpon>ListImpoPreview.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Content\ListPreview.asmx.cs">
+      <DependentUpon>ListPreview.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\CopyMove.asmx.cs">
+      <DependentUpon>CopyMove.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\GetFolder.asmx.cs">
+      <DependentUpon>GetFolder.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Folder\Tree.asmx.cs">
+      <DependentUpon>Tree.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Send\GetTarget.asmx.cs">
+      <DependentUpon>GetTarget.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Send\Send.asmx.cs">
+      <DependentUpon>Send.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Share\GetShare.asmx.cs">
+      <DependentUpon>GetShare.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Trash\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Trash\ListIcon.asmx.cs">
+      <DependentUpon>ListIcon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Trash\ListPreview.asmx.cs">
+      <DependentUpon>ListPreview.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Upload\Attach.asmx.cs">
+      <DependentUpon>Attach.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Upload\WebHardAttach.asmx.cs">
+      <DependentUpon>WebHardAttach.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\WebHardTree.ascx" />
+    <Content Include="Common\GetWebHardTree.aspx" />
+    <Content Include="Content\Download.aspx" />
+    <Content Include="Content\FavoriteAdd.aspx" />
+    <Content Include="Content\FavoriteCopy.aspx" />
+    <Content Include="Content\FavoriteMove.aspx" />
+    <Content Include="Content\FavoriteOrder.aspx" />
+    <Content Include="Content\List.aspx" />
+    <Content Include="Content\ListIcon.aspx" />
+    <Content Include="Content\ListImpo.aspx" />
+    <Content Include="Content\ListImpoIcon.aspx" />
+    <Content Include="Content\ListImpoPreview.aspx" />
+    <Content Include="Content\ListPreview.aspx" />
+    <Content Include="Content\Home.aspx" />
+    <Content Include="Content\Search.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Folder\Add.aspx" />
+    <Content Include="Folder\CopyMove.aspx" />
+    <Content Include="Folder\GetFolder.aspx" />
+    <Content Include="Folder\GetFolderTree.aspx" />
+    <Content Include="Folder\GetPublicFolder.aspx" />
+    <Content Include="Folder\Tree.aspx" />
+    <Content Include="Folder\TreeAdmin.aspx" />
+    <Content Include="Js\Content\Download.js" />
+    <Content Include="Js\Content\FavoriteAdd.js" />
+    <Content Include="Js\Content\FavoriteCopy.js" />
+    <Content Include="Js\Content\FavoriteMove.js" />
+    <Content Include="Js\Content\FavoriteOrder.js" />
+    <Content Include="Js\Content\List.js" />
+    <Content Include="Js\Content\ListImpo.js" />
+    <Content Include="Js\Content\ListImpoIcon.js" />
+    <Content Include="Js\Content\ListImpoPreview.js" />
+    <Content Include="Js\Content\ListPreview.js" />
+    <Content Include="Js\Content\ListIcon.js" />
+    <Content Include="Js\Content\Home.js" />
+    <Content Include="Js\Content\Search.js" />
+    <Content Include="Js\Folder\Add.js" />
+    <Content Include="Js\Folder\CopyMove.js" />
+    <Content Include="Js\Folder\GetFolder.js" />
+    <Content Include="Js\Folder\Tree.js" />
+    <Content Include="Js\Folder\GetPublicFolder.js" />
+    <Content Include="Js\Folder\TreeAdmin.js" />
+    <Content Include="Js\Public\Add.js" />
+    <Content Include="Js\Send\GetTarget.js" />
+    <Content Include="Js\Send\Send.js" />
+    <Content Include="Js\Share\GetShare.js" />
+    <Content Include="Js\Trash\List.js" />
+    <Content Include="Js\Trash\ListIcon.js" />
+    <Content Include="Js\Trash\ListPreview.js" />
+    <Content Include="Js\Upload\Attach.js" />
+    <Content Include="Js\Upload\WebHardAttach.js" />
+    <Content Include="Jt\Content\JTList.htm" />
+    <Content Include="Jt\Content\JTListIcon.htm" />
+    <Content Include="Jt\Content\JTListPreview.htm" />
+    <Content Include="Jt\Content\JTListImpoIcon.htm" />
+    <Content Include="Jt\Content\JTListImpo.htm" />
+    <Content Include="Jt\Content\JTListImpoPreview.htm" />
+    <Content Include="Jt\Content\JTListSend.htm" />
+    <Content Include="Jt\Content\JTListIconSend.htm" />
+    <Content Include="Jt\Content\JTListPreviewSend.htm" />
+    <Content Include="Jt\Content\JTListNewPublic.htm" />
+    <Content Include="Jt\Content\JTSearch.htm" />
+    <Content Include="Jt\Content\JTListNewShare.htm" />
+    <Content Include="Jt\Content\JTListNewSend.htm" />
+    <Content Include="Jt\Trash\JTList.htm" />
+    <Content Include="Jt\Trash\JTListIcon.htm" />
+    <Content Include="Jt\Trash\JTListPreview.htm" />
+    <Content Include="Jt\Upload\JTList.htm" />
+    <Content Include="Public\Add.aspx" />
+    <Content Include="Send\GetTarget.aspx" />
+    <Content Include="Send\Send.aspx" />
+    <Content Include="Share\GetShare.aspx" />
+    <Content Include="Trash\List.aspx" />
+    <Content Include="Trash\ListIcon.aspx" />
+    <Content Include="Trash\ListPreview.aspx" />
+    <Content Include="Upload\Attach.aspx" />
+    <Content Include="Upload\WebHardAttach.aspx" />
+    <Content Include="Ws\Content\Download.asmx" />
+    <Content Include="Ws\Content\FavoriteCopy.asmx" />
+    <Content Include="Ws\Content\FavoriteMove.asmx" />
+    <Content Include="Ws\Content\FavoriteOrder.asmx" />
+    <Content Include="Ws\Content\List.asmx" />
+    <Content Include="Ws\Content\ListIcon.asmx" />
+    <Content Include="Ws\Content\ListImpo.asmx" />
+    <Content Include="Ws\Content\ListImpoIcon.asmx" />
+    <Content Include="Ws\Content\ListImpoPreview.asmx" />
+    <Content Include="Ws\Content\ListPreview.asmx" />
+    <Content Include="Ws\Folder\CopyMove.asmx" />
+    <Content Include="Ws\Folder\GetFolder.asmx" />
+    <Content Include="Ws\Folder\Tree.asmx" />
+    <Content Include="Ws\Send\GetTarget.asmx" />
+    <Content Include="Ws\Send\Send.asmx" />
+    <Content Include="Ws\Share\GetShare.asmx" />
+    <Content Include="Ws\Trash\List.asmx" />
+    <Content Include="Ws\Trash\ListIcon.asmx" />
+    <Content Include="Ws\Trash\ListPreview.asmx" />
+    <Content Include="Ws\Upload\Attach.asmx" />
+    <Content Include="Ws\Upload\WebHardAttach.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\WebHardProject\Zeospace.DeskPlus.WebHard.BE\Zeospace.DeskPlus.WebHard.BE.csproj">
+      <Project>{11AEE5BA-64F2-428C-852A-02D2C1248486}</Project>
+      <Name>Zeospace.DeskPlus.WebHard.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\WebHardProject\Zeospace.DeskPlus.WebHard.BLL\Zeospace.DeskPlus.WebHard.BLL.csproj">
+      <Project>{27C6579F-5BB0-4A47-A5D3-762B10D9D2AD}</Project>
+      <Name>Zeospace.DeskPlus.WebHard.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>string.ko.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3099</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/WebHard</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

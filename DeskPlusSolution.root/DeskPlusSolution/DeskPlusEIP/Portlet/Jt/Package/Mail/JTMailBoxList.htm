@@ -1,0 +1,15 @@
+﻿
+<ul>
+{#foreach $T as List}
+   <li>
+       <span class="list-titlebig">	
+		 <a href="{ $T.List.hrefURL }" target="mailWin" style="cursor:pointer" onclick="Mail_Popup(this,'{ $T.List.Mail_sn }');">
+			{ $T.List.Mail_subject }        
+		 </a>
+        </span>
+		<span class="list-date">{ $T.List.Create_time }</span>
+    </li>    
+{#else}     
+    <li><span class="NoListData"></span></li>            
+{#/for}  
+</ul> 

@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessRight" xml:space="preserve">
+    <value>Access rights</value>
+  </data>
+  <data name="AccessRight1" xml:space="preserve">
+    <value>Apps (allowed devices) available</value>
+  </data>
+  <data name="AccessRight2" xml:space="preserve">
+    <value>App + Web available</value>
+  </data>
+  <data name="AccessRight3" xml:space="preserve">
+    <value>Not available</value>
+  </data>
+  <data name="AccountDept" xml:space="preserve">
+    <value>Org chart</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>Used or not</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>Unavailable</value>
+  </data>
+  <data name="Alarm1" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Alarm2" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>Alarm setting</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>Alarm cycle</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>Authorized date</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>Auth</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>Have been processed</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmAccessReject" xml:space="preserve">
+    <value>Do you want to disable it?</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ConfirmApprove" xml:space="preserve">
+    <value>Do you want to approve?</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="ConfirmReject" xml:space="preserve">
+    <value>Do you want to reject?</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DelNoMobile" xml:space="preserve">
+    <value>There is nothing to delete</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>Device name</value>
+  </data>
+  <data name="Duty" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="EnvSetting" xml:space="preserve">
+    <value>Default setting</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Save location</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>Login type</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>ID+PW</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>PW</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>Automatic approve</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>Mail address</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>Mobile management</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Minute</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="MobileAuth" xml:space="preserve">
+    <value>Mobile auth</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>Mobile info</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>Mobile phone</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="MobileUserInfo" xml:space="preserve">
+    <value>User info</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>Office phone</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Is being processed. Wait a moment.</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error occurred during processing. Contact the administrator</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="ReqApprove" xml:space="preserve">
+    <value>Request approve</value>
+  </data>
+  <data name="ReqName" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="ReqReject" xml:space="preserve">
+    <value>Disapproved</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Request date</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>Select a list</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>Unique key</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>E-Approval</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="Coop" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>Resource management</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Weekly report</value>
+  </data>
+  <data name="AddAuth" xml:space="preserve">
+    <value>Add authority</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="AuthAccessControl" xml:space="preserve">
+    <value>Authority accessment control</value>
+  </data>
+  <data name="AuthName" xml:space="preserve">
+    <value>Authorization name</value>
+  </data>
+  <data name="MenuAuth" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="MenuManagement" xml:space="preserve">
+    <value>Menu management</value>
+  </data>
+  <data name="RegAccessAuth" xml:space="preserve">
+    <value>Register access</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>Sortation</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>Please set authority.</value>
+  </data>
+  <data name="ReqUse" xml:space="preserve">
+    <value>Apprvoe user</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="AppApprove" xml:space="preserve">
+    <value>App approve</value>
+  </data>
+  <data name="AppApprove1" xml:space="preserve">
+    <value>Admin approve</value>
+  </data>
+  <data name="AppApprove2" xml:space="preserve">
+    <value>Automatic approve</value>
+  </data>
+  <data name="Desc1" xml:space="preserve">
+    <value>Default value that is assigned to the user when the mobile first accesses.</value>
+  </data>
+  <data name="Desc2" xml:space="preserve">
+    <value>Change the settings for all devices.</value>
+  </data>
+  <data name="ListSetting" xml:space="preserve">
+    <value>Change setting</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AuthGroup" xml:space="preserve">
+    <value>Disapproved user(dept)</value>
+  </data>
+  <data name="CheckUserGroup" xml:space="preserve">
+    <value>Select user or dept</value>
+  </data>
+  <data name="Desc3" xml:space="preserve">
+    <value>Disabled users and departments</value>
+  </data>
+  <data name="HearderName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, File</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="Portal" xml:space="preserve">
+    <value>
+Main setting</value>
+  </data>
+  <data name="MenuGuide" xml:space="preserve">
+    <value>The top and bottom portlets are configured in the mobile main.</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Portlet" xml:space="preserve">
+    <value>Portlet Name</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>lower</value>
+  </data>
+  <data name="BottomSet" xml:space="preserve">
+    <value>More than one bottom is specified.</value>
+  </data>
+  <data name="NoPortlet" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="TopSet" xml:space="preserve">
+    <value>More than one top is specified.</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>Notification box ON must be set Push can be set</value>
+  </data>
+  <data name="PushSend" xml:space="preserve">
+    <value>Send notification(Push)</value>
+  </data>
+  <data name="AppN" xml:space="preserve">
+    <value>app Not</value>
+  </data>
+  <data name="AppY" xml:space="preserve">
+    <value>app install</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>Section header</value>
+  </data>
+  <data name="PushAdd" xml:space="preserve">
+    <value>Send notification</value>
+  </data>
+  <data name="PushList" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="ReceiveName" xml:space="preserve">
+    <value>Receiver</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendName" xml:space="preserve">
+    <value>Dispatcher</value>
+  </data>
+  <data name="SendTime" xml:space="preserve">
+    <value>Time spent</value>
+  </data>
+  <data name="TargetUrl" xml:space="preserve">
+    <value>Shortcuts</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>Specify the user</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>Please enter content</value>
+  </data>
+  <data name="InputHeader" xml:space="preserve">
+    <value>Please enter a heading</value>
+  </data>
+  <data name="InputReceive" xml:space="preserve">
+    <value>Please enter a recipient</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Reg-date</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>Board List</value>
+  </data>
+  <data name="MsgBoardAuth" xml:space="preserve">
+    <value>Set as a user who has permission to view posts</value>
+  </data>
+  <data name="MsgKey" xml:space="preserve">
+    <value>User (dept) ID values cannot be distinguished.</value>
+  </data>
+  <data name="MsgNoUser" xml:space="preserve">
+    <value>There are no users (departments)</value>
+  </data>
+  <data name="MsgOverlap" xml:space="preserve">
+    <value>There is a user (department) with the same name, please select as autocomplete</value>
+  </data>
+  <data name="MsgSendAlarm" xml:space="preserve">
+    <value>Notifications have been sent.</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>Select a title</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Enter reg-date</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than end date.</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>DocView</value>
+  </data>
+</root>

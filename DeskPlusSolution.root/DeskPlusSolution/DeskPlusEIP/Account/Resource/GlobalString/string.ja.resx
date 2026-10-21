@@ -1,0 +1,1578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Academic" xml:space="preserve">
+    <value>学歴</value>
+  </data>
+  <data name="ActiveNo" xml:space="preserve">
+    <value>ノー</value>
+  </data>
+  <data name="ActiveOnOff" xml:space="preserve">
+    <value>有効化/無効化</value>
+  </data>
+  <data name="ActiveYes" xml:space="preserve">
+    <value>ある</value>
+  </data>
+  <data name="ActivityDept" xml:space="preserve">
+    <value>アクティブにするかどうか</value>
+  </data>
+  <data name="AddBaseInfo" xml:space="preserve">
+    <value>人事ファイル情報</value>
+  </data>
+  <data name="Admin_BatchManagerContent_MSG_ModChk" xml:space="preserve">
+    <value>あなたがそれを変更してもよろしいですか？</value>
+  </data>
+  <data name="Admin_BatchManagerList_BatchManager" xml:space="preserve">
+    <value>一元管理の組織</value>
+  </data>
+  <data name="Admin_CompanyManager_btnAdd" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="Admin_CompanyManager_btnDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Admin_CompanyManager_btnSubmit" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptDown" xml:space="preserve">
+    <value>以下の組織への移行</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptUp" xml:space="preserve">
+    <value>モバイル上記組織へ</value>
+  </data>
+  <data name="Admin_CompanyManager_cbtnSearchZipCode" xml:space="preserve">
+    <value>郵便番号を探す</value>
+  </data>
+  <data name="Admin_DeptManager_btnAdd" xml:space="preserve">
+    <value>関係機関を追加</value>
+  </data>
+  <data name="Admin_DeptManager_btnDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearch" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearchZipCode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Admin_DeptManager_cbActive" xml:space="preserve">
+    <value>アクティベーション</value>
+  </data>
+  <data name="Admin_DeptManager_cbIsFPDept" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Admin_DeptManager_cbPassword" xml:space="preserve">
+    <value>Passwordウィンドウ</value>
+  </data>
+  <data name="Admin_DeptManager_cbRoot" xml:space="preserve">
+    <value>根の組織</value>
+  </data>
+  <data name="Admin_DeptManager_ChangeDept" xml:space="preserve">
+    <value>選択したユーザを移動するには？</value>
+  </data>
+  <data name="Admin_DeptManager_DeptManager" xml:space="preserve">
+    <value>組織と管理</value>
+  </data>
+  <data name="Admin_DeptManager_ltAddress" xml:space="preserve">
+    <value>アドレス</value>
+  </data>
+  <data name="Admin_DeptManager_ltDeptCode" xml:space="preserve">
+    <value>リンクされたコード</value>
+  </data>
+  <data name="Admin_DeptManager_ltDescription" xml:space="preserve">
+    <value>説明する</value>
+  </data>
+  <data name="Admin_DeptManager_ltEnglishName" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Admin_DeptManager_ltFax" xml:space="preserve">
+    <value>ファックス</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupInform" xml:space="preserve">
+    <value>情報を整理する</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupList" xml:space="preserve">
+    <value>組織のリスト</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupMember" xml:space="preserve">
+    <value>組織のメンバー</value>
+  </data>
+  <data name="Admin_DeptManager_ltHomePage" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="Admin_DeptManager_ltMove" xml:space="preserve">
+    <value>組織</value>
+  </data>
+  <data name="Admin_DeptManager_ltName" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Admin_DeptManager_ltParentName" xml:space="preserve">
+    <value>母体</value>
+  </data>
+  <data name="Admin_DeptManager_ltPhone" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="Admin_DeptManager_ltSecurityLogIn" xml:space="preserve">
+    <value>安全性認定</value>
+  </data>
+  <data name="Admin_DeptManager_ltShortName" xml:space="preserve">
+    <value>略称</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelChk" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelDeptTree" xml:space="preserve">
+    <value>あなたは、ユーザーの組織を削除することはできません</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelFAILURE" xml:space="preserve">
+    <value>削除エラー。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelSUCCESS" xml:space="preserve">
+    <value>削除されました。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_FAILURE" xml:space="preserve">
+    <value>エラー処理。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_NoSelectedManyUser" xml:space="preserve">
+    <value>あなたは、大多数のユーザーを選択することはできません。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SelectedUserTree" xml:space="preserve">
+    <value>削除するユーザを選択してください</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTERROR" xml:space="preserve">
+    <value>検索条件を入力してください。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTGROUPERROR" xml:space="preserve">
+    <value>組織を選択してください。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTLENGTHERROR" xml:space="preserve">
+    <value>つ以上の単語の前に、検索してください。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTTREE" xml:space="preserve">
+    <value>親組織を選択してください</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SubDeptTreeYN" xml:space="preserve">
+    <value>あなたが組織の下部組織を削除することはできません</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SUCCESS" xml:space="preserve">
+    <value>処理された。</value>
+  </data>
+  <data name="Admin_DeptManager_RootDept" xml:space="preserve">
+    <value>最高セクター</value>
+  </data>
+  <data name="Admin_UserContent_MSG_Checkbox" xml:space="preserve">
+    <value>削除したいディレクトリを選択してください。</value>
+  </data>
+  <data name="Admin_UserList_cbsUserAdd" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="Admin_UserList_cbsUserDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Admin_UserList_cbtnSearch" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Admin_UserList_MSGDel" xml:space="preserve">
+    <value>削除したいユーザを持つ。\ Nの非常勤削除されたユーザー情報で情報を整理削除します\ nあなたはそれを削除しますか？</value>
+  </data>
+  <data name="Admin_UserList_MSG_BtnSelect" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="Admin_UserList_MSG_DelUserERROR" xml:space="preserve">
+    <value>削除エラーが発生しました。</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDeptName" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDutyName" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTLoginID" xml:space="preserve">
+    <value>ログインユーザー名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTMobilePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTTitleName" xml:space="preserve">
+    <value>デューティ名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTUserDeptOrder" xml:space="preserve">
+    <value>オーダー</value>
+  </data>
+  <data name="Admin_UserList_UserManager" xml:space="preserve">
+    <value>ユーザー管理</value>
+  </data>
+  <data name="Admin_UserManager_ActiveUser" xml:space="preserve">
+    <value>ユーザーが有効にする必要があり選択してください。</value>
+  </data>
+  <data name="Admin_UserManager_cbsExtentionConfirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserConfirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserList" xml:space="preserve">
+    <value>ユーザー一覧</value>
+  </data>
+  <data name="Admin_UserManager_cbtnBirthSearchZipCode" xml:space="preserve">
+    <value>住所を見つける</value>
+  </data>
+  <data name="Admin_UserManager_cbtnHomeSearchZipCode" xml:space="preserve">
+    <value>住所を見つける</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoAdd" xml:space="preserve">
+    <value>写真を追加します</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoDel" xml:space="preserve">
+    <value>写真を削除</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealAdd" xml:space="preserve">
+    <value>チョップ追加</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealDel" xml:space="preserve">
+    <value>シールを削除</value>
+  </data>
+  <data name="Admin_UserManager_cbtnUserDeptAdd" xml:space="preserve">
+    <value>割り当てられたグループ</value>
+  </data>
+  <data name="Admin_UserManager_cbxVirtualDept" xml:space="preserve">
+    <value>仮想部門</value>
+  </data>
+  <data name="Admin_UserManager_Font" xml:space="preserve">
+    <value>書き込み</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader2" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader3" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader4" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader5" xml:space="preserve">
+    <value>オーダー</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader6" xml:space="preserve">
+    <value>郵便</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader7" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader8" xml:space="preserve">
+    <value>除外する</value>
+  </data>
+  <data name="Admin_UserManager_Literal1" xml:space="preserve">
+    <value>シール情報</value>
+  </data>
+  <data name="Admin_UserManager_Literal2" xml:space="preserve">
+    <value>組織図</value>
+  </data>
+  <data name="Admin_UserManager_Literal3" xml:space="preserve">
+    <value>情報を整理する</value>
+  </data>
+  <data name="Admin_UserManager_ltAnniversary" xml:space="preserve">
+    <value>メモリアルデー</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseDept" xml:space="preserve">
+    <value>組織の基本的な</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseMenu" xml:space="preserve">
+    <value>ホームに設定</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthAddress" xml:space="preserve">
+    <value>自宅の住所</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthDay" xml:space="preserve">
+    <value>誕生日</value>
+  </data>
+  <data name="Admin_UserManager_ltChineseName" xml:space="preserve">
+    <value>中国名</value>
+  </data>
+  <data name="Admin_UserManager_ltCurrentDept" xml:space="preserve">
+    <value>組織的な所属</value>
+  </data>
+  <data name="Admin_UserManager_ltDescription" xml:space="preserve">
+    <value>ビジネスを務め</value>
+  </data>
+  <data name="Admin_UserManager_ltDesignStyle" xml:space="preserve">
+    <value>皮膚</value>
+  </data>
+  <data name="Admin_UserManager_ltEmployeeNumber" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="Admin_UserManager_ltEnglishName" xml:space="preserve">
+    <value>英語名</value>
+  </data>
+  <data name="Admin_UserManager_ltExtensionOfficePhone" xml:space="preserve">
+    <value>内部</value>
+  </data>
+  <data name="Admin_UserManager_ltFax" xml:space="preserve">
+    <value>ファックス</value>
+  </data>
+  <data name="Admin_UserManager_ltHomeAddress" xml:space="preserve">
+    <value>自宅の住所</value>
+  </data>
+  <data name="Admin_UserManager_ltHomePhone" xml:space="preserve">
+    <value>自宅の電話</value>
+  </data>
+  <data name="Admin_UserManager_ltJoinDate" xml:space="preserve">
+    <value>当日参加</value>
+  </data>
+  <data name="Admin_UserManager_ltLoginID" xml:space="preserve">
+    <value>ユーザーID</value>
+  </data>
+  <data name="Admin_UserManager_ltMail" xml:space="preserve">
+    <value>基本的な電子メール</value>
+  </data>
+  <data name="Admin_UserManager_ltMailPassword" xml:space="preserve">
+    <value>メールのパスワード</value>
+  </data>
+  <data name="Admin_UserManager_ltMobilePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Admin_UserManager_ltName" xml:space="preserve">
+    <value>名前（韓国語）</value>
+  </data>
+  <data name="Admin_UserManager_ltOfficePhone" xml:space="preserve">
+    <value>オフィスの電話</value>
+  </data>
+  <data name="Admin_UserManager_ltPassword" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Admin_UserManager_ltPasswordConfirm" xml:space="preserve">
+    <value>パスワード 確認する</value>
+  </data>
+  <data name="Admin_UserManager_ltPictureType" xml:space="preserve">
+    <value>ピクチャー、シールのみJPG形式（ピクチャ：94 * 124 /スタンプ：50 * 50）</value>
+  </data>
+  <data name="Admin_UserManager_ltPreferredLanguage" xml:space="preserve">
+    <value>基本的な言語を設定する</value>
+  </data>
+  <data name="Admin_UserManager_ltPrivateQuota" xml:space="preserve">
+    <value>個人的な使用容量</value>
+  </data>
+  <data name="Admin_UserManager_ltRegistrationNumber" xml:space="preserve">
+    <value>IDカード番号</value>
+  </data>
+  <data name="Admin_UserManager_ltSex" xml:space="preserve">
+    <value>ジェンダー</value>
+  </data>
+  <data name="Admin_UserManager_ltTitle1" xml:space="preserve">
+    <value>写真に関する情報</value>
+  </data>
+  <data name="Admin_UserManager_ltWeddingAnniversary" xml:space="preserve">
+    <value>結婚記念日</value>
+  </data>
+  <data name="Admin_UserManager_msgIsNumeric" xml:space="preserve">
+    <value>数字のみを入力してください</value>
+  </data>
+  <data name="Admin_UserManager_MSG_DelConfirm" xml:space="preserve">
+    <value>あなたがこれを削除することを確認？</value>
+  </data>
+  <data name="Admin_UserManager_MSG_FAILURE" xml:space="preserve">
+    <value>タスクの実行中にエラーが発生しました。</value>
+  </data>
+  <data name="Admin_UserManager_MSG_IsBelongDept" xml:space="preserve">
+    <value>選択した部門の一部</value>
+  </data>
+  <data name="Admin_UserManager_MSG_NotSelectRootNode" xml:space="preserve">
+    <value>部門を選択してください。</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SelectedDeptTree" xml:space="preserve">
+    <value>組織を選択してください。</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SUCCESS" xml:space="preserve">
+    <value>処分</value>
+  </data>
+  <data name="Admin_UserManager_NoUse" xml:space="preserve">
+    <value>使用中である</value>
+  </data>
+  <data name="Admin_UserManager_Password" xml:space="preserve">
+    <value>文字と数字のみを入力してください</value>
+  </data>
+  <data name="Admin_UserManager_RequireCodes" xml:space="preserve">
+    <value>コー​​ドを入力してください（オフィス/位置）</value>
+  </data>
+  <data name="Admin_UserManager_rfvMailID" xml:space="preserve">
+    <value>入力メールIDを喜ばせるために</value>
+  </data>
+  <data name="Admin_UserManager_tabs0" xml:space="preserve">
+    <value>基本情報</value>
+  </data>
+  <data name="Admin_UserManager_tabs1" xml:space="preserve">
+    <value>詳細については、</value>
+  </data>
+  <data name="Admin_UserManager_tabs2" xml:space="preserve">
+    <value>情報を整理する</value>
+  </data>
+  <data name="Admin_UserManager_tabs3" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="Admin_UserManager_Use" xml:space="preserve">
+    <value>あなたが使用することができます</value>
+  </data>
+  <data name="Admin_UserManager_UserManager" xml:space="preserve">
+    <value>ユーザー情報</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_auth" xml:space="preserve">
+    <value>ユーザーがアクセス権を持っていません。</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_lunar" xml:space="preserve">
+    <value>太陰暦</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_RetireDate" xml:space="preserve">
+    <value>リトリートシェリ</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_Validation" xml:space="preserve">
+    <value>ユーザの基本情報を入力すると、詳細を入力することができます。</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_WeddingDate" xml:space="preserve">
+    <value>結婚記念日</value>
+  </data>
+  <data name="Admin_UserRegister_Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Admin_UserRegister_DoubleCheck" xml:space="preserve">
+    <value>繰り返しを確認</value>
+  </data>
+  <data name="Admin_UserRegister_PasswordChange" xml:space="preserve">
+    <value>Login パスワードの変更</value>
+  </data>
+  <data name="Admin_UserRegister_MailPasswordChange" xml:space="preserve">
+    <value>Mail パスワードの変更</value>
+  </data>
+  <data name="Admin_UserRegister_Save" xml:space="preserve">
+    <value>ストレージ</value>
+  </data>
+  <data name="AlertExitParentDept" xml:space="preserve">
+    <value>下位部門の存在に起因して、この項目を削除することはできません。</value>
+  </data>
+  <data name="AlertExitUserByDeptID" xml:space="preserve">
+    <value>部門は、ユーザーが削除することはできません使用するために存在します。</value>
+  </data>
+  <data name="AllPhoneNumber" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="AndSearch" xml:space="preserve">
+    <value>を除く検索が含まれています</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用可能</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>ログインの日付を入力してください</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>能力</value>
+  </data>
+  <data name="Authentication_SignIn_MSG_LoginError" xml:space="preserve">
+    <value>あなたのログイン名またはパスワードを確認してください</value>
+  </data>
+  <data name="Authentication_SignIn_rfvLoginID" xml:space="preserve">
+    <value>あなたのユーザー名を入力してください</value>
+  </data>
+  <data name="Authentication_SignIn_rfvPassword" xml:space="preserve">
+    <value>パスワードを入力してください</value>
+  </data>
+  <data name="AuthLevel" xml:space="preserve">
+    <value>権限/グレード</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>権限リスト</value>
+  </data>
+  <data name="BaseMail" xml:space="preserve">
+    <value>デフォルトのメール</value>
+  </data>
+  <data name="Base_Authentication_Default_MSG_USBKey" xml:space="preserve">
+    <value>USBキー情報とシステムソフトウェアユーザ情報が矛盾しています。</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="BasicAddInfo" xml:space="preserve">
+    <value>人事ファイル情報</value>
+  </data>
+  <data name="BasicLanguage" xml:space="preserve">
+    <value>デフォルトの言語</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>パートタイム</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>再生する事業</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>カード</value>
+  </data>
+  <data name="CareerInfo" xml:space="preserve">
+    <value>経験事項</value>
+  </data>
+  <data name="CareerInfoStatus" xml:space="preserve">
+    <value>経験はステータスを重要</value>
+  </data>
+  <data name="CareerPeriod" xml:space="preserve">
+    <value>中に経験</value>
+  </data>
+  <data name="ChangeBasicDept" xml:space="preserve">
+    <value>デフォルトのセクタを変更する</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>部門の変更</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>注文の変更</value>
+  </data>
+  <data name="ChangeUpperDept" xml:space="preserve">
+    <value>高い権限を変更</value>
+  </data>
+  <data name="CheckBaseMail" xml:space="preserve">
+    <value>デフォルトのメールを指定</value>
+  </data>
+  <data name="CheckChangeDeptUserList" xml:space="preserve">
+    <value>ユーザーIT部門のリストを変更することを選択してください。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>削除したいリストを選択してください。</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>リストを選択してください。</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>ログイン繰り返し確認を選択してください。</value>
+  </data>
+  <data name="CheckMailRepetition" xml:space="preserve">
+    <value>確認を繰り返したメッセージを選択してください。</value>
+  </data>
+  <data name="CheckMember" xml:space="preserve">
+    <value>ビューには、メンバーが所属</value>
+  </data>
+  <data name="CheckMoveBaseDept" xml:space="preserve">
+    <value>移動したい基本的な部門を選択してください。</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国語</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>管理の位置/責任</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>コー​​ド</value>
+  </data>
+  <data name="Cohabitation" xml:space="preserve">
+    <value>共生する</value>
+  </data>
+  <data name="Common_revIsNumber" xml:space="preserve">
+    <value>*数値のみを入力するように許可されている！</value>
+  </data>
+  <data name="Common_revSpecialChar" xml:space="preserve">
+    <value>*あなたは、特殊文字を使用することはできません！</value>
+  </data>
+  <data name="Common_rfvInput" xml:space="preserve">
+    <value>*入力してください</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>会社名</value>
+  </data>
+  <data name="CompleteCategoryOrders" xml:space="preserve">
+    <value>ソート順が変更されます。</value>
+  </data>
+  <data name="CompleteCheck" xml:space="preserve">
+    <value>卒業前と後</value>
+  </data>
+  <data name="CompleteDelete" xml:space="preserve">
+    <value>削除されました。</value>
+  </data>
+  <data name="CompleteModify" xml:space="preserve">
+    <value>に変更されました</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>順序が変更されます。</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="CompleteSave" xml:space="preserve">
+    <value>保存しました。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>反映する</value>
+  </data>
+  <data name="CourseName" xml:space="preserve">
+    <value>コー​​ス名</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>学位</value>
+  </data>
+  <data name="DeleteDept" xml:space="preserve">
+    <value>それを削除していい部署？</value>
+  </data>
+  <data name="DeleteDuty" xml:space="preserve">
+    <value>あなたが記事を削除してもよろしいですか？</value>
+  </data>
+  <data name="DeleteInfo" xml:space="preserve">
+    <value>あなたがメールを持つユーザーを削除しますか？</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>あなたが記事を削除してもよろしいですか？</value>
+  </data>
+  <data name="DeleteUserInfo" xml:space="preserve">
+    <value>あなたは、ユーザーを削除してもよろしいですか？</value>
+  </data>
+  <data name="DenyConfirm" xml:space="preserve">
+    <value>処理エラーが発生した後。</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>セクター情報</value>
+  </data>
+  <data name="DeptOrder" xml:space="preserve">
+    <value>部門順</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>詳細な知性</value>
+  </data>
+  <data name="DutyDescription" xml:space="preserve">
+    <value>職務記述書</value>
+  </data>
+  <data name="DutyOrder" xml:space="preserve">
+    <value>職務記述書</value>
+  </data>
+  <data name="DutyTree" xml:space="preserve">
+    <value>責任ツリー</value>
+  </data>
+  <data name="EducationInfo" xml:space="preserve">
+    <value>教育情報</value>
+  </data>
+  <data name="EducationInfoStatus" xml:space="preserve">
+    <value>の教育と知性のステータス</value>
+  </data>
+  <data name="EmployeeSearch" xml:space="preserve">
+    <value>表示する社員</value>
+  </data>
+  <data name="EnableUse" xml:space="preserve">
+    <value>使用するか、しない</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>処理は、エラーが発生しました。</value>
+  </data>
+  <data name="FaceBook" xml:space="preserve">
+    <value>フェイスブック</value>
+  </data>
+  <data name="FamilyInfo" xml:space="preserve">
+    <value>家族情報</value>
+  </data>
+  <data name="FamilyInfoState" xml:space="preserve">
+    <value>家族情報のステータス</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>一日の終わり</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>ディレクトリに移動します。</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>Googleカレンダー</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>グレード</value>
+  </data>
+  <data name="Graduation" xml:space="preserve">
+    <value>卒業前と後</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="ImpossibleModify" xml:space="preserve">
+    <value>変更することはできません</value>
+  </data>
+  <data name="InputBaseMail" xml:space="preserve">
+    <value>デフォルトの電子メールを入力してください</value>
+  </data>
+  <data name="InputChangedPassword" xml:space="preserve">
+    <value>*パスワードを入力したときに変更する必要があります。</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>あなたのログインIDを入力してください。</value>
+  </data>
+  <data name="InputMailPassword" xml:space="preserve">
+    <value>あなたの電子メールのパスワードを入力してください。</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>名前を入力してください。</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>内の分類</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本人</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>職業</value>
+  </data>
+  <data name="JobClass" xml:space="preserve">
+    <value>産業の種類</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓国語</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="License_Error" xml:space="preserve">
+    <value>ライセンスエラー：いいえライセンス。</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>特別なテキストは、セキュリティ上の脆弱性攻撃に制限されています。</value>
+  </data>
+  <data name="LinkageInfo" xml:space="preserve">
+    <value>知性のリンケージ</value>
+  </data>
+  <data name="LinkOutsideAccount" xml:space="preserve">
+    <value>SNSの情報管理</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>E-mailアドレス</value>
+  </data>
+  <data name="MailDomain" xml:space="preserve">
+    <value>メールドメイン名</value>
+  </data>
+  <data name="MailID" xml:space="preserve">
+    <value>メールのユーザ名</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>専門</value>
+  </data>
+  <data name="ManagementDept" xml:space="preserve">
+    <value>セクター管理</value>
+  </data>
+  <data name="ManagementDuty" xml:space="preserve">
+    <value>管理者の責任</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>ポジション管理</value>
+  </data>
+  <data name="MeToday" xml:space="preserve">
+    <value>私は今日の午前</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_AdditionalJob" xml:space="preserve">
+    <value>チーフ</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_VirtualTree" xml:space="preserve">
+    <value>仮想組織</value>
+  </data>
+  <data name="MoveUserDeptOrder" xml:space="preserve">
+    <value>ユーザシーケンスの変更</value>
+  </data>
+  <data name="MultiDomain" xml:space="preserve">
+    <value>メール情報</value>
+  </data>
+  <data name="MultiDomainState" xml:space="preserve">
+    <value>メールの状態</value>
+  </data>
+  <data name="MultilingualName" xml:space="preserve">
+    <value>多国籍企業名</value>
+  </data>
+  <data name="MyPhoto" xml:space="preserve">
+    <value>写真</value>
+  </data>
+  <data name="NaverBlog" xml:space="preserve">
+    <value>ネイバーブログ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容がありません。</value>
+  </data>
+  <data name="NotApplySameUpper" xml:space="preserve">
+    <value>セクターや親部門を変更する必要は同じにすることはできません。</value>
+  </data>
+  <data name="NotCheckUser" xml:space="preserve">
+    <value>ユーザーを選択します。ユーザーを選択してください。</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="onemonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>一週間</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>ログインは繰り返しません。</value>
+  </data>
+  <data name="OnlyOneMail" xml:space="preserve">
+    <value>電子メールは繰返さない。</value>
+  </data>
+  <data name="OrSearch" xml:space="preserve">
+    <value>除外する検索</value>
+  </data>
+  <data name="OutsideInterface" xml:space="preserve">
+    <value>外部リンケージ</value>
+  </data>
+  <data name="ParentCode" xml:space="preserve">
+    <value>優れたコーディング</value>
+  </data>
+  <data name="ParentOption" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="PrivateCapacity" xml:space="preserve">
+    <value>個人の能力</value>
+  </data>
+  <data name="Private_AccountInfo_ltDuty" xml:space="preserve">
+    <value>責任</value>
+  </data>
+  <data name="Private_AccountInfo_ltMail" xml:space="preserve">
+    <value>メールボックス</value>
+  </data>
+  <data name="Private_AccountInfo_ltMobile" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Private_AccountInfo_ltOfficePhone" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="Private_AccountInfo_ltTitle" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserDept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Private_MailDomain_Title" xml:space="preserve">
+    <value>電子メールアカウント</value>
+  </data>
+  <data name="Private_MyInfoMenu_hlExit" xml:space="preserve">
+    <value>やめる</value>
+  </data>
+  <data name="Private_MyInfo_FaxEx" xml:space="preserve">
+    <value>（例：021001000）</value>
+  </data>
+  <data name="Private_MyInfo_ltBaseDept" xml:space="preserve">
+    <value>組織の基本的な</value>
+  </data>
+  <data name="Private_MyInfo_ltExtensionOfficePhoneEx" xml:space="preserve">
+    <value>（例：123）</value>
+  </data>
+  <data name="Private_MyInfo_ltHomePhoneEx" xml:space="preserve">
+    <value>（例：021002000）</value>
+  </data>
+  <data name="Private_MyInfo_MSG_AlertReLogIn" xml:space="preserve">
+    <value>環境の該当する部分（​​基本的な言語の基本/セクタ）、再ログインする必要があります。</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModNo" xml:space="preserve">
+    <value>処理エラー。</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModOK" xml:space="preserve">
+    <value>処分</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ReLogIn" xml:space="preserve">
+    <value>新しい設定を適用するために、もう一度ログインしてください。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>タスクの実行中にエラーが発生しました。管理者に連絡してください。</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>言葉の異常</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>小文字</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>デジタル</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>パスワードが条件を満たしていない</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>特殊なテキスト</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>資本</value>
+  </data>
+  <data name="RegistContact" xml:space="preserve">
+    <value>お問合わせログイン</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="RegisterDeptName" xml:space="preserve">
+    <value>部署名を入力してください。</value>
+  </data>
+  <data name="RegisterDutyName" xml:space="preserve">
+    <value>名前の職務を入力してください</value>
+  </data>
+  <data name="RegisterTitleName" xml:space="preserve">
+    <value>ジョブのタイトルを入力してください。</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>関係</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>このログインは繰り返すことができます</value>
+  </data>
+  <data name="RepetitionMail" xml:space="preserve">
+    <value>メッセージを繰り返すことができる</value>
+  </data>
+  <data name="Reward" xml:space="preserve">
+    <value>賞、ペナルティ</value>
+  </data>
+  <data name="RewardDate" xml:space="preserve">
+    <value>賞罰日</value>
+  </data>
+  <data name="RewardInfo" xml:space="preserve">
+    <value>賞罰事項</value>
+  </data>
+  <data name="RewardInfoState" xml:space="preserve">
+    <value>現状の問題として、報酬と罰</value>
+  </data>
+  <data name="RewardPerson" xml:space="preserve">
+    <value>報酬と罰のスタッフ</value>
+  </data>
+  <data name="RewardType" xml:space="preserve">
+    <value>賞罰種</value>
+  </data>
+  <data name="ScholarshipInfo" xml:space="preserve">
+    <value>アカデミック事項</value>
+  </data>
+  <data name="ScholarshipInfoState" xml:space="preserve">
+    <value>学術的事項の状況</value>
+  </data>
+  <data name="SchoolName" xml:space="preserve">
+    <value>学名</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>分数</value>
+  </data>
+  <data name="SearchAddress" xml:space="preserve">
+    <value>住所検索</value>
+  </data>
+  <data name="Seat" xml:space="preserve">
+    <value>住居</value>
+  </data>
+  <data name="SelectCareerDate" xml:space="preserve">
+    <value>勤務時間中に選択してください</value>
+  </data>
+  <data name="SelectDuty" xml:space="preserve">
+    <value>位置を選択してください。</value>
+  </data>
+  <data name="SelectEduDate" xml:space="preserve">
+    <value>終了の日付を選択してください</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>選択されたユーザー</value>
+  </data>
+  <data name="SelectPeriod" xml:space="preserve">
+    <value>期間を選択してください。</value>
+  </data>
+  <data name="SelectRelation" xml:space="preserve">
+    <value>関係を選択してください。</value>
+  </data>
+  <data name="SelectRewardDate" xml:space="preserve">
+    <value>賞罰日付を選択してください</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>位置を選択してください。</value>
+  </data>
+  <data name="SettingBaseDeptOnlyone" xml:space="preserve">
+    <value>つだけパートタイム基本を選択することができます</value>
+  </data>
+  <data name="SettingBothDept" xml:space="preserve">
+    <value>非常勤セクターの基本設定を設定してください</value>
+  </data>
+  <data name="SettingDeptAuthority" xml:space="preserve">
+    <value>部門の権限を設定してください。</value>
+  </data>
+  <data name="SMS_Default_MSG_DisConnect" xml:space="preserve">
+    <value>USBキーに接続されていない</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さくなければなりません。</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>適用可能</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>システムコード</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾語</value>
+  </data>
+  <data name="TitleDescription" xml:space="preserve">
+    <value>職務記述書</value>
+  </data>
+  <data name="TitleDutyName" xml:space="preserve">
+    <value>位置/関数</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="TitleOrder" xml:space="preserve">
+    <value>作業指図書</value>
+  </data>
+  <data name="TitleTree" xml:space="preserve">
+    <value>ジョブツリー</value>
+  </data>
+  <data name="TopDept" xml:space="preserve">
+    <value>最も高い当局</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>総ユーザー</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>ツイッター</value>
+  </data>
+  <data name="UpperDept" xml:space="preserve">
+    <value>高い当局</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>ユーザー情報</value>
+  </data>
+  <data name="UserInfoManage" xml:space="preserve">
+    <value>ユーザー管理</value>
+  </data>
+  <data name="UserManager_msgIsValidLicense" xml:space="preserve">
+    <value>*そのようなライセンスを購入するには続行するユーザーを増やす必要があるとして、ライセンスの制限に達している。</value>
+  </data>
+  <data name="UserState" xml:space="preserve">
+    <value>ユーザーのステータス</value>
+  </data>
+  <data name="VirtualDept" xml:space="preserve">
+    <value>仮定する部署</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="WorkPeriod" xml:space="preserve">
+    <value>勤務時間中</value>
+  </data>
+  <data name="WriteCompanyName" xml:space="preserve">
+    <value>あなたの会社名を入力してください。</value>
+  </data>
+  <data name="WriteEduName" xml:space="preserve">
+    <value>プロセス名を入力してください。</value>
+  </data>
+  <data name="WriteRewarder" xml:space="preserve">
+    <value>賞罰のスタッフをご入力ください。</value>
+  </data>
+  <data name="WriteSchoolName" xml:space="preserve">
+    <value>学校名を入力してください</value>
+  </data>
+  <data name="WriteSummary" xml:space="preserve">
+    <value>概要を入力してください</value>
+  </data>
+  <data name="WrongAccess" xml:space="preserve">
+    <value>ログインエラー</value>
+  </data>
+  <data name="WrongAccess_Error" xml:space="preserve">
+    <value>ログインエラー（エラー）</value>
+  </data>
+  <data name="WrongAccess_NoReferer" xml:space="preserve">
+    <value>ログインエラー（ノーリファラー）</value>
+  </data>
+  <data name="MultiComUserManage" xml:space="preserve">
+    <value>複数会社のユーザー管理</value>
+  </data>
+  <data name="NoMatchPwd" xml:space="preserve">
+    <value>パスワードは、パスワード確認と同じではありません。</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>リスト</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="AlarmMail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="AlarmMessenger" xml:space="preserve">
+    <value>메신저</value>
+  </data>
+  <data name="AlarmSMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>비밀번호 변경</value>
+  </data>
+  <data name="SetApprovalAlarm" xml:space="preserve">
+    <value>전자결재 알람 설정</value>
+  </data>
+  <data name="MailPwdChange" xml:space="preserve">
+    <value>あなたはあなたの電子メールのパスワードを変更しますか?</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>모바일 사용 여부</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>사용가능</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>사용불가</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>알람설정</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>전자결재</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>승인일</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>커뮤니티</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>디바이스이름</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>로그인 요청 정보</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>아이디+비밀번호</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>자동인증</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>모바일관리</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>모바일정보</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>모바일종류</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>모바일번호</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>일정관리</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>요청일</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>사내SNS</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>고유키값</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>업무일지</value>
+  </data>
+  <data name="ActiveMobile0" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="ActiveMobile3" xml:space="preserve">
+    <value>승인불가</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>모바일</value>
+  </data>
+  <data name="ModMsg" xml:space="preserve">
+    <value>사용가능 기기만 수정이 가능합니다.</value>
+  </data>
+  <data name="SenderName" xml:space="preserve">
+    <value>送信者名</value>
+  </data>
+  <data name="SenderEmail" xml:space="preserve">
+    <value>送信者の電子メール</value>
+  </data>
+  <data name="ReceiverName" xml:space="preserve">
+    <value>レシーバ名</value>
+  </data>
+  <data name="ReceiverEmail" xml:space="preserve">
+    <value>受信者の電子メール</value>
+  </data>
+  <data name="SenderTime" xml:space="preserve">
+    <value>送信時間</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>メーリングリスト</value>
+  </data>
+  <data name="AuthEmail" xml:space="preserve">
+    <value>パスワード認証メール</value>
+  </data>
+  <data name="PasswordManager" xml:space="preserve">
+    <value>パスワードマネージャー</value>
+  </data>
+  <data name="ManagerOnlyOne" xml:space="preserve">
+    <value>1人の管理者しか登録できません。</value>
+  </data>
+  <data name="ManagerNotDept" xml:space="preserve">
+    <value>管理者は部署の割り当てを指定できません。</value>
+  </data>
+  <data name="ManagerGuide" xml:space="preserve">
+    <value>ユーザ電子メールの電子メールアドレスは、登録された代表電子メールに属する電子メールによって示される。&lt;br /&gt; 管理者が登録されていない場合、ユーザーは一時パスワードを発行できません。 </value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="TodoItemN" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="TodoItemY" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>個人ポップアップを使用の有無</value>
+  </data>
+  <data name="AlarmIsUsing0" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="AlarmIsUsing1" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="AlarmOption" xml:space="preserve">
+    <value>アラームオプション :</value>
+  </data>
+  <data name="AlarmTitle" xml:space="preserve">
+    <value>アラーム設定</value>
+  </data>
+  <data name="MSG_SELITEM" xml:space="preserve">
+    <value>アイテムを選択してください</value>
+  </data>
+  <data name="LoginInfo" xml:space="preserve">
+    <value>ログイン情報</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6月</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>アクセス日</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>閲覧評価</value>
+  </data>
+  <data name="Msg_ErrAccessGrade" xml:space="preserve">
+    <value>閲覧評価人を選択します。</value>
+  </data>
+  <data name="BasicTimeZone" xml:space="preserve">
+    <value>タイムゾーン</value>
+  </data>
+  <data name="EtcInfo" xml:space="preserve">
+    <value>その他の情報</value>
+  </data>
+  <data name="Summary01" xml:space="preserve">
+    <value>個人</value>
+  </data>
+  <data name="Summary02" xml:space="preserve">
+    <value>承認する</value>
+  </data>
+  <data name="Summary03" xml:space="preserve">
+    <value>拒否</value>
+  </data>
+  <data name="Summary04" xml:space="preserve">
+    <value>最終承認</value>
+  </data>
+  <data name="Summary05" xml:space="preserve">
+    <value>フォワード</value>
+  </data>
+  <data name="Summary06" xml:space="preserve">
+    <value>流通を受けた</value>
+  </data>
+  <data name="Summary07" xml:space="preserve">
+    <value>循環を送った</value>
+  </data>
+  <data name="Summary08" xml:space="preserve">
+    <value>提出する</value>
+  </data>
+  <data name="Summary09" xml:space="preserve">
+    <value>関連する</value>
+  </data>
+  <data name="Summary10" xml:space="preserve">
+    <value>ターゲット</value>
+  </data>
+  <data name="Summary11" xml:space="preserve">
+    <value>受け取った</value>
+  </data>
+  <data name="SummaryEA" xml:space="preserve">
+    <value>場合</value>
+  </data>
+  <data name="Summary12" xml:space="preserve">
+    <value>要求されたコラボレーション</value>
+  </data>
+  <data name="Summary13" xml:space="preserve">
+    <value>要請を受けたコラボレーション</value>
+  </data>
+  <data name="Summary14" xml:space="preserve">
+    <value>参照されたコラボレーション</value>
+  </data>
+  <data name="Summary15" xml:space="preserve">
+    <value>伝達されたコラボレーション</value>
+  </data>
+  <data name="SummaryTit1" xml:space="preserve">
+    <value>概要情報</value>
+  </data>
+  <data name="SummaryTit10" xml:space="preserve">
+    <value>投稿登録件数</value>
+  </data>
+  <data name="SummaryTit11" xml:space="preserve">
+    <value>掲示板フォルダの管理リスト</value>
+  </data>
+  <data name="SummaryTit12" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="SummaryTit13" xml:space="preserve">
+    <value>投稿登録件数</value>
+  </data>
+  <data name="SummaryTit14" xml:space="preserve">
+    <value>コミュニティ管理リスト</value>
+  </data>
+  <data name="SummaryTit15" xml:space="preserve">
+    <value>業務コラボレーション</value>
+  </data>
+  <data name="SummaryTit16" xml:space="preserve">
+    <value>登録件数</value>
+  </data>
+  <data name="SummaryTit2" xml:space="preserve">
+    <value>ログイン情報</value>
+  </data>
+  <data name="SummaryTit3" xml:space="preserve">
+    <value>権限情報</value>
+  </data>
+  <data name="SummaryTit4" xml:space="preserve">
+    <value>概要情報</value>
+  </data>
+  <data name="SummaryTit5" xml:space="preserve">
+    <value>電子決裁</value>
+  </data>
+  <data name="SummaryTit6" xml:space="preserve">
+    <value>[ビュー]</value>
+  </data>
+  <data name="SummaryTit7" xml:space="preserve">
+    <value>進行中の文書</value>
+  </data>
+  <data name="SummaryTit8" xml:space="preserve">
+    <value>完了した文書</value>
+  </data>
+  <data name="SummaryTit9" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="Admin_User_Input_JoinDate" xml:space="preserve">
+    <value>雇用日を入力してください</value>
+  </data>
+  <data name="Admin_User_Input_RetireDate" xml:space="preserve">
+    <value>退職日を入力してください</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>알림함 보기 ON 설정해야지 Push를 설정할 수 있음</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>공지</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>패스워드인증관리</value>
+  </data>
+</root>

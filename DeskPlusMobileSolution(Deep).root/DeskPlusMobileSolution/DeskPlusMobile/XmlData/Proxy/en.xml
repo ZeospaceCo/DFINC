@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+  <MAIL>
+    <SUBJ>
+      <START>[Start delegation] Delegation assigned</START>
+      <END>[Stop delegation] Delegation stopped</END>
+    </SUBJ>
+    <ACTION>
+      <START>Delegation assigned</START>
+      <END>Delegation stopped</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[E-Approvals] Delegator alarm&lt;/li&gt;
+      &lt;li&gt;Delegator : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;Target of Delegator : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;Delegator period : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;Type of absence : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;Contents : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MAIL>
+
+  <MESSENGER>
+    <SUBJ>
+      <START>[Start delegation] Delegation assigned</START>
+      <END>[Stop delegation] Delegation stopped</END>
+    </SUBJ>
+    <ACTION>
+      <START>Delegation assigned</START>
+      <END>Delegation stopped</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[E-Approvals] Delegator alarm&lt;/li&gt;
+      &lt;li&gt;Delegator : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;Target of Delegator : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;Delegator period : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;Type of absence : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;Contents : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MESSENGER>
+
+  <SMS>
+    <SUBJ>
+      <START>[Start delegation] Delegation assigned</START>
+      <END>[Stop delegation] Delegation stopped</END>
+    </SUBJ>
+    <ACTION>
+      <START>Delegation assigned</START>
+      <END>Delegation stopped</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[E-Approvals] Delegator alarm&lt;/li&gt;
+      &lt;li&gt;Delegator : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;Target of Delegator : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;Delegator period : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;Type of absence : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;Contents : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </SMS>
+
+  <MOBILE>
+    <SUBJ>
+      <START>[Start delegation] Delegation assigned</START>
+      <END>[Stop delegation] Delegation stopped</END>
+    </SUBJ>
+    <ACTION>
+      <START>Delegation assigned</START>
+      <END>Delegation stopped</END>
+    </ACTION>
+    <CONTENT>
+      &lt;div style='font-size:9pt;color:Orange;font-weight:bold;'&gt;$ACTION$&lt;/div&gt;
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li style='font-weight:bold'&gt;[E-Approvals] Delegator alarm&lt;/li&gt;
+      &lt;li&gt;Delegator : $SENDDEPTNM$ / $SENDTITLENM$ / $SENDUSERNM$&lt;/li&gt;
+      &lt;li&gt;Target of Delegator : $TARGETDEPTNM$ / $TARGETTITLENM$ / $TARGETUSERNM$&lt;/li&gt;
+      &lt;li&gt;Delegator period : $PROXYDATE$&lt;/li&gt;
+      &lt;li&gt;Type of absence : $PROXYTYPE$&lt;/li&gt;
+      &lt;li&gt;Contents : $PROXYCONTENT$&lt;/li&gt;
+      &lt;/ul&gt;
+    </CONTENT>
+  </MOBILE>
+</ALARM>

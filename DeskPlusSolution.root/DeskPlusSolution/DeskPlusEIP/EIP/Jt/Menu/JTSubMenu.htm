@@ -1,0 +1,5 @@
+﻿{#foreach $T as List}
+<li><a id='smn_{$T.List.MenuID }' onclick="Menu.CallSubMenu('{ $T.List.TargetURL }','{$T.List.MenuID }','{$T.List.OpenURL }')">{ $T.List.MenuName }</a></li>
+{#else}
+
+{#/for}      

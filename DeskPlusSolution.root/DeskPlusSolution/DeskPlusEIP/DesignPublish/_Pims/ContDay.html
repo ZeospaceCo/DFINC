@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Pim.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript">
+    function change(_val) {
+        if ($("#chk_" + _val).attr("checked") == true) $("#lb_" + _val).addClass("on");
+        else $("#lb_" + _val).removeClass("on");
+    }
+</script>
+</head>
+<body>
+
+<div id="layout_body">
+ 
+    <!-- 날짜 //-->
+    <div class="pim_date">
+        <div class="viewSrh">
+            <p class="pim_i">
+                <input type="checkbox" id="chk_i" checked="checked" onclick="change('i')" />
+                <label for="chk_i" title="나의일정" id="lb_i" class="on">
+                    <span class="blind">나의일정</span>
+                </label>
+            </p>
+            <p class="pim_p">
+                <input type="checkbox" id="chk_p" checked="checked" onclick="change('p')" />
+                <label for="chk_p" title="개인일정" id="lb_p" class="on">
+                    <span class="blind">개인일정</span>
+                </label>
+            </p>
+            <p class="pim_d">
+                <input type="checkbox" id="chk_d" checked="checked" onclick="change('d')" />
+                <label for="chk_d" title="부서일정" id="lb_d" class="on">
+                    <span class="blind">부서일정</span>
+                </label>
+            </p>
+            <p class="pim_s">
+                <input type="checkbox" id="chk_s" checked="checked" onclick="change('s')" />
+                <label for="chk_s" title="공유일정" id="lb_s" class="on">
+                    <span class="blind">공유일정</span>
+                </label>
+            </p>
+            <p class="pim_t">
+                <input type="checkbox" id="chk_t" checked="checked" onclick="change('t')" />
+                <label for="chk_t" title="전체일정" id="lb_t" class="on">
+                    <span class="blind">전체일정</span>
+                </label>
+            </p>
+        </div>
+        <img id="imgLeft" style="cursor:pointer" src="/DeskPlusEIP/Design/Base/Img/Pims/btn_left.gif" width="19" height="20" alt="이전" />
+        2011.10.25
+        <img id="imgRight" style="cursor:pointer"  src="/DeskPlusEIP/Design/Base/Img/Pims/btn_right.gif" width="19" height="20" alt="다음">
+    </div>
+
+    <div class="layout_half">
+        <div class="su_title">오늘의 할일</div>
+        <!-- 테이블 시작 //-->
+        <div class="table_typeAtop_left"><p></p></div>
+        
+        <table class="pim_table_day" border="0">
+            <caption>오늘의할일</caption>
+            <colgroup>
+                <col width="30px" />
+                <col width="30px" />
+                <col />
+                <col width="65px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>중요</th>
+                    <th>/상태</th>
+                    <th>할일</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <select class="searchselect">
+	                        <option value="">상</option>
+	                        <option value="">중</option>
+	                        <option value="">하</option>
+                        </select>
+                    </td>
+                    <td><input type="text" class="pim_inputtxt" /></td>
+                    <td>
+                        <a href="#">등록</a>|<a href="#">상세</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td>상</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif" /></td>
+                    <td class="left"><a href="#">테스트입니다.테스트입니다.테스트입니다.</a></td>
+                    <td class="right"><a href="#">[삭제]</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ul class="pim_status">
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_NotBegin.gif"/> 시작안함</li>
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Going.gif"/> 진행중</li>
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Done.gif"/> 완료</li>
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Cancel.gif"/> 취소</li>
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Pass.gif"/> 위임</li>
+                            <li><img src="/DeskPlusEIP/Design/Base/Img/Pims/Status_Postpone.gif"/> 연기</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table_typeAbottom_left"><p></p></div>
+        <!-- 테이블 끝 //-->
+    </div>
+
+    <div class="layout_half">
+        <div class="su_title">오늘의 일정</div>
+        <!-- 테이블 시작 //-->
+        <div class="table_typeAtop_left"><p></p></div>
+        
+        <table class="pim_table_day" border="0">
+            <caption>오늘의일정</caption>
+            <colgroup>
+                    <col width="80px" />
+                    <col />
+                    <col width="65px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>시간</th>
+                    <th>할일</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select class="searchselect">
+	                        <option value="">오전09:00</option>
+                        </select>
+                    </td>
+                    <td><input type="text" class="pim_inputtxt" /></td>
+                    <td>
+                        <a href="#">등록</a>|<a href="#">상세</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">일정리스트(컴포넌트)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="table_typeAbottom_left"><p></p></div>
+        <!-- 테이블 끝 //-->
+    </div>
+</div>
+
+</body>
+</html>

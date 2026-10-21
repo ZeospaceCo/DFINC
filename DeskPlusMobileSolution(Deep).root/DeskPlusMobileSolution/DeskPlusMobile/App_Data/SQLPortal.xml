@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_QRY_SignIn" Value="SELECT top 1 IsNull( UserID, -1) FROM DP_ACC_User WITH(NOLOCK) WHERE CompanyID = '{0}' And LoginID = '{1}' And Password = '{2}' AND ActiveUser=1" Content="로그인 체크" />
+  <Item ID="SEL_QRY_WebMailID" Value="SELECT user_sn FROM zt_user_info WITH(NOLOCK) WHERE user_account = '{0}'" Content="메일 사용자 고유 Key" />
+  <Item ID="SEL_PROC_USERINFO" Value="DPM_ACC_User_SelSignIn" Content="개인 정보" />
+  <Item ID="SEL_QRY_USERDEPTS" Value="SELECT * FROM DP_ACC_UserDept WITH(NOLOCK) WHERE CompanyID = {0} And UserID = {1}" Content="부서 정보" />
+  <Item ID="SEL_PROC_USERROLES" Value="DPM_EIP_Role_Sel" Content="Role 정보" />
+  <Item ID="INS_PROC_USERENVIRONMENT" Value="DPM_ACC_UserEnv_Ins" Content="환경 정보 추가" />
+  <Item ID="SEL_QRY_USERENVIRONMENT" Value="SELECT MobilePims,MobileSkin,MobileIsApprovePwd FROM DP_ACC_UserEnv WITH(NOLOCK) WHERE CompanyID = {0} And UserID = {1}" Content="환경 정보 가져오기" />
+  <Item ID="SEL_QRY_NewMailList"
+		  Value="select top 5 m.from_email, m.from_name, u.create_time, m.mail_subject, u.mail_sn, u.state_code, u.read_flag
+		from zt_user_mailInfo u WITH(NOLOCK) inner join zt_mail_message m WITH(NOLOCK) on u.mail_sn = m.mail_sn
+		where u.user_sn={0} and u.mailbox_code='1100' and u.trash_flag = 0 order by u.create_time desc, u.mail_sn" Content="최신 메일 리스트 가져오기" />
+  <Item ID="SEL_QRY_Company" Value="SELECT * FROM DP_COM_Company WITH(NOLOCK) WHERE ActiveCompany = '1'" Content="회사정보가져오기" />
+  <Item ID="SEL_QRY_Company_SelByID" Value="SELECT * FROM DP_COM_Company WITH(NOLOCK) WHERE CompanyID = {0} AND ActiveCompany = '1'" Content="회사정보가져오기" />
+  <Item ID="SEL_QRY_SYSCode" Value="SELECT InterfaceCode FROM DP_COM_SYSCode WITH(NOLOCK) WHERE CompanyID = '{0}' AND ParentCodeID = '{1}' AND CodeID = '{2}'" Content="코드정보가져오기" />
+  <Item ID="INS_PROC_ACCESSLOG" Value="DPM_COM_AccessLog_Ins" Content="모바일 로그인 접속로그" />
+  <Item ID="INS_PROC_PWDERRORLOG" Value="DPM_COM_PwdErrorLog_Ins" Content="모바일 로그인 접속실패로그" />
+  <Item ID="UPD_PROC_ACCESSLOG" Value="DPM_COM_AccessLog_Upd" Content="모바일 로그아웃 로그" />
+  <Item ID="SEL_QRY_USERROLE"
+		  Value="SELECT * FROM DP_MDM_Menu WITH(NOLOCK) 
+		  WHERE CompanyID = '{0}' AND MenuID in (SELECT MenuID FROM DP_MDM_MenuRole WITH(NOLOCK) WHERE CompanyID = '{0}'
+						AND RoleID in (SELECT RoleID FROM DP_EIP_UserRole WITH(NOLOCK) WHERE CompanyID = '{0}'
+						AND UserID in (SELECT DeptID FROM ufn_GetUserUpTree('{0}' , '{1}')) AND Types = 'GG' 
+						UNION SELECT RoleID FROM  DP_EIP_UserRole WITH(NOLOCK) WHERE CompanyID ='{0}'	AND UserID = '{1}' AND Types = 'GM' ) GROUP BY MenuID) Order by GubunID" Content="모바일 메뉴권한" />
+  <Item ID="SEL_QRY_SYSCodeAll" Value="SELECT * FROM DP_COM_SYSCode WHERE CompanyID = '{0}' AND ActiveCode='1'" Content="SYSCODE 가져오기" />
+  <Item ID="SEL_QRY_Portal" Value="SELECT * FROM DP_MDM_Portal WITH(NOLOCK) WHERE CompanyID = '{0}' AND Orders in (1,2)" Content="메인설정" />
+  <Item ID="DEL_PROC_UUID" Value="DPM_MDM_List_DelUUID" Content="로그아웃시 기기정보 삭제" />
+  <Item ID="UPD_PROC_LogOutYN" Value="DPM_MDM_List_UpdLogOutYN" Content="로그아웃시 알람 안 받게 설정" />
+  <Item ID="SEL_QRY_ComEnv" Value="SELECT * FROM DP_COM_Env WITH(NOLOCK) WHERE CompanyID = '{0}' AND Gubun = '{1}' AND KeyID = '{2}'" Content="환경정보 가져오기" />
+  <Item ID="SEL_QRY_PDFLog" Value="SELECT * FROM DP_COM_PDFLog WITH(NOLOCK) WHERE CompanyID='{0}' AND Module = '{1}' AND ListID = '{2}'" Content="PDF로그 가져오기" />
+</XmlData>

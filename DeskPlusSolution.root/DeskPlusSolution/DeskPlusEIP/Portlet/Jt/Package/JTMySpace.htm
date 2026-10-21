@@ -1,0 +1,40 @@
+﻿{#foreach $T as Lists} 
+<div class="ptl_gap10001000">
+    <table>
+    <colgroup>
+        <col width="75px" />
+        <col />
+        <col width="30px" />
+        <col width="80px" />
+    </colgroup>
+    <tbody>
+        <tr>
+            <td><span id="r_mail"></span></td>
+            <td><img src="/DeskPlusEIP/Design/Blue/Img/Main/tmp12.gif" alt="" /></td>
+            <td>{$T.Lists.MailPercent}</td>
+            <td>{$T.Lists.MailSpace} / {$T.Lists.MailTotSpace}</td>
+        </tr>
+        <tr>
+            <td><span id="r_webhard"></span></td>
+            <td><img src="/DeskPlusEIP/Design/Blue/Img/Main/tmp12.gif" alt="" /></td>
+            <td>{$T.Lists.WebHardPercent}</td>
+            <td>{$T.Lists.WebHardSpace} / {$T.Lists.WebHardTotSpace}</td>
+        </tr>
+        <tr>
+            <td><span id="r_board"></span></td>
+            <td><img src="/DeskPlusEIP/Design/Blue/Img/Main/tmp12.gif" alt="" /></td>
+            <td>{$T.Lists.BoardPercent}</td>
+            <td>{$T.Lists.BoardSpace} / {$T.Lists.BoardTotSpace}</td>
+        </tr>
+        <tr>
+            <td><span id="r_approval"></span></td>
+            <td><img src="/DeskPlusEIP/Design/Blue/Img/Main/tmp12.gif" alt="" /></td>
+            <td>{$T.Lists.ApprovalPercent}</td>
+            <td>{$T.Lists.ApprovalSpace} / {$T.Lists.ApprovalTotSpace}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+{#else}     
+        
+{#/for}  

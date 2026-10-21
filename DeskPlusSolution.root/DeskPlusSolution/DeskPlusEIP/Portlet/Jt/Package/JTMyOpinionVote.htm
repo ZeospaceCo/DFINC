@@ -1,0 +1,12 @@
+﻿  <ul>
+    {#foreach $T as List}  
+    <li>          
+        <a onclick="Opinion_View('{ $T.List.QuesID }', 1);return false;" >
+        ▣ { $T.List.Title } <br />
+        { $T.List.StartDateStr } ~ { $T.List.EndDateStr }
+        </a>
+    </li>  
+   {#else}    
+   <li><span class="NoListData" /></li>         
+   {#/for} 
+</ul>  

@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddPortletCheckedTab" xml:space="preserve">
+    <value>選項卡，選中已添加的portlet。</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請輸入註冊的日期。</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="CheckSearchSection" xml:space="preserve">
+    <value>請選擇一個搜索欄</value>
+  </data>
+  <data name="ConfirmExec" xml:space="preserve">
+    <value>你想運行索引？</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>結束時間</value>
+  </data>
+  <data name="ExecTime" xml:space="preserve">
+    <value>運行時間</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FTRTextCount" xml:space="preserve">
+    <value>附件可以被索引</value>
+  </data>
+  <data name="GoToDetail" xml:space="preserve">
+    <value>轉到更多</value>
+  </data>
+  <data name="IndexCount" xml:space="preserve">
+    <value>索引的總數</value>
+  </data>
+  <data name="InputOrderWay" xml:space="preserve">
+    <value>請輸入一個排序方法</value>
+  </data>
+  <data name="InputSearchEngine" xml:space="preserve">
+    <value>請輸入一個搜索詞</value>
+  </data>
+  <data name="InputSearchValue" xml:space="preserve">
+    <value>把您的搜索字詞</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>最後1個月</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>上星期</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>未來</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>目前沒有資料。</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>數</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="PeriodDate" xml:space="preserve">
+    <value>期間條件</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>在加工過程中發生錯誤。請聯繫管理員。</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="SearchAutoSpecialNumber" xml:space="preserve">
+    <value>請輸入在地址簿中自動檢測。</value>
+  </data>
+  <data name="SearchDateSelect" xml:space="preserve">
+    <value>選擇期間</value>
+  </data>
+  <data name="SearchFieldApproval" xml:space="preserve">
+    <value>電子支付</value>
+  </data>
+  <data name="SearchFieldBoard" xml:space="preserve">
+    <value>板</value>
+  </data>
+  <data name="SearchFieldMail" xml:space="preserve">
+    <value>郵件</value>
+  </data>
+  <data name="SearchFieldTotal" xml:space="preserve">
+    <value>充分</value>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="SearchHelp2FirstAction" xml:space="preserve">
+    <value>執行前兩個</value>
+  </data>
+  <data name="SearchHelpAllInclude" xml:space="preserve">
+    <value>包含兩個1,2</value>
+  </data>
+  <data name="SearchHelpChoice" xml:space="preserve">
+    <value>包括至少1,2</value>
+  </data>
+  <data name="SearchHelpIf" xml:space="preserve">
+    <value>搜索條件</value>
+  </data>
+  <data name="SearchHelpIncludeNot" xml:space="preserve">
+    <value>1，除兩個</value>
+  </data>
+  <data name="SearchInResult" xml:space="preserve">
+    <value>在結果中搜索</value>
+  </data>
+  <data name="SearchMoreResultData" xml:space="preserve">
+    <value>查看更多結果</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>沒有找到結果。</value>
+  </data>
+  <data name="SearchOutput" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="SearchOutputCurrect" xml:space="preserve">
+    <value>準確性</value>
+  </data>
+  <data name="SearchOutputDate" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="SearchOutputTitle" xml:space="preserve">
+    <value>主題</value>
+  </data>
+  <data name="SearchRequestSelect" xml:space="preserve">
+    <value>選擇</value>
+  </data>
+  <data name="SearchResultCnt" xml:space="preserve">
+    <value>狗</value>
+  </data>
+  <data name="SearchResultCntTitle" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="SearchResultTotal" xml:space="preserve">
+    <value>共搜索到結果</value>
+  </data>
+  <data name="SearchResultValue" xml:space="preserve">
+    <value>搜索結果共有結果{0} {1}的情況下被發現。</value>
+  </data>
+  <data name="SearchResultValueWithin" xml:space="preserve">
+    <value>結果：{0} {1} {2}的就業機會，包括在搜索結果被發現。</value>
+  </data>
+  <data name="SearchSection" xml:space="preserve">
+    <value>搜索字段</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>案件被發現。</value>
+  </data>
+  <data name="SearchTimeFromTo" xml:space="preserve">
+    <value>直接輸入</value>
+  </data>
+  <data name="SearchTimeMonth" xml:space="preserve">
+    <value>個月</value>
+  </data>
+  <data name="SearchTimePeriod" xml:space="preserve">
+    <value>檢索詞</value>
+  </data>
+  <data name="SearchTimeWeek" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="SearchTimeYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="SearchWord1" xml:space="preserve">
+    <value>結果1</value>
+  </data>
+  <data name="SearchWord1n2" xml:space="preserve">
+    <value>結果包括兩個1,2</value>
+  </data>
+  <data name="SearchWord1or2" xml:space="preserve">
+    <value>結果包括至少一個1,2</value>
+  </data>
+  <data name="SearchWord2" xml:space="preserve">
+    <value>2結果</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>九分鐘</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>選擇列表</value>
+  </data>
+  <data name="ShowSearch" xml:space="preserve">
+    <value>搜索輸出</value>
+  </data>
+  <data name="SortWay" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於終止日期。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="TitleNFileName" xml:space="preserve">
+    <value>標題+文件名</value>
+  </data>
+  <data name="MSG_ATTACH" xml:space="preserve">
+    <value>附件索引</value>
+  </data>
+  <data name="MSG_COMPLETE" xml:space="preserve">
+    <value>完整索引</value>
+  </data>
+  <data name="MSG_CONTENT" xml:space="preserve">
+    <value>目錄索引</value>
+  </data>
+  <data name="MSG_ERROR" xml:space="preserve">
+    <value>指數誤差</value>
+  </data>
+  <data name="MSG_START" xml:space="preserve">
+    <value>啟動索引</value>
+  </data>
+  <data name="MSG_TXT" xml:space="preserve">
+    <value>TXT文件轉換</value>
+  </data>
+  <data name="StatusC" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="StatusE" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="StatusP" xml:space="preserve">
+    <value>進行</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>指數日誌</value>
+  </data>
+  <data name="StatusN" xml:space="preserve">
+    <value>任何</value>
+  </data>
+  <data name="IndexAdd" xml:space="preserve">
+    <value>運行索引</value>
+  </data>
+  <data name="IndexCancel" xml:space="preserve">
+    <value>停止索引</value>
+  </data>
+  <data name="IndexDel" xml:space="preserve">
+    <value>刪除索引</value>
+  </data>
+  <data name="IndexOptimize" xml:space="preserve">
+    <value>優化指數</value>
+  </data>
+  <data name="IndexResult" xml:space="preserve">
+    <value>指數結果</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>整體</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1個月</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1週</value>
+  </data>
+  <data name="ComfirmComplete" xml:space="preserve">
+    <value>索引狀態未完成</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>你確定要刪除索引？</value>
+  </data>
+  <data name="ConfirmOpt" xml:space="preserve">
+    <value>你確定你要優化你的指數？</value>
+  </data>
+  <data name="MSG_DEL_COMPLETE" xml:space="preserve">
+    <value>刪除索引完整</value>
+  </data>
+  <data name="MSG_DEL_ERROR" xml:space="preserve">
+    <value>錯誤刪除索引</value>
+  </data>
+  <data name="MSG_DEL_START" xml:space="preserve">
+    <value>開始刪除索引</value>
+  </data>
+  <data name="MSG_OPT_COMPLETE" xml:space="preserve">
+    <value>指數優化完成</value>
+  </data>
+  <data name="MSG_OPT_ERROR" xml:space="preserve">
+    <value>指數優化錯誤</value>
+  </data>
+  <data name="MSG_OPT_START" xml:space="preserve">
+    <value>指數開始優化</value>
+  </data>
+  <data name="StatusD" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="ConfirmCheckValue" xml:space="preserve">
+    <value>大寫的AND，OR搜索條件應該來一個字的中間。</value>
+  </data>
+  <data name="SearchFieldEDM" xml:space="preserve">
+    <value>文檔管理</value>
+  </data>
+  <data name="EDM" xml:space="preserve">
+    <value>文檔管理</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="COOP" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="PIM" xml:space="preserve">
+    <value>進度管理</value>
+  </data>
+  <data name="RM" xml:space="preserve">
+    <value>資源管理</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="WEBHARD" xml:space="preserve">
+    <value>网络文件夹</value>
+  </data>
+  <data name="SearchFieldAddress" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="SearchFieldWebHard" xml:space="preserve">
+    <value>WebHard</value>
+  </data>
+  <data name="SearchFieldCoop" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="SearchFieldPim" xml:space="preserve">
+    <value>進度管理</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>問答</value>
+  </data>
+  <data name="SearchFieldRM" xml:space="preserve">
+    <value>資源管理</value>
+  </data>
+  <data name="SearchFieldTask" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="TASK" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="SearchFieldAddressInfo" xml:space="preserve">
+    <value>（搜索：名稱/電子郵件地址/部門/公司名稱）</value>
+  </data>
+  <data name="SearchFieldApprovalInfo" xml:space="preserve">
+    <value>（搜索：標題/內容/作者個人/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldBoardInfo" xml:space="preserve">
+    <value>（搜索：標題/內容/作者個人/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldCoopInfo" xml:space="preserve">
+    <value>（搜索：主要類別/科/標題/內容/作者個人/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldEDMInfo" xml:space="preserve">
+    <value>（搜索：標題/內容/作者個人/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldPimInfo" xml:space="preserve">
+    <value>（搜索：我的日程安排主題/內容/附件文件名/附件內容）</value>
+  </data>
+  <data name="SearchFieldRMInfo" xml:space="preserve">
+    <value>（搜索：資源名稱/標題/預訂/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldTaskInfo" xml:space="preserve">
+    <value>（搜索：主要類別/科/標題/內容/作者個人/附件/附件內容）</value>
+  </data>
+  <data name="SearchFieldWebHardInfo" xml:space="preserve">
+    <value>（搜索：文件名/文件內容）</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+</root>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+    <!-- Assert 로그 보기 -->
+    <Item ID="AppDataPath" Value="/DeskPlusEIP/App_Data" Content="AppDataPath 경로" />
+    <Item ID="AssertLog" Value="/DeskPlusEIP/Data/Logs/Assert" Content="" />
+    <Item ID="AssertView" Value="N" Content="" />
+    <Item ID="AssertMail" Value="N" Content="" />
+
+    <Item ID="AssertView_ACCOUNT" Value="N" Content="" />
+    <Item ID="AssertView_ADDRESS" Value="N" Content="" />
+    <Item ID="AssertView_ADMIN" Value="N" Content="" />
+    <Item ID="AssertView_APPROVAL" Value="N" Content="" />
+    <Item ID="AssertView_BASE" Value="N" Content="" />
+    <Item ID="AssertView_BOARD" Value="N" Content="" />
+    <Item ID="AssertView_COMMON" Value="N" Content="" />
+    <Item ID="AssertView_COMMUNITY" Value="N" Content="" />
+    <Item ID="AssertView_COMPONENT" Value="N" Content="" />
+    <Item ID="AssertView_EIP" Value="N" Content="" />
+    <Item ID="AssertView_MAIL" Value="Y" Content="" />
+    <Item ID="AssertView_MESSENGER" Value="Y" Content="" />
+    <Item ID="AssertView_PIM" Value="N" Content="" />
+    <Item ID="AssertView_POLL" Value="N" Content="" />
+    <Item ID="AssertView_RESOURCEMANAGER" Value="N" Content="" />
+    <Item ID="AssertView_WEBHARD" Value="N" Content="" />
+    <Item ID="AssertView_OPINION" Value="N" Content="" />
+    <Item ID="AssertView_PMS" Value="N" Content="" />
+    <Item ID="AssertView_REPORT" Value="N" Content="" />
+    <Item ID="AssertView_SEARCH" Value="N" Content="" />
+
+    <Item ID="BaseCssPath" Value="/DeskPlusEIP/Design/C/Css" Content="공통 CSS 디렉토리 경로" />
+    <Item ID="BaseImgPath" Value="/DeskPlusEIP/Design/C/Img" Content="공통 Img 디렉토리 경로" />
+    <Item ID="BaseCssDirectory" Value="/DeskPlusEIP/Design/" Content="" />    
+    <Item ID="BaseImageDirectory" Value="/DeskPlusEIP/Design/" Content="" />    
+    <Item ID="BaseSkin" Value="Blue" Content="기본 스킨" />
+    <Item ID="BaseSkinMail" Value="blue" Content="기본 메일스킨" />
+    
+    <Item ID="BaseHttp" Value="http://" Content="SSL 이면 https 로 변경" />
+    <Item ID="BaseHttpPort" Value="80" Content="SSL 이면 443 로 변경" />
+    <Item ID="BaseFileDirectory" Value="/DeskPlusEIP/FileData/" Content="filedata 경로" />
+
+    <!-- 로그 설정 -->
+    <Item ID="LogPrefix" Value="DESKPLUS" Content="" />
+    <Item ID="ExceptionLog" Value="/DeskPlusEIP/Data/Logs/Exception" Content="" />
+    <Item ID="MailLog" Value="/DeskPlusEIP/Data/Logs/Mail" Content="" />
+    <Item ID="SSOLog" Value="/DeskPlusEIP/Data/Logs/SSO" Content="" />
+    <Item ID="SSOLogView" Value="Y" Content="" />
+    <!-- ========= -->
+
+    <!-- Cache 설정 -->
+    <Item ID="EnableCaching" Value="N" Content="BLL Cache 설정" />
+    <Item ID="CacheDuration" Value="600" Content="" />
+    <Item ID="RSSCacheTime" Value="600" Content="RSSCacheTime" />
+    <!-- ========= -->
+
+    <!-- 인증 설정 -->
+    <Item ID="CookieExpiresHour" Value="12" Content="인증 쿠키" />
+    <Item ID="CookieDomain" Value="" Content="인증 쿠키 deskplus.co.kr" />
+    <Item ID="TrustSiteDomain" Value="zeospace.com" Content="신뢰 할수 있는 사이트 deskplus.co.kr" />
+    <!--<Item ID="FullDomain" Value="cloud.zeospace.com" Content="전체 도메인 정보를 다 사용하는곳에서 사용 www.deskplus.co.kr / 라이센스 인증시 사용" />-->
+    <Item ID="FullDomain" Value="localhost" Content="전체 도메인 정보를 다 사용하는곳에서 사용 www.deskplus.co.kr / 라이센스 인증시 사용" />
+    <Item ID="MobileDOMAIN" Value="localhost" Content="모바일 도메인" />
+
+  <!-- ========= -->
+  
+    <!-- 라이센스정보 -->
+    <Item ID="MailServerIP" Value="" Content="라이센스 인증시 사용 / 메일 SSO " />
+    <Item ID="WebServerIP" Value="" Content="라이센스 인증시 사용" />
+    <Item ID="ActiveServer" Value="act.deskplus.co.kr" Content="회사 인증 서버 정보(변경하지 말것)" />
+    <!-- 라이센스정보 -->
+
+    <!-- 기타 환경 설정 -->
+    <Item ID="UseSession" Value="N" Content="사용자 정보를 Session으로 유지할지 여부 " />
+    <Item ID="UseMultiSkin" Value="Y" Content="멀티 스킨 사용 여부" />
+    <Item ID="UseTagfreeImageUpload" Value="N" Content="태그프리의 본문 이미지 추가시 태그프리의 업로드 기능을 사용할지 여부(Y : 사용(twemime.dll/MimeUtil.dll) , N : 사용하지 않음(DpUpload 사용)" />
+    <Item ID="UseMineUtil" Value="N" Content="태그프리의 본문 이미지 추가시 MimeUtil.dll / twemime.dll 를 사용할지 선택 Y:사용(MimeUtil.dll 를 사용), N: 미사용(twmime.dll 를 사용)" />
+
+    <!-- 보안 설정 (양방향) -->
+    <Item ID="AESPassword" Value="2012deskplus40" Content="키 파생에 사용되는 암호" />
+    <Item ID="AESSalt" Value="ee1a9zs9p9co" Content="키 파생에 사용되는 키 솔트" />
+    <Item ID="TripleDESKey" Value="135,181,15,30,31,157,65,102,217,162,79,181,212,104,246,207,217,21,173,195,51,56,128,130" Content="TripleDES 키" />
+    <Item ID="TripleDESIV" Value="64,249,131,251,161,102,215,78" Content="TripleDES 초기화 벡터" />
+    <Item ID="EncryptURLParameter" Value="N" Content="URL Parameter 암호화 여부 : (Y:TripleDES , N:Base64) Y 일경우 jquery.common.js 수정필요 " />
+
+    <!-- 인증 패스워드 암호화 (단방향) -->
+    <Item ID="EncPasswordType" Value="SHA2" Content="패스워드 해쉬 방법 - MD5/SHA1/SHA2/SHA5   ex) 제타(SHA1) / 딥(SHA2)" />
+    <Item ID="UseHashCheckByLoginOutSide" Value="N" Content="연동시 패스워드 인증을 Hash로 할것인지 유무 : 패스워드가 Hash로 넘어오면 Y / PlainText로 넘어오면 N" />
+    <Item ID="UseHashCheckByLegacyLogin" Value="N" Content="연동시 패스워드 인증을 Hash로 할것인지 유무 : 패스워드가 Hash로 넘어오면 Y / PlainText로 넘어오면 N" />
+
+    <!--REFERER 체크-->
+    <Item ID="SSOReferer" Value="{0}{1}/DeskPlusEIP/" Content="referer 체크하기" />
+
+    <!--업로드 설정-->
+    <Item ID="LimitUploadFileSize" Value="102400"  Content="1024KB(1MB) : KB로 기재바람" />
+
+    <!--editor -->
+    <Item ID="MimeUseChk" Value="N" Content="태그프리의 본문 이미지 추가시 태그프리의 업로드 기능을 사용할지 여부(Y : 사용(twemime.dll/MimeUtil.dll) , N : 사용하지 않음(DpUpload 사용)" />
+	
+	<!--이미지 파일 구분-->
+	<Item ID="ImgFileExtension" Value=".bmp,.tif,.jpeg,.jpg,.gif,.png,.pjpeg,.pjpg" Content="이미지 파일 확장자" />
+
+    <!-- 인증페이지 폴더명-->
+    <Item ID="LoginFolder" Value="" Content="LOGIN 인증페이지 폴더명" />
+
+    <!-- IP Access 인증 체크 하지 않는 사용자 기능 사용-->
+    <Item ID="AllowUserIPAccess" Value="N" Content="Y 는 1. 코드관리 : 접근허용IP리스트(AllowHostIP) 추가하여 외부연동코드 192.168.1.1-192.168.1.254, 2. 권한관리 : 사외접근허용사용자(allowUserIPAccess) 추가 하면 IP Access 인증 체크 하지 않는 사용자 기능 사용" />
+    
+
+    <!-- 공휴일-->
+	<Item ID="Solar" Value="01-01,03-01,05-05,06-06,08-15,10-03,10-09,12-25" Content="양력일  날짜 | 앞에쉬는날:앞에쉬는날 | 뒤에쉬는날:뒤에쉬는날" />
+    <Item ID="SolarDesc" Value="신정,삼일절,어린이날,현충일,광복절,개천절,한글날,성탄절" Content="양력날짜 설명" />
+	<Item ID="Lunar" Value="01-01|1:|1:|,04-08||,08-15|1:|1:" Content="음력일  날짜 | 앞에쉬는날:앞에쉬는날 | 뒤에쉬는날:뒤에쉬는날" />    
+    <Item ID="LunarDesc" Value="설날,석가탄신일,추석" Content="음력날짜 설명" />
+
+    <!-- XSS 스크립트 대체-->
+    <Item ID="XSSRemoveChar" Value="" Content="/,\,;,:,-,+,(,)  DB 저장시 특수문자 삭제" />
+
+    <!-- 에디터 초기 HTML, CSS 설정 -->
+    <EditorHtmlHeader>
+        <Css>
+            <![CDATA[<html><head><meta http-equiv=content-type content=text/html; charset=utf-8><link rel='stylesheet' type='text/css' href='$1$' /><style>p {margin-top:2px;margin-bottom:2px;}</style></head><body>]]>
+        </Css>
+        <CssNo>
+            <![CDATA[<html><head><meta http-equiv=content-type content=text/html; charset=utf-8><style>p {margin-top:2px;margin-bottom:2px;}</style></head><body>]]>
+        </CssNo>
+    </EditorHtmlHeader>
+
+    <!-- 메일 발송-->
+	  <Item ID="UseMailSendByService" Value="Y" Content="메일을 전송할때 윈도우 서비스(DpEpmangr.exe)를 이용할것인지 여부 (서비스사용 : Y)/(직접발송 : N)" />
+
+    <!-- 로그인 페이지 -->
+    <Item ID="DefaultPage" Value="Default.aspx" Content="로그인 페이지" />
+
+    <!-- 모바일사용유무 -->
+    <Item ID="IsMobile" Value="Y" Content="모바일사용유무 : Y or N" />
+
+</XmlData>

@@ -1,0 +1,22 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+ <colgroup>
+    <col width="100px"/>
+    <col width="60px"/>
+    <col width="150px"/>
+    <col />
+ </colgroup>
+       <tr>
+            <th class="center"></th>
+            <th class="center"></th>
+            <th class="center"></th>
+            <th class="center"></th>
+        </tr>
+    {#foreach $T as BoardList}
+    <tr>
+        <td class="center">{ $T.BoardList.WriteName }</td>
+        <td class="center">{ $T.BoardList.CategoryDesc }</td>
+        <td class="center">{ $T.BoardList.DateInfo }</td>
+        <td><a  onclick="javascript:ListTotal.View('{ $T.BoardList.ScheduleID }')" style="cursor:pointer" >{ $T.BoardList.Title }</a></td>
+    </tr>
+    {#/for}        
+ </table>

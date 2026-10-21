@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="1" Value="프로젝트정보"/>
+	<Item ID="2" Value="단위작업업무"/>
+	<Item ID="3" Value="공지사항"/>
+	<Item ID="4" Value="게시판"/>
+	<Item ID="5" Value="프로젝트일정"/>
+	<Item ID="6" Value="참여자정보"/>
+</XmlData>

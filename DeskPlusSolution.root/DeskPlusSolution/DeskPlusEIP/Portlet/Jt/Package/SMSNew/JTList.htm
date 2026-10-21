@@ -1,0 +1,25 @@
+﻿<table class="table_typeA"> 
+<caption>
+</caption>
+<colgroup>
+    <col width="40px" />   
+    <col  />
+    <col width="65px" />   
+</colgroup>
+<tr>
+    <th id="r_checked"><input id="cbxAll" type="checkbox" onclick="CharList.Checked()" /></th>
+    <th id="r_content" align="center"></th>  
+    <th id="r_sel" align="center"></th>  
+</tr>
+{#foreach $T as List}
+<tr>
+    <td><input type="checkbox" class="cbxID" id="cbxID{ $T.List.SMSNoticeTemplateID }" value="{ $T.List.SMSNoticeTemplateID }" /></td>
+    <td><a onclick="CharList.AddChar('{ $T.List.ContentDecode }')">{ $T.List.Content }</a></td>
+    <td><a onclick="CharList.AddChar('{ $T.List.ContentDecode }')">[추가]</a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>登录相关的统计历史</value>
+  </data>
+  <data name="LoginDes" xml:space="preserve">
+    <value>根据登录成功，失败，连接方法月度统计数据。</value>
+  </data>
+  <data name="LoginTotalCount" xml:space="preserve">
+    <value>登录总数</value>
+  </data>
+  <data name="LoginFailTotalCount" xml:space="preserve">
+    <value>失败的登录访问总数</value>
+  </data>
+  <data name="MLoginTotalCount" xml:space="preserve">
+    <value>移动连接的总数目</value>
+  </data>
+  <data name="MLoginFailTotalCount" xml:space="preserve">
+    <value>移动连接的总数目失败</value>
+  </data>
+  <data name="LoginCountHis" xml:space="preserve">
+    <value>注册历史</value>
+  </data>
+  <data name="LoginFailCountHis" xml:space="preserve">
+    <value>注册失败的历史</value>
+  </data>
+  <data name="MLoginCountHis" xml:space="preserve">
+    <value>移动访问历史</value>
+  </data>
+  <data name="MLoginFailCountHis" xml:space="preserve">
+    <value>移动连接失败的历史</value>
+  </data>
+  <data name="UserNM" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="TotalLoginCount" xml:space="preserve">
+    <value>连接的总数目</value>
+  </data>
+  <data name="1Month" xml:space="preserve">
+    <value>一月</value>
+  </data>
+  <data name="2Month" xml:space="preserve">
+    <value>二月</value>
+  </data>
+  <data name="3Month" xml:space="preserve">
+    <value>三月</value>
+  </data>
+  <data name="4Month" xml:space="preserve">
+    <value>四月</value>
+  </data>
+  <data name="5Month" xml:space="preserve">
+    <value>五月</value>
+  </data>
+  <data name="6Month" xml:space="preserve">
+    <value>六月</value>
+  </data>
+  <data name="7Month" xml:space="preserve">
+    <value>七月</value>
+  </data>
+  <data name="8Month" xml:space="preserve">
+    <value>八月</value>
+  </data>
+  <data name="9Month" xml:space="preserve">
+    <value>九月</value>
+  </data>
+  <data name="10Month" xml:space="preserve">
+    <value>十月</value>
+  </data>
+  <data name="11Month" xml:space="preserve">
+    <value>十一月</value>
+  </data>
+  <data name="12Month" xml:space="preserve">
+    <value>十二月</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="StatExcel" xml:space="preserve">
+    <value>Excel中下载</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>电子支付</value>
+  </data>
+  <data name="AttachDes" xml:space="preserve">
+    <value>在带有附件下载的同时，星光模块，用户，部门分类的月度统计数据。</value>
+  </data>
+  <data name="AttachTitle" xml:space="preserve">
+    <value>附件 - 相关统计历史</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>公告板</value>
+  </data>
+  <data name="Coop" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="DeptDownStats" xml:space="preserve">
+    <value>部门统计</value>
+  </data>
+  <data name="DownLoadTotalCount" xml:space="preserve">
+    <value>下载总数</value>
+  </data>
+  <data name="FileDownStats" xml:space="preserve">
+    <value>热门下载统计</value>
+  </data>
+  <data name="FileNM" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="ModuleNM" xml:space="preserve">
+    <value>模块名称</value>
+  </data>
+  <data name="MolduleDownStats" xml:space="preserve">
+    <value>模块特定的统计数据</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>进度管理</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>日记</value>
+  </data>
+  <data name="TotalDownLoadCount" xml:space="preserve">
+    <value>下载总数</value>
+  </data>
+  <data name="UserDownStats" xml:space="preserve">
+    <value>每用户统计</value>
+  </data>
+  <data name="WebHard" xml:space="preserve">
+    <value>网络文件夹</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>社区</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>调查</value>
+  </data>
+  <data name="PMS" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Etc" xml:space="preserve">
+    <value>吉他</value>
+  </data>
+  <data name="MFileLengthStats" xml:space="preserve">
+    <value>模块特定的使用情况统计</value>
+  </data>
+  <data name="TotalFileLength" xml:space="preserve">
+    <value>总量</value>
+  </data>
+  <data name="PerformMonTitle" xml:space="preserve">
+    <value>系统状态</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>资源管理</value>
+  </data>
+</root>

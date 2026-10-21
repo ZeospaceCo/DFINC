@@ -1,0 +1,81 @@
+﻿<!-- Tab List //-->
+{#template MAIN}
+<table class="tbl_LBoard" border="1" cellspacing="0" summary="전체리스트">
+<colgroup>
+    <col style="width:50px" />
+    <col   />
+    <col style="width:50px"  />
+    <col style="width:180px" />
+    <col style="width:30px" />
+    <col style="width:225px" />
+</colgroup>
+<thead>
+<tr>
+    <th scope="col"><span class="spListTh01"></span></th>
+    <th scope="col"><span class="spListTh02"></span></th>
+    <th scope="col"><span class="spListTh05"></span></th>
+    <th scope="col"><span class="spListTh03"></span></th>
+    <th scope="col"><span class="spListTh06"></span></th>
+    <th scope="col"><span class="spListTh04"></span></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td><span class="badge text-white { $T.List.ClassInfo }">{ $T.List.SectionStr }</span></td>
+    <td class="suj">
+        {#if $T.List.IsGuard == '1'}
+            <img class="IconSecurity" />                
+        {#elseif $T.List.IsGuard == '2'}
+            <img class="IconEmergency" />                
+        {#/if}
+
+        {#if $T.List.MyTurn == 'Y' && $T.List.ApprovalState != 'C' && $T.List.ApprovalState != 'R'}
+            <a href="#" onclick="Content.Approve('{ $T.List.CompanyID }','{ $T.List.DocumentID }','{ $T.List.Sequence }','{ $T.List.ApprovalTag }','{ $T.List.TargetUserID }','{ $T.List.DeptID }');">{ $T.List.Subject }</a> 
+        {#else}
+            <a href="#" onclick="Content.View('{ $T.List.CompanyID }','{ $T.List.DocumentID }','{ $T.List.GroupID }');">{ $T.List.Subject }</a> 
+        {#/if}  
+        {#if $T.List.ShowNew == 'Y'} <img class="tBtnNew" alt="" />{#/if}  
+
+       
+    </td>
+    <td><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a></td>
+    <td>
+        <div class="ly_loading">
+            <p class="dsc_loading_no"><span class="no"></span><font class="prog"><em>{ $T.List.Prob }</em>%</font></p>
+            <div class="loading_bar"><span class="bg-secondary" style="width:{ $T.List.Prob }%;"></span></div>
+        </div>
+        <!--div class="progress">
+            <div class="progress-bar bg-secondary {#if $T.List.Prob > 99} bg-info {#/if} {#if $T.List.Prob > 49} bg-success {#/if} " role="progressbar " style="width: { $T.List.Prob }%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <p class="dsc_loading_no"></p></span>
+            </div>
+        </div--> 
+    </td>
+    <td><a href="#" onclick="Content.State('{ $T.List.IsComplete }','{ $T.List.DocumentID }','{ $T.List.AccountTag }'); return false;"><i id="docview" class="fas fa-chevron-circle-down text-secondary" title="결재정보조회"></i></a></td>
+    <td>
+        <div class="mm_info">
+            {#include SUB root=$T.List.SequenceList}
+        </div>
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="6"><span class="spListNoData"></span></td>
+</tr>
+{#/for}
+</tbody>
+</table>
+{#/template MAIN}
+
+{#template SUB}
+    {#foreach $T as SUB}
+        {#if $T.SUB.ClassInfo == 'm_more'}
+        <span class="m_more" onclick="Default.State('{ $T.SUB.IsComplete }','{ $T.SUB.DocumentID }','{ $T.SUB.AccountTag }'); return false;" style="cursor:pointer"></span>
+        {#else}
+        <span class="{ $T.SUB.ClassInfo }">
+            { $T.SUB.NameBase } { $T.SUB.TitleBase }<br><font class="dd">{ $T.SUB.ApprovalDateStr }</font>
+        </span>
+        {#/if}  
+    {#/for}
+{#/template SUB}
+

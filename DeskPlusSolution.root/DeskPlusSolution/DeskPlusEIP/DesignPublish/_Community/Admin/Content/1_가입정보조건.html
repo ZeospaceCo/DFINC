@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>가입정보/조건 관리</h1>
+            <span class="cm_subtxt">* 사용자의 가입신청과 관련된, 가입정보와 조건을 관리합니다.</span>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="#"><span>확인</span></a></li>
+                <li><a href="Main.html"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <table class="table_typeB">
+			<caption>가입정보/조건</caption>
+			<colgroup>
+                <col width="120px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>가입신청</th>
+                    <td>
+                        <ul>
+                            <li><input type="radio" name="r1" checked />가입 신청을 받습니다 </li>
+                            <li><input type="radio" name="r1" />당분간 가입신청을 받지 않습니다 : <input type="text" value="2012-01-01" size="10" />~<input type="text" value="2012-01-01" size="10" /></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>가입환영글</th>
+                    <td><textarea rows="5"></textarea> <span class="cm_subtxt cm_req">0/250 bytes</span></td>
+                </tr>
+                <tr>
+                    <th>가입질문</th>
+                    <td>
+                        <ul>
+                            <li><input type="radio" name="r2"  checked /> 가입질문 사용안함</li>
+                            <li><input type="radio" name="r2" /> 가입질문 사용 <span class="cm_subtxt">* 가입질문은 5개까지 입력가능합니다.</span></li>
+                        </ul>
+                        <ul style="padding:10px 20px" class="cm_lstpad">
+                            <li>질문1 : <input type="text" /> <a href="#">[등록]</a></li>
+                            <li><div class="cm_barA"></div></li>
+                            <li>질문2 : <input type="text" /> <a href="#">[수정]</a><a href="#">[삭제]</a></li>
+                            <li><div class="cm_barA"></div></li>
+                            <li>질문3 : <input type="text" /> <a href="#">[등록]</a></li>
+                            <li><div class="cm_barA"></div></li>
+                            <li>질문4 : <input type="text" /> <a href="#">[등록]</a></li>
+                            <li><div class="cm_barA"></div></li>
+                            <li>질문5 : <input type="text" /> <a href="#">[등록]</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>가입등급설정</th>
+                    <td>
+                        <span class="cm_subtxt">회원가입시
+                        <select><option>준회원</option></select>
+                        으로 자동 등급 설정</span>
+                    </td>
+                </tr>
+			</tbody>
+		    </table> 
+            
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

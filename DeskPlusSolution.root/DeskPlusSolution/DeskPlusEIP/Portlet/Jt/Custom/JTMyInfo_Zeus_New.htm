@@ -1,0 +1,12 @@
+﻿
+{#foreach $T as List}   
+    <li {#if $T.List.NewMailCnt == 0}class="my1" {#else}class="my1on"{#/if}><a href="#" id="myInfo_NewMail" title="메일 바로가기">{$T.List.NewMailStr}</a></li>
+    <li {#if $T.List.TodayPimSchCnt == 0}class="my2" {#else}class="my2on"{#/if}><a href="#" id="myInfo_TodayS" title="오늘일정 바로가기">{$T.List.TodayPimSchStr}</a></li>
+    <li {#if $T.List.TodayPimDoCnt == 0}class="my3" {#else}class="my3on"{#/if}><a href="#" id="myInfo_TodayT" title="오늘할일 바로가기">{$T.List.TodayPimDoStr}</a></li>
+    <li {#if $T.List.DocmentCnt == 0}class="my4" {#else}class="my4on"{#/if}><a href="#" id="myInfo_AppDoc" title="상신문서  바로가기">{$T.List.DocmentStr}</a></li>
+    <li {#if $T.List.ApprovalCnt == 0}class="my5" {#else}class="my5on"{#/if}><a href="#" id="myInfo_AppApp"  title="결재대상문서 바로가기">{$T.List.ApprovalStr}</a></li>
+    <li {#if $T.List.DeptSusinCnt == 0}class="my6" {#else}class="my6on"{#/if}><a href="#" id="myInfo_AppDept" title="결재대상문서 바로가기">{$T.List.DeptSusinStr}</a></li>
+    <li {#if $T.List.CompleteCnt == 0}class="my7" {#else}class="my7on"{#/if}><a href="#" id="myInfo_AppCom" title="수신문서 바로가기">{$T.List.CompleteStr}</a></li>  
+{#else}     
+        
+{#/for}  

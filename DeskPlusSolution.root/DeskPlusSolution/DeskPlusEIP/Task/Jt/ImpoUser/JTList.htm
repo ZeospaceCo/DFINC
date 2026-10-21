@@ -1,0 +1,61 @@
+﻿<table class="table_typeA"> 
+<caption>
+    리스트
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="80px" />
+    <col width="50px" />
+    <col width="200px"/>
+    <col width="50px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="60px" />
+</colgroup>
+<tr>    
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>  
+    <th class="center" id="r_gubun"></th>
+    <th class="center" id="r_gubun2"></th>
+    <th class="center" id="r_title"></th>
+    <th class="center" id="r_attach"></th>
+    <th class="center" id="r_status"></th>  
+    <th class="center" id="r_requester"></th>
+    <th class="center" id="r_receiver"></th>
+    <th class="center" id="r_item"></th>
+    <th class="center" id="r_itemsub"></th> 
+    <th class="center">D-Day</th>
+</tr>
+{#foreach $T as List}
+<tr>        
+    <td class="center">
+        <input type="checkbox" class="cbxID" id="cbxID{ $T.List.ListID }" value="{ $T.List.ListID }" />
+    </td>
+    <td class="center">{ $T.List.ImIsTypeStr }</td> 
+    <td class="center">{#if $T.List.IsGubun == '2'}<span class="IsGubun2"></span>
+			{#else}<span class="IsGubun1"></span>
+			{#/if}
+    </td>
+    <td>        
+        <a onclick="List.View('{ $T.List.ListID }','{ $T.List.GroupID }','{ $T.List.ImIsType }');return false;" style="cursor:pointer; {#if $T.List.ViewerCount == '0'}font-weight:bold{#/if}">
+        { $T.List.Title }</a>                
+        {#if $T.List.ReplyCnt > 0}
+        <span class="icon_Comment_view">({ $T.List.ReplyCnt })</span>        
+        {#/if}
+    </td>
+    <td class="center">{#if $T.List.FileCount > 0}<i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.List.ListID }'></i>{#/if}</td>
+    <td class="center">{ $T.List.Status }</td>  
+    <td class="center"><a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.NameBase }</span></a></td>  
+    <td class="center"><a onclick="AccountInfo('{ $T.List.TOUserID }');return false;"><span class="name">{ $T.List.TONameBase }{#if $T.List.TOCnt > 1}+{#/if}</span></a></td> 
+    <td class="center">{ $T.List.ItemName }</td>   
+    <td class="center">{ $T.List.ItemSubName }</td> 
+    <td class="center">{ $T.List.ExcessDay }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="11" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

@@ -1,0 +1,30 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        HolyDay List
+    </caption>
+    <colgroup>
+        <col  />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="120px" />
+    </colgroup>
+    <tr>
+        <th><div id="div1"></div> </th>
+        <th><div id="div2"></div></th>
+        <th><div id="div3"></div></th>
+        <th><div id="div4"></div></th>
+    </tr>
+    {#foreach $T as ShareUserList}
+    <tr>
+        <td class="center">{$T.ShareUserList.DeptName}</td>
+        <td class="center">{$T.ShareUserList.TitleName}</td>
+        <td class="center">{$T.ShareUserList.DutyName}</td>        
+        <td class="center"><a onclick="javascript:List.SelectUserPop('{$T.ShareUserList.Name}|{$T.ShareUserList.UserID}')" style="cursor:pointer" >{ $T.ShareUserList.Name }</a></td>
+        
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="4" class="center"><div id="div5"></div> </td>        
+     </tr>
+    {#/for}  
+ </table>

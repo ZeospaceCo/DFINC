@@ -1,0 +1,42 @@
+﻿<ul>   
+    {#foreach $T as List}
+        <li>
+        <span class="list-title">	
+        {#if $T.List.Gubun == 'Board'}
+        <a onclick="TabWorkMain_PopupBoardViewList('{ $T.List.CategoryID }','{ $T.List.ListID }');return false;" title="{ $T.List.PathName }">
+        [{ $T.List.GubunTitle }]{ $T.List.Title }</a>
+        {#elseif $T.List.Gubun == 'PIM_SCHE'}
+        <a onclick="TabWorkMain_PopupScheduleViewList('{ $T.List.CompanyID }','{ $T.List.CategoryID }','{ $T.List.ListID }');return false;" title="{ $T.List.PathName }">
+        [{ $T.List.GubunTitle }]{ $T.List.Title }</a>
+        {#elseif $T.List.Gubun == 'PIM_TODO'}
+        <a onclick="TabWorkMain_PopupToDoViewList('{ $T.List.ListID }');return false;" title="{ $T.List.PathName }">
+        [{ $T.List.GubunTitle }]{ $T.List.Title }</a>
+        {#else}
+        {#/if}
+        
+        {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if} 
+        
+        {#if $T.List.Gubun == 'Board'}
+            {#if $T.List.ReplyCount > 0}
+            <a onclick="TabWorkMain_PopupBoardViewShort('{ $T.List.CategoryID }','{ $T.List.ListID }');return false;" class="icon_Comment_view">({ $T.List.ReplyCount })</a>
+            {#/if}
+        {#elseif $T.List.Gubun == 'PIM_SCHE'}
+            {#if $T.List.ReplyCount > 0}
+            <a onclick="TabWorkMain_PopupScheduleShort('{ $T.List.ListID }');return false;" class="icon_Comment_view" >({ $T.List.ReplyCount })</a>
+            {#/if}
+        {#elseif $T.List.Gubun == 'PIM_TODO'}
+            {#if $T.List.ReplyCount > 0}
+            <a onclick="TabWorkMain_PopupToDoShort('{ $T.List.ListID }');return false;" class="icon_Comment_view">({ $T.List.ReplyCount })</a>
+            {#/if}
+        {#else}        
+        {#/if}
+        </span> 
+        <span class="list-writer">
+           <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;">{ $T.List.Name } { $T.List.ReplyUserStr }</a>
+        </span>
+        <span class="list-date">{ $T.List.RegDate }</span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  
+</ul>

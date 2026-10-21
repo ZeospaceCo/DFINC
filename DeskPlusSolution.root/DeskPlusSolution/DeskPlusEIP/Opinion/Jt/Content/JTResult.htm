@@ -1,0 +1,12 @@
+﻿{#foreach $T as List}
+<div class="rst_out"></div>
+<div class="rst_tit">
+{ $T.List.RowNum }.&nbsp;<span class="rst_isreq">({ $T.List.IsReqStr })</span>&nbsp;{ $T.List.Title }&nbsp;
+<span class="rst_istype" id="show_{ $T.List.UnitID }"><a onclick="JtDetailShow('{ $T.List.UnitID }','{ $T.List.Type }','{ $T.List.Point }')"><span class="jtR_F2"></span></a></span>
+<span class="rst_istype" id="hide_{ $T.List.UnitID }" style="display:none;"><a onclick="JtDetailHide('{ $T.List.UnitID }')"><span class="jtR_F3"></span></a></span>
+<span id="spTot_{ $T.List.UnitID }" class="rst_votecnt"></span>
+</div>
+<div id="divUnit_{ $T.List.UnitID }" class="rst_cont"></div>
+{#else}
+<div><span id="jtR_F1"></span></div>
+{#/for}

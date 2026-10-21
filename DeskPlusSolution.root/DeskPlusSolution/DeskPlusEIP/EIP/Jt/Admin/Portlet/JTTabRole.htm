@@ -1,0 +1,33 @@
+﻿<table class="table_typeT">
+    <caption>
+        접근권한
+    </caption>
+    <colgroup>
+        <col />
+        <col width="80px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_RoleName" style="font-weight:bold;"></th>
+            <th class="center" id="r_delRole" style="font-weight:bold;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {#foreach $T as List}
+        <tr>
+            <td class="center">
+                { $T.List.RoleName }
+            </td>
+            <td class="center">
+                <a onclick="ModTab.DelRole('{ $T.List.PortletRoleID }')" style="display:inline-block;" class="btn"><span class="btn_del"></span></a>
+            </td>
+        </tr>
+        {#else}
+        <tr>
+            <td class="center" colspan="2">
+                <span class="NoListData" />
+            </td>
+        </tr>
+        {#/for}
+    </tbody>
+</table>

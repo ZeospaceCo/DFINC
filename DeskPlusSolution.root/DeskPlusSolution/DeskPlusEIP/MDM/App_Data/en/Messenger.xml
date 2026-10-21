@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML1>
+		[모바일관리알림]
+		&lt;br&gt;&lt;br&gt;
+		- 모바일기기 접근을 승인받았습니다.
+		&lt;br&gt;
+		- 모바일기기종류:$DEVICENAME$
+		&lt;br&gt;&lt;br&gt;
+	</ContentHTML1>
+	<ContentHTML2>
+		[모바일관리알림]
+		&lt;br&gt;&lt;br&gt;
+		- 모바일기기 접근을 거부받았습니다.
+		&lt;br&gt;
+		- 모바일기기종류:$DEVICENAME$
+		&lt;br&gt;&lt;br&gt;
+	</ContentHTML2>
+</ContentInfo>

@@ -1,0 +1,10 @@
+﻿{#foreach $T as List}
+<li class="contentblock linkDiv">
+    <div class="title" onclick="javascript:WFolder.Add('{ $T.List.FormID }')">
+        <a href="#" class="mct">
+         <i class="fas fa-file-alt"></i><font>{ $T.List.FName }</font>
+        </a>
+    </div>
+</li>
+{#else} 
+{#/for}

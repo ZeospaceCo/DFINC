@@ -1,0 +1,50 @@
+﻿<table class="table_typeA"> 
+<caption>
+    전체 제안 보기
+</caption>
+<colgroup>
+    <col width="90px" />
+    <col width="90px" />
+    <col width="350px" />
+    <col />
+    <col width="100px" />
+    <col width="50px" />
+</colgroup>
+<tr>
+    <th class="center">접수번호</th>
+    <th class="center">접수일자</th>
+    <th class="center">제안자</th>
+    <th class="center">제안 제목</th>
+    <th class="center">진행 상황</th>                            
+    <th class="center">등급</th>
+</tr>
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">
+        <a onclick="List.View('{ $T.BoardList.ProposalNo }');return false;" style="cursor:pointer" >{ $T.BoardList.No }</a> 
+    </td>
+    <td class="center">{ $T.BoardList.WriteDateYMD }</td>
+    <td class="center">{ $T.BoardList.ParentDeptName } &nbsp;{ $T.BoardList.DeptName } &nbsp;
+        {#if $T.BoardList.UserID > 0}
+            {#if $T.BoardList.PersonCnt == 1}
+                <a onclick="AccountInfo('{ $T.BoardList.UserID }');return false;" style="cursor:pointer">{ $T.BoardList.Name }</a>
+            {#else}
+                <a onclick="AccountInfo('{ $T.BoardList.UserID }');return false;" style="cursor:pointer">{ $T.BoardList.Name }(+)</a>
+            {#/if}
+        {#else}
+            { $T.BoardList.Name }
+        {#/if}
+    </td>
+    <td class="center">           
+        <a onclick="List.View('{ $T.BoardList.ProposalNo }');return false;" style="cursor:pointer" >{ $T.BoardList.Title }</a> 
+                  
+    </td>
+    <td class="center">{ $T.BoardList.Status }</td>
+    <td class="center">{ $T.BoardList.Grade }</td>   
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span class="NoListData" />등록된 제안이 없습니다.</td>        
+</tr>
+{#/for}        
+</table>

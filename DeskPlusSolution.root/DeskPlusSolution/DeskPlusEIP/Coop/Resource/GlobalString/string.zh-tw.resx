@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttachFile" xml:space="preserve">
+    <value>添加到附件</value>
+  </data>
+  <data name="AddBase" xml:space="preserve">
+    <value>基於文件中添加</value>
+  </data>
+  <data name="AddBaseDoc" xml:space="preserve">
+    <value>要添加的文件</value>
+  </data>
+  <data name="AddDoc" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="AddReceive" xml:space="preserve">
+    <value>添加其他收件人</value>
+  </data>
+  <data name="AddReference" xml:space="preserve">
+    <value>推薦人地址</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>請輸入正文</value>
+  </data>
+  <data name="AdminDel" xml:space="preserve">
+    <value>適當的基於文件的列表，它也將被刪除。你確定要刪除嗎？</value>
+  </data>
+  <data name="AfterChange" xml:space="preserve">
+    <value>變更後的</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>處理後，遇到了錯誤。請聯繫管理員。</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>已經註冊的用戶。</value>
+  </data>
+  <data name="AllCoWorkList" xml:space="preserve">
+    <value>完整的合作名單</value>
+  </data>
+  <data name="AllDel" xml:space="preserve">
+    <value>您確定您要刪除的帖子和回复，直到所有的要求嗎？</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下載</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>應用</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>確定要刪除嗎？</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請輸入日期。</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>壞</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>基於文件</value>
+  </data>
+  <data name="BaseDocList" xml:space="preserve">
+    <value>基於文件的列表</value>
+  </data>
+  <data name="BaseDocSelList" xml:space="preserve">
+    <value>基於文件選擇列表</value>
+  </data>
+  <data name="BaseName" xml:space="preserve">
+    <value>請輸入大分類。</value>
+  </data>
+  <data name="BeforeChanage" xml:space="preserve">
+    <value>更改之前的</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>的接收器和参考</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CancelRequest" xml:space="preserve">
+    <value>取消請求</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>大分類</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>文件夾</value>
+  </data>
+  <data name="CCCoWork" xml:space="preserve">
+    <value>引用誰合作</value>
+  </data>
+  <data name="ChangeComplete" xml:space="preserve">
+    <value>取消如果您是正在改變的狀態。你確定你想改變嗎？</value>
+  </data>
+  <data name="ChangeOrder" xml:space="preserve">
+    <value>更改順序</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>主要類別的順序已被更改。</value>
+  </data>
+  <data name="ChangeSave" xml:space="preserve">
+    <value>保存更改</value>
+  </data>
+  <data name="ChangeSubOrders" xml:space="preserve">
+    <value>子已經改變。</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="CheckCategory" xml:space="preserve">
+    <value>請先選擇大分類。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>請選擇你要刪除的列表。</value>
+  </data>
+  <data name="CheckDelList" xml:space="preserve">
+    <value>請選擇要刪除的列表。</value>
+  </data>
+  <data name="CheckModList" xml:space="preserve">
+    <value>請選擇要修改的列表。</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Collabo" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="CollaboReceived" xml:space="preserve">
+    <value>協作收到</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="CompleteCancel" xml:space="preserve">
+    <value>完成處理？</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已處理。</value>
+  </data>
+  <data name="CompleteDate" xml:space="preserve">
+    <value>填寫申請</value>
+  </data>
+  <data name="Completes" xml:space="preserve">
+    <value>要完成</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>確定要刪除嗎？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>將要丟失以前創建的內容。要選擇嗎？</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="CoWork" xml:space="preserve">
+    <value>商務合作</value>
+  </data>
+  <data name="DateOfWrite" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>你確定要刪除相應的要求嗎？</value>
+  </data>
+  <data name="DelGubun" xml:space="preserve">
+    <value>要刪除分類嗎？</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>你確定要刪除相應的答复</value>
+  </data>
+  <data name="DelSubCategory" xml:space="preserve">
+    <value>子來刪除它。</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>詳細信息</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>詳細信息</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>困難</value>
+  </data>
+  <data name="DocNumber" xml:space="preserve">
+    <value>文件編號</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>文檔查看</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>正文裡含有腳本管理懷疑文句，內容可能被改變。</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>結束日期</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>終止日</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>附件獲取信息的錯誤發生。</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>在處理期間，已經遇到錯誤。</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件類型</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="FormName" xml:space="preserve">
+    <value>樣式名</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>發送</value>
+  </data>
+  <data name="Forwarder" xml:space="preserve">
+    <value>捎信人</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>轉到查看頁面</value>
+  </data>
+  <data name="GotoCoopMainPage" xml:space="preserve">
+    <value>返回主頁</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>轉到列表。</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="GroupManage" xml:space="preserve">
+    <value>分類管理</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>分類名稱</value>
+  </data>
+  <data name="IngDetail" xml:space="preserve">
+    <value>發展歷史</value>
+  </data>
+  <data name="InputCompleteDate" xml:space="preserve">
+    <value>請輸入請求完成之日起。</value>
+  </data>
+  <data name="InputEndDate" xml:space="preserve">
+    <value>請輸入您的終止日期。</value>
+  </data>
+  <data name="InputReceive" xml:space="preserve">
+    <value>請輸入收件人。</value>
+  </data>
+  <data name="InputStartDate" xml:space="preserve">
+    <value>請輸入開始日期。</value>
+  </data>
+  <data name="InputTitle" xml:space="preserve">
+    <value>請輸入標題。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目錄</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>滿</value>
+  </data>
+  <data name="ManageItem" xml:space="preserve">
+    <value>主要分類管理</value>
+  </data>
+  <data name="ManageItemSub" xml:space="preserve">
+    <value>子類別管理</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyReply" xml:space="preserve">
+    <value>答复受精</value>
+  </data>
+  <data name="MoveAccept" xml:space="preserve">
+    <value>接受在屏幕上移動</value>
+  </data>
+  <data name="MoveAdd" xml:space="preserve">
+    <value>要進入到外接屏幕。</value>
+  </data>
+  <data name="MoveMod" xml:space="preserve">
+    <value>要進入編輯畫面。</value>
+  </data>
+  <data name="MovePage" xml:space="preserve">
+    <value>在模板形式的分類將被調用。你想要的網頁，移動嗎？</value>
+  </data>
+  <data name="MoveRequest" xml:space="preserve">
+    <value>畫面上，將重新請求</value>
+  </data>
+  <data name="MoveScreen" xml:space="preserve">
+    <value>完成後，移動屏幕</value>
+  </data>
+  <data name="MSGCancel" xml:space="preserve">
+    <value> 對於你的合作已被取消。</value>
+  </data>
+  <data name="MSGComplete" xml:space="preserve">
+    <value> 為你已經完成的協作。</value>
+  </data>
+  <data name="MSGReceive" xml:space="preserve">
+    <value>為你的合作已經收到您的</value>
+  </data>
+  <data name="MSGReject" xml:space="preserve">
+    <value> 拒絕你的合作</value>
+  </data>
+  <data name="MSGRequest" xml:space="preserve">
+    <value> 請為你的合作。</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>已保存的文檔</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>文件已經被添加到列表</value>
+  </data>
+  <data name="MSG_FAIL" xml:space="preserve">
+    <value>在加工過程中發生錯誤。請聯繫管理員。</value>
+  </data>
+  <data name="MSG_NoSelect" xml:space="preserve">
+    <value>選定的文件是不</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>已被處理。</value>
+  </data>
+  <data name="MutiName" xml:space="preserve">
+    <value>多國名</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>未來</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>轉</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>附件不存在。</value>
+  </data>
+  <data name="NoBaseListData" xml:space="preserve">
+    <value>基於文檔不存在。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>沒有內容。</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>該文件不存在。</value>
+  </data>
+  <data name="NoListData" xml:space="preserve">
+    <value>內容不存在。</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="OpenYN" xml:space="preserve">
+    <value>能見度</value>
+  </data>
+  <data name="OrganBtnSearch" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>私人</value>
+  </data>
+  <data name="ProceedsTitle" xml:space="preserve">
+    <value>所得款項稱號</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>處理</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>進步</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>上市</value>
+  </data>
+  <data name="Receipt" xml:space="preserve">
+    <value>收據</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>件人</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>收到</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>收信人</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>推薦人</value>
+  </data>
+  <data name="Referencer" xml:space="preserve">
+    <value>參照人</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="ReplyDel" xml:space="preserve">
+    <value>回答被刪除</value>
+  </data>
+  <data name="ReplyMod" xml:space="preserve">
+    <value>正確的答案</value>
+  </data>
+  <data name="ReplyTitle" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="ReportUser" xml:space="preserve">
+    <value>提交人</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>請求</value>
+  </data>
+  <data name="RequestCoWork" xml:space="preserve">
+    <value>要求合作</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>申請日期</value>
+  </data>
+  <data name="RequestedCoWork" xml:space="preserve">
+    <value>要求合作</value>
+  </data>
+  <data name="Requester" xml:space="preserve">
+    <value>人誰要求</value>
+  </data>
+  <data name="Requests" xml:space="preserve">
+    <value>重新請求</value>
+  </data>
+  <data name="RequireDetail" xml:space="preserve">
+    <value>的分項要求</value>
+  </data>
+  <data name="Requires" xml:space="preserve">
+    <value>請求</value>
+  </data>
+  <data name="Rerequest" xml:space="preserve">
+    <value>重新請求</value>
+  </data>
+  <data name="SaveBoth" xml:space="preserve">
+    <value>收件人，你可以改變的引薦？</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>將發布的第一個留言做成截圖。</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>秘密寫</value>
+  </data>
+  <data name="SelectFirst" xml:space="preserve">
+    <value>請選擇的第一個分類。</value>
+  </data>
+  <data name="SelectLevel" xml:space="preserve">
+    <value>請選擇難度級別。</value>
+  </data>
+  <data name="SelectSecond" xml:space="preserve">
+    <value>請選擇第二分類。</value>
+  </data>
+  <data name="SelTarget" xml:space="preserve">
+    <value>選擇目的地</value>
+  </data>
+  <data name="ShallWeReject" xml:space="preserve">
+    <value>你要拒絕?</value>
+  </data>
+  <data name="StandBy" xml:space="preserve">
+    <value>待機</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於終止日期。</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>態勢</value>
+  </data>
+  <data name="SubBaseName" xml:space="preserve">
+    <value>請輸入小分類</value>
+  </data>
+  <data name="SubCategory" xml:space="preserve">
+    <value>小分類</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目標人物</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>請輸入模板的名稱。</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>文本</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>標題</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="UsedYN" xml:space="preserve">
+    <value>是否使用</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>發布</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>步驟</value>
+  </data>
+  <data name="NoBaseCoopListData" xml:space="preserve">
+    <value>我們沒有任何基礎的文件。</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+</root>

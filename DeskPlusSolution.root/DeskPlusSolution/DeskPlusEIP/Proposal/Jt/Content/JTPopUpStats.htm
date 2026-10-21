@@ -1,0 +1,33 @@
+﻿<table class="table_typeA"> 
+<caption>
+   제안 통계 보기
+</caption>
+<colgroup>
+    <col width="200px" />
+    <col width="200px" />
+    <col width="30px" />
+    <col width="100px" />
+    <col width="30px" />
+</colgroup>
+<tr>
+    <th class="center">부서</th>
+    <th class="center">소속</th>
+    <th class="center">등급</th>
+    <th class="center">진행 상황</th>
+    <th class="center">건수</th>
+</tr>
+
+{#foreach $T as BoardList}
+<tr>
+    <td class="center">{ $T.BoardList.ParentDeptName }</td>
+    <td class="center">{ $T.BoardList.DeptName }</td>
+    <td class="center">{ $T.BoardList.Grade }</td>   
+    <td class="center">{ $T.BoardList.Status }</td>
+    <td class="center">{ $T.BoardList.NoCnt }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" />등록된 제안이 없습니다.</td>        
+</tr>
+{#/for}        
+</table>

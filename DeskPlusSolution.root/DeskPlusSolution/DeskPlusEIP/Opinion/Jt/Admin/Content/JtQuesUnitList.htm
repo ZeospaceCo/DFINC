@@ -1,0 +1,11 @@
+﻿<ul class="table_typeT ul_typeT">
+    {#foreach $T as List}
+    <li>
+        <span>{ $T.List.Title } { $T.List.IsReqStr } { $T.List.ItemCnt } </span>
+        <a href="#" onclick="javascript:QuesMod.UnitDel('{ $T.List.QuesUnitID }')"   title="{ $T.List.FileDel }"><i class="fas fa-times-circle"></i></a>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>
+

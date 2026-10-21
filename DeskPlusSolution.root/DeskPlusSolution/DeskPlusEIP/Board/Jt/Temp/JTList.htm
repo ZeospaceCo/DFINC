@@ -1,0 +1,48 @@
+﻿<table cellspacing="0" class="table_typeA">
+    <caption>
+        AddressList
+    </caption>
+    <colgroup>
+        <col width="50px" />
+        <col />
+        <col width="80px" />
+		<col width="120px" />
+        <col width="100px" />
+    </colgroup>
+    <tr>
+        <th id="r_number"></th>
+        <th><a id="a_Title" href="#" onclick="javascript:List.Sort ('Title')"><span id="r_title"></span></a></th>
+        <th id="r_attachName"></th>
+        <th id="r_register"></th>
+        <th><a id="a_WriteDate" href="#" onclick="javascript:List.Sort ('WriteDate')"><span id="r_regDate"></span></a></th>
+    </tr>
+    {#foreach $T as BoardList}
+    <tr>
+        <td class="center">
+            { $T.BoardList.ROW }
+        </td>
+        <td>
+            <a href="#" onclick="javascript:List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.MyTemplateID }')"
+                style="cursor: pointer">{ $T.BoardList.Title }</a>
+            {#if $T.BoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}                  
+        </td>
+        <td class="center">
+            {#if $T.BoardList.Filecount > 0}
+            <img class="IconAttacth" action="attach" style="cursor: pointer"
+                categoryid='{ $T.BoardList.CategoryID }' listid='{ $T.BoardList.MyTemplateID }' />
+            {#/if}
+        </td>
+        <td class="center">
+            <a href="#" onclick="javascript:AccountInfo('{ $T.BoardList.WriteUserID }')" style="cursor: pointer">
+                { $T.BoardList.WriteUserName }</a>
+        </td>
+        <td class="center">
+            { $T.BoardList.WriteDateStr }
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

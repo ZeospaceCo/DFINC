@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="글자색"/>	
+	<Item ID="#666666" Value="회색"/>
+	<Item ID="#f29e00" Value="노랑"/>
+	<Item ID="#ff6737" Value="주황"/>
+	<Item ID="#e23234" Value="빨강"/>
+	<Item ID="#b66428" Value="갈색"/>
+	<Item ID="#f0418c" Value="분홍"/>
+	<Item ID="#7a3dc2" Value="보라"/>
+	<Item ID="#b13db0" Value="자주"/>
+	<Item ID="#58b837" Value="연두"/>
+	<Item ID="#12a1a7" Value="청록"/>
+	<Item ID="#1867cf" Value="파랑"/>
+</XmlData>
+

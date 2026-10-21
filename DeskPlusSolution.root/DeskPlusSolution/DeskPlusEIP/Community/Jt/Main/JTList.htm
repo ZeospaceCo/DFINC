@@ -1,0 +1,37 @@
+﻿<table class="table_typeA">
+<caption>커뮤니티 리스트</caption>
+<colgroup>
+    <col width="250px" />    
+    <col width="120px" />
+    <col width="200px" />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="r_name"></span></th>
+        <th class="center"><span id="r_writeUserName"></span></th>
+        <th class="center"><span id="r_description"></span></th>
+        <th class="center"><span id="r_count"></span></th>
+        <th class="center"><span id="r_boaCount"></span></th>
+        <th class="center"><span id="r_type"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><a href="#" onclick="javascript:Content.View('{ $T.List.CommunityID }','{ $T.List.Type }','{ $T.List.Grade }')" style="cursor:pointer" >{ $T.List.Name }</a></td>        
+        <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a></td>
+        <td>{ $T.List.Description }</td>
+        <td class="center">{ $T.List.MemberCount }</td>
+        <td class="center">{ $T.List.BoaCount }</td>
+        <td class="center">{ $T.List.StrType }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="6" class="center"><span id="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

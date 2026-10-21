@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        $("#accordion").height("100%")
+        $(".accordion").accordion({
+            fillSpace: true
+        });
+        $(".accordion").accordion({
+            animated: 'slide'
+        });
+    });
+    $(function () {
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+
+        //alert($(".accordion").height());
+    });
+
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+</head>
+<body>
+<div id="app_wrap">
+<div id="contentWrap">
+
+    <!-- 트리 //-->
+    <div id="left">
+    <div id="layout_left">
+        
+        <div id="layout_treetop">
+            <span class="treetop_title">양식관리</span>
+        </div>
+        <div id="layout_treeboxAcc" style="height:90%;">
+            <div class="accordion">
+                <div class="menu"><a href="#" onclick="" >프로세스 정보</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_tag">
+                        <li class="tit">발신</li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD0.gif" alt="담당" title="담당" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD1.gif" alt="심의1" title="심의1" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD2.gif" alt="심의2" title="심의2" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD3.gif" alt="심의3" title="심의3" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD4.gif" alt="심의4" title="심의4" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD5.gif" alt="심의5" title="심의5" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD6.gif" alt="심의6" title="심의6" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD7.gif" alt="심의7" title="심의7" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD8.gif" alt="심의8" title="심의8" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD9.gif" alt="심의9" title="심의9" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD10.gif" alt="심의10" title="심의10" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD11.gif" alt="심의11" title="심의11" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD12.gif" alt="심의12" title="심의12" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZD13.gif" alt="심의13" title="심의13" /></li>
+                    </ul>
+                    <ul class="app_reg_tag">
+                        <li class="tit">협조</li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH.gif" alt="협조" title="협조" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH1.gif" alt="협조1" title="협조1" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH2.gif" alt="협조2" title="협조2" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH3.gif" alt="협조3" title="협조3" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH4.gif" alt="협조4" title="협조4" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH5.gif" alt="협조5" title="협조5" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH6.gif" alt="협조6" title="협조6" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH7.gif" alt="협조7" title="협조7" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH8.gif" alt="협조8" title="협조8" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH9.gif" alt="협조9" title="협조9" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH10.gif" alt="협조10" title="협조10" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH11.gif" alt="협조11" title="협조11" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH12.gif" alt="협조12" title="협조12" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZH13.gif" alt="협조13" title="협조13" /></li>
+                    </ul>
+                    <ul class="app_reg_tag">
+                        <li class="tit">재결</li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR1.gif" alt="재결1" title="재결1" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR2.gif" alt="재결2" title="재결2" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR3.gif" alt="재결3" title="재결3" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR4.gif" alt="재결4" title="재결4" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR5.gif" alt="재결5" title="재결5" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR6.gif" alt="재결6" title="재결6" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR7.gif" alt="재결7" title="재결7" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR8.gif" alt="재결8" title="재결8" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR9.gif" alt="재결9" title="재결9" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR10.gif" alt="재결10" title="재결10" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR11.gif" alt="재결11" title="재결11" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR12.gif" alt="재결12" title="재결12" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR13.gif" alt="재결13" title="재결13" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZR14.gif" alt="재결14" title="재결14" /></li>
+                    </ul>
+                    <ul class="app_reg_tag">
+                        <li class="tit">수신</li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZQDpt.gif" alt="반송가능수신" title="반송가능수신" /></li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZPDpt.gif" alt="반송불가수신" title="반송불가수신" /></li>
+                    </ul>
+                    <ul class="app_reg_tag">
+                        <li class="tit">참조</li>
+                        <li><img src="/DeskPlusEIP/Design/Blue/Img/Lang/ko/app_reg_ZC.gif" alt="참조" title="참조" /></li>
+                    </ul>
+                </div>
+                <div class="menu"><a href="#" onclick="" >유동프로세스 정보</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_flow">
+                        <li class="ZD" title="발신결재망 위치지정">발신그룹</li>
+                    </ul>
+                    <ul class="app_reg_flow">
+                        <li class="ZH" title="협조결재망 위치지정">협조그룹</li>
+                    </ul>
+                    <ul class="app_reg_flow">
+                        <li class="ZA" title="병렬결재망 위치지정">병렬그룹</li>
+                    </ul>
+                    <ul class="app_reg_flow">
+                        <li class="ZR" title="재결결재망 위치지정">재결그룹</li>
+                    </ul>
+                    <span class="app_subtxt">* 고정결재망과 동시 사용불가.</span>
+                </div>
+                <div class="menu"><a href="#" onclick="" >양식정보</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_flow">
+                        <li class="tit">기본정보</li>
+                        <li title="회사명">회사명</li>
+                        <li title="문서번호">문서번호</li>
+                        <li title="작성일">작성일</li>
+                        <li title="보존년한">보존년한</li>
+                        <li title="제목">제목</li>
+                        <li title="상신부서">상신부서</li>
+                        <li title="상신자직급">상신자직급</li>
+                        <li title="상신자명">상신자명</li>
+                        <li title="상신자사번">상신자사번</li>
+                    </ul>
+                    <ul class="app_reg_flow">
+                        <li class="tit">문서내용</li>
+                        <li title="첨언">첨언</li>
+                        <li title="첨언붙임">첨언붙임</li>
+                        <li title="입력">입력</li>
+                        <li title="내용">내용</li>
+                        <li title="에디터">에디터</li>
+                    </ul>
+                    <ul class="app_reg_flow">
+                        <li class="tit">시행문</li>
+                        <li title="시행문수신처">수신처</li>
+                        <li title="시행문참조처1">참조1</li>
+                        <li title="시행문참조처2">참조2</li>
+                    </ul>
+                     <span class="app_subtxt">* 문서와 관련된 기본정보를 지정.</span>
+                </div>
+                <div class="menu"><a href="#">연계파일정보</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_set">
+                        <li class="titL">사용여부:</li>
+                        <li><input type="radio" name="r1" checked />사용안함&nbsp;<input type="radio" name="r1" />사용</li>
+                    </ul>
+                    <ul class="app_reg_set">
+                        <li class="titT">직접연동호출명:</li>
+                        <li><input type="text" value="SAPType1" style="width:50%"/> [중복체크]</li>
+                        <li class="titT">연동URL:</li>
+                        <li><input type="text" value="/DeskPlusEIP/DesignPublish/_Approval/Admin/양식등록.asp" style="width:98%" /></li>
+                    </ul>
+                    <span class="app_subtxt">* 커스텀연동문서의 경우 설정.</span>
+                </div>
+                <div class="menu"><a href="#">EDM이관설정</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_set">
+                        <li class="titL">사용여부:</li>
+                        <li><input type="radio" name="r1" checked="checked" />사용안함&nbsp;<input type="radio" name="r1" />사용</li>
+                    </ul>
+                    <ul class="app_reg_set">
+                        <li class="titL">이관방식:</li>
+                        <li>
+                            <select>
+                                <option title="이관정보를 관리자가 지정">관리자지정</option>
+                                <option title="이관정보를 사용자(필수)가 지정">사용자(필수)</option>
+                                <option title="이관정보를 사용자(선택)가 지정">사용자(선택)</option>
+                            </select> 
+                        </li>
+                    </ul>
+                    <span class="app_subtxt">* EDM연동 시 설정.</span>
+                </div>
+                <div class="menu"><a href="#" onclick="" >기타설정</a></div>
+                <div class="app_menusub">
+                    <ul class="app_reg_set">
+                        <li class="titL">문서사용:</li>
+                        <li><input type="radio" name="r1" checked="checked" title="비활성화" />사용안함 &nbsp; <input type="radio" name="r1" title="활성화" />사용</li>
+                    </ul>
+                    <ul class="app_reg_set">
+                        <li class="titL">일괄결재:</li>
+                        <li><input type="radio" name="r1" checked="checked" />사용안함 &nbsp; <input type="radio" name="r1" />사용</li>
+                    </ul>
+                    <ul class="app_reg_set">
+                        <li class="titL">시행문:</li>
+                        <li><input type="radio" name="r1" checked="checked" />사용안함 &nbsp; <input type="radio" name="r1" />사용</li>
+                        <li>-내용ID:CONTENT<br />-결재선ID:SEQUENCESECTION</li>
+                    </ul>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+        <div id="layout_treebuttom"></div>
+
+    </div>
+    </div>
+
+    <!-- 내용 //-->
+    <div id="content">
+    <div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="" title=""><span>인쇄</span></a></li>
+                <li><a href="" title=""><span>결재라인지정</span></a></li>
+            </ul>
+            
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="" title=""><span>저장</span></a></li>
+                <li><a href="#"><span>닫기</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 양식로드 //-->
+            <div class="app_iframeReg">
+		        아이프레임 들어가는 자리
+	        </div>
+
+            <!-- 문서수신자정보 //-->
+            <div class="layout_subbox">
+                <h2>문서수신자정보</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>추가</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+            <caption>문서수신자정보리스트</caption>
+            <colgroup>
+                <col />
+                <col width="100px" />
+                <col width="100px" />    
+                <col width="60px"/>    
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><span id="Span1">부서명</span></th>
+                    <th><span id="Span2">직급/직책명</span></th>
+                    <th><span id="Span3">이름</span></th>
+                    <th><span id="Span4">삭제</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="center">한명만 지정가능 - 리스트가 존재하지 않습니다.</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+
+            <!-- 대상폴더정보 //-->
+            <div class="layout_subbox">
+                <h2>대상폴더정보</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>추가</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+            <caption>대상폴더정보 리스트</caption>
+            <colgroup>
+                <col />
+                <col width="100px" />
+                <col width="60px"/>    
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><span id="Span5">폴더명</span></th>
+                    <th><span id="Span6">폴더경로</span></th>
+                    <th><span id="Span8">삭제</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="center">한개만 지정가능 - 리스트가 존재하지 않습니다.</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+        
+</div>
+</div>
+
+          
+
+</body>
+</html>

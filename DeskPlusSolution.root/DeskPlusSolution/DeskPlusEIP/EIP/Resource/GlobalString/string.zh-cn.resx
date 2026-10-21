@@ -1,0 +1,1419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessCheck" xml:space="preserve">
+    <value>访问与否</value>
+  </data>
+  <data name="AccessFail" xml:space="preserve">
+    <value>没有可访问的门户菜单。</value>
+  </data>
+  <data name="AccessLog" xml:space="preserve">
+    <value>登录历史</value>
+  </data>
+  <data name="AccessTime" xml:space="preserve">
+    <value>访问时间</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="ActiveUnActive" xml:space="preserve">
+    <value>激活/停用</value>
+  </data>
+  <data name="Active_Short" xml:space="preserve">
+    <value>活跃</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAuth" xml:space="preserve">
+    <value>权限添加</value>
+  </data>
+  <data name="AddForTab" xml:space="preserve">
+    <value>添加（选项卡）</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>添加组</value>
+  </data>
+  <data name="AddImg_120_60" xml:space="preserve">
+    <value>添加图像（120 * 60）</value>
+  </data>
+  <data name="AddIP" xml:space="preserve">
+    <value>添加IP</value>
+  </data>
+  <data name="AddLicense" xml:space="preserve">
+    <value>添加许可证</value>
+  </data>
+  <data name="AddMultiCompany" xml:space="preserve">
+    <value>添加他公司模块</value>
+  </data>
+  <data name="AddParameter" xml:space="preserve">
+    <value>添加参数</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>添加模块</value>
+  </data>
+  <data name="AddPortletCheckedTab" xml:space="preserve">
+    <value>添加了选项卡里选择的模块</value>
+  </data>
+  <data name="AddPrivateGroup" xml:space="preserve">
+    <value>添加个人组</value>
+  </data>
+  <data name="AddressEng" xml:space="preserve">
+    <value>英文地址</value>
+  </data>
+  <data name="AddRSS" xml:space="preserve">
+    <value>添加RSS</value>
+  </data>
+  <data name="AddSkin" xml:space="preserve">
+    <value>添加皮肤</value>
+  </data>
+  <data name="AddTab" xml:space="preserve">
+    <value>添加标签</value>
+  </data>
+  <data name="AddTabInfo" xml:space="preserve">
+    <value>添加标签信息</value>
+  </data>
+  <data name="AdminMyInfo" xml:space="preserve">
+    <value>我的信息管理</value>
+  </data>
+  <data name="AdminTabSetting" xml:space="preserve">
+    <value>设置管理员标签添加</value>
+  </data>
+  <data name="Allow" xml:space="preserve">
+    <value>允许</value>
+  </data>
+  <data name="AllowAccess" xml:space="preserve">
+    <value>允许访问</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>适用</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>请输入注册的日期。</value>
+  </data>
+  <data name="ApplyUseCode" xml:space="preserve">
+    <value>该代码可以使用。</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="AuthAccessControl" xml:space="preserve">
+    <value>控制权限访问</value>
+  </data>
+  <data name="AuthCode" xml:space="preserve">
+    <value>权限代码</value>
+  </data>
+  <data name="AuthExplain" xml:space="preserve">
+    <value>权限说明</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>授权列表</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>权限管理</value>
+  </data>
+  <data name="AuthName" xml:space="preserve">
+    <value>权限名</value>
+  </data>
+  <data name="BaseLang" xml:space="preserve">
+    <value>基本名</value>
+  </data>
+  <data name="BlockAccess" xml:space="preserve">
+    <value>访问切断</value>
+  </data>
+  <data name="Call_ID" xml:space="preserve">
+    <value>呼叫ID</value>
+  </data>
+  <data name="Call_ID_Title" xml:space="preserve">
+    <value>直接呼叫时，使用的呼叫ID</value>
+  </data>
+  <data name="CanNotUse" xml:space="preserve">
+    <value>不可使用</value>
+  </data>
+  <data name="CanUse" xml:space="preserve">
+    <value>可以使用</value>
+  </data>
+  <data name="CEO" xml:space="preserve">
+    <value>代表人</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>目录顺序已变更。</value>
+  </data>
+  <data name="ChangeGroup" xml:space="preserve">
+    <value>群组变更</value>
+  </data>
+  <data name="ChangeParentMenu" xml:space="preserve">
+    <value>上级菜单变更</value>
+  </data>
+  <data name="CheckAddRSSGroup" xml:space="preserve">
+    <value>请选择添加RSS的群组</value>
+  </data>
+  <data name="CheckChageUpperMenuName" xml:space="preserve">
+    <value>请选择要变更的上级菜单名。</value>
+  </data>
+  <data name="CheckChoiceMultiValue" xml:space="preserve">
+    <value>请用重复确认功能确认。</value>
+  </data>
+  <data name="CheckDeleteCompanyPersonInfo" xml:space="preserve">
+    <value>请选择要删除的公司担当者信息。</value>
+  </data>
+  <data name="CheckDeleteGroup" xml:space="preserve">
+    <value>请选择要删除的群组。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>请选择要删除的列表。</value>
+  </data>
+  <data name="CheckGroup" xml:space="preserve">
+    <value>不能添加到最上级群组。请选择下级群组。\n 如没有，请创建群组。</value>
+  </data>
+  <data name="CheckGroupAfterDeletePortlet" xml:space="preserve">
+    <value>选择群组后，请删除模块。</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>请选择列表。</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>请选择登录重复确认。</value>
+  </data>
+  <data name="CheckModGroup" xml:space="preserve">
+    <value>请选择要修改的群组。</value>
+  </data>
+  <data name="CheckMoveFolder" xml:space="preserve">
+    <value>请选择要移动的文件夹。</value>
+  </data>
+  <data name="CheckMultiValue" xml:space="preserve">
+    <value>重复确认</value>
+  </data>
+  <data name="CheckPortlet" xml:space="preserve">
+    <value>请选择模块</value>
+  </data>
+  <data name="CheckPortletCategory" xml:space="preserve">
+    <value>请选择模块群组。</value>
+  </data>
+  <data name="CheckPortletGroup" xml:space="preserve">
+    <value>请选择模块群组。</value>
+  </data>
+  <data name="CheckSearchSection" xml:space="preserve">
+    <value>请选择搜索领域</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国语</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CodeInfo" xml:space="preserve">
+    <value>代码信息</value>
+  </data>
+  <data name="CodeKey" xml:space="preserve">
+    <value>代码钥匙</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>代码管理</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>代码名</value>
+  </data>
+  <data name="Col_1" xml:space="preserve">
+    <value>1段（单一型）</value>
+  </data>
+  <data name="Col_2_Left" xml:space="preserve">
+    <value>2段（左侧）</value>
+  </data>
+  <data name="Col_2_Right" xml:space="preserve">
+    <value>2段（右侧）</value>
+  </data>
+  <data name="Col_2_Share" xml:space="preserve">
+    <value>2段（分配型）</value>
+  </data>
+  <data name="Col_3_Center" xml:space="preserve">
+    <value>3段（中间）</value>
+  </data>
+  <data name="Col_3_Share" xml:space="preserve">
+    <value>3段（分配型）</value>
+  </data>
+  <data name="Col_4_Share" xml:space="preserve">
+    <value>4段（分配型）</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="CommonPortlet" xml:space="preserve">
+    <value>共用模块群组</value>
+  </data>
+  <data name="CompanyFax" xml:space="preserve">
+    <value>公司传真</value>
+  </data>
+  <data name="CompanyHomepage" xml:space="preserve">
+    <value>公司网站</value>
+  </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>公司信息</value>
+  </data>
+  <data name="CompanyManagement" xml:space="preserve">
+    <value>公司管理</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>公司名</value>
+  </data>
+  <data name="CompanyPersonInfo" xml:space="preserve">
+    <value>公司担当者信息</value>
+  </data>
+  <data name="CompanyPhone" xml:space="preserve">
+    <value>公司电话号码</value>
+  </data>
+  <data name="ConfigPortletUser" xml:space="preserve">
+    <value>模块管理</value>
+  </data>
+  <data name="ConfigTabAdmin" xml:space="preserve">
+    <value>共用标签管理</value>
+  </data>
+  <data name="ConfigTabMain" xml:space="preserve">
+    <value>开始标签设置</value>
+  </data>
+  <data name="ConfigTabSkin" xml:space="preserve">
+    <value>皮肤设置</value>
+  </data>
+  <data name="ConfigTabUser" xml:space="preserve">
+    <value>个人标签管理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmAdd" xml:space="preserve">
+    <value>已添加。</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>已保存。</value>
+  </data>
+  <data name="ConfirmChange" xml:space="preserve">
+    <value>已更改</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="ConfirmDeleteAuth" xml:space="preserve">
+    <value>连分配到的权限值也将被删除。要删除吗？</value>
+  </data>
+  <data name="ConfirmDeleteCompanyPersonInfo" xml:space="preserve">
+    <value>确定要删除该公司担当者信息吗？</value>
+  </data>
+  <data name="ConfirmDeleteMenu" xml:space="preserve">
+    <value>要删除菜单吗？</value>
+  </data>
+  <data name="ConfirmDeleteSubCode" xml:space="preserve">
+    <value>下级代码也要被删除。要删除吗？</value>
+  </data>
+  <data name="ConfirmDeleteTabAddPortlet" xml:space="preserve">
+    <value>确定要删除吗？\ n（添加到标签的模块也将被删除。）</value>
+  </data>
+  <data name="ConfirmLicense" xml:space="preserve">
+    <value>激活许可证</value>
+  </data>
+  <data name="ConfirmMod" xml:space="preserve">
+    <value>已被修改。</value>
+  </data>
+  <data name="ConfirmMove" xml:space="preserve">
+    <value>已被移动。</value>
+  </data>
+  <data name="ConfirmOrder" xml:space="preserve">
+    <value>顺序已被改变。</value>
+  </data>
+  <data name="ConfirmServer" xml:space="preserve">
+    <value>服务器认证</value>
+  </data>
+  <data name="CreatePortlet" xml:space="preserve">
+    <value>创建portlet</value>
+  </data>
+  <data name="DataCheck" xml:space="preserve">
+    <value>确认数据</value>
+  </data>
+  <data name="DataFormat" xml:space="preserve">
+    <value>数据形式</value>
+  </data>
+  <data name="DataLink" xml:space="preserve">
+    <value>数据连动</value>
+  </data>
+  <data name="DeepSearch" xml:space="preserve">
+    <value>详细搜索</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelegatorName" xml:space="preserve">
+    <value>代表人名</value>
+  </data>
+  <data name="DeletePortlet" xml:space="preserve">
+    <value>模块删除</value>
+  </data>
+  <data name="DelPortlet" xml:space="preserve">
+    <value>模块 删除</value>
+  </data>
+  <data name="DelPortletMsg" xml:space="preserve">
+    <value>（管理员添加的无法删除。）</value>
+  </data>
+  <data name="DelTab" xml:space="preserve">
+    <value>删除标签</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="DirectAdd" xml:space="preserve">
+    <value>马上添加</value>
+  </data>
+  <data name="DownAttach" xml:space="preserve">
+    <value>下载附件纪录</value>
+  </data>
+  <data name="DownloadMsg" xml:space="preserve">
+    <value>下载即时通讯</value>
+  </data>
+  <data name="DuplicateCheckMultiValue" xml:space="preserve">
+    <value>该权限代码是重复的。</value>
+  </data>
+  <data name="DuplicateCode" xml:space="preserve">
+    <value>代码重复。</value>
+  </data>
+  <data name="DuplicatePortletCode" xml:space="preserve">
+    <value>模块代码已重复。</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>职责名</value>
+  </data>
+  <data name="EditContent" xml:space="preserve">
+    <value>内容 修改</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>激活与否</value>
+  </data>
+  <data name="Encrypt" xml:space="preserve">
+    <value>加密</value>
+  </data>
+  <data name="EncryptionGubun" xml:space="preserve">
+    <value>加密区分</value>
+  </data>
+  <data name="EncryptionValue" xml:space="preserve">
+    <value>加密值</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>结束日</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英语</value>
+  </data>
+  <data name="ErrorAccessAuth" xml:space="preserve">
+    <value>该用户的访问权限上有问题。</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>与服务器的通信失败。 ：</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>处理时，发生了错误。</value>
+  </data>
+  <data name="ExcelDown" xml:space="preserve">
+    <value>Excel下载</value>
+  </data>
+  <data name="ExistSubMenu" xml:space="preserve">
+    <value>有下级菜单</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>到期日</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>传真</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>是第一页。</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>文件夹名</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>请输入数据形式值。</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法语</value>
+  </data>
+  <data name="GeneralAdd" xml:space="preserve">
+    <value>添加（一般）</value>
+  </data>
+  <data name="GeneralPortlet" xml:space="preserve">
+    <value>模块（一般）</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到列表。</value>
+  </data>
+  <data name="GoModifyList" xml:space="preserve">
+    <value>转到详细修改页面。</value>
+  </data>
+  <data name="GoToAddPortlet" xml:space="preserve">
+    <value>* 添加完成后，移动到详细模块添加页面。</value>
+  </data>
+  <data name="GoToDetail" xml:space="preserve">
+    <value>转到更多</value>
+  </data>
+  <data name="GotoTabAuth" xml:space="preserve">
+    <value>* 添加标签​​信息后，转到标签信息权限页面。</value>
+  </data>
+  <data name="GoToTabSetting" xml:space="preserve">
+    <value>* 添加标签​​信息后，转到用户标签设置页面。</value>
+  </data>
+  <data name="GroupKey" xml:space="preserve">
+    <value>群组钥匙</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>群组名</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Handphone" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>竖向</value>
+  </data>
+  <data name="HeightAuto" xml:space="preserve">
+    <value>自动竖向</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Inactive_Short" xml:space="preserve">
+    <value>无效</value>
+  </data>
+  <data name="Incorporation" xml:space="preserve">
+    <value>设立日</value>
+  </data>
+  <data name="InputAuthCode" xml:space="preserve">
+    <value>请输入授权码。</value>
+  </data>
+  <data name="InputAuthName" xml:space="preserve">
+    <value>请输入权限名。</value>
+  </data>
+  <data name="InputCode" xml:space="preserve">
+    <value>请输入代码。</value>
+  </data>
+  <data name="InputCodeName" xml:space="preserve">
+    <value>请输入代号名。</value>
+  </data>
+  <data name="InputCompanyName" xml:space="preserve">
+    <value>请输入公司名称</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>请输入值的内容。</value>
+  </data>
+  <data name="InputDataFormat" xml:space="preserve">
+    <value>请输入数据形式值。</value>
+  </data>
+  <data name="InputDeptName" xml:space="preserve">
+    <value>请输入部门名称</value>
+  </data>
+  <data name="InputEncode" xml:space="preserve">
+    <value>请输入加密值。</value>
+  </data>
+  <data name="InputGroupName" xml:space="preserve">
+    <value>请输入群组名</value>
+  </data>
+  <data name="InputIP" xml:space="preserve">
+    <value>请输入IP值。</value>
+  </data>
+  <data name="InputIPNumber" xml:space="preserve">
+    <value>IP里请输入数字值。</value>
+  </data>
+  <data name="InputLinkURLValue" xml:space="preserve">
+    <value>请输入链接地址值。</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>请输入登录ID</value>
+  </data>
+  <data name="InputMenuName" xml:space="preserve">
+    <value>请输入菜单名</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>请输入姓名</value>
+  </data>
+  <data name="InputOrderWay" xml:space="preserve">
+    <value>请输入排序方法</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="InputPortletCode" xml:space="preserve">
+    <value>请输入模块代码。</value>
+  </data>
+  <data name="InputPortletName" xml:space="preserve">
+    <value>请输入模块名。</value>
+  </data>
+  <data name="InputRSSURL" xml:space="preserve">
+    <value>请输入RSS的URL值。</value>
+  </data>
+  <data name="InputSearchEngine" xml:space="preserve">
+    <value>请输入搜索语</value>
+  </data>
+  <data name="InputSearchValue" xml:space="preserve">
+    <value>请添加搜索语</value>
+  </data>
+  <data name="InputTabName" xml:space="preserve">
+    <value>请输入标签名称。</value>
+  </data>
+  <data name="InputUIFormatURLValue" xml:space="preserve">
+    <value>请输入UI类型的URL值。</value>
+  </data>
+  <data name="InterfaceCode" xml:space="preserve">
+    <value>外部连动代码</value>
+  </data>
+  <data name="IPAccessControl" xml:space="preserve">
+    <value>IP访问控制</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="IPBand" xml:space="preserve">
+    <value>IP范围</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>激活与否</value>
+  </data>
+  <data name="IsEncrypt" xml:space="preserve">
+    <value>加密适用与否</value>
+  </data>
+  <data name="IsUsed" xml:space="preserve">
+    <value>适用与否</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本语</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韩国语</value>
+  </data>
+  <data name="LargePortlet" xml:space="preserve">
+    <value>模块最大化</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>最近一个月</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>是最后一页。</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>最近一周</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>布局</value>
+  </data>
+  <data name="LevelManage" xml:space="preserve">
+    <value>等级管理</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="LicenseCount" xml:space="preserve">
+    <value>许可证数</value>
+  </data>
+  <data name="LicenseKey" xml:space="preserve">
+    <value>许可证密钥</value>
+  </data>
+  <data name="LicenseManage" xml:space="preserve">
+    <value>许可证管理</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="LinkSetting" xml:space="preserve">
+    <value>链接设置</value>
+  </data>
+  <data name="LinkURLCheck" xml:space="preserve">
+    <value>确认链接网址</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="MainPortletSave" xml:space="preserve">
+    <value>主页面管理</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="MenuExplain" xml:space="preserve">
+    <value>菜单说明</value>
+  </data>
+  <data name="MenuManagement" xml:space="preserve">
+    <value>菜单管理</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>菜单名称</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModCategory" xml:space="preserve">
+    <value>目录修改</value>
+  </data>
+  <data name="ModDate" xml:space="preserve">
+    <value>变更日期</value>
+  </data>
+  <data name="ModGroup" xml:space="preserve">
+    <value>群组修改</value>
+  </data>
+  <data name="ModPrivateGroup" xml:space="preserve">
+    <value>添加个人群组</value>
+  </data>
+  <data name="ModSubMenuOrder" xml:space="preserve">
+    <value>变更下级菜单顺序</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>多国语</value>
+  </data>
+  <data name="MultiNameCEO" xml:space="preserve">
+    <value>代表人（多国语）</value>
+  </data>
+  <data name="MultiNameCompany" xml:space="preserve">
+    <value>公司（多语种）</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>不是</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>没有内容</value>
+  </data>
+  <data name="NotAllow" xml:space="preserve">
+    <value>不可</value>
+  </data>
+  <data name="NotApplySameUpperMenu" xml:space="preserve">
+    <value>该菜单和要变更的上级菜单是不能相同的。</value>
+  </data>
+  <data name="NotConfirmUserAccessAuth" xml:space="preserve">
+    <value>该用户不可访问。</value>
+  </data>
+  <data name="NotExistContent" xml:space="preserve">
+    <value>内容部存在。</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>列表不存在。</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NotUsed" xml:space="preserve">
+    <value>不使用</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>该登录不能重复。</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="OrganizeTab" xml:space="preserve">
+    <value>标签构成</value>
+  </data>
+  <data name="Organize_Tab" xml:space="preserve">
+    <value>标签 构成</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="ParameterName" xml:space="preserve">
+    <value>参数名称</value>
+  </data>
+  <data name="ParentsGroupName" xml:space="preserve">
+    <value>上级群组名</value>
+  </data>
+  <data name="PasswordErrorLog" xml:space="preserve">
+    <value>登录失败记录</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="PeriodDate" xml:space="preserve">
+    <value>期间条件</value>
+  </data>
+  <data name="PersonalPortlet" xml:space="preserve">
+    <value>个人模块</value>
+  </data>
+  <data name="Portlet" xml:space="preserve">
+    <value>模块</value>
+  </data>
+  <data name="PortletCode" xml:space="preserve">
+    <value>模块代码</value>
+  </data>
+  <data name="PortletForTab" xml:space="preserve">
+    <value>模块（标签用）</value>
+  </data>
+  <data name="PortletGroup" xml:space="preserve">
+    <value>模块群组</value>
+  </data>
+  <data name="PortletGroupManage" xml:space="preserve">
+    <value>模块群组管理</value>
+  </data>
+  <data name="PortletGroupName" xml:space="preserve">
+    <value>模块群组名</value>
+  </data>
+  <data name="PortletList" xml:space="preserve">
+    <value>模块 现况</value>
+  </data>
+  <data name="PortletManagement" xml:space="preserve">
+    <value>模块管理</value>
+  </data>
+  <data name="PortletMove" xml:space="preserve">
+    <value>模块 移动</value>
+  </data>
+  <data name="PortletName" xml:space="preserve">
+    <value>模块名</value>
+  </data>
+  <data name="PortletNames" xml:space="preserve">
+    <value>模块名称</value>
+  </data>
+  <data name="PortletSetting" xml:space="preserve">
+    <value>模块 设置</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="PreviewImg" xml:space="preserve">
+    <value>预览图像</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="PrivatePortlet" xml:space="preserve">
+    <value>个人模块群组</value>
+  </data>
+  <data name="PrivateTabSetting" xml:space="preserve">
+    <value>设置个人标签</value>
+  </data>
+  <data name="ProcessingApply" xml:space="preserve">
+    <value>已被适用。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>处理时发生了错误。请与管理员联系。</value>
+  </data>
+  <data name="ProcessingErrorApply" xml:space="preserve">
+    <value>没有适用。</value>
+  </data>
+  <data name="ProcessingErrorLicenseAdd" xml:space="preserve">
+    <value>添加许可证时发生了错误。请检查日志。</value>
+  </data>
+  <data name="ProcessingErrorLicenseDelete" xml:space="preserve">
+    <value>删除许可证时发生了错误。请检查日志。</value>
+  </data>
+  <data name="RegAccessAuth" xml:space="preserve">
+    <value>访问权限 登记</value>
+  </data>
+  <data name="RegIP" xml:space="preserve">
+    <value>IP 注册</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>注册人</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>该登录可以重复。</value>
+  </data>
+  <data name="SaveChangePortletOrder" xml:space="preserve">
+    <value>变更的模块顺序已被保存。</value>
+  </data>
+  <data name="SaveTab" xml:space="preserve">
+    <value>标签保存</value>
+  </data>
+  <data name="SaveTabPortletOrder" xml:space="preserve">
+    <value>画面保存</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchAutoSpecialNumber" xml:space="preserve">
+    <value>输入特定编号，通讯录里自动搜索。</value>
+  </data>
+  <data name="SearchDateSelect" xml:space="preserve">
+    <value>选择期间</value>
+  </data>
+  <data name="SearchFieldApproval" xml:space="preserve">
+    <value>电子审批</value>
+  </data>
+  <data name="SearchFieldBoard" xml:space="preserve">
+    <value>公告栏</value>
+  </data>
+  <data name="SearchFieldMail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="SearchFieldTotal" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>搜索语</value>
+  </data>
+  <data name="SearchHelp2FirstAction" xml:space="preserve">
+    <value>先执行2</value>
+  </data>
+  <data name="SearchHelpAllInclude" xml:space="preserve">
+    <value>1,2都包括</value>
+  </data>
+  <data name="SearchHelpChoice" xml:space="preserve">
+    <value>1,2中至少包括一个</value>
+  </data>
+  <data name="SearchHelpIf" xml:space="preserve">
+    <value>搜索条件</value>
+  </data>
+  <data name="SearchHelpIncludeNot" xml:space="preserve">
+    <value>1 包括，2除外</value>
+  </data>
+  <data name="SearchInResult" xml:space="preserve">
+    <value>结果中的搜索</value>
+  </data>
+  <data name="SearchMoreResultData" xml:space="preserve">
+    <value>查看更多搜索结果</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>没有搜索结果。</value>
+  </data>
+  <data name="SearchOutput" xml:space="preserve">
+    <value>排序方法</value>
+  </data>
+  <data name="SearchOutputCurrect" xml:space="preserve">
+    <value>准确性</value>
+  </data>
+  <data name="SearchOutputDate" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="SearchOutputTitle" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="SearchRequestSelect" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="SearchResultCnt" xml:space="preserve">
+    <value>个</value>
+  </data>
+  <data name="SearchResultCntTitle" xml:space="preserve">
+    <value>结果数</value>
+  </data>
+  <data name="SearchResultTotal" xml:space="preserve">
+    <value>搜索结果 总</value>
+  </data>
+  <data name="SearchResultValue" xml:space="preserve">
+    <value>搜索语{0}搜索结果 总 {1}个搜索到。</value>
+  </data>
+  <data name="SearchResultValueWithin" xml:space="preserve">
+    <value>在{0}结果内，搜索包括{1}的结果，共搜索到{2}个。</value>
+  </data>
+  <data name="SearchSection" xml:space="preserve">
+    <value>搜索领域</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>个已被搜索到。</value>
+  </data>
+  <data name="SearchTimeFromTo" xml:space="preserve">
+    <value>直接输入</value>
+  </data>
+  <data name="SearchTimeMonth" xml:space="preserve">
+    <value>个月</value>
+  </data>
+  <data name="SearchTimePeriod" xml:space="preserve">
+    <value>搜索期间</value>
+  </data>
+  <data name="SearchTimeWeek" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="SearchTimeYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="SearchWord1" xml:space="preserve">
+    <value>搜索语 1</value>
+  </data>
+  <data name="SearchWord1n2" xml:space="preserve">
+    <value>都包括1,2两个搜索语</value>
+  </data>
+  <data name="SearchWord1or2" xml:space="preserve">
+    <value>搜索语1,2中至少包括一个</value>
+  </data>
+  <data name="SearchWord2" xml:space="preserve">
+    <value>搜索语2</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="SelectedPortlet" xml:space="preserve">
+    <value>选定的模块</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>文件夹选择</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>请设置权限。</value>
+  </data>
+  <data name="SettingLayout" xml:space="preserve">
+    <value>请设置布局。</value>
+  </data>
+  <data name="ShowSearch" xml:space="preserve">
+    <value>搜索导出。</value>
+  </data>
+  <data name="SkinBlue" xml:space="preserve">
+    <value>蓝色</value>
+  </data>
+  <data name="SkinGreen" xml:space="preserve">
+    <value>草绿色</value>
+  </data>
+  <data name="SkinRed" xml:space="preserve">
+    <value>红色</value>
+  </data>
+  <data name="SmallPortlet" xml:space="preserve">
+    <value>模块最小化</value>
+  </data>
+  <data name="SortList" xml:space="preserve">
+    <value>更改顺序</value>
+  </data>
+  <data name="SortWay" xml:space="preserve">
+    <value>排列方法</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>开始日</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日期必须小于终止日期。</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="SuccessDel" xml:space="preserve">
+    <value>已被删除。</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>超级管理员</value>
+  </data>
+  <data name="SysCodeComment" xml:space="preserve">
+    <value>系统代码说明</value>
+  </data>
+  <data name="SysCodeManage" xml:space="preserve">
+    <value>编码</value>
+  </data>
+  <data name="SysCodeName" xml:space="preserve">
+    <value>系统代码名</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>系统代码</value>
+  </data>
+  <data name="TabName" xml:space="preserve">
+    <value>标签名称</value>
+  </data>
+  <data name="TabOrder" xml:space="preserve">
+    <value>标签顺序</value>
+  </data>
+  <data name="TabSetting" xml:space="preserve">
+    <value>标签设置</value>
+  </data>
+  <data name="Tab_Name" xml:space="preserve">
+    <value>标签 名称</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾语</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="TargetData" xml:space="preserve">
+    <value>目标数据</value>
+  </data>
+  <data name="TargetURL" xml:space="preserve">
+    <value>目标URL</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>职位名</value>
+  </data>
+  <data name="TitleNFileName" xml:space="preserve">
+    <value>标题+文件名</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>总 用户数</value>
+  </data>
+  <data name="UIFormat" xml:space="preserve">
+    <value>UI 形式</value>
+  </data>
+  <data name="UIPath" xml:space="preserve">
+    <value>UI 路径</value>
+  </data>
+  <data name="UpperMenuName" xml:space="preserve">
+    <value>上级菜单名</value>
+  </data>
+  <data name="URLInfo" xml:space="preserve">
+    <value>URL信息</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>使用容量</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseAuthCode" xml:space="preserve">
+    <value>该权限代码可以使用。</value>
+  </data>
+  <data name="UsePersonalize" xml:space="preserve">
+    <value>个人化 使用</value>
+  </data>
+  <data name="UserCount" xml:space="preserve">
+    <value>用户数</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="UserNameDeptName" xml:space="preserve">
+    <value>名称（部门）</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="Values" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1个星期</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>横向</value>
+  </data>
+  <data name="WidthAuto" xml:space="preserve">
+    <value>水平自动</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="WrongIPRange" xml:space="preserve">
+    <value>IP范围设置不正确。</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>默认值</value>
+  </data>
+  <data name="LogInImage" xml:space="preserve">
+    <value>登录图像</value>
+  </data>
+  <data name="MenuImage" xml:space="preserve">
+    <value>菜单图像</value>
+  </data>
+  <data name="ModifyLicenseCnt" xml:space="preserve">
+    <value>保存许可证计数</value>
+  </data>
+  <data name="ExcessLicenseCnt" xml:space="preserve">
+    <value>过量的许可证计数</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>节省</value>
+  </data>
+  <data name="BtnSkinGW" xml:space="preserve">
+    <value>門戶網站設置</value>
+  </data>
+  <data name="BtnSkinMail" xml:space="preserve">
+    <value>郵件設置</value>
+  </data>
+  <data name="TitSkinMail" xml:space="preserve">
+    <value>郵件護膚套裝</value>
+  </data>
+  <data name="SearchFieldRM" xml:space="preserve">
+    <value>资源预留</value>
+  </data>
+  <data name="SearchFieldREPORT" xml:space="preserve">
+    <value>周末报道</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="CompleteDoc" xml:space="preserve">
+    <value>审批文件</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>业务合作</value>
+  </data>
+  <data name="TodaySchedule" xml:space="preserve">
+    <value>今日日程</value>
+  </data>
+  <data name="MenuIcon" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="VLogin" xml:space="preserve">
+    <value>垂直</value>
+  </data>
+  <data name="HiddenImage" xml:space="preserve">
+    <value>隐藏图像区域</value>
+  </data>
+  <data name="MsgTab" xml:space="preserve">
+    <value>管理标签</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>备忘录</value>
+  </data>
+  <data name="MenuSetting" xml:space="preserve">
+    <value>图标设置</value>
+  </data>
+  <data name="MenuSetting1" xml:space="preserve">
+    <value>您确定要将菜单设置更改为图标吗？</value>
+  </data>
+  <data name="MenuSetting2" xml:space="preserve">
+    <value>您确定要将菜单设置更改为文本吗？</value>
+  </data>
+  <data name="BGLogin" xml:space="preserve">
+    <value>登录背景图片</value>
+  </data>
+  <data name="BGPotal" xml:space="preserve">
+    <value>门户背景图像</value>
+  </data>
+  <data name="FaMenu" xml:space="preserve">
+    <value>收藏夹菜单设置</value>
+  </data>
+  <data name="SelectFaMenu" xml:space="preserve">
+    <value>请选择</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>上午</value>
+  </data>
+  <data name="LastAccessDate" xml:space="preserve">
+    <value>上次登录时间</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>下午</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>部门改变</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>你没有许可</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>五</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>一</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>六</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>四</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>二</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>三</value>
+  </data>
+  <data name="TodoAlert01" xml:space="preserve">
+    <value>您可以指定最多四个</value>
+  </data>
+  <data name="TodoItem01Sett" xml:space="preserve">
+    <value>审批 - 审批</value>
+  </data>
+  <data name="TodoItem02Sett" xml:space="preserve">
+    <value>审批 - 空气</value>
+  </data>
+  <data name="TodoItem03Sett" xml:space="preserve">
+    <value>业务协作 - 进展</value>
+  </data>
+  <data name="TodoItem04Sett" xml:space="preserve">
+    <value>业务协同 - 等待</value>
+  </data>
+  <data name="TodoItem05Sett" xml:space="preserve">
+    <value>进度管理 - 待办事项</value>
+  </data>
+  <data name="TodoItem06Sett" xml:space="preserve">
+    <value>行事历 - 时间表</value>
+  </data>
+  <data name="TodoItem07Sett" xml:space="preserve">
+    <value>资源管理 - 本书状态</value>
+  </data>
+  <data name="TodoItem08Sett" xml:space="preserve">
+    <value>资源管理器 - 等待审批</value>
+  </data>
+  <data name="TodoPopupMsg" xml:space="preserve">
+    <value>最多可以指定4个。</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>要做</value>
+  </data>
+  <data name="Homepage" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="UserSearch" xml:space="preserve">
+    <value>搜索员工</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>计划管理</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>资源预留</value>
+  </data>
+  <data name="Businessreport" xml:space="preserve">
+    <value>业务报告</value>
+  </data>
+  <data name="AddressBook" xml:space="preserve">
+    <value>地址簿</value>
+  </data>
+</root>

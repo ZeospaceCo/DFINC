@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Community open cancel application($Name$)</Title>
+	<ContentHTML>
+		[Community open cancel application]
+		&lt;br&gt;&lt;br&gt;
+		- Community Name : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- Who canceled : $Name$
+	</ContentHTML>
+</ContentInfo>

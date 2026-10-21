@@ -1,0 +1,49 @@
+﻿<table class="table_typeA"> 
+<caption>
+</caption>
+<colgroup>
+    <col width="90px" />
+    <col width="90px" />    
+    <col width="130px" />
+    <col width="130px" />
+    <col  />
+    <col width="120px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_weekName"></th>
+    <th class="center" id="r_visitType"></th>
+    <th class="center" id="r_startDate"></th>    
+    <th class="center" id="r_endDate"></th>
+    <th class="center" id="r_subject"></th>
+    <th class="center" id="r_writeUserName"></th>
+    <th class="center" id="r_writeDate"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{$T.List.WeekName }</td>   
+
+    {#if $T.List.Auth == 'Y'}
+    <td class="center"><a class="callContextMenu" id="p_{ $T.List.ReserveID }_{ $T.List.VisitType }">{$T.List.VisitTypeStr}</a></td>       
+    {#else}
+    <td class="center">{$T.List.VisitTypeStr}</td>       
+    {#/if}       
+
+    <td class="center">{$T.List.StartDateStr }</td>
+    <td class="center">{$T.List.EndDateStr }</td>
+
+    {#if $T.List.ReserveID == '0'}
+    <td class="left">{ $T.List.Subject }</td>
+    {#else}
+    <td class="left"><a href="#" onclick="javascript:ListWeek.View('{ $T.List.ReserveID }')" style="cursor:pointer" >{ $T.List.Subject }</a></td>    
+    {#/if} 
+
+    <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">{ $T.List.WriteUserName }</a></td>
+    <td class="center">{$T.List.WriteDateStr }</td>
+</tr>
+{#else}
+ <tr>
+    <td colspan="7" class="center"><span id="NoListData" /></td>       
+ </tr>
+{#/for}    
+</table>

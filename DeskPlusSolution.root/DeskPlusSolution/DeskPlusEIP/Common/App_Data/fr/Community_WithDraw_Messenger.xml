@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Retrait des membres ($Name$)</Title>
+	<ContentHTML>
+		[Retrait des membres]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- Qui a retiré : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- Pourquoi laisser : $Content$
+	</ContentHTML>
+</ContentInfo>

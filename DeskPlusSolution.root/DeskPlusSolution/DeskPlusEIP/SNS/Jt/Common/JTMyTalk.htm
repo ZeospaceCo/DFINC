@@ -1,0 +1,62 @@
+﻿<div class="table_typeLtop"><p></p></div>   
+<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+        {#foreach $T as List}
+            <li {#if $T.List$last == true} class="last-child" {#/if} >
+
+                <table class="blog_cont_table">
+				    <caption>BLOG CONTENT</caption>
+                    <colgroup>
+                        <col width="90px" />
+                        <col />
+                    </colgroup>
+                    {#if $T.List.View == 'Y'}
+                    <tr>
+                        <td class="blog_img" rowspan="2">
+                        {#if $T.List.Depth == ''}
+                        <table width="100%"><tbody><tr><td width="40"></td><td width="40"><a onclick="AccountInfoWin('{ $T.List.UserID }');return false;">
+                        { $T.List.PhotoImage }</a></td></tr></tbody></table>
+                        {#else}
+                        <table width="100%" ><tbody><tr><td width="48" style='text-align:right;'>{ $T.List.Depth }</td><td style='text-align:right;'><a onclick="AccountInfoWin('{ $T.List.UserID }');return false;">
+                        { $T.List.PhotoImage }</a></td></tr></tbody></table>
+                        {#/if}
+                        </td>
+                        <td>
+                            <div class="tk_b">
+                            <p class="lb">
+                            <span class="subto"><a onclick="AccountInfoWin('{ $T.List.UserID }');return false;">{$T.List.UserName}</a> ▶<a onclick="AccountInfoWin('{ $T.List.RUserID }');return false;">{$T.List.RUserName}</a> | { $T.List.WriteDateYMD }
+                             </span>
+                             <span class="subtext">&nbsp;{ $T.List.ReplyCountStr }&nbsp;
+                             {#if $T.List.ShowNew == 'Y'} <span class="m_talk"></span> {#/if}
+                             &nbsp;
+                            {#if $T.List.IsAuth == 'Y'} 
+                            <a href="#" onclick="MyTalk.DelReple('{ $T.List.MyTalkID}','{ $T.List.GroupID }')")>
+                            <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" />
+                            <span class="BtnDel" style="display:none;"></span>
+                            </a>
+                            {#/if}
+                            </span><br />
+                            { $T.List.Content }
+                            <br />
+                            { $T.List.FileImage }
+                            </p>
+                            <div class="arr"></div>
+                            </div> 
+                       </td>
+                    </tr>
+                    {#else}
+                    <tr>
+                        <td colspan="2" class="left"><span class="NoAuthListData"></span></td>
+                    </tr>
+                    {#/if}
+                </table>
+            </li>
+        {#else}
+            <li class="last-child center"><span class="NoListData" /></li>
+        {#/for}
+        </ul>
+    </div>
+</div>
+<div class="table_typeLbottom"><p></p></div>

@@ -1,0 +1,47 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <caption>
+        WholeCompanyManageList
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col />
+        <col width="120px" />
+        <col width="150px" />
+        <col width="150px" />
+        <col width="150px" />
+        <col width="80px" />
+        <col width="150px" />
+    </colgroup>
+    <tr>
+        <th><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>        
+        <th id="r_companyname"></th>
+        <th id="r_ownername"></th>
+        <th id="r_phone"></th>
+        <th id="r_fax"></th>        
+        <th><span id="r_userCount"></span><span id="spUserCount"></span></th>
+        <th id="r_active"></th>
+        <th id="r_licensecnt"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.AccountList.CompanyID }" value="{ $T.AccountList.CompanyID }" /></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.CompanyName }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.InstitutorName }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.Phone }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.Fax }</a></td>                
+        <td class="center">{ $T.AccountList.UserCnt }</td>
+        <td class="center">
+            {#if $T.AccountList.ActiveCompany == '1'}            
+            <span class="r_activeYes"></span>
+            {#else}
+            <span class="r_activeNo"></span>
+            {#/if}
+        </td>
+        <td class="center"><input type="text" class="cbxLicenseCnt" id="License{ $T.AccountList.CompanyID }" value="{ $T.AccountList.LicenseCnt }" size="5" /></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

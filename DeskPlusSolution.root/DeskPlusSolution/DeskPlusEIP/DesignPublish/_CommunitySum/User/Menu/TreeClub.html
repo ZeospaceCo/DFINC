@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        $(".accordion").accordion({
+            fillSpace: true,
+            animated: 'slide',
+            //event: "mouseover"
+            overTop: 180
+        });
+
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+    });
+    redirect = function (_url) {
+        parent.frmContent.location.href = _url + "?random=" + Guids();
+    }
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <div id="layout_treetop"><span class="treetop_title">XML 스터디 그룹</span></div>
+    <div class="cm_userType1">
+        <div class="box01">
+            <ul>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_home.gif" alt="" /><a href="">Home</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_noti.gif" alt="" /><a href="">공지사항</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_calendar.gif" alt="" /><a href="">캘린더</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_data.gif" alt="" /><a href="">자료실</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_board.gif" alt="" /><a href="">게시판</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_chat.gif" alt="" /><a href="">대화방</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_recom.gif" alt="" /><a href="">추천사이트</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_album.gif" alt="" /><a href="">앨범</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_opinion.gif" alt="" /><a href="">의견보으기</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_nocate.gif" alt="" /><a href="">카테고리없는 것</a></li>
+            </ul>
+        </div>
+        <div class="box02">
+            <ul>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_home.gif" alt="" /><a  onclick="javascript:redirect('../Content/회원정보검색.html')">회원정보검색</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_noti.gif" alt="" /><a  onclick="javascript:redirect('../Content/시샵에게(메일발송).html')">시샵에게</a></li>
+                <!--<li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_calendar.gif" alt="" /><a href="">시작화면 관리</a></li>-->
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_data.gif" alt="" /><a href="../../Admin/Default.html" target="_parent">관리자메뉴</a></li>
+                <li><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_cat_board.gif" alt="" /><a href="">커뮤니티 홈</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="layout_treebuttom"></div>
+
+
+        <div class="cm_left_favA">
+            <select>
+                <option>커뮤니티바로가기</option>
+            </select>
+        </div>
+    
+    
+</div>
+</body>
+</html>
+
+

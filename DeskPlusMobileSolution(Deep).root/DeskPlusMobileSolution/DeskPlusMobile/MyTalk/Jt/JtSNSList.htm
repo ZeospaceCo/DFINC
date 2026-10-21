@@ -1,0 +1,56 @@
+﻿{#foreach $T as List}
+<li class="contentblock tli">
+    {#if $T.List.View == 'Y'}
+    <div class="title padding0">
+        <table class="blog_table">
+            <colgroup>
+                <col width="70px" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="blog_img" rowspan="2">
+                        <a class="mct" href="#2" onclick="javascript:List.ViewList('{ $T.List.GroupID }')">
+                            <span style="vertical-align:top;">
+                                {$T.List.Depth}
+                            </span>
+                            {$T.List.PhotoImage}</a></td>
+                    <td class="blog_title">
+                        <a class="mct" href="#2" onclick="javascript:List.ViewList('{ $T.List.GroupID }')">{$T.List.RUserName} { $T.List.UserName }</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="blog_title">
+                        <a class="mct" href="#2" onclick="javascript:List.ViewList('{ $T.List.GroupID }')">{$T.List.WriteDateYMD } {$T.List.ShowNew}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="blog_cont" colspan="2">
+                        <a class="mct" href="#2" onclick="javascript:List.ViewList('{ $T.List.GroupID }')">{$T.List.Content}</a>
+                    </td>
+                </tr>
+                {#if $T.List.FileImage != ''}
+                <tr>
+                    <td colspan="2">{$T.List.FileImage}</td>
+                </tr>
+                {#/if}
+            </tbody>
+        </table>
+    </div>  
+    {#else}
+    <div class="title">
+        <a class="mct">
+            {$T.List.Depth}{$T.List.Content}<br />&nbsp;
+        </a>
+    </div>
+    {#/if}
+</li>
+{#else}   
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

@@ -1,0 +1,24 @@
+﻿<table cellspacing="0" class="table_typeT">
+    <caption></caption>
+    <colgroup>
+        <col />        
+        <col width="100px" />
+        <col width="100px" />
+    </colgroup>
+    <tr>
+        <th class="center"><span id="j_name"></span></th>        
+        <th class="center"></th>
+        <th class="center"><span id="j_gubun"></span></th>
+    </tr>
+    {#foreach $T as List}   
+     <tr>        
+        <td class="center">{#if $T.List.Gubun=="G"} { $T.List.NameBase } {#else}<a href="#" onclick="AccountInfo('{ $T.List.ReserveUserID }');return false;">{ $T.List.NameBase }</a>{#/if}</td>
+        <td></td>
+        <td class="center">{#if $T.List.Gubun=="G"} <span class="AttendeeType1" /> {#else} <span class="AttendeeType2" /> {#/if} </td>
+    </tr>
+    {#else}   
+    <tr>
+        <td colspan="3" class="td"><span id="NoUserListData" /></td>
+    </tr>
+    {#/for}
+</table>

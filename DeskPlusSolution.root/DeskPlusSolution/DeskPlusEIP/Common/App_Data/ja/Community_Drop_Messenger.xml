@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+  <Title>[$Title$] 強制退会</Title>
+	<ContentHTML>
+		[強制退会]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+	</ContentHTML>
+</ContentInfo>

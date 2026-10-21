@@ -1,0 +1,58 @@
+﻿<table class="table_typeA"> 
+<caption>
+</caption>
+<colgroup>    
+    <col width="90px" />    
+    <col width="70px" />
+    <col width="140px" />
+    <col width="140px" />
+    <col />
+    <col width="60px" />
+    <col width="60px" />
+
+    <col width="40px" />
+    <col width="40px" />
+    <col width="60px" />
+</colgroup>
+<tr>    
+    <th class="center" id="r_deptbase"></th>  
+    <th class="center" id="r_namebase"></th>
+    <th class="center" id="r_requesttime"></th>                              
+    <th class="center" id="r_endtime"></th>
+    <th class="center" id="r_subject"></th>
+    <th class="center" id="r_successcnt"></th>
+    <th class="center" id="r_recvList"></th>
+
+    <th class="center" id="r_view"></th>
+    <th class="center" id="r_print"></th>
+    <th class="center" id="r_download"></th>
+</tr>
+{#foreach $T as SendList}
+<tr>    
+    <td class="center"id="deptbase_{ $T.SendList.ROW }">{ $T.SendList.DeptBase }</td>
+    <td class="center"id="namebase_{ $T.SendList.ROW }"><a onclick="AccountInfo('{ $T.SendList.UserID }');return false;" style="cursor:pointer">{ $T.SendList.NameBase }</a></td>
+    <td class="center"id="requesttime_{ $T.SendList.ROW }">{ $T.SendList.RequestTime }</td>
+    <td class="center" id="endtime_{ $T.SendList.ROW }">{ $T.SendList.EndTime }</td>    
+    <td class="center" id="subject_{ $T.SendList.ROW }">{ $T.SendList.Subject }</td>    
+    <td class="center" id="successcnt_{ $T.SendList.ROW }">
+    {#if $T.SendList.SuccessCnt > 0}
+        예
+    {#else}
+        아니오
+    {#/if} 
+    </td>      
+    <td class="center" id="recvlist_{ $T.SendList.ROW }"><a onclick="SendList.RecvList('{ $T.SendList.GUID }');return false;" style="cursor:pointer">
+        <img src="/DeskPlusEIP/Design/C/Img/Community/cm_lvl_a_25.gif" alt="" title="" /></a></td>
+    <td class="center"><a onclick="SendList.ShowImage('{ $T.SendList.FilePath }','{ $T.SendList.Pages }');return false;" style="cursor:pointer">
+        <img src="/DeskPlusEIP/Design/C/Img/Community/cm_cat_search.gif" alt="" title="" /></a></td>    
+    <td class="center"><a onclick="SendList.PrintImage('{ $T.SendList.FilePath }','{ $T.SendList.Pages }');return false;" style="cursor:pointer">
+        <img src="/DeskPlusEIP/Design/C/Img/RM/ico_10.gif" alt="" title="" /></a></td>    
+    <td class="center"><a onclick="SendList.DownloadImage('{ $T.SendList.DownloadFilePath }');return false;" style="cursor:pointer">
+        <i class="fas fa-arrow-alt-circle-down"></i></a></td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="10" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

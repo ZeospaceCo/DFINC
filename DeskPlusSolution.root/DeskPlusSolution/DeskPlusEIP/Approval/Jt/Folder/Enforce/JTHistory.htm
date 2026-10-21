@@ -1,0 +1,28 @@
+﻿<table class="table_typeA">
+<caption>공문리스트</caption>
+<colgroup>
+    <col width="400px"/>
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_sendtype"></th>
+        <th class="center" id="r_writedate"></th>        
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+    <tr>
+        <td>{ $T.List.DeptBase }({ $T.List.TitleBase }/{ $T.List.DutyBase }) { $T.List.NameBase }</td>
+        <td class="center">{ $T.List.SendTypeStr }</td>
+        <td class="center">{ $T.List.WriteDateStr }</td>        
+    </tr>
+{#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

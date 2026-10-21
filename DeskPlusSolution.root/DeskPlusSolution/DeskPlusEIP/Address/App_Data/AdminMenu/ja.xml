@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--관리 -->
+  <Item ID="Manage" Text="管理" ClientSideCommand="" />
+  <Item ID="Category" Text="フォルダ" ClientSideCommand="Menu.MovePage('Category');" />
+  <Item ID="Content" Text="投稿" ClientSideCommand="Menu.MovePage('Content');" />
+  <Item ID="Template" Text="テンプレート" ClientSideCommand="Menu.MovePage('Template');" />
+
+  <!-- 환경  -->
+  <Item ID="Environment" Text="環境" ClientSideCommand="" />
+  <Item ID="Setting" Text="設定" ClientSideCommand="Menu.MovePage('Setting');" />
+
+  <!-- 통계 -->
+  <Item ID="Statistic" Text="統計" ClientSideCommand="" />
+  <Item ID="ReadCount" Text="投稿照会" ClientSideCommand="Menu.MovePage('ReadCount');" />
+  <Item ID="WriteCount" Text="投稿登録" ClientSideCommand="Menu.MovePage('WriteCount');" />
+</MenuData> 

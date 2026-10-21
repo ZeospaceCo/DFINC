@@ -1,0 +1,29 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+ <colgroup>
+    <col width="150px" />
+    <col />
+    <col width="200px" />
+    <col width="120px" />
+ </colgroup>
+ <thead>
+    <tr>
+        <th class="center" id="r_kindDesk"></th>
+        <th class="center" id="r_title"></th>
+        <th class="center" id="r_startTime"></th>
+        <th class="center" id="r_userName"></th>        
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as BoardList}
+    <tr>
+        <td class="center">{ $T.BoardList.CategoryDesc }</td>       
+        <td><a href="#" onclick="javascript:List.View('{ $T.BoardList.ScheduleID }')" style="cursor:pointer" >{ $T.BoardList.Title }</a></td>
+        <td class="center">{ $T.BoardList.DateInfo }</td>        
+        <td class="center"><a href="#" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteName }</a></td>
+{#else}
+<tr>
+    <td colspan="4" class="center"><div id="divt1"></div></td>        
+</tr>
+    {#/for}        
+</tbody>
+ </table>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 會員退 ($Name$)</Title>
+	<ContentHTML>
+		[會員退]
+		&lt;br&gt;&lt;br&gt;
+		- 社區居民 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 誰退出 : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- 為什麼離開 : $Content$
+	</ContentHTML>
+</ContentInfo>

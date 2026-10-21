@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/Task/Common/ViewPopupTotal.aspx"  Content="알람 팝업용" />
+</XmlData>

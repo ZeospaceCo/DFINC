@@ -1,0 +1,53 @@
+﻿<table class="table_typeA">
+<caption>리스트</caption>
+<colgroup>
+    <col width="80px" />    
+    <col width="250px" />
+    <col width="50px" />
+    <col width="80px" />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="80px" />
+    <col width="50px" />
+    <col width="50px" />
+    <col width="60px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="r_code"></span></th>
+        <th class="center"><span id="r_title"></span></th>
+        <th class="center"><span id="r_status"></span></th>
+        <th class="center"><span id="r_name"></span></th>
+        <th class="center"><span id="r_planStartDate"></span></th>
+        <th class="center"><span id="r_planEndDate"></span></th>
+        <th class="center"><span id="r_planday"></span></th>
+        <th class="center"><span id="r_weightpercent"></span></th>
+        <th class="center"><span id="r_process"></span></th>
+        <th class="center"><span id="r_processpercent"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.Code }</td>
+        <td>
+        <a onclick="List.View('{ $T.List.UnitID }');return false;" style="cursor:pointer">
+        { $T.List.Subjects }
+        </a>
+        </td>
+        <td class="center">{ $T.List.StatusStr }</td>
+        <td class="center">{ $T.List.NameBase }</td>
+        <td class="center">{ $T.List.PlanStartDateStr }/{ $T.List.StartDateStr }</td>
+        <td class="center">{ $T.List.PlanEndDateStr }/{ $T.List.EndDateStr }</td>
+        <td class="center">{ $T.List.PlanDay }</td>
+        <td class="center">{ $T.List.WeightPercent } %</td>
+        <td class="center">{ $T.List.Process } %</td>
+        <td class="center">{ $T.List.ProcessPercent } %</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="10" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

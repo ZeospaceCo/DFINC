@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="100Unit" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="10Unit" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="50Unit" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Org chart</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>Successfully done</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>Attach</value>
+  </data>
+  <data name="AddFolder" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="Additional" xml:space="preserve">
+    <value>To add</value>
+  </data>
+  <data name="AddOnlyReadAuth" xml:space="preserve">
+    <value>You can only add read permissions to the Read-Only Board.</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>Add portlet</value>
+  </data>
+  <data name="AddTemplate" xml:space="preserve">
+    <value>Add template</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>Enter content</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>Enter subject</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>Enter content</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>Set notification period</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>Error ocurred! Please ask admin</value>
+  </data>
+  <data name="AlarmUser" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="AleadyRegisted" xml:space="preserve">
+    <value>Registered user(department)</value>
+  </data>
+  <data name="AllDeptUser" xml:space="preserve">
+    <value>All users in the department</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Full DL</value>
+  </data>
+  <data name="AlreadySettingAuthority" xml:space="preserve">
+    <value>All authority are added</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ApplyAllSubordination" xml:space="preserve">
+    <value>Apply all subfolders</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="ApplyFolderAllAuthority" xml:space="preserve">
+    <value>Edit all authority?</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Enter reg-date</value>
+  </data>
+  <data name="ApplySameAuthSubordinatioFolder" xml:space="preserve">
+    <value>Apply the same authority to subfolders</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="AuthSetting" xml:space="preserve">
+    <value>Authority</value>
+  </data>
+  <data name="BatchPDF" xml:space="preserve">
+    <value>DL PDF</value>
+  </data>
+  <data name="BatchPDFMsg" xml:space="preserve">
+    <value>[PDF DL extension] : xls,xlsx,doc,docx,ppt,pptx,htm,html,eml,msg,tiff,jpg,png,gif,bmp,emf</value>
+  </data>
+  <data name="BeforeContent" xml:space="preserve">
+    <value>Original contents</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="BoardList" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="BoardListFormat" xml:space="preserve">
+    <value>Posting Format</value>
+  </data>
+  <data name="BoardManagement" xml:space="preserve">
+    <value>Bulletin B'd Mgmt</value>
+  </data>
+  <data name="BoardStatus" xml:space="preserve">
+    <value>Year's dashboard</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CategoryConfirm" xml:space="preserve">
+    <value>When you select a folder, the contents are deleted. Do you want to continue?</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="CategoryOrder" xml:space="preserve">
+    <value>Order of subfolders</value>
+  </data>
+  <data name="CategorySelect" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="CategorySelectCheck" xml:space="preserve">
+    <value>Select a category!</value>
+  </data>
+  <data name="CategorySelectGuide" xml:space="preserve">
+    <value>Select the folder before creating the content</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>Folder order changed</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>Edit parent folder</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>Select a list to delete</value>
+  </data>
+  <data name="CheckHits" xml:space="preserve">
+    <value>Check who read the post</value>
+  </data>
+  <data name="CheckMoveFavoriteFolder" xml:space="preserve">
+    <value>Select a favorite folder to move.</value>
+  </data>
+  <data name="CheckMoveList" xml:space="preserve">
+    <value>Select posts to move</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CommentsAttachedList" xml:space="preserve">
+    <value>Posts with comments</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="CompleteFolder" xml:space="preserve">
+    <value>Add a folder</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>Successfully moved</value>
+  </data>
+  <data name="CompleteModifyFolder" xml:space="preserve">
+    <value>successfully edited</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ConfirmDeleteList" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>The contents will be deleted. Are you sure?</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="ContentsManagement" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="CopyURL" xml:space="preserve">
+    <value>Copy URL</value>
+  </data>
+  <data name="CopyURLComplete" xml:space="preserve">
+    <value>URL copied</value>
+  </data>
+  <data name="CountNumber" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="CreateMenu" xml:space="preserve">
+    <value>Add Menu</value>
+  </data>
+  <data name="CreateScreenShot" xml:space="preserve">
+    <value>Add a thumbnail of the first image of your post.</value>
+  </data>
+  <data name="DefaultList" xml:space="preserve">
+    <value>(List type if not selected)</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Description1" xml:space="preserve">
+    <value>This folder has (</value>
+  </data>
+  <data name="Description2" xml:space="preserve">
+    <value> ) posts and can not be deleted</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="DoubtStcipt" xml:space="preserve">
+    <value>Contents may be changed because there are suspicious sentences about script in the body.</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>Sub-</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>Error ocurred! Please ask admin</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>Error ocurred! Please ask admin</value>
+  </data>
+  <data name="FavoriteFolder" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="FavoriteFolderAdd" xml:space="preserve">
+    <value>Add favorites</value>
+  </data>
+  <data name="FavoriteFolderMod" xml:space="preserve">
+    <value>Edit Favorites</value>
+  </data>
+  <data name="FavoriteFolderMove" xml:space="preserve">
+    <value>Move favorites</value>
+  </data>
+  <data name="FavoriteFolderName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FavoriteMultiFolderName" xml:space="preserve">
+    <value>Favorites name(multilingual)</value>
+  </data>
+  <data name="FavoriteOrder" xml:space="preserve">
+    <value>Change the order of sub-</value>
+  </data>
+  <data name="FavoriteParentFolderName" xml:space="preserve">
+    <value>Parent favorites name</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>DL</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="FolderDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>Order of subfolders</value>
+  </data>
+  <data name="FolderManagement" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>Move Folder</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Enter a folder name.</value>
+  </data>
+  <data name="FolderTitle" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FolerMoveSameFolder" xml:space="preserve">
+    <value>Select another folder because it is the same folder to move</value>
+  </data>
+  <data name="ForderPath" xml:space="preserve">
+    <value>Folder location</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FullPath" xml:space="preserve">
+    <value>Full path</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Go to the view page</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Go to the list</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Headers" xml:space="preserve">
+    <value>Section header</value>
+  </data>
+  <data name="ImpoDel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>Confirm cancel?</value>
+  </data>
+  <data name="InterestedPerson" xml:space="preserve">
+    <value>Following</value>
+  </data>
+  <data name="InterestedPersonAdd" xml:space="preserve">
+    <value>Add following</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>Last list</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>Please enter at least two characters.</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>The special characters are limited because they are used for security vulnerabilities attacks</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>Default count</value>
+  </data>
+  <data name="ListMove" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="ListType0" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ListType1" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListType2" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="ListType3" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="List_ConsultGubun" xml:space="preserve">
+    <value>Consult category</value>
+  </data>
+  <data name="List_Group" xml:space="preserve">
+    <value>This category</value>
+  </data>
+  <data name="List_Move" xml:space="preserve">
+    <value>Posting</value>
+  </data>
+  <data name="List_Register" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="List_ReplyNo" xml:space="preserve">
+    <value>Answered or not(No)</value>
+  </data>
+  <data name="List_ReplyYes" xml:space="preserve">
+    <value>Answered or not(Yes)</value>
+  </data>
+  <data name="List_SubGroup" xml:space="preserve">
+    <value>Include subcategories</value>
+  </data>
+  <data name="MaxRate" xml:space="preserve">
+    <value>Best post</value>
+  </data>
+  <data name="MaxRead" xml:space="preserve">
+    <value>Most view</value>
+  </data>
+  <data name="MaxShort" xml:space="preserve">
+    <value>Most comment</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>Others can edit</value>
+  </data>
+  <data name="ModifyFolder" xml:space="preserve">
+    <value>Edit folders</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>Edit comment</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="MoveCategory" xml:space="preserve">
+    <value>Select a folder to move</value>
+  </data>
+  <data name="MSG_PDFError" xml:space="preserve">
+    <value>Error ocurred! Please ask admin</value>
+  </data>
+  <data name="MyBoard" xml:space="preserve">
+    <value>My posts</value>
+  </data>
+  <data name="MyImpo" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="MyListByShort" xml:space="preserve">
+    <value>Post a comment</value>
+  </data>
+  <data name="MyShort" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="MyTotalBoardStatus" xml:space="preserve">
+    <value>My post status</value>
+  </data>
+  <data name="MyWrite" xml:space="preserve">
+    <value>Add Posts</value>
+  </data>
+  <data name="MyYearActivity" xml:space="preserve">
+    <value>My Year Activities</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoAddOtherCompany" xml:space="preserve">
+    <value>You can not add users and departments of other companies.</value>
+  </data>
+  <data name="NoAttachData" xml:space="preserve">
+    <value>No attach files</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>No authority</value>
+  </data>
+  <data name="NoAuthMenu" xml:space="preserve">
+    <value>There is no accessible portal menu</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>No authority.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="DeletedPost" xml:space="preserve">
+    <value>This post has been deleted.</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoMove" xml:space="preserve">
+    <value>No move to the same folder</value>
+  </data>
+  <data name="NoReplyData" xml:space="preserve">
+    <value>No comments found</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>No Lists found</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="NoticeCheck" xml:space="preserve">
+    <value>View post</value>
+  </data>
+  <data name="NotImageFormat" xml:space="preserve">
+    <value>Not image type</value>
+  </data>
+  <data name="NoTitle" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, File</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="PopupSelect" xml:space="preserve">
+    <value>No popup window size selected.</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>Popup</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Successfully done</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>Error occurred! Please ask admin.</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>Public folder</value>
+  </data>
+  <data name="PublishingWriting" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Ranking</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="Rate_lblAverageRatingMessage" xml:space="preserve">
+    <value>Like ratio</value>
+  </data>
+  <data name="Rate_lblCommentMessage" xml:space="preserve">
+    <value>Write a review (optional)</value>
+  </data>
+  <data name="Rate_lblTopMessage" xml:space="preserve">
+    <value>Please select rating</value>
+  </data>
+  <data name="Rate_lblVoteCastMessage" xml:space="preserve">
+    <value>Thank you</value>
+  </data>
+  <data name="Rate_Outstanding" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="Rate_Poor" xml:space="preserve">
+    <value>Bad</value>
+  </data>
+  <data name="Rate_SelectVote" xml:space="preserve">
+    <value>Please select rating</value>
+  </data>
+  <data name="Rate_Success" xml:space="preserve">
+    <value>Complete done</value>
+  </data>
+  <data name="Rate_Title" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="Rate_VotedPeople" xml:space="preserve">
+    <value>~ users rated it</value>
+  </data>
+  <data name="RatingComment" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="RatingList" xml:space="preserve">
+    <value>Review List</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="ReadOnlyBoard" xml:space="preserve">
+    <value>Read-only board</value>
+  </data>
+  <data name="ReadReply" xml:space="preserve">
+    <value>Read + Comment</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="RecentWrite" xml:space="preserve">
+    <value>Latest Posts</value>
+  </data>
+  <data name="RecordCntPerPage" xml:space="preserve">
+    <value>Records per page:</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Reg-date</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="SaveTemp" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="ScreenShot" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchAttachNames" xml:space="preserve">
+    <value>Attached file name</value>
+  </data>
+  <data name="SearchContents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="SearchShortReplyContents" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="SearchShortReplyWriter" xml:space="preserve">
+    <value>Commenter</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>Search: Subject, File</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1 year</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2 year</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3 year</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6 months</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>Enter a date range</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SearchTitleContents" xml:space="preserve">
+    <value>Subject + Content</value>
+  </data>
+  <data name="SearchWriter" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SearchYear" xml:space="preserve">
+    <value>Year search</value>
+  </data>
+  <data name="SelectAdd" xml:space="preserve">
+    <value>Select target</value>
+  </data>
+  <data name="SelectDeleteListImpo" xml:space="preserve">
+    <value>Select posts to cancel</value>
+  </data>
+  <data name="SelectFavoriteFolder" xml:space="preserve">
+    <value>Select favorites folder</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Select a folder</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>Select header</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>Select recipient</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="SendMailTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SetDate" xml:space="preserve">
+    <value>Set period</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>Set authority</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="SettingSameAuth" xml:space="preserve">
+    <value>Set authority</value>
+  </data>
+  <data name="ShortList" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ShowAttachedImage" xml:space="preserve">
+    <value>Show attached image</value>
+  </data>
+  <data name="ShowImage" xml:space="preserve">
+    <value>View images</value>
+  </data>
+  <data name="ShowMobile" xml:space="preserve">
+    <value>Make it visible on mobile.</value>
+  </data>
+  <data name="SpammerList" xml:space="preserve">
+    <value>Mail sender list</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than end date.</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="StatYearMonth" xml:space="preserve">
+    <value>Status for each year/month</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Please enter template name</value>
+  </data>
+  <data name="TempManage" xml:space="preserve">
+    <value>Manage templates</value>
+  </data>
+  <data name="TempSaveAlert" xml:space="preserve">
+    <value>In draft, only the color of characters, size, thickness, other's modification, and attached files are saved. Will you save it?</value>
+  </data>
+  <data name="TextTitle" xml:space="preserve">
+    <value>Document Subject</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TitleAll" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>It provides in the form of a list.</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>It provides a blog form on the top left with the representative image and brief details.</value>
+  </data>
+  <data name="TooltiplistType3" xml:space="preserve">
+    <value>It is provided with a title and a representative image in gallery form.</value>
+  </data>
+  <data name="TotalBoard" xml:space="preserve">
+    <value>All posts</value>
+  </data>
+  <data name="TotalRecord" xml:space="preserve">
+    <value>Total records:</value>
+  </data>
+  <data name="TotalStatus" xml:space="preserve">
+    <value>Total status</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>Unused</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>Capacity limits</value>
+  </data>
+  <data name="URLAdd" xml:space="preserve">
+    <value>Attach URL link</value>
+  </data>
+  <data name="URLAddBtn" xml:space="preserve">
+    <value>Add link</value>
+  </data>
+  <data name="URLMsg" xml:space="preserve">
+    <value>Enter URL link</value>
+  </data>
+  <data name="URLName" xml:space="preserve">
+    <value>Link URL</value>
+  </data>
+  <data name="URLNameMsg" xml:space="preserve">
+    <value>Enter a file name</value>
+  </data>
+  <data name="URLOption" xml:space="preserve">
+    <value>Use the URL link</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>Use ActiveX</value>
+  </data>
+  <data name="UseAlarm" xml:space="preserve">
+    <value>Use alarm</value>
+  </data>
+  <data name="UseAnonymity" xml:space="preserve">
+    <value>Use anonymous</value>
+  </data>
+  <data name="UseDeptBoard" xml:space="preserve">
+    <value>Use board for each department (After creating by department, it can not be converted into general classification, and subordinate is automatically applied to each department)</value>
+  </data>
+  <data name="UseEvaluation" xml:space="preserve">
+    <value>Use LIKE (evaluate)</value>
+  </data>
+  <data name="UseMainPopup" xml:space="preserve">
+    <value>Use main popup</value>
+  </data>
+  <data name="UsePopup" xml:space="preserve">
+    <value>Use pop-up</value>
+  </data>
+  <data name="UseReply" xml:space="preserve">
+    <value>Use reply comments</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="UseShortRelpy" xml:space="preserve">
+    <value>Use comments</value>
+  </data>
+  <data name="UseSubordinationBoardNotice" xml:space="preserve">
+    <value>Use to show posts of sub-folder (read-only)</value>
+  </data>
+  <data name="UsingMainPopup" xml:space="preserve">
+    <value>Main pop-up already in use.</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Lookup</value>
+  </data>
+  <data name="ViewCount" xml:space="preserve">
+    <value>lookup</value>
+  </data>
+  <data name="ViewDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ViewUserRatingList" xml:space="preserve">
+    <value>Show detail</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="View_Info" xml:space="preserve">
+    <value>Basic information</value>
+  </data>
+  <data name="View_ReadList" xml:space="preserve">
+    <value>Lookup list</value>
+  </data>
+  <data name="View_RegInfo" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>All users</value>
+  </data>
+  <data name="WholeBoardListManager" xml:space="preserve">
+    <value>Company Postst mgmt.</value>
+  </data>
+  <data name="WholeBoardManager" xml:space="preserve">
+    <value>Company Folder mgmt.</value>
+  </data>
+  <data name="WholeSettingAuth" xml:space="preserve">
+    <value>Add all users</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>Writing</value>
+  </data>
+  <data name="WriteCnt" xml:space="preserve">
+    <value>Number of posts</value>
+  </data>
+  <data name="WriteContent" xml:space="preserve">
+    <value>Add post</value>
+  </data>
+  <data name="WriteContents" xml:space="preserve">
+    <value>Add post</value>
+  </data>
+  <data name="WriteFavoriteName" xml:space="preserve">
+    <value>Enter your favorite name</value>
+  </data>
+  <data name="WritePopupSize" xml:space="preserve">
+    <value>Enter the main pop-up size</value>
+  </data>
+  <data name="WriteReply" xml:space="preserve">
+    <value>Writing + Comment</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="WriteText" xml:space="preserve">
+    <value>Add post</value>
+  </data>
+  <data name="WriteUseTemplate" xml:space="preserve">
+    <value>Add post using a template.</value>
+  </data>
+  <data name="YearMaxShort" xml:space="preserve">
+    <value>Top commenter</value>
+  </data>
+  <data name="YearMaxWriter" xml:space="preserve">
+    <value>Top author</value>
+  </data>
+  <data name="YearNoMaxWriter" xml:space="preserve">
+    <value>No writor this year</value>
+  </data>
+  <data name="SelectAlarm" xml:space="preserve">
+    <value>In case of enterprise authorization, selective alarm is possible.</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>No external download</value>
+  </data>
+  <data name="DownLoadArea" xml:space="preserve">
+    <value>Attachments for this publication are not available outside the external download.</value>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>YearMonth</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>comment</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>It's already been commented.</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>Would you dismiss it?</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>This comment has been deleted</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>Your comment is not recommended / deprecated.</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>Recommended.</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>Write your comment.</value>
+  </data>
+  <data name="ShowTop" xml:space="preserve">
+    <value>Show the top comment recommend</value>
+  </data>
+  <data name="UseComments" xml:space="preserve">
+    <value>Use comments like / Dislike</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_PROC_ACCOUNT" Value="DPM_ACC_User_Sel" Content="사용자 정보 가져오기" />
+  <Item ID="SEL_PROC_ACCOUNT_USERDEPTS" Value="DPM_ACC_UserDept_Sel" Content="사용자 부서정보 가져오기" />
+  <Item ID="SEL_PROC_EIP_SSO" Value="DPM_EIP_SSO_Sel" Content="사용자 SSO정보 가져오기" />
+  <Item ID="SEL_PROC_ACC_DEPT" Value="DPM_ACC_Dept_SelDeptUser" Content="사용자, 부서정보 가져오기" />
+  <Item ID="UPD_PROC_BASEDEPT" Value="DPM_ACC_UserDept_UpdBaseDept" Content="겸직 정보 변경을 위한 기본 부서 업데이트" />
+
+  <Item ID="SEL_QRY_USER" Value="SELECT * FROM VW_UserInfo WHERE CompanyID = {0}  AND ActiveCompany = '1' AND UserID = {1} AND ActiveUser = '1' AND BaseDept = '1'"
+  Content="USERID 로 사용자정보 가져오기(겸직포함)" />
+  <Item ID="SEL_QRY_USER_ALL" Value="SELECT * FROM VW_UserInfo WHERE ActiveCompany = '1' AND UserID = {0} AND ActiveUser = '1' AND BaseDept = '1'"
+  Content="USERID 로 사용자정보 가져오기(겸직포함)" />
+
+  <Item ID="SEL_QRY_DEPT" Value="SELECT * FROM DP_ACC_Dept WITH(NOLOCK) WHERE	CompanyID = {0} AND DeptID = {1} AND ActiveDept =1 " Content="부서별 정보 가져오기" />
+  <Item ID="SEL_QRY_DEPT_ALL" Value="SELECT * FROM DP_ACC_DEPT WITH(NOLOCK) WHERE DeptID = {0} AND ActiveDept =1" Content="DeptID 로 부서 정보 가져오기(전사용)" />
+
+  <Item ID="SEL_QRY_ACCOUNT" Value="SELECT * FROM VW_UserInfo WHERE COMPANYID = {0} 
+		   AND ActiveCompany = '1' AND BASEDEPT = '1' AND ActiveUser = '1' ORDER By titlecodeorder asc, dutycodeorder asc, userdeptorder desc, deptorder asc, writedate desc"
+  Content="사용자 정보" />
+  <Item ID="SEL_QRY_ACCOUNT_ALL" Value="SELECT * FROM VW_UserInfo WHERE COMPANYID in (SELECT COMPANYID FROM DP_COM_Company WHERE ActiveCompany = 1)
+				AND ActiveCompany = '1' AND BASEDEPT = '1' AND ActiveUser = '1' ORDER By titlecodeorder asc, dutycodeorder asc, userdeptorder desc, deptorder asc, writedate desc"
+    Content="사용자 정보" />
+
+  <Item ID="SEL_QRY_USERDEPT" Value="SELECT UserID FROM VW_UserInfo WHERE	CompanyID = {0} AND ActiveCompany = '1' AND DeptID in ({1}) AND ActiveUser =1 " Content="부서별 사용자 정보 가져오기" />
+  <Item ID="SEL_QRY_USERMOBILE" Value="SELECT distinct(mobilephone) FROM VW_UserInfo WHERE CompanyID = {0} AND ActiveCompany = '1' AND UserID IN ({1}) AND ActiveUser =1 AND BaseDept = '1'"
+    Content="사용자 모바일 정보 가져오기" />
+  <Item ID="SEL_QRY_ACCOUNTDEPT" Value="SELECT * FROM VW_UserInfo WHERE CompanyID = {0} AND ActiveCompany = '1' AND UserID = {1} AND ActiveUser =1 " Content="사용자 정보 가져오기" />
+  <Item ID="SEL_QRY_ACCOUNTROLE" Value="SELECT * FROM DP_EIP_Role WHERE CompanyID = {0} " Content="사용자 Role가져오기" />
+  <Item ID="SEL_QRY_DeptCompanyID" Value="SELECT * FROM DP_ACC_Dept WITH(NOLOCK) WHERE CompanyID = {0} AND ActiveDept IN ({1}) ORDER BY CompanyID, ParentDeptID, DeptOrder" Content="회사별 부서정보" />
+</XmlData>

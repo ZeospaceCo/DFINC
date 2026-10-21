@@ -1,0 +1,27 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="100px" />
+    <col />
+    <col width="120px" />
+</colgroup>
+    <tr>
+        <th id="j_Name">Code</th>
+        <th id="j_Content">Name</th>
+        <th id="j_RegDate">G/L Account</th>
+    </tr>
+    {#foreach $T as TaxList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopTax.Binding('{ $T.TaxList.TaxCD}', '{ $T.TaxList.TaxName}', '{ $T.TaxList.TaxGLAccountNo}')")>{ $T.TaxList.TaxCD }</a></td>
+        <td>
+            <a href="#" onclick="javascript:PopTax.Binding('{ $T.TaxList.TaxCD}', '{ $T.TaxList.TaxName}', '{ $T.TaxList.TaxGLAccountNo}')")>{ $T.TaxList.TaxName }</a>
+        </td>
+        <td>
+            <a href="#" onclick="javascript:PopTax.Binding('{ $T.TaxList.TaxCD}', '{ $T.TaxList.TaxName}', '{ $T.TaxList.TaxGLAccountNo}')")>{ $T.TaxList.TaxGLAccountNo }</a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

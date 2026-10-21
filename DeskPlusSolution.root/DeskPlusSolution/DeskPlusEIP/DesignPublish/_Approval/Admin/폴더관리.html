@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript">
+    function change(_val) {
+        if ($("#chkFav_" + _val).attr("checked") == true) $("#lbFav_" + _val).addClass("on");
+        else $("#lbFav_" + _val).removeClass("on");
+    }
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>폴더관리</h1>
+            <!-- 버튼 //-->
+            <span class="app_subtxt">* 양식폴더를 관리합니다. 자사의 경우, 권한정보를 지정할 수 있습니다.</span>
+            <!--<ul class="btn_right">
+                <li class="btn_blue"><a href="양식등록.html"><span>추가</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+            </ul>-->
+        </div>
+
+        <div id="layout_content">
+
+            <div class="app_fdr">
+
+            <div class="left">
+                
+                <div class="cont">양식리스트 - 자사/공통</div>
+                <div class="bott">
+                <ul class="btn_small">
+                    <li class="btn_small_red"><a href="#"><span>삭제</span></a></li>
+                    <li><a href="폴더관리(Popup).html"><span>수정</span></a></li>
+                    <li class="btn_small_blue"><a href="폴더관리(Popup).html"><span>추가</span></a></li>
+                </ul>
+                <ul class="btn_small" style="float:right">
+                    <li><a href="#"><span>하위순서</span></a></li>
+                    <li class="btn_small_blue"><a href="#"><span>권한지정-조직도</span></a></li>
+                </ul>
+                </div>
+
+            </div>
+            <!--<div class="mid">
+                <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_tree_add.gif" /></a>
+            </div>-->
+            <div class="right">
+
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>권한 리스트</caption>
+                <colgroup>
+                    <col />
+                    <col width="45px" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>대상자</th>
+                        <th>기타</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>솔루션개발 홍길동 사원</td>
+                        <td style="text-align:center"><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_tree_listDel.gif" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>솔루션개발 홍길동 사원</td>
+                        <td style="text-align:center"><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_tree_listDel.gif" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>솔루션개발 홍길동 사원</td>
+                        <td style="text-align:center"><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_tree_listDel.gif" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>솔루션개발 홍길동 사원</td>
+                        <td style="text-align:center"><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_tree_listDel.gif" /></a></td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+
+            </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

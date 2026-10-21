@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SEL_PROC_CNT" Value="DPM_Coop_SelCnt" Content="업무협업 카운트 가져오기 " />
+	
+	<Item ID="SEL_PROC_SelectREQ" Value="DPM_Coop_List_SelRequest" Content="요청한 협업가져오기 " />
+	<Item ID="SEL_PROC_SelectREC" Value="DPM_Coop_List_SelReceive" Content="요청 받은 협업가져오기 " />
+	<Item ID="SEL_PROC_SelectREF" Value="DPM_Coop_List_SelReference" Content="참조 받은 협업가져오기 " />
+	<Item ID="SEL_PROC_SelectFOR" Value="DPM_Coop_List_SelForward" Content="전달 받은 협업가져오기 " />
+
+	<Item ID="SEL_PROC_Coop_Request" Value="DPM_COOP_List_TopDown_Request" Content="이전,이후(요청한 협업)" />
+	<Item ID="SEL_PROC_Coop_Receive" Value="DPM_COOP_List_TopDown_Receive" Content="이전,이후(요청 받은 협업)" />
+	<Item ID="SEL_PROC_Coop_Reference" Value="DPM_COOP_List_TopDown_Reference" Content="이전,이후(참조 받은 협업)" />
+	<Item ID="SEL_PROC_Coop_Forward" Value="DPM_COOP_List_TopDown_Forward" Content="이전,이후(전달 받은 협업)" />
+	
+	<Item ID="SEL_QRY_SelectCoopInfo" Value="SELECT * FROM VW_COOP_List  WHERE CompanyID = '{0}' AND ListID = '{1}'" Content="협업상세가져오기" />
+	<Item ID="SEL_QRY_SelectGroup" Value="SELECT * FROM VW_COOP_List WHERE CompanyID = '{0}' AND GroupID = '{1}' ORDER BY CompanyID, ListOrder" Content="진행내역가져오기" />
+	<Item ID="SEL_QRY_Attach" Value="SELECT * FROM DP_COOP_Attach WHERE CompanyID = '{0}' AND ListID = '{1}' ORDER BY AttachFileID" Content="첨부파일 가져오기" />
+	<Item ID="SEL_QRY_AppBaseDoc" Value="SELECT Base.AppBaseDocID, Base.BaseOrder, Base.DocumentID, Base.Name, VW.* FROM VW_COOP_List AS VW   LEFT OUTER JOIN DP_COOP_APPBaseDoc AS Base
+	ON VW.CompanyID = Base.CompanyID  AND VW.ListID = Base.ListID WHERE VW.CompanyID = '{0}' AND Base.ListID = '{1}' ORDER BY BaseOrder" Content="전자결재근거문서정보가져오기" />
+	<Item ID="SEL_QRY_BaseCoop" Value="SELECT CompanyID, ListID, GroupID, BaseCoopID, BaseOrder, Subject FROM DP_COOP_BaseCoop WHERE CompanyID ='{0}' AND ListID = '{1}'
+		  AND GroupID = '{2}' ORDER BY BaseOrder ASC" Content="업무협업 근거문서정보가져오기" />		
+	<Item ID="SEL_QRY_SelectTO" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,
+	DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,
+	DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+	FROM DP_COOP_ListTO List  LEFT OUTER JOIN  DP_COM_DeptCode AS DC
+	ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID
+	WHERE List.CompanyID = '{0}' AND List.ListID = '{1}'" Content="수신자 정보가져오기" />
+	<Item ID="SEL_QRY_SelectCC" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,
+	DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,
+	DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+	FROM DP_COOP_ListCC List  LEFT OUTER JOIN  DP_COM_DeptCode AS DC
+	ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID
+	WHERE List.CompanyID = '{0}' AND List.ListID = '{1}'" Content="참조자 정보가져오기" />	
+	
+	<Item ID="SEL_QRY_Forward" Value="SELECT * FROM VW_COOP_ForwardList WHERE CompanyID = '{0}' AND ForwardUserID = '{1}' AND ForwardListID = '{2}'" Content="전달상세가져오기" />
+	<Item ID="SEL_QRY_ForwardGroup" Value="SELECT * FROM VW_COOP_ForwardList WHERE CompanyID = '{0}' AND ForwardUserID = '{1}' AND ForwardGroupID = '{2}' ORDER BY CompanyID, ListOrder" Content="전달진행내역가져오기" />
+	<Item ID="SEL_QRY_ForwardAttach" Value="SELECT * FROM DP_COOP_ForwardAttach WHERE CompanyID = '{0}' AND ForwardListID= '{1}' ORDER BY AttachFileID" Content="전달첨부파일 가져오기" />
+	<Item ID="SEL_QRY_ForwardBaseDoc" Value="SELECT Base.BaseOrder, Base.DocumentID, Base.Name, VW.* FROM VW_COOP_ForwardList AS VW LEFT OUTER JOIN DP_COOP_ForwardBaseDoc AS Base  
+    ON VW.CompanyID = Base.CompanyID  AND VW.ForwardListID = Base.ForwardListID WHERE VW.CompanyID = '{0}' AND Base.ForwardListID = '{1}' ORDER BY BaseOrder" Content="전달전자결재근거문서정보가져오기" />
+	<Item ID="SEL_QRY_ForwardBaseCoop" Value="SELECT CompanyID, ForwardListID, ForwardBaseCoopID, ListID, GroupID, BaseCoopID, BaseOrder, Subject FROM DP_COOP_ForwardBaseCoop 
+		  WHERE CompanyID = '{0}' AND ForwardListID = '{1}' ORDER BY BaseOrder ASC" Content="전달업무협업근거문서정보가져오기" />
+	<Item ID="SEL_QRY_ForwardTO" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,  
+	 DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,  
+	 DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName 
+	 FROM DP_COOP_ForwardListTO List  LEFT OUTER JOIN  DP_COM_DeptCode AS DC 
+	ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID 
+	 WHERE List.CompanyID = '{0}' AND List.ForwardListID = '{1}'" Content="전달수신자 정보가져오기" />
+	<Item ID="SEL_QRY_ForwardCC" Value="SELECT List.*, DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, DC.DeptManyName,  
+	 DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, DC.TitleManyName,
+	   DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw, DC.DutyManyName
+	  FROM DP_COOP_ForwardListCC List  LEFT OUTER JOIN  DP_COM_DeptCode AS DC
+	 ON List.CompanyID = DC.CompanyID AND List.DeptCodeID = DC.DeptCodeID  
+	 WHERE List.CompanyID = '{0}' AND List.ForwardListID = '{1}'" Content="전달참조자 정보가져오기" />
+
+	<Item ID="INS_PROC_Coop_List" Value="DP_COOP_List_Ins" Content="추가하기" />
+	<Item ID="INS_PROC_Coop_Cancel" Value="DPM_COOP_List_InsCancel" Content="완료취소하기" />
+	<Item ID="INS_PROC_Coop_Complete" Value="DPM_COOP_List_InsComplete" Content="완료하기" />
+	<Item ID="INS_PROC_Coop_Accept" Value="DPM_COOP_List_InsAccept" Content="접수하기" />
+	<Item ID="INS_PROC_Coop_Reject" Value="DPM_COOP_List_InsReject" Content="반려하기" />
+
+</XmlData>

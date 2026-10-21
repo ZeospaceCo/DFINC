@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Community opened approval</Title>
+	<ContentHTML>
+		[Community opened approval]
+		&lt;br&gt;&lt;br&gt;
+		- Community Name : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- Introduction to Community : $Content$
+	</ContentHTML>
+</ContentInfo>

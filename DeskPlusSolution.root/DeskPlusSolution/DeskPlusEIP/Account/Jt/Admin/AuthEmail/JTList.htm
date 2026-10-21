@@ -1,0 +1,30 @@
+﻿<table cellspacing="0" class="table_typeA" border="0"> 
+<caption>UserList</caption>
+<colgroup>    
+    <col width="150px" />
+    <col width="*" />    
+    <col width="150px" />
+    <col width="250px" />
+    <col width="160px" />    
+</colgroup>
+    <tr>        
+        <th class="center" id="r_sendname"></th>
+        <th class="center" id="r_sendemail"></th>
+        <th class="center" id="r_receivename"></th>
+        <th class="center" id="r_receiveemail"></th>                            
+        <th class="center" id="r_sendtime"></th>             
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>         
+        <td class="center"><a onclick="javascript:AccountInfo('{ $T.AccountList.SendUserID }')" style="cursor:pointer">{ $T.AccountList.SendUserName }</a></td>
+        <td>{ $T.AccountList.SendUserEmail }</td>
+        <td class="center"><a onclick="javascript:AccountInfo('{ $T.AccountList.ReceiveUserID }')" style="cursor:pointer">{ $T.AccountList.ReceiveUserName }</a></td>
+        <td>{ $T.AccountList.ReceiveUserEmail }</td>
+        <td class="center">{ $T.AccountList.SendTime }</td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

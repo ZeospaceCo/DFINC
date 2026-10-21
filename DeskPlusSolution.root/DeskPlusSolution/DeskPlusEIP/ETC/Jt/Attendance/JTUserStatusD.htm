@@ -1,0 +1,130 @@
+﻿<table class="table_typeC"> 
+<colgroup>
+    <col width="200px" />
+    <col width="150px" />
+    <col width="120px" />
+    <col width="40px" />
+    <col width="40px" />
+    <col width="60px" />
+    <col width="40px" />
+    <col width="40px" />
+    <col width="60px" />
+    <col width="50px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_attendance_Userinformation" class="center" colspan="2" ></th>    
+    <th id="r_attendance_Date" class="center" rowspan="2"></th>
+    <th id="r_attendance_Start" class="center" rowspan="2" colspan="2"></th>
+    <th id="r_time1" class="center" rowspan="2"></th>     
+    <th id="r_attendance_End" class="center" rowspan="2" colspan="2"></th>      
+    <th id="r_time2" class="center" rowspan="2"></th>   
+    <th id="r_attendance_vacation" class="center" rowspan="2"></th>    
+    <th id="r_attendance_Reason" class="center" rowspan="2"></th>        
+</tr>
+<tr>    
+    <th id="r_attendance_Department" class="center" ></th>    
+    <th id="r_attendance_user" class="center" ></th>        
+</tr>
+{#foreach $T as UserStatusD}
+<tr>
+    {#if $T.UserStatusD.ROW != "9999"}
+    <td class="center">{ $T.UserStatusD.DeptName }</td>    
+    <td class="center">{ $T.UserStatusD.UserName }</td>    
+    <td class="center">
+        {#if $T.UserStatusD.bSysHoli == "1"}
+            <FONT COLOR="red">{ $T.UserStatusD.CalcDate }{ $T.UserStatusD.DayWeek }</FONT>
+        {#else}
+            { $T.UserStatusD.CalcDate }{ $T.UserStatusD.DayWeek }
+        {#/if}
+    </td>    
+    <td class="center" colspan="2">
+        {#if $T.UserStatusD.bHoli != "1"}
+            {#if $T.UserStatusD.bWS == "1"}
+                <b><FONT COLOR="blue">○</FONT></b>
+            {#else}
+                {#if $T.UserStatusD.bSysHoli != "1"}
+                    {#if $T.UserStatusD.bLate != "1"}
+                        <b><FONT COLOR="red">X</FONT></b>
+                    {#else}
+                        <b><FONT COLOR="red">△</FONT></b>
+                    {#/if}
+                {#/if}
+            {#/if}
+        {#/if}
+    </td>
+    <td class="center">
+        {#if $T.UserStatusD.bHoli != "1"}
+            { $T.UserStatusD.WSTime }
+        {#/if}
+    </td>    
+    <td class="center" colspan="2">
+        {#if $T.UserStatusD.bHoli != "1"}
+            {#if $T.UserStatusD.bWC == "1"}
+                <b><FONT COLOR="blue">○</FONT></b>
+            {#else}
+                {#if $T.UserStatusD.bSysHoli != "1"}
+                    {#if $T.UserStatusD.bEarly != "1"}
+                        <b><FONT COLOR="red">X</FONT></b>
+                    {#else}
+                        <b><FONT COLOR="red">△</FONT></b>
+                    {#/if}
+                {#/if}
+            {#/if}
+        {#/if}
+    </td>
+    <td class="center">
+        {#if $T.UserStatusD.bHoli != "1"}
+            { $T.UserStatusD.WCTime }
+        {#/if}
+    </td>    
+    <td class="center">
+        {#if $T.UserStatusD.bHoli == "1"}
+            {#if $T.UserStatusD.DocumentID > 0}
+                <span onclick="UserStatusD.DocView('{ $T.UserStatusD.DocumentID }');return false;" style="cursor:pointer">
+                    <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+                </span>            
+            {#/if}
+        {#/if}
+    </td>    
+    <td class="left">
+        {#if $T.UserStatusD.bHoli == "1"}
+            <FONT COLOR="blue">{ $T.UserStatusD.HoliRemark }</FONT>
+        {#else}
+            {#if $T.UserStatusD.bSysHoli == "1"}
+                <FONT COLOR="red">{ $T.UserStatusD.SysHoliRemark }</FONT>
+            {#else}    
+                {#if $T.UserStatusD.bLate == "1"}
+                    {#if $T.UserStatusD.bEarly == "1"}
+                        { $T.UserStatusD.LateRemark } / { $T.UserStatusD.EarlyRemark }
+                    {#else}   
+                        { $T.UserStatusD.LateRemark }
+                    {#/if}    
+                {#else}    
+                    {#if $T.UserStatusD.bEarly == "1"}
+                        { $T.UserStatusD.EarlyRemark }                                          
+                    {#/if}    
+                {#/if}    
+            {#/if}    
+        {#/if}    
+    </td>    
+    {#else}
+        <td class="center">{ $T.UserStatusD.DeptName }</td>
+        <td class="center">{ $T.UserStatusD.UserName }</td>
+        <td class="center">{ $T.UserStatusD.CalcDate }</td>
+        <td class="right">{ $T.UserStatusD.bWS }</td>
+        <td class="right">{ $T.UserStatusD.bLate }</td>
+        <td class="right">{ $T.UserStatusD.WSTime }</td>    
+        <td class="right">{ $T.UserStatusD.bWC }</td>        
+        <td class="right">{ $T.UserStatusD.bEarly }</td>
+        <td class="right">{ $T.UserStatusD.WCTime }</td>    
+        <td class="right">{ $T.UserStatusD.bHoli }</td>
+        <td class="center"></td>
+    {#/if}    
+</tr>  
+{#else}
+<tr>
+    <td colspan="11" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

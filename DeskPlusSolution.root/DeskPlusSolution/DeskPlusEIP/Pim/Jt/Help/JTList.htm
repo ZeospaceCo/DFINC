@@ -1,0 +1,23 @@
+﻿ <table cellspacing="0" class="table_typeT"> 
+    <caption>
+        일정분류 리스트
+    </caption>
+    <colgroup>
+        <col width="*" />
+        <col width="100" />
+    </colgroup>
+    <tr>
+        <th id="r_name"></th>
+        <th id="r_color"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.NameBase}</td>
+        <td class="center"><div style="border-top:3px solid { $T.List.Colors }; background:#f2f4f7;width:50px;height:15px;display:inline-block;" title="{ $T.List.Colors }"></div></td>        
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>   
+     </tr>
+    {#/for}       
+ </table>

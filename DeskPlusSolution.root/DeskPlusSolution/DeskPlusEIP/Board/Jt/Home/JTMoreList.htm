@@ -1,0 +1,78 @@
+﻿<table class="table_typeA"> 
+<caption>
+    게시판 리스트
+</caption>
+<colgroup>
+    <col width="60px" />
+    <col width="40px" />
+    <col width="120px" />
+    <col  />
+    <col width="75px" />
+    <col width="65px" />
+    <col width="120px" />
+    <col width="120px" />
+</colgroup>
+<tr>
+    <th id="r_number"></th>
+    <th id="r_point"></th>
+    <th id="r_categoryName"></th>
+    <th id="r_title"></th>
+    <th id="r_attachName"></th>                            
+    <th id="r_viewCount"></th>
+    <th id="r_register"></th>
+    <th id="r_regDate"></th>
+</tr>
+{#foreach $T as MoreList}
+<tr>
+    <td class="center">{ $T.MoreList.ROW }</td>
+    <td>
+        <p class="fav">
+            <input type="checkbox" id="chkImpo_{$T.MoreList.ListID}" 
+            {#if $T.MoreList.ImpoCnt == 1}checked="checked"{#/if}
+            onclick="MoreList.ModImpUser('chkImpo_{$T.MoreList.ListID}', this)" />
+
+	        <label for="chkImpo_{$T.MoreList.ListID}" title="" 
+            id="lbImpo_{$T.MoreList.ListID}" class="{#if $T.MoreList.ImpoCnt == 1}on{#/if}">
+                <span class="blind"></span>
+            </label>
+        </p>
+    </td>
+    <td >{ $T.MoreList.CA_Title }</td>
+    <td>        
+        <a onclick="MoreList.PopupView('{ $T.MoreList.CategoryID }','{ $T.MoreList.ListID }');return false;" style="cursor:pointer" >{ $T.MoreList.Title }</a>
+        {#if $T.MoreList.ReplyCount > 0}
+       
+        <a onclick="MoreList.PopupShort('{ $T.MoreList.CategoryID }','{ $T.MoreList.ListID }');return false;" style="cursor:pointer" >
+        <span class="icon_Comment_view">({ $T.MoreList.ReplyCount })</span>
+        </a>
+        {#/if}   
+        <a onclick="MoreList.PopupView('{ $T.MoreList.CategoryID }','{ $T.MoreList.ListID }');return false;" style="cursor:pointer" >
+            <img class="IconPopUp" alt="" style="display:none"/>
+        </a> 
+        {#if $T.MoreList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}           
+    </td>
+    <td class="center">
+    {#if $T.MoreList.Filecount > 0}
+    <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" CategoryID='{ $T.MoreList.CategoryID }' ListID='{ $T.MoreList.ListID }'></i>
+    {#/if}
+    </td>
+    <td class="center">
+	 <a onclick="MoreList.ReadList('{ $T.MoreList.CategoryID }','{ $T.MoreList.ListID }');return false;" style="cursor:pointer" >
+	 { $T.MoreList.ReadCount }
+	 </a>
+	 </td>
+    <td class="center">
+        {#if $T.MoreList.WriteUserID > 0}
+        <a onclick="AccountInfo('{ $T.MoreList.WriteUserID }');return false;" style="cursor:pointer">{ $T.MoreList.WriteUserName }</a>             
+        {#else}
+        { $T.MoreList.WriteUserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.MoreList.WriteDate }</td>        
+</tr>
+{#else}
+<tr>
+    <td colspan="8" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

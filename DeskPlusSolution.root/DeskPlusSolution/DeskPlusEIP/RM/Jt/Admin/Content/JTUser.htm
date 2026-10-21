@@ -1,0 +1,11 @@
+﻿
+<ul class="table_typeT ul_typeT">
+    {#foreach $T as List}
+    <li>
+        <span>({$T.List.Gubun})</span>
+        <a onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;">{ $T.List.ManagerName }</a>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>

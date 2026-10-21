@@ -1,0 +1,50 @@
+﻿<div class="table_typeLtop"><p></p></div>    
+<div class="table_typeLmiddle">
+<!--blog 내용 시작-->
+<div class="blog_cont">
+<ul>
+{#foreach $T as RepleList}
+    <li {#if $T.RepleList$last == true} class="last-child" {#/if} >
+
+        <table class="blog_cont_table">
+        <caption>BLOG SCHEDULE CONTENT</caption>
+        <colgroup>
+            <col width="10%" />
+            <col />
+        </colgroup>
+        {#if $T.RepleList.View == 'Y'}
+        <tr>
+            <td class="blog_img">
+                <a onclick="AccountInfoWin('{ $T.RepleList.UserID }');return false;" style="cursor:pointer">{ $T.RepleList.PhotoImage }</a>
+            </td>
+            <td>
+               <div class="tk_b">
+                <p class="lb">
+               {#if $T.RepleList.ShowNew == 'Y'} <span class="m_talk"></span> {#/if}
+               <span class="subtext">&nbsp;<a onclick="AccountInfoWin('{ $T.RepleList.UserID }');return false;" style="cursor:pointer">{ $T.RepleList.UserName } </a>| { $T.RepleList.InputDate }</span>
+                {#if $T.RepleList.IsAuth == 'Y'} 
+                    <a href="#" onclick="javascript:ScheduleTalk.Del({ $T.RepleList.ReplyID})")>
+                    <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" /><span class="BtnDel" style="display:none;"></span>
+                    </a>
+                {#/if}               
+               <br />
+               { $T.RepleList.Content }               
+                </p>
+                <div class="arr"></div>
+               </div>
+            </td>
+        </tr>
+        {#else}
+        <tr>
+            <td colspan="2" class="center"><span class="NoAuthListData"></span></td>
+        </tr>
+        {#/if}
+        </table>
+    </li>
+{#else}
+    <li class="last-child center"><span class="NoListData" /></li>                  
+{#/for}
+</ul>
+</div>
+</div>
+<div class="table_typeLbottom"><p></p></div>

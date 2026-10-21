@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+    <Item ID="LimitSize" Value="50000"  Content="기본(파일 개당 용량 제한) : 1024KB(1MB) : KB로 기재바람" />    
+    <Item ID="WebHardTotalLimitSize" Value="0"  Content="1024KB(1MB) : KB로 기재바람" />
+    <Item ID="MaxFileCount" Value="0"  Content="" />
+    <Item ID="UploadMenuView" Value="1,1,1"  Content="첨부파일 종류 사용여부(1/0) (순서 : RIA,DPUPLOAD,웹폴더" />
+    <Item ID="BlockExt" Value="asp,aspx,php,jsp,exe,config,ocx,cer" Content="파일 업로드 및 다운로드 차단 확장자" />
+    <Item ID="IsCreatePDF" Value="0" Content="PDF파일 생성유무 (1:생성, 0:미생성), 팩키지=미사용, Aspose Component 구매필요" />
+</XmlData>

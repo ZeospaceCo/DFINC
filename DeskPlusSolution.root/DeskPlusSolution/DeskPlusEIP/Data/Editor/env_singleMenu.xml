@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<TWEditor>
+  <!-- 
+		true이면 설정 파일의 옵션 값이 
+		클라이언트의 옵션 값(각 클라이언트 레지스트리에 저장된 값)에 우선. 
+		(기본적으로 false)
+		
+		※현재 이 값은 쓰이지 않으며, 설정 파일에서 초기값을 가져 옵니다. 
+	-->
+  <Priority>true</Priority>
+  <Product>
+    <!-- Help URL -->
+    <HelpURL>http://www.tagfree.com</HelpURL>
+    <!-- 배포자 -->
+    <Destributor>TAGFREE CO.,LTD</Destributor>
+    <!-- 제품 명 -->
+    <Name>TAGFREE Active Designer Control. version 2.5</Name>
+  </Product>
+  <UI>
+    <!-- 보여줄 메뉴 지정. ApplyInitData 파라미터값과 상관없이 항상 적용 -->
+    <ShowMenu show="false" state="on">
+      <File show="false">
+        <New show="true"/>
+        <Open show="true"/>
+        <Separator show="true"/>
+        <Save show="true"/>
+        <SaveAs show="true"/>
+        <Separator show="true"/>
+        <Print show="true"/>
+      </File>
+      <Edit show="true">
+        <Undo show="true"/>
+        <Redo show="true"/>
+        <Separator show="true"/>
+        <Cut show="true"/>
+        <Copy show="true"/>
+        <Paste show="true"/>
+        <Separator show="true"/>
+        <Delete show="true"/>
+        <SelectAll show="true"/>
+        <Separator show="true"/>
+        <Find show="true"/>
+        <Replace show="true"/>
+        <Separator show="true"/>
+        <WordWrap show="true"/>
+        <Separator show="true"/>
+        <TagDiet show="true"/>
+      </Edit>
+      <Insert show="false">
+        <TextBox show="true"/>
+        <TextRange show="true"/>
+        <Password show="true"/>
+        <Hidden show="true"/>
+        <DropDown show="true"/>
+        <ListBox show="true"/>
+        <CheckBox show="true"/>
+        <RadioButton show="true"/>
+        <Button show="true"/>
+        <Separator show="true"/>
+        <HyperLink show="true"/>
+        <Image show="true"/>
+        <Images show="true"/>
+        <HorizontalLine show="true"/>
+        <Layer show="true"/>
+        <Symbol show="true"/>
+        <Attachment show="true"/>
+        <Separator show="true"/>
+        <Object show="true">
+          <Flash show="true"/>
+          <WindowsMedia show="true"/>
+          <ActiveX show="true"/>
+          <Separator show="true"/>
+          <Plugin show="true"/>
+        </Object>
+        <PageBreak show="false"/>
+      </Insert>
+      <View show="true">
+        <AbsolutePosition show="true"/>
+        <ShowGrid show="true" state="off"/>
+        <ShowTag show="true" state="off"/>
+        <SnapToGrid show="true" state="off"/>
+        <ShowZeroBorder show="true" state="off"/>
+        <Separator show="true"/>
+        <Encoding show="true"/>
+      </View>
+      <Table show="true">
+        <InsertTable show="true"/>
+        <InsertRowColumn show="true"/>
+        <InsertCell show="true"/>
+        <Separator show="true"/>
+        <DeleteRow show="true"/>
+        <DeleteColumn show="true"/>
+        <DeleteCell show="true"/>
+        <Separator show="true"/>
+        <MergeCell show="true"/>
+        <SplitCell show="true"/>
+        <Separator show="true"/>
+        <TableCellBucket show="true"/>
+        <TableRowsEvenly show="true"/>
+        <TableColumnsEvenly show="true"/>
+        <Separator show="true"/>
+        <AlignUpper show="true"/>
+        <AlignVCenter show="true"/>
+        <AlignLower show="true"/>
+        <Separator show="true"/>
+        <ClearTableClipboard show="true"/>
+      </Table>
+      <Style show="true">
+        <Bold show="true"/>
+        <Italic show="true"/>
+        <UnderLine show="true"/>
+        <Separator show="true"/>
+        <BulletedList show="true"/>
+        <NumberedList show="true"/>
+        <Separator show="true"/>
+        <IncreaseIndent show="true"/>
+        <DecreaseIndent show="true"/>
+        <Separator show="true"/>
+        <Align show="true">
+          <AlignLeft show="true"/>
+          <AlignCenter show="true"/>
+          <AlignRight show="true"/>
+        </Align>
+      </Style>
+      <Tool show="true">
+        <PageProperty show="true"/>
+        <SourceTabProperty show="true"/>
+        <Stationery show="false" state="off"/>
+      </Tool>
+      <Help show="true">
+        <About show="true"/>
+      </Help>
+      <CustomMenu name="사용자정의" show="false">
+        <CustomMenuItem name="도움말" id="1" show="true"/>
+        <CustomMenuItem name="메뉴1" id="2" show="true"/>
+        <CustomMenuItem name="메뉴2" id="3" show="true"/>
+      </CustomMenu>
+    </ShowMenu>
+
+    <!-- 보여줄 툴바 지정 < 1 : 첫 번째 툴바, 2 : 두 번째 툴바 > -->
+    <ShowToolBar index="1" show="false" state="on">
+      <New show="true"/>
+      <Open show="true"/>
+      <Save show="true"/>
+      <SaveAs show="true"/>
+      <Print show="true"/>
+      <Separator show="true"/>
+      <Cut show="true"/>
+      <Copy show="true"/>
+      <Paste show="true"/>
+      <Separator show="true"/>
+      <Undo show="true"/>
+      <Redo show="true"/>
+      <Separator show="true"/>
+      <DrawTable show="true"/>
+      <EraseTable show="true"/>
+      <InsertTableGrid show="true"/>
+      <Separator show="true"/>
+      <CellMergeSplit show="true"/>
+      <CellInsertDelete show="true"/>
+      <MergeCell show="true"/>
+      <SplitCell show="true"/>
+      <Separator show="true"/>
+      <TableCellBucket show="true"/>
+      <TableRowsEvenly show="true"/>
+      <TableColumnsEvenly show="true"/>
+      <Separator show="true"/>
+      <AlignUpper show="true"/>
+      <AlignVCenter show="true"/>
+      <AlignLower show="true"/>
+      <Separator show="true"/>
+      <HyperLink show="true"/>
+      <Attachment show="true"/>
+      <Image show="true"/>
+      <Images show="true"/>
+      <Flash show="true"/>
+      <WindowsMedia show="true"/>
+      <Separator show="true"/>
+      <AbsolutePosition show="true"/>
+      <ShowGrid show="true"/>
+      <ShowZeroBorder show="true"/>
+    </ShowToolBar>
+
+    <ShowToolBar index="2" show="true" state="on">
+      <StyleCombo show="true"/>
+      <FontEnumCombo show="true"/>
+      <FontSizeCombo show="true"/>
+      <FontSizeCombo2 show="false"/>
+      <LineHeightCombo show="true"/>
+      <LetterSpacingCombo show="false"/>
+      <Separator show="true"/>
+      <Bold show="true"/>
+      <Italic show="true"/>
+      <Underline show="true"/>
+      <Separator show="true"/>
+      <TextColor show="true"/>
+      <TextBackgroundColor show="true"/>
+      <Separator show="true"/>
+      <AlignLeft show="true"/>
+      <AlignCenter show="true"/>
+      <AlignRight show="true"/>
+      <Justify show="true"/>
+      <Distributed show="false"/>
+      <Separator show="true"/>
+      <DecreaseIndent show="true"/>
+      <IncreaseIndent show="true"/>
+      <Separator show="true"/>
+      <BulletedList show="true"/>
+      <NumberedList show="true"/>
+      <Separator show="true"/>
+      <!--admin버전에만 적용-->
+      <ToggleAdminMode show="false"/>
+      <ReadOnly show="false"/>
+      <Editable show="false"/>
+      <Symbol show="true"/>
+      <PageBreak show="false"/>
+    </ShowToolBar>
+
+    <!-- 보여줄 탭 지정 < source : HTML 소스 편집 탭 표시, preview : Preview 탭 표시, Design 탭은 항상 표시 > -->
+    <ShowTab show="true">source, preview</ShowTab>
+    <!-- default = system language -->
+    <!-- 나올수 있는 값, english, korean, japanese, chinese_simplified, chinese_traditional unknown:default -->
+    <Language apply="false">japanese</Language>
+    <!-- 컨트롤의 외곽스타일(flat, sunkun..) (notimpl)-->
+    <ControlBorder>flat</ControlBorder>
+    <!-- 뷰어모드에서의 스크롤-->
+    <ViewModeHideScroll>false</ViewModeHideScroll>
+  </UI>
+  <Edit>
+    <!-- 페이지 초기 설정 및 편집에 관련된 초기 설정 적용, ApplyInitData 파라미터의 값이 1일 경우에만 적용 -->
+    <!-- HTML charset(설정 가능 항목 : http://www.iana.org/assignments/character-sets)-->
+    <Charset apply="true">UTF-8</Charset>
+    <!-- 작성하는 HTML 문서의 제목 -->
+    <Title apply="false">TAGFREE Active Designer</Title>
+    <!-- HTML 디자인 및 편집 가능 여부 < on : 편집 가능, off : 편집 불가 > -->
+    <EditMode apply="false">on</EditMode>
+    <!-- HTML 디자인 탭에서의 편집 시 탭 키에 대한 공백 문자열 개수 지정 -->
+    <TabSize apply="false">4</TabSize>
+    <!-- HTML 디자인 탭에서의 편집 시 문서의 초기 백그라운드 색상 지정 < 16진수로 지정, ex)#ffffff > -->
+    <BgColor apply="false">#00FFFF</BgColor>
+    <!-- HTML 디자인 탭에서의 편집 시 문서의 초기 백그라운드 이미지 지정 : URL로 지정함. -->
+    <BgImage apply="false"></BgImage>
+    <!-- HTML 디자인 탭에서의 편집 시 초기 폰트 색상 지정 < 16진수로 지정, ex)#ffffff > -->
+    <FontColor apply="false">#00ff00</FontColor>
+    <!-- HTML 디자인 탭에서의 편집 시 초기 폰트 종류 지정 -->
+    <FontFamily apply="true">gulim</FontFamily>
+    <!-- HTML 디자인 탭에서의 편집 시 초기 폰트 크기 지정, ex)12pt, 12px -->
+    <FontSize apply="true">12px</FontSize>
+    <!-- Grid 선택 시 Grid의 색상 < 16 진수로 지정, ex)#ffffff > -->
+    <GridColor apply="true">#000000</GridColor>
+    <!-- Grid 선택 시 Grid 선의 타입 < line : 선, dot : 점선 > -->
+    <GridShape apply="false">dot</GridShape>
+    <!-- Grid 선택 시 Grid 가로 격자 간격 : 픽셀로 지정 -->
+    <GridSize apply="true">100</GridSize>
+    <!-- Grid 선택 시 Grid 세로 격자 간격 : 픽셀로 지정 -->
+    <GridHeightSize apply="true">200</GridHeightSize>
+    <!-- Grid 선택 시 Grid 가로 여백 : 픽셀로 지정 -->
+    <GridMarginSize apply="false">50</GridMarginSize>
+    <!-- Grid 선택 시 Grid 세로 여백 : 픽셀로 지정 -->
+    <GridHeightMarginSize apply="false">10</GridHeightMarginSize>
+    <!-- Snap 옵션 선택 시 Snap 크기 설정 : 픽셀로 지정, Grid 격자 간격의 배수로 설정하는 것이 유용 -->
+    <SnapSize apply="false">50</SnapSize>
+    <!-- 테이블의 삽입, 드로잉시에 적용될 테이블의 기본적인 속성 지정 -->
+    <!-- <Table>태그에 속성을 지정하는 방식과 동일하게 속성과 속성값을 지정(대소문자 구분) -->
+    <!-- 지정 가능한 속성 : background, bgColor, border, borderColor, borderColorDark, borderColorLight, cellPadding, cellSpacing -->
+    <TableStyle apply="true" background="" bgColor="white" border="1" borderColor="#6E6E6E" borderColorDark="" borderColorLight="" cellPadding="0" cellSpacing="0" align="left" style="BORDER-COLLAPSE: collapse;BORDER-RIGHT: medium none; BORDER-TOP: medium none;BORDER-BOTTOM: medium none; BORDER-LEFT: medium none;"/>
+    <!-- <TD>태그에 속성을 지정하는 방식과 동일하게 속성과 속성값을 지정(대소문자 구분) -->
+    <TDStyle apply="true" bgColor="" borderColor="" align="" noWrap=""/>
+    <!--외부스타일 시트 링크-->
+    <StyleSheetLink apply="false" href="http://tagfree.com/csstemplate/modpage.css"/>
+    <!--첨부파일들의 한도 사이즈, 단위 byte , 무제한 : apply=false 또는 값 -1(음수값)-->
+    <AttachmentLimit apply="false">1048576</AttachmentLimit>
+    <!--Base태그 표현 설정 < true : 안보임, false : 보임 ,defalut:false > -->
+    <HideBaseElement apply="false">false</HideBaseElement>
+    <!-- Image Max Size < limit : 한계 기준, fixed : 기준 초과시 지정될 사이즈 > -->
+    <ImageSize apply="false" limit="400" fixed="500"/>
+    <!-- Image Resizing 비율 처리 여부 < true : 비율처리, false : 일반처리 ,defalut:false > -->
+    <ImageResizingRate apply="false">true</ImageResizingRate>
+    <!-- Attach 관련 설정 -->
+    <!-- 첨부 기능 , class : 첨부태그 클래스명, style : 첨부태그 스타일, src : 기본 이미지, drop : 드래그앤드랍 첨부(true,false), paste : 붙여넣기 첨부(true,false), position : 첨부 위치(any,top) -->
+    <!-- name의 형식 : ".확장자" -->
+    <Attachment apply="true" class="twe_attach" style="font-size:9pt;" src="http://tagfree.com/icon/blank.gif" drop="false" paste="false" position="any">
+      <Extension name=".xls">http://tagfree.com/icon/xls.gif</Extension>
+      <Extension name=".doc">http://tagfree.com/icon/doc.gif</Extension>
+      <Extension name=".txt">http://tagfree.com/icon/txt.gif</Extension>
+      <Extension name=".pdf">http://tagfree.com/icon/pdf.gif</Extension>
+      <Extension name=".hwp">http://tagfree.com/icon/hwp.gif</Extension>
+      <Extension name=".ppt">http://tagfree.com/icon/ppt.gif</Extension>
+      <Extension name=".avi">http://tagfree.com/icon/media.gif</Extension>
+      <Extension name=".mp3">http://tagfree.com/icon/media.gif</Extension>
+      <Extension name=".wma">http://tagfree.com/icon/media.gif</Extension>
+      <Extension name=".wmv">http://tagfree.com/icon/media.gif</Extension>
+      <Extension name=".asf">http://tagfree.com/icon/media.gif</Extension>
+      <Extension name=".mpg">http://tagfree.com/icon/media.gif</Extension>
+    </Attachment>
+  </Edit>
+  <Mime>
+    <!-- HTML 인코딩 시에 사용할 인코딩 타입 설정 < base64 : BASE64 인코딩, qp : Quoted-Printable 인코딩 > -->
+    <HtmlEncodingType>base64</HtmlEncodingType>
+    <!-- HTML 인코딩 시에 인코딩 할 리소스 파일의 종류 설정 < img : img 태그, bgsound : body 태그의 bgsound 속성 > -->
+    <!-- 추가 : anchor는 a태그의 href를 업로드, include의 link, script 업로드 -->
+    <!--<EncodingFileType>image, bgsound, multimedia, anchor, link, script</EncodingFileType>-->
+    <EncodingFileType>image, bgsound, multimedia</EncodingFileType>
+    <!-- 마임값으로 생성할 파일의 범위 < all : 로컬파일+원격파일, local : 로컬파일, 기본값 : 로컬파일 > -->
+    <EncodingFileRange showProgress="false">local</EncodingFileRange>
+    <!-- 마임값으로 생성할 파일중 허용될 대상 -->
+    <EncodingFileAcception apply="false">
+      <Pattern>.jsp</Pattern>
+      <!--<Pattern>http://localhost</Pattern>-->
+      <!--<Pattern>file://c:/</Pattern>-->
+      <!--<Pattern>file:///c:/</Pattern>-->
+      <!--<Pattern>file:///C:/</Pattern>-->
+    </EncodingFileAcception>
+    <!-- 마임값으로 생성할 파일중 제외될 대상 -->
+    <EncodingFileException>
+      <Pattern>http://tagfree.com/upload</Pattern>
+      <Pattern>http://localhost/object.asp</Pattern>
+      <Pattern>http://tagfree.com/icon</Pattern>
+      <!--<Pattern>.bmp</Pattern>-->
+      <!--<Pattern>file://c:/</Pattern>-->
+      <!--<Pattern>file:///c:/</Pattern>-->
+      <!--<Pattern>file:///C:/</Pattern>-->
+    </EncodingFileException>
+
+    <!-- HTML 인코딩 시에 인코딩 범위 < inbody : Body 태그 내부만, outbody : Body 태그 및 그 내부, all : 전체 HTML 소스 -->
+    <EncodingRange>all</EncodingRange>
+  </Mime>
+</TWEditor>

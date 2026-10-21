@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Nodes>
+    <TreeViewNode ID="INSA" Text="HR Management" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="USER" Text="User Info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DEPT" Text="Departmental info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="TITLE" Text="Position Info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="DUTY" Text="Title Info"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="POTAL" Text="Portal Management" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="SUBSIDIARY" Text="Company Info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="AUTH" Text="Authority info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MENU" Text="Menu Info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="PAGE" Text="Page Info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="LAYOUT" Text="Layout info"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="UNIT" Text="Portlet Info"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+    <TreeViewNode ID="LINKED" Text="Interlocking management" Expanded="true" ImageUrl="folders.gif">
+        <TreeViewNode ID="MAIL" Text="Mail"  ImageUrl="folder.gif"/>
+        <TreeViewNode ID="MASSENGER" Text="Messenger"  ImageUrl="folder.gif"/>
+    </TreeViewNode>
+</Nodes>

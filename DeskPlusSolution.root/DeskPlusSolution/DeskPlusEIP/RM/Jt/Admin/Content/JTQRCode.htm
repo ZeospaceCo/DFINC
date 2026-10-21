@@ -1,0 +1,24 @@
+﻿
+<div class="table_typeLmiddle">
+	<div class="album_cont">
+		<ul>
+        {#foreach $T as List}
+			<li>   
+                <div class="thumb">
+                    <dl class="album_img">                       
+					 <a href="#" onclick="ListQRCode.FileDownload('{ $T.List.HiddenSpoolPath }');return false;" style="cursor:pointer">
+					 <img src="{ $T.List.QRCodePath }" alt="" /></a>   
+					</dl>
+                    <dl class="text">   
+                        <dd>
+                           { $T.List.Title }
+                        </dd>
+					</dl>                   
+				</div>         
+			</li>
+        {#else}
+            <li class="last-child"><span id="NoListData" /></li>
+        {#/for}
+		</ul>
+	</div>				 
+</div>

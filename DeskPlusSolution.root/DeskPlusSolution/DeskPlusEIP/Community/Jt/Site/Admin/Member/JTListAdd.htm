@@ -1,0 +1,41 @@
+﻿<table class="table_typeA"> 
+<caption>
+    Community Join List
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="50px" />
+    <col width="120px" />
+    <col />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="ListAdd.Checked()" /></th>
+    <th class="center" id="r_number"></th>    
+    <th class="center" id="r_userName"></th>
+    <th class="center" id="r_decsription"></th>
+    <th class="center" id="r_applyDate"></th>                            
+
+</tr>
+{#foreach $T as CmnList}
+<tr>
+    <td class="center">
+        <input type="checkbox" class="cbxID" id="cbxID{ $T.CmnList.UserID }" value="{ $T.CmnList.UserID }" />
+    </td>
+    <td class="center">{ $T.CmnList.ROW }</td>
+    <td class="center">
+        {#if $T.CmnList.UserID > 0}
+        <a href="#" onclick="AccountInfo('{ $T.CmnList.UserID }');return false;" style="cursor:pointer">{ $T.CmnList.UserName }</a>             
+        {#else}
+        { $T.CmnList.UserName }
+        {#/if}
+    </td>
+    <td>{ $T.CmnList.Description }</td>
+    <td class="center">{ $T.CmnList.ApplyDate }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

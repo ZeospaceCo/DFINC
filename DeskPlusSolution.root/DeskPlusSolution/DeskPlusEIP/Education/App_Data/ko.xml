@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+
+    <MESSENGER>	
+		<TO>[신규교육]</TO>	
+		<ContentHTMLTO>
+			[교육관리 신규교육 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLTO>	
+    </MESSENGER>
+
+</ALARM>

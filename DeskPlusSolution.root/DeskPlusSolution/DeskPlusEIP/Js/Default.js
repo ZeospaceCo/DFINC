@@ -1,0 +1,8 @@
+﻿Default = {}
+
+$(function () {
+    $(document).ready(function () {
+
+    
+    });
+});

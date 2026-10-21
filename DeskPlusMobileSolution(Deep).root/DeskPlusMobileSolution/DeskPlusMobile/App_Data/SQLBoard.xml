@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="SQL_PROC_BOARD_LIST_TOPDOWN" Value="DPM_BOA_List_TopDown" Content="일반 게시물 이전,이후" />
+	<Item ID="SEL_PROC_NOREADLIST" Value="DPM_BOA_List_NOREADList" Content="읽지 않은 게시물 카운트" />
+	<Item ID="SEL_QRY_SELECTCATEGORY_USEMOBILE" Value="SELECT CategoryID FROM DP_BOA_CATEGORY WITH(NOLOCK) WHERE COMPANYID = {0} AND ISNULL(OptionMobile,0) = '1'  AND CategoryID in ({1})" Content="모바일사용카데고리 체크" />
+	<Item ID="SEL_PROC_TOTAL" Value="DPM_BOA_List_Total" Content="총 게시물 카운트" />
+	<Item ID="SEL_QRY_LIST" Value="SELECT * FROM VW_BOA_List WITH(NOLOCK) WHERE COMPANYID = {0} AND CategoryID = {1} AND ListID = {2}" Content="리스트 가져오기" />
+	<Item ID="SEL_QRY_SHORIREPLY" Value="SELECT * FROM DP_BOA_ShortReply WITH(NOLOCK) WHERE COMPANYID = {0} AND CategoryID = {1} AND ListID = {2}" Content="댓글 리스트 가져오기" />
+	<Item ID="INT_PROC_LIST" Value="DP_BOA_List_Ins" Content="게시글 작성" />
+	<Item ID="INT_PROC_LISTETC" Value="DP_BOA_ListEtc_Ins" Content="게시글 etc 작성" />
+	<Item ID="SEL_QRY_HEADER" Value="SELECT * FROM DP_BOA_Header WITH(NOLOCK) WHERE CompanyID = {0} AND CategoryID = {1} AND UseActive = 1 Order by Orders" Content="말머리 가져오기" />
+	<Item ID="INS_PROC_Attach" Value="DP_BOA_Attach_Ins" Content="첨부파일 저장" />
+	<Item ID="SEL_PROC_ListCnt" Value="DPM_BOA_List_SelCnt" Content="카테고리 별 게시물 갯수" />
+	<Item ID="INT_PROC_LISTDraft" Value="DPM_BOA_List_Ins" Content="게시글 임시저장" />
+	<Item ID="SEL_QRY_Draft" Value="SELECT * FROM DPM_BOA_List WITH(NOLOCK) WHERE COMPANYID = {0} AND DraftListID = {1}" Content="게시글 임시저장가져오기" />
+  <Item ID="SEL_QRY_LISTETC" Value="SELECT * FROM DP_BOA_ListEtc WITH(NOLOCK) WHERE CompanyID = {0} AND ListID = {1}" Content="ListETC 정보 가져오기" />
+  <Item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+  <Item ID="SEL_QRY_ShortReplyID"
+        Value="SELECT Lists.*, 
+	          DC.DeptBase, DC.DeptKo, DC.DeptEn, DC.DeptJa, DC.DeptFr, DC.DeptZhcn, DC.DeptZhtw, 
+	          DC.TitleBase, DC.TitleKo, DC.TitleEn, DC.TitleJa, DC.TitleFr, DC.TitleZhcn, DC.TitleZhtw, 
+	          DC.DutyBase, DC.DutyKo, DC.DutyEn, DC.DutyJa, DC.DutyFr, DC.DutyZhcn, DC.DutyZhtw
+          FROM
+	          DP_BOA_ShortReply AS Lists 
+	          LEFT OUTER JOIN
+	          DP_COM_DeptCode AS DC ON Lists.DeptCodeID = DC.DeptCodeID
+          WHERE 
+	          Lists.CategoryID = {0} 
+	          AND Lists.ListID = {1} 
+	          AND Lists.ShortReplyID = {2}"
+        Content="댓글 건당 가져오기" />
+</XmlData>

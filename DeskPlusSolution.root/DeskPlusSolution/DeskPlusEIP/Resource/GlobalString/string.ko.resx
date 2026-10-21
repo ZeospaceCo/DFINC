@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alert_Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Alert_Ok" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>처리 되었습니다.</value>
+  </data>
+  <data name="ExistLimitSize" xml:space="preserve">
+    <value>업로드한 파일 중에 큰 용량의 파일이 존재합니다.</value>
+  </data>
+  <data name="ExistPrivateTotalLimitSize" xml:space="preserve">
+    <value>개인에게 할당된 용량을 초과 하였습니다.</value>
+  </data>
+  <data name="NoUploadOver" xml:space="preserve">
+    <value>이상의 파일은 등록할 수 없습니다.</value>
+  </data>
+  <data name="UploadRootFolder" xml:space="preserve">
+    <value>바탕화면</value>
+  </data>
+  <data name="UploadMyDocument" xml:space="preserve">
+    <value>내 문서</value>
+  </data>
+  <data name="UploadMyComputer" xml:space="preserve">
+    <value>내 컴퓨터</value>
+  </data>
+  <data name="ErrorAuth" xml:space="preserve">
+    <value>권한확인</value>
+  </data>
+  <data name="ErrorAuthDescription" xml:space="preserve">
+    <value>해당 사용자는 권한이 존재하지 않습니다.</value>
+  </data>
+  <data name="ErrorDescription" xml:space="preserve">
+    <value>시스템오류입니다. 잠시후에 다시 시도하세요.</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>시스템확인</value>
+  </data>
+  <data name="ModPasswordTitle1" xml:space="preserve">
+    <value>오랫동안 비밀번호를 변경하지 않고 같은 비밀번호를 사용하고 계십니다.</value>
+  </data>
+  <data name="ModPasswordTitle2" xml:space="preserve">
+    <value>소중한 정보를 안전하게 지키기 위해서는 비밀번호를 가급적 자주 변경하시는 것이 좋습니다.</value>
+  </data>
+  <data name="ModPasswordTitle3" xml:space="preserve">
+    <value>이에 본 시스템은 비밀번호를 마지막으로 변경하신 후 일정 기간이 경과하면, 지금처럼 로그인을 하실때에 비밀번호 변경을 요청드리는 안내 페이지가 제공됩니다.</value>
+  </data>
+  <data name="ModPassword" xml:space="preserve">
+    <value>비밀번호변경</value>
+  </data>
+  <data name="PwdNow" xml:space="preserve">
+    <value>현재 비밀번호</value>
+  </data>
+  <data name="PwdNew" xml:space="preserve">
+    <value>새 비밀번호</value>
+  </data>
+  <data name="PwdNewConfirm" xml:space="preserve">
+    <value>새 비밀번호 확인</value>
+  </data>
+  <data name="InputNowPWd" xml:space="preserve">
+    <value>현재 비밀번호를 입력해 주세요.</value>
+  </data>
+  <data name="InputNewPWd" xml:space="preserve">
+    <value>새 비밀번호를 입력해 주세요.</value>
+  </data>
+  <data name="InputNewPWd1" xml:space="preserve">
+    <value>새 비밀번호 확인을 입력해 주세요.</value>
+  </data>
+  <data name="InputRequest" xml:space="preserve">
+    <value>입력값이 하나 이상 존재하지 않습니다.</value>
+  </data>
+  <data name="InputComparePwd" xml:space="preserve">
+    <value>새 비밀번호와 새 비밀번호 확인이 다릅니다.</value>
+  </data>
+  <data name="LoginNewPwd" xml:space="preserve">
+    <value>변경된 비밀번호로 로그인 해 주시기 바랍니다.</value>
+  </data>
+  <data name="CheckPwd" xml:space="preserve">
+    <value>접속명 혹은 비밀번호를 확인해 주십시오.</value>
+  </data>
+  <data name="PasswordFaultCount" xml:space="preserve">
+    <value>비밀번호 오류입니다.</value>
+  </data>
+  <data name="PasswordFaultTotalCount" xml:space="preserve">
+    <value>번 틀릴 경우 접속이 차단됩니다.</value>
+  </data>
+  <data name="UploadDate" xml:space="preserve">
+    <value>수정한 날짜</value>
+  </data>
+  <data name="UploadName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="UploadPostFilePath" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="UploadSearchButton" xml:space="preserve">
+    <value>파일 찾기</value>
+  </data>
+  <data name="UploadSize" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="UploadTitleFolder" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="UploadTitleListHelp" xml:space="preserve">
+    <value>파일을 선택 후 위 선택창으로 Drag 또는 파일선택 버튼을 클릭하세요</value>
+  </data>
+  <data name="UploadTitleSelectButton" xml:space="preserve">
+    <value>파일 선택</value>
+  </data>
+  <data name="UploadTitleSelected" xml:space="preserve">
+    <value>업로드 파일목록(삭제시 우클릭)</value>
+  </data>
+  <data name="UploadType" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="RegisterTrustSite" xml:space="preserve">
+    <value>신뢰할수 있는 사이트 등록</value>
+  </data>
+  <data name="IeSettingMsg1" xml:space="preserve">
+    <value>설치 또는 보안 관련 오류가 발생하시면 </value>
+  </data>
+  <data name="IeSettingMsg2" xml:space="preserve">
+    <value>IE메뉴 -&gt; 도구 메뉴 -&gt; 인터넷 옵션 -&gt; 보안 -&gt; "사용자 지정 수준" 버튼 -&gt; ActiveX 컨트롤 및 플러그 인 란에서 "사용 안 함"으로 선택된 것을 "확인"으로 체크하십시요</value>
+  </data>
+  <data name="PasswordFault" xml:space="preserve">
+    <value>비밀번호 오류입니다.</value>
+  </data>
+  <data name="LoginMsg_01" xml:space="preserve">
+    <value>아이디와 비밀번호로 로그인해 주시기 바랍니다</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>아이디</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="SaveID" xml:space="preserve">
+    <value>아이디 저장</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>회사별</value>
+  </data>
+  <data name="CheckIDandPwd" xml:space="preserve">
+    <value>접속명 혹은 비밀번호를 확인해 주십시오.</value>
+  </data>
+  <data name="AccessFail" xml:space="preserve">
+    <value>접근 가능한 포탈 메뉴가 없습니다.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="ApprovedDocuments" xml:space="preserve">
+    <value>상신한 문서</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>업로드</value>
+  </data>
+  <data name="TotalUpload" xml:space="preserve">
+    <value>일괄 업로드</value>
+  </data>
+  <data name="CheckAuthDept" xml:space="preserve">
+    <value>부서 비활성화로 인증할 수 없습니다. 관리자에게 문의하시기 바랍니다.</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>비밀번호가 조건에 맞지 않습니다.</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>조건</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>자수이상</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>소문자</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>대문자</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>숫자</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>특수문자</value>
+  </data>
+  <data name="SaveCompany" xml:space="preserve">
+    <value>회사저장</value>
+  </data>
+  <data name="InvalidUserIDPassword" xml:space="preserve">
+    <value>아이디 또는 비밀번호 오류입니다.</value>
+  </data>
+  <data name="UploadCancel" xml:space="preserve">
+    <value>비우기</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>파일크기</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>파일명</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>전송완료</value>
+  </data>
+  <data name="UploadAllowList" xml:space="preserve">
+    <value>첨부가능한 파일 확장자를 추가하세요</value>
+  </data>
+  <data name="UploadBlockList" xml:space="preserve">
+    <value>보안 문제로 파일 확장자를 차단 합니다.</value>
+  </data>
+  <data name="InputLogin" xml:space="preserve">
+    <value>로그인 아이디를 입력해 주세요.</value>
+  </data>
+  <data name="InputPwd" xml:space="preserve">
+    <value>패스워드를 입력해 주세요.</value>
+  </data>
+  <data name="UploadBlockFileName" xml:space="preserve">
+    <value>파일 이름에는 다음 문자를 사용 할 수 없습니다.\n \' \ / : * ? \" &lt; &gt; |</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>일주일 동안 이 창을 띄우지 않음</value>
+  </data>
+  <data name="NotOpen" xml:space="preserve">
+    <value>오늘 하루 창 띄우지 않음</value>
+  </data>
+  <data name="AccessNoAuthIP" xml:space="preserve">
+    <value>보안정책에 의해 접근이 제한되었습니다</value>
+  </data>
+  <data name="Company1" xml:space="preserve">
+    <value>회사</value>
+  </data>
+  <data name="SendEmail1" xml:space="preserve">
+    <value>패스워드 오류 횟수가 초과되었습니다.&lt;br&gt;"메일전송" 버튼클릭시 개인정보에 등록된 외부메일로 임시 패스워드가 발송됩니다.&lt;br&gt;</value>
+  </data>
+  <data name="SendEmail2" xml:space="preserve">
+    <value>수신까지 최대 5분정도 소요될 수 있습니다.</value>
+  </data>
+  <data name="SendTempPassword" xml:space="preserve">
+    <value>임시 패스워드 발송</value>
+  </data>
+  <data name="ReceiveEmail" xml:space="preserve">
+    <value>수신 이메일</value>
+  </data>
+  <data name="PasswordOver" xml:space="preserve">
+    <value>패스워드 오류 횟수가 초과되었습니다.\n관리자에 문의 해 주시기 바랍니다.</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>메일전송</value>
+  </data>
+  <data name="CheckEmail" xml:space="preserve">
+    <value>등록된 외부메일 형식이 맞지않습니다.\n관리자에 문의 해 주시기 바랍니다. </value>
+  </data>
+  <data name="NoAuthEmail" xml:space="preserve">
+    <value>등록된 외부메일이 없습니다.\n관리자에 문의 해 주시기 바랍니다. </value>
+  </data>
+  <data name="AttachFileDrag" xml:space="preserve">
+    <value>첨부할 파일을 마우스로 끌어 놓으세요. </value>
+  </data>
+  <data name="LoginIDRes" xml:space="preserve">
+    <value>로그인ID_리소스</value>
+  </data>
+  <data name="MailRes" xml:space="preserve">
+    <value>외부메일_리소스</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>전송</value>
+  </data>
+  <data name="SendMsg" xml:space="preserve">
+    <value>로그인 아이디를 입력 후 검색 버튼을 눌러주세요</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>파일</value>
+  </data>
+  <data name="WebHardTitle" xml:space="preserve">
+    <value>웹폴더</value>
+  </data>
+</root>

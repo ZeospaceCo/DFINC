@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>Total schedule</value>
+  </data>
+  <data name="AllPimSort" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="AnalogClock_Australia" xml:space="preserve">
+    <value>Sydney</value>
+  </data>
+  <data name="AnalogClock_England" xml:space="preserve">
+    <value>London</value>
+  </data>
+  <data name="AnalogClock_Hawaii" xml:space="preserve">
+    <value>Honolulu</value>
+  </data>
+  <data name="AnalogClock_HongKong" xml:space="preserve">
+    <value>Hong Kong</value>
+  </data>
+  <data name="AnalogClock_Italy" xml:space="preserve">
+    <value>Rome</value>
+  </data>
+  <data name="AnalogClock_Japan" xml:space="preserve">
+    <value>Tokyo</value>
+  </data>
+  <data name="AnalogClock_Korea" xml:space="preserve">
+    <value>Seoul</value>
+  </data>
+  <data name="AnalogClock_NewYork" xml:space="preserve">
+    <value>New York</value>
+  </data>
+  <data name="AnalogClock_SanFrancisco" xml:space="preserve">
+    <value>San Francisco</value>
+  </data>
+  <data name="AnalogClock_Singapore" xml:space="preserve">
+    <value>Singapore</value>
+  </data>
+  <data name="AnalogClock_Thailand" xml:space="preserve">
+    <value>Bangkok</value>
+  </data>
+  <data name="APPCOMPLETE" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="APPING" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="APPRECV" xml:space="preserve">
+    <value>Receive</value>
+  </data>
+  <data name="AppReplySec1" xml:space="preserve">
+    <value>Holding</value>
+  </data>
+  <data name="AppReplySec2" xml:space="preserve">
+    <value>Stand by</value>
+  </data>
+  <data name="AppReplySec3" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="AppReplySec4" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="AppReplySec5" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="ApprovalTalk" xml:space="preserve">
+    <value>Approval Talk</value>
+  </data>
+  <data name="ApprovalTitle" xml:space="preserve">
+    <value>- E-Approval</value>
+  </data>
+  <data name="ApprovalType" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="APPSEND" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="APP_COMPLETE" xml:space="preserve">
+    <value>Approval completed</value>
+  </data>
+  <data name="APP_PROCESS" xml:space="preserve">
+    <value>Approval progress</value>
+  </data>
+  <data name="BackColor" xml:space="preserve">
+    <value>Background color</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="BoardTitle" xml:space="preserve">
+    <value>Bulletin board</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>(Both)</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>Brown</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Affairs</value>
+  </data>
+  <data name="Cal" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="CellerPhone" xml:space="preserve">
+    <value>M_Phone</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CommonAddress" xml:space="preserve">
+    <value>Common address book</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>Company address book</value>
+  </data>
+  <data name="CompanyTelephone" xml:space="preserve">
+    <value>Office tel</value>
+  </data>
+  <data name="CompleteDoc" xml:space="preserve">
+    <value>Target doc</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Congratulation" xml:space="preserve">
+    <value>Congratulations.</value>
+  </data>
+  <data name="COOP" xml:space="preserve">
+    <value>Cooperation</value>
+  </data>
+  <data name="COOPAccept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="COOPComplete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="COOPProcess" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="COOPReject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="COOPStandby" xml:space="preserve">
+    <value>Stand by</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>Select date</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="Delay" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="DelPortlet" xml:space="preserve">
+    <value>Delete Portlet</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="DeptDoc" xml:space="preserve">
+    <value>Rec. doc</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Dept name</value>
+  </data>
+  <data name="DeptOrName" xml:space="preserve">
+    <value>Enter department or name.</value>
+  </data>
+  <data name="DeptPim" xml:space="preserve">
+    <value>Dept schedule</value>
+  </data>
+  <data name="DeptPimSort" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="DraftDoc" xml:space="preserve">
+    <value>Delegator doc</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="EndSearch" xml:space="preserve">
+    <value>Search completed</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>Communication with the server failed. :</value>
+  </data>
+  <data name="FirstTabSetting" xml:space="preserve">
+    <value>default tab setting</value>
+  </data>
+  <data name="FontColor" xml:space="preserve">
+    <value>Font color</value>
+  </data>
+  <data name="ForwardAddress" xml:space="preserve">
+    <value>Received address book</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>Not seen for a week this window</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Blue-green</value>
+  </data>
+  <data name="Grey" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>Please enter the date.</value>
+  </data>
+  <data name="InputDeptName" xml:space="preserve">
+    <value>Input Dept Name</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>Input Name</value>
+  </data>
+  <data name="JTOpinionItemNoData" xml:space="preserve">
+    <value>There are no items.</value>
+  </data>
+  <data name="JTOpinionNoData" xml:space="preserve">
+    <value>No survey in progress.</value>
+  </data>
+  <data name="JTOpinionR1" xml:space="preserve">
+    <value>View Items ▼</value>
+  </data>
+  <data name="JTOpinionR2" xml:space="preserve">
+    <value>Close items ▲</value>
+  </data>
+  <data name="LargePortlet" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="LastAccessDate" xml:space="preserve">
+    <value>▣ Date of last access</value>
+  </data>
+  <data name="LightGreen" xml:space="preserve">
+    <value>Light green</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>The pertinent special character is limited because they are used to security vulnerabilities attacks.</value>
+  </data>
+  <data name="ListRowCnt" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Lunar" xml:space="preserve">
+    <value>Lunar</value>
+  </data>
+  <data name="MailTitle" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Marriage" xml:space="preserve">
+    <value>Marriage</value>
+  </data>
+  <data name="MenuF1" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="Middle" xml:space="preserve">
+    <value>Middle</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="MsgInputDate" xml:space="preserve">
+    <value>Enter dates</value>
+  </data>
+  <data name="MsgSelUser" xml:space="preserve">
+    <value>Select the users</value>
+  </data>
+  <data name="MyCoopConfirmRequest" xml:space="preserve">
+    <value>Request for confirm</value>
+  </data>
+  <data name="NewMail" xml:space="preserve">
+    <value>New mail</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContents" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="Non_Target" xml:space="preserve">
+    <value>No target</value>
+  </data>
+  <data name="NoPeople" xml:space="preserve">
+    <value>There are no employees available.</value>
+  </data>
+  <data name="NoResources" xml:space="preserve">
+    <value>There are no reservation resources.</value>
+  </data>
+  <data name="NoSchedule" xml:space="preserve">
+    <value>NoSchedule</value>
+  </data>
+  <data name="NoSettingInfo" xml:space="preserve">
+    <value>No setting information</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="NoTodo" xml:space="preserve">
+    <value>NoTodo</value>
+  </data>
+  <data name="NotOpen" xml:space="preserve">
+    <value>Invisible day window</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="PhName" xml:space="preserve">
+    <value>Input Name</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>Private Schedule</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>Dept Schedule</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>Share Schedule</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>All Shedule</value>
+  </data>
+  <data name="Pink" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment Name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="PortletInfoSave" xml:space="preserve">
+    <value>Save Completed</value>
+  </data>
+  <data name="PortletSetting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PrivateAddress" xml:space="preserve">
+    <value>Private address book</value>
+  </data>
+  <data name="PrivatePim" xml:space="preserve">
+    <value>private schedule</value>
+  </data>
+  <data name="PrivatePimSort" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error occurred during processing. Please contact the administrator</value>
+  </data>
+  <data name="Purple" xml:space="preserve">
+    <value>Frequently</value>
+  </data>
+  <data name="Qlink_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Qlink_Approval" xml:space="preserve">
+    <value>E-Appro..</value>
+  </data>
+  <data name="Qlink_Community" xml:space="preserve">
+    <value>CUG</value>
+  </data>
+  <data name="Qlink_Edms" xml:space="preserve">
+    <value>EDMS</value>
+  </data>
+  <data name="Qlink_Mail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Qlink_Pims" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Qlink_Reservation" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="Qlink_Setting" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="Qlink_SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="Qlink_Task" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="R1" xml:space="preserve">
+    <value>Ranking</value>
+  </data>
+  <data name="R2" xml:space="preserve">
+    <value>User Info</value>
+  </data>
+  <data name="R3" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="RecentShowCnt" xml:space="preserve">
+    <value>The latest number of display</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="ResourceMng" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Saction" xml:space="preserve">
+    <value>Req doc</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchIn" xml:space="preserve">
+    <value>Search in Results</value>
+  </data>
+  <data name="SearchName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>Only the original writer and drafter can see this post.</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="SharePim" xml:space="preserve">
+    <value>Sharing schedule</value>
+  </data>
+  <data name="SharePimSort" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>Etc</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>Opionion</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>Add Opionion</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>Short Reply</value>
+  </data>
+  <data name="SmallPortlet" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="Solar" xml:space="preserve">
+    <value>Solar</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Starting date should be earlier than the ending date.</value>
+  </data>
+  <data name="StartSearch" xml:space="preserve">
+    <value>Search starting</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Co-work</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TitleAddress" xml:space="preserve">
+    <value>Position address book</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="TodaySchedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="TodayWork" xml:space="preserve">
+    <value>Today's Work</value>
+  </data>
+  <data name="ToDo" xml:space="preserve">
+    <value>To Do</value>
+  </data>
+  <data name="TodoAlert01" xml:space="preserve">
+    <value>Up to 4 can be specified</value>
+  </data>
+  <data name="TodoItem01" xml:space="preserve">
+    <value>E-Approval - Approval</value>
+  </data>
+  <data name="TodoItem02" xml:space="preserve">
+    <value>E-Approval - Waiting</value>
+  </data>
+  <data name="TodoItem03" xml:space="preserve">
+    <value>Co-Work - Progress</value>
+  </data>
+  <data name="TodoItem04" xml:space="preserve">
+    <value>Co-Work - Wait</value>
+  </data>
+  <data name="TodoItem05" xml:space="preserve">
+    <value>Schedule Mgmt. - To-do</value>
+  </data>
+  <data name="TodoItem06" xml:space="preserve">
+    <value>Schedule Mgmt.- Schedule</value>
+  </data>
+  <data name="TodoItem07" xml:space="preserve">
+    <value>Resource Mgmt. - Reservation Status</value>
+  </data>
+  <data name="TodoItem08" xml:space="preserve">
+    <value>Resource Mgmt. - Waiting for approve</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>Private Todo</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>Dept Todo</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>Share Todo</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>All Todo</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>TO-DO setting</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>Violet</value>
+  </data>
+  <data name="Weather_Busan" xml:space="preserve">
+    <value>Busan</value>
+  </data>
+  <data name="Weather_Chungbuk" xml:space="preserve">
+    <value>Chungbuk</value>
+  </data>
+  <data name="Weather_Chungnam" xml:space="preserve">
+    <value>Chungnam</value>
+  </data>
+  <data name="Weather_Daegu" xml:space="preserve">
+    <value>Daegu</value>
+  </data>
+  <data name="Weather_Daejeon" xml:space="preserve">
+    <value>Daejeon</value>
+  </data>
+  <data name="Weather_Incheon" xml:space="preserve">
+    <value>Incheon</value>
+  </data>
+  <data name="Weather_Jeju" xml:space="preserve">
+    <value>Jeju</value>
+  </data>
+  <data name="Weather_Jeonbuk" xml:space="preserve">
+    <value>Jeonbuk</value>
+  </data>
+  <data name="Weather_Jeonnam" xml:space="preserve">
+    <value>Jeonnam</value>
+  </data>
+  <data name="Weather_Kangwon" xml:space="preserve">
+    <value>Kangwon</value>
+  </data>
+  <data name="Weather_Kwangju" xml:space="preserve">
+    <value>Kwangju</value>
+  </data>
+  <data name="Weather_Kyungbuk" xml:space="preserve">
+    <value>Kyungbuk</value>
+  </data>
+  <data name="Weather_Kyungnam" xml:space="preserve">
+    <value>Kyungnam</value>
+  </data>
+  <data name="Weather_Seoul" xml:space="preserve">
+    <value>Seoul</value>
+  </data>
+  <data name="WebHardTitle" xml:space="preserve">
+    <value>- Webhard</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="Weather" xml:space="preserve">
+    <value>Weather</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>Select a location</value>
+  </data>
+  <data name="MyInfo_Title1" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="MyInfo_Title2" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="MyInfo_Title3" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="MyInfo_Title4" xml:space="preserve">
+    <value>E-Approval : Process</value>
+  </data>
+  <data name="MyInfo_Title5" xml:space="preserve">
+    <value>E-Approval : Target</value>
+  </data>
+  <data name="MyInfo_Title6" xml:space="preserve">
+    <value>E-Approval : Received</value>
+  </data>
+  <data name="MyInfo_Title7" xml:space="preserve">
+    <value>E-Approval : Received</value>
+  </data>
+  <data name="TodoItem01Sett" xml:space="preserve">
+    <value>E-Appr(Target)</value>
+  </data>
+  <data name="TodoItem02Sett" xml:space="preserve">
+    <value>E-Appr(Wait)</value>
+  </data>
+  <data name="TodoItem03Sett" xml:space="preserve">
+    <value>Co-Work(Progress)</value>
+  </data>
+  <data name="TodoItem04Sett" xml:space="preserve">
+    <value>Co-Work(Wait)</value>
+  </data>
+  <data name="TodoItem05Sett" xml:space="preserve">
+    <value>Schedule(To-do)</value>
+  </data>
+  <data name="TodoItem06Sett" xml:space="preserve">
+    <value>Schedule(Schedule)</value>
+  </data>
+  <data name="TodoItem07Sett" xml:space="preserve">
+    <value>Resource(Status)</value>
+  </data>
+  <data name="TodoItem08Sett" xml:space="preserve">
+    <value>Resource(Wait)</value>
+  </data>
+  <data name="TodoPopupMsg" xml:space="preserve">
+    <value>Up to 4 can be specified.</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>Early</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="Attendance_GotoWork" xml:space="preserve">
+    <value>Go to Work</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Attendance_OffWork" xml:space="preserve">
+    <value>Off Work</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="Attendance_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Attendance_NotGotoWork" xml:space="preserve">
+    <value>It is not in work status.</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>Please enter your reason.</value>
+  </data>
+  <data name="Attendance_OffWorkConfirm" xml:space="preserve">
+    <value>Do you want to go home?</value>
+  </data>
+  <data name="Attendance_OffWorkRe" xml:space="preserve">
+    <value>Are you sure you want to go home?\nYour processing will be saved back to the current time.</value>
+  </data>
+  <data name="DeletePortlet" xml:space="preserve">
+    <value>Delete portlet</value>
+  </data>
+  <data name="OnDuty" xml:space="preserve">
+    <value>On Duty</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Hour</value>
+  </data>
+  <data name="WeekOverTime" xml:space="preserve">
+    <value>Weekly overtime work</value>
+  </data>
+  <data name="WeekOverTimeMsg" xml:space="preserve">
+    <value>(within 52 hours a week)</value>
+  </data>
+  <data name="Attendance_EarlyConfirm" xml:space="preserve">
+    <value>Do you want to go home?</value>
+  </data>
+  <data name="Attendance_EarlyRe" xml:space="preserve">
+    <value>Are you sure you want to go home?\nYour processing will be saved back to the current time.</value>
+  </data>
+  <data name="Attendance_EarlyTime" xml:space="preserve">
+    <value>Early departure schedule</value>
+  </data>
+  <data name="Attendance_EarlyTimeMsg" xml:space="preserve">
+    <value>Please select an estimated time of departure.</value>
+  </data>
+  <data name="Attendance_EarlyCancelConfirm" xml:space="preserve">
+    <value>Do you want to cancel?</value>
+  </data>
+  <data name="Beforework" xml:space="preserve">
+    <value>Before work</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Attendance_GotoWorkRe" xml:space="preserve">
+    <value>Are you sure you want to go to work?\nYour processing will be saved back to the current time.</value>
+  </data>
+  <data name="Early_Time" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="GotoWork_Success" xml:space="preserve">
+    <value>출근 처리되었습니다.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="OffWorkEarly_Success" xml:space="preserve">
+    <value>조퇴 처리되었습니다.</value>
+  </data>
+  <data name="OffWork_Success" xml:space="preserve">
+    <value>퇴근 처리되었습니다.</value>
+  </data>
+  <data name="WCTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="WSTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+</root>

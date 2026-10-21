@@ -1,0 +1,44 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        HolydayD List
+    </caption>
+    <colgroup>
+        <col width="120px" />    
+        <col width="120px" />        
+        <col width="120px" />
+        <col  />
+        <col width="120px" />
+    </colgroup>
+    <tr>
+        <th id="r_holiday_IsHolidayKind2"></th>
+        <th id="r_holiday_SolarLunar"></th>
+        <th id="r_holiday_HoliDay2"></th>
+        <th id="r_holiday_Title"></th>
+        <th id="r_wRITER"></th>        
+    </tr>
+    {#foreach $T as HolidayList}
+    <tr>
+        <td align="center">
+            {#if $T.HolidayList.HoliDayKind == '0'}
+                Yes
+            {#else}
+                No
+            {#/if}
+        </td>        
+        <td align="center">
+            {#if $T.HolidayList.SolarLunar == '0'}
+                <span class="r_holiday_Solar"></span>
+            {#else}
+                <span class="r_holiday_Lunar"></span>
+            {#/if}
+        </td>        
+        <td align="center">{ $T.HolidayList.HoliDay }</td>   
+        <td align="center"><a href="#" onclick="javascript:List.Mod('{ $T.HolidayList.HoliDayID }')" style="cursor:pointer" >{ $T.HolidayList.Title }</a></td>           
+        <td align="center"><a href="#" onclick="AccountInfo('{ $T.HolidayList.WriteUserID }');return false;" style="cursor:pointer">{ $T.HolidayList.WriteUserName }</a></td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="5" class="center"><span class="textEmpty" /></td> 
+     </tr>
+    {#/for}       
+ </table>

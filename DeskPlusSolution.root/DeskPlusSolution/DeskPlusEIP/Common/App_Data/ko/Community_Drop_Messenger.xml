@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 강제탈퇴</Title>
+	<ContentHTML>
+		[커뮤니티 강제탈퇴]
+		&lt;br&gt;&lt;br&gt;
+		- 커뮤니티 명 : $Title$
+	</ContentHTML>
+</ContentInfo>

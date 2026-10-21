@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddAttach" xml:space="preserve">
+    <value>要添加的附件</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請開始日期，結束日期，同時輸入</value>
+  </data>
+  <data name="ApplyStartDate" xml:space="preserve">
+    <value>開始日期請輸入</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>近</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>已處理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>您確定要刪除嗎？</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>在現有的內容填寫將丟失。你想選擇？</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>暫停</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>日報</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>缺失</value>
+  </data>
+  <data name="DelAttach" xml:space="preserve">
+    <value>你確定你要刪除實際文件？</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="EditorScript" xml:space="preserve">
+    <value>腳本語法有關的問題將在體內的含量變化予以獎勵</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>結束</value>
+  </data>
+  <data name="ErrorDelFile" xml:space="preserve">
+    <value>發生在刪除文件錯誤</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件類型</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>轉到列表頁</value>
+  </data>
+  <data name="GoView" xml:space="preserve">
+    <value>進入頁面視圖</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>師</value>
+  </data>
+  <data name="InputNumber" xml:space="preserve">
+    <value>請只輸入數字</value>
+  </data>
+  <data name="InputSubject" xml:space="preserve">
+    <value>請輸入標題</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>名單</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>水晶</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>每月一次</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一個</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>沒有什麼。</value>
+  </data>
+  <data name="NoRepeatDay" xml:space="preserve">
+    <value>有沒有適用的定期計劃</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>正在處理中。請稍候</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>在處理過程中發生了錯誤。請聯繫管理員</value>
+  </data>
+  <data name="Qty" xml:space="preserve">
+    <value>數量</value>
+  </data>
+  <data name="QtyZero" xml:space="preserve">
+    <value>沒有供應數量</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>登記</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>經常性事件</value>
+  </data>
+  <data name="Repeat1" xml:space="preserve">
+    <value>重複設置</value>
+  </data>
+  <data name="Repeat10" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="Repeat11" xml:space="preserve">
+    <value>鷹</value>
+  </data>
+  <data name="Repeat111" xml:space="preserve">
+    <value>第三</value>
+  </data>
+  <data name="Repeat12" xml:space="preserve">
+    <value>第四</value>
+  </data>
+  <data name="Repeat13" xml:space="preserve">
+    <value>最後</value>
+  </data>
+  <data name="Repeat14" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Repeat15" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="Repeat16" xml:space="preserve">
+    <value>週末</value>
+  </data>
+  <data name="Repeat17" xml:space="preserve">
+    <value>每天，</value>
+  </data>
+  <data name="Repeat18" xml:space="preserve">
+    <value>週報</value>
+  </data>
+  <data name="Repeat19" xml:space="preserve">
+    <value>對一周中的一天，</value>
+  </data>
+  <data name="Repeat2" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="Repeat20" xml:space="preserve">
+    <value>在工作，</value>
+  </data>
+  <data name="Repeat21" xml:space="preserve">
+    <value>到，</value>
+  </data>
+  <data name="Repeat22" xml:space="preserve">
+    <value>重複，直到有一天</value>
+  </data>
+  <data name="Repeat23" xml:space="preserve">
+    <value>重複一次</value>
+  </data>
+  <data name="Repeat3" xml:space="preserve">
+    <value>每日（平日）</value>
+  </data>
+  <data name="Repeat4" xml:space="preserve">
+    <value>每週重複第二天</value>
+  </data>
+  <data name="Repeat5" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="Repeat6" xml:space="preserve">
+    <value>上班</value>
+  </data>
+  <data name="Repeat7" xml:space="preserve">
+    <value>上班</value>
+  </data>
+  <data name="Repeat8" xml:space="preserve">
+    <value>重複</value>
+  </data>
+  <data name="Repeat9" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="RepeatCount" xml:space="preserve">
+    <value>請輸入重複範圍的重複數</value>
+  </data>
+  <data name="RepeatDay" xml:space="preserve">
+    <value>每天重複</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>刪除重複事件</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>保留所有其他日程安排重複事件保持</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>時間表和所有未來的事件將發生變化。未來變化的時間表將會丟失</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>改系列中的所有事件。這些變化都保持在不同的時間表</value>
+  </data>
+  <data name="RepeatEx4" xml:space="preserve">
+    <value>時間表和所有未來的日程安排被刪除</value>
+  </data>
+  <data name="RepeatEx5" xml:space="preserve">
+    <value>刪除系列中的所有事件</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>只是這個事件</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>所有未來的日曆</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>所有活動</value>
+  </data>
+  <data name="RepeatInput" xml:space="preserve">
+    <value>請輸入一個重複循環的價值</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>修改週期性事件</value>
+  </data>
+  <data name="RepeatMonth" xml:space="preserve">
+    <value>每月重複</value>
+  </data>
+  <data name="RepeatNumber" xml:space="preserve">
+    <value>重複週期值無效</value>
+  </data>
+  <data name="RepeatRange" xml:space="preserve">
+    <value>重複範圍</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>重複設置</value>
+  </data>
+  <data name="RepeatSettingResult" xml:space="preserve">
+    <value>重複設置的結果</value>
+  </data>
+  <data name="RepeatStartDateEndDate" xml:space="preserve">
+    <value>不能小於起始日期到期重複範圍</value>
+  </data>
+  <data name="RepeatWeek" xml:space="preserve">
+    <value>每天重複</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>請輸入一個或多個數字</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>預訂</value>
+  </data>
+  <data name="ReserveResource" xml:space="preserve">
+    <value>後備資源</value>
+  </data>
+  <data name="ResourcesTitle" xml:space="preserve">
+    <value>資源人員</value>
+  </data>
+  <data name="ResourcesUser" xml:space="preserve">
+    <value>資源管理器</value>
+  </data>
+  <data name="ROW" xml:space="preserve">
+    <value>號碼</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>週六</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>店</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="SelectRepeatDay" xml:space="preserve">
+    <value>請選擇重複範圍的日期</value>
+  </data>
+  <data name="SelectResource" xml:space="preserve">
+    <value>選擇資源</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>請選擇一天</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>基本的共享者</value>
+  </data>
+  <data name="ShareAdd" xml:space="preserve">
+    <value>分享額外</value>
+  </data>
+  <data name="ShareManager" xml:space="preserve">
+    <value>基本的共享者管理</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>共享設置</value>
+  </data>
+  <data name="ShareType1" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="ShareType2" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共享器</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於截止日期</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>結束時間不能小於或等於開始時間</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>主題</value>
+  </data>
+  <data name="Subscriber" xml:space="preserve">
+    <value>訂戶</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期天</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>喉嚨</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>稱號</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>憤怒</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Type0" xml:space="preserve">
+    <value>預訂</value>
+  </data>
+  <data name="Type1" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="Type2" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UsableResource" xml:space="preserve">
+    <value>我已經有保留所選日期資源</value>
+  </data>
+  <data name="ViewDetail" xml:space="preserve">
+    <value>查看更多</value>
+  </data>
+  <data name="VisitReservation" xml:space="preserve">
+    <value>在線預訂</value>
+  </data>
+  <data name="VisitType" xml:space="preserve">
+    <value>條件</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>號碼</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>週報</value>
+  </data>
+  <data name="WeekName" xml:space="preserve">
+    <value>星期幾</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>額外</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>另類假期</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="Msg_AddShareUser" xml:space="preserve">
+    <value>請添加共享者。</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理</value>
+  </data>
+</root>

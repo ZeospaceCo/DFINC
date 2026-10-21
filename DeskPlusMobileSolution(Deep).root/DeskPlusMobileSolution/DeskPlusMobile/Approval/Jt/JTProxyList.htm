@@ -1,0 +1,15 @@
+﻿{#foreach $T as Proxy}
+<li class="contentblock">
+    <div class="title linkDiv" onclick="javascript:Proxy.list('{ $T.Proxy.UserID }','{ $T.Proxy.DeptID }')">
+        <a href="#" class="mct">
+            <span class="lis">{ $T.Proxy.DeptName } { $T.Proxy.TitleName } </span><font>{ $T.Proxy.UserName }</font><br />&nbsp;
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+    </div>
+</li>
+{#/for}

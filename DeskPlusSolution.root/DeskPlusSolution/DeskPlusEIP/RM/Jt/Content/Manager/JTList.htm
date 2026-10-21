@@ -1,0 +1,32 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="170px"/>
+    <col width="200px"/>
+    <col width="40px"/>
+    <col width="85px"/>
+    <col width="90px"/>
+</colgroup>
+<thead>
+    <th id="j_FolderName"></th>
+    <th id="j_Name"></th>
+    <th id="j_Qry"></th>
+    <th id="j_UsableQty"></th>
+    <th id="j_Authority"></th>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td>{ $T.List.FolderName }</td>
+    <td>{ $T.List.Title }</td>
+    <td class="center">{ $T.List.Qty }</td>
+    <td class="center">{ $T.List.UsableQty }</td> 
+    <td class="center">{ $T.List.Authority }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="5" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

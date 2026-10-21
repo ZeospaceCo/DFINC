@@ -1,0 +1,40 @@
+﻿<table class="table_typeA"> 
+<caption>리스트</caption>
+<colgroup>
+    <col width="100px" />
+    <col width="100px" />
+    <col  />
+    <col width="150px"/>
+    <col width="100px" />
+    <col width="80px"/>
+    <col width="80px"/>
+</colgroup>
+<tr>    
+    <th class="center">진행상태</th>
+    <th class="center">분류</th>
+    <th class="center">과정명</th>
+    <th class="center">기간</th>    
+    <th class="center">완료여부</th>
+    <th class="center">첨부파일</th>
+    <th class="center">D-Day</th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.StatusStr }</td>       
+    <td class="center">{ $T.List.ItemName }</td>   
+    <td><a onclick="List.View('{ $T.List.ListID }');return false;" style="cursor:pointer" title="{ $T.List.Title }">{ $T.List.Title }</a></td>
+    <td class="center">{ $T.List.DateStr }</td>  
+    <td class="center">{ $T.List.CompleteYN }</td>   
+    <td class="center">
+    {#if $T.List.FileCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.List.ListID }'></i>
+    {#/if}
+    </td>
+    <td class="center">{ $T.List.ExcessDay }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center">내용이 없습니다</td>        
+</tr>
+{#/for}        
+</table>

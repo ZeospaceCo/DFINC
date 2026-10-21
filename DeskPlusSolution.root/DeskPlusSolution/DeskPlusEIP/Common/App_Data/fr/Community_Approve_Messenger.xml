@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] Accepter la demande d’adhésion</Title>
+	<ContentHTML>
+		[Accepter la demande d’adhésion]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+	</ContentHTML>
+</ContentInfo>

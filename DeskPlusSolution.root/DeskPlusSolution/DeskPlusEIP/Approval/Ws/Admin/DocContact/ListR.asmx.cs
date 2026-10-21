@@ -1,0 +1,411 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper;
+using DateHelpers = Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.WebComponent.DateHelper;
+using System.Text.RegularExpressions;
+using System.Data;
+using System.Collections.Specialized;
+using System.Text;
+using Zeospace.DeskPlus.Approval.BE;
+using Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.WebComponent;
+
+namespace Zeospace.DeskPlus.Approval.Web.Ws.Admin.DocContact
+{
+    /// <summary>
+    /// ListR의 요약 설명입니다.
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // ASP.NET AJAX를 사용하여 스크립트에서 이 웹 서비스를 호출하려면 다음 줄의 주석 처리를 제거합니다. 
+    [System.Web.Script.Services.ScriptService]
+    public class ListR : Base.BaseWSApproval
+    {
+        #region GET()
+
+        /// <summary>
+        /// 작성자 : 이문호
+        /// 페이징 사이즈 및 카운트 구하기
+        /// </summary>
+        /// <param name="_totalCnt">The _total CNT.</param>
+        /// <param name="_pageSize">Size of the _page.</param>
+        /// <param name="_pageNo">The _page no.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        private string SetPaging(int _totalCnt, int _pageSize, int _pageNo)
+        {
+            //페이지 총 개수
+
+            int recsInLastPage = _totalCnt % _pageSize;
+
+            //마지막 페이지의 리스트 개수 구하기
+            if (recsInLastPage == 0)
+                recsInLastPage = _pageSize;
+
+            int sizeOfPage = _pageSize;
+            int pageIndex = _pageNo - 1;
+            int pageCount = Convert.ToInt32(((_totalCnt - 1) / sizeOfPage) + 1);
+
+
+            //넘어온 페이지값과 총페이지값이 동일할 경우(마지막 페이지일경우)
+            if (pageIndex + 1 == pageCount)
+                sizeOfPage = recsInLastPage;//나머지 개수만큼 출력
+
+            //페이지번호*페이지사이즈
+            int pageNoPageSize = _pageSize * pageIndex;
+
+            return sizeOfPage.ToString() + "," + pageNoPageSize.ToString();
+        }
+
+
+        /// <summary>
+        /// 작성자   : shine
+        /// 작성일자 : 2012-06-21
+        /// 작성목적 : 수발자,결재자 리스트 카운트
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public int GetPageListCnt(string p)
+        {
+            if (IsAdmin == false) return 0;
+
+            SetDecryptString(p);
+
+            int deptID = GetDecryptParam("deptID", "0").ToNumber<int>();
+            string accountType = GetDecryptParam("accountType", "0");
+
+            try
+            {
+                DAL.Account list = new DAL.Account();
+                return list.GetPageListCount(CurrentUserInfo.CompanyID, deptID, accountType);
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("GetFavoriteListCnt : " + ex);
+                return -1;
+            }
+
+        }
+
+
+        /// <summary>
+        /// 작성자   : shine
+        /// 작성일자 : 2012-06-21
+        /// 작성목적 : 수발자, 결재자 리스트
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public List<object> GetPageList(string p)
+        {
+            try
+            {
+                if (IsAdmin == false) return null;
+
+                SetDecryptString(p);
+
+                int deptID = GetDecryptParam("deptID", "0").ToNumber<int>();
+                string accountType = GetDecryptParam("accountType", "0");
+                string pageSize = GetDecryptParam("pageSize", "0"); //페이지에 보여지는 목록수
+                string totalItemCount = GetDecryptParam("totalItemCount", "0");
+                string pageSizePageNo = GetDecryptParam("pageSizePageNo", "0"); //페이지 넘버
+
+                HttpContext context = HttpContext.Current;
+                string baseFileDirectory = AppSettingHelper.GetAppSetting(AppSettingType.CONFIG, "BaseFileDirectory", "");
+                string baseImageDirectory = AppSettingHelper.GetAppSetting(AppSettingType.CONFIG, "BaseImageDirectory", "/DeskPlusEIP/Design/");
+
+                string rtnSetPaging = SetPaging(totalItemCount.ToNumber<int>(), pageSize.ToNumber<int>(), pageSizePageNo.ToNumber<int>());
+                string[] setPageingStr = rtnSetPaging.Split(',');
+
+                DAL.Account biz = new DAL.Account();
+                DataTableReader dtr = biz.GetPageList(CurrentUserInfo.CompanyID, deptID, accountType, setPageingStr[0], setPageingStr[1]);
+                
+                List<object> listobj = new List<object>();
+
+                if (dtr != null)
+                {
+                    if (dtr.HasRows)
+                    {
+                        while (dtr.Read())
+                        {
+                            BE.AccountInfo info = new AccountInfo();
+                            
+                            info.AccountID = dtr["AccountID"].ToString().ToNumber<int>();
+                            info.DeptID = dtr["DeptID"].ToString().ToNumber<int>();
+                            info.IsActive = dtr["IsActive"].ToString();
+                            info.UserID = dtr["UserID"].ToString().ToNumber<int>();
+                            info.BaseDept = dtr["BaseDept"].ToString().ToNumber<int>();
+
+                            #region 사진 이미지 설정
+                            string PhotoName = dtr["PhotoImage"].ToString();
+                            info.PhotoName = "";
+                            string imgPath = "";
+                            string imgTag = "";
+                            string encParams = "";
+                            Dictionary<string, string> paraDic = null;
+
+                            if (!string.IsNullOrEmpty(PhotoName) && PhotoName.Length > 0)
+                            {
+                                imgPath = baseFileDirectory + "{0}/Users/{1}/Picture/" + PhotoName;
+                                imgPath = string.Format(imgPath, CurrentUserInfo.CompanyID, info.UserID);
+
+                                if (System.IO.File.Exists(context.Server.MapPath(imgPath)))
+                                {
+                                    #region 스크린샷
+                                    paraDic = new Dictionary<string, string>();
+                                    paraDic.Add("filePath", imgPath);
+                                    encParams = Utility.EncryptString(context.Server.UrlEncode(Utility.GetParameterDic(paraDic)));
+                                    imgPath = "/DeskPlusEIP/Common/DownLoad/ImageView.aspx?p=" + encParams;
+                                    #endregion
+
+                                    imgTag = "<img src='{0}' width='52' height='52' />";
+                                    imgTag = string.Format(imgTag, imgPath);
+                                    info.PhotoName = imgTag;
+                                }
+                            }
+
+                            if (info.PhotoName.Length == 0)
+                            {
+                                #region 스크린샷
+                                paraDic = new Dictionary<string, string>();
+                                paraDic.Add("filePath", baseImageDirectory + "C/Img/Icon/ico_noimg.gif");
+                                encParams = Utility.EncryptString(context.Server.UrlEncode(Utility.GetParameterDic(paraDic)));
+                                imgPath = "/DeskPlusEIP/Common/DownLoad/ImageView.aspx?p=" + encParams;
+                                #endregion
+
+                                info.PhotoName = "<img src='" + imgPath + "' width='52' height='52' alt='' title='' />";
+                            }
+
+                            #endregion
+
+                            #region 이름 다국어 설정
+                            info.UserName = this.GetLangName(
+                                    dtr["NameBase"].ToString().ToNull(), dtr["NameKo"].ToString().ToNull(),
+                                    dtr["NameEn"].ToString().ToNull(), dtr["NameJa"].ToString().ToNull(),
+                                    dtr["NameFr"].ToString().ToNull(), dtr["NameZhcn"].ToString().ToNull(),
+                                    dtr["NameZhtw"].ToString().ToNull(), PreLang);
+                            #endregion
+
+                            #region 부서 다국어 설정
+                            info.DeptName = this.GetLangName(
+                                    dtr["DeptBase"].ToString().ToNull(), dtr["DeptKo"].ToString().ToNull(),
+                                    dtr["DeptEn"].ToString().ToNull(), dtr["DeptJa"].ToString().ToNull(),
+                                    dtr["DeptFr"].ToString().ToNull(), dtr["DeptZhcn"].ToString().ToNull(),
+                                    dtr["DeptZhtw"].ToString().ToNull(), PreLang);
+                            #endregion
+
+                            #region 직급 다국어 설정
+                            info.TitleName = this.GetLangName(
+                                    dtr["TitleBase"].ToString().ToNull(), dtr["TitleKo"].ToString().ToNull(),
+                                    dtr["TitleEn"].ToString().ToNull(), dtr["TitleJa"].ToString().ToNull(),
+                                    dtr["TitleFr"].ToString().ToNull(), dtr["TitleZhcn"].ToString().ToNull(),
+                                    dtr["TitleZhtw"].ToString().ToNull(), PreLang);
+                            #endregion
+
+                            listobj.Add(info);
+                        }
+                    }
+                }
+
+                return listobj;
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException(ex.Message);
+                throw;
+            }
+        }
+
+
+        /// <summary>
+        /// 작성자 : 이문호
+        /// 대결 시작, 중지
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public bool Action(string p)
+        {
+            try
+            {
+                if (IsAdmin == false) return false;
+
+                SetDecryptString(p);
+                
+                int userID = GetDecryptParam("userID", "0").ToNumber<int>();
+                int deptID = GetDecryptParam("deptID", "0").ToNumber<int>();
+                string isActive = GetDecryptParam("isActive", "");
+                string accountType = GetDecryptParam("accountType", "");
+
+                DAL.Account biz = new DAL.Account();
+                biz.Action(CurrentUserInfo.CompanyID, deptID, userID, accountType, isActive);
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException(ex.Message);
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 작성자   : shine
+        /// 작성일자 : 2012-06-21
+        /// 작성목적 : 지정설정된 사람 카운트(수발자, 결재자)
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public int GetActiveCnt(string p)
+        {
+            try
+            {
+                if (IsAdmin == false) return 0;
+
+                SetDecryptString(p);
+
+                int deptID = GetDecryptParam("deptID", "0").ToNumber<int>();
+                string accountType = GetDecryptParam("accountType", "");
+
+
+                DAL.Account biz = new DAL.Account();
+                return biz.GetActiveCnt(CurrentUserInfo.CompanyID, deptID, accountType);
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("GetProxyCount : " + ex);
+                return -1;
+            }
+        }
+
+
+        /// <summary>
+        /// 작성자 : 이문호
+        ///  지정상태 (IsProxy - Y) 카운트
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public int GetCnt(string p)
+        {
+            if (IsAdmin == false) return 0;
+
+            //파라미터 가져오기
+            SetDecryptString(p);
+
+            try
+            {
+                DAL.Proxy list = new DAL.Proxy();
+                return list.GetProxyCount(CurrentUserInfo.CompanyID, CurrentUserInfo.UserID, CurrentUserInfo.DeptID);
+
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("GetProxyCount : " + ex);
+                return -1;
+            }
+
+        }
+
+        #endregion
+
+        #region DEL()
+        /// <summary>
+        /// 작성자   : shine
+        /// 작성일자 : 2012-06-21
+        /// 작성목적 : 수발자, 결재자리스트에 사용자 삭제
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public bool DelUserList(string p)
+        {
+            try
+            {
+                if (IsAdmin == false) return false;
+
+                //파라미터 가져오기
+                SetDecryptString(p);
+
+                string accIDList = GetDecryptParam("accIDList", "0");
+
+                DAL.Account biz = new DAL.Account();
+
+                foreach (string accID in accIDList.Split(','))
+                {
+                    biz.Del(CurrentUserInfo.CompanyID, accID.ToNumber<int>());
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("DelUserList : " + ex);
+                throw;
+            }
+        }
+
+        #endregion
+
+        #region ADD()
+
+        /// <summary>
+        /// 작성자   : shine
+        /// 작성일자 : 2012-06-21
+        /// 작성목적 : 수발자,결재자 리스트에 사용자 추가
+        /// </summary>
+        /// <param name="p">The p.</param>
+        /// <returns></returns>
+        [WebMethod(EnableSession = true)]
+        [System.Web.Script.Services.ScriptMethod(UseHttpGet = false)]
+        public bool AddUserList(string p)
+        {
+            try
+            {
+                if (IsAdmin == false) return false;
+
+                SetDecryptString(p);
+
+                string userList = GetDecryptParam("userList", "");
+                string accountType = GetDecryptParam("accountType", "");
+                string isActive = GetDecryptParam("isActive", "");
+                int deptID = GetDecryptParam("deptID", "0").ToNumber<int>();
+
+                DAL.Account biz = new DAL.Account();
+
+                foreach (string userID in userList.Split(','))
+                {
+                    BE.AccountInfo info = new AccountInfo();
+
+                    info.CompanyID = CurrentUserInfo.CompanyID;
+                    info.DeptID = deptID;
+                    info.UserID = userID.ToNumber<int>();
+                    info.AccountType = accountType;
+                    info.IsActive = isActive;
+
+                    biz.Add(info);
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("AddUserList : " + ex);
+                throw;
+            }
+        }
+        #endregion
+    }
+}

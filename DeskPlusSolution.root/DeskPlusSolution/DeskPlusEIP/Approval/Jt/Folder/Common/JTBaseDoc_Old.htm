@@ -1,0 +1,26 @@
+﻿<table class="table_typeT">
+<caption></caption>
+<colgroup>
+    <col width="250px"/>
+    <col />
+    <col width="90px" />
+</colgroup>
+<thead> 
+    <th class="center" id="j_docNumber"></th>
+    <th class="center" id="j_subject"></th>    
+    <th class="center" id="j_viewDoc"></th>
+</thead>
+<tbody>
+{#foreach $T as BaseDocList}
+<tr>
+    <td><a onclick="javascript:View.ViewBaseDoc('{ $T.BaseDocList.ParentDocumentID }')">{ $T.BaseDocList.Name }</a></td>
+    <td><a onclick="javascript:View.ViewBaseDoc('{ $T.BaseDocList.ParentDocumentID }')">{ $T.BaseDocList.Subject }</a></td>
+    <td class="center"><a><img src="/DeskPlusEIP/Design/C/Img/Main/icon_search.gif" onclick="javascript:View.ViewBaseDoc('{ $T.BaseDocList.ParentDocumentID }')"></a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

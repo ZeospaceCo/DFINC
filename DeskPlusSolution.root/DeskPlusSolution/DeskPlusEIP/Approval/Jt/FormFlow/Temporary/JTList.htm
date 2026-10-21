@@ -1,0 +1,51 @@
+﻿<table class="table_typeA">
+<caption>임시보관문서</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="150px" />
+    <col />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>
+        <th class="center" id="r_formbase"></th>
+        <th class="center" id="r_subject"></th>
+        <th class="center" id="r_attachName"></th>
+        <th class="center" id="r_baseCnt"></th>
+        <th class="center" id="r_writetime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.DraftID }" value="{ $T.List.DraftID }-{ $T.List.WriteTimeYMD }" /></td>
+        <td class="center">{ $T.List.FormBase }</td>
+        <td><a href="#" onclick="List.Add('{ $T.List.DraftID }');" style="cursor:pointer" >{ $T.List.Subject }</a> 
+            {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.List.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" draftID='{ $T.List.DraftID }'></i>
+            {#/if}
+        </td>
+        <td class="center">{ $T.List.Basecount }<span class="EA"></span></td>
+        <td class="center">{ $T.List.WriteTimeStr }</td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="6" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>
+
+
+
+
+
+
+
+

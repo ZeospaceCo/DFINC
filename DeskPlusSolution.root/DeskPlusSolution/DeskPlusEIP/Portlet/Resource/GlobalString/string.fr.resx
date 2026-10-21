@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Titre, les noms de fichiers d'attache</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Entrez le terme de recherche</value>
+  </data>
+  <data name="Qlink_Address" xml:space="preserve">
+    <value>adresse</value>
+  </data>
+  <data name="Qlink_Approval" xml:space="preserve">
+    <value>paiement</value>
+  </data>
+  <data name="Qlink_Community" xml:space="preserve">
+    <value>communauté</value>
+  </data>
+  <data name="Qlink_Edms" xml:space="preserve">
+    <value>EDMS</value>
+  </data>
+  <data name="Qlink_Mail" xml:space="preserve">
+    <value>courrier</value>
+  </data>
+  <data name="Qlink_Pims" xml:space="preserve">
+    <value>calendrier</value>
+  </data>
+  <data name="Qlink_Reservation" xml:space="preserve">
+    <value>réservation</value>
+  </data>
+  <data name="Qlink_Setting" xml:space="preserve">
+    <value>réglages</value>
+  </data>
+  <data name="Qlink_SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="Qlink_Task" xml:space="preserve">
+    <value>coopération</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>해당 글을 원본자와 작성자만 볼 수 있습니다.</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>Jour</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>Tôt</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>Vendredi</value>
+  </data>
+  <data name="Attendance_GotoWork" xml:space="preserve">
+    <value>Aller au travail</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>Lundi</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="Attendance_OffWork" xml:space="preserve">
+    <value>Laissez</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>Samedi</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>Dimanche</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>Jeudi</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>Mardi</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>Mercredi</value>
+  </data>
+  <data name="Attendance_Year" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="Attendance_NotGotoWork" xml:space="preserve">
+    <value>Ce n'est pas au travail.</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>S'il vous plaît entrez votre raison.</value>
+  </data>
+  <data name="Attendance_OffWorkConfirm" xml:space="preserve">
+    <value>Voulez-vous rentrer à la maison?</value>
+  </data>
+  <data name="Attendance_OffWorkRe" xml:space="preserve">
+    <value>Êtes-vous sûr que vous voulez rentrer à la maison?\nNotre traitement sera sauvegardé à l'heure actuelle.</value>
+  </data>
+  <data name="OnDuty" xml:space="preserve">
+    <value>On Duty</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>A été traitée.</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Hour</value>
+  </data>
+  <data name="WeekOverTime" xml:space="preserve">
+    <value>Weekly overtime work</value>
+  </data>
+  <data name="WeekOverTimeMsg" xml:space="preserve">
+    <value>(Based on approval within 52 hours a week)</value>
+  </data>
+  <data name="Attendance_EarlyConfirm" xml:space="preserve">
+    <value>Do you want to go home?</value>
+  </data>
+  <data name="Attendance_EarlyRe" xml:space="preserve">
+    <value>Are you sure you want to go home?\nYour processing will be saved back to the current time.</value>
+  </data>
+  <data name="Attendance_EarlyTime" xml:space="preserve">
+    <value>Early departure schedule</value>
+  </data>
+  <data name="Attendance_EarlyTimeMsg" xml:space="preserve">
+    <value>Please select an estimated time of departure.</value>
+  </data>
+  <data name="Attendance_EarlyCancelConfirm" xml:space="preserve">
+    <value>Do you want to cancel?</value>
+  </data>
+  <data name="Beforework" xml:space="preserve">
+    <value>Before work</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Attendance_GotoWorkRe" xml:space="preserve">
+    <value>Are you sure you want to go to work?\nYour processing will be saved back to the current time.</value>
+  </data>
+  <data name="Early_Time" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="GotoWork_Success" xml:space="preserve">
+    <value>출근 처리되었습니다.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="OffWorkEarly_Success" xml:space="preserve">
+    <value>조퇴 처리되었습니다.</value>
+  </data>
+  <data name="OffWork_Success" xml:space="preserve">
+    <value>퇴근 처리되었습니다.</value>
+  </data>
+  <data name="WCTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="WSTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+</root>

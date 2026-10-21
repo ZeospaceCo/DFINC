@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{451C7736-2615-4A5C-AD0B-F7EA52BCEB65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Common.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Common.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.1.271, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseControlCommon.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageCommon.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSCommon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendar\Calendar.ascx.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalendarDialog.aspx.cs">
+      <DependentUpon>CalendarDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalendarDialog.aspx.designer.cs">
+      <DependentUpon>CalendarDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\CalendarDialogById.aspx.cs">
+      <DependentUpon>CalendarDialogById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalendarDialogById.aspx.designer.cs">
+      <DependentUpon>CalendarDialogById.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\CalendarDualDialog.aspx.cs">
+      <DependentUpon>CalendarDualDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalendarDualDialog.aspx.designer.cs">
+      <DependentUpon>CalendarDualDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad\ImageView.aspx.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad\ImageView.aspx.designer.cs">
+      <DependentUpon>ImageView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EncDecApp.aspx.cs">
+      <DependentUpon>EncDecApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EncDecApp.aspx.designer.cs">
+      <DependentUpon>EncDecApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Deep\DeepSLO.aspx.cs">
+      <DependentUpon>DeepSLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Deep\DeepSLO.aspx.designer.cs">
+      <DependentUpon>DeepSLO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Deep\DeepWrite.aspx.cs">
+      <DependentUpon>DeepWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\Deep\DeepWrite.aspx.designer.cs">
+      <DependentUpon>DeepWrite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\Address\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\Address\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\ClearDomain.aspx.cs">
+      <DependentUpon>ClearDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\ClearDomain.aspx.designer.cs">
+      <DependentUpon>ClearDomain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\SLO\SLO.aspx.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\SLO\SLO.aspx.designer.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\WriteMail.aspx.cs">
+      <DependentUpon>WriteMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\ZettaMail65\WriteMail.aspx.designer.cs">
+      <DependentUpon>WriteMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\Ezmaru\Alarm.aspx.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messenger\Ezmaru\Alarm.aspx.designer.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\UC\SLO.aspx.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messenger\UC\SLO.aspx.designer.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notify\CallNotify.aspx.cs">
+      <DependentUpon>CallNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notify\CallNotify.aspx.designer.cs">
+      <DependentUpon>CallNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad\DownLoad.aspx.cs">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad\DownLoad.aspx.designer.cs">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad\TotalDownLoad.aspx.cs">
+      <DependentUpon>TotalDownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad\TotalDownLoad.aspx.designer.cs">
+      <DependentUpon>TotalDownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\PDFCreate.aspx.cs">
+      <DependentUpon>PDFCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDF\PDFCreate.aspx.designer.cs">
+      <DependentUpon>PDFCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\PDFDownLoad.aspx.cs">
+      <DependentUpon>PDFDownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDF\PDFDownLoad.aspx.designer.cs">
+      <DependentUpon>PDFDownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterLanguage.aspx.cs">
+      <DependentUpon>RegisterLanguage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterLanguage.aspx.designer.cs">
+      <DependentUpon>RegisterLanguage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\AddressBook.aspx.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\AddressBook.aspx.designer.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Admin\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Admin\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Admin\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Admin\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Admin\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Admin\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Common\AddressTree.ascx.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Common\AddressTree.ascx.designer.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Common\GetAddressTree.aspx.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Common\GetAddressTree.aspx.designer.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\RecvList.aspx.cs">
+      <DependentUpon>RecvList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\RecvList.aspx.designer.cs">
+      <DependentUpon>RecvList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\SendFax.aspx.cs">
+      <DependentUpon>SendFax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\SendFax.aspx.designer.cs">
+      <DependentUpon>SendFax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\SendList.aspx.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\SendList.aspx.designer.cs">
+      <DependentUpon>SendList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\SendRecvList.aspx.cs">
+      <DependentUpon>SendRecvList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\SendRecvList.aspx.designer.cs">
+      <DependentUpon>SendRecvList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\ViewFaxImage.aspx.cs">
+      <DependentUpon>ViewFaxImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\ViewFaxImage.aspx.designer.cs">
+      <DependentUpon>ViewFaxImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFax\ViewFaxPrint.aspx.cs">
+      <DependentUpon>ViewFaxPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFax\ViewFaxPrint.aspx.designer.cs">
+      <DependentUpon>ViewFaxPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Ezmaru\Count.asmx.cs">
+      <DependentUpon>Count.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\GetCommon.asmx.cs">
+      <DependentUpon>GetCommon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\PDF\PDF.asmx.cs">
+      <DependentUpon>PDF.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\SetCommon.asmx.cs">
+      <DependentUpon>SetCommon.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\SpoolFile.asmx.cs">
+      <DependentUpon>SpoolFile.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\WebFax\Admin\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\WebFax\RecvList.asmx.cs">
+      <DependentUpon>RecvList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\WebFax\SendList.asmx.cs">
+      <DependentUpon>SendList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\WebFax\SendRecvList.asmx.cs">
+      <DependentUpon>SendRecvList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\ZipCode\ZipCode.asmx.cs">
+      <DependentUpon>ZipCode.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZipCode\ZipCode.aspx.cs">
+      <DependentUpon>ZipCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZipCode\ZipCode.aspx.designer.cs">
+      <DependentUpon>ZipCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterLangPopup.aspx.cs">
+      <DependentUpon>RegisterLangPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterLangPopup.aspx.designer.cs">
+      <DependentUpon>RegisterLangPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZipCode\ZipCodeNew.aspx.cs">
+      <DependentUpon>ZipCodeNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZipCode\ZipCodeNew.aspx.designer.cs">
+      <DependentUpon>ZipCodeNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zip\CreateZipFile.aspx.cs">
+      <DependentUpon>CreateZipFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zip\CreateZipFile.aspx.designer.cs">
+      <DependentUpon>CreateZipFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zip\CreateZipFileSelect.aspx.cs">
+      <DependentUpon>CreateZipFileSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zip\CreateZipFileSelect.aspx.designer.cs">
+      <DependentUpon>CreateZipFileSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zip\PrintBulk.aspx.cs">
+      <DependentUpon>PrintBulk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zip\PrintBulk.aspx.designer.cs">
+      <DependentUpon>PrintBulk.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\en\Common_FontColor.xml" />
+    <Content Include="App_Data\en\Common_FontSize.xml" />
+    <Content Include="App_Data\en\Community_Add_Mail.xml" />
+    <Content Include="App_Data\en\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Add_SMS.xml" />
+    <Content Include="App_Data\en\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\en\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\en\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\en\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\en\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\en\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\en\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\en\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\en\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\en\Community_Join_Mail.xml" />
+    <Content Include="App_Data\en\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Join_SMS.xml" />
+    <Content Include="App_Data\en\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\en\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\en\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\en\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\en\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\en\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\en\Community_WithDraw_SMS.xml" />
+    <Content Include="App_Data\en\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\en\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\en\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\en\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\en\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Add_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Add_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\fr\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\fr\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Join_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Join_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\fr\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\fr\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_WithDraw_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\fr\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\fr\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\fr\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Add_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Add_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\ja\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\ja\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Join_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Join_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\ja\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\ja\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_WithDraw_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\ja\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\ja\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\ja\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Add_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Add_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\ko\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\ko\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Join_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Join_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\ko\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\ko\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_WithDraw_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\ko\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\ko\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\ko\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Add_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Add_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Join_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Join_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_WithDraw_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\zh-cn\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\zh-cn\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\zh-cn\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Add_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Add_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Add_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Approve_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Approve_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Approve_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Cancel_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Cancel_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Cancel_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Confirm_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Confirm_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Confirm_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Deny_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Deny_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Deny_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Drop_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Drop_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Drop_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_JoinCancel_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_JoinCancel_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_JoinCancel_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Join_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Join_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Join_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Reject_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Reject_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Reject_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_Restore_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_Restore_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_Restore_SMS.xml" />
+    <Content Include="App_Data\zh-tw\Community_WithDraw_Mail.xml" />
+    <Content Include="App_Data\zh-tw\Community_WithDraw_Messenger.xml" />
+    <Content Include="App_Data\zh-tw\Community_WithDraw_SMS.xml" />
+    <Content Include="Calendar\Calendar.ascx" />
+    <Content Include="Calendar\CalendarDialog.aspx" />
+    <Content Include="Calendar\CalendarDialogById.aspx" />
+    <Content Include="Calendar\CalendarDualDialog.aspx" />
+    <Content Include="DownLoad\ImageView.aspx" />
+    <Content Include="EncDecApp.aspx" />
+    <Content Include="Js\RegisterLanguage.js" />
+    <Content Include="Js\WebFax\AddressBook.js" />
+    <Content Include="Js\WebFax\Admin\List.js" />
+    <Content Include="Js\WebFax\Admin\Register.js" />
+    <Content Include="Js\WebFax\Admin\Tree.js" />
+    <Content Include="Js\WebFax\RecvList.js" />
+    <Content Include="Js\WebFax\Register.js" />
+    <Content Include="Js\WebFax\SendFax.js" />
+    <Content Include="Js\WebFax\SendList.js" />
+    <Content Include="Js\WebFax\SendRecvList.js" />
+    <Content Include="Js\WebFax\Tree.js" />
+    <Content Include="Js\ZipCode\List.js" />
+    <Content Include="Js\RegisterLangPopup.js" />
+    <Content Include="Js\ZipCode\ListNew.js" />
+    <Content Include="Jt\Attach\JTSpoolFile.htm" />
+    <Content Include="Jt\WebFax\Admin\JTList.htm" />
+    <Content Include="Jt\WebFax\JTAddressBookList.htm" />
+    <Content Include="Jt\WebFax\JTRecvList.htm" />
+    <Content Include="Jt\WebFax\JTSendList.htm" />
+    <Content Include="Jt\WebFax\JTSendRecvList.htm" />
+    <Content Include="Jt\ZipCode\JTList.htm" />
+    <Content Include="Jt\ZipCode\JTListNew.htm" />
+    <Content Include="Mail\Deep\DeepSLO.aspx" />
+    <Content Include="Mail\Deep\DeepWrite.aspx" />
+    <Content Include="Mail\ZettaMail65\Address\Add.aspx" />
+    <Content Include="Mail\ZettaMail65\ClearDomain.aspx" />
+    <Content Include="Mail\ZettaMail65\SLO\SLO.aspx" />
+    <Content Include="Mail\ZettaMail65\WriteMail.aspx" />
+    <Content Include="Messenger\Ezmaru\Alarm.aspx" />
+    <Content Include="Messenger\UC\MessengerUpdate.htm" />
+    <Content Include="Messenger\UC\SLO.aspx" />
+    <Content Include="Notify\CallNotify.aspx" />
+    <Content Include="App_Data\en\Board_Alarm.xml" />
+    <Content Include="App_Data\en\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\en\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\en\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\en\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\en\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\en\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\fr\Board_Alarm.xml" />
+    <Content Include="App_Data\fr\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\fr\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\fr\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\fr\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\fr\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\fr\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\fr\Common_FontColor.xml" />
+    <Content Include="App_Data\fr\Common_FontSize.xml" />
+    <Content Include="App_Data\ja\Board_Alarm.xml" />
+    <Content Include="App_Data\ja\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\ja\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\ja\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\ja\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\ja\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\ja\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\ja\Common_FontColor.xml" />
+    <Content Include="App_Data\ja\Common_FontSize.xml" />
+    <Content Include="App_Data\ko\Board_Alarm.xml" />
+    <Content Include="App_Data\ko\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\ko\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\ko\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\ko\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\ko\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\ko\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\ko\Common_FontColor.xml" />
+    <Content Include="App_Data\ko\Common_FontSize.xml" />
+    <Content Include="App_Data\zh-cn\Board_Alarm.xml" />
+    <Content Include="App_Data\zh-cn\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\zh-cn\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\zh-cn\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\zh-cn\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\zh-cn\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\zh-cn\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\zh-cn\Common_FontColor.xml" />
+    <Content Include="App_Data\zh-cn\Common_FontSize.xml" />
+    <Content Include="App_Data\zh-tw\Board_Alarm.xml" />
+    <Content Include="App_Data\zh-tw\Board_ContentMessengerInfo.xml" />
+    <Content Include="App_Data\zh-tw\Board_Default_ddlFieldSearch.xml" />
+    <Content Include="App_Data\zh-tw\Board_Default_ddlGroupSearch.xml" />
+    <Content Include="App_Data\zh-tw\Board_MyBoard_CategoryLimit.xml" />
+    <Content Include="App_Data\zh-tw\Board_MyBoard_NoViewReplyCategory.xml" />
+    <Content Include="App_Data\zh-tw\Board_Write_ddlDay.xml" />
+    <Content Include="App_Data\zh-tw\Common_FontColor.xml" />
+    <Content Include="App_Data\zh-tw\Common_FontSize.xml" />
+    <Content Include="ClearApplication.aspx" />
+    <Content Include="DownLoad\DownLoad.aspx" />
+    <Content Include="DownLoad\TotalDownLoad.aspx" />
+    <Content Include="Js\DownLoad\TotalDownLoad.js" />
+    <Content Include="PDF\PDFCreate.aspx" />
+    <Content Include="PDF\PDFDownLoad.aspx" />
+    <Content Include="RegisterLanguage.aspx" />
+    <Content Include="Upload\DPUpload.js" />
+    <Content Include="WebFax\AddressBook.aspx" />
+    <Content Include="WebFax\Admin\Default.aspx" />
+    <Content Include="WebFax\Admin\List.aspx" />
+    <Content Include="WebFax\Admin\Register.aspx" />
+    <Content Include="WebFax\Admin\Tree.aspx" />
+    <Content Include="WebFax\Common\AddressTree.ascx" />
+    <Content Include="WebFax\Common\GetAddressTree.aspx" />
+    <Content Include="WebFax\Default.aspx" />
+    <Content Include="WebFax\RecvList.aspx" />
+    <Content Include="WebFax\Register.aspx" />
+    <Content Include="WebFax\SendFax.aspx" />
+    <Content Include="WebFax\SendList.aspx" />
+    <Content Include="WebFax\SendRecvList.aspx" />
+    <Content Include="WebFax\Tree.aspx" />
+    <Content Include="WebFax\ViewFaxImage.aspx" />
+    <Content Include="WebFax\ViewFaxPrint.aspx" />
+    <Content Include="Ws\Ezmaru\Count.asmx" />
+    <Content Include="Ws\GetCommon.asmx" />
+    <Content Include="Ws\PDF\PDF.asmx" />
+    <Content Include="Ws\SetCommon.asmx" />
+    <Content Include="Ws\SpoolFile.asmx" />
+    <Content Include="Ws\WebFax\Admin\List.asmx" />
+    <Content Include="Ws\WebFax\RecvList.asmx" />
+    <Content Include="Ws\WebFax\SendList.asmx" />
+    <Content Include="Ws\WebFax\SendRecvList.asmx" />
+    <Content Include="Ws\ZipCode\ZipCode.asmx" />
+    <Content Include="ZipCode\ZipCode.aspx" />
+    <Content Include="RegisterLangPopup.aspx" />
+    <Content Include="ZipCode\ZipCodeNew.aspx" />
+    <Content Include="Zip\CreateZipFile.aspx" />
+    <Content Include="Zip\CreateZipFileSelect.aspx" />
+    <Content Include="Zip\PrintBulk.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.DAL\Zeospace.DeskPlus.Address.DAL.csproj">
+      <Project>{F9C15205-4A8B-47E5-B827-A930DA28CFCD}</Project>
+      <Name>Zeospace.DeskPlus.Address.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BLL\Zeospace.DeskPlus.Approval.BLL.csproj">
+      <Project>{E07EA22B-817A-4E0C-802C-7FCF3F07076C}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BE\Zeospace.DeskPlus.Board.BE.csproj">
+      <Project>{CEE64A34-C4E1-436B-AAAB-4219A8605BE4}</Project>
+      <Name>Zeospace.DeskPlus.Board.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BLL\Zeospace.DeskPlus.Board.BLL.csproj">
+      <Project>{8DB7B310-B8C6-4011-9A5C-A1BF4DC81B8E}</Project>
+      <Name>Zeospace.DeskPlus.Board.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.DAL\Zeospace.DeskPlus.Board.DAL.csproj">
+      <Project>{AF2C4FCC-567C-4940-BB2E-553F8C8FC6B2}</Project>
+      <Name>Zeospace.DeskPlus.Board.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.Converter\Zeospace.DeskPlus.Component.Converter.csproj">
+      <Project>{C6960428-C3C0-460A-BF97-78FDC8CCF5E5}</Project>
+      <Name>Zeospace.DeskPlus.Component.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.Linked\Zeospace.DeskPlus.Component.Linked.csproj">
+      <Project>{E54EEF03-9C73-4E8A-830B-E2731666499B}</Project>
+      <Name>Zeospace.DeskPlus.Component.Linked</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25282</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskplusEIP/Common</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

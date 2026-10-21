@@ -1,0 +1,29 @@
+﻿<table class="table_typeA">
+<caption></caption>
+<colgroup>
+    <col />
+    <col width="100px" />
+    <col width="100px" />    
+    <col width="60px"/>
+</colgroup>
+<thead>
+    <th><span id="j_fileName"></span></th>
+    <th><span id="j_fileType"></span></th>
+    <th><span id="j_fileLen"></span></th>        
+    <th><span id="j_filedelete"></span></th>
+</thead>
+<tbody>
+{#foreach $T as FileList}
+<tr>
+    <td>{ $T.FileList.FileName }</td>
+    <td>{ $T.FileList.FileType }</td>
+    <td>{ $T.FileList.FileLengthKB }</td>        
+    <td class="center"><a href="#" onclick="javascript:DelFile('{ $T.FileList.AttachFileID }')"><span class="btn_file_del" title="Delete"></span></a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=Resource" Content="알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="AlarmViewTargetURL" Value="{0}{1}/DeskPlusEIP/RM/Content/ViewPopup.aspx" Content="알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="AlarmViewTotalTargetURL" Value="{0}{1}/DeskPlusEIP/RM/Content/ViewTotal.aspx"  Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+</XmlData>

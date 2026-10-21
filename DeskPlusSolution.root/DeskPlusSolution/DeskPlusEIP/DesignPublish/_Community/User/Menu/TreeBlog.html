@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>   
+<script type='text/javascript' src='/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js'></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.datepick-ko.js"></script>
+
+<title>DeskPlus4.0 웹표준</title>
+<script type="text/javascript">
+    $(function () {
+        $(".accordion").accordion({
+            fillSpace: true,
+            animated: 'slide',
+            //event: "mouseover"
+            overTop: 180
+        });
+
+        $("#accordionResizer").resizable({
+            minHeight: 0,
+            resize: function () {
+                $("#accordion").accordion("resize");
+            }
+        });
+    });
+</script>
+</head>
+
+<body>
+<div id="layout_left">
+
+    <!-- 메뉴 //-->
+    <div class="cm_left_lineC">
+
+        <ul class="cm_left_menuB">
+            <li class="tit"><span>즐겨찾는 게시판</span></li>
+            <li class="cont">
+                <span class="on"><a href="#" title="">전체글보기</a></span>
+                <span><a href="#" title="">카페북책꽂이</a></span>
+            </li>
+            <li class="bar"><div class="cm_barB"></div></li>
+            <li class="cont">
+                <span><a href="#" title="">최신글보기</a></span>
+                <span><a href="#" title="">인기글보기</a></span>
+            </li>
+            <li class="bar"><div class="cm_barB"></div></li>
+            <li class="cont">
+                <span><a href="#" title="">최신글보기</a></span>
+                <span><a href="#" title="">인기글보기</a></span>
+            </li>
+            <li class="tit"><span>즐겨찾는 게시판</span></li>
+            <li class="cont">
+                <span class="on"><a href="#" title="">전체글보기</a></span>
+                <span><a href="#" title="">카페북책꽂이</a></span>
+            </li>
+            <li class="bar"><div class="cm_barB"></div></li>
+            <li class="cont">
+                <span><a href="#" title="">최신글보기</a></span>
+                <span><a href="#" title="">인기글보기</a></span>
+            </li>
+        </ul>
+    
+    </div>
+    <div class="cm_gap"></div>
+
+    <!-- 검색 //-->
+    <ul class="cm_left_srhA">
+        <li><input type="text" class="srhtxt" value="검색어를 입력하세요." /></li>
+        <li><a href="#" class="srhbtn" title="검색">검색</a></li>
+    </ul>
+    <div class="cm_gap"></div>
+
+</div>
+</body>
+</html>

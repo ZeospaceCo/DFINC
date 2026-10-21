@@ -1,0 +1,50 @@
+﻿<table class="pim_table_day" style="border-left:0px solid #c0c0c0;border-right:0px solid #c0c0c0;">
+<caption>Today Todo</caption>
+<colgroup>
+    <col width="60px" />
+    <col width="30px" />
+    <col />
+    <col width="60px" />
+</colgroup>
+ <tbody>
+    
+{#foreach $T as BoardList}
+<tr>
+    <td><a id="aPri{ $T.BoardList.ToDoID }"  style="cursor:pointer"  >{ $T.BoardList.Priority }</a></td>
+    <td>
+        <a id="aTodoMenu{ $T.BoardList.ToDoID }" style="cursor:pointer" >
+            {#if $T.BoardList.Status == 'W'}
+                <img class="IconNotBegin" alt="" /> 
+            {#elseif  $T.BoardList.Status == 'I'}
+                <img class="Status_Going" alt="" /> 
+            {#elseif $T.BoardList.Status == 'E'}
+                <img class="Status_Done" alt="" /> 
+            {#elseif $T.BoardList.Status == 'C'}
+                <img class="Status_Cancel" alt="" /> 
+            {#elseif $T.BoardList.Status == 'T'}
+                <img class="Status_Pass" alt="" /> 
+            {#elseif $T.BoardList.Status == 'D'}
+                <img class="Status_Postpone" alt="" /> 
+            {#/if}
+        </a>
+    </td>
+    <td class="left">
+        <a  style="cursor:pointer" onclick="javascript:ListDay.AddT({ $T.BoardList.ToDoID })">{ $T.BoardList.Title }</a>
+        {#if $T.BoardList.ReplyCnt > 0}       
+        <a onclick="ListDay.PopupTodoShort('{ $T.BoardList.ToDoID }');return false;" style="cursor:pointer" ><span class="icon_Comment_view">({ $T.BoardList.ReplyCnt })</span></a>
+        {#/if}   
+    </td>
+    <td>
+        {#if $T.BoardList.UserID == UserId}
+        <ul>
+        <li><a style="cursor:pointer" onclick="javascript:ListDay.TodoDel({ $T.BoardList.ToDoID })" title="Del"><span class="spdel btn btn-sm"></span></a></li>
+        </ul>
+        {#/if}
+    </td>
+</tr>
+{#/for}
+</tbody>
+</table>        
+ 
+
+   

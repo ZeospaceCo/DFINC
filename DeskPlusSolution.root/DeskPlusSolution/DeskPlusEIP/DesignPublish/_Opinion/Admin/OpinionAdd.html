@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Opinion.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>설문조사 관리자 > 설문관리 > 설문추가 </h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="" title=""><span>설문지인쇄</span></a></li>
+                <li><a href="" title=""><span>미리보기</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li><a href="#"><span>복사본(신규설문)</span></a></li>
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                <li class="btn_blue"><a href="#"><span>확인</span></a></li>
+                <li><a href="OpinionList.html"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 설문정보 시작 //-->
+            <table class="table_typeB">
+			<caption>설문정보</caption>
+			<colgroup>
+                <col width="80px" />
+                <col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>설문제목</th>
+					<td><input type="text" style="width:95% !important;" value='설문제목' /></td>
+				</tr> 
+				<tr>
+					<th>설문기간</th>
+					<td>
+                        <input type="text" style="width:70px !important;" value='2011-05-04' />
+                        ~
+                        <input type="text" style="width:70px !important;" value='2011-05-04' />
+                        <label class="opn_subtxt">: 설문기간 이내에만 수정이 가능합니다.</label>
+                    </td>
+				</tr> 
+                <tr>
+                    <th>옵션사항</th>
+                    <td>
+                        <ul class="aLeft">
+                            <li>
+                                <select class="searchselect">
+                                    <option value="0">말머리기능</option>
+                                </select>
+                            </li>
+                            <li><input type="checkbox" checked="checked" /> <label title="체크 시, 설문리스트 상단에 조회됩니다.">메인지정</label></li>
+                            <li><input type="checkbox" checked="checked" /> <label title="체크 시, 답글기능을 사용합니다.">답글사용</label></li>
+                            <li><input type="checkbox" checked="checked" /> <label title="체크 시, 관리자만 결과를 조회됩니다.">결과공개</label></li>
+                            <li><input type="checkbox" checked="checked" /> <label title="체크 시, 참여자리스트를 조회할 수 없습니다.(무기명)">응답자공개</label></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">권한설정</th>
+                    <td>
+                        <span class="aLeft"> 제오스페이스 솔루션개발</span>
+                        <ul class="btn_smallL">
+                            <li><a href="#"><span>주관부서변경</span></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="opn_layleft">
+                            <div class="opn_subtit">
+                                <h2>설문대상자</h2>&nbsp;
+                                <a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/btn_add.gif" title="대상자추가" alt="대상자추가" /></a>
+                            </div>
+                            <table class="table_typeC">
+                            <caption>설문대상자 리스트</caption>
+                            <colgroup>
+                                <col width="40px" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="th"><input type="checkbox" /></th>
+                                    <th class="th">명칭</th>
+                                    <th class="th">삭제여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td"><input type="checkbox" /></td>
+                                    <td class="td">솔루션개발 사원 홍길동 deskplus</td>
+                                    <td class="td"><a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="opn_layight">
+                            <div class="opn_subtit">
+                                <h2>설문관리자</h2>&nbsp;
+                                <a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/btn_add.gif" title="대상자추가" alt="대상자추가" /></a>
+                            </div>
+                            <table class="table_typeC">
+                            <caption>설문관리자 리스트</caption>
+                            <colgroup>
+                                <col width="40px" />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="th"><input type="checkbox" /></th>
+                                    <th class="th">명칭</th>
+                                    <th class="th">삭제여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td"><input type="checkbox" /></td>
+                                    <td class="td">솔루션개발 사원 홍길동 deskplus</td>
+                                    <td class="td"><a href="#" title="삭제"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상세내용</th>
+                    <td class="opn_editor">에디터</td>
+                </tr>
+                <tr>
+                    <th class="last-child">활성화여부</th>
+                    <td class="last-child">
+                        <select class="searchselect">
+                            <option value="0">활성</option>
+                            <option value="1">비활성</option>
+                        </select>
+                    </td>
+                </tr>
+			</tbody>
+		    </table> 
+            <!-- 설문정보 끝 //-->
+
+            <!-- 질문리스트 시작 //-->
+            <div class="layout_subbox">
+                <h2>질문리스트</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>질문순서</span></a></li>
+                    <li><a href="#"><span>추가</span></a></li>
+                    <li><a href="#"><span>삭제</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+            <caption>
+                질문리스트
+            </caption>
+            <colgroup>
+                <col width="40px" />
+                <col />
+                <col width="85px" />
+                <col width="65px" />
+                <col width="20px" />
+			</colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>질문명</th>
+                    <th>형식</th>
+                    <th>항목수</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td><a href="#">전체 휴무여부 (콜센터 포함)</a></td>
+                    <td>필수선택</td>
+                    <td>2</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 질문리스트 끝 //-->
+
+            <!-- 첨부파일 시작 //-->
+            <div class="layout_subbox">
+                <h2>파일첨부</h2>
+                <ul class="btn_right">
+                    <li><a href="#"><span>다운로드</span></a></li>
+                    <li><a href="#"><span>등록</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+                <caption>
+                    첨부파일리스트
+                </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col width="100px" />
+                <col width="20px" />
+			</colgroup>
+            <thead>
+                <tr>
+                    <th>파일명</th>
+                    <th>파일타입</th>
+                    <th>파일크기</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_delete.gif" alt="삭제" /></td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 첨부파일 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

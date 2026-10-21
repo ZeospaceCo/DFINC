@@ -1,0 +1,33 @@
+﻿<table class="table_typeT">
+<colgroup>
+    <col width="120px" />
+    <col />
+    <col width="100px" />
+    <col width="50px" />
+</colgroup>
+    <tr>
+        <th id="r_Name"></th>
+        <th id="r_Content"></th>
+        <th><a id="a_RegDate" onclick="ShortReplyList.Regdate(this)"><span id="r_RegDate"></span></a></th>
+        <th></th>
+    </tr>
+    {#foreach $T as RepleList}
+    <tr>
+        <td class="center">{ $T.RepleList.UserName }</td>
+        <td>
+            <span id="contentInfo{ $T.RepleList.ShortReplyID }">{ $T.RepleList.Content } </span>
+            {#if $T.RepleList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}
+        </td>
+        <td class="center">{ $T.RepleList.InputDate }</td>
+        <td class="center">
+            {#if $T.RepleList.IsAuth == 'Y'} 
+            <a href="#" onclick="javascript:ShortReplyList.DelReple({ $T.RepleList.ShortReplyID})")><span class="r_del"></span></a>
+            {#/if}
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

@@ -1,0 +1,38 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="180px" />
+    <col  />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="150px" />
+</colgroup>
+<tr>
+    <th class="center">심사위원</th>
+    <th class="center">효과</th>
+    <th class="center">착상연구</th>
+    <th class="center">노력도</th>
+    <th class="center">실현성</th>
+    <th class="center">총합</th>
+    <th class="center">심사의견</th>
+</tr>
+{#foreach $T as ViewList}
+<tr>
+    <td class="center">
+        <a href="#" onclick="javascript:AccountInfo('{ $T.ViewList.UserID }')" style="cursor:pointer">{ $T.ViewList.Name }</a>
+    </td>
+    <td class="center">{ $T.ViewList.Score1 }</td>
+    <td class="center">{ $T.ViewList.Score2 }</td>
+    <td class="center">{ $T.ViewList.Score3 }</td>
+    <td class="center">{ $T.ViewList.Score4 }</td>
+    <td class="center">{ $T.ViewList.TotalScore }</td>
+    <td class="center"><a href="#" onclick="javascript:View.Opinion('{ $T.ViewList.ProposalNo }','{ $T.ViewList.UserID }')" style="cursor:pointer">보기</a>
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center">평가자 정보가 없습니다.</td>
+</tr>
+{#/for}
+</table>

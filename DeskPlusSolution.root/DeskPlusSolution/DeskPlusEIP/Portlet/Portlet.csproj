@@ -1,0 +1,1413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B814E41-B0B5-40F9-9E1F-1309EBBF183D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Portlet.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Portlet.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseControlPortlet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePagePortlet.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSPortlet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BoardPopup\BoardMainPopup.aspx.cs">
+      <DependentUpon>BoardMainPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BoardPopup\BoardMainPopup.aspx.designer.cs">
+      <DependentUpon>BoardMainPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BoardPopup\BoardPopUp.aspx.cs">
+      <DependentUpon>BoardPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BoardPopup\BoardPopUp.aspx.designer.cs">
+      <DependentUpon>BoardPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\HelpDesk.ascx.cs">
+      <DependentUpon>HelpDesk.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\HelpDesk.ascx.designer.cs">
+      <DependentUpon>HelpDesk.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\MyInfo_Zeus.ascx.cs">
+      <DependentUpon>MyInfo_Zeus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\MyInfo_Zeus.ascx.designer.cs">
+      <DependentUpon>MyInfo_Zeus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\MyInfo_Zeus_New.ascx.cs">
+      <DependentUpon>MyInfo_Zeus_New.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\MyInfo_Zeus_New.ascx.designer.cs">
+      <DependentUpon>MyInfo_Zeus_New.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\TabMainBoard.ascx.cs">
+      <DependentUpon>TabMainBoard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\TabMainBoard.ascx.designer.cs">
+      <DependentUpon>TabMainBoard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\ListC.ascx.cs">
+      <DependentUpon>ListC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\ListC.ascx.designer.cs">
+      <DependentUpon>ListC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\ListCir.ascx.cs">
+      <DependentUpon>ListCir.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\ListCir.ascx.designer.cs">
+      <DependentUpon>ListCir.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\ListF.ascx.cs">
+      <DependentUpon>ListF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\ListF.ascx.designer.cs">
+      <DependentUpon>ListF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\ListR.ascx.cs">
+      <DependentUpon>ListR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\ListR.ascx.designer.cs">
+      <DependentUpon>ListR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\ListA.ascx.cs">
+      <DependentUpon>ListA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\ListA.ascx.designer.cs">
+      <DependentUpon>ListA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Approval\TabAppMain.ascx.cs">
+      <DependentUpon>TabAppMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Approval\TabAppMain.ascx.designer.cs">
+      <DependentUpon>TabAppMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\BirthDay.ascx.cs">
+      <DependentUpon>BirthDay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\BirthDay.ascx.designer.cs">
+      <DependentUpon>BirthDay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\Album.ascx.cs">
+      <DependentUpon>Album.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\Album.ascx.designer.cs">
+      <DependentUpon>Album.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\Blog.ascx.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\Blog.ascx.designer.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\CountTab.ascx.cs">
+      <DependentUpon>CountTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\CountTab.ascx.designer.cs">
+      <DependentUpon>CountTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\GMWords.ascx.cs">
+      <DependentUpon>GMWords.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\GMWords.ascx.designer.cs">
+      <DependentUpon>GMWords.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\ListTot.ascx.cs">
+      <DependentUpon>ListTot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\ListTot.ascx.designer.cs">
+      <DependentUpon>ListTot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\NoticeBanner.ascx.cs">
+      <DependentUpon>NoticeBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\NoticeBanner.ascx.designer.cs">
+      <DependentUpon>NoticeBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\TopReader.ascx.cs">
+      <DependentUpon>TopReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\TopReader.ascx.designer.cs">
+      <DependentUpon>TopReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\TopRegister.ascx.cs">
+      <DependentUpon>TopRegister.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\TopRegister.ascx.designer.cs">
+      <DependentUpon>TopRegister.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\IFramList.aspx.cs">
+      <DependentUpon>IFramList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\IFramList.aspx.designer.cs">
+      <DependentUpon>IFramList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\NoticeImage.ascx.cs">
+      <DependentUpon>NoticeImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\NoticeImage.ascx.designer.cs">
+      <DependentUpon>NoticeImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Board\__Tab.ascx.cs">
+      <DependentUpon>__Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Board\__Tab.ascx.designer.cs">
+      <DependentUpon>__Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Chart\Bar.ascx.cs">
+      <DependentUpon>Bar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Chart\Bar.ascx.designer.cs">
+      <DependentUpon>Bar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Chart\Pie.ascx.cs">
+      <DependentUpon>Pie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Chart\Pie.ascx.designer.cs">
+      <DependentUpon>Pie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Clock\AnalogClock.ascx.cs">
+      <DependentUpon>AnalogClock.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Clock\AnalogClock.ascx.designer.cs">
+      <DependentUpon>AnalogClock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Congratulation.ascx.cs">
+      <DependentUpon>Congratulation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Congratulation.ascx.designer.cs">
+      <DependentUpon>Congratulation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Coop\TabCoop.ascx.cs">
+      <DependentUpon>TabCoop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Coop\TabCoop.ascx.designer.cs">
+      <DependentUpon>TabCoop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\DeepFrame.aspx.cs">
+      <DependentUpon>DeepFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\DeepFrame.aspx.designer.cs">
+      <DependentUpon>DeepFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\HR\Attendance.ascx.cs">
+      <DependentUpon>Attendance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\HR\Attendance.ascx.designer.cs">
+      <DependentUpon>Attendance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\IFrame.ascx.cs">
+      <DependentUpon>IFrame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\IFrame.ascx.designer.cs">
+      <DependentUpon>IFrame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\IfrmNaver.ascx.cs">
+      <DependentUpon>IfrmNaver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\IfrmNaver.ascx.designer.cs">
+      <DependentUpon>IfrmNaver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Link\AccountInfo.ascx.cs">
+      <DependentUpon>AccountInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Link\AccountInfo.ascx.designer.cs">
+      <DependentUpon>AccountInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Link\Address.ascx.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Link\Address.ascx.designer.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Link\Board.ascx.cs">
+      <DependentUpon>Board.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Link\Board.ascx.designer.cs">
+      <DependentUpon>Board.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Link\Community.ascx.cs">
+      <DependentUpon>Community.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Link\Community.ascx.designer.cs">
+      <DependentUpon>Community.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Link\ERP.ascx.cs">
+      <DependentUpon>ERP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Link\ERP.ascx.designer.cs">
+      <DependentUpon>ERP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Mail\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Mail\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Mail\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Mail\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyAppCount.ascx.cs">
+      <DependentUpon>MyAppCount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyAppCount.ascx.designer.cs">
+      <DependentUpon>MyAppCount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyComment.ascx.cs">
+      <DependentUpon>MyComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyComment.ascx.designer.cs">
+      <DependentUpon>MyComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyInfo.ascx.cs">
+      <DependentUpon>MyInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyInfo.ascx.designer.cs">
+      <DependentUpon>MyInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyInfoNoCnt.ascx.cs">
+      <DependentUpon>MyInfoNoCnt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyInfoNoCnt.ascx.designer.cs">
+      <DependentUpon>MyInfoNoCnt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyMemo.ascx.cs">
+      <DependentUpon>MyMemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyMemo.ascx.designer.cs">
+      <DependentUpon>MyMemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MyPim.ascx.cs">
+      <DependentUpon>MyPim.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MyPim.ascx.designer.cs">
+      <DependentUpon>MyPim.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\MySpace.ascx.cs">
+      <DependentUpon>MySpace.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\MySpace.ascx.designer.cs">
+      <DependentUpon>MySpace.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Opinion.ascx.cs">
+      <DependentUpon>Opinion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Opinion.ascx.designer.cs">
+      <DependentUpon>Opinion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\PimList.ascx.cs">
+      <DependentUpon>PimList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\PimList.ascx.designer.cs">
+      <DependentUpon>PimList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\QuickLink.ascx.cs">
+      <DependentUpon>QuickLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\QuickLink.ascx.designer.cs">
+      <DependentUpon>QuickLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\ResourceList.ascx.cs">
+      <DependentUpon>ResourceList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\ResourceList.ascx.designer.cs">
+      <DependentUpon>ResourceList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\RM\RMManager.ascx.cs">
+      <DependentUpon>RMManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\RM\RMManager.ascx.designer.cs">
+      <DependentUpon>RMManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\RM\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\RM\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\CharList.aspx.cs">
+      <DependentUpon>CharList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\CharList.aspx.designer.cs">
+      <DependentUpon>CharList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\RecentNumber.aspx.cs">
+      <DependentUpon>RecentNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\RecentNumber.aspx.designer.cs">
+      <DependentUpon>RecentNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\SendSMS.aspx.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\SendSMS.aspx.designer.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\SendSMSP.aspx.cs">
+      <DependentUpon>SendSMSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\SendSMSP.aspx.designer.cs">
+      <DependentUpon>SendSMSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\SMS.ascx.cs">
+      <DependentUpon>SMS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\SMS.ascx.designer.cs">
+      <DependentUpon>SMS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMSNew\SpecialChar.aspx.cs">
+      <DependentUpon>SpecialChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMSNew\SpecialChar.aspx.designer.cs">
+      <DependentUpon>SpecialChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\Common\AddressTree.ascx.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\Common\AddressTree.ascx.designer.cs">
+      <DependentUpon>AddressTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\Common\GetAddressTree.aspx.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\Common\GetAddressTree.aspx.designer.cs">
+      <DependentUpon>GetAddressTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\OpenContentSMS.aspx.cs">
+      <DependentUpon>OpenContentSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\OpenContentSMS.aspx.designer.cs">
+      <DependentUpon>OpenContentSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\OpenContentSMSProc.aspx.cs">
+      <DependentUpon>OpenContentSMSProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\OpenContentSMSProc.aspx.designer.cs">
+      <DependentUpon>OpenContentSMSProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\PopCalendar.aspx.cs">
+      <DependentUpon>PopCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\PopCalendar.aspx.designer.cs">
+      <DependentUpon>PopCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\RecentNumberSMS.aspx.cs">
+      <DependentUpon>RecentNumberSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\RecentNumberSMS.aspx.designer.cs">
+      <DependentUpon>RecentNumberSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\RecentSMSProc.aspx.cs">
+      <DependentUpon>RecentSMSProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\RecentSMSProc.aspx.designer.cs">
+      <DependentUpon>RecentSMSProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\ReplyNumberSMS.aspx.cs">
+      <DependentUpon>ReplyNumberSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\ReplyNumberSMS.aspx.designer.cs">
+      <DependentUpon>ReplyNumberSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\SendSMS.aspx.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\SendSMS.aspx.designer.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\SendSMSProc.aspx.cs">
+      <DependentUpon>SendSMSProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\SendSMSProc.aspx.designer.cs">
+      <DependentUpon>SendSMSProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\AddressBook.aspx.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\AddressBook.aspx.designer.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\STA\PerformMon.ascx.cs">
+      <DependentUpon>PerformMon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\STA\PerformMon.ascx.designer.cs">
+      <DependentUpon>PerformMon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\STA\PerformMonDisk.ascx.cs">
+      <DependentUpon>PerformMonDisk.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\STA\PerformMonDisk.ascx.designer.cs">
+      <DependentUpon>PerformMonDisk.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabCoopMain.ascx.cs">
+      <DependentUpon>TabCoopMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabCoopMain.ascx.designer.cs">
+      <DependentUpon>TabCoopMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabIFrame.ascx.cs">
+      <DependentUpon>TabIFrame.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabIFrame.ascx.designer.cs">
+      <DependentUpon>TabIFrame.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabMain.ascx.cs">
+      <DependentUpon>TabMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabMain.ascx.designer.cs">
+      <DependentUpon>TabMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\SMS\SMS.ascx.cs">
+      <DependentUpon>SMS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\SMS\SMS.ascx.designer.cs">
+      <DependentUpon>SMS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabOpinion.ascx.cs">
+      <DependentUpon>TabOpinion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabOpinion.ascx.designer.cs">
+      <DependentUpon>TabOpinion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabTaskMain.ascx.cs">
+      <DependentUpon>TabTaskMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabTaskMain.ascx.designer.cs">
+      <DependentUpon>TabTaskMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TabWorkMain.ascx.cs">
+      <DependentUpon>TabWorkMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TabWorkMain.ascx.designer.cs">
+      <DependentUpon>TabWorkMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Talk\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Talk\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\TodoList.ascx.cs">
+      <DependentUpon>TodoList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\TodoList.ascx.designer.cs">
+      <DependentUpon>TodoList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\ToSchList.ascx.cs">
+      <DependentUpon>ToSchList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\ToSchList.ascx.designer.cs">
+      <DependentUpon>ToSchList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\UserSearch\AccountInfo.aspx.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\UserSearch\AccountInfo.aspx.designer.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\UserSearch\DeptUserSearch.ascx.cs">
+      <DependentUpon>DeptUserSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\UserSearch\DeptUserSearch.ascx.designer.cs">
+      <DependentUpon>DeptUserSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\UserSearch\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\UserSearch\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Weather.ascx.cs">
+      <DependentUpon>Weather.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\Weather.ascx.designer.cs">
+      <DependentUpon>Weather.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Attendance.ascx.cs">
+      <DependentUpon>Attendance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\_TabTaskMain.ascx.cs">
+      <DependentUpon>_TabTaskMain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Package\_TabTaskMain.ascx.designer.cs">
+      <DependentUpon>_TabTaskMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\Album.ascx.cs">
+      <DependentUpon>Album.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\Album.ascx.designer.cs">
+      <DependentUpon>Album.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Blog.ascx.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\Blog.ascx.designer.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\List.ascx.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\List.ascx.designer.cs">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Tab.ascx.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\Tab.ascx.designer.cs">
+      <DependentUpon>Tab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TodoPopup\TodoList.aspx.cs">
+      <DependentUpon>TodoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TodoPopup\TodoList.aspx.designer.cs">
+      <DependentUpon>TodoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Custom\HelpDesk.asmx.cs">
+      <DependentUpon>HelpDesk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Custom\MyInfo_Zeus.asmx.cs">
+      <DependentUpon>MyInfo_Zeus.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Custom\MyInfo_Zeus_New.asmx.cs">
+      <DependentUpon>MyInfo_Zeus_New.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Approval\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Approval\Tab.asmx.cs">
+      <DependentUpon>Tab.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Attendance.asmx.cs">
+      <DependentUpon>Attendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Board\Album.asmx.cs">
+      <DependentUpon>Album.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Board\Blog.asmx.cs">
+      <DependentUpon>Blog.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Board\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Board\Tab.asmx.cs">
+      <DependentUpon>Tab.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Chart\Bar.asmx.cs">
+      <DependentUpon>Bar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Chart\Pie.asmx.cs">
+      <DependentUpon>Pie.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Congratulation.asmx.cs">
+      <DependentUpon>Congratulation.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Coop\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Coop\TabCoop.asmx.cs">
+      <DependentUpon>TabCoop.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\HR\Attendance.asmx.cs">
+      <DependentUpon>Attendance.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Mail\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\MyMemo.asmx.cs">
+      <DependentUpon>MyMemo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\MyPim.asmx.cs">
+      <DependentUpon>MyPim.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Opinion.asmx.cs">
+      <DependentUpon>Opinion.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\MySpace.asmx.cs">
+      <DependentUpon>MySpace.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\PimList.asmx.cs">
+      <DependentUpon>PimList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Resource.asmx.cs">
+      <DependentUpon>Resource.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\MyInfo.asmx.cs">
+      <DependentUpon>MyInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\BirthDay.asmx.cs">
+      <DependentUpon>BirthDay.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\RM\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\RM\RMManager.asmx.cs">
+      <DependentUpon>RMManager.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\SMSNew\CharList.asmx.cs">
+      <DependentUpon>CharList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\SMSNew\RecentNumber.asmx.cs">
+      <DependentUpon>RecentNumber.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\SMSNew\SendSMS.asmx.cs">
+      <DependentUpon>SendSMS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\SMS\ReplyNumberSMS.asmx.cs">
+      <DependentUpon>ReplyNumberSMS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\SMS\SendSMS.asmx.cs">
+      <DependentUpon>SendSMS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\TabMain.asmx.cs">
+      <DependentUpon>TabMain.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Task\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\TodoList.asmx.cs">
+      <DependentUpon>TodoList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\ToSchList.asmx.cs">
+      <DependentUpon>ToSchList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Weather.asmx.cs">
+      <DependentUpon>Weather.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\Work\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Package\MyComment.asmx.cs">
+      <DependentUpon>MyComment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Template\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\TodoPopup\TodoList.asmx.cs">
+      <DependentUpon>TodoList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Js\Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoardPopup\BoardMainPopup.aspx" />
+    <Content Include="BoardPopup\BoardPopUp.aspx" />
+    <Content Include="Custom\HelpDesk.ascx" />
+    <Content Include="Custom\MyInfo_Zeus.ascx" />
+    <Content Include="Custom\MyInfo_Zeus_New.ascx" />
+    <Content Include="Custom\TabMainBoard.ascx" />
+    <Content Include="Custom\ZettaSSO.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Js\BoardPopup\BoardMainPopup.js" />
+    <Content Include="Js\BoardPopup\BoardPopUp.js" />
+    <Content Include="Js\Custom\MyInfo_Zeus.js" />
+    <Content Include="Js\Custom\MyInfo_Zeus_New.js" />
+    <Content Include="Js\Package\Approval\Approval.js" />
+    <Content Include="Js\Package\BirthDay.js" />
+    <Content Include="Js\Package\Board\IFramList.js" />
+    <Content Include="Js\Package\Chart\Bar.js" />
+    <Content Include="Js\Package\Chart\Pie.js" />
+    <Content Include="Js\Package\IFrame.js" />
+    <Content Include="Js\Package\Mail\Mail.js" />
+    <Content Include="Js\Package\MyInfo.js" />
+    <Content Include="Js\Package\MyInfoNoCnt.js" />
+    <Content Include="Js\Package\MyMemo.js" />
+    <Content Include="Js\Package\MySpace.js" />
+    <Content Include="Js\Package\Opinion.js" />
+    <Content Include="Js\Package\PimList.js" />
+    <Content Include="Js\Package\ResourceList.js" />
+    <Content Include="Js\Package\MyPim.js" />
+    <Content Include="Js\Package\SMSNew\CharList.js" />
+    <Content Include="Js\Package\SMSNew\SendSMS.js" />
+    <Content Include="Js\Package\SMSNew\SendSMSP.js" />
+    <Content Include="Js\Package\SMSNew\SpecialChar.js" />
+    <Content Include="Js\Package\SMSNew\RecentNumber.js" />
+    <Content Include="Js\Package\SMS\AddressBook.js" />
+    <Content Include="Js\Package\SMS\PopCalendar.js" />
+    <Content Include="Js\Package\STA\PerformMon.js" />
+    <Content Include="Js\Package\STA\PerformMonDisk.js" />
+    <Content Include="Js\Package\TodoList.js" />
+    <Content Include="Js\Package\SMS\common.js" />
+    <Content Include="Js\Package\SMS\openContent.js" />
+    <Content Include="Js\Package\SMS\recentnum.js" />
+    <Content Include="Js\Package\SMS\replaynum.js" />
+    <Content Include="Js\Package\SMS\ReplyNumberSMS.js" />
+    <Content Include="Js\Package\SMS\SendSMS.js" />
+    <Content Include="Js\Package\SMS\VisualPhone_cal.js" />
+    <Content Include="Js\Package\UserSearch\AccountInfo.js" />
+    <Content Include="Js\Package\UserSearch\Search.js" />
+    <Content Include="Js\Package\QuickLink.js" />
+    <Content Include="Js\TodoPopup\TodoList.js" />
+    <Content Include="Jt\Custom\JTHelpDeskList.htm" />
+    <Content Include="Jt\Custom\JTMyInfo_Zeus.htm" />
+    <Content Include="Jt\Custom\JTMyInfo_Zeus_New.htm" />
+    <Content Include="Jt\Custom\JTMyInfo_Zeus_New2.htm" />
+    <Content Include="Jt\Package\Approval\JTListC.htm" />
+    <Content Include="Jt\Package\Approval\JTListCir.htm" />
+    <Content Include="Jt\Package\Approval\JTListF.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListA.htm" />
+    <Content Include="Jt\Package\Approval\JTListA.htm" />
+    <Content Include="Jt\Package\Approval\JTListR.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListC.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListCir.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListF.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListR.htm" />
+    <Content Include="Jt\Package\Approval\JTListA33.htm" />
+    <Content Include="Jt\Package\Approval\JTListR33.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListA33.htm" />
+    <Content Include="Jt\Package\Approval\JTTabListR33.htm" />
+    <Content Include="Jt\Package\Approval\JTTabAppMainApp.htm" />
+    <Content Include="Jt\Package\Approval\JTTabAppMainReport.htm" />
+    <Content Include="Jt\Package\Approval\JTTabAppMainCarbon.htm" />
+    <Content Include="Jt\Package\Approval\JTTabAppMainForward.htm" />
+    <Content Include="Jt\Package\Approval\JTTabAppMainCir.htm" />
+    <Content Include="Jt\Package\Board\JTAlbum.htm" />
+    <Content Include="Jt\Package\Board\JTBlog.htm" />
+    <Content Include="Jt\Package\Board\JTGMWords.htm" />
+    <Content Include="Jt\Package\Board\JTNoticeBanner.htm" />
+    <Content Include="Jt\Package\Board\JTTopReader.htm" />
+    <Content Include="Jt\Package\Board\JTTopRegister.htm" />
+    <Content Include="Jt\Package\Board\JTList.htm" />
+    <Content Include="Jt\Package\Board\JTListIframe.htm" />
+    <Content Include="Jt\Package\Board\JTNoticeImage.htm" />
+    <Content Include="Jt\Package\Board\__JTList.htm" />
+    <Content Include="Jt\Package\Coop\JTForwardList.htm" />
+    <Content Include="Jt\Package\Coop\JTCCList.htm" />
+    <Content Include="Jt\Package\Coop\JTTOList.htm" />
+    <Content Include="Jt\Package\Coop\JTRequestList.htm" />
+    <Content Include="Jt\Package\Coop\Tab\JTCCList.htm" />
+    <Content Include="Jt\Package\Coop\Tab\JTForwardList.htm" />
+    <Content Include="Jt\Package\Coop\Tab\JTRequestList.htm" />
+    <Content Include="Jt\Package\Coop\Tab\JTTOList.htm" />
+    <Content Include="Jt\Package\JTBirthDayList.htm" />
+    <Content Include="Jt\Package\JTCongratulation.htm" />
+    <Content Include="Jt\Package\JTMyInfo.htm" />
+    <Content Include="Jt\Package\JTMyOpinionVote.htm" />
+    <Content Include="Jt\Package\JTMyOpinionVoteNon.htm" />
+    <Content Include="Jt\Package\JTMySpace.htm" />
+    <Content Include="Jt\Package\JTOpinion.htm" />
+    <Content Include="Jt\Package\JTOpinionItem.htm" />
+    <Content Include="Jt\Package\JTResourceList.htm" />
+    <Content Include="Jt\Package\JTMyCommentList.htm" />
+    <Content Include="Jt\Package\JTTodoList.htm" />
+    <Content Include="Jt\Package\JTToSchList.htm" />
+    <Content Include="Jt\Package\Mail\JTList.htm" />
+    <Content Include="Jt\Package\Mail\JTSendList.htm" />
+    <Content Include="Jt\Package\Mail\JTMailBoxList.htm" />
+    <Content Include="Jt\Package\Mail\JTConfirmList.htm" />
+    <Content Include="Jt\Package\RM\JTMyUsable0.htm" />
+    <Content Include="Jt\Package\RM\JTMyUsable1.htm" />
+    <Content Include="Jt\Package\RM\JTRmMaList.htm" />
+    <Content Include="Jt\Package\SMSNew\JTList.htm" />
+    <Content Include="Jt\Package\SMSNew\JTRecentNumber.htm" />
+    <Content Include="Jt\Package\SMS\JTList.htm" />
+    <Content Include="Jt\Package\Task\JTForward.htm" />
+    <Content Include="Jt\Package\Task\JTReceive.htm" />
+    <Content Include="Jt\Package\Task\JTReference.htm" />
+    <Content Include="Jt\Package\Task\JTRequest.htm" />
+    <Content Include="Jt\Package\Work\JTShortAppList.htm" />
+    <Content Include="Jt\Template\JTList.htm" />
+    <Content Include="Jt\Template\JTBlog.htm" />
+    <Content Include="Jt\Template\JTAlbum.htm" />
+    <Content Include="Jt\Package\Work\JTShortRecvList.htm" />
+    <Content Include="Jt\Package\Work\JTShortSendList.htm" />
+    <Content Include="Jt\TodoPopup\JTTodoList.htm" />
+    <Content Include="Package\Approval\ListC.ascx" />
+    <Content Include="Package\Approval\ListCir.ascx" />
+    <Content Include="Package\Approval\ListF.ascx" />
+    <Content Include="Package\Approval\ListR.ascx" />
+    <Content Include="Package\Approval\ListA.ascx" />
+    <Content Include="Package\Approval\Tab.ascx" />
+    <Content Include="Package\Approval\TabAppMain.ascx" />
+    <Content Include="Package\BirthDay.ascx" />
+    <Content Include="Package\Board\Album.ascx" />
+    <Content Include="Package\Board\Blog.ascx" />
+    <Content Include="Package\Board\CountTab.ascx" />
+    <Content Include="Package\Board\GMWords.ascx" />
+    <Content Include="Package\Board\ListTot.ascx" />
+    <Content Include="Package\Board\NoticeBanner.ascx" />
+    <Content Include="Package\Board\TopReader.ascx" />
+    <Content Include="Package\Board\TopRegister.ascx" />
+    <Content Include="Package\Board\List.ascx" />
+    <Content Include="Package\Board\IFramList.aspx" />
+    <Content Include="Package\Board\NoticeImage.ascx" />
+    <Content Include="Package\Board\Tab.ascx" />
+    <Content Include="Package\Board\__Tab.ascx" />
+    <Content Include="Package\Chart\Bar.ascx" />
+    <Content Include="Package\Chart\Pie.ascx" />
+    <Content Include="Package\Clock\AnalogClock.ascx" />
+    <Content Include="Package\Clock\css\jClocksGMT.css" />
+    <Content Include="Package\Clock\images\clock_face.png" />
+    <Content Include="Package\Clock\images\clock_hour.png" />
+    <Content Include="Package\Clock\images\clock_label.png" />
+    <Content Include="Package\Clock\images\clock_min.png" />
+    <Content Include="Package\Clock\images\clock_sec.png" />
+    <Content Include="Package\Clock\images\screenshot.png" />
+    <Content Include="Package\Clock\js\jClocksGMT.js" />
+    <Content Include="Package\Clock\js\jquery.rotate.js" />
+    <Content Include="Package\Clock\js\jClocksGMTMain.js" />
+    <Content Include="Package\Congratulation.ascx" />
+    <Content Include="Package\Coop\TabCoop.ascx" />
+    <Content Include="Package\DeepFrame.aspx" />
+    <Content Include="Package\DeepFrameAdmin.aspx" />
+    <Content Include="Package\EDMFrame.asp" />
+    <Content Include="Package\HelpDeskAdminFrame.asp" />
+    <Content Include="Package\HelpDeskFrame.asp" />
+    <Content Include="Package\HR\Attendance.ascx" />
+    <Content Include="Package\IFrame.ascx" />
+    <Content Include="Package\IfrmNaver.ascx" />
+    <Content Include="Package\Link\AccountInfo.ascx" />
+    <Content Include="Package\Link\Address.ascx" />
+    <Content Include="Package\Link\Board.ascx" />
+    <Content Include="Package\Link\Community.ascx" />
+    <Content Include="Package\Link\ERP.ascx" />
+    <Content Include="Package\Mail\List.ascx" />
+    <Content Include="Package\Mail\Tab.ascx" />
+    <Content Include="Package\MyAppCount.ascx" />
+    <Content Include="Package\MyComment.ascx" />
+    <Content Include="Package\MyInfo.ascx" />
+    <Content Include="Package\MyInfoNoCnt.ascx" />
+    <Content Include="Package\MyMemo.ascx" />
+    <Content Include="Package\MyPim.ascx" />
+    <Content Include="Package\MySpace.ascx" />
+    <Content Include="Package\Opinion.ascx" />
+    <Content Include="Package\PimList.ascx" />
+    <Content Include="Package\QuickLink.ascx" />
+    <Content Include="Package\ResourceList.ascx" />
+    <Content Include="Package\RM\RMManager.ascx" />
+    <Content Include="Package\RM\Tab.ascx" />
+    <Content Include="Package\SiteMap.aspx" />
+    <Content Include="Package\SMSNew\CharList.aspx" />
+    <Content Include="Package\SMSNew\img\button\btn_address.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_calendar.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_close.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_close_01.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_delete.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_del_all.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_open.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_recent.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_reset.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_reset_portlet.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_save.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_save_1.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_search_01.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_search_01_.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_send.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_send_portlet.gif" />
+    <Content Include="Package\SMSNew\img\button\btn_sign.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_checkbox.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_checkbox_portlet.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_dotline_02.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_phone_line.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_phone_simple.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_phone_simple_portlet.gif" />
+    <Content Include="Package\SMSNew\img\common\bg_wrapper.gif" />
+    <Content Include="Package\SMSNew\img\common\layer_help2.gif" />
+    <Content Include="Package\SMSNew\RecentNumber.aspx" />
+    <Content Include="Package\SMSNew\Sample\1.html" />
+    <Content Include="Package\SMSNew\Sample\simple.css" />
+    <Content Include="Package\SMSNew\Sample\simple2.css" />
+    <Content Include="Package\SMSNew\Sample\sms.js" />
+    <Content Include="Package\SMSNew\Sample\sms_common.js" />
+    <Content Include="Package\SMSNew\SendSMS.aspx" />
+    <Content Include="Package\SMSNew\SendSMSP.aspx" />
+    <Content Include="Package\SMSNew\SMS.ascx" />
+    <Content Include="Package\SMSNew\SpecialChar.aspx" />
+    <Content Include="Package\SMS\Common\AddressTree.ascx" />
+    <Content Include="Package\SMS\Common\GetAddressTree.aspx" />
+    <Content Include="Package\SMS\Css\style.css" />
+    <Content Include="Package\SMS\OpenContentSMS.aspx" />
+    <Content Include="Package\SMS\OpenContentSMSProc.aspx" />
+    <Content Include="Package\SMS\PopCalendar.aspx" />
+    <Content Include="Package\SMS\RecentNumberSMS.aspx" />
+    <Content Include="Package\SMS\RecentSMSProc.aspx" />
+    <Content Include="Package\SMS\ReplyNumberSMS.aspx" />
+    <Content Include="Package\SMS\SendSMS.aspx" />
+    <Content Include="Package\SMS\SendSMSProc.aspx" />
+    <Content Include="Package\SMS\AddressBook.aspx" />
+    <Content Include="Package\STA\PerformMon.ascx" />
+    <Content Include="Package\STA\PerformMonDisk.ascx" />
+    <Content Include="Package\TabCoopMain.ascx" />
+    <Content Include="Package\TabIFrame.ascx" />
+    <Content Include="Package\TabMain.ascx" />
+    <Content Include="Package\Banner.ascx" />
+    <Content Include="Package\SMS\SMS.ascx" />
+    <Content Include="Package\TabOpinion.ascx" />
+    <Content Include="Package\TabTaskMain.ascx" />
+    <Content Include="Package\TabWorkMain.ascx" />
+    <Content Include="Package\Talk\Tab.ascx" />
+    <Content Include="Package\TodoList.ascx" />
+    <Content Include="Package\ToSchList.ascx" />
+    <Content Include="Package\UserSearch\AccountInfo.aspx" />
+    <Content Include="Package\UserSearch\DeptUserSearch.ascx" />
+    <Content Include="Package\UserSearch\Search.aspx" />
+    <Content Include="Package\Weather.ascx" />
+    <Content Include="Package\ZettaFrame.asp" />
+    <Content Include="Package\ZettaAdminFrame.asp" />
+    <Content Include="Package\Attendance.ascx" />
+    <Content Include="Package\_TabTaskMain.ascx" />
+    <Content Include="Template\Album.ascx" />
+    <Content Include="Template\Blog.ascx" />
+    <Content Include="Template\List.ascx" />
+    <Content Include="Template\Tab.ascx" />
+    <Content Include="TodoPopup\TodoList.aspx" />
+    <Content Include="Ws\Custom\HelpDesk.asmx" />
+    <Content Include="Ws\Custom\MyInfo_Zeus.asmx" />
+    <Content Include="Ws\Custom\MyInfo_Zeus_New.asmx" />
+    <Content Include="Ws\Package\Approval\List.asmx" />
+    <Content Include="Ws\Package\Approval\Tab.asmx" />
+    <Content Include="Ws\Package\Attendance.asmx" />
+    <Content Include="Ws\Package\Board\Album.asmx" />
+    <Content Include="Ws\Package\Board\Blog.asmx" />
+    <Content Include="Ws\Package\Board\List.asmx" />
+    <Content Include="Ws\Package\Board\Tab.asmx" />
+    <Content Include="Ws\Package\Chart\Bar.asmx" />
+    <Content Include="Ws\Package\Chart\Pie.asmx" />
+    <Content Include="Ws\Package\Congratulation.asmx" />
+    <Content Include="Ws\Package\Coop\List.asmx" />
+    <Content Include="Ws\Package\Coop\TabCoop.asmx" />
+    <Content Include="Ws\Package\HR\Attendance.asmx" />
+    <Content Include="Ws\Package\Mail\List.asmx" />
+    <Content Include="Ws\Package\MyMemo.asmx" />
+    <Content Include="Ws\Package\MyPim.asmx" />
+    <Content Include="Ws\Package\Opinion.asmx" />
+    <Content Include="Ws\Package\MySpace.asmx" />
+    <Content Include="Ws\Package\PimList.asmx" />
+    <Content Include="Ws\Package\Resource.asmx" />
+    <Content Include="Ws\Package\MyInfo.asmx" />
+    <Content Include="Ws\Package\BirthDay.asmx" />
+    <Content Include="Ws\Package\RM\List.asmx" />
+    <Content Include="Ws\Package\RM\RMManager.asmx" />
+    <Content Include="Ws\Package\SMSNew\CharList.asmx" />
+    <Content Include="Ws\Package\SMSNew\RecentNumber.asmx" />
+    <Content Include="Ws\Package\SMSNew\SendSMS.asmx" />
+    <Content Include="Ws\Package\SMS\ReplyNumberSMS.asmx" />
+    <Content Include="Ws\Package\SMS\SendSMS.asmx" />
+    <Content Include="Ws\Package\TabMain.asmx" />
+    <Content Include="Ws\Package\Task\List.asmx" />
+    <Content Include="Ws\Package\TodoList.asmx" />
+    <Content Include="Ws\Package\ToSchList.asmx" />
+    <Content Include="Ws\Package\Weather.asmx" />
+    <Content Include="Ws\Package\Work\List.asmx" />
+    <Content Include="Ws\Package\MyComment.asmx" />
+    <Content Include="Ws\Template\List.asmx" />
+    <Content Include="Ws\TodoPopup\TodoList.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.DAL\Zeospace.DeskPlus.Address.DAL.csproj">
+      <Project>{F9C15205-4A8B-47E5-B827-A930DA28CFCD}</Project>
+      <Name>Zeospace.DeskPlus.Address.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BE\Zeospace.DeskPlus.Board.BE.csproj">
+      <Project>{CEE64A34-C4E1-436B-AAAB-4219A8605BE4}</Project>
+      <Name>Zeospace.DeskPlus.Board.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BLL\Zeospace.DeskPlus.Board.BLL.csproj">
+      <Project>{8DB7B310-B8C6-4011-9A5C-A1BF4DC81B8E}</Project>
+      <Name>Zeospace.DeskPlus.Board.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.DAL\Zeospace.DeskPlus.Board.DAL.csproj">
+      <Project>{AF2C4FCC-567C-4940-BB2E-553F8C8FC6B2}</Project>
+      <Name>Zeospace.DeskPlus.Board.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.SMS\Zeospace.DeskPlus.Component.SMS.csproj">
+      <Project>{E3C3D3D9-ED1A-45C2-A32B-18D22D0D46F2}</Project>
+      <Name>Zeospace.DeskPlus.Component.SMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.BE\Zeospace.DeskPlus.EIP.BE.csproj">
+      <Project>{21CC4361-7475-4B85-864F-B1506D94B2B5}</Project>
+      <Name>Zeospace.DeskPlus.EIP.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.BLL\Zeospace.DeskPlus.EIP.BLL.csproj">
+      <Project>{C665AEA8-778D-4EB7-A4AA-10D94151E63B}</Project>
+      <Name>Zeospace.DeskPlus.EIP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.DAL\Zeospace.DeskPlus.EIP.DAL.csproj">
+      <Project>{138E6A3E-7DBB-443B-8409-3C55849FF6DF}</Project>
+      <Name>Zeospace.DeskPlus.EIP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\HRProject\Zeospace.DeskPlus.HR.BE\Zeospace.DeskPlus.HR.BE.csproj">
+      <Project>{60957F2C-3E98-45DD-B7F1-355ACC61D666}</Project>
+      <Name>Zeospace.DeskPlus.HR.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\HRProject\Zeospace.DeskPlus.HR.BLL\Zeospace.DeskPlus.HR.BLL.csproj">
+      <Project>{DC96B627-3762-45DE-8CDB-B3E34EC9F7FD}</Project>
+      <Name>Zeospace.DeskPlus.HR.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\HRProject\Zeospace.DeskPlus.HR.DAL\Zeospace.DeskPlus.HR.DAL.csproj">
+      <Project>{96E9AAA1-01A0-4145-9961-A541FAC2C9ED}</Project>
+      <Name>Zeospace.DeskPlus.HR.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\OpinionProject\Zeospace.DeskPlus.Opinion.BE\Zeospace.DeskPlus.Opinion.BE.csproj">
+      <Project>{8F25AC4D-C05D-46F9-9DC5-C87CE86DA9BB}</Project>
+      <Name>Zeospace.DeskPlus.Opinion.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\OpinionProject\Zeospace.DeskPlus.Opinion.DAL\Zeospace.DeskPlus.Opinion.DAL.csproj">
+      <Project>{11D842F7-C3AE-4F7F-B05F-830096878E14}</Project>
+      <Name>Zeospace.DeskPlus.Opinion.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.DAL\Zeospace.DeskPlus.Pim.DAL.csproj">
+      <Project>{C7B9274A-EEBD-4F62-BADE-9433252BF688}</Project>
+      <Name>Zeospace.DeskPlus.Pim.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PortletProject\Zeospace.DeskPlus.Portlet.BE\Zeospace.DeskPlus.Portlet.BE.csproj">
+      <Project>{E18762B4-078D-451B-A99F-86010B778B73}</Project>
+      <Name>Zeospace.DeskPlus.Portlet.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PortletProject\Zeospace.DeskPlus.Portlet.BLL\Zeospace.DeskPlus.Portlet.BLL.csproj">
+      <Project>{F94D114A-CF5C-47C6-B895-B8A35CFBA56D}</Project>
+      <Name>Zeospace.DeskPlus.Portlet.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PortletProject\Zeospace.DeskPlus.Portlet.DAL\Zeospace.DeskPlus.Portlet.DAL.csproj">
+      <Project>{9D843AEC-AD47-4465-8C5C-8AA9F8F2B43D}</Project>
+      <Name>Zeospace.DeskPlus.Portlet.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\RMProject\Zeospace.DeskPlus.RM.BE\Zeospace.DeskPlus.RM.BE.csproj">
+      <Project>{91D58159-F27A-4C29-8470-7C2B1ABCD6B7}</Project>
+      <Name>Zeospace.DeskPlus.RM.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\RMProject\Zeospace.DeskPlus.RM.DAL\Zeospace.DeskPlus.RM.DAL.csproj">
+      <Project>{461B8139-3C63-4579-8F83-1EEF8856A28D}</Project>
+      <Name>Zeospace.DeskPlus.RM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\SNSProject\Zeospace.DeskPlus.SNS.BE\Zeospace.DeskPlus.SNS.BE.csproj">
+      <Project>{985B12C7-8D60-4132-B987-7E85C8AFE5FE}</Project>
+      <Name>Zeospace.DeskPlus.SNS.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\SNSProject\Zeospace.DeskPlus.SNS.DAL\Zeospace.DeskPlus.SNS.DAL.csproj">
+      <Project>{CF2D1D78-0D96-4202-BFE9-E1D717EE95A0}</Project>
+      <Name>Zeospace.DeskPlus.SNS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Clock\images\clock.psd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1435</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Portlet</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

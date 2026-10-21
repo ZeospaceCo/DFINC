@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>
+    <Item ID="SubSearchList" Value="Y" Content="하위카테고리까지 검색리스트가 나오도록 할것인지 체크" />
+    <Item ID="UseAddRootCommonCategory" Value="Y" Content="공용주소록 트리폴더 추가시 루트폴더 생성가능 여부" />
+    <Item ID="UseAddRootPrivateCategory" Value="Y" Content="개인주소록 트리폴더 추가시 루트폴더 생성가능 여부" />
+</XmlData>

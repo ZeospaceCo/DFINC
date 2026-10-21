@@ -1,0 +1,27 @@
+﻿<table class="table_typeA">
+    <caption>
+        Category LIST
+    </caption>
+    <colgroup>
+        <col />
+        <col width="180px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><span id="r_message"></span></th>
+            <th class="center"><span id="r_writedate"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as LogDetailList}
+    <tr>
+        <td>{ $T.LogDetailList.Message }</td>
+        <td class="center">{ $T.LogDetailList.WriteDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}  
+    </tbody>
+</table>

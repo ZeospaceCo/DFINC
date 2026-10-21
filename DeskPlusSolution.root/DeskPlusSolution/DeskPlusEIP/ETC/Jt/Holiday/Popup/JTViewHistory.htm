@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption>
+    휴가원(관리자) 리스트
+</caption>
+<colgroup>
+    <col width="*" />    
+    <col width="100px" />    
+    <col width="200px" />
+    <col width="100px" />    
+</colgroup>
+<tr>
+    <th id="r_holititle" class="center"></th>
+    <th id="r_holicount" class="center"></th>
+    <th id="r_modname" class="center"></th>
+    <th id="r_moddate" class="center"></th>   
+</tr>
+{#foreach $T as ViewHistory}
+<tr>
+    <td class="r_holitype center"></td>
+    <td class="center">{ $T.ViewHistory.HoliCount }</td>
+    <td class="center">{ $T.ViewHistory.DeptName } { $T.ViewHistory.TitleName } { $T.ViewHistory.UserName }</td>
+    <td class="center">{ $T.ViewHistory.WriteTime }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

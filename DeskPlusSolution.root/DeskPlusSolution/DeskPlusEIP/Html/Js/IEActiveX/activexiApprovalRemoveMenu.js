@@ -1,0 +1,1 @@
+document.write('<OBJECT id="approvalRemoveMenu" codeBase="http://activex.microsoft.com/controls/iexplorer/x86/iemenu.cab#version=4" height="0" width="0" classid="CLSID:7823A620-9DD9-11CF-A662-00AA00C066D2" VIEWASTEXT><PARAM NAME="_ExtentX" VALUE="26"><PARAM NAME="_ExtentY" VALUE="26"></OBJECT>')

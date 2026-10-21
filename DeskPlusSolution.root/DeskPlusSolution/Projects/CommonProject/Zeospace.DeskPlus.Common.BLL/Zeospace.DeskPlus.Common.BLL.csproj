@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9AE6461-CF97-46AB-B742-6821E36E3280}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Common.BLL</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Common.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\DeskPlusEIP\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DeskPlusKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm.cs" />
+    <Compile Include="Code.cs" />
+    <Compile Include="CreatePDF.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="MailDeep55.cs" />
+    <Compile Include="MailDeepFactory.cs" />
+    <Compile Include="MailZetta52.cs" />
+    <Compile Include="MailZettaFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMS.cs" />
+    <Compile Include="MailZetta65.cs" />
+    <Compile Include="TeamsMSG.cs" />
+    <Compile Include="TeamsChatTokenStore.cs" />
+    <Compile Include="WebFax.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeskPlusKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ComponentProject\Zeospace.DeskPlus.Component.Converter\Zeospace.DeskPlus.Component.Converter.csproj">
+      <Project>{C6960428-C3C0-460A-BF97-78FDC8CCF5E5}</Project>
+      <Name>Zeospace.DeskPlus.Component.Converter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ComponentProject\Zeospace.DeskPlus.Component.Linked\Zeospace.DeskPlus.Component.Linked.csproj">
+      <Project>{E54EEF03-9C73-4E8A-830B-E2731666499B}</Project>
+      <Name>Zeospace.DeskPlus.Component.Linked</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ComponentProject\Zeospace.DeskPlus.Component.SMS\Zeospace.DeskPlus.Component.SMS.csproj">
+      <Project>{E3C3D3D9-ED1A-45C2-A32B-18D22D0D46F2}</Project>
+      <Name>Zeospace.DeskPlus.Component.SMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

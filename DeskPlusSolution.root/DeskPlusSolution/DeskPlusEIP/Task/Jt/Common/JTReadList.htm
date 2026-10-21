@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="*"/>
+    <col width="100px"/>
+    <col width="100px"/>
+    <col width="100px"/>
+</colgroup>
+<thead>
+    <th id="j_DeptName"></th>
+    <th id="j_TitleName"></th>
+    <th id="j_Name"></th>
+    <th id="j_ViewingDate"></th>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.DeptName }</td>
+    <td class="center">{ $T.List.TitleName }</td>
+    <td class="center">{ $T.List.NameBase }</td>
+    <td class="center">{ $T.List.WriteDateYMD }</td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

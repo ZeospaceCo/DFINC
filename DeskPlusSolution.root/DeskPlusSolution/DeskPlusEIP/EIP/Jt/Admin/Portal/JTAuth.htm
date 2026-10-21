@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+    <caption>
+        파라미터
+    </caption>
+    <colgroup>    
+        <col />
+        <col width="60px" />
+    </colgroup>
+    <tr>
+        <th id="r_RoleName" class="center" ></th>        
+        <th id="r_delRole" class="center" ></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            { $T.List.RoleName }
+        </td>
+        <td class="center">
+            <a onclick="GetTab.DelTabRole('{ $T.List.TabRoleID }')" style="display:inline-block;"  class="btn-sm btn-danger" href="#"><span class="btn_del2" title="Delete"> ddd</span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="center" colspan="2">
+            <span class="NoListData" ></span>
+        </td>
+    </tr>
+    {#/for}       
+</table>

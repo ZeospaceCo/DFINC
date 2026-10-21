@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+  <Title>[$Title$] Demande d’inscription ($Name$)</Title>
+	<ContentHTML>
+		[Demande d’inscription]
+		&lt;br&gt;&lt;br&gt;
+		- communauté : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- demandeur : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- À propos de moi : $Content$
+	</ContentHTML>
+</ContentInfo>

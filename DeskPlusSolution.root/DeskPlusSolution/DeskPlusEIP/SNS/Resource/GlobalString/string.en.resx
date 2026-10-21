@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALL" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="APPCOMPLETE" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="APPING" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Start date, end date, Enter both</value>
+  </data>
+  <data name="APPRECV" xml:space="preserve">
+    <value>Reception</value>
+  </data>
+  <data name="ApprovalTalk" xml:space="preserve">
+    <value>Talk approval</value>
+  </data>
+  <data name="APPSEND" xml:space="preserve">
+    <value>Sending</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="CommentShare" xml:space="preserve">
+    <value>Shared Person</value>
+  </data>
+  <data name="CompleteConfirm" xml:space="preserve">
+    <value>Were processed</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>My Talk</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Notice</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error occurred during processing. Contact your administrator</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Are you sure you want to delete?</value>
+  </data>
+  <data name="ReceiveTalk" xml:space="preserve">
+    <value>Receive Talk</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SendTalk" xml:space="preserve">
+    <value>Send Talk</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than the end date</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="WorkTalk" xml:space="preserve">
+    <value>Work Talk</value>
+  </data>
+  <data name="NoAuthListData" xml:space="preserve">
+    <value>And creators of the original article can be viewed</value>
+  </data>
+  <data name="OpenUserManager" xml:space="preserve">
+    <value>Public destination management</value>
+  </data>
+  <data name="ApprovalType" xml:space="preserve">
+    <value>Opinion</value>
+  </data>
+  <data name="ConfirmDeleteFavoritePerson" xml:space="preserve">
+    <value>Are you sure you want to delete?</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>Enter your search day</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>Enter 200 characters or less</value>
+  </data>
+  <data name="MSG_SUCCESS" xml:space="preserve">
+    <value>Has been processed.</value>
+  </data>
+  <data name="NeedContents" xml:space="preserve">
+    <value>Enter a information</value>
+  </data>
+  <data name="SeachText" xml:space="preserve">
+    <value>Searches</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="ShortContents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ShortListMsg" xml:space="preserve">
+    <value>Short comment on the contents of the document are not included</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>Reply Opening</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>Comments were listed</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="ShortReplySec" xml:space="preserve">
+    <value>Etc.</value>
+  </data>
+  <data name="ShortReplySec1" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="ShortReplySec2" xml:space="preserve">
+    <value>Add comment</value>
+  </data>
+  <data name="ShortReplySec3" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="ShortReplySec4" xml:space="preserve">
+    <value>Work talk</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="ReplyAdd" xml:space="preserve">
+    <value>Write your comment.</value>
+  </data>
+  <data name="MyMove" xml:space="preserve">
+    <value>Go to my wall</value>
+  </data>
+  <data name="TalkDes" xml:space="preserve">
+    <value>Write on the wall</value>
+  </data>
+  <data name="ShareTalkTitle" xml:space="preserve">
+    <value>This is your shared wall</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Wall Posts</value>
+  </data>
+  <data name="MyTalkOne" xml:space="preserve">
+    <value>No wall posts to enter comments</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="AppReplySec1" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="AppReplySec2" xml:space="preserve">
+    <value>Wait</value>
+  </data>
+  <data name="AppReplySec3" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="AppReplySec4" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="AppReplySec5" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="MyTalkTitle" xml:space="preserve">
+    <value>It's your wall</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>Commented on by</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ShareMove" xml:space="preserve">
+    <value>Go to shared wall</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>AddFile</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>AttachFile</value>
+  </data>
+  <data name="FileDel" xml:space="preserve">
+    <value>File Delete</value>
+  </data>
+  <data name="FileLength" xml:space="preserve">
+    <value>File Length</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="MsgDel" xml:space="preserve">
+    <value>Want to delete?</value>
+  </data>
+  <data name="FileOrder" xml:space="preserve">
+    <value>File Order</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address book</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>E-Approval</value>
+  </data>
+  <data name="BoardTitle" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="PointTitle" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Co-Work</value>
+  </data>
+  <data name="WebHard" xml:space="preserve">
+    <value>Web folder</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>Favorite</value>
+  </data>
+  <data name="Impo" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="NoAuthority" xml:space="preserve">
+    <value>No permission</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="TalkMenu1" xml:space="preserve">
+    <value>People I shared</value>
+  </data>
+  <data name="TalkMenu2" xml:space="preserve">
+    <value>Person you shared with me</value>
+  </data>
+</root>

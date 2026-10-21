@@ -1,0 +1,51 @@
+﻿<table class="table_typeA"> 
+<caption>
+    지각 정보
+</caption>
+<colgroup>
+    <col width="100px"/>
+    <col width="120px"/>
+    <col width="70px"/>
+    <col width="70px"/>  
+    <col width="70px"/>  
+    <col width="80px"/>
+    <col/>
+    <col width="90px" />
+</colgroup>
+<tr>
+    <th id="r_CalcDate" class="center"></th>
+    <th id="r_DeptName" class="center"></th>
+    <th id="r_Name" class="center"></th>
+    <th id="r_TitleName" class="center"></th>    
+    <th id="r_Gubun" class="center"></th>
+    <th id="r_Time" class="center"></th>
+    <th id="r_Reason2" class="center"></th>
+    <th id="r_docview" class="center"></th>
+</tr>
+{#foreach $T as ViewOver}
+<tr> 
+    <td class="center">{ $T.ViewOver.CalcDate }</td>
+    <td class="center">{ $T.ViewOver.DeptName }</td>
+    <td class="center">{ $T.ViewOver.UserName }</td> 
+    <td class="center">{ $T.ViewOver.TitleName }</td>     
+    <td class="center">{ $T.ViewOver.bOverGubun }</td>
+    <td class="center">{ $T.ViewOver.OverTime }</td>
+    <td>
+        <div style="word-break: break-all;">
+            { $T.ViewOver.OverRemark }
+        </div>
+    </td>
+    <td class="center">
+        {#if $T.ViewOver.PRDocumentID > 0}
+        <span onclick="ViewLate.DocView('{ $T.ViewOver.PRDocumentID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="8" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

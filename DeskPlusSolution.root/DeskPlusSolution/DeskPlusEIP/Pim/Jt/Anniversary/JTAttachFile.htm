@@ -1,0 +1,11 @@
+﻿
+<ul class="table_typeT ul_typeT">
+    {#foreach $T as FileList}
+    <li>
+        <a href="#" onclick="javascript:View.FileDownload('{ $T.FileList.FilePath }','{ $T.FileList.FileName }','{ $T.FileList.FileGUID }')">{ $T.FileList.FileName }</a>
+        <span class="mount">{ $T.FileList.FileLength } KB</span>
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>

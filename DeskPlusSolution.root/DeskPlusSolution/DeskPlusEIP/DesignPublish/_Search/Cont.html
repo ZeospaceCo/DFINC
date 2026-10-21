@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Search.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+
+<body>
+
+<div id="layout_body">
+
+<!-- 상단 //-->
+<div id="srh_layout_srh">
+
+<div class="srh_box">
+
+<div class="srh_boxin">
+    <!-- 검색 //-->
+    <div class="tit"><img src="/DeskPlusEIP/Design/Base/Img/Search/srh_barSearch.gif" alt="" /></div>
+    <div class="srh">
+    <ul class="btn_searchboxL">
+        <li><input name="ctbSearch" type="text" id="ctbSearch" class="srh_srhtext" /></li>
+        <li><a id="btnSearch" href="#" class="srh_srhbtn" title="검색">검색</a>
+            <span class="srh_gap"><input type="checkbox" />결과내검색 </span>
+        </li>
+    </ul>
+    </div>
+    <!-- 검색조건 //-->
+    <div class="cont">
+        <table class="table_typeD">
+        <colgroup>
+            <col width="160px" />
+            <col />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td class="th">검색분야</td>
+                <td><input type="radio" name="r1" />전체 <input type="radio" name="r1" />전자결재<input type="radio" name="r1" />게시판<input type="radio" name="r1" />메일</td>
+            </tr>
+            <tr class="gaph">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="th">검색출력</td>
+                <td>
+                    <span>정렬방법:</span>
+                    <select><option value="">선택하세요</option><option value="">정확도</option><option value="">등록일</option><option value="">제목</option></select>
+                    <span class="srh_gap">결과수:</span>
+                    <input type="radio" name="r2" />10개<input type="radio" name="r2" />20개<input type="radio" name="r2" />30개
+                </td>
+            </tr>
+            <tr class="gaph">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="th">검색기간</td>
+                <td>
+                    <span>기간조건: </span>
+                    <select><option value="">선택하세요</option><option value="">전체</option><option value="">1주일</option><option value="">1개월</option><option value="">6개월</option><option value="">1년</option><option value="">직접입력</option></select>
+                    <span><input type="text" /> ~ <input type="text" /></span>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- 내용 //-->
+<div id="srh_layout_cont">
+
+<!-- 탭 //-->
+<div class="tabAline">
+    <ul class="tabA">
+        <li><a href="#" class="tab_on">전체보기</a></li>
+        <li><a href="#">전자결재</a></li>
+        <li><a href="#">게&nbsp;시&nbsp;판</a></li>
+        <li class="last"><a href="#">메&nbsp;&nbsp;일</a></li>
+    </ul>
+</div>
+
+<!-- 리스트 //-->
+<div id="layout_content">
+<!-- 테이블 시작 //-->
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>
+                검색 리스트
+            </caption>
+            <colgroup>
+                <col width="50px" />
+                <col width="80px" />
+                <col />
+                <col width="80px" />
+                <col width="90px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th><a href="#">구분</a></th>
+                    <th><a href="#">제목</a></th>
+                    <th><a href="#">등록자</a></th>
+                    <th><a href="#">등록일</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>전자결재</td>
+                    <td><a href="#">제목입니다.</a> <img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_popup_silver.gif" /></td>
+                    <td>삼동이</td>
+                    <td>2011-01-01</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+<!-- 테이블 끝 //-->
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

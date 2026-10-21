@@ -1,0 +1,7 @@
+/*!
+ * for ie9
+ */
+
+	.container { outline:1px solid red \0/IE8; }
+	.input-group-prepend{  display:inline \0/IE8;  }
+	.row{display: table-cell !important;}

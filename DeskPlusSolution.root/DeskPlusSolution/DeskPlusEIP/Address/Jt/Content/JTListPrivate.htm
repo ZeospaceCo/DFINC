@@ -1,0 +1,30 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="25px" />
+    <col width="120px" />    
+    <col width="80px" />
+    <col width="80px" />    
+    <col />
+</colgroup>
+<tr>
+    <th class="center" id="r_checked"><input id="cbxAll" type="checkbox" onclick="AddPrivate.Checked()" /></th>
+    <th class="center" id="r_deptName"></th>
+    <th class="center" id="r_titleName"></th>                              
+    <th class="center" id="r_userName"></th>  
+    <th class="center" id="r_email"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.ROW }" onclick="AddPrivate.UserAdd()" value="{ $T.List.OwnerID }" /></td>
+    <td class="center" id="dept_{ $T.List.OwnerID }">{ $T.List.DeptName }</td>    
+    <td class="center" id="title_{ $T.List.OwnerID }">{ $T.List.TitleName }</td>    
+    <td class="center" id="name_{ $T.List.OwnerID }">{ $T.List.Name }</td>
+    <td id="mail_{ $T.List.OwnerID }">{ $T.List.Mail }</td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="6" class="center"><span id="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

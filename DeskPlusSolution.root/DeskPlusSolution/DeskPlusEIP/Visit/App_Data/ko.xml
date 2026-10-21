@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+    
+    <MAIL>
+		<SUBJ0>[방문예약]</SUBJ0>
+		<SUBJ1>[방문승인]</SUBJ1>
+		<SUBJ2>[방문취소]</SUBJ2>
+		<ContentHTML0>
+			[방문 예약 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML0>
+		<ContentHTML1>
+			[방문 승인]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML1>
+		<ContentHTML2>
+			[방문 취소]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML2>
+		
+    </MAIL>
+
+    <MESSENGER>
+		<SUBJ0>[방문예약]</SUBJ0>
+		<SUBJ1>[방문승인]</SUBJ1>
+		<SUBJ2>[방문취소]</SUBJ2>
+		<ContentHTML0>
+			[방문 예약 알림]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML0>
+		<ContentHTML1>
+			[방문 승인]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML1>
+		<ContentHTML2>
+			[방문 취소]
+			&lt;br&gt;&lt;br&gt;
+			- 제목 : $SUBJECT$
+			&lt;br&gt;
+			- 예약자 : $Name$
+			&lt;br&gt;
+			- 시작일: $StartDate$ $StartTime$ ~ 종료일: $EndDate$ $EndTime$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTML2>
+    </MESSENGER>
+
+    <SMS>
+		<ContentHTML0>
+			$Name$ 님이 $VName$ 을 방문예약했습니다.
+		</ContentHTML0>
+		<ContentHTML1>
+			$VName$ 방문승인했습니다.
+		</ContentHTML1>
+		<ContentHTML2>
+			$VName$ 방문취소했습니다.
+		</ContentHTML2>
+    </SMS>
+
+</ALARM>

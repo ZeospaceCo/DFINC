@@ -1,0 +1,12 @@
+﻿
+{#foreach $T as List}   
+<li><a id="myInfo_NewMail" onclick="MyInfo_ShortCut('myInfo_NewMail')">{$T.List.NewMailCnt}</a></li>
+<li><a id="myInfo_TodayS" onclick="MyInfo_ShortCut('myInfo_TodayS')">{$T.List.TodayPimSchCnt}</a></li>
+<li><a id="myInfo_Task" onclick="MyInfo_ShortCut('myInfo_Task')">{$T.List.TaskCnt}</a></li>
+<li><a id="myInfo_AppDoc" onclick="MyInfo_ShortCut('myInfo_AppDoc')">{$T.List.DocmentCnt}</a></li>
+<li><a id="myInfo_AppApp" onclick="MyInfo_ShortCut('myInfo_AppApp')">{$T.List.ApprovalCnt}</a></li>
+<li><a id="myInfo_AppDept" onclick="MyInfo_ShortCut('myInfo_AppDept')">{$T.List.DeptSusinCnt}</a></li>
+<li><a id="myInfo_AppCom" onclick="MyInfo_ShortCut('myInfo_AppCom')">{$T.List.CompleteCnt}</a></li> 
+{#else}     
+        
+{#/for}  

@@ -1,0 +1,31 @@
+﻿<table class="tbl_type" border="1" cellspacing="0">
+<caption>
+    리스트
+</caption>
+<tr>    
+    <th width="25px" id="r_pgubun"></th>
+    <th style="min-width:310px" id="r_ptitle"></th>
+    <th class="center" id="r_phname"></th>
+</tr>
+{#foreach $T as List}
+<tr>    
+    <td>{ $T.List.ReToCc }</td>
+    </td>
+    <td class="suj">        
+        <a onclick="Main.View('{ $T.List.ListID }','{ $T.List.GroupID }','{ $T.List.ViewerCount }');return false;" style="cursor:pointer">
+        {$T.List.Title }</a>
+        {#if $T.List.ShowNew == 'Y'}&nbsp;<span class="i_new"></span>{#/if} 
+        {#if $T.List.ReplyCnt > 0}
+        <span>({ $T.List.ReplyCnt })</span>        
+        {#/if}
+    </td>
+    <td class="center">
+    <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.NameBase }{#if $T.List.TOCnt > 1}+{#/if}</span></a>
+    </td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span id="P_NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

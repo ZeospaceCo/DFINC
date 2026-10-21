@@ -1,0 +1,1419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessCheck" xml:space="preserve">
+    <value>アクセスしたりしない</value>
+  </data>
+  <data name="AccessFail" xml:space="preserve">
+    <value>アクセス可能なポータル·メニューはありません。</value>
+  </data>
+  <data name="AccessLog" xml:space="preserve">
+    <value>履歴ログイン</value>
+  </data>
+  <data name="AccessTime" xml:space="preserve">
+    <value>アクセス時間</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>アクティベーション</value>
+  </data>
+  <data name="ActiveUnActive" xml:space="preserve">
+    <value>有効化/無効化</value>
+  </data>
+  <data name="Active_Short" xml:space="preserve">
+    <value>アクティブ</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAuth" xml:space="preserve">
+    <value>追加する権限</value>
+  </data>
+  <data name="AddForTab" xml:space="preserve">
+    <value>追加（タブ）</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>グループの追加</value>
+  </data>
+  <data name="AddImg_120_60" xml:space="preserve">
+    <value>追加画像（120 * 60）</value>
+  </data>
+  <data name="AddIP" xml:space="preserve">
+    <value>IPを追加</value>
+  </data>
+  <data name="AddLicense" xml:space="preserve">
+    <value>ライセンスの追加</value>
+  </data>
+  <data name="AddMultiCompany" xml:space="preserve">
+    <value>彼の会社のモジュールを追加</value>
+  </data>
+  <data name="AddParameter" xml:space="preserve">
+    <value>パラメータを追加します。</value>
+  </data>
+  <data name="AddPortlet" xml:space="preserve">
+    <value>モジュールを追加</value>
+  </data>
+  <data name="AddPortletCheckedTab" xml:space="preserve">
+    <value>モジュールを選択してタブを追加</value>
+  </data>
+  <data name="AddPrivateGroup" xml:space="preserve">
+    <value>個人グループを追加</value>
+  </data>
+  <data name="AddressEng" xml:space="preserve">
+    <value>英語アドレス</value>
+  </data>
+  <data name="AddRSS" xml:space="preserve">
+    <value>RSSを追加</value>
+  </data>
+  <data name="AddSkin" xml:space="preserve">
+    <value>皮膚を追加</value>
+  </data>
+  <data name="AddTab" xml:space="preserve">
+    <value>タグを追加する</value>
+  </data>
+  <data name="AddTabInfo" xml:space="preserve">
+    <value>タグ情報を追加</value>
+  </data>
+  <data name="AdminMyInfo" xml:space="preserve">
+    <value>私は情報管理</value>
+  </data>
+  <data name="AdminTabSetting" xml:space="preserve">
+    <value>追加の管理者タグを設定</value>
+  </data>
+  <data name="Allow" xml:space="preserve">
+    <value>許す</value>
+  </data>
+  <data name="AllowAccess" xml:space="preserve">
+    <value>へのアクセスを許可する</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用可能</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>登録の日付を入力してください。</value>
+  </data>
+  <data name="ApplyUseCode" xml:space="preserve">
+    <value>コー​​ドを使用することができます。</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>能力</value>
+  </data>
+  <data name="AuthAccessControl" xml:space="preserve">
+    <value>アクセスするための権限を制御</value>
+  </data>
+  <data name="AuthCode" xml:space="preserve">
+    <value>許可コード</value>
+  </data>
+  <data name="AuthExplain" xml:space="preserve">
+    <value>パーミッション説明</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>権限リスト</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>著作権管理</value>
+  </data>
+  <data name="AuthName" xml:space="preserve">
+    <value>権限名</value>
+  </data>
+  <data name="BaseLang" xml:space="preserve">
+    <value>基底名</value>
+  </data>
+  <data name="BlockAccess" xml:space="preserve">
+    <value>切り落としアクセス</value>
+  </data>
+  <data name="Call_ID" xml:space="preserve">
+    <value>IDを呼び出す</value>
+  </data>
+  <data name="Call_ID_Title" xml:space="preserve">
+    <value>直接コールのコールIDを使用して</value>
+  </data>
+  <data name="CanNotUse" xml:space="preserve">
+    <value>使用しない</value>
+  </data>
+  <data name="CanUse" xml:space="preserve">
+    <value>あなたが使用することができます</value>
+  </data>
+  <data name="CEO" xml:space="preserve">
+    <value>代表者</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>ディレクトリの順序が変更されています。</value>
+  </data>
+  <data name="ChangeGroup" xml:space="preserve">
+    <value>グループの変更</value>
+  </data>
+  <data name="ChangeParentMenu" xml:space="preserve">
+    <value>前のメニューに変わり</value>
+  </data>
+  <data name="CheckAddRSSGroup" xml:space="preserve">
+    <value>追加RSSフィードグループを選択してください</value>
+  </data>
+  <data name="CheckChageUpperMenuName" xml:space="preserve">
+    <value>変更する前のメニュー名を選択してください。</value>
+  </data>
+  <data name="CheckChoiceMultiValue" xml:space="preserve">
+    <value>機能を確認するために繰り返し確認してください。</value>
+  </data>
+  <data name="CheckDeleteCompanyPersonInfo" xml:space="preserve">
+    <value>あなたが担当者を削除したい会社を選択してください。</value>
+  </data>
+  <data name="CheckDeleteGroup" xml:space="preserve">
+    <value>削除したいグループを選択してください。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>削除したいリストを選択してください。</value>
+  </data>
+  <data name="CheckGroup" xml:space="preserve">
+    <value>グループの最上位レベルに追加することはできません。下位グループを選択してください。 \ Nでない場合は、グループを作成します。</value>
+  </data>
+  <data name="CheckGroupAfterDeletePortlet" xml:space="preserve">
+    <value>グループを選択した後、モジュールを取り外します。</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>リストを選択してください。</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>ログイン繰り返し確認を選択してください。</value>
+  </data>
+  <data name="CheckModGroup" xml:space="preserve">
+    <value>変更したいグループを選択してください。</value>
+  </data>
+  <data name="CheckMoveFolder" xml:space="preserve">
+    <value>フォルダを移動したいファイルを選択してください。</value>
+  </data>
+  <data name="CheckMultiValue" xml:space="preserve">
+    <value>謝辞を複製</value>
+  </data>
+  <data name="CheckPortlet" xml:space="preserve">
+    <value>モジュールを選択してください</value>
+  </data>
+  <data name="CheckPortletCategory" xml:space="preserve">
+    <value>モジュールグループを選択してください。</value>
+  </data>
+  <data name="CheckPortletGroup" xml:space="preserve">
+    <value>モジュールグループを選択してください。</value>
+  </data>
+  <data name="CheckSearchSection" xml:space="preserve">
+    <value>検索フィールドを選択してください</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中国語</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="CodeInfo" xml:space="preserve">
+    <value>コー​​ド情報</value>
+  </data>
+  <data name="CodeKey" xml:space="preserve">
+    <value>コー​​ドキー</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>コー​​ド管理</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>コー​​ドネーム</value>
+  </data>
+  <data name="Col_1" xml:space="preserve">
+    <value>1（シングルタイプ）</value>
+  </data>
+  <data name="Col_2_Left" xml:space="preserve">
+    <value>2（左側）</value>
+  </data>
+  <data name="Col_2_Right" xml:space="preserve">
+    <value>2（右側）</value>
+  </data>
+  <data name="Col_2_Share" xml:space="preserve">
+    <value>2（分配型）</value>
+  </data>
+  <data name="Col_3_Center" xml:space="preserve">
+    <value>3段落（中間）</value>
+  </data>
+  <data name="Col_3_Share" xml:space="preserve">
+    <value>3（分配型）</value>
+  </data>
+  <data name="Col_4_Share" xml:space="preserve">
+    <value>4（分配型）</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>説明する</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="CommonPortlet" xml:space="preserve">
+    <value>共有モジュール群</value>
+  </data>
+  <data name="CompanyFax" xml:space="preserve">
+    <value>ファックス</value>
+  </data>
+  <data name="CompanyHomepage" xml:space="preserve">
+    <value>会社ウェブサイト</value>
+  </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>会社情報</value>
+  </data>
+  <data name="CompanyManagement" xml:space="preserve">
+    <value>会社経営</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>会社名</value>
+  </data>
+  <data name="CompanyPersonInfo" xml:space="preserve">
+    <value>担当会社</value>
+  </data>
+  <data name="CompanyPhone" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="ConfigPortletUser" xml:space="preserve">
+    <value>モジュールの管理</value>
+  </data>
+  <data name="ConfigTabAdmin" xml:space="preserve">
+    <value>共通のラベル管理</value>
+  </data>
+  <data name="ConfigTabMain" xml:space="preserve">
+    <value>ラベルの設定を開始します</value>
+  </data>
+  <data name="ConfigTabSkin" xml:space="preserve">
+    <value>スキン設定</value>
+  </data>
+  <data name="ConfigTabUser" xml:space="preserve">
+    <value>[個人]タブの管理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="ConfirmAdd" xml:space="preserve">
+    <value>追加されました。</value>
+  </data>
+  <data name="ConfirmApply" xml:space="preserve">
+    <value>保存しました。</value>
+  </data>
+  <data name="ConfirmChange" xml:space="preserve">
+    <value>変更されました</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="ConfirmDeleteAuth" xml:space="preserve">
+    <value>パーミッション値に割り当ても削除されます。削除しますか？</value>
+  </data>
+  <data name="ConfirmDeleteCompanyPersonInfo" xml:space="preserve">
+    <value>あなたはそれを再生するために会社を削除してもよろしいですか？</value>
+  </data>
+  <data name="ConfirmDeleteMenu" xml:space="preserve">
+    <value>メニューを削除するには？</value>
+  </data>
+  <data name="ConfirmDeleteSubCode" xml:space="preserve">
+    <value>低レベルのコードを削除する必要があります。削除しますか？</value>
+  </data>
+  <data name="ConfirmDeleteTabAddPortlet" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？ \ N（モジュールがラベルに追加も削除されます。）</value>
+  </data>
+  <data name="ConfirmLicense" xml:space="preserve">
+    <value>ライセンスのアクティベーションを行う</value>
+  </data>
+  <data name="ConfirmMod" xml:space="preserve">
+    <value>変更されています。</value>
+  </data>
+  <data name="ConfirmMove" xml:space="preserve">
+    <value>移動されました。</value>
+  </data>
+  <data name="ConfirmOrder" xml:space="preserve">
+    <value>順序が変更されました。</value>
+  </data>
+  <data name="ConfirmServer" xml:space="preserve">
+    <value>サーバー認証</value>
+  </data>
+  <data name="CreatePortlet" xml:space="preserve">
+    <value>ポートレットを作成</value>
+  </data>
+  <data name="DataCheck" xml:space="preserve">
+    <value>データを確認</value>
+  </data>
+  <data name="DataFormat" xml:space="preserve">
+    <value>データ形式</value>
+  </data>
+  <data name="DataLink" xml:space="preserve">
+    <value>データリンク</value>
+  </data>
+  <data name="DeepSearch" xml:space="preserve">
+    <value>詳細な検索</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DelegatorName" xml:space="preserve">
+    <value>代表者名</value>
+  </data>
+  <data name="DeletePortlet" xml:space="preserve">
+    <value>モジュールの削除</value>
+  </data>
+  <data name="DelPortlet" xml:space="preserve">
+    <value>モジュールの削除</value>
+  </data>
+  <data name="DelPortletMsg" xml:space="preserve">
+    <value>（管理者によって追加されたが、削除できません。）</value>
+  </data>
+  <data name="DelTab" xml:space="preserve">
+    <value>ラベルの削除</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>部署名</value>
+  </data>
+  <data name="DirectAdd" xml:space="preserve">
+    <value>すぐに追加</value>
+  </data>
+  <data name="DownAttach" xml:space="preserve">
+    <value>添付ファイルのレコードをダウンロード</value>
+  </data>
+  <data name="DownloadMsg" xml:space="preserve">
+    <value>Instant Messagingをダウンロード</value>
+  </data>
+  <data name="DuplicateCheckMultiValue" xml:space="preserve">
+    <value>許可コードが繰り返されます。</value>
+  </data>
+  <data name="DuplicateCode" xml:space="preserve">
+    <value>コー​​ドの重複。</value>
+  </data>
+  <data name="DuplicatePortletCode" xml:space="preserve">
+    <value>モジュールのコードが繰り返されている。</value>
+  </data>
+  <data name="DutyName" xml:space="preserve">
+    <value>責任名</value>
+  </data>
+  <data name="EditContent" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>アクティブにするかどうか</value>
+  </data>
+  <data name="Encrypt" xml:space="preserve">
+    <value>暗号化</value>
+  </data>
+  <data name="EncryptionGubun" xml:space="preserve">
+    <value>暗号化とは区別</value>
+  </data>
+  <data name="EncryptionValue" xml:space="preserve">
+    <value>暗号化された値</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>一日の終わり</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorAccessAuth" xml:space="preserve">
+    <value>ユーザーのアクセス権。</value>
+  </data>
+  <data name="ErrorConnection" xml:space="preserve">
+    <value>サーバとの通信に失敗しました。 ：</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>処理は、エラーが発生しました。</value>
+  </data>
+  <data name="ExcelDown" xml:space="preserve">
+    <value>Excelのダウンロード</value>
+  </data>
+  <data name="ExistSubMenu" xml:space="preserve">
+    <value>下位メニュー</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>満期</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>ファックス</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>最初のページ。</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>フォルダ名</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>入力データ値の形式。</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="GeneralAdd" xml:space="preserve">
+    <value>追加（全般）</value>
+  </data>
+  <data name="GeneralPortlet" xml:space="preserve">
+    <value>モジュール（一般）</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>リストに移動します。</value>
+  </data>
+  <data name="GoModifyList" xml:space="preserve">
+    <value>詳細な変更のページを移動します。</value>
+  </data>
+  <data name="GoToAddPortlet" xml:space="preserve">
+    <value>*完全な追加、詳細なモジュールのaddページに移動します。</value>
+  </data>
+  <data name="GoToDetail" xml:space="preserve">
+    <value>それ以上に行く</value>
+  </data>
+  <data name="GotoTabAuth" xml:space="preserve">
+    <value>*タグ情報を追加し、ラベル情報の[権限]ページに移動します。</value>
+  </data>
+  <data name="GoToTabSetting" xml:space="preserve">
+    <value>*タグ情報を追加して、[ユーザー]タブの[設定]ページに移動します。</value>
+  </data>
+  <data name="GroupKey" xml:space="preserve">
+    <value>グループのキー</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>グループ名</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Handphone" xml:space="preserve">
+    <value>携帯電話番号</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>垂直</value>
+  </data>
+  <data name="HeightAuto" xml:space="preserve">
+    <value>自動垂直</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>無効にする</value>
+  </data>
+  <data name="Inactive_Short" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="Incorporation" xml:space="preserve">
+    <value>日付を起動します</value>
+  </data>
+  <data name="InputAuthCode" xml:space="preserve">
+    <value>認証コードを入力してください。</value>
+  </data>
+  <data name="InputAuthName" xml:space="preserve">
+    <value>権限名を入力してください。</value>
+  </data>
+  <data name="InputCode" xml:space="preserve">
+    <value>コー​​ドを入力してください。</value>
+  </data>
+  <data name="InputCodeName" xml:space="preserve">
+    <value>コー​​ド名を入力してください。</value>
+  </data>
+  <data name="InputCompanyName" xml:space="preserve">
+    <value>会社名を入力してください</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>入力値の内容。</value>
+  </data>
+  <data name="InputDataFormat" xml:space="preserve">
+    <value>入力データ値の形式。</value>
+  </data>
+  <data name="InputDeptName" xml:space="preserve">
+    <value>部署名を入力してください</value>
+  </data>
+  <data name="InputEncode" xml:space="preserve">
+    <value>暗号化された値を入力してください。</value>
+  </data>
+  <data name="InputGroupName" xml:space="preserve">
+    <value>グループ名を入力してください</value>
+  </data>
+  <data name="InputIP" xml:space="preserve">
+    <value>IP値を入力してください。</value>
+  </data>
+  <data name="InputIPNumber" xml:space="preserve">
+    <value>IPの数値を入力してください。</value>
+  </data>
+  <data name="InputLinkURLValue" xml:space="preserve">
+    <value>リンク·アドレス値を入力してください。</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>ログインIDを入力してください</value>
+  </data>
+  <data name="InputMenuName" xml:space="preserve">
+    <value>メニュー名を入力してください</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>名前を入力してください</value>
+  </data>
+  <data name="InputOrderWay" xml:space="preserve">
+    <value>Sortメソッドを入力してください</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>パスワードを入力してください</value>
+  </data>
+  <data name="InputPortletCode" xml:space="preserve">
+    <value>モジュールのコードを入力してください。</value>
+  </data>
+  <data name="InputPortletName" xml:space="preserve">
+    <value>モジュールの名前を入力してください。</value>
+  </data>
+  <data name="InputRSSURL" xml:space="preserve">
+    <value>RSSのURLの値を入力してください。</value>
+  </data>
+  <data name="InputSearchEngine" xml:space="preserve">
+    <value>検索語句を入力してください</value>
+  </data>
+  <data name="InputSearchValue" xml:space="preserve">
+    <value>検索語句を追加してください</value>
+  </data>
+  <data name="InputTabName" xml:space="preserve">
+    <value>ラベル名を入力してください。</value>
+  </data>
+  <data name="InputUIFormatURLValue" xml:space="preserve">
+    <value>UI型値のURLを入力してください。</value>
+  </data>
+  <data name="InterfaceCode" xml:space="preserve">
+    <value>外部コードは、リンクされた</value>
+  </data>
+  <data name="IPAccessControl" xml:space="preserve">
+    <value>IPアクセス制御</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="IPBand" xml:space="preserve">
+    <value>IP範囲</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>アクティブにするかどうか</value>
+  </data>
+  <data name="IsEncrypt" xml:space="preserve">
+    <value>暗号化が適用されるかどうか</value>
+  </data>
+  <data name="IsUsed" xml:space="preserve">
+    <value>適用されるかどうか</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本人</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓国語</value>
+  </data>
+  <data name="LargePortlet" xml:space="preserve">
+    <value>最大化するためのモジュール</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>最新の月</value>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>最後の一つです。</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>先週</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>レイアウト</value>
+  </data>
+  <data name="LevelManage" xml:space="preserve">
+    <value>レベル管理</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="LicenseCount" xml:space="preserve">
+    <value>ライセンス数</value>
+  </data>
+  <data name="LicenseKey" xml:space="preserve">
+    <value>ライセンスキー</value>
+  </data>
+  <data name="LicenseManage" xml:space="preserve">
+    <value>ライセンス管理</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="LinkSetting" xml:space="preserve">
+    <value>リンクの設定</value>
+  </data>
+  <data name="LinkURLCheck" xml:space="preserve">
+    <value>確認のためのリンク先URL</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="MainPortletSave" xml:space="preserve">
+    <value>メインページの管理</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="MenuExplain" xml:space="preserve">
+    <value>メニューの説明</value>
+  </data>
+  <data name="MenuManagement" xml:space="preserve">
+    <value>メニューマネージャ</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>メニューの名前</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ModCategory" xml:space="preserve">
+    <value>ディレクトリの変更</value>
+  </data>
+  <data name="ModDate" xml:space="preserve">
+    <value>日付を変更</value>
+  </data>
+  <data name="ModGroup" xml:space="preserve">
+    <value>グループの修正</value>
+  </data>
+  <data name="ModPrivateGroup" xml:space="preserve">
+    <value>個人グループを追加</value>
+  </data>
+  <data name="ModSubMenuOrder" xml:space="preserve">
+    <value>下部メニューの順序変更</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1ヶ月</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>多言語化</value>
+  </data>
+  <data name="MultiNameCEO" xml:space="preserve">
+    <value>代表的な（多言語化）</value>
+  </data>
+  <data name="MultiNameCompany" xml:space="preserve">
+    <value>会社（多言語）</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ノー</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="NotAllow" xml:space="preserve">
+    <value>することはできません</value>
+  </data>
+  <data name="NotApplySameUpperMenu" xml:space="preserve">
+    <value>メニューと前のメニューに変更するには、同じではありません。</value>
+  </data>
+  <data name="NotConfirmUserAccessAuth" xml:space="preserve">
+    <value>ユーザーがアクセスすることはできません。</value>
+  </data>
+  <data name="NotExistContent" xml:space="preserve">
+    <value>コンテンツが存在しています。</value>
+  </data>
+  <data name="NotExistList" xml:space="preserve">
+    <value>リストは存在しません。</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>気付く</value>
+  </data>
+  <data name="NotUsed" xml:space="preserve">
+    <value>使用しない</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>数</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>ログインを繰り返すことはできません。</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>オーダー</value>
+  </data>
+  <data name="OrganizeTab" xml:space="preserve">
+    <value>ラベルは、構成する</value>
+  </data>
+  <data name="Organize_Tab" xml:space="preserve">
+    <value>ラベルは、構成する</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>パラメーター</value>
+  </data>
+  <data name="ParameterName" xml:space="preserve">
+    <value>パラメーター名</value>
+  </data>
+  <data name="ParentsGroupName" xml:space="preserve">
+    <value>上位レベルのグループ名</value>
+  </data>
+  <data name="PasswordErrorLog" xml:space="preserve">
+    <value>ログイン記録を失敗した</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="PeriodDate" xml:space="preserve">
+    <value>条件の間</value>
+  </data>
+  <data name="PersonalPortlet" xml:space="preserve">
+    <value>個々のモジュール</value>
+  </data>
+  <data name="Portlet" xml:space="preserve">
+    <value>モジュール</value>
+  </data>
+  <data name="PortletCode" xml:space="preserve">
+    <value>モジュールコード</value>
+  </data>
+  <data name="PortletForTab" xml:space="preserve">
+    <value>モジュール（ラベル使用）</value>
+  </data>
+  <data name="PortletGroup" xml:space="preserve">
+    <value>モジュールグループ</value>
+  </data>
+  <data name="PortletGroupManage" xml:space="preserve">
+    <value>モジュールグループの管理</value>
+  </data>
+  <data name="PortletGroupName" xml:space="preserve">
+    <value>モジュール·グループ名</value>
+  </data>
+  <data name="PortletList" xml:space="preserve">
+    <value>のモジュールのステータス</value>
+  </data>
+  <data name="PortletManagement" xml:space="preserve">
+    <value>モジュールの管理</value>
+  </data>
+  <data name="PortletMove" xml:space="preserve">
+    <value>モジュールが移動され</value>
+  </data>
+  <data name="PortletName" xml:space="preserve">
+    <value>モジュール名</value>
+  </data>
+  <data name="PortletNames" xml:space="preserve">
+    <value>モジュール名</value>
+  </data>
+  <data name="PortletSetting" xml:space="preserve">
+    <value>モジュールの設定</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="PreviewImg" xml:space="preserve">
+    <value>プレビュー画像</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="PrivatePortlet" xml:space="preserve">
+    <value>個々のモジュールグループ</value>
+  </data>
+  <data name="PrivateTabSetting" xml:space="preserve">
+    <value>[個人]タブを設定する</value>
+  </data>
+  <data name="ProcessingApply" xml:space="preserve">
+    <value>適用されていた。</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理エラーが発生しました。管理者に連絡してください。</value>
+  </data>
+  <data name="ProcessingErrorApply" xml:space="preserve">
+    <value>適用されません。</value>
+  </data>
+  <data name="ProcessingErrorLicenseAdd" xml:space="preserve">
+    <value>ライセンスエラーの追加が発生しました。ログを確認してください。</value>
+  </data>
+  <data name="ProcessingErrorLicenseDelete" xml:space="preserve">
+    <value>ライセンスを削除中にエラーが発生しました。ログを確認してください。</value>
+  </data>
+  <data name="RegAccessAuth" xml:space="preserve">
+    <value>アクセス権限の登録</value>
+  </data>
+  <data name="RegIP" xml:space="preserve">
+    <value>IP登録</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>登録者</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>ログインは繰り返すことができます。</value>
+  </data>
+  <data name="SaveChangePortletOrder" xml:space="preserve">
+    <value>変化のモジュールが保存された順序。</value>
+  </data>
+  <data name="SaveTab" xml:space="preserve">
+    <value>タグは、保存された</value>
+  </data>
+  <data name="SaveTabPortletOrder" xml:space="preserve">
+    <value>画面の保存</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchAutoSpecialNumber" xml:space="preserve">
+    <value>自動的にアドレス帳検索で特定の番号を入力します。</value>
+  </data>
+  <data name="SearchDateSelect" xml:space="preserve">
+    <value>選択期間</value>
+  </data>
+  <data name="SearchFieldApproval" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="SearchFieldBoard" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="SearchFieldMail" xml:space="preserve">
+    <value>郵便</value>
+  </data>
+  <data name="SearchFieldTotal" xml:space="preserve">
+    <value>プレナリー</value>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>言語を検索</value>
+  </data>
+  <data name="SearchHelp2FirstAction" xml:space="preserve">
+    <value>最初の実行2</value>
+  </data>
+  <data name="SearchHelpAllInclude" xml:space="preserve">
+    <value>1と2が含まれています</value>
+  </data>
+  <data name="SearchHelpChoice" xml:space="preserve">
+    <value>少なくとも一つを含む1,2、</value>
+  </data>
+  <data name="SearchHelpIf" xml:space="preserve">
+    <value>検索基準</value>
+  </data>
+  <data name="SearchHelpIncludeNot" xml:space="preserve">
+    <value>1は除いて、含まれています</value>
+  </data>
+  <data name="SearchInResult" xml:space="preserve">
+    <value>検索結果</value>
+  </data>
+  <data name="SearchMoreResultData" xml:space="preserve">
+    <value>より多くの検索結果を表示</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>検索結果はありません。</value>
+  </data>
+  <data name="SearchOutput" xml:space="preserve">
+    <value>並べ替え方法</value>
+  </data>
+  <data name="SearchOutputCurrect" xml:space="preserve">
+    <value>精度</value>
+  </data>
+  <data name="SearchOutputDate" xml:space="preserve">
+    <value>登録日</value>
+  </data>
+  <data name="SearchOutputTitle" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="SearchRequestSelect" xml:space="preserve">
+    <value>選択してください</value>
+  </data>
+  <data name="SearchResultCnt" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="SearchResultCntTitle" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="SearchResultTotal" xml:space="preserve">
+    <value>総検索結果</value>
+  </data>
+  <data name="SearchResultValue" xml:space="preserve">
+    <value>検索する{1}合計言語{0}は、検索結果を検索します。</value>
+  </data>
+  <data name="SearchResultValueWithin" xml:space="preserve">
+    <value>{0}結果、検索{1}の{2}を検索します。</value>
+  </data>
+  <data name="SearchSection" xml:space="preserve">
+    <value>検索フィールド</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>一つは、検索された。</value>
+  </data>
+  <data name="SearchTimeFromTo" xml:space="preserve">
+    <value>直接入力</value>
+  </data>
+  <data name="SearchTimeMonth" xml:space="preserve">
+    <value>ヶ月</value>
+  </data>
+  <data name="SearchTimePeriod" xml:space="preserve">
+    <value>検索時に</value>
+  </data>
+  <data name="SearchTimeWeek" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="SearchTimeYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="SearchWord1" xml:space="preserve">
+    <value>言語を検索する1</value>
+  </data>
+  <data name="SearchWord1n2" xml:space="preserve">
+    <value>と1,2つの検索語を含む</value>
+  </data>
+  <data name="SearchWord1or2" xml:space="preserve">
+    <value>検索フレーズ1,2は少なくともいずれかを含む</value>
+  </data>
+  <data name="SearchWord2" xml:space="preserve">
+    <value>言語2を検索</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="SelectedPortlet" xml:space="preserve">
+    <value>選択したモジュール</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>フォルダの選択</value>
+  </data>
+  <data name="SettingAuthority" xml:space="preserve">
+    <value>権限を設定して下さい。</value>
+  </data>
+  <data name="SettingLayout" xml:space="preserve">
+    <value>レイアウトを設定してください。</value>
+  </data>
+  <data name="ShowSearch" xml:space="preserve">
+    <value>[エクスポート]を検索します。</value>
+  </data>
+  <data name="SkinBlue" xml:space="preserve">
+    <value>ブルー（青）</value>
+  </data>
+  <data name="SkinGreen" xml:space="preserve">
+    <value>草緑（グリーン）</value>
+  </data>
+  <data name="SkinRed" xml:space="preserve">
+    <value>レッド（赤）</value>
+  </data>
+  <data name="SmallPortlet" xml:space="preserve">
+    <value>モジュールは最小</value>
+  </data>
+  <data name="SortList" xml:space="preserve">
+    <value>順序を変更する</value>
+  </data>
+  <data name="SortWay" xml:space="preserve">
+    <value>配置方法</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さくなければなりません。</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="SuccessDel" xml:space="preserve">
+    <value>削除されました。</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>スーパー管理者</value>
+  </data>
+  <data name="SysCodeComment" xml:space="preserve">
+    <value>システム·コード説明</value>
+  </data>
+  <data name="SysCodeManage" xml:space="preserve">
+    <value>システムコードの管理</value>
+  </data>
+  <data name="SysCodeName" xml:space="preserve">
+    <value>システムコード名</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>システムコード</value>
+  </data>
+  <data name="TabName" xml:space="preserve">
+    <value>ラベル名</value>
+  </data>
+  <data name="TabOrder" xml:space="preserve">
+    <value>タブオーダー</value>
+  </data>
+  <data name="TabSetting" xml:space="preserve">
+    <value>ラベル設定</value>
+  </data>
+  <data name="Tab_Name" xml:space="preserve">
+    <value>ラベル名</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台湾語</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>ターゲット</value>
+  </data>
+  <data name="TargetData" xml:space="preserve">
+    <value>ターゲット·データ</value>
+  </data>
+  <data name="TargetURL" xml:space="preserve">
+    <value>ターゲットURL</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="TitleNFileName" xml:space="preserve">
+    <value>タイトル+ファイル名</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>総ユーザー数</value>
+  </data>
+  <data name="UIFormat" xml:space="preserve">
+    <value>のUIフォーム</value>
+  </data>
+  <data name="UIPath" xml:space="preserve">
+    <value>UIのパス</value>
+  </data>
+  <data name="UpperMenuName" xml:space="preserve">
+    <value>前のメニュー名</value>
+  </data>
+  <data name="URLInfo" xml:space="preserve">
+    <value>URL情報</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>容量の使用</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="UseAuthCode" xml:space="preserve">
+    <value>権限コードを使用することができます。</value>
+  </data>
+  <data name="UsePersonalize" xml:space="preserve">
+    <value>パーソナライズの使用</value>
+  </data>
+  <data name="UserCount" xml:space="preserve">
+    <value>ユーザー数</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="UserNameDeptName" xml:space="preserve">
+    <value>名（県）</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="Values" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1週間</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>横軸</value>
+  </data>
+  <data name="WidthAuto" xml:space="preserve">
+    <value>自動的にレベル</value>
+  </data>
+  <data name="WriteDate" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="WrongIPRange" xml:space="preserve">
+    <value>IPアドレスの範囲が正しく設定されていない。</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ある</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>デフォルト値</value>
+  </data>
+  <data name="LogInImage" xml:space="preserve">
+    <value>ログイン画像</value>
+  </data>
+  <data name="MenuImage" xml:space="preserve">
+    <value>メニュー画像</value>
+  </data>
+  <data name="ModifyLicenseCnt" xml:space="preserve">
+    <value>ライセンス数を保存</value>
+  </data>
+  <data name="ExcessLicenseCnt" xml:space="preserve">
+    <value>ライセンス数の超過</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="BtnSkinGW" xml:space="preserve">
+    <value>ポータル設定</value>
+  </data>
+  <data name="BtnSkinMail" xml:space="preserve">
+    <value>メール設定</value>
+  </data>
+  <data name="TitSkinMail" xml:space="preserve">
+    <value>メールスキンセット</value>
+  </data>
+  <data name="SearchFieldRM" xml:space="preserve">
+    <value>資源予約</value>
+  </data>
+  <data name="SearchFieldREPORT" xml:space="preserve">
+    <value>週末レポート</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="MenuIcon" xml:space="preserve">
+    <value>アイコン</value>
+  </data>
+  <data name="VLogin" xml:space="preserve">
+    <value>垂直</value>
+  </data>
+  <data name="HiddenImage" xml:space="preserve">
+    <value>画像領域を隠す</value>
+  </data>
+  <data name="MsgTab" xml:space="preserve">
+    <value>タブを管理する</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="MenuSetting" xml:space="preserve">
+    <value>アイコンの設定</value>
+  </data>
+  <data name="MenuSetting1" xml:space="preserve">
+    <value>メニュー設定をアイコンに変更してもよろしいですか？</value>
+  </data>
+  <data name="MenuSetting2" xml:space="preserve">
+    <value>メニュー設定をテキストに変更してもよろしいですか？</value>
+  </data>
+  <data name="BGLogin" xml:space="preserve">
+    <value>ログイン背景イメージ</value>
+  </data>
+  <data name="BGPotal" xml:space="preserve">
+    <value>ポータルの背景画像</value>
+  </data>
+  <data name="FaMenu" xml:space="preserve">
+    <value>お気に入りメニューの設定</value>
+  </data>
+  <data name="SelectFaMenu" xml:space="preserve">
+    <value>選択してください</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>朝</value>
+  </data>
+  <data name="LastAccessDate" xml:space="preserve">
+    <value>最終的な検索</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>午後</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>部門変更</value>
+  </data>
+  <data name="NoAuth" xml:space="preserve">
+    <value>You do not have permission</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>月に</value>
+  </data>
+  <data name="Attendance_Friday" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="Attendance_Monday" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Attendance_Saturday" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="Attendance_Sunday" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Attendance_Thursday" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="Attendance_Tuesday" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="Attendance_Wednesday" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="CompleteDoc" xml:space="preserve">
+    <value>ターゲットドキュメント</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>コワーキング</value>
+  </data>
+  <data name="TodaySchedule" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="TodoAlert01" xml:space="preserve">
+    <value>最大4つまで指定することができます</value>
+  </data>
+  <data name="TodoItem01Sett" xml:space="preserve">
+    <value>電子決裁 - 承認</value>
+  </data>
+  <data name="TodoItem02Sett" xml:space="preserve">
+    <value>電子決裁 - 待機</value>
+  </data>
+  <data name="TodoItem03Sett" xml:space="preserve">
+    <value>業務コラボレーション - 進行</value>
+  </data>
+  <data name="TodoItem04Sett" xml:space="preserve">
+    <value>業務コラボレーション - 待機</value>
+  </data>
+  <data name="TodoItem05Sett" xml:space="preserve">
+    <value>スケジュール - やる</value>
+  </data>
+  <data name="TodoItem06Sett" xml:space="preserve">
+    <value>スケジュール - 予定</value>
+  </data>
+  <data name="TodoItem07Sett" xml:space="preserve">
+    <value>リソース管理 - 予約状況</value>
+  </data>
+  <data name="TodoItem08Sett" xml:space="preserve">
+    <value>資源管理 - 承認待ち</value>
+  </data>
+  <data name="TodoPopupMsg" xml:space="preserve">
+    <value>最大4つまで指定できます。</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>TO-DO表示項目の設定</value>
+  </data>
+  <data name="Homepage" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="UserSearch" xml:space="preserve">
+    <value>検索スタッフ</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>リソース</value>
+  </data>
+  <data name="Businessreport" xml:space="preserve">
+    <value>仕事</value>
+  </data>
+  <data name="AddressBook" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+</root>

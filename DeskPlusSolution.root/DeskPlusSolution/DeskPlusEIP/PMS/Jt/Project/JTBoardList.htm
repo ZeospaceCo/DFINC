@@ -1,0 +1,39 @@
+﻿<table class="table_typeA">
+<caption>리스트</caption>
+<colgroup>    
+    <col width="100px" />
+    <col width="200px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>        
+        <th class="center"><span class="r_username"></span></th>
+        <th class="center"><span class="r_subject"></span></th>
+        <th class="center"><span class="r_writedate"></span></th>        
+        <th class="center"><span class="r_readcount"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>        
+        <td class="center">
+        <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;" style="cursor:pointer">
+        { $T.List.NameBase }
+        </a>
+        </td>
+        <td>
+        <a onclick="Main.ViewB('{ $T.List.ProjectID }','{ $T.List.BoardID }', '{ $T.List.MenuID }', '{ $T.List.GroupID }', '{ $T.List.ListOrder }', '{ $T.List.Depth }');return false;" style="cursor:pointer">
+        { $T.List.Title }
+        </a>
+        </td>
+        <td class="center">{ $T.List.WriteDateStr }</td>        
+        <td class="center">{ $T.List.ReadCount }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

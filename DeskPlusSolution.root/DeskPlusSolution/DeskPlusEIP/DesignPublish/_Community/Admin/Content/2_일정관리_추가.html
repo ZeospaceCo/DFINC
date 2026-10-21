@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+    
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>일정 관리</h1>
+            <span class="cm_subtxt">* 커뮤니티의 공유일정이나 프로젝트 일정에 추가할 일정을 관리합니다.</span>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                <li class="btn_blue"><a href="2_일정관리_추가.html"><span>추가</span></a></li>
+                <li><a href="2_일정관리_추가.html"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <table class="table_typeB">
+			<caption>공유일정등록</caption>
+			<colgroup>
+                <col width="100px" />
+                <col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>제목</th>
+					<td>
+                        <input type="text" style="width:80%"/>
+		                <select nameclass="searchselect">
+	                        <option>공유일정</option>
+	                        <option>프로젝트일정</option>
+                        </select>
+                    </td>
+				</tr> 
+				<tr>
+					<th>날짜</th>
+					<td><input type="text" size="10" value="2012-05-04" /> </td>
+				</tr>
+				<tr>
+					<th>일정알람</th>
+					<td>
+                        <select name="ddlnotikind" id="ddlnotikind" class="searchselect">
+                            <option value="M">메신저</option>
+	                        <option value="E">메일</option>
+	                        <option value="S">SMS</option>
+                        </select>                
+                        <input name="idEmail" type="text" id="idEmail" class="text required" style="width:100px !important;" />
+	                    <select name="ddltime" id="ddltime" class="searchselect">
+	                        <option value="">Time</option><option value="5">5분</option>	<option value="10">10분</option>	<option value="15">15분</option>	<option value="20">20분</option>	<option value="25">25분</option>	<option value="30">30분</option>	<option value="35">35분</option>	<option value="40">40분</option>	<option value="45">45분</option>	<option value="50">50분</option>	<option value="55">55분</option>	<option value="60">60분</option>	<option value="60">1시간</option><option value="120">2시간</option>
+	                        <option value="180">3시간</option><option value="240">4시간</option><option value="300">5시간</option><option value="360">6시간</option><option value="2400">1일</option>	<option value="4800">2일</option><option value="7200">3일</option>
+                        </select>전에알림
+                    </td>
+				</tr> 
+			</tbody>
+		    </table> 
+
+            <div id="tabs" class="layout_subbox">
+                <ul id="tab" class="tab">
+                    <li><a id="ActvieX"  class="tab_on"><span>ActiveX</span> </a></li>
+                    <li><a id="NonActiveX"><span>NonActiveX</span> </a></li>
+                </ul>
+                <div class="divEditor">
+                    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/IEActiveX/ko/activexTagfree.js"></script>
+                </div>
+            </div>
+
+            <div class="layout_subbox">
+                <h2>파일첨부</h2>
+                <ul class="btn_right">
+                    <li><a href="#" id="cbtnSwfFileAdd" title="파일추가"><span>파일추가</span></a></li>
+                </ul>
+            </div>
+            <div class="table_typeAtop_left"><p></p></div>
+            <table class="table_typeA">
+            <caption>파일리스트</caption>
+            <colgroup>
+                <col />
+                <col width="100px" />
+                <col width="100px" />    
+                <col width="60px"/>    
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>파일명</th>
+                    <th>파일타입</th>
+                    <th>파일크기</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" style="text-align:center;">리스트가 존재하지 않습니다.</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="table_typeAbottom_left"><p></p></div>
+
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

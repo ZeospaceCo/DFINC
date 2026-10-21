@@ -1,0 +1,96 @@
+﻿<table class="table_typeA">
+<caption>
+    업무일지 관리자
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="230px" />
+    <col />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="60px" />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="AdminList.Checked()" /></th>
+    <th class="center" id="r_term"></th>
+    <th class="center" id="r_write"></th>
+    <th class="center" id="r_close"></th>
+    <th class="center" id="r_confirm"></th>
+    <th class="center" id="r_attach"></th>
+    <th class="center" id="r_short"></th>
+</tr>
+{#foreach $T as ReportList}
+<tr>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+        <input type="checkbox" class="cbxID" id="cbxID{ $T.ReportList.ListID }" value="{ $T.ReportList.ListID }" />
+    </td>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+        <a onclick="AdminList.View('{ $T.ReportList.ListID }','{ $T.ReportList.StartDateYMD }','{ $T.ReportList.EndDateYMD }','{ $T.ReportList.Flag }');return false;" style="cursor:pointer">
+        {#if $T.ReportList.ViewCount == "0" }
+        <b>{ $T.ReportList.StartDate } ~ { $T.ReportList.EndDate }</b>
+        {#else}
+        { $T.ReportList.StartDate } ~ { $T.ReportList.EndDate }
+        {#/if}
+        </a>
+    </td>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+        {#if $T.ReportList.WriteUserID > 0}
+        <a onclick="AccountInfo('{ $T.ReportList.WriteUserID }');return false;" style="cursor:pointer">{ $T.ReportList.NameBase } {$T.ReportList.TitleName}</a>
+        {#else}
+        { $T.ReportList.NameBase } {$T.ReportList.TitleName}
+        {#/if}
+    </td>
+    <td class="center"  {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+        {#if $T.ReportList.ListID > 0}
+            {#if $T.ReportList.IsClose == "1"}
+                <span class="IsOpen" />
+            {#else}
+                <span class="IsClose" />
+            {#/if}
+        {#else}-
+        {#/if}
+    </td>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+    {#if $T.ReportList.Flag != 0}
+            {#if $T.ReportList.Flag == "1"}
+                <span class="Save" />
+            {#elseif $T.ReportList.Flag == "2"}
+                <a onclick="AdminList.Confirm('{ $T.ReportList.ListID }');return false;" style="cursor:pointer">
+                    <span class="Request" />
+                </a>
+            {#elseif $T.ReportList.Flag == "3"}
+                <span class="ConfirmCheck" />
+            {#elseif $T.ReportList.Flag == "4"}
+                <span class="Inform" />
+            {#else}
+                -
+            {#/if}
+        {#else}
+        -
+        {#/if}</td>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>
+    {#if $T.ReportList.FileCount == 1}
+    <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.ReportList.ListID }'></i>
+    {#/if}
+    </td>
+    <td class="center" {#if $T.ReportList.HolChk == "1" } style="background-color:#f5f6f7" {#/if}>{#if $T.ReportList.ListID > 0}
+        {#if $T.ReportList.ShowNew == "Y"}
+            <a onclick="AdminList.ShortReplyList('{ $T.ReportList.ListID }');return false;" style="cursor:pointer">
+                <img class="BtnNew" alt="" />
+            </a>
+        {#else}
+            <a onclick="AdminList.ShortReplyList('{ $T.ReportList.ListID }');return false;" style="cursor:pointer">
+                { $T.ReportList.ReplyCount }
+	        </a>
+        {#/if}
+    {#else} -
+    {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</table>

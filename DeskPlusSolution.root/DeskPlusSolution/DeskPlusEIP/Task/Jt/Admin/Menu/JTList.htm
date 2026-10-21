@@ -1,0 +1,27 @@
+﻿<table class="table_typeA">
+<caption>대분류리스트</caption>
+<colgroup>
+    <col width="*" />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="r_group center"></th>
+        <th class="r_active center"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as ItemList}
+    <tr>     
+        <td class="center">
+            <a onclick="List.Item('{ $T.ItemList.ItemID }');return false;" style="cursor:pointer" >{ $T.ItemList.ItemName }</a>
+        </td>       
+        <td class="center"><span class="Active_{ $T.ItemList.IsActive }">{ $T.ItemList.IsActive }</span></td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

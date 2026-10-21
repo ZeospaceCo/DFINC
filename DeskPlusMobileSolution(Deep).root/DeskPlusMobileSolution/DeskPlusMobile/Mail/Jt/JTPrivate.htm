@@ -1,0 +1,17 @@
+﻿{#foreach $T as List}
+<li class="contentblock">
+    <div class="title linkDiv" onclick="javascript:Private.goList('{ $T.List.mailbox_code }')">
+        <a href="#" class="mct">
+            <font>{ $T.List.mailbox_name }</font><br /><span class="istc"></span>
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

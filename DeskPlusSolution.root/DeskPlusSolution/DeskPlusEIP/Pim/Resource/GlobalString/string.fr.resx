@@ -1,0 +1,1338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>Pa gen okenn sib.</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>Èske yo te trete.</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Lòt</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>Add yon dosye</value>
+  </data>
+  <data name="AddPimPlz" xml:space="preserve">
+    <value>Mete orè a</value>
+  </data>
+  <data name="AddSchedule" xml:space="preserve">
+    <value>Add Evènman</value>
+  </data>
+  <data name="AddTO" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddToDo" xml:space="preserve">
+    <value>Anrejistre fè</value>
+  </data>
+  <data name="AddUserSelect" xml:space="preserve">
+    <value>Chwazi ajoute sharer itilizatè</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>Tanpri antre prensipal kontni.</value>
+  </data>
+  <data name="Add_InputDate" xml:space="preserve">
+    <value>Tanpri antre dat yo nan</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>Tanpri antre yon tit.</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>Tanpri, mete peryòd nan notifikasyon.</value>
+  </data>
+  <data name="ADMIN" xml:space="preserve">
+    <value>Administratè</value>
+  </data>
+  <data name="Admin1" xml:space="preserve">
+    <value>Predetermined tan orè yo pataje</value>
+  </data>
+  <data name="Admin2" xml:space="preserve">
+    <value>Anivèsè</value>
+  </data>
+  <data name="Admin3" xml:space="preserve">
+    <value>Sezon</value>
+  </data>
+  <data name="Admin4" xml:space="preserve">
+    <value>Jou ferye nasyonal</value>
+  </data>
+  <data name="Admin5" xml:space="preserve">
+    <value>Jou nasyonal</value>
+  </data>
+  <data name="AfterContinue" xml:space="preserve">
+    <value>Kontinye apre depo</value>
+  </data>
+  <data name="AfterPim" xml:space="preserve">
+    <value>Tout orè lavni</value>
+  </data>
+  <data name="AlertScriptContnet" xml:space="preserve">
+    <value>Se sentaks script ki gen rapò ak chanjman sa kò a yo, dout pral rekonpans.</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>Plen</value>
+  </data>
+  <data name="AllAnniversary" xml:space="preserve">
+    <value>Plen Jou</value>
+  </data>
+  <data name="allDelete" xml:space="preserve">
+    <value>ou vle efase tout?</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>Plen Download</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>Tout orè</value>
+  </data>
+  <data name="AllShare" xml:space="preserve">
+    <value>Plen kalandriye nou pataje</value>
+  </data>
+  <data name="AllShareAnniversary" xml:space="preserve">
+    <value>Anivèsè a pataje nan tout</value>
+  </data>
+  <data name="AllShareView" xml:space="preserve">
+    <value>Next tout kalandriye a nou pataje</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="AnnivControl" xml:space="preserve">
+    <value>Jesyon jou</value>
+  </data>
+  <data name="AnniversaryDay" xml:space="preserve">
+    <value>Anivèsè</value>
+  </data>
+  <data name="AnniversaryDayAdd" xml:space="preserve">
+    <value>Add Jou</value>
+  </data>
+  <data name="AnniversaryEdit" xml:space="preserve">
+    <value>Modifye Jou</value>
+  </data>
+  <data name="AnniversaryInquery" xml:space="preserve">
+    <value>Jou opinyon</value>
+  </data>
+  <data name="AnniversaryMod" xml:space="preserve">
+    <value>Modifye Jou</value>
+  </data>
+  <data name="AnniversaryReg" xml:space="preserve">
+    <value>Jou Enskripsyon</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>Èske ou sèten ou vle efase?</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>Dokiman siplemantè</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>Dwa Jesyon</value>
+  </data>
+  <data name="AutoSync" xml:space="preserve">
+    <value>Otomatik fleo</value>
+  </data>
+  <data name="BasicSetting" xml:space="preserve">
+    <value>Default anviwònman an</value>
+  </data>
+  <data name="basicShareperson" xml:space="preserve">
+    <value>Debaz sharer</value>
+  </data>
+  <data name="basicsShareDept" xml:space="preserve">
+    <value>Default la nou pataje depatman</value>
+  </data>
+  <data name="BASICVIEW" xml:space="preserve">
+    <value>Mete View an default</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>Notifikasyon anvan</value>
+  </data>
+  <data name="BOTTOM" xml:space="preserve">
+    <value>Youn nan</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anile</value>
+  </data>
+  <data name="Catalog" xml:space="preserve">
+    <value>Lis</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fèmen</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Konfimasyon</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>VE ekri deja disparèt. ou chwazi pou ou?</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Matyè</value>
+  </data>
+  <data name="CONTINUEADD" xml:space="preserve">
+    <value>Ale nan paj an ekri.</value>
+  </data>
+  <data name="CurrentObjectPerson" xml:space="preserve">
+    <value>Aktyèl sharer</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Dat</value>
+  </data>
+  <data name="DATE2" xml:space="preserve">
+    <value>Dat</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>Chwazi dat</value>
+  </data>
+  <data name="DateView" xml:space="preserve">
+    <value>Dat</value>
+  </data>
+  <data name="DayPeriod" xml:space="preserve">
+    <value>Pa</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Jou sa a nan semèn nan</value>
+  </data>
+  <data name="DayToo" xml:space="preserve">
+    <value>Jou</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>Jou</value>
+  </data>
+  <data name="DeepContent" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Deletion</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>Efase Files</value>
+  </data>
+  <data name="DEPTNAME" xml:space="preserve">
+    <value>Depatman</value>
+  </data>
+  <data name="DETAIL" xml:space="preserve">
+    <value>Plis</value>
+  </data>
+  <data name="DetailContent" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+  <data name="Ebem" xml:space="preserve">
+    <value>Reflete nan</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifye</value>
+  </data>
+  <data name="EnviroMent" xml:space="preserve">
+    <value>Anviwònman</value>
+  </data>
+  <data name="EnviroMentSetting" xml:space="preserve">
+    <value>Preferans</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>Te atachman chache enfòmasyon erè ki te fèt.</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>Chak</value>
+  </data>
+  <data name="EveryDay" xml:space="preserve">
+    <value>Chak jou</value>
+  </data>
+  <data name="EveryDayR" xml:space="preserve">
+    <value>Chak jou</value>
+  </data>
+  <data name="EveryDayRepeat" xml:space="preserve">
+    <value>Repete chak jou</value>
+  </data>
+  <data name="EveryMonRepeat" xml:space="preserve">
+    <value>Chak mwa renouvlab</value>
+  </data>
+  <data name="EveryMonth" xml:space="preserve">
+    <value>Chak mwa</value>
+  </data>
+  <data name="EveryWeek" xml:space="preserve">
+    <value>Chak semèn</value>
+  </data>
+  <data name="EveryWeekRepeat" xml:space="preserve">
+    <value>Repete chak semèn</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>Excel Download</value>
+  </data>
+  <data name="FailSync" xml:space="preserve">
+    <value>Mal lye kont Google ke ou vle tire espas vid oswa \ r \ n ap travay echwe.</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>Dokiman siplemantè</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>Gwosè dosye</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>Kalite dosye</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5 èdtan</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4 èdtan</value>
+  </data>
+  <data name="GetContent" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Ale nan paj:</value>
+  </data>
+  <data name="GoogleAccErr" xml:space="preserve">
+    <value>Nou re tout enfòmasyon nan kont sa ki mal.</value>
+  </data>
+  <data name="GoogleAccount1" xml:space="preserve">
+    <value>Google kont enfòmasyon</value>
+  </data>
+  <data name="GoogleAccount2" xml:space="preserve">
+    <value>Kont mwen Jesyon / SNS / Google</value>
+  </data>
+  <data name="GoogleAccount3" xml:space="preserve">
+    <value>Tanpri antre nan.</value>
+  </data>
+  <data name="GoogleCalendarSync" xml:space="preserve">
+    <value>Google Kalandriye entegrasyon</value>
+  </data>
+  <data name="GoogleInfo_Input" xml:space="preserve">
+    <value>Jere Kont Mwen Antre enfòmasyon sou kont ou nan Google</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>Ale nan lis la.</value>
+  </data>
+  <data name="GUN" xml:space="preserve">
+    <value>Awtik</value>
+  </data>
+  <data name="Half" xml:space="preserve">
+    <value>Mwatye</value>
+  </data>
+  <data name="HolidayInsert" xml:space="preserve">
+    <value>Enskripsyon Jou Ferye</value>
+  </data>
+  <data name="HolidayManage" xml:space="preserve">
+    <value>Jou Ferye Jesyon</value>
+  </data>
+  <data name="HolidayModify" xml:space="preserve">
+    <value>Modifye jou konje</value>
+  </data>
+  <data name="holy1" xml:space="preserve">
+    <value>Anivèsè nan kalandriye a Pataje +</value>
+  </data>
+  <data name="holy2" xml:space="preserve">
+    <value>Plen</value>
+  </data>
+  <data name="holy3" xml:space="preserve">
+    <value>Kalandriye Pataje</value>
+  </data>
+  <data name="holy4" xml:space="preserve">
+    <value>Anivèsè</value>
+  </data>
+  <data name="holy5" xml:space="preserve">
+    <value>Sezon</value>
+  </data>
+  <data name="holy6" xml:space="preserve">
+    <value>Jou ferye nasyonal</value>
+  </data>
+  <data name="holy7" xml:space="preserve">
+    <value>Jou nasyonal</value>
+  </data>
+  <data name="HolyDay" xml:space="preserve">
+    <value>Jou Ferye</value>
+  </data>
+  <data name="Importance" xml:space="preserve">
+    <value>Enpòtans</value>
+  </data>
+  <data name="IMPORTANCE_MEASURE" xml:space="preserve">
+    <value>Enpòtans</value>
+  </data>
+  <data name="INPUTPERIOD" xml:space="preserve">
+    <value>Peryòd Antre</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>Tanpri antre nan yon rechèch</value>
+  </data>
+  <data name="InqueryObjSel" xml:space="preserve">
+    <value>Chwazi Next nan</value>
+  </data>
+  <data name="Inquery_Input" xml:space="preserve">
+    <value>Tanpri antre yon tèm rechèch</value>
+  </data>
+  <data name="KIND" xml:space="preserve">
+    <value>Nèf minit</value>
+  </data>
+  <data name="kind1" xml:space="preserve">
+    <value>Jou</value>
+  </data>
+  <data name="kind10" xml:space="preserve">
+    <value>Chita</value>
+  </data>
+  <data name="kind2" xml:space="preserve">
+    <value>Jou lasemèn</value>
+  </data>
+  <data name="kind3" xml:space="preserve">
+    <value>Fen semèn</value>
+  </data>
+  <data name="kind4" xml:space="preserve">
+    <value>Jou</value>
+  </data>
+  <data name="kind5" xml:space="preserve">
+    <value>Mwa</value>
+  </data>
+  <data name="kind6" xml:space="preserve">
+    <value>Madi</value>
+  </data>
+  <data name="kind7" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="kind8" xml:space="preserve">
+    <value>Kou</value>
+  </data>
+  <data name="kind9" xml:space="preserve">
+    <value>Lò</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>Karaktè espesyal yo ke yo te itilize pou frajilite sekirite, atak yo sèlman.</value>
+  </data>
+  <data name="lunalday" xml:space="preserve">
+    <value>Lalin lan</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>Lapòs</value>
+  </data>
+  <data name="makrname" xml:space="preserve">
+    <value>Mokpyomyeong</value>
+  </data>
+  <data name="MarkManage" xml:space="preserve">
+    <value>Jesyon Pa Objektif nou</value>
+  </data>
+  <data name="MarkName" xml:space="preserve">
+    <value>Mokpyomyeong</value>
+  </data>
+  <data name="marknameperiod" xml:space="preserve">
+    <value>Peryòd</value>
+  </data>
+  <data name="MarkReg" xml:space="preserve">
+    <value>Objektif Enskripsyon an</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>Mesaje</value>
+  </data>
+  <data name="MIDDLE" xml:space="preserve">
+    <value>Nan</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Minit</value>
+  </data>
+  <data name="ModSchedule" xml:space="preserve">
+    <value>Chanje orè a</value>
+  </data>
+  <data name="ModToDo" xml:space="preserve">
+    <value>Pou fè chanjman</value>
+  </data>
+  <data name="MonthString" xml:space="preserve">
+    <value>['Janvye', 'fevriye', 'out', 'avril', 'me', ''6 avril', '7 avril ',' out ',' septanm ',' oktòb ',' novanm ',' desanm ' ]</value>
+  </data>
+  <data name="MonthToo" xml:space="preserve">
+    <value>Mwa</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>Chak mwa</value>
+  </data>
+  <data name="MYSCHEDULE" xml:space="preserve">
+    <value>Orè mwen</value>
+  </data>
+  <data name="myviewschedule" xml:space="preserve">
+    <value>Next enfòmasyon pou demen</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>Dosye a pa egziste.</value>
+  </data>
+  <data name="NoneSelUser" xml:space="preserve">
+    <value>Itilizatè a pa ka chwazi.</value>
+  </data>
+  <data name="normalday" xml:space="preserve">
+    <value>Chak jou (jou lasemèn)</value>
+  </data>
+  <data name="NowSync" xml:space="preserve">
+    <value>Imedyatman lye</value>
+  </data>
+  <data name="objectSelect" xml:space="preserve">
+    <value>Chwazi pigongyujareul</value>
+  </data>
+  <data name="ObjePerson" xml:space="preserve">
+    <value>Sijè</value>
+  </data>
+  <data name="OjbectSelect" xml:space="preserve">
+    <value>Chwazi yon destinasyon</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1 èdtan</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1 jou</value>
+  </data>
+  <data name="ONEMON" xml:space="preserve">
+    <value>1 mwa</value>
+  </data>
+  <data name="oneShareDept" xml:space="preserve">
+    <value>Depatman yon sèl, nou pataje</value>
+  </data>
+  <data name="OneSharePerson" xml:space="preserve">
+    <value>Sèl-sharer</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1 semèn</value>
+  </data>
+  <data name="order1" xml:space="preserve">
+    <value>Premye</value>
+  </data>
+  <data name="order2" xml:space="preserve">
+    <value>Dezyèm</value>
+  </data>
+  <data name="order3" xml:space="preserve">
+    <value>Twazyèm</value>
+  </data>
+  <data name="order4" xml:space="preserve">
+    <value>Katriyèm</value>
+  </data>
+  <data name="order5" xml:space="preserve">
+    <value>Senkyèm lan</value>
+  </data>
+  <data name="OutSync" xml:space="preserve">
+    <value>Ak mond lan deyò</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Pozisyon</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Peryòd</value>
+  </data>
+  <data name="PersonSchedule" xml:space="preserve">
+    <value>Plen kalandriye nou pataje</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>Pèsonèl orè</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>Depatman orè</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>Kalandriye Pataje</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>Orè a plen</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>Pran yon alam</value>
+  </data>
+  <data name="pimconfirm" xml:space="preserve">
+    <value>Randevou resolve</value>
+  </data>
+  <data name="PimConfirmPerson" xml:space="preserve">
+    <value>Chwazi resolve kalandriye</value>
+  </data>
+  <data name="PimEbem" xml:space="preserve">
+    <value>Reflete nan orè a</value>
+  </data>
+  <data name="PimRepeatSet" xml:space="preserve">
+    <value>Repete orè a ansanm</value>
+  </data>
+  <data name="PimSearchEnquiry" xml:space="preserve">
+    <value>SearchEnquiry</value>
+  </data>
+  <data name="PimShare" xml:space="preserve">
+    <value>Orè sharer</value>
+  </data>
+  <data name="PIMShareManager" xml:space="preserve">
+    <value>Sharer jesyon orè</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="PmReg" xml:space="preserve">
+    <value>Enskripsyon orè</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Pozisyon</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PRINT" xml:space="preserve">
+    <value>Enprime</value>
+  </data>
+  <data name="priority1" xml:space="preserve">
+    <value>pa kòmanse</value>
+  </data>
+  <data name="priority2" xml:space="preserve">
+    <value>Nan pwogrè</value>
+  </data>
+  <data name="priority3" xml:space="preserve">
+    <value>Konplete</value>
+  </data>
+  <data name="priority4" xml:space="preserve">
+    <value>Anile</value>
+  </data>
+  <data name="priority5" xml:space="preserve">
+    <value>Manda</value>
+  </data>
+  <data name="priority6" xml:space="preserve">
+    <value>Fimen</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Pwogrè</value>
+  </data>
+  <data name="QUICKADD" xml:space="preserve">
+    <value>Add li kounye a</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>Èske ou sèten ou vle efase?</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>Anrejistre</value>
+  </data>
+  <data name="RegisterComplate" xml:space="preserve">
+    <value>Enskripsyon M klè.</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Repete</value>
+  </data>
+  <data name="RepeatAlert1" xml:space="preserve">
+    <value>Tanpri antre yon seri dat nan repete</value>
+  </data>
+  <data name="RepeatAlert2" xml:space="preserve">
+    <value>Nimewo a nan iterasyon ki pa kòrèk.</value>
+  </data>
+  <data name="RepeatAlert3" xml:space="preserve">
+    <value>Repete sik la ki pa kòrèk.</value>
+  </data>
+  <data name="RepeatAlert5" xml:space="preserve">
+    <value>Tanpri chwazi jou a nan semèn nan</value>
+  </data>
+  <data name="RepeatDatePeriod" xml:space="preserve">
+    <value>Repete ranje</value>
+  </data>
+  <data name="RepeatMent1" xml:space="preserve">
+    <value>Randevou renouvlab evènman ap kenbe tout lòt la.</value>
+  </data>
+  <data name="RepeatMent2" xml:space="preserve">
+    <value>Orè sa a pral chanje ak tout orè nan lavni. Chanjman nan lavni nan orè a pral pèdi.</value>
+  </data>
+  <data name="RepeatMent3" xml:space="preserve">
+    <value>Tout nan chanjman ki nan orè repetisyon. Ki lòt chanjman nan orè a pral konsève.</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>Modification evènman renouvlab</value>
+  </data>
+  <data name="RepeatResult" xml:space="preserve">
+    <value>Refè seri egzèsis nan rezilta</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>Repete Anviwònman</value>
+  </data>
+  <data name="RepeatSettingMent1" xml:space="preserve">
+    <value>Fwa</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>Rezèvasyon Resous</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Depo</value>
+  </data>
+  <data name="SaveContinue" xml:space="preserve">
+    <value>Sove yo e yo kontinye</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Randevou pou</value>
+  </data>
+  <data name="schedule1" xml:space="preserve">
+    <value>Pèsonèl orè</value>
+  </data>
+  <data name="schedule2" xml:space="preserve">
+    <value>Pèsonèl Jou</value>
+  </data>
+  <data name="schedule3" xml:space="preserve">
+    <value>Yon jou ferye orè</value>
+  </data>
+  <data name="schedule4" xml:space="preserve">
+    <value>Jou jou ferye piblik</value>
+  </data>
+  <data name="schedule5" xml:space="preserve">
+    <value>Sezon</value>
+  </data>
+  <data name="schedule6" xml:space="preserve">
+    <value>Jou ferye nasyonal</value>
+  </data>
+  <data name="schedule7" xml:space="preserve">
+    <value>Jou nasyonal</value>
+  </data>
+  <data name="SCHEDULECADALOG" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="scheduleing" xml:space="preserve">
+    <value>Nan orè a</value>
+  </data>
+  <data name="SEARCH1" xml:space="preserve">
+    <value>Plen</value>
+  </data>
+  <data name="SEARCH2" xml:space="preserve">
+    <value>1 semèn</value>
+  </data>
+  <data name="SEARCH3" xml:space="preserve">
+    <value>1 mwa</value>
+  </data>
+  <data name="SEARCH4" xml:space="preserve">
+    <value>Peryòd</value>
+  </data>
+  <data name="SEARCHKIND" xml:space="preserve">
+    <value>Search Kritè</value>
+  </data>
+  <data name="SEARCHTEXT" xml:space="preserve">
+    <value>Rekipere</value>
+  </data>
+  <data name="SelectObjectPerson" xml:space="preserve">
+    <value>Chwazi sharer</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Mete</value>
+  </data>
+  <data name="ShareAnniversary" xml:space="preserve">
+    <value>Jou pataje</value>
+  </data>
+  <data name="shareinfo" xml:space="preserve">
+    <value>Enfòmasyon sharers</value>
+  </data>
+  <data name="ShareList" xml:space="preserve">
+    <value>Lis pataje</value>
+  </data>
+  <data name="ShareManage" xml:space="preserve">
+    <value>Sharer jesyon</value>
+  </data>
+  <data name="ShareObj" xml:space="preserve">
+    <value>Pataje destinasyon jesyon</value>
+  </data>
+  <data name="ShareObjectAdd" xml:space="preserve">
+    <value>Add sharer</value>
+  </data>
+  <data name="ShareObjSearch" xml:space="preserve">
+    <value>Jwenn Pataje nan</value>
+  </data>
+  <data name="shareobjsel" xml:space="preserve">
+    <value>Chwazi Pataje nan</value>
+  </data>
+  <data name="SharePesonSuccess" xml:space="preserve">
+    <value>Plis siksè sharer</value>
+  </data>
+  <data name="ShareQuarter" xml:space="preserve">
+    <value>Pataje sezon an</value>
+  </data>
+  <data name="ShareSchedule" xml:space="preserve">
+    <value>Kalandriye Pataje</value>
+  </data>
+  <data name="ShareSelect" xml:space="preserve">
+    <value>Chwazi sharer</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>Pataje Anviwònman</value>
+  </data>
+  <data name="sharesure" xml:space="preserve">
+    <value>Si pataje</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>Depi</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6 èdtan</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Eta</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Sispann</value>
+  </data>
+  <data name="SuccessSync" xml:space="preserve">
+    <value>Konplete koneksyon</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>Leve</value>
+  </data>
+  <data name="SyncAccount" xml:space="preserve">
+    <value>Lye kont</value>
+  </data>
+  <data name="Syncing" xml:space="preserve">
+    <value>Enteroperabilite</value>
+  </data>
+  <data name="TextEmpty" xml:space="preserve">
+    <value>Pa gen okenn enfòmasyon.</value>
+  </data>
+  <data name="TheDay" xml:space="preserve">
+    <value>Sou</value>
+  </data>
+  <data name="THISPIM" xml:space="preserve">
+    <value>Yibeoniljeongman</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3 èdtan</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3 jou</value>
+  </data>
+  <data name="THREEMON" xml:space="preserve">
+    <value>3 mwa</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Tan</value>
+  </data>
+  <data name="TimeAlert" xml:space="preserve">
+    <value>Kòmanse tan fen tan devan yo.</value>
+  </data>
+  <data name="TIMEINFO" xml:space="preserve">
+    <value>Tan</value>
+  </data>
+  <data name="TimeOver" xml:space="preserve">
+    <value>Pase lè yo kòmanse tan, fen, mwen M dwa soti devan.</value>
+  </data>
+  <data name="TimeRepeat" xml:space="preserve">
+    <value>Fwa.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Sijè</value>
+  </data>
+  <data name="TODAYSCHEDULE" xml:space="preserve">
+    <value>Orè jodi a nan</value>
+  </data>
+  <data name="TODAYTODO" xml:space="preserve">
+    <value>Bagay sa yo nan fè jodi a</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>Fè</value>
+  </data>
+  <data name="todo1" xml:space="preserve">
+    <value>Pou fè demen</value>
+  </data>
+  <data name="todo2" xml:space="preserve">
+    <value>Fè jouk yon sèten jou</value>
+  </data>
+  <data name="todo3" xml:space="preserve">
+    <value>Bagay yo fè sou sèten jou</value>
+  </data>
+  <data name="todo4" xml:space="preserve">
+    <value>Ranvwaye l 'ankò jouk demen</value>
+  </data>
+  <data name="todo5" xml:space="preserve">
+    <value>Fimen yon jou</value>
+  </data>
+  <data name="todo6" xml:space="preserve">
+    <value>Vid</value>
+  </data>
+  <data name="TodoAdd" xml:space="preserve">
+    <value>Plis travay fè</value>
+  </data>
+  <data name="TODOCADALOG" xml:space="preserve">
+    <value>A-fè lis</value>
+  </data>
+  <data name="todoing" xml:space="preserve">
+    <value>Bagay yo fè nan la</value>
+  </data>
+  <data name="TODOLIST" xml:space="preserve">
+    <value>Fè</value>
+  </data>
+  <data name="TODOREG" xml:space="preserve">
+    <value>Anrejistre fè</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>Moun ki fè</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>Depatman fè</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>Fè pati nan</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>Whole fè</value>
+  </data>
+  <data name="TODOVIEW" xml:space="preserve">
+    <value>Next Bagay ou dwe fè</value>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>Faz</value>
+  </data>
+  <data name="topmarkname" xml:space="preserve">
+    <value>Top mokpyomyeong</value>
+  </data>
+  <data name="topmarknameperiod" xml:space="preserve">
+    <value>Peryòd nan objektif la paran</value>
+  </data>
+  <data name="ToRepeat" xml:space="preserve">
+    <value>Repete.</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2 èdtan</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2 jou</value>
+  </data>
+  <data name="TYPE1" xml:space="preserve">
+    <value>Mwen</value>
+  </data>
+  <data name="TYPE2" xml:space="preserve">
+    <value>Endividyèl</value>
+  </data>
+  <data name="TYPE3" xml:space="preserve">
+    <value>Depatman</value>
+  </data>
+  <data name="TYPE4" xml:space="preserve">
+    <value>Pataje</value>
+  </data>
+  <data name="TYPE5" xml:space="preserve">
+    <value>Plen</value>
+  </data>
+  <data name="UnPimEbem" xml:space="preserve">
+    <value>Mibanyoung</value>
+  </data>
+  <data name="USERINPUT" xml:space="preserve">
+    <value>Antre itilizatè</value>
+  </data>
+  <data name="UserPim" xml:space="preserve">
+    <value>Kalandriye ou</value>
+  </data>
+  <data name="UserPim2" xml:space="preserve">
+    <value>Orè itilizatè</value>
+  </data>
+  <data name="UserSelect" xml:space="preserve">
+    <value>Chwazi itilizatè</value>
+  </data>
+  <data name="ViewLimit" xml:space="preserve">
+    <value>Pibliye yon seri</value>
+  </data>
+  <data name="ViewSchedule" xml:space="preserve">
+    <value>Next orè a</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>Se ke yo te trete. Tanpri, tann yon moman</value>
+  </data>
+  <data name="WeekNextDay" xml:space="preserve">
+    <value>Semenn, epi li Lè sa a, repete nan jou a nan semèn nan</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>Chak semèn</value>
+  </data>
+  <data name="WeekString" xml:space="preserve">
+    <value>['Dimanch', 'Lendi', 'madi', 'mèkredi', 'jedi', 'vandredi', 'samdi']</value>
+  </data>
+  <data name="WeekToo" xml:space="preserve">
+    <value>Chak semèn</value>
+  </data>
+  <data name="WeekView" xml:space="preserve">
+    <value>Chak semèn</value>
+  </data>
+  <data name="WRITER" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="XDay" xml:space="preserve">
+    <value>Jou</value>
+  </data>
+  <data name="XFri" xml:space="preserve">
+    <value>Nan Vandredi</value>
+  </data>
+  <data name="XMon" xml:space="preserve">
+    <value>Nan Lendi</value>
+  </data>
+  <data name="XNormalDay" xml:space="preserve">
+    <value>Jou lasemèn</value>
+  </data>
+  <data name="XOrder" xml:space="preserve">
+    <value>Dezyèm</value>
+  </data>
+  <data name="XSat" xml:space="preserve">
+    <value>Nan Samdi</value>
+  </data>
+  <data name="XSun" xml:space="preserve">
+    <value>Nan Dimanch</value>
+  </data>
+  <data name="XThu" xml:space="preserve">
+    <value>Nan Jedi</value>
+  </data>
+  <data name="XTue" xml:space="preserve">
+    <value>Nan Madi</value>
+  </data>
+  <data name="XWed" xml:space="preserve">
+    <value>Nan Mèkredi</value>
+  </data>
+  <data name="XWeekend" xml:space="preserve">
+    <value>Nan wikenn</value>
+  </data>
+  <data name="YearViewMark" xml:space="preserve">
+    <value>Objektif nan View</value>
+  </data>
+  <data name="NoMine" xml:space="preserve">
+    <value>Li pa kapab chwazi.</value>
+  </data>
+  <data name="WeekSort" xml:space="preserve">
+    <value>Solèy,Lendi, Madi, Mèkredi, Jedi, Vandredi, Samdi</value>
+  </data>
+  <data name="PimAddTime" xml:space="preserve">
+    <value>ADDPIM</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>Tanpri chwazi yon tan alam</value>
+  </data>
+  <data name="EmailAlert" xml:space="preserve">
+    <value>Tanpri antre ou e-mail</value>
+  </data>
+  <data name="HOLIDAYCADALOG" xml:space="preserve">
+    <value>Liste anniversaire</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Date de début date de fin doit être inférieure à</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>1以上の数字を入力してください</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>댓글추가</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>내용을 입력해 주세요.</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>댓글쓰기</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>에 댓글이 기재되었습니다.</value>
+  </data>
+  <data name="NoUserAuth" xml:space="preserve">
+    <value>해당 사용자는 접근하실 수 없습니다.</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>댓글수정</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>쪽지</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>님이 댓글을 기재하였습니다.</value>
+  </data>
+  <data name="CategoryHelp" xml:space="preserve">
+    <value>Aide Catégorie</value>
+  </data>
+  <data name="NoRepeatAdd" xml:space="preserve">
+    <value>Calendrier correspondant. S'il vous plaît entrer de nouveau ces informations.</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>작성</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>댓글공개</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>해당 글을 원본자와 작성자만 볼 수 있습니다.</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>poster enregistrement</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>MyTalk</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>relâchez</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>messages du mur</value>
+  </data>
+  <data name="GoogleGetCalendar" xml:space="preserve">
+    <value>캘린더 선택</value>
+  </data>
+  <data name="GoogleSignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GoogleSignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="Holiday_HoliDay1" xml:space="preserve">
+    <value>Répétez date</value>
+  </data>
+  <data name="Holiday_HoliDay2" xml:space="preserve">
+    <value>Date précisée</value>
+  </data>
+  <data name="Holiday_HolidayBetween" xml:space="preserve">
+    <value>Neuf minutes vacances</value>
+  </data>
+  <data name="Holiday_HolidayBetween1" xml:space="preserve">
+    <value>jour</value>
+  </data>
+  <data name="Holiday_HolidayBetween2" xml:space="preserve">
+    <value>Des travaux antérieurs inclus</value>
+  </data>
+  <data name="Holiday_HolidayBetween3" xml:space="preserve">
+    <value>Les jours suivants inclus</value>
+  </data>
+  <data name="Holiday_HolidayBetween4" xml:space="preserve">
+    <value>Des travaux antérieurs comprend: un</value>
+  </data>
+  <data name="Holiday_HolidayBetweenDay" xml:space="preserve">
+    <value>Date de neuf minutes vacances</value>
+  </data>
+  <data name="Holiday_HoliDayKind" xml:space="preserve">
+    <value>Répéter neuf minutes</value>
+  </data>
+  <data name="Holiday_HoliDayKind1" xml:space="preserve">
+    <value>répétition</value>
+  </data>
+  <data name="Holiday_HoliDayKind2" xml:space="preserve">
+    <value>Répétez les Etats-Unis</value>
+  </data>
+  <data name="Holiday_IsHoliday" xml:space="preserve">
+    <value>si</value>
+  </data>
+  <data name="Holiday_IsReplace" xml:space="preserve">
+    <value>Que ce soit alternatif vacances</value>
+  </data>
+  <data name="Holiday_Lunar" xml:space="preserve">
+    <value>lunaire</value>
+  </data>
+  <data name="Holiday_Solar" xml:space="preserve">
+    <value>grégorien</value>
+  </data>
+  <data name="Holiday_SolarLunar" xml:space="preserve">
+    <value>Yang Lunar neuf minutes</value>
+  </data>
+  <data name="Holiday_Title" xml:space="preserve">
+    <value>vacances personnes</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="HolidayManageDay_Add" xml:space="preserve">
+    <value>Vacances d'enregistrement désigné</value>
+  </data>
+  <data name="HolidayManageDay_Mod" xml:space="preserve">
+    <value>Location préciser modifications</value>
+  </data>
+  <data name="HolidayManage_Add" xml:space="preserve">
+    <value>Vacances inscrire</value>
+  </data>
+  <data name="HolidayManage_Mod" xml:space="preserve">
+    <value>Vacances modifiés</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>미사용</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="Holiday_Error1" xml:space="preserve">
+    <value>Saisissez vos invités de vacances.</value>
+  </data>
+  <data name="Holiday_Error2" xml:space="preserve">
+    <value>S'il vous plaît entrer votre date.</value>
+  </data>
+  <data name="Holiday_Error3" xml:space="preserve">
+    <value>Saisissez vos dates de vacances.</value>
+  </data>
+  <data name="Holiday_Error4" xml:space="preserve">
+    <value>Dupliquer vacances.</value>
+  </data>
+  <data name="Holiday_IsHolidayKind1" xml:space="preserve">
+    <value>fêtes</value>
+  </data>
+  <data name="Holiday_IsHolidayKind2" xml:space="preserve">
+    <value>vacances Répéter</value>
+  </data>
+  <data name="Holiday_IsHolidayKind" xml:space="preserve">
+    <value>Que les vacances</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>다국명</value>
+  </data>
+  <data name="HolidayManageDay" xml:space="preserve">
+    <value>gestion de vacances</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>vacances consécutives</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>Vacancesautrement</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Titre, les noms de fichiers d'attache</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Entrez le terme de recherche</value>
+  </data>
+  <data name="BOTTOMAbb" xml:space="preserve">
+    <value>Youn nan</value>
+  </data>
+  <data name="MIDDLEAbb" xml:space="preserve">
+    <value>Nan</value>
+  </data>
+  <data name="TOPAbb" xml:space="preserve">
+    <value>Faz</value>
+  </data>
+  <data name="MsgRepeat" xml:space="preserve">
+    <value>Événement récurrent.\nCela se reflète dans Tous les événements.</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>메일형식이 맞지 않습니다.</value>
+  </data>
+  <data name="SplitMail" xml:space="preserve">
+    <value>구분자( ; ) / 일정공유대상자와 입력하신 메일주소로 일정제목과 시간이 발송됩니다.</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>기본알람설정</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>구분자( ; ) / 입력 메일주소로 제목과 시간이 발송</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>관리</value>
+  </data>
+</root>

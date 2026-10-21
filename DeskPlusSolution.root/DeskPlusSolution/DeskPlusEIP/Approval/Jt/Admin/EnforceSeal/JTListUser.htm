@@ -1,0 +1,43 @@
+﻿ <table class="table_typeT">
+    <caption>
+        담당자 리스트
+    </caption>
+    <colgroup>
+        <col width="100px" />
+        <col width="120px" />               
+        <col  />        
+        <col width="90px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_photo" class="center"></th>
+            <th class="center" id="r_name"></th>            
+            <th class="center" id="r_dept"></th>
+            <th class="center" id="r_delete"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+        <tr>
+            <td class="center">{ $T.List.PhotoName }</td>
+            <td class="center">
+                {#if $T.List.TitleBase != ''}
+                <span class="orangeSquare">{ $T.List.TitleBase }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.List.UserID }');return false;">
+                { $T.List.NameBase }
+                </a>
+                </strong>
+            </td>            
+            <td class="center">{ $T.List.DeptBase }</td>
+            <td class="center"><a onclick="javascript:Mod.AdminDel('{ $T.List.EnforceAdminID}')" style="display:inline-block;" class="btn">{ $T.List.ListDel }</a></td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="4" class="center"><span class="NoListData"></span></td>        
+        </tr>
+    {#/for}
+
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col />
+</colgroup>
+    <tr>
+        <th id="j_Name">Code</th>
+    </tr>
+    {#foreach $T as PostingGroupList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopPostingGroup.Binding('{ $T.PostingGroupList.VendorPostingGroup}')">{ $T.PostingGroupList.VendorPostingGroup }</a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

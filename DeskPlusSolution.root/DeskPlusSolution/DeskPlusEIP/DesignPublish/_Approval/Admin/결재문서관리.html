@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>결재문서관리</h1>
+            <ul class="aLeft">
+                <li>
+                    <select class="searchselect">
+                        <option selected="selected">전체</option><option>자사</option><option>공통</option><option>연동</option>
+                    </select>
+                    <select class="searchselect">
+                        <option selected="selected">전체-하위양식</option>
+                    </select>
+                    <select class="searchselect">
+                        <option selected="selected">전체-하위양식</option>
+                    </select>
+                    <span class="app_subtxt">* 모든 문서(완료/진행중)를 관리합니다.</span>
+                </li>
+            </ul>
+
+
+            <!-- 버튼 //-->
+            
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>영구삭제</span></a></li>
+            </ul>
+        </div>
+        <div class="app_gap5"></div>
+        <div class="app_layout_srh">
+            <div class="left">
+                <ul class="app_tab">
+                    <li><a href="#" class="tab_on">완료된 문서</a></li>
+                    <li class="last"><a href="#">진행중인 문서</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="btn_searchbox">
+                    <li>
+                    <select class="searchselect">
+	                    <option>제목</option>
+	                    <option>내용</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>리스트</caption>
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>결재상황</th>
+                    <th>제목</th>
+                    <th><a href="#">상신자</a></th>
+                    <th><a href="#">상신일</a></th>
+                    <th><a href="#">완료일</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6">내용이 없습니다</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

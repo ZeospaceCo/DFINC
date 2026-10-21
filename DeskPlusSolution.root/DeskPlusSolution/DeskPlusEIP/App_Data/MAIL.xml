@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+    <Item ID="SmtpDnsIP" Value="168.126.63.1,164.124.101.2"  Content="도메인 서버의 위치 SMTP 발송 때 사용 예) 168.126.63.1,164.124.101.2" />
+    <Item ID="MaxReCall" Value="1"  Content="SMTP 호출시 오류가 낳을때 다시 시도하는 횟수" />
+    
+    <Item ID="MailServerIP" Value="http://deep.deskplus.co.kr:8080"  Content="(필수)메일서버의 위치  예) http://sp.deskplus.co.kr:4040" />
+    <Item ID="MailServerDomain" Value="deskplus.co.kr"  Content="(필수)업체 메일 도메인 예) koramco.co.kr" />
+    
+    <Item ID="MailPop3Path" Value="C:\Program Files\ZEOspace\MailPlus 2006\mail_data"  Content="[Zeo메일관련] 환경 정보" />
+    <Item ID="MailQueuePath" Value="C:\Program Files\ZEOspace\MailPlus 2006\mail_queue"  Content="[Zeo메일관련] 환경 정보" />
+    <Item ID="MailDropPath" Value="C:\Program Files\ZEOspace\MailPlus 2006\mail_drop"  Content="[Zeo메일관련] 환경 정보" />
+    <Item ID="MailDropTempPath" Value="C:\Program Files\ZEOspace\MailPlus 2006\mail_drop_temp"  Content="[Zeo메일관련] 환경 정보" />
+    <Item ID="ZettaBaseFolder" Value="zmail"  Content="[Zetta메일관련] 환경 정보" />
+    <Item ID="ZettaMailRecentlyQry" Value="select top 5 * from zt_message where domain_idx=(select domain_idx from zt_domain where domain_name='{0}') and member_sn=(select member_sn from zt_userinfo where domain_idx=(select domain_idx from zt_domain where domain_name='{0}') and member_id='{1}') and mailbox_code='1100' and delete_flag=0 order by date_header desc, message_sn "  Content="Zetta 최근리스트 쿼리" />
+    <Item ID="DeepMailRecentlyQry" Value="SELECT top 5 boxid, messageid, fromName, fromAddr, MailDate, rcvDate, subject, MailSize FROM mail WHERE   ownerid = '{0}' AND (boxid = 0 OR boxid > 3) ORDER BY rcvDate DESC"  Content="Deep 최근리스트 쿼리" />
+    <Item ID="SenderMailError" Value=""  Content="그룹웨어 exception 발생시 받는쪽 Email 주소 : 값이 없을경우 메일을 발송하지 않는다." />
+    <Item ID="SendMailErrorTitle" Value="[Error][SiteBase](TIME:{0})(ID:{1})"  Content="SenderMailError 사용할 경우 제목 설정 : [사이트명] 시간 : 사용자ID " />
+    <Item ID="MailQuota" Value="800"  Content="메일 할당량(MB)" />    
+    <Item ID="MailProduct" Value=""  Content="메일 제품명(Zetta65,ZETTA52,DEEP) : 값 없으면 메일 미사용" />
+    <Item ID="EncryptType" Value="SHA2"  Content="메일암호화 (제타:SHA1 / 딥:SHA2)" />
+    <Item ID="Gw_UserID" Value="select CompanyID, UserID, LogInID, NameBase from deskpluseip.dbo.DP_ACC_User where MailID +'@'+ MailDomain =(select user_account from  navidmail_db.dbo.zt_user_info where user_account = deskpluseip.dbo.DP_ACC_User.MailID +'@'+ deskpluseip.dbo.DP_ACC_User.MailDomain and user_sn ={0})"  Content="UserID 가져오기" />
+    <Item ID="ZettaAddressAdd" Value="Insert into DeskPlusEIP.dbo.DP_ADD_Private(CompanyID,UserID,CategoryID,LastName,WholeName,NameBase,NameKo,NameEn,NameJa,NameFr,NameZhcn,NameZhtw,Mail,MobilePhone,ISReceive,SendUserID) Values ({0},{1},{2},'{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}',0,null)"  Content="UserID 가져오기" />
+    <Item ID="Zetta65_AddUser" Value="/zmail/api/make_user.nvd?user_account={0}&amp;pass={1}&amp;email={2}&amp;name={3}&amp;is_encrypt={4}"  Content="zetta6 사용자추가" />
+    <Item ID="Zetta65_DelUser" Value="/zmail/api/delete_user.nvd?user_account={0}"  Content="zetta6 사용자삭제" />
+    <Item ID="Zetta65_ModPasswd" Value="/zmail/api/change_pass.nvd?user_account={0}&amp;new_pass={1}&amp;is_encrypt={2}"  Content="zetta6 패스워드 변경" />
+    <Item ID="Zetta65_ExistUser" Value="select COUNT(*) from navidmail_db.dbo.zt_user_info where user_account = '{0}'"  Content="zetta6 사용자 존재여부" />
+    <Item ID="Zetta65_ModDeptUser" Value="/zmail/api/change_user_dept_r.nvd?user_account={0}&amp;dept_sn={1}" Content="zetta6 사용자 부서 변경시 실시간 반영" />
+    <Item ID="Zetta65_RetiredUser" Value="/zmail/api/retired_user.nvd?user_account={0}" Content="사용자가 삭제되면 제타메일에서는 퇴사자 그룹으로 이동 (메일아이디넘김)" />
+    <Item ID="Zetta65_Suspend_user" Value="/zmail/api/suspend_user.nvd?user_account={0}" Content="사용자 비활성화" />
+    <Item ID="Zetta65_Approval_user" Value="/zmail/api/approval_user.nvd?user_account={0}" Content="사용자 활성화" />
+    <Item ID="Zetta65_SendList" Value="WITH TmpTBL AS ( 
+	    SELECT  Row_Number() over (order by u.create_time desc) AS RowNum, 
+	    m.mail_subject, m.from_email, m.from_name, u.state_code, u.create_time, u.user_mail_sn as mail_sn, 
+	    u.email_account, u.mailbox_code, u.read_flag 
+	    FROM zt_user_mailInfo u inner join zt_mail_message m on u.mail_sn = m.mail_sn  		
+	    WHERE u.user_sn = '{0}' AND u.mailbox_code='{1}' AND u.trash_flag = 0) 
+        SELECT * FROM TmpTBL WHERE RowNum Between (({2}-1) * {3}) + 1 and {2} * {3}" Content="보낸편지함 리스트(포틀릿용)" />
+    <Item ID="Zetta65_MailBoxList" Value=" SELECT * FROM zt_user_mailbox z 		
+        WHERE z.user_sn = '{0}'  		
+        order by z.upper_mailbox_code, z.levels, z.mailbox_name " Content="개인 메일박스 리스트" />
+    <Item ID="Zetta65_MailBoxListByCode" Value=" WITH TmpTBL AS(
+        SELECT  Row_Number() over (order by u.create_time desc) AS RowNum, 		
+        m.mail_subject, m.from_email, m.from_name, u.state_code, u.create_time, 
+        u.user_mail_sn as mail_sn, u.email_account, u.mailbox_code, u.read_flag 		
+        FROM zt_user_mailInfo u inner join zt_mail_message m on u.mail_sn = m.mail_sn  		
+        WHERE u.user_sn = '{0}'  		
+        AND u.mailbox_code='{1}'  		
+        AND u.trash_flag = 0) 
+        SELECT * FROM TmpTBL WHERE RowNum Between (({2}-1) * {3}) + 1 and {2} * {3} " Content="개인 특정 메일박스 메일 리스트" />
+
+    
+    
+    <Item ID="DEEP_IsUserDel" Value="0"  Content="사용자삭제시, 영구삭제여부 (정지-0/삭제-1/휴면-2)" />
+    <Item ID="DEEP_GateUrl" Value="/zeospace.ds"  Content="DEEP 사용자추가 URL" />
+    
+    <!--계정 존재여부-->
+    <Item ID="DEEP_ExistUser" Value="act=isExist&amp;domain={0}&amp;id={1}"  Content="DEEP 사용자 존재여부" />
+    <!--계정 추가-->
+    <Item ID="DEEP_AddUser" Value="act=add&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;name={3}&amp;status={4}&amp;skin={5}&amp;mailquota={6}&amp;filequota={7}"  Content="DEEP 사용자추가" />
+    <!--계정 수정-->
+    <Item ID="DEEP_ModUser" Value="act=modify&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;newPw={3}&amp;newName={4}&amp;newStatus={5}&amp;newSkin={6}&amp;newMailquota={7}&amp;newFilequota={8}"  Content="DEEP 사용자수정 (act/domain/id/pw/newPw/newName/newStatus/newSkin/newMailquota/newFilequota)" />
+    <!--계정 삭제-->
+    <Item ID="DEEP_DelUser" Value="act=delete&amp;domain={0}&amp;id={1}&amp;pw={2}"  Content="DEEP 사용자삭제" />
+    
+    <!--계정 SSO-->
+    <Item ID="DEEP_SLO" Value="act=sso&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;language={3}&amp;lp={4}&amp;mbox={5}&amp;msgkey={6}&amp;to={7}&amp;content={8}&amp;hideTopMenu={9}"  Content="DEEP 사용자인증" />
+
+    <!--계정 편지 건수 (ID기준)-->
+    <Item ID="DEEP_ListCnt" Value="act=mailCount&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;type={4}"  Content="계정편지건수(ID기준) - act/domain/id/pw/mbox/type" />
+    <!--계정 편지 목록 (ID기준)-->
+    <Item ID="DEEP_List" Value="act=mailList&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;type={4}&amp;count={5}&amp;offset={6}"  Content="계정편지리스트(ID기준) - act/domain/id/pw/mbox/type/count/offset" />
+
+    <!--계정 편지함 목록 (ID기준)-->
+    <Item ID="DEEP_Folder" Value="act=mailBoxList&amp;domain={0}&amp;id={1}&amp;pw={2}"  Content="계정편지함 리스트(ID기준) - act/domain/id/pw" />
+    <!--계정 메일 카운트 (ID기준)-->
+    <Item ID="DEEP_MailCount" Value="act=mailCount&amp;domain={0}&amp;id={1}&amp;mbox=basic&amp;type=4"  Content="계정메일건수" />
+</XmlData>
+

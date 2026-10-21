@@ -1,0 +1,30 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="40px" />
+    <col width="150px" />
+    <col />
+    <col width="100px" />
+</colgroup>
+<thead>
+<tr>
+    <th class="center">&nbsp;</th>
+    <th class="center" id="j_targetdept"></th>
+    <th class="center" id="j_basename"></th>
+    <th class="center" id="j_writedate"></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr title="{ $T.List.TargetPathNameBase }">
+    <td class="center">{ $T.List.ROW }</td>
+    <td class="center"><b>{ $T.List.TargetDeptBase }</b></td>
+    <td class="center"><b>{ $T.List.NameBase }</b> ({ $T.List.DeptBase }{#if $T.List.TitleBase != ''}/{ $T.List.TitleBase}{#/if}{#if $T.List.TitleBase != ''}/{ $T.List.DutyBase }{#/if})</td>
+    <td class="center">{ $T.List.WriteDateStr }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

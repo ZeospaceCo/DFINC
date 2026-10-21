@@ -1,0 +1,63 @@
+﻿<div class="table_typeLtop"><p></p></div>  
+<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+        {#foreach $T as List}
+            <li {#if $T.List$last == true} class="last-child" {#/if} >
+
+                <table class="blog_cont_table">
+				    <caption>BLOG CONTENT</caption>
+                    <colgroup>
+                        <col width="90px" />
+                        <col />
+                    </colgroup>
+                    {#if $T.List.View == 'Y'}
+                    <tr>
+                        <td class="blog_img" rowspan="2">
+                        <table width="100%"><tbody><tr><td width="40"></td><td width="40"><a onclick="AccountInfoWin('{ $T.List.UserID }');return false;" style="cursor:pointer">
+                        { $T.List.PhotoImage }</a></td></tr></tbody></table>
+                        </td>
+                        <td>
+                            <div class="tk_b">
+                            <p class="lb">
+                            <span class="subto"><a onclick="AccountInfoWin('{ $T.List.UserID }');return false;">{$T.List.UserName}</a> ▶<a onclick="AccountInfoWin('{ $T.List.RUserID }');return false;">{$T.List.RUserName}</a> | { $T.List.WriteDateYMD }
+                             </span>
+                             <span class="subtext">&nbsp;&nbsp;<a onclick="MyTalkGroup.ReplyView('{ $T.List.GroupID }');"><span id="ReplyCountStr_{ $T.List.GroupID }">{ $T.List.ReplyCountStr }</span></a>&nbsp;
+                             {#if $T.List.ShowNew == 'Y'} <span class="m_talk"></span> {#/if}
+                             &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a onclick="MyTalkGroup.GroupAdd('{ $T.List.GroupID }','{ $T.List.RUserID }');return false;"><span class="AddMsg"></span></a>&nbsp;&nbsp;
+                            {#if $T.List.IsAuth == 'Y'} 
+                            <a href="#" onclick="MyTalkGroup.DelReple('{ $T.List.MyTalkID}','{ $T.List.GroupID }')")>
+                            <img src="/DeskPlusEIP/Design/C/Img/Icon/ico_tree_listDel.gif" />
+                            <span class="BtnDel" style="display:none;"></span>
+                            </a>
+                            {#/if}
+                            </span><br />
+                            { $T.List.Content }<br />
+                            { $T.List.FileImage }   
+                            </p>
+                            <div class="arr"></div>
+                            </div>
+                           <div id="AddReply_{ $T.List.GroupID }"></div>
+                           <div id="ReplyCheck_{ $T.List.GroupID }" style="display:none"></div>
+                           <div id="ReplyCount_{ $T.List.GroupID }" style="display:none">{ $T.List.ReplyCount }</div>
+                           
+                           <div id="GroupReplyCheck_{ $T.List.GroupID }" style="display:none"></div>                      
+                       </td>
+                    </tr>
+                    {#else}
+                    <tr>
+                        <td colspan="2" class="left"><span class="NoAuthListData"></span></td>
+                    </tr>
+                    {#/if}
+                </table>
+            </li>
+            <div id="GroupReply_{ $T.List.GroupID }"></div>     
+        {#else}
+            <li class="last-child center"><span class="NoListData" /></li>
+        {#/for}
+        </ul>
+    </div>
+</div>
+<div class="table_typeLbottom"><p></p></div>

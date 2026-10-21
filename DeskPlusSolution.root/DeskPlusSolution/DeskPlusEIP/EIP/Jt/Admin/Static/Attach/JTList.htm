@@ -1,0 +1,44 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        첨부파일 다운로드 리스트
+    </caption>
+    <colgroup>
+        <col width="150px" />
+        <col  />
+        <col width="150px" />
+        <col width="100px" />
+        <col width="120px" />
+        <col width="150px" />
+        <col width="160px" />
+    </colgroup>
+    <tr>
+        <th id="r_gubun"></th>
+        <th id="r_fileName"></th>
+        <th id="r_dept"></th>
+        <th id="r_title"></th>
+        <th id="r_name"></th>
+        <th id="r_ip"></th>
+        <th id="r_WriteDate"></th>
+    </tr>
+    {#foreach $T as AttachList}
+    <tr>
+        <td class="center">{ $T.AttachList.Gubun }</td>
+        <td>{ $T.AttachList.FileName }</td>
+        <td class="center">{ $T.AttachList.DeptName }</td>
+        <td class="center">{ $T.AttachList.TitleName }</td>
+        <td class="center">
+            {#if $T.AttachList.UserID > 0}
+                <a onclick="AccountInfo('{ $T.AttachList.UserID }');return false;" style="cursor:pointer">{ $T.AttachList.UserName }</a>             
+            {#else}
+            { $T.AttachList.UserName }
+            {#/if}
+        </td>        
+        <td class="center">{ $T.AttachList.IPAddress }</td>
+        <td class="center">{ $T.AttachList.WriteDateStr }</td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="7" class="center"><span class="NoListData" /></td>        
+     </tr>
+    {#/for}  
+ </table>

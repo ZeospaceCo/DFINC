@@ -1,0 +1,36 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="40px" />
+    <col width="50px" />
+    <col width="120px" />    
+    <col width="150px" />
+    <col width="100px" />
+    <col width="*" />
+    <col width="160px" />
+</colgroup>
+<tr>
+    <th class="center" id="r_checked"><input id="cbxAll" type="checkbox" onclick="ListAdd.Checked()" /></th>
+    <th class="center"><span id="r_number"></span></th>
+    <th class="center"><span id="r_reqName"></span></th>    
+    <th class="center"><span id="r_deptName"></span></th>    
+    <th class="center"><span id="r_mobileType"></span></th>
+    <th class="center"><span id="r_uuid"></span></th>
+    <th class="center"><span id="r_requestDate"></span></th>    
+</tr>
+{#foreach $T as ReqList}
+<tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.ReqList.ROW }" value="{ $T.ReqList.ListID }" /></td>
+    <td class="center">{ $T.ReqList.ROW }</td>
+    <td class="center"><a href="#" onclick="AccountInfo('{ $T.ReqList.UserID }');return false;" style="cursor:pointer">{ $T.ReqList.Name }</a></td>   
+    <td class="center">{ $T.ReqList.DeptName }</td>     
+    <td class="center">{ $T.ReqList.MobileType }</td>
+    <td class="center">{ $T.ReqList.UUID }</td>
+    <td class="center">{ $T.ReqList.RequestDateStr }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+
+  <MAIL>
+    <SECTION>
+      <ADD>자원이 예약 되었습니다.</ADD>
+      <REQUEST>자원이 예약 신청 되었습니다.</REQUEST>
+      <MOD>자원예약이 수정 되었습니다.</MOD>
+      <REJECT>자원예약이 거부 되었습니다.</REJECT>
+      <APPROVE>자원예약이 승인 되었습니다.</APPROVE>
+    </SECTION>
+    <SUBJ>
+      <ADD>[자원예약]</ADD>
+      <REQUEST>[자원예약 신청]</REQUEST>
+      <MOD>[자원예약 수정]</MOD>
+      <REJECT>[자원예약 거부]</REJECT>
+      <APPROVE>[자원예약 승인]</APPROVE>
+    </SUBJ>
+    <ContentHTML>
+      $SECTION$
+      &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+      &lt;li&gt;자원명 : $ListName$&lt;/li&gt;
+      &lt;li&gt;제목 : $SUBJECT$&lt;/li&gt;
+      &lt;li&gt;예약자 : $Name$&lt;/li&gt;
+      &lt;li&gt;시작일: $StartDate$&lt;/li&gt;
+      &lt;/ul&gt;
+    </ContentHTML>
+    <PAGELINK>
+      &lt;br&gt;
+      &lt;a href='$LINKURL$' target='_blank'&gt;클릭 시, 자원예약보기 페이지 이동합니다.&lt;/a&gt;
+    </PAGELINK>
+  </MAIL>
+
+  <MESSENGER>
+    <SECTION>
+      <ADD>자원이 예약 되었습니다.</ADD>
+      <REQUEST>자원이 예약 신청 되었습니다.</REQUEST>
+      <MOD>자원예약이 수정 되었습니다.</MOD>
+      <REJECT>자원예약이 거부 되었습니다.</REJECT>
+      <APPROVE>자원예약이 승인 되었습니다.</APPROVE>
+    </SECTION>
+    <SUBJ>
+      <ADD>[자원예약]</ADD>
+      <REQUEST>[자원예약 신청]</REQUEST>
+      <MOD>[자원예약 수정]</MOD>
+      <REJECT>[자원예약 거부]</REJECT>
+      <APPROVE>[자원예약 승인]</APPROVE>
+    </SUBJ>
+    <ContentHTML>
+      $SECTION$
+      &lt;br&gt;&lt;br&gt;
+      - 자원명 : $ListName$
+      &lt;br&gt;
+      - 제목 : $SUBJECT$
+      &lt;br&gt;
+      - 예약자 : $Name$
+      &lt;br&gt;
+      - 시작일: $StartDate$
+      &lt;br&gt;&lt;br&gt;
+    </ContentHTML>
+  </MESSENGER>
+
+</ALARM>

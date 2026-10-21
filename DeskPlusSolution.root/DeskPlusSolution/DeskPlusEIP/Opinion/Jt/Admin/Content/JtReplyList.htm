@@ -1,0 +1,21 @@
+﻿<ul class="table_typeT ul_typeT">  
+     {#foreach $T as List}
+        <li class="reply_box">
+        <ul><li>   
+            <p class="writer"><a class="badge badge-secondary">{ $T.List.NameBase }</a>                  
+                { $T.List.WriteDateStr }
+            </p>            
+            <p>{ $T.List.Cont }</p>            
+            <p> 
+            {#if $T.List.IsEdit == '1'} 
+            <a onclick="javascript:JtReplyAdd('{ $T.List.ReplyID }')"><span class="btn btn-sm ModMsg"></span></a>
+            <a onclick="javascript:JtReplyDel('{ $T.List.ReplyID }')"><span class="btn btn-sm DelMsg"></span></a>
+            {#/if}
+            </p>  
+         </li></ul>
+         </li>    
+    {#else}
+    {#/for}
+</ul>
+
+

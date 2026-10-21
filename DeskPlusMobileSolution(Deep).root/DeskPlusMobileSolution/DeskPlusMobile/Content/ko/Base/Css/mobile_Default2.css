@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+body{ margin:0px; padding:0px; overflow:hidden; }
+input { vertical-align:middle; }
+p { -webkit-margin-before: 10px !important; -webkit-margin-after: 10px !important; font-size: 12px; }
+
+body { overflow-x:hidden; }
+.show { position: absolute; }
+#warp { min-width:320px; max-width:100%; position: relative; margin: 0 auto; }
+
+#header { min-width:320px; max-width:100%; height: 30px; position: relative; margin: 0 auto; }
+
+#main-content { min-width: 320px; max-width:100%; height:600px; position: relative; margin: 0 auto; }
+#container { position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; }
+
+
+#companylog { width:189px; height:31px; display:inline-block; border:0px solid red;}
+
+#mid_img {
+	max-width:100%; height:300px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/2_02.png') no-repeat center top;
+	bottom:-120px; position:fixed !important; background-size:cover; width:100%;
+}
+#login_warp {
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/2_06.png') center center no-repeat; background-size:100% 100%;
+	width:318px; height: 200px; position:relative !important; margin:0 auto; font-size:12px; 
+	font-family: 'Nanum Gothic', serif;
+}
+#fom_warp { position:relative; width: 295px; margin: 0 auto; text-align: left; margin-top: 20px;}
+#fom_title { padding: 8px 0 0 10px; font-family: 'Nanum Gothic', serif; color: #fff; font-size: 12px;}
+#fom_1 { width:100%; padding: 5px 0 10px 0; border:0px solid red;}
+#fom_1 div {margin-bottom:8px; font-family: 'Nanum Gothic';}
+#fom_1 > div > #move_id { margin-right: 21px; color: #16a3db; }
+#fom_1 > div > #move_pw { margin-right: 9px; color: #16a3db; }
+#fom_1 > div > #move_com { margin-right: 29px; color: #16a3db; }
+
+#fom_2 { width:280px; padding: 0; text-align: left; margin-top: 5px;}
+
+.fom {
+	width:160px; height:15px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/fom.jpg') no-repeat cover; border:none;
+	font: 12px 'Nanum Gothic'; color:#363636; padding-left:10px; border: 1px solid #b1b1b1;
+}
+.il,.pl {
+	width:155px; height:15px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/fom.jpg') no-repeat cover; border:none;
+	font: 12px 'Nanum Gothic'; color:#363636; padding-left:10px; border: 1px solid #b1b1b1;
+}
+
+#fom_line { width:262px; height:8px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/2_03_line.png') no-repeat; }
+#ddlCompany { width:170px; }
+#FindIDPW { text-decoration: none; color: #393939;}
+.login_bt{
+	width:65px; height:80px; position:absolute; top: 2%; left: 78%;
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/2/2_05.png') no-repeat center center; cursor: pointer; border-radius: 3px;
+}
+#mid_bottom_text {
+	width:280px; height:60px; font-size: 12px; font-family: 'Nanum Gothic', serif; color: #aeaeae;
+	position:relative !important; margin: 0 auto;
+}
+
+#footer { display:none; }
+
+/* footer img control */
+@media all and (max-height:500px) {
+	#mid_img { display:none; }
+}

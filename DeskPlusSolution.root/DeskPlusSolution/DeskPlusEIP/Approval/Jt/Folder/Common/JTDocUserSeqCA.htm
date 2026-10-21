@@ -1,0 +1,40 @@
+﻿<table class="table_typeT">
+<caption></caption>
+<colgroup>
+    <col />
+    <col width="140px" />
+</colgroup>
+<thead>
+    <th class="center" id="r_CarbonInfo"></th>
+    <th class="center" id="r_ViewDate"></th>
+</thead>
+<tbody>
+{#foreach $T as ApprovalList}
+<tr>
+    <td class="center" id="{ $T.ApprovalList.ApprovalTag }">
+        { $T.ApprovalList.NameBase }
+         {#if $T.ApprovalList.IsGroup == 'G' && $T.ApprovalList.IsGroupStr == '1'}
+         &nbsp;&nbsp;<a href='#{ $T.ApprovalList.ApprovalTag }' onclick="DocUserSeq.GroupView(this,'{ $T.ApprovalList.ApprovalTag }');"><img class="IconPlus" alt="" /></a>
+         {#/if}
+    </td> 
+    <td class="center">
+        { $T.ApprovalList.ViewingDateStr }
+    </td>
+</tr>
+{#foreach $T.ApprovalList.CarbonCopyUserGroupInfo as GroupList}
+<tr class="trGroup{ $T.GroupList.ApprovalTag }" style="display: none">
+    <td style="padding-left: 110px; border-top:1px dotted #d2d2d2">
+        { $T.GroupList.NameBase }
+    </td>
+    <td class="center" style="border-top:1px dotted #d2d2d2">
+        { $T.GroupList.ViewingDateStr }
+    </td>
+</tr>
+ {#/for}
+{#else}
+<tr>
+    <td colspan="2" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

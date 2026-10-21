@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8146596E-25F4-4305-B23E-1CBEFB197111}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.Account.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.Account.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.2.1507.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AuthEmail\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuthEmail\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CSV\PictureSeal.aspx.cs">
+      <DependentUpon>PictureSeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CSV\PictureSeal.aspx.designer.cs">
+      <DependentUpon>PictureSeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CSV\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CSV\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CSV\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CSV\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dept\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dept\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dept\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dept\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dept\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dept\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dept\MoveUpdown.aspx.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dept\MoveUpdown.aspx.designer.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dept\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dept\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Position\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Position\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Position\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Position\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Position\MoveUpdown.aspx.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Position\MoveUpdown.aspx.designer.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Position\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Position\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Auth.aspx.cs">
+      <DependentUpon>Auth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Auth.aspx.designer.cs">
+      <DependentUpon>Auth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\CareerInfo.aspx.cs">
+      <DependentUpon>CareerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\CareerInfo.aspx.designer.cs">
+      <DependentUpon>CareerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\EduInfo.aspx.cs">
+      <DependentUpon>EduInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\EduInfo.aspx.designer.cs">
+      <DependentUpon>EduInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\FamilyInfo.aspx.cs">
+      <DependentUpon>FamilyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\FamilyInfo.aspx.designer.cs">
+      <DependentUpon>FamilyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\MoveUpdown.aspx.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\MoveUpdown.aspx.designer.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\RewardInfo.aspx.cs">
+      <DependentUpon>RewardInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\RewardInfo.aspx.designer.cs">
+      <DependentUpon>RewardInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Extend\ScholarInfo.aspx.cs">
+      <DependentUpon>ScholarInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Extend\ScholarInfo.aspx.designer.cs">
+      <DependentUpon>ScholarInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\LinkageInfo.aspx.cs">
+      <DependentUpon>LinkageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\LinkageInfo.aspx.designer.cs">
+      <DependentUpon>LinkageInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\MultiComUser.aspx.cs">
+      <DependentUpon>MultiComUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\MultiComUser.aspx.designer.cs">
+      <DependentUpon>MultiComUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Password\Change.aspx.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Password\Change.aspx.designer.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Password\MailChange.aspx.cs">
+      <DependentUpon>MailChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Password\MailChange.aspx.designer.cs">
+      <DependentUpon>MailChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\SNS.aspx.cs">
+      <DependentUpon>SNS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\SNS.aspx.designer.cs">
+      <DependentUpon>SNS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\UserDept\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\UserDept\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\UserDept\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\UserDept\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\ListBlog.aspx.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\ListBlog.aspx.designer.cs">
+      <DependentUpon>ListBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\MultiDomain.aspx.cs">
+      <DependentUpon>MultiDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\MultiDomain.aspx.designer.cs">
+      <DependentUpon>MultiDomain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User\UserUpDown.aspx.cs">
+      <DependentUpon>UserUpDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User\UserUpDown.aspx.designer.cs">
+      <DependentUpon>UserUpDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlAccount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageAccount.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageAccountAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSAccount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\AccountInfo.aspx.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AccountInfo.aspx.designer.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AccountInfoMessenger.aspx.cs">
+      <DependentUpon>AccountInfoMessenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AccountInfoMessenger.aspx.designer.cs">
+      <DependentUpon>AccountInfoMessenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CodeTreeScript.ascx.cs">
+      <DependentUpon>CodeTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CodeTreeScript.ascx.designer.cs">
+      <DependentUpon>CodeTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DeptSearchTree.ascx.cs">
+      <DependentUpon>DeptSearchTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DeptSearchTree.ascx.designer.cs">
+      <DependentUpon>DeptSearchTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DeptTreeScript.ascx.cs">
+      <DependentUpon>DeptTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DeptTreeScript.ascx.designer.cs">
+      <DependentUpon>DeptTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GetDeptUserScript.aspx.cs">
+      <DependentUpon>GetDeptUserScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GetDeptUserScript.aspx.designer.cs">
+      <DependentUpon>GetDeptUserScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserDeptTreeScript.ascx.cs">
+      <DependentUpon>UserDeptTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserDeptTreeScript.ascx.designer.cs">
+      <DependentUpon>UserDeptTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListByDept.aspx.cs">
+      <DependentUpon>UserListByDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserListByDept.aspx.designer.cs">
+      <DependentUpon>UserListByDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\User\GetSelectedUser.aspx.cs">
+      <DependentUpon>GetSelectedUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\User\GetSelectedUser.aspx.designer.cs">
+      <DependentUpon>GetSelectedUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SearchTreeScript.ascx.cs">
+      <DependentUpon>SearchTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SearchTreeScript.ascx.designer.cs">
+      <DependentUpon>SearchTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Alarm.aspx.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Alarm.aspx.designer.cs">
+      <DependentUpon>Alarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\AuthInfo.aspx.cs">
+      <DependentUpon>AuthInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\AuthInfo.aspx.designer.cs">
+      <DependentUpon>AuthInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Etc\AuthInfo.aspx.cs">
+      <DependentUpon>AuthInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Etc\AuthInfo.aspx.designer.cs">
+      <DependentUpon>AuthInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Etc\LoginInfo.aspx.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Etc\LoginInfo.aspx.designer.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Etc\Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Etc\Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\CareerInfo.aspx.cs">
+      <DependentUpon>CareerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\CareerInfo.aspx.designer.cs">
+      <DependentUpon>CareerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\EduInfo.aspx.cs">
+      <DependentUpon>EduInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\EduInfo.aspx.designer.cs">
+      <DependentUpon>EduInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\FamilyInfo.aspx.cs">
+      <DependentUpon>FamilyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\FamilyInfo.aspx.designer.cs">
+      <DependentUpon>FamilyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\MoveUpdown.aspx.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\MoveUpdown.aspx.designer.cs">
+      <DependentUpon>MoveUpdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\RewardInfo.aspx.cs">
+      <DependentUpon>RewardInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\RewardInfo.aspx.designer.cs">
+      <DependentUpon>RewardInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Extend\ScholarInfo.aspx.cs">
+      <DependentUpon>ScholarInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Extend\ScholarInfo.aspx.designer.cs">
+      <DependentUpon>ScholarInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\LinkageInfo.aspx.cs">
+      <DependentUpon>LinkageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\LinkageInfo.aspx.designer.cs">
+      <DependentUpon>LinkageInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\LoginInfo.aspx.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\LoginInfo.aspx.designer.cs">
+      <DependentUpon>LoginInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Password\Change.aspx.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Password\Change.aspx.designer.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Password\MailChange.aspx.cs">
+      <DependentUpon>MailChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Password\MailChange.aspx.designer.cs">
+      <DependentUpon>MailChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\SLO.aspx.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\SLO.aspx.designer.cs">
+      <DependentUpon>SLO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\SNS.aspx.cs">
+      <DependentUpon>SNS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\SNS.aspx.designer.cs">
+      <DependentUpon>SNS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInfo\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInfo\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Admin\AuthEmail\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Dept\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Dept\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Dept\MoveUpdown.asmx.cs">
+      <DependentUpon>MoveUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Position\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\Position\MoveUpdown.asmx.cs">
+      <DependentUpon>MoveUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Add.asmx.cs">
+      <DependentUpon>Add.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Auth.asmx.cs">
+      <DependentUpon>Auth.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\CareerInfo.asmx.cs">
+      <DependentUpon>CareerInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\EduInfo.asmx.cs">
+      <DependentUpon>EduInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\FamilyInfo.asmx.cs">
+      <DependentUpon>FamilyInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\MoveUpdown.asmx.cs">
+      <DependentUpon>MoveUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\RewardInfo.asmx.cs">
+      <DependentUpon>RewardInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Extend\ScholarInfo.asmx.cs">
+      <DependentUpon>ScholarInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\LinkageInfo.asmx.cs">
+      <DependentUpon>LinkageInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\ListBlog.asmx.cs">
+      <DependentUpon>ListBlog.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Move.asmx.cs">
+      <DependentUpon>Move.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\MultiComUser.asmx.cs">
+      <DependentUpon>MultiComUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\MultiDomain.asmx.cs">
+      <DependentUpon>MultiDomain.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\Password\Change.asmx.cs">
+      <DependentUpon>Change.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\UserDept\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Admin\User\UserUpDown.asmx.cs">
+      <DependentUpon>UserUpDown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\GetUserDept.asmx.cs">
+      <DependentUpon>GetUserDept.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\GetAccount.asmx.cs">
+      <DependentUpon>GetAccount.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Alarm.asmx.cs">
+      <DependentUpon>Alarm.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Etc\AuthInfo.asmx.cs">
+      <DependentUpon>AuthInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Etc\LoginInfo.asmx.cs">
+      <DependentUpon>LoginInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Etc\Summary.asmx.cs">
+      <DependentUpon>Summary.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\CareerInfo.asmx.cs">
+      <DependentUpon>CareerInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\EduInfo.asmx.cs">
+      <DependentUpon>EduInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\FamilyInfo.asmx.cs">
+      <DependentUpon>FamilyInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\MoveUpdown.asmx.cs">
+      <DependentUpon>MoveUpdown.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\RewardInfo.asmx.cs">
+      <DependentUpon>RewardInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Extend\ScholarInfo.asmx.cs">
+      <DependentUpon>ScholarInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\GetUser.ashx.cs">
+      <DependentUpon>GetUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\MyInfo\LoginInfo.asmx.cs">
+      <DependentUpon>LoginInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Mod.asmx.cs">
+      <DependentUpon>Mod.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyInfo\Password\Change.asmx.cs">
+      <DependentUpon>Change.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Search\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\SetAccount.asmx.cs">
+      <DependentUpon>SetAccount.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.BE\Zeospace.DeskPlus.Address.BE.csproj">
+      <Project>{C1C26D0B-13DC-4815-B31C-08BD1066E0CA}</Project>
+      <Name>Zeospace.DeskPlus.Address.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AddressProject\Zeospace.DeskPlus.Address.DAL\Zeospace.DeskPlus.Address.DAL.csproj">
+      <Project>{F9C15205-4A8B-47E5-B827-A930DA28CFCD}</Project>
+      <Name>Zeospace.DeskPlus.Address.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.BE\Zeospace.DeskPlus.EIP.BE.csproj">
+      <Project>{21CC4361-7475-4B85-864F-B1506D94B2B5}</Project>
+      <Name>Zeospace.DeskPlus.EIP.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.BLL\Zeospace.DeskPlus.EIP.BLL.csproj">
+      <Project>{C665AEA8-778D-4EB7-A4AA-10D94151E63B}</Project>
+      <Name>Zeospace.DeskPlus.EIP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.DAL\Zeospace.DeskPlus.EIP.DAL.csproj">
+      <Project>{138E6A3E-7DBB-443B-8409-3C55849FF6DF}</Project>
+      <Name>Zeospace.DeskPlus.EIP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\MDMProject\Zeospace.DeskPlus.MDM.DAL\Zeospace.DeskPlus.MDM.DAL.csproj">
+      <Project>{9D1E4186-0567-4824-A5D9-A26414EBB14F}</Project>
+      <Name>Zeospace.DeskPlus.MDM.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AuthEmail\Default.aspx" />
+    <Content Include="Admin\AuthEmail\List.aspx" />
+    <Content Include="Admin\AuthEmail\Menu.aspx" />
+    <Content Include="Admin\AuthEmail\Mod.aspx" />
+    <Content Include="Admin\CSV\PictureSeal.aspx" />
+    <Content Include="Admin\CSV\Upload.aspx" />
+    <Content Include="Admin\CSV\User.aspx" />
+    <Content Include="Admin\Dept\Default.aspx" />
+    <Content Include="Admin\Dept\List.aspx" />
+    <Content Include="Admin\Dept\Move.aspx" />
+    <Content Include="Admin\Dept\MoveUpdown.aspx" />
+    <Content Include="Admin\Dept\Tree.aspx" />
+    <Content Include="Admin\Position\Default.aspx" />
+    <Content Include="Admin\Position\List.aspx" />
+    <Content Include="Admin\Position\MoveUpdown.aspx" />
+    <Content Include="Admin\Position\Tree.aspx" />
+    <Content Include="Admin\User\Add.aspx" />
+    <Content Include="Admin\User\Auth.aspx" />
+    <Content Include="Admin\User\Default.aspx" />
+    <Content Include="Admin\User\Extend\CareerInfo.aspx" />
+    <Content Include="Admin\User\Extend\EduInfo.aspx" />
+    <Content Include="Admin\User\Extend\FamilyInfo.aspx" />
+    <Content Include="Admin\User\Extend\MoveUpdown.aspx" />
+    <Content Include="Admin\User\Extend\RewardInfo.aspx" />
+    <Content Include="Admin\User\Extend\ScholarInfo.aspx" />
+    <Content Include="Admin\User\LinkageInfo.aspx" />
+    <Content Include="Admin\User\List.aspx" />
+    <Content Include="Admin\User\Move.aspx" />
+    <Content Include="Admin\User\MultiComUser.aspx" />
+    <Content Include="Admin\User\Password\Change.aspx" />
+    <Content Include="Admin\User\Password\MailChange.aspx" />
+    <Content Include="Admin\User\SNS.aspx" />
+    <Content Include="Admin\User\Tree.aspx" />
+    <Content Include="Admin\User\UserDept\List.aspx" />
+    <Content Include="Admin\User\UserDept\Tree.aspx" />
+    <Content Include="Admin\User\Mod.aspx" />
+    <Content Include="Admin\User\ListBlog.aspx" />
+    <Content Include="Admin\User\MultiDomain.aspx" />
+    <Content Include="Admin\User\UserUpDown.aspx" />
+    <Content Include="Common\AccountInfo.aspx" />
+    <Content Include="Common\AccountInfoMessenger.aspx" />
+    <Content Include="Common\CodeTreeScript.ascx" />
+    <Content Include="Common\DeptSearchTree.ascx" />
+    <Content Include="Common\DeptTreeScript.ascx" />
+    <Content Include="Common\GetDeptUserScript.aspx" />
+    <Content Include="Common\UserDeptTreeScript.ascx" />
+    <Content Include="Common\UserListByDept.aspx" />
+    <Content Include="Common\User\GetSelectedUser.aspx" />
+    <Content Include="Common\SearchTreeScript.ascx" />
+    <Content Include="Js\Admin\AuthEmail\List.js" />
+    <Content Include="Js\Admin\AuthEmail\Menu.js" />
+    <Content Include="Js\Admin\AuthEmail\Mod.js" />
+    <Content Include="Js\Admin\Default.js" />
+    <Content Include="Js\Admin\Dept\MoveUpdown.js" />
+    <Content Include="Js\Admin\Dept\Tree.js" />
+    <Content Include="Js\Admin\Dept\List.js" />
+    <Content Include="Js\Admin\Dept\Move.js" />
+    <Content Include="Js\Admin\Position\List.js" />
+    <Content Include="Js\Admin\Position\MoveUpdown.js" />
+    <Content Include="Js\Admin\Position\Tree.js" />
+    <Content Include="Js\Admin\User\Add.js" />
+    <Content Include="Js\Admin\User\Extend\FamilyInfo.js" />
+    <Content Include="Js\Admin\User\Extend\EduInfo.js" />
+    <Content Include="Js\Admin\User\Extend\CareerInfo.js" />
+    <Content Include="Js\Admin\User\Extend\MoveUpdown.js" />
+    <Content Include="Js\Admin\User\Extend\RewardInfo.js" />
+    <Content Include="Js\Admin\User\Extend\ScholarInfo.js" />
+    <Content Include="Js\Admin\User\MultiComUser.js" />
+    <Content Include="Js\Admin\User\Password\MailChange.js" />
+    <Content Include="Js\Admin\User\UserUpDown.js" />
+    <Content Include="Js\Admin\User\Move.js" />
+    <Content Include="Js\Admin\User\MultiDomain.js" />
+    <Content Include="Js\Admin\User\List.js" />
+    <Content Include="Js\Admin\User\Password\Change.js" />
+    <Content Include="Js\Admin\User\Tree.js" />
+    <Content Include="Js\Admin\User\Mod.js" />
+    <Content Include="Js\Admin\User\UserDept\List.js" />
+    <Content Include="Js\Admin\User\ListBlog.js" />
+    <Content Include="Js\Admin\User\Auth.js" />
+    <Content Include="Js\Admin\User\SNS.js" />
+    <Content Include="Js\Admin\User\LinkageInfo.js" />
+    <Content Include="Js\Common\AccountInfo.js" />
+    <Content Include="Js\Common\GetUser.js" />
+    <Content Include="Js\Common\UserListByDept.js" />
+    <Content Include="Js\Common\User\GetSelectedUser.js" />
+    <Content Include="Js\MyInfo\Alarm.js" />
+    <Content Include="Js\MyInfo\AuthInfo.js" />
+    <Content Include="Js\MyInfo\Etc\AuthInfo.js" />
+    <Content Include="Js\MyInfo\Etc\LoginInfo.js" />
+    <Content Include="Js\MyInfo\Etc\Summary.js" />
+    <Content Include="Js\MyInfo\Extend\CareerInfo.js" />
+    <Content Include="Js\MyInfo\Extend\EduInfo.js" />
+    <Content Include="Js\MyInfo\Extend\FamilyInfo.js" />
+    <Content Include="Js\MyInfo\Extend\MoveUpdown.js" />
+    <Content Include="Js\MyInfo\Extend\RewardInfo.js" />
+    <Content Include="Js\MyInfo\Extend\ScholarInfo.js" />
+    <Content Include="Js\MyInfo\LinkageInfo.js" />
+    <Content Include="Js\MyInfo\LoginInfo.js" />
+    <Content Include="Js\MyInfo\Mobile.js" />
+    <Content Include="Js\MyInfo\Mod.js" />
+    <Content Include="Js\MyInfo\Password\Change.js" />
+    <Content Include="Js\MyInfo\Password\MailChange.js" />
+    <Content Include="Js\MyInfo\SNS.js" />
+    <Content Include="Js\Search\List.js" />
+    <Content Include="Js\Search\Tree.js" />
+    <Content Include="Jt\Admin\AuthEmail\JTList.htm" />
+    <Content Include="Jt\Admin\Dept\JTList.htm" />
+    <Content Include="Jt\Admin\Position\JTList.htm" />
+    <Content Include="Jt\Admin\User\Extend\JTFamilyInfo.htm" />
+    <Content Include="Jt\Admin\User\Extend\JTEduInfo.htm" />
+    <Content Include="Jt\Admin\User\Extend\JTRewardInfo.htm" />
+    <Content Include="Jt\Admin\User\Extend\JTCareerInfo.htm" />
+    <Content Include="Jt\Admin\User\Extend\JTScholarInfo.htm" />
+    <Content Include="Jt\Admin\User\JTList.htm" />
+    <Content Include="Jt\Admin\User\JTListBlog.htm" />
+    <Content Include="Jt\Admin\User\JTMultiDomain.htm" />
+    <Content Include="Jt\Admin\User\JTAuth.htm" />
+    <Content Include="Jt\Common\JTUserListByDept.htm" />
+    <Content Include="Jt\MyInfo\Etc\JTLoginInfo.htm" />
+    <Content Include="Jt\MyInfo\JTLoginInfo.htm" />
+    <Content Include="Jt\Search\JTSearch.htm" />
+    <Content Include="MyInfo\Alarm.aspx" />
+    <Content Include="MyInfo\AuthInfo.aspx" />
+    <Content Include="MyInfo\Etc\AuthInfo.aspx" />
+    <Content Include="MyInfo\Etc\LoginInfo.aspx" />
+    <Content Include="MyInfo\Etc\Summary.aspx" />
+    <Content Include="MyInfo\Extend\CareerInfo.aspx" />
+    <Content Include="MyInfo\Extend\EduInfo.aspx" />
+    <Content Include="MyInfo\Extend\FamilyInfo.aspx" />
+    <Content Include="MyInfo\Extend\MoveUpdown.aspx" />
+    <Content Include="MyInfo\Extend\RewardInfo.aspx" />
+    <Content Include="MyInfo\Extend\ScholarInfo.aspx" />
+    <Content Include="MyInfo\LinkageInfo.aspx" />
+    <Content Include="MyInfo\LoginInfo.aspx" />
+    <Content Include="MyInfo\Mobile.aspx" />
+    <Content Include="MyInfo\Password\Change.aspx" />
+    <Content Include="MyInfo\Password\MailChange.aspx" />
+    <Content Include="MyInfo\SLO.aspx" />
+    <Content Include="MyInfo\SNS.aspx" />
+    <Content Include="MyInfo\Mod.aspx" />
+    <Content Include="Search\Default.aspx" />
+    <Content Include="Search\List.aspx" />
+    <Content Include="Search\Tree.aspx" />
+    <Content Include="Ws\Admin\AuthEmail\List.asmx" />
+    <Content Include="Ws\Admin\Dept\List.asmx" />
+    <Content Include="Ws\Admin\Dept\Move.asmx" />
+    <Content Include="Ws\Admin\Dept\MoveUpdown.asmx" />
+    <Content Include="Ws\Admin\Position\List.asmx" />
+    <Content Include="Ws\Admin\Position\MoveUpdown.asmx" />
+    <Content Include="Ws\Admin\User\Add.asmx" />
+    <Content Include="Ws\Admin\User\Auth.asmx" />
+    <Content Include="Ws\Admin\User\Extend\CareerInfo.asmx" />
+    <Content Include="Ws\Admin\User\Extend\EduInfo.asmx" />
+    <Content Include="Ws\Admin\User\Extend\FamilyInfo.asmx" />
+    <Content Include="Ws\Admin\User\Extend\MoveUpdown.asmx" />
+    <Content Include="Ws\Admin\User\Extend\RewardInfo.asmx" />
+    <Content Include="Ws\Admin\User\Extend\ScholarInfo.asmx" />
+    <Content Include="Ws\Admin\User\LinkageInfo.asmx" />
+    <Content Include="Ws\Admin\User\List.asmx" />
+    <Content Include="Ws\Admin\User\ListBlog.asmx" />
+    <Content Include="Ws\Admin\User\Mod.asmx" />
+    <Content Include="Ws\Admin\User\Move.asmx" />
+    <Content Include="Ws\Admin\User\MultiComUser.asmx" />
+    <Content Include="Ws\Admin\User\MultiDomain.asmx" />
+    <Content Include="Ws\Admin\User\Password\Change.asmx" />
+    <Content Include="Ws\Admin\User\UserDept\List.asmx" />
+    <Content Include="Ws\Admin\User\UserUpDown.asmx" />
+    <Content Include="Ws\Common\GetUserDept.asmx" />
+    <Content Include="Ws\GetAccount.asmx" />
+    <Content Include="Ws\MyInfo\Alarm.asmx" />
+    <Content Include="Ws\MyInfo\Etc\AuthInfo.asmx" />
+    <Content Include="Ws\MyInfo\Etc\LoginInfo.asmx" />
+    <Content Include="Ws\MyInfo\Etc\Summary.asmx" />
+    <Content Include="Ws\MyInfo\Extend\CareerInfo.asmx" />
+    <Content Include="Ws\MyInfo\Extend\EduInfo.asmx" />
+    <Content Include="Ws\MyInfo\Extend\FamilyInfo.asmx" />
+    <Content Include="Ws\MyInfo\Extend\MoveUpdown.asmx" />
+    <Content Include="Ws\MyInfo\Extend\RewardInfo.asmx" />
+    <Content Include="Ws\MyInfo\Extend\ScholarInfo.asmx" />
+    <Content Include="Ws\MyInfo\LoginInfo.asmx" />
+    <Content Include="Ws\MyInfo\Mod.asmx" />
+    <Content Include="Ws\MyInfo\Password\Change.asmx" />
+    <Content Include="Ws\Search\List.asmx" />
+    <Content Include="Ws\SetAccount.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\CSV\Data\dept.csv" />
+    <None Include="Admin\CSV\Data\duty.csv" />
+    <None Include="Admin\CSV\Data\title.csv" />
+    <None Include="Admin\CSV\Data\User.csv" />
+    <Content Include="Ws\MyInfo\GetUser.ashx" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25233</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/Account</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

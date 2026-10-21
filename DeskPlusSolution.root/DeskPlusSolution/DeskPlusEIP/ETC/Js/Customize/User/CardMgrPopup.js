@@ -1,0 +1,6 @@
+﻿var CardMgrPopup = {};
+
+$(function () {
+
+
+});

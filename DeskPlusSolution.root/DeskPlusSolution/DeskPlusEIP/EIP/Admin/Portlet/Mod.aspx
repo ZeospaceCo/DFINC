@@ -1,0 +1,290 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Mod.aspx.cs" Inherits="Zeospace.DeskPlus.EIP.Web.Admin.Portlet.Mod" %>
+<%@ Register Assembly="Zeospace.DeskPlus.Base.ApplicationFrameworks" Namespace="Zeospace.DeskPlus.Base.ApplicationFrameworks.Helper.WebComponent" TagPrefix="cc3" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="<%=BaseCssPath%>/DeskPlusEIPBase.css"/><link rel="stylesheet" type="text/css" href="<%=CssPath%>/DeskPlusEIPBase.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=BaseCssPath%>/Func_EIP.css"/><link rel="stylesheet" type="text/css" href="<%=CssPath%>/Func_EIP.css" />
+    <link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Html/Js/JModal/DeskPlusModal.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="layout_body">
+        <div class="layout_one">
+            <div id="layout_header">
+                <!-- 페이지타이틀 //-->
+                <h1><%=GetResource("GeneralPortlet")%></h1>
+                <!-- 버튼 //-->
+                <ul class="btn_left">
+                </ul>
+                <ul class="btn_right">
+                    <cc3:ClientSmartButton ID="cbtnPreView" BeginEndTag="li" runat="server" Visible="false"></cc3:ClientSmartButton>
+                    <cc3:ClientSmartButton ID="cbtnMove" BeginEndTag="li" runat="server"></cc3:ClientSmartButton>
+                    <cc3:ClientSmartButton ID="cbtnMod" BeginEndTag="li" class="btn btn-secondary" runat="server"></cc3:ClientSmartButton>
+                    <cc3:ClientSmartButton ID="cbtnDel" BeginEndTag="li" class="btn btn-danger" runat="server"></cc3:ClientSmartButton>
+                    <cc3:ClientSmartButton ID="cbtnCancel" BeginEndTag="li" runat="server"></cc3:ClientSmartButton>
+                </ul>
+            </div>
+            <div id="layout_content">
+            <div class="row">
+            <div class="col-12 content-area-body"><!-- width 100%(col-12) -->
+                <table class="table_typeB">
+                    <caption>
+                        <%=GetResource("PortletManagement")%></caption>
+                    <colgroup>
+                        <col width="120px" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <%=GetResource("PortletGroup")%>
+                            </th>
+                            <td>
+                                <ul class="aLeft">
+                                    <li><asp:Literal ID="ltlCategoryName" runat="server"></asp:Literal></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("PortletName")%>&nbsp;<a id="MultiName"><img src="<%=BaseImgPath%>/Icon/ico_add.gif" alt="" title="" /></a>
+                            </th>
+                            <td>
+                                <cc3:ClientSmartTextBox ID="ctbPortletName" Required="true" MaxLength="100" runat="server" CssStyle="width:100px !important;"></cc3:ClientSmartTextBox>
+                                <cc3:ClientSmartTextBox ID="ctbMultiLang" Required="true" MaxLength="100" runat="server" CssStyle="width:200px !important;"></cc3:ClientSmartTextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><%=GetResource("PortletCode")%></th>
+                            <td>
+                                <cc3:ClientSmartTextBox ID="ctbPortletCode" Required="true" MaxLength="100" runat="server" CssStyle="width:200px !important;"></cc3:ClientSmartTextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("UIFormat")%>
+                            </th>
+                            <td>
+                                <ul class="aLeft">
+                                    <li>
+                                        <asp:DropDownList ID="ddlUIType" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li id="Template">
+                                        <asp:DropDownList ID="ddlUITemplate" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li id="nonTemplate">
+                                        <cc3:ClientSmartTextBox ID="ctbUIURL" Required="true" runat="server" CssStyle="width:500px !important;"></cc3:ClientSmartTextBox></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("DataFormat")%>
+                            </th>
+                            <td>
+                                <ul class="aLeft">
+                                    <li>
+                                        <asp:DropDownList ID="ddlDataType" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li>
+                                        <cc3:ClientSmartTextBox ID="ctnDataURL" Required="true" runat="server"  CssStyle="width:500px !important;"></cc3:ClientSmartTextBox></li>
+                                    <li>
+                                        <ul class="btn_smallL">
+                                            <li>
+                                                <cc3:ClientSmartButton ID="cbtnDataCheck" runat="server"></cc3:ClientSmartButton>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">
+                                <%=GetResource("LinkSetting")%>
+                            </th>
+                            <td>
+                                <ul class="aLeft">
+                                    <li>
+                                        <asp:DropDownList ID="ddlLinkType" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li>
+                                        <asp:DropDownList ID="ddlPopupWidth" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li>
+                                        <cc3:ClientSmartTextBox ID="ctbPopupWidth" runat="server" CssStyle="width:50px !important;"></cc3:ClientSmartTextBox></li>
+                                    <li id="splitChar">/</li>
+                                    <li>
+                                        <asp:DropDownList ID="ddlPopupHeight" runat="server" class="searchselect form-control"></asp:DropDownList>
+                                    </li>
+                                    <li>
+                                        <cc3:ClientSmartTextBox ID="ctbPopupHeight" runat="server" CssStyle="width:50px !important;"></cc3:ClientSmartTextBox></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="aLeft">
+                                    <li>
+                                        <cc3:ClientSmartTextBox ID="ctbLinkURL" runat="server" CssStyle="width:500px !important;"></cc3:ClientSmartTextBox></li>
+                                    <li>
+                                        <ul class="btn_left">
+                                            <li>
+                                                <cc3:ClientSmartButton ID="cbtnLinkURLCheck" runat="server"></cc3:ClientSmartButton>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("UsePersonalize")%>
+                            </th>
+                            <td>
+                                <asp:DropDownList ID="ddlPersonal" runat="server" class="searchselect form-control"></asp:DropDownList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("Enabled")%>
+                            </th>
+                            <td>
+                                <asp:DropDownList ID="ddlActive" runat="server" class="searchselect form-control"></asp:DropDownList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("PreviewImg")%>
+                            </th>
+                            <td>
+                                <div class="aLeft" id="photoImg"><img style="width:120px;height:60px;" alt="no image" /></div>
+
+                                <ul class="btn_smallL">
+                                    <li><cc3:ClientSmartButton ID="cbtnSwfFileAdd" runat="server"></cc3:ClientSmartButton></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <%=GetResource("Comments")%>
+                            </th>
+                            <td>
+                                <div class="layout_scroll" style="min-height:120px;height:120px;">
+                                <cc3:ClientSmartTextBox runat="server" ID="ctbDescription" TextMode="MultiLine" Wrap="true" Rows="10" Columns="70" Style="height: 98%; width: 97%;" InputMode="None"></cc3:ClientSmartTextBox>
+                                </div>                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 페이지연결 -->
+                <div class="layout_subbox">
+                    <h1>
+                        <%=GetResource("DataLink")%></h1>
+                    <ul class="btn_right">
+                        <li>
+                            <asp:DropDownList ID="ddlSendMethod" runat="server" class="searchselect form-control">
+                                <asp:ListItem Text="GET" Value="0" Selected="True"></asp:ListItem>
+                                <asp:ListItem Text="POST" Value="1"></asp:ListItem>
+                            </asp:DropDownList>
+                        </li>
+                        <cc3:ClientSmartButton ID="cbtnADDParam" runat="server" BeginEndTag="li"></cc3:ClientSmartButton>
+                    </ul>
+                </div>
+                <div id="placeholder_DataLink" style="clear: both;"></div>
+                <!-- 페이지연결 -->
+                <!-- 권한/역활 접근제어 -->
+                <div class="layout_subbox">
+                    <h1><%=GetResource("AuthAccessControl")%></h1>
+                    <ul class="btn_right">
+                        <cc3:ClientSmartButton ID="cbtnADDAuth" runat="server" BeginEndTag="li"></cc3:ClientSmartButton>
+                    </ul>
+                </div>
+                <div id="placeholder_Role" style="clear: both;"></div>
+                <!-- 권한/역활 접근제어 -->
+                 <div class="layout_subbox">
+                    <h1><%=GetResource("IPAccessControl")%></h1>
+                    <ul class="btn_right">                        
+                        <cc3:ClientSmartButton ID="cbtnAddIP" BeginEndTag="li" runat="server" Text="IP 추가"></cc3:ClientSmartButton>                        
+                    </ul>
+                </div>
+                <div id="placeholder_IP" style="clear: both;"></div>
+                <!-- 권한/역활 접근제어 -->
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <asp:TextBox ID="tbPhotoNEW" runat="server" Width="0"></asp:TextBox>
+        <asp:TextBox ID="tbPhotoOLD" runat="server" Width="0"></asp:TextBox>
+        <asp:LinkButton ID="lbtnRegister" runat="server" OnClick="lbtnRegister_Click"></asp:LinkButton>
+    </div>
+    </form>
+    <!-- ############# start of modal ############## -->
+    <div id="zeoModalContact">
+        <!-- 드래그공간(br Tag 처리) //-->
+        <div id="zeoModalDrag" class="modal-drag">
+            <p>
+            </p>
+        </div>
+        <form id="zeoModalForm" name="zeoModalForm" target="zeoModalIfrm" method="post">
+        </form>
+        <iframe id="zeoModalIfrm" name="zeoModalIfrm" frameborder="0" scrolling="no" src="about:blank">
+        </iframe>
+    </div>
+    <div id="zeoModalBG">
+    </div>
+    <!-- ############# end of modal ############## -->
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/JModal/DeskPlusModal.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jtemplates.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/validator.js"></script>
+    <script type="text/javascript">
+        /**********************************************************************************************
+        전역 변수들
+        **********************************************************************************************/
+        var CompanyID = "<%=CurrentUserInfo.CompanyID %>";
+        var CategoryID = "<%=CategoryID %>";
+        var PortletID = "<%=PortletID %>";
+        var MultiLang = "<%=MultiLang %>";
+        var CurrentPage = "<%=CurrentPage %>"; //검색키워드
+        var RecordPerPage = "<%=RecordPerPage %>"; //검색키워드
+        var SearchField = "<%=SearchField %>"; //검색키워드
+        var SearchValue = "<%=SearchValue %>"; //검색어
+        var CurrentPage = "<%=CurrentPage %>"; //현재페이지
+        var Order = "<%=Order %>"; //sort   
+        var ImagePath = "<%=BaseImgPath%>";
+        var PreLang = "<%=PreLang%>";
+        var CountCode = 0;
+        var FileType = "*.jpg;*.jpeg;*.png;*.gif";
+        var FileTypeDesc = "Images (*.jpg *.jpeg *.png *.gif)";
+        var PhotoName = "<%=PhotoName %>";
+        var SwfUploadGUID = "<%=SwfUploadGUID %>"; //flash upload GUID 
+        var R_ConfirmDelete = "<%=GetResource("ConfirmDelete") %>";
+        var R_InputPortletName = "<%=GetResource("InputPortletName") %>";
+        var R_InputDataFormat = "<%=GetResource("InputDataFormat") %>";
+        var R_InputUIFormatURLValue = "<%=GetResource("InputUIFormatURLValue") %>";
+        var R_EncryptionGubun = "<%=GetResource("EncryptionGubun") %>";
+        var R_EncryptionValue = "<%=GetResource("EncryptionValue") %>";
+        var R_Target = "<%=GetResource("Target") %>";
+        var R_TargetData = "<%=GetResource("TargetData") %>";
+        var R_UserName = "<%=GetResource("UserName") %>";
+        var R_Values = "<%=GetResource("Values") %>";
+        var R_Del = "<%=GetResource("Del") %>";
+        var R_NotExistContent = "<%=GetResource("NotExistContent") %>";
+        var R_InputLinkURLValue = "<%=GetResource("InputLinkURLValue") %>";
+        var R_InputPortletCode = "<%=GetResource("InputPortletCode") %>";
+        var R_AccessCheck = "<%=GetResource("AccessCheck") %>";
+        var R_IPBand = "<%=GetResource("IPBand") %>";
+    </script>
+    <script type="text/javascript" src="/DeskPlusEIP/EIP/Js/Admin/Portlet/Mod.js"></script>
+    <script type="text/javascript">
+        //JsCall("/DeskPlusEIP/EIP/Js/Admin/Portlet/Mod.js");
+    </script>
+</body>
+</html>

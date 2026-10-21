@@ -1,0 +1,59 @@
+﻿<table class="table_typeA">
+<caption>소분류 리스트</caption>
+<colgroup>
+    <col />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />    
+    <col width="80px" /> 
+</colgroup>
+<thead>
+    <tr>
+        <th class="center r_group"></th>
+        <th class="center r_active"></th>
+        <th class="center r_template"></th>
+        <th class="center r_favlist"></th>
+        <th class="center r_favadd"></th>
+        <th class="center r_favorder"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as ItemSubList}
+    <tr>     
+        <td>
+            <a onclick="List.SubItem('{ $T.ItemSubList.ItemID }','{ $T.ItemSubList.ItemSubID }');return false;" style="cursor:pointer" >{ $T.ItemSubList.ItemSubName }</a>
+        </td>
+        <td class="center"><span class="Active_{ $T.ItemSubList.SubActiveGroup }">{ $T.ItemSubList.SubActiveGroup }</span></td>
+        <td class="center">
+            <a onclick="List.TempAdd('{ $T.ItemSubList.ItemSubID }','{ $T.ItemSubList.ItemID }','{ $T.ItemSubList.TempCnt }');return false;" style="cursor:pointer" >
+            {#if $T.ItemSubList.TempCnt > 0}
+                <span class="r_mod"></span>
+            {#else}
+                <span class="r_add"></span>
+            {#/if}
+            </a>
+        </td>
+        <td class="center">
+        <a onclick="List.ListFav('{ $T.ItemSubList.ItemSubID }');return false;" style="cursor:pointer" >
+            [명단]
+        </a>
+        </td>
+        <td class="center">
+        <a onclick="List.AddFav('{ $T.ItemSubList.ItemSubID }');return false;" style="cursor:pointer" >
+            [추가]
+        </a>
+        </td>
+        <td class="center">
+        <a onclick="List.MoveFavUpdown('{ $T.ItemSubList.ItemSubID }');return false;" style="cursor:pointer" >
+            [순서]
+        </a>
+        </td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="6" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

@@ -1,0 +1,32 @@
+﻿{#foreach $T as List}
+
+
+<li class="contentblock">
+
+    <div class="Mtitle linkDiv" onclick="javascript:List.viewList('{ $T.List.mail_sn }', '{ $T.List.read_flag }')">
+        <span class="mst" style="position:absolute;float:left;"><input onclick="javascript:event.stopPropagation();" style="vertical-align:middle;" type="checkbox" id='{$T.index}' value='{ $T.List.mail_sn }' /></span>
+         <a href="#">
+         <div class="conBox" style="padding-left:10px;">
+         {#if ($T.List.read_flag == '1')} 
+         <span class="LNoready">
+         {#else} 
+         <span class="Lready">
+         {#/if}
+         &nbsp;{ $T.List.mail_subject }&nbsp;{$T.List.today}</span>
+            {#if $T.List.mailbox_code == '3'}
+              {#if $T.List.isAttach == 'true'} &nbsp;<i class="fas fa-paperclip" style="color:#999;font-size:0.8em;"></i>{#/if}
+            {#/if}<br />
+         <span class="sch_user">{ $T.List.from_header } &nbsp; { $T.List.create_time }</span>         
+         </a>
+         </div>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

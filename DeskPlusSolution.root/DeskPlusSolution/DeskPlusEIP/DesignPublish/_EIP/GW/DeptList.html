@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_EIP.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>조직관리 > 제오스페이스 >  솔루션개발</h1>
+            <ul class="btn_left">
+                <li><a href="#"><span>엑셀업로드</span></a></li>
+                <li><a href="#"><span>엑셀다운로드</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>삭제</span></a></li>
+                <li class="btn_blue"><a href="#"><span>등록</span></a></li>
+            </ul>
+        </div>
+        <div id="layout_content">
+
+            <table class="table_typeB">
+			<caption>조직관리</caption>
+			<colgroup>
+                <col width="80px" />
+                <col width="40%" />
+                <col width="80px" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>부모조직</th>
+                    <td>
+                        <ul class="aLeft">
+                            <li>제오스페이스/솔루션본부/솔루션개발 (100)</li>
+                            <li>
+                                <ul class="btn_smallL">
+                                    <li><a href="#"><span>부모조직변경</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <th>부서옵션</th>
+                    <td>
+                        <ul class="chk_item">
+                            <li><input type="checkbox" /> 최상위부서</li>
+                            <li><input type="checkbox" /> 가상부서</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>조직명&nbsp;<a id="A1"><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th>
+                    <td><input type="text" style="width:95% !important;" /></td>
+                    <th>조직영문명</th>
+                    <td><input type="text" style="width:95% !important;" /></td>
+                </tr>
+                <tr>
+                    <th>약어</th>
+                    <td><input type="text" style="width:95% !important;" /></td>
+                    <th>연동코드</th>
+                    <td><input type="text" style="width:95% !important;" /></td>
+                </tr>
+                <tr>
+                    <th>설명</th>
+                    <td colspan="3"><input type="text" style="width:95% !important;" /></td>
+                </tr>
+                <tr>
+					<th>회사주소&nbsp;<a id=""><img src="/DeskPlusEIP/Design/Base/Img/Icon/ico_add.gif"/></a></th>
+					<td colspan="3">
+                        <input type="text" style="width:40px !important;" />
+                        <input type="text" style="width:40% !important;" />
+                        <input type="text" style="width:40% !important;" />
+                    </td>
+				</tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" style="width:100px !important;" /></td>
+                    <th>팩스</th>
+                    <td><input type="text" style="width:100px !important;" /></td>
+                </tr>
+                <tr>
+                    <th>홈페이지</th>
+                    <td><input type="text" style="width:95% !important;" /></td>
+                    <th>활성화여부</th>
+                    <td>
+                        <select class="searchselect">
+	                        <option value="">활성</option>
+	                        <option value="">비활성</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <div class="layout_subbox">
+                <h2>소속원조회</h2>
+            </div>
+            
+            <div class="eip_srh">
+                <ul class="btn_searchbox">
+                    <li>
+                        <select class="searchselect">
+	                        <option value="">회사명</option>
+	                        <option value="">관리자</option>
+	                        <option value="">관리자휴대폰</option>
+	                        <option value="">...</option>
+                        </select>
+                    </li>
+                    <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                    <li><a href="#" class="searchbtn" title="">검색</a></li>
+                </ul>
+                </div>
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>
+                소속원조회
+            </caption>
+            <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>계정</th>
+                    <th>이름</th>
+                    <th>이메일</th>
+                    <th>휴대폰</th>
+                    <th>계열사</th>
+                    <th>부서명</th>
+                    <th>직급명</th>
+                    <th>직책명</th>
+                    <th>순서</th>
+                    <th>활성화</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+            
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

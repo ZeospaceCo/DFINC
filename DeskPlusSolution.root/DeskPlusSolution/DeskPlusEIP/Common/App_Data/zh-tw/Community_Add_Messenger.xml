@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 應用社區($Name$)</Title>
+	<ContentHTML>
+		[應用社區]
+		&lt;br&gt;&lt;br&gt;
+		- 社區居民 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 申請人 : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- 到社區簡介 : $Content$
+	</ContentHTML>
+</ContentInfo>

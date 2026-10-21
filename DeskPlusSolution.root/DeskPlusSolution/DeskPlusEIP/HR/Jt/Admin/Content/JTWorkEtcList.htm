@@ -1,0 +1,40 @@
+﻿<table class="table_typeB" id="WorkEtcTable">
+<caption>유연근무 대상</caption>
+<colgroup>
+    <col width="80px" />
+    <col width="220px" />
+    <col width="80px" />
+    <col width="100px" />
+    <col width="130px" />
+    <col />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span id="r_Gubun"></span></th>
+        <th class="center"><span id="r_DeptName"></span></th>
+        <th class="center"><span id="r_TitleName"></span></th>
+        <th class="center"><span id="r_Name"></span></th>
+        <th class="center"><span id="r_WeekDay"></span></th>
+        <th class="center"><span id="r_EtcWorkTime"></span></th>
+        <th class="center"><span id="r_Del"></span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">{ $T.List.Types }</td>
+        <td class="center">{ $T.List.DeptName }</td>
+        <td class="center">{ $T.List.TitleName }</td>
+        <td class="center">{ $T.List.UserName }</td>
+        <td class="center">{ $T.List.WeekDays }</td>
+        <td class="center">{ $T.List.WSTimeStr } ~ { $T.List.WCTimeStr }</td>        
+        <td class="center"><a class="btn" href="#" onclick="javascript:WorkAdmin.WorkEtcDel('{ $T.List.WorkEtcID }')" style="display:inline-block;"><span class="btn_del"></span></a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span class="NoListData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

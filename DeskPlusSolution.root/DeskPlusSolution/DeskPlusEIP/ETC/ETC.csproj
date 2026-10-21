@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CC13F27-694E-4D78-A1E4-A1375171ECC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.ETC.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.ETC.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminRole.aspx.cs">
+      <DependentUpon>AdminRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminRole.aspx.designer.cs">
+      <DependentUpon>AdminRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminRoleAdd.aspx.cs">
+      <DependentUpon>AdminRoleAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminRoleAdd.aspx.designer.cs">
+      <DependentUpon>AdminRoleAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusD.aspx.cs">
+      <DependentUpon>AdminStatusD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusD.aspx.designer.cs">
+      <DependentUpon>AdminStatusD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusM.aspx.cs">
+      <DependentUpon>AdminStatusM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusM.aspx.designer.cs">
+      <DependentUpon>AdminStatusM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusY.aspx.cs">
+      <DependentUpon>AdminStatusY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminStatusY.aspx.designer.cs">
+      <DependentUpon>AdminStatusY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AdminTree.aspx.cs">
+      <DependentUpon>AdminTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\AdminTree.aspx.designer.cs">
+      <DependentUpon>AdminTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserDefault.aspx.cs">
+      <DependentUpon>UserDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserDefault.aspx.designer.cs">
+      <DependentUpon>UserDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserListView.aspx.cs">
+      <DependentUpon>UserListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserListView.aspx.designer.cs">
+      <DependentUpon>UserListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserStatusD.aspx.cs">
+      <DependentUpon>UserStatusD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserStatusD.aspx.designer.cs">
+      <DependentUpon>UserStatusD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserStatusM.aspx.cs">
+      <DependentUpon>UserStatusM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserStatusM.aspx.designer.cs">
+      <DependentUpon>UserStatusM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserStatusY.aspx.cs">
+      <DependentUpon>UserStatusY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserStatusY.aspx.designer.cs">
+      <DependentUpon>UserStatusY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\UserTree.aspx.cs">
+      <DependentUpon>UserTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance\UserTree.aspx.designer.cs">
+      <DependentUpon>UserTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseControlETC.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageETC.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSETC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customize\Admin\CardListAdminEx.aspx.cs">
+      <DependentUpon>CardListAdminEx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\Admin\CardListAdminEx.aspx.designer.cs">
+      <DependentUpon>CardListAdminEx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\Admin\ListAdmin.aspx.cs">
+      <DependentUpon>ListAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\Admin\ListAdmin.aspx.designer.cs">
+      <DependentUpon>ListAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\Admin\ListFinancial.aspx.cs">
+      <DependentUpon>ListFinancial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\Admin\ListFinancial.aspx.designer.cs">
+      <DependentUpon>ListFinancial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\CustomBiz\DalLegacy.cs" />
+    <Compile Include="Customize\CustomBiz\Model\ExpenseUserInfo.cs" />
+    <Compile Include="Customize\CustomBiz\Model\IFInfo.cs" />
+    <Compile Include="Customize\CustomBiz\Model\VendorInfo.cs" />
+    <Compile Include="Customize\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\AddDetail.aspx.cs">
+      <DependentUpon>AddDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\AddDetail.aspx.designer.cs">
+      <DependentUpon>AddDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\AddMaster.aspx.cs">
+      <DependentUpon>AddMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\AddMaster.aspx.designer.cs">
+      <DependentUpon>AddMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\CardMgrPopup.aspx.cs">
+      <DependentUpon>CardMgrPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\CardMgrPopup.aspx.designer.cs">
+      <DependentUpon>CardMgrPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopBankAccount.aspx.cs">
+      <DependentUpon>PopBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopBankAccount.aspx.designer.cs">
+      <DependentUpon>PopBankAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopBatch.aspx.cs">
+      <DependentUpon>PopBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopBatch.aspx.designer.cs">
+      <DependentUpon>PopBatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopDepartMent.aspx.cs">
+      <DependentUpon>PopDepartMent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopDepartMent.aspx.designer.cs">
+      <DependentUpon>PopDepartMent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopDraftList.aspx.cs">
+      <DependentUpon>PopDraftList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopDraftList.aspx.designer.cs">
+      <DependentUpon>PopDraftList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopEmployee.aspx.cs">
+      <DependentUpon>PopEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopEmployee.aspx.designer.cs">
+      <DependentUpon>PopEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopGLAccount.aspx.cs">
+      <DependentUpon>PopGLAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopGLAccount.aspx.designer.cs">
+      <DependentUpon>PopGLAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopPostingGroup.aspx.cs">
+      <DependentUpon>PopPostingGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopPostingGroup.aspx.designer.cs">
+      <DependentUpon>PopPostingGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopProductGroup.aspx.cs">
+      <DependentUpon>PopProductGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopProductGroup.aspx.designer.cs">
+      <DependentUpon>PopProductGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopTax.aspx.cs">
+      <DependentUpon>PopTax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopTax.aspx.designer.cs">
+      <DependentUpon>PopTax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopVendor.aspx.cs">
+      <DependentUpon>PopVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\User\Popup\PopVendor.aspx.designer.cs">
+      <DependentUpon>PopVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DecisionRule\decisionRuleList.aspx.cs">
+      <DependentUpon>decisionRuleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DecisionRule\decisionRuleList.aspx.designer.cs">
+      <DependentUpon>decisionRuleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DecisionRule\decisionRuleUser.aspx.cs">
+      <DependentUpon>decisionRuleUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DecisionRule\decisionRuleUser.aspx.designer.cs">
+      <DependentUpon>decisionRuleUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ETCLegacy\WorkList.aspx.cs">
+      <DependentUpon>WorkList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ETCLegacy\WorkList.aspx.designer.cs">
+      <DependentUpon>WorkList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\AdminManage.aspx.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\AdminManage.aspx.designer.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\GetUserInfo.aspx.cs">
+      <DependentUpon>GetUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\GetUserInfo.aspx.designer.cs">
+      <DependentUpon>GetUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\ListAdmin.aspx.cs">
+      <DependentUpon>ListAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\ListAdmin.aspx.designer.cs">
+      <DependentUpon>ListAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewAdmin.aspx.cs">
+      <DependentUpon>ViewAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewAdmin.aspx.designer.cs">
+      <DependentUpon>ViewAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewUser.aspx.cs">
+      <DependentUpon>ViewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday\Popup\ViewUser.aspx.designer.cs">
+      <DependentUpon>ViewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\MailCount.aspx.cs">
+      <DependentUpon>MailCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mail\MailCount.aspx.designer.cs">
+      <DependentUpon>MailCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\Common\FolderStatusTreeScript.ascx.cs">
+      <DependentUpon>FolderStatusTreeScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\Common\FolderStatusTreeScript.ascx.designer.cs">
+      <DependentUpon>FolderStatusTreeScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\Menu\Tree.aspx.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\Menu\Tree.aspx.designer.cs">
+      <DependentUpon>Tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUp\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUp\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Mod.aspx.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUp\Mod.aspx.designer.cs">
+      <DependentUpon>Mod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Work\AdminManage.aspx.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Work\AdminManage.aspx.designer.cs">
+      <DependentUpon>AdminManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Work\ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Work\ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Attendance\AdminRole.asmx.cs">
+      <DependentUpon>AdminRole.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Attendance\AdminStatus.asmx.cs">
+      <DependentUpon>AdminStatus.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Attendance\UserStatus.asmx.cs">
+      <DependentUpon>UserStatus.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopBankAccount.asmx.cs">
+      <DependentUpon>PopBankAccount.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopBatch.asmx.cs">
+      <DependentUpon>PopBatch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopDepartMent.asmx.cs">
+      <DependentUpon>PopDepartMent.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopDraft.asmx.cs">
+      <DependentUpon>PopDraft.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopEmployee.asmx.cs">
+      <DependentUpon>PopEmployee.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopGLAccount.asmx.cs">
+      <DependentUpon>PopGLAccount.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopPostingGroup.asmx.cs">
+      <DependentUpon>PopPostingGroup.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopProductGroup.asmx.cs">
+      <DependentUpon>PopProductGroup.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopTax.asmx.cs">
+      <DependentUpon>PopTax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Customize\User\Popup\PopVendor.asmx.cs">
+      <DependentUpon>PopVendor.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\ETCLegacy\WorkList.asmx.cs">
+      <DependentUpon>WorkList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Holiday\AdminManage.asmx.cs">
+      <DependentUpon>AdminManage.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Holiday\ListAdmin.asmx.cs">
+      <DependentUpon>ListAdmin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Holiday\ListUser.asmx.cs">
+      <DependentUpon>ListUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Holiday\Popup\ViewAdmin.asmx.cs">
+      <DependentUpon>ViewAdmin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Holiday\Popup\ViewHistory.asmx.cs">
+      <DependentUpon>ViewHistory.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Pay\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\PopUp\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Work\AdminManage.asmx.cs">
+      <DependentUpon>AdminManage.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Work\ListUser.asmx.cs">
+      <DependentUpon>ListUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.DAL\Zeospace.DeskPlus.Approval.DAL.csproj">
+      <Project>{0E1037DF-8071-4DF4-8559-434B00644661}</Project>
+      <Name>Zeospace.DeskPlus.Approval.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BLL\Zeospace.DeskPlus.Common.BLL.csproj">
+      <Project>{E9AE6461-CF97-46AB-B742-6821E36E3280}</Project>
+      <Name>Zeospace.DeskPlus.Common.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
+      <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
+      <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ComponentProject\Zeospace.DeskPlus.Component.Excel\Zeospace.DeskPlus.Component.Excel.csproj">
+      <Project>{47AF1FC6-4AC2-4216-A4BD-277FA3F8B728}</Project>
+      <Name>Zeospace.DeskPlus.Component.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ETCProject\Zeospace.DeskPlus.ETC.BE\Zeospace.DeskPlus.ETC.BE.csproj">
+      <Project>{AF01F058-527C-4E9B-829D-212EDADD5A61}</Project>
+      <Name>Zeospace.DeskPlus.ETC.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ETCProject\Zeospace.DeskPlus.ETC.BLL\Zeospace.DeskPlus.ETC.BLL.csproj">
+      <Project>{BE4C3EC6-32FD-4B36-B10F-F58F57177C61}</Project>
+      <Name>Zeospace.DeskPlus.ETC.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ETCProject\Zeospace.DeskPlus.ETC.DAL\Zeospace.DeskPlus.ETC.DAL.csproj">
+      <Project>{5999B264-5FE8-42CC-BF50-0854A5B92EBE}</Project>
+      <Name>Zeospace.DeskPlus.ETC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Attendance\AdminDefault.aspx" />
+    <Content Include="Attendance\AdminRole.aspx" />
+    <Content Include="Attendance\AdminRoleAdd.aspx" />
+    <Content Include="Attendance\AdminStatusD.aspx" />
+    <Content Include="Attendance\AdminStatusM.aspx" />
+    <Content Include="Attendance\AdminStatusY.aspx" />
+    <Content Include="Attendance\AdminTree.aspx" />
+    <Content Include="Attendance\UserDefault.aspx" />
+    <Content Include="Attendance\UserList.aspx" />
+    <Content Include="Attendance\UserListView.aspx" />
+    <Content Include="Attendance\UserStatusD.aspx" />
+    <Content Include="Attendance\UserStatusM.aspx" />
+    <Content Include="Attendance\UserStatusY.aspx" />
+    <Content Include="Attendance\UserTree.aspx" />
+    <Content Include="Customize\Admin\CardListAdminEx.aspx" />
+    <Content Include="Customize\Admin\ListAdmin.aspx" />
+    <Content Include="Customize\Admin\ListFinancial.aspx" />
+    <Content Include="Customize\Default.aspx" />
+    <Content Include="Customize\Menu\Menu.aspx" />
+    <Content Include="Customize\User\AddDetail.aspx" />
+    <Content Include="Customize\User\AddMaster.aspx" />
+    <Content Include="Customize\User\CardMgrPopup.aspx" />
+    <Content Include="Customize\User\ListUser.aspx" />
+    <Content Include="Customize\User\Popup\PopBankAccount.aspx" />
+    <Content Include="Customize\User\Popup\PopBatch.aspx" />
+    <Content Include="Customize\User\Popup\PopDepartMent.aspx" />
+    <Content Include="Customize\User\Popup\PopDraftList.aspx" />
+    <Content Include="Customize\User\Popup\PopEmployee.aspx" />
+    <Content Include="Customize\User\Popup\PopGLAccount.aspx" />
+    <Content Include="Customize\User\Popup\PopPostingGroup.aspx" />
+    <Content Include="Customize\User\Popup\PopProductGroup.aspx" />
+    <Content Include="Customize\User\Popup\PopTax.aspx" />
+    <Content Include="Customize\User\Popup\PopVendor.aspx" />
+    <Content Include="DecisionRule\decisionRuleList.aspx" />
+    <Content Include="DecisionRule\decisionRuleUser.aspx" />
+    <Content Include="ETCLegacy\WorkList.aspx" />
+    <Content Include="Holiday\AdminManage.aspx" />
+    <Content Include="Holiday\GetUserInfo.aspx" />
+    <Content Include="Holiday\ListAdmin.aspx" />
+    <Content Include="Holiday\Popup\ViewAdmin.aspx" />
+    <Content Include="Holiday\Popup\ViewHistory.aspx" />
+    <Content Include="Holiday\ListUser.aspx" />
+    <Content Include="Holiday\Popup\ViewUser.aspx" />
+    <Content Include="Js\Attendance\AdminRole.js" />
+    <Content Include="Js\Attendance\AdminRoleAdd.js" />
+    <Content Include="Js\Attendance\AdminStatusD.js" />
+    <Content Include="Js\Attendance\AdminStatusM.js" />
+    <Content Include="Js\Attendance\AdminStatusY.js" />
+    <Content Include="Js\Attendance\AdminTree.js" />
+    <Content Include="Js\Attendance\UserTree.js" />
+    <Content Include="Js\Attendance\UserStatusD.js" />
+    <Content Include="Js\Attendance\UserStatusM.js" />
+    <Content Include="Js\Attendance\UserStatusY.js" />
+    <Content Include="Js\Attendance\UserList.js" />
+    <Content Include="Js\Attendance\UserListView.js" />
+    <Content Include="Js\Customize\Admin\ListAdmin.js" />
+    <Content Include="Js\Customize\Admin\ListFinancial.js" />
+    <Content Include="Js\Customize\Menu\Menu.js" />
+    <Content Include="Js\Customize\User\AddDetail.js" />
+    <Content Include="Js\Customize\User\AddMaster.js" />
+    <Content Include="Js\Customize\User\CardMgrPopup.js" />
+    <Content Include="Js\Customize\User\Common.js" />
+    <Content Include="Js\Customize\User\ListUser.js" />
+    <Content Include="Js\Customize\User\Popup\PopBankAccount.js" />
+    <Content Include="Js\Customize\User\Popup\PopBatch.js" />
+    <Content Include="Js\Customize\User\Popup\PopDepartMent.js" />
+    <Content Include="Js\Customize\User\Popup\PopDraft.js" />
+    <Content Include="Js\Customize\User\Popup\PopEmployee.js" />
+    <Content Include="Js\Customize\User\Popup\PopGLAccount.js" />
+    <Content Include="Js\Customize\User\Popup\PopPostingGroup.js" />
+    <Content Include="Js\Customize\User\Popup\PopProductGroup.js" />
+    <Content Include="Js\Customize\User\Popup\PopTax.js" />
+    <Content Include="Js\Customize\User\Popup\PopVendor.js" />
+    <Content Include="Js\DecisionRule\decisionRuleList.js" />
+    <Content Include="Js\DecisionRule\decisionRuleUser.js" />
+    <Content Include="Js\ETCLegacy\WorkList.js" />
+    <Content Include="Js\Holiday\AdminManage.js" />
+    <Content Include="Js\Holiday\GetUserInfo.js" />
+    <Content Include="Js\Holiday\ListAdmin.js" />
+    <Content Include="Js\Holiday\Popup\ViewAdmin.js" />
+    <Content Include="Js\Holiday\Popup\ViewHistory.js" />
+    <Content Include="Js\Holiday\ListUser.js" />
+    <Content Include="Js\Holiday\Popup\ViewUser.js" />
+    <Content Include="Js\Pay\List.js" />
+    <Content Include="Js\Pay\Menu\Tree.js" />
+    <Content Include="Js\PopUp\Add.js" />
+    <Content Include="Js\PopUp\List.js" />
+    <Content Include="Js\PopUp\Mod.js" />
+    <Content Include="Js\Work\AdminManage.js" />
+    <Content Include="Js\Work\ListUser.js" />
+    <Content Include="Jt\Attendance\JTAdminRole.htm" />
+    <Content Include="Jt\Attendance\JTAdminRoleAdd.htm" />
+    <Content Include="Jt\Attendance\JTAdminStatusD.htm" />
+    <Content Include="Jt\Attendance\JTAdminStatusM.htm" />
+    <Content Include="Jt\Attendance\JTUserStatusY.htm" />
+    <Content Include="Jt\Attendance\JTAdminStatusY.htm" />
+    <Content Include="Jt\Attendance\JTUserStatusD.htm" />
+    <Content Include="Jt\Attendance\JTUserStatusM.htm" />
+    <Content Include="Jt\Attendance\JTUserList.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopBankAccount.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopBatch.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopDepartMent.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopDraft.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopEmployee.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopGLAccount.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopPostingGroup.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopProductGroup.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopTax.htm" />
+    <Content Include="Jt\Customize\User\Popup\JTPopVendor.htm" />
+    <Content Include="Jt\ETCLegacy\JTWorkList.htm" />
+    <Content Include="Jt\Holiday\JTAdminManage.htm" />
+    <Content Include="Jt\Holiday\JTListAdmin.htm" />
+    <Content Include="Jt\Holiday\Popup\JTViewHistory.htm" />
+    <Content Include="Jt\Holiday\JTListUser.htm" />
+    <Content Include="Jt\Holiday\Popup\JTViewAdmin.htm" />
+    <Content Include="Jt\Pay\JTList.htm" />
+    <Content Include="Jt\PopUp\JTList.htm" />
+    <Content Include="Jt\Work\JTAdminManage.htm" />
+    <Content Include="Jt\Work\JTListUser.htm" />
+    <Content Include="Mail\MailCount.aspx" />
+    <Content Include="Pay\Common\FolderStatusTreeScript.ascx" />
+    <Content Include="Pay\Default.aspx" />
+    <Content Include="Pay\List.aspx" />
+    <Content Include="Pay\Menu\Tree.aspx" />
+    <Content Include="PopUp\Add.aspx" />
+    <Content Include="PopUp\AddN.aspx" />
+    <Content Include="PopUp\List.aspx" />
+    <Content Include="PopUp\Mod.aspx" />
+    <Content Include="PopUp\ModN.aspx" />
+    <Content Include="Work\AdminManage.aspx" />
+    <Content Include="Work\ListUser.aspx" />
+    <Content Include="Ws\Attendance\AdminRole.asmx" />
+    <Content Include="Ws\Attendance\AdminStatus.asmx" />
+    <Content Include="Ws\Attendance\UserStatus.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopBankAccount.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopBatch.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopDepartMent.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopDraft.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopEmployee.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopGLAccount.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopPostingGroup.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopProductGroup.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopTax.asmx" />
+    <Content Include="Ws\Customize\User\Popup\PopVendor.asmx" />
+    <Content Include="Ws\ETCLegacy\WorkList.asmx" />
+    <Content Include="Ws\Holiday\AdminManage.asmx" />
+    <Content Include="Ws\Holiday\ListAdmin.asmx" />
+    <Content Include="Ws\Holiday\ListUser.asmx" />
+    <Content Include="Ws\Holiday\Popup\ViewAdmin.asmx" />
+    <Content Include="Ws\Holiday\Popup\ViewHistory.asmx" />
+    <Content Include="Ws\Pay\List.asmx" />
+    <Content Include="Ws\PopUp\List.asmx" />
+    <Content Include="Ws\Work\AdminManage.asmx" />
+    <Content Include="Ws\Work\ListUser.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Customize\Component\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62229</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/ETC</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

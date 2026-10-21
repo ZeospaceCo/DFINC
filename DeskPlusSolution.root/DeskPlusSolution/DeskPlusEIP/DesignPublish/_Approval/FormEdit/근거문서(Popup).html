@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Approval.css?v=1" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+
+
+<div class="layer_popup">
+    <div class="top-left"></div>
+    <div class="top-right"></div>
+
+    <div class="inside">
+        <div class="popup_header">
+            <h5>근거문서</h5>
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="" title=""><span>확인</span></a></li>
+                <li><a href="" title=""><span>닫기</span></a></li>
+            </ul>
+        </div>
+        <div class="dotLine"></div>
+        <div class="popup_layout_style3">
+
+            <ul class="tab" >
+                <li><a class="tab_on" href="#"> <span>부서별문서함</span> </a></li>
+                <li><a href="#"> <span>개인별문서함</span> </a></li>
+				<li><a href="#"> <span>결재문서함</span> </a></li>
+				<li><a href="#"> <span>참조문서함</span> </a></li>
+            </ul>
+            <div id="tabs-1">
+                <!-- 검색 //-->                
+                <div class="app_popSrh">
+                <ul class="btn_searchbox">
+                    <li>
+                        <select class="searchselect">
+                            <option>이름</option><option>이메일 </option><option>휴대폰 </option>
+                        </select>
+                    </li>
+					<li>
+					    <input type="text" class="searchtext">
+                    </li>
+					<li><a class="searchbtn" href="#">검색</a></li>
+                </ul>
+                </div>
+                <!-- 리스트 //--> 
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>근거문서</caption>
+                <colgroup>
+                    <col width="10%" />
+					<col width="10%" />
+					<col />
+					<col width="10%" />
+					<col width="10%" />
+					<col width="10%" />
+                </colgroup>
+                <thead>
+                    <tr>
+						<th>문서번호</th>
+						<th>양식명</th>
+						<th>제목</th>
+						<th>상신자</th>
+						<th>상신일</th>
+					    <th>완료일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6" class="center">리스트가 존재하지 않습니다. <br />(기본으로, 최근 완료기준 100건만 나옴. 이전리스트는 검색을 통해)</td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+
+                <!-- 페이징 시작 //-->
+                <div class="paging_num_s1"> 
+	                <span id="pager">
+    	            <span id="pager_prev10"><a href="#">이전</a></span>
+                        <em> 1 </em>
+                        <a href="#"> 2 </a>
+                        <a href="#"> 3 </a>
+                        <a href="#"> 4 </a>
+                        <a href="#"> 5 </a>
+                        <a href="#"> 6 </a>
+                        <a href="#"> 7 </a>
+                        <a href="#"> 8 </a>
+                    <span id="pager_next10"><a href="#">다음</a></span></span> 
+                    <!--<select class="aRight">
+                    <option>10</option><option>20</option><option>30</option>
+                    </select>-->
+                </div>
+            
+            </div>
+
+            <div class="app_gap10">
+                <div class="table_typeAtop_left"><p></p></div>
+                <table class="table_typeA">
+                <caption>근거문서선택리스트</caption>
+                <colgroup>
+                    <col width="10%" />
+					<col width="10%" />
+					<col />
+					<col width="10%" />
+					<col width="10%" />
+					<col width="10%" />
+                    <col width="10%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>분류</th>
+						<th>문서번호</th>
+						<th>양식명</th>
+						<th>제목</th>
+						<th>상신자</th>
+					    <th>문서보기</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" class="center">리스트가 존재하지 않습니다.</td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="table_typeAbottom_left"><p></p></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom-left"></div>
+    <div class="bottom-right"></div>
+</div>
+
+
+</body>
+</html>

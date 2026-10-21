@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 문자메시지</title>
+<link type="text/css" rel="stylesheet" href="simple.css" />
+<script type="text/javascript" src="sms_common.js"></script>
+<script type="text/javascript" src="sms.js"></script>
+
+</head>
+<body>
+
+      
+      
+      
+      <!-- 폰 영역(기본형) -->
+		<div class="col-phone">
+			<h3>메시지 입력창</h3>
+			<!-- 입력창 -->
+			<div class="message"><!-- onkeydown="return checkAndSaveCurPos( event );" -->
+				<textarea cols="16" rows="5" name="vc_message" id="vc_message" onkeypress="return checkAndSaveCurPos( event );" onselect="saveCurrentPos();" onclick="saveCurrentPos();" onkeyup="return checkAndSaveCurPos( event );" onblur="return inputMsg( event );"></textarea>
+			</div>
+			<!-- //입력창 -->
+
+			<!-- 추가기능 -->
+			<div class="add-function">
+				<span class="byte" id="txtLen">0</span>
+				<button type="button" class="sign" title="특수기호" onclick="toggleLayer('layer_sign'); return false;">특수기호</button>
+				<button type="button" class="save" title="앨범저장" onclick="saveAlbum()">문자저장</button>
+			</div>
+			<!-- //추가기능 -->
+
+			<!-- 특수기호 레이어 -->
+			<div id="layer_sign" class="layer_sign" style="display:none;">
+				<dl>
+					<dt>
+						<strong>특수기호 선택</strong>
+						<button type="button" class="close" title="닫기" onclick="hideLayer('layer_sign'); return false;">닫기</button>
+					</dt>
+					<dd class="scroll">
+					
+							<a href="javascript:onClickChar('★');">★</a>
+							
+							<a href="javascript:onClickChar('☆');">☆</a>
+							
+							<a href="javascript:onClickChar('☎');">☎</a>
+							
+							<a href="javascript:onClickChar('☏');">☏</a>
+							
+							<a href="javascript:onClickChar('☜');">☜</a>
+							
+							<a href="javascript:onClickChar('☞');">☞</a>
+							
+							<a href="javascript:onClickChar('※');">※</a>
+							
+							<a href="javascript:onClickChar('♥');">♥</a>
+							
+							<a href="javascript:onClickChar('♡');">♡</a>
+							
+							<a href="javascript:onClickChar('♣');">♣</a>
+							
+							<a href="javascript:onClickChar('♠');">♠</a>
+							
+							<a href="javascript:onClickChar('♤');">♤</a>
+							
+							<a href="javascript:onClickChar('♧');">♧</a>
+							
+							<a href="javascript:onClickChar('♨');">♨</a>
+							
+							<a href="javascript:onClickChar('ㆀ');">ㆀ</a>
+							
+							<a href="javascript:onClickChar('『');">『</a>
+							
+							<a href="javascript:onClickChar('』');">』</a>
+							
+							<a href="javascript:onClickChar('♩');">♩</a>
+							
+							<a href="javascript:onClickChar('♪');">♪</a>
+							
+							<a href="javascript:onClickChar('♬');">♬</a>
+							
+							<a href="javascript:onClickChar('■');">■</a>
+							
+							<a href="javascript:onClickChar('□');">□</a>
+							
+							<a href="javascript:onClickChar('▣');">▣</a>
+							
+							<a href="javascript:onClickChar('▤');">▤</a>
+							
+							<a href="javascript:onClickChar('▦');">▦</a>
+							
+							<a href="javascript:onClickChar('▨');">▨</a>
+							
+							<a href="javascript:onClickChar('▩');">▩</a>
+							
+							<a href="javascript:onClickChar('▒');">▒</a>
+							
+							<a href="javascript:onClickChar('▲');">▲</a>
+							
+							<a href="javascript:onClickChar('△');">△</a>
+							
+							<a href="javascript:onClickChar('▶');">▶</a>
+							
+							<a href="javascript:onClickChar('▷');">▷</a>
+							
+							<a href="javascript:onClickChar('▼');">▼</a>
+							
+							<a href="javascript:onClickChar('▽');">▽</a>
+							
+							<a href="javascript:onClickChar('◀');">◀</a>
+							
+							<a href="javascript:onClickChar('◁');">◁</a>
+							
+							<a href="javascript:onClickChar('◆');">◆</a>
+							
+							<a href="javascript:onClickChar('◇');">◇</a>
+							
+							<a href="javascript:onClickChar('◈');">◈</a>
+							
+							<a href="javascript:onClickChar('●');">●</a>
+							
+							<a href="javascript:onClickChar('○');">○</a>
+							
+							<a href="javascript:onClickChar('◎');">◎</a>
+							
+							<a href="javascript:onClickChar('⊙');">⊙</a>
+							
+							<a href="javascript:onClickChar('◐');">◐</a>
+							
+					</dd>
+				</dl>
+			</div>
+			<!-- //특수기호 레이어 -->
+
+			<!-- 보내는 사람 -->
+			<div class="sender f-clear">
+				<strong>보내는사람</strong>
+				<input type="text" class="text" name="vc_send_num" id="vc_send_num" value="" onfocus="onSendNumFocus( event, this )" onblur="onSendNumBlur( event, this )" onkeydown="return sendNumKey(event, this)"/>
+			</div>
+			<!-- //보내는 사람 -->
+
+			<!-- 받는사람 -->
+			<div class="reciver">
+				<strong>받는사람</strong>
+				<p class="btn">
+					<button type="button" class="address" title="주소록" onclick="openAddressBook(); return false;">주소록</button>
+					<button type="button" class="recent" onclick="toggleRecent(); return false;" title="최근번호">최근번호</button>
+				</p>
+
+				<!-- 최근번호 레이어 -->
+				<div id="layer_recent_number" class="layer_recent_number" style="display:none;">
+					<ul class="recent-list scroll" id="ul_recent"><li>none</li></ul>
+					<div class="layer_button f-clear">
+						<button type="button" class="select-all" onclick="clearRecent(); return false;" title="전체삭제">전체삭제</button>
+						<button type="button" class="close" onclick="toggleRecent(); return false;" title="닫기">닫기</button>
+					</div>
+				</div>
+				<!-- //최근번호 -->
+
+				<!-- 받는 사람 목록 -->
+				<div class="wrapper">
+					<!-- 검색 -->
+					<fieldset>
+						<legend>빠른 검색</legend>
+						<p>
+							<input id="quickSearch" type="text" class="text" title="이름 또는 번호를 입력하세요" value="이름/전화번호 검색" onfocus="this.value='';" onkeyup="onQuickSearchKey(event)"/>
+							<button type="button" class="search" title="검색" onclick="quickSearch(); return false;">검색</button>
+						</p>
+					</fieldset>
+					<!-- //검색 -->
+
+					<ul id="rcptUl" class="list scroll" onclick="onRcptClick( event ); return false;" style="cursor:normal;">
+						<li id="rcptDesc" class="desc">
+							<span class="name" id="rcpt_new_name">이름</span><span class="number" id="rcpt_new_number">수신번호</span>
+						</li>
+					
+						<li id="rcpt0" style="display:none;" onclick="focusRcpt(0); return false;">
+							<em>1</em>
+							<span id="ncell0"></span>
+							<input id="cell0" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(0); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt1" style="display:none;" onclick="focusRcpt(1); return false;">
+							<em>2</em>
+							<span id="ncell1"></span>
+							<input id="cell1" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(1); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt2" style="display:none;" onclick="focusRcpt(2); return false;">
+							<em>3</em>
+							<span id="ncell2"></span>
+							<input id="cell2" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(2); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt3" style="display:none;" onclick="focusRcpt(3); return false;">
+							<em>4</em>
+							<span id="ncell3"></span>
+							<input id="cell3" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(3); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt4" style="display:none;" onclick="focusRcpt(4); return false;">
+							<em>5</em>
+							<span id="ncell4"></span>
+							<input id="cell4" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(4); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt5" style="display:none;" onclick="focusRcpt(5); return false;">
+							<em>6</em>
+							<span id="ncell5"></span>
+							<input id="cell5" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(5); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt6" style="display:none;" onclick="focusRcpt(6); return false;">
+							<em>7</em>
+							<span id="ncell6"></span>
+							<input id="cell6" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(6); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt7" style="display:none;" onclick="focusRcpt(7); return false;">
+							<em>8</em>
+							<span id="ncell7"></span>
+							<input id="cell7" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(7); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt8" style="display:none;" onclick="focusRcpt(8); return false;">
+							<em>9</em>
+							<span id="ncell8"></span>
+							<input id="cell8" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(8); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt9" style="display:none;" onclick="focusRcpt(9); return false;">
+							<em>10</em>
+							<span id="ncell9"></span>
+							<input id="cell9" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(9); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt10" style="display:none;" onclick="focusRcpt(10); return false;">
+							<em>11</em>
+							<span id="ncell10"></span>
+							<input id="cell10" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(10); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt11" style="display:none;" onclick="focusRcpt(11); return false;">
+							<em>12</em>
+							<span id="ncell11"></span>
+							<input id="cell11" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(11); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt12" style="display:none;" onclick="focusRcpt(12); return false;">
+							<em>13</em>
+							<span id="ncell12"></span>
+							<input id="cell12" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(12); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt13" style="display:none;" onclick="focusRcpt(13); return false;">
+							<em>14</em>
+							<span id="ncell13"></span>
+							<input id="cell13" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(13); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt14" style="display:none;" onclick="focusRcpt(14); return false;">
+							<em>15</em>
+							<span id="ncell14"></span>
+							<input id="cell14" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(14); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt15" style="display:none;" onclick="focusRcpt(15); return false;">
+							<em>16</em>
+							<span id="ncell15"></span>
+							<input id="cell15" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(15); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt16" style="display:none;" onclick="focusRcpt(16); return false;">
+							<em>17</em>
+							<span id="ncell16"></span>
+							<input id="cell16" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(16); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt17" style="display:none;" onclick="focusRcpt(17); return false;">
+							<em>18</em>
+							<span id="ncell17"></span>
+							<input id="cell17" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(17); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt18" style="display:none;" onclick="focusRcpt(18); return false;">
+							<em>19</em>
+							<span id="ncell18"></span>
+							<input id="cell18" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(18); return false;">삭제</button>
+						</li>
+					
+						<li id="rcpt19" style="display:none;" onclick="focusRcpt(19); return false;">
+							<em>20</em>
+							<span id="ncell19"></span>
+							<input id="cell19" type="text" class="text" value="" 
+										onfocus="return onEdit(event, this);" onblur="onEditBlur(event, this); return false;" onkeyup="//return fillCandidate(event, this );" onkeydown="return checkInputChar(event, this);" />
+							<button type="button" class="delete" title="삭제" onclick="deleteReceiveNum(19); return false;">삭제</button>
+						</li>
+											
+					</ul>
+
+					<!-- 검색결과 -->
+					<dl id="search-list" class="search-list" style="display:none;">
+						<dt>
+							<strong>검색결과</strong>
+							<button type="button" class="close" title="닫기" onclick="toggleLayer('search-list'); return false;">닫기</button>
+						</dt>
+						<dd>
+							<ul id="quick_search_result" class="scroll"><li>none</li></ul>
+						</dd>
+					</dl>
+					<!-- //검색결과 -->
+
+					<!-- 검색결과 없음 -->
+					<dl id="search-list-none" class="search-list-none" style="display:none;">
+						<dt>
+							<strong>검색결과</strong>
+							<button type="button" class="close" title="닫기" onclick="toggleLayer('search-list-none'); return false;">닫기</button>
+						</dt>
+						<dd>
+							<p id="search-list-none-msg">
+								입력 정보와 일치하는<br /> 정보가 없습니다.
+							</p>
+						</dd>
+					</dl>
+					<!-- //검색결과 없음 -->
+				</div>
+				<!-- //받는 사람 목록 -->
+			</div>
+			<!-- //받는사람 -->
+
+			<!-- 예약전송 -->
+			<div class="booking">
+				<span class="label off" onclick="toggleReserve();" id="rsvChk"><input type="checkbox" class="check"/><em>예약전송</em></span>
+				<button type="button" class="help" onmouseover="showLayer('help'); return false;" onmouseout="hideLayer('help'); return false;">도움말</button>
+
+				<div id="help" class="help" style="display:none;">
+					좌측 체크박스를 선택하시면<br />
+					상세 예약 설정이 가능합니다.
+				</div>
+
+				<div id="info" class="info" style="display:none;">
+					<p class="term">
+						<input type="radio" name="term" id="rdo_once" class="radio" onclick="showLayer('once'); hideLayer('repeat');" checked="checked" /><label for="rdo_once">한번</label>
+						<input type="radio" name="term" id="rdo_repeat" class="radio" onclick="showLayer('repeat'); hideLayer('once');" disabled="disabled"/><label for="rdo_repeat">반복</label>
+					</p>
+
+					<!-- 한번 -->
+					<div id="once" class="once" style="display:block;">
+						<p class="f-clear">
+							<input id="rsv_date_disp" type="text" class="text" value="" readonly="readonly" onclick="showCalendar( setReserveDate, 'layer_calendar', getReserveOnceDate() ); return false;"/>
+							<button type="button" class="calendar" onclick="showCalendar( setReserveDate, 'layer_calendar', getReserveOnceDate() ); return false;" title="달력">달력</button>
+						</p>
+						<p class="f-clear">
+							<select id="once_hour">
+							
+								<option value="0" >오전 12시</option>
+								
+								<option value="1" >오전 1시</option>
+								
+								<option value="2" >오전 2시</option>
+								
+								<option value="3" >오전 3시</option>
+								
+								<option value="4" >오전 4시</option>
+								
+								<option value="5" >오전 5시</option>
+								
+								<option value="6" >오전 6시</option>
+								
+								<option value="7" >오전 7시</option>
+								
+								<option value="8" >오전 8시</option>
+								
+								<option value="9" >오전 9시</option>
+								
+								<option value="10" selected="selected">오전 10시</option>
+								
+								<option value="11" >오전 11시</option>
+								
+								<option value="12" >오후 12시</option>
+								
+								<option value="13" >오후 1시</option>
+								
+								<option value="14" >오후 2시</option>
+								
+								<option value="15" >오후 3시</option>
+								
+								<option value="16" >오후 4시</option>
+								
+								<option value="17" >오후 5시</option>
+								
+								<option value="18" >오후 6시</option>
+								
+								<option value="19" >오후 7시</option>
+								
+								<option value="20" >오후 8시</option>
+								
+								<option value="21" >오후 9시</option>
+								
+								<option value="22" >오후 10시</option>
+								
+								<option value="23" >오후 11시</option>
+								
+							</select>
+							<select id="once_minute">
+							
+								<option value="0" >0분</option>
+								
+								<option value="5" >5분</option>
+								
+								<option value="10" >10분</option>
+								
+								<option value="15" >15분</option>
+								
+								<option value="20" >20분</option>
+								
+								<option value="25" >25분</option>
+								
+								<option value="30" >30분</option>
+								
+								<option value="35" >35분</option>
+								
+								<option value="40" >40분</option>
+								
+								<option value="45" selected="selected">45분</option>
+								
+								<option value="50" >50분</option>
+								
+								<option value="55" >55분</option>
+								
+							</select>
+						</p>
+					</div>
+					<!-- //한번 -->
+
+					<!-- 반복 -->
+					<div id="repeat" class="repeat" style="display:none;">
+						<p class="f-clear">
+							<input type="text" class="text" value="2008-12-03 (목)" />
+							<button type="button" class="calendar" onclick="toggleLayer('layer_calendar'); return false;" title="달력">달력</button><em>부터</em>
+						</p>
+						<p class="f-clear">
+							<input type="text" class="text" value="2008-12-03 (목)" />
+							<button type="button" class="calendar" onclick="toggleLayer('layer_calendar'); return false;" title="달력">달력</button><em>까지</em>
+						</p>
+						<dl class="f-clear">
+							<dt>주기</dt>
+							<dd>
+								<select>
+									<option>오전 10시</option>
+									<option>오전 11시</option>
+								</select>
+								<select>
+									<option>--</option>
+								</select>
+							</dd>
+						</dl>
+						<dl class="f-clear">
+							<dt>시간</dt>
+							<dd>
+								<select>
+									<option>오전 10시</option>
+									<option>오전 11시</option>
+								</select>
+								<select>
+									<option>30분</option>
+									<option>40분</option>
+								</select>
+							</dd>
+						</dl>
+					</div>
+					<!-- //반복 -->
+
+					<button type="button" class="close" onclick="closeReserveLayer(); return false;" title="닫기">닫기</button>
+				</div>
+
+				<!-- 달력 -->
+				<div id="layer_calendar" class="layer_calendar" style="display:none;"></div>
+				<!-- //달력 -->
+			</div>
+			<!-- //예약전송 -->
+
+
+
+			<!-- 버튼 -->
+			<div class="button">
+				<button type="button" class="b_send" title="전송" onclick="checkInvalidPattern();">전송</button>
+				<button type="button" class="b_reset" title="재입력" onclick="clearMessage();">재입력</button>
+			</div>
+			<!-- //버튼 -->
+		</div>
+		<!-- //폰 영역(기본형) -->
+
+
+</body>
+</html>

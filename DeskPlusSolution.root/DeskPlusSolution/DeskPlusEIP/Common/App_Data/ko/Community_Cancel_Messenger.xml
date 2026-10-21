@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] 커뮤니티 개설신청 취소($Name$)</Title>
+	<ContentHTML>
+		[커뮤니티 개설신청 취소]
+		&lt;br&gt;&lt;br&gt;
+		- 커뮤니티 명 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 취소한 사람 : $Name$
+	</ContentHTML>
+</ContentInfo>

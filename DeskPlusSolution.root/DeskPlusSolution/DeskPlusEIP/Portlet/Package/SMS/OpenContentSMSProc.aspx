@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OpenContentSMSProc.aspx.cs" Inherits="Zeospace.DeskPlus.Portlet.Web.Package.SMS.OpenContentSMSProc" %>

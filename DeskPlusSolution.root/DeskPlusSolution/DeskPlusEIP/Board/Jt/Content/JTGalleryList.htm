@@ -1,0 +1,69 @@
+﻿<div class="table_typeLmiddle">
+	<div class="album_cont">
+		<ul>
+        {#foreach $T as BoardList}
+			<li>   
+                <div class="thumb">
+                    <dl class="sub" >
+                        <dd>
+                             <p class="fav">							    
+                                <input type="checkbox" id="chkImpo_{$T.BoardList.ListID}" 
+                                {#if $T.BoardList.ImpoCnt == 1}checked="checked"{#/if}
+                                onclick="List.ModImpUser('chkImpo_{$T.BoardList.ListID}', this)" />
+
+	                            <label for="chkImpo_{$T.BoardList.ListID}" title="" 
+                                id="lbImpo_{$T.BoardList.ListID}" class="{#if $T.BoardList.ImpoCnt == 1}on{#/if}">
+                                    <span class="blind"></span>
+                                </label>  
+                             </p>
+                        </dd>
+                    </dl>
+                    <dl class="album_img">   
+                    {#if $T.BoardList.ImgCount == "0"}
+                        <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer">
+                        <img src="{ $T.BoardList.ScreenShot }" alt="" />
+                        </a>
+                    {#else}
+                        <a href="#" onclick="List.ShowImage('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer">
+                        <img src="{ $T.BoardList.ScreenShot }" alt="" /></a>
+                    {#/if}
+
+					</dl>
+                    <dl class="text">   
+                        <dd>{#if $T.BoardList.OptionTop == "1"}<span class="badge notice badge-warning"><span class="s_notice"></span></span>
+                        {#else}<span class="badge badge-info"><span class="s_common"></span></span>
+                        {#/if}</dd>
+                        <dd>
+                            {#if $T.BoardList.WriteUserID > 0}
+                                <a href="#" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>             
+                            {#else}
+                                { $T.BoardList.WriteUserName }
+                            {#/if}
+                        </dd>
+					</dl>
+                    <dl class="text">   
+                        <dd>{ $T.BoardList.WriteDate }</dd>
+                        <dd class="end">
+							{#if $T.BoardList.ReplyCount > 0}
+							<a onclick="List.PopupShort('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer" class="badge number bg-info">
+								{ $T.BoardList.ReplyCount }
+							</a>
+							{#/if} 
+							{#if $T.BoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}
+						</dd>  
+						<dt>
+                            <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer">
+                            <span class="fontCut">
+                                { $T.BoardList.Title }
+                            </span>
+                            </a>                            
+                        </dt>
+					</dl>
+				</div>         
+			</li>
+        {#else}
+            <li class="last-child"><span class="NoListData" /></li>
+        {#/for}
+		</ul>
+	</div>				 
+</div>

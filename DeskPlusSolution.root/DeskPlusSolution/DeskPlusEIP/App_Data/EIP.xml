@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SEL_QRY_FILE_DOCUMENTIDVERSIONID"
+    Value="SELECT * FROM DP_ACCOUNT_USERS" Content="사용자 정보가져오기" />  
+</XmlData>

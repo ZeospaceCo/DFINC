@@ -1,0 +1,31 @@
+﻿<table class="table_typeA">
+    <colgroup>
+        <col />
+        <col />
+    </colgroup>
+    <tr>
+        <th id="j_Name">
+        </th>
+        <th>
+            CODE
+        </th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td>
+            <a onclick="DeptBackup.SelDelDept('{ $T.List.DeptID }','{ $T.List.NameBase }')" style="cursor: pointer">
+                { $T.List.NameBase }</a>
+        </td>
+        <td>
+            <a onclick="DeptBackup.SelDelDept('{ $T.List.DeptID }','{ $T.List.NameBase }')" style="cursor: pointer">
+                { $T.List.DeptID }</a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="center" colspan="2">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}
+</table>

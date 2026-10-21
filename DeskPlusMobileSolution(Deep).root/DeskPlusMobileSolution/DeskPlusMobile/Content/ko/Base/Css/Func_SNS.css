@@ -1,0 +1,27 @@
+﻿@charset "utf-8"; 
+
+/* 
+===============================================================================================
+1.	버    전 : 사내SNS v1.1
+2.	작 성 자 :  
+3.	작 성 일 : 
+4.	참    고 : 
+===============================================================================================
+*/
+
+
+/* 사내 SNS - 톡 body */
+.tk_b{position:relative;}
+.tk_b .lb{color:#000;	background-color: #ECECEC;	border-radius:5px;	padding:7px;}
+.tk_b .arr{	top:15%;	margin-left: 0px;	border-right : 8px solid #ECECEC;	border-top: 8px solid transparent;	border-left : 8px solid transparent;	border-bottom: 8px solid transparent;	position:absolute;	left:-15px;	width:0; height:0;}
+
+.subtext{vertical-align:bottom;font-size:11px;color:#252D77;}
+.subtext a{vertical-align:bottom;font-size:11px;color:#252D77;}
+.subtextH1{vertical-align:bottom;font-size:15px;color:#41484F;font-weight:bold;}
+
+.subto{vertical-align:bottom;font-size:12px;color:#252D77;font-weight:bold;}
+.subto a{vertical-align:bottom;font-size:12px;color:#252D77;font-weight:bold;}
+
+.a_ct{position:relative;left:100px;font-size:11px;color:#757e8d;font-weight:bold;}
+.sns_ct{position:relative;left:0px;font-size:12px;color:#757e8d;font-weight:bold;padding:10px 0px 0px 0px;}
+.tl_tk span{position:relative;font-size:16px;font-weight:bold;color:#FFF;top:22px;left:22px;border:0px solid red;text-shadow: 1px 1px 1px #252D77;}

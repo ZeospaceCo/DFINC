@@ -1,0 +1,26 @@
+﻿ <table cellspacing="0" class="table_typeA"> 
+    <caption>
+        일정분류 리스트
+    </caption>
+    <colgroup>
+        <col width="*" />
+        <col width="*" />
+        <col width="80px" />
+    </colgroup>
+    <tr>
+        <th id="r_name"></th>
+        <th id="r_color"></th>
+        <th id="r_active"></th>  
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><a onclick="List.Mod('{ $T.List.StatusID}')">{ $T.List.NameBase}</a></td>
+        <td class="center"><div style="border-top:3px solid { $T.List.Colors };background:#f2f4f7;width:50px;height:15px;display:inline-block;" title="{ $T.List.Colors }"></div></td>
+        <td align="center">{#if $T.List.UseActive == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>        
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>   
+     </tr>
+    {#/for}       
+ </table>

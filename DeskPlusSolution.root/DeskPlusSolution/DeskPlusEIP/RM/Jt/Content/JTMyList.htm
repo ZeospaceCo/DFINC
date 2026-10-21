@@ -1,0 +1,49 @@
+﻿<table class="table_typeA">
+<caption>자원 리스트</caption>
+<colgroup>    
+    <col width="30px" />
+    <col width="60px" />
+    <col width="200px" />    
+    <col width="250px" />
+    <col width="200px" />    
+    <col width="40px" />
+    <col width="80px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"></th>
+        <th><span id="r_usable"></span></th>           
+        <th class="center"><span id="r_resourcesTitle"></span></th>        
+        <th class="center"><span id="r_reserveDate"></span></th>
+        <th class="center"><span id="r_subject"></span></th>        
+        <th class="center"><span id="r_attach"></span></th>
+        <th class="center"><span id="r_modifyDay"></span></th>
+    </tr>  
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center" style="padding-left:10px">{ $T.List.Usable }</td>
+        <td>{ $T.List.UsableStr }</td>
+        <td class="center"><a href="#" onclick="AccountInfo('{ $T.List.ManagerUserID }');return false;" style="cursor:pointer">{ $T.List.Title }</a></td>                  
+        <td class="center">{ $T.List.ReserveDate }</td>
+        <td class="left">
+            <a href="#" onclick="javascript:MyList.View('{ $T.List.ReservationID }')" style="cursor:pointer" >{ $T.List.Subject }</a>
+            {#if $T.List.ReplyCount > 0}
+            <span class="icon_Comment_view">({ $T.List.ReplyCount })</span>         
+            {#/if}
+        </td>        
+        <td class="center">
+        {#if $T.List.FileCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" ListID='{ $T.List.ParentReservationID }'></i>
+        {#/if}
+        </td>  
+        <td class="center">{ $T.List.ModifyDateStr }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

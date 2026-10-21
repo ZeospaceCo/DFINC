@@ -1,0 +1,5 @@
+﻿{#foreach $T as AdminMenuList}
+<li><a id="{ $T.AdminMenuList.ID }" onclick="{ $T.AdminMenuList.ClientSideCommand }" style="cursor:pointer;">{ $T.AdminMenuList.Text }</a></li>
+{#else}
+<li></li>
+{#/for}        

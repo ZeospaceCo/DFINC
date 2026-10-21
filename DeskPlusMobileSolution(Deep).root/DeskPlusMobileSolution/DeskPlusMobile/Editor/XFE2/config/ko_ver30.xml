@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<xfeEditor>
+  <menu1>
+
+    <Fontsize visible="true">폰트 크기</Fontsize>
+
+    <AlignLeft visible="true">왼쪽 정렬</AlignLeft>
+    <AlignCenter visible="true">가운데 정렬</AlignCenter>
+    <AlignRight visible="true">오른쪽 정렬</AlignRight>
+    <Justify visible="true">양쪽 정렬</Justify>
+
+  </menu1>
+</xfeEditor>

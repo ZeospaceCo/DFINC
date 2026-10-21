@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>zdtr1</Title>
+			<Shortcut>zdtr1</Shortcut>
+			<Description>DataTableReader로 가져오기(파라미터) DAL</Description>
+			<Author>friendmy</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>entity</ID>
+					<ToolTip>프로젝트명</ToolTip>
+					<Default></Default>
+				</Literal>
+        <Literal>
+          <ID>spName</ID>
+          <ToolTip>프로시져명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name1</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name11</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name2</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name22</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name3</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name33</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name4</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Name44</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Parameter</ID>
+          <ToolTip>프로젝트명</ToolTip>
+          <Default>int _companyID</Default>
+        </Literal>
+        <Literal>
+          <ID>CompanyID</ID>
+          <ToolTip>회사명</ToolTip>
+          <Default>_companyID</Default>
+        </Literal>
+        <Literal>
+          <ID>spName</ID>
+          <ToolTip>프로시져명</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>MethodName</ID>
+          <ToolTip>프로시져명</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+			<Code Language="csharp">
+    <![CDATA[
+        public DataTableReader Get$MethodName$($Parameter$)
+        {
+            using (SqlConnection cn = new SqlConnection(this.ConnSolution($CompanyID$)))
+            {
+                SqlCommand cmd = new SqlCommand("DP_$spName$", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                
+                cmd.Parameters.Add("@$Name1$", SqlDbType.Int).Value = $Name11$;
+                cmd.Parameters.Add("@$Name2$", SqlDbType.VarChar,1000).Value = $Name22$;
+                cmd.Parameters.Add("@$Name3$", SqlDbType.NVarChar, 500).Value = $Name33$;                
+                cmd.Parameters.Add("@$Name4$", SqlDbType.Char, 1).Value = $Name44$;
+
+
+                cn.Open();
+
+                return ExecuteDataTableReader(cmd);
+            }
+
+        }
+  ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

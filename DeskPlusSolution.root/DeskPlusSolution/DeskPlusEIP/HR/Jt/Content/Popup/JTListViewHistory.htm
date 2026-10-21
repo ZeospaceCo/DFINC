@@ -1,0 +1,53 @@
+﻿<table class="table_typeC"> 
+<colgroup>
+    <col width="70px" />
+    <col width="40px" />
+    <col width="70px" />    
+    <col width="40px" />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="80px" />
+    <col width="160px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_WSTime" class="center"></th>    
+    <th id="r_WSConn" class="center"></th>
+    <th id="r_WCTime" class="center"></th>    
+    <th id="r_WCConn" class="center"></th>
+    <th id="r_LateRemark" class="center"></th>
+    <th id="r_EarlyRemark" class="center"></th>
+    <th id="r_ModifyName" class="center"></th>
+    <th id="r_ModifyDate" class="center"></th>     
+    <th id="r_ModifyReason" class="center"></th>   
+</tr>
+{#foreach $T as ListPrivateMod}
+<tr>
+    <td class="center">        
+        {#if $T.ListPrivateMod.bLate == "1"}
+            <span style="color: Red">{ $T.ListPrivateMod.WSTime }</span>
+        {#else}
+            { $T.ListPrivateMod.WSTime }
+        {#/if}
+    </td>
+    <td class="center">{ $T.ListPrivateMod.WSConn }</td>
+    <td class="center">        
+        {#if $T.ListPrivateMod.bEarly == "1"}
+            <span style="color: Red">{ $T.ListPrivateMod.WCTime }</span>
+        {#else}
+            { $T.ListPrivateMod.WCTime }
+        {#/if}
+    </td>
+    <td class="center">{ $T.ListPrivateMod.WCConn }</td>
+    <td><div style="word-break: break-all;">{ $T.ListPrivateMod.LateRemark }</div></td>
+    <td><div style="word-break: break-all;">{ $T.ListPrivateMod.EarlyRemark }</div></td>
+    <td class="center"><a onclick="AccountInfoWin('{ $T.ListPrivateMod.ModifyUserID }');return false;">{ $T.ListPrivateMod.ModifyNameBase }</a></td>    
+    <td class="center">{ $T.ListPrivateMod.ModifyDateStr }</td>
+    <td><div style="word-break: break-all;">{ $T.ListPrivateMod.ModifyReason }</div></td>
+</tr>  
+{#else}
+<tr>
+    <td colspan="9" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

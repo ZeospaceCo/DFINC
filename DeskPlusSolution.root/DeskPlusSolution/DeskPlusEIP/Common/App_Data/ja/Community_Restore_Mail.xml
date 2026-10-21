@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] コミュニティへの参加復帰</Title>
+	<ContentHTML>
+		[コミュニティへの参加復帰]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+	</ContentHTML>
+</ContentInfo>

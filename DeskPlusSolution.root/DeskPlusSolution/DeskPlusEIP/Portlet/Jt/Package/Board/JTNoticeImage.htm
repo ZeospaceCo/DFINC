@@ -1,0 +1,213 @@
+﻿<!--div class="imageSlider">
+    <div class="left"><a href="#"><img class="PtlType3Left" alt="" title="" /></a></div>
+    <div class="imageList">
+        <!ul>
+        {#foreach $T as List}                         
+        <li class="poboxlistset" style="height:100%;">
+            <dd class="img"><a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+            <img src="{ $T.List.ScreenShot }" alt="img" style="min-width:300px;height:170px;" /></a></dd>
+        </li>
+        {#/for}                                          
+        </ul>
+    </div>
+    <div class="right"><a href="#"><img class="PtlType3Right" alt="" title="" /></a></div>
+</div-->
+
+<div><!-- start slide section -->
+	<div class="container my-4">
+		<!--Carousel Wrapper-->
+		<div id="wslide" class="carousel slide carousel-multi-item" data-ride="carousel">
+            
+			<!--Controls-->
+			<div class="controls-top">
+                <a class="btn-floating" href="#wslide" data-slide="prev"><span class="material-icons-outlined">&#xe5e0;</span></i></a>
+                <a class="btn-floating" href="#wslide" data-slide="next"><span class="material-icons-outlined">&#xe5e1;</span></i></a>
+			</div>
+            <!--/.Controls-->
+            
+            <!--Indicators>
+			<ol class="carousel-indicators">
+                <li data-target="#wslide" data-slide-to="0" class="active"></li>
+                <li data-target="#wslide" data-slide-to="1"></li>
+                <li data-target="#wslide" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+            
+		            <!--First slide-->
+		            <div class="carousel-item active">
+            
+                            <div class="row">
+                                <div class="col-md-4 mt-0 mb-3">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[0].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[0].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[0].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[0].Title }</h4>
+                                    <!-- 내용 p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p -->
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[0].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[1].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[1].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[1].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[1].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[1].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[2].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[2].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[2].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[2].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[2].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+            
+		            </div><!-- end First slide-->
+                    
+                    {#if $T[3] != undefined} 
+		            <!--Second slide-->
+		            <div class="carousel-item">
+            
+                            <div class="row">
+                                <div class="col-md-4 mt-0 mb-3">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[3].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[3].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[3].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[3].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[3].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[4].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[4].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[4].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[4].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[4].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">                                    
+                                    <img class="card-img-top" src="{ $T[5].ScreenShot }"
+                                        alt="Card image cap">                                    
+                                    <div class="card-body">
+                                    {#if $T[5].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[5].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[5].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[5].Title }</h4>
+                                    {#/if}
+                                    </div>                                    
+                                </div>
+                                </div>
+                            </div>
+            
+		            </div><!-- end Second slide-->
+                    {#/if}
+
+                    {#if $T[6] != undefined}
+		            <!--Third slide-->
+		            <div class="carousel-item">
+            
+                            <div class="row">
+                                <div class="col-md-4 mt-0 mb-3">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[6].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[6].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[6].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[6].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[6].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[7].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[7].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[7].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[7].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[7].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="{ $T[8].ScreenShot }"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                    {#if $T[8].HrefUrl != ""}
+                                    <a onclick="PopupWinOpen('{ $T[8].HrefUrl }','','',1200,800,'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                                    <h4 class="card-title">{ $T[8].Title }</h4>
+                                    </a>
+                                    {#else}
+                                    <h4 class="card-title">{ $T[8].Title }</h4>
+                                    {#/if}
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+            
+		            </div><!-- end Third slide-->
+                    {#/if}
+            
+            </div><!-- end Slides-->
+        </div><!-- end Carousel Wrapper-->
+            
+	</div><!-- end container section -->
+</div><!-- end slide section -->

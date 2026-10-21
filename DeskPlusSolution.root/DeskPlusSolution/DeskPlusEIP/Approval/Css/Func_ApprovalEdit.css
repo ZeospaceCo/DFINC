@@ -1,0 +1,38 @@
+BODY  { font-family: gulim; background-color:#FFFFFF; font-size:10pt; color: #000000; margin:0px; padding:0px; line-height: 140%; scrollbar-face-color: #F2F2F2; scrollbar-shadow-color:#999999; scrollbar-highlight-color:#999999;	scrollbar-3dlight-color: #FFFFFF; scrollbar-darkshadow-color: #FFFFFF; scrollbar-track-color: #F6F6F6; scrollbar-arrow-color: #999999; } 
+TABLE { font-family: gulim; font-size:9pt; }
+INPUT { font-size:9pt; border: solid 0px #ffffff;}
+
+.ZD		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZP		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZQ		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZH		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZC		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZR		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+.ZA		{ font-size:8pt; color:Gray;  cursor:pointer; padding:2px; vertical-align:bottom; display:inline-block; }
+
+.ZDSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #FFF99D; font-weight:bold; display:inline-block; /*background-color:#FFF99D;*/ }
+.ZPSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #8DCFF4; font-weight:bold; display:inline-block; /*background-color:#8DCFF4;*/ }
+.ZQSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #F4948D; font-weight:bold; display:inline-block; /*background-color:#F4948D;*/ }
+.ZHSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #9595C6; font-weight:bold; display:inline-block; /*background-color:#9595C6;*/ }
+.ZCSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #A8D59D; font-weight:bold; display:inline-block; /*background-color:#A8D59D;*/ }
+.ZRSel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #FFD49D; font-weight:bold; display:inline-block; /*background-color:#FFD49D;*/ }
+.ZASel  { font-size:8pt; color:Black;  cursor:pointer; padding:2px; vertical-align:bottom; border:1px solid #FF9294; font-weight:bold; display:inline-block; /*background-color:#FF9294;*/ }
+
+.formfieldview { font-size:9pt; border: none;}
+.formFieldViewDate { font-size:7pt; border: none; color:red; }
+.formfieldinput { font-size:9pt; border: solid 1px #D3D3D3; }
+.Plain { font-size:9pt; border: none; }
+P {margin-top:2px; margin-bottom:2px;}
+
+/*Ms*/
+v\:* { BEHAVIOR: url(#default#VML) }
+o\:* { BEHAVIOR: url(#default#VML) }
+x\:* { VISIBILITY: hidden; POSITION: relative }
+.shape { BEHAVIOR: url(#default#VML) }
+
+
+/* Ã·¾ðÃ³¸® */
+.app_opi {width:100%;border:0px solid red;padding:5px 0px 0px 0px;margin:0px;/*font-size:11px;*/}
+.app_opi .tit {padding:3px 0px;}
+.app_opi .date {padding:3px 0px 3px 5px; /*width:auto;float:right;top:0px;*/}
+.app_opi .cont {width:100%;padding:5px 5px;}

@@ -1,0 +1,15 @@
+﻿{#foreach $T as List}
+<li class="contentblock linkDiv" onclick="javascript:BoardFolder.goList('{ $T.List.CommunityID }','{ $T.List.MenuID }','{ $T.List.ReadAuth }')">
+    <div class="title">
+        <a href="#" class="mct">
+            <span class="lis">{ $T.List.Name }</span>
+        </a>
+    </div>
+</li>
+{#else}   
+<li class="contentblock" >
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" /><br /></a>
+    </div>
+</li>
+{#/for}

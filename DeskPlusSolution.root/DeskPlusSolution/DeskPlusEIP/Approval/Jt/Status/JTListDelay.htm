@@ -1,0 +1,58 @@
+﻿<table class="table_typeA">
+<caption>보류문서</caption>
+<colgroup>
+    <col width="150px" />
+    <col width="100px" />
+    <col width="250px" />
+    <col width="60px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center" id="r_formName"></th>
+        <th class="center" id="r_approvalState"></th>
+        <th class="center" id="r_subject"></th>        
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_user"></th>
+        <th class="center" id="r_writeTime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as Delay}
+    <tr>
+        <td class="center">{ $T.Delay.FormBase }</td>
+        <td class="center"><a href="" onclick="Delay.State('{ $T.Delay.DocumentID }','{ $T.Delay.AccountTag }');return false;" style="cursor:pointer" >
+        {#if $T.Delay.ApprovalState == 'W'} <span class="r_w"></span> 
+        {#elseif $T.Delay.ApprovalState == 'I'} <span class="r_i"></span>  
+        {#elseif $T.Delay.ApprovalState == 'R'} <span class="r_r"></span> 
+        {#elseif $T.Delay.ApprovalState == 'D'} <span class="r_d"></span> 
+        {#elseif $T.Delay.ApprovalState == 'C'} <span class="r_c"></span> 
+        {#elseif $T.Delay.ApprovalState == 'H'} <span class="r_h"></span>  
+        {#elseif $T.Delay.ApprovalState == 'P'} <span class="r_p"></span>         
+        {#/if}
+        </td>
+        <td>            
+            {#if $T.Delay.IsGuard == '1'}
+                <img class="IconSecurity" />                
+            {#elseif $T.Delay.IsGuard == '2'}
+                <img class="IconEmergency" />                
+            {#/if}
+            <a href="" onclick="Delay.Approval('{ $T.Delay.DocumentID }', '{ $T.Delay.Sequence }', '{ $T.Delay.ApprovalTag }', '{ $T.Delay.UserID }', '{ $T.Delay.DeptID }');return false;" style="cursor:pointer" >{ $T.Delay.Subject }</a> 
+            {#if $T.Delay.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}  
+        </td>
+        <td class="center">
+            {#if $T.Delay.Filecount > 0}
+                <i class="fas fa-arrow-alt-circle-down" action="attach" style="cursor:pointer" childDocID='{ $T.Delay.ChildDocID }'></i>
+            {#/if}
+        </td>
+        <td class="center"><a onclick="AccountInfo('{ $T.Delay.UserID }');return false;">{ $T.Delay.NameBase }</a></td>      
+        <td class="center">{ $T.Delay.WriteTimeStr }</td>        
+    </tr>
+{#else}
+    <tr>
+        <td colspan="6" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

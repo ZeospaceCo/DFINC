@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="TabCategoryID" Value="8" Content="메신져 업무텝 카테고리" />
+  <Item ID="ServerIP" Value="127.0.0.1" Content="Cool 메신져 Alarm 서버 IP" />
+  <Item ID="ServerPort" Value="55051" Content="Cool 메신져 Alarm 서버 Port" />
+  <Item ID="MessageKind" Value="6" Content="Cool 메신져 메시지 타입 objRef.SendToCool (MessageKind, 1, 0, 0, 'MessageData')" />
+  <item ID="MessageData" Value="{COOLMSG}{ALERTMSG}{BACKIMG}1{/BACKIMG}{MSGTYPE}101{/MSGTYPE}{SUB}[SUBJECT]{/SUB}{CONT}[SUBJECT]{/CONT}{URL}[TARGETURL]{/URL}{TARGET}[RECEIVERID]{/TARGET}{SENDER}[SENDERID]{/SENDER}{MSGBOX}1{/MSGBOX}{MSGSAVE}1{/MSGSAVE}{MSGICON}1{/MSGICON}{/ALERTMSG}{/COOLMSG}" Content="Cool 메신져 메시지 데이타 objRef.SendToCool (MessageKind, 1, 0, 0, 'MessageData')" />
+  <Item ID="IsUcMessenger" Value="N" Content="Uc 메신저 사용 여부" />
+  <Item ID="QueryCode" Value="8" Content="Uc 메신저 쿼리 코드" />
+  <Item ID="Messengersubmit" Value="계정정보수정테스트" Content="Sumbit 별칭" />
+  <Item ID="MessengerURL" Value="msg.zeospace.com:12554" Content="메신져 경로" />
+</XmlData>

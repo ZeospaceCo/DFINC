@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>단위항목 관리</h1>
+            <ul class="aLeft">
+                <li>
+                    <select name="ddlSearchTerm" id="ddlSearchTerm" class="searchselect">
+                        <option selected="selected">프로젝트메뉴A</option><option>프로젝트메뉴B</option><option>프로젝트메뉴C</option>
+                    </select>
+                    <span class="cm_subtxt">* 프로젝트 게시판에서 사용할 단위항목을 관리합니다.</span>
+                </li>
+            </ul>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>단위항목삭제</span></a></li>
+                <li><a href="2_PJT(단위항목)관리_추가.html"><span>단위항목추가</span></a></li>
+            </ul>
+        </div>
+        <div class="cm_gap5"></div>
+        <div class="cm_layout_srh">
+            <div class="left">
+                <ul class="cm_tab">
+                    <li><a href="2_PJT(단위항목)관리.html">단위항목리스트</a></li>
+                    <li><a href="#" class="tab_on">일정별조회</a></li>
+                    <li><a href="2_PJT(단위항목)관리_보기(자원별).html">자원별조회</a></li>
+                    <li class="last"><a href="2_PJT(단위항목)관리_보기(프젝별).html">PJT별조회</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="btn_searchbox">
+                    <li>
+                    <select class="searchselect">
+	                    <option>제목</option>
+	                    <option>내용</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="cm_cal_monthtit">
+                <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Btn/btn_prev.gif" alt="이전" /></a>
+                <span>2011. 03</span>
+                <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Btn/btn_next.gif" alt="이후" /></a>
+            </div>
+   
+            <!-- 테이블 시작 -->
+            <div class="table_typeAtop_left"><p></p></div> 
+            <table class="table_typeJ">
+                <caption>
+                 월간
+                </caption>
+                <colgroup>
+                    <col width="15%" />
+                    <col width="14%" />
+                    <col width="14%" />
+                    <col width="14%" />
+                    <col width="14%" />
+                    <col width="14%" />
+                    <col />                    
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><span class="txt_holiday">일요일</span></th>
+                        <th>월요일</th>
+                        <th>화요일</th>
+                        <th>수요일</th>
+                        <th>목요일</th>
+                        <th>금요일</th>
+                        <th>토요일</th>
+                    </tr>                         
+                </thead>
+                <tbody>                    	
+                    <tr>
+                        <td>
+                            <span class="txt_holiday">1</span>
+                            <ul class="data">
+                                <li class="unapp"><a href="2_PJT(단위항목)관리_추가.html">홈페이지 개편안</a></li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td><span >2</span></td>
+                        <td><span >3</span></td>
+                        <td><span >4</span></td>
+                        <td><span >5</span></td>
+                        <td>
+                            <span >6</span>
+                            <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span >7</span>
+                            <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="txt_holiday">8</span>
+                            <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td><span >9</span></td>
+                        <td><span >10</span></td>
+                        <td><span >11</span></td>
+                        <td><span >12</span></td>
+                        <td><span >13</span></td>
+                        <td><span >14</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="txt_holiday">15</span>
+                            <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td><span >16</span></td>
+                        <td><span >17</span></td>
+                        <td><span >18</span></td>
+                        <td><span >19</span></td>
+                        <td><span >20</span></td>
+                        <td><span >21</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="txt_holiday">22</span>
+                            <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td><span >23</span></td>
+                        <td><span >24</span></td>
+                        <td><span >25</span></td>
+                        <td><span >26</span></td>
+                        <td><span >27</span></td>
+                        <td><span >28</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="txt_holiday">29</span>                               
+                        </td>
+                        <td><span >30</span>
+                             <ul class="data">
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                                <li class="app">홈페이지 개편안</li>
+                                <li class="unapp">홈페이지 개편안</li>
+                            </ul>
+                        </td>
+                        <td><span >31</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table_typeAbottom_left">
+                <p></p>
+            </div><!-- 테이블 끝 -->
+            
+            <div class="cm_gap10"></div>
+            <span class="cm_subtxt">* <b>작업명</b> 선택 시, <b>상세정보 수정</b>이 가능합니다.</span>
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

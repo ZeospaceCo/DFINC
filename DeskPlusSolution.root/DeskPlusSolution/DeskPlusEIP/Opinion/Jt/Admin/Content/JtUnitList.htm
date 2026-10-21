@@ -1,0 +1,43 @@
+﻿<table class="table_typeA">
+<caption>질문/예시관리</caption>
+<colgroup>
+    <col width="40px" />
+    <col />
+    <col width="100px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input type="checkbox" onclick="UnitList.Checked()" id="cbxAll" /></th>
+        <th class="center"><a id="jtA_Title" href="#" onclick="javascript:UnitList.Sort('Title','jtA_Title')"><span id="jtUL_F1"></span></a></th>
+        <th class="center"><a id="jtA_Type" href="#" onclick="javascript:UnitList.Sort('Type','jtA_Type')"><span id="jtUL_F2"></span></a></th>
+        <th class="center"><span id="jtUL_F3"></span></th>
+        <th class="center"><span id="jtUL_F4"></span></th>
+        <th class="center"><a id="jtA_IsActive" href="#" onclick="javascript:UnitList.Sort('IsActive','jtA_IsActive')"><span id="jtUL_F5"></span></a></th>
+        <th class="center"><a id="jtA_WriteDate" href="#" onclick="javascript:UnitList.Sort('WriteDate','jtA_WriteDate')"><span id="jtUL_F6"></span></a></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.UnitID }" value="{ $T.List.UnitID }" /></td>
+        <td class="left"><a href="#" onclick="javascript:UnitList.View('{ $T.List.UnitID }')" style="cursor:pointer" >{ $T.List.Title }</a></td>
+        <td class="center">{ $T.List.TypeStr }</td>
+        <td class="center">{ $T.List.ItemCnt }</td>
+        <td class="center">{ $T.List.QuesUnitCnt }</td>
+        <td class="center">
+            { $T.List.IsActiveStr }
+            <input type="text" id="tbIsAct_{ $T.List.UnitID }" style="display:none" value="{ $T.List.IsActive }" />
+        </td>
+        <td class="center"><span id="wDate_{ $T.List.UnitID }">{ $T.List.WriteDateStr }</span></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span class="jtNoData"></span></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

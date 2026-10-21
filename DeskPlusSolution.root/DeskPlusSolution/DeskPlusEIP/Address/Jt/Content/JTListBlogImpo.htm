@@ -1,0 +1,74 @@
+﻿ <table class="table_typeA">
+<caption>AddressList</caption>
+<colgroup>
+        <col width="40px" />        
+        <col width="60px" />
+        <col width="120px" />
+        <col width="*" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="150px" />
+</colgroup>
+<thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="List.Checked()" /></th>            
+            <th class="center" id="r_photo" class="center"></th>
+            <th class="center" id="r_name"></th>            
+            <th class="center" id="r_mail"></th>
+            <th class="center" id="r_mobile"></th>
+            <th class="center" id="r_cphone"></th>
+            <th class="center" id="r_dept"></th>
+        </tr>
+</thead>
+<tbody>
+    {#foreach $T as AddressList}
+        <tr>
+            <td class="center">
+                <input type="checkbox" class="cbxID" id="cbxID{ $T.AddressList.ROW }" email="{ $T.AddressList.Mail }" value="{ $T.AddressList.KeyID }|{ $T.AddressList.Type }" />
+            </td>            
+            <td class="center">
+                { $T.AddressList.PhotoName }
+            </td>
+            <td class="center">
+                {#if $T.AddressList.TitleName != ''}
+                <span class="orangeSquare badge badge-info">{ $T.AddressList.TitleName }</span>
+                <strong><br />
+                {#/if}
+                
+                {#if $T.AddressList.Type == 'PM'}                 
+                <a href="#" onclick="List.ModPrivate('PG','{ $T.AddressList.CategoryID }','{ $T.AddressList.KeyID }');return false;">
+                {#elseif $T.AddressList.Type == 'CM'}
+                <a href="#" onclick="List.ModPrivate('CG','{ $T.AddressList.CategoryID }','{ $T.AddressList.KeyID }');return false;">
+                {#elseif $T.AddressList.Type == 'GM' || $T.AddressList.Type == 'TM' || $T.AddressList.Type == 'DM'}
+                <a href="#" onclick="AccountInfo('{ $T.AddressList.KeyID }');return false;">
+                {#/if}
+
+                { $T.AddressList.Name }
+                {#if $T.AddressList.BaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>
+                
+                </strong>
+            </td>
+            <td style="min-width:150px;">
+                { $T.AddressList.Mail }
+            </td>
+            <td class="center">
+                { $T.AddressList.MobilePhone }
+            </td>
+            <td class="center">
+                { $T.AddressList.OfficePhone }
+            </td>
+            <td class="center">
+                { $T.AddressList.DeptName }
+            </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="7" class="center"><span id="NoListData"></span></td>        
+        </tr>
+    {#/for}
+       
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+﻿var AddDetail = {};
+
+$(function () {
+
+
+});

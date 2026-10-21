@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../Design/ko/base/Css/DeskPlusEIPBase.css" type="text/css" media="screen" rel="stylesheet" />
+<title>DeskPlus4.0 웹표준</title>
+</head>
+<body>
+<div id="layout_header">
+        <h1>임직원조회</h1>
+</div>
+<div id="layout_info"> 
+	<div class="boardW">
+		<!-- 테이블 시작 -->
+		<table class="table_typeK">
+			<caption>
+			임직원조회
+			</caption>
+			<colgroup>
+				<col width="15%"/>
+				<col width="35%"/>
+				<col width="15%"/>
+				<col width="35%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="first-child">이름</th>
+					<td class="first-child"><input type="text" class="input_type2"  /></td>
+					<th class="first-child2">메일아이디</th>
+					<td class="last-child">
+						<select>
+							<option> </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th class="first-child3">부서명</th>
+					<td><input type="text" class="input_type2"  /></td>
+					<th>전화번호</th>
+					<td class="last-child3"><input type="text" class="input_type2"  /></td>
+				</tr>
+				<tr>
+					<th class="first-child3">직급</th>
+					<td>
+						<select>
+							<option> </option>
+						</select>
+					</td>
+					<th>직책</th>
+					<td class="last-child3">
+						<select>
+							<option> </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th class="first-child_btm">집주소</th>
+					<td class="last-child_btm" colspan="3"><input type="text" class="input_type3"  value=""/></td>
+				</tr>
+			</tbody>
+		</table>      
+		<!-- 테이블 끝 -->
+	</div>
+    <div class="boardW">  
+    <div class="list_add_style1">        
+        <ul class="btn_searchbox">
+            <li>
+                <select class="searchselect">
+                    <option>OR검색 : 검색에 중에 하나라도 포함/제외하는 검색</option>
+                    <option> </option>
+                    <option> </option>
+                </select>
+            </li>            
+            <li><a href="#" class="searchbtn">검색</a></li>
+        </ul>
+    </div>
+    <!-- 테이블 시작 -->
+    <div class="table_typeAtop_left">
+        <p></p>
+    </div>
+    <table class="table_typeA">
+        <caption>
+        임직원 리스트
+        </caption>
+        <colgroup>
+        <col width="10%" />
+        <col width="10%" />
+        <col width="10%" />
+        <col width="10%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>사진</th>
+                <th>이름</th>
+                <th>부서명</th>
+                <th>직급,직책명</th>
+                <th>휴대폰</th>
+                <th>전화번호(내선포함)</th>
+                <th>메일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td ><img src="../../Design/ko/Base/Img/Etc/pic.jpg" alt="사진" /></td>
+                <td>홍박사</td>
+                <td >관리부</td>
+                <td >차장</td>
+                <td >01011112222</td>
+                <td >02-222-3333</td>
+                <td >test2@zeospace.com</td>
+            </tr>
+            <tr>
+                <td ><img src="../../Design/ko/Base/Img/Etc/pic.jpg" alt="사진" /></td>
+                <td>홍박사</td>
+                <td >관리부</td>
+                <td >차장</td>
+                <td >01011112222</td>
+                <td >02-222-3333</td>
+                <td >test2@zeospace.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="table_typeAbottom_left">
+        <p></p>
+    </div><!-- 테이블 끝 -->
+</div>
+</div> 
+<div class="board_num_style2" id="Pager1"> 
+    <span id="pager">
+        <span id="pager_prev10"><a href="#">이전</a></span>
+        <em> 1 </em>
+        <a href="#"> 2 </a>
+        <a href="#"> 3 </a>
+        <a href="#"> 4 </a>
+        <a href="#"> 5 </a>
+        <a href="#"> 6 </a>
+        <a href="#"> 7 </a>
+        <a href="#"> 8 </a>
+        <a href="#"> 9 </a>
+        <a href="#"> 0 </a>
+        <span id="pager_next10"><a href="#">다음</a></span></span> 
+</div>
+
+</body>
+</html>

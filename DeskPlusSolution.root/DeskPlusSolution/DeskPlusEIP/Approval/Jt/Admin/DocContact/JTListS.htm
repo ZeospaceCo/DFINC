@@ -1,0 +1,61 @@
+﻿
+ <table class="table_typeA">
+    <caption>
+        결재자 리스트
+    </caption>
+    <colgroup>
+        <col width="40px" />
+        <col width="100px" />
+        <col width="120px" />               
+        <col  />        
+        <col width="100px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center"><input id="cbxAll" type="checkbox" onclick="ListR.Checked()" /></th>
+            <th class="center" id="r_photo" class="center"></th>
+            <th class="center" id="r_name"></th>            
+            <th class="center" id="r_dept"></th>
+            <th class="center" id="r_isactive"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as ProxyList}
+        <tr>
+            <td class="center">
+                <input type="checkbox" class="cbxID" id="cbxID{ $T.ProxyList.ROW }" value="{ $T.ProxyList.ProxyID }" />
+            </td>        
+            <td class="center">
+                { $T.ProxyList.ProxyPhotoName }
+            </td>
+            <td class="center">
+                {#if $T.ProxyList.ProxyTitleName != ''}
+                <span class="orangeSquare">{ $T.ProxyList.ProxyTitleName }</span>
+                <strong><br />
+                {#/if}                
+                <a href="#" onclick="AccountInfo('{ $T.ProxyList.ProxyUserID }');return false;">
+                { $T.ProxyList.ProxyUserName }
+                {#if $T.ProxyList.ProxyBaseDept == '0'}
+                    <span class="kyumgik"></span>
+                {#/if}
+                </a>                
+                </strong>
+            </td>            
+            <td class="center">
+                { $T.ProxyList.ProxyDeptName }
+            </td>
+            <td class="center">
+                {#if $T.ProxyList.ProxyState == 'Y'}
+                <div class="proxyStop"><a href="#" onclick="List.ProxyStop('{ $T.ProxyList.ProxyID }', '{ $T.ProxyList.ProxyUserID }', '{ $T.ProxyList.ProxyDeptID }');"><span class="orangeSquare">대결중지</span></a></div>               
+                {#/if}
+                <div class="proxyStart"><a href="#" onclick="List.ProxyStart('{ $T.ProxyList.ProxyID }', '{ $T.ProxyList.ProxyUserID }', '{ $T.ProxyList.ProxyDeptID }');"><span class="orangeSquare">대결시작</span></a></div>
+            </td>
+        </tr>
+    {#else}
+        <tr>
+            <td colspan="5" class="center"><span class="NoListData"></span></td>        
+        </tr>
+    {#/for}
+
+    </tbody>
+</table>

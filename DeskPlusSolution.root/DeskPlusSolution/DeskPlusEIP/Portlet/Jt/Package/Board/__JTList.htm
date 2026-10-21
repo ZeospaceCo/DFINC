@@ -1,0 +1,30 @@
+﻿
+    {#foreach $T as List}
+        <li>
+        <span style="width:200px !important;">			
+			{#if $T.List.ReadCheck == 0}
+				<img src="/DeskPlusEIP/Design/C/Img/Icon/New.gif" alt="" title="" />
+			{#/if}
+			<div class="EllipsText" style="width:200px">
+                <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1024,700, 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" style="cursor:pointer">
+                { $T.List.Title }
+                </a>
+                {#if $T.List.ReplyCount > 0}       
+				<a onclick="TabBoardShort('{ $T.List.CategoryID }','{ $T.List.ListID }');return false;" style="cursor:pointer" >
+				    <span class="icon_Comment_view">({ $T.List.ReplyCount })</span>
+				</a>
+			{#/if}
+            </div>
+        </span>
+        <span class="etcinfo">
+            {#if $T.List.WriteUserID > 0}    
+                <a onclick="AccountInfo('{ $T.List.WriteUserID }');return false;"><span class="name">{ $T.List.TitleName } { $T.List.WriteUserName }</span></a>
+            {#else}
+                <span class="name">{ $T.List.WriteUserName }</span>
+            {#/if}
+            <em>{ $T.List.WriteDate }</em>
+        </span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}  

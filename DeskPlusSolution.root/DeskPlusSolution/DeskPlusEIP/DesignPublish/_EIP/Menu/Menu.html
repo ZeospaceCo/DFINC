@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Base/Css/Func_Portal.css?v=1" />
+
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+    $(function () {
+        $(document).ready(function () {
+            $('#msub1').click(function (e) { e.preventDefault(); menu_click('#', 'sub1'); });
+            $('#msub2').click(function (e) { e.preventDefault(); menu_click('#', 'sub2'); });
+            $('#msub4').click(function (e) { e.preventDefault(); menu_click('#', 'sub4'); });
+            $('#msub5').click(function (e) { e.preventDefault(); menu_click('#', 'sub5'); });
+
+            $('#msub3').click(function (e) { e.preventDefault(); menu_click('/DeskPlusEIP/designPublish/_Pims/Default.html', 'sub3'); });
+            $('#msub6').click(function (e) { e.preventDefault(); menu_click('/DeskPlusEIP/designPublish/_Community/User/Default.html', 'sub6'); });
+            $('#msub7').click(function (e) { e.preventDefault(); menu_click('/DeskPlusEIP/designPublish/_Search/Default.html', 'sub7'); });
+            $('#msub8').click(function (e) { e.preventDefault(); menu_click('/DeskPlusEIP/designPublish/_WebHard/Default.html', 'sub8'); });
+            $('#msub9').click(function (e) { e.preventDefault(); menu_click('/DeskPlusEIP/designPublish/_Opinion/Default.html', 'sub9'); });
+        });
+    });
+
+    menu_click = function (_url, _id) {
+        jQuery.each($(".menu_sub"), function () { this.style.display = "none"; });
+        $("#" + _id)[0].style.display = "";
+        parent.frmMainContent.location = _url;
+    }
+</script>
+</head>
+<body>
+ <form method="post" id="form1">
+<div id="layout_menu">
+    <div class="UTIL">
+    	<div class="menu_logo"><a href="/DeskPlusEIP/EIP/EPDefault.aspx" target="_parent"><img src="/DeskPlusEIP/Design/Base/Img/Portal/logo.gif" title="SMART PLUS" alt="SmartPlus Logo" /></a></div>
+        <div class="menu_srh">
+        
+            <ul class="btn_searchboxL">
+                <li><input type="text" class="ptl_srhtext" value="사내정보를 검색하세요." /></li>
+                <li><a href="#" class="ptl_srhbtn" title="검색">검색</a></li>
+                <li><a href="#" title="상세검색"><img src="/DeskPlusEIP/Design/Base/Img/Btn/srh_detail.gif" alt="상세검색"/></a></li>
+            </ul>
+        
+        </div>
+        <div class="aRight">
+        <ul class="menu_util">
+            <li>
+                <ul class="ptl_btn_info">
+                    <li class="left"></li>
+                    <li>솔루션개발 홍길동</li>
+                    <li><a href="#">▼</a></li>
+                    <li class="right"></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">내정보관리</a></li>
+            <li>|</li>
+            <li><a href="#">ERP System</a></li>
+            <li>|</li>
+            <li><a href="#">메신저다운로드</a></li>
+            <li>|</li>
+            <li><a id="SignOutLink" href="/DeskPlusEIP/Site/Auth/LogOut.aspx">로그아웃</a></li>
+            <li>|</li>
+            <li><a href="#">슈퍼관리자</a></li>
+        </ul>
+        <ul class="menu_util">
+            <li><a href="#">즐겨찾기▼</a></li>
+        </ul>
+        </div>
+
+
+        
+    </div><!-- //UTIL --> 
+    
+    <div class="GNB">
+        <ul class="menu_gnb">
+            <li><a id="msub1" style="cursor:pointer;">Home</a></li>
+            <li><a id="msub2" style="cursor:pointer;">게시판</a></li>
+            <li><a id="msub4" style="cursor:pointer;">주소록</a></li>
+            <li><a id="msub5" style="cursor:pointer;">목표관리</a></li>
+            <li><a style="cursor:pointer;">자원관리</a></li>
+            <li><a style="cursor:pointer;">임직원조회</a></li>
+            <li><a id="msub3" style="cursor:pointer;">일정관리</a></li>
+            <li><a id="msub8"style="cursor:pointer;">웹하드</a></li>
+            <li><a id="msub9"style="cursor:pointer;">설문조사</a></li>
+            <li><a id="msub7" style="cursor:pointer;">검색</a></li>
+            <li><a id="msub6" style="cursor:pointer;">커뮤니티</a></li>
+        </ul>
+
+        <div class="menu_totline">
+        <ul class="menu_tot">
+            <li>전체보기or메뉴편집</li>
+            <li><a href="#"><img src="/DeskPlusEIP/Design/Base/Img/Btn/btn_arrow1.gif" title="전체보기or메뉴편집" alt="전체보기or메뉴편집" /></a></li>
+        </ul>
+        </div>
+    </div><!-- //GNB --> 
+
+    <div class="SUB">
+        <ul class="menu_sub" style="display:" id="sub1">
+            <li><a href="#" target="frmMainContent">1</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub2">
+            <li><a href="#" target="frmMainContent">2</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub3">
+            <li><a href="#" target="frmMainContent">3</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub4">
+            <li><a href="#" target="frmMainContent">4</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub5">
+            <li><a href="#" target="frmMainContent">5</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub6">
+            <li><a href="/DeskPlusEIP/designPublish/_Community/Admin/Default.html" target="frmMainContent">관리자/시샵</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/Default.html" target="frmMainContent">사용자Main</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/NoFrame/DefaultClub.html" target="frmMainContent">사용자Main(CLUB)</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/NoFrame/DefaultBlog.html" target="frmMainContent">사용자Main(BLOG)</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/NoFrame/DefaultPJT.html" target="frmMainContent">사용자Main(PJT)</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/SuperAdmin/Default.html" target="frmMainContent">슈퍼관리자</a></li>
+            <li>///////</li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/DefaultClub.html" target="frmMainContent">소모임형</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/DefaultBlog.html" target="frmMainContent">협업형</a></li>
+            <li><a href="/DeskPlusEIP/designPublish/_Community/User/DefaultPRJ.html" target="frmMainContent">프로젝트형</a></li>
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub7">
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub8">
+        </ul>
+        <ul class="menu_sub" style="display:none" id="sub9">
+        </ul>
+		
+    </div><!-- //SUB --> 
+</div><!-- //layout_menu -->  
+</form>
+</body>
+</html>

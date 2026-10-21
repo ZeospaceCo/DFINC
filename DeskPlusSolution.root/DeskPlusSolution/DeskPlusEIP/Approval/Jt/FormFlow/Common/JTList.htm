@@ -1,0 +1,29 @@
+﻿<table class="table_typeA"> 
+<caption>
+    개인결재선 리스트
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="200px" />
+    <col />
+    <col width="100px" />
+</colgroup>
+<tr>
+    <th id="r_number" class="center"></th>
+    <th id="r_subject" class="center"></th>
+    <th id="r_memo" class="center"></th>
+    <th id="r_addDate" class="center"></th>
+</tr>
+{#foreach $T as List}
+<tr>
+    <td class="center">{ $T.List.RowStr }</td>
+    <td><a href="" onclick="GetFavList.AddLine('{ $T.List.FavSeqID}');return false;" style="cursor:pointer" >{ $T.List.Subject }</a></td>
+    <td>{ $T.List.Memo }</td>
+    <td class="center">{ $T.List.WriteDateStr }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span id="r_noData" class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

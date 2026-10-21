@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="1" Value="項目信息"/>
+  <Item ID="2" Value="商業單元操作"/>
+  <Item ID="3" Value="注意"/>
+  <Item ID="4" Value="板"/>
+  <Item ID="5" Value="項目進度"/>
+  <Item ID="6" Value="參與者信息"/>
+</XmlData>

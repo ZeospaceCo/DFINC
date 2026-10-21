@@ -1,0 +1,11 @@
+﻿
+    {#foreach $T as List}
+        <li>
+            <span class="mcopy" style="cursor:pointer" title="[{ $T.List.tmp1}] { $T.List.tmp3 }">[{ $T.List.tmp1}] { $T.List.tmp3 }</span>
+            <span class="etcinfo">            
+                <em>{ $T.List.tmp2 }</em>
+            </span>
+        </li>    
+    {#else}     
+        <li><span class="NoListData"></span></li>            
+    {#/for}

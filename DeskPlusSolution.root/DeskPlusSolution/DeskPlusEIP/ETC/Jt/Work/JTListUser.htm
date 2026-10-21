@@ -1,0 +1,50 @@
+﻿<table class="table_typeA"> 
+<caption>
+    야근 / 특근 내역
+</caption>
+<colgroup>
+    <col width="50px" />
+    <col width="120px" />
+    <col width="250px" />
+    <col width="150px" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="200px" />
+    <col width="150px" />
+</colgroup>
+<tr>
+    <th id="r_number" class="center"></th>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_customername" class="center"></th>
+    <th id="r_startdate" class="center"></th>
+    <th id="r_enddate" class="center"></th>
+    <th id="r_duration" class="center"></th>
+    <th id="r_time" class="center"></th>
+    <th id="r_worklist" class="center"></th>
+    <th id="r_docview" class="center"></th>    
+</tr>
+{#foreach $T as ListUser}
+<tr>  
+    <td class="center">{ $T.ListUser.ROW }</td>
+    <td class="center">{ $T.ListUser.Gubun }</td>
+    <td class="center">{ $T.ListUser.CustomerName }</td>
+    <td class="center">{ $T.ListUser.StartDate }</td>
+    <td class="center">{ $T.ListUser.EndDate }</td>
+    <td class="center">({$T.ListUser.Duration }일간)</td>
+    <td class="center">{ $T.ListUser.Hour }시간</td>
+    <td class="center">{ $T.ListUser.Reason }</td>
+    <td class="center">        
+        {#if $T.ListUser.DocumentID > 0}
+        <span onclick="ListUser.DocView('{ $T.ListUser.DocumentID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="9" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

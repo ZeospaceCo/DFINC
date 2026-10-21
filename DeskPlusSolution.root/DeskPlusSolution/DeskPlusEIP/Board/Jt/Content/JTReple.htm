@@ -1,0 +1,61 @@
+﻿<ul class="table_typeT ul_typeT">  
+     {#foreach $T as RepleList}
+        {#if $T.RepleList.Depth == 1 && $T.RepleList.IsTop != "1"}
+                <li class="reply_box"><ul><li><ul><li>
+        {#elseif $T.RepleList.Depth == 2 && $T.RepleList.IsTop != "1"}
+                <li class="reply_box"><ul><li style="padding-left:25px;"><ul ><li>
+        {#else}
+                <li class="reply_box"><ul><li>
+        {#/if}
+                
+            {#if $T.RepleList.Active == "1"}
+
+                <p class="writer"><a onclick="javascript:AccountInfo('{ $T.RepleList.UserID }');return false;" class="badge badge-secondary">{ $T.RepleList.UserName }</a>  
+                { $T.RepleList.InputDate }</p>
+
+                {#if $T.RepleList.IsBest == "1" && $T.RepleList.IsTop == "1"}
+                    <p class="best"><img title="" src="/DeskPlusEIP/Design/C/Img/Board/best.png" />
+                {#else}
+                    <p>
+                    {#if $T.RepleList.IsBest == "1"}<img title="" src="/DeskPlusEIP/Design/C/Img/Board/best.png" />{#/if}  
+                {#/if}
+                
+                { $T.RepleList.Content }{#if $T.RepleList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}</p>
+
+                <p>           
+                <span class="goodtd">
+                <button class="goodbtn" onclick="View.GoodCount('{ $T.RepleList.ShortReplyID }', '1', '{ $T.RepleList.UserID }'); return false;"><img src="/DeskPlusEIP/Design/C/Img/Board/up.png" class="reple_img"><span class="reple_cnt">{ $T.RepleList.GoodCount }</span></button> 
+                <button class="goodbtn" onclick="View.GoodCount('{ $T.RepleList.ShortReplyID }', '0', '{ $T.RepleList.UserID }'); return false;"><img src="/DeskPlusEIP/Design/C/Img/Board/dn.png" class="reple_img" /><span class="reple_cnt">{ $T.RepleList.BadCount }</span></button> 
+                </span>
+
+                {#if $T.RepleList.Depth < 2 && $T.RepleList.IsTop != "1"}
+                    <a class="replyGroupAdd" onclick="View.GroupAdd('{ $T.RepleList.ShortReplyID }');"><span class="btn btn-sm AddMsg"></span></a>
+                {#/if}
+
+                {#if $T.RepleList.IsBest != "1" || $T.RepleList.IsAdmin == "1"}
+                    {#if $T.RepleList.IsAuth == 'Y'} 
+                        <a onclick="View.ModShortReply('{ $T.RepleList.ShortReplyID }')"><span class="btn btn-sm ModMsg"></span></a>
+                        {#if $T.RepleList.ParentCnt == 0}
+                        <a onclick="View.DelReple('{ $T.RepleList.ShortReplyID }', '{ $T.RepleList.GroupID }')"><span class="btn btn-sm DelMsg"></span></a> 
+                        {#/if} 
+                    {#/if}
+                {#/if}
+                </p>  
+
+            {#else}
+                <p><div class="delReply"></div></p>
+            {#/if}
+              
+
+        {#if $T.RepleList.Depth == 1 && $T.RepleList.IsTop != "1"}
+                </li></ul></li></ul></li>
+        {#elseif $T.RepleList.Depth == 2 && $T.RepleList.IsTop != "1"}
+                </li></ul></li></ul></li>
+        {#else}
+                </li></ul></li>
+        {#/if}
+    
+    {#else}
+    {#/for}
+</ul>
+

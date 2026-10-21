@@ -1,0 +1,13 @@
+﻿<ul>
+{#foreach $T as List}
+    <li>
+        <span class="list-titlecnt">	
+        { $T.List.Row }
+        <a onclick="PopupWinOpen('{ $T.List.HrefUrl }','','',1200,800, 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');" >{ $T.List.Title }</a>        
+        </span>
+        <span class="list-cnt">{ $T.List.ReadCount }</span>
+    </li>
+{#else}     
+        <li><span class="NoListData"></span></li>            
+{#/for}  
+</ul>

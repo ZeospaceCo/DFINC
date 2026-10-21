@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<xfeEditor>
+  <menu1>
+	 
+	  <Fontsize visible="true">字型大小</Fontsize>
+
+    <AlignLeft visible="true">左對齊</AlignLeft>
+    <AlignCenter visible="true">居中</AlignCenter>
+    <AlignRight visible="true">右對齊</AlignRight>
+    <Justify visible="false">兩端對齊</Justify>
+
+  </menu1>
+</xfeEditor>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="Name" Value="WriteUserName"/>
+	<Item ID="Title" Value="Title"/>
+	<Item ID="Content" Value="MobileContent"/>
+	<Item ID="Date" Value="WriteDate"/>
+</XmlData>
+

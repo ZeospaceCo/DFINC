@@ -1,0 +1,31 @@
+﻿<table class="table_typeA"> 
+<caption></caption>
+<colgroup>
+    <col width="40%" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <th id="j_DeptName"></th>
+    <th id="j_TitleName"></th>
+    <th id="j_Name"></th>
+    <th id="j_Del"></th>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td>{ $T.List.DeptBase }</td>
+    <td>{ $T.List.TitleBase }</td>
+    <td>{ $T.List.NameBase }</td>
+    <td>
+        <a onclick="List.Del('{ $T.List.ItemFavUserID }');return false;">[삭제]</a>
+    </td> 
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</tbody>
+</table>

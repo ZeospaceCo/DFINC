@@ -1,0 +1,56 @@
+﻿<table class="table_typeA"> 
+<caption>
+    휴가내역
+</caption>
+<colgroup>
+    <col width="40px" />
+    <col width="120px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="100px" />
+    <col width="80px" />
+    <col width="100px" />
+    <col width="80px" />
+    <col width="90px" />
+    <col />
+    <col width="90px" />
+</colgroup>
+<tr>
+    <th id="r_number" class="center"></th>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_titlename" class="center"></th>
+    <th id="r_startdate" class="center"></th>
+    <th id="r_starthalf" class="center"></th>
+    <th id="r_enddate" class="center"></th>
+    <th id="r_endhalf" class="center"></th>
+    <th id="r_duration" class="center"></th>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_docview" class="center"></th>
+</tr>
+{#foreach $T as ViewHoli}
+<tr> 
+    <td class="center">{ $T.ViewHoli.ROW }</td>
+    <td class="center">{ $T.ViewHoli.DeptName }</td>
+    <td class="center">{ $T.ViewHoli.NameBase }</td> 
+    <td class="center">{ $T.ViewHoli.TitleName }</td> 
+    <td class="center">{ $T.ViewHoli.StartDate }</td>
+    <td class="center">{ $T.ViewHoli.StartHalf }</td>
+    <td class="center">{ $T.ViewHoli.EndDate }</td>
+    <td class="center">{ $T.ViewHoli.EndHalf }</td>
+    <td class="center">({ $T.ViewHoli.Duration }일간)</td>
+    <td class="center">{ $T.ViewHoli.Gubun }</td>
+    <td class="center">        
+        {#if $T.ViewHoli.DocumentID > 0}
+        <span onclick="ViewHoli.DocView('{ $T.ViewHoli.DocumentID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="11" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

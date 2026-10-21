@@ -1,0 +1,29 @@
+﻿<table class="table_typeT">
+<caption></caption>
+<colgroup>
+    <col />
+    <col width="90px" />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <th class="center"><span id="j_fileName"></span></th>
+    <th class="center"><span id="j_fileType"></span></th>
+    <th class="center"><span id="j_fileLen"></span></th>
+    <th class="center"><span id="j_download"></span></th>
+</thead>
+<tbody>
+{#foreach $T as FileList}
+<tr>
+    <td><a onclick="javascript:ViewCir.FileDownload('{ $T.FileList.FilePath }','{ $T.FileList.FileName }','{ $T.FileList.FileGUID }')">{ $T.FileList.FileName }</a></td>
+    <td class="center">{ $T.FileList.FileType }</td>
+    <td class="center">{ $T.FileList.FileLengthKB }</td>
+    <td class="center"><a onclick="javascript:ViewCir.FileDownload('{ $T.FileList.FilePath }','{ $T.FileList.FileName }','{ $T.FileList.FileGUID }')" style="display:inline-block;"><span class="btn_file_dw" title="DownLoad"></span></a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="4" class="center"><span class="NoListData" /></td>
+</tr>
+{#/for}
+</tbody>
+</table>

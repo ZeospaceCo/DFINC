@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddPortletCheckedTab" xml:space="preserve">
+    <value>Tab, select the portlets have been added.</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>Please enter the date of registration.</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CheckSearchSection" xml:space="preserve">
+    <value>Please select a search field</value>
+  </data>
+  <data name="ConfirmExec" xml:space="preserve">
+    <value>Do you want to run the index operation?</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>EndDate</value>
+  </data>
+  <data name="ExecTime" xml:space="preserve">
+    <value>ExecTime</value>
+  </data>
+  <data name="FTRTextCount" xml:space="preserve">
+    <value>Attachment Index Count</value>
+  </data>
+  <data name="GoToDetail" xml:space="preserve">
+    <value>Go to More</value>
+  </data>
+  <data name="IndexCount" xml:space="preserve">
+    <value>IndexCount</value>
+  </data>
+  <data name="InputOrderWay" xml:space="preserve">
+    <value>Please enter a sorting method</value>
+  </data>
+  <data name="InputSearchEngine" xml:space="preserve">
+    <value>Please enter a search term</value>
+  </data>
+  <data name="InputSearchValue" xml:space="preserve">
+    <value>Put your search terms</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Last one month</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MSG_ATTACH" xml:space="preserve">
+    <value>Attached file index</value>
+  </data>
+  <data name="MSG_COMPLETE" xml:space="preserve">
+    <value>Index complete</value>
+  </data>
+  <data name="MSG_CONTENT" xml:space="preserve">
+    <value>Content index</value>
+  </data>
+  <data name="MSG_ERROR" xml:space="preserve">
+    <value>Index error</value>
+  </data>
+  <data name="MSG_START" xml:space="preserve">
+    <value>Begin indexing</value>
+  </data>
+  <data name="MSG_TXT" xml:space="preserve">
+    <value>TXT File Conversion</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>There is no content.</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="PeriodDate" xml:space="preserve">
+    <value>Period conditions</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>An error occurred during processing. Please contact the administrator.</value>
+  </data>
+  <data name="Registrant" xml:space="preserve">
+    <value>Registrant</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchAutoSpecialNumber" xml:space="preserve">
+    <value>Please enter a number in the address book are automatically detected.</value>
+  </data>
+  <data name="SearchDateSelect" xml:space="preserve">
+    <value>Select the period</value>
+  </data>
+  <data name="SearchFieldApproval" xml:space="preserve">
+    <value>Electronic approval</value>
+  </data>
+  <data name="SearchFieldBoard" xml:space="preserve">
+    <value>Board</value>
+  </data>
+  <data name="SearchFieldMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="SearchFieldTotal" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="SearchHelp2FirstAction" xml:space="preserve">
+    <value>Perform the first two</value>
+  </data>
+  <data name="SearchHelpAllInclude" xml:space="preserve">
+    <value>Contains both 1,2</value>
+  </data>
+  <data name="SearchHelpChoice" xml:space="preserve">
+    <value>Include at least one of 1,2</value>
+  </data>
+  <data name="SearchHelpIf" xml:space="preserve">
+    <value>Search Criteria</value>
+  </data>
+  <data name="SearchHelpIncludeNot" xml:space="preserve">
+    <value>1 is included, except for two</value>
+  </data>
+  <data name="SearchInResult" xml:space="preserve">
+    <value>Search within results</value>
+  </data>
+  <data name="SearchMoreResultData" xml:space="preserve">
+    <value>See more results</value>
+  </data>
+  <data name="SearchNoResultData" xml:space="preserve">
+    <value>No results found.</value>
+  </data>
+  <data name="SearchOutput" xml:space="preserve">
+    <value>Sort by</value>
+  </data>
+  <data name="SearchOutputCurrect" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="SearchOutputDate" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="SearchOutputTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SearchRequestSelect" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="SearchResultCnt" xml:space="preserve">
+    <value>The number</value>
+  </data>
+  <data name="SearchResultCntTitle" xml:space="preserve">
+    <value>Number of results</value>
+  </data>
+  <data name="SearchResultTotal" xml:space="preserve">
+    <value>Total Search Results</value>
+  </data>
+  <data name="SearchResultValue" xml:space="preserve">
+    <value>Search Results {0} Total Results  {1} cases were found.</value>
+  </data>
+  <data name="SearchResultValueWithin" xml:space="preserve">
+    <value>Results in: {0}  jobs total {2}, including the search results  {1} were found.</value>
+  </data>
+  <data name="SearchSection" xml:space="preserve">
+    <value>Search field</value>
+  </data>
+  <data name="SearchTime" xml:space="preserve">
+    <value>Cases were found.</value>
+  </data>
+  <data name="SearchTimeFromTo" xml:space="preserve">
+    <value>Direct input</value>
+  </data>
+  <data name="SearchTimeMonth" xml:space="preserve">
+    <value>Months</value>
+  </data>
+  <data name="SearchTimePeriod" xml:space="preserve">
+    <value>Search term</value>
+  </data>
+  <data name="SearchTimeWeek" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="SearchTimeYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="SearchWord1" xml:space="preserve">
+    <value>Results 1</value>
+  </data>
+  <data name="SearchWord1n2" xml:space="preserve">
+    <value>Results include both 1,2</value>
+  </data>
+  <data name="SearchWord1or2" xml:space="preserve">
+    <value>Results include at least one of 1,2</value>
+  </data>
+  <data name="SearchWord2" xml:space="preserve">
+    <value>2 Results</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>Please select a list</value>
+  </data>
+  <data name="ShowSearch" xml:space="preserve">
+    <value>Search Output</value>
+  </data>
+  <data name="SortWay" xml:space="preserve">
+    <value>Sort by</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>StartDate</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>Start date must be less than the termination date.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusC" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="StatusE" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="StatusN" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="StatusP" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="TitleNFileName" xml:space="preserve">
+    <value>Title + filename</value>
+  </data>
+  <data name="IndexAdd" xml:space="preserve">
+    <value>IndexAdd</value>
+  </data>
+  <data name="IndexCancel" xml:space="preserve">
+    <value>IndexCancel</value>
+  </data>
+  <data name="IndexDel" xml:space="preserve">
+    <value>IndexDel</value>
+  </data>
+  <data name="IndexOptimize" xml:space="preserve">
+    <value>IndexOptimize</value>
+  </data>
+  <data name="IndexResult" xml:space="preserve">
+    <value>IndexResult</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>1 month</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>1 week</value>
+  </data>
+  <data name="ComfirmComplete" xml:space="preserve">
+    <value>Index status is not complete</value>
+  </data>
+  <data name="ConfirmDel" xml:space="preserve">
+    <value>Are you sure you want to delete the index?</value>
+  </data>
+  <data name="ConfirmOpt" xml:space="preserve">
+    <value>Optimize your index?</value>
+  </data>
+  <data name="MSG_DEL_COMPLETE" xml:space="preserve">
+    <value>Index deleted successfully</value>
+  </data>
+  <data name="MSG_DEL_ERROR" xml:space="preserve">
+    <value>Error deleting index</value>
+  </data>
+  <data name="MSG_DEL_START" xml:space="preserve">
+    <value>Start index deletion</value>
+  </data>
+  <data name="MSG_OPT_COMPLETE" xml:space="preserve">
+    <value>Complete index optimization</value>
+  </data>
+  <data name="MSG_OPT_ERROR" xml:space="preserve">
+    <value>Index optimization error</value>
+  </data>
+  <data name="MSG_OPT_START" xml:space="preserve">
+    <value>Begin index optimization</value>
+  </data>
+  <data name="StatusD" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ConfirmCheckValue" xml:space="preserve">
+    <value>The search terms, uppercase AND, and OR, must be in the middle of the word.</value>
+  </data>
+  <data name="SearchFieldEDM" xml:space="preserve">
+    <value>Document management</value>
+  </data>
+  <data name="EDM" xml:space="preserve">
+    <value>EDM</value>
+  </data>
+  <data name="ADDRESS" xml:space="preserve">
+    <value>ADDRESS</value>
+  </data>
+  <data name="COOP" xml:space="preserve">
+    <value>COOP</value>
+  </data>
+  <data name="PIM" xml:space="preserve">
+    <value>PIM</value>
+  </data>
+  <data name="RM" xml:space="preserve">
+    <value>RM</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>SNS</value>
+  </data>
+  <data name="WEBHARD" xml:space="preserve">
+    <value>WEBHARD</value>
+  </data>
+  <data name="SearchFieldAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="SearchFieldWebHard" xml:space="preserve">
+    <value>Webhard</value>
+  </data>
+  <data name="SearchFieldCoop" xml:space="preserve">
+    <value>Coop</value>
+  </data>
+  <data name="SearchFieldPim" xml:space="preserve">
+    <value>Pim</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>TODO</value>
+  </data>
+  <data name="SearchFieldRM" xml:space="preserve">
+    <value>Rm</value>
+  </data>
+  <data name="SearchFieldTask" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="TASK" xml:space="preserve">
+    <value>TASK</value>
+  </data>
+  <data name="SearchFieldAddressInfo" xml:space="preserve">
+    <value>(Search target : ireum address / buseomyeong name)</value>
+  </data>
+  <data name="SearchFieldApprovalInfo" xml:space="preserve">
+    <value>(Subject to title : Title / contents / file name / attachment file / attachment file)</value>
+  </data>
+  <data name="SearchFieldBoardInfo" xml:space="preserve">
+    <value>(Subject to title : Title / contents / file name / attachment file / attachment file)</value>
+  </data>
+  <data name="SearchFieldCoopInfo" xml:space="preserve">
+    <value>(Subject to : Main / middle category / contents / contents file / attachment file / attachment file)</value>
+  </data>
+  <data name="SearchFieldEDMInfo" xml:space="preserve">
+    <value>(Subject to title : Title / contents / file name / attachment file / attachment file)</value>
+  </data>
+  <data name="SearchFieldPimInfo" xml:space="preserve">
+    <value>(Target title : My calendar title / contents file / attachment file)</value>
+  </data>
+  <data name="SearchFieldRMInfo" xml:space="preserve">
+    <value>(Search target : jawonmyeong / jemok file / attachment file contents)</value>
+  </data>
+  <data name="SearchFieldTaskInfo" xml:space="preserve">
+    <value>(Subject to : Main / middle category / contents / contents file / attachment file / attachment file)</value>
+  </data>
+  <data name="SearchFieldWebHardInfo" xml:space="preserve">
+    <value>(Search target : File myeong contents)</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Title, Attachment Name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+</root>

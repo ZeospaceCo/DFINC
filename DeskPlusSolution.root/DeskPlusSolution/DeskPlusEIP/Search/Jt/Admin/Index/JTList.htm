@@ -1,0 +1,96 @@
+﻿<table class="table_typeA">
+    <caption>
+        Category LIST
+    </caption>
+    <colgroup>
+        <col width="120px" />
+        <col width="80px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="100px" />
+        <col width="200px" />
+        <col />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center">ID</th>
+            <th class="center">CompanyID</th>
+            <th class="center">CategoryID</th>
+            <th class="center">ListID</th>
+            <th class="center">ObjectID</th>
+            <th>WriteDate</th>
+            <th>Title</th>
+            <th>Content</th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as AllRecordList}
+    <tr>
+        <td class="center">{ $T.AllRecordList.ID }</td>
+        <td class="center">{ $T.AllRecordList.CompanyID }</td>
+        <td class="center">
+            {#if $T.AllRecordList.Module == 'BOARD'} 
+                { $T.AllRecordList.CategoryID }
+            {#/if}   
+            {#if $T.AllRecordList.Module == 'EDM'} 
+                { $T.AllRecordList.FolderID }
+            {#/if}   
+            {#if $T.AllRecordList.Module == 'ADDRESS' || $T.AllRecordList.Module == 'COOP' || $T.AllRecordList.Module == 'TASK'} 
+                { $T.AllRecordList.GroupID }
+            {#/if}   
+            {#if $T.AllRecordList.Module == 'WEBHARD'} 
+                { $T.AllRecordList.FolderID }
+            {#/if}   
+        </td>
+        <td class="center">
+            {#if $T.AllRecordList.Module == 'APPROVAL'} 
+                { $T.AllRecordList.DocumentID }
+            {#/if}
+            {#if $T.AllRecordList.Module == 'BOARD' || $T.AllRecordList.Module == 'COOP' || $T.AllRecordList.Module == 'TASK'} 
+                { $T.AllRecordList.ListID }
+            {#/if}
+            {#if $T.AllRecordList.Module == 'EDM'} 
+                { $T.AllRecordList.DocumentID }
+            {#/if}   
+            {#if $T.AllRecordList.Module == 'ADDRESS'} 
+                { $T.AllRecordList.UserID }
+            {#/if}   
+        </td>
+        <td class="center">{ $T.AllRecordList.ObjectID }</td>
+        <td>{ $T.AllRecordList.WriteDate }</td>
+        <td>
+            {#if $T.AllRecordList.Module == 'ADDRESS'} 
+                { $T.AllRecordList.Name }
+            {#else}           
+                {#if $T.AllRecordList.Module == 'WEBHARD'}     
+                { $T.AllRecordList.FileName }
+                {#else}           
+                { $T.AllRecordList.Title }
+                {#/if}    
+            {#/if}    
+            
+            {#if $T.AllRecordList.Module == 'COOP' || $T.AllRecordList.Module == 'TASK'} 
+                { $T.AllRecordList.Title }
+            {#/if}    
+            
+            {#if $T.AllRecordList.Module == 'RM'} 
+                { $T.AllRecordList.Subject }
+            {#/if}               
+        
+        </td>
+        <td>
+            {#if $T.AllRecordList.Module == 'ADDRESS'} 
+                { $T.AllRecordList.Mail }
+            {#else}   
+                { $T.AllRecordList.Content }
+            {#/if}
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span class="NoListData" /></td>        
+    </tr>
+    {#/for}  
+    </tbody>
+</table>

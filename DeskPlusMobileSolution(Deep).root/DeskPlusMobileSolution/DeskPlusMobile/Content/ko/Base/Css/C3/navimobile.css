@@ -1,0 +1,371 @@
+
+@import url("mobile.css");
+@import url("style.css");
+
+html{-webkit-overflow-scrolling: touch;}
+html body.mobile{font-size:12px;height:100%; min-width:inherit; outline:0x solid red;}
+/* ////////////////////////////////////////////////// */
+/* navi vertical menu  core */
+.btn{ float:left; margin-right:.325rem; }
+
+a{ color:#000; font-weight:;}
+a:visited{ color:#000;font-weight:normal}
+
+body.mobile #mnav{ overflow-y: inherit} 
+body.mobile.navishow .navi{  z-index:999; width:160px}
+body.mobile.navishow .bodycontainer {} 
+body.mobile .navi.icon .navbar-menu .dropdown-content{ }
+body.mobile .container-fluid{ padding:0px 10px;}
+
+body.mobile .navbar{ padding:.0rem; min-width:130px;font-family: '나눔고딕',NanumGothic,'맑은 고딕',Malgun Gothic,'돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif;}
+
+body.mobile .navbar i{ font-size:1.8em; padding-top:2px;}
+
+body.mobile .navi{ float:right; z-index:999999999; width:150px;  min-width:100px; right:0px; height:100%; top:0; bottom:0; background:#fff !important;}
+body.mobile .navi:after{ content: none; position: absolute; right:0; top:0; width:100%; height:100%; background:#fff !important; z-index:0 }
+body.mobile.scrollup .bg-primary.naviindex{ background:#fff !important; overflow-y:auto; -webkit-overflow-scrolling: touch;}
+
+
+body.mobile .navbar-logo{ }
+body.mobile .navbar .navbar-menu{ position:absolute; }
+body.mobile.navishow .navbar .navbar-menu{overflow-y: inherit}
+body.mobile .navbar-alert{outline:1px solid red; padding-right:20px;height:60px;}
+
+
+/* ////////////// 중요 navi 기본값 */
+/* navi를 숨김상태로 고정으로 하고 메인과 서브에서 노출 */
+/* navi jquery clone으로 메인에서만 naviindex로 상단에 노출 */
+body.mobile .navi{ position: fixed;box-shadow: -3px 0px 10px rgba(0,0,0,.05);}
+body.mobile.navihide .navi{ height:50px !important; background:#429e74 !important; width:100%; overflow:hidden;}
+body.mobile.navihide #mnav{_padding-top:50px;  _height:2.6em; }
+body.mobile .navbar i{ color:#429e74;}
+body.mobile.navihide .navbar i{ color:#fff;}
+
+body.mobile.scrollup .navi{ display:none}
+body.mobile.scrollup #mnav{_padding-top:10px;  _height:2.6em; }
+
+body.mobile.scrollup .naviindex{ display:block}
+
+body.mobile.scrolldown .navi{ display:block; overflow-x:none; overflow-y:auto;-webkit-overflow-scrolling: touch;}
+body.mobile.scrolldown .naviindex{ display:none}
+
+body.mobile.mobilehome.scrollup .login-logo-area{ position:relative !important; display:block !important}
+body.mobile.navishow .login-logo-area{ display:none;}
+body.mobile.navihide .login-logo-area{ position:fixed;}
+body.mobile.navishow .bodycontainer{ padding-top:0px;} 
+body.mobile.navihide .bodycontainer{ padding-top:50px;} 
+
+@media only screen and (orientation: landscape) {
+	/* jquery로 navi height를 screen height에 맞추고 스크롤되게 */
+	body.mobile .navi{ overflow:scroll; overflow-x:hidden;}
+	body.mobile .navi, 	body.mobile .naviindex{ width:180px;}
+	body.mobile.scrolldown.navishow .navi{ width:180px; }	
+}
+
+
+
+/* naviindex */
+.naviindex{position: absolute; float:right; z-index:999999999; width:160px;  min-width:100px; right:0px; height: calc(100% + 36px); top:0; bottom:0; background:#fff !important; }
+.naviindex .navbar-menu .dropdown-item.viewtype > i:before{ color:#429e74 !important;}
+
+.pagination.right{ float:right;}
+
+/* ////////////// 중요 navi 기본값 끝  */ 
+
+
+
+
+
+
+.contentblock{ position:relative}
+nav.navigation { position:relative; text-align:center; padding:20px 0;}
+.date.pagination{ padding:0px 10px; }
+.pagination { display:inline-block ; padding:20px 10px; margin:0;}
+
+body.mobile .introcontentblock.bottomcontent ul.pagination li{ display:inline-block}
+
+/* ////////////////////////////////////////////////// */
+/* content area setting */
+
+body.mobile.mobilehome .bodycontainer{  position: relative; width:100%; display:block; padding-top:0;}
+body.mobile.navishow.mobilehome.scrolldown{background:#000}
+body.mobile.navishow.scrolldown{ background:#000}
+body.mobile.navishow .bodycontainer{  padding-top:0px;  }
+body.mobile .introcontentblock{ padding:20px 20px 00px 20px ;  font-size:1.2em; }
+body.mobile .introcontentblock.topcontent{width:calc(100% - 140px); height:100%; color:#fff; min-height:calc(100vh - 55px);}
+body.mobile .introcontentblock.bottomcontent{ background:#fff; padding:0px;}
+
+body.mobile .introcontentblock.topcontent ul{}
+body.mobile .introcontentblock.bottomcontent ul{}
+body.mobile .introcontentblock.bottomcontent ul li{ display:block; /*margin:20px 0;*/ padding:0; border-bottom:1px solid #dcdcdc;}
+body.mobile .introcontentblock.bottomcontent ul li.title{ font-weight:bold; font-size:1.4em; padding:10px; border-bottom:2px solid #ddd; background:#f9f9f9;}
+body.mobile .introcontentblock.bottomcontent ul li.title i{  font-size:1.4em; float:left; margin-right:10px;margin-left:5px; vertical-align: middle; padding-top:2px;}
+body.mobile .introcontentblock.bottomcontent ul li.title .date{  font-size:0.8em; display:inline; text-align:right; line-height:2 }
+body.mobile .introcontentblock.bottomcontent ul li.title .buttongroup i{  margin-left:0px;font-size:1em;padding-top:4px; margin-right:5px; vertical-align:middle }
+body.mobile .introcontentblock.bottomcontent ul li.contentblock .buttongroup button i{margin-left:0px;font-size:1em; margin-right:5px; vertical-align: inherit }
+body.mobile .introcontentblock.bottomcontent ul li.contentblock .buttongroup div { margin-top:3px;}
+body.mobile .introcontentblock.bottomcontent ul li.poptitle{ font-weight:bold; font-size:1em; padding:10px; border-bottom:2px solid #ddd; background:#f9f9f9;}
+body.mobile .introcontentblock.bottomcontent ul li.titleN{ font-weight:bold; font-size:1.3em; padding:10px; border-bottom:2px solid #ddd;}
+body.mobile .introcontentblock.bottomcontent ul li.titleN i{  font-size:1.3em; margin-right:10px;margin-left:5px; vertical-align: middle; padding-top:2px;}
+
+body.mobile .introcontentblock.bottomcontent ul li.contentblock{ padding:2px 0}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div{ display:inline-block; height:100%; vertical-align:top; vertical-align:middle; _font-weight:bold;}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.item{ width:auto; padding:8px; font-size:0.9em; line-height:1.5em; max-width:25%; vertical-align:top}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.item > span{  font-size:0.9em; color:#888}
+
+
+
+
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.title{ width:100%; padding:10px; font-size:1.0em; letter-spacing:-.022em}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.Mtitle{ width:100%; padding:5px 8px; font-size:1.1em; letter-spacing:-.022em}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock.withmycard div.title{ width:calc(100% - 120px); }
+
+body.mobile .introcontentblock.bottomcontent ul li.contentblock > div > div{ font-size:1.0em; display: block; font-weight:normal; margin-top:0px; margin-top:2px; height:auto; line-height:1.5em;  }
+body.mobile .introcontentblock.bottomcontent ul li.contentblock > div > div > span{ padding:2px 8px;margin:0; margin-right:2px; border-radius:2px; display:inline-block; }
+body.mobile .introcontentblock.bottomcontent ul li.contentblock > div > div > span.namedate{ padding:0 8px 0 0; margin:0 0 0 10px;}
+/*body.mobile .introcontentblock.bottomcontent ul li.contentblock .search-container button{padding: .0 .75rem .0rem .75rem;  margin-top:-4px; }*/
+
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.imgbox { width:50px; height:50px ; margin:0 auto;}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div.imgbox img{ width:90px; height:auto;}
+
+
+/* badge */ 
+/* badge 1단*/  
+body.mobile .badge{ vertical-align:top;background: #ee1747;color: #fff;border-radius: 1em;line-height: 1em;padding: 0.3em .45em; font-size:0.9em; position:absolute; top:-5px; left:115px; font-weight:normal;}
+/* badge 2단*/  
+/* body.mobile .badge{ vertical-align:top;background: #ee1747;color: #fff;border-radius: 1em;line-height: 1em;padding: 0.3em .55em; font-size:0.85em; position:absolute; top:-2px; left:36px  !important; font-weight:normal;}*/
+body.mobile .badge-none{ display:none}
+body.mobile  .contentblock .badge{ position:relative;left: inherit; top:inherit; vertical-align:middle; border-radius:2px; padding:0.3em .53em 0.25em .4em}
+
+
+body.mobile .navbar .navbar-menu{position: relative; overflow: hidden; height:50px}
+body.mobile.navishow .navbar .navbar-menu, body.mobile.scrollup .navbar .navbar-menu{ overflow: inherit; height:auto}
+	body.mobile .navbar-menu > i{margin-left:1.4rem; margin-top:0; margin-bottom:0; color:#fff}
+	body.mobile .navbar-toggler-icon{} /* same level #menuicon  */
+	body.mobile .dropdown{ outline:0px solid red;}
+	body.mobile .dropdown .dropdown-content{ position:fixed; left:0px; top:50px;z-index:999 ; background:#429e74; height:100%; display: none ; background-image:url(../include/img/naviback.gif) ; background-repeat:repeat-y}  /* this */
+	body.mobile .navi.icon .dropdown .dropdown-content{ display:block;}
+	body.mobile .dropdown:hover .dropdown-content {display: block; height:100%;}
+
+
+/* logo */
+body.mobile .navbar-logo{}
+	body.mobile .navbar-logo { flex-basis: auto !important; height:60px; min-width:260px;}
+	body.mobile .navbar-logo a img{ max-height:40px;}
+	body.mobile .navbar-logo .navbar-brand{ padding-left:18px; height:100%; padding-top:17px; width:170px; }
+	body.mobile .navbar-logo.navbar-logo-symbol-type a.navbar-brand{ padding-top:5px;padding-left:8px;}
+	body.mobile .navbar-logo.navbar-logo-symbol-type a.navbar-brand img{ margin-right:5px;}
+	body.mobile .navbar-logo.navbar-logo-symbol-type a.navbar-brand span{ color:#fff; font-size:15px;}
+
+
+
+/* sub menu */
+body.mobile .navbar-menu .dropdown-content {padding:0px;}
+body.mobile .navbar-menu .dropdown-content .dropdown-item{ color:#555; outline:0px solid red; padding:0px; padding-left:5px; width:auto;  }
+body.mobile .navbar-menu .dropdown-content .dropdown-item i {color:#429e74;} 
+body.mobile .navbar-menu .dropdown-content li{font-size:15px;color:#fff; font-weight:500;height:45px; line-height:100%; display:block; width:140px}
+body.mobile .navbar-menu .dropdown-content li a{ color:#fff;font-weight:normal; outline:0px solid red;}
+body.mobile .navbar-menu .dropdown-content li a:hover{ text-decoration:none}
+body.mobile .navbar-menu .dropdown-content ul{ list-style:none;}
+body.mobile .navbar-menu .dropdown-content li.over a{color:#78e0f7}
+
+
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu{ list-style:none; margin:0px; padding-left:0px; position:absolute; left:50px;display:none;  }/* this */
+body.mobile .navbar-menu .dropdown-content li.over > ul.dropdown-item-submenu{display:inline-block; position:fixed; top:64px; left:2px; z-index:999; }
+body.mobile .navbar-collapse{flex-basis:auto;}
+
+body.mobile .navbar-menu .dropdown-content > li{ display:block; line-height:200%; padding:10px; }
+body.mobile .navbar-menu .dropdown-content > li > a{background-color: transparent;}
+
+
+body.mobile .navbar-menu .dropdown-item.viewtype{ width:100%;padding-top:10px; background:none; display:block; text-align:right; font-size:1.5em; padding-right:27px;}
+
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li{ line-height:2.5em; margin-left:15px; font-size:0.85em;  }
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li.title{  padding-bottom:10px;}
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li.dis { border-bottom:0px; margin-top:10px; line-height:1.8em; }
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li.dis a{  line-height:1.8em; width:140px;  display:block;outline:0px solid red;}
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li > a{ color:#fff}
+body.mobile .navbar-menu .dropdown-content li ul.dropdown-item-submenu li > a:hover{ color:#78e0f7}
+
+
+
+body.mobile  .navbar-expand-lg .navbar-collapse{ display:block !important}
+
+
+body.mobile .navbar-menu .dropdown-content .dropdown-item{ color:#555; outline:0px solid red; padding:0px; padding-left:5px; width:auto;  }
+body.mobile .navbar-menu .dropdown-content .dropdown-item i {color:#429e74;} 
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-item { position:relative}
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-item > span.label{ width:85px; display:inline-block; font-size:15px; font-weight:bold; margin-right:10px; text-align:right}
+
+
+/* left menu add - 2019-03-06 */
+body.mobile .navbar-menu .dropdown-content .dropdown-itemL{ color:#555; outline:0px solid red; padding:0px; padding-left:5px;width:55px;}
+body.mobile .navbar-menu .dropdown-content .dropdown-itemL i {padding-left:13px;color:#429e74;width:55px;} 
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-itemL { position:relative;width:55px;}
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-itemL > span.label{ width:55px; display:inline-block; font-size:15px; font-weight:bold; margin-right:10px;padding-left:18px}
+
+body.mobile .badgeL{ vertical-align:top;background: #ee1747;color: #fff;border-radius: 1em;line-height: 1em;padding: 0.3em .55em; font-size:0.85em; position:absolute; top:-5px; left:35px; font-weight:normal;}
+body.mobile .badgeL:empty {    display: none }
+
+body.mobile .navbar-menu .dropdown-content .dropdown-itemR{color:#555; outline:0px solid red; padding:0px; width:75px;margin-left:60px;float:right;}
+body.mobile .navbar-menu .dropdown-content .dropdown-itemR i {padding-left:20px; color:#429e74;width:55px;} 
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-itemR { position:absolute; margin-top:-40px;width:55px}
+body.mobile .navbar-menu .dropdown-content > li > a.dropdown-itemR > span.label{ width:55px; display:inline-block; font-size:15px; font-weight:bold; text-align:center;;margin-left:6px}
+
+a.dropdown-itemL, a.dropdown-itemR:hover {color: #555 !important; }
+
+
+/* ////////////////////////////////////////////////// */
+/* login */
+
+
+body.mobile {
+	-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+	 
+}
+body.mobile .login-logo-area{ z-index:1; top: 13px ; left: 15px; color:#fff;  position: relative; width: 50%; text-align: left; z-index:9999999999;}
+
+body.mobile .login-logo-area .logo{ }
+body.mobile .login-logo-area > div { margin-left:auto; margin-right:auto;}
+body.mobile .login-logo-area .logo img{ width:120px; border-top:0px solid #429e74; margin-bottom:10px ; padding-top:0px;}
+body.mobile .login-logo-area .logotext { opacity:0.7}
+body.mobile .login-logo-area .smartplus { opacity:0.7}
+body.mobile .smartplusv{ right:20px; bottom:6%;}
+
+body.mobile .login-login-box{ z-index:3; }
+body.mobile .container{}
+
+body.mobile  input[type=checkbox], body.mobile  input[type=radio] { vertical-align:middle;}
+body.mobile .loginimgoverbox{ background: linear-gradient(to right bottom, #559764, #6abf99,  #43ce90, #429e74, #429e74, #429e74, #429e74 , #429e74, #429e74, #429e74, #429e74 , #429e74); position:fixed; height:100%;overflow: hidden; width:100%; opacity:0.88; z-index:-1; top:0px;}
+
+
+
+/* index */
+.mobilecontent{}
+body.mobile .mycard div.imgbox { width:90px; height:90px ; text-align:left;}
+body.mobile .mycard div.imgbox img{ width:95px; height:auto;}
+body.mobile .mycard div.imgbox i{ font-size:8em; background:#429e74; color:#fff}
+
+
+body.mobile ul.mycard{ padding:0;}
+body.mobile ul.mycard > li{ padding:0px;}
+body.mobile ul.mycard > li.identity{  padding:40px 0 60px !important; }
+body.mobile ul.mycard > li.identity span.nameselect{top:140px; left:0; padding:5px 10px 5px 10px; }
+body.mobile ul.mycard > li.identity span.nameselect select{padding:5px 30px 5px 5px; }
+body.mobile ul.mycard > li.identity span.nameselect:after{ content:"\f107"; font-family: 'Font Awesome 5 Free';font-weight: 900; position:absolute; right:20px; top:13px }
+
+body.mobile ul.mycard > li.identity span.namespan{top:140px; left:0; padding:5px 10px 5px 10px; }
+body.mobile ul.mycard > li.identity span.namespan div{padding:7px 5px 5px 5px; }
+body.mobile ul.mycard > li.identity span.namespan:after{ font-weight: 900; position:absolute; right:20px; top:13px }
+	
+body.mobile ul.mycard > li.identity span select{ background:none; border:none;  color: #fff;padding-left:0; background-color:#216931; padding:0; line-height:1.5em;-moz-appearance: none; -webkit-appearance: none; appearance: none}
+body.mobile ul.mycard > li.identity span div{ background:none; border:none;  color: #fff;padding-left:0; background-color:#216931; padding:0; height:calc(2.25rem + 2px); line-height:1.5em; -moz-appearance: none; -webkit-appearance: none; appearance: none}
+body.mobile ul.mycard > li.identity span{ background:#216931; border-radius:20px ; padding:5px 5% 8px 5%; position:absolute; font-size:1em;left:70px; margin-right:20px;}
+body.mobile ul.mycard > li.date{}
+body.mobile ul.mycard > li.slogan{ font-size:1.2em; line-height:1.8em}
+body.mobile ul.mycard > li.atten-bt div button{margin:10px 10px}
+body.mobile ul.mycard > li.Task-bt div button{border:1px solid red !imporant;padding:10px 10px}
+
+body.mobile ul.mycard > li.contentblock{}
+body.mobile ul.mycard > li.contentblock li{ position:relative; padding:5px 0; font-size:1em;}
+body.mobile ul.mycard > li.contentblock li.title{ font-size:1.1em; font-weight:bold; line-height:2em; }
+body.mobile ul.mycard > li.contentblock li.title:before{ content:""; width:5px; height:35px; position:absolute; left:-20px; z-index:1; background:#49ac60;}
+body.mobile ul.mycard > li.contentblock li span.date{ display:block; font-size:0.9em; opacity:0.7}
+
+@media only screen and (orientation: landscape) {
+
+	body.mobile .navbar-menu .dropdown-content > li > a.dropdown-item > span.label{ width:105px;}
+	body.mobile ul.mycard > li.slogan{ font-size:1.8em; }
+	body.mobile ul.mycard > li.contentblock li{font-size:1.4em;}
+	body.mobile ul.mycard > li.contentblock li.title{ font-size:1.4em;}
+
+	body.mobile .introcontentblock.topcontent{width:calc(100% - 180px); height:100%; }
+	body.mobile .badge{right: -50px; margin:0px 5px; }
+}
+
+@media screen and (min-width: 768px) {
+body.mobile.mobilehome{background-size:auto 120% !important;background-attachment: fi !important;}
+
+}
+
+#EDITOR {border:0px solid red;padding-top:15px;padding-left:10px;padding-right:35px;}
+#EDITOR.formfieldinput body,input,textarea,select,table,button,code{line-height:100%;}
+body.mobile .introcontentblock.bottomcontent ul li.contentblock div .formfieldinput { font-weight:inherit;}
+.ZD table { border-collapse: separate; font-weight:normal; }
+
+
+.LNoready {font-weight:bold;color:#000 !important}
+.Lready {font-weight:normal;}
+.podot{color:#49ac60;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.grdot{color:#c5c4c4;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+
+.grebg{background:#49ac600f;}
+
+.conBox{margin:0 0 0 12px;display:block !important;}
+.sch_user{font-size: 0.9em;padding:0 8px 0 0;}
+
+.pim_pr    {color:#d6e874;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.pim_dept  {color:#ff9966;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.pim_share {color:#75ace9;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.pim_tot   {color:#ffdc73;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+
+.a_st {color:#BE1018}
+
+body.mobile .introcontentblock .contentblock > div > a > i {color:#777;font-size:1.3em; padding-right:5px;}
+body.mobile .introcontentblock .contentblock > div > a {color:#333;font-size:1.0em;}
+body.mobile .introcontentblock .contentblock > div > div.img  {color:#777;font-size:1.6em}
+
+.istd, .lidf {font-size:0.9em;}
+.wrTable .title {font-size:0.9em !important;}
+.istf {color:#BE1018}
+.tGB{background:#EEE; padding-left:5px !important}
+
+
+.w_ready {color:#a5acb0;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.w_ing   {color:#49ac60;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.w_delay {color:#dc3545;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.w_end   {color:#565454;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+.w_etc   {color:#3047e7;font-size:0.6em;float:left;position: absolute;padding:5px 8px 0  0;}
+
+
+.bg-ready {background: #a5acb0 !important;}
+.bg-ing   {background: #49ac60 !important;}
+.bg-delay {background: #dc3545 !important;}
+.bg-end   {background: #565454 !important;}
+.bg-etc   {background: #3047e7 !important;}
+.bg-title   {background: #eeeeee !important;}
+
+#attachList .dva {height:28px;}
+.br-white {border: 2px solid rgba(255, 255, 255, 0.5); background-color:rgba(23,162,184,0.6); color:#FFF;margin:5px 0 ; font-size:1em; line-height:1.2em}
+
+li.contentblock div.title a { -moz-appearance: none; -webkit-appearance: none; appearance: none; }
+
+li.contentblock.mylist {    background: #f9f9f9;    border-bottom: 1px solid #ddd !important; }
+
+/* table_typeE : 데이타입력용(박스형->바탕:회색) */
+table.table_typeE{table-layout:fixed;float:left;width:100%;padding:0px;border-left:1px solid #c0c0c0;border-right:1px solid #c0c0c0;border-top:1px solid #c0c0c0;border-bottom:1px solid #c0c0c0;border-collapse:collapse;}
+table.table_typeE th{font-weight:normal;padding:5px;margin:0px;border-bottom:1px solid #D2D2D2;vertical-align:middle;min-width:30px;text-align:left;background:#eeeeee;z-index:10;}
+table.table_typeE td{font-weight:normal;padding:5px;margin:0px;border-bottom:1px solid #D2D2D2;vertical-align:top;min-width:30px;}
+table.table_typeE td img.valignM{vertical-align:middle;}
+table.table_typeE td a{cursor:pointer;}
+table.table_typeE th.last-child {border-bottom:0;}
+table.table_typeE td.last-child {border-bottom:0;}
+table.table_typeE td.last-child2{padding:0; text-align:center;border-left:1px solid #ddd;}
+
+/*** Context Component Start **************************************************************************************************************/
+
+.popup {background-color:white;border:solid 1px #777777;padding:1px;z-index:999 /*height:140px;overflow:auto;*/}
+.context_item1{background-image:url(../../Img/ContextMenu/ico_ctx_bg.gif);text-align:center;background-repeat:repeat-y;width:25px;border-left: solid 1px #FFFFFF;cursor:none;}
+.context_item2{padding:3px;padding-left:4px;padding-right:4px;border-top:solid 1px white;border-bottom:solid 1px white;cursor:pointer;white-space:nowrap;}
+.context_item3{border-top:solid 1px white;border-bottom:solid 1px white;border-right: solid 1px white;cursor:pointer;}
+.context_item1_over{background-color:#CFD6E8;text-align:center;width:25px;border-top:solid 1px #9399AA;border-bottom:solid 1px #9399AA;border-left: solid 1px #9399AA;cursor:none;}
+.context_item2_over{padding:3px;padding-left:4px;padding-right:4px;background-color:#CFD6E8;border-top:solid 1px #9399AA;border-bottom:solid 1px #9399AA;cursor:pointer;white-space:nowrap;}
+.context_item3_over{background-color:#CFD6E8;border-top:solid 1px #9399AA;border-bottom:solid 1px #9399AA;border-right: solid 1px #9399AA;cursor:pointer;}
+.attach {font-family: "맑은 고딕", "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif;font-size:9pt;wordWrap:break-word;padding:1px;border-left:solid #ffffff 2px;border-right:solid #ffffff 2px;border-top:solid #ffffff 2px;border-bottom:solid #ffffff 2px;}    
+.btnG {font-family: "맑은 고딕", "돋움",Dotum,"굴림",Gulim,AppleGothic,Sans-serif; font-size:9pt; background-color: #E6E6E6; cursor:hand;}
+.outline   {border:solid #666666 1px;overflow:auto;height:60px;}
+
+/*** Context Component End **************************************************************************************************************/
+
+/* 팝업스타일 */
+.layer_popup{width:100%;min-width:300px;margin: 0px auto 0px auto;border:1px solid #429e74;float:left;background:#ffffff;overflow:hidden;overflow-y:auto;}

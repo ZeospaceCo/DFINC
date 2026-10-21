@@ -1,0 +1,132 @@
+//원본 http://www.codeproject.com/office/excel_using_oledb.asp?df=100&forumid=115836&exp=0&select=1937095
+//수정본 http://www.bangsil.pe.kr/Board/Read.aspx?BoardId=da05ba1b-3e9b-4d16-b8f8-ff2e4f7514c5&PostId=bb46fa1f-d300-4ad2-aebb-9321f492b343
+//
+//Excel File 사용시 좋은 모듈이여서 추가 함 ByFreeman 20090217 
+
+
+//사용 예
+msgPay.DataSource = SQLHelper.ExecuteDataTableReader(SQLHelper.CONN_FP, CommandType.StoredProcedure, "SQL_FP_증번별_PCA_Select", "GetPageList", parms);
+msgPay.DataBind();
+
+
+msgPay.AllowPaging = false;
+msgPay.IsCustomViewLine = "false";
+string strTitle = "PCA_증번별계산데이터.xls";
+
+Request.ContentEncoding = System.Text.Encoding.GetEncoding("euc-kr");
+Response.ContentEncoding = System.Text.Encoding.GetEncoding("euc-kr");
+Response.HeaderEncoding = System.Text.Encoding.GetEncoding("euc-kr");
+
+new Zeospace.DeskPlus.Component.Excel.DataGridExcelExporter(this.msgPay, this.Page).Export(strTitle);
+
+
+
+
+Reader 사용 예
+===================================================
+OleExcelReader reader = new OleExcelReader();
+reader.Filename = filePath;
+reader.HasHeaders = true;
+reader.KeepConnectionOpen = false;
+reader.PkColIndex = 0;
+string[] sheetNames = reader.GetExcelSheetNames();
+if (sheetNames.Length < 1)
+{
+  exceptionMessage = "적어도 한개 이상의 Sheet가 있어야 합니다.";
+  returnDataSet = null;
+  return false;
+}
+else
+{
+  reader.SheetName = new string[] { "List", "Staphylococcus", "E.coli", "Salmonella", "Shigella" };
+  returnDataSet = reader.GetDataSet();
+
+  if (returnDataSet.Tables.Count != 5)
+  {
+    exceptionMessage = "시트의 수가 맞지 않습니다.";
+    return false;
+  }
+}
+===================================================
+
+Write 사용 예
+===================================================
+예제에는 실제로 progressbar와 label을 만들어서 현재 인서트 진행 상황을 보여주게끔 만들었다. 
+아직 event와 delegate에 익숙하지 않은 분들도 약간의 참고가 될 수 있으리라 생각된다.
+
+   16     private delegate void CurrentRowEventHandler(int rowIndex);
+   17     private CurrentRowEventHandler rowCount;
+   18     private DataSet ds = new DataSet();
+
+16 라인을 보면 CurrentRowEventHandler 라는 델리게이트를 만들었고 17 라인에 이 델리게이트 형의 rowCount 라는 개체를 만들었다.
+이 델리게이트는 OnRowCount 라는 이벤트를 받아서 그 때마다 UI 스레드에게 CallBack 하여 Label 컨트롤과 ProgressBar컨트롤을 작동시키기위해 필요한 존재이다.
+그리고 18행은 예제에서 사용될 DataSet이다.
+
+   65     private void Form1_Load(object sender, EventArgs e)
+   66     {
+   67       this.rowCount = this.CallBackRowCount;
+   68       this.MakeDataSet();
+   69     }
+
+Form 이 Load가 되면 rowCount 라는 델리게이트는 CallBackRowCount 라는 델리게이트메서드에 연결을 시킨다. 
+그리고 DataSet에 데이터를 채운다..
+DataSet에는 2개의 테이블이 있으며 각각 int 형, string 형, datetime 형의 컬럼을 가지고 있으며 데이터는 500개씩 이다.
+DataSet에 데이터를 채우는 내용은..예제를 참고 하도록 한다..
+
+자 이제 버튼을 클릭하게 되면...스레드를 만들고 스레드를 시작한다.
+이 스레드는 MakeExcelFile 이라는 메서드를 호출한다.
+
+이제 이 MakeExcelFile 이라는 메서드를 살펴 보자.
+
+   34 private void MakeExcelFile()
+   35 {
+   36   OleExcelWriter excel = new OleExcelWriter();
+   37   excel.OnRowCount += new OleExcelWriter.RowCount(excel_OnRowCount);
+   38 
+   39   excel.FileName = this.saveFileDialog.FileName;
+   40   excel.HasHeader = true;
+   41   List<string[]> colList = new List<string[]>(2);
+   42   string[] colType = new string[3];
+   43 
+   44   colType[0] = "int";
+   45   colType[1] = "varchar(16)";
+   46   colType[2] = "datetime";
+   47 
+   48   colList.Add(colType);
+   49   colList.Add(colType);
+   50 
+   51   excel.ColTypeList = colList;
+   52   excel.CurDs = this.ds;
+   53   excel.KeepConnectionOpen = true;
+   54   excel.CreateSheet();
+   55   excel.Binding();
+   56   excel.Dispose();
+   57   excel.Close();
+   58 }
+
+36라인에서 OleExcelWriter의 개체를 생성하고 37라인에서 이벤트를 등록 하였다. 
+40~51 라인은 컬럼을 생성하여 ColTypeList 속성에 대입시키는 코드이다. 앞에서 설명 했었다.
+52 라인은 DataSet을 CurDs 라는 속성에 대입한다. 그리고 54 라인에서 시트를 생성하고 55라인에서 데이터를 인서트 하며, 56,57 라인에서 Close 하게 된다.
+
+excel_OnRowCount 메서드를 살펴 보자면.
+
+   60 void excel_OnRowCount(object sender, RowCountEventArgs e)
+   61 {
+   62   this.Invoke(this.rowCount, e.RowCount);
+   63 }
+
+단순히 Invoke 만 했다. 
+Invoke 의 첫번째 매개변수는 rowCount 라는 델리게이트이며, 두번째 인자는 RowCountEventArgs.RowCount 이다. 
+이 델리게이트를 호출(Invoke) 하게 되면 Form1_Load 이벤트 메서드에서 설정한 CallBackRowCount 메서드가 실행된다.
+
+   71 private void CallBackRowCount(int rowIndex)
+   72 {
+   73   this.lblMessage.Text = String.Format("현재 {0}번째의 데이터를 쓰고 있습니다.", rowIndex.ToString());
+   74   this.progressBar.PerformStep();
+   75   Thread.Sleep(10);
+   76 }
+
+매개변수로 받은 rowIndex를 단지 label 컨트롤에 대입하고 progressbar를 performstep 하는 UI 컨트롤에 대한 설정 밖에 없다. 
+제2 스레드에서 제1 스레드로 Invoke 하게 된 결과이다 
+75라인은...너무 빨라서 진행상태를 보기에 어렵기에..살짝 텀을 준것 뿐이다...
+

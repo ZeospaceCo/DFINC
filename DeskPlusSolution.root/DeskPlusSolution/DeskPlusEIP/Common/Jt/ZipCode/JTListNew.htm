@@ -1,0 +1,24 @@
+﻿<table class="table_typeA" border="0">
+<caption>우편번호찾기</caption>
+<colgroup>
+    <col width="65px"/>
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th id="header_1"></th>
+        <th id="header_2"></th>
+    </tr> 
+</thead>
+{#foreach $T as ZipCodeList}
+    <tr>
+        <td><a onclick="List.GetNewAddress('{ $T.ZipCodeList.ZipCode }','{ $T.ZipCodeList.Si }','{ $T.ZipCodeList.Gu }','{ $T.ZipCodeList.Dong }','{ $T.ZipCodeList.Ri }','{ $T.ZipCodeList.Building }','{ $T.ZipCodeList.Bunji }')" style="cursor:pointer"><span style="text-decoration:underline;">{ $T.ZipCodeList.ZipCode }</span></a></td>
+        <td>{ $T.ZipCodeList.Si } { $T.ZipCodeList.Gu } { $T.ZipCodeList.Dong } { $T.ZipCodeList.Ri } { $T.ZipCodeList.Building }&nbsp;{ $T.ZipCodeList.Bunji }&nbsp;</td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="2" class="center" id="NoListData"></td>        
+    </tr>
+{#/for}        
+ </table>
+ 

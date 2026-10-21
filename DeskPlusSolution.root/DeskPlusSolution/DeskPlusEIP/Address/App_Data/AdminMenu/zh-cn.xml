@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--관리 -->
+  <Item ID="Manage" Text="管理" ClientSideCommand="" />
+  <Item ID="Category" Text="夹" ClientSideCommand="Menu.MovePage('Category');" />
+  <Item ID="Content" Text="帖子" ClientSideCommand="Menu.MovePage('Content');" />
+  <Item ID="Template" Text="模板" ClientSideCommand="Menu.MovePage('Template');" />
+
+  <!-- 환경  -->
+  <Item ID="Environment" Text="环境" ClientSideCommand="" />
+  <Item ID="Setting" Text="集" ClientSideCommand="Menu.MovePage('Setting');" />
+
+  <!-- 통계 -->
+  <Item ID="Statistic" Text="统计" ClientSideCommand="" />
+  <Item ID="ReadCount" Text="文章查询" ClientSideCommand="Menu.MovePage('ReadCount');" />
+  <Item ID="WriteCount" Text="挂号邮递" ClientSideCommand="Menu.MovePage('WriteCount');" />
+</MenuData> 

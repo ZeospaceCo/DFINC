@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="Taille de police"/>
+	<Item ID="1" Value="Petit"/>
+	<Item ID="2" Value="Normal"/>
+	<Item ID="3" Value="Grand"/>
+	<Item ID="5" Value="Très grand"/>
+</XmlData>
+

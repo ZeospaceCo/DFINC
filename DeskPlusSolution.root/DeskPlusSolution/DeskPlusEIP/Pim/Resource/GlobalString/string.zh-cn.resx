@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>对象不存在。</value>
+  </data>
+  <data name="ACCOUNT_SUCCESS" xml:space="preserve">
+    <value>已处理。</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddFile" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="AddPimPlz" xml:space="preserve">
+    <value>请输入日程。</value>
+  </data>
+  <data name="AddSchedule" xml:space="preserve">
+    <value>添加日程</value>
+  </data>
+  <data name="AddTO" xml:space="preserve">
+    <value>要添加的</value>
+  </data>
+  <data name="AddToDo" xml:space="preserve">
+    <value>登记工作</value>
+  </data>
+  <data name="AddUserSelect" xml:space="preserve">
+    <value>请选择要添加共享人的用户</value>
+  </data>
+  <data name="Add_InputContent" xml:space="preserve">
+    <value>请输入正文内容。</value>
+  </data>
+  <data name="Add_InputDate" xml:space="preserve">
+    <value>请输入日期</value>
+  </data>
+  <data name="Add_InputTitle" xml:space="preserve">
+    <value>请输入标题。</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>请输入内容。</value>
+  </data>
+  <data name="Add_SelectOptionTop" xml:space="preserve">
+    <value>请设置公告期间。</value>
+  </data>
+  <data name="ADMIN" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="Admin1" xml:space="preserve">
+    <value>规定时间的共享日程</value>
+  </data>
+  <data name="Admin2" xml:space="preserve">
+    <value>纪念日</value>
+  </data>
+  <data name="Admin3" xml:space="preserve">
+    <value>季节</value>
+  </data>
+  <data name="Admin4" xml:space="preserve">
+    <value>国家公休日</value>
+  </data>
+  <data name="Admin5" xml:space="preserve">
+    <value>国家纪念日</value>
+  </data>
+  <data name="AfterContinue" xml:space="preserve">
+    <value>保存后继续</value>
+  </data>
+  <data name="AfterPim" xml:space="preserve">
+    <value>以后全部日程</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>请选择提醒时间</value>
+  </data>
+  <data name="AlertScriptContnet" xml:space="preserve">
+    <value>因正文含有脚本可疑文句，内容可能被更改。</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="AllAnniversary" xml:space="preserve">
+    <value>全体纪念日</value>
+  </data>
+  <data name="allDelete" xml:space="preserve">
+    <value>要全部删除吗？</value>
+  </data>
+  <data name="AllDownLoad" xml:space="preserve">
+    <value>全部下载</value>
+  </data>
+  <data name="AllPim" xml:space="preserve">
+    <value>全体日程</value>
+  </data>
+  <data name="AllShare" xml:space="preserve">
+    <value>全体共享日程</value>
+  </data>
+  <data name="AllShareAnniversary" xml:space="preserve">
+    <value>全体共享纪念日</value>
+  </data>
+  <data name="AllShareView" xml:space="preserve">
+    <value>查看全体共享日程</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>上午</value>
+  </data>
+  <data name="AnnivControl" xml:space="preserve">
+    <value>纪念日管理</value>
+  </data>
+  <data name="AnniversaryDay" xml:space="preserve">
+    <value>纪念日</value>
+  </data>
+  <data name="AnniversaryDayAdd" xml:space="preserve">
+    <value>添加纪念日</value>
+  </data>
+  <data name="AnniversaryEdit" xml:space="preserve">
+    <value>纪念日修改</value>
+  </data>
+  <data name="AnniversaryInquery" xml:space="preserve">
+    <value>纪念日查看</value>
+  </data>
+  <data name="AnniversaryMod" xml:space="preserve">
+    <value>纪念日修改</value>
+  </data>
+  <data name="AnniversaryReg" xml:space="preserve">
+    <value>纪念日登记</value>
+  </data>
+  <data name="ApplyDelete" xml:space="preserve">
+    <value>要删除吗？</value>
+  </data>
+  <data name="AttachName" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="AuthManage" xml:space="preserve">
+    <value>权限管理</value>
+  </data>
+  <data name="AutoSync" xml:space="preserve">
+    <value>自动连动</value>
+  </data>
+  <data name="BasicSetting" xml:space="preserve">
+    <value>基本设置</value>
+  </data>
+  <data name="basicShareperson" xml:space="preserve">
+    <value>基本共享人</value>
+  </data>
+  <data name="basicsShareDept" xml:space="preserve">
+    <value>基本共享部门</value>
+  </data>
+  <data name="BASICVIEW" xml:space="preserve">
+    <value>基本查看设置</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>之前通知</value>
+  </data>
+  <data name="BOTTOM" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Catalog" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>日程分类</value>
+  </data>
+  <data name="CategoryHelp" xml:space="preserve">
+    <value>分类说明</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>分类名</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>文章登记</value>
+  </data>
+  <data name="CommentShare" xml:space="preserve">
+    <value>公开对象管理</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前创建的内容将要消失。要选择吗？</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="CONTINUEADD" xml:space="preserve">
+    <value>转到创建页面。</value>
+  </data>
+  <data name="CurrentObjectPerson" xml:space="preserve">
+    <value>现在共享人</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DATE2" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DateSel" xml:space="preserve">
+    <value>日期选择</value>
+  </data>
+  <data name="DateView" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DayPeriod" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="DayToo" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DayView" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DeepContent" xml:space="preserve">
+    <value>详细内容</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DelFile" xml:space="preserve">
+    <value>删除文件</value>
+  </data>
+  <data name="DEPTNAME" xml:space="preserve">
+    <value>部门名</value>
+  </data>
+  <data name="DETAIL" xml:space="preserve">
+    <value>详细</value>
+  </data>
+  <data name="DetailContent" xml:space="preserve">
+    <value>详细内容</value>
+  </data>
+  <data name="Ebem" xml:space="preserve">
+    <value>反映</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="EmailAlert" xml:space="preserve">
+    <value>请输入电子邮件</value>
+  </data>
+  <data name="EnviroMent" xml:space="preserve">
+    <value>环境</value>
+  </data>
+  <data name="EnviroMentSetting" xml:space="preserve">
+    <value>环境设置</value>
+  </data>
+  <data name="ErrorAttachFile" xml:space="preserve">
+    <value>获取附件信息时发生了错误。</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>每</value>
+  </data>
+  <data name="EveryDay" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="EveryDayR" xml:space="preserve">
+    <value>天天</value>
+  </data>
+  <data name="EveryDayRepeat" xml:space="preserve">
+    <value>每日重复</value>
+  </data>
+  <data name="EveryMonRepeat" xml:space="preserve">
+    <value>每月重复</value>
+  </data>
+  <data name="EveryMonth" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="EveryWeek" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="EveryWeekRepeat" xml:space="preserve">
+    <value>每周重复</value>
+  </data>
+  <data name="ExecelDown" xml:space="preserve">
+    <value>Excel下载</value>
+  </data>
+  <data name="FailSync" xml:space="preserve">
+    <value>要连动的谷歌账号不一致或连动失败。</value>
+  </data>
+  <data name="FileAdd" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5个小时</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4个小时</value>
+  </data>
+  <data name="GetContent" xml:space="preserve">
+    <value>调过来</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>转到查看页面。</value>
+  </data>
+  <data name="GoogleAccErr" xml:space="preserve">
+    <value>谷歌账号信息不一致。</value>
+  </data>
+  <data name="GoogleAccount1" xml:space="preserve">
+    <value>将谷歌账号情报</value>
+  </data>
+  <data name="GoogleAccount2" xml:space="preserve">
+    <value>我的情报管理/ SNS /谷歌</value>
+  </data>
+  <data name="GoogleAccount3" xml:space="preserve">
+    <value>请输入</value>
+  </data>
+  <data name="GoogleCalendarSync" xml:space="preserve">
+    <value>谷歌日历连动</value>
+  </data>
+  <data name="GoogleInfo_Input" xml:space="preserve">
+    <value>输入您的Google帐户</value>
+  </data>
+  <data name="GoToList" xml:space="preserve">
+    <value>转到列表。</value>
+  </data>
+  <data name="GUN" xml:space="preserve">
+    <value>算</value>
+  </data>
+  <data name="Half" xml:space="preserve">
+    <value>一半</value>
+  </data>
+  <data name="HOLIDAYCADALOG" xml:space="preserve">
+    <value>纪念日目录</value>
+  </data>
+  <data name="HolidayInsert" xml:space="preserve">
+    <value>公休日登记</value>
+  </data>
+  <data name="HolidayManage" xml:space="preserve">
+    <value>公休日管理</value>
+  </data>
+  <data name="HolidayModify" xml:space="preserve">
+    <value>公休日修改</value>
+  </data>
+  <data name="holy1" xml:space="preserve">
+    <value>共享日程+纪念日</value>
+  </data>
+  <data name="holy2" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="holy3" xml:space="preserve">
+    <value>共享日程</value>
+  </data>
+  <data name="holy4" xml:space="preserve">
+    <value>纪念日</value>
+  </data>
+  <data name="holy5" xml:space="preserve">
+    <value>季节</value>
+  </data>
+  <data name="holy6" xml:space="preserve">
+    <value>国家公休日</value>
+  </data>
+  <data name="holy7" xml:space="preserve">
+    <value>国家纪念日</value>
+  </data>
+  <data name="HolyDay" xml:space="preserve">
+    <value>公休日</value>
+  </data>
+  <data name="Importance" xml:space="preserve">
+    <value>重要</value>
+  </data>
+  <data name="IMPORTANCE_MEASURE" xml:space="preserve">
+    <value>重要性</value>
+  </data>
+  <data name="INPUTPERIOD" xml:space="preserve">
+    <value>期间输入</value>
+  </data>
+  <data name="InputSearchDay" xml:space="preserve">
+    <value>请输入搜索日</value>
+  </data>
+  <data name="InqueryObjSel" xml:space="preserve">
+    <value>查看对象选择</value>
+  </data>
+  <data name="Inquery_Input" xml:space="preserve">
+    <value>请输入查看期间</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>上记载了评论。</value>
+  </data>
+  <data name="InterfaceCode" xml:space="preserve">
+    <value>外部连动代码</value>
+  </data>
+  <data name="KIND" xml:space="preserve">
+    <value>区分</value>
+  </data>
+  <data name="kind1" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="kind10" xml:space="preserve">
+    <value>土</value>
+  </data>
+  <data name="kind2" xml:space="preserve">
+    <value>平日</value>
+  </data>
+  <data name="kind3" xml:space="preserve">
+    <value>周末</value>
+  </data>
+  <data name="kind4" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="kind5" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="kind6" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="kind7" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="kind8" xml:space="preserve">
+    <value>木</value>
+  </data>
+  <data name="kind9" xml:space="preserve">
+    <value>金</value>
+  </data>
+  <data name="LayoutColor" xml:space="preserve">
+    <value>周围颜色</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>该特殊文字用于保安脆弱型攻击，将被限制。</value>
+  </data>
+  <data name="lunalday" xml:space="preserve">
+    <value>农历</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="makrname" xml:space="preserve">
+    <value>目标名</value>
+  </data>
+  <data name="MarkManage" xml:space="preserve">
+    <value>目标管理</value>
+  </data>
+  <data name="MarkName" xml:space="preserve">
+    <value>目标名</value>
+  </data>
+  <data name="marknameperiod" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="MarkReg" xml:space="preserve">
+    <value>目标登记</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="MESSENGER" xml:space="preserve">
+    <value>即时通信</value>
+  </data>
+  <data name="MIDDLE" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyShortReply" xml:space="preserve">
+    <value>帖子修改</value>
+  </data>
+  <data name="ModSchedule" xml:space="preserve">
+    <value>日程修改</value>
+  </data>
+  <data name="ModToDo" xml:space="preserve">
+    <value>工作修改</value>
+  </data>
+  <data name="MonthString" xml:space="preserve">
+    <value>['1月', '2月', '3月', '4月', '5月', '6月 ', '7月', '8月', '9月', '10月' , '11月', '12月']</value>
+  </data>
+  <data name="MonthToo" xml:space="preserve">
+    <value>个月</value>
+  </data>
+  <data name="MonthView" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="MsgCategoryName" xml:space="preserve">
+    <value>请输入分类名称。</value>
+  </data>
+  <data name="MsgError" xml:space="preserve">
+    <value>处理时，发生了错误。</value>
+  </data>
+  <data name="MultiName" xml:space="preserve">
+    <value>多种语言</value>
+  </data>
+  <data name="MYSCHEDULE" xml:space="preserve">
+    <value>我的日程</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>谈</value>
+  </data>
+  <data name="myviewschedule" xml:space="preserve">
+    <value>查看我的日程</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下页</value>
+  </data>
+  <data name="NoFileData" xml:space="preserve">
+    <value>该文件不存在。</value>
+  </data>
+  <data name="NoMine" xml:space="preserve">
+    <value>不能选择自己</value>
+  </data>
+  <data name="NonActive" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="NoneSelUser" xml:space="preserve">
+    <value>没有选择的用户。</value>
+  </data>
+  <data name="NoRepeatAdd" xml:space="preserve">
+    <value>没有该日程。请重新输入。</value>
+  </data>
+  <data name="normalday" xml:space="preserve">
+    <value>每日(平日）</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>纸条</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>写了评论。</value>
+  </data>
+  <data name="NoUserAuth" xml:space="preserve">
+    <value>该用户不能访问。</value>
+  </data>
+  <data name="NowSync" xml:space="preserve">
+    <value>期</value>
+  </data>
+  <data name="objectSelect" xml:space="preserve">
+    <value>请选择被共享人</value>
+  </data>
+  <data name="ObjePerson" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="OjbectSelect" xml:space="preserve">
+    <value>选择对象</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1小时</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1天</value>
+  </data>
+  <data name="ONEMON" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="oneShareDept" xml:space="preserve">
+    <value>日程共享部门</value>
+  </data>
+  <data name="OneSharePerson" xml:space="preserve">
+    <value>日程共享人</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>公开</value>
+  </data>
+  <data name="order1" xml:space="preserve">
+    <value>第一</value>
+  </data>
+  <data name="order2" xml:space="preserve">
+    <value>第二</value>
+  </data>
+  <data name="order3" xml:space="preserve">
+    <value>第三</value>
+  </data>
+  <data name="order4" xml:space="preserve">
+    <value>第四</value>
+  </data>
+  <data name="order5" xml:space="preserve">
+    <value>最后</value>
+  </data>
+  <data name="OutSync" xml:space="preserve">
+    <value>谷歌日历连动</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="PersonSchedule" xml:space="preserve">
+    <value>全体共享日程</value>
+  </data>
+  <data name="pim1" xml:space="preserve">
+    <value>个人日程</value>
+  </data>
+  <data name="pim2" xml:space="preserve">
+    <value>部门日程</value>
+  </data>
+  <data name="pim3" xml:space="preserve">
+    <value>共享日程</value>
+  </data>
+  <data name="pim4" xml:space="preserve">
+    <value>全体日程</value>
+  </data>
+  <data name="PimAddTime" xml:space="preserve">
+    <value>日程 反映 期间</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>日程提醒</value>
+  </data>
+  <data name="pimconfirm" xml:space="preserve">
+    <value>日程确认人</value>
+  </data>
+  <data name="PimConfirmPerson" xml:space="preserve">
+    <value>选择日程确认人</value>
+  </data>
+  <data name="PimEbem" xml:space="preserve">
+    <value>反映到日程</value>
+  </data>
+  <data name="PimRepeatSet" xml:space="preserve">
+    <value>日程 反复 设置</value>
+  </data>
+  <data name="PimSearchEnquiry" xml:space="preserve">
+    <value>查看日程搜索</value>
+  </data>
+  <data name="PimShare" xml:space="preserve">
+    <value>日程共享人</value>
+  </data>
+  <data name="PIMShareManager" xml:space="preserve">
+    <value>日程共享人管理</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>下午</value>
+  </data>
+  <data name="PmReg" xml:space="preserve">
+    <value>日程登记</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="PRINT" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="priority1" xml:space="preserve">
+    <value>不开始</value>
+  </data>
+  <data name="priority2" xml:space="preserve">
+    <value>进行中</value>
+  </data>
+  <data name="priority3" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="priority4" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="priority5" xml:space="preserve">
+    <value>委任</value>
+  </data>
+  <data name="priority6" xml:space="preserve">
+    <value>延期</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>进度率</value>
+  </data>
+  <data name="QUICKADD" xml:space="preserve">
+    <value>马上添加</value>
+  </data>
+  <data name="ReallyApplyDelete" xml:space="preserve">
+    <value>确定要删除吗？</value>
+  </data>
+  <data name="RegDate" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="RegisterComplate" xml:space="preserve">
+    <value>已注册。</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="RepeatAlert1" xml:space="preserve">
+    <value>请输入重复范围日期。</value>
+  </data>
+  <data name="RepeatAlert2" xml:space="preserve">
+    <value>重复次数不正确。</value>
+  </data>
+  <data name="RepeatAlert3" xml:space="preserve">
+    <value>重复周期不正确。</value>
+  </data>
+  <data name="RepeatAlert5" xml:space="preserve">
+    <value>请选择星期</value>
+  </data>
+  <data name="RepeatDatePeriod" xml:space="preserve">
+    <value>重复范围</value>
+  </data>
+  <data name="RepeatMent1" xml:space="preserve">
+    <value>重复日程的其他全部日程照样维持。</value>
+  </data>
+  <data name="RepeatMent2" xml:space="preserve">
+    <value>这个日程及以后全部日程都被改变。</value>
+  </data>
+  <data name="RepeatMent3" xml:space="preserve">
+    <value>改变重复的全部日程。维持对其他日程的变更事项。</value>
+  </data>
+  <data name="RepeatMod" xml:space="preserve">
+    <value>修改重复日程</value>
+  </data>
+  <data name="RepeatResult" xml:space="preserve">
+    <value>重复设置结果</value>
+  </data>
+  <data name="RepeatSetting" xml:space="preserve">
+    <value>重复设置</value>
+  </data>
+  <data name="RepeatSettingMent1" xml:space="preserve">
+    <value>次重复</value>
+  </data>
+  <data name="RepeatZero" xml:space="preserve">
+    <value>请输入1以上数字</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>评论公开</value>
+  </data>
+  <data name="ResourceReservation" xml:space="preserve">
+    <value>资源预约</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>存储</value>
+  </data>
+  <data name="SaveContinue" xml:space="preserve">
+    <value>保存后继续</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>日程</value>
+  </data>
+  <data name="schedule1" xml:space="preserve">
+    <value>个人日程</value>
+  </data>
+  <data name="schedule2" xml:space="preserve">
+    <value>个人纪念日</value>
+  </data>
+  <data name="schedule3" xml:space="preserve">
+    <value>公休日程</value>
+  </data>
+  <data name="schedule4" xml:space="preserve">
+    <value>公休纪念日</value>
+  </data>
+  <data name="schedule5" xml:space="preserve">
+    <value>季节</value>
+  </data>
+  <data name="schedule6" xml:space="preserve">
+    <value>国家公休日</value>
+  </data>
+  <data name="schedule7" xml:space="preserve">
+    <value>国家纪念日</value>
+  </data>
+  <data name="SCHEDULECADALOG" xml:space="preserve">
+    <value>日程目录</value>
+  </data>
+  <data name="scheduleing" xml:space="preserve">
+    <value>从日程</value>
+  </data>
+  <data name="SEARCH1" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="SEARCH2" xml:space="preserve">
+    <value>1周</value>
+  </data>
+  <data name="SEARCH3" xml:space="preserve">
+    <value>1个月</value>
+  </data>
+  <data name="SEARCH4" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="SEARCHKIND" xml:space="preserve">
+    <value>搜索条件</value>
+  </data>
+  <data name="SEARCHTEXT" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>该文只能由原本人和创建让你查看。</value>
+  </data>
+  <data name="SelectObjectPerson" xml:space="preserve">
+    <value>选择共享人</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="ShareAnniversary" xml:space="preserve">
+    <value>共享纪念日</value>
+  </data>
+  <data name="shareinfo" xml:space="preserve">
+    <value>共享人信息</value>
+  </data>
+  <data name="ShareList" xml:space="preserve">
+    <value>共享目录</value>
+  </data>
+  <data name="ShareManage" xml:space="preserve">
+    <value>共享人管理</value>
+  </data>
+  <data name="ShareObj" xml:space="preserve">
+    <value>基本共享对象管理</value>
+  </data>
+  <data name="ShareObjectAdd" xml:space="preserve">
+    <value>添加共享人</value>
+  </data>
+  <data name="ShareObjSearch" xml:space="preserve">
+    <value>搜索共享对象</value>
+  </data>
+  <data name="shareobjsel" xml:space="preserve">
+    <value>选择共享对象</value>
+  </data>
+  <data name="SharePesonSuccess" xml:space="preserve">
+    <value>添加共享人成功</value>
+  </data>
+  <data name="ShareQuarter" xml:space="preserve">
+    <value>共享季节</value>
+  </data>
+  <data name="ShareSchedule" xml:space="preserve">
+    <value>共享日程</value>
+  </data>
+  <data name="ShareSelect" xml:space="preserve">
+    <value>请选择共享人</value>
+  </data>
+  <data name="ShareSetting" xml:space="preserve">
+    <value>共享设置</value>
+  </data>
+  <data name="sharesure" xml:space="preserve">
+    <value>共享与否</value>
+  </data>
+  <data name="ShortReply" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>自</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6个小时</value>
+  </data>
+  <data name="SMS" xml:space="preserve">
+    <value>短信</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>开始日要小于结束日</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="SuccessSync" xml:space="preserve">
+    <value>完成联动</value>
+  </data>
+  <data name="sunday" xml:space="preserve">
+    <value>阳历</value>
+  </data>
+  <data name="SyncAccount" xml:space="preserve">
+    <value>连动账号</value>
+  </data>
+  <data name="Syncing" xml:space="preserve">
+    <value>连动</value>
+  </data>
+  <data name="TextEmpty" xml:space="preserve">
+    <value>没有内容。</value>
+  </data>
+  <data name="TheDay" xml:space="preserve">
+    <value>在</value>
+  </data>
+  <data name="THISPIM" xml:space="preserve">
+    <value>只有这次日程</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3个小时</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3天</value>
+  </data>
+  <data name="THREEMON" xml:space="preserve">
+    <value>3个月</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TimeAlert" xml:space="preserve">
+    <value>结束时间早于开始时间。</value>
+  </data>
+  <data name="TIMEINFO" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TimeOver" xml:space="preserve">
+    <value>结束时间早于开始时间。</value>
+  </data>
+  <data name="TimeRepeat" xml:space="preserve">
+    <value>次重复</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="TODAYSCHEDULE" xml:space="preserve">
+    <value>今天日程</value>
+  </data>
+  <data name="TODAYTODO" xml:space="preserve">
+    <value>今天工作</value>
+  </data>
+  <data name="TODO" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="todo1" xml:space="preserve">
+    <value>明天工作</value>
+  </data>
+  <data name="todo2" xml:space="preserve">
+    <value>到特定日的工作</value>
+  </data>
+  <data name="todo3" xml:space="preserve">
+    <value>特定日工作</value>
+  </data>
+  <data name="todo4" xml:space="preserve">
+    <value>延期到明天</value>
+  </data>
+  <data name="todo5" xml:space="preserve">
+    <value>特定日延期</value>
+  </data>
+  <data name="todo6" xml:space="preserve">
+    <value>不选择</value>
+  </data>
+  <data name="TodoAdd" xml:space="preserve">
+    <value>添加工作</value>
+  </data>
+  <data name="TODOCADALOG" xml:space="preserve">
+    <value>工作目录</value>
+  </data>
+  <data name="todoing" xml:space="preserve">
+    <value>在工作里</value>
+  </data>
+  <data name="TODOLIST" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="TODOREG" xml:space="preserve">
+    <value>工作登记</value>
+  </data>
+  <data name="TodoShare1" xml:space="preserve">
+    <value>个人工作</value>
+  </data>
+  <data name="TodoShare2" xml:space="preserve">
+    <value>部门工作</value>
+  </data>
+  <data name="TodoShare3" xml:space="preserve">
+    <value>共享工作</value>
+  </data>
+  <data name="TodoShare4" xml:space="preserve">
+    <value>全体工作</value>
+  </data>
+  <data name="TODOVIEW" xml:space="preserve">
+    <value>查看工作</value>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="topmarkname" xml:space="preserve">
+    <value>上级目标名</value>
+  </data>
+  <data name="topmarknameperiod" xml:space="preserve">
+    <value>上级目标期间</value>
+  </data>
+  <data name="ToRepeat" xml:space="preserve">
+    <value>次重复</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2个小时</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2天</value>
+  </data>
+  <data name="TYPE1" xml:space="preserve">
+    <value>我的</value>
+  </data>
+  <data name="TYPE2" xml:space="preserve">
+    <value>个人</value>
+  </data>
+  <data name="TYPE3" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="TYPE4" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="TYPE5" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="UnPimEbem" xml:space="preserve">
+    <value>未反映</value>
+  </data>
+  <data name="USERINPUT" xml:space="preserve">
+    <value>用户输入</value>
+  </data>
+  <data name="UserPim" xml:space="preserve">
+    <value>用户日程</value>
+  </data>
+  <data name="UserPim2" xml:space="preserve">
+    <value>用户日程</value>
+  </data>
+  <data name="UserSelect" xml:space="preserve">
+    <value>请选择用户</value>
+  </data>
+  <data name="ViewLimit" xml:space="preserve">
+    <value>发布范围</value>
+  </data>
+  <data name="ViewSchedule" xml:space="preserve">
+    <value>查看日程</value>
+  </data>
+  <data name="View_AddShortReply" xml:space="preserve">
+    <value>添加帖子</value>
+  </data>
+  <data name="waitment" xml:space="preserve">
+    <value>处理中。请稍候。</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>墙面文章</value>
+  </data>
+  <data name="WeekNextDay" xml:space="preserve">
+    <value>周下星期重复</value>
+  </data>
+  <data name="Weeks" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="WeekSort" xml:space="preserve">
+    <value>日,月,火,水,木,金,土</value>
+  </data>
+  <data name="WeekString" xml:space="preserve">
+    <value>['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']</value>
+  </data>
+  <data name="WeekToo" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="WeekView" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="WRITER" xml:space="preserve">
+    <value>登记人</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>写帖子</value>
+  </data>
+  <data name="XDay" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="XFri" xml:space="preserve">
+    <value>在周五</value>
+  </data>
+  <data name="XMon" xml:space="preserve">
+    <value>在周一</value>
+  </data>
+  <data name="XNormalDay" xml:space="preserve">
+    <value>在平日</value>
+  </data>
+  <data name="XOrder" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="XSat" xml:space="preserve">
+    <value>在周六</value>
+  </data>
+  <data name="XSun" xml:space="preserve">
+    <value>在周日</value>
+  </data>
+  <data name="XThu" xml:space="preserve">
+    <value>在周四</value>
+  </data>
+  <data name="XTue" xml:space="preserve">
+    <value>在周二</value>
+  </data>
+  <data name="XWed" xml:space="preserve">
+    <value>在周三</value>
+  </data>
+  <data name="XWeekend" xml:space="preserve">
+    <value>在周末</value>
+  </data>
+  <data name="YearViewMark" xml:space="preserve">
+    <value>查看年度目标</value>
+  </data>
+  <data name="GoogleGetCalendar" xml:space="preserve">
+    <value>选择日历</value>
+  </data>
+  <data name="GoogleSignIn" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="GoogleSignOut" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="GoogleUserRejectException" xml:space="preserve">
+    <value>该用户已经拒绝了邀请</value>
+  </data>
+  <data name="Holiday_HoliDay1" xml:space="preserve">
+    <value>重复日期</value>
+  </data>
+  <data name="Holiday_HoliDay2" xml:space="preserve">
+    <value>指定日期</value>
+  </data>
+  <data name="Holiday_HolidayBetween" xml:space="preserve">
+    <value>九分钟假期</value>
+  </data>
+  <data name="Holiday_HolidayBetween1" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Holiday_HolidayBetween2" xml:space="preserve">
+    <value>包括以前的工作</value>
+  </data>
+  <data name="Holiday_HolidayBetween3" xml:space="preserve">
+    <value>包括随后的日子里</value>
+  </data>
+  <data name="Holiday_HolidayBetween4" xml:space="preserve">
+    <value>以前的工作包括：一是</value>
+  </data>
+  <data name="Holiday_HolidayBetweenDay" xml:space="preserve">
+    <value>的9分钟节假日日期</value>
+  </data>
+  <data name="Holiday_HoliDayKind" xml:space="preserve">
+    <value>重复9分钟</value>
+  </data>
+  <data name="Holiday_HoliDayKind1" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="Holiday_HoliDayKind2" xml:space="preserve">
+    <value>重复美国</value>
+  </data>
+  <data name="Holiday_IsHoliday" xml:space="preserve">
+    <value>是否</value>
+  </data>
+  <data name="Holiday_IsReplace" xml:space="preserve">
+    <value>无论是另定假日</value>
+  </data>
+  <data name="Holiday_Lunar" xml:space="preserve">
+    <value>太阴</value>
+  </data>
+  <data name="Holiday_Solar" xml:space="preserve">
+    <value>阳历</value>
+  </data>
+  <data name="Holiday_SolarLunar" xml:space="preserve">
+    <value>杨农历9分钟</value>
+  </data>
+  <data name="Holiday_Title" xml:space="preserve">
+    <value>假日人</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>取回</value>
+  </data>
+  <data name="HolidayManageDay_Add" xml:space="preserve">
+    <value>注册指定节假日</value>
+  </data>
+  <data name="HolidayManageDay_Mod" xml:space="preserve">
+    <value>假日指定修改</value>
+  </data>
+  <data name="HolidayManage_Add" xml:space="preserve">
+    <value>节假日注册</value>
+  </data>
+  <data name="HolidayManage_Mod" xml:space="preserve">
+    <value>节假日修改</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="Holiday_Error1" xml:space="preserve">
+    <value>输入您的度假的客人。</value>
+  </data>
+  <data name="Holiday_Error2" xml:space="preserve">
+    <value>请输入您的日期。</value>
+  </data>
+  <data name="Holiday_Error3" xml:space="preserve">
+    <value>输入您的度假日期。</value>
+  </data>
+  <data name="Holiday_Error4" xml:space="preserve">
+    <value>重复假期。</value>
+  </data>
+  <data name="Holiday_IsHolidayKind1" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Holiday_IsHolidayKind2" xml:space="preserve">
+    <value>重复假期</value>
+  </data>
+  <data name="Holiday_IsHolidayKind" xml:space="preserve">
+    <value>无论是节假日</value>
+  </data>
+  <data name="MultiLang" xml:space="preserve">
+    <value>乡村</value>
+  </data>
+  <data name="HolidayManageDay" xml:space="preserve">
+    <value>假日管理</value>
+  </data>
+  <data name="Consecutive holidays" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Substitute Holiday" xml:space="preserve">
+    <value>另类假期</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>标题，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>输入搜索词</value>
+  </data>
+  <data name="BOTTOMAbb" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="MIDDLEAbb" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="TOPAbb" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="MsgRepeat" xml:space="preserve">
+    <value>经常性事件\n这反映在所有活动中</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>邮件格式不正确。</value>
+  </data>
+  <data name="SplitMail" xml:space="preserve">
+    <value>定界符( ; ) / 主题和时间将发送到您输入的电子邮件地址。</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>设置为默认闹钟</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>分隔符（;）/时间表标题和时间将发送到输入的电子邮件地址。</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="FourDay" xml:space="preserve">
+    <value>4天</value>
+  </data>
+  <data name="FiveDay" xml:space="preserve">
+    <value>5天</value>
+  </data>
+  <data name="SixDay" xml:space="preserve">
+    <value>6天</value>
+  </data>
+  <data name="SevenDay" xml:space="preserve">
+    <value>7天</value>
+  </data>
+</root>

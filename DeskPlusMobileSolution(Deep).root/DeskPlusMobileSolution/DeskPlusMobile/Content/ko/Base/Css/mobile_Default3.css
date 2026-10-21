@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+body { margin:0px; padding:0px; overflow:hidden; }
+input { vertical-align:middle; }
+p { -webkit-margin-before: 10px !important; -webkit-margin-after: 10px !important; font-size: 12px; }
+
+.show { position: absolute; }
+body { overflow-x:hidden; }
+
+#warp { min-width:320px; max-width:100%; position: relative; margin: 0 auto; }
+
+#header { min-width:320px; max-width:100%; height: 70px; position: relative; margin: 0 auto; }
+#mid_top_text { display:none; }
+
+#companylog {width:189px; height:31px; position:relative !important;}
+
+#main-content .footer_img {
+	position:relative !important; margin:0 auto; max-width:100%; min-width:320px; min-height:400px;
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/3/3_08object_m.png') no-repeat center top; background-size:cover;
+}
+
+#main-content { min-width: 320px; max-width:750px; height:550px; position: relative; margin: 0 auto; }
+#login_warp {
+	border: 1px solid #e1e1e1; background-color:#f9f9f9;
+	width:292px; height: 173px; position:absolute; font-size:12px; 
+	font-family: 'Nanum Gothic', serif; position:relative; margin:0 auto;
+}
+#fom_warp { position:relative; width: 270px; margin: 0 auto; text-align: right; }
+#fom_1 { width:250px; padding-top:20px; }
+#fom_1 div {margin-bottom:8px; font-family: 'Nanum Gothic';}
+.save { text-align: center; margin-top: 5px;}
+#fom_2 { width:250px; margin: 0 auto; text-align: left; padding: 10px 0 0 20px; }
+
+.il,.pl {
+	width:180px; height:15px; background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/3/fom.jpg') no-repeat cover; border:none;
+	font: 12px 'Nanum Gothic'; color:#363636; padding-left:10px; border: 1px solid #e1e1e1;
+}
+#fom_line { width:262px; height:1px; border-top: 1px solid #e1e1e1;}
+#ComSel { width:192px; color:#393939; border: 1px solid #e1e1e1;}
+#ddlCompany { width:192px; color:#393939; border: 1px solid #e1e1e1;}
+#FindIDPW { text-decoration: none; color: #393939;}
+.login_bt{
+	width:59px; height:25px; position:absolute; margin-left:80px; bottom:-15.5%;
+	background:url('/DeskPlusMobile/Content/ko/Base/Img/Login/3/3_02bt.png') no-repeat center center; cursor: pointer; border-radius: 3px;
+}
+
+#footer { display:none; }

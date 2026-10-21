@@ -1,0 +1,1 @@
+document.write('<OBJECT id="removeItemMenu" codeBase="http://activex.microsoft.com/controls/iptdweb/ikcntrls.cab" height="0" width="0" classid="CLSID:F5131C24-E56D-11CF-B78A-444553540000" VIEWASTEXT><PARAM NAME="_Version" VALUE="65536"><PARAM NAME="_ExtentX" VALUE="26"><PARAM NAME="_ExtentY" VALUE="26"><PARAM NAME="_StockProps" VALUE="0"></OBJECT>')

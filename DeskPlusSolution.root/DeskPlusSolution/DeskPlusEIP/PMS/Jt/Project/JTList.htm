@@ -1,0 +1,50 @@
+﻿<table class="table_typeA"> 
+<caption>
+    리스트
+</caption>
+<colgroup>
+    <col  />
+    <col width="120px" />
+    <col width="120px" />
+    <col width="120px" />
+    <col width="120px" />
+    <col width="60px" />
+    <col width="60px" />
+</colgroup>
+<tr>
+    <th id="r_projectname" class="center"></th>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_planstartdate" class="center"></th>
+    <th id="r_planenddate" class="center"></th>                            
+    <th id="r_status" class="center"></th>
+    <th id="r_process" class="center"></th>
+</tr>
+{#foreach $T as BoardList}
+<tr>
+    <td class="left">
+    {#if $T.BoardList.ProjectAccess == true}
+        <a onclick="List.View('{ $T.BoardList.ProjectID }');return false;" style="cursor:pointer">
+        { $T.BoardList.SubjectBase }</a>
+    {#else}
+        { $T.BoardList.SubjectBase }
+    {#/if}
+    
+    </td>
+    <td class="center">{ $T.BoardList.DeptBase }</td>
+    <td class="center">
+    <a onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">
+    { $T.BoardList.NameBase }
+    </a>
+    </td>
+    <td class="center">{ $T.BoardList.PlanStartDateStr }</td>
+    <td class="center">{ $T.BoardList.PlanEndDateStr }</td>
+    <td class="center">{ $T.BoardList.StatusStr }</td>
+    <td class="center">{ $T.BoardList.Process } %</td>    
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

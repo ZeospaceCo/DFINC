@@ -1,0 +1,51 @@
+﻿<table class="table_typeB">
+<caption>년도 월별 제안현황</caption>
+<colgroup>
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+    <col width="8%" />
+</colgroup>
+<tbody>
+    <tr class="crt_tr">
+{#foreach $T as StaticsList}
+        <td><p>{ $T.StaticsList.Count }건</p><div class="tit_stick" style="height:{ $T.StaticsList.Percentage }%;"></div></td>
+{#else}
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+    <td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0%;"></div></td>
+	<td><p>0건</p><div class="tit_stick" style="height:0;"></div></td>
+{#/for}
+    </tr>
+    <tr class="tit_tr">
+	    <td>1월</td>
+        <td>2월</td>
+        <td>3월</td>
+        <td>4월</td>
+        <td>5월</td>
+        <td>6월</td>
+        <td>7월</td>
+        <td>8월</td>
+        <td>9월</td>
+        <td>10월</td>
+        <td>11월</td>
+        <td>12월</td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,30 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="40px" />
+    <col />
+    <col width="90px" />
+    <col width="90px" />
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><input id="cbxAll" type="checkbox" onclick="Checked()" /></th>
+        <th class="center r_subject"></th>
+        <th class="center r_name"></th>
+        <th class="center r_completetime"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+    <tr>
+        <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.List.DocumentID }" value="{ $T.List.DocumentID }" /></td>
+        <td title="[{ $T.List.DeptBase }] { $T.List.DocNumber }"><a href="#" onclick="View('{ $T.List.CompanyID }','{ $T.List.DocumentID }');return false;" style="cursor:pointer" >{ $T.List.Subject }</a> {#if $T.List.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}</td>
+        <td class="center"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase }</a></td>        
+        <td class="center">{ $T.List.CompleteDateStr }</td>
+    </tr>
+{#else}
+    <tr>
+        <td colspan="4" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

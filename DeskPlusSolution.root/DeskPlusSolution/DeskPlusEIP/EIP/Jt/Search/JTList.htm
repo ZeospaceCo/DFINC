@@ -1,0 +1,49 @@
+﻿<table class="table_typeA">
+    <caption>
+        SEARCH LIST
+    </caption>
+    <colgroup>
+        <col width="80px" />
+        <col width="150px" />
+        <col />        
+        <col width="200px" />
+        <col width="100px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th><span class="r_number"></span></th>
+            <th class="r_modulename"></th>
+            <th class="r_title"></th>
+            <th class="r_register"></th>
+            <th class="r_regdate"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as DataList}
+        <tr>
+            <td class="center">
+                { $T.DataList.ROW }
+            </td>
+            <td class="center">
+                { $T.DataList.Module }
+            </td>
+            <td>                
+                <a onclick="List.PopupView('{ $T.DataList.ModuleName }','{ $T.DataList.CategoryID }','{ $T.DataList.ListID }');return false;" style="cursor:pointer" >
+                    { $T.DataList.Title }
+                </a> 
+            </td>            
+            <td class="center">
+                { $T.DataList.DeptBase } { $T.DataList.NameBase }
+            </td>
+            <td class="center">
+                { $T.DataList.WriteDateYMD }
+            </td>
+        </tr>
+
+        {#else}
+        <tr>
+            <td colspan="5" class="center"><span class="NoListData" /></td>        
+        </tr>
+        {#/for} 
+    </tbody>
+</table>

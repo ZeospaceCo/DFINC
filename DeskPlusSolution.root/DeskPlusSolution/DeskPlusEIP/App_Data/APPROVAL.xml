@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+    <Item ID="ApprovalNewShowDay" Value="0" Content="new 이미지 보이기 (당일 : 0)" />
+    <Item ID="IsBundle" Value="0" Content="일괄결재 사용유무 (미사용 : 0, 사용: 1)" />
+    <Item ID="IsDRMUse" Value="0"  Content="DRM 연동 사용여부 0(안한다/1(모든첨부파일에 대한 drm 건다./2(코미코특정문서에대한drm건다)" />
+    <Item ID="CustomScriptRoot" Value="/DeskPlusEIP/Legacy/" Content="연동모듈 루트URL정보" />
+    <Item ID="AlarmMethod" Value="MAIL,MESSENGER,SMS" Content="알람방식( MAIL,MESSENGER,SMS )" />
+    <Item ID="AlarmMessengerW" Value="{0}{1}/DeskplusEIP/Approval/Process/Basic/ApprovePopup.aspx" Content="알람-Messenger-상신" />
+    <Item ID="AlarmMessengerS" Value="{0}{1}/DeskplusEIP/Approval/Process/Basic/ApprovePopup.aspx" Content="알람-Messenger-결재" />
+    <Item ID="AlarmMessengerSR" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Receive" Content="알람-Messenger-수신결재" />
+    <Item ID="AlarmMessengerO" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-첨언/첨언추가" />
+    <Item ID="AlarmMessengerC" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-완료" />
+    <Item ID="AlarmMessengerRW" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Reject" Content="알람-Messenger-반려(상신자)" />
+    <Item ID="AlarmMessengerRS" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Approve" Content="알람-Messenger-반려(중간결재자)" />
+    <Item ID="AlarmMessengerD" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-보류/보류취소" />
+    <Item ID="AlarmMessengerL" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-후열(X)" />
+    <Item ID="AlarmMessengerCir" Value="{0}{1}/DeskplusEIP/Approval/Folder/Default.aspx?cabinetID=Carboncopy_CirReceipt" Content="알람-Messenger-회람" />
+    <Item ID="AlarmMessengerTransfer" Value="{0}{1}/DeskplusEIP/Approval/Status/Default.aspx?folderStatusID=Transfer" Content="알람-Messenger-이관(X)" />
+    <Item ID="AlarmMessengerForward" Value="{0}{1}/DeskplusEIP/Approval/Folder/Default.aspx?cabinetID=Carboncopy_Forward" Content="알람-Messenger-전달" />
+    <Item ID="AlarmMessengerView" Value="{0}{1}/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx" Content="알람-Messenger-기타(문서보기)" />
+    <Item ID="AlarmMessengerConfirm" Value="{0}{1}/DeskplusEIP/Approval/Process/Confirm/ApprovePopup.aspx" Content="알람-Messenger-공람" />
+    <Item ID="AlarmMail" Value="{0}{1}/DeskPlusEIP/Approval/Common/Popup/View.aspx" Content="알람-Mail" />
+    <Item ID="ApprovalVersion" Value="4.0" Content="3.3 또는 4.0" />
+    <Item ID="IsFolderToEDMS" Value="1" Content="문서함에서 EDMS 이관 사용유무 (미사용 : 0, 사용: 1)" />
+    <Item ID="IsBackupFile" Value="MHT" Content="결재 본문 백업파일 형식 (MHT, IMAGE, PDF)" />
+    <Item ID="IsBatchPDF" Value="1" Content="PDF일괄 다운로드사용유부 (1:사용, 0:미사용), 팩키지=미사용, Aspose Component 구매필요" />
+    <Item ID="AlarmMethodProxy" Value="MAIL,MESSENGER,SMS" Content="알람방식( MAIL,MESSENGER,SMS )" />
+    <item ID="DocStreamYN" Value="N" Content="문서 스트리밍 사용여부" />
+    <Item ID="AlarmMobileW" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-상신" />
+    <Item ID="AlarmMobileS" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-결재" />
+    <Item ID="AlarmMobileSR" Value="" Content="알람-Messenger-수신결재" />
+    <Item ID="AlarmMobileO" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-첨언/첨언추가" />
+    <Item ID="AlarmMobileC" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-완료" />
+    <Item ID="AlarmMobileRW" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-반려(상신자)" />
+    <Item ID="AlarmMobileRSALL" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-반려(중간결재자)전체" />
+    <Item ID="AlarmMobileRS" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-반려(중간결재자)" />
+    <Item ID="AlarmMobileD" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-보류/보류취소" />
+    <Item ID="AlarmMobileL" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-후열(X)" />
+    <Item ID="AlarmMobileCir" Value="/DeskplusMobile/Approval/CirDocList.aspx" Content="알람-Messenger-회람" />
+    <Item ID="AlarmMobileTransfer" Value="" Content="알람-Messenger-이관(X)" />
+    <Item ID="AlarmMobileForward" Value="/DeskplusMobile/Approval/DocList.aspx" Content="알람-Messenger-전달" />
+    <Item ID="AlarmMobileView" Value="/DeskplusMobile/Approval/AlarmView.aspx" Content="알람-Messenger-기타(문서보기)" />
+    <Item ID="AlarmMobileConfirm" Value="" Content="알람-Messenger-공람" />
+</XmlData>

@@ -1,0 +1,71 @@
+﻿ <table border="0" cellspacing="0" class="table_stat">
+    <caption>
+        다운로드 통계
+    </caption>
+    <colgroup>
+        <col  />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+        <col width="90px" />
+    </colgroup>
+    <tr>
+        <th id="r_SearchGubun"></th>
+        <th id="r_1Month"></th>
+        <th id="r_2Month"></th>
+        <th id="r_3Month"></th>
+        <th id="r_4Month"></th>
+        <th id="r_5Month"></th>
+        <th id="r_6Month"></th>
+        <th id="r_7Month"></th>
+        <th id="r_8Month"></th>
+        <th id="r_9Month"></th>
+        <th id="r_10Month"></th>
+        <th id="r_11Month"></th>
+        <th id="r_12Month"></th>
+    </tr>
+    <tr>
+        <th scope="rowgroup"><span id="r_TotalDownLoadCount" class="txt_point"></span></th>
+        <th><span id="d_1Month" class="txt_point"></span></th>
+        <th><span id="d_2Month" class="txt_point"></span></th>
+        <th><span id="d_3Month" class="txt_point"></span></th>
+        <th><span id="d_4Month" class="txt_point"></span></th>
+        <th><span id="d_5Month" class="txt_point"></span></th>
+        <th><span id="d_6Month" class="txt_point"></span></th>
+        <th><span id="d_7Month" class="txt_point"></span></th>
+        <th><span id="d_8Month" class="txt_point"></span></th>
+        <th><span id="d_9Month" class="txt_point"></span></th>
+        <th><span id="d_10Month" class="txt_point"></span></th>
+        <th><span id="d_11Month" class="txt_point"></span></th>
+        <th><span id="d_12Month" class="txt_point"></span></th>
+</tr>
+    {#foreach $T as AttchList}
+    <tr>
+        <th scope="rowgroup">{ $T.AttchList.SearchGubun }</th>        
+        <td >{ $T.AttchList.CntMonth1 }</td>
+        <td >{ $T.AttchList.CntMonth2 }</td>
+        <td >{ $T.AttchList.CntMonth3 }</td>
+        <td >{ $T.AttchList.CntMonth4 }</td>
+        <td >{ $T.AttchList.CntMonth5 }</td>
+        <td >{ $T.AttchList.CntMonth6 }</td>
+        <td >{ $T.AttchList.CntMonth7 }</td>
+        <td >{ $T.AttchList.CntMonth8 }</td>
+        <td >{ $T.AttchList.CntMonth9 }</td>
+        <td >{ $T.AttchList.CntMonth10 }</td>
+        <td >{ $T.AttchList.CntMonth11 }</td>
+        <td >{ $T.AttchList.CntMonth12 }</td>
+    </tr>
+    {#else}
+     <tr>
+        <td colspan="13" class="center"><span class="NoListData" /></td>        
+     </tr>
+    {#/for}  
+ </table>

@@ -1,0 +1,30 @@
+﻿	<table class="table_typeJ">
+    <caption> 월간</caption>
+        <colgroup>
+        <col width="15%" />
+        <col width="14%" />
+        <col width="14%" />
+        <col width="14%" />
+        <col width="14%" />
+        <col width="14%" />
+        <col />                    
+        </colgroup>
+        <tr>
+        <th><span class="holiday" id="j_sun"></span></th>
+        <th><span id="j_mon"></span></th>
+        <th><span id="j_tue"></span></th>
+        <th><span id="j_wed"></span></th>
+        <th><span id="j_thu"></span></th>
+        <th><span id="j_fri"></span></th>
+        <th><span id="j_sat"></span></th>
+        </tr>     
+        {#foreach $T as Cal}
+        {#if $T.Cal.Week == '0'}
+        <tr>
+        {#/if}
+        <td class="{ $T.Cal.Class }"><a onclick="{ $T.Cal.Func }" id="{ $T.Cal.Index }"><span class="{ $T.Cal.Class }">{ $T.Cal.Day }</span></a> { $T.Cal.StrContent } </td>
+        {#if $T.Cal.Week == '6'}
+        </tr>
+        {#/if}
+        {#/for}     
+	</table>

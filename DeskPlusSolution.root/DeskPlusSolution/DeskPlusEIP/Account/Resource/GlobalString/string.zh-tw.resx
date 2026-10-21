@@ -1,0 +1,1578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Academic" xml:space="preserve">
+    <value>學歷</value>
+  </data>
+  <data name="ActiveNo" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="ActiveOnOff" xml:space="preserve">
+    <value>激活/停用</value>
+  </data>
+  <data name="ActiveYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ActivityDept" xml:space="preserve">
+    <value>是否激活</value>
+  </data>
+  <data name="AddBaseInfo" xml:space="preserve">
+    <value>人事檔案信息</value>
+  </data>
+  <data name="Admin_BatchManagerContent_MSG_ModChk" xml:space="preserve">
+    <value>確定要修改嗎?</value>
+  </data>
+  <data name="Admin_BatchManagerList_BatchManager" xml:space="preserve">
+    <value>組織統一管理</value>
+  </data>
+  <data name="Admin_CompanyManager_btnAdd" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Admin_CompanyManager_btnDel" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Admin_CompanyManager_btnSubmit" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptDown" xml:space="preserve">
+    <value>向組織下面移動</value>
+  </data>
+  <data name="Admin_CompanyManager_cbsDeptUp" xml:space="preserve">
+    <value>向組織上面移動</value>
+  </data>
+  <data name="Admin_CompanyManager_cbtnSearchZipCode" xml:space="preserve">
+    <value>查找郵政編碼</value>
+  </data>
+  <data name="Admin_DeptManager_btnAdd" xml:space="preserve">
+    <value>添加下屬組織</value>
+  </data>
+  <data name="Admin_DeptManager_btnDel" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearch" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Admin_DeptManager_btnSearchZipCode" xml:space="preserve">
+    <value>郵政編碼</value>
+  </data>
+  <data name="Admin_DeptManager_cbActive" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Admin_DeptManager_cbIsFPDept" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Admin_DeptManager_cbPassword" xml:space="preserve">
+    <value>密碼窗口</value>
+  </data>
+  <data name="Admin_DeptManager_cbRoot" xml:space="preserve">
+    <value>根組織</value>
+  </data>
+  <data name="Admin_DeptManager_ChangeDept" xml:space="preserve">
+    <value>要移動所選擇使用者嗎？</value>
+  </data>
+  <data name="Admin_DeptManager_DeptManager" xml:space="preserve">
+    <value>組織管理</value>
+  </data>
+  <data name="Admin_DeptManager_ltAddress" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Admin_DeptManager_ltDeptCode" xml:space="preserve">
+    <value>連動代碼</value>
+  </data>
+  <data name="Admin_DeptManager_ltDescription" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="Admin_DeptManager_ltEnglishName" xml:space="preserve">
+    <value>組織英文名</value>
+  </data>
+  <data name="Admin_DeptManager_ltFax" xml:space="preserve">
+    <value>傳真</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupInform" xml:space="preserve">
+    <value>組織信息</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupList" xml:space="preserve">
+    <value>組織列表</value>
+  </data>
+  <data name="Admin_DeptManager_ltGroupMember" xml:space="preserve">
+    <value>組織成員</value>
+  </data>
+  <data name="Admin_DeptManager_ltHomePage" xml:space="preserve">
+    <value>主頁</value>
+  </data>
+  <data name="Admin_DeptManager_ltMove" xml:space="preserve">
+    <value>組織</value>
+  </data>
+  <data name="Admin_DeptManager_ltName" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Admin_DeptManager_ltParentName" xml:space="preserve">
+    <value>上級組織</value>
+  </data>
+  <data name="Admin_DeptManager_ltPhone" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
+  <data name="Admin_DeptManager_ltSecurityLogIn" xml:space="preserve">
+    <value>安全認證</value>
+  </data>
+  <data name="Admin_DeptManager_ltShortName" xml:space="preserve">
+    <value>簡稱</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelChk" xml:space="preserve">
+    <value>確定要刪除嗎?</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelDeptTree" xml:space="preserve">
+    <value>不能刪除有用戶的組織</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelFAILURE" xml:space="preserve">
+    <value>刪除時產生了錯誤.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_DelSUCCESS" xml:space="preserve">
+    <value>已經被刪除.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_FAILURE" xml:space="preserve">
+    <value>處理時產生了錯誤.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_NoSelectedManyUser" xml:space="preserve">
+    <value>不能選擇多數用戶.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SelectedUserTree" xml:space="preserve">
+    <value>請選擇所要刪除的用戶</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTERROR" xml:space="preserve">
+    <value>請輸入搜索條件.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTGROUPERROR" xml:space="preserve">
+    <value>請選擇組織.</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTLENGTHERROR" xml:space="preserve">
+    <value>搜索時，兩個字以上才可以。</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SELECTTREE" xml:space="preserve">
+    <value>請選擇上級組織</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SubDeptTreeYN" xml:space="preserve">
+    <value>不能刪除有下級組織的組織</value>
+  </data>
+  <data name="Admin_DeptManager_MSG_SUCCESS" xml:space="preserve">
+    <value>處理完畢.</value>
+  </data>
+  <data name="Admin_DeptManager_RootDept" xml:space="preserve">
+    <value>最高部門</value>
+  </data>
+  <data name="Admin_UserContent_MSG_Checkbox" xml:space="preserve">
+    <value>請選擇要刪除的目錄.</value>
+  </data>
+  <data name="Admin_UserList_cbsUserAdd" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Admin_UserList_cbsUserDel" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Admin_UserList_cbtnSearch" xml:space="preserve">
+    <value>檢索</value>
+  </data>
+  <data name="Admin_UserList_MSGDel" xml:space="preserve">
+    <value>要刪除使用用戶.\n兼職刪除時請在使用者信息下的組織信息裡刪除.\n要刪除嗎?</value>
+  </data>
+  <data name="Admin_UserList_MSG_BtnSelect" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="Admin_UserList_MSG_DelUserERROR" xml:space="preserve">
+    <value>刪除時發生了錯誤.</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDeptName" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTDutyName" xml:space="preserve">
+    <value>職位名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTLoginID" xml:space="preserve">
+    <value>登陸用戶名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTMobilePhone" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTTitleName" xml:space="preserve">
+    <value>職務名</value>
+  </data>
+  <data name="Admin_UserList_MSG_HTUserDeptOrder" xml:space="preserve">
+    <value>順序</value>
+  </data>
+  <data name="Admin_UserList_UserManager" xml:space="preserve">
+    <value>用戶管理</value>
+  </data>
+  <data name="Admin_UserManager_ActiveUser" xml:space="preserve">
+    <value>請選擇需要激活的用戶。</value>
+  </data>
+  <data name="Admin_UserManager_cbsExtentionConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserDel" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Admin_UserManager_cbsUserList" xml:space="preserve">
+    <value>用戶列表</value>
+  </data>
+  <data name="Admin_UserManager_cbtnBirthSearchZipCode" xml:space="preserve">
+    <value>查找地址</value>
+  </data>
+  <data name="Admin_UserManager_cbtnHomeSearchZipCode" xml:space="preserve">
+    <value>查找地址</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoAdd" xml:space="preserve">
+    <value>添加照片</value>
+  </data>
+  <data name="Admin_UserManager_cbtnPhotoDel" xml:space="preserve">
+    <value>刪除照片</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealAdd" xml:space="preserve">
+    <value>添加印章</value>
+  </data>
+  <data name="Admin_UserManager_cbtnSealDel" xml:space="preserve">
+    <value>刪除印章</value>
+  </data>
+  <data name="Admin_UserManager_cbtnUserDeptAdd" xml:space="preserve">
+    <value>分配群組</value>
+  </data>
+  <data name="Admin_UserManager_cbxVirtualDept" xml:space="preserve">
+    <value>虛擬部門</value>
+  </data>
+  <data name="Admin_UserManager_Font" xml:space="preserve">
+    <value>文字</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader2" xml:space="preserve">
+    <value>部門名</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader3" xml:space="preserve">
+    <value>職位</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader4" xml:space="preserve">
+    <value>職務</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader5" xml:space="preserve">
+    <value>順序</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader6" xml:space="preserve">
+    <value>郵件</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader7" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="Admin_UserManager_GridHeader8" xml:space="preserve">
+    <value>排除</value>
+  </data>
+  <data name="Admin_UserManager_Literal1" xml:space="preserve">
+    <value>印章信息</value>
+  </data>
+  <data name="Admin_UserManager_Literal2" xml:space="preserve">
+    <value>組織圖</value>
+  </data>
+  <data name="Admin_UserManager_Literal3" xml:space="preserve">
+    <value>組織信息</value>
+  </data>
+  <data name="Admin_UserManager_ltAnniversary" xml:space="preserve">
+    <value>紀念日</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseDept" xml:space="preserve">
+    <value>基本組織</value>
+  </data>
+  <data name="Admin_UserManager_ltBaseMenu" xml:space="preserve">
+    <value>設為首頁</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthAddress" xml:space="preserve">
+    <value>原籍地址</value>
+  </data>
+  <data name="Admin_UserManager_ltBirthDay" xml:space="preserve">
+    <value>生年月日</value>
+  </data>
+  <data name="Admin_UserManager_ltChineseName" xml:space="preserve">
+    <value>中文名</value>
+  </data>
+  <data name="Admin_UserManager_ltCurrentDept" xml:space="preserve">
+    <value>所屬組織</value>
+  </data>
+  <data name="Admin_UserManager_ltDescription" xml:space="preserve">
+    <value>擔當業務</value>
+  </data>
+  <data name="Admin_UserManager_ltDesignStyle" xml:space="preserve">
+    <value>皮膚</value>
+  </data>
+  <data name="Admin_UserManager_ltEmployeeNumber" xml:space="preserve">
+    <value>編號</value>
+  </data>
+  <data name="Admin_UserManager_ltEnglishName" xml:space="preserve">
+    <value>英文名</value>
+  </data>
+  <data name="Admin_UserManager_ltExtensionOfficePhone" xml:space="preserve">
+    <value>內線</value>
+  </data>
+  <data name="Admin_UserManager_ltFax" xml:space="preserve">
+    <value>傳真</value>
+  </data>
+  <data name="Admin_UserManager_ltHomeAddress" xml:space="preserve">
+    <value>家庭住址</value>
+  </data>
+  <data name="Admin_UserManager_ltHomePhone" xml:space="preserve">
+    <value>宅電</value>
+  </data>
+  <data name="Admin_UserManager_ltJoinDate" xml:space="preserve">
+    <value>入社日</value>
+  </data>
+  <data name="Admin_UserManager_ltLoginID" xml:space="preserve">
+    <value>用戶 ID</value>
+  </data>
+  <data name="Admin_UserManager_ltMail" xml:space="preserve">
+    <value>基本郵箱</value>
+  </data>
+  <data name="Admin_UserManager_ltMailPassword" xml:space="preserve">
+    <value>郵件密碼</value>
+  </data>
+  <data name="Admin_UserManager_ltMobilePhone" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Admin_UserManager_ltName" xml:space="preserve">
+    <value>姓名（韓文）</value>
+  </data>
+  <data name="Admin_UserManager_ltOfficePhone" xml:space="preserve">
+    <value>辦公室電話</value>
+  </data>
+  <data name="Admin_UserManager_ltPassword" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="Admin_UserManager_ltPasswordConfirm" xml:space="preserve">
+    <value>密碼確認</value>
+  </data>
+  <data name="Admin_UserManager_ltPictureType" xml:space="preserve">
+    <value>圖片，印章只能為jpg 的形式(圖片: 94 * 124 / 印章: 50 * 50)</value>
+  </data>
+  <data name="Admin_UserManager_ltPreferredLanguage" xml:space="preserve">
+    <value>設置基本語言</value>
+  </data>
+  <data name="Admin_UserManager_ltPrivateQuota" xml:space="preserve">
+    <value>個人使用容量</value>
+  </data>
+  <data name="Admin_UserManager_ltRegistrationNumber" xml:space="preserve">
+    <value>身份證號碼</value>
+  </data>
+  <data name="Admin_UserManager_ltSex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="Admin_UserManager_ltTitle1" xml:space="preserve">
+    <value>照片信息</value>
+  </data>
+  <data name="Admin_UserManager_ltWeddingAnniversary" xml:space="preserve">
+    <value>結婚紀念日</value>
+  </data>
+  <data name="Admin_UserManager_msgIsNumeric" xml:space="preserve">
+    <value>輸入僅限數字</value>
+  </data>
+  <data name="Admin_UserManager_MSG_DelConfirm" xml:space="preserve">
+    <value>確認要刪除嗎?</value>
+  </data>
+  <data name="Admin_UserManager_MSG_FAILURE" xml:space="preserve">
+    <value>處理過程中出現了錯誤.</value>
+  </data>
+  <data name="Admin_UserManager_MSG_IsBelongDept" xml:space="preserve">
+    <value>隸屬於所選部門</value>
+  </data>
+  <data name="Admin_UserManager_MSG_NotSelectRootNode" xml:space="preserve">
+    <value>請選擇部門。</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SelectedDeptTree" xml:space="preserve">
+    <value>請選擇組織。</value>
+  </data>
+  <data name="Admin_UserManager_MSG_SUCCESS" xml:space="preserve">
+    <value>處理完畢</value>
+  </data>
+  <data name="Admin_UserManager_NoUse" xml:space="preserve">
+    <value>正在使用中</value>
+  </data>
+  <data name="Admin_UserManager_Password" xml:space="preserve">
+    <value>輸入僅限英文及數字</value>
+  </data>
+  <data name="Admin_UserManager_RequireCodes" xml:space="preserve">
+    <value>請輸入代碼(職務/職位)</value>
+  </data>
+  <data name="Admin_UserManager_rfvMailID" xml:space="preserve">
+    <value>請輸入Mail ID</value>
+  </data>
+  <data name="Admin_UserManager_tabs0" xml:space="preserve">
+    <value>基本信息</value>
+  </data>
+  <data name="Admin_UserManager_tabs1" xml:space="preserve">
+    <value>詳細信息</value>
+  </data>
+  <data name="Admin_UserManager_tabs2" xml:space="preserve">
+    <value>組織信息</value>
+  </data>
+  <data name="Admin_UserManager_tabs3" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Admin_UserManager_Use" xml:space="preserve">
+    <value>可以使用</value>
+  </data>
+  <data name="Admin_UserManager_UserManager" xml:space="preserve">
+    <value>用戶信息</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_auth" xml:space="preserve">
+    <value>該用戶沒有訪問權限。</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_lunar" xml:space="preserve">
+    <value>陰曆</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_RetireDate" xml:space="preserve">
+    <value>退社日</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_Validation" xml:space="preserve">
+    <value>輸入用戶基本信息後可以輸入詳細資料。</value>
+  </data>
+  <data name="Admin_UserRegisterExtend_WeddingDate" xml:space="preserve">
+    <value>結婚紀念日</value>
+  </data>
+  <data name="Admin_UserRegister_Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Admin_UserRegister_DoubleCheck" xml:space="preserve">
+    <value>確認重複</value>
+  </data>
+  <data name="Admin_UserRegister_PasswordChange" xml:space="preserve">
+    <value>Login 更改密碼</value>
+  </data>
+  <data name="Admin_UserRegister_MailPasswordChange" xml:space="preserve">
+    <value>Mail 更改密碼</value>
+  </data>
+  <data name="Admin_UserRegister_Save" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="AlertExitParentDept" xml:space="preserve">
+    <value>由於存在下屬部門，無法刪除此項目。</value>
+  </data>
+  <data name="AlertExitUserByDeptID" xml:space="preserve">
+    <value>該部門存在使用用戶，無法刪除。</value>
+  </data>
+  <data name="AllPhoneNumber" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
+  <data name="AndSearch" xml:space="preserve">
+    <value>除外的搜索</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="ApplyRegDate" xml:space="preserve">
+    <value>請輸入登錄日期</value>
+  </data>
+  <data name="Auth" xml:space="preserve">
+    <value>權限</value>
+  </data>
+  <data name="Authentication_SignIn_MSG_LoginError" xml:space="preserve">
+    <value>請確認登錄名或者密碼</value>
+  </data>
+  <data name="Authentication_SignIn_rfvLoginID" xml:space="preserve">
+    <value>請輸入用戶名</value>
+  </data>
+  <data name="Authentication_SignIn_rfvPassword" xml:space="preserve">
+    <value>請輸入密碼</value>
+  </data>
+  <data name="AuthLevel" xml:space="preserve">
+    <value>權限/等級</value>
+  </data>
+  <data name="AuthList" xml:space="preserve">
+    <value>授權列表</value>
+  </data>
+  <data name="BaseMail" xml:space="preserve">
+    <value>默認郵件</value>
+  </data>
+  <data name="Base_Authentication_Default_MSG_USBKey" xml:space="preserve">
+    <value>USB Key 信息和系統軟件用戶的信息不一致.</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>基本</value>
+  </data>
+  <data name="BasicAddInfo" xml:space="preserve">
+    <value>人事檔案信息</value>
+  </data>
+  <data name="BasicLanguage" xml:space="preserve">
+    <value>默認語言</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>兼職</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>業務擔當</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>卡</value>
+  </data>
+  <data name="CareerInfo" xml:space="preserve">
+    <value>經歷事項</value>
+  </data>
+  <data name="CareerInfoStatus" xml:space="preserve">
+    <value>經歷事項現況</value>
+  </data>
+  <data name="CareerPeriod" xml:space="preserve">
+    <value>經歷期間</value>
+  </data>
+  <data name="ChangeBasicDept" xml:space="preserve">
+    <value>更改默認部門</value>
+  </data>
+  <data name="ChangeDept" xml:space="preserve">
+    <value>部門變更</value>
+  </data>
+  <data name="ChangeOrders" xml:space="preserve">
+    <value>順序變更</value>
+  </data>
+  <data name="ChangeUpperDept" xml:space="preserve">
+    <value>變更上級部門</value>
+  </data>
+  <data name="CheckBaseMail" xml:space="preserve">
+    <value>指定默認郵件</value>
+  </data>
+  <data name="CheckChangeDeptUserList" xml:space="preserve">
+    <value>請選擇改變部門的用戶列表。</value>
+  </data>
+  <data name="CheckDeleteList" xml:space="preserve">
+    <value>請選擇要刪除的列表。</value>
+  </data>
+  <data name="CheckList" xml:space="preserve">
+    <value>請選擇列表。</value>
+  </data>
+  <data name="CheckLoginRepetition" xml:space="preserve">
+    <value>請選擇登錄重複確認。</value>
+  </data>
+  <data name="CheckMailRepetition" xml:space="preserve">
+    <value>請選擇郵件重複確認。</value>
+  </data>
+  <data name="CheckMember" xml:space="preserve">
+    <value>查看所屬員</value>
+  </data>
+  <data name="CheckMoveBaseDept" xml:space="preserve">
+    <value>請選擇要移動的基本部門。</value>
+  </data>
+  <data name="Chinese" xml:space="preserve">
+    <value>中國語</value>
+  </data>
+  <data name="CodeManage" xml:space="preserve">
+    <value>職位/職責管理</value>
+  </data>
+  <data name="CodeName" xml:space="preserve">
+    <value>代號</value>
+  </data>
+  <data name="Cohabitation" xml:space="preserve">
+    <value>同居</value>
+  </data>
+  <data name="Common_revIsNumber" xml:space="preserve">
+    <value>* 只許輸入數字！</value>
+  </data>
+  <data name="Common_revSpecialChar" xml:space="preserve">
+    <value>* 不能使用特殊字符！</value>
+  </data>
+  <data name="Common_rfvInput" xml:space="preserve">
+    <value>* 請輸入</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>公司名</value>
+  </data>
+  <data name="CompleteCategoryOrders" xml:space="preserve">
+    <value>分類順序被改變。</value>
+  </data>
+  <data name="CompleteCheck" xml:space="preserve">
+    <value>畢業與否</value>
+  </data>
+  <data name="CompleteDelete" xml:space="preserve">
+    <value>已被刪除。</value>
+  </data>
+  <data name="CompleteModify" xml:space="preserve">
+    <value>已被修改</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>順序發生了變化。</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>已登錄</value>
+  </data>
+  <data name="CompleteSave" xml:space="preserve">
+    <value>已保存。</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>反映</value>
+  </data>
+  <data name="CourseName" xml:space="preserve">
+    <value>課程名</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>學位</value>
+  </data>
+  <data name="DeleteDept" xml:space="preserve">
+    <value>確定要刪除該部門嗎？</value>
+  </data>
+  <data name="DeleteDuty" xml:space="preserve">
+    <value>確定要刪除該職務嗎？</value>
+  </data>
+  <data name="DeleteInfo" xml:space="preserve">
+    <value>你想刪除的郵件用戶？</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>確定要刪除該職位嗎？</value>
+  </data>
+  <data name="DeleteUserInfo" xml:space="preserve">
+    <value>確定要刪除該用戶嗎？</value>
+  </data>
+  <data name="DenyConfirm" xml:space="preserve">
+    <value>處理後發生了錯誤。</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>部門信息</value>
+  </data>
+  <data name="DeptOrder" xml:space="preserve">
+    <value>部門順序</value>
+  </data>
+  <data name="DetailInfo" xml:space="preserve">
+    <value>詳細情報</value>
+  </data>
+  <data name="DutyDescription" xml:space="preserve">
+    <value>職責說明</value>
+  </data>
+  <data name="DutyOrder" xml:space="preserve">
+    <value>職責說明</value>
+  </data>
+  <data name="DutyTree" xml:space="preserve">
+    <value>職責樹</value>
+  </data>
+  <data name="EducationInfo" xml:space="preserve">
+    <value>教育情報</value>
+  </data>
+  <data name="EducationInfoStatus" xml:space="preserve">
+    <value>教育情報現況</value>
+  </data>
+  <data name="EmployeeSearch" xml:space="preserve">
+    <value>員工查看</value>
+  </data>
+  <data name="EnableUse" xml:space="preserve">
+    <value>使用與否</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="ErrorProcessing" xml:space="preserve">
+    <value>處理時，發生了錯誤。</value>
+  </data>
+  <data name="FaceBook" xml:space="preserve">
+    <value>FaceBook</value>
+  </data>
+  <data name="FamilyInfo" xml:space="preserve">
+    <value>家庭信息</value>
+  </data>
+  <data name="FamilyInfoState" xml:space="preserve">
+    <value>家庭信息現況</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>結束日</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法語</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>將轉到目錄。</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>谷歌台歷</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>等級</value>
+  </data>
+  <data name="Graduation" xml:space="preserve">
+    <value>畢業與否</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>區分</value>
+  </data>
+  <data name="ImpossibleModify" xml:space="preserve">
+    <value>不可修改</value>
+  </data>
+  <data name="InputBaseMail" xml:space="preserve">
+    <value>請輸入默認電子郵件</value>
+  </data>
+  <data name="InputChangedPassword" xml:space="preserve">
+    <value>* 需要變更的時候請輸入密碼。</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>請輸入您的登錄ID。</value>
+  </data>
+  <data name="InputMailPassword" xml:space="preserve">
+    <value>請輸入您的電子郵件密碼。</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>請輸入姓名。</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>請輸入密碼。</value>
+  </data>
+  <data name="InternalSearch" xml:space="preserve">
+    <value>在分類之內</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="Job" xml:space="preserve">
+    <value>職業</value>
+  </data>
+  <data name="JobClass" xml:space="preserve">
+    <value>業種</value>
+  </data>
+  <data name="Korean" xml:space="preserve">
+    <value>韓國語</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="License_Error" xml:space="preserve">
+    <value>許可錯誤：沒有可使用的許可。</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>該特殊文字因用於保安脆弱型攻擊而被限制。</value>
+  </data>
+  <data name="LinkageInfo" xml:space="preserve">
+    <value>連動情報</value>
+  </data>
+  <data name="LinkOutsideAccount" xml:space="preserve">
+    <value>SNS信息管理</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>目錄</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="LoginID" xml:space="preserve">
+    <value>用戶名</value>
+  </data>
+  <data name="MailAddress" xml:space="preserve">
+    <value>郵件地址</value>
+  </data>
+  <data name="MailDomain" xml:space="preserve">
+    <value>郵件域名</value>
+  </data>
+  <data name="MailID" xml:space="preserve">
+    <value>郵件用戶名</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>專業</value>
+  </data>
+  <data name="ManagementDept" xml:space="preserve">
+    <value>部門管理</value>
+  </data>
+  <data name="ManagementDuty" xml:space="preserve">
+    <value>職責管理</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>職位管理</value>
+  </data>
+  <data name="MeToday" xml:space="preserve">
+    <value>我的今天</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_AdditionalJob" xml:space="preserve">
+    <value>兼</value>
+  </data>
+  <data name="Module_DeptUserTreeSearch_VirtualTree" xml:space="preserve">
+    <value>虛擬組織</value>
+  </data>
+  <data name="MoveUserDeptOrder" xml:space="preserve">
+    <value>使用者順序變更</value>
+  </data>
+  <data name="MultiDomain" xml:space="preserve">
+    <value>郵件信息</value>
+  </data>
+  <data name="MultiDomainState" xml:space="preserve">
+    <value>郵件狀態</value>
+  </data>
+  <data name="MultilingualName" xml:space="preserve">
+    <value>多國名</value>
+  </data>
+  <data name="MyPhoto" xml:space="preserve">
+    <value>照片</value>
+  </data>
+  <data name="NaverBlog" xml:space="preserve">
+    <value>Naver博客</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>沒有內容。</value>
+  </data>
+  <data name="NotApplySameUpper" xml:space="preserve">
+    <value>該部門和需要變更的上級部門不可相同。</value>
+  </data>
+  <data name="NotCheckUser" xml:space="preserve">
+    <value>沒有選擇用戶。請選擇用戶。</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>公司電話</value>
+  </data>
+  <data name="onemonth" xml:space="preserve">
+    <value>一個月</value>
+  </data>
+  <data name="oneweek" xml:space="preserve">
+    <value>一周</value>
+  </data>
+  <data name="OnlyOneLoginID" xml:space="preserve">
+    <value>該登錄不會重複。</value>
+  </data>
+  <data name="OnlyOneMail" xml:space="preserve">
+    <value>該郵件不會重複。</value>
+  </data>
+  <data name="OrSearch" xml:space="preserve">
+    <value>排除一個的搜索</value>
+  </data>
+  <data name="OutsideInterface" xml:space="preserve">
+    <value>外部連動</value>
+  </data>
+  <data name="ParentCode" xml:space="preserve">
+    <value>上級編碼</value>
+  </data>
+  <data name="ParentOption" xml:space="preserve">
+    <value>選項</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="PrivateCapacity" xml:space="preserve">
+    <value>個人容量</value>
+  </data>
+  <data name="Private_AccountInfo_ltDuty" xml:space="preserve">
+    <value>職責</value>
+  </data>
+  <data name="Private_AccountInfo_ltMail" xml:space="preserve">
+    <value>郵箱</value>
+  </data>
+  <data name="Private_AccountInfo_ltMobile" xml:space="preserve">
+    <value>手機</value>
+  </data>
+  <data name="Private_AccountInfo_ltOfficePhone" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
+  <data name="Private_AccountInfo_ltTitle" xml:space="preserve">
+    <value>職位</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserDept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="Private_AccountInfo_ltUserName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Private_MailDomain_Title" xml:space="preserve">
+    <value>郵件賬戶</value>
+  </data>
+  <data name="Private_MyInfoMenu_hlExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Private_MyInfo_FaxEx" xml:space="preserve">
+    <value>(ex: 021001000)</value>
+  </data>
+  <data name="Private_MyInfo_ltBaseDept" xml:space="preserve">
+    <value>基本組織</value>
+  </data>
+  <data name="Private_MyInfo_ltExtensionOfficePhoneEx" xml:space="preserve">
+    <value>(ex: 123)</value>
+  </data>
+  <data name="Private_MyInfo_ltHomePhoneEx" xml:space="preserve">
+    <value>(ex: 021002000)</value>
+  </data>
+  <data name="Private_MyInfo_MSG_AlertReLogIn" xml:space="preserve">
+    <value>適用部分環境(基本語言/基本部門)時，需要重新登陸.</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModNo" xml:space="preserve">
+    <value>處理過程中出現錯誤.</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ModOK" xml:space="preserve">
+    <value>處理完畢</value>
+  </data>
+  <data name="Private_MyInfo_MSG_ReLogIn" xml:space="preserve">
+    <value>為了應用新的設置請重新登錄.</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>處理過程中發生了錯誤。請聯繫管理員。</value>
+  </data>
+  <data name="PwdLength" xml:space="preserve">
+    <value>字數異常</value>
+  </data>
+  <data name="PwdLimit" xml:space="preserve">
+    <value>條件</value>
+  </data>
+  <data name="PwdLower" xml:space="preserve">
+    <value>小寫</value>
+  </data>
+  <data name="PwdNumeric" xml:space="preserve">
+    <value>數字</value>
+  </data>
+  <data name="PwdRegex" xml:space="preserve">
+    <value>密碼不符合條件</value>
+  </data>
+  <data name="PwdSpecial" xml:space="preserve">
+    <value>特殊文字</value>
+  </data>
+  <data name="PwdUpper" xml:space="preserve">
+    <value>大寫</value>
+  </data>
+  <data name="RegistContact" xml:space="preserve">
+    <value>聯繫方式登錄</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="RegisterDeptName" xml:space="preserve">
+    <value>請輸入部門名稱。</value>
+  </data>
+  <data name="RegisterDutyName" xml:space="preserve">
+    <value>請輸入職責名稱</value>
+  </data>
+  <data name="RegisterTitleName" xml:space="preserve">
+    <value>請輸入職位名稱。</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>關係</value>
+  </data>
+  <data name="RepetitionLoginID" xml:space="preserve">
+    <value>該登錄可以重複</value>
+  </data>
+  <data name="RepetitionMail" xml:space="preserve">
+    <value>該郵件可以重複</value>
+  </data>
+  <data name="Reward" xml:space="preserve">
+    <value>獎，罰</value>
+  </data>
+  <data name="RewardDate" xml:space="preserve">
+    <value>獎罰日期</value>
+  </data>
+  <data name="RewardInfo" xml:space="preserve">
+    <value>獎罰事項</value>
+  </data>
+  <data name="RewardInfoState" xml:space="preserve">
+    <value>獎罰事項現況</value>
+  </data>
+  <data name="RewardPerson" xml:space="preserve">
+    <value>獎懲人員</value>
+  </data>
+  <data name="RewardType" xml:space="preserve">
+    <value>獎罰種類</value>
+  </data>
+  <data name="ScholarshipInfo" xml:space="preserve">
+    <value>學歷事項</value>
+  </data>
+  <data name="ScholarshipInfoState" xml:space="preserve">
+    <value>學歷事項現況</value>
+  </data>
+  <data name="SchoolName" xml:space="preserve">
+    <value>學校名</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>分數</value>
+  </data>
+  <data name="SearchAddress" xml:space="preserve">
+    <value>地址搜索</value>
+  </data>
+  <data name="Seat" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="SelectCareerDate" xml:space="preserve">
+    <value>請選擇上班期間</value>
+  </data>
+  <data name="SelectDuty" xml:space="preserve">
+    <value>請選擇職務。</value>
+  </data>
+  <data name="SelectEduDate" xml:space="preserve">
+    <value>請選擇完成日</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>選定的用戶</value>
+  </data>
+  <data name="SelectPeriod" xml:space="preserve">
+    <value>請選擇時期。</value>
+  </data>
+  <data name="SelectRelation" xml:space="preserve">
+    <value>請選擇關係。</value>
+  </data>
+  <data name="SelectRewardDate" xml:space="preserve">
+    <value>請選擇獎罰日期</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>請選擇職務。</value>
+  </data>
+  <data name="SettingBaseDeptOnlyone" xml:space="preserve">
+    <value>只能選擇一個兼職基本</value>
+  </data>
+  <data name="SettingBothDept" xml:space="preserve">
+    <value>請設置兼職部門的基本設置</value>
+  </data>
+  <data name="SettingDeptAuthority" xml:space="preserve">
+    <value>請設置部門權限</value>
+  </data>
+  <data name="SMS_Default_MSG_DisConnect" xml:space="preserve">
+    <value>沒有連接USB密鑰</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日期必須小於終止日期。</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>已處理。</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="SystemCode" xml:space="preserve">
+    <value>系統代碼</value>
+  </data>
+  <data name="Taiwanese" xml:space="preserve">
+    <value>台灣語</value>
+  </data>
+  <data name="TitleDescription" xml:space="preserve">
+    <value>職位描述</value>
+  </data>
+  <data name="TitleDutyName" xml:space="preserve">
+    <value>職位/職務</value>
+  </data>
+  <data name="TitleName" xml:space="preserve">
+    <value>職位</value>
+  </data>
+  <data name="TitleOrder" xml:space="preserve">
+    <value>職位順序</value>
+  </data>
+  <data name="TitleTree" xml:space="preserve">
+    <value>職位樹</value>
+  </data>
+  <data name="TopDept" xml:space="preserve">
+    <value>最上級部門</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>總用戶</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="UpperDept" xml:space="preserve">
+    <value>上級部門</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>用戶信息</value>
+  </data>
+  <data name="UserInfoManage" xml:space="preserve">
+    <value>用戶管理</value>
+  </data>
+  <data name="UserManager_msgIsValidLicense" xml:space="preserve">
+    <value>* 已達到許可證限額，如需要增加用戶請繼續購買許可證。</value>
+  </data>
+  <data name="UserState" xml:space="preserve">
+    <value>用戶現況</value>
+  </data>
+  <data name="VirtualDept" xml:space="preserve">
+    <value>假設部門</value>
+  </data>
+  <data name="WholeSearch" xml:space="preserve">
+    <value>全體</value>
+  </data>
+  <data name="WorkPeriod" xml:space="preserve">
+    <value>上班期間</value>
+  </data>
+  <data name="WriteCompanyName" xml:space="preserve">
+    <value>請輸入公司名稱。</value>
+  </data>
+  <data name="WriteEduName" xml:space="preserve">
+    <value>請輸入過程名稱。</value>
+  </data>
+  <data name="WriteRewarder" xml:space="preserve">
+    <value>請輸入獎懲人員</value>
+  </data>
+  <data name="WriteSchoolName" xml:space="preserve">
+    <value>請輸入學校名</value>
+  </data>
+  <data name="WriteSummary" xml:space="preserve">
+    <value>請輸入摘要</value>
+  </data>
+  <data name="WrongAccess" xml:space="preserve">
+    <value>登錄錯誤</value>
+  </data>
+  <data name="WrongAccess_Error" xml:space="preserve">
+    <value>登錄錯誤（error）</value>
+  </data>
+  <data name="WrongAccess_NoReferer" xml:space="preserve">
+    <value>登錄錯誤（no referer）</value>
+  </data>
+  <data name="MultiComUserManage" xml:space="preserve">
+    <value>用户管理多公司</value>
+  </data>
+  <data name="NoMatchPwd" xml:space="preserve">
+    <value>密碼是不相等的密碼確認。</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>表</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>存儲</value>
+  </data>
+  <data name="AlarmMail" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="AlarmMessenger" xml:space="preserve">
+    <value>信使</value>
+  </data>
+  <data name="AlarmSMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="SetApprovalAlarm" xml:space="preserve">
+    <value>设定闹铃的电子支付</value>
+  </data>
+  <data name="MailPwdChange" xml:space="preserve">
+    <value>你想修改你的電子郵件密碼？</value>
+  </data>
+  <data name="ActiveMobile" xml:space="preserve">
+    <value>모바일 사용 여부</value>
+  </data>
+  <data name="ActiveMobile1" xml:space="preserve">
+    <value>사용가능</value>
+  </data>
+  <data name="ActiveMobile2" xml:space="preserve">
+    <value>사용불가</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>알람설정</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>전자결재</value>
+  </data>
+  <data name="ApproveDate" xml:space="preserve">
+    <value>승인일</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>게시판</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>커뮤니티</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>디바이스이름</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>로그인 요청 정보</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>아이디+비밀번호</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>자동인증</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>모바일관리</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="MobileInfo" xml:space="preserve">
+    <value>모바일정보</value>
+  </data>
+  <data name="MobileType" xml:space="preserve">
+    <value>모바일종류</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>모바일번호</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>일정관리</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>요청일</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>사내SNS</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="UUID" xml:space="preserve">
+    <value>고유키값</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>업무일지</value>
+  </data>
+  <data name="ActiveMobile0" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="ActiveMobile3" xml:space="preserve">
+    <value>승인불가</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>모바일</value>
+  </data>
+  <data name="ModMsg" xml:space="preserve">
+    <value>사용가능 기기만 수정이 가능합니다.</value>
+  </data>
+  <data name="SenderName" xml:space="preserve">
+    <value>發件人名稱</value>
+  </data>
+  <data name="SenderEmail" xml:space="preserve">
+    <value>發件人電子郵件</value>
+  </data>
+  <data name="ReceiverName" xml:space="preserve">
+    <value>接收器名稱</value>
+  </data>
+  <data name="ReceiverEmail" xml:space="preserve">
+    <value>接收者電子郵件</value>
+  </data>
+  <data name="SenderTime" xml:space="preserve">
+    <value>發送時間</value>
+  </data>
+  <data name="SendList" xml:space="preserve">
+    <value>郵件列表</value>
+  </data>
+  <data name="AuthEmail" xml:space="preserve">
+    <value>密碼驗證郵件</value>
+  </data>
+  <data name="PasswordManager" xml:space="preserve">
+    <value>密碼管理器</value>
+  </data>
+  <data name="ManagerOnlyOne" xml:space="preserve">
+    <value>只有一個管理員可以註冊。</value>
+  </data>
+  <data name="ManagerNotDept" xml:space="preserve">
+    <value>管理員無法指定部門分配。</value>
+  </data>
+  <data name="ManagerGuide" xml:space="preserve">
+    <value>用戶電子郵件地址由屬於註冊的代表電子郵件的電子郵件指示。&lt;br /&gt; 如果管理員尚未註冊，則用戶無法頒發臨時密碼。 </value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>標題，附件文件名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>輸入搜索詞</value>
+  </data>
+  <data name="TodoItemN" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="TodoItemY" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="TodoTitle" xml:space="preserve">
+    <value>使用彈出個人形象</value>
+  </data>
+  <data name="AlarmIsUsing0" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="AlarmIsUsing1" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="AlarmOption" xml:space="preserve">
+    <value>報警選項 :</value>
+  </data>
+  <data name="AlarmTitle" xml:space="preserve">
+    <value>報警設置</value>
+  </data>
+  <data name="MSG_SELITEM" xml:space="preserve">
+    <value>請選擇一個項目</value>
+  </data>
+  <data name="LoginInfo" xml:space="preserve">
+    <value>登錄信息</value>
+  </data>
+  <data name="SearchTerm1Y" xml:space="preserve">
+    <value>1年</value>
+  </data>
+  <data name="SearchTerm2Y" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="SearchTerm3Y" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="SearchTerm6M" xml:space="preserve">
+    <value>6月</value>
+  </data>
+  <data name="SearchTermAL" xml:space="preserve">
+    <value>整體</value>
+  </data>
+  <data name="SearchTermPE" xml:space="preserve">
+    <value>期</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>訪問日期</value>
+  </data>
+  <data name="AccessGrades" xml:space="preserve">
+    <value>顯示評級</value>
+  </data>
+  <data name="Msg_ErrAccessGrade" xml:space="preserve">
+    <value>選擇一個人瀏覽星。</value>
+  </data>
+  <data name="BasicTimeZone" xml:space="preserve">
+    <value>時區</value>
+  </data>
+  <data name="EtcInfo" xml:space="preserve">
+    <value>其他信息</value>
+  </data>
+  <data name="Summary01" xml:space="preserve">
+    <value>個人</value>
+  </data>
+  <data name="Summary02" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Summary03" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="Summary04" xml:space="preserve">
+    <value>最終批准</value>
+  </data>
+  <data name="Summary05" xml:space="preserve">
+    <value>前鋒</value>
+  </data>
+  <data name="Summary06" xml:space="preserve">
+    <value>收到流通</value>
+  </data>
+  <data name="Summary07" xml:space="preserve">
+    <value>發送流通</value>
+  </data>
+  <data name="Summary08" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Summary09" xml:space="preserve">
+    <value>有關</value>
+  </data>
+  <data name="Summary10" xml:space="preserve">
+    <value>目標</value>
+  </data>
+  <data name="Summary11" xml:space="preserve">
+    <value>收到</value>
+  </data>
+  <data name="SummaryEA" xml:space="preserve">
+    <value>案件</value>
+  </data>
+  <data name="Summary12" xml:space="preserve">
+    <value>合作要求</value>
+  </data>
+  <data name="Summary13" xml:space="preserve">
+    <value>收到請求協作</value>
+  </data>
+  <data name="Summary14" xml:space="preserve">
+    <value>看看誰合作</value>
+  </data>
+  <data name="Summary15" xml:space="preserve">
+    <value>轉發收到的協作</value>
+  </data>
+  <data name="SummaryTit1" xml:space="preserve">
+    <value>摘要信息</value>
+  </data>
+  <data name="SummaryTit10" xml:space="preserve">
+    <value>帖子數註冊</value>
+  </data>
+  <data name="SummaryTit11" xml:space="preserve">
+    <value>文件夾管理委員會名單</value>
+  </data>
+  <data name="SummaryTit12" xml:space="preserve">
+    <value>社區</value>
+  </data>
+  <data name="SummaryTit13" xml:space="preserve">
+    <value>帖子數註冊</value>
+  </data>
+  <data name="SummaryTit14" xml:space="preserve">
+    <value>社區管理列表</value>
+  </data>
+  <data name="SummaryTit15" xml:space="preserve">
+    <value>業務合作</value>
+  </data>
+  <data name="SummaryTit16" xml:space="preserve">
+    <value>註冊人數</value>
+  </data>
+  <data name="SummaryTit2" xml:space="preserve">
+    <value>登錄信息</value>
+  </data>
+  <data name="SummaryTit3" xml:space="preserve">
+    <value>版權信息</value>
+  </data>
+  <data name="SummaryTit4" xml:space="preserve">
+    <value>摘要信息</value>
+  </data>
+  <data name="SummaryTit5" xml:space="preserve">
+    <value>電子支付</value>
+  </data>
+  <data name="SummaryTit6" xml:space="preserve">
+    <value>[查詢]</value>
+  </data>
+  <data name="SummaryTit7" xml:space="preserve">
+    <value>正在進行的文檔</value>
+  </data>
+  <data name="SummaryTit8" xml:space="preserve">
+    <value>文檔完成</value>
+  </data>
+  <data name="SummaryTit9" xml:space="preserve">
+    <value>公告板</value>
+  </data>
+  <data name="Admin_User_Input_JoinDate" xml:space="preserve">
+    <value>请输入工作日期</value>
+  </data>
+  <data name="Admin_User_Input_RetireDate" xml:space="preserve">
+    <value>輸入退休日期</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>通知框必須設為開</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>密码管理</value>
+  </data>
+</root>

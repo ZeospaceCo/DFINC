@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>메뉴관리</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <li><a href="#"><span>미리보기</span></a></li>
+            </ul>
+            <!--<ul class="btn_right">
+                <li><a href="Main.html"><span>취소</span></a></li>
+            </ul>-->
+        </div>
+
+        <div id="layout_content">
+            <div class="cm_menu_layout">
+
+                <!-- 메뉴항목입력 //-->
+                <div class="top">
+                    <table class="table_typeB">
+			        <caption>기본메뉴적용</caption>
+			        <colgroup>
+                        <col width="120px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>반복메뉴</th>
+                            <td>
+                                <span class="aLeft">
+                                    <select>
+                                        <option>일반 게시판</option>
+                                        <option>Q&A 게시판</option>
+                                        <option>앨범 게시판</option>
+                                        <option>동영상 게시판</option>
+                                        <option>Feed형 게시판</option>
+                                        <option>프로젝트형 게시판</option>
+                                        <option>익명 게시판</option>
+                                        <option>RSS 게시판</option>
+                                        <option>링크 게시판</option>
+                                    </select>
+                                </span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="#" title="추가"><span>추가</span></a></li>
+                                </ul>
+                                <span class="cm_subtxt">* dropdown 선택시, 관련 설명이 보여집니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>단일메뉴</th>
+                            <td>
+                                <span class="aLeft">
+                                    <select>
+                                        <option>공지사항</option>
+                                        <option>등업 게시판</option>
+                                        <option>공유 일정관리</option>
+                                        <option>프로젝트 일정관리</option>
+                                        <option>한줄메모장</option>
+                                        <option>전체글</option>
+                                        <option>인기글</option>
+                                        <option>중요표시</option>
+                                        <option>----------------</option>
+                                        <option>설문조사(simple)</option>
+                                        <option>일정관리(simple)</option>
+                                        <option>파일공유(simple)</option>
+                                        <option>칭찬합시다</option>
+                                    </select>
+                                </span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="#" title="추가"><span>추가</span></a></li>
+                                </ul>
+                                <span class="cm_subtxt">* dropdown 선택시, 관련 설명이 보여집니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>메뉴꾸미기</th>
+                            <td>
+                                <span class="aLeft">
+                                    <select>
+                                        <option>메뉴그룹</option>
+                                        <option>구분선------</option>
+                                        <option>여백선</option>
+                                    </select>
+                                </span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="#" title="추가"><span>추가</span></a></li>
+                                </ul>
+                                <span class="cm_subtxt">* dropdown 선택시, 관련 설명이 보여집니다.</span>
+                            </td>
+                        </tr>
+			        </tbody>
+		            </table>
+                </div>
+                
+                <!-- 메뉴 //-->
+                <div class="left">
+                    <h2>메뉴구성</h2>
+                    <div style="clear:both;"></div>
+
+                    <!-- 메뉴내용 //-->
+                    <div class="mid">
+                        <ul class="cm_menu_item">
+                            <li class="group"><a href="#">메뉴그룹-반복메뉴</a><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Bullet/arrA_right.gif" /></a></li> <!-- 메뉴그룹 //-->
+                            <li class="item"><a href="#">일반 게시판</a></li>
+                            <li class="item"><a href="#">Q&A 게시판</a></li>
+                            <li class="item"><a href="#">앨범 게시판</a></li>
+                            <li class="item"><a href="#">동영상 게시판</a></li>
+                            <li class="blank"><a href="#"></a></li> <!-- 여백선 //-->
+                            <li class="item"><a href="#">Feed형 게시판</a></li>
+                            <li class="item"><a href="#">프로젝트형 게시판</a></li>
+                            <li class="blank"><a href="#"></a></li> <!-- 여백선 //-->
+                            <li class="item"><a href="#">익명 게시판</a></li>
+                            <li class="item"><a href="#">RSS 게시판</a></li>
+                            <li class="item"><a href="#">링크 게시판</a></li>
+                            <li class="bar"><div class="cm_barA"><a href="#"></a></div></li> <!-- 구분선 //-->
+                            <li class="group"><a href="#">메뉴그룹-단일메뉴</a><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Bullet/arrA_right.gif" /></a></li> <!-- 메뉴그룹 //-->
+                            <li class="item"><a href="#">공지사항</a></li>
+                            <li class="item"><a href="#">등업 게시판</a></li>
+                            <li class="item"><a href="#">공유 일정관리</a></li>
+                            <li class="item"><a href="#">프로젝트 일정관리</a></li>
+                            <li class="item"><a href="#">한줄메모장</a></li>
+                            <li class="item"><a href="#">전체글</a></li>
+                            <li class="item"><a href="#">인기글</a></li>
+                            <li class="item"><a href="#">중요표시</a></li>
+                            <li class="bar"><div class="cm_barA"><a href="#"></a></div></li> <!-- 구분선 //-->
+                            <li class="item"><a href="#">설문조사(simple)</a></li>
+                            <li class="item"><a href="#">일정관리(simple)</a></li>
+                            <li class="item"><a href="#">파일공유(simple)</a></li>
+                            <li class="item"><a href="#">칭찬합시다</a></li>
+                            <li class="group"><a href="#">메뉴그룹-꾸미기</a><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Bullet/arrA_right.gif" /></a></li> <!-- 메뉴그룹 //-->
+                        </ul>
+                    </div>
+                    <!-- 메뉴버튼 //-->
+                    <div class="bott">
+                        <ul class="btnimg">
+                            <li><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_menu_bott01.gif" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_menu_bott02.gif" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_menu_bott03.gif" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Community/cm_menu_bott04.gif" alt="" title="" /></a></li>
+                        </ul>
+                        <ul class="btn_small" style="float:right">
+                            <li class="btn_small_blue"><a href="#"><span>저장</span></a></li>
+                            <li class="btn_small_red"><a href="#"><span>삭제</span></a></li>
+                            <li><a href="#"><span>들여쓰기</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- 메뉴상세설정 //-->
+                <div class="cont">
+                    <h2>상세정보설정</h2>
+                    <ul class="btn_right">
+                        <li class="btn_blue"><a href="#"><span>확인</span></a></li>
+                    </ul>
+                    <div style="clear:both;"></div>
+                    
+                    <!-- M1 : 일반 / Q&A / 앨범 / 동영상 / 익명 / 공지사항 / 등업게시판 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="일반 / Q&A / 앨범 / 동영상 / 익명 / 공지사항 / 등업게시판" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" value="메뉴에 관한 설명글입니다." style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>
+                                        쓰기 : <select class="searchselect"><option value="">손님</option><option value="">준회원</option></select>,
+                                        댓글쓰기 : <select class="searchselect"><option value="">준회원</option></select>
+                                    </li>
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>댓글사용</th>
+                            <td>
+                                <input type="radio" name="r1" checked />댓글사용&nbsp;
+                                <input type="radio" name="r1" />댓글사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>익명설정</th>
+                            <td>
+                                <input type="radio" name="r1" checked />익명사용&nbsp;
+                                <input type="radio" name="r1" />익명사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>양식지정</th>
+                            <td>
+                                <span class="aLeft">
+                                    <select class="searchselect">
+                                        <option value="">사용안함</option><option value="">템플릿1</option><option value="">템플릿2</option>
+                                    </select>
+                                </span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="2_템플릿관리.html" title="템플릿관리"><span>템플릿관리</span></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>말머리설정</th>
+                            <td>
+                                <input type="radio" name="r4" checked />말머리 사용&nbsp;
+                                <input type="radio" name="r4" />말머리 사용안함
+                                <ul style="padding:10px">
+                                    <li style="width:50%;float:left;">
+                                        <span class="aLeft"><input type="text" /></span>
+                                        <ul class="btn_smallL" style="padding-left:5px;">
+                                            <li><a href="#" title="추가"><span>추가</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li style="width:50%;float:right;">
+                                        <div style="border:1px solid #aeaeae;min-height:70px;">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><span class="cm_subtxt">말머리기능1</span></a>
+                                                    <a href="#" style="float:right;padding:3px;"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_delete.gif" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="cm_subtxt">말머리기능2</span></a>
+                                                    <a href="#" style="float:right;padding:3px;"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_delete.gif" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="cm_subtxt">말머리기능3</span></a>
+                                                    <a href="#" style="float:right;padding:3px;"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_delete.gif" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">Feed형 / 설문조사(simple)</div>
+                    <!-- M2 : Feed형 / 설문조사(simple) //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="Feed형 / 설문조사(simple) / 칭찬합시다" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>
+                                        쓰기 : <select class="searchselect"><option value="">손님</option><option value="">준회원</option></select>,
+                                        댓글쓰기 : <select class="searchselect"><option value="">준회원</option></select>
+                                    </li>
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">프로젝트형</div>
+                    <!-- M3 : 프로젝트형 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="프로젝트형" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>프로젝트항목</th>
+                            <td>
+                                <span class="aLeft"><select class="searchselect;"><option value="">DP40개발TFT</option><option value="">DP40개발TFT</option></select></span>
+                                <ul class="btn_smallL" style="padding-left:5px;">
+                                    <li><a href="2_PJT(단위항목)관리.html" title="단위항목관리"><span>단위항목관리</span></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">RSS 게시판</div>
+                    <!-- M4 : RSS 게시판 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="RSS게시판" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>RSS항목</th>
+                            <td>
+                                <div>
+                                    <span class="aLeft"><select class="searchselect;"><option value="">RSS항목(다음카페)</option><option value="">RSS항목(다음카페)</option></select></span>
+                                    <ul class="btn_smallL" style="padding-left:5px;">
+                                        <li><a href="#" title="추가"><span>추가</span></a></li>
+                                        <li><a href="2_RSS관리.html" title="RSS관리"><span>RSS관리</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="cm_gap"></div>
+                                <div style="border:1px solid #aeaeae;min-height:70px;clear:both;">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span class="cm_subtxt">RSS항목(다음카페)</span></a>
+                                            <a href="#" style="float:right;padding:3px;"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_delete.gif" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="cm_subtxt">RSS항목(다음카페)</span></a>
+                                            <a href="#" style="float:right;padding:3px;"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_delete.gif" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">링크 게시판</div>
+                    <!-- M5 : 링크 게시판 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="링크 게시판" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>링크주소</th>
+                            <td><input type="text" value="http://www.zeospace.com" style="width:95%" /></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">공유 일정관리 / 프로젝트 일정관리 / 전체글 / 인기글 / 일정관리(simple)</div>
+                    <!-- M6 : 공유 일정관리 / 프로젝트 일정관리 / 전체글 / 인기글 / 일정관리(simple)  //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="공유 일정관리 / 프로젝트 일정관리 / 전체글 / 인기글 / 일정관리(simple) / 파일공유(simple)" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">한줄메모장</div>
+                    <!-- M7 : 한줄메모장 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="한줄메모장" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설명</th>
+                            <td><input type="text" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>사용여부</th>
+                            <td>
+                                <input type="radio" name="r2" checked />메뉴사용&nbsp;
+                                <input type="radio" name="r2" />메뉴사용안함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>권한설정</th>
+                            <td>
+                                <ul class="cm_lstpad">
+                                    <li>
+                                        쓰기 : <select class="searchselect"><option value="">손님</option><option value="">준회원</option></select>
+                                    </li>
+                                    <li>읽기 : <select class="searchselect"><option value="">준회원</option></select></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">메뉴그룹</div>
+                    <!-- M8 : 한줄메모장 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <colgroup>
+                        <col width="100px" />
+                        <col />
+			        </colgroup>
+			        <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td><input type="text" value="메뉴그룹" style="width:95%" /></td>
+                        </tr>
+                        <tr>
+                            <th>설정</th>
+                            <td>
+                                <input type="radio" name="r2" checked />그룹접기&nbsp;
+                                <input type="radio" name="r2" />그룹펼치기
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div style="clear:both;padding:20px 0px 0px 0px;">구분선 / 여백선</div>
+                    <!-- M9 : 구분선 / 여백선 //-->
+                    <table class="table_typeE">
+			        <caption>상세정보설정</caption>
+			        <tbody>
+                        <tr>
+                            <td>구분선 or 여백선 설정</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

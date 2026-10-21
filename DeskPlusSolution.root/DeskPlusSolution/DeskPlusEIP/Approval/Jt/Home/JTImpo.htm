@@ -1,0 +1,27 @@
+﻿<table class="tbl_type" border="1" cellspacing="0" summary="결재의견 리스트">
+<colgroup>
+    <col />
+    <col width="120px" />
+</colgroup>
+<thead>
+<tr>
+    <th scope="col"><span id="spImpoTh01"></span></th>
+    <th scope="col"><span id="spImpoTh02"></span></th>
+</tr>
+</thead>
+<tbody>
+{#foreach $T as List}
+<tr>
+    <td class="suj">
+        <a href="#" onclick="Content.View('{ $T.List.CompanyID }','{ $T.List.DocumentID }');">{ $T.List.Subject }</a>
+            {#if $T.List.ShowNew == 'Y'} <img class="iBtnNew" alt="" />{#/if}  
+    </td>
+    <td class="center"><a onclick="AccountInfo('{ $T.List.UserID }');return false;">{ $T.List.NameBase } { $T.List.TitleBase }</a></td>
+</tr>
+{#else}
+<tr>
+    <td colspan="2"><span id="spImpoNoData"></span></td>
+</tr>
+{#/for}
+</tbody>
+</table>

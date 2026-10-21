@@ -1,0 +1,41 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<caption>
+    사용자 리스트
+</caption>
+<colgroup>    
+    <col width="120px" />
+    <col width="120px" />
+    <col width="200px"  />
+    <col width="100px" />
+    <col width="150px" />
+    <col width="100px" />
+    <col width="100x" />
+    <col width="60px" />
+</colgroup>
+    <tr>        
+        <th class="center" id="r_login"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_mail"><a class="table_titleA" href="#" onclick="javascript:List.Sort ('Title')"></a></th>
+        <th class="center" id="r_phone"></th>                            
+        <th class="center" id="r_deptname"><a class="table_viewA" href="#" onclick="javascript:List.Sort ('ReadCount')"></a></th>
+        <th class="center" id="r_titlename"></th>
+        <th class="center" id="r_dutyname"><a class="table_120A" href="#" onclick="javascript:List.Sort ('WriteDate')"></a></th>
+        <th class="center" id="r_active"></th>        
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>
+        <td class="center">{ $T.AccountList.LogInID }</td>
+        <td class="center"><a onclick="AccountInfo('{ $T.AccountList.UserID }')" style="cursor:pointer">{ $T.AccountList.Name }</a></td>
+        <td>{ $T.AccountList.Mail }</td>
+        <td class="center">{ $T.AccountList.MobilePhone }</td>
+        <td class="center">{ $T.AccountList.DeptName }</td>
+        <td class="center">{ $T.AccountList.TitleName }</td>
+        <td class="center">{ $T.AccountList.DutyName }</td>
+        <td class="center">{#if $T.AccountList.ActiveUser == '1'} <input type="checkbox" checked="checked" disabled value="on" />  {#else} <input type="checkbox" disabled /> {#/if} </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="8" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

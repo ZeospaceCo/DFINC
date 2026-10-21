@@ -1,0 +1,26 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="FormTreeScript.ascx.cs" Inherits="Zeospace.DeskPlus.Approval.Web.Common.FormFlow.FormTreeScript" %>
+<%@ Register TagPrefix="componentart" Namespace="ComponentArt.Web.UI" Assembly="ComponentArt.Web.UI" %>
+<componentart:TreeView id="tvForm" runat="server" 
+    Width="97%" 
+    Height="95%"             
+    EnableViewState="false"
+    AutoPostBackOnSelect="false" 
+    DragAndDropEnabled="false" 
+    NodeEditingEnabled="false" 
+    AutoScroll="false"             
+    CssClass="TreeView" 
+    NodeCssClass="TreeNode"
+    HoverNodeCssClass="HoverTreeNode" 
+    SelectedNodeCssClass="SelectedTreeNode" 
+    MultipleSelectedNodeCssClass="SelectedTreeNode"
+    SelectedNodeRowCssClass="SelectedTreeNodeRow"
+    NodeRowCssClass="TreeNodeRow" 
+    LoadingFeedbackCssClass="LoadingFeedback"             
+    NodeIndent="15" 
+    ShowLines="True" 
+    LineImageWidth="19" 
+    LineImageHeight="20" 
+    ExpandCollapseImagewidth="14" 
+    ExpandCollapseImageHeight="11"             
+    EnableClientScript="true">
+</componentart:TreeView>

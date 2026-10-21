@@ -1,0 +1,36 @@
+﻿{#foreach $T as NotiList}
+<li class="contentblock">
+    <div class="Mtitle linkDiv" onclick="javascript:List.view('{ $T.NotiList.NotificationID }','{ $T.NotiList.TargetUrl }')">
+        <span class="mst" style="position:absolute;float:left;"><input onclick="javascript:event.stopPropagation();" style="vertical-align:middle;" type="checkbox" id='Noti_{$T.NotiList.NotificationID}' value='{ $T.NotiList.NotificationID }' /></span>
+        <a href="#">
+        <div class="conBox" style="padding-left:10px;">
+        {#if ($T.NotiList.ReadFlag == '0')}
+        <span class="LNoready">
+        {#else} 
+        <span class="Lready">
+        {#/if}      
+        {#if ($T.NotiList.TargetUrl != '')}
+        &nbsp;<i class="fas fa-link dropbtn "></i>
+        {#/if}     
+        {#if ($T.NotiList.MsgSendID > 0)}
+        &nbsp;[{ $T.NotiList.Message }]<br />&nbsp;{ $T.NotiList.Content }
+        {#else} 
+        &nbsp;{ $T.NotiList.Message }
+        {#/if}        
+        &nbsp;{$T.NotiList.ToDay}</span><br />
+        <span class="sch_user">&nbsp;{ $T.NotiList.KindSubject }&nbsp;{ $T.NotiList.srtWriteDate }</span><br />
+        {#if ($T.NotiList.WriteUserName != '')}
+        <span class="sch_user">&nbsp;{ $T.NotiList.WriteDeptName }&nbsp;{ $T.NotiList.WriteTitleName }&nbsp;{ $T.NotiList.WriteUserName }</span>
+        {#/if}
+        </a>
+    </div>
+</li>
+{#else}
+<li class="contentblock">
+    <div class="title">
+        <a href="#" class="mct"><span id="NoListData" class="lif" />
+            <br />&nbsp;
+        </a>
+    </div>
+</li>
+{#/for}

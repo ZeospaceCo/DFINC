@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+  <Title>[$Title$] 가입신청($Name$)</Title>
+	<ContentHTML>
+		[커뮤니티 가입신청]
+		&lt;br&gt;&lt;br&gt;
+		- 커뮤니티 명 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- 신청인 : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- 자기소개 : $Content$
+	</ContentHTML>
+</ContentInfo>

@@ -1,0 +1,75 @@
+﻿<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+        {#foreach $T as BoardList}
+            <li {#if $T.BoardList$last == true} class="last-child" {#/if} >
+
+                <table class="blog_cont_table">
+				    <caption>BLOG CONTENT</caption>
+                    <colgroup>
+                        <col width="90%"  />
+                        <col width="10%" />
+                    </colgroup>
+
+                    <tr>
+                        <td>
+                            <ul>
+                                <li class="title">
+                                    <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }')" style="cursor:pointer">
+                                    { $T.BoardList.Title }
+                                    </a>
+                                    {#if $T.BoardList.ShowNew == 'Y'} <img class="BtnNew" alt="" />{#/if}
+                                    {#if $T.BoardList.ReplyCount > 0}
+                                        <a onclick="List.PopupShort('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer" >
+                                        <span class="icon_Comment_view">({ $T.BoardList.ReplyCount })</span>
+                                        </a>
+                                    {#/if} 
+                                </li>
+                                <li class="my-2">
+                                    <span class="subDate">
+                                    {#if $T.BoardList.OptionTop == "1"}<span class="badge notice badge-warning"><span class="s_notice"></span></span>
+                                    {#else}<span class="badge badge-info"><span class="s_common"></span></span>
+                                    {#/if}
+                                    <span class="fav ">							    
+                                        <input type="checkbox" id="chkImpo_{$T.BoardList.ListID}" 
+                                        {#if $T.BoardList.ImpoCnt == 1}checked="checked"{#/if}
+                                        onclick="List.ModImpUser('chkImpo_{$T.BoardList.ListID}', this)" />
+                                
+                                        <label for="chkImpo_{$T.BoardList.ListID}" title="" 
+                                        id="lbImpo_{$T.BoardList.ListID}" class="{#if $T.BoardList.ImpoCnt == 1}on{#/if}">
+                                            <span class="blind"></span>
+                                        </label>                                
+                                    </span>
+                                    {#if $T.BoardList.WriteUserID > 0}
+                                    <a href="#" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>             
+                                    {#else}
+                                    { $T.BoardList.WriteUserName }
+                                    {#/if}
+                                    | { $T.BoardList.WriteDate }
+                                    | 
+                                    <a onclick="List.ReadList('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer" >
+                                     { $T.BoardList.ReadCount }
+                                    </a>
+                                    </span>
+                                </li> 
+                                <li>
+                                    <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer"><span style="cursor:pointer">{ $T.BoardList.BlogContent }</span></a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="blog_img" >
+                            <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer">
+                            <img src="{ $T.BoardList.ScreenShot }" alt="img"  />
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </li>
+        {#else}
+            <li class="last-child center"><span class="NoListData" /></li>
+        {#/for}
+        </ul>
+    </div>
+</div>

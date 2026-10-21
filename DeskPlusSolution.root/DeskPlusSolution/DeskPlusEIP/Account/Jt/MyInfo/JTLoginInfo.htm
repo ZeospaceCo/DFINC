@@ -1,0 +1,27 @@
+﻿<table class="table_typeA"> 
+<caption>
+    
+</caption>
+<colgroup>    
+    <col width="150px" />
+    <col width="200px" />    
+    <col width="*" />    
+    
+</colgroup>
+<tr>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_startTime" class="center"></th>
+    <th id="r_ipAddress" class="center"></th>
+</tr>
+{#foreach $T as LoginInfo}
+<tr>
+    <td class="center">{ $T.LoginInfo.LoginType }</td>
+    <td class="center">{ $T.LoginInfo.StartDate }</td>
+    <td class="center">{ $T.LoginInfo.LoginIP }</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="3" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

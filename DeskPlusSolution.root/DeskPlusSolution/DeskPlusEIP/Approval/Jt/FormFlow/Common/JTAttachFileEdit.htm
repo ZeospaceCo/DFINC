@@ -1,0 +1,12 @@
+﻿<ul class="table_typeT ul_typeT">
+    {#foreach $T as FileList}
+        <li><a onclick="javascript:Common.FileDownload('{ $T.FileList.FilePath }','{ $T.FileList.FileName }','{ $T.FileList.FileGUID }')">{ $T.FileList.FileName }</a> <span class="mount">{ $T.FileList.FileLengthKB }</span>
+        {#if $T.FileList.ApprovalState == 'C'} 
+        {#else}
+            <a onclick="javascript:Common.DelFile('{ $T.FileList.DocumentID }','{ $T.FileList.AttachFileID }')" title="{ $T.FileList.FileDel }"><i class='fas fa-times-circle'></i></a>
+        {#/if}
+    	</li>
+    {#else}
+        <li></li>
+    {#/for}
+</ul>

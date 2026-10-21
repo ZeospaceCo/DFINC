@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlData>  
+  <Item ID="AlarmTargetURL" Value="{0}{1}/DeskPlusEIP/Report/Content/ViewPopup.aspx"  Content=" 알람(메신저)이 왔을때 오픈할 페이지  URL" />
+  <Item ID="AlarmTargetURL_PT" Value="{0}{1}/DeskPlusEIP/Report/Content/ViewPT.aspx"  Content=" PT 보고서 보기" />
+  <Item ID="SMSContent" Value="{0}님이 '{1}' 글내용을 작성했습니다." Content="SMS 발송 내용" />  
+</XmlData>

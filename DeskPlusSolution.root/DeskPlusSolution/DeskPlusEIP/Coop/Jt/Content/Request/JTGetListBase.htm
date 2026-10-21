@@ -1,0 +1,70 @@
+﻿<table class="table_typeA">
+<caption>근거문서</caption>
+<colgroup>
+    <col width="150px" />
+    <col  />
+    <col width="66px" />    
+    <col width="70px" />    
+    <col width="70px" />    
+    <col width="60px" />  
+    <col width="60px" />    
+    <col width="80px" />    
+    <col width="90px" />    
+    <col width="90px" />
+    <col width="45px" />
+</colgroup>
+<thead>
+    <tr>
+        <th id="r_num"></th>
+        <th id="r_title"></th>
+        <th class="center" id="r_attach"></th>
+        <th class="center" id="r_status"></th>
+        <th class="center" id="r_receiver"></th>
+        <th class="center" id="r_requester"></th>
+        <th class="center" id="r_item"></th>
+        <th class="center" id="r_itemsub"></th>
+        <th class="center" id="r_requestdate"></th>
+        <th class="center" id="r_enddate"></th> 
+        <th id="r_add"></th>
+    </tr>
+</thead>
+<tbody>
+{#foreach $T as BoardList}
+    <tr>     
+        <td><span title="{ $T.BoardList.CoopNumber }">{ $T.BoardList.CoopNumber }</span></td>
+        <td {#if $T.BoardList.ViewerCount == '0'}style="font-weight:bold"{#/if}>
+            <a onclick="GetListBase.CoopViewer('{ $T.BoardList.ListID }','{ $T.BoardList.GroupID }');return false;" style="cursor:pointer" title="{ $T.BoardList.Title }">{ $T.BoardList.Title }</a>                
+            {#if $T.BoardList.ShowNew == 'Y'}&nbsp;<span class="i_new"></span>{#/if} 
+            {#if $T.BoardList.ReplyCnt > 0}
+            <span class="icon_Comment_view">[{ $T.BoardList.ReplyCnt }]</span>        
+            {#/if}
+        </td>
+        <td class="center">
+        {#if $T.BoardList.FileCount > 0}
+            <img class="IconAttach" action="attach" style="cursor:pointer" ListID='{ $T.BoardList.ListID }' />
+        {#/if}
+        </td>
+        <td >{ $T.BoardList.Status }</td>     
+        <td class="center">
+        <a onclick="AccountInfo('{ $T.BoardList.TOUserID }');return false;"><span class="name">{ $T.BoardList.TONameBase }{#if $T.BoardList.TOCnt > 1}+{#/if}</span></a>
+        </td>  
+        <td class="center">
+        <a onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;"><span class="name">{ $T.BoardList.NameBase }</span></a>
+        </td>  
+        <td class="center">{ $T.BoardList.ItemName }</td>    
+        <td class="center">{ $T.BoardList.ItemSubName }</td>    
+        <td class="center">{ $T.BoardList.RequestDate }</td>    
+        <td class="center">{ $T.BoardList.EndDate }</td>
+        <td>
+            <a onclick="GetListBase.Add('{ $T.BoardList.ListID }','{ $T.BoardList.GroupID }', '{ $T.BoardList.Title }');return false;">
+            &nbsp;<img class="BtnAdd" alt=""/>
+            </a>
+        </td>   
+    </tr>
+{#else}
+    <tr>
+        <td colspan="11" class="center"><span class="NoListData" /></td>        
+    </tr>
+{#/for} 
+</tbody>
+</table>

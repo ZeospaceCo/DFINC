@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Community.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>개설신청</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_blue"><a href="Main.html"><span>확인</span></a></li>
+                <li><a href="Main.html"><span>취소</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 개설신청 시작 //-->
+            <table class="table_typeB">
+			<caption>개설신청정보</caption>
+			<colgroup>
+                <col width="120px" />
+                <col />
+			</colgroup>
+			<tbody>
+                <tr>
+                    <th>커뮤니티 분류</th>
+                    <td>
+                        <select>
+                            <option>대분류를 선택하세요.</option>
+                        </select>
+                        →
+                        <select>
+                            <option>소분류를 선택하세요.</option>
+                        </select>
+                        <span class="cm_subtxt">* 분류를 먼저 선택해 주세요.</span>
+                    </td>
+                </tr>
+                <tr>
+					<th>커뮤니티 이름</th>
+					<td>
+                        <input type="text" />
+                        <span class="cm_subtxt cm_req">0/20 bytes</span>
+                        <span class="cm_subtxt">* 카페주제와 연관된 이름을 입력하세요.(검색 시, 유용)</span>
+                    </td>
+				</tr>
+                <tr>
+                    <th>소개글</th>
+                    <td><textarea rows="5"></textarea> <span class="cm_subtxt cm_req">0/600 bytes</span></td>
+                </tr>
+                <tr>
+                    <th>공개여부</th>
+                    <td>
+                        <ul>
+                            <li>
+                                <input type="radio" name="r1" title="바로가입/승인후가입 방식" />공개
+                                <span class="cm_subtxt">* 회원가입이 필요없습니다.</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="r1" title="초대를 통해서, 회원가입가능. 초대 후, 대상자 수락 시, 바로 가입." />비공개
+                                <span class="cm_subtxt">* 가입하려면 시삽에게 신청을 하고, 시삽이 승인해야 회원이 될 수 있습니다.</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="r1" title="" />초대
+                                <span class="cm_subtxt">* 시삽이 초대해 가입하고자 하는 사람에게 질문을 주고, 답을 맞춘 사람에 한해 자동가입 됩니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th title="초대인경우만 보임">질문정보</th>
+                    <td>
+                        <ul>
+                            <li>질문: <input type="text" /></li>
+                            <li>답변: <input type="text" /></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>모바일적용여부</th>
+                    <td><input type="radio" name="r3" />적용&nbsp;&nbsp;<input type="radio" name="r3" />미적용</td>
+                </tr>
+
+			</tbody>
+		    </table> 
+            
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

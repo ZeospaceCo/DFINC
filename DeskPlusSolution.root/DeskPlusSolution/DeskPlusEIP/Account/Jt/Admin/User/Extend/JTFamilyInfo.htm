@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+<colgroup>
+    <col width="150px" />
+    <col width="120px" />
+    <col width="100px" />
+    <col width="*" />
+    <col width="200px" />
+    <col width="150px" />
+    <col width="60px" />
+</colgroup>
+    <tr>        
+        <th class="center" id="r_relation"></th>
+        <th class="center" id="r_name"></th>
+        <th class="center" id="r_birth"></th>
+        <th class="center" id="r_job"></th>                            
+        <th class="center" id="r_scholar"></th>
+        <th class="center" id="r_withlive"></th>  
+        <th id="r_del"></th>      
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>        
+        <td class="center">{ $T.AccountList.RelName }</td>
+        <td class="center">{ $T.AccountList.Name }</td>
+        <td class="center">{ $T.AccountList.Birthday }</td>
+        <td class="center">{ $T.AccountList.Job }</td>
+        <td class="center">{ $T.AccountList.Scholar }</td>
+        <td class="center">{ $T.AccountList.Live }</td>  
+        <td class="center"><a class="btn" onclick="FamilyInfo.Del('{ $T.AccountList.CompanyID }','{ $T.AccountList.FamilyID }')">{ $T.AccountList.BtnDel }</a></td>      
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}        
+ </table>

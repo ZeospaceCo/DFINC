@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <!-- 공통 URL-->
+  <!--<Item ID="MailWebServiceUrl" Value="http://localhost/DeskPlusMobile/Mail/Ws/MailGate.asmx"  Content="메일 웹서비스 호출 url" />-->
+  <Item ID="MailWebServiceUrl" Value="http://deep.deskplus.co.kr:8080/zeospace.ds"  Content="메일 웹서비스 호출 url" />
+  <Item ID="MailAttachPath" Value="D:DEEPSoft\\Postian\\attachs\\"  Content="메일 첨부파일 경로" />
+  
+  <!-- 샘플 WebService 용 개별 메서드-->
+  <Item ID="Organization" Value="/Organization"  Content="조직도(웹서비스 호출 메서드)" />
+  <Item ID="Sso" Value="/Sso"  Content="계정 SSO(ID 기준)" />
+  <Item ID="SsoByStaffNo" Value="/SsoByStaffNo"  Content="계정 SSO(사번 기준)" />
+  <Item ID="Logout" Value="/Logout"  Content="계정 로그아웃" />
+  <Item ID="Add" Value="/Add"  Content="계정추가" />
+  <Item ID="Modify" Value="/Modify"  Content="계정 수정" />
+  <Item ID="Delete" Value="/Delete"  Content="계정 삭제" />
+  <Item ID="IsExist" Value="/IsExist"  Content="계정 존재여부" />
+  <Item ID="CheckPw" Value="/CheckPw"  Content="계정 비밀번호 확인" />
+  <Item ID="Auth" Value="/Auth"  Content="계정인증" />
+  <Item ID="MailCount" Value="/MailCount"  Content="계정 편지 건수" />
+  <Item ID="MailList" Value="/MailList"  Content="계정 편지 목록" />
+  <Item ID="ConfirmList" Value="/ConfirmList"  Content="계정 수신확인 목록" />
+  <Item ID="ListHasNew" Value="/ListHasNew"  Content="전체계정 중 새편지 있는 계정목록" />
+  <Item ID="MailDelete" Value="/MailDelete"  Content="계정메일 삭제" />
+  <Item ID="MailStatus" Value="/MailStatus" Content="계정메일 열람 상태 변경" />
+  <Item ID="MailMove" Value="/MailMove" Content="계정 메일 이동" />
+  
+  <!-- 공통 파라미터 기본값 -->
+  <Item ID="ParamSso" Value="act=sso&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;language={3}&amp;lp={4}&amp;mbox={5}&amp;msgkey={6}&amp;to={7}&amp;content={8}&amp;hideTopMenu={9}"  Content="DEEP 사용자인증 SSO" />
+  <Item ID="ParamMailCount" Value="act=mailCount&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;type={4}&amp;searchtype={5}&amp;search={6}"  Content="계정메일건수" />
+  <Item ID="ParamMailList" Value="act=mailList&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;type={4}&amp;count={5}&amp;offset={6}&amp;searchtype={7}&amp;search={8}"  Content="계정편지리스트(ID기준) - act/domain/id/pw/mbox/type/count/offset" />
+  <Item ID="ParamMailDelete" Value="act=mailDelete&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;uid={4}"  Content="계정메일 삭제 - act/domain/id/pw/mbox/uid" />
+  <Item ID="ParamMailStatus" Value="act=mailStatus&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;uid={4}"  Content="계정메일 열람 상태 변경 - act/domain/id/pw/mbox/uid" />
+  <Item ID="ParamMailMove" Value="act=mailMove&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;uid={4}&amp;targetMbox={5}"  Content="계정 메일 이동 - act/domain/id/pw/mbox/uid/targetMbox" />
+  <Item ID="ParamMailSend" Value="act=mailSend&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;to={3}&amp;cc={4}&amp;bcc={5}&amp;subject={6}&amp;mbox={7}&amp;forward={8}&amp;content={9}&amp;attachs={10}"  Content="계정 메일 발송 - act/domain/id/pw/to/cc/bcc/subject/mbox/forward/content" />
+  <Item ID="ParamMailRead" Value="act=mailRead&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;mbox={3}&amp;uid={4}&amp;searchtype={5}&amp;search={6}"  Content="계정 메일 읽기 - act/domain/id/pw/mbox/uid" />
+  <Item ID="ParamMailBoxList" Value="act=mailBoxList&amp;domain={0}&amp;id={1}&amp;pw={2}&amp;isPerson=1"  Content="계정 메일함 목록 - act/domain/id/pw" />
+  
+</XmlData>

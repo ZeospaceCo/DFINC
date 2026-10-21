@@ -1,0 +1,25 @@
+﻿<table class="table_typeA">
+<caption>근거문서</caption>
+<colgroup>
+    <col />
+    <col width="70px" />
+</colgroup>
+<thead>
+    <tr>
+        <th><span id="j_basetitle"></span></th>
+        <th><span id="j_basedel"></span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as List}
+    <tr>
+        <td>{ $T.List.Name }</td>
+        <td class="center"><a href="#" onclick="javascript:DelBase('{ $T.List.ListID }','{ $T.List.DocumentID }')"><span class="btn_file_del" title="Delete"></span></a></td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="2" class="center"><span class="NoBaseListData" /></td>
+    </tr>
+    {#/for}
+</tbody>
+</table>

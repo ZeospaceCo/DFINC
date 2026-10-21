@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+  <Item ID="SMSCompany" Value="SUREMSG"  Content="SMSSurem,SMSSuremDll(SMS 업체)" />
+  <Item ID="SMSHeaderText" Value=""  Content="SMS 말머리" />
+  <Item ID="DefaultAccountKey" Value="ZE-OS-70X:tikim"  Content="기본 SMS 발송계정" />
+  <Item ID="제오스페이스" Value="ZE-OS-70X:tikim"  Content="제오스페이스 SMS 발송정보" />
+  <Item ID="RepresentKey" Value="deskplus"  Content="RepresentKey.특정업체에서 사용함" />
+</XmlData>

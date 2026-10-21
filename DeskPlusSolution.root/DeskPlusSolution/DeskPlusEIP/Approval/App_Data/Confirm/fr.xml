@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+    <OPINION>
+      <SECTION>
+        <OPINION>결재의견이 작성되었습니다</OPINION>
+      </SECTION>
+      <SUBJ>
+        <OPINION>[결재의견]</OPINION>
+      </SUBJ>
+      <CONTENT>
+        &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+        &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+        &lt;li style='font-weight:bold'&gt;제목 : $SUBJECT$&lt;/li&gt;
+        &lt;li&gt;양식명 : $NUMBER3$&lt;/li&gt;
+        &lt;li&gt;상신자 : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견자 : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+        &lt;li&gt;의견 : $OPINION$&lt;/li&gt;
+        &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;클릭 시, 문서보기로 이동합니다.&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      </CONTENT>
+    </OPINION>
+  
+    <MAIL>
+        <SECTION>
+            <OPINION>Règlement commentaires ont été rédigés.</OPINION>
+            <APPROVE>Document d'approbation est arrivé.</APPROVE>
+            <COMPLETE>Achèvement des documents de règlement ont été traitées.</COMPLETE>
+            <CARBON>Les documents de référence sont arrivés.</CARBON>
+            <RECEIVED>Les documents reçus sont arrivés.</RECEIVED>
+			<RECEIVEDMOD>Les documents reçus sont arrivés.(Les changements de personnel)</RECEIVEDMOD>
+            <APPROVED>Document d'approbation a été mis en attente.</APPROVED>
+            <APPROVEDC>Documents de règlement en suspens ont été libérés.</APPROVEDC>
+            <APPROVEH>Documents de règlement sont en cours. Sangsin</APPROVEH>
+            <APPROVEHC>En attendant Sangsin document d'approbation été libéré.</APPROVEHC>
+            <REJECT>D'approbation des documents d'accompagnement.</REJECT>
+            <CIRCULATION>Faire circuler le document a été envoyé.</CIRCULATION>
+            <ENFORCE>Lettre officielle a été reçue.</ENFORCE>
+            <MEMO>La note a été écrite.</MEMO>
+            <PROXY>Document de confrontation est arrivé</PROXY>
+            <CANCEL>Sangsin a été annulée.</CANCEL>
+            <FORWARD>Documents fournis ont été envoyés.</FORWARD>
+            <PASSED>Transférer les documents ont été envoyés.</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>Le document est arrivé</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[Opinion de vente]</OPINION>
+            <APPROVE>[Approbation]</APPROVE>
+            <COMPLETE>[Commit]</COMPLETE>
+            <CARBON>[Référence]</CARBON>
+            <RECEIVED>[Reçu]</RECEIVED>
+			<RECEIVEDMOD>[Reçu-Les changements de personnel]</RECEIVEDMOD>
+            <APPROVED>[En attente]</APPROVED>
+            <APPROVEDC>[Hold off]</APPROVEDC>
+            <APPROVEH>[En attente Soumettre]</APPROVEH>
+            <APPROVEHC>[Hold Off Soumettre]</APPROVEHC>
+            <REJECT>[Rejeter]</REJECT>
+            <CIRCULATION>[Diffusée]</CIRCULATION>
+            <ENFORCE>[Mémoire]</ENFORCE>
+            <MEMO>[Note]</MEMO>
+            <PROXY>[Proxy]</PROXY>
+            <CANCEL>[Annuler Valider]</CANCEL>
+            <FORWARD>[Avancer]</FORWARD>
+            <PASSED>[Transféré]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[diffusé]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;sujet : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;nom du formulaire : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;Envoyer département : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;informations approbateur : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;Commentaires de l'approbateur : $OPINION$&lt;/li&gt;
+            &lt;li&gt;&lt;a href='$LINKURL$' target='_blank' style='font-size:9pt;color:red;font-weight:bold;'&gt;Lorsque vous cliquez dessus, passez à l'affichage du document.&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MAIL>
+
+    <MESSENGER>
+        <SECTION>
+            <OPINION>Règlement commentaires ont été rédigés.</OPINION>
+            <APPROVE>Document d'approbation est arrivé.</APPROVE>
+            <COMPLETE>Achèvement des documents de règlement ont été traitées.</COMPLETE>
+            <CARBON>Les documents de référence sont arrivés.</CARBON>
+            <RECEIVED>Les documents reçus sont arrivés.</RECEIVED>
+			<RECEIVEDMOD>Les documents reçus sont arrivés.(Les changements de personnel)</RECEIVEDMOD>
+            <APPROVED>Document d'approbation a été mis en attente.</APPROVED>
+            <APPROVEDC>Documents de règlement en suspens ont été libérés.</APPROVEDC>
+            <APPROVEH>Documents de règlement sont en cours. Sangsin</APPROVEH>
+            <APPROVEHC>En attendant Sangsin document d'approbation été libéré.</APPROVEHC>
+            <REJECT>D'approbation des documents d'accompagnement.</REJECT>
+            <CIRCULATION>Faire circuler le document a été envoyé.</CIRCULATION>
+            <ENFORCE>Lettre officielle a été reçue.</ENFORCE>
+            <MEMO>La note a été écrite.</MEMO>
+            <PROXY>Document de confrontation est arrivé</PROXY>
+            <CANCEL>Sangsin a été annulée.</CANCEL>
+            <FORWARD>Documents fournis ont été envoyés.</FORWARD>
+            <PASSED>Transférer les documents ont été envoyés.</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>Le document est arrivé</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[Opinion de vente]</OPINION>
+            <APPROVE>[Approbation]</APPROVE>
+            <COMPLETE>[Commit]</COMPLETE>
+            <CARBON>[Référence]</CARBON>
+            <RECEIVED>[Reçu]</RECEIVED>
+			<RECEIVEDMOD>[Reçu-Les changements de personnel]</RECEIVEDMOD>
+            <APPROVED>[En attente]</APPROVED>
+            <APPROVEDC>[Hold off]</APPROVEDC>
+            <APPROVEH>[En attente Soumettre]</APPROVEH>
+            <APPROVEHC>[Hold Off Soumettre]</APPROVEHC>
+            <REJECT>[Rejeter]</REJECT>
+            <CIRCULATION>[Diffusée]</CIRCULATION>
+            <ENFORCE>[Mémoire]</ENFORCE>
+            <MEMO>[Note]</MEMO>
+            <PROXY>[Proxy]</PROXY>
+            <CANCEL>[Annuler Valider]</CANCEL>
+            <FORWARD>[Avancer]</FORWARD>
+            <PASSED>[Transféré]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[diffusé]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;sujet : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;nom du formulaire : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;Submit département : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;informations approbateur : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;Commentaires de l'approbateur : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MESSENGER>
+
+    <SMS>
+        <SECTION>
+            <OPINION>Règlement commentaires ont été rédigés.</OPINION>
+            <APPROVE>Document d'approbation est arrivé.</APPROVE>
+            <COMPLETE>Achèvement des documents de règlement ont été traitées.</COMPLETE>
+            <CARBON>Les documents de référence sont arrivés.</CARBON>
+            <RECEIVED>Les documents reçus sont arrivés.</RECEIVED>
+			<RECEIVEDMOD>Les documents reçus sont arrivés.(Les changements de personnel)</RECEIVEDMOD>
+            <APPROVED>Document d'approbation a été mis en attente.</APPROVED>
+            <APPROVEDC>Documents de règlement en suspens ont été libérés.</APPROVEDC>
+            <APPROVEH>Documents de règlement sont en cours. Sangsin</APPROVEH>
+            <APPROVEHC>En attendant Sangsin document d'approbation été libéré.</APPROVEHC>
+            <REJECT>D'approbation des documents d'accompagnement.</REJECT>
+            <CIRCULATION>Faire circuler le document a été envoyé.</CIRCULATION>
+            <ENFORCE>Lettre officielle a été reçue.</ENFORCE>
+            <MEMO>La note a été écrite.</MEMO>
+            <PROXY>Document de confrontation est arrivé</PROXY>
+            <CANCEL>Sangsin a été annulée.</CANCEL>
+            <FORWARD>Documents fournis ont été envoyés.</FORWARD>
+            <PASSED>Transférer les documents ont été envoyés.</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>Le document est arrivé</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[Opinion de vente]</OPINION>
+            <APPROVE>[Approbation]</APPROVE>
+            <COMPLETE>[Commit]</COMPLETE>
+            <CARBON>[Référence]</CARBON>
+            <RECEIVED>[Reçu]</RECEIVED>
+			<RECEIVEDMOD>[Reçu-Les changements de personnel]</RECEIVEDMOD>
+            <APPROVED>[En attente]</APPROVED>
+            <APPROVEDC>[Hold off]</APPROVEDC>
+            <APPROVEH>[En attente Soumettre]</APPROVEH>
+            <APPROVEHC>[Hold Off Soumettre]</APPROVEHC>
+            <REJECT>[Rejeter]</REJECT>
+            <CIRCULATION>[Diffusée]</CIRCULATION>
+            <ENFORCE>[Mémoire]</ENFORCE>
+            <MEMO>[Note]</MEMO>
+            <PROXY>[Proxy]</PROXY>
+            <CANCEL>[Annuler Valider]</CANCEL>
+            <FORWARD>[Avancer]</FORWARD>
+            <PASSED>[Transféré]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[diffusé]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+        </CONTENT>
+    </SMS>
+
+    <MOBILE>
+        <SECTION>
+            <OPINION>Règlement commentaires ont été rédigés.</OPINION>
+            <APPROVE>Document d'approbation est arrivé.</APPROVE>
+            <COMPLETE>Achèvement des documents de règlement ont été traitées.</COMPLETE>
+            <CARBON>Les documents de référence sont arrivés.</CARBON>
+            <RECEIVED>Les documents reçus sont arrivés.</RECEIVED>
+            <RECEIVEDMOD>Les documents reçus sont arrivés.(Les changements de personnel)</RECEIVEDMOD>
+            <APPROVED>Document d'approbation a été mis en attente.</APPROVED>
+            <APPROVEDC>Documents de règlement en suspens ont été libérés.</APPROVEDC>
+            <APPROVEH>Documents de règlement sont en cours. Sangsin</APPROVEH>
+            <APPROVEHC>En attendant Sangsin document d'approbation été libéré.</APPROVEHC>
+            <REJECT>D'approbation des documents d'accompagnement.</REJECT>
+            <CIRCULATION>Faire circuler le document a été envoyé.</CIRCULATION>
+            <ENFORCE>Lettre officielle a été reçue.</ENFORCE>
+            <MEMO>La note a été écrite.</MEMO>
+            <PROXY>Document de confrontation est arrivé</PROXY>
+            <CANCEL>Sangsin a été annulée.</CANCEL>
+            <FORWARD>Documents fournis ont été envoyés.</FORWARD>
+            <PASSED>Transférer les documents ont été envoyés.</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>Le document est arrivé</CONFIRM>
+        </SECTION>
+        <SUBJ>
+            <OPINION>[Opinion de vente]</OPINION>
+            <APPROVE>[Approbation]</APPROVE>
+            <COMPLETE>[Commit]</COMPLETE>
+            <CARBON>[Référence]</CARBON>
+            <RECEIVED>[Reçu]</RECEIVED>
+            <RECEIVEDMOD>[Reçu-Les changements de personnel]</RECEIVEDMOD>
+            <APPROVED>[En attente]</APPROVED>
+            <APPROVEDC>[Hold off]</APPROVEDC>
+            <APPROVEH>[En attente Soumettre]</APPROVEH>
+            <APPROVEHC>[Hold Off Soumettre]</APPROVEHC>
+            <REJECT>[Rejeter]</REJECT>
+            <CIRCULATION>[Diffusée]</CIRCULATION>
+            <ENFORCE>[Mémoire]</ENFORCE>
+            <MEMO>[Note]</MEMO>
+            <PROXY>[Proxy]</PROXY>
+            <CANCEL>[Annuler Valider]</CANCEL>
+            <FORWARD>[Avancer]</FORWARD>
+            <PASSED>[Transféré]</PASSED>
+            <APPROVEC></APPROVEC>
+            <CONFIRM>[diffusé]</CONFIRM>
+        </SUBJ>
+        <CONTENT>
+            &lt;div style='font-size:9pt;font-weight:normal;'&gt;$ACTION$&lt;/div&gt;
+            &lt;ul style='font-size:9pt;line-height:20px;'&gt;
+            &lt;li style='font-weight:bold'&gt;sujet : $SUBJECT$&lt;/li&gt;
+            &lt;li&gt;nom du formulaire : $NUMBER3$&lt;/li&gt;
+            &lt;li&gt;Submit département : $ACCDEPTNAME$ / $ACCTITLENAME$ / $ACCUSERNAME$&lt;/li&gt;
+            &lt;li&gt;informations approbateur : $USERDEPTNAME$ / $USERTITLENAME$ / $USERUSERNAME$&lt;/li&gt;
+            &lt;li&gt;Commentaires de l'approbateur : $OPINION$&lt;/li&gt;
+            &lt;/ul&gt;
+        </CONTENT>
+    </MOBILE>
+</ALARM>

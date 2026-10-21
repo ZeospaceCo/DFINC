@@ -1,0 +1,236 @@
+﻿<table class="table_typeC" style="min-width: 1250px;"> 
+<colgroup>
+    <col width="100px" />
+    <col width="70px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col />
+</colgroup>
+<tr>    
+    <th id="r_Name" class="center" style="font-weight: bold;" rowspan="2"></th>    
+    <th id="r_TitleName2" class="center" style="font-weight: bold;" rowspan="2"></th>
+    <th id="r_WS_Reg" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_WC_Reg" class="center" style="font-weight: bold;" colspan="2"></th>     
+    <th id="r_Register" class="center" style="font-weight: bold;" rowspan="2"></th>      
+    <th id="r_WorkTime" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_52Time" class="center" style="font-weight: bold;" colspan="2"></th>
+    <th id="r_Holi_HR" class="center" style="font-weight: bold;" colspan="4"></th>
+    <th id="r_Note" class="center" style="font-weight: bold;" rowspan="2"></th>     
+</tr>
+<tr>    
+    <th id="r_IN" class="center" style="font-weight: bold;"></th>    
+    <th id="r_OUT" class="center" style="font-weight: bold;"></th>
+    <th id="r_IN2" class="center" style="font-weight: bold;"></th>
+    <th id="r_OUT2" class="center" style="font-weight: bold;"></th>
+    <th id="r_BaseWork" class="center" style="font-weight: bold;"></th>
+    <th id="r_Over_Work" class="center" style="font-weight: bold;"></th>
+    <th id="r_StandardTime" class="center" style="font-weight: bold;"></th>
+    <th id="r_WorkSum" class="center" style="font-weight: bold;"></th>    
+    <th id="r_Attendance_Tardy" class="center" style="font-weight: bold;"></th>
+    <th id="r_Attendance_Early" class="center" style="font-weight: bold;"></th>
+    <th id="r_HoliType" class="center" style="font-weight: bold;"></th>
+    <th id="r_Etc" class="center" style="font-weight: bold;"></th>
+</tr>
+</table>
+<div id="HRContent" style="min-width: 1250px; height: 300px; overflow-y:auto !important;">
+<table id="HRTable" class="table_typeC" style="border-top: 0;"> 
+<colgroup>
+    <col width="100px" />
+    <col width="70px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col />
+</colgroup>
+{#foreach $T as ListDept}
+    {#if $T.ListDept.ROW != "99999"}
+    <tr>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            <span onclick="ListDept.GoList('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.DeptName }', '{ $T.ListDept.DeptState }', '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }');return false;" style="color:#00c; text-decoration: underline; cursor:pointer">
+            { $T.ListDept.UserName }
+            </span>
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListDept.TitleName }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">
+            { $T.ListDept.bWSIN }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListDept.bWSOUT }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">
+            { $T.ListDept.bWCIN }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListDept.bWCOUT }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; cursor: help">
+            <abbr title="{ $T.ListDept.RegisterStr }">{ $T.ListDept.Register }%</abbr>
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2; cursor: help">
+            <abbr title="휴가시간: -{ $T.ListDept.HoliTime }">{ $T.ListDept.WorkTime }</abbr>
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListDept.bOver == "0"}
+                { $T.ListDept.OverTime }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListDept.LateView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }', '3')">
+                    { $T.ListDept.OverTime }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">
+            { $T.ListDept.StandardTime }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            { $T.ListDept.AllWorkTime }
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">
+            {#if $T.ListDept.bLate == "0"}
+                { $T.ListDept.bLate }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline; color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'"
+                    onclick="ListDept.LateView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }', '1')">
+                    { $T.ListDept.bLate }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">
+            {#if $T.ListDept.bEarly == "0"}
+                { $T.ListDept.bEarly }
+            {#else}
+                <span style="cursor: pointer; text-decoration: underline; color: Red" onmouseover="style.color='blue'" onmouseout="style.color='Red'"
+                    onclick="ListDept.LateView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }', '2')">
+                    { $T.ListDept.bEarly }
+                </span>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3; border-right: 1px dotted #D2D2D2;">            
+            {#if $T.ListDept.bHoliCnt == "0"}
+                { $T.ListDept.bHoliCnt }
+            {#else}
+                <div style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListDept.EtcView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }')">
+                    { $T.ListDept.bHoliCnt }
+                </div>
+            {#/if}
+        </td>
+        <td class="center" style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListDept.bEtcCnt == "0"}
+                { $T.ListDept.bEtcCnt }
+            {#else}
+                <div style="cursor: pointer; text-decoration: underline;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListDept.EtcView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }')">
+                    { $T.ListDept.bEtcCnt }
+                </div>
+            {#/if}
+        </td>
+        <td style="border-bottom: 1px dotted #C3C3C3;">
+            {#if $T.ListDept.bHoliAll == "1"}
+                <div style="cursor: pointer; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" onmouseover="style.color='blue'" onmouseout="style.color='#303030'"
+                    onclick="ListDept.EtcView('{ $T.ListDept.UserID }', '{ $T.ListDept.DeptID }', '{ $T.ListDept.PathID }', '{ $T.ListDept.UserName }', '{ $T.ListDept.DeptName }'
+                    , '{ $T.ListDept.StartDate }', '{ $T.ListDept.EndDate }', '{ $T.ListDept.MinClosingID }', '{ $T.ListDept.MaxClosingID }')">
+                    { $T.ListDept.HoliRemark }
+                </div>
+            {#else}
+                &nbsp;
+            {#/if}
+        </td>
+	</tr>
+	{#/if}
+{#else}
+	<tr>
+		<td colspan="16" class="center"><span class="NoListData" /></td>        
+	</tr>
+{#/for}
+</table>
+</div>
+{#foreach $T as ListDept}
+    {#if $T.ListDept.ROW == "99999"}
+    <table class="table_typeC" style="border-top: 0; min-width: 1250px;"> 
+    <colgroup>
+        <col width="100px" />
+        <col width="70px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col width="80px" />
+        <col width="80px" />
+        <col width="80px" />
+        <col width="80px" />
+        <col width="80px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col width="60px" />
+        <col />
+    </colgroup>
+    <tr>
+    <th class="center" rowspan="2" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.SUMMARY }</th>
+    <th class="center" rowspan="2" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.UserSUM }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bWSIN }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bWSOUT }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bWCIN }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bWCOUT }</th>
+    <th class="center" style="font-weight: bold; cursor: help; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="2">
+        <abbr title="{ $T.ListDept.RegisterStr }">{ $T.ListDept.Register }%</abbr>
+    </th>
+    <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="2">
+        <abbr title="휴가시간: -{ $T.ListDept.HoliTime }">{ $T.ListDept.WorkTime }</abbr>
+    </th>
+    <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="2">{ $T.ListDept.OverTime }</th>
+    <th class="center" style="font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="2">{ $T.ListDept.StandardTime }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.AllWorkTime }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; color: Red;">{ $T.ListDept.bLate }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; color: Red;">{ $T.ListDept.bEarly }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bHoliCnt }</th>
+    <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px;">{ $T.ListDept.bEtcCnt }</th>
+    <th style="text-align: left; font-weight: bold; border-bottom: 1px solid rgba(0,0,0,.1);" rowspan="2">
+        기준시간 대비 근무합산이 100% 이상일 경우 주52시간을 초과함.
+    </th>
+    </tr>  
+    <tr>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; cursor: help; border-bottom: 1px solid rgba(0,0,0,.1);" colspan="2">
+            <abbr title="{ $T.ListDept.AMRegisterStr }">{ $T.ListDept.AMRegister }%</abbr>
+        </th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; cursor: help; border-bottom: 1px solid rgba(0,0,0,.1);" colspan="2">
+            <abbr title="{ $T.ListDept.PMRegisterStr }">{ $T.ListDept.PMRegister }%</abbr>
+        </th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.AllWorkTimePer }%</th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; color: Red; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.bLateMinute }</th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; color: Red; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.bEarlyMinute }</th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.bHoli }</th>
+        <th class="center" style="font-weight: bold; padding: 3px 5px 3px 5px; border-bottom: 1px solid rgba(0,0,0,.1);">{ $T.ListDept.bEtc }</th>
+    </tr>  
+    </table>
+    {#/if}
+{#/for}

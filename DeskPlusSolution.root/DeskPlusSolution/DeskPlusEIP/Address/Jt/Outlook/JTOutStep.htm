@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <colgroup>
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+        <col  />
+    </colgroup>
+    <tr>
+        <th class="table_60"><input id="cbxAll" type="checkbox" onclick="AllChecked()" /></th>
+        <th class="table_100" id="r_name"></th>
+        <th class="table_title" id="r_mail"></th>        
+        <th class="table_title" id="r_mobile"></th>
+        <th class="table_title" id="r_homePhone"></th>
+        <th class="table_title" id="r_workPhone"></th>
+        <th class="table_title" id="r_compnayName"></th>
+    </tr>
+    {#foreach $T as AddressList}
+    <tr>
+        <td style="text-align: center;"><input type="checkbox" class="cbxID" id="cbxID{ $T.AddressList.CSVID }" value="{ $T.AddressList.CSVID }" /></td>        
+        <td>{ $T.AddressList.Name }</td>
+        <td>{ $T.AddressList.Email }</td>
+        <td>{ $T.AddressList.MobilePhone }</td>
+        <td>{ $T.AddressList.HomePhone }</td>
+        <td>{ $T.AddressList.CompanyPhone }</td>
+        <td>{ $T.AddressList.Company }</td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="7" class="center" id="NoListData"></td>        
+    </tr>
+    {#/for}        
+ </table>

@@ -1,0 +1,27 @@
+﻿<table class="table_typeA">
+<colgroup>
+    <col width="120px" />
+    <col />
+    <col width="120px"/ >
+</colgroup>
+    <tr>
+        <th id="j_Name">Vendor Code</th>
+        <th id="j_Content">Vendor Name</th>
+        <th id="j_RegDate">Posting Group</th>
+    </tr>
+    {#foreach $T as VendorList}
+    <tr>
+        <td><a href="#" onclick="javascript:PopVendor.Binding('{ $T.VendorList.VendorCode}', '{ $T.VendorList.VendorName}', '{ $T.VendorList.VendorPostingGroup}', '{ $T.VendorList.PaymentTerm}')")>{ $T.VendorList.VendorCode }</a></td>
+        <td>
+            <a href="#" onclick="javascript:PopVendor.Binding('{ $T.VendorList.VendorCode}', '{ $T.VendorList.VendorName}', '{ $T.VendorList.VendorPostingGroup}', '{ $T.VendorList.PaymentTerm}')")>{ $T.VendorList.VendorName }</a>
+        </td>
+        <td>
+            <a href="#" onclick="javascript:PopVendor.Binding('{ $T.VendorList.VendorCode}', '{ $T.VendorList.VendorName}', '{ $T.VendorList.VendorPostingGroup}', '{ $T.VendorList.PaymentTerm}')")>{ $T.VendorList.VendorPostingGroup }</a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="3" class="center"><span class="NoListData" /></td>
+    </tr>
+    {#/for}
+</table>

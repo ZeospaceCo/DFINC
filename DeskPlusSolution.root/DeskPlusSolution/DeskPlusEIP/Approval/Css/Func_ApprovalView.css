@@ -1,0 +1,61 @@
+BODY  { font-family: gulim; font-size:10pt; color: #000000; margin:0px; padding:0px; line-height: 140%; scrollbar-face-color: #F2F2F2; scrollbar-shadow-color:#999999; scrollbar-highlight-color:#999999;	scrollbar-3dlight-color: #FFFFFF; scrollbar-darkshadow-color: #FFFFFF; scrollbar-track-color: #F6F6F6; scrollbar-arrow-color: #999999; } 
+TABLE { font-family: gulim; font-size:9pt; }
+INPUT { font-size:9pt; border: solid 1px #ffffff;}
+
+.ZD { font-size:8pt; }
+.ZP { font-size:8pt; }
+.ZQ { font-size:8pt; }
+.ZH { font-size:8pt; }
+.ZC { font-size:8pt; }
+.ZR { font-size:8pt; }
+.formfieldview { font-size:9pt; border: none;}
+.formFieldViewDate { font-size:7pt; border: none; color:red; }
+.formfieldinput { font-size:9pt; border: solid 1px #ffffff;}
+.Plain { font-size:9pt; border: none; }
+P {margin-top:2px; margin-bottom:2px;}
+
+.ZDBG { background-color:#FFF99D; font-size:8pt;}
+.ZPBG { background-color:#8DCFF4; font-size:8pt;}
+.ZQBG { background-color:#F4948D; font-size:8pt;}
+.ZHBG { background-color:#9595C6; font-size:8pt;}
+.ZCBG { background-color:#A8D59D; font-size:8pt;}
+.ZRBG { background-color:#FFD49D; font-size:8pt;}
+.ZABG { background-color:#FF9294; font-size:8pt;}
+
+ .C { background-color:#99CC66; }
+ .H { background-color:#8080FF; }
+ .I { background-color:#FF9900; }
+ .P { background-color:#FF9900; }
+ .R { background-color:#FF4455; }
+ .W { background-color:#FFFF00; }
+ .D { background-color:#8080FF; }
+ .Z { background-color:#FF4455; }
+
+ .Dsc   { background-color:#E9E9E9; border:solid #808080 1px; }
+ .DscMy { background-color:#E9E9E9; border:solid #FF0000 1px; }
+ .DscZR { background-color:#E8E4BB; border:solid #808080 1px; }
+ .DscMyZR { background-color:#E8E4BB; border:solid #FF0000 1px; }
+ .stateLine    { border-right: solid #000000 1px;}
+ .stateLineSub { border-right: solid #000000 1px;}
+ .Doc   { background-color:#EEF2F5; border-left: solid #000000 1px; border-right: solid #000000 1px; font-size:9pt; }
+ .DocMo { background-color:#EEF2F5; border-left: solid #000000 1px; border-right: solid #000000 1px; }
+
+
+/*Ms*/
+v\:* { BEHAVIOR: url(#default#VML) }
+o\:* { BEHAVIOR: url(#default#VML) }
+x\:* { VISIBILITY: hidden; POSITION: relative }
+.shape { BEHAVIOR: url(#default#VML) }
+
+/* Ã·¾ðÃ³¸® */
+.app_opi {width:100%;border:0px solid red;padding:5px 0px 0px 0px;margin:0px;/*font-size:11px;*/}
+.app_opi .tit {padding:3px 0px;}
+.app_opi .date {padding:3px 0px 3px 5px; /*width:auto;float:right;top:0px;*/}
+.app_opi .cont {width:100%;padding:5px 5px;}
+
+#editor {border:0px solid red;padding-top:15px;padding-left:10px;padding-right:35px;}
+/*#editor {border:0px solid red;padding-top:15px;padding-left:10px;padding-right:35px;font-family: ¸¼Àº °íµñ; }*/
+
+.tabprt {table-layout:fixed;float:left;width:100%;padding:0px 0px 0px 0px;border-left:1px solid #c0c0c0;border-right:1px solid #c0c0c0;border-top:1px solid #c0c0c0;border-bottom:1px solid #c0c0c0;border-collapse:collapse;}
+.tabprt th {font-weight:normal;font-size:12px;border-right:1px solid #c0c0c0;min-width:30px;text-align:center;/*background:#e9e9e9;color:#505050;*/}
+.tabprt td {font-weight:normal;font-size:12px;border-bottom:1px solid #c0c0c0;vertical-align:top;min-width:30px;padding:5px;margin:0px;}

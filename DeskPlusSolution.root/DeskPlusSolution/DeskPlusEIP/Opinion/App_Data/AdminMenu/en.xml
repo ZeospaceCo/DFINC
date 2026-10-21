@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--항목관리 -->
+  <Item ID="UnitManage" Text="Item Management" ClientSideCommand="" />
+  <Item ID="Exam" Text="Example Management" ClientSideCommand="Menu.MovePage('Exam');" />
+  <Item ID="Unit" Text="Question Management" ClientSideCommand="Menu.MovePage('Unit');" />
+  <!-- 설문관리 -->
+  <Item ID="QuesManage" Text="Survey Management" ClientSideCommand="" />
+  <Item ID="QuesIng" Text="Survey in progress" ClientSideCommand="Menu.MovePage('QuesIng');" />
+  <Item ID="QuesClosing" Text="Ended survey" ClientSideCommand="Menu.MovePage('QuesClosing');" />
+  <!-- 설문통계 -->
+  <Item ID="Statistic" Text="Survey Statistics" ClientSideCommand="Menu.MovePage('Statistic');" />
+</MenuData>

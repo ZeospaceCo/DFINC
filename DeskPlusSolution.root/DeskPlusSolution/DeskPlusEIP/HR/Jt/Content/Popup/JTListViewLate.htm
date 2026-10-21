@@ -1,0 +1,42 @@
+﻿<table class="table_typeA"> 
+<caption>
+    지각 정보
+</caption>
+<colgroup>
+    <col width="100px"/>
+    <col width="120px"/>
+    <col width="70px"/>
+    <col width="70px"/>  
+    <col width="80px"/>  
+    <col width="120px"/>
+    <col/>
+</colgroup>
+<tr>
+    <th id="r_CalcDate" class="center"></th>
+    <th id="r_DeptName" class="center"></th>
+    <th id="r_Name" class="center"></th>
+    <th id="r_TitleName" class="center"></th>    
+    <th id="r_Gubun" class="center"></th>
+    <th id="r_Time" class="center"></th>
+    <th id="r_Reason2" class="center"></th>
+</tr>
+{#foreach $T as ViewLate}
+<tr> 
+    <td class="center">{ $T.ViewLate.CalcDate }</td>
+    <td class="center">{ $T.ViewLate.DeptName }</td>
+    <td class="center">{ $T.ViewLate.UserName }</td> 
+    <td class="center">{ $T.ViewLate.TitleName }</td>     
+    <td class="center" style="color: Red">{ $T.ViewLate.bLateGubun }</td>
+    <td class="center">{ $T.ViewLate.WSTime } (<span style="color: Red">{ $T.ViewLate.bLateMinute }</span>)</td>
+    <td>
+        <div style="word-break: break-all;">
+            { $T.ViewLate.LateRemark }
+        </div>
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

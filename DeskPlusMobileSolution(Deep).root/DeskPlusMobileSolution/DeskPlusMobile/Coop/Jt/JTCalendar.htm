@@ -1,0 +1,25 @@
+﻿	<table class="month cb2" width="100%">
+	<colgroup span="7" width="14%"></colgroup>
+	<thead>
+	<tr>
+	<th scope="col" class="hol" id="JSun"></th>
+	<th scope="col" id="JMon"></th>
+	<th scope="col" id="JTue"></th>
+	<th scope="col" id="JWed"></th>
+	<th scope="col" id="JThu"></th>
+	<th scope="col" id="JFri"></th>
+	<th scope="col" id="JSat"></th>
+	</tr>
+	</thead>
+    <tbody>
+        {#foreach $T as Cal}
+        {#if $T.Cal.Week == '0'}
+        <tr>
+        {#/if}
+        <td class="{ $T.Cal.Class }" id="{ $T.Cal.Index }"><a href="#" onclick="{ $T.Cal.Func }">{ $T.Cal.Day } {#if $T.Cal.DoCount > 0}<em><span class="hc2">+</span>{ $T.Cal.DoCount }</em>{#/if}</a></td>
+        {#if $T.Cal.Week == '6'}
+        </tr>
+        {#/if}
+        {#/for}     
+    </tbody>
+	</table>

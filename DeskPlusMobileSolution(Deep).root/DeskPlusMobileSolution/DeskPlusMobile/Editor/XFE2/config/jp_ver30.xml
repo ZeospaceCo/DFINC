@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<xfeEditor>
+  <menu1>
+  
+	  <Fontsize visible="true">フォントサイズ</Fontsize>
+  
+    <AlignLeft visible="true">左揃え</AlignLeft>
+    <AlignCenter visible="true">中央揃え</AlignCenter>
+    <AlignRight visible="true">右揃え</AlignRight>
+    <Justify visible="true">両端揃え</Justify>
+
+  </menu1>
+</xfeEditor>

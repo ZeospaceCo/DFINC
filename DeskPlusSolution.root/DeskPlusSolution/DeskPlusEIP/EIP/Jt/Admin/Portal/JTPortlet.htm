@@ -1,0 +1,63 @@
+﻿<div class="table_typeLmiddle">
+    <!--blog 내용 시작-->
+    <div class="blog_cont">
+        <ul>
+        {#foreach $T as BoardList}
+            <li {#if $T.BoardList$last == true} class="last-child" {#/if} >
+
+                <table class="blog_cont_table">
+				    <caption>BLOG CONTENT</caption>
+                    <colgroup>
+                        <col width="10%" />
+                        <col />
+                    </colgroup>
+                    <tr>
+                        <td>
+                            <p class="fav">							    
+                                <input type="checkbox" id="chkImpo_{$T.BoardList.ListID}" 
+                                {#if $T.BoardList.ImpoCnt == 1}checked="checked"{#/if}
+                                onclick="List.ModImpUser('chkImpo_{$T.BoardList.ListID}', this)" />
+
+	                            <label for="chkImpo_{$T.BoardList.ListID}" title="" 
+                                id="lbImpo_{$T.BoardList.ListID}" class="{#if $T.BoardList.ImpoCnt == 1}on{#/if}">
+                                    <span class="blind"></span>
+                                </label>                                
+                            </p>
+                        </td>
+                        <td>
+						    <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }')" style="cursor:pointer">
+							    <span style="cursor:pointer">{ $T.BoardList.Title }</span>
+                            </a>
+                            <span class="boa_orangeSqu">{#if $T.BoardList.OptionTop == "1"}<span class="r_notice"></span>{#else}<span class="r_common"></span>{#/if}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blog_img" rowspan="2"><img src="{ $T.BoardList.ScreenShot }" alt="img"  width="94px" height="124px" /></td>
+                        <td>
+                            <ul>
+                                <li><img src="<%=ImgPath%>/Icon/icon_comment.gif" alt="comment"/> { $T.BoardList.ReplyCount }</li>
+                                <li>
+                                    <a href="#" onclick="List.View('{ $T.BoardList.CategoryID }','{ $T.BoardList.ListID }');return false;" style="cursor:pointer"><span style="cursor:pointer">{ $T.BoardList.BlogContent }</span></a>
+                                </li>
+                            </ul>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="subDate">
+							    {#if $T.BoardList.WriteUserID > 0}
+								<a href="#" onclick="AccountInfo('{ $T.BoardList.WriteUserID }');return false;" style="cursor:pointer">{ $T.BoardList.WriteUserName }</a>             
+								{#else}
+								{ $T.BoardList.WriteUserName }
+								{#/if}
+								| { $T.BoardList.WriteDate }
+								| { $T.BoardList.ReadCount } 
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        {#/for}
+        </ul>
+    </div>
+</div>

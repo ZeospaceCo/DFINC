@@ -1,0 +1,80 @@
+﻿<table class="table_typeA"> 
+<caption>
+    휴가 내역 관리 리스트
+</caption>
+<colgroup>
+    <col width="30px" />
+    <col width="30px" />
+    <col width="150px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="50px" />
+    <col width="150px" />
+    <col width="50px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="50px" />
+    <col width="50px" />
+    <col />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+    <col width="60px" />
+</colgroup>
+<tr>
+    <th class="center"><input id="cbxAll" type="checkbox" onclick="AdminManage.Checked()" /></th>        
+    <th id="r_number" class="center"></th>
+    <th id="r_deptname" class="center"></th>
+    <th id="r_empNo" class="center"></th>
+    <th id="r_username" class="center"></th>
+    <th id="r_titlename" class="center"></th>
+    <th id="r_customername" class="center"></th>
+    <th id="r_gubun" class="center"></th>
+    <th id="r_startdate" class="center"></th>
+    <th id="r_enddate" class="center"></th>
+    <th id="r_duration" class="center"></th>
+    <th id="r_time" class="center"></th>
+    <th id="r_worklist" class="center"></th>
+    <th id="r_ispay" class="center"></th>
+    <th id="r_ispayyn" class="center"></th>
+    <th id="r_transcost" class="center"></th>
+    <th id="r_docview" class="center"></th>    
+</tr>
+{#foreach $T as AdminManage}
+<tr>
+    <td class="center"><input type="checkbox" class="cbxID" id="cbxID{ $T.AdminManage.ReportID }" value="{ $T.AdminManage.ReportID }" /></td>  
+    <td class="center">{ $T.AdminManage.ROW }</td>
+    <td class="center">{ $T.AdminManage.DeptName }</td>
+    <td class="center">{ $T.AdminManage.EmployeeNumber }</td>
+    <td class="center">
+        {#if $T.AdminManage.UserID > 0}
+            <a onclick="AccountInfo('{ $T.AdminManage.UserID }');return false;" style="cursor:pointer">{ $T.AdminManage.Name }</a>             
+        {#else}
+            { $T.AdminManage.UserName }
+        {#/if}
+    </td>
+    <td class="center">{ $T.AdminManage.TitleName }</td>
+    <td class="center">{ $T.AdminManage.CustomerName }</td>
+    <td class="center">{ $T.AdminManage.Gubun }</td>
+    <td class="center">{ $T.AdminManage.StartDate }</td>
+    <td class="center">{ $T.AdminManage.EndDate }</td>
+    <td class="center">({$T.AdminManage.Duration }일간)</td>
+    <td class="center">{ $T.AdminManage.Hour }시간</td>
+    <td class="center">{ $T.AdminManage.Reason }</td>
+    <td class="center"><div align = "right">{ $T.AdminManage.ExtraPay }&nbsp;&nbsp;</div></td>
+    <td class="center">{#if $T.AdminManage.IsPay == 'Y' } 승인 {#else}  미승인 {#/if}</td>
+    <td class="center">{#if $T.AdminManage.IsTransportPay == 'Y'} 포함 {#else}  미포함 {#/if}</td>
+    <td class="center">        
+        {#if $T.AdminManage.DocumentID > 0}
+        <span onclick="AdminManage.DocView('{ $T.AdminManage.DocumentID }');return false;" style="cursor:pointer">
+            <img alt="" src="/DeskPlusEIP/Design/C/Img/Icon/doc_view.gif" />
+        </span>
+        {#/if}
+    </td>
+</tr>
+{#else}
+<tr>
+    <td colspan="17" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}        
+</table>

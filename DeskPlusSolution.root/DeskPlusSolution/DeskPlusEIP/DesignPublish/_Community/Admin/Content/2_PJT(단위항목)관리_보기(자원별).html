@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>단위항목 관리</h1>
+            <ul class="aLeft">
+                <li>
+                    <select name="ddlSearchTerm" id="ddlSearchTerm" class="searchselect">
+                        <option selected="selected">프로젝트메뉴A</option><option>프로젝트메뉴B</option><option>프로젝트메뉴C</option>
+                    </select>
+                    <span class="cm_subtxt">* 프로젝트 게시판에서 사용할 단위항목을 관리합니다.</span>
+                </li>
+            </ul>
+            <!-- 버튼 //-->
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#"><span>단위항목삭제</span></a></li>
+                <li><a href="2_PJT(단위항목)관리_추가.html"><span>단위항목추가</span></a></li>
+            </ul>
+        </div>
+        <div class="cm_gap5"></div>
+        <div class="cm_layout_srh">
+            <div class="left">
+                <ul class="cm_tab">
+                    <li><a href="2_PJT(단위항목)관리.html">단위항목리스트</a></li>
+                    <li><a href="2_PJT(단위항목)관리_보기(일정별).html">일정별조회</a></li>
+                    <li><a href="#" class="tab_on">자원별조회</a></li>
+                    <li class="last"><a href="2_PJT(단위항목)관리_보기(프젝별).html">PJT별조회</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="btn_searchbox">
+                    <li>
+                    <select class="searchselect">
+	                    <option>제목</option>
+	                    <option>내용</option>
+                    </select>
+                </li>
+                <li><input name="ctbSearch" type="text" id="ctbSearch" class="searchtext" Required="False" class="text" style="width:200px;" /></li>
+                <li><a href="#" class="searchbtn" title="">검색</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="layout_content">
+
+            <!-- 테이블 시작 -->
+            <div class="table_typeAtop_left"><p></p></div> 
+            
+            <table class="table_typeA">
+            <caption>자원리스트</caption>
+            <colgroup>
+                <col />
+                <col width="60px" />
+                <col width="90px" />
+                <col width="90px" />
+                <col width="70px" />
+                <col width="40px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><a href="#">자원명</a></th>
+                    <th>진행율</th>
+                    <th>시작일</th>
+                    <th>완료일</th>
+                    <th><a href="#">기간</a></th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_minus.gif" style="padding:0px 0px 0px 0px;" /></a>
+                        <a href="2_PJT(단위항목)관리_추가.html" title="클릭 시, 상세작업내용이 보여짐">홍길동</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>98%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_dot.gif" style="padding:0px 0px 0px 15px;" />
+                        <a href="2_PJT(단위항목)관리_추가.html" title="항목상세수정">근태관리 관리자 수정기능 개발</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>98%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_dot.gif" style="padding:0px 0px 0px 15px;" />
+                        <a href="2_PJT(단위항목)관리_추가.html" title="항목상세수정">근태관리 관리자 수정기능 개발</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>98%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_plus.gif" style="padding:0px 0px 0px 0px;" /></a>
+                        <a href="2_PJT(단위항목)관리_추가.html" title="클릭 시, 상세작업내용이 보여짐">홍길동동동이</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>98%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_minus.gif" style="padding:0px 0px 0px 0px;" /></a>
+                        <a href="2_PJT(단위항목)관리_추가.html" title="클릭 시, 상세작업내용이 보여짐">미할당</a>
+                    </td>
+                    <td>0%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_dot.gif" style="padding:0px 0px 0px 15px;" />
+                        <a href="2_PJT(단위항목)관리_추가.html" title="항목상세수정">미 할당된 작업내역</a>
+                        <a href="2_PJT(단위항목)관리_요약보기.html" title="상세요약정보 보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /></a>
+                    </td>
+                    <td>98%</td>
+                    <td>2011-05-09</td>
+                    <td>2011-05-09</td>
+                    <td>100일</td>
+                    <td>
+                        <a href="2_PJT(단위항목)관리_차트보기.html" title="차트보기"><img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /></a>&nbsp;
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left">
+                <p></p>
+            </div><!-- 테이블 끝 -->
+            
+            <div class="cm_gap10"></div>
+            <span class="cm_subtxt">* <b>작업명</b> 선택 시, <b>상세정보 수정</b>이 가능합니다.</span><br />
+            <span class="cm_subtxt">* <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_plus.gif" /> 선택 시, 해당 항목의 <b>하위 내역</b>을 가져옵니다.</span><br />
+            <span class="cm_subtxt">* <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_item_detail.gif" /> 선택 시, <b>상세정보</b>를 볼 수 있습니다.</span><br />
+            <span class="cm_subtxt">* <img src="/DeskPlusEIP/Design/Blue/Img/Icon/ico_avg.gif" /> 선택 시, 해당 작업의 진행을 <b>차트</b>로 볼 수 있습니다.</span>
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

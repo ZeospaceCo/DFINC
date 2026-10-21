@@ -1,0 +1,1 @@
+document.write('<OBJECT ID="DPTrustedSites" codebase="/DeskPlusEIP/Data/Cab/DPTrustedSites.cab#version=1,0,0,1" CLASSID="CLSID:017F4927-3065-4408-A9C1-1EFB55B03FFD" HEIGHT=10 WIDTH=10></OBJECT>');

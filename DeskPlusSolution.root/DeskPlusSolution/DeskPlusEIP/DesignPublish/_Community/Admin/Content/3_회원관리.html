@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/DeskPlusEIPBase.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/DeskPlusEIP/Design/Blue/Css/Func_Team.css?v=1" />
+
+<title>DeskPlus4.0 웹표준</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="layout_body">
+
+    <div class="layout_full">
+    
+        <div id="layout_header">
+            <!-- 페이지타이틀 //-->
+            <h1>회원 관리</h1>
+            <!-- 버튼 //-->
+            <ul class="btn_left">
+                <!--<li><a href="#" title=""><span>회원명단(excel)</span></a></li>-->
+                <li><a href="#" title=""><span>메일발송</span></a></li>
+                <li><a href="3_회원관리_회원열람권한.html" title=""><span>회원열람권한</span></a></li>
+            </ul>
+            <ul class="btn_right">
+                <li class="btn_red"><a href="#" title=""><span>활동중지</span></a></li>
+                <li class="btn_red" title=""><a href="#"><span>강제탈퇴</span></a></li>
+                <li class="btn_blue" title=""><a href="#"><span>등급변경</span></a></li>
+            </ul>
+        </div>
+
+        <div id="layout_srh">
+            <ul>
+                <li></li>
+            </ul>
+            <ul class="btn_searchbox">
+                <li>
+                    <select class="searchselect">
+                        <option selected="selected">전체회원</option><option>등급항목리스트..</option><option>준회원</option><option>정회원</option><option>우수회원</option><option>....</option><option>....</option><option>....</option><option>....</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="searchselect">
+	                    <option>전체</option><option>1주</option><option>1달</option><option>기간</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="searchselect">
+	                    <option value="Title">제목</option><option value="ManyName">등록자</option><option value="MobileContent">내용</option>
+                    </select>
+                </li>
+                <li>
+                    <input name="ctbSearch" type="text" id="Text1" class="searchtext" Required="False" class="text" title="" style="width:200px;" />
+                </li>
+                <li><a href="#" class="searchbtn" id="cbtnSearch" title="검색">검색</a></li>
+            </ul>
+        </div>
+
+        <div id="layout_content">
+
+            <div class="table_typeAtop_left"><p></p></div>
+
+            <table class="table_typeA">
+            <caption>리스트</caption>
+            <colgroup>
+                <col width="30px" />
+                <col width="50px" />
+                <col />
+                <col width="80px" />
+                <col width="100px" />
+                <col width="80px" />
+                <col width="80px" />
+                <col width="50px" />
+                <col width="50px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>번호</th>
+                    <th><a href="#">아이디</a></th>
+                    <th><a href="#">이름</a></th>
+                    <th><a href="#">회원등급</a></th>
+                    <th><a href="#">가입일</a></th>
+                    <th><a href="#">최종방문일</a></th>
+                    <th><a href="#">방문수</a></th>
+                    <th><a href="#">게시글수</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>deskplus</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>카페지기</td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>deskplus</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>카페지기</td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>3</td>
+                    <td>deskplus</td>
+                    <td><a href="http://localhost/DeskPlusEIP/Account/Common/AccountInfo.aspx?p=rgWoqNDeLVNUje3qWWzeag%3D%3D">홍길동</a></td>
+                    <td>카페지기</td>
+                    <td>2011-05-11</td>
+                    <td>2011-05-11</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="table_typeAbottom_left"><p></p></div>
+            <!-- 테이블 끝 //-->
+
+            <!-- 페이징 시작 //-->
+            <div class="paging_num_s1"> 
+                <h3>1 / 20</h3>
+	            <span id="pager">
+    	        <span id="pager_prev10"><a href="#">이전</a></span>
+                    <em> 1 </em>
+                    <a href="#"> 2 </a>
+                    <a href="#"> 3 </a>
+                    <a href="#"> 4 </a>
+                    <a href="#"> 5 </a>
+                    <a href="#"> 6 </a>
+                    <a href="#"> 7 </a>
+                    <a href="#"> 8 </a>
+                <span id="pager_next10"><a href="#">다음</a></span></span> 
+                <select class="aRight">
+                <option>10</option><option>20</option><option>30</option>
+                </select>
+            </div>
+            <!-- 페이징 끝 //-->
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

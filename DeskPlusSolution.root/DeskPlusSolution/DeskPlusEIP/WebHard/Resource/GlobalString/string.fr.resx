@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Auth" xml:space="preserve">
+    <value>puissance</value>
+  </data>
+  <data name="BeforePage" xml:space="preserve">
+    <value>page précédente</value>
+  </data>
+  <data name="DeleteAuthority" xml:space="preserve">
+    <value>Les seuls supprimer des fichiers que vous avez enregistré, vous pouvez.</value>
+  </data>
+  <data name="DownloadAuth" xml:space="preserve">
+    <value>* Seuls les fichiers dans les droits de téléchargement sont affichés dans la liste.</value>
+  </data>
+  <data name="DownloadSearch" xml:space="preserve">
+    <value>* Vous ne pouvez rechercher des fichiers dans l'autorisation de téléchargement.</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>fichier</value>
+  </data>
+  <data name="FirstList" xml:space="preserve">
+    <value>La première liste</value>
+  </data>
+  <data name="Folders" xml:space="preserve">
+    <value>dossiers</value>
+  </data>
+  <data name="InputFileLength" xml:space="preserve">
+    <value>S'il vous plaît entrer votre capacité limite de téléchargement.</value>
+  </data>
+  <data name="InputFileLengthInt" xml:space="preserve">
+    <value>Vous ne pouvez télécharger les numéros de limite de capacité.</value>
+  </data>
+  <data name="InputFolderLength" xml:space="preserve">
+    <value>Entrez la capacité du dossier.</value>
+  </data>
+  <data name="InputFolderLengthInt" xml:space="preserve">
+    <value>La capacité des dossiers est disponible uniquement des chiffres.</value>
+  </data>
+  <data name="LastList" xml:space="preserve">
+    <value>La liste finale</value>
+  </data>
+  <data name="LengthOver" xml:space="preserve">
+    <value>S'il vous plaît entrer un terme de recherche d'au moins deux caractères.</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>listes</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>administrateur</value>
+  </data>
+  <data name="ManagerS" xml:space="preserve">
+    <value>administration</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>수정</value>
+  </data>
+  <data name="MoveAuthority" xml:space="preserve">
+    <value>Seuls les fichiers que vous avez enregistré, vous pouvez déplacer.</value>
+  </data>
+  <data name="NewFile" xml:space="preserve">
+    <value>Les fichiers téléchargés dernières</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Page suivante</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>pas d'autorisation</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Titre, les noms de fichiers d'attache</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Entrez le terme de recherche</value>
+  </data>
+  <data name="PublicAuthSetting" xml:space="preserve">
+    <value>Définition des autorisations</value>
+  </data>
+  <data name="PublicFileCount" xml:space="preserve">
+    <value>Vous avez dépassé votre limite de téléchargement par fichier.</value>
+  </data>
+  <data name="PublicFileLength" xml:space="preserve">
+    <value>Ajouter limite de capacité</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>dossier public</value>
+  </data>
+  <data name="PublicFolderAdd" xml:space="preserve">
+    <value>De dossiers publics</value>
+  </data>
+  <data name="PublicFolderCount" xml:space="preserve">
+    <value>Il a dépassé la capacité allouée au dossier. \n les fichiers inutilisés, s'il vous plaît télécharger plus tard complètement retiré.</value>
+  </data>
+  <data name="PublicFolderLength" xml:space="preserve">
+    <value>capacité de dossier</value>
+  </data>
+  <data name="PublicFolderMod" xml:space="preserve">
+    <value>Modifier dossier public</value>
+  </data>
+  <data name="PublicRegInfo" xml:space="preserve">
+    <value>Renseignements sur l'inscription</value>
+  </data>
+  <data name="RegUser" xml:space="preserve">
+    <value>déclarant</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>Résultats de la recherche</value>
+  </data>
+  <data name="SearchTarget" xml:space="preserve">
+    <value>Mots-clés cible: nom de fichier</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>Sharer</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>statut</value>
+  </data>
+</root>

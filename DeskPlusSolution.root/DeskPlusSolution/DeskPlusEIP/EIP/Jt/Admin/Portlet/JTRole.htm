@@ -1,0 +1,29 @@
+﻿<table class="table_typeT"> 
+    <caption>
+        파라미터
+    </caption>
+    <colgroup>    
+        <col />
+        <col width="80px" />
+    </colgroup>
+    <tr>
+        <th class="center" id="r_RoleName"></th>        
+        <th class="center" id="r_delRole"></th>
+    </tr>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            { $T.List.RoleName }
+        </td>
+        <td class="center">
+            <a onclick="Mod.DelRole('{ $T.List.PortletRoleID }')" style="display:inline-block;" class="btn"><span class="btn_del"></span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="td" colspan="2">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}       
+</table>

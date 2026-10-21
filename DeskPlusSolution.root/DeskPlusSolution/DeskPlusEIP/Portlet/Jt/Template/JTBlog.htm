@@ -1,0 +1,16 @@
+﻿<ul>
+{#foreach $T as List}
+    <li class="poboxlistset" style="height:100px;">
+        {#if $T.List.Image == ""}
+            <img class="IconNoImg" width="100" height="100" alt="img" align="left" />&nbsp; 
+        {#else}
+            <img src="{ $T.List.Image }" width="100" height="100" alt="img" align="left" />&nbsp; 
+        {#/if}
+        <a href="{ $T.List.Link }" target="_blank" ><b>{ $T.List.Title }</b></a> 
+        <br />
+        <a href="{ $T.List.Link }" target="_blank" >{ $T.List.Description }</a> 
+    </li>
+{#else}     
+    <li><span class="NoListData"></span></li>
+{#/for}  
+</ul>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+    <!-- TOP 메뉴 관리 : 메인메뉴  / [Parent : 부모ID (없으면 최상위) /  ClientSideCommand TopMenu.MovePage(ID,  Target, URL)  : Target : F(하위프레임) , S(하위메뉴) / URL : 직접 URL 호출(스크립트에서 처리일 경우 빈값)] -->
+    <Item ID="COM" Text="会社" ParentID="" ClientSideCommand="TopMenu.MovePage('COM', 'S', '');" />
+    <Item ID="EP" Text="EP" ParentID="" ClientSideCommand="TopMenu.MovePage('EP', 'S', '');" />
+    <Item ID="GW" Text="GW" ParentID="" ClientSideCommand="TopMenu.MovePage('GW', 'S', '');" />
+    <Item ID="LINK" Text="連結された" ParentID="" ClientSideCommand="TopMenu.MovePage('LINK', 'S', '');" />
+    <Item ID="FUNC" Text="メニュー機能を押す" ParentID="" ClientSideCommand="TopMenu.MovePage('FUNC', 'S', '');"/>
+    <Item ID="STATIC" Text="統計履歴書" ParentID="" ClientSideCommand="TopMenu.MovePage('STATIC', 'S', '');"/>
+    <!-- TOP 메뉴 관리 : 메인메뉴 -->
+
+    <!-- SUB 메뉴 관리 : COM -->
+    <Item ID="COMMng" Text="会社全体" ParentID="COM" ClientSideCommand="TopMenu.MovePage('COMMng', 'F', '/DeskPlusEIP/EIP/Admin/Company/List.aspx');" />
+    <!-- SUB 메뉴 관리 : EP -->
+
+
+    <!-- SUB 메뉴 관리 : EP -->
+    <Item ID="ComInfo" Text="会社情報" ParentID="EP" ClientSideCommand="TopMenu.MovePage('ComInfo', 'F', '/DeskPlusEIP/EIP/Admin/Subsidiary/Add.aspx');" />
+    <Item ID="Auth" Text="能力" ParentID="EP" ClientSideCommand="TopMenu.MovePage('Auth', 'F', '/DeskPlusEIP/EIP/Admin/Auth/Default.aspx');" />
+    <Item ID="Menu" Text="メニュー" ParentID="EP" ClientSideCommand="TopMenu.MovePage('Menu', 'F', '/DeskPlusEIP/EIP/Admin/Menu/Default.aspx');" />
+    <Item ID="Page" Text="モジュール" ParentID="EP" ClientSideCommand="TopMenu.MovePage('Page', 'F', '/DeskPlusEIP/EIP/Admin/Portlet/Default.aspx');" />
+    <!-- SUB 메뉴 관리 : EP -->
+
+
+    <!-- SUB 메뉴 관리 : GW  -->
+    <Item ID="Code" Text="コーディング" ParentID="GW" ClientSideCommand="TopMenu.MovePage('Code', 'F', '/DeskPlusEIP/EIP/Admin/Code/Default.aspx');" />
+    <Item ID="Dept" Text="組織" ParentID="GW" ClientSideCommand="TopMenu.MovePage('Dept', 'F', '/DeskPlusEIP/Account/Admin/Dept/Default.aspx');" />
+    <Item ID="Position" Text="ジョブズ/責任" ParentID="GW" ClientSideCommand="TopMenu.MovePage('Title', 'F', '/DeskPlusEIP/Account/Admin/Position/Default.aspx');" />
+    <Item ID="User" Text="ユーザー" ParentID="GW" ClientSideCommand="TopMenu.MovePage('User', 'F', '/DeskPlusEIP/Account/Admin/User/Default.aspx');" />
+    <Item ID="AuthEmail" Text="PasswordAuthManager" ParentID="GW" ClientSideCommand="TopMenu.MovePage('AuthEmail', 'F', '/DeskPlusEIP/Account/Admin/AuthEmail/Default.aspx');" />
+    <!-- SUB 메뉴 관리 : GW  -->
+
+    <!-- SUB 메뉴 관리 : 연동관리  -->
+    <Item ID="MDM" Text="モバイル機器" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('MDM', 'F', '/DeskPlusEIP/MDM/Default.aspx');" />
+    <Item ID="Mail" Text="郵便" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Mail', 'F', '/DeskPlusEIP/Portlet/Package/ZettaAdminFrame.asp');" />
+    <Item ID="Msn" Text="リアルタイムコミュニケーション" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Msn', 'F', '/DeskPlusEIP/Account/Admin/Dept/Default.aspx');" />
+    <!--Item ID="Domain" Text="メールを再インストールします" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Domain', 'F', '/DeskPlusEIP/Common/Mail/ZettaMail65/ClearDomain.aspx');" /-->  
+    <!--<Item ID="Search" Text="Search" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Search', 'F', '/DeskPlusEIP/Search/Admin/Default.aspx');" />-->
+    <!-- SUB 메뉴 관리 : 연동관리  -->
+
+
+    <!-- SUB 메뉴 관리 : 기능 관리 -->
+    <Item ID="Board" Text="掲示板" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Board', 'F', '/DeskPlusEIP/Board/Admin/Default.aspx');" />
+    <Item ID="Address" Text="アドレス帳" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Address', 'F', '/DeskPlusEIP/Address/Admin/Default.aspx');" />
+    <Item ID="Pim" Text="スケジュール" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Pim', 'F', '/DeskPlusEIP/Pim/Admin/Default.aspx');" />
+    <Item ID="Opinion" Text="アンケート" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Opinion', 'F', '/DeskPlusEIP/Opinion/Admin/Default.aspx');" />
+    <Item ID="Resource" Text="資源" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Resource', 'F', '/DeskPlusEIP/RM/Admin/Default.aspx');" />
+    <Item ID="Community" Text="コミュニティ" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Community', 'F', '/DeskPlusEIP/Community/Admin/Default.aspx');" />
+    <Item ID="Approval" Text="承認" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Approval', 'F', '/DeskPlusEIP/Approval/Admin/Default.aspx');" />
+    <Item ID="Project" Text="プロジェクト" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Project', 'F', '/DeskPlusEIP/PMS/Admin/Default.aspx');" />
+    <!-- SUB 메뉴 관리 : 기능 관리 -->
+
+    <!-- SUB 메뉴 관리 : 통계관리  -->
+    <Item ID="Login" Text="ログイン統計" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('LogIn', 'F', '/DeskPlusEIP/EIP/Admin/Static/LogIn/List.aspx');" />
+    <Item ID="Attach" Text="付属品は、コンテンツを使用しています" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('Attach', 'F', '/DeskPlusEIP/EIP/Admin/Static/Attach/List.aspx');" />
+    <Item ID="Password" Text="ログインに失敗しました" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('Password', 'F', '/DeskPlusEIP/EIP/Admin/Static/Password/List.aspx');" />
+    <Item ID="History" Text="人事異動" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('History', 'F', '/DeskPlusEIP/EIP/Admin/Static/User/List.aspx');" />
+
+    <Item ID="Login" Text="履歴ログイン" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('LogIn', 'F', '/DeskPlusEIP/EIP/Admin/Static/LogIn/List.aspx');" />
+    <Item ID="Attach" Text="添付ファイル履歴" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('Attach', 'F', '/DeskPlusEIP/EIP/Admin/Static/Attach/List.aspx');" />
+    <Item ID="Password" Text="ログイン失敗の歴史" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('Password', 'F', '/DeskPlusEIP/EIP/Admin/Static/Password/List.aspx');" />
+    <Item ID="History" Text="人事異動の歴史" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('History', 'F', '/DeskPlusEIP/EIP/Admin/Static/User/List.aspx');" />
+    <Item ID="LoginN" Text="統計ログイン" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('LogInN', 'F', '/DeskPlusEIP/Statistics/Content/Login/List.aspx');" />
+    <Item ID="AttachN" Text="添付ファイルの統計情報" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('AttachN', 'F', '/DeskPlusEIP/Statistics/Content/Attach/List.aspx');" />
+    <!--<Item ID="PerformMon" Text="パフォーマンスモニタ" ParentID="STATIC" ClientSideCommand="TopMenu.MovePage('PerformMon', 'F', '/DeskPlusEIP/Statistics/Content/PerformMon/List.aspx');" />-->
+    <!-- SUB 메뉴 관리 : 통계관리  -->
+</MenuData>

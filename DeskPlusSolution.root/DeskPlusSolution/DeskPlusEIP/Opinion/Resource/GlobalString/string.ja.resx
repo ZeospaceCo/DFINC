@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddAdministrator" xml:space="preserve">
+    <value>管理者の追加</value>
+  </data>
+  <data name="AddTagert" xml:space="preserve">
+    <value>オブジェクトの追加</value>
+  </data>
+  <data name="Add_ReplyInputContent" xml:space="preserve">
+    <value>内容を入力してください。</value>
+  </data>
+  <data name="BlogListType" xml:space="preserve">
+    <value>ブログ型リスト</value>
+  </data>
+  <data name="BtnActive" xml:space="preserve">
+    <value>有効化/無効化</value>
+  </data>
+  <data name="BtnBoard" xml:space="preserve">
+    <value>リリース</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="BtnConfirm" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="BtnCopy" xml:space="preserve">
+    <value>コピーを作成</value>
+  </data>
+  <data name="BtnDel" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="BtnExcel" xml:space="preserve">
+    <value>Excelレポート</value>
+  </data>
+  <data name="BtnFileAdd" xml:space="preserve">
+    <value>ファイルの追加</value>
+  </data>
+  <data name="BtnList" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="BtnPrint" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="BtnReply" xml:space="preserve">
+    <value>短い返信を追加</value>
+  </data>
+  <data name="BtnSeq" xml:space="preserve">
+    <value>質問の順序</value>
+  </data>
+  <data name="BtnSeqUnit" xml:space="preserve">
+    <value>項目の順序</value>
+  </data>
+  <data name="BtnSrh" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="BtnSuper" xml:space="preserve">
+    <value>所轄官庁を変更</value>
+  </data>
+  <data name="BtnUnitAdd" xml:space="preserve">
+    <value>質問ジェネレータ</value>
+  </data>
+  <data name="BtnVoteUser" xml:space="preserve">
+    <value>の議決状況</value>
+  </data>
+  <data name="Btn_Vote" xml:space="preserve">
+    <value>投票する</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>未発表</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="ConfirmEditorTab" xml:space="preserve">
+    <value>以前に作成したコンテンツを削除します。選択肢？</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>例えば</value>
+  </data>
+  <data name="FileDownload" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="FileLen" xml:space="preserve">
+    <value>ファイルサイズ</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="FileType" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="GoToInfo" xml:space="preserve">
+    <value>詳細ビューのページに移動します。</value>
+  </data>
+  <data name="GoToInputInfo" xml:space="preserve">
+    <value>より多くの情報入力ページに移動します。</value>
+  </data>
+  <data name="GoToListPage" xml:space="preserve">
+    <value>リスト·ページをビューに移動します。</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="Header1" xml:space="preserve">
+    <value>ページヘッダー</value>
+  </data>
+  <data name="Header2" xml:space="preserve">
+    <value>ページヘッダー2</value>
+  </data>
+  <data name="Header3" xml:space="preserve">
+    <value>ページヘッダー</value>
+  </data>
+  <data name="JTF1" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="JTF10" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="JTF11" xml:space="preserve">
+    <value>オブジェクト·インテリジェンス</value>
+  </data>
+  <data name="JTF12" xml:space="preserve">
+    <value>管理インテリジェンス</value>
+  </data>
+  <data name="JTF13" xml:space="preserve">
+    <value>によって作成された</value>
+  </data>
+  <data name="JTF14" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="JTF15" xml:space="preserve">
+    <value>登録日</value>
+  </data>
+  <data name="JTF16" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="JTF17" xml:space="preserve">
+    <value>アンケートは、結果を開くことができません。</value>
+  </data>
+  <data name="JTF18" xml:space="preserve">
+    <value>[結果の表示▼]</value>
+  </data>
+  <data name="JTF19" xml:space="preserve">
+    <value>[結果を閉じる▲]</value>
+  </data>
+  <data name="JTF2" xml:space="preserve">
+    <value>参加者数</value>
+  </data>
+  <data name="JTF20" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="JTF21" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="JTF22" xml:space="preserve">
+    <value>アンケート数</value>
+  </data>
+  <data name="JTF23" xml:space="preserve">
+    <value>未発表の結果</value>
+  </data>
+  <data name="JTF24" xml:space="preserve">
+    <value>匿名かどうか</value>
+  </data>
+  <data name="JTF25" xml:space="preserve">
+    <value>結果は、公開しない、または作ら</value>
+  </data>
+  <data name="JTF26" xml:space="preserve">
+    <value>、返信の使用かどうか</value>
+  </data>
+  <data name="JTF27" xml:space="preserve">
+    <value>投票日</value>
+  </data>
+  <data name="JTF3" xml:space="preserve">
+    <value>数の質問</value>
+  </data>
+  <data name="JTF4" xml:space="preserve">
+    <value>調査の間、</value>
+  </data>
+  <data name="JTF5" xml:space="preserve">
+    <value>アクティブにするかどうか</value>
+  </data>
+  <data name="JTF6" xml:space="preserve">
+    <value>条件を実施</value>
+  </data>
+  <data name="JTF7" xml:space="preserve">
+    <value>名前さんの質問</value>
+  </data>
+  <data name="JTF8" xml:space="preserve">
+    <value>フォーム</value>
+  </data>
+  <data name="JTF9" xml:space="preserve">
+    <value>項目数</value>
+  </data>
+  <data name="JTNoData" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>一般的なリスト</value>
+  </data>
+  <data name="MenuF1" xml:space="preserve">
+    <value>質問調査</value>
+  </data>
+  <data name="MenuF10" xml:space="preserve">
+    <value>会社の統計</value>
+  </data>
+  <data name="MenuF11" xml:space="preserve">
+    <value>部門の統計によると</value>
+  </data>
+  <data name="MenuF12" xml:space="preserve">
+    <value>ジョブ統計によって</value>
+  </data>
+  <data name="MenuF13" xml:space="preserve">
+    <value>男女別に</value>
+  </data>
+  <data name="MenuF14" xml:space="preserve">
+    <value>リストに参加する</value>
+  </data>
+  <data name="MenuF15" xml:space="preserve">
+    <value>リストには参加しなかった</value>
+  </data>
+  <data name="MenuF16" xml:space="preserve">
+    <value>重要なのは、言った</value>
+  </data>
+  <data name="MenuF2" xml:space="preserve">
+    <value>プロジェクト管理</value>
+  </data>
+  <data name="MenuF3" xml:space="preserve">
+    <value>例管理のための</value>
+  </data>
+  <data name="MenuF4" xml:space="preserve">
+    <value>管理さんの質問</value>
+  </data>
+  <data name="MenuF5" xml:space="preserve">
+    <value>調査管理</value>
+  </data>
+  <data name="MenuF6" xml:space="preserve">
+    <value>進行中の調査</value>
+  </data>
+  <data name="MenuF7" xml:space="preserve">
+    <value>調査の終了</value>
+  </data>
+  <data name="MenuF8" xml:space="preserve">
+    <value>調査</value>
+  </data>
+  <data name="MenuF9" xml:space="preserve">
+    <value>ユーザーの統計</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="Msg_Active" xml:space="preserve">
+    <value>それを有効/無効にするには？</value>
+  </data>
+  <data name="Msg_Add" xml:space="preserve">
+    <value>登録したいですか？</value>
+  </data>
+  <data name="Msg_Admin" xml:space="preserve">
+    <value>管理者に連絡してください。</value>
+  </data>
+  <data name="Msg_Del" xml:space="preserve">
+    <value>あなたが削除してもよろしいですか？</value>
+  </data>
+  <data name="Msg_Dept" xml:space="preserve">
+    <value>部門を選択してください。</value>
+  </data>
+  <data name="Msg_ErrActive" xml:space="preserve">
+    <value>プロジェクトを有効/無効を選択してください。</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>本体スクリプト疑わしいテキストコンテンツが含まれていますが変更になることがあります。</value>
+  </data>
+  <data name="Msg_ErrDate" xml:space="preserve">
+    <value>正しい日付を入力してください。</value>
+  </data>
+  <data name="Msg_ErrDelItem" xml:space="preserve">
+    <value>削除したいアイテムを選択してください。</value>
+  </data>
+  <data name="Msg_ErrEDate" xml:space="preserve">
+    <value>終了日を入力してください。</value>
+  </data>
+  <data name="Msg_ErrItem" xml:space="preserve">
+    <value>プロジェクト情報を入力してください。</value>
+  </data>
+  <data name="Msg_ErrMaxNum" xml:space="preserve">
+    <value>型例を記録するには、正しい入力の最大値をしてください。</value>
+  </data>
+  <data name="Msg_ErrNum" xml:space="preserve">
+    <value>番号を入力してください。</value>
+  </data>
+  <data name="Msg_ErrOpt" xml:space="preserve">
+    <value>調査プロジェクトは、1以上のものを選択する必要があります。</value>
+  </data>
+  <data name="Msg_ErrReq" xml:space="preserve">
+    <value>必須項目は、選択しています。</value>
+  </data>
+  <data name="Msg_ErrSDate" xml:space="preserve">
+    <value>開始日を入力してください。</value>
+  </data>
+  <data name="Msg_ErrSEDate" xml:space="preserve">
+    <value>開始日と一日の終わりを入力してください。</value>
+  </data>
+  <data name="Msg_ErrSupDept" xml:space="preserve">
+    <value>担当部署を入力してください。</value>
+  </data>
+  <data name="Msg_ErrTitle" xml:space="preserve">
+    <value>タイトルを入力してください。</value>
+  </data>
+  <data name="Msg_Fail" xml:space="preserve">
+    <value>処理エラーが発生しました。</value>
+  </data>
+  <data name="Msg_Sel" xml:space="preserve">
+    <value>アイテムを選択してください。</value>
+  </data>
+  <data name="Msg_Success" xml:space="preserve">
+    <value>処理されています。</value>
+  </data>
+  <data name="Msg_Unit" xml:space="preserve">
+    <value>質問を選択してください。</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容がありません。</value>
+  </data>
+  <data name="NotUse" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Opened" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>客観式</value>
+  </data>
+  <data name="OptionNon" xml:space="preserve">
+    <value>主観的</value>
+  </data>
+  <data name="Point" xml:space="preserve">
+    <value>ポイント</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>個人的な</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>質問する</value>
+  </data>
+  <data name="ReqItem" xml:space="preserve">
+    <value>必須項目</value>
+  </data>
+  <data name="ReqItemNon" xml:space="preserve">
+    <value>必須</value>
+  </data>
+  <data name="Signed" xml:space="preserve">
+    <value>匿名の</value>
+  </data>
+  <data name="TitBig" xml:space="preserve">
+    <value>拡大する</value>
+  </data>
+  <data name="TitClose" xml:space="preserve">
+    <value>アンケートを終了しました</value>
+  </data>
+  <data name="TitDay" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="TitEDate" xml:space="preserve">
+    <value>一日の終わり</value>
+  </data>
+  <data name="TitF1" xml:space="preserve">
+    <value>アンケートトピック</value>
+  </data>
+  <data name="TitF10" xml:space="preserve">
+    <value>管理者</value>
+  </data>
+  <data name="TitF11" xml:space="preserve">
+    <value>細部</value>
+  </data>
+  <data name="TitF12" xml:space="preserve">
+    <value>Q＆Aコンテンツ</value>
+  </data>
+  <data name="TitF13" xml:space="preserve">
+    <value>ファイル一覧</value>
+  </data>
+  <data name="TitF14" xml:space="preserve">
+    <value>質問の順序変更</value>
+  </data>
+  <data name="TitF15" xml:space="preserve">
+    <value>*登録されたプロジェクトには、項目の順序を変更します。</value>
+  </data>
+  <data name="TitF16" xml:space="preserve">
+    <value>アンケート結果</value>
+  </data>
+  <data name="TitF17" xml:space="preserve">
+    <value>短い回答</value>
+  </data>
+  <data name="TitF18" xml:space="preserve">
+    <value>のみ：アンケート中に修正することができます。</value>
+  </data>
+  <data name="TitF19" xml:space="preserve">
+    <value>添付ファイルを追加するには</value>
+  </data>
+  <data name="TitF2" xml:space="preserve">
+    <value>時のアンケート</value>
+  </data>
+  <data name="TitF20" xml:space="preserve">
+    <value>アンケート&gt;</value>
+  </data>
+  <data name="TitF21" xml:space="preserve">
+    <value>添付ファイルを追加</value>
+  </data>
+  <data name="TitF22" xml:space="preserve">
+    <value>重要なのは、言った</value>
+  </data>
+  <data name="TitF23" xml:space="preserve">
+    <value>リストには参加しなかった&gt;</value>
+  </data>
+  <data name="TitF24" xml:space="preserve">
+    <value>参加リスト&gt;</value>
+  </data>
+  <data name="TitF25" xml:space="preserve">
+    <value>アンケートの詳細</value>
+  </data>
+  <data name="TitF26" xml:space="preserve">
+    <value>投票するアンケート</value>
+  </data>
+  <data name="TitF3" xml:space="preserve">
+    <value>所轄官庁</value>
+  </data>
+  <data name="TitF4" xml:space="preserve">
+    <value>オプション事項</value>
+  </data>
+  <data name="TitF5" xml:space="preserve">
+    <value>アンケートリストビューの選択、上端。</value>
+  </data>
+  <data name="TitF6" xml:space="preserve">
+    <value>、投稿機能の使用を選択しました。</value>
+  </data>
+  <data name="TitF7" xml:space="preserve">
+    <value>結果を表示するかを選択します。</value>
+  </data>
+  <data name="TitF8" xml:space="preserve">
+    <value>参加者のリストを表示するかを選択します。</value>
+  </data>
+  <data name="TitF9" xml:space="preserve">
+    <value>オブジェクト</value>
+  </data>
+  <data name="TitGetDept" xml:space="preserve">
+    <value>部門を選択</value>
+  </data>
+  <data name="TitGetUD" xml:space="preserve">
+    <value>ユーザ/部門は選ぶ</value>
+  </data>
+  <data name="TitInfo" xml:space="preserve">
+    <value>アンケート情報</value>
+  </data>
+  <data name="TitIng" xml:space="preserve">
+    <value>アンケート&gt;</value>
+  </data>
+  <data name="TitIsMain" xml:space="preserve">
+    <value>主に指定</value>
+  </data>
+  <data name="TitIsOpen" xml:space="preserve">
+    <value>オープン結果</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>調査</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>プロジェクト管理</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>例管理のための</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>管理さんの質問</value>
+  </data>
+  <data name="TitMonth" xml:space="preserve">
+    <value>1ヶ月</value>
+  </data>
+  <data name="TitNoReq" xml:space="preserve">
+    <value>非本質的な</value>
+  </data>
+  <data name="TitQuesAdd" xml:space="preserve">
+    <value>とアンケート管理&gt;追加の質問&gt;</value>
+  </data>
+  <data name="TitQuesList" xml:space="preserve">
+    <value>アンケート管理&gt;</value>
+  </data>
+  <data name="TitQuesMod" xml:space="preserve">
+    <value>アンケート管理アンケートは変更&gt;</value>
+  </data>
+  <data name="TitQuesResult" xml:space="preserve">
+    <value>アンケート管理&gt;アンケートの状況&gt;</value>
+  </data>
+  <data name="TitQuesView" xml:space="preserve">
+    <value>アンケート管理&gt;アンケート&gt;</value>
+  </data>
+  <data name="TitReply" xml:space="preserve">
+    <value>返信を使う</value>
+  </data>
+  <data name="TitReq" xml:space="preserve">
+    <value>不可欠</value>
+  </data>
+  <data name="TitSDate" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="TitSubM1" xml:space="preserve">
+    <value>（アンケートで）</value>
+  </data>
+  <data name="TitSubM2" xml:space="preserve">
+    <value>（成熟度アンケート）</value>
+  </data>
+  <data name="TitTitle" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="TitTotal" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="TitUnitAddF1" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="TitUnitAddF2" xml:space="preserve">
+    <value>プロジェクト情報</value>
+  </data>
+  <data name="TitUnitAddF3" xml:space="preserve">
+    <value>必要かどうか</value>
+  </data>
+  <data name="TitUnitAddF4" xml:space="preserve">
+    <value>アクティブにするかどうか</value>
+  </data>
+  <data name="TitUnitAddF5" xml:space="preserve">
+    <value>プロジェクトの配置</value>
+  </data>
+  <data name="TitUnitAddSub1" xml:space="preserve">
+    <value>最大メートルタイピングを入力してください。</value>
+  </data>
+  <data name="TitUnitAddSub10" xml:space="preserve">
+    <value>*登録の質問はアンケートだけに適用できます。 BR /そのような例の登録リストの使用など&gt;登録の質問は、非常に便利でしょう。</value>
+  </data>
+  <data name="TitUnitAddSub11" xml:space="preserve">
+    <value>アイテムファイルを追加</value>
+  </data>
+  <data name="TitUnitAddSub12" xml:space="preserve">
+    <value>プロジェクトのタイトルを入力してください。</value>
+  </data>
+  <data name="TitUnitAddSub13" xml:space="preserve">
+    <value>プロジェクトファイルを削除する</value>
+  </data>
+  <data name="TitUnitAddSub14" xml:space="preserve">
+    <value>[画像を見る]</value>
+  </data>
+  <data name="TitUnitAddSub2" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="TitUnitAddSub3" xml:space="preserve">
+    <value>プロジェクト入力</value>
+  </data>
+  <data name="TitUnitAddSub4" xml:space="preserve">
+    <value>*プロジェクトファイル、画像の大きさを満たすためにサイズ（150×150ピクセル）およびタイプ（GIF、JPG、PNG）。</value>
+  </data>
+  <data name="TitUnitAddSub5" xml:space="preserve">
+    <value>プロジェクトファイルを表示</value>
+  </data>
+  <data name="TitUnitAddSub6" xml:space="preserve">
+    <value>項目を削除します</value>
+  </data>
+  <data name="TitUnitAddSub7" xml:space="preserve">
+    <value>項目の追加</value>
+  </data>
+  <data name="TitUnitAddSub8" xml:space="preserve">
+    <value>必要な項目必須項目を選択してください。</value>
+  </data>
+  <data name="TitUnitAddSub9" xml:space="preserve">
+    <value>*質問管理で再利用することができexamplesディレクトリを作成します。</value>
+  </data>
+  <data name="TitUnitList" xml:space="preserve">
+    <value>アンケート&gt;プロジェクトマネジメント&gt;</value>
+  </data>
+  <data name="TitUnitListSub1" xml:space="preserve">
+    <value>管理質問&gt;</value>
+  </data>
+  <data name="TitUnitListSub2" xml:space="preserve">
+    <value>インスタンス管理用&gt;</value>
+  </data>
+  <data name="TitUnitSeq" xml:space="preserve">
+    <value>アイテムの変更の順​​序</value>
+  </data>
+  <data name="TitUnitSeqSub" xml:space="preserve">
+    <value>*登録されたプロジェクトでは、項目の順序を変更する。</value>
+  </data>
+  <data name="TitVoteUser" xml:space="preserve">
+    <value>国民の反応の人々</value>
+  </data>
+  <data name="TitWeek" xml:space="preserve">
+    <value>1週間</value>
+  </data>
+  <data name="Tit_Count" xml:space="preserve">
+    <value>参加者数</value>
+  </data>
+  <data name="Tit_CountTot" xml:space="preserve">
+    <value>参加者の総数</value>
+  </data>
+  <data name="Tit_Person" xml:space="preserve">
+    <value>人</value>
+  </data>
+  <data name="Unit_Active" xml:space="preserve">
+    <value>アクティベーション</value>
+  </data>
+  <data name="Unit_ActiveNon" xml:space="preserve">
+    <value>無効にする</value>
+  </data>
+  <data name="Unit_Horizon" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="Unit_PointA" xml:space="preserve">
+    <value>シングルスコア</value>
+  </data>
+  <data name="Unit_PointB" xml:space="preserve">
+    <value>複数のスコア</value>
+  </data>
+  <data name="Unit_SelectA" xml:space="preserve">
+    <value>単一選択</value>
+  </data>
+  <data name="Unit_SelectB" xml:space="preserve">
+    <value>複数の選択肢</value>
+  </data>
+  <data name="Unit_TypeA" xml:space="preserve">
+    <value>単一選択型</value>
+  </data>
+  <data name="Unit_TypeB" xml:space="preserve">
+    <value>複数選択タイプ</value>
+  </data>
+  <data name="Unit_TypeC" xml:space="preserve">
+    <value>シングルスコアタイプ</value>
+  </data>
+  <data name="Unit_TypeD" xml:space="preserve">
+    <value>複数のスコアリングタイプ</value>
+  </data>
+  <data name="Unit_TypeE" xml:space="preserve">
+    <value>主観的</value>
+  </data>
+  <data name="Unit_Vertical" xml:space="preserve">
+    <value>垂直</value>
+  </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>匿名の</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="WriteShortReply" xml:space="preserve">
+    <value>短い返信テキストを書き込む</value>
+  </data>
+  <data name="BtnSubmit" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>タイトル、添付ファイル名</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>検索キーワードを入力</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>관리</value>
+  </data>
+  <data name="Secret" xml:space="preserve">
+    <value>匿名使用</value>
+  </data>
+  <data name="TitSecret" xml:space="preserve">
+    <value>オンにすると、ユーザーと管理者の両方が参加者を検索できなくなります</value>
+  </data>
+  <data name="VoteUser" xml:space="preserve">
+    <value>オープン参加者</value>
+  </data>
+</root>

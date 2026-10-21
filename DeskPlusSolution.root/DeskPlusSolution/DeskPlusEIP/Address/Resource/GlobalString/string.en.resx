@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAdress" xml:space="preserve">
+    <value>Add address</value>
+  </data>
+  <data name="AddDetail" xml:space="preserve">
+    <value>Add detail</value>
+  </data>
+  <data name="AddGroup" xml:space="preserve">
+    <value>Add group</value>
+  </data>
+  <data name="AddPersonal" xml:space="preserve">
+    <value>Add personal</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressList" xml:space="preserve">
+    <value>Address book</value>
+  </data>
+  <data name="AddressManage" xml:space="preserve">
+    <value>Address book setting</value>
+  </data>
+  <data name="AddressTree" xml:space="preserve">
+    <value>Address book tree</value>
+  </data>
+  <data name="AddSimple" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddSimpleAddress" xml:space="preserve">
+    <value>Add easy address</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AfterProcessingError" xml:space="preserve">
+    <value>Error ocurred! ask admin.</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="AttachFile" xml:space="preserve">
+    <value>Attach files</value>
+  </data>
+  <data name="Basics" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="Beeper" xml:space="preserve">
+    <value>Pager</value>
+  </data>
+  <data name="BirthDay" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>(Concurrently)</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="CellPhoneEx" xml:space="preserve">
+    <value>Mobile(010-0000-0000)</value>
+  </data>
+  <data name="CellPhoneFormat" xml:space="preserve">
+    <value>You can only enter numbers and +, - in your mobile number</value>
+  </data>
+  <data name="ChangeCategoryOrder" xml:space="preserve">
+    <value>Group order changed.</value>
+  </data>
+  <data name="ChangeFolder" xml:space="preserve">
+    <value>Change group</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City / Country / District</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CommonAddress" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="CommonAddressFolderAdd" xml:space="preserve">
+    <value>Add common address book group</value>
+  </data>
+  <data name="CommonAddressFolderMod" xml:space="preserve">
+    <value>Edit common address book group</value>
+  </data>
+  <data name="CommonFolderManage" xml:space="preserve">
+    <value>Manage common group</value>
+  </data>
+  <data name="CommonManage" xml:space="preserve">
+    <value>Manage common address book</value>
+  </data>
+  <data name="CommonSimpleInfo" xml:space="preserve">
+    <value>Common address book simple information</value>
+  </data>
+  <data name="CommunityInfo" xml:space="preserve">
+    <value>Community Information</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="CompanyTel" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Successfully done</value>
+  </data>
+  <data name="CompleteAddressSend" xml:space="preserve">
+    <value>Successfully done</value>
+  </data>
+  <data name="CompleteDeleteAddress" xml:space="preserve">
+    <value>Successfully deleted</value>
+  </data>
+  <data name="CompleteFolderMoved" xml:space="preserve">
+    <value>Successfully moved</value>
+  </data>
+  <data name="CompleteSelectCopyAddress" xml:space="preserve">
+    <value>Successfully done. check the group you copied.</value>
+  </data>
+  <data name="CompleteSelectMoveAddress" xml:space="preserve">
+    <value>Successfully done. check the group you moved.</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CopyAddress" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CopyAdressList" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country / City / State</value>
+  </data>
+  <data name="DaumCsv" xml:space="preserve">
+    <value>DAUM Address Book (. Csv)</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>The group and addresses will be deleted. Confirm delete??</value>
+  </data>
+  <data name="DeleteSubFolder" xml:space="preserve">
+    <value>Delete sub-group first</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="DeptName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="Duty" xml:space="preserve">
+    <value>Duty</value>
+  </data>
+  <data name="DutyAddress" xml:space="preserve">
+    <value>Duty address book</value>
+  </data>
+  <data name="E-Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailEx" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EnglishFolderName" xml:space="preserve">
+    <value>English name</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>English name</value>
+  </data>
+  <data name="ExceptRepetition" xml:space="preserve">
+    <value>Except overlap</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ExportAdress" xml:space="preserve">
+    <value>Export address book</value>
+  </data>
+  <data name="ExportCommand1" xml:space="preserve">
+    <value>You can export CSV files that can be imported from Outlook, Express, GOOGLE, NAVER, DAUM.</value>
+  </data>
+  <data name="ExportCommand2" xml:space="preserve">
+    <value>The export will be in the order of "name, mobile phone, email, company number, house number, company name" in the personal address book.</value>
+  </data>
+  <data name="ExpressCsv" xml:space="preserve">
+    <value>EXPRESS Address(.csv)</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>Family name</value>
+  </data>
+  <data name="Favorite" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="FavoriteAddressFolderAdd" xml:space="preserve">
+    <value>Add favorite group</value>
+  </data>
+  <data name="FavoriteAddressFolderMod" xml:space="preserve">
+    <value>Edit favorite group</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Woman</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FolderFavorite" xml:space="preserve">
+    <value>Group favorites</value>
+  </data>
+  <data name="FolderManage" xml:space="preserve">
+    <value>Ordering</value>
+  </data>
+  <data name="FolderMove" xml:space="preserve">
+    <value>Change parant group</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Group name</value>
+  </data>
+  <data name="FolderOrderDesc" xml:space="preserve">
+    <value>To change the group order, drag up and down with the mouse and select the Apply button.</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="ForwardAddress" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="GetAddress" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="GetAddressFile" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="GetGoogleMail" xml:space="preserve">
+    <value>Get Google Contacts</value>
+  </data>
+  <data name="GetOutLooK" xml:space="preserve">
+    <value>Import external contacts</value>
+  </data>
+  <data name="GoList" xml:space="preserve">
+    <value>Move to the list</value>
+  </data>
+  <data name="GoogleCsv" xml:space="preserve">
+    <value>Google address book(.csv)</value>
+  </data>
+  <data name="GoPageStep3" xml:space="preserve">
+    <value>Move to save page</value>
+  </data>
+  <data name="GoPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="GroupConfirm" xml:space="preserve">
+    <value>Confirm group</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="HomeAddress" xml:space="preserve">
+    <value>Home address</value>
+  </data>
+  <data name="HomeZipCode" xml:space="preserve">
+    <value>Home zip code</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Bookmark</value>
+  </data>
+  <data name="ImportantDel" xml:space="preserve">
+    <value>To be removed from the important list?</value>
+  </data>
+  <data name="InGoogleStep1_Descript1" xml:space="preserve">
+    <value>The contact information in the external mail can be added to the address book.</value>
+  </data>
+  <data name="InGoogleStep1_Descript2" xml:space="preserve">
+    <value>We do not store your login information or send it to anyone without your permission.</value>
+  </data>
+  <data name="InGoogleStep2_Descript1" xml:space="preserve">
+    <value>You can import contacts from external mail and add them to your address book.</value>
+  </data>
+  <data name="InGoogleStep2_Descript2" xml:space="preserve">
+    <value>We do not store your login information or send it to anyone without your permission.</value>
+  </data>
+  <data name="InGoogleStep3_Descript1" xml:space="preserve">
+    <value>Saved Google Contacts</value>
+  </data>
+  <data name="InGoogleStep3_Descript2" xml:space="preserve">
+    <value>You can check it in the address book you received.</value>
+  </data>
+  <data name="InOutStep1_Descript1" xml:space="preserve">
+    <value>You can import CSV (Comma Separated Values) files that you export from your phone or your own excel file and add them to your address book.</value>
+  </data>
+  <data name="InOutStep1_Descript2" xml:space="preserve">
+    <value>If you want to download Hanmail Address Book as an Outlook, Express CSV or Excel file</value>
+  </data>
+  <data name="InOutStep1_Descript3" xml:space="preserve">
+    <value>use ~.</value>
+  </data>
+  <data name="InOutStep1_Descript4" xml:space="preserve">
+    <value>※ If the file contains more than 1000 addresses, please slow down and divide the file by 1000.</value>
+  </data>
+  <data name="InOutStep2_Descript1" xml:space="preserve">
+    <value>The address was imported.</value>
+  </data>
+  <data name="InOutStep3_Descript1" xml:space="preserve">
+    <value>Saved external mail address book is</value>
+  </data>
+  <data name="InOutStep3_Descript2" xml:space="preserve">
+    <value>You can check it in the address book you received.</value>
+  </data>
+  <data name="InputEmail" xml:space="preserve">
+    <value>Enter your e-mail</value>
+  </data>
+  <data name="InputFamilyName" xml:space="preserve">
+    <value>Enter your last name</value>
+  </data>
+  <data name="InputFitstName" xml:space="preserve">
+    <value>Enter your first name</value>
+  </data>
+  <data name="InputFolderName" xml:space="preserve">
+    <value>Enter group name</value>
+  </data>
+  <data name="InputGoogleMail" xml:space="preserve">
+    <value>Enter your google mail</value>
+  </data>
+  <data name="InputGooglePW" xml:space="preserve">
+    <value>Enter your google password</value>
+  </data>
+  <data name="InternationalName" xml:space="preserve">
+    <value>Multilingual name</value>
+  </data>
+  <data name="IPTelePhone" xml:space="preserve">
+    <value>IP Phone</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>These special characters are restricted because they are used for security exploits</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ListCount" xml:space="preserve">
+    <value>Default List Count</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>01 Load</value>
+  </data>
+  <data name="Lunar" xml:space="preserve">
+    <value>lunar</value>
+  </data>
+  <data name="LunarGubun" xml:space="preserve">
+    <value>Solar/Lunar</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Middle name (optional)</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile (picture)</value>
+  </data>
+  <data name="MobilePhone" xml:space="preserve">
+    <value>Mobile Phone</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="MoveAddress" xml:space="preserve">
+    <value>Move address book</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NaverCsv" xml:space="preserve">
+    <value>NAVER Address Book (. Csv)</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NoCSV" xml:space="preserve">
+    <value>Select and import a CSV file</value>
+  </data>
+  <data name="NoMailFormat" xml:space="preserve">
+    <value>No email format</value>
+  </data>
+  <data name="NotCorrectEmailFormat" xml:space="preserve">
+    <value>Enter a valid e-mail</value>
+  </data>
+  <data name="NotEmailFormat" xml:space="preserve">
+    <value>Invalid e-mail</value>
+  </data>
+  <data name="NotUserSelect" xml:space="preserve">
+    <value>No selected users</value>
+  </data>
+  <data name="ObjectFolder" xml:space="preserve">
+    <value>Target group</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>Office</value>
+  </data>
+  <data name="OutAddress" xml:space="preserve">
+    <value>External linkage</value>
+  </data>
+  <data name="OutlookCsv" xml:space="preserve">
+    <value>OUTLOOK address book(.csv)</value>
+  </data>
+  <data name="ParentFolderName" xml:space="preserve">
+    <value>Parent group name</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="PlaceholderMenu" xml:space="preserve">
+    <value>Subject, attached file name</value>
+  </data>
+  <data name="PlaceholderText" xml:space="preserve">
+    <value>Enter search terms</value>
+  </data>
+  <data name="PresentFolder" xml:space="preserve">
+    <value>Current group</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintFormat" xml:space="preserve">
+    <value>Print format</value>
+  </data>
+  <data name="PrintItems" xml:space="preserve">
+    <value>Print items</value>
+  </data>
+  <data name="PrintItemSelect" xml:space="preserve">
+    <value>Select print items(field name can be changed)</value>
+  </data>
+  <data name="PrivateAddress" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="PrivateAddressFolderAdd" xml:space="preserve">
+    <value>Add a personal group</value>
+  </data>
+  <data name="PrivateAddressFolderMod" xml:space="preserve">
+    <value>Edit a personal group</value>
+  </data>
+  <data name="PrivateSimpleInfo" xml:space="preserve">
+    <value>Personal address book simple information</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>Error ocurred! Please ask admin</value>
+  </data>
+  <data name="PWD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RcvUserConfirm" xml:space="preserve">
+    <value>Check recipient</value>
+  </data>
+  <data name="ReallyDel" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="Repetition" xml:space="preserve">
+    <value>Overlap</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>03 Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SelectAddressList" xml:space="preserve">
+    <value>Address book list</value>
+  </data>
+  <data name="SelectBringAddressFile" xml:space="preserve">
+    <value>Select address book file</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Select a group</value>
+  </data>
+  <data name="SelectCopyAddress" xml:space="preserve">
+    <value>Select an address book to copy.</value>
+  </data>
+  <data name="SelectDeleteAddress" xml:space="preserve">
+    <value>Select an address book to delete.</value>
+  </data>
+  <data name="SelectedAddressAddMove" xml:space="preserve">
+    <value>Select a group to add and move for the selected address book(Only personal address book and forwarded address book are available)</value>
+  </data>
+  <data name="SelectedUser" xml:space="preserve">
+    <value>Selected user</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Select favorites group or folder creation</value>
+  </data>
+  <data name="SelectMoveAddress" xml:space="preserve">
+    <value>Select address book to move</value>
+  </data>
+  <data name="SelectOutLookFormat" xml:space="preserve">
+    <value>Select external mail forma</value>
+  </data>
+  <data name="SelectPintUser" xml:space="preserve">
+    <value>Select list</value>
+  </data>
+  <data name="SelectPrintItems" xml:space="preserve">
+    <value>Select Print item</value>
+  </data>
+  <data name="SelectSaveAddress" xml:space="preserve">
+    <value>Select address to save</value>
+  </data>
+  <data name="SelectSendAddress" xml:space="preserve">
+    <value>Select address book to forward</value>
+  </data>
+  <data name="SelectSendAddressUser" xml:space="preserve">
+    <value>Select user to forward address</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>Select user</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendAddress" xml:space="preserve">
+    <value>Send addresses</value>
+  </data>
+  <data name="SentList" xml:space="preserve">
+    <value>Sending list</value>
+  </data>
+  <data name="SettingEnvironment" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="Solar" xml:space="preserve">
+    <value>Solar</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="SubFolder" xml:space="preserve">
+    <value>Sub group</value>
+  </data>
+  <data name="TargetBCC" xml:space="preserve">
+    <value>BCC</value>
+  </data>
+  <data name="TargetCC" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="TargetTo" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="TelePhone" xml:space="preserve">
+    <value>TelePhone</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="TitleAddress" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>The total</value>
+  </data>
+  <data name="Unuse" xml:space="preserve">
+    <value>Unused</value>
+  </data>
+  <data name="UpLoadLimitedSize" xml:space="preserve">
+    <value>Upload capacity limit</value>
+  </data>
+  <data name="UploadPicture" xml:space="preserve">
+    <value>Photo Upload(52*52)</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="UseActiveX" xml:space="preserve">
+    <value>Using ActiveX</value>
+  </data>
+  <data name="UsePreview" xml:space="preserve">
+    <value>02 Preview</value>
+  </data>
+  <data name="WebPage" xml:space="preserve">
+    <value>Web page</value>
+  </data>
+  <data name="Whole" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>Enter your name</value>
+  </data>
+  <data name="XmlOptionMsg" xml:space="preserve">
+    <value>Adding groups is available from the child group in the common address book.</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="DetailAddress" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Org chart</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="TooltiplistType1" xml:space="preserve">
+    <value>List type</value>
+  </data>
+  <data name="TooltiplistType2" xml:space="preserve">
+    <value>Blog type</value>
+  </data>
+</root>

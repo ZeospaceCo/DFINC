@@ -1,0 +1,35 @@
+﻿<table cellspacing="0" class="table_typeA"> 
+    <colgroup>
+        <col width="150px" />
+        <col width="*" />
+        <col width="110px" />
+        <col width="110px" />
+        <col width="100px" />
+    </colgroup>
+    <tr>        
+        <th class="center" id="r_companyname"></th>
+        <th class="center" id="r_ownername"></th>
+        <th class="center" id="r_phone"></th>
+        <th class="center" id="r_fax"></th>        
+        <th class="center" id="r_active"></th>
+    </tr>
+    {#foreach $T as AccountList}
+    <tr>        
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.CompanyName }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.InstitutorName }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.Phone }</a></td>
+        <td class="center"><a href="#" onclick="javascript:List.Mod('{ $T.AccountList.CompanyID }')" style="cursor:pointer" >{ $T.AccountList.Fax }</a></td>                
+        <td class="center">
+            {#if $T.AccountList.ActiveCompany == '1'}
+            <span class="activeYes"></span>
+            {#else}
+            <span class="activeNo"></span>
+            {#/if}
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="5" class="center">&nbsp;</td>        
+    </tr>
+    {#/for}        
+ </table>

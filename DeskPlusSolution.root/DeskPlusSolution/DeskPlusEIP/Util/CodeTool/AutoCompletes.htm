@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>jQuery UI Autocomplete: Using Label-Value Pairs</title>
+	<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet">
+	<script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.js"></script>
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.common.js?v=50"></script>    
+    <script type="text/javascript" src="/DeskPlusEIP/Html/Js/jQuery/jquery.ui.all.js"></script>
+
+    <style>
+		.fixed-height {
+			padding: 1px;
+			max-height: 200px;
+			overflow: auto;
+		}
+		.ui-autocomplete .highlight {
+			text-decoration: underline;
+		}
+
+	</style>
+
+</head>
+<body>
+	<p>Default Behavior<br>
+		<input id="autocomplete1" type="text" placeholder="U.S. state name" name="code"></p>
+	<p>Modified Behavior<br>
+		<input id="autocomplete2" type="text" placeholder="U.S. state name">
+		<input id="autocomplete2-value" type="text" name="code"></p>
+	<script>
+	    /*
+	    * jQuery UI Autocomplete: Using Label-Value Pairs
+	    * http://salman-w.blogspot.com/2013/12/jquery-ui-autocomplete-examples.html
+	    */
+	    var data = [
+			{ value: "AL", label: "Alabama" },
+			{ value: "AK", label: "Alaska" },
+			{ value: "AZ", label: "Arizona" },
+			{ value: "AR", label: "Arkansas" },
+			{ value: "CA", label: "California" },
+			{ value: "CO", label: "Colorado" },
+			{ value: "CT", label: "Connecticut" },
+			{ value: "DE", label: "Delaware" },
+			{ value: "FL", label: "Florida" },
+			{ value: "GA", label: "Georgia" },
+			{ value: "HI", label: "Hawaii" },
+			{ value: "ID", label: "Idaho" },
+			{ value: "IL", label: "Illinois" },
+			{ value: "IN", label: "Indiana" },
+			{ value: "IA", label: "Iowa" },
+			{ value: "KS", label: "Kansas" },
+			{ value: "KY", label: "Kentucky" },
+			{ value: "LA", label: "Louisiana" },
+			{ value: "ME", label: "Maine" },
+			{ value: "MD", label: "Maryland" },
+			{ value: "MA", label: "Massachusetts" },
+			{ value: "MI", label: "Michigan" },
+			{ value: "MN", label: "Minnesota" },
+			{ value: "MS", label: "Mississippi" },
+			{ value: "MO", label: "Missouri" },
+			{ value: "MT", label: "Montana" },
+			{ value: "NE", label: "Nebraska" },
+			{ value: "NV", label: "Nevada" },
+			{ value: "NH", label: "New Hampshire" },
+			{ value: "NJ", label: "New Jersey" },
+			{ value: "NM", label: "New Mexico" },
+			{ value: "NY", label: "New York" },
+			{ value: "NC", label: "North Carolina" },
+			{ value: "ND", label: "North Dakota" },
+			{ value: "1", label: "김길동1" },
+			{ value: "2", label: "김길동2" },
+			{ value: "3", label: "김길동3" },
+			{ value: "4", label: "김길동4" },
+			{ value: "5", label: "김길동5" },
+			{ value: "6", label: "김길동6" },
+			{ value: "7", label: "김길동7" },
+			{ value: "8", label: "김길동8" },
+			{ value: "9", label: "김길동9" },
+			{ value: "10", label: "김길동10" },
+			{ value: "11", label: "김길동11" },
+			{ value: "12", label: "김길동12" },
+			{ value: "13", label: "김길동13" },
+			{ value: "14", label: "김기순14" },
+			{ value: "15", label: "김영희15" },
+			{ value: "16", label: "김홍석16" }
+		];
+			$(function () {
+			    $("#autocomplete1").autocomplete({
+			        source: data
+			    });
+
+			    $("#autocomplete2").autocomplete({
+			        source: data,
+			        focus: function (event, ui) {
+			            // prevent autocomplete from updating the textbox
+			            event.preventDefault();
+			            // manually update the textbox
+			            $(this).val(ui.item.label);
+			        },
+			        select: function (event, ui) {
+			            // prevent autocomplete from updating the textbox
+			            event.preventDefault();
+			            // manually update the textbox and hidden field
+			            $(this).val(ui.item.label);
+			            $("#autocomplete2-value").val(ui.item.value);
+			        }
+			    }).autocomplete("widget").addClass("fixed-height");
+			});
+	</script>
+</body>
+</html>

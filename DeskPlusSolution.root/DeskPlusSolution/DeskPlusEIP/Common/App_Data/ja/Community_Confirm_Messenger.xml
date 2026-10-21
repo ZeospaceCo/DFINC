@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] コミュニティ開設の承認</Title>
+	<ContentHTML>
+		[コミュニティ開設の承認]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティについて : $Content$
+	</ContentHTML>
+</ContentInfo>

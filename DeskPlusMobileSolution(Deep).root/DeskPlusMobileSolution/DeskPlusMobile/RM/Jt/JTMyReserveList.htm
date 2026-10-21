@@ -1,0 +1,23 @@
+﻿{#foreach $T as List}
+    <li class="contentblock">
+        <div class="title linkDiv" onclick="javascript:List.view('{ $T.List.ReservationID }')">
+            <a class="mct">
+                {$T.List.Title}
+                <br />
+                <span class="lif">{$T.List.ReserveDate}</span>
+                <br />
+                <span class="lif">{$T.List.Subject} {$T.List.ReplyCount}</span>
+                <br />
+                <font class="tListS">[{$T.List.UsableStr}]</font>
+                <br />
+                &nbsp;
+            </a>
+        </div>
+    </li>
+{#else}
+    <li class="contentblock">
+        <div class="title">
+            <a href="#" class="mct"><span id="NoListData" class="lif" />&nbsp;</a>
+        </div>
+    </li>
+{#/for}

@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GetFormTreeScript.aspx.cs" Inherits="Zeospace.DeskPlus.Approval.Web.Common.FormFlow.GetFormTreeScript" %>
+<% Response.ContentType = "text/xml"; %>

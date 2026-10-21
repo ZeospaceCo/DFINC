@@ -1,0 +1,51 @@
+﻿<table class="table_typeT">
+    <caption>
+        탭추가
+    </caption>
+    <colgroup>
+        <col width="50px" />
+        <col width="200px" />
+        <col width="200px" />
+        <col />
+        <col width="80px" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="center" id="r_taborder"></th>
+            <th class="center" id="r_tabName"></th>
+            <th class="center" id="r_portletname"></th>
+            <th class="center" id="r_urlinfo"></th>
+            <th class="center" id="r_tabDel"></th>
+        </tr>
+    </thead>
+    <tbody>
+    {#foreach $T as List}
+    <tr>
+        <td class="center">
+            { $T.List.TabOrder }
+        </td>
+        <td class="center">                        
+            <a onclick="ModTab.ModTab('{ $T.List.PortletTabID }')">{ $T.List.NameBase }</a>
+            <a onclick="ModTab.ModTabName('{ $T.List.PortletTabID }','{ $T.List.NameKo },{ $T.List.NameEn },{ $T.List.NameJa },{ $T.List.NameFr },{ $T.List.NameZhcn },{ $T.List.NameZhtw }')">
+            <img class="IconAdd" alt="" />
+            </a>
+        </td>
+        <td class="center">
+            { $T.List.PortletNameBase }
+        </td>
+        <td class="center">
+            { $T.List.UIURL }
+        </td>
+        <td class="center">
+            <a onclick="ModTab.DelTab('{ $T.List.PortletTabID }')" style="display:inline-block;" class="btn"><span class="btn_del"></span></a>
+        </td>
+    </tr>
+    {#else}
+    <tr>
+        <td class="center" colspan="5">
+            <span class="NoListData" />
+        </td>
+    </tr>
+    {#/for}
+    </tbody>
+</table>

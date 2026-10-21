@@ -1,0 +1,31 @@
+﻿<table class="table_typeA">
+<caption>문서번호 리스트</caption>
+<colgroup>
+    <col />
+    <col />
+    <col width="60px" />
+    <col width="70px" />    
+</colgroup>
+<thead>
+    <tr>
+        <th class="center"><span>문서번호</span></th>
+        <th class="center"><span>제목</span></th>    
+        <th class="left"><span>상신자</span></th>
+        <th class="center"><span>상신일</span></th>
+    </tr>
+</thead>
+<tbody>
+    {#foreach $T as WorkList}
+    <tr>                
+        <td class="left"><a href="#" onclick="javascript:WorkList.Choice('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" onDblClick="javascript:WorkList.ChoiceClose('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" style="cursor:pointer">{ $T.WorkList.DocNumber }</a></td>
+        <td class="left"><a href="#" onclick="javascript:WorkList.Choice('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" onDblClick="javascript:WorkList.ChoiceClose('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" style="cursor:pointer">{ $T.WorkList.Subject }</a></td>
+        <td class="left"><a href="#" onclick="javascript:WorkList.Choice('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" onDblClick="javascript:WorkList.ChoiceClose('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" style="cursor:pointer">{ $T.WorkList.NameBase }</a></td>
+        <td class="left"><a href="#" onclick="javascript:WorkList.Choice('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" onDblClick="javascript:WorkList.ChoiceClose('{ $T.WorkList.DocNumber }','{ $T.WorkList.WorkID }','{ $T.WorkList.Subject }','{ $T.WorkList.NameBase }', '{ $T.WorkList.WriteTime }')" style="cursor:pointer">{ $T.WorkList.WriteTime }</a></td>        
+    </tr>
+    {#else}
+    <tr>
+        <td colspan="4" class="center"><span id="NoListData" /></td>        
+    </tr>
+    {#/for}
+</tbody>
+</table>

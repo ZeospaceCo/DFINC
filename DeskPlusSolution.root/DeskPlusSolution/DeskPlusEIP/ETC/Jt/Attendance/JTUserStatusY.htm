@@ -1,0 +1,92 @@
+﻿<table class="table_typeC"> 
+<colgroup>
+    <col width="" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+    <col width="100px" />
+</colgroup>
+<tr>    
+    <th id="r_attendance_Userinformation" class="center" colspan="2" ></th>    
+    <th id="r_gubun" class="center" rowspan="2"></th>
+    <th id="r_attendance_year" class="center" colspan="4"></th>
+</tr>
+<tr>    
+    <th id="r_attendance_Department" class="center" ></th>    
+    <th id="r_attendance_user" class="center" ></th>        
+    <th id="r_attendance_Today" class="center" ></th>
+    <th id="r_attendance_Start" class="center" ></th>
+    <th id="r_attendance_Tardy" class="center" ></th>
+    <th id="r_attendance_End" class="center" ></th>    
+</tr>
+{#foreach $T as AdminStatus}
+<tr>
+    <td class="center" rowspan="6">{ $T.AdminStatus.DeptName }</td>    
+    <td class="center" rowspan="6">{ $T.AdminStatus.UserName }</td>    
+</tr>  
+<tr>
+    <td class="center" ><span class="r_holi_Days" /></td>
+    <td class="center" >{ $T.AdminStatus.YTodayCount }</td>
+    <td class="center" >
+        {#if $T.AdminStatus.YWSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.YWSTimeCount }</FONT></b>
+        {#else}
+            { $T.AdminStatus.YWSTimeCount }
+        {#/if}   
+	</td>
+    <td class="center" >
+        {#if $T.AdminStatus.YWSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.YWSTimeCountLate }</FONT></b>
+        {#else}
+            { $T.AdminStatus.YWSTimeCountLate }
+        {#/if}      
+    </td>
+    <td class="center" >{ $T.AdminStatus.YWCTimeCount }</td>  
+<tr>
+    <td class="center" ><span class="r_attendance_percent" /></td>
+    <td class="center" ></td>
+    <td class="center" >
+        {#if $T.AdminStatus.YWSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.YWSTimePer } %</FONT></b>
+        {#else}
+            { $T.AdminStatus.YWSTimePer } %
+        {#/if}       
+    </td>
+    <td class="center" >
+        {#if $T.AdminStatus.YWSTimeCountLate != "0"}
+            <b><FONT COLOR="red">{ $T.AdminStatus.YWSTimePerLate } %</FONT></b>
+        {#else}
+            { $T.AdminStatus.YWSTimePerLate } %
+        {#/if}         
+    </td>
+    <td class="center" >{ $T.AdminStatus.YWCTimePer } %</td>
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_min" /></td> 
+    <td class="center" >{ $T.AdminStatus.YTodayMIN }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeMIN }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeMINLate }</td> 
+    <td class="center" >{ $T.AdminStatus.YWCTimeMIN }</td> 
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_max" /></td> 
+    <td class="center" >{ $T.AdminStatus.YTodayMAX }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeMAX }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeMAXLate }</td> 
+    <td class="center" >{ $T.AdminStatus.YWCTimeMAX }</td> 
+</tr>  
+<tr>
+    <td class="center" ><span class="r_attendance_avg" /></td> 
+    <td class="center" >{ $T.AdminStatus.YTodayAVG }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeAVG }</td> 
+    <td class="center" >{ $T.AdminStatus.YWSTimeAVGLate }</td> 
+    <td class="center" >{ $T.AdminStatus.YWCTimeAVG }</td> 
+</tr>  
+{#else}
+<tr>
+    <td colspan="7" class="center"><span class="NoListData" /></td>        
+</tr>
+{#/for}
+</table>

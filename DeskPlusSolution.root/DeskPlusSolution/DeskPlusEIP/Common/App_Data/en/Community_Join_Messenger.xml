@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+  <Title>[$Title$] Subscription request($Name$)</Title>
+	<ContentHTML>
+		[Subscription request]
+		&lt;br&gt;&lt;br&gt;
+		- Community Name : $Title$
+		&lt;br&gt;&lt;br&gt;
+		- Applicant : $Name$
+		&lt;br&gt;&lt;br&gt;
+		- About Me : $Content$
+	</ContentHTML>
+</ContentInfo>

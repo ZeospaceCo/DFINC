@@ -1,0 +1,7 @@
+﻿<ul>
+{#foreach $T as List} 
+    <li><!--img class="IconBullet" alt=""/-->&nbsp;{ $T.List.Title }</li>
+{#else}
+    <li class="noitem"><span class="jtOpinionItemNoData"></span></li>
+{#/for}
+</ul>

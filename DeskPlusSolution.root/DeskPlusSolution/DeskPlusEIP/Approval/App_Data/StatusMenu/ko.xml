@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+    <Item ID="Report" Text="상신한문서" ParentID="" Value="/DeskPlusEIP/Approval/Status/ListReport.aspx"></Item>
+    <Item ID="Related" Text="관계있는문서" ParentID="" Value="DeskPlusEIP/Approval/Status/ListRelated.aspx"></Item>
+    <Item ID="Target" Text="결재대상문서" ParentID="" Value="/DeskPlusEIP/Approval/Status/Approve/List.aspx"></Item>
+    <Item ID="Receive" Text="담당자결재문서" ParentID="" Value="/DeskPlusEIP/Approval/Status/Receice/List.aspx"></Item>
+    <Item ID="Afterward" Text="후열문서" ParentID="" Value="/DeskPlusEIP/Approval/Status/Afterward/List.aspx"></Item>
+    <Item ID="Approve" Text="결재대상문서" ParentID="Target" Value="/DeskPlusEIP/Approval/Status/Approve/List.aspx"></Item>
+    <!--Item ID="Batch" Text="일괄결재대상문서" ParentID="Target" Value="/DeskPlusEIP/Approval/Status/Batch/List.aspx"></Item-->
+    <Item ID="Delay" Text="보류문서"  ParentID="Target" Value="/DeskPlusEIP/Approval/Status/Approve/List.aspx"></Item>
+    <Item ID="ReceiceApprove" Text="수신" ParentID="Receive" Value="/DeskPlusEIP/Approval/Status/Receice/List.aspx"></Item>
+    <Item ID="ReceiceRelegate" Text="이관" ParentID="Receive" Value="/DeskPlusEIP/Approval/Status/Receice/List.aspx"></Item>
+    <!--Item ID="ReceiceZR" Text="재결" ParentID="Receive" Value="/DeskPlusEIP/Approval/Status/Receice/List.aspx"></Item-->
+    <Item ID="ReceiceReject" Text="반려" ParentID="Receive" Value="/DeskPlusEIP/Approval/Status/Approve/List.aspx"></Item>
+    <!--Item ID="ReceiceDeptZPZQ" Text="부서수신함" ParentID="Receive" Value="/DeskPlusEIP/Approval/Status/Receice/List.aspx"></Item-->
+</MenuData>

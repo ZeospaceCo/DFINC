@@ -1,0 +1,2118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
+    <value>접수하기</value>
+  </data>
+  <data name="AccessRight" xml:space="preserve">
+    <value>허용된 모바일앱에서만 접근가능합니다</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="AddMail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="AddOpinion" xml:space="preserve">
+    <value>의견추가</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+  <data name="AddressStr" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+  <data name="AddShortReply" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="Alarm1" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="Alarm2" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="AlarmSetting" xml:space="preserve">
+    <value>알림설정</value>
+  </data>
+  <data name="AlarmTime" xml:space="preserve">
+    <value>알림주기</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="AllReply" xml:space="preserve">
+    <value>全員に返信</value>
+  </data>
+  <data name="AllSelect" xml:space="preserve">
+    <value>すべてを選択</value>
+  </data>
+  <data name="AlreadyComment" xml:space="preserve">
+    <value>それはすでにコメントされています。</value>
+  </data>
+  <data name="Anonymity" xml:space="preserve">
+    <value>익명</value>
+  </data>
+  <data name="AppDownload" xml:space="preserve">
+    <value>アプリをダウンロード</value>
+  </data>
+  <data name="AppPRO" xml:space="preserve">
+    <value>대결</value>
+  </data>
+  <data name="AppREL" xml:space="preserve">
+    <value>관계</value>
+  </data>
+  <data name="Approval" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="ApprovalA" xml:space="preserve">
+    <value>公判前に承認</value>
+  </data>
+  <data name="ApprovalBase" xml:space="preserve">
+    <value>완결결재</value>
+  </data>
+  <data name="ApprovalFolder" xml:space="preserve">
+    <value>완결결재문서함</value>
+  </data>
+  <data name="ApprovalH" xml:space="preserve">
+    <value>契約書の承認</value>
+  </data>
+  <data name="ApprovalHR" xml:space="preserve">
+    <value>プロトコルを吟味することはできません</value>
+  </data>
+  <data name="ApprovalInfo" xml:space="preserve">
+    <value>承認情報</value>
+  </data>
+  <data name="ApprovalO" xml:space="preserve">
+    <value>コメントを追加します</value>
+  </data>
+  <data name="ApprovalReturn" xml:space="preserve">
+    <value>還付の承認</value>
+  </data>
+  <data name="ApprovalS" xml:space="preserve">
+    <value>承認は、承認された</value>
+  </data>
+  <data name="ApprovalSC" xml:space="preserve">
+    <value>承認が取り消さ</value>
+  </data>
+  <data name="ApprovalStatus" xml:space="preserve">
+    <value>承認ステータスビュー</value>
+  </data>
+  <data name="ApprovalStaus" xml:space="preserve">
+    <value>결재현황</value>
+  </data>
+  <data name="ApprovalTitle" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="ApprovalWait" xml:space="preserve">
+    <value>承認/コメント。後で再利用してからもう一度確認してください。</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>承認する</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Permissionオブジェクトファイル</value>
+  </data>
+  <data name="ApprovedExt" xml:space="preserve">
+    <value>文書の承認に</value>
+  </data>
+  <data name="ApproveSC" xml:space="preserve">
+    <value>承認が取り消さ</value>
+  </data>
+  <data name="ApproveUser" xml:space="preserve">
+    <value>承認者</value>
+  </data>
+  <data name="AprAPP" xml:space="preserve">
+    <value>결재</value>
+  </data>
+  <data name="AprREP" xml:space="preserve">
+    <value>상신</value>
+  </data>
+  <data name="Arbitrary" xml:space="preserve">
+    <value>公判前</value>
+  </data>
+  <data name="ArbitraryBase" xml:space="preserve">
+    <value>전결</value>
+  </data>
+  <data name="ArbitraryFolder" xml:space="preserve">
+    <value>전결문서함</value>
+  </data>
+  <data name="AskAdmin" xml:space="preserve">
+    <value>管理者に連絡してください</value>
+  </data>
+  <data name="Attach" xml:space="preserve">
+    <value>アタッチメント</value>
+  </data>
+  <data name="AttachView" xml:space="preserve">
+    <value>添付ファイルを表示</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>勤怠管理</value>
+  </data>
+  <data name="Attendance_Beforework" xml:space="preserve">
+    <value>出勤前</value>
+  </data>
+  <data name="Attendance_Day" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Attendance_Early" xml:space="preserve">
+    <value>早退</value>
+  </data>
+  <data name="Attendance_EarlyCancelConfirm" xml:space="preserve">
+    <value>キャンセルしますか？</value>
+  </data>
+  <data name="Attendance_EarlyConfirm" xml:space="preserve">
+    <value>退勤処理しますか？</value>
+  </data>
+  <data name="Attendance_EarlyRe" xml:space="preserve">
+    <value>退勤処理しますか？\n処理時現在の時刻に再保存されます。</value>
+  </data>
+  <data name="Attendance_EarlyTime" xml:space="preserve">
+    <value>早期出発スケジュール</value>
+  </data>
+  <data name="Attendance_EarlyTimeMsg" xml:space="preserve">
+    <value>出発予定時刻を選択してください</value>
+  </data>
+  <data name="Attendance_GotoWork" xml:space="preserve">
+    <value>出勤</value>
+  </data>
+  <data name="Attendance_GotoWorkRe" xml:space="preserve">
+    <value>本当に仕事に行きたいですか?\n処理は現在の時間に戻ります。</value>
+  </data>
+  <data name="Attendance_Month" xml:space="preserve">
+    <value>月に</value>
+  </data>
+  <data name="Attendance_NotGotoWork" xml:space="preserve">
+    <value>出勤状態がありません。</value>
+  </data>
+  <data name="Attendance_OffWork" xml:space="preserve">
+    <value>退勤</value>
+  </data>
+  <data name="Attendance_OffWorkConfirm" xml:space="preserve">
+    <value>退勤処理しますか？</value>
+  </data>
+  <data name="Attendance_OffWorkRe" xml:space="preserve">
+    <value>退勤処理しますか？\n処理時現在の時刻に再保存されます。</value>
+  </data>
+  <data name="Attendance_Onduty" xml:space="preserve">
+    <value>勤務中</value>
+  </data>
+  <data name="Attendance_Reason" xml:space="preserve">
+    <value>あなたを入力してください。</value>
+  </data>
+  <data name="Attendance_Year" xml:space="preserve">
+    <value>年度</value>
+  </data>
+  <data name="AuthFail" xml:space="preserve">
+    <value>あなたが許可を持っていない、管理者にお問い合わせください。</value>
+  </data>
+  <data name="AuthMore" xml:space="preserve">
+    <value>이상</value>
+  </data>
+  <data name="AuthWait" xml:space="preserve">
+    <value>認識を接続するために待機してい</value>
+  </data>
+  <data name="BaseApp" xml:space="preserve">
+    <value>결재근거</value>
+  </data>
+  <data name="BaseDoc" xml:space="preserve">
+    <value>文書に基づい</value>
+  </data>
+  <data name="BaseDocView" xml:space="preserve">
+    <value>文書に基づく表示</value>
+  </data>
+  <data name="BaseTask" xml:space="preserve">
+    <value>업무근거</value>
+  </data>
+  <data name="BeforeDay" xml:space="preserve">
+    <value>前日</value>
+  </data>
+  <data name="BeforeDoc" xml:space="preserve">
+    <value>前のテキスト</value>
+  </data>
+  <data name="BeforeMonth" xml:space="preserve">
+    <value>1月前</value>
+  </data>
+  <data name="BeforePage" xml:space="preserve">
+    <value>이전페이지</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="BoardView" xml:space="preserve">
+    <value>アナウンステキストを参照してください</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>굵게</value>
+  </data>
+  <data name="BtnTaskStatus5" xml:space="preserve">
+    <value>재검토요청</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CancelApp" xml:space="preserve">
+    <value>送信を取り消す</value>
+  </data>
+  <data name="CancelApprovalCheck" xml:space="preserve">
+    <value>既に承認が保留中であるか、または次の承認が既に署名されている</value>
+  </data>
+  <data name="CancelDelayApp" xml:space="preserve">
+    <value>予約を提出持ち上げる</value>
+  </data>
+  <data name="CarboncopyBase" xml:space="preserve">
+    <value>참조</value>
+  </data>
+  <data name="CarboncopyFolder" xml:space="preserve">
+    <value>참조문서함</value>
+  </data>
+  <data name="CarbonView" xml:space="preserve">
+    <value>참조열람</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>スケジュールの分類</value>
+  </data>
+  <data name="Cc" xml:space="preserve">
+    <value>참조자</value>
+  </data>
+  <data name="CellPhone" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="CellPhoneSms" xml:space="preserve">
+    <value>휴대폰문자</value>
+  </data>
+  <data name="ChangeCC" xml:space="preserve">
+    <value>참조자변경</value>
+  </data>
+  <data name="ChangeDate" xml:space="preserve">
+    <value>날짜변경</value>
+  </data>
+  <data name="ChangeSave" xml:space="preserve">
+    <value>변경저장</value>
+  </data>
+  <data name="ChangeTO" xml:space="preserve">
+    <value>수신자변경</value>
+  </data>
+  <data name="CheckDownLoad" xml:space="preserve">
+    <value>外部ダウンロードなし</value>
+  </data>
+  <data name="CheckFileType" xml:space="preserve">
+    <value>파일은 등록할 수 없습니다.</value>
+  </data>
+  <data name="CirRecv" xml:space="preserve">
+    <value>받은회람함</value>
+  </data>
+  <data name="CirSend" xml:space="preserve">
+    <value>보낸회람함</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ComfirmAuth" xml:space="preserve">
+    <value>あなたのログイン名またはパスワードを確認してください。</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="CommentAdd" xml:space="preserve">
+    <value>投稿の登録</value>
+  </data>
+  <data name="CommentView" xml:space="preserve">
+    <value>投稿を表示</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>公共</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="CommunityJoin" xml:space="preserve">
+    <value>コミュニティに参加</value>
+  </data>
+  <data name="CommunityMenu" xml:space="preserve">
+    <value>コミュニティメニュー</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="CompCancel" xml:space="preserve">
+    <value>완료취소</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>処理された</value>
+  </data>
+  <data name="CompleteRequestDate" xml:space="preserve">
+    <value>완료요청일</value>
+  </data>
+  <data name="Config" xml:space="preserve">
+    <value>環境設定</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>合意</value>
+  </data>
+  <data name="ConfirmAppInfo" xml:space="preserve">
+    <value>承認情報の確認</value>
+  </data>
+  <data name="ConfirmCancle" xml:space="preserve">
+    <value>결재취소 하시겠습니까?</value>
+  </data>
+  <data name="ConfirmMail" xml:space="preserve">
+    <value>체크한 내역이 초기화됩니다.\n 메일쓰기창으로 이동하시겠습니까?</value>
+  </data>
+  <data name="ConfirmZR" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="ContactList" xml:space="preserve">
+    <value>連絡</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="Coop" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="CoopComplete" xml:space="preserve">
+    <value>완료하기</value>
+  </data>
+  <data name="CoopStatus1" xml:space="preserve">
+    <value>대기</value>
+  </data>
+  <data name="CoopStatus2" xml:space="preserve">
+    <value>접수</value>
+  </data>
+  <data name="CoopStatus3" xml:space="preserve">
+    <value>처리중</value>
+  </data>
+  <data name="CoopStatus4" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="CoopStatus5" xml:space="preserve">
+    <value>반려</value>
+  </data>
+  <data name="CReply" xml:space="preserve">
+    <value>返信する</value>
+  </data>
+  <data name="CStatus0" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="CStatus1" xml:space="preserve">
+    <value>대기</value>
+  </data>
+  <data name="CStatus2" xml:space="preserve">
+    <value>진행</value>
+  </data>
+  <data name="CStatus4" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="CStatus5" xml:space="preserve">
+    <value>반려</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="Decommendation" xml:space="preserve">
+    <value>非推奨をしますか？</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DelAlert" xml:space="preserve">
+    <value>実際の削除ファイルは削除されます。</value>
+  </data>
+  <data name="DelAlert2" xml:space="preserve">
+    <value>ファイルに応じて、実際のリストで削除は、削除されます。</value>
+  </data>
+  <data name="Delay" xml:space="preserve">
+    <value>지연된 업무(요청,수신)</value>
+  </data>
+  <data name="DelCoop" xml:space="preserve">
+    <value>해당 협업이 삭제되었습니다.</value>
+  </data>
+  <data name="DeleteAuthority" xml:space="preserve">
+    <value>本人が登録したファイルのみを削除できます。</value>
+  </data>
+  <data name="Delivery" xml:space="preserve">
+    <value>伝える</value>
+  </data>
+  <data name="DelList" xml:space="preserve">
+    <value>削除しますか？</value>
+  </data>
+  <data name="DelNoFile" xml:space="preserve">
+    <value>ファイルを削除したくなかった</value>
+  </data>
+  <data name="DelNoMail" xml:space="preserve">
+    <value>メールを削除したくなかった</value>
+  </data>
+  <data name="DelPerson" xml:space="preserve">
+    <value>대행자지우기</value>
+  </data>
+  <data name="DelReply" xml:space="preserve">
+    <value>このコメントは削除されました</value>
+  </data>
+  <data name="Dept" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="DeptInfo" xml:space="preserve">
+    <value>セクター情報</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>난이도</value>
+  </data>
+  <data name="Difficulty1" xml:space="preserve">
+    <value>상</value>
+  </data>
+  <data name="Difficulty2" xml:space="preserve">
+    <value>중</value>
+  </data>
+  <data name="Difficulty3" xml:space="preserve">
+    <value>하</value>
+  </data>
+  <data name="DocAdd" xml:space="preserve">
+    <value>ドキュメント提出</value>
+  </data>
+  <data name="DocEditAdd" xml:space="preserve">
+    <value>改訂および再提出</value>
+  </data>
+  <data name="DocFolder" xml:space="preserve">
+    <value>문서함</value>
+  </data>
+  <data name="DocView" xml:space="preserve">
+    <value>ファイルを表示する</value>
+  </data>
+  <data name="DownloadAuthority" xml:space="preserve">
+    <value>ファイルをダウンロードする権限がありません</value>
+  </data>
+  <data name="DraftFolder" xml:space="preserve">
+    <value>모바일임시보관함</value>
+  </data>
+  <data name="DraftMail" xml:space="preserve">
+    <value>임시보관함</value>
+  </data>
+  <data name="DraftSend" xml:space="preserve">
+    <value>메일발송</value>
+  </data>
+  <data name="EarlySucceed" xml:space="preserve">
+    <value>조퇴 처리되었습니다.</value>
+  </data>
+  <data name="EarlyTime" xml:space="preserve">
+    <value>조퇴시간</value>
+  </data>
+  <data name="EditDoc" xml:space="preserve">
+    <value>ボディ/承認ライン変更</value>
+  </data>
+  <data name="EditNReport" xml:space="preserve">
+    <value>改訂および再提出</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>緊急</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>종료(예정)일</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラーが発生しました</value>
+  </data>
+  <data name="ErrorDraftMail" xml:space="preserve">
+    <value>メッセージを保存するときに一時的なエラーが発生しました</value>
+  </data>
+  <data name="ETC3" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="ETCUser" xml:space="preserve">
+    <value>답변자</value>
+  </data>
+  <data name="Existing" xml:space="preserve">
+    <value>기존</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>1차</value>
+  </data>
+  <data name="Form3" xml:space="preserve">
+    <value>ファイルの種類</value>
+  </data>
+  <data name="FormFolder" xml:space="preserve">
+    <value>결재양식함</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>전달받은협업</value>
+  </data>
+  <data name="ForwardBase" xml:space="preserve">
+    <value>전달</value>
+  </data>
+  <data name="ForwardFolder" xml:space="preserve">
+    <value>전달문서함</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="GoDirect" xml:space="preserve">
+    <value>ショートカット</value>
+  </data>
+  <data name="GotoSucceed" xml:space="preserve">
+    <value>출근 처리되었습니다.</value>
+  </data>
+  <data name="GotoTime" xml:space="preserve">
+    <value>출근시간</value>
+  </data>
+  <data name="Gubun" xml:space="preserve">
+    <value>区別する</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>변경이력</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="InChar" xml:space="preserve">
+    <value>ワード以下</value>
+  </data>
+  <data name="InputAdd" xml:space="preserve">
+    <value>이름,메일,부서,전화번호</value>
+  </data>
+  <data name="InputApp" xml:space="preserve">
+    <value>제목,상신자</value>
+  </data>
+  <data name="InputBoa" xml:space="preserve">
+    <value>제목,말머리,등록자</value>
+  </data>
+  <data name="InputCom" xml:space="preserve">
+    <value>제목,등록자</value>
+  </data>
+  <data name="InputComment" xml:space="preserve">
+    <value>コメントを入力してください</value>
+  </data>
+  <data name="InputCont" xml:space="preserve">
+    <value>내용을 입력해주세요</value>
+  </data>
+  <data name="InputContent" xml:space="preserve">
+    <value>글을 입력해 주세요</value>
+  </data>
+  <data name="InputCount" xml:space="preserve">
+    <value>140ワード以下の内容を入力してください</value>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>日付時刻を入力してください</value>
+  </data>
+  <data name="InputLoginID" xml:space="preserve">
+    <value>あなたのユーザー名を入力してください</value>
+  </data>
+  <data name="InputMail" xml:space="preserve">
+    <value>제목,보낸이,받는이</value>
+  </data>
+  <data name="InputOpinion" xml:space="preserve">
+    <value>コメントを入力してください</value>
+  </data>
+  <data name="InputPassWord" xml:space="preserve">
+    <value>パスワード入力</value>
+  </data>
+  <data name="InputPwd" xml:space="preserve">
+    <value>パスワードを入力してください</value>
+  </data>
+  <data name="InputReceiver" xml:space="preserve">
+    <value>受信者を入力してください</value>
+  </data>
+  <data name="InputReceiverMail" xml:space="preserve">
+    <value>正しく受信者のEメールアドレスを入力してください</value>
+  </data>
+  <data name="InputRefer2Mail" xml:space="preserve">
+    <value>正しい入力秘密リファレンス-mailアドレスをください</value>
+  </data>
+  <data name="InputReferMail" xml:space="preserve">
+    <value>正しい入力基準人メールアドレスをください</value>
+  </data>
+  <data name="InputRM" xml:space="preserve">
+    <value>제목,자원명,예약자</value>
+  </data>
+  <data name="InputSubject" xml:space="preserve">
+    <value>タイトルを入力してください</value>
+  </data>
+  <data name="InputTask" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="InsertReply" xml:space="preserve">
+    <value>支柱に</value>
+  </data>
+  <data name="IsActiveTitN" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="IsActiveTitY" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="IsClose" xml:space="preserve">
+    <value>보안수준</value>
+  </data>
+  <data name="IsClose1" xml:space="preserve">
+    <value>공개</value>
+  </data>
+  <data name="IsClose2" xml:space="preserve">
+    <value>비공개</value>
+  </data>
+  <data name="IsGubun1" xml:space="preserve">
+    <value>협조업무</value>
+  </data>
+  <data name="IsGubun2" xml:space="preserve">
+    <value>지시업무</value>
+  </data>
+  <data name="ItemGubun" xml:space="preserve">
+    <value>분류</value>
+  </data>
+  <data name="LaterOn" xml:space="preserve">
+    <value>後で処理</value>
+  </data>
+  <data name="LaterOnItem1" xml:space="preserve">
+    <value>休暇</value>
+  </data>
+  <data name="LaterOnItem2" xml:space="preserve">
+    <value>旅行</value>
+  </data>
+  <data name="LaterOnItem3" xml:space="preserve">
+    <value>病気休暇</value>
+  </data>
+  <data name="LaterOnItem4" xml:space="preserve">
+    <value>その他</value>
+  </data>
+  <data name="LaterOnTarget" xml:space="preserve">
+    <value>後で処理するオブジェクト</value>
+  </data>
+  <data name="LimitShortReply" xml:space="preserve">
+    <value>返信は200語以下に制限されています</value>
+  </data>
+  <data name="LimitSpecialCharacter" xml:space="preserve">
+    <value>セキュリティ上の脆弱性が攻撃のための特別なテキストが制限されます。</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>ディレクトリ</value>
+  </data>
+  <data name="ListView" xml:space="preserve">
+    <value>カタログを見る</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="LocationIn" xml:space="preserve">
+    <value>사내</value>
+  </data>
+  <data name="LocationOut" xml:space="preserve">
+    <value>사외</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>ログインしたときにエラーが発生しました</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="LoginType" xml:space="preserve">
+    <value>로그인요청정보</value>
+  </data>
+  <data name="LoginType1" xml:space="preserve">
+    <value>아이디+패스워드</value>
+  </data>
+  <data name="LoginType2" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="LoginType3" xml:space="preserve">
+    <value>자동인증</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>메일</value>
+  </data>
+  <data name="MailError1" xml:space="preserve">
+    <value>동명이인이 있습니다</value>
+  </data>
+  <data name="MailError2" xml:space="preserve">
+    <value>수신자가 없습니다</value>
+  </data>
+  <data name="MailError3" xml:space="preserve">
+    <value>메일형식이 잘못되었습니다</value>
+  </data>
+  <data name="MailError4" xml:space="preserve">
+    <value>메일형식이 잘못되었습니다</value>
+  </data>
+  <data name="MailError5" xml:space="preserve">
+    <value>메일주소가 잘못되었습니다</value>
+  </data>
+  <data name="MailSend" xml:space="preserve">
+    <value>メッセージを書き込む</value>
+  </data>
+  <data name="MailSendStr" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="MailSendUser" xml:space="preserve">
+    <value>そのユーザーは、発送承認が必要なため、モバイル環境でのメール送信をすることができません</value>
+  </data>
+  <data name="MailTitle" xml:space="preserve">
+    <value>メールボックス</value>
+  </data>
+  <data name="MailView" xml:space="preserve">
+    <value>手紙を見る</value>
+  </data>
+  <data name="MaxFile" xml:space="preserve">
+    <value>용량초과</value>
+  </data>
+  <data name="MDM" xml:space="preserve">
+    <value>모바일관리</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー一覧</value>
+  </data>
+  <data name="Menu_Address" xml:space="preserve">
+    <value>アドレス帳</value>
+  </data>
+  <data name="Menu_Approval" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="Menu_Attendance" xml:space="preserve">
+    <value>勤怠管理</value>
+  </data>
+  <data name="Menu_Board" xml:space="preserve">
+    <value>掲示板</value>
+  </data>
+  <data name="Menu_Community" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="Menu_Config" xml:space="preserve">
+    <value>環境設定</value>
+  </data>
+  <data name="Menu_Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Menu_MyTalk" xml:space="preserve">
+    <value>私のスピーチ</value>
+  </data>
+  <data name="Menu_Pims" xml:space="preserve">
+    <value>スケジュール管理</value>
+  </data>
+  <data name="Menu_RM" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="Menu_Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="Menu_WebHard" xml:space="preserve">
+    <value>ネットワークディスクのフォルダ</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="MobileAuth" xml:space="preserve">
+    <value>모바일인증</value>
+  </data>
+  <data name="MobileDesign" xml:space="preserve">
+    <value>모바일 스킨 설정</value>
+  </data>
+  <data name="Mod" xml:space="preserve">
+    <value>修正する</value>
+  </data>
+  <data name="ModComment" xml:space="preserve">
+    <value>コメントを編集</value>
+  </data>
+  <data name="ModfyAppLine" xml:space="preserve">
+    <value>결재정보변경</value>
+  </data>
+  <data name="ModifyDate" xml:space="preserve">
+    <value>신청일자</value>
+  </data>
+  <data name="ModifyEveryone" xml:space="preserve">
+    <value>타인수정</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>もっと</value>
+  </data>
+  <data name="MsgAccept" xml:space="preserve">
+    <value>님께서 업무를 접수 하였습니다.</value>
+  </data>
+  <data name="MsgApp" xml:space="preserve">
+    <value>App에서만 작동</value>
+  </data>
+  <data name="MsgCancel" xml:space="preserve">
+    <value>님께서 업무를 완료취소 하였습니다.</value>
+  </data>
+  <data name="MsgCancelApp" xml:space="preserve">
+    <value>상신취소 하시겠습니까?</value>
+  </data>
+  <data name="MsgCompCancel" xml:space="preserve">
+    <value>'처리진행' 으로 상태 변경됩니다. \n정말로 완료 취소하시겠습니까?</value>
+  </data>
+  <data name="MsgComplete" xml:space="preserve">
+    <value>님께서 업무를 완료 하였습니다.</value>
+  </data>
+  <data name="MsgPerson" xml:space="preserve">
+    <value>업무대행자를 선택해주세요</value>
+  </data>
+  <data name="MsgReject" xml:space="preserve">
+    <value>님께서 업무를 반려 하였습니다.</value>
+  </data>
+  <data name="Msg_AlertEDMCheck" xml:space="preserve">
+    <value>EDMS携帯電話を設定する必要があります</value>
+  </data>
+  <data name="Msg_ConfirmAppLine" xml:space="preserve">
+    <value>결재라인을 확인하세요.</value>
+  </data>
+  <data name="Msg_ConfirmUpdate" xml:space="preserve">
+    <value>あなたはそれを上書きしたいですか？</value>
+  </data>
+  <data name="Msg_ErrBaseDoc" xml:space="preserve">
+    <value>既に文書を格納された文書に基づいています。</value>
+  </data>
+  <data name="Msg_ErrBaseDocList" xml:space="preserve">
+    <value>カタログ文書に追加されました。</value>
+  </data>
+  <data name="Msg_ErrCont" xml:space="preserve">
+    <value>すべてを疑うためのスクリプトは、コンテンツは本体で変更される場合があります。</value>
+  </data>
+  <data name="Msg_ErrLife" xml:space="preserve">
+    <value>保全の長さを指定してください。</value>
+  </data>
+  <data name="Msg_ErrOpinion" xml:space="preserve">
+    <value>200単語から単語の数を入力します。</value>
+  </data>
+  <data name="Msg_ErrorUserBefore" xml:space="preserve">
+    <value>部門（ユーザー）に指定されています。</value>
+  </data>
+  <data name="Msg_ErrorUserInfo" xml:space="preserve">
+    <value>承認者の入力ミス。管理者にお問い合わせください。</value>
+  </data>
+  <data name="Msg_ErrorUserNon" xml:space="preserve">
+    <value>指定されたユーザーは存在しません。</value>
+  </data>
+  <data name="Msg_ErrReCancel" xml:space="preserve">
+    <value>割り当てを解除し、再度選択してください</value>
+  </data>
+  <data name="Msg_ErrSelUnit" xml:space="preserve">
+    <value>指定するには、承認·バーを選択してください。</value>
+  </data>
+  <data name="Msg_FlowErrorSet" xml:space="preserve">
+    <value>状態を指定した承認者は、承認の行を削除することはできません。削除した後、[指定]で承認ラインをキャンセルするには最終的に承認。</value>
+  </data>
+  <data name="Msg_InputDraftName" xml:space="preserve">
+    <value>一時記憶域の名前を入力してください。</value>
+  </data>
+  <data name="Msg_LaterOnSelItem" xml:space="preserve">
+    <value>主題を参照して選択してください。</value>
+  </data>
+  <data name="MSG_Processing" xml:space="preserve">
+    <value>変更したり、承認が進行中です。</value>
+  </data>
+  <data name="MSG_SelDel" xml:space="preserve">
+    <value>削除したいアイテムを選択してください。</value>
+  </data>
+  <data name="Msg_SeqErrZA" xml:space="preserve">
+    <value>指定されたエラーのオーダーの承認。 \ Nの契約が最終承認にはならない。 \ Nの承認の順序を再割り当てします。</value>
+  </data>
+  <data name="Msg_SeqErrZH" xml:space="preserve">
+    <value>指定されたエラーのオーダーの承認。 \ Nの人が最終承認者になることはできませんアシスト。 \ Nの承認の順序を再割り当てします。</value>
+  </data>
+  <data name="Msg_SetLine" xml:space="preserve">
+    <value>承認ラインを指定してください。</value>
+  </data>
+  <data name="MSG_SubDept" xml:space="preserve">
+    <value>下位部門は、それを含めますか？</value>
+  </data>
+  <data name="MyComment" xml:space="preserve">
+    <value>あなたのコメントは推奨/推奨されません。</value>
+  </data>
+  <data name="MyPims" xml:space="preserve">
+    <value>私のスケジュール</value>
+  </data>
+  <data name="MyReserve" xml:space="preserve">
+    <value>나의 예약현황</value>
+  </data>
+  <data name="MyTalk" xml:space="preserve">
+    <value>私のスピーチ</value>
+  </data>
+  <data name="NextDay" xml:space="preserve">
+    <value>翌日</value>
+  </data>
+  <data name="NextDoc" xml:space="preserve">
+    <value>次のテキスト</value>
+  </data>
+  <data name="NextMailMessage" xml:space="preserve">
+    <value>가장 처음 메일입니다.</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>来月</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>다음페이지</value>
+  </data>
+  <data name="NoApprove" xml:space="preserve">
+    <value>未定</value>
+  </data>
+  <data name="NoConfirm" xml:space="preserve">
+    <value>利用できない契約</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>何も内容ない</value>
+  </data>
+  <data name="NoDownload" xml:space="preserve">
+    <value>ファイルをダウンロードすることはできません</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>파일을 선택해 주세요.</value>
+  </data>
+  <data name="NoList" xml:space="preserve">
+    <value>해당 글이 없습니다.</value>
+  </data>
+  <data name="NoLodingCustom" xml:space="preserve">
+    <value>カスタムファイルを読み込むことができません。</value>
+  </data>
+  <data name="NoLodingDoc" xml:space="preserve">
+    <value>ファイルは転送できませんでした</value>
+  </data>
+  <data name="NoMail" xml:space="preserve">
+    <value>メールアドレスをお持ちでない場合</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>権限なし</value>
+  </data>
+  <data name="NoPrivateMail" xml:space="preserve">
+    <value>は、個人ボックスん</value>
+  </data>
+  <data name="NoProxy" xml:space="preserve">
+    <value>裁判なしに代わっていません</value>
+  </data>
+  <data name="NoPwd" xml:space="preserve">
+    <value>パスワードが一致しません</value>
+  </data>
+  <data name="NoReadAuth" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="NoRegID" xml:space="preserve">
+    <value>Google인증정보를 받지 못하여 알림수신불가</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="NoSchedule" xml:space="preserve">
+    <value>いいえ議題ん</value>
+  </data>
+  <data name="NoSelList" xml:space="preserve">
+    <value>선택한 리스트가 없습니다.</value>
+  </data>
+  <data name="NoShare" xml:space="preserve">
+    <value>いいえ共有無人</value>
+  </data>
+  <data name="NoteAlarm" xml:space="preserve">
+    <value>記事を書いた</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>注</value>
+  </data>
+  <data name="NoTodaySchedule" xml:space="preserve">
+    <value>今日のスケジュール</value>
+  </data>
+  <data name="NoTodayToDo" xml:space="preserve">
+    <value>全く仕事ない今日</value>
+  </data>
+  <data name="NoToDo" xml:space="preserve">
+    <value>動作しませんでした</value>
+  </data>
+  <data name="OfficePhone" xml:space="preserve">
+    <value>회사전화</value>
+  </data>
+  <data name="OffWorkSucceed" xml:space="preserve">
+    <value>퇴근 처리되었습니다.</value>
+  </data>
+  <data name="OffWorkTime" xml:space="preserve">
+    <value>퇴근시간</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>ビューの承認</value>
+  </data>
+  <data name="OpinionAdd" xml:space="preserve">
+    <value>コメントを追加します</value>
+  </data>
+  <data name="OptionTop" xml:space="preserve">
+    <value>[通知]</value>
+  </data>
+  <data name="Order1" xml:space="preserve">
+    <value>日付順</value>
+  </data>
+  <data name="Order2" xml:space="preserve">
+    <value>名前で</value>
+  </data>
+  <data name="Order3" xml:space="preserve">
+    <value>カテゴリー別に</value>
+  </data>
+  <data name="Order4" xml:space="preserve">
+    <value>サイズによって</value>
+  </data>
+  <data name="OrganAddtionJob" xml:space="preserve">
+    <value>チーフ</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>オリジナルを表示</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="PC" xml:space="preserve">
+    <value>PC版</value>
+  </data>
+  <data name="Pims" xml:space="preserve">
+    <value>スケジュール管理</value>
+  </data>
+  <data name="PimsAdd" xml:space="preserve">
+    <value>スケジュールを追加</value>
+  </data>
+  <data name="PimsMod" xml:space="preserve">
+    <value>スケジュールを変更する</value>
+  </data>
+  <data name="PimsSetting" xml:space="preserve">
+    <value>スケジュール管理を表示する設定</value>
+  </data>
+  <data name="PimsSetting1" xml:space="preserve">
+    <value>私のスケジュールを参照してください</value>
+  </data>
+  <data name="PimsSetting2" xml:space="preserve">
+    <value>表示個人、部門、共有、本会議の議題</value>
+  </data>
+  <data name="PimsSetting3" xml:space="preserve">
+    <value>個々のスケジュールを見る</value>
+  </data>
+  <data name="PimsSetting4" xml:space="preserve">
+    <value>部門スケジュールを表示</value>
+  </data>
+  <data name="PimsSetting5" xml:space="preserve">
+    <value>共有カレンダーを表示</value>
+  </data>
+  <data name="PimsSetting6" xml:space="preserve">
+    <value>全体のスケジュールを参照してください。</value>
+  </data>
+  <data name="PimsView" xml:space="preserve">
+    <value>スケジュールを表示</value>
+  </data>
+  <data name="PopUpSetting" xml:space="preserve">
+    <value>팝업사용</value>
+  </data>
+  <data name="PrevMailMessage" xml:space="preserve">
+    <value>가장 마지막 메일입니다.</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>重要度</value>
+  </data>
+  <data name="Priority1" xml:space="preserve">
+    <value>上の</value>
+  </data>
+  <data name="Priority2" xml:space="preserve">
+    <value>で</value>
+  </data>
+  <data name="Priority3" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>個人的な</value>
+  </data>
+  <data name="PrivateAppNet" xml:space="preserve">
+    <value>個人的な承認ライン</value>
+  </data>
+  <data name="PrivateBase" xml:space="preserve">
+    <value>개인별</value>
+  </data>
+  <data name="PrivateDraft" xml:space="preserve">
+    <value>一時的に保存され</value>
+  </data>
+  <data name="PrivateDraftName" xml:space="preserve">
+    <value>一時的に保存された名前</value>
+  </data>
+  <data name="PrivateFolder" xml:space="preserve">
+    <value>개인별문서함</value>
+  </data>
+  <data name="PrivateFolderName" xml:space="preserve">
+    <value>個人用フォルダ</value>
+  </data>
+  <data name="PrivateMail" xml:space="preserve">
+    <value>個装箱</value>
+  </data>
+  <data name="ProcessingCustom" xml:space="preserve">
+    <value>カスタムファイル処理が正しくありません</value>
+  </data>
+  <data name="ProcessingError" xml:space="preserve">
+    <value>処理エラーが発生しました</value>
+  </data>
+  <data name="ProcessingWait" xml:space="preserve">
+    <value>進行中。しばらくお待ちください。</value>
+  </data>
+  <data name="Proxy" xml:space="preserve">
+    <value>裁判の代理を見る人</value>
+  </data>
+  <data name="Proxy1" xml:space="preserve">
+    <value>裁判に代わっ</value>
+  </data>
+  <data name="ProxyApproved" xml:space="preserve">
+    <value>オブジェクトファイルの承認を裁判に代わっ</value>
+  </data>
+  <data name="ProxyApprovedExt" xml:space="preserve">
+    <value>私は裁判に代わって、ファイルのリストを承認する</value>
+  </data>
+  <data name="ProxyS" xml:space="preserve">
+    <value>[台湾]</value>
+  </data>
+  <data name="PublicBase" xml:space="preserve">
+    <value>부서별</value>
+  </data>
+  <data name="PublicFolder" xml:space="preserve">
+    <value>부서별문서함</value>
+  </data>
+  <data name="PublicFolders" xml:space="preserve">
+    <value>パブリックフォルダ</value>
+  </data>
+  <data name="QtyZero" xml:space="preserve">
+    <value>何の要求もない</value>
+  </data>
+  <data name="ReadLaterOn" xml:space="preserve">
+    <value>概要後に</value>
+  </data>
+  <data name="ReceiptFolder" xml:space="preserve">
+    <value>수신문서함</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>共同事業に招かれました</value>
+  </data>
+  <data name="ReceiveMail" xml:space="preserve">
+    <value>受信トレイ</value>
+  </data>
+  <data name="Receiver" xml:space="preserve">
+    <value>名宛人</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>최신 업데이트 업무</value>
+  </data>
+  <data name="RecentStr" xml:space="preserve">
+    <value>(요청,수신,참조)</value>
+  </data>
+  <data name="RecomCount" xml:space="preserve">
+    <value>紹介</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>おすすめしました。</value>
+  </data>
+  <data name="Refer" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="Refer1" xml:space="preserve">
+    <value>Cc / Bccを</value>
+  </data>
+  <data name="Refer2" xml:space="preserve">
+    <value>秘密のリファレンス</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>リファレンス</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>登録された</value>
+  </data>
+  <data name="RegisterOptionTop" xml:space="preserve">
+    <value>공지사항 등록</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>반려하시겠습니까?</value>
+  </data>
+  <data name="RejectFolder" xml:space="preserve">
+    <value>반려문서함</value>
+  </data>
+  <data name="RejectStr" xml:space="preserve">
+    <value>거부사유</value>
+  </data>
+  <data name="RejectTitle" xml:space="preserve">
+    <value>거부사유작성</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>関係書類</value>
+  </data>
+  <data name="RelatedExt" xml:space="preserve">
+    <value>本人承認文書ファイル内の承認者として</value>
+  </data>
+  <data name="ReLoadDoc" xml:space="preserve">
+    <value>ファイルの情報が変更されました。 \ Nの審査と承認のために再インポート電子文書</value>
+  </data>
+  <data name="RepeatDel" xml:space="preserve">
+    <value>重複したスケジュールを削除します</value>
+  </data>
+  <data name="RepeatEx1" xml:space="preserve">
+    <value>それでも、他のすべてのスケジュール反復スケジュールを維持する</value>
+  </data>
+  <data name="RepeatEx2" xml:space="preserve">
+    <value>スケジュールとすべてのスケジュール後には削除されます。</value>
+  </data>
+  <data name="RepeatEx3" xml:space="preserve">
+    <value>重複したスケジュールを削除します。</value>
+  </data>
+  <data name="RepeatGubun1" xml:space="preserve">
+    <value>これはのみのスケジュールです</value>
+  </data>
+  <data name="RepeatGubun2" xml:space="preserve">
+    <value>すべてのスケジュールの後</value>
+  </data>
+  <data name="RepeatGubun3" xml:space="preserve">
+    <value>すべてのスケジュール</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>返信</value>
+  </data>
+  <data name="ReplyOpen" xml:space="preserve">
+    <value>公にコメントする</value>
+  </data>
+  <data name="ReplyTitle" xml:space="preserve">
+    <value>답변</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>提出</value>
+  </data>
+  <data name="Reporter" xml:space="preserve">
+    <value>筆者</value>
+  </data>
+  <data name="ReportExt" xml:space="preserve">
+    <value>私は、文書を起草</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>共同事業に招待</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>요청일자</value>
+  </data>
+  <data name="Requester" xml:space="preserve">
+    <value>要求する人</value>
+  </data>
+  <data name="RequestQty" xml:space="preserve">
+    <value>応募件数</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>予約</value>
+  </data>
+  <data name="ReserveDate" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="ReserveResourceView" xml:space="preserve">
+    <value>예약자원보기</value>
+  </data>
+  <data name="ResourceManager" xml:space="preserve">
+    <value>자원관리</value>
+  </data>
+  <data name="ResourcesAdd" xml:space="preserve">
+    <value>資源予約</value>
+  </data>
+  <data name="ResourcesReserve" xml:space="preserve">
+    <value>자원 예약현황</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>復元</value>
+  </data>
+  <data name="RestoreMessage" xml:space="preserve">
+    <value>복원한 메일은 받은메일함으로 이동됩니다.</value>
+  </data>
+  <data name="RestoreNoMail" xml:space="preserve">
+    <value>回復可能なメール</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>戻す</value>
+  </data>
+  <data name="ReturnUser" xml:space="preserve">
+    <value>返されたオブジェクト</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>地球</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save1" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SaveCompany" xml:space="preserve">
+    <value>会社を救う</value>
+  </data>
+  <data name="SaveFile" xml:space="preserve">
+    <value>파일등록</value>
+  </data>
+  <data name="SaveImage" xml:space="preserve">
+    <value>이미지 등록</value>
+  </data>
+  <data name="SaveLogin" xml:space="preserve">
+    <value>ユーザー名を保存する</value>
+  </data>
+  <data name="SaveMail" xml:space="preserve">
+    <value>メッセージが送信されました</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="ScheduleToDo" xml:space="preserve">
+    <value>[スケジュールが反映されます]</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="SearchWord" xml:space="preserve">
+    <value>検索語</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>2차</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>セキュリティー</value>
+  </data>
+  <data name="SecurityMsg" xml:space="preserve">
+    <value>資料は情報提供を著者との創設者によって閲覧することができ</value>
+  </data>
+  <data name="SecurityReservation" xml:space="preserve">
+    <value>보안예약</value>
+  </data>
+  <data name="SecuritySetting" xml:space="preserve">
+    <value>보안설정</value>
+  </data>
+  <data name="SelAll" xml:space="preserve">
+    <value>すべてを選択</value>
+  </data>
+  <data name="SelApprover" xml:space="preserve">
+    <value>承認者を選択してください</value>
+  </data>
+  <data name="SelCntFile" xml:space="preserve">
+    <value>선택된 파일갯수</value>
+  </data>
+  <data name="SelectFile" xml:space="preserve">
+    <value>파일선택</value>
+  </data>
+  <data name="SelectForm" xml:space="preserve">
+    <value>양식선택</value>
+  </data>
+  <data name="SelectHeader" xml:space="preserve">
+    <value>말머리선택</value>
+  </data>
+  <data name="SelectPerson" xml:space="preserve">
+    <value>대상 선택</value>
+  </data>
+  <data name="SelectResource" xml:space="preserve">
+    <value>資源選択</value>
+  </data>
+  <data name="SelectResources" xml:space="preserve">
+    <value>リソースを選択してください</value>
+  </data>
+  <data name="SelectReturnUser" xml:space="preserve">
+    <value>返されたオブジェクトを選択してください</value>
+  </data>
+  <data name="SelFile" xml:space="preserve">
+    <value>선택한 파일명</value>
+  </data>
+  <data name="SelImage" xml:space="preserve">
+    <value>이미지 선택</value>
+  </data>
+  <data name="SelNoAll" xml:space="preserve">
+    <value>すべてのリフト</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="SendDate" xml:space="preserve">
+    <value>送信日</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>送り主</value>
+  </data>
+  <data name="SendFile" xml:space="preserve">
+    <value>ファイルに移した</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+    <value>打ち勝つ</value>
+  </data>
+  <data name="SendNoFile" xml:space="preserve">
+    <value>メールファイルを選択してください</value>
+  </data>
+  <data name="SendUser" xml:space="preserve">
+    <value>전달자</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>セットアップする</value>
+  </data>
+  <data name="SettingApprovePwd" xml:space="preserve">
+    <value>決済専用パスワードを使用する</value>
+  </data>
+  <data name="ShallWeReject" xml:space="preserve">
+    <value>재검토 요청하시겠습니까?</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>シェア</value>
+  </data>
+  <data name="SharedFolder" xml:space="preserve">
+    <value>共有フォルダ</value>
+  </data>
+  <data name="ShareFolder" xml:space="preserve">
+    <value>フォルダを共有している</value>
+  </data>
+  <data name="ShareUser" xml:space="preserve">
+    <value>共有する人々</value>
+  </data>
+  <data name="SignNo" xml:space="preserve">
+    <value>PC版シールに登録する必要が</value>
+  </data>
+  <data name="Sms" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="SNS" xml:space="preserve">
+    <value>사내SNS</value>
+  </data>
+  <data name="SOpenType0" xml:space="preserve">
+    <value>개인일정</value>
+  </data>
+  <data name="SOpenType1" xml:space="preserve">
+    <value>공유일정</value>
+  </data>
+  <data name="SOpenType2" xml:space="preserve">
+    <value>전체일정</value>
+  </data>
+  <data name="SOpenType3" xml:space="preserve">
+    <value>부서일정</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>출처</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>시작(예정)일</value>
+  </data>
+  <data name="StartDateEndDate" xml:space="preserve">
+    <value>開始日は終了日よりも小さい</value>
+  </data>
+  <data name="StartDateEndDiffer" xml:space="preserve">
+    <value>スケジュールが適用され、終了時刻は以前よりか、開始時間と同じにすることはできません</value>
+  </data>
+  <data name="State1" xml:space="preserve">
+    <value>終了試験</value>
+  </data>
+  <data name="State2" xml:space="preserve">
+    <value>リテンション</value>
+  </data>
+  <data name="State3" xml:space="preserve">
+    <value>予約を提出</value>
+  </data>
+  <data name="State4" xml:space="preserve">
+    <value>実施する</value>
+  </data>
+  <data name="State5" xml:space="preserve">
+    <value>戻す</value>
+  </data>
+  <data name="State6" xml:space="preserve">
+    <value>承認待ち</value>
+  </data>
+  <data name="State7" xml:space="preserve">
+    <value>提出（再審）を待つ</value>
+  </data>
+  <data name="State8" xml:space="preserve">
+    <value>保留中の提出（受信）</value>
+  </data>
+  <data name="State_Receive" xml:space="preserve">
+    <value>じゅしん</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>進行速度</value>
+  </data>
+  <data name="Status1" xml:space="preserve">
+    <value>開始していません</value>
+  </data>
+  <data name="Status2" xml:space="preserve">
+    <value>進行中で</value>
+  </data>
+  <data name="Status3" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Status4" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Status5" xml:space="preserve">
+    <value>任命する</value>
+  </data>
+  <data name="Status6" xml:space="preserve">
+    <value>延長</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="SubmitFolder" xml:space="preserve">
+    <value>모바일상신문서함</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="TagDic_BODY" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="TagDic_BODY_etc" xml:space="preserve">
+    <value>入力する</value>
+  </data>
+  <data name="TagDic_COMPANY" xml:space="preserve">
+    <value>会社</value>
+  </data>
+  <data name="TagDic_DATE" xml:space="preserve">
+    <value>起草デー</value>
+  </data>
+  <data name="TagDic_EDITOR" xml:space="preserve">
+    <value>エディタ</value>
+  </data>
+  <data name="TagDic_EMPNUM" xml:space="preserve">
+    <value>ソーシャル号</value>
+  </data>
+  <data name="TagDic_ENFORCEDEPTNAME" xml:space="preserve">
+    <value>ドキュメント受信機部門</value>
+  </data>
+  <data name="TagDic_ENFORCENAME" xml:space="preserve">
+    <value>ドキュメント参照</value>
+  </data>
+  <data name="TagDic_ENFORCERECEIVECARBON" xml:space="preserve">
+    <value>ドキュメント参照</value>
+  </data>
+  <data name="TagDic_FLOWZA" xml:space="preserve">
+    <value>契約グループ</value>
+  </data>
+  <data name="TagDic_FLOWZD" xml:space="preserve">
+    <value>文字グループ</value>
+  </data>
+  <data name="TagDic_FLOWZH" xml:space="preserve">
+    <value>グループを支援</value>
+  </data>
+  <data name="TagDic_FLOWZR" xml:space="preserve">
+    <value>供覧グループ</value>
+  </data>
+  <data name="TagDic_INFO0" xml:space="preserve">
+    <value>承認日</value>
+  </data>
+  <data name="TagDic_INFO1" xml:space="preserve">
+    <value>職名</value>
+  </data>
+  <data name="TagDic_INFO10" xml:space="preserve">
+    <value>責任名</value>
+  </data>
+  <data name="TagDic_INFO11" xml:space="preserve">
+    <value>承認日の名前の責務</value>
+  </data>
+  <data name="TagDic_INFO12" xml:space="preserve">
+    <value>部署名の承認日の機能</value>
+  </data>
+  <data name="TagDic_INFO13" xml:space="preserve">
+    <value>承認の日付時刻の名前</value>
+  </data>
+  <data name="TagDic_INFO14" xml:space="preserve">
+    <value>承認日（月）</value>
+  </data>
+  <data name="TagDic_INFO15" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="TagDic_INFO2" xml:space="preserve">
+    <value>ジョブタイトル承認日</value>
+  </data>
+  <data name="TagDic_INFO3" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="TagDic_INFO4" xml:space="preserve">
+    <value>投稿する</value>
+  </data>
+  <data name="TagDic_INFO5" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="TagDic_INFO6" xml:space="preserve">
+    <value>承認日の名前</value>
+  </data>
+  <data name="TagDic_INFO7" xml:space="preserve">
+    <value>部署職名承認日</value>
+  </data>
+  <data name="TagDic_INFO8" xml:space="preserve">
+    <value>承認の日付時刻</value>
+  </data>
+  <data name="TagDic_INFO9" xml:space="preserve">
+    <value>責任</value>
+  </data>
+  <data name="TagDic_LIFE" xml:space="preserve">
+    <value>保管中に</value>
+  </data>
+  <data name="TagDic_NO" xml:space="preserve">
+    <value>書類番号</value>
+  </data>
+  <data name="TagDic_OPINION" xml:space="preserve">
+    <value>ビューの承認</value>
+  </data>
+  <data name="TagDic_OPINIONVIEW" xml:space="preserve">
+    <value>（承認ビューの追加）</value>
+  </data>
+  <data name="TagDic_Print" xml:space="preserve">
+    <value>印刷する</value>
+  </data>
+  <data name="TagDic_SUBJ" xml:space="preserve">
+    <value>トピック</value>
+  </data>
+  <data name="TagDic_UPDPT" xml:space="preserve">
+    <value>その部署</value>
+  </data>
+  <data name="TagDic_UPJC" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="TagDic_UPNM" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="TagDic_ZA" xml:space="preserve">
+    <value>合意</value>
+  </data>
+  <data name="TagDic_ZC" xml:space="preserve">
+    <value>リファレンス</value>
+  </data>
+  <data name="TagDic_ZD" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="TagDic_ZD0" xml:space="preserve">
+    <value>引き受ける</value>
+  </data>
+  <data name="TagDic_ZD01" xml:space="preserve">
+    <value>引き受ける</value>
+  </data>
+  <data name="TagDic_ZH" xml:space="preserve">
+    <value>助ける</value>
+  </data>
+  <data name="TagDic_ZP" xml:space="preserve">
+    <value>受信機</value>
+  </data>
+  <data name="TagDic_ZP0" xml:space="preserve">
+    <value>再生する受信機</value>
+  </data>
+  <data name="TagDic_ZR" xml:space="preserve">
+    <value>供覧</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>업무협업</value>
+  </data>
+  <data name="TaskAccept" xml:space="preserve">
+    <value>업무를 접수 하였습니다.</value>
+  </data>
+  <data name="TaskCancel" xml:space="preserve">
+    <value>업무를 완료취소 하였습니다.</value>
+  </data>
+  <data name="TaskCompCancel" xml:space="preserve">
+    <value>정말로 완료 취소하시겠습니까?</value>
+  </data>
+  <data name="TaskComplete" xml:space="preserve">
+    <value>업무를 완료 하였습니다.</value>
+  </data>
+  <data name="TaskDE" xml:space="preserve">
+    <value>지연</value>
+  </data>
+  <data name="TaskRC" xml:space="preserve">
+    <value>최신</value>
+  </data>
+  <data name="TaskRE" xml:space="preserve">
+    <value>요청</value>
+  </data>
+  <data name="TaskReject" xml:space="preserve">
+    <value>업무를 재검토 요청하였습니다.</value>
+  </data>
+  <data name="TaskStatus5" xml:space="preserve">
+    <value>재검토</value>
+  </data>
+  <data name="TaskStatus6" xml:space="preserve">
+    <value>지연</value>
+  </data>
+  <data name="TaskStaus" xml:space="preserve">
+    <value>협업현황</value>
+  </data>
+  <data name="TaskTO" xml:space="preserve">
+    <value>수신</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>ウッド</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="TIsClose1" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="TIsClose2" xml:space="preserve">
+    <value>보안</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="TitSub" xml:space="preserve">
+    <value>以下</value>
+  </data>
+  <data name="Tit_Cancel" xml:space="preserve">
+    <value>割り当て解除</value>
+  </data>
+  <data name="Tit_File" xml:space="preserve">
+    <value>区別するファイル</value>
+  </data>
+  <data name="Tit_FlowAdd" xml:space="preserve">
+    <value>承認の行を追加します。</value>
+  </data>
+  <data name="Tit_FlowDel" xml:space="preserve">
+    <value>承認の行を削除</value>
+  </data>
+  <data name="Tit_Life" xml:space="preserve">
+    <value>永遠の</value>
+  </data>
+  <data name="Tit_Life1" xml:space="preserve">
+    <value>1年間</value>
+  </data>
+  <data name="Tit_Life2" xml:space="preserve">
+    <value>2年</value>
+  </data>
+  <data name="Tit_Life3" xml:space="preserve">
+    <value>3年</value>
+  </data>
+  <data name="Tit_Life4" xml:space="preserve">
+    <value>4年</value>
+  </data>
+  <data name="Tit_Life5" xml:space="preserve">
+    <value>5年</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>수신자</value>
+  </data>
+  <data name="ToDo" xml:space="preserve">
+    <value>働く</value>
+  </data>
+  <data name="ToDoMod" xml:space="preserve">
+    <value>改造工事</value>
+  </data>
+  <data name="ToMe" xml:space="preserve">
+    <value>私に</value>
+  </data>
+  <data name="ToMeMail" xml:space="preserve">
+    <value>私の電子メールボックスへ</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>トップ</value>
+  </data>
+  <data name="TOpenType0" xml:space="preserve">
+    <value>개인할일</value>
+  </data>
+  <data name="TOpenType1" xml:space="preserve">
+    <value>공유할일</value>
+  </data>
+  <data name="TOpenType2" xml:space="preserve">
+    <value>전체할일</value>
+  </data>
+  <data name="TOpenType3" xml:space="preserve">
+    <value>부서할일</value>
+  </data>
+  <data name="Trash" xml:space="preserve">
+    <value>ゴミ</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>火災</value>
+  </data>
+  <data name="UploadCount" xml:space="preserve">
+    <value>割り当てられた容量を超過しました。\n使用していないファイルを完全削除し、アップロードしてください。</value>
+  </data>
+  <data name="Usable0" xml:space="preserve">
+    <value>미승인</value>
+  </data>
+  <data name="Usable0Reserve" xml:space="preserve">
+    <value>승인대기</value>
+  </data>
+  <data name="Usable1" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="Usable2" xml:space="preserve">
+    <value>거부</value>
+  </data>
+  <data name="UsableResource" xml:space="preserve">
+    <value>日付は、リソースは予約されました。</value>
+  </data>
+  <data name="ViewAuth" xml:space="preserve">
+    <value>アクセス許可を表示</value>
+  </data>
+  <data name="Viewing" xml:space="preserve">
+    <value>ビュー</value>
+  </data>
+  <data name="ViewMemo" xml:space="preserve">
+    <value>의견보기</value>
+  </data>
+  <data name="ViewToCc" xml:space="preserve">
+    <value>받는사람,참조</value>
+  </data>
+  <data name="WallPost" xml:space="preserve">
+    <value>ウォールテキスト</value>
+  </data>
+  <data name="WebHard" xml:space="preserve">
+    <value>ネットワークディスクのフォルダ</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="WeekOverTime" xml:space="preserve">
+    <value>毎週の残業</value>
+  </data>
+  <data name="WeekOverTimeMsg" xml:space="preserve">
+    <value>（週52時間以内の承認に基づく）</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>업무일지</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>글쓰기</value>
+  </data>
+  <data name="WriteDoc" xml:space="preserve">
+    <value>문서작성</value>
+  </data>
+  <data name="WriteName" xml:space="preserve">
+    <value>작성자</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>合意</value>
+  </data>
+  <data name="ZD" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="ZD0" xml:space="preserve">
+    <value>ドラフト</value>
+  </data>
+  <data name="ZH" xml:space="preserve">
+    <value>助ける</value>
+  </data>
+  <data name="ZR" xml:space="preserve">
+    <value>確認する</value>
+  </data>
+  <data name="SetAlarmTimeUse" xml:space="preserve">
+    <value>알림 수신 시간 설정</value>
+  </data>
+  <data name="BasedOnTime" xml:space="preserve">
+    <value>サーバー時間あたり</value>
+  </data>
+  <data name="AlarmEndTime" xml:space="preserve">
+    <value>종료시간</value>
+  </data>
+  <data name="AlarmStartTime" xml:space="preserve">
+    <value>시작시간</value>
+  </data>
+  <data name="AlarmTimeCheck" xml:space="preserve">
+    <value>알림 수신 시작시간과 종료시간은 다르게 선택해주십시오.</value>
+  </data>
+  <data name="Menu_Notification" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="NotificationBox" xml:space="preserve">
+    <value>通知する</value>
+  </data>
+  <data name="ReadProcessing" xml:space="preserve">
+    <value>既読処理</value>
+  </data>
+  <data name="SaveDate" xml:space="preserve">
+    <value>저장기간 : 7일</value>
+  </data>
+  <data name="DelNoNoti" xml:space="preserve">
+    <value>削除削除通知がありません。</value>
+  </data>
+  <data name="ReadNoNoti" xml:space="preserve">
+    <value>開封処理する通知がありません。</value>
+  </data>
+  <data name="MobileNotiMessege" xml:space="preserve">
+    <value>新しいメールが来ました。</value>
+  </data>
+  <data name="DeptSet" xml:space="preserve">
+    <value>部門によって指定</value>
+  </data>
+  <data name="EmptyContent" xml:space="preserve">
+    <value>해당 내역이 삭제되었습니다.</value>
+  </data>
+  <data name="ChangeDoc" xml:space="preserve">
+    <value>ファイルの情報が変更されました</value>
+  </data>
+  <data name="MsgNotifi" xml:space="preserve">
+    <value>알림함 보기 ON 설정해야지 Push를 설정할 수 있음</value>
+  </data>
+  <data name="NotifiView" xml:space="preserve">
+    <value>알림함 보기</value>
+  </data>
+  <data name="AlarmNotice" xml:space="preserve">
+    <value>공지</value>
+  </data>
+  <data name="AlarmAlert" xml:space="preserve">
+    <value>알람시간을 선택해주세요</value>
+  </data>
+  <data name="BeforeNoti" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="CheckMail" xml:space="preserve">
+    <value>메일형식이 맞지 않습니다.</value>
+  </data>
+  <data name="FiveClock" xml:space="preserve">
+    <value>5시간</value>
+  </data>
+  <data name="FourClock" xml:space="preserve">
+    <value>4시간</value>
+  </data>
+  <data name="OneClock" xml:space="preserve">
+    <value>1시간</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1일</value>
+  </data>
+  <data name="PimAlarm" xml:space="preserve">
+    <value>スケジュールのリマインダ</value>
+  </data>
+  <data name="SimpleMail" xml:space="preserve">
+    <value>구분자( ; ) / 입력 메일주소로 제목과 시간이 발송</value>
+  </data>
+  <data name="SixClock" xml:space="preserve">
+    <value>6시간</value>
+  </data>
+  <data name="ThreeClock" xml:space="preserve">
+    <value>3시간</value>
+  </data>
+  <data name="ThreeDay" xml:space="preserve">
+    <value>3일</value>
+  </data>
+  <data name="TwoClock" xml:space="preserve">
+    <value>2시간</value>
+  </data>
+  <data name="TwoDay" xml:space="preserve">
+    <value>2일</value>
+  </data>
+  <data name="Msg_ErrBaseSameDoc" xml:space="preserve">
+    <value>同じドキュメントは追加できません</value>
+  </data>
+  <data name="FourDay" xml:space="preserve">
+    <value>4日間</value>
+  </data>
+  <data name="FiveDay" xml:space="preserve">
+    <value>5日間</value>
+  </data>
+  <data name="SixDay" xml:space="preserve">
+    <value>6日間</value>
+  </data>
+  <data name="SevenDay" xml:space="preserve">
+    <value>7日間</value>
+  </data>
+</root>

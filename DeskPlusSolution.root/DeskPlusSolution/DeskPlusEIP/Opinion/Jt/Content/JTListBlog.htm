@@ -1,0 +1,56 @@
+﻿<div class="table_typeLtop"><p></p></div>
+
+<div class="table_typeLmiddle">
+    	
+<div class="blog_cont">
+    <ul>
+        
+        {#foreach $T as List}
+        <li {#if $T.List$last == true} class="last-child" {#/if} >
+            <table class="blog_cont_table">
+				<thead>
+            <colgroup>
+                <col width="20px" />
+                <col />
+            </colgroup>
+				</thead>
+            <tbody>
+            <tr>
+                <td>
+                    <p class="fav">
+                        <input type="checkbox" id="chkImpo_{$T.List.QuesID}" 
+                        {#if $T.List.ImpoCnt == 1}checked="checked"{#/if}
+                        onclick="List.ModImpUser('chkImpo_{$T.List.QuesID}', this)" />
+	                    <label for="chkImpo_{$T.List.QuesID}" title="" id="lbImpo_{$T.List.QuesID}" class="{#if $T.List.ImpoCnt == 1}on{#/if}">
+                            <span class="blind"></span>
+                        </label>
+                    </p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" onclick="javascript:List.View('{ $T.List.QuesID }')" style="cursor:pointer" title=""><strong>{ $T.List.Title }</strong></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><h2><span class="txt_point"><strong><span class="jtFLB_F1"></span> :&nbsp;{ $T.List.StartDateStr } ~ { $T.List.EndDateStr }</strong></span></h2></li>
+                        <li><h2><span class="jtFLB_F2"></span> :&nbsp;{ $T.List.IsOpenStr },&nbsp;&nbsp;<span class="jtFLB_F3"></span> :&nbsp;{ $T.List.IsReplyStr },&nbsp;&nbsp;<span class="jtFLB_F4"></span> :&nbsp;{ $T.List.IsVoteUserStr },&nbsp;&nbsp;<span class="jtFLB_F8"></span> :&nbsp;{ $T.List.IsSecretStr } </h2></li>
+                        <li><h2><strong><span class="jtFLB_F5"></span> :</strong></h2></li>
+                    </ul>
+                    <div class="blog_detail" style="margin-left:10px;">{ $T.List.Cont }</div>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="subDate"><span class="jtFLB_F6"></span> : { $T.List.VoteCnt } <span class="jtFLB_F7"></span></span></td>
+            </tr>
+            </tbody>
+            </table>
+        </li>
+        {#else}
+        <li class="last-child"><div class="center"><span class="jtNoData"></span></div></li>
+        {#/for}
+
+    </ul>
+</div>
+        				 
+</div>
+            
+<div class="table_typeLbottom"><p></p></div>

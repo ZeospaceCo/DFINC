@@ -1,0 +1,11 @@
+﻿
+<ul class="table_typeT ul_typeT">
+    {#foreach $T as List}
+    <li>
+        <span>{ $T.List.Title } ({ $T.List.Qty }) { $T.List.ManagerName }</span>   
+    </li>
+    {#else}
+    <li></li>
+	{#/for}
+</ul>
+

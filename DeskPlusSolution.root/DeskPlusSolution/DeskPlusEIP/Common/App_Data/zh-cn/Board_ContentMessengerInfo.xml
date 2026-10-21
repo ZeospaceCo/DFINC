@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<ContentHTML>
+    [理事会的通知]
+    &lt;br&gt;&lt;br&gt;
+    - 主题 : $SUBJECT$
+    &lt;br&gt;
+    - 时间:$TIME$
+    &lt;br&gt;&lt;br&gt;
+    “函数调用：按此到相关的画面。”
+  </ContentHTML>
+</ContentInfo>

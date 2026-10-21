@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] コミュニティ 加入承認</Title>
+	<ContentHTML>
+		[コミュニティ 加入承認]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+	</ContentHTML>
+</ContentInfo>

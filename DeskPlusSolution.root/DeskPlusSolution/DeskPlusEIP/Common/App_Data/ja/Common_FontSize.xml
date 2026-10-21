@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlData>
+	<Item ID="" Value="字大きさ"/>
+	<Item ID="1" Value="小さく"/>
+	<Item ID="2" Value="普通"/>
+	<Item ID="3" Value="大きく"/>
+	<Item ID="5" Value="アズクなの"/>
+</XmlData>
+

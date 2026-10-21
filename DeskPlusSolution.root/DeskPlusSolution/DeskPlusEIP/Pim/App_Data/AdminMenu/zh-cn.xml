@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuData>
+  <!--관리 -->
+  <Item ID="Manage" Text="管理" ClientSideCommand="" />
+  <Item ID="Holiday" Text="假期" ClientSideCommand="Menu.MovePage('Holiday');" />
+  <Item ID="Share" Text="共享资源" ClientSideCommand="Menu.MovePage('Share');" />
+
+  <!-- 환경  -->
+  <Item ID="Environment" Text="环境" ClientSideCommand="" />
+  <Item ID="Setting" Text="集" ClientSideCommand="Menu.MovePage('Setting');" />
+
+</MenuData>

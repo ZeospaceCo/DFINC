@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<xfeEditor>
+  <menu1>
+
+	  <FontSize visible="true">Font Size</FontSize>
+
+    <AlignLeft visible="true">Align Left</AlignLeft>
+    <AlignCenter visible="true">Align Center</AlignCenter>
+    <AlignRight visible="true">Align Right</AlignRight>
+    <Justify visible="false">Justify</Justify>
+    
+  </menu1>
+</xfeEditor>

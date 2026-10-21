@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A495418-E25B-4D77-8DE4-11089D764362}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeospace.DeskPlus.SNS.Web</RootNamespace>
+    <AssemblyName>Zeospace.DeskPlus.SNS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1283.2, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Util\Component\SignalR\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BasePagePoint.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageWorkTalk.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageMyTalk.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSMyTalk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWSWorkTalk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageRealTalk.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ApprovalTalk.aspx.cs">
+      <DependentUpon>ApprovalTalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ApprovalTalk.aspx.designer.cs">
+      <DependentUpon>ApprovalTalk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BoardTalk.aspx.cs">
+      <DependentUpon>BoardTalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\BoardTalk.aspx.designer.cs">
+      <DependentUpon>BoardTalk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MyTalk.aspx.cs">
+      <DependentUpon>MyTalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\MyTalk.aspx.designer.cs">
+      <DependentUpon>MyTalk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MyTalkGroup.aspx.cs">
+      <DependentUpon>MyTalkGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\MyTalkGroup.aspx.designer.cs">
+      <DependentUpon>MyTalkGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ScheduleTalk.aspx.cs">
+      <DependentUpon>ScheduleTalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ScheduleTalk.aspx.designer.cs">
+      <DependentUpon>ScheduleTalk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ToDoTalk.aspx.cs">
+      <DependentUpon>ToDoTalk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ToDoTalk.aspx.designer.cs">
+      <DependentUpon>ToDoTalk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Content\GetUser.aspx.cs">
+      <DependentUpon>GetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Content\GetUser.aspx.designer.cs">
+      <DependentUpon>GetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Content\ShareList.aspx.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Content\ShareList.aspx.designer.cs">
+      <DependentUpon>ShareList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTalk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTalk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealTalk\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealTalk\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RealTalk\MessengerHub\Message.cs" />
+    <Compile Include="RealTalk\MessengerHub\Messenger.cs" />
+    <Compile Include="RealTalk\MessengerHub\MessengerHub.cs" />
+    <Compile Include="RealTalk\Sender.aspx.cs">
+      <DependentUpon>Sender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealTalk\Sender.aspx.designer.cs">
+      <DependentUpon>Sender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Point\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Point\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Point\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Point\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTalk\Content\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkTalk\Content\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTalk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkTalk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTalk\Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkTalk\Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ws\Common\ApprovalTalk.asmx.cs">
+      <DependentUpon>ApprovalTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\MyTalk.asmx.cs">
+      <DependentUpon>MyTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\MyTalkGroup.asmx.cs">
+      <DependentUpon>MyTalkGroup.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\ScheduleTalk.asmx.cs">
+      <DependentUpon>ScheduleTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\BoardTalk.asmx.cs">
+      <DependentUpon>BoardTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\Common\ToDoTalk.asmx.cs">
+      <DependentUpon>ToDoTalk.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyTalk\Content\GetUser.asmx.cs">
+      <DependentUpon>GetUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyTalk\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyTalk\Content\ShareList.asmx.cs">
+      <DependentUpon>ShareList.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\MyTalk\Menu\Menu.asmx.cs">
+      <DependentUpon>Menu.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ws\WorkTalk\Content\List.asmx.cs">
+      <DependentUpon>List.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\GlobalString\string.en.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.fr.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ja.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.ko.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-cn.resx" />
+    <EmbeddedResource Include="Resource\GlobalString\string.zh-tw.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\ApprovalTalk.aspx" />
+    <Content Include="Common\BoardTalk.aspx" />
+    <Content Include="Common\MyTalk.aspx" />
+    <Content Include="Common\MyTalkGroup.aspx" />
+    <Content Include="Common\ScheduleTalk.aspx" />
+    <Content Include="Common\ToDoTalk.aspx" />
+    <Content Include="Js\Common\ApprovalTalk.js" />
+    <Content Include="Js\Common\BoardTalk.js" />
+    <Content Include="Js\Common\MyTalk.js" />
+    <Content Include="Js\Common\MyTalkGroup.js" />
+    <Content Include="Js\Common\ScheduleTalk.js" />
+    <Content Include="Js\Common\ToDoTalk.js" />
+    <Content Include="Js\MyTalk\Content\GetUser.js" />
+    <Content Include="Js\MyTalk\Content\List.js" />
+    <Content Include="Js\MyTalk\Content\ShareList.js" />
+    <Content Include="Js\MyTalk\Menu\Menu.js" />
+    <Content Include="Js\MyTalk\Default.js" />
+    <Content Include="Js\Point\Menu\Menu.js" />
+    <Content Include="Js\WorkTalk\Content\List.js" />
+    <Content Include="Js\WorkTalk\Menu\Menu.js" />
+    <Content Include="Js\WorkTalk\Default.js" />
+    <Content Include="Jt\Common\JTApprovalTalk.htm" />
+    <Content Include="Jt\Common\JTMyTalk.htm" />
+    <Content Include="Jt\Common\JTMyTalkGroup.htm" />
+    <Content Include="Jt\Common\JTScheduleTalk.htm" />
+    <Content Include="Jt\Common\JTBoardTalk.htm" />
+    <Content Include="Jt\Common\JTToDoTalk.htm" />
+    <Content Include="Jt\MyTalk\Content\JTList.htm" />
+    <Content Include="Jt\MyTalk\Content\JTShareList.htm" />
+    <Content Include="Jt\MyTalk\Content\JTSpoolFile.htm" />
+    <Content Include="Jt\MyTalk\Menu\JTShareList.htm" />
+    <Content Include="Jt\MyTalk\Menu\JTOpenList.htm" />
+    <Content Include="Jt\WorkTalk\Content\JTShortRecvList.htm" />
+    <Content Include="Jt\WorkTalk\Content\JTShortAppList.htm" />
+    <Content Include="Jt\WorkTalk\Content\JTShortSendList.htm" />
+    <Content Include="MyTalk\Content\GetUser.aspx" />
+    <Content Include="MyTalk\Content\ShareList.aspx" />
+    <Content Include="MyTalk\Menu\Menu.aspx" />
+    <Content Include="MyTalk\Content\List.aspx" />
+    <Content Include="MyTalk\Default.aspx" />
+    <Content Include="RealTalk\Message.aspx" />
+    <Content Include="RealTalk\MessengerHub\MessengerHub.js" />
+    <Content Include="RealTalk\Sender.aspx" />
+    <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.color.js" />
+    <Content Include="Scripts\jquery.jgrowl.css" />
+    <Content Include="Scripts\jquery.jgrowl.js" />
+    <Content Include="Scripts\jquery.signalR-1.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-1.2.2.min.js" />
+    <Content Include="Point\Default.aspx" />
+    <Content Include="Point\Menu\Menu.aspx" />
+    <Content Include="WorkTalk\Content\List.aspx" />
+    <Content Include="WorkTalk\Default.aspx" />
+    <Content Include="WorkTalk\Menu\Menu.aspx" />
+    <Content Include="Ws\Common\ApprovalTalk.asmx" />
+    <Content Include="Ws\Common\MyTalk.asmx" />
+    <Content Include="Ws\Common\MyTalkGroup.asmx" />
+    <Content Include="Ws\Common\ScheduleTalk.asmx" />
+    <Content Include="Ws\Common\BoardTalk.asmx" />
+    <Content Include="Ws\Common\ToDoTalk.asmx" />
+    <Content Include="Ws\MyTalk\Content\GetUser.asmx" />
+    <Content Include="Ws\MyTalk\Content\List.asmx" />
+    <Content Include="Ws\MyTalk\Content\ShareList.asmx" />
+    <Content Include="Ws\MyTalk\Menu\Menu.asmx" />
+    <Content Include="Ws\WorkTalk\Content\List.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BE\Zeospace.DeskPlus.Account.BE.csproj">
+      <Project>{19ADF696-9A49-4E02-AC35-1D18FF302894}</Project>
+      <Name>Zeospace.DeskPlus.Account.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.BLL\Zeospace.DeskPlus.Account.BLL.csproj">
+      <Project>{CA24CF5C-7B5E-46A4-93A2-3B2ACC18C43D}</Project>
+      <Name>Zeospace.DeskPlus.Account.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\AccountProject\Zeospace.DeskPlus.Account.DAL\Zeospace.DeskPlus.Account.DAL.csproj">
+      <Project>{8D5B6EFA-9D6E-4E9B-AA3A-02914E6AA93F}</Project>
+      <Name>Zeospace.DeskPlus.Account.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\ApprovalProject\Zeospace.DeskPlus.Approval.BE\Zeospace.DeskPlus.Approval.BE.csproj">
+      <Project>{718B23B2-E31D-4D3F-853E-B63EFF554E41}</Project>
+      <Name>Zeospace.DeskPlus.Approval.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BaseProject\Zeospace.DeskPlus.Base.ApplicationFrameworks\Zeospace.DeskPlus.Base.ApplicationFrameworks.csproj">
+      <Project>{A694F4AF-9F9E-43EA-9D02-A5BBF63730C0}</Project>
+      <Name>Zeospace.DeskPlus.Base.ApplicationFrameworks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BE\Zeospace.DeskPlus.Board.BE.csproj">
+      <Project>{CEE64A34-C4E1-436B-AAAB-4219A8605BE4}</Project>
+      <Name>Zeospace.DeskPlus.Board.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.BLL\Zeospace.DeskPlus.Board.BLL.csproj">
+      <Project>{8DB7B310-B8C6-4011-9A5C-A1BF4DC81B8E}</Project>
+      <Name>Zeospace.DeskPlus.Board.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\BoardProject\Zeospace.DeskPlus.Board.DAL\Zeospace.DeskPlus.Board.DAL.csproj">
+      <Project>{AF2C4FCC-567C-4940-BB2E-553F8C8FC6B2}</Project>
+      <Name>Zeospace.DeskPlus.Board.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.BE\Zeospace.DeskPlus.Common.BE.csproj">
+      <Project>{17ADAEB0-6F23-4716-AD4D-1C8887FA1D2A}</Project>
+      <Name>Zeospace.DeskPlus.Common.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BE\Zeospace.DeskPlus.Pim.BE.csproj">
+      <Project>{D971B711-1178-4FA5-B581-05A0F4C08DFE}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\PimProject\Zeospace.DeskPlus.Pim.BLL\Zeospace.DeskPlus.Pim.BLL.csproj">
+      <Project>{96FE400B-DFB5-42EE-BC6D-58558E6410DF}</Project>
+      <Name>Zeospace.DeskPlus.Pim.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\SNSProject\Zeospace.DeskPlus.SNS.BE\Zeospace.DeskPlus.SNS.BE.csproj">
+      <Project>{985B12C7-8D60-4132-B987-7E85C8AFE5FE}</Project>
+      <Name>Zeospace.DeskPlus.SNS.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\SNSProject\Zeospace.DeskPlus.SNS.BLL\Zeospace.DeskPlus.SNS.BLL.csproj">
+      <Project>{27A5AD0B-FBE6-46DF-8961-FB0F924029B4}</Project>
+      <Name>Zeospace.DeskPlus.SNS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\SNSProject\Zeospace.DeskPlus.SNS.DAL\Zeospace.DeskPlus.SNS.DAL.csproj">
+      <Project>{CF2D1D78-0D96-4202-BFE9-E1D717EE95A0}</Project>
+      <Name>Zeospace.DeskPlus.SNS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Account\Account.csproj">
+      <Project>{8146596E-25F4-4305-B23E-1CBEFB197111}</Project>
+      <Name>Account</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Board\Board.csproj">
+      <Project>{D7FC7AD5-17F3-44BD-8D16-F8650A88808B}</Project>
+      <Name>Board</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebHard\WebHard.csproj">
+      <Project>{5B5FA0CD-EFC2-4E64-999B-552BF29284EC}</Project>
+      <Name>WebHard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56230</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/DeskPlusEIP/SNS</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

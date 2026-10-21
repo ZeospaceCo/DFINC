@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<SUBJ>모바일관리-승인요청</SUBJ>
+	<ContentHTML>
+		[모바일관리알림]
+		&lt;br&gt;&lt;br&gt;
+		- 모바일기기 승인요청 받았습니다.
+		&lt;br&gt;
+		- 모바일고유기값:$UUID$
+		&lt;br&gt;
+		- 요청자:$NAME$
+		&lt;br&gt;&lt;br&gt;
+	</ContentHTML>
+</ContentInfo>

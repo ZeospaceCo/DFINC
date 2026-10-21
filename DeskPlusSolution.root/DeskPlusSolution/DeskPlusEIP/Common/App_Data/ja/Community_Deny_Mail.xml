@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ContentInfo>
+	<Title>[$Title$] コミュニティ 強制 承認 拒否</Title>
+	<ContentHTML>
+		[コミュニティ 強制 承認 拒否]
+		&lt;br&gt;&lt;br&gt;
+		- コミュニティ名 : $Title$
+	</ContentHTML>
+</ContentInfo>
