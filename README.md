@@ -43,3 +43,23 @@ Google Calendar 연동에 필요한 개인 인증서와 `*_secret.json` 서비�
 
 `.vs`, `bin`, `obj`, NuGet 복원 패키지, 사용자별 설정과 Visual SourceSafe 메타데이터는
 버전 관리에서 제외합니다. OTP도 이 저장소에서 일반 소스 폴더로 함께 관리합니다.
+
+## DeskPlusSolution의 IIS 구성
+
+`DeskPlusEIP`만 IIS 응용프로그램으로 등록하고 `Account`, `Approval`, `Board` 등
+하위 웹 프로젝트는 같은 응용프로그램의 일반 폴더로 사용합니다. 각 하위 프로젝트의
+응용프로그램 루트 URL은 `http://localhost/DeskPlusEIP`로 지정되어 있으며,
+Debug와 Release 모두 상위 `DeskPlusEIP/bin` 폴더로 빌드합니다.
+
+이미 하위 폴더가 IIS 응용프로그램으로 만들어졌다면 관리자 PowerShell에서 다음을 실행합니다.
+`-Apply`를 생략하면 변경 대상만 확인할 수 있습니다.
+
+```powershell
+& '.\DeskPlusSolution.root\DeskPlusSolution\Tools\Restore-DeskPlusIisFolders.ps1' -Apply
+```
+
+이 스크립트는 현재 체크아웃의 `DeskPlusEIP`를 참조하는 사이트만 처리하고,
+IIS 설정을 백업한 뒤 하위 응용프로그램 등록만 해제합니다.
+실제 폴더, 상위 응용프로그램과 `Design`, `FileData` 연결은 유지합니다.
+
+구성 방식은 [Microsoft의 IIS 하위 프로젝트 안내](https://devblogs.microsoft.com/dotnet/part-1-of-3-creating-sub-projects-in-iis-with-web-application-projects/)를 참고합니다.
