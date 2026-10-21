@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="TeamsTenantId" value="YOUR_TENANT_ID" />
+  <add key="TeamsClientId" value="YOUR_CLIENT_ID" />
+  <add key="TeamsSenderUserPrincipalName" value="YOUR_TEAMS_SENDER_UPN" />
+  <add key="TeamsChatEnabled" value="false" />
+  <add key="TeamsChatTokenPath" value="%ProgramData%\DeskPlus\TeamsChat\YOUR_CLIENT_ID\refresh-token.dat" />
+</appSettings>

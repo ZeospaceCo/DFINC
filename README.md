@@ -35,6 +35,7 @@ DFINC 웹, 모바일, 웹서비스 및 OTP 프로젝트를 함께 관리하는 �
 | `DeskPlusSolutionWS.root/DeskPlusSolutionWS/DeskPlusWS/Web.config.example` | `Web.config` |
 | `DeskPlusSolutionWS.root/DeskPlusSolutionWS/DeskPlusWS/WebAppSettings.config.example` | `WebAppSettings.config` |
 | `DeskPlusMobileSolution(Deep).root/DeskPlusMobileSolution/DeskPlusMobile/Web.config.example` | `Web.config` |
+| `DeskPlusMobileSolution(Deep).root/DeskPlusMobileSolution/DeskPlusMobile/WebAppSettings.config.example` | `WebAppSettings.config` |
 | `OTP/DeskPlusOTP/DeskPlusOTP/Web.config.example` | `Web.config` |
 | `DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/App_Data/PIM.xml.example` | `PIM.xml` |
 
@@ -43,6 +44,9 @@ Google Calendar 연동에 필요한 개인 인증서와 `*_secret.json` 서비�
 
 `.vs`, `bin`, `obj`, NuGet 복원 패키지, 사용자별 설정과 Visual SourceSafe 메타데이터는
 버전 관리에서 제외합니다. OTP도 이 저장소에서 일반 소스 폴더로 함께 관리합니다.
+
+모바일의 모든 메신저 알람에 대한 Teams 연동 설정은
+[모바일 Teams 설정 안내](DeskPlusMobileSolution%28Deep%29.root/DeskPlusMobileSolution/Tools/TeamsChat-Setup.txt)를 참고합니다.
 
 ## DeskPlusSolution의 IIS 구성
 

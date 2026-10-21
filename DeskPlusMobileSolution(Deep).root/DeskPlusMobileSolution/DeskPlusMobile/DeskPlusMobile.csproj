@@ -122,6 +122,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -1347,6 +1348,8 @@
     <Content Include="Util\PDF\iTextSharp.xml" />
     <Content Include="Util\PDF\itextsharp.xmlworker.dll" />
     <Content Include="Util\PDF\itextsharp.xtra.dll" />
+    <Content Include="WebAppSettings.config" />
+    <None Include="WebAppSettings.config.example" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -2297,6 +2300,8 @@
     </Compile>
     <Compile Include="Messenger\BE\AlarmInfo.cs" />
     <Compile Include="Messenger\BLL\Alarm.cs" />
+    <Compile Include="Messenger\BLL\TeamsMSG.cs" />
+    <Compile Include="Messenger\BLL\TeamsChatTokenStore.cs" />
     <Compile Include="Messenger\Data\Alarm.cs" />
     <Compile Include="MyTalk\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>

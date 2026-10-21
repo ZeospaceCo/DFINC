@@ -17,7 +17,7 @@
 		<add name="SQLEtc5" connectionString="Data Source=YOUR_DB_SERVER;Initial Catalog=YOUR_DB_NAME;User ID=YOUR_DB_USER;Password=YOUR_DB_PASSWORD;" providerName="System.Data.SqlClient" />
 	</connectionStrings>
 
-	<appSettings>
+	<appSettings file="WebAppSettings.config">
 		<add key="SolutionTitle" value="smartplus" />
 		<add key="UseXmlCache" value="false" />
 		<add key="SiteName" value="SiteBase" />
