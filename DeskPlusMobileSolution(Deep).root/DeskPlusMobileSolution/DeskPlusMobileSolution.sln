@@ -6,13 +6,6 @@ MinimumVisualStudioVersion = 15.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskPlusMobile", "DeskPlusMobile\DeskPlusMobile.csproj", "{2797A17B-EF87-4D2B-900C-6E1653876CF2}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 2
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DeskPlusMobile\\DeskPlusMobile.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = DeskPlusMobile\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
