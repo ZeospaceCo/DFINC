@@ -22,16 +22,15 @@ DFINC 웹, 모바일, 웹서비스 및 OTP 프로젝트를 함께 관리하는 �
 
 ## 로컬 설정
 
-`Web.config`와 `WebAppSettings.config`는 실제 설정 파일을 Git에서 함께 관리합니다.
+`Web.config`, `WebAppSettings.config`, `WebConnectionString.config`는 실제 설정 파일을 Git에서 함께 관리합니다.
 웹, 웹서비스, 모바일, OTP의 `Web.config`와 웹·웹서비스·모바일의 `WebAppSettings.config`가 포함됩니다.
+웹과 웹서비스의 `WebConnectionString.config`도 포함됩니다.
 
-별도 DB 연결 파일과 Google Calendar 설정은 다음 예제 파일을 `.example` 확장자를 뺀 이름으로
+Google Calendar 설정은 다음 예제 파일을 `.example` 확장자를 뺀 이름으로
 복사한 뒤 실제 환경에 맞게 설정합니다.
 
 | 예제 파일 | 복사할 파일 이름 |
 | --- | --- |
-| `DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/WebConnectionString.config.example` | `WebConnectionString.config` |
-| `DeskPlusSolutionWS.root/DeskPlusSolutionWS/DeskPlusWS/WebConnectionString.config.example` | `WebConnectionString.config` |
 | `DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/App_Data/PIM.xml.example` | `PIM.xml` |
 
 Google Calendar 연동에 필요한 개인 인증서와 `*_secret.json` 서비스 계정 키는 별도로 준비합니다.

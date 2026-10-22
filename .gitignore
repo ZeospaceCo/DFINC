@@ -28,7 +28,6 @@ TestResults/
 *.pem
 *.key
 *_secret.json
-WebConnectionString.config
 /DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/App_Data/PIM.xml
 
 # This vendor assembly is referenced directly by the legacy web projects.
