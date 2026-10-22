@@ -29,11 +29,6 @@ TestResults/
 *.key
 *_secret.json
 WebConnectionString.config
-WebAppSettings.config
-/DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/Web.config
-/DeskPlusSolutionWS.root/DeskPlusSolutionWS/DeskPlusWS/Web.config
-/DeskPlusMobileSolution(Deep).root/DeskPlusMobileSolution/DeskPlusMobile/Web.config
-/OTP/DeskPlusOTP/DeskPlusOTP/Web.config
 /DeskPlusSolution.root/DeskPlusSolution/DeskPlusEIP/App_Data/PIM.xml
 
 # This vendor assembly is referenced directly by the legacy web projects.
