@@ -71,3 +71,32 @@ https://learn.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-1.0
 https://learn.microsoft.com/en-us/graph/api/chat-post-messages?view=graph-rest-1.0
 https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code
 https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow#refresh-the-access-token
+
+재로그인 안내 메일
+  WebAppSettings.config의 TeamsReauthNotificationEmail에서 관리자 수신 주소를 관리합니다.
+  현재 원본 설정: jssong@dfinc.co.kr
+  예: <add key="TeamsReauthNotificationEmail" value="admin@example.com;operator@example.com" />
+  쉼표 또는 세미콜론으로 여러 주소를 지정할 수 있고, 빈 값/설정 없음은 발송하지 않습니다.
+  웹과 모바일 각각의 WebAppSettings.config에 설정합니다. 템플릿 기본값은 비워 두었습니다.
+
+  업무 알림을 Teams에 보낼 때 Microsoft가 invalid_grant, interaction_required,
+  consent_required를 반환하거나 발신 계정/필수 위임 권한이 맞지 않으면 안내합니다.
+  토큰 파일이 없거나 비어 있거나 복호화되지 않는 경우에도 재로그인을 안내합니다.
+  토큰 파일 삭제는 캐시 사용 전에 확인하여 메모리 토큰이 남아 있어도 Teams 발송을 중단합니다.
+  refresh-token.dat.lock은 동시 접근 제어용 파일이며 토큰을 대신하지 않습니다.
+  네트워크 일시 오류나 일반 수신자 오류에는 재로그인 메일을 보내지 않습니다.
+  정상 자동 갱신마다 메일을 보내지 않으며, 별도의 주기 검사/사전 만료 예측은 수행하지 않습니다.
+  따라서 알림 발송이 없는 동안 발생한 토큰 취소는 다음 발송 시도에서 감지합니다.
+
+  기존 그룹웨어 EML 발송 경로를 사용하므로 Teams 토큰 없이 안내 메일을 생성합니다.
+  웹: /DeskPlusEIP/EmlSpool 및 기존 UseMailSendByService 설정에 따른 발송.
+  모바일: /DeskPlusMobile/EmlSpool에 저장하며 기존 메일 발송 서비스가 처리해야 합니다.
+  운영 서버의 메일 발송 서비스(DpEpmangr.exe 등)가 해당 경로를 처리하는지 확인하세요.
+  발신 메일 주소는 TeamsSenderUserPrincipalName을 사용합니다.
+  메일 생성 성공은 수신함 배달 완료를 의미하지 않습니다. 실제 배달은 운영 메일 서비스에 따릅니다.
+
+  동일 TeamsChatTokenPath를 쓰는 웹/모바일은 24시간에 한 번만 발송 대기열에 넣습니다.
+  토큰 경로 옆 .reauth-mail.sent 파일에 최근 발송 시간을 보관하여 IIS 재시작 후에도 제한합니다.
+  정상 Teams 발송 또는 Connect-TeamsChat.ps1 재연결 성공 후 제한을 초기화합니다.
+  메일 발송 대기열 저장 실패 시 성공 시각을 기록하지 않고 다음 업무 알림에서 다시 시도합니다.
+  메일에는 토큰, Microsoft 오류 원문 또는 업무 문서 링크를 포함하지 않습니다.

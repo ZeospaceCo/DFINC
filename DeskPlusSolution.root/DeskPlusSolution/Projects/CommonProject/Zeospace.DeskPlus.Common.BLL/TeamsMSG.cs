@@ -5,6 +5,7 @@ using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web.Script.Serialization;
@@ -42,9 +43,10 @@ namespace Zeospace.DeskPlus.Common.BLL
             if (!IsEnabled)
                 return false;
 
+            TeamsSettings settings = null;
             try
             {
-                var settings = new TeamsSettings
+                settings = new TeamsSettings
                 {
                     TenantId = GetRequiredSetting("TeamsTenantId"),
                     ClientId = GetRequiredSetting("TeamsClientId"),
@@ -53,6 +55,7 @@ namespace Zeospace.DeskPlus.Common.BLL
                 };
                 SendOneToOneChat(userEmail, title, content, targetUrl, settings, Request,
                     () => GetAccessToken(settings, Request, DateTime.UtcNow));
+                TeamsChatReauthNotifier.Reset(settings.TokenFilePath);
                 return true;
             }
             catch (Exception ex)
@@ -62,6 +65,9 @@ namespace Zeospace.DeskPlus.Common.BLL
                 {
                     lock (TokenSync) { cachedToken = null; }
                 }
+                var reauth = ex as ReauthenticationRequiredException;
+                if (settings != null && reauth != null)
+                    TeamsChatReauthNotifier.TryNotify(settings, reauth.ErrorCode);
                 // 기존 설정에 남아 있는 앱 비밀키도 로그에서 제거합니다.
                 string message = ex.Message;
                 string secret = ConfigurationManager.AppSettings["TeamsClientSecret"];
@@ -69,6 +75,16 @@ namespace Zeospace.DeskPlus.Common.BLL
                     message = message.Replace(secret, "[REDACTED]");
                 Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("Teams 1:1 채팅 발송 실패: " + message);
                 return false;
+            }
+        }
+
+        internal sealed class ReauthenticationRequiredException : InvalidOperationException
+        {
+            internal string ErrorCode { get; private set; }
+            internal ReauthenticationRequiredException(string errorCode)
+                : base("Microsoft 재로그인이 필요합니다. 서버에서 Tools\\Connect-TeamsChat.ps1을 다시 실행하세요. 오류 코드: " + errorCode)
+            {
+                ErrorCode = errorCode;
             }
         }
 
@@ -93,7 +109,7 @@ namespace Zeospace.DeskPlus.Common.BLL
 
             var me = ReadObject(request("GET", GraphBaseUrl + "/me?$select=id,userPrincipalName", null, null, accessToken));
             if (!string.Equals(RequiredString(me, "userPrincipalName"), expectedSender, StringComparison.OrdinalIgnoreCase))
-                throw new InvalidOperationException("Microsoft 로그인 계정이 TeamsSenderUserPrincipalName과 다릅니다. 발신 계정으로 다시 연결하세요.");
+                throw new ReauthenticationRequiredException("sender_mismatch");
             string senderId = RequiredGuid(me, "id");
 
             Dictionary<string, object> user;
@@ -146,11 +162,34 @@ namespace Zeospace.DeskPlus.Common.BLL
             string key = context + "|" + Path.GetFullPath(settings.TokenFilePath);
             lock (TokenSync)
             {
+                // 파일 삭제 시 메모리 토큰으로 계속 발송하지 않고 재연결을 안내합니다.
+                if (!File.Exists(settings.TokenFilePath))
+                {
+                    cachedToken = null;
+                    throw new ReauthenticationRequiredException("refresh_token_missing");
+                }
                 if (cachedToken != null && cachedTokenKey == key && nowUtc < cachedTokenExpiresUtc)
                     return cachedToken;
                 using (TeamsChatTokenStore.AcquireLock(settings.TokenFilePath))
                 {
-                    string refreshToken = TeamsChatTokenStore.Load(settings.TokenFilePath, context);
+                    string refreshToken;
+                    try { refreshToken = TeamsChatTokenStore.Load(settings.TokenFilePath, context); }
+                    catch (FileNotFoundException)
+                    {
+                        throw new ReauthenticationRequiredException("refresh_token_missing");
+                    }
+                    catch (DirectoryNotFoundException)
+                    {
+                        throw new ReauthenticationRequiredException("refresh_token_missing");
+                    }
+                    catch (CryptographicException)
+                    {
+                        throw new ReauthenticationRequiredException("refresh_token_invalid");
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        throw new ReauthenticationRequiredException("refresh_token_unavailable");
+                    }
                     string form = "client_id=" + Uri.EscapeDataString(settings.ClientId)
                         + "&scope=" + Uri.EscapeDataString(ChatScopes)
                         + "&refresh_token=" + Uri.EscapeDataString(refreshToken)
@@ -164,7 +203,7 @@ namespace Zeospace.DeskPlus.Common.BLL
                     catch (MicrosoftApiException ex)
                     {
                         if (ex.ErrorCode == "invalid_grant" || ex.ErrorCode == "interaction_required" || ex.ErrorCode == "consent_required")
-                            throw new InvalidOperationException("Microsoft 재로그인이 필요합니다. 서버에서 Tools\\Connect-TeamsChat.ps1을 다시 실행하세요. " + ex.Message);
+                            throw new ReauthenticationRequiredException(ex.ErrorCode);
                         throw;
                     }
                     string token = RequiredString(response, "access_token");
@@ -194,7 +233,7 @@ namespace Zeospace.DeskPlus.Common.BLL
                 scopes.Add(item.StartsWith(prefix, StringComparison.OrdinalIgnoreCase) ? item.Substring(prefix.Length) : item);
             foreach (string required in new[] { "User.Read", "User.ReadBasic.All", "Chat.Create", "ChatMessage.Send" })
                 if (!scopes.Contains(required))
-                    throw new InvalidOperationException("Microsoft Graph 위임 권한 " + required + " 동의가 필요합니다. Connect-TeamsChat.ps1로 다시 연결하세요.");
+                    throw new ReauthenticationRequiredException("missing_scope_" + required);
         }
 
         private static string CreateMessagePayload(string title, string content, string targetUrl)

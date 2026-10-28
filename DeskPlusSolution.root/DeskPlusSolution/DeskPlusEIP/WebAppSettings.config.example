@@ -23,4 +23,6 @@
     <add key="TeamsChatTokenPath" value="%ProgramData%\DeskPlus\TeamsChat\010b717d-6e77-4cbb-a5b8-f87aa943fb75\refresh-token.dat" />
     
     
+  <!-- 재로그인 안내 수신자: 쉼표/세미콜론 구분, 비우면 발송하지 않음 -->
+  <add key="TeamsReauthNotificationEmail" value="" />
 </appSettings>

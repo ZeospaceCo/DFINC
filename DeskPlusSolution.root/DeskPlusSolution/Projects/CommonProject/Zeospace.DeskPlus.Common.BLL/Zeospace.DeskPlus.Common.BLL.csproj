@@ -69,6 +69,7 @@
     <Compile Include="MailZetta65.cs" />
     <Compile Include="TeamsMSG.cs" />
     <Compile Include="TeamsChatTokenStore.cs" />
+    <Compile Include="TeamsChatReauthNotifier.cs" />
     <Compile Include="WebFax.cs" />
   </ItemGroup>
   <ItemGroup>

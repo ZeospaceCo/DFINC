@@ -31,7 +31,7 @@ if (-not [IO.Directory]::GetParent($tokenDirectory)) { throw 'A drive root canno
 if (Test-Path -LiteralPath $tokenDirectory) {
     $tokenName = [IO.Path]::GetFileName($tokenPath)
     foreach ($entry in (Get-ChildItem -LiteralPath $tokenDirectory -Force)) {
-        if ($entry.PSIsContainer -or ($entry.Name -notin @($tokenName, "$tokenName.lock") -and $entry.Name -notmatch ('^' + [regex]::Escape($tokenName) + '\.[0-9a-f]{32}\.tmp$'))) {
+        if ($entry.PSIsContainer -or ($entry.Name -notin @($tokenName, "$tokenName.lock", "$tokenName.reauth-mail.sent") -and $entry.Name -notmatch ('^' + [regex]::Escape($tokenName) + '\.[0-9a-f]{32}\.tmp$'))) {
             throw 'The token directory contains unrelated files. Configure a dedicated empty directory before continuing.'
         }
     }
@@ -143,7 +143,7 @@ for ($i = 0; $i -lt $principals.Count; $i++) {
     $acl.AddAccessRule($rule)
 }
 Set-Acl -LiteralPath $tokenDirectory -AclObject $acl
-foreach ($existing in @($tokenPath, "$tokenPath.lock")) {
+foreach ($existing in @($tokenPath, "$tokenPath.lock", "$tokenPath.reauth-mail.sent")) {
     if (Test-Path -LiteralPath $existing) {
         $fileAcl = New-Object Security.AccessControl.FileSecurity
         $fileAcl.SetAccessRuleProtection($false, $false)
@@ -151,7 +151,11 @@ foreach ($existing in @($tokenPath, "$tokenPath.lock")) {
     }
 }
 $tokenLock = [Zeospace.DeskPlus.Common.BLL.TeamsChatTokenStore]::AcquireLock($tokenPath)
-try { [Zeospace.DeskPlus.Common.BLL.TeamsChatTokenStore]::Save($tokenPath, $context, $tokens.refresh_token) }
+try {
+    [Zeospace.DeskPlus.Common.BLL.TeamsChatTokenStore]::Save($tokenPath, $context, $tokens.refresh_token)
+    # Clear the notification marker only after a successful interactive reconnection.
+    if ([IO.File]::Exists("$tokenPath.reauth-mail.sent")) { [IO.File]::Delete("$tokenPath.reauth-mail.sent") }
+}
 finally { $tokenLock.Dispose() }
 Enable-TeamsChat $ConfigPath
 $tokens = $null

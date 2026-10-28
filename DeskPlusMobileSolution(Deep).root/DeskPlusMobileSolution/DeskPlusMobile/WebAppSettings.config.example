@@ -5,4 +5,6 @@
   <add key="TeamsSenderUserPrincipalName" value="YOUR_TEAMS_SENDER_UPN" />
   <add key="TeamsChatEnabled" value="false" />
   <add key="TeamsChatTokenPath" value="%ProgramData%\DeskPlus\TeamsChat\YOUR_CLIENT_ID\refresh-token.dat" />
+  <!-- 재로그인 안내 수신자: 쉼표/세미콜론 구분, 비우면 발송하지 않음 -->
+  <add key="TeamsReauthNotificationEmail" value="" />
 </appSettings>

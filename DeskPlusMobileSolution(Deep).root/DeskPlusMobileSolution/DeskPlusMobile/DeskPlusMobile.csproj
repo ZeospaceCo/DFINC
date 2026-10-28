@@ -2302,6 +2302,7 @@
     <Compile Include="Messenger\BLL\Alarm.cs" />
     <Compile Include="Messenger\BLL\TeamsMSG.cs" />
     <Compile Include="Messenger\BLL\TeamsChatTokenStore.cs" />
+    <Compile Include="Messenger\BLL\TeamsChatReauthNotifier.cs" />
     <Compile Include="Messenger\Data\Alarm.cs" />
     <Compile Include="MyTalk\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
