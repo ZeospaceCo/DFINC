@@ -18,6 +18,12 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2845,6 +2851,7 @@
     <Content Include="Upload\SilverUpload\Upload.js" />
     <Content Include="Upload\Standard\Main.aspx" />
     <Content Include="Upload\Standard\Upload.js" />
+    <Content Include="UserSignCopy.aspx" />
     <Content Include="Util\CodeTool\Accordion.htm" />
     <Content Include="Util\CodeTool\AutoCompletes.htm" />
     <Content Include="Util\CodeTool\dal_parameter.asp" />
