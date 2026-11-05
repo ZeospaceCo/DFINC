@@ -77,7 +77,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <div>                       
                             <asp:Literal id="lbTodayDate" runat="server"></asp:Literal>
-                            <a class="dropdown-item" href="/DeskPlusEIP/Data/Cab/UCWare_m_Setup.exe"><%=GetResource("DownloadMsg")%></a>
                             <a class="dropdown-item" href="#"><span id="pro">Profile</span></a>
                             <a class="dropdown-item" href="#"><span id="sett">Settings</span></a>
                             <a class="dropdown-item" href="#"><span id="search-glass">Search</span></a>                                             

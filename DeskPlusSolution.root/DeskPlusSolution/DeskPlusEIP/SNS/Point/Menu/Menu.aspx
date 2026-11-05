@@ -36,7 +36,7 @@
                     <li><h2><a onclick="Menu.GoListPage('Approval')"><%=GetResource("Approval")%></a></h2></li>
                     <li><h2><a onclick="Menu.GoListPage('Board')"><%=GetResource("BoardTitle")%></a></h2></li>                    
                     <li><h2><a onclick="Menu.GoListPage('Task')"><%=GetResource("Task")%></a></h2></li>    
-                    <li><h2><a onclick="Menu.GoListPage('WebHard')"><%=GetResource("WebHard")%></a></h2></li>
+                    <li style="display:none"><h2><a onclick="Menu.GoListPage('WebHard')"><%=GetResource("WebHard")%></a></h2></li>
                     <li><h2><a onclick="Menu.GoListPage('Address')"><%=GetResource("Address")%></a></h2></li>
                     <li><h2><a onclick="Menu.GoListPage('Opinion')"><%=GetResource("Opinion")%></a></h2></li>                 
                 </ul>
@@ -49,7 +49,7 @@
                 SetNodeSelect="onBoardNodeSelect" SetCallbackComplete="onCallbackComplete">
                 </uc2:BoardTreeScript>
             </div> 
-            <div class="menu" id="favorite"><a href="#"><%=GetResource("WebHard")%> <%=GetResource("Favorite")%></a></div>
+            <div class="menu" id="favorite" style="display:none"><a href="#"><%=GetResource("WebHard")%> <%=GetResource("Favorite")%></a></div>
             <div class="menusub" style="display:none;">
                 <uc1:WebHardTree ID="WebHardTree1" runat="server" UseCategory="F"></uc1:WebHardTree>
             </div>

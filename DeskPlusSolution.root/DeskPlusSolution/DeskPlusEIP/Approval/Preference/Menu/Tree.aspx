@@ -27,7 +27,7 @@
                     <ul class="accordion">
                         <li><a id="FavoriteApp"><%=GetResource("FavoriteApp")%></a></li>
                         <li><a id="ProxyApp"><%=GetResource("ManageProxy")%></a></li>
-                        <li><a id="SignApp"><%=GetResource("ManageStamp")%></a></li>
+                        <li style="display:none"><a id="SignApp"><%=GetResource("ManageStamp")%></a></li>
                         <li><a id="UserFlowApp"><%=GetResource("PrivateAppNetMgr")%></a></li>
                         <li><a id="FavoriteForm"><%=GetResource("FavoriteForm")%></a></li>
                         <li><a id="Setting"><%=GetResource("Setting2")%></a></li>

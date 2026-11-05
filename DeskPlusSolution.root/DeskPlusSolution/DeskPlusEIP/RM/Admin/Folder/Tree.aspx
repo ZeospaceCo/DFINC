@@ -70,7 +70,7 @@
                                 ClientSideOnNodeSelect="onNodeSelect">
                                 </COMPONENTART:TREEVIEW>  
                             </div>   
-                            <div class="menu"><a id="qrcode">QRCode</a></div>  
+                            <div class="menu" style="display:none;"><a id="qrcode">QRCode</a></div>  
                             <div class="menusub" style="display:none;">
                                 <ul>
                                     <li><a id="qrcodesub">QRCode</a></li>
