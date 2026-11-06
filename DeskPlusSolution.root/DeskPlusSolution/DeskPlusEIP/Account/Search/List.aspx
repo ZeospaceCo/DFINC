@@ -56,6 +56,7 @@
 
         <div id="layout_header">
             <h1><%=SiteMap%></h1>
+            <a class="btn btn-secondary" href="<%=ResolveUrl("~/Account/Organization/Default.aspx")%>" target="_parent" style="float:right;margin:8px 10px;">조직도</a>
         </div>
 
         <div style="padding:10px">

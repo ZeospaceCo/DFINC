@@ -558,6 +558,13 @@
       <DependentUpon>Mod.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Organization\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organization\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Search\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -931,6 +938,9 @@
     <Content Include="Js\MyInfo\Password\Change.js" />
     <Content Include="Js\MyInfo\Password\MailChange.js" />
     <Content Include="Js\MyInfo\SNS.js" />
+    <Content Include="Js\Organization\Default.js" />
+    <Content Include="Resource\Organization.css" />
+    <Content Include="Organization\Default.aspx" />
     <Content Include="Js\Search\List.js" />
     <Content Include="Js\Search\Tree.js" />
     <Content Include="Jt\Admin\AuthEmail\JTList.htm" />

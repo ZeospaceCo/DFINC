@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Dept.cs" />
     <Compile Include="Dept_History.cs" />
+    <Compile Include="OrganizationChart.cs" />
     <Compile Include="PasswordHistory.cs" />
     <Compile Include="PasswordManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
