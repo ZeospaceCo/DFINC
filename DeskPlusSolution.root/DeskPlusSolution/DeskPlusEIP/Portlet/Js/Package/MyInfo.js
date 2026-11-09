@@ -78,7 +78,8 @@ function MyInfo_Event() {
     //메일 바로가기
     $("#myInfo_NewMail").on("click", function (e) {
         e.preventDefault();
-        parent.location.href = "/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=webmail";
+        var url = "https://outlook.office365.com/mail/";
+        var WindowObjectReference = PopupWinOpen(url, "", "WEBMAIL", "1000", "700");    
     });
 
     //일정바로가기

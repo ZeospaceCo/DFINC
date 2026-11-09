@@ -48,7 +48,7 @@
             <div class="portlet-contents">
                  <div class="content-tabs">
                     <div class="form-inline" style="padding-top:10px;padding-left:5px; justify-content: center;">
-                        <a href="/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=webmail" target="_parent">
+                        <a href="#" onclick="PopupWinOpen('https://outlook.office365.com/mail/', '', 'WEBMAIL', '1000', '700')">
                         <div class="quickDiv bg-secondary">  
                             <!--span class="material-icons">mail</span-->                        
                             <span class="livicon" data-n="mail" data-s="30" data-c="#FFFFFF" data-hc="#585c66" id="livicon-1" style="width: 49px; height: 30px;"></span>

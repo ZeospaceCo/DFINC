@@ -278,7 +278,7 @@
 				<a href="/DeskPlusEIP/RM/Default.aspx" class="quick_color6 quickmenuicon"><span class="material-icons-outlined" >&#xef63;</span><span class="text"><%=GetResource("ResourceReservation")%></span></a>
 				<a href="/DeskPlusEIP/Report/Default.aspx" class="quick_color7 quickmenuicon"><span class="material-icons-outlined" >&#xe0c9;</span><span class="text"><%=GetResource("Businessreport")%></span></a>
                 <a href="/DeskPlusEIP/Address/Default.aspx" class="quick_color8 quickmenuicon"><span class="material-icons-outlined" >&#xea67;</span><span class="text"><%=GetResource("AddressBook")%></span></a>
-                <a href="https://outlook.office365.com/mail/ target="_blank" class="quick_color9 quickmenuicon"><span class="material-icons-outlined" >&#xe0be;</span><span class="text">E-Mail</span></a>
+                <a href="#" onclick="PopupWinOpen('https://outlook.office365.com/mail/', '', 'WEBMAIL', '1000', '700')" class="quick_color9 quickmenuicon"><span class="material-icons-outlined" >&#xe0be;</span><span class="text">E-Mail</span></a>
                 <!--<a href="#" class="quick_color9 quickmenuicon" id="hmn_2"  onclick="javascript:top.frmTop.Menu.SettingFaMenu()"><span class="material-icons-outlined">&#xe429;</span><span class="text">설정</span></a-->
 
 

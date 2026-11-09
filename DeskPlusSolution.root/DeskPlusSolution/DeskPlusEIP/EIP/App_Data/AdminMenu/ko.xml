@@ -33,8 +33,8 @@
 
   <!-- SUB 메뉴 관리 : 연동관리  -->
   <Item ID="MDM" Text="모바일관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('MDM', 'F', '/DeskPlusEIP/MDM/Default.aspx');" />
-  <Item ID="Mail" Text="메일관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Mail', 'F', '/DeskPlusEIP/Portlet/Package/ZettaAdminFrame.asp');" />
-  <Item ID="Msn" Text="메신저관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Msn', 'F', '/DeskPlusEIP/Common/Messenger/UC/MessengerUpdate.htm');" />
+  <!--Item ID="Mail" Text="메일관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Mail', 'F', '/DeskPlusEIP/Portlet/Package/ZettaAdminFrame.asp');" /-->
+  <!--Item ID="Msn" Text="메신저관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Msn', 'F', '/DeskPlusEIP/Common/Messenger/UC/MessengerUpdate.htm');" /-->
   <!--Item ID="Domain" Text="제타리로드" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Domain', 'F', '/DeskPlusEIP/Common/Mail/ZettaMail65/ClearDomain.aspx');" /-->
   <!--<Item ID="Search" Text="검색관리" ParentID="LINK" ClientSideCommand="TopMenu.MovePage('Search', 'F', '/DeskPlusEIP/Search/Admin/Default.aspx');" />-->
   <!-- SUB 메뉴 관리 : 연동관리  -->
@@ -48,7 +48,7 @@
   <Item ID="Resource" Text="예약관리" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Resource', 'F', '/DeskPlusEIP/RM/Admin/Default.aspx');" />
   <Item ID="Community" Text="커뮤니티관리" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Community', 'F', '/DeskPlusEIP/Community/Admin/Default.aspx');" />
   <Item ID="Approval" Text="결재관리" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Approval', 'F', '/DeskPlusEIP/Approval/Admin/Default.aspx');" />
-  <Item ID="Project" Text="프로젝트관리" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Project', 'F', '/DeskPlusEIP/PMS/Admin/Default.aspx');" />
+  <!--Item ID="Project" Text="프로젝트관리" ParentID="FUNC" ClientSideCommand="TopMenu.MovePage('Project', 'F', '/DeskPlusEIP/PMS/Admin/Default.aspx');" />-->
   <!-- SUB 메뉴 관리 : 기능 관리 -->
 
   <!-- SUB 메뉴 관리 : 통계관리  -->

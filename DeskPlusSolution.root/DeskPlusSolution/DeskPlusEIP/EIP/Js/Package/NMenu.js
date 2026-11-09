@@ -102,7 +102,8 @@ function MyInfo_ShortCut(id) {
 
     switch (id) {
         case "myInfo_NewMail":
-            parent.location.href = "/DeskPlusEIP/EIP/DeskPlusEPDefault.aspx?dcparm=webmail";
+            var url = "https://outlook.office365.com/mail/";
+            var WindowObjectReference = PopupWinOpen(url, "", "WEBMAIL", "1000", "700");    
             break;
         case "myInfo_TodayS":
             parent.frmMain.location.href = "/DeskPlusEIP/Pim/Default.aspx?dcparm=webpims";
