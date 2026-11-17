@@ -278,7 +278,7 @@ namespace Zeospace.DeskPlus.Base.Web.Site.Auth
                     Account.BLL.SLOPwdChange biz = new Account.BLL.SLOPwdChange();
                     biz.ModPwdChange(GetViewStateString("CompanyID", "0").ToNumber<int>(), userID, userList[0].LogInID, newPwd);
 
-                    UpdateMessengerUserInfo();
+                    //UpdateMessengerUserInfo();
                     #endregion 타 제품 패스워드 연동 (ERP, BPM)
 
                     ApplicationFrameworks.Helper.WebComponent.Utility.ShowMessageBox(Page, "SUCCESS", GetResource("LoginNewPwd"), "ModPassword.Close();");
