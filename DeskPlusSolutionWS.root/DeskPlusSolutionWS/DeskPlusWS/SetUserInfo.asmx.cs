@@ -227,6 +227,10 @@ namespace Zeospace.DeskPlus.DeskPlusWS.Web
 
                             userinfo.MailQuota = 0;
                             userinfo.MobilePhone = commonData.arrDatas[i].MobilNP;
+                            if (!string.IsNullOrEmpty(userinfo.MobilePhone) && userinfo.MobilePhone.Length == 11)
+                            {
+                                userinfo.MobilePhone = userinfo.MobilePhone.Insert(7, "-").Insert(3, "-");
+                            }
                             userinfo.NameBase = commonData.arrDatas[i].empName;
                             userinfo.NameKo = commonData.arrDatas[i].empName;
                             userinfo.NameEn = commonData.arrDatas[i].empNameEn;   // 영어 이름
