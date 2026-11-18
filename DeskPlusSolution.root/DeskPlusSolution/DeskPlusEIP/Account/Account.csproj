@@ -565,6 +565,17 @@
     <Compile Include="Organization\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Organization\Sheet.aspx.cs">
+      <DependentUpon>Sheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organization\Sheet.aspx.designer.cs">
+      <DependentUpon>Sheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organization\OrganizationSheetLayout.cs" />
+    <Compile Include="Ws\Organization\Sheet.asmx.cs">
+      <DependentUpon>Sheet.asmx</DependentUpon>
+    </Compile>
     <Compile Include="Search\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -812,9 +823,7 @@
       <Name>Zeospace.DeskPlus.MDM.DAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Resource\GlobalString\string.en.resx">
@@ -941,6 +950,12 @@
     <Content Include="Js\Organization\Default.js" />
     <Content Include="Resource\Organization.css" />
     <Content Include="Organization\Default.aspx" />
+    <Content Include="Organization\Sheet.aspx" />
+    <Content Include="Ws\Organization\Sheet.asmx" />
+    <Content Include="Js\Organization\SheetModel.js" />
+    <Content Include="Js\Organization\Sheet.js" />
+    <Content Include="Resource\OrganizationSheet.css" />
+    <Content Include="App_Data\OrganizationSheetTemplate.json" />
     <Content Include="Js\Search\List.js" />
     <Content Include="Js\Search\Tree.js" />
     <Content Include="Jt\Admin\AuthEmail\JTList.htm" />
