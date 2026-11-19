@@ -573,9 +573,6 @@
       <DependentUpon>Sheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Organization\OrganizationSheetLayout.cs" />
-    <Compile Include="Ws\Organization\Sheet.asmx.cs">
-      <DependentUpon>Sheet.asmx</DependentUpon>
-    </Compile>
     <Compile Include="Search\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -951,7 +948,6 @@
     <Content Include="Resource\Organization.css" />
     <Content Include="Organization\Default.aspx" />
     <Content Include="Organization\Sheet.aspx" />
-    <Content Include="Ws\Organization\Sheet.asmx" />
     <Content Include="Js\Organization\SheetModel.js" />
     <Content Include="Js\Organization\Sheet.js" />
     <Content Include="Resource\OrganizationSheet.css" />
