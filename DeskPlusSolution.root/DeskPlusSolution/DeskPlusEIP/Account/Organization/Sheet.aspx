@@ -14,7 +14,7 @@
 <body>
     <main id="layout_body" class="sheet-page">
         <div class="layout_full">
-            <header id="layout_header">
+            <header id="layout_header"
                 <h1>표형 조직도</h1>
                 <div class="btn_right">
                     <button id="sheet-upload" class="btn btn-secondary" type="button" hidden>엑셀 업로드</button>
