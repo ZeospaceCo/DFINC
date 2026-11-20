@@ -410,7 +410,7 @@ Search.View = function (_companyID, _documentID, groupID) {
     //var url = "/DeskplusEIP/Approval/Common/Popup/ViewTot.aspx?p=" + GetEncryptValue;
     //window.open(url, "View" + _documentID, "width=1200px,height=800px,menubar=no,location=no,resizable=yes,scrollbars=yes,status=no");
 
-    if (groupID < 800000) {
+    if (groupID < 1) {
         url = "/DeskPlusEIP/Approval/Common/Popup33/ViewTot.aspx?p=" + GetEncryptValue;
 
         if ($.browser.msie) {

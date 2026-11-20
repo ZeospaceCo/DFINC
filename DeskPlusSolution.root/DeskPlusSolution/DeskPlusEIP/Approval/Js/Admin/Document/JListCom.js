@@ -460,7 +460,7 @@ List.View = function (p_docID, groupID) {
 
     var url = "";
 
-    if (groupID < 800000) {
+    if (groupID < 1) {
         url = "/DeskPlusEIP/Approval/Admin/Document33/ViewDoc.aspx?p=" + GetEncryptValue;
         if ($("#ddlDocStatus").val() == "ProcessDoc") {
             url = "/DeskPlusEIP/Approval/Admin/Document33/ViewDocProc.aspx?p=" + GetEncryptValue;

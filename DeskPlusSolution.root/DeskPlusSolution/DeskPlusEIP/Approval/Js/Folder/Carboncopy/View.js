@@ -175,7 +175,7 @@ View.GetContentHtmlList = function () {
     ifrmForm.document.write($("#htaFormHTML").val());
     ifrmForm.document.close();
 
-    if (DocumentID < 800000) {
+    if (DocumentID < 1) {
         var strOld = "";
         var zTags = $("input", ifrmForm.document);
         $.each(zTags, function (i, o) {
@@ -327,7 +327,7 @@ View.ViewBaseDoc = function (_baseDocumnetID) {
 
     var url = "";
 
-    if (_baseDocumnetID < 800000) {
+    if (_baseDocumnetID < 1) {
         url = "/DeskPlusEIP/Approval/Folder33/Common/ViewBaseDoc.aspx";
 
         ParamArray = { 'documentID': _baseDocumnetID };

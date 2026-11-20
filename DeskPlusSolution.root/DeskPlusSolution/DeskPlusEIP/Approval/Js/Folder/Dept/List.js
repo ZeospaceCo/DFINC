@@ -446,7 +446,7 @@ List.View = function (p_docID, groupID) {
 
     //location.href = "/DeskPlusEIP/Approval/Folder/Common/View.aspx?p=" + GetEncryptValue;
 
-    if (groupID < 800000) {
+    if (groupID < 1) {
         url = "/DeskPlusEIP/Approval/Common/Popup33/ViewTot.aspx?p=" + GetEncryptValue;
         if ($.browser.msie) {
             PopupWinOpen(url, "", "OpenUrl", "1000", "745", "menubar=no,location=no,resizable=yes,scrollbars=yes,status=no");

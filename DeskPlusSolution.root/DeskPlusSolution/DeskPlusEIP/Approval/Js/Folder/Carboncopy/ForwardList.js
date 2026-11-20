@@ -423,7 +423,7 @@ List.View = function (p_docID, p_fowardDocID, groupID) {
 
     //location.href = "/DeskPlusEIP/Approval/Folder/Common/View.aspx?p=" + GetEncryptValue;
 
-    if (groupID < 800000) {
+    if (groupID < 1) {
         url = "/DeskPlusEIP/Approval/Common/Popup33/ViewTot.aspx?p=" + GetEncryptValue;
         PopupWinOpen(url, "", "OpenUrl", "1000", "700", "menubar=no,location=no,resizable=yes,scrollbars=yes,status=no");
     }

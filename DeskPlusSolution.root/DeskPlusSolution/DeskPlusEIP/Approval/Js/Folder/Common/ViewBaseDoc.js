@@ -305,7 +305,7 @@ ViewBaseDoc.ViewBaseDoc = function (_baseDocumnetID) {
 
     var url = "";
 
-    if (_baseDocumnetID < 800000) {
+    if (_baseDocumnetID < 1) {
         url = "/DeskPlusEIP/Approval/Folder33/Common/ViewBaseDoc.aspx";
 
         ParamArray = { 'documentID': _baseDocumnetID };
