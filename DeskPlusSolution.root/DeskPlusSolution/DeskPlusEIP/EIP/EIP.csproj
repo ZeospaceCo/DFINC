@@ -18,6 +18,12 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1273,6 +1279,10 @@
     <ProjectReference Include="..\..\Projects\CommonProject\Zeospace.DeskPlus.Common.DAL\Zeospace.DeskPlus.Common.DAL.csproj">
       <Project>{45E2872E-265C-43EF-B694-FF49202DA17D}</Project>
       <Name>Zeospace.DeskPlus.Common.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\EducationProject\Zeospace.DeskPlus.Education.DAL\Zeospace.DeskPlus.Education.DAL.csproj">
+      <Project>{60ac1b5e-f1c6-4168-844d-7b32315cd37b}</Project>
+      <Name>Zeospace.DeskPlus.Education.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Projects\EIPProject\Zeospace.DeskPlus.EIP.BE\Zeospace.DeskPlus.EIP.BE.csproj">
       <Project>{21CC4361-7475-4B85-864F-B1506D94B2B5}</Project>

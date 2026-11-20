@@ -96,6 +96,8 @@ namespace Zeospace.DeskPlus.EIP.Web.Package
                 BoardMainPopupList();
                 //팝업 & TODO 팝업
                 GetPopUp();
+                //교육 팝업
+                GetEducationPopUp();
             }
         }
 
@@ -544,6 +546,39 @@ namespace Zeospace.DeskPlus.EIP.Web.Package
                         break;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// 현재 사용자에게 지정된 교육의 기간 내 팝업을 등록합니다.
+        /// </summary>
+        private void GetEducationPopUp()
+        {
+            try
+            {
+                string nowDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow,
+                    TimeZoneInfo.FindSystemTimeZoneById("Korea Standard Time"))
+                    .ToString("yyyyMMdd", System.Globalization.CultureInfo.InvariantCulture);
+                using (DataTableReader reader = new Zeospace.DeskPlus.Education.DAL.List()
+                    .GetList(CurrentUserInfo.CompanyID, CurrentUserInfo.UserID, nowDate))
+                {
+                    while (reader != null && reader.Read())
+                    {
+                        int listID;
+                        if (!Int32.TryParse(reader["ListID"].ToString(), System.Globalization.NumberStyles.None,
+                            System.Globalization.CultureInfo.InvariantCulture, out listID) || listID <= 0) continue;
+                        string pID = String.Format(System.Globalization.CultureInfo.InvariantCulture,
+                            "EDU_{0}_{1}_{2}", CurrentUserInfo.CompanyID, CurrentUserInfo.UserID, listID);
+                        PopupContent.Add(pID, "window.open('/DeskPlusEIP/Education/Content/PopUp.aspx?popid=" + pID
+                            + "', 'pop" + pID + "', 'menubar=no, scrollbars=no, status=no, toolbar=no, resizable=no, width=1000, height=750');");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // 교육 팝업 조회 실패가 기존 메인 화면의 표시를 막지 않도록 합니다.
+                try { AppException.WriteException("Education.GetMainPopUp", ex); }
+                catch (Exception) { }
             }
         }
 

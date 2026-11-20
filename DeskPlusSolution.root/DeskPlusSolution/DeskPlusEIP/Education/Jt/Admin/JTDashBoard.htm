@@ -1,0 +1,19 @@
+﻿<div class="edu-course-panel">
+{#foreach $T as Education}
+<div class="edu-course-row" ListID="{ $T.Education.ListID }">
+    <div class="edu-course-header">
+        <div class="edu-course-title"><a href="#" action="view" class="edu-title-link" title="{ $T.Education.Title }">{ $T.Education.Title }</a><div class="edu-course-info">{ $T.Education.ItemName } · { $T.Education.DateStr }</div></div>
+        <div class="edu-course-count">
+            <a href="#" action="targets" data-status="" title="사용자 리스트로 이동"><span>전체 : { $T.Education.TotalCount }명</span></a> /
+            <a href="#" action="targets" data-status="1" title="사용자 리스트로 이동"><span>대기 : { $T.Education.WaitCount }명</span></a> /
+            <a href="#" action="targets" data-status="2" title="사용자 리스트로 이동"><span>진행 : { $T.Education.ProgressCount }명</span></a> /
+            <a href="#" action="targets" data-status="3" title="사용자 리스트로 이동"><span>완료 : { $T.Education.CompleteCount }명 ({ $T.Education.CompleteRate }%)</span></a> /
+            <a href="#" action="targets" data-status="4" title="사용자 리스트로 이동"><span>지연 : { $T.Education.DelayCount }명</span></a>
+        </div>
+    </div>
+    <div class="edu-progress-row"><div class="edu-progress-track" role="img" aria-label="{ $T.Education.DistributionLabel }"><div class="edu-progress-bar complete" style="width:{ $T.Education.CompleteWidth }%;" title="완료: { $T.Education.CompleteCount }명" aria-hidden="true"></div><div class="edu-progress-bar wait" style="width:{ $T.Education.WaitWidth }%;" title="대기: { $T.Education.WaitCount }명" aria-hidden="true"></div><div class="edu-progress-bar progressing" style="width:{ $T.Education.ProgressWidth }%;" title="진행: { $T.Education.ProgressCount }명" aria-hidden="true"></div><div class="edu-progress-bar delay" style="width:{ $T.Education.DelayWidth }%;" title="지연: { $T.Education.DelayCount }명" aria-hidden="true"></div></div></div>
+</div>
+{#else}
+<div class="edu-course-empty">내용이 없습니다.</div>
+{#/for}
+</div>

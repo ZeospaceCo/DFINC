@@ -53,6 +53,7 @@
     <Compile Include="Attendance.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Congratulation.cs" />
+    <Compile Include="Education.cs" />
     <Compile Include="GMWords.cs" />
     <Compile Include="HR.cs" />
     <Compile Include="MyCoop.cs" />

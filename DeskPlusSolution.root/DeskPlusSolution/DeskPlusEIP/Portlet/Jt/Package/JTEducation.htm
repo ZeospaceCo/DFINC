@@ -1,0 +1,15 @@
+﻿<ul>
+    {#foreach $T as EducationList}
+    <li>
+        <a href="#" onclick="ViewEducation('{$T.EducationList.ListID}');return false;">
+            <span class="education-portlet-status" data-status="{$T.EducationList.Status}">{$T.EducationList.StatusStr}</span>
+            <span class="education-portlet-title">{$T.EducationList.Title}</span>
+            {#if $T.EducationList.Period}
+            <span class="education-portlet-period">{$T.EducationList.Period}</span>
+            {#/if}
+        </a>
+    </li>
+    {#else}
+    <li><span class="NoListData"></span></li>
+    {#/for}
+</ul>
