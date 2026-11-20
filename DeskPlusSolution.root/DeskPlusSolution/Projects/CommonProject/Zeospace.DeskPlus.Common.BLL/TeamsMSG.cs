@@ -38,11 +38,55 @@ namespace Zeospace.DeskPlus.Common.BLL
             return SendChatMessage(userEmail, title, content, targetUrl);
         }
 
+        /// <summary>알림에 설정된 링크를 포함해 Teams 1:1 채팅을 전송합니다.</summary>
+        public static bool SendAlarm(Common.BE.AlarmInfo alarmInfo, out bool deliveryUncertain)
+        {
+            deliveryUncertain = false;
+            if (alarmInfo == null || !IsEnabled)
+                return false;
+
+            try
+            {
+                // Teams 수신자는 알림의 회사/수신자 ID로 DB에서 조회한 이메일을 사용합니다.
+                var users = new Account.DAL.User().GetUserInfo(alarmInfo.CompanyID, alarmInfo.ReceiverID, true, true);
+                if (users == null || users.Count == 0)
+                    throw new InvalidOperationException("DB에서 Teams 채팅 수신자를 찾을 수 없습니다. CompanyID="
+                        + alarmInfo.CompanyID + ", ReceiverID=" + alarmInfo.ReceiverID);
+
+                var receiver = users[0];
+                string teamsRecipient = (receiver.Mail ?? string.Empty).Trim();
+                if (string.IsNullOrWhiteSpace(teamsRecipient)
+                    && !string.IsNullOrWhiteSpace(receiver.MailID)
+                    && !string.IsNullOrWhiteSpace(receiver.MailDomain))
+                    teamsRecipient = receiver.MailID.Trim() + "@" + receiver.MailDomain.Trim();
+
+                if (string.IsNullOrWhiteSpace(teamsRecipient))
+                    throw new InvalidOperationException("DB에 Teams 채팅 수신자의 이메일이 등록되어 있지 않습니다. ReceiverID="
+                        + alarmInfo.ReceiverID);
+
+                return SendChatMessage(teamsRecipient, alarmInfo.Subject, alarmInfo.Content, alarmInfo.TargetUrl, out deliveryUncertain);
+            }
+            catch (Exception ex)
+            {
+                Zeospace.DeskPlus.Base.ApplicationFrameworks.Exceptions.AppException.WriteException("Teams 채팅 수신자 확인 실패: " + ex.Message);
+                return false;
+            }
+        }
+
         public static bool SendChatMessage(string userEmail, string title, string content, string targetUrl)
         {
+            bool deliveryUncertain;
+            return SendChatMessage(userEmail, title, content, targetUrl, out deliveryUncertain);
+        }
+
+        internal static bool SendChatMessage(string userEmail, string title, string content, string targetUrl,
+            out bool deliveryUncertain)
+        {
+            deliveryUncertain = false;
             if (!IsEnabled)
                 return false;
 
+            bool messageRequestStarted = false;
             TeamsSettings settings = null;
             try
             {
@@ -54,13 +98,16 @@ namespace Zeospace.DeskPlus.Common.BLL
                     TokenFilePath = Environment.ExpandEnvironmentVariables(GetRequiredSetting("TeamsChatTokenPath"))
                 };
                 SendOneToOneChat(userEmail, title, content, targetUrl, settings, Request,
-                    () => GetAccessToken(settings, Request, DateTime.UtcNow));
+                    () => GetAccessToken(settings, Request, DateTime.UtcNow), () => messageRequestStarted = true);
                 TeamsChatReauthNotifier.Reset(settings.TokenFilePath);
                 return true;
             }
             catch (Exception ex)
             {
                 var apiError = ex as MicrosoftApiException;
+                // 메시지 요청의 응답 유실이나 서버 오류는 발송 여부를 확인할 수 없습니다.
+                deliveryUncertain = messageRequestStarted && (apiError == null
+                    || apiError.StatusCode == 408 || apiError.StatusCode >= 500);
                 if (apiError != null && apiError.StatusCode == 401)
                 {
                     lock (TokenSync) { cachedToken = null; }
@@ -98,7 +145,8 @@ namespace Zeospace.DeskPlus.Common.BLL
 
         // method, URL, content-type, body, bearer token을 분리하여 외부 발송 없이 검증합니다.
         internal static void SendOneToOneChat(string userEmail, string title, string content, string targetUrl,
-            TeamsSettings settings, Func<string, string, string, string, string, string> request, Func<string> acquireToken)
+            TeamsSettings settings, Func<string, string, string, string, string, string> request, Func<string> acquireToken,
+            Action beforeSendMessage = null)
         {
             string recipient = NormalizeRecipient(userEmail);
             string message = CreateMessagePayload(title, content, targetUrl);
@@ -142,6 +190,7 @@ namespace Zeospace.DeskPlus.Common.BLL
             // 같은 두 사용자의 채팅이 존재하면 Graph가 기존 채팅을 반환합니다.
             string chatId = RequiredString(ReadObject(request("POST", GraphBaseUrl + "/chats", "application/json; charset=utf-8", chatBody, accessToken)), "id");
             // 발송 요청은 자동 재시도하지 않아 응답 유실 시 중복 메시지를 방지합니다.
+            if (beforeSendMessage != null) beforeSendMessage();
             request("POST", GraphBaseUrl + "/chats/" + Uri.EscapeDataString(chatId) + "/messages", "application/json; charset=utf-8", message, accessToken);
         }
 

@@ -1,0 +1,74 @@
+﻿<table class="table_typeA">
+<caption>사용자별 현황</caption>
+<colgroup>
+    <col width="60px" />
+    <col width="100px" />
+    <col width="80px" />
+    <col width="80px" />
+    <col width="70px" />
+    <col width="50px" />
+    <col />
+    <col width="150px" />
+    <col width="70px" />
+    <col width="45px" />
+    <col width="45px" />
+    <col width="60px" />
+    <col width="70px" />
+    <col width="80px" />
+    <col width="70px" />
+    <col width="70px" />
+    <col width="80px" />
+</colgroup>
+<tr>
+    <th class="center">분류</th>
+    <th class="center">사업장</th>
+    <th class="center">부서</th>
+    <th class="center">아이디</th>
+    <th class="center">성명</th>
+    <th class="center">재직</th>
+    <th class="center">과정명</th>
+    <th class="center">기간</th>
+    <th class="center">진행상태</th>
+    <th class="center">공지</th>
+    <th class="center">첨부</th>
+    <th class="center">완료여부</th>
+    <th class="center">완료자</th>
+    <th class="center">완료일</th>
+    <th class="center">확인여부</th>
+    <th class="center">확인자</th>
+    <th class="center">확인일</th>
+</tr>
+{#foreach $T as List}
+<tr ListID="{ $T.List.ListID }" UserID="{ $T.List.UserID }">
+    <td class="center">{ $T.List.ItemName }</td>
+    <td class="center">{ $T.List.WorkplaceName }</td>
+    <td class="center">{ $T.List.DeptName }</td>
+    <td class="center">{ $T.List.LogInID }</td>
+    <td class="center">{#if $T.List.HasUserInfo}<a href="#" action="accountInfo" data-user-id="{ $T.List.UserID }">{ $T.List.Name }</a>{#else}{ $T.List.Name }{#/if}</td>
+    <td class="center">{ $T.List.EmploymentStr }</td>
+    <td><a href="#" class="edu-title-link" action="view" title="{ $T.List.Title }">{ $T.List.Title }</a></td>
+    <td class="center">{ $T.List.DateStr }</td>
+    <td class="center">{ $T.List.StatusStr }</td>
+    <td class="center">
+    {#if $T.List.FileCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="attach" title="공지첨부 다운로드" aria-label="공지첨부 다운로드"></i>
+    {#/if}
+    </td>
+    <td class="center">
+    {#if $T.List.CertificateCount > 0}
+        <i class="fas fa-arrow-alt-circle-down" action="certificate" title="첨부파일 다운로드" aria-label="첨부파일 다운로드"></i>
+    {#/if}
+    </td>
+    <td class="center">{ $T.List.CompleteYN }</td>
+    <td class="center">{#if $T.List.HasCompleteUserInfo}<a href="#" action="accountInfo" data-user-id="{ $T.List.CompleteUserID }">{ $T.List.CompleteUserName }</a>{#/if}</td>
+    <td class="center">{#if $T.List.IsComplete}{ $T.List.CompleteDateStr }{#/if}</td>
+    <td class="center"><input type="checkbox" class="edu-confirm-check" action="confirmRow" data-confirmed="{#if $T.List.IsConfirmed}Y{#else}N{#/if}" aria-label="{ $T.List.ConfirmationLabel }" {#if $T.List.IsConfirmed}checked="checked"{#/if} /></td>
+    <td class="center">{#if $T.List.HasConfirmUserInfo}<a href="#" action="accountInfo" data-user-id="{ $T.List.ConfirmUserID }">{ $T.List.ConfirmUserName }</a>{#/if}</td>
+    <td class="center">{#if $T.List.IsConfirmed}{ $T.List.ConfirmDateStr }{#/if}</td>
+</tr>
+{#else}
+<tr>
+    <td colspan="17" class="center">내용이 없습니다.</td>
+</tr>
+{#/for}
+</table>

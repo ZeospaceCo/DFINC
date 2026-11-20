@@ -18,6 +18,12 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -162,6 +168,10 @@
     </Compile>
     <Compile Include="Package\Approval\TabAppMain.ascx.designer.cs">
       <DependentUpon>TabAppMain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Package\Education.ascx.cs">
+      <DependentUpon>Education.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Package\BirthDay.ascx.cs">
       <DependentUpon>BirthDay.ascx</DependentUpon>
@@ -816,6 +826,10 @@
       <DependentUpon>TabCoop.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Ws\Package\Education.asmx.cs">
+      <DependentUpon>Education.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Ws\Package\HR\Attendance.asmx.cs">
       <DependentUpon>Attendance.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -1032,6 +1046,7 @@
     <Content Include="Jt\Package\Coop\Tab\JTForwardList.htm" />
     <Content Include="Jt\Package\Coop\Tab\JTRequestList.htm" />
     <Content Include="Jt\Package\Coop\Tab\JTTOList.htm" />
+    <Content Include="Jt\Package\JTEducation.htm" />
     <Content Include="Jt\Package\JTBirthDayList.htm" />
     <Content Include="Jt\Package\JTCongratulation.htm" />
     <Content Include="Jt\Package\JTMyInfo.htm" />
@@ -1072,6 +1087,7 @@
     <Content Include="Package\Approval\ListA.ascx" />
     <Content Include="Package\Approval\Tab.ascx" />
     <Content Include="Package\Approval\TabAppMain.ascx" />
+    <Content Include="Package\Education.ascx" />
     <Content Include="Package\BirthDay.ascx" />
     <Content Include="Package\Board\Album.ascx" />
     <Content Include="Package\Board\Blog.ascx" />
@@ -1219,6 +1235,7 @@
     <Content Include="Ws\Package\Congratulation.asmx" />
     <Content Include="Ws\Package\Coop\List.asmx" />
     <Content Include="Ws\Package\Coop\TabCoop.asmx" />
+    <Content Include="Ws\Package\Education.asmx" />
     <Content Include="Ws\Package\HR\Attendance.asmx" />
     <Content Include="Ws\Package\Mail\List.asmx" />
     <Content Include="Ws\Package\MyMemo.asmx" />

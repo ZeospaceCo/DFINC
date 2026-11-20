@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ALARM>
+
+    <MESSENGER>	
+		<TO>$PREFIX$</TO>
+		<ContentHTMLTO>
+			$PREFIX$
+			&lt;br&gt;&lt;br&gt;
+			- 과정명 : $SUBJECT$
+			&lt;br&gt;&lt;br&gt;
+		</ContentHTMLTO>	
+    </MESSENGER>
+
+</ALARM>
